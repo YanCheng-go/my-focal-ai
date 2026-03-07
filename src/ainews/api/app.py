@@ -13,7 +13,7 @@ from fastapi.templating import Jinja2Templates
 from ainews.config import Settings, load_principles
 from ainews.ingest.runner import run_ingestion
 from ainews.scoring.scorer import score_batch
-from ainews.storage.db import get_db, get_items, get_unscored_items, upsert_item
+from ainews.storage.db import count_items, get_all_tags, get_db, get_items, get_unscored_items, upsert_item
 
 settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
@@ -64,6 +64,7 @@ def api_items(
     source_type: str | None = None,
     tier: str | None = None,
     tag: str | None = None,
+    search: str | None = None,
     since_hours: int | None = None,
     order_by: str = "date",
 ):
@@ -71,10 +72,12 @@ def api_items(
     conn = get_db(settings.db_path)
     since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
     items = get_items(conn, limit=limit, offset=offset, min_score=min_score,
-                      source_type=source_type, tier=tier, tag=tag, since=since,
-                      order_by=order_by)
+                      source_type=source_type, tier=tier, tag=tag, search=search,
+                      since=since, order_by=order_by)
+    total = count_items(conn, min_score=min_score, source_type=source_type,
+                        tier=tier, tag=tag, search=search, since=since)
     conn.close()
-    return {"items": [item.model_dump(mode="json") for item in items], "count": len(items)}
+    return {"items": [item.model_dump(mode="json") for item in items], "count": len(items), "total": total}
 
 
 @app.get("/api/digest")
@@ -110,6 +113,9 @@ async def api_trigger_fetch():
 
 # === Web Dashboard ===
 
+PER_PAGE = 30
+
+
 @app.get("/", response_class=HTMLResponse)
 def dashboard(
     request: Request,
@@ -117,15 +123,26 @@ def dashboard(
     tier: str | None = None,
     tag: str | None = None,
     min_score: float | None = None,
+    search: str | None = None,
     order_by: str = "date",
+    page: int = 1,
 ):
     conn = get_db(settings.db_path)
-    items = get_items(conn, limit=50, source_type=source_type, tier=tier, tag=tag,
-                      min_score=min_score, order_by=order_by)
+    offset = (page - 1) * PER_PAGE
+    filter_kwargs = dict(source_type=source_type, tier=tier, tag=tag,
+                         min_score=min_score, search=search)
+    items = get_items(conn, limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
+    total = count_items(conn, **filter_kwargs)
+    all_tags = get_all_tags(conn)
     conn.close()
+    total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse("dashboard.html", {
         "request": request,
         "items": items,
         "filters": {"source_type": source_type, "tier": tier, "tag": tag,
-                     "min_score": min_score, "order_by": order_by},
+                     "min_score": min_score, "order_by": order_by, "search": search},
+        "page": page,
+        "total_pages": total_pages,
+        "total": total,
+        "all_tags": all_tags,
     })

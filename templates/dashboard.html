@@ -8,10 +8,43 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
         .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        h1 { font-size: 1.4rem; margin-bottom: 16px; color: #fff; }
-        .filters { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
-        .filters a { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; text-decoration: none; font-size: 0.85rem; border: 1px solid #222; }
-        .filters a.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
+        h1 { font-size: 1.4rem; color: #fff; }
+
+        /* Header */
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .header-right { display: flex; gap: 8px; align-items: center; }
+
+        /* Search */
+        .search-form { display: flex; gap: 6px; }
+        .search-input { padding: 6px 12px; border-radius: 6px; background: #1a1a1a; color: #e0e0e0; border: 1px solid #222; font-size: 0.85rem; width: 200px; outline: none; }
+        .search-input:focus { border-color: #2d5a8e; }
+        .search-input::placeholder { color: #555; }
+        .btn-search { background: #1a1a1a; color: #aaa; border: 1px solid #222; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
+        .btn-search:hover { border-color: #2d5a8e; color: #7cb8ff; }
+        .btn-clear { background: #1a1a1a; color: #666; border: 1px solid #222; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 1rem; text-decoration: none; line-height: 1; }
+        .btn-clear:hover { border-color: #5a2d2d; color: #ff7c7c; }
+
+        /* Filters */
+        .filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+        .filter-link { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; text-decoration: none; font-size: 0.85rem; border: 1px solid #222; }
+        .filter-link:hover { border-color: #333; color: #ccc; }
+        .filter-link.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
+
+        /* Tag dropdown */
+        .tag-dropdown { position: relative; display: inline-block; }
+        .tag-dropdown-btn { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; font-size: 0.85rem; border: 1px solid #222; cursor: pointer; }
+        .tag-dropdown-btn:hover { border-color: #333; color: #ccc; }
+        .tag-dropdown-btn.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
+        .tag-dropdown-content { display: none; position: absolute; top: 100%; left: 0; margin-top: 4px; background: #1a1a1a; border: 1px solid #333; border-radius: 6px; min-width: 160px; max-height: 300px; overflow-y: auto; z-index: 10; }
+        .tag-dropdown:hover .tag-dropdown-content { display: block; }
+        .tag-dropdown-content a { display: block; padding: 6px 14px; color: #aaa; text-decoration: none; font-size: 0.85rem; }
+        .tag-dropdown-content a:hover { background: #222; color: #e0e0e0; }
+        .tag-dropdown-content a.active { color: #7cb8ff; }
+
+        /* Status bar */
+        .status-bar { font-size: 0.8rem; color: #555; margin-bottom: 16px; }
+
+        /* Items */
         .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
         .item:hover { border-color: #333; }
         .item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
@@ -22,37 +55,82 @@
         .score-high { background: #1a3d1a; color: #4ade80; }
         .score-mid { background: #3d3d1a; color: #facc15; }
         .score-low { background: #1a1a1a; color: #666; }
-        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 12px; flex-wrap: wrap; }
+        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
         .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
         .tier-personal { background: #1e1a3d; color: #a78bfa; }
         .tier-work { background: #1a2e3d; color: #67e8f9; }
+        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.4; }
         .item-reason { margin-top: 8px; font-size: 0.85rem; color: #888; font-style: italic; }
         .empty { text-align: center; padding: 60px 20px; color: #444; }
-        .btn-fetch { padding: 6px 14px; border-radius: 6px; background: #1e3a5f; color: #7cb8ff; border: 1px solid #2d5a8e; cursor: pointer; font-size: 0.85rem; }
-        .btn-fetch:hover { background: #2d5a8e; }
+
+        /* Buttons */
+        .btn { padding: 6px 14px; border-radius: 6px; border: 1px solid #2d5a8e; cursor: pointer; font-size: 0.85rem; }
+        .btn-primary { background: #1e3a5f; color: #7cb8ff; }
+        .btn-primary:hover { background: #2d5a8e; }
+
+        /* Pagination */
+        .pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 24px; padding: 16px 0; }
+        .pagination a, .pagination span { padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; text-decoration: none; }
+        .pagination a { background: #1a1a1a; color: #aaa; border: 1px solid #222; }
+        .pagination a:hover { border-color: #333; color: #e0e0e0; }
+        .pagination .current { background: #1e3a5f; color: #7cb8ff; border: 1px solid #2d5a8e; }
+        .pagination .disabled { color: #333; pointer-events: none; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <!-- Header -->
+        <div class="header">
             <h1>AI News Filter</h1>
-            <button class="btn-fetch" onclick="fetch('/api/fetch',{method:'POST'}).then(()=>location.reload())">Fetch Now</button>
+            <div class="header-right">
+                <form class="search-form" method="get" action="/">
+                    <input class="search-input" type="text" name="search" placeholder="Search titles, sources..."
+                           value="{{ filters.search or '' }}">
+                    <button type="submit" class="btn btn-search" title="Search">&#128269;</button>
+                    {% if filters.search %}<a href="/" class="btn btn-clear" title="Clear search">&times;</a>{% endif %}
+                    {% if filters.source_type %}<input type="hidden" name="source_type" value="{{ filters.source_type }}">{% endif %}
+                    {% if filters.tier %}<input type="hidden" name="tier" value="{{ filters.tier }}">{% endif %}
+                    {% if filters.tag %}<input type="hidden" name="tag" value="{{ filters.tag }}">{% endif %}
+                    {% if filters.min_score %}<input type="hidden" name="min_score" value="{{ filters.min_score }}">{% endif %}
+                    {% if filters.order_by != 'date' %}<input type="hidden" name="order_by" value="{{ filters.order_by }}">{% endif %}
+                </form>
+                <button class="btn btn-primary" onclick="fetch('/api/fetch',{method:'POST'}).then(()=>location.reload())">Fetch Now</button>
+            </div>
         </div>
 
+        <!-- Filter bar -->
         <div class="filters">
-            <a href="/" class="{{ 'active' if not filters.source_type and not filters.tier and not filters.tag }}">All</a>
-            <a href="/?tier=personal" class="{{ 'active' if filters.tier == 'personal' }}">Personal</a>
-            <a href="/?tier=work" class="{{ 'active' if filters.tier == 'work' }}">Work</a>
-            <a href="/?tag=research" class="{{ 'active' if filters.tag == 'research' }}">Research</a>
-            <a href="/?source_type=twitter" class="{{ 'active' if filters.source_type == 'twitter' }}">Twitter</a>
-            <a href="/?source_type=youtube" class="{{ 'active' if filters.source_type == 'youtube' }}">YouTube</a>
-            <a href="/?source_type=rss" class="{{ 'active' if filters.source_type == 'rss' }}">RSS</a>
-            <a href="/?source_type=arxiv" class="{{ 'active' if filters.source_type == 'arxiv' }}">arXiv</a>
-            <a href="/?source_type=luma" class="{{ 'active' if filters.source_type == 'luma' }}">Events</a>
-            <a href="/?min_score=0.7" class="{{ 'active' if filters.min_score and filters.min_score >= 0.7 }}">Top Only</a>
-            <a href="/?order_by=score" class="{{ 'active' if filters.order_by == 'score' }}">By Score</a>
+            <a href="/" class="filter-link {{ 'active' if not filters.source_type and not filters.tier and not filters.tag and not filters.min_score and not filters.search }}">All</a>
+            <a href="/?tier=personal" class="filter-link {{ 'active' if filters.tier == 'personal' }}">Personal</a>
+            <a href="/?tier=work" class="filter-link {{ 'active' if filters.tier == 'work' }}">Work</a>
+            <a href="/?source_type=twitter" class="filter-link {{ 'active' if filters.source_type == 'twitter' }}">Twitter</a>
+            <a href="/?source_type=youtube" class="filter-link {{ 'active' if filters.source_type == 'youtube' }}">YouTube</a>
+            <a href="/?source_type=rss" class="filter-link {{ 'active' if filters.source_type == 'rss' }}">RSS</a>
+            <a href="/?source_type=arxiv" class="filter-link {{ 'active' if filters.source_type == 'arxiv' }}">arXiv</a>
+            <a href="/?source_type=luma" class="filter-link {{ 'active' if filters.source_type == 'luma' }}">Events</a>
+            <a href="/?min_score=0.7" class="filter-link {{ 'active' if filters.min_score and filters.min_score >= 0.7 }}">Top Only</a>
+            <a href="/?order_by=score" class="filter-link {{ 'active' if filters.order_by == 'score' }}">By Score</a>
+
+            <!-- Tag dropdown -->
+            <div class="tag-dropdown">
+                <button class="tag-dropdown-btn {{ 'active' if filters.tag }}">
+                    {{ 'Tag: ' + filters.tag if filters.tag else 'Tags' }}
+                </button>
+                <div class="tag-dropdown-content">
+                    {% for t in all_tags %}
+                    <a href="/?tag={{ t }}" class="{{ 'active' if filters.tag == t }}">{{ t }}</a>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
 
+        <!-- Status -->
+        <div class="status-bar">
+            {{ total }} items{% if filters.search %} matching "{{ filters.search }}"{% endif %}{% if filters.tag %} tagged "{{ filters.tag }}"{% endif %}{% if filters.source_type %} from {{ filters.source_type }}{% endif %}
+            &middot; Page {{ page }} of {{ total_pages }}
+        </div>
+
+        <!-- Items -->
         {% if items %}
             {% for item in items %}
             <div class="item">
@@ -68,22 +146,73 @@
                 </div>
                 <div class="item-meta">
                     <span>{{ item.source_name }}</span>
-                    <span>{{ item.source_type }}</span>
+                    <span class="tag">{{ 'YT Short' if '/shorts/' in item.url else item.source_type }}</span>
                     {% if item.tier %}
                     <span class="tag tier-{{ item.tier }}">{{ item.tier }}</span>
                     {% endif %}
-                    {% if item.published_at %}
-                    <span>{{ item.published_at.strftime('%b %d, %H:%M') }}</span>
+                    {% for t in item.tags[:3] %}
+                    <span class="tag">{{ t }}</span>
+                    {% endfor %}
+                    {% if item.source_type == 'luma' and item.published_at %}
+                    <span>Event: {{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
+                    {% elif item.published_at %}
+                    <span>{{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
                     {% endif %}
                 </div>
+                {% if item.summary %}
+                <div class="item-summary">{{ item.summary[:200] }}{{ '...' if item.summary|length > 200 }}</div>
+                {% endif %}
                 {% if item.score_reason %}
                 <div class="item-reason">{{ item.score_reason }}</div>
                 {% endif %}
             </div>
             {% endfor %}
+
+            <!-- Pagination -->
+            {% if total_pages > 1 %}
+            <div class="pagination">
+                {# Build query string preserving filters #}
+                {% set qs_parts = [] %}
+                {% if filters.source_type %}{% set _ = qs_parts.append('source_type=' + filters.source_type) %}{% endif %}
+                {% if filters.tier %}{% set _ = qs_parts.append('tier=' + filters.tier) %}{% endif %}
+                {% if filters.tag %}{% set _ = qs_parts.append('tag=' + filters.tag) %}{% endif %}
+                {% if filters.min_score %}{% set _ = qs_parts.append('min_score=' + filters.min_score|string) %}{% endif %}
+                {% if filters.search %}{% set _ = qs_parts.append('search=' + filters.search) %}{% endif %}
+                {% if filters.order_by != 'date' %}{% set _ = qs_parts.append('order_by=' + filters.order_by) %}{% endif %}
+                {% set qs_base = '&'.join(qs_parts) %}
+
+                {% if page > 1 %}
+                <a href="/?page={{ page - 1 }}{{ '&' + qs_base if qs_base }}">Prev</a>
+                {% else %}
+                <span class="disabled">Prev</span>
+                {% endif %}
+
+                {% for p in range(1, total_pages + 1) %}
+                    {% if p == page %}
+                    <span class="current">{{ p }}</span>
+                    {% elif p <= 3 or p > total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
+                    <a href="/?page={{ p }}{{ '&' + qs_base if qs_base }}">{{ p }}</a>
+                    {% elif p == 4 and page > 5 %}
+                    <span style="color:#444">...</span>
+                    {% elif p == total_pages - 2 and page < total_pages - 4 %}
+                    <span style="color:#444">...</span>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page < total_pages %}
+                <a href="/?page={{ page + 1 }}{{ '&' + qs_base if qs_base }}">Next</a>
+                {% else %}
+                <span class="disabled">Next</span>
+                {% endif %}
+            </div>
+            {% endif %}
         {% else %}
             <div class="empty">
+                {% if filters.search %}
+                <p>No items matching "{{ filters.search }}". Try a different search.</p>
+                {% else %}
                 <p>No items yet. Click "Fetch Now" or wait for the next scheduled fetch.</p>
+                {% endif %}
             </div>
         {% endif %}
     </div>
