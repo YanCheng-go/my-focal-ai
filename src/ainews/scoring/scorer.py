@@ -74,7 +74,7 @@ async def score_item(
     """Score a single content item using Ollama."""
     prompt = _build_user_prompt(item, principles)
 
-    async with httpx.AsyncClient(timeout=60) as client:
+    async with httpx.AsyncClient(timeout=300) as client:
         resp = await client.post(
             f"{ollama_base_url}/api/chat",
             json={

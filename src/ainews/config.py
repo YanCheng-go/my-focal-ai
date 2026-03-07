@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     db_path: Path = Path("data/ainews.db")
     rsshub_base: str = "http://localhost:1200"
     fetch_interval_minutes: int = 30
-    ollama_model: str = "llama3.2"
+    ollama_model: str = "qwen3:4b"
     ollama_base_url: str = "http://localhost:11434"
     host: str = "0.0.0.0"
     port: int = 8000
