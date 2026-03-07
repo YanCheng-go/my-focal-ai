@@ -51,7 +51,7 @@ Pipeline: **ingest -> dedup -> store -> score -> serve**.
 
 ## Config
 
-All settings via env vars prefixed `AINEWS_` (e.g., `AINEWS_OLLAMA_MODEL=qwen3:4b`). See `src/ainews/config.py` for defaults.
+All settings via env vars prefixed `AINEWS_` (e.g., `AINEWS_OLLAMA_MODEL=qwen3:4b`). `AINEWS_SCORING=false` disables Ollama scoring. See `src/ainews/config.py` for defaults.
 
 ## Documentation Rules
 

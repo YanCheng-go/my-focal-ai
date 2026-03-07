@@ -8,17 +8,21 @@ Personal news intelligence system that aggregates AI content from curated source
 Runs entirely on your machine — SQLite, Ollama, APScheduler, FastAPI dashboard.
 
 ```bash
-# Install dependencies
+# One-command start (installs deps, starts RSSHub + Ollama, launches dashboard)
+./start.sh
+
+# Or without scoring (no Ollama needed — just fetches and displays)
+./start.sh --no-score
+
+# Stop all services
+./start.sh stop
+```
+
+Or manually:
+```bash
 uv sync
-
-# Start RSSHub (for Anthropic, Cohere, Luma, XHS)
 docker compose -f docker/docker-compose.yml up -d
-
-# Start Ollama with scoring model
-ollama serve
-ollama pull qwen3:4b
-
-# Run the server (dashboard at http://localhost:8000)
+ollama serve && ollama pull qwen3:4b
 uv run ainews serve
 ```
 
@@ -57,6 +61,7 @@ uv run pytest                    # tests
 - `config/sources.yml` — all feed sources (Twitter, YouTube, RSS, RSSHub, Luma, arXiv)
 - `config/principles.yml` — scoring principles and tier definitions
 - Environment variables prefixed `AINEWS_` override defaults (see `src/ainews/config.py`)
+- `AINEWS_SCORING=false` — disable Ollama scoring (fetch only)
 
 ## Documentation
 

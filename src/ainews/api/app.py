@@ -31,15 +31,16 @@ async def _fetch_and_score():
     conn = get_db(settings.db_path)
     try:
         await run_ingestion(conn, settings.config_dir)
-        unscored = get_unscored_items(conn, limit=30)
-        if unscored:
-            principles = load_principles(settings.config_dir)
-            scored = await score_batch(
-                unscored, principles, settings.ollama_base_url, settings.ollama_model
-            )
-            for item, _ in scored:
-                upsert_item(conn, item)
-            conn.commit()
+        if settings.scoring:
+            unscored = get_unscored_items(conn, limit=30)
+            if unscored:
+                principles = load_principles(settings.config_dir)
+                scored = await score_batch(
+                    unscored, principles, settings.ollama_base_url, settings.ollama_model
+                )
+                for item, _ in scored:
+                    upsert_item(conn, item)
+                conn.commit()
     finally:
         conn.close()
 

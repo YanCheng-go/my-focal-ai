@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     fetch_interval_minutes: int = 30
     ollama_model: str = "qwen3:4b"
     ollama_base_url: str = "http://localhost:11434"
+    scoring: bool = True
     host: str = "0.0.0.0"
     port: int = 8000
 
