@@ -11,6 +11,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from ainews.api.admin import router as admin_router
 from ainews.config import Settings, load_principles
 from ainews.ingest.runner import run_ingestion
 from ainews.scoring.scorer import score_batch
@@ -65,6 +66,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="AI News Filter", version="0.1.0", lifespan=lifespan)
+app.include_router(admin_router)
+
 static_dir = str(settings.config_dir.parent / "static")
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 

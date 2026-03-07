@@ -170,6 +170,31 @@ def ingest_items(conn: sqlite3.Connection, source_key: str, items: list[ContentI
     return new_count
 
 
+def get_source_health(conn: sqlite3.Connection) -> dict[str, dict]:
+    """Get item counts and last fetch time per source."""
+    rows = conn.execute("""
+        SELECT source_name, source_type, COUNT(*) as item_count,
+               MAX(fetched_at) as last_fetched
+        FROM items WHERE is_duplicate_of IS NULL
+        GROUP BY source_name
+    """).fetchall()
+    health = {}
+    for row in rows:
+        health[row["source_name"]] = {
+            "source_type": row["source_type"],
+            "item_count": row["item_count"],
+            "last_fetched": row["last_fetched"],
+        }
+    # Also include source_state for last run times
+    state_rows = conn.execute("SELECT source_key, last_fetched_at FROM source_state").fetchall()
+    for row in state_rows:
+        key = row["source_key"]
+        if key not in health:
+            health[key] = {"source_type": "", "item_count": 0, "last_fetched": None}
+        health[key]["last_run"] = row["last_fetched_at"]
+    return health
+
+
 def _build_where(
     *,
     min_score: float | None = None,
