@@ -56,6 +56,18 @@ sources:
     - url: "https://research.facebook.com/feed/"
       name: "Meta Research"
       tags: [ai, research, meta, company]
+    - url: "https://www.microsoft.com/en-us/research/feed/"
+      name: "Microsoft Research"
+      tags: [ai, research, microsoft, company]
+    - url: "https://blogs.nvidia.com/feed/"
+      name: "NVIDIA Blog"
+      tags: [ai, nvidia, company]
+    - url: "https://developer.nvidia.com/blog/feed/"
+      name: "NVIDIA Developer"
+      tags: [ai, research, nvidia, engineering]
+    - url: "https://stability.ai/news?format=rss"
+      name: "Stability AI"
+      tags: [ai, research, stability, open-source]
 
     # --- Open source / community ---
     - url: "https://huggingface.co/blog/feed.xml"
@@ -88,6 +100,11 @@ sources:
       tags: [ai, anthropic, company]
     # Note: /anthropic/research route does not exist in RSSHub.
     # Anthropic research posts are included in /anthropic/news.
+    - route: "/cohere/blog"
+      name: "Cohere Blog"
+      source_type: "rss"
+      tags: [ai, research, cohere, company]
+    # Note: Mistral AI has no RSS feed and no working RSSHub route.
 
   # === Events (Luma) ===
   # Route: /luma/:handle
