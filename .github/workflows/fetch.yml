@@ -27,11 +27,11 @@ jobs:
           path: data/ainews.db
           key: ainews-db
 
-      # Fetch RSS/YouTube/arXiv feeds + score with Claude API (no Twitter/Ollama)
+      # Fetch RSS/YouTube/arXiv feeds; scores with Claude API if key is set
       - name: Fetch and score
         run: uv run ainews cloud-fetch
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || '' }}
 
       # Export scored items to static JSON
       - name: Export to JSON

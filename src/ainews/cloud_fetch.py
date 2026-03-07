@@ -1,14 +1,14 @@
 """Cloud-oriented fetch + score pipeline.
 
-Used by GitHub Actions. Fetches feeds (no Twitter), scores with Claude API,
-and stores results in the local SQLite DB for export.
+Used by GitHub Actions. Fetches feeds (no Twitter) and optionally scores
+with Claude API if ANTHROPIC_API_KEY is set.
 """
 
 import logging
+import os
 
 from ainews.config import Settings, load_principles
 from ainews.ingest.feeds import build_feed_urls, fetch_feed
-from ainews.scoring.claude_scorer import score_batch_claude
 from ainews.storage.db import (
     get_db,
     get_unscored_items,
@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 
 
 async def cloud_fetch_and_score():
-    """Fetch RSS/Atom feeds and score with Claude API. No Twitter, no Ollama."""
+    """Fetch RSS/Atom feeds. Scores with Claude API if ANTHROPIC_API_KEY is set."""
     settings = Settings()
     conn = get_db(settings.db_path)
 
@@ -50,15 +50,20 @@ async def cloud_fetch_and_score():
         if dupes:
             logger.info(f"Marked {dupes} YouTube Shorts as duplicates")
 
-        # Score with Claude API
-        unscored = get_unscored_items(conn, limit=30)
-        if unscored:
-            principles = load_principles(settings.config_dir)
-            scored = await score_batch_claude(unscored, principles)
-            for item, _ in scored:
-                upsert_item(conn, item)
-            conn.commit()
-            logger.info(f"Scored {len(scored)} items with Claude API")
+        # Score with Claude API if key is available
+        if os.environ.get("ANTHROPIC_API_KEY"):
+            from ainews.scoring.claude_scorer import score_batch_claude
+
+            unscored = get_unscored_items(conn, limit=30)
+            if unscored:
+                principles = load_principles(settings.config_dir)
+                scored = await score_batch_claude(unscored, principles)
+                for item, _ in scored:
+                    upsert_item(conn, item)
+                conn.commit()
+                logger.info(f"Scored {len(scored)} items with Claude API")
+        else:
+            logger.info("ANTHROPIC_API_KEY not set — skipping scoring")
 
         logger.info(f"Cloud fetch complete: {total_new} new items from {len(feeds)} feeds")
         return total_new
