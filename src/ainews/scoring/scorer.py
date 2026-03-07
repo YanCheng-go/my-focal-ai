@@ -55,12 +55,12 @@ def _build_user_prompt(item: ContentItem, principles: dict) -> str:
 Title: {item.title}
 Source: {item.source_name} ({item.source_type})
 Author: {item.author}
-Tags: {', '.join(item.tags)}
+Tags: {", ".join(item.tags)}
 Text: {text}
 
 ## Tier Matching
-Personal (weight {personal.get('weight', 1.0)}): {json.dumps(personal.get('focus', []))}
-Work (weight {work.get('weight', 0.7)}): {json.dumps(work.get('focus', []))}
+Personal (weight {personal.get("weight", 1.0)}): {json.dumps(personal.get("focus", []))}
+Work (weight {work.get("weight", 0.7)}): {json.dumps(work.get("focus", []))}
 
 Apply the three principles and score this item."""
 
