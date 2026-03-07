@@ -121,7 +121,7 @@ fi
 
 # --- Start app ---
 echo ""
-info "Starting dashboard at http://localhost:$APP_PORT"
+info "Starting dashboard at http://localhost:$APP_PORT (scoring: $SCORING)"
 echo "    Press Ctrl+C to stop"
 echo ""
 uv run ainews serve

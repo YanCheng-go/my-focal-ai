@@ -15,6 +15,7 @@ async def _fetch_source(source_name: str):
     from ainews.config import load_sources
     from ainews.ingest.feeds import build_feed_urls, fetch_feed
     from ainews.ingest.twitter import fetch_twitter_user, get_twitter_cookies_from_browser
+    from ainews.ingest.xiaohongshu import fetch_xhs_user, get_xhs_cookies_from_browser
     from ainews.storage.db import get_db, ingest_items
 
     settings = Settings()
@@ -36,6 +37,24 @@ async def _fetch_source(source_name: str):
                 print(f"Fetched {len(items)} tweets from @{handle} ({new_count} new)")
                 return
 
+        # Check Xiaohongshu users
+        xhs_users = sources_config.get("sources", {}).get("xiaohongshu", [])
+        for user in xhs_users:
+            user_id = user["user_id"]
+            name = user.get("name", user_id)
+            if source_name.lower() in (name.lower(), user_id.lower()):
+                cookies = get_xhs_cookies_from_browser()
+                if not cookies:
+                    print(
+                        "No XHS cookies found in Chrome."
+                        " Make sure you're logged into xiaohongshu.com."
+                    )
+                    return
+                items = await fetch_xhs_user(user_id, cookies, name=name, tags=user.get("tags", []))
+                new_count = ingest_items(conn, f"xiaohongshu:{user_id}", items)
+                print(f"Fetched {len(items)} notes from {name} ({new_count} new)")
+                return
+
         # Check all feed sources
         feeds = build_feed_urls(sources_config)
         matched = [f for f in feeds if source_name.lower() in f["source_name"].lower()]
@@ -47,6 +66,8 @@ async def _fetch_source(source_name: str):
                 print(f"  - {f['source_name']}")
             for u in twitter_users:
                 print(f"  - @{u['handle']}")
+            for u in xhs_users:
+                print(f"  - {u.get('name', u['user_id'])}")
             return
 
         for feed_meta in matched:
@@ -128,11 +149,14 @@ def main():
         sources_config = load_sources(settings.config_dir)
         feeds = build_feed_urls(sources_config)
         twitter_users = sources_config.get("sources", {}).get("twitter", [])
+        xhs_users = sources_config.get("sources", {}).get("xiaohongshu", [])
         print("Configured sources:")
         for f in feeds:
             print(f"  [{f['source_type']}] {f['source_name']}")
         for u in twitter_users:
             print(f"  [twitter] @{u['handle']}")
+        for u in xhs_users:
+            print(f"  [xiaohongshu] {u.get('name', u['user_id'])}")
     elif args.command == "twitter-setup":
         from ainews.ingest.twitter import setup_twitter_from_cookies
 
