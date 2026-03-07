@@ -1,6 +1,7 @@
 """FastAPI app — serves both JSON API and web dashboard."""
 
 import asyncio
+import logging
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta
 
@@ -22,6 +23,8 @@ from ainews.storage.db import (
     upsert_item,
 )
 
+logger = logging.getLogger(__name__)
+
 settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
 
@@ -41,6 +44,8 @@ async def _fetch_and_score():
                 for item, _ in scored:
                     upsert_item(conn, item)
                 conn.commit()
+        else:
+            logger.info("Scoring disabled (AINEWS_SCORING=false)")
     finally:
         conn.close()
 
