@@ -40,9 +40,7 @@ sources:
     - url: "https://openai.com/blog/rss.xml"
       name: "OpenAI Blog"
       tags: [ai, openai, company]
-    - url: "https://www.anthropic.com/feed.xml"
-      name: "Anthropic Blog"
-      tags: [ai, anthropic, research]
+    # Anthropic has no public RSS — use RSSHub route instead (see rsshub section below)
 
     # --- Open source / community ---
     - url: "https://huggingface.co/blog/feed.xml"
@@ -64,6 +62,21 @@ sources:
     # - user_id: "YOUR_USER_ID"
     #   name: "Account Name"
     #   tags: [ai]
+
+  # === RSSHub-scraped sites (no native RSS) ===
+  rsshub:
+    - route: "/anthropic/news"
+      name: "Anthropic News"
+      source_type: "rss"
+      tags: [ai, anthropic, company]
+    - route: "/anthropic/research"
+      name: "Anthropic Research"
+      source_type: "rss"
+      tags: [ai, anthropic, research]
+    - route: "/claude/changelog"
+      name: "Claude Changelog"
+      source_type: "rss"
+      tags: [ai, claude, anthropic, product]
 
   # === Events (Luma) ===
   # RSSHub route: /lu.ma/community/:handle

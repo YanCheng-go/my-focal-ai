@@ -109,6 +109,15 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             "tags": feed.get("tags", []),
         })
 
+    # Generic RSSHub routes (for sites without native RSS)
+    for item in sources.get("rsshub", []):
+        feeds.append({
+            "url": f"{rsshub_base}{item['route']}",
+            "source_name": item.get("name", item["route"]),
+            "source_type": item.get("source_type", "rss"),
+            "tags": item.get("tags", []),
+        })
+
     # Luma events via RSSHub
     for event in sources.get("luma", []):
         handle = event["handle"]
