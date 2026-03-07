@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Filter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 1.4rem; color: #fff; }
+
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .header-right { display: flex; gap: 8px; align-items: center; }
+
+        .search-input { padding: 6px 12px; border-radius: 6px; background: #1a1a1a; color: #e0e0e0; border: 1px solid #222; font-size: 0.85rem; width: 200px; outline: none; }
+        .search-input:focus { border-color: #2d5a8e; }
+        .search-input::placeholder { color: #555; }
+
+        .filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+        .filter-link { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; text-decoration: none; font-size: 0.85rem; border: 1px solid #222; cursor: pointer; }
+        .filter-link:hover { border-color: #333; color: #ccc; }
+        .filter-link.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
+
+        .tag-dropdown { position: relative; display: inline-block; }
+        .tag-dropdown-btn { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; font-size: 0.85rem; border: 1px solid #222; cursor: pointer; }
+        .tag-dropdown-btn:hover { border-color: #333; color: #ccc; }
+        .tag-dropdown-btn.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
+        .tag-dropdown-content { display: none; position: absolute; top: 100%; left: 0; margin-top: 4px; background: #1a1a1a; border: 1px solid #333; border-radius: 6px; min-width: 160px; max-height: 300px; overflow-y: auto; z-index: 10; }
+        .tag-dropdown:hover .tag-dropdown-content { display: block; }
+        .tag-dropdown-content a { display: block; padding: 6px 14px; color: #aaa; text-decoration: none; font-size: 0.85rem; cursor: pointer; }
+        .tag-dropdown-content a:hover { background: #222; color: #e0e0e0; }
+        .tag-dropdown-content a.active { color: #7cb8ff; }
+
+        .status-bar { font-size: 0.8rem; color: #555; margin-bottom: 16px; }
+
+        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
+        .item:hover { border-color: #333; }
+        .item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+        .item-title { font-size: 1rem; font-weight: 600; }
+        .item-title a { color: #e0e0e0; text-decoration: none; }
+        .item-title a:hover { color: #7cb8ff; }
+        .score { flex-shrink: 0; font-size: 0.85rem; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
+        .score-high { background: #1a3d1a; color: #4ade80; }
+        .score-mid { background: #3d3d1a; color: #facc15; }
+        .score-low { background: #1a1a1a; color: #666; }
+        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
+        .tier-personal { background: #1e1a3d; color: #a78bfa; }
+        .tier-work { background: #1a2e3d; color: #67e8f9; }
+        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.4; }
+        .item-reason { margin-top: 8px; font-size: 0.85rem; color: #888; font-style: italic; }
+        .empty { text-align: center; padding: 60px 20px; color: #444; }
+
+        .pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 24px; padding: 16px 0; }
+        .pagination button { padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; background: #1a1a1a; color: #aaa; border: 1px solid #222; cursor: pointer; }
+        .pagination button:hover { border-color: #333; color: #e0e0e0; }
+        .pagination button:disabled { color: #333; cursor: default; pointer-events: none; }
+        .pagination .current { background: #1e3a5f; color: #7cb8ff; border: 1px solid #2d5a8e; padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; }
+
+        .updated { font-size: 0.75rem; color: #444; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI News Filter</h1>
+            <div class="header-right">
+                <input class="search-input" type="text" id="search" placeholder="Search titles, sources..." oninput="render()">
+                <span class="updated" id="updated"></span>
+            </div>
+        </div>
+
+        <div class="filters" id="filters"></div>
+        <div class="status-bar" id="status"></div>
+        <div id="items"></div>
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <script>
+    const PER_PAGE = 30;
+    let allItems = [];
+    let allTags = [];
+    let filters = { source_type: null, tier: null, tag: null, order_by: 'date' };
+    let page = 1;
+
+    async function init() {
+        try {
+            const resp = await fetch('data.json');
+            const data = await resp.json();
+            allItems = data.items || [];
+            allTags = data.all_tags || [];
+            document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString();
+            buildFilters();
+            render();
+        } catch (e) {
+            document.getElementById('items').innerHTML = '<div class="empty"><p>No data yet. Waiting for first fetch cycle.</p></div>';
+        }
+    }
+
+    function buildFilters() {
+        const types = [...new Set(allItems.map(i => i.source_type))].sort();
+        let html = '<button class="filter-link active" onclick="setFilter({})">All</button>';
+        html += '<button class="filter-link" onclick="setFilter({tier:\'personal\'})">Personal</button>';
+        html += '<button class="filter-link" onclick="setFilter({tier:\'work\'})">Work</button>';
+        types.forEach(t => {
+            const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
+            html += `<button class="filter-link" onclick="setFilter({source_type:'${t}'})">${label}</button>`;
+        });
+        html += '<button class="filter-link" onclick="setFilter({order_by:\'score\'})">By Score</button>';
+
+        if (allTags.length) {
+            html += '<div class="tag-dropdown"><button class="tag-dropdown-btn">Tags</button><div class="tag-dropdown-content">';
+            allTags.forEach(t => {
+                html += `<a onclick="setFilter({tag:'${t}'})">${t}</a>`;
+            });
+            html += '</div></div>';
+        }
+        document.getElementById('filters').innerHTML = html;
+    }
+
+    function setFilter(f) {
+        filters = { source_type: null, tier: null, tag: null, order_by: 'date', ...f };
+        page = 1;
+        render();
+    }
+
+    function getFiltered() {
+        const search = document.getElementById('search').value.toLowerCase();
+        return allItems.filter(item => {
+            if (filters.source_type && item.source_type !== filters.source_type) return false;
+            if (filters.tier && item.tier !== filters.tier) return false;
+            if (filters.tag && !(item.tags || []).includes(filters.tag)) return false;
+            if (search && !item.title.toLowerCase().includes(search) &&
+                !item.source_name.toLowerCase().includes(search) &&
+                !(item.summary || '').toLowerCase().includes(search)) return false;
+            return true;
+        }).sort((a, b) => {
+            if (filters.order_by === 'score') return (b.score || 0) - (a.score || 0);
+            if (a.source_type === 'luma' && b.source_type !== 'luma') return 1;
+            if (b.source_type === 'luma' && a.source_type !== 'luma') return -1;
+            return new Date(b.published_at || b.fetched_at) - new Date(a.published_at || a.fetched_at);
+        });
+    }
+
+    function render() {
+        const filtered = getFiltered();
+        const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+        if (page > totalPages) page = totalPages;
+        const start = (page - 1) * PER_PAGE;
+        const pageItems = filtered.slice(start, start + PER_PAGE);
+
+        // Update active filter buttons
+        document.querySelectorAll('.filter-link').forEach(btn => btn.classList.remove('active'));
+        const btns = document.querySelectorAll('.filter-link');
+        if (!filters.source_type && !filters.tier && !filters.tag && filters.order_by === 'date') {
+            btns[0]?.classList.add('active');
+        }
+
+        // Status
+        const search = document.getElementById('search').value;
+        let statusText = `${filtered.length} items`;
+        if (search) statusText += ` matching "${search}"`;
+        statusText += ` \u00b7 Page ${page} of ${totalPages}`;
+        document.getElementById('status').textContent = statusText;
+
+        // Items
+        if (pageItems.length === 0) {
+            document.getElementById('items').innerHTML = '<div class="empty"><p>No items match your filters.</p></div>';
+        } else {
+            document.getElementById('items').innerHTML = pageItems.map(item => {
+                const scoreClass = item.score >= 0.7 ? 'score-high' : item.score >= 0.4 ? 'score-mid' : 'score-low';
+                const scoreHtml = item.score != null ? `<span class="score ${scoreClass}">${Math.round(item.score * 100)}</span>` : '';
+                const isShort = item.url.includes('/shorts/');
+                const typeTag = isShort ? 'YT Short' : item.source_type;
+                const tierHtml = item.tier ? `<span class="tag tier-${item.tier}">${item.tier}</span>` : '';
+                const tagsHtml = (item.tags || []).slice(0, 3).map(t => `<span class="tag">${t}</span>`).join('');
+                const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
+                const dateLabel = item.source_type === 'luma' && pubDate ? `Event: ${pubDate}` : pubDate;
+                const summary = item.summary ? item.summary.slice(0, 200) + (item.summary.length > 200 ? '...' : '') : '';
+
+                return `<div class="item">
+                    <div class="item-header">
+                        <div class="item-title"><a href="${item.url}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a></div>
+                        ${scoreHtml}
+                    </div>
+                    <div class="item-meta">
+                        <span>${escapeHtml(item.source_name)}</span>
+                        <span class="tag">${typeTag}</span>
+                        ${tierHtml}${tagsHtml}
+                        ${dateLabel ? `<span>${dateLabel}</span>` : ''}
+                    </div>
+                    ${summary ? `<div class="item-summary">${escapeHtml(summary)}</div>` : ''}
+                    ${item.score_reason ? `<div class="item-reason">${escapeHtml(item.score_reason)}</div>` : ''}
+                </div>`;
+            }).join('');
+        }
+
+        // Pagination
+        if (totalPages > 1) {
+            let pHtml = `<button onclick="goPage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>Prev</button>`;
+            pHtml += `<span class="current">${page}</span>`;
+            pHtml += `<button onclick="goPage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Next</button>`;
+            document.getElementById('pagination').innerHTML = pHtml;
+        } else {
+            document.getElementById('pagination').innerHTML = '';
+        }
+    }
+
+    function goPage(p) { page = p; render(); window.scrollTo(0, 0); }
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    init();
+    </script>
+</body>
+</html>
