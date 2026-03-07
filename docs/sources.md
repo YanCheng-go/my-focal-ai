@@ -126,3 +126,7 @@ arxiv_queries:
 - **XHS** requires cookies and chromium-bundled RSSHub image (captcha issues)
 - **Tags are source-level** — every item from a source gets the same tags, not per-item content tags
 - **RSS has no "since" support** — full feed is re-downloaded every cycle, but only new items are stored
+
+---
+
+*Last updated: 2026-03-07*

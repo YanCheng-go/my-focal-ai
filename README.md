@@ -44,3 +44,7 @@ uv run pytest                    # tests
 - [docs/architecture.md](docs/architecture.md) — data flow, design decisions, module map
 - [docs/sources.md](docs/sources.md) — how to configure and add sources
 - [docs/scoring.md](docs/scoring.md) — three principles, tiers, LLM prompt, score interpretation
+
+---
+
+*Last updated: 2026-03-07*

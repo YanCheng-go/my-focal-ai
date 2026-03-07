@@ -128,3 +128,7 @@ The LLM responds with JSON:
 | Model | qwen3:4b | `AINEWS_OLLAMA_MODEL` |
 | Ollama URL | http://localhost:11434 | `AINEWS_OLLAMA_BASE_URL` |
 | Fetch interval | 30 min | `AINEWS_FETCH_INTERVAL_MINUTES` |
+
+---
+
+*Last updated: 2026-03-07*

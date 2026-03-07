@@ -80,3 +80,7 @@ config/
 templates/
 └── dashboard.html     Jinja2 dark-theme dashboard
 ```
+
+---
+
+*Last updated: 2026-03-07*
