@@ -58,10 +58,10 @@ sources:
   # === Xiaohongshu ===
   # Route format: /xiaohongshu/user/:user_id/notes
   # Find user_id from their profile URL.
-  xiaohongshu: []
-    # - user_id: "YOUR_USER_ID"
-    #   name: "Account Name"
-    #   tags: [ai]
+  xiaohongshu:
+    - user_id: "62fb991800000000120027ee"
+      name: "第四种黑猩猩"
+      tags: [ai]
 
   # === RSSHub-scraped sites (no native RSS) ===
   rsshub:
