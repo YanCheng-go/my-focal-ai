@@ -2,7 +2,7 @@ services:
   rsshub:
     # Use chromium image for XHS (Xiaohongshu) support — it includes Puppeteer.
     # Switch to diygod/rsshub:latest if you don't need XHS and want a smaller image.
-    image: diygod/rsshub:chromium
+    image: diygod/rsshub:chromium-bundled
     restart: unless-stopped
     ports:
       - "1200:1200"
