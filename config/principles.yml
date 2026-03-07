@@ -1,0 +1,109 @@
+# Scoring principles for ai-news-filter
+#
+# Core test: "Would I still learn something from this if AI hype disappeared tomorrow?"
+
+topic: "AI and technology"
+
+# === Three Foundational Principles ===
+# These are evaluated in order. All three must be considered for every item.
+
+principles:
+  signal_over_noise:
+    name: "Signal over Noise (Shannon)"
+    description: "Prefer sources that produce verifiable signal"
+    indicators:
+      signal:
+        - "Contains reproducible results, benchmarks, or code"
+        - "References specific methods, architectures, or datasets"
+        - "Provides new information not already widely circulated"
+        - "Includes evidence or data supporting its claims"
+      noise:
+        - "Vague claims without specifics ('this changes everything')"
+        - "Restates press releases or other coverage without adding insight"
+        - "Emotional framing designed to generate engagement"
+        - "Redundant coverage of the same story"
+
+  mechanism_over_opinion:
+    name: "Mechanisms over Opinions (First Principles)"
+    description: "Prefer explanations of how/why things work over assertions"
+    indicators:
+      mechanism:
+        - "Explains WHY a model/method works, not just that it does"
+        - "Discusses constraints, tradeoffs, and failure modes"
+        - "Shows architecture decisions, training details, ablations"
+        - "Asks 'what evidence exists?' and 'what constraints apply?'"
+      opinion:
+        - "Makes claims without explanation ('this AI is amazing')"
+        - "Appeals to authority or popularity instead of evidence"
+        - "Presents conclusions without showing reasoning"
+
+  builders_over_commentators:
+    name: "Builders over Commentators (Skin in the Game)"
+    description: "Prefer people who build things over people who comment on things"
+    source_trust:
+      high:
+        - "ML engineers, researchers publishing code"
+        - "People deploying models in production"
+        - "Authors of papers, frameworks, or tools"
+        - "Engineering blogs from labs (OpenAI, Anthropic, DeepMind, Meta AI)"
+      low:
+        - "AI influencers and hype commentators"
+        - "Tool reviewers without implementation experience"
+        - "Aggregators that repackage without adding analysis"
+
+# === Information Flow Model ===
+# Signal originates at the top and gets distorted as it flows down.
+# Strategy: stay as close to the source of creation as possible.
+#
+#   Researchers    -> new ideas          (highest signal)
+#   Engineers      -> implementation
+#   Companies      -> products
+#   Influencers    -> amplification
+#   Media          -> hype cycles        (lowest signal)
+
+source_proximity:
+  tier_1_origin:
+    - "Research papers (ACM, NeurIPS, ICML, ArXiv)"
+    - "Open research and code (GitHub, Hugging Face)"
+    - "Researcher/engineer personal blogs and threads"
+  tier_2_implementation:
+    - "Engineering blogs from AI companies"
+    - "Practitioner discussions (X, Substack)"
+    - "Technical tutorials with working code"
+  tier_3_derivative:
+    - "News coverage of research (acceptable if adds context)"
+    - "Company product announcements"
+  tier_4_noise:
+    - "Hype amplification and hot takes"
+    - "Listicles and 'top 10 AI tools' content"
+    - "Engagement-bait threads"
+
+# === Tiers (personal vs work) ===
+
+tiers:
+  personal:
+    description: "Deep technical learning"
+    weight: 1.0
+    focus:
+      - "Foundational model breakthroughs (architecture, training, capabilities)"
+      - "Open-source tooling, frameworks, libraries"
+      - "Novel research directions and paradigm shifts"
+      - "Mechanistic interpretability and understanding"
+
+  work:
+    description: "Professional relevance — what tools to use, how others transform"
+    weight: 0.7
+    focus:
+      - "AI tooling evaluations and practical comparisons"
+      - "How companies are adopting and integrating AI"
+      - "Architecture decisions and lessons learned in production"
+      - "Competitive landscape shifts that affect strategy"
+
+# === Dedup & Social ===
+
+dedup:
+  enabled: true
+  similarity_threshold: 0.8
+
+social_boost:
+  interacted_users: 1.3

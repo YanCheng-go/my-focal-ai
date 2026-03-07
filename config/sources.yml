@@ -1,0 +1,50 @@
+# Source configuration for ai-news-filter
+# Each source maps to an RSSHub route or direct RSS/Atom feed URL.
+#
+# RSSHub docs: https://docs.rsshub.app/
+# When rsshub is running locally at http://localhost:1200, a route like
+# /twitter/user/kaborobo becomes http://localhost:1200/twitter/user/kaborobo
+
+rsshub_base: "http://localhost:1200"
+
+sources:
+  # === Twitter/X ===
+  # Route format: /twitter/user/:screenName
+  # Requires RSSHub twitter config (see docker/docker-compose.yml)
+  twitter:
+    - handle: "example_user"
+      # route: /twitter/user/example_user
+      tags: [ai, research]
+
+  # === Xiaohongshu (Little Red Book) ===
+  # Route format: /xiaohongshu/user/:user_id/notes
+  xiaohongshu:
+    - user_id: "example_id"
+      name: "Example User"
+      tags: [ai, chinese-tech]
+
+  # === YouTube ===
+  # YouTube has native RSS — no RSSHub needed.
+  # Feed URL: https://www.youtube.com/feeds/videos.xml?channel_id=CHANNEL_ID
+  youtube:
+    - channel_id: "UCbfYPyITQ-7l4upoX8nvctg"  # Two Minute Papers
+      name: "Two Minute Papers"
+      tags: [ai, research]
+    - channel_id: "UCWN3xxRkmTPphYit_WO_JRw"  # Yannic Kilcher
+      name: "Yannic Kilcher"
+      tags: [ai, research, ml]
+
+  # === Direct RSS/Atom feeds ===
+  rss:
+    - url: "https://arxiv.org/rss/cs.AI"
+      name: "arXiv cs.AI"
+      tags: [ai, research, papers]
+    - url: "https://simonwillison.net/atom/everything/"
+      name: "Simon Willison"
+      tags: [ai, tooling, open-source]
+    - url: "https://lilianweng.github.io/index.xml"
+      name: "Lilian Weng"
+      tags: [ai, research, deep-learning]
+
+# Add your own sources below. Use tags to help the scoring engine
+# understand the context of each source.

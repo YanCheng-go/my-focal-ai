@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Filter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 1.4rem; margin-bottom: 16px; color: #fff; }
+        .filters { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+        .filters a { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; text-decoration: none; font-size: 0.85rem; border: 1px solid #222; }
+        .filters a.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
+        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
+        .item:hover { border-color: #333; }
+        .item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+        .item-title { font-size: 1rem; font-weight: 600; }
+        .item-title a { color: #e0e0e0; text-decoration: none; }
+        .item-title a:hover { color: #7cb8ff; }
+        .score { flex-shrink: 0; font-size: 0.85rem; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
+        .score-high { background: #1a3d1a; color: #4ade80; }
+        .score-mid { background: #3d3d1a; color: #facc15; }
+        .score-low { background: #1a1a1a; color: #666; }
+        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 12px; flex-wrap: wrap; }
+        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
+        .tier-personal { background: #1e1a3d; color: #a78bfa; }
+        .tier-work { background: #1a2e3d; color: #67e8f9; }
+        .item-reason { margin-top: 8px; font-size: 0.85rem; color: #888; font-style: italic; }
+        .empty { text-align: center; padding: 60px 20px; color: #444; }
+        .btn-fetch { padding: 6px 14px; border-radius: 6px; background: #1e3a5f; color: #7cb8ff; border: 1px solid #2d5a8e; cursor: pointer; font-size: 0.85rem; }
+        .btn-fetch:hover { background: #2d5a8e; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+            <h1>AI News Filter</h1>
+            <button class="btn-fetch" onclick="fetch('/api/fetch',{method:'POST'}).then(()=>location.reload())">Fetch Now</button>
+        </div>
+
+        <div class="filters">
+            <a href="/" class="{{ 'active' if not filters.source_type and not filters.tier }}">All</a>
+            <a href="/?tier=personal" class="{{ 'active' if filters.tier == 'personal' }}">Personal</a>
+            <a href="/?tier=work" class="{{ 'active' if filters.tier == 'work' }}">Work</a>
+            <a href="/?source_type=twitter" class="{{ 'active' if filters.source_type == 'twitter' }}">Twitter</a>
+            <a href="/?source_type=youtube" class="{{ 'active' if filters.source_type == 'youtube' }}">YouTube</a>
+            <a href="/?source_type=xiaohongshu" class="{{ 'active' if filters.source_type == 'xiaohongshu' }}">XHS</a>
+            <a href="/?source_type=rss" class="{{ 'active' if filters.source_type == 'rss' }}">RSS</a>
+            <a href="/?min_score=0.7" class="{{ 'active' if filters.min_score and filters.min_score >= 0.7 }}">Top Only</a>
+        </div>
+
+        {% if items %}
+            {% for item in items %}
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">
+                        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+                    </div>
+                    {% if item.score is not none %}
+                    <span class="score {{ 'score-high' if item.score >= 0.7 else 'score-mid' if item.score >= 0.4 else 'score-low' }}">
+                        {{ "%.0f"|format(item.score * 100) }}
+                    </span>
+                    {% endif %}
+                </div>
+                <div class="item-meta">
+                    <span>{{ item.source_name }}</span>
+                    <span>{{ item.source_type }}</span>
+                    {% if item.tier %}
+                    <span class="tag tier-{{ item.tier }}">{{ item.tier }}</span>
+                    {% endif %}
+                    {% if item.published_at %}
+                    <span>{{ item.published_at.strftime('%b %d, %H:%M') }}</span>
+                    {% endif %}
+                </div>
+                {% if item.score_reason %}
+                <div class="item-reason">{{ item.score_reason }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        {% else %}
+            <div class="empty">
+                <p>No items yet. Click "Fetch Now" or wait for the next scheduled fetch.</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
