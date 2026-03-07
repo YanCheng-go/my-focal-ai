@@ -5,7 +5,6 @@ from pathlib import Path
 import yaml
 from pydantic_settings import BaseSettings
 
-
 CONFIG_DIR = Path(__file__).parent.parent.parent / "config"
 
 

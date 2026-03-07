@@ -5,13 +5,11 @@ import json
 import logging
 import sqlite3
 from datetime import datetime
-from pathlib import Path
-from urllib.parse import quote
 
 import httpx
 
 from ainews.models import ContentItem
-from ainews.storage.db import item_exists, set_last_fetched, upsert_item
+from ainews.storage.db import ingest_items
 
 logger = logging.getLogger(__name__)
 
@@ -192,14 +190,9 @@ async def run_twitter_ingestion(conn: sqlite3.Connection, sources_config: dict):
         source_key = f"twitter:@{handle}"
         try:
             items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
-            new_count = 0
-            for item in items:
-                if not item_exists(conn, item.id):
-                    upsert_item(conn, item)
-                    new_count += 1
+            new_count = ingest_items(conn, source_key, items)
             if new_count > 0:
                 logger.info(f"Fetched {new_count} new tweets from @{handle} ({len(items) - new_count} skipped)")
-            set_last_fetched(conn, source_key)
             total += new_count
         except Exception:
             logger.exception(f"Failed to fetch @{handle}")

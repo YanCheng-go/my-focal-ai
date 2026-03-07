@@ -12,65 +12,52 @@ from ainews.config import Settings
 
 async def _fetch_source(source_name: str):
     """Fetch a single source by name (one-time)."""
-    from pathlib import Path
-
     from ainews.config import load_sources
     from ainews.ingest.feeds import build_feed_urls, fetch_feed
-    from ainews.ingest.twitter import get_twitter_cookies_from_browser, fetch_twitter_user
-    from ainews.storage.db import get_db, item_exists, set_last_fetched, upsert_item
+    from ainews.ingest.twitter import fetch_twitter_user, get_twitter_cookies_from_browser
+    from ainews.storage.db import get_db, ingest_items
 
     settings = Settings()
     conn = get_db(settings.db_path)
-    sources_config = load_sources(settings.config_dir)
+    try:
+        sources_config = load_sources(settings.config_dir)
 
-    # Check Twitter handles
-    twitter_users = sources_config.get("sources", {}).get("twitter", [])
-    for user in twitter_users:
-        handle = user["handle"]
-        if source_name.lower() in (handle.lower(), f"@{handle}".lower()):
-            cookies = get_twitter_cookies_from_browser()
-            if not cookies:
-                print("No Twitter cookies found in Chrome. Make sure you're logged into x.com.")
+        # Check Twitter handles
+        twitter_users = sources_config.get("sources", {}).get("twitter", [])
+        for user in twitter_users:
+            handle = user["handle"]
+            if source_name.lower() in (handle.lower(), f"@{handle}".lower()):
+                cookies = get_twitter_cookies_from_browser()
+                if not cookies:
+                    print("No Twitter cookies found in Chrome. Make sure you're logged into x.com.")
+                    return
+                items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
+                new_count = ingest_items(conn, f"twitter:@{handle}", items)
+                print(f"Fetched {len(items)} tweets from @{handle} ({new_count} new)")
                 return
-            items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
-            new_count = 0
-            for item in items:
-                if not item_exists(conn, item.id):
-                    upsert_item(conn, item)
-                    new_count += 1
-            set_last_fetched(conn, f"twitter:@{handle}")
-            print(f"Fetched {len(items)} tweets from @{handle} ({new_count} new)")
-            conn.close()
+
+        # Check all feed sources
+        feeds = build_feed_urls(sources_config)
+        matched = [f for f in feeds if source_name.lower() in f["source_name"].lower()]
+
+        if not matched:
+            print(f"No source found matching '{source_name}'.")
+            print("\nAvailable sources:")
+            for f in feeds:
+                print(f"  - {f['source_name']}")
+            for u in twitter_users:
+                print(f"  - @{u['handle']}")
             return
 
-    # Check all feed sources
-    feeds = build_feed_urls(sources_config)
-    matched = [f for f in feeds if source_name.lower() in f["source_name"].lower()]
-
-    if not matched:
-        print(f"No source found matching '{source_name}'.")
-        print("\nAvailable sources:")
-        for f in feeds:
-            print(f"  - {f['source_name']}")
-        for u in twitter_users:
-            print(f"  - @{u['handle']}")
+        for feed_meta in matched:
+            try:
+                items = await fetch_feed(**feed_meta)
+                new_count = ingest_items(conn, feed_meta["source_name"], items)
+                print(f"Fetched {len(items)} items from {feed_meta['source_name']} ({new_count} new)")
+            except Exception as e:
+                print(f"Failed to fetch {feed_meta['source_name']}: {e}")
+    finally:
         conn.close()
-        return
-
-    for feed_meta in matched:
-        try:
-            items = await fetch_feed(**feed_meta)
-            new_count = 0
-            for item in items:
-                if not item_exists(conn, item.id):
-                    upsert_item(conn, item)
-                    new_count += 1
-            set_last_fetched(conn, feed_meta["source_name"])
-            print(f"Fetched {len(items)} items from {feed_meta['source_name']} ({new_count} new)")
-        except Exception as e:
-            print(f"Failed to fetch {feed_meta['source_name']}: {e}")
-
-    conn.close()
 
 
 def main():

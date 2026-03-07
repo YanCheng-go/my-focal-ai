@@ -45,7 +45,24 @@ def _init_schema(conn: sqlite3.Connection):
             source_key TEXT PRIMARY KEY,
             last_fetched_at TEXT NOT NULL
         );
+
+        CREATE TABLE IF NOT EXISTS item_tags (
+            item_id TEXT NOT NULL,
+            tag TEXT NOT NULL,
+            PRIMARY KEY (item_id, tag),
+            FOREIGN KEY (item_id) REFERENCES items(id)
+        );
+        CREATE INDEX IF NOT EXISTS idx_item_tags_tag ON item_tags(tag);
     """)
+
+
+def _sync_tags(conn: sqlite3.Connection, item_id: str, tags: list[str]):
+    """Insert tags into the item_tags junction table."""
+    if tags:
+        conn.executemany(
+            "INSERT OR IGNORE INTO item_tags (item_id, tag) VALUES (?, ?)",
+            [(item_id, tag) for tag in tags],
+        )
 
 
 def get_last_fetched(conn: sqlite3.Connection, source_key: str) -> datetime | None:
@@ -58,48 +75,66 @@ def get_last_fetched(conn: sqlite3.Connection, source_key: str) -> datetime | No
 
 
 def set_last_fetched(conn: sqlite3.Connection, source_key: str, ts: datetime | None = None):
+    """Update last_fetched_at for a source. Does NOT commit — caller must commit."""
     ts = ts or datetime.now()
     conn.execute(
         """INSERT INTO source_state (source_key, last_fetched_at) VALUES (?, ?)
            ON CONFLICT(source_key) DO UPDATE SET last_fetched_at = excluded.last_fetched_at""",
         (source_key, ts.isoformat()),
     )
-    conn.commit()
 
 
 def mark_youtube_shorts_duplicates(conn: sqlite3.Connection) -> int:
     """Mark YouTube Shorts as duplicates when a full video with the same title exists from the same source."""
-    # Find shorts that have a matching full video
-    rows = conn.execute("""
-        SELECT s.id as short_id, f.id as full_id
-        FROM items s
-        JOIN items f ON f.source_name = s.source_name
-                    AND LOWER(f.title) = LOWER(s.title)
-                    AND f.url LIKE '%youtube.com/watch?v=%'
-        WHERE s.url LIKE '%youtube.com/shorts/%'
-          AND s.is_duplicate_of IS NULL
-    """).fetchall()
-    for row in rows:
-        conn.execute("UPDATE items SET is_duplicate_of = ? WHERE id = ?",
-                     (row["full_id"], row["short_id"]))
+    cursor = conn.execute("""
+        UPDATE items SET is_duplicate_of = (
+            SELECT f.id FROM items f
+            WHERE f.source_name = items.source_name
+              AND LOWER(f.title) = LOWER(items.title)
+              AND f.url LIKE '%youtube.com/watch?v=%'
+            LIMIT 1
+        )
+        WHERE items.url LIKE '%youtube.com/shorts/%'
+          AND items.is_duplicate_of IS NULL
+          AND EXISTS (
+              SELECT 1 FROM items f
+              WHERE f.source_name = items.source_name
+                AND LOWER(f.title) = LOWER(items.title)
+                AND f.url LIKE '%youtube.com/watch?v=%'
+          )
+    """)
     conn.commit()
-    return len(rows)
+    return cursor.rowcount
 
 
-def item_exists(conn: sqlite3.Connection, item_id: str) -> bool:
-    row = conn.execute("SELECT 1 FROM items WHERE id = ?", (item_id,)).fetchone()
-    return row is not None
+def get_existing_ids(conn: sqlite3.Connection, item_ids: list[str]) -> set[str]:
+    """Batch-check which item IDs already exist in the DB."""
+    if not item_ids:
+        return set()
+    result: set[str] = set()
+    # Chunk to stay under SQLite's SQLITE_MAX_VARIABLE_NUMBER (default 999)
+    for i in range(0, len(item_ids), 900):
+        chunk = item_ids[i:i + 900]
+        placeholders = ",".join("?" * len(chunk))
+        rows = conn.execute(
+            f"SELECT id FROM items WHERE id IN ({placeholders})", chunk
+        ).fetchall()
+        result.update(row["id"] for row in rows)
+    return result
 
 
 def upsert_item(conn: sqlite3.Connection, item: ContentItem):
+    """Insert or update a single item. Does NOT commit — caller must commit."""
     conn.execute(
         """INSERT INTO items (id, url, title, summary, content, source_name, source_type,
            tags, author, published_at, fetched_at, score, score_reason, tier, is_duplicate_of)
            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
            ON CONFLICT(id) DO UPDATE SET
              score=COALESCE(excluded.score, items.score),
-             score_reason=COALESCE(excluded.score_reason, items.score_reason),
-             tier=COALESCE(excluded.tier, items.tier),
+             score_reason=CASE WHEN excluded.score_reason IS NOT NULL AND excluded.score_reason != ''
+                               THEN excluded.score_reason ELSE items.score_reason END,
+             tier=CASE WHEN excluded.tier IS NOT NULL AND excluded.tier != ''
+                       THEN excluded.tier ELSE items.tier END,
              is_duplicate_of=COALESCE(excluded.is_duplicate_of, items.is_duplicate_of)
         """,
         (
@@ -110,7 +145,20 @@ def upsert_item(conn: sqlite3.Connection, item: ContentItem):
             item.tier, item.is_duplicate_of,
         ),
     )
+    _sync_tags(conn, item.id, item.tags)
+
+
+def ingest_items(conn: sqlite3.Connection, source_key: str, items: list[ContentItem]) -> int:
+    """Check for duplicates, upsert new items, and update last_fetched. Returns count of new items."""
+    existing = get_existing_ids(conn, [i.id for i in items])
+    new_count = 0
+    for item in items:
+        if item.id not in existing:
+            upsert_item(conn, item)
+            new_count += 1
+    set_last_fetched(conn, source_key)
     conn.commit()
+    return new_count
 
 
 def _build_where(
@@ -123,26 +171,26 @@ def _build_where(
     search: str | None = None,
 ) -> tuple[str, list]:
     """Build WHERE clause and params for item queries."""
-    where = "WHERE is_duplicate_of IS NULL"
+    where = "WHERE items.is_duplicate_of IS NULL"
     params: list = []
 
     if min_score is not None:
-        where += " AND score >= ?"
+        where += " AND items.score >= ?"
         params.append(min_score)
     if source_type:
-        where += " AND source_type = ?"
+        where += " AND items.source_type = ?"
         params.append(source_type)
     if tier:
-        where += " AND tier = ?"
+        where += " AND items.tier = ?"
         params.append(tier)
     if since:
-        where += " AND fetched_at >= ?"
+        where += " AND items.fetched_at >= ?"
         params.append(since.isoformat())
     if tag:
-        where += " AND tags LIKE ?"
-        params.append(f'%"{tag}"%')
+        where += " AND items.id IN (SELECT item_id FROM item_tags WHERE tag = ?)"
+        params.append(tag)
     if search:
-        where += " AND (title LIKE ? OR summary LIKE ? OR source_name LIKE ?)"
+        where += " AND (items.title LIKE ? OR items.summary LIKE ? OR items.source_name LIKE ?)"
         term = f"%{search}%"
         params.extend([term, term, term])
 
@@ -168,13 +216,9 @@ def count_items(
 
 
 def get_all_tags(conn: sqlite3.Connection) -> list[str]:
-    """Get all unique tags from items."""
-    rows = conn.execute("SELECT DISTINCT tags FROM items WHERE is_duplicate_of IS NULL").fetchall()
-    tag_set: set[str] = set()
-    for row in rows:
-        for t in json.loads(row["tags"]):
-            tag_set.add(t)
-    return sorted(tag_set)
+    """Get all unique tags from the item_tags index table."""
+    rows = conn.execute("SELECT DISTINCT tag FROM item_tags ORDER BY tag").fetchall()
+    return [row["tag"] for row in rows]
 
 
 def get_items(
@@ -196,12 +240,12 @@ def get_items(
     )
 
     if order_by == "score":
-        query = f"SELECT * FROM items {where} ORDER BY score DESC NULLS LAST, published_at DESC, fetched_at DESC"
+        query = f"SELECT items.* FROM items {where} ORDER BY items.score DESC NULLS LAST, items.published_at DESC, items.fetched_at DESC"
     else:
         # Sort by published_at, but push events (luma) to the bottom
-        query = f"""SELECT * FROM items {where}
-            ORDER BY CASE WHEN source_type = 'luma' THEN 1 ELSE 0 END,
-                     published_at DESC NULLS LAST, fetched_at DESC"""
+        query = f"""SELECT items.* FROM items {where}
+            ORDER BY CASE WHEN items.source_type = 'luma' THEN 1 ELSE 0 END,
+                     items.published_at DESC NULLS LAST, items.fetched_at DESC"""
 
     query += " LIMIT ? OFFSET ?"
     params.extend([limit, offset])

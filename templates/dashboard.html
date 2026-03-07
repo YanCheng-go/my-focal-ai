@@ -187,15 +187,18 @@
                 <span class="disabled">Prev</span>
                 {% endif %}
 
+                {% set ns = namespace(last_shown=0) %}
                 {% for p in range(1, total_pages + 1) %}
-                    {% if p == page %}
-                    <span class="current">{{ p }}</span>
-                    {% elif p <= 3 or p > total_pages - 2 or (p >= page - 1 and p <= page + 1) %}
-                    <a href="/?page={{ p }}{{ '&' + qs_base if qs_base }}">{{ p }}</a>
-                    {% elif p == 4 and page > 5 %}
-                    <span style="color:#444">...</span>
-                    {% elif p == total_pages - 2 and page < total_pages - 4 %}
-                    <span style="color:#444">...</span>
+                    {% if p == page or p <= 2 or p > total_pages - 1 or (p >= page - 1 and p <= page + 1) %}
+                        {% if ns.last_shown and p > ns.last_shown + 1 %}
+                        <span style="color:#444">...</span>
+                        {% endif %}
+                        {% if p == page %}
+                        <span class="current">{{ p }}</span>
+                        {% else %}
+                        <a href="/?page={{ p }}{{ '&' + qs_base if qs_base }}">{{ p }}</a>
+                        {% endif %}
+                        {% set ns.last_shown = p %}
                     {% endif %}
                 {% endfor %}
 

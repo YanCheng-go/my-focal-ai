@@ -13,7 +13,14 @@ from fastapi.templating import Jinja2Templates
 from ainews.config import Settings, load_principles
 from ainews.ingest.runner import run_ingestion
 from ainews.scoring.scorer import score_batch
-from ainews.storage.db import count_items, get_all_tags, get_db, get_items, get_unscored_items, upsert_item
+from ainews.storage.db import (
+    count_items,
+    get_all_tags,
+    get_db,
+    get_items,
+    get_unscored_items,
+    upsert_item,
+)
 
 settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
@@ -32,6 +39,7 @@ async def _fetch_and_score():
             )
             for item, _ in scored:
                 upsert_item(conn, item)
+            conn.commit()
     finally:
         conn.close()
 
