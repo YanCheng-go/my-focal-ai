@@ -73,19 +73,8 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
     sources = sources_config.get("sources", {})
     feeds = []
 
-    # Twitter is handled separately via twscrape (see ingest/twitter.py)
-
-    # Xiaohongshu via RSSHub
-    for user in sources.get("xiaohongshu", []):
-        uid = user["user_id"]
-        feeds.append(
-            {
-                "url": f"{rsshub_base}/xiaohongshu/user/{uid}/notes",
-                "source_name": user.get("name", uid),
-                "source_type": "xiaohongshu",
-                "tags": user.get("tags", []),
-            }
-        )
+    # Twitter is handled separately (see ingest/twitter.py)
+    # Xiaohongshu is handled separately (see ingest/xiaohongshu.py)
 
     # YouTube native RSS
     for ch in sources.get("youtube", []):

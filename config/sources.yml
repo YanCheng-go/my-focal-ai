@@ -88,10 +88,7 @@ sources:
       tags: [ai, research, deep-learning]
 
   # === Xiaohongshu ===
-  # BLOCKED: RSSHub XHS route requires Puppeteer (headless Chrome).
-  # To enable, use the RSSHub chromium image:
-  #   image: diygod/rsshub:chromium
-  # in docker/docker-compose.yml
+  # Uses Chrome cookies directly (not RSSHub). Just stay logged into xiaohongshu.com in Chrome.
   xiaohongshu:
     - user_id: "62fb991800000000120027ee"
       name: "第四种黑猩猩"
