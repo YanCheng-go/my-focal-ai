@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Pre-commit hook: run ruff on staged Python files
+set -e
+
+STAGED_PY=$(git diff --cached --name-only --diff-filter=ACM | grep '\.py$' || true)
+
+if [ -z "$STAGED_PY" ]; then
+    exit 0
+fi
+
+echo "Running ruff check on staged files..."
+uv run ruff check $STAGED_PY
+
+echo "Running ruff format --check on staged files..."
+uv run ruff format --check $STAGED_PY

@@ -14,7 +14,10 @@ from ainews.storage.db import ingest_items
 logger = logging.getLogger(__name__)
 
 # Twitter web app bearer token (public, embedded in the JS bundle)
-BEARER = "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+BEARER = (  # noqa: E501
+    "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs"
+    "%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
+)
 
 
 def _make_id(url: str) -> str:
@@ -25,6 +28,7 @@ def get_twitter_cookies_from_browser() -> dict[str, str] | None:
     """Extract Twitter cookies from Chrome automatically."""
     try:
         import rookiepy
+
         cookies = rookiepy.chrome(domains=[".x.com", "x.com", ".twitter.com"])
         cookie_dict = {c["name"]: c["value"] for c in cookies}
         if "auth_token" in cookie_dict and "ct0" in cookie_dict:
@@ -59,15 +63,17 @@ async def fetch_twitter_user(
 
     # Step 1: Get user ID
     variables = json.dumps({"screen_name": handle, "withSafetyModeUserFields": True})
-    features = json.dumps({
-        "hidden_profile_subscriptions_enabled": True,
-        "profile_label_improvements_pcf_label_in_post_enabled": False,
-        "rweb_tipjar_consumption_enabled": True,
-        "responsive_web_graphql_exclude_directive_enabled": True,
-        "verified_phone_label_enabled": False,
-        "responsive_web_graphql_skip_user_profile_image_extensions_enabled": False,
-        "responsive_web_graphql_timeline_navigation_enabled": True,
-    })
+    features = json.dumps(
+        {
+            "hidden_profile_subscriptions_enabled": True,
+            "profile_label_improvements_pcf_label_in_post_enabled": False,
+            "rweb_tipjar_consumption_enabled": True,
+            "responsive_web_graphql_exclude_directive_enabled": True,
+            "verified_phone_label_enabled": False,
+            "responsive_web_graphql_skip_user_profile_image_extensions_enabled": False,
+            "responsive_web_graphql_timeline_navigation_enabled": True,
+        }
+    )
 
     async with httpx.AsyncClient(timeout=30) as client:
         resp = await client.get(
@@ -87,35 +93,39 @@ async def fetch_twitter_user(
             return []
 
         # Step 2: Get user tweets
-        variables = json.dumps({
-            "userId": user_id,
-            "count": limit,
-            "includePromotedContent": False,
-            "withQuickPromoteEligibilityTweetFields": False,
-            "withVoice": False,
-            "withV2Timeline": True,
-        })
-        features = json.dumps({
-            "rweb_tipjar_consumption_enabled": True,
-            "responsive_web_graphql_exclude_directive_enabled": True,
-            "verified_phone_label_enabled": False,
-            "responsive_web_graphql_skip_user_profile_image_extensions_enabled": False,
-            "responsive_web_graphql_timeline_navigation_enabled": True,
-            "creator_subscriptions_tweet_preview_api_enabled": True,
-            "tweetypie_unmention_optimization_enabled": True,
-            "responsive_web_edit_tweet_api_enabled": True,
-            "graphql_is_translatable_rweb_tweet_is_translatable_enabled": True,
-            "view_counts_everywhere_api_enabled": True,
-            "longform_notetweets_consumption_enabled": True,
-            "responsive_web_twitter_article_tweet_consumption_enabled": True,
-            "tweet_awards_web_tipping_enabled": False,
-            "freedom_of_speech_not_reach_fetch_enabled": True,
-            "standardized_nudges_misinfo": True,
-            "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": True,
-            "longform_notetweets_rich_text_read_enabled": True,
-            "longform_notetweets_inline_media_enabled": True,
-            "responsive_web_enhance_cards_enabled": False,
-        })
+        variables = json.dumps(
+            {
+                "userId": user_id,
+                "count": limit,
+                "includePromotedContent": False,
+                "withQuickPromoteEligibilityTweetFields": False,
+                "withVoice": False,
+                "withV2Timeline": True,
+            }
+        )
+        features = json.dumps(
+            {
+                "rweb_tipjar_consumption_enabled": True,
+                "responsive_web_graphql_exclude_directive_enabled": True,
+                "verified_phone_label_enabled": False,
+                "responsive_web_graphql_skip_user_profile_image_extensions_enabled": False,
+                "responsive_web_graphql_timeline_navigation_enabled": True,
+                "creator_subscriptions_tweet_preview_api_enabled": True,
+                "tweetypie_unmention_optimization_enabled": True,
+                "responsive_web_edit_tweet_api_enabled": True,
+                "graphql_is_translatable_rweb_tweet_is_translatable_enabled": True,
+                "view_counts_everywhere_api_enabled": True,
+                "longform_notetweets_consumption_enabled": True,
+                "responsive_web_twitter_article_tweet_consumption_enabled": True,
+                "tweet_awards_web_tipping_enabled": False,
+                "freedom_of_speech_not_reach_fetch_enabled": True,
+                "standardized_nudges_misinfo": True,
+                "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": True,
+                "longform_notetweets_rich_text_read_enabled": True,
+                "longform_notetweets_inline_media_enabled": True,
+                "responsive_web_enhance_cards_enabled": False,
+            }
+        )
 
         resp = await client.get(
             "https://x.com/i/api/graphql/E3opETHurmVJflFsUBVuUQ/UserTweets",
@@ -129,7 +139,8 @@ async def fetch_twitter_user(
     # Parse tweets from the timeline response
     items = []
     try:
-        instructions = resp.json()["data"]["user"]["result"]["timeline_v2"]["timeline"]["instructions"]
+        timeline = resp.json()["data"]["user"]["result"]["timeline_v2"]
+        instructions = timeline["timeline"]["instructions"]
         for instruction in instructions:
             entries = instruction.get("entries", [])
             for entry in entries:
@@ -151,18 +162,20 @@ async def fetch_twitter_user(
                         except ValueError:
                             pass
 
-                    items.append(ContentItem(
-                        id=_make_id(url),
-                        url=url,
-                        title=text[:100] + ("..." if len(text) > 100 else ""),
-                        summary=text,
-                        content=text,
-                        source_name=f"@{handle}",
-                        source_type="twitter",
-                        tags=tags or [],
-                        author=handle,
-                        published_at=pub_date,
-                    ))
+                    items.append(
+                        ContentItem(
+                            id=_make_id(url),
+                            url=url,
+                            title=text[:100] + ("..." if len(text) > 100 else ""),
+                            summary=text,
+                            content=text,
+                            source_name=f"@{handle}",
+                            source_type="twitter",
+                            tags=tags or [],
+                            author=handle,
+                            published_at=pub_date,
+                        )
+                    )
                 except (KeyError, TypeError):
                     continue
     except (KeyError, TypeError):
@@ -192,7 +205,8 @@ async def run_twitter_ingestion(conn: sqlite3.Connection, sources_config: dict):
             items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
             new_count = ingest_items(conn, source_key, items)
             if new_count > 0:
-                logger.info(f"Fetched {new_count} new tweets from @{handle} ({len(items) - new_count} skipped)")
+                skipped = len(items) - new_count
+                logger.info(f"Fetched {new_count} new tweets from @{handle} ({skipped} skipped)")
             total += new_count
         except Exception:
             logger.exception(f"Failed to fetch @{handle}")

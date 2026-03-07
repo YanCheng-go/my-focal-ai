@@ -24,7 +24,8 @@ async def run_ingestion(conn: sqlite3.Connection, config_dir=None):
             items = await fetch_feed(**feed_meta)
             new_count = ingest_items(conn, source_key, items)
             if new_count > 0:
-                logger.info(f"Fetched {new_count} new items from {source_key} ({len(items) - new_count} skipped)")
+                skipped = len(items) - new_count
+                logger.info(f"Fetched {new_count} new items from {source_key} ({skipped} skipped)")
             total_new += new_count
         except Exception:
             logger.exception(f"Failed to fetch {source_key}")
