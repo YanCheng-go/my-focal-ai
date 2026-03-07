@@ -123,7 +123,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
     for event in sources.get("luma", []):
         handle = event["handle"]
         feeds.append({
-            "url": f"{rsshub_base}/lu.ma/community/{handle}",
+            "url": f"{rsshub_base}/luma/{handle}",
             "source_name": f"Luma: {handle}",
             "source_type": "luma",
             "tags": event.get("tags", []),
