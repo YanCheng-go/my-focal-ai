@@ -6,7 +6,7 @@ import sqlite3
 from ainews.config import load_sources
 from ainews.ingest.feeds import build_feed_urls, fetch_feed
 from ainews.ingest.twitter import run_twitter_ingestion
-from ainews.storage.db import item_exists, set_last_fetched, upsert_item, mark_youtube_shorts_duplicates
+from ainews.storage.db import ingest_items, mark_youtube_shorts_duplicates
 
 logger = logging.getLogger(__name__)
 
@@ -22,14 +22,9 @@ async def run_ingestion(conn: sqlite3.Connection, config_dir=None):
         source_key = feed_meta["source_name"]
         try:
             items = await fetch_feed(**feed_meta)
-            new_count = 0
-            for item in items:
-                if not item_exists(conn, item.id):
-                    upsert_item(conn, item)
-                    new_count += 1
+            new_count = ingest_items(conn, source_key, items)
             if new_count > 0:
                 logger.info(f"Fetched {new_count} new items from {source_key} ({len(items) - new_count} skipped)")
-            set_last_fetched(conn, source_key)
             total_new += new_count
         except Exception:
             logger.exception(f"Failed to fetch {source_key}")

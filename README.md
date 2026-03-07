@@ -132,7 +132,7 @@ Each item gets an ID from `sha256(url)[:16]`. On each fetch cycle:
 
 ## Dashboard
 
-- Dark theme, sorted by `fetched_at` (newest first) — not `published_at`, since events have future dates
+- Dark theme, sorted by `published_at` (newest first), with Luma events pushed to the bottom (since they have future dates)
 - Filters: source type, tier, tag, min score, order by score
 - Each item shows: title (linked), score badge (color-coded), source name, source type tag, content tags (up to 3), truncated summary (first 200 chars), score reason
 - YouTube Shorts show "YT Short" tag; Luma events show "Event: Mar 24, 2026" with year

@@ -33,7 +33,7 @@ Scoring (Ollama, sequential)
     │
     ▼
 Serving (FastAPI)
-    │  Dashboard: sorted by fetched_at (not published_at)
+    │  Dashboard: sorted by published_at (Luma events pushed to bottom)
     │  JSON API: /api/items, /api/digest
     │  APScheduler: auto-runs ingest+score every 30 min
 ```
@@ -46,11 +46,8 @@ Each item's ID is `sha256(url)[:16]`. Before inserting, `item_exists()` checks t
 ### Score preservation
 The `upsert_item` function uses `COALESCE(excluded.score, items.score)` — if a re-ingested item has `score=None`, the existing score is kept. Scores are only overwritten when the scorer explicitly sets them.
 
-### fetched_at vs published_at
-The dashboard sorts by `fetched_at` (when the item entered the system), not `published_at`. This is because:
-- Luma events have `published_at` set to the event date (could be weeks in the future)
-- Some RSS feeds have unreliable or missing publish dates
-- `fetched_at` is always set and reflects recency from the user's perspective
+### Sorting: published_at with Luma exception
+The dashboard sorts by `published_at` (actual content date) for chronological ordering across sources. Luma events are pushed to the bottom since their `published_at` is the event date (could be weeks in the future). Falls back to `fetched_at` for items without a publish date.
 
 ### YouTube Shorts dedup
 After ingestion, `mark_youtube_shorts_duplicates()` finds Shorts that share a title (case-insensitive) with a full video from the same channel. The Short is marked with `is_duplicate_of` pointing to the full video. The `get_items()` query filters these out via `WHERE is_duplicate_of IS NULL`.
