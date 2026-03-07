@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
-# Pre-commit hook: run ruff on staged Python files
+# Pre-commit hook: block direct commits to main/master, run ruff on staged files
 set -e
+
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [ "$BRANCH" = "main" ] || [ "$BRANCH" = "master" ]; then
+    echo "ERROR: Direct commits to $BRANCH are not allowed. Use a feature branch and PR."
+    exit 1
+fi
 
 STAGED_PY=$(git diff --cached --name-only --diff-filter=ACM | grep '\.py$' || true)
 
