@@ -13,6 +13,7 @@ dependencies = [
     "pydantic-settings>=2.0",
     "apscheduler>=3.10",
     "pyyaml>=6.0",
+    "twscrape>=0.17.0",
 ]
 
 [project.optional-dependencies]

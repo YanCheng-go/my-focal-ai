@@ -71,15 +71,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
     sources = sources_config.get("sources", {})
     feeds = []
 
-    # Twitter via RSSHub
-    for user in sources.get("twitter", []):
-        handle = user["handle"]
-        feeds.append({
-            "url": f"{rsshub_base}/twitter/user/{handle}",
-            "source_name": f"@{handle}",
-            "source_type": "twitter",
-            "tags": user.get("tags", []),
-        })
+    # Twitter is handled separately via twscrape (see ingest/twitter.py)
 
     # Xiaohongshu via RSSHub
     for user in sources.get("xiaohongshu", []):
