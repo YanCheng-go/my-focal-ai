@@ -37,7 +37,7 @@ sources:
       tags: [ai, research, nlp, llm, papers]
 
     # --- Company/Lab blogs ---
-    - url: "https://openai.com/blog/rss.xml"
+    - url: "https://openai.com/news/rss.xml"
       name: "OpenAI Blog"
       tags: [ai, openai, company]
     # Anthropic has no public RSS — use RSSHub route instead (see rsshub section below)
