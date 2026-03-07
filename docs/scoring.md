@@ -2,9 +2,11 @@
 
 ## Overview
 
-Every new content item is scored by a local LLM (Ollama, default model: qwen3:4b) against three foundational principles. The scorer outputs a relevance score (0-1), a tier (personal/work), and a one-line reason.
+Every new content item is scored by an LLM against three foundational principles. The scorer outputs a relevance score (0-1), a tier (personal/work), and a one-line reason.
 
-Scoring is entirely free — runs locally, no API keys or paid services.
+Two scoring backends are available:
+- **Ollama** (local, default) — free, uses qwen3:4b. Used by `ainews fetch`.
+- **Claude API** (cloud) — requires `ANTHROPIC_API_KEY`. Used by `ainews cloud-fetch` when the key is set. Scoring is skipped if the key is not available.
 
 ## Three Principles
 
@@ -90,7 +92,9 @@ This is the litmus test encoded in both the principles config and the LLM prompt
 
 ## LLM Prompt
 
-The scorer sends two messages to Ollama:
+Both backends (Ollama and Claude API) share the same system prompt and user prompt template (defined in `src/ainews/scoring/scorer.py`). The Claude scorer (`claude_scorer.py`) imports and reuses these prompts.
+
+The scorer sends two messages:
 
 1. **System prompt** — encodes the three principles, information flow model, and expected JSON output format
 2. **User prompt** — includes the item's title, source, author, tags, text (truncated to 2000 chars), and both tier definitions
@@ -123,11 +127,20 @@ The LLM responds with JSON:
 
 ## Configuration
 
+### Local (Ollama)
+
 | Setting | Default | Env var |
 |---------|---------|---------|
 | Model | qwen3:4b | `AINEWS_OLLAMA_MODEL` |
 | Ollama URL | http://localhost:11434 | `AINEWS_OLLAMA_BASE_URL` |
 | Fetch interval | 30 min | `AINEWS_FETCH_INTERVAL_MINUTES` |
+
+### Cloud (Claude API)
+
+| Setting | Default | Env var |
+|---------|---------|---------|
+| API key | (none) | `ANTHROPIC_API_KEY` |
+| Model | claude-sonnet-4-20250514 | (hardcoded in `claude_scorer.py`) |
 
 ---
 

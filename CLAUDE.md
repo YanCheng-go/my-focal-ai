@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Personal news intelligence system. Aggregates content from Twitter/X, Xiaohongshu, YouTube, and RSS feeds via RSSHub, then scores relevance using LLM (Ollama) against user-defined principles. Serves a web dashboard + JSON API.
+Personal news intelligence system. Aggregates content from Twitter/X, Xiaohongshu, YouTube, and RSS feeds via RSSHub, then scores relevance using LLM against user-defined principles. Two modes: local (SQLite + Ollama + FastAPI) and cloud (GitHub Actions + Vercel static site).
 
 ## Setup
 
@@ -18,9 +18,11 @@ Personal news intelligence system. Aggregates content from Twitter/X, Xiaohongsh
 uv sync                                    # install deps
 uv sync --extra llm --extra dev            # install all optional deps
 uv run ainews serve                         # start server (port 8000, auto-reloads)
-uv run ainews fetch                         # one-time fetch + score (all sources)
+uv run ainews fetch                         # one-time fetch + score (all sources, Ollama)
 uv run ainews fetch-source "OpenAI"         # fetch a single source by name (partial match)
 uv run ainews list-sources                  # list all configured sources
+uv run ainews cloud-fetch                   # fetch feeds + score with Claude API (for CI)
+uv run ainews export                        # export items to static/data.json
 uv run ruff check src/                     # lint
 uv run pytest                              # tests
 ```
@@ -39,10 +41,13 @@ See `docs/architecture.md` for the full architecture diagram and data flow.
 Pipeline: **ingest -> dedup -> store -> score -> serve**.
 
 - `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom, `twitter.py` for Twitter via Chrome cookies + GraphQL, `runner.py` orchestrates and skips existing items.
-- `src/ainews/scoring/scorer.py` — sends unscored items to Ollama with three principles from `config/principles.yml`. Returns score 0-1, tier, reason.
+- `src/ainews/scoring/scorer.py` — sends unscored items to Ollama with three principles from `config/principles.yml`. Returns score 0-1, tier, reason. `claude_scorer.py` is the cloud alternative using Claude API.
 - `src/ainews/storage/db.py` — SQLite (WAL). `get_existing_ids()` for batch dedup, `upsert_item` preserves existing scores via COALESCE, `ingest_items()` orchestrates dedup+upsert+commit, `source_state` table tracks last fetch per source, `mark_youtube_shorts_duplicates()` hides Shorts when a full video exists.
 - `src/ainews/api/app.py` — FastAPI + APScheduler. Dashboard sorted by `published_at` (except Luma events, pushed to bottom). Pagination (30/page), search, tag dropdown.
-- `templates/dashboard.html` — dark theme. Shows summary (first 200 chars), source-level tags, "YT Short" badge, event dates with year.
+- `templates/dashboard.html` — dark theme (local FastAPI). Shows summary (first 200 chars), source-level tags, "YT Short" badge, event dates with year.
+- `static/index.html` — static dashboard (Vercel). Reads from `data.json`, same dark theme and filters.
+- `src/ainews/cloud_fetch.py` — cloud pipeline: fetches feeds (no Twitter), optionally scores with Claude API.
+- `src/ainews/export.py` — exports scored items to JSON for the static dashboard.
 
 ## Config
 
