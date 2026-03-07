@@ -10,6 +10,10 @@ sources:
   twitter:
     - handle: "trq212"
       tags: [ai]
+    - handle: "karpathy"
+      tags: [ai, research, deep-learning]
+    - handle: "bcherny"
+      tags: [ai, engineering]
 
   # === YouTube ===
   # Native RSS — no RSSHub needed.
@@ -24,9 +28,8 @@ sources:
       name: "TechWorld with Nana"
       tags: [devops, cloud, tooling]
 
-  # === Direct RSS/Atom feeds ===
-  rss:
-    # --- Research ---
+  # === ArXiv category feeds ===
+  arxiv:
     - url: "https://rss.arxiv.org/rss/cs.AI"
       name: "arXiv cs.AI"
       tags: [ai, research, papers]
@@ -37,6 +40,8 @@ sources:
       name: "arXiv cs.CL (NLP/LLM)"
       tags: [ai, research, nlp, llm, papers]
 
+  # === Direct RSS/Atom feeds ===
+  rss:
     # --- Company/Lab blogs ---
     - url: "https://openai.com/news/rss.xml"
       name: "OpenAI Blog"

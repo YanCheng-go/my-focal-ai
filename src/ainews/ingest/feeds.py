@@ -93,6 +93,15 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             "tags": ch.get("tags", []),
         })
 
+    # ArXiv category RSS feeds
+    for feed in sources.get("arxiv", []):
+        feeds.append({
+            "url": feed["url"],
+            "source_name": feed.get("name", feed["url"]),
+            "source_type": "arxiv",
+            "tags": feed.get("tags", []),
+        })
+
     # Direct RSS feeds
     for feed in sources.get("rss", []):
         feeds.append({
