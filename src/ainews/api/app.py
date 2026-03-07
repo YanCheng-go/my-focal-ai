@@ -59,10 +59,12 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="AI News Filter", version="0.1.0", lifespan=lifespan)
-app.mount("/static", StaticFiles(directory=str(settings.config_dir.parent / "static")), name="static")
+static_dir = str(settings.config_dir.parent / "static")
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 
 # === JSON API (AI-friendly) ===
+
 
 @app.get("/api/items")
 def api_items(
@@ -79,13 +81,33 @@ def api_items(
     """Get scored content items as JSON. Designed for programmatic / AI consumption."""
     conn = get_db(settings.db_path)
     since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
-    items = get_items(conn, limit=limit, offset=offset, min_score=min_score,
-                      source_type=source_type, tier=tier, tag=tag, search=search,
-                      since=since, order_by=order_by)
-    total = count_items(conn, min_score=min_score, source_type=source_type,
-                        tier=tier, tag=tag, search=search, since=since)
+    items = get_items(
+        conn,
+        limit=limit,
+        offset=offset,
+        min_score=min_score,
+        source_type=source_type,
+        tier=tier,
+        tag=tag,
+        search=search,
+        since=since,
+        order_by=order_by,
+    )
+    total = count_items(
+        conn,
+        min_score=min_score,
+        source_type=source_type,
+        tier=tier,
+        tag=tag,
+        search=search,
+        since=since,
+    )
     conn.close()
-    return {"items": [item.model_dump(mode="json") for item in items], "count": len(items), "total": total}
+    return {
+        "items": [item.model_dump(mode="json") for item in items],
+        "count": len(items),
+        "total": total,
+    }
 
 
 @app.get("/api/digest")
@@ -137,20 +159,30 @@ def dashboard(
 ):
     conn = get_db(settings.db_path)
     offset = (page - 1) * PER_PAGE
-    filter_kwargs = dict(source_type=source_type, tier=tier, tag=tag,
-                         min_score=min_score, search=search)
+    filter_kwargs = dict(
+        source_type=source_type, tier=tier, tag=tag, min_score=min_score, search=search
+    )
     items = get_items(conn, limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
     total = count_items(conn, **filter_kwargs)
     all_tags = get_all_tags(conn)
     conn.close()
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
-    return templates.TemplateResponse("dashboard.html", {
-        "request": request,
-        "items": items,
-        "filters": {"source_type": source_type, "tier": tier, "tag": tag,
-                     "min_score": min_score, "order_by": order_by, "search": search},
-        "page": page,
-        "total_pages": total_pages,
-        "total": total,
-        "all_tags": all_tags,
-    })
+    return templates.TemplateResponse(
+        "dashboard.html",
+        {
+            "request": request,
+            "items": items,
+            "filters": {
+                "source_type": source_type,
+                "tier": tier,
+                "tag": tag,
+                "min_score": min_score,
+                "order_by": order_by,
+                "search": search,
+            },
+            "page": page,
+            "total_pages": total_pages,
+            "total": total,
+            "all_tags": all_tags,
+        },
+    )

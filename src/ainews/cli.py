@@ -53,7 +53,8 @@ async def _fetch_source(source_name: str):
             try:
                 items = await fetch_feed(**feed_meta)
                 new_count = ingest_items(conn, feed_meta["source_name"], items)
-                print(f"Fetched {len(items)} items from {feed_meta['source_name']} ({new_count} new)")
+                name = feed_meta["source_name"]
+                print(f"Fetched {len(items)} items from {name} ({new_count} new)")
             except Exception as e:
                 print(f"Failed to fetch {feed_meta['source_name']}: {e}")
     finally:
@@ -61,22 +62,33 @@ async def _fetch_source(source_name: str):
 
 
 def main():
-    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    log_fmt = "%(asctime)s %(levelname)s %(name)s: %(message)s"
+    logging.basicConfig(level=logging.INFO, format=log_fmt)
     parser = argparse.ArgumentParser(description="AI News Filter")
     sub = parser.add_subparsers(dest="command")
 
     sub.add_parser("serve", help="Start the web server with scheduled fetching")
     sub.add_parser("fetch", help="Run a one-time fetch + score cycle")
 
-    fetch_source_parser = sub.add_parser("fetch-source", help="Fetch a single source by name (one-time)")
+    fetch_source_parser = sub.add_parser(
+        "fetch-source",
+        help="Fetch a single source by name (one-time)",
+    )
     fetch_source_parser.add_argument("name", help="Source name or Twitter handle (partial match)")
 
     sub.add_parser("twitter-setup", help="Set up Twitter scraping from Chrome cookies (one-time)")
 
-    twitter_parser = sub.add_parser("twitter-login", help="Set up Twitter with username/password (one-time)")
+    twitter_parser = sub.add_parser(
+        "twitter-login",
+        help="Set up Twitter with username/password (one-time)",
+    )
     twitter_parser.add_argument("--username", required=True, help="Twitter username")
     twitter_parser.add_argument("--password", required=True, help="Twitter password")
-    twitter_parser.add_argument("--email", required=True, help="Email linked to the Twitter account")
+    twitter_parser.add_argument(
+        "--email",
+        required=True,
+        help="Email linked to the Twitter account",
+    )
 
     sub.add_parser("list-sources", help="List all configured sources")
 
@@ -87,12 +99,14 @@ def main():
         uvicorn.run("ainews.api.app:app", host=settings.host, port=settings.port, reload=True)
     elif args.command == "fetch":
         from ainews.api.app import _fetch_and_score
+
         asyncio.run(_fetch_and_score())
     elif args.command == "fetch-source":
         asyncio.run(_fetch_source(args.name))
     elif args.command == "list-sources":
         from ainews.config import load_sources
         from ainews.ingest.feeds import build_feed_urls
+
         settings = Settings()
         sources_config = load_sources(settings.config_dir)
         feeds = build_feed_urls(sources_config)
@@ -104,10 +118,12 @@ def main():
             print(f"  [twitter] @{u['handle']}")
     elif args.command == "twitter-setup":
         from ainews.ingest.twitter import setup_twitter_from_cookies
+
         asyncio.run(setup_twitter_from_cookies())
         print("Twitter set up from Chrome cookies. Tweets will be fetched on next ingestion cycle.")
     elif args.command == "twitter-login":
         from ainews.ingest.twitter import setup_twitter_account
+
         asyncio.run(setup_twitter_account(args.username, args.password, args.email))
         print("Twitter account set up. Tweets will be fetched on next ingestion cycle.")
     else:

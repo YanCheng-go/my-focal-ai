@@ -85,7 +85,7 @@ def set_last_fetched(conn: sqlite3.Connection, source_key: str, ts: datetime | N
 
 
 def mark_youtube_shorts_duplicates(conn: sqlite3.Connection) -> int:
-    """Mark YouTube Shorts as duplicates when a full video with the same title exists from the same source."""
+    """Mark YouTube Shorts as duplicates when a full video exists."""
     cursor = conn.execute("""
         UPDATE items SET is_duplicate_of = (
             SELECT f.id FROM items f
@@ -114,11 +114,9 @@ def get_existing_ids(conn: sqlite3.Connection, item_ids: list[str]) -> set[str]:
     result: set[str] = set()
     # Chunk to stay under SQLite's SQLITE_MAX_VARIABLE_NUMBER (default 999)
     for i in range(0, len(item_ids), 900):
-        chunk = item_ids[i:i + 900]
+        chunk = item_ids[i : i + 900]
         placeholders = ",".join("?" * len(chunk))
-        rows = conn.execute(
-            f"SELECT id FROM items WHERE id IN ({placeholders})", chunk
-        ).fetchall()
+        rows = conn.execute(f"SELECT id FROM items WHERE id IN ({placeholders})", chunk).fetchall()
         result.update(row["id"] for row in rows)
     return result
 
@@ -131,25 +129,36 @@ def upsert_item(conn: sqlite3.Connection, item: ContentItem):
            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
            ON CONFLICT(id) DO UPDATE SET
              score=COALESCE(excluded.score, items.score),
-             score_reason=CASE WHEN excluded.score_reason IS NOT NULL AND excluded.score_reason != ''
+             score_reason=CASE WHEN excluded.score_reason IS NOT NULL
+                               AND excluded.score_reason != ''
                                THEN excluded.score_reason ELSE items.score_reason END,
              tier=CASE WHEN excluded.tier IS NOT NULL AND excluded.tier != ''
                        THEN excluded.tier ELSE items.tier END,
              is_duplicate_of=COALESCE(excluded.is_duplicate_of, items.is_duplicate_of)
         """,
         (
-            item.id, item.url, item.title, item.summary, item.content,
-            item.source_name, item.source_type, json.dumps(item.tags),
-            item.author, item.published_at.isoformat() if item.published_at else None,
-            item.fetched_at.isoformat(), item.score, item.score_reason,
-            item.tier, item.is_duplicate_of,
+            item.id,
+            item.url,
+            item.title,
+            item.summary,
+            item.content,
+            item.source_name,
+            item.source_type,
+            json.dumps(item.tags),
+            item.author,
+            item.published_at.isoformat() if item.published_at else None,
+            item.fetched_at.isoformat(),
+            item.score,
+            item.score_reason,
+            item.tier,
+            item.is_duplicate_of,
         ),
     )
     _sync_tags(conn, item.id, item.tags)
 
 
 def ingest_items(conn: sqlite3.Connection, source_key: str, items: list[ContentItem]) -> int:
-    """Check for duplicates, upsert new items, and update last_fetched. Returns count of new items."""
+    """Upsert new items and update last_fetched. Returns new count."""
     existing = get_existing_ids(conn, [i.id for i in items])
     new_count = 0
     for item in items:
@@ -208,8 +217,12 @@ def count_items(
     search: str | None = None,
 ) -> int:
     where, params = _build_where(
-        min_score=min_score, source_type=source_type, tier=tier,
-        since=since, tag=tag, search=search,
+        min_score=min_score,
+        source_type=source_type,
+        tier=tier,
+        since=since,
+        tag=tag,
+        search=search,
     )
     row = conn.execute(f"SELECT count(*) as c FROM items {where}", params).fetchone()
     return row["c"]
@@ -235,12 +248,20 @@ def get_items(
     order_by: str = "date",
 ) -> list[ContentItem]:
     where, params = _build_where(
-        min_score=min_score, source_type=source_type, tier=tier,
-        since=since, tag=tag, search=search,
+        min_score=min_score,
+        source_type=source_type,
+        tier=tier,
+        since=since,
+        tag=tag,
+        search=search,
     )
 
     if order_by == "score":
-        query = f"SELECT items.* FROM items {where} ORDER BY items.score DESC NULLS LAST, items.published_at DESC, items.fetched_at DESC"
+        query = (
+            f"SELECT items.* FROM items {where}"
+            " ORDER BY items.score DESC NULLS LAST,"
+            " items.published_at DESC, items.fetched_at DESC"
+        )
     else:
         # Sort by published_at, but push events (luma) to the bottom
         query = f"""SELECT items.* FROM items {where}
