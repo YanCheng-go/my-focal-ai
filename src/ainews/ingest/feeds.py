@@ -49,18 +49,20 @@ async def fetch_feed(
         if entry.get("content"):
             content = entry["content"][0].get("value", "")
 
-        items.append(ContentItem(
-            id=_make_id(url),
-            url=url,
-            title=entry.get("title", "Untitled"),
-            summary=summary,
-            content=content,
-            source_name=source_name,
-            source_type=source_type,
-            tags=tags or [],
-            author=entry.get("author", ""),
-            published_at=_parse_date(entry),
-        ))
+        items.append(
+            ContentItem(
+                id=_make_id(url),
+                url=url,
+                title=entry.get("title", "Untitled"),
+                summary=summary,
+                content=content,
+                source_name=source_name,
+                source_type=source_type,
+                tags=tags or [],
+                author=entry.get("author", ""),
+                published_at=_parse_date(entry),
+            )
+        )
 
     return items
 
@@ -76,68 +78,82 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
     # Xiaohongshu via RSSHub
     for user in sources.get("xiaohongshu", []):
         uid = user["user_id"]
-        feeds.append({
-            "url": f"{rsshub_base}/xiaohongshu/user/{uid}/notes",
-            "source_name": user.get("name", uid),
-            "source_type": "xiaohongshu",
-            "tags": user.get("tags", []),
-        })
+        feeds.append(
+            {
+                "url": f"{rsshub_base}/xiaohongshu/user/{uid}/notes",
+                "source_name": user.get("name", uid),
+                "source_type": "xiaohongshu",
+                "tags": user.get("tags", []),
+            }
+        )
 
     # YouTube native RSS
     for ch in sources.get("youtube", []):
         cid = ch["channel_id"]
-        feeds.append({
-            "url": f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}",
-            "source_name": ch.get("name", cid),
-            "source_type": "youtube",
-            "tags": ch.get("tags", []),
-        })
+        feeds.append(
+            {
+                "url": f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}",
+                "source_name": ch.get("name", cid),
+                "source_type": "youtube",
+                "tags": ch.get("tags", []),
+            }
+        )
 
     # ArXiv category RSS feeds
     for feed in sources.get("arxiv", []):
-        feeds.append({
-            "url": feed["url"],
-            "source_name": feed.get("name", feed["url"]),
-            "source_type": "arxiv",
-            "tags": feed.get("tags", []),
-        })
+        feeds.append(
+            {
+                "url": feed["url"],
+                "source_name": feed.get("name", feed["url"]),
+                "source_type": "arxiv",
+                "tags": feed.get("tags", []),
+            }
+        )
 
     # Direct RSS feeds
     for feed in sources.get("rss", []):
-        feeds.append({
-            "url": feed["url"],
-            "source_name": feed.get("name", feed["url"]),
-            "source_type": "rss",
-            "tags": feed.get("tags", []),
-        })
+        feeds.append(
+            {
+                "url": feed["url"],
+                "source_name": feed.get("name", feed["url"]),
+                "source_type": "rss",
+                "tags": feed.get("tags", []),
+            }
+        )
 
     # Generic RSSHub routes (for sites without native RSS)
     for item in sources.get("rsshub", []):
-        feeds.append({
-            "url": f"{rsshub_base}{item['route']}",
-            "source_name": item.get("name", item["route"]),
-            "source_type": item.get("source_type", "rss"),
-            "tags": item.get("tags", []),
-        })
+        feeds.append(
+            {
+                "url": f"{rsshub_base}{item['route']}",
+                "source_name": item.get("name", item["route"]),
+                "source_type": item.get("source_type", "rss"),
+                "tags": item.get("tags", []),
+            }
+        )
 
     # Luma events via RSSHub
     for event in sources.get("luma", []):
         handle = event["handle"]
-        feeds.append({
-            "url": f"{rsshub_base}/luma/{handle}",
-            "source_name": f"Luma: {handle}",
-            "source_type": "luma",
-            "tags": event.get("tags", []),
-        })
+        feeds.append(
+            {
+                "url": f"{rsshub_base}/luma/{handle}",
+                "source_name": f"Luma: {handle}",
+                "source_type": "luma",
+                "tags": event.get("tags", []),
+            }
+        )
 
     # ArXiv keyword queries (Atom API)
     for aq in sources_config.get("arxiv_queries", []):
         query = aq["query"]
-        feeds.append({
-            "url": f"https://export.arxiv.org/api/query?search_query={query}&sortBy=submittedDate&sortOrder=descending&max_results=20",
-            "source_name": aq.get("name", f"arXiv: {query}"),
-            "source_type": "arxiv",
-            "tags": aq.get("tags", []),
-        })
+        feeds.append(
+            {
+                "url": f"https://export.arxiv.org/api/query?search_query={query}&sortBy=submittedDate&sortOrder=descending&max_results=20",
+                "source_name": aq.get("name", f"arXiv: {query}"),
+                "source_type": "arxiv",
+                "tags": aq.get("tags", []),
+            }
+        )
 
     return feeds
