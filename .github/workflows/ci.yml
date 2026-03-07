@@ -10,5 +10,7 @@ jobs:
         with:
           args: check src/
       - uses: astral-sh/ruff-action@v3
+        env:
+          RUFF_OUTPUT_FORMAT: ""
         with:
           args: format --check src/
