@@ -1,44 +1,55 @@
 # Source configuration for ai-news-filter
-# Each source maps to an RSSHub route or direct RSS/Atom feed URL.
-#
 # RSSHub docs: https://docs.rsshub.app/
-# When rsshub is running locally at http://localhost:1200, a route like
-# /twitter/user/kaborobo becomes http://localhost:1200/twitter/user/kaborobo
+# RSSHub routes become: http://localhost:1200/<route>
 
 rsshub_base: "http://localhost:1200"
 
 sources:
   # === Twitter/X ===
-  # Route format: /twitter/user/:screenName
-  # Requires RSSHub twitter config (see docker/docker-compose.yml)
   twitter:
-    - handle: "example_user"
-      # route: /twitter/user/example_user
-      tags: [ai, research]
-
-  # === Xiaohongshu (Little Red Book) ===
-  # Route format: /xiaohongshu/user/:user_id/notes
-  xiaohongshu:
-    - user_id: "example_id"
-      name: "Example User"
-      tags: [ai, chinese-tech]
+    - handle: "trq212"
+      tags: [ai]
 
   # === YouTube ===
-  # YouTube has native RSS — no RSSHub needed.
-  # Feed URL: https://www.youtube.com/feeds/videos.xml?channel_id=CHANNEL_ID
+  # Native RSS — no RSSHub needed.
   youtube:
-    - channel_id: "UCbfYPyITQ-7l4upoX8nvctg"  # Two Minute Papers
-      name: "Two Minute Papers"
-      tags: [ai, research]
-    - channel_id: "UCWN3xxRkmTPphYit_WO_JRw"  # Yannic Kilcher
-      name: "Yannic Kilcher"
-      tags: [ai, research, ml]
+    - channel_id: "UC2ojq-nuP8ceeHqiroeKhBA"
+      name: "Nate Herk | AI Automation"
+      tags: [ai, automation]
+    - channel_id: "UCYO_jab_esuFRV4b17AJtAw"
+      name: "Andrej Karpathy"
+      tags: [ai, research, deep-learning]
+    - channel_id: "UCoQ8B21RIncI9NWLr2d2Y_w"
+      name: "TechWorld with Nana"
+      tags: [devops, cloud, tooling]
 
   # === Direct RSS/Atom feeds ===
   rss:
-    - url: "https://arxiv.org/rss/cs.AI"
+    # --- Research ---
+    - url: "https://rss.arxiv.org/rss/cs.AI"
       name: "arXiv cs.AI"
       tags: [ai, research, papers]
+    - url: "https://rss.arxiv.org/rss/cs.LG"
+      name: "arXiv cs.LG (Machine Learning)"
+      tags: [ai, research, ml, papers]
+    - url: "https://rss.arxiv.org/rss/cs.CL"
+      name: "arXiv cs.CL (NLP/LLM)"
+      tags: [ai, research, nlp, llm, papers]
+
+    # --- Company/Lab blogs ---
+    - url: "https://openai.com/blog/rss.xml"
+      name: "OpenAI Blog"
+      tags: [ai, openai, company]
+    - url: "https://www.anthropic.com/feed.xml"
+      name: "Anthropic Blog"
+      tags: [ai, anthropic, research]
+
+    # --- Open source / community ---
+    - url: "https://huggingface.co/blog/feed.xml"
+      name: "Hugging Face Blog"
+      tags: [ai, open-source, huggingface]
+
+    # --- Practitioners ---
     - url: "https://simonwillison.net/atom/everything/"
       name: "Simon Willison"
       tags: [ai, tooling, open-source]
@@ -46,5 +57,35 @@ sources:
       name: "Lilian Weng"
       tags: [ai, research, deep-learning]
 
-# Add your own sources below. Use tags to help the scoring engine
-# understand the context of each source.
+  # === Xiaohongshu ===
+  # Route format: /xiaohongshu/user/:user_id/notes
+  # Find user_id from their profile URL.
+  xiaohongshu: []
+    # - user_id: "YOUR_USER_ID"
+    #   name: "Account Name"
+    #   tags: [ai]
+
+  # === Events (Luma) ===
+  # RSSHub route: /lu.ma/community/:handle
+  # These are checked for upcoming AI/Databricks events in Copenhagen.
+  luma:
+    - handle: "dtc-events"
+      tags: [events, ai, copenhagen]
+      # Additional Luma communities can be added here.
+      # Search for AI/Databricks events in Copenhagen on lu.ma and add their handles.
+
+# === ArXiv keyword searches ===
+# These use the arXiv API (Atom feed) for targeted queries beyond the category RSS.
+# The ingestion layer fetches these as regular Atom feeds.
+arxiv_queries:
+  - query: "cat:cs.AI+AND+abs:transformer"
+    name: "arXiv: transformers"
+    tags: [ai, research, transformers]
+  - query: "cat:cs.CL+AND+abs:large+language+model"
+    name: "arXiv: LLMs"
+    tags: [ai, research, llm]
+  - query: "cat:cs.LG+AND+abs:reinforcement+learning"
+    name: "arXiv: RL"
+    tags: [ai, research, rl]
+
+# Add your own sources. Use tags to help the scoring engine.

@@ -109,4 +109,24 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             "tags": feed.get("tags", []),
         })
 
+    # Luma events via RSSHub
+    for event in sources.get("luma", []):
+        handle = event["handle"]
+        feeds.append({
+            "url": f"{rsshub_base}/lu.ma/community/{handle}",
+            "source_name": f"Luma: {handle}",
+            "source_type": "luma",
+            "tags": event.get("tags", []),
+        })
+
+    # ArXiv keyword queries (Atom API)
+    for aq in sources_config.get("arxiv_queries", []):
+        query = aq["query"]
+        feeds.append({
+            "url": f"https://export.arxiv.org/api/query?search_query={query}&sortBy=submittedDate&sortOrder=descending&max_results=20",
+            "source_name": aq.get("name", f"arXiv: {query}"),
+            "source_type": "arxiv",
+            "tags": aq.get("tags", []),
+        })
+
     return feeds
