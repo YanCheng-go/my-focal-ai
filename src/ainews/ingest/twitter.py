@@ -1,70 +1,176 @@
-"""Twitter ingestion via twscrape — no API keys needed, just a Twitter account."""
+"""Twitter ingestion using browser cookies and Twitter's GraphQL API directly."""
 
 import hashlib
+import json
 import logging
 import sqlite3
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 
-from twscrape import API, gather
+import httpx
 
 from ainews.models import ContentItem
 from ainews.storage.db import upsert_item
 
 logger = logging.getLogger(__name__)
 
-TWSCRAPE_DB = Path("data/twscrape.db")
+# Twitter web app bearer token (public, embedded in the JS bundle)
+BEARER = "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
 
 
 def _make_id(url: str) -> str:
     return hashlib.sha256(url.encode()).hexdigest()[:16]
 
 
-async def setup_twitter_account(username: str, password: str, email: str):
-    """Add and login a Twitter account for scraping. Run once."""
-    TWSCRAPE_DB.parent.mkdir(parents=True, exist_ok=True)
-    api = API(str(TWSCRAPE_DB))
-    await api.pool.add_account(username, password, email, password)
-    await api.pool.login_all()
-    logger.info(f"Twitter account @{username} logged in for scraping")
+def get_twitter_cookies_from_browser() -> dict[str, str] | None:
+    """Extract Twitter cookies from Chrome automatically."""
+    try:
+        import rookiepy
+        cookies = rookiepy.chrome(domains=[".x.com", "x.com", ".twitter.com"])
+        cookie_dict = {c["name"]: c["value"] for c in cookies}
+        if "auth_token" in cookie_dict and "ct0" in cookie_dict:
+            return cookie_dict
+        logger.warning("Chrome has x.com cookies but missing auth_token or ct0")
+    except Exception as e:
+        logger.warning(f"Could not read Chrome cookies: {e}")
+    return None
+
+
+def _build_headers(cookies: dict[str, str]) -> dict[str, str]:
+    cookie_str = "; ".join(f"{k}={v}" for k, v in cookies.items())
+    return {
+        "Authorization": f"Bearer {BEARER}",
+        "Cookie": cookie_str,
+        "X-Csrf-Token": cookies.get("ct0", ""),
+        "X-Twitter-Auth-Type": "OAuth2Session",
+        "X-Twitter-Active-User": "yes",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+        "Content-Type": "application/json",
+    }
 
 
 async def fetch_twitter_user(
     handle: str,
+    cookies: dict[str, str],
     tags: list[str] | None = None,
     limit: int = 20,
 ) -> list[ContentItem]:
-    """Fetch recent tweets from a user."""
-    api = API(str(TWSCRAPE_DB))
+    """Fetch recent tweets from a user using Twitter's GraphQL API."""
+    headers = _build_headers(cookies)
 
-    try:
-        user = await api.user_by_login(handle)
-        if not user:
-            logger.warning(f"Twitter user @{handle} not found")
+    # Step 1: Get user ID
+    variables = json.dumps({"screen_name": handle, "withSafetyModeUserFields": True})
+    features = json.dumps({
+        "hidden_profile_subscriptions_enabled": True,
+        "profile_label_improvements_pcf_label_in_post_enabled": False,
+        "rweb_tipjar_consumption_enabled": True,
+        "responsive_web_graphql_exclude_directive_enabled": True,
+        "verified_phone_label_enabled": False,
+        "responsive_web_graphql_skip_user_profile_image_extensions_enabled": False,
+        "responsive_web_graphql_timeline_navigation_enabled": True,
+    })
+
+    async with httpx.AsyncClient(timeout=30) as client:
+        resp = await client.get(
+            "https://x.com/i/api/graphql/Yka-W8dz7RaEuQNkroPkYw/UserByScreenName",
+            params={"variables": variables, "features": features},
+            headers=headers,
+        )
+        if resp.status_code != 200:
+            logger.error(f"Twitter UserByScreenName failed for @{handle}: {resp.status_code}")
             return []
 
-        tweets = await gather(api.user_tweets(user.id, limit=limit))
-    except Exception:
-        logger.exception(f"Failed to fetch tweets from @{handle}")
-        return []
+        user_data = resp.json()
+        try:
+            user_id = user_data["data"]["user"]["result"]["rest_id"]
+        except (KeyError, TypeError):
+            logger.error(f"Could not find user ID for @{handle}")
+            return []
 
+        # Step 2: Get user tweets
+        variables = json.dumps({
+            "userId": user_id,
+            "count": limit,
+            "includePromotedContent": False,
+            "withQuickPromoteEligibilityTweetFields": False,
+            "withVoice": False,
+            "withV2Timeline": True,
+        })
+        features = json.dumps({
+            "rweb_tipjar_consumption_enabled": True,
+            "responsive_web_graphql_exclude_directive_enabled": True,
+            "verified_phone_label_enabled": False,
+            "responsive_web_graphql_skip_user_profile_image_extensions_enabled": False,
+            "responsive_web_graphql_timeline_navigation_enabled": True,
+            "creator_subscriptions_tweet_preview_api_enabled": True,
+            "tweetypie_unmention_optimization_enabled": True,
+            "responsive_web_edit_tweet_api_enabled": True,
+            "graphql_is_translatable_rweb_tweet_is_translatable_enabled": True,
+            "view_counts_everywhere_api_enabled": True,
+            "longform_notetweets_consumption_enabled": True,
+            "responsive_web_twitter_article_tweet_consumption_enabled": True,
+            "tweet_awards_web_tipping_enabled": False,
+            "freedom_of_speech_not_reach_fetch_enabled": True,
+            "standardized_nudges_misinfo": True,
+            "tweet_with_visibility_results_prefer_gql_limited_actions_policy_enabled": True,
+            "longform_notetweets_rich_text_read_enabled": True,
+            "longform_notetweets_inline_media_enabled": True,
+            "responsive_web_enhance_cards_enabled": False,
+        })
+
+        resp = await client.get(
+            "https://x.com/i/api/graphql/E3opETHurmVJflFsUBVuUQ/UserTweets",
+            params={"variables": variables, "features": features},
+            headers=headers,
+        )
+        if resp.status_code != 200:
+            logger.error(f"Twitter UserTweets failed for @{handle}: {resp.status_code}")
+            return []
+
+    # Parse tweets from the timeline response
     items = []
-    for tweet in tweets:
-        url = f"https://x.com/{handle}/status/{tweet.id}"
-        items.append(ContentItem(
-            id=_make_id(url),
-            url=url,
-            title=tweet.rawContent[:100] + ("..." if len(tweet.rawContent) > 100 else ""),
-            summary=tweet.rawContent,
-            content=tweet.rawContent,
-            source_name=f"@{handle}",
-            source_type="twitter",
-            tags=tags or [],
-            author=handle,
-            published_at=tweet.date,
-        ))
+    try:
+        instructions = resp.json()["data"]["user"]["result"]["timeline_v2"]["timeline"]["instructions"]
+        for instruction in instructions:
+            entries = instruction.get("entries", [])
+            for entry in entries:
+                try:
+                    tweet_result = entry["content"]["itemContent"]["tweet_results"]["result"]
+                    legacy = tweet_result.get("legacy", {})
+                    text = legacy.get("full_text", "")
+                    tweet_id = legacy.get("id_str", "")
+                    created_at = legacy.get("created_at", "")
 
-    return items
+                    if not text or not tweet_id:
+                        continue
+
+                    url = f"https://x.com/{handle}/status/{tweet_id}"
+                    pub_date = None
+                    if created_at:
+                        try:
+                            pub_date = datetime.strptime(created_at, "%a %b %d %H:%M:%S %z %Y")
+                        except ValueError:
+                            pass
+
+                    items.append(ContentItem(
+                        id=_make_id(url),
+                        url=url,
+                        title=text[:100] + ("..." if len(text) > 100 else ""),
+                        summary=text,
+                        content=text,
+                        source_name=f"@{handle}",
+                        source_type="twitter",
+                        tags=tags or [],
+                        author=handle,
+                        published_at=pub_date,
+                    ))
+                except (KeyError, TypeError):
+                    continue
+    except (KeyError, TypeError):
+        logger.exception(f"Failed to parse tweets for @{handle}")
+
+    return items[:limit]
 
 
 async def run_twitter_ingestion(conn: sqlite3.Connection, sources_config: dict):
@@ -75,11 +181,16 @@ async def run_twitter_ingestion(conn: sqlite3.Connection, sources_config: dict):
     if not twitter_users:
         return 0
 
+    cookies = get_twitter_cookies_from_browser()
+    if not cookies:
+        logger.warning("No Twitter cookies found in Chrome — skipping Twitter ingestion")
+        return 0
+
     total = 0
     for user in twitter_users:
         handle = user["handle"]
         try:
-            items = await fetch_twitter_user(handle, tags=user.get("tags", []))
+            items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
             for item in items:
                 upsert_item(conn, item)
             total += len(items)

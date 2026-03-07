@@ -14,6 +14,7 @@ dependencies = [
     "apscheduler>=3.10",
     "pyyaml>=6.0",
     "twscrape>=0.17.0",
+    "rookiepy>=0.5.6",
 ]
 
 [project.optional-dependencies]
