@@ -61,4 +61,4 @@ All settings via env vars prefixed `AINEWS_` (e.g., `AINEWS_OLLAMA_MODEL=qwen3:4
 
 ---
 
-*Last updated: 2026-03-08*
+*Last updated: 2026-03-07*
