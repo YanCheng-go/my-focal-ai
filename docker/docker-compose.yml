@@ -1,0 +1,13 @@
+services:
+  rsshub:
+    image: diygod/rsshub:latest
+    restart: unless-stopped
+    ports:
+      - "1200:1200"
+    environment:
+      NODE_ENV: production
+      CACHE_TYPE: memory
+      # Uncomment and configure for Twitter support:
+      # TWITTER_USERNAME: ""
+      # TWITTER_PASSWORD: ""
+      # For Xiaohongshu, RSSHub scrapes directly — no auth needed.

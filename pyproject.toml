@@ -1,0 +1,39 @@
+[project]
+name = "ai-news-filter"
+version = "0.1.0"
+description = "Personal news intelligence system with principle-based filtering"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn>=0.34",
+    "feedparser>=6.0",
+    "httpx>=0.28",
+    "jinja2>=3.1",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "apscheduler>=3.10",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+llm = [
+    "ollama>=0.4",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.9",
+]
+
+[project.scripts]
+ainews = "ainews.cli:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

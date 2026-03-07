@@ -1,0 +1,124 @@
+"""FastAPI app — serves both JSON API and web dashboard."""
+
+import asyncio
+from contextlib import asynccontextmanager
+from datetime import datetime, timedelta
+
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from fastapi import FastAPI, Query, Request
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+
+from ainews.config import Settings, load_principles
+from ainews.ingest.runner import run_ingestion
+from ainews.scoring.scorer import score_batch
+from ainews.storage.db import get_db, get_items, get_unscored_items, upsert_item
+
+settings = Settings()
+templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
+
+
+async def _fetch_and_score():
+    """Background job: fetch feeds then score new items."""
+    conn = get_db(settings.db_path)
+    try:
+        await run_ingestion(conn, settings.config_dir)
+        unscored = get_unscored_items(conn, limit=30)
+        if unscored:
+            principles = load_principles(settings.config_dir)
+            scored = await score_batch(
+                unscored, principles, settings.ollama_base_url, settings.ollama_model
+            )
+            for item, _ in scored:
+                upsert_item(conn, item)
+    finally:
+        conn.close()
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    scheduler = AsyncIOScheduler()
+    scheduler.add_job(
+        _fetch_and_score,
+        "interval",
+        minutes=settings.fetch_interval_minutes,
+        next_run_time=datetime.now(),  # run immediately on startup
+    )
+    scheduler.start()
+    yield
+    scheduler.shutdown()
+
+
+app = FastAPI(title="AI News Filter", version="0.1.0", lifespan=lifespan)
+app.mount("/static", StaticFiles(directory=str(settings.config_dir.parent / "static")), name="static")
+
+
+# === JSON API (AI-friendly) ===
+
+@app.get("/api/items")
+def api_items(
+    limit: int = Query(50, le=200),
+    offset: int = 0,
+    min_score: float | None = None,
+    source_type: str | None = None,
+    tier: str | None = None,
+    since_hours: int | None = None,
+):
+    """Get scored content items as JSON. Designed for programmatic / AI consumption."""
+    conn = get_db(settings.db_path)
+    since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
+    items = get_items(conn, limit=limit, offset=offset, min_score=min_score,
+                      source_type=source_type, tier=tier, since=since)
+    conn.close()
+    return {"items": [item.model_dump(mode="json") for item in items], "count": len(items)}
+
+
+@app.get("/api/digest")
+def api_digest(hours: int = 24, min_score: float = 0.6):
+    """Get a daily digest — top items from the last N hours."""
+    conn = get_db(settings.db_path)
+    since = datetime.now() - timedelta(hours=hours)
+    items = get_items(conn, limit=20, min_score=min_score, since=since)
+    conn.close()
+    return {
+        "period_hours": hours,
+        "min_score": min_score,
+        "items": [
+            {
+                "title": i.title,
+                "url": i.url,
+                "score": i.score,
+                "tier": i.tier,
+                "reason": i.score_reason,
+                "source": i.source_name,
+            }
+            for i in items
+        ],
+    }
+
+
+@app.post("/api/fetch")
+async def api_trigger_fetch():
+    """Manually trigger a fetch + score cycle."""
+    asyncio.create_task(_fetch_and_score())
+    return {"status": "started"}
+
+
+# === Web Dashboard ===
+
+@app.get("/", response_class=HTMLResponse)
+def dashboard(
+    request: Request,
+    source_type: str | None = None,
+    tier: str | None = None,
+    min_score: float | None = None,
+):
+    conn = get_db(settings.db_path)
+    items = get_items(conn, limit=50, source_type=source_type, tier=tier, min_score=min_score)
+    conn.close()
+    return templates.TemplateResponse("dashboard.html", {
+        "request": request,
+        "items": items,
+        "filters": {"source_type": source_type, "tier": tier, "min_score": min_score},
+    })
