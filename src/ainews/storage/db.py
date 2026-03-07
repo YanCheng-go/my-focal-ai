@@ -74,6 +74,8 @@ def get_items(
     source_type: str | None = None,
     tier: str | None = None,
     since: datetime | None = None,
+    tag: str | None = None,
+    order_by: str = "date",
 ) -> list[ContentItem]:
     query = "SELECT * FROM items WHERE is_duplicate_of IS NULL"
     params: list = []
@@ -90,8 +92,16 @@ def get_items(
     if since:
         query += " AND fetched_at >= ?"
         params.append(since.isoformat())
+    if tag:
+        query += " AND tags LIKE ?"
+        params.append(f'%"{tag}"%')
 
-    query += " ORDER BY score DESC NULLS LAST, fetched_at DESC LIMIT ? OFFSET ?"
+    if order_by == "score":
+        query += " ORDER BY score DESC NULLS LAST, fetched_at DESC"
+    else:
+        query += " ORDER BY published_at DESC NULLS LAST, fetched_at DESC"
+
+    query += " LIMIT ? OFFSET ?"
     params.extend([limit, offset])
 
     rows = conn.execute(query, params).fetchall()

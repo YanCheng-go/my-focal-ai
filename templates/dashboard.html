@@ -40,14 +40,17 @@
         </div>
 
         <div class="filters">
-            <a href="/" class="{{ 'active' if not filters.source_type and not filters.tier }}">All</a>
+            <a href="/" class="{{ 'active' if not filters.source_type and not filters.tier and not filters.tag }}">All</a>
             <a href="/?tier=personal" class="{{ 'active' if filters.tier == 'personal' }}">Personal</a>
             <a href="/?tier=work" class="{{ 'active' if filters.tier == 'work' }}">Work</a>
+            <a href="/?tag=research" class="{{ 'active' if filters.tag == 'research' }}">Research</a>
             <a href="/?source_type=twitter" class="{{ 'active' if filters.source_type == 'twitter' }}">Twitter</a>
             <a href="/?source_type=youtube" class="{{ 'active' if filters.source_type == 'youtube' }}">YouTube</a>
-            <a href="/?source_type=xiaohongshu" class="{{ 'active' if filters.source_type == 'xiaohongshu' }}">XHS</a>
             <a href="/?source_type=rss" class="{{ 'active' if filters.source_type == 'rss' }}">RSS</a>
+            <a href="/?source_type=arxiv" class="{{ 'active' if filters.source_type == 'arxiv' }}">arXiv</a>
+            <a href="/?source_type=luma" class="{{ 'active' if filters.source_type == 'luma' }}">Events</a>
             <a href="/?min_score=0.7" class="{{ 'active' if filters.min_score and filters.min_score >= 0.7 }}">Top Only</a>
+            <a href="/?order_by=score" class="{{ 'active' if filters.order_by == 'score' }}">By Score</a>
         </div>
 
         {% if items %}

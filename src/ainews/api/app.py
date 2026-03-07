@@ -63,13 +63,16 @@ def api_items(
     min_score: float | None = None,
     source_type: str | None = None,
     tier: str | None = None,
+    tag: str | None = None,
     since_hours: int | None = None,
+    order_by: str = "date",
 ):
     """Get scored content items as JSON. Designed for programmatic / AI consumption."""
     conn = get_db(settings.db_path)
     since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
     items = get_items(conn, limit=limit, offset=offset, min_score=min_score,
-                      source_type=source_type, tier=tier, since=since)
+                      source_type=source_type, tier=tier, tag=tag, since=since,
+                      order_by=order_by)
     conn.close()
     return {"items": [item.model_dump(mode="json") for item in items], "count": len(items)}
 
@@ -112,13 +115,17 @@ def dashboard(
     request: Request,
     source_type: str | None = None,
     tier: str | None = None,
+    tag: str | None = None,
     min_score: float | None = None,
+    order_by: str = "date",
 ):
     conn = get_db(settings.db_path)
-    items = get_items(conn, limit=50, source_type=source_type, tier=tier, min_score=min_score)
+    items = get_items(conn, limit=50, source_type=source_type, tier=tier, tag=tag,
+                      min_score=min_score, order_by=order_by)
     conn.close()
     return templates.TemplateResponse("dashboard.html", {
         "request": request,
         "items": items,
-        "filters": {"source_type": source_type, "tier": tier, "min_score": min_score},
+        "filters": {"source_type": source_type, "tier": tier, "tag": tag,
+                     "min_score": min_score, "order_by": order_by},
     })

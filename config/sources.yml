@@ -6,9 +6,7 @@ rsshub_base: "http://localhost:1200"
 
 sources:
   # === Twitter/X ===
-  # BLOCKED: RSSHub requires Twitter API credentials.
-  # To enable, set TWITTER_AUTH_TOKEN in docker/docker-compose.yml
-  # See: https://docs.rsshub.app/deploy/config#twitter
+  # Uses Chrome cookies directly (not RSSHub). Just stay logged into x.com in Chrome.
   twitter:
     - handle: "trq212"
       tags: [ai]
@@ -43,6 +41,21 @@ sources:
     - url: "https://openai.com/news/rss.xml"
       name: "OpenAI Blog"
       tags: [ai, openai, company]
+    - url: "https://deepmind.google/blog/rss.xml"
+      name: "Google DeepMind"
+      tags: [ai, research, deepmind, company]
+    - url: "https://research.google/blog/rss/"
+      name: "Google Research"
+      tags: [ai, research, google, company]
+    - url: "https://engineering.fb.com/feed/"
+      name: "Meta Engineering"
+      tags: [ai, engineering, meta, company]
+    - url: "https://machinelearning.apple.com/rss.xml"
+      name: "Apple Machine Learning"
+      tags: [ai, research, apple, company]
+    - url: "https://research.facebook.com/feed/"
+      name: "Meta Research"
+      tags: [ai, research, meta, company]
 
     # --- Open source / community ---
     - url: "https://huggingface.co/blog/feed.xml"
