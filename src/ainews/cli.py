@@ -92,6 +92,23 @@ def main():
 
     sub.add_parser("list-sources", help="List all configured sources")
 
+    sub.add_parser(
+        "cloud-fetch",
+        help="Fetch feeds + score with Claude API (for CI, no Twitter/Ollama)",
+    )
+
+    export_parser = sub.add_parser("export", help="Export scored items to JSON for static site")
+    export_parser.add_argument(
+        "--hours", type=int, default=48, help="Export items from the last N hours (default: 48)"
+    )
+    export_parser.add_argument(
+        "--output",
+        type=str,
+        default="static/data.json",
+        help="Output path (default: static/data.json)",
+    )
+    export_parser.add_argument("--min-score", type=float, default=None, help="Minimum score filter")
+
     args = parser.parse_args()
 
     if args.command == "serve":
@@ -126,6 +143,18 @@ def main():
 
         asyncio.run(setup_twitter_account(args.username, args.password, args.email))
         print("Twitter account set up. Tweets will be fetched on next ingestion cycle.")
+    elif args.command == "cloud-fetch":
+        from ainews.cloud_fetch import cloud_fetch_and_score
+
+        asyncio.run(cloud_fetch_and_score())
+    elif args.command == "export":
+        from pathlib import Path
+
+        from ainews.export import export_items
+
+        output = Path(args.output)
+        count = export_items(output, hours=args.hours, min_score=args.min_score)
+        print(f"Exported {count} items to {output}")
     else:
         parser.print_help()
         sys.exit(1)
