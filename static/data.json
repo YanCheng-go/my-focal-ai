@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-08T06:29:16.415848",
+  "exported_at": "2026-03-08T08:27:51.043366",
   "period_hours": 48,
-  "total": 2173,
+  "total": 2174,
   "all_tags": [
     "ai",
     "apple",
@@ -42,7 +42,27 @@
       ],
       "author": "",
       "published_at": "2026-03-07T18:13:39",
-      "fetched_at": "2026-03-08T06:29:15.452548",
+      "fetched_at": "2026-03-08T08:27:49.187044",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a5caea5867394b55",
+      "url": "https://www.youtube.com/watch?v=OUyfxhFtGCo",
+      "title": "This New Claude Code Feature is a Game Changer",
+      "summary": "Full courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about\nAll my FREE resources: https://www.skool.com/ai-automation-society/about\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\n14 day FREE n8n trial: https://n8n.partnerlinks.io/22crlu8afq5r\nCode NATEHERK to Self-Host n8n for 10% off (annual plan): http://hostinger.com/nateherk\nVoice to text: https://ref.wisprflow.ai/nateherk\n\nClaude Code can now run recurring tasks, set reminders, and loop skills on intervals for up to 3 days straight without any input from you. \n\nIn this video, I break down exactly how the new loop feature works, walk through the cron tools that power it, and compare it to scheduled tasks so you know which one to use and when.\n\nSponsorship Inquiries:\n\ud83d\udce7 sponsorships@nateherk.com\n\nTIMESTAMPS \n0:00 Loop Feature Demo\n1:02 How Loops Work\n3:03 Live Walkthrough\n5:32 Limitations\n6:40 Loops vs Scheduled Tasks\n8:15 Final Thoughts",
+      "content": "",
+      "source_name": "Nate Herk | AI Automation",
+      "source_type": "youtube",
+      "tags": [
+        "ai",
+        "automation"
+      ],
+      "author": "Nate Herk | AI Automation",
+      "published_at": "2026-03-07T18:03:00",
+      "fetched_at": "2026-03-08T08:27:42.453207",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10670,27 +10690,6 @@
       "author": "",
       "published_at": "2025-11-20T06:00:00",
       "fetched_at": "2026-03-07T13:04:12.308526",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "48c82545f2e78d57",
-      "url": "https://huggingface.co/blog/anylanguagemodel",
-      "title": "Introducing AnyLanguageModel: One API for Local and Remote LLMs on Apple Platforms",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2025-11-20T00:00:00",
-      "fetched_at": "2026-03-07T13:04:18.179596",
       "score": null,
       "score_reason": "",
       "tier": "",
