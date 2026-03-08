@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-08T14:27:08.604179",
+  "exported_at": "2026-03-08T16:27:25.273766",
   "period_hours": 48,
-  "total": 2174,
+  "total": 2176,
   "all_tags": [
     "ai",
     "apple",
@@ -28,6 +28,47 @@
   ],
   "items": [
     {
+      "id": "d00244444bb5a5de",
+      "url": "https://simonwillison.net/2026/Mar/8/joseph-weizenbaum/#atom-everything",
+      "title": "Quoting Joseph Weizenbaum",
+      "summary": "<blockquote cite=\"https://archive.org/details/computerpowerhum0000weiz_v0i3?q=realized\"><p>What I had not realized is that extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://archive.org/details/computerpowerhum0000weiz_v0i3?q=realized\">Joseph Weizenbaum</a>, creator of ELIZA, in 1976 (<a href=\"https://www.tiktok.com/@professorcasey/video/7614890527711825183\">via</a>)</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai-ethics\">ai-ethics</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/computer-history\">computer-history</a>, <a href=\"https://simonwillison.net/tags/internet-archive\">internet-archive</a></p>",
+      "content": "",
+      "source_name": "Simon Willison",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "",
+      "published_at": "2026-03-08T14:59:48",
+      "fetched_at": "2026-03-08T16:27:23.721004",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "77518f6ee12e764a",
+      "url": "https://www.youtube.com/watch?v=vFepZE_wrfg",
+      "title": "How to Build $10,000 Agentic Workflows (Claude Code Tutorial)",
+      "summary": "Full courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about\nAll my FREE resources: https://www.skool.com/ai-automation-society/about\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\n14 day FREE n8n trial: https://n8n.partnerlinks.io/22crlu8afq5r\nCode NATEHERK to Self-Host n8n for 10% off (annual plan): http://hostinger.com/nateherk\nVoice to text: https://ref.wisprflow.ai/nateherk\n\nI\u2019ve genuinely never seen workflows scale like this before, and it all comes down to building $10,000 agentic workflows with Claude Code. \n\nIn this video, I break down everything you need to know about how to build $10,000 agentic workflows, even if you\u2019ve never created an agent or touched Claude Code before. I\u2019ll explain what agentic workflows actually are, why they\u2019re worth $10,000+, and exactly how they function behind the scenes.\n\nThen I\u2019ll build an agentic workflow from scratch using Claude Code so you can watch the entire process step-by-step. By the end of this Claude Code tutorial, you\u2019ll know how to build, structure, and deploy your own workflows.\n\nSponsorship Inquiries:\n\ud83d\udce7 sponsorships@nateherk.com\n\nTimestamps:\n00:00 - Intro - Why now?\n00:38 - Big money moving in\n01:15 - Why automations break\n02:10 - \u201cSelf-fix\u201d - does it work?\n03:50 - Why basics still matter\n04:28 - Claude Code setup \n07:18 - Control the Agent\n10:09 - Live build starts\n20:56 - How to sell it",
+      "content": "",
+      "source_name": "Nate Herk | AI Automation",
+      "source_type": "youtube",
+      "tags": [
+        "ai",
+        "automation"
+      ],
+      "author": "Nate Herk | AI Automation",
+      "published_at": "2026-03-08T14:39:46",
+      "fetched_at": "2026-03-08T16:27:16.867890",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
       "id": "630e1059d6d2dadc",
       "url": "https://simonwillison.net/2026/Mar/7/codex-for-open-source/#atom-everything",
       "title": "Codex for Open Source",
@@ -42,7 +83,7 @@
       ],
       "author": "",
       "published_at": "2026-03-07T18:13:39",
-      "fetched_at": "2026-03-08T14:27:07.611489",
+      "fetched_at": "2026-03-08T16:27:23.721025",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -62,7 +103,7 @@
       ],
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-03-07T18:03:00",
-      "fetched_at": "2026-03-08T14:26:59.884495",
+      "fetched_at": "2026-03-08T16:27:16.867922",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10648,48 +10689,6 @@
       "author": "",
       "published_at": "2025-11-20T15:05:02",
       "fetched_at": "2026-03-07T13:04:12.738800",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "77d49aac921aab5d",
-      "url": "https://openai.com/index/openai-and-foxconn-collaborate",
-      "title": "OpenAI and Foxconn collaborate to strengthen U.S. manufacturing across the AI supply chain",
-      "summary": "OpenAI and Foxconn are collaborating to design and manufacture next-generation AI infrastructure hardware in the U.S. The partnership will develop multiple generations of data-center systems, strengthen U.S. supply chains, and build key components domestically to accelerate advanced AI infrastructure.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2025-11-20T14:50:00",
-      "fetched_at": "2026-03-07T13:04:12.308517",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0d6323266542f19d",
-      "url": "https://openai.com/index/small-business-ai-jam",
-      "title": "Helping 1,000 small businesses build with AI",
-      "summary": "OpenAI is partnering with DoorDash, SCORE, and local organizations to help 1,000 small businesses build with AI. The Small Business AI Jam gives Main Street business owners hands-on tools and training to compete and grow.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2025-11-20T06:00:00",
-      "fetched_at": "2026-03-07T13:04:12.308526",
       "score": null,
       "score_reason": "",
       "tier": "",
