@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.3.0 — 2026-03-09
+
+### Features
+
+- **UI redesign** — Tailwind CSS replaces hand-written inline styles across all templates and static pages. New shared `_base.html` template eliminates ~300 lines of duplicated HTML/CSS.
+- **Dark/light theme toggle** — Three-way toggle (light, system, dark) with localStorage persistence across all pages
+- **Notification badges** — Red badge counts on Dashboard, Trends, and CCC nav links show new items since last visit, powered by new `/api/badge-counts` endpoint
+- **About page** — New About page with project overview and tech stack, plus GitHub repo link in nav on all pages
+
+### Fixes
+
+- **Admin page crash** — Fix crash when `github_trending` config is a dict instead of a list
+- **Config normalization** — Normalize `github_trending` config to standard list format
+- **CCC badge accuracy** — Use exact `source_name` filter instead of fuzzy search for badge counts
+
+### Infrastructure
+
+- Bump `actions/cache` from v4 to v5
+- Add `source_name` filter to `_build_where` / `count_items` in storage layer
+
 ## v0.2.0 — 2026-03-09
 
 ### Features
