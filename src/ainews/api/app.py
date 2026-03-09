@@ -216,20 +216,30 @@ def leaderboard(request: Request):
 
 
 @app.get("/events", response_class=HTMLResponse)
-def events(request: Request):
+def events(request: Request, tab: str = "calendars", page: int = 1):
     sources_config = load_sources(settings.config_dir)
     event_links = sources_config.get("sources", {}).get("event_links", [])
-    conn = get_db(settings.db_path)
-    luma_items = get_items(conn, limit=50, source_type="luma")
-    tech_items = get_items(conn, limit=50, source_type="events")
-    conn.close()
+    items = []
+    total = 0
+    total_pages = 1
+    if tab in ("luma", "tech"):
+        source_type = "luma" if tab == "luma" else "events"
+        conn = get_db(settings.db_path)
+        offset = (page - 1) * PER_PAGE
+        items = get_items(conn, limit=PER_PAGE, offset=offset, source_type=source_type)
+        total = count_items(conn, source_type=source_type)
+        conn.close()
+        total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "events.html",
         {
             "request": request,
             "event_links": event_links,
-            "luma_items": luma_items,
-            "tech_items": tech_items,
+            "items": items,
+            "tab": tab,
+            "page": page,
+            "total_pages": total_pages,
+            "total": total,
         },
     )
 
