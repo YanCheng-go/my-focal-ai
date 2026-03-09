@@ -7,6 +7,7 @@ from ainews.backfill import sync_source_metadata
 from ainews.config import load_sources
 from ainews.ingest.events import run_events_ingestion
 from ainews.ingest.feeds import build_feed_urls, fetch_feed
+from ainews.ingest.github_trending import run_github_trending_ingestion
 from ainews.ingest.twitter import run_twitter_ingestion
 from ainews.ingest.xiaohongshu import run_xhs_ingestion
 from ainews.storage.db import ingest_items, mark_youtube_shorts_duplicates
@@ -63,6 +64,16 @@ async def fetch_single_source(
                 raise ValueError(f"Unknown event scraper: {scraper}")
             new_count = ingest_items(conn, name, items)
             return {"items_fetched": len(items), "new_items": new_count}
+
+    # Check GitHub trending
+    trending_config = sources_config.get("sources", {}).get("github_trending", {})
+    if trending_config and "github" in source_name.lower() and "trend" in source_name.lower():
+        from ainews.ingest.github_trending import fetch_github_trending
+
+        tags = trending_config.get("tags", ["github", "trending", "open-source"])
+        items = await fetch_github_trending(tags=tags)
+        new_count = ingest_items(conn, "GitHub Trending", items)
+        return {"items_fetched": len(items), "new_items": new_count}
 
     # Check all feed sources
     feeds = build_feed_urls(sources_config)
@@ -122,6 +133,13 @@ async def run_ingestion(conn: sqlite3.Connection, config_dir=None):
     except Exception:
         logger.exception("Events ingestion failed")
 
+    # GitHub trending (trendshift.io scraping)
+    try:
+        trending_count = await run_github_trending_ingestion(conn, sources_config)
+        total_new += trending_count
+    except Exception:
+        logger.exception("GitHub trending ingestion failed")
+
     # Sync tags and source_type from config to existing items (skips if unchanged)
     try:
         sync_source_metadata(conn, sources_config, config_dir=config_dir)
@@ -135,6 +153,6 @@ async def run_ingestion(conn: sqlite3.Connection, config_dir=None):
 
     logger.info(
         f"Ingestion complete: {total_new} new items from "
-        f"{len(feeds)} feeds + twitter + xhs + events"
+        f"{len(feeds)} feeds + twitter + xhs + events + github_trending"
     )
     return total_new

@@ -136,6 +136,11 @@ sources:
     tags: [ai, research, cohere, company]
     # Note: Mistral AI has no RSS feed and no working RSSHub route.
 
+  # === GitHub Trending (trendshift.io) ===
+  # Scraped daily — top trending repos by engagement score.
+  github_trending:
+    tags: [github, trending, open-source]
+
   # === Events (web scrapers) ===
   events:
   - scraper: "anthropic"
