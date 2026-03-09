@@ -21,6 +21,8 @@ uv run ainews serve                         # start server (port 8000, auto-relo
 uv run ainews fetch                         # one-time fetch + score (all sources, Ollama)
 uv run ainews fetch-source "OpenAI"         # fetch a single source by name (partial match)
 uv run ainews list-sources                  # list all configured sources
+uv run ainews backfill-tags                 # re-sync tags/type from config to DB
+uv run ainews backfill-tags --dry-run       # preview what would change
 uv run ainews cloud-fetch                   # fetch feeds + score with Claude API (for CI)
 uv run ainews export                        # export items to static/data.json
 uv run ruff check src/                     # lint
@@ -40,7 +42,8 @@ See `docs/architecture.md` for the full architecture diagram and data flow.
 
 Pipeline: **ingest -> dedup -> store -> score -> serve**.
 
-- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom, `twitter.py` for Twitter via Chrome cookies + GraphQL, `runner.py` orchestrates and skips existing items.
+- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom, `twitter.py` for Twitter via Chrome cookies + GraphQL, `events.py` for scraping tech company event pages (Anthropic, Google), `runner.py` orchestrates and skips existing items.
+- `src/ainews/backfill.py` — auto-syncs tags and source_type from `sources.yml` to existing DB items. Runs each fetch cycle (skips via file hash if config unchanged). CLI: `uv run ainews backfill-tags [--dry-run]`.
 - `src/ainews/scoring/scorer.py` — sends unscored items to Ollama with three principles from `config/principles.yml`. Returns score 0-1, tier, reason. `claude_scorer.py` is the cloud alternative using Claude API.
 - `src/ainews/storage/db.py` — SQLite (WAL). `get_existing_ids()` for batch dedup, `upsert_item` preserves existing scores via COALESCE, `ingest_items()` orchestrates dedup+upsert+commit, `source_state` table tracks last fetch per source, `mark_youtube_shorts_duplicates()` hides Shorts when a full video exists.
 - `src/ainews/api/app.py` — FastAPI + APScheduler. Dashboard sorted by `published_at` (except Luma events, pushed to bottom). Pagination (30/page), search, tag dropdown.
@@ -66,4 +69,4 @@ All settings via env vars prefixed `AINEWS_` (e.g., `AINEWS_OLLAMA_MODEL=qwen3:4
 
 ---
 
-*Last updated: 2026-03-07*
+*Last updated: 2026-03-09*

@@ -128,24 +128,33 @@ sources:
     tags: [ai, research, cohere, company]
     # Note: Mistral AI has no RSS feed and no working RSSHub route.
 
+  # === Events (web scrapers) ===
+  events:
+  - scraper: "anthropic"
+    name: "Anthropic Events"
+    tags: [ai, anthropic]
+  - scraper: "google_dev"
+    name: "Google Developer Events"
+    tags: [ai, google]
+
   # === Leaderboards ===
   # Reference links for manual browsing — not ingested by the pipeline.
   leaderboard:
   - url: "https://arena.ai/leaderboard"
     name: "Arena (Chatbot Arena)"
-    tags: [ai, leaderboard, benchmarks, evals]
+    tags: [ai, benchmarks, evals]
   - url: "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard"
     name: "HuggingFace Open LLM Leaderboard"
-    tags: [ai, leaderboard, benchmarks, open-source]
+    tags: [ai, benchmarks, open-source]
   - url: "https://artificialanalysis.ai"
     name: "Artificial Analysis"
-    tags: [ai, leaderboard, benchmarks, pricing]
+    tags: [ai, benchmarks, pricing]
   - url: "https://livebench.ai"
     name: "LiveBench"
-    tags: [ai, leaderboard, benchmarks, evals]
+    tags: [ai, benchmarks, evals]
   - url: "https://scale.com/leaderboard"
     name: "Scale AI SEAL Leaderboards"
-    tags: [ai, leaderboard, benchmarks, enterprise]
+    tags: [ai, benchmarks, enterprise]
 
   # === Events (Luma) ===
   # Route: /luma/:handle
