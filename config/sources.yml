@@ -160,13 +160,15 @@ sources:
     - events
     - claude code
     - copenhagen
-arxiv_queries:
-- query: "cat:cs.AI+AND+abs:transformer"
-  name: "arXiv: transformers"
-  tags: [ai, research, transformers]
-- query: "cat:cs.CL+AND+abs:large+language+model"
-  name: "arXiv: LLMs"
-  tags: [ai, research, llm]
-- query: "cat:cs.LG+AND+abs:reinforcement+learning"
-  name: "arXiv: RL"
-  tags: [ai, research, rl]
+
+  # === arXiv keyword queries (Atom API) ===
+  arxiv_queries:
+  - query: "cat:cs.AI+AND+abs:transformer"
+    name: "arXiv: transformers"
+    tags: [ai, research, transformers]
+  - query: "cat:cs.CL+AND+abs:large+language+model"
+    name: "arXiv: LLMs"
+    tags: [ai, research, llm]
+  - query: "cat:cs.LG+AND+abs:reinforcement+learning"
+    name: "arXiv: RL"
+    tags: [ai, research, rl]

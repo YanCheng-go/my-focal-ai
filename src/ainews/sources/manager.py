@@ -14,12 +14,12 @@ SOURCE_FIELDS = {
     "rsshub": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
     "xiaohongshu": {"required": ["user_id", "name"], "optional": ["tags"]},
     "luma": {"required": ["handle"], "optional": ["tags"]},
+    "leaderboard": {"required": ["url", "name"], "optional": ["tags"]},
     "arxiv_queries": {"required": ["query", "name"], "optional": ["tags"]},
 }
 
-# Types stored under top-level `sources` key (all except arxiv_queries)
-NESTED_TYPES = {k for k in SOURCE_FIELDS if k != "arxiv_queries"}
-TOP_LEVEL_TYPES = set(SOURCE_FIELDS) - NESTED_TYPES
+# All source types live under the top-level `sources` key in sources.yml
+NESTED_TYPES = set(SOURCE_FIELDS)
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -56,17 +56,12 @@ def validate_source(source_type: str, source_data: dict):
 
 def _get_source_list(data, source_type: str):
     """Get the list for a source type, creating it if needed."""
-    if source_type in NESTED_TYPES:
-        if "sources" not in data:
-            data["sources"] = {}
-        sources = data["sources"]
-        if source_type not in sources:
-            sources[source_type] = []
-        return sources[source_type]
-    else:
-        if source_type not in data:
-            data[source_type] = []
-        return data[source_type]
+    if "sources" not in data:
+        data["sources"] = {}
+    sources = data["sources"]
+    if source_type not in sources:
+        sources[source_type] = []
+    return sources[source_type]
 
 
 def add_source(config_dir: Path, source_type: str, source_data: dict):
@@ -139,17 +134,5 @@ def get_all_sources_flat(config_dir: Path) -> list[dict]:
                     "disabled": bool(entry.get("disabled")),
                 }
             )
-
-    # arxiv_queries (top-level)
-    for i, entry in enumerate(data.get("arxiv_queries", []) or []):
-        result.append(
-            {
-                "type": "arxiv_queries",
-                "index": i,
-                "name": get_source_display_name("arxiv_queries", entry),
-                "config": dict(entry),
-                "disabled": bool(entry.get("disabled")),
-            }
-        )
 
     return result

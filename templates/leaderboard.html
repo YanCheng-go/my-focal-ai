@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard — AI News Filter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 1.4rem; color: #fff; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .nav { display: flex; gap: 16px; align-items: center; }
+        .nav a { color: #7cb8ff; text-decoration: none; font-size: 0.85rem; }
+        .nav a.active { color: #f0abfc; }
+        .subtitle { font-size: 0.85rem; color: #666; margin-bottom: 24px; }
+        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
+        .item:hover { border-color: #333; }
+        .item-title { font-size: 1rem; font-weight: 600; }
+        .item-title a { color: #e0e0e0; text-decoration: none; }
+        .item-title a:hover { color: #7cb8ff; }
+        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
+        .item-url { margin-top: 6px; font-size: 0.8rem; }
+        .item-url a { color: #555; text-decoration: none; }
+        .item-url a:hover { color: #7cb8ff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <h1>Leaderboard</h1>
+                <a href="/">Dashboard</a>
+                <a href="/admin">Sources</a>
+                <a href="/leaderboard" class="active">Leaderboard</a>
+            </div>
+        </div>
+        <div class="subtitle">AI model benchmarks and ranking sites for manual browsing.</div>
+
+        {% for lb in leaderboard_links %}
+        <div class="item">
+            <div class="item-title">
+                <a href="{{ lb.url }}" target="_blank" rel="noopener">{{ lb.name }}</a>
+            </div>
+            <div class="item-meta">
+                {% for t in lb.get('tags', []) %}
+                <span class="tag">{{ t }}</span>
+                {% endfor %}
+            </div>
+            <div class="item-url">
+                <a href="{{ lb.url }}" target="_blank" rel="noopener">{{ lb.url }}</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

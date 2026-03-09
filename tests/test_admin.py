@@ -33,10 +33,10 @@ sources:
     - handle: "test-events"
       tags: [events]
 
-arxiv_queries:
-  - query: "cat:cs.AI"
-    name: "arXiv test"
-    tags: [ai]
+  arxiv_queries:
+    - query: "cat:cs.AI"
+      name: "arXiv test"
+      tags: [ai]
 """
 
 
@@ -108,7 +108,7 @@ class TestSourceManager:
 
         add_source(config_dir, "arxiv_queries", {"query": "cat:cs.CL", "name": "NLP"})
         data = load_sources_roundtrip(config_dir)
-        assert len(data["arxiv_queries"]) == 2
+        assert len(data["sources"]["arxiv_queries"]) == 2
 
     def test_update_source(self, config_dir):
         from ainews.sources.manager import load_sources_roundtrip, update_source

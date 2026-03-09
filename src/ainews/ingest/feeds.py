@@ -129,7 +129,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
         )
 
     # ArXiv keyword queries (Atom API)
-    for aq in sources_config.get("arxiv_queries", []):
+    for aq in sources.get("arxiv_queries", []):
         query = aq["query"]
         feeds.append(
             {
