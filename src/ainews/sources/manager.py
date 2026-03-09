@@ -16,6 +16,7 @@ SOURCE_FIELDS = {
     "luma": {"required": ["handle"], "optional": ["tags"]},
     "events": {"required": ["scraper", "name"], "optional": ["tags"]},
     "leaderboard": {"required": ["url", "name"], "optional": ["tags"]},
+    "event_links": {"required": ["url", "name"], "optional": ["tags"]},
     "arxiv_queries": {"required": ["query", "name"], "optional": ["tags"]},
 }
 

@@ -205,3 +205,13 @@ def leaderboard(request: Request):
         "leaderboard.html",
         {"request": request, "leaderboard_links": leaderboard_links},
     )
+
+
+@app.get("/events", response_class=HTMLResponse)
+def events(request: Request):
+    sources_config = load_sources(settings.config_dir)
+    event_links = sources_config.get("sources", {}).get("event_links", [])
+    return templates.TemplateResponse(
+        "events.html",
+        {"request": request, "event_links": event_links},
+    )

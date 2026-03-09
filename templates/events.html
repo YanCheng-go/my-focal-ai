@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard — AI News Filter</title>
+    <title>Events — AI News Filter</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
@@ -30,27 +30,27 @@
     <div class="container">
         <div class="header">
             <div class="nav">
-                <h1>Leaderboard</h1>
+                <h1>Events</h1>
                 <a href="/">Dashboard</a>
                 <a href="/admin">Sources</a>
-                <a href="/leaderboard" class="active">Leaderboard</a>
-                <a href="/events">Events</a>
+                <a href="/leaderboard">Leaderboard</a>
+                <a href="/events" class="active">Events</a>
             </div>
         </div>
-        <div class="subtitle">AI model benchmarks and ranking sites for manual browsing.</div>
+        <div class="subtitle">Tech company event calendars for manual browsing.</div>
 
-        {% for lb in leaderboard_links %}
+        {% for ev in event_links %}
         <div class="item">
             <div class="item-title">
-                <a href="{{ lb.url }}" target="_blank" rel="noopener">{{ lb.name }}</a>
+                <a href="{{ ev.url }}" target="_blank" rel="noopener">{{ ev.name }}</a>
             </div>
             <div class="item-meta">
-                {% for t in lb.get('tags', []) %}
+                {% for t in ev.get('tags', []) %}
                 <span class="tag">{{ t }}</span>
                 {% endfor %}
             </div>
             <div class="item-url">
-                <a href="{{ lb.url }}" target="_blank" rel="noopener">{{ lb.url }}</a>
+                <a href="{{ ev.url }}" target="_blank" rel="noopener">{{ ev.url }}</a>
             </div>
         </div>
         {% endfor %}
