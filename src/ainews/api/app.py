@@ -270,6 +270,11 @@ def trends(request: Request, tab: str = "daily", page: int = 1):
     )
 
 
+@app.get("/about", response_class=HTMLResponse)
+def about(request: Request):
+    return templates.TemplateResponse("about.html", {"request": request})
+
+
 @app.get("/ccc", response_class=HTMLResponse)
 def ccc(request: Request, page: int = 1):
     conn = get_db(settings.db_path)
