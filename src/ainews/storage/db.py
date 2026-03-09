@@ -203,6 +203,7 @@ def _build_where(
     since: datetime | None = None,
     tag: str | None = None,
     search: str | None = None,
+    source_name: str | None = None,
     exclude_sources: list[str] | None = None,
     exclude_source_types: list[str] | None = None,
     source_types: list[str] | None = None,
@@ -230,6 +231,9 @@ def _build_where(
     if tag:
         where += " AND items.id IN (SELECT item_id FROM item_tags WHERE tag = ?)"
         params.append(tag)
+    if source_name:
+        where += " AND items.source_name = ?"
+        params.append(source_name)
     if search:
         where += " AND (items.title LIKE ? OR items.summary LIKE ? OR items.source_name LIKE ?)"
         term = f"%{search}%"
@@ -255,6 +259,7 @@ def count_items(
     since: datetime | None = None,
     tag: str | None = None,
     search: str | None = None,
+    source_name: str | None = None,
     exclude_sources: list[str] | None = None,
     exclude_source_types: list[str] | None = None,
     source_types: list[str] | None = None,
@@ -266,6 +271,7 @@ def count_items(
         since=since,
         tag=tag,
         search=search,
+        source_name=source_name,
         exclude_sources=exclude_sources,
         exclude_source_types=exclude_source_types,
         source_types=source_types,

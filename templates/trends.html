@@ -1,98 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trends — GitHub Trending</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        h1 { font-size: 1.4rem; color: #fff; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
-        .nav { display: flex; gap: 16px; align-items: center; }
-        .nav a { color: #7cb8ff; text-decoration: none; font-size: 0.85rem; }
-        .nav a.active { color: #f0abfc; }
-        .nav .gh-link { display: inline-flex; align-items: center; }
-        .nav .gh-link svg { fill: #7cb8ff; }
-        .nav .gh-link:hover svg { fill: #f0abfc; }
-        .subtitle { font-size: 0.85rem; color: #666; margin-bottom: 16px; }
-        .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
-        .filter-link { color: #888; text-decoration: none; padding: 4px 12px; border: 1px solid #222; border-radius: 4px; font-size: 0.8rem; transition: all 0.2s; }
-        .filter-link:hover { border-color: #555; color: #ccc; }
-        .filter-link.active { background: #1a1a2e; border-color: #818cf8; color: #818cf8; }
-        .status-bar { font-size: 0.8rem; color: #555; margin-bottom: 16px; }
-        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
-        .item:hover { border-color: #333; }
-        .item-title { font-size: 1rem; font-weight: 600; }
-        .item-title a { color: #e0e0e0; text-decoration: none; }
-        .item-title a:hover { color: #7cb8ff; }
-        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; }
-        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.5; }
-        .empty { font-size: 0.85rem; color: #555; padding: 12px 0; }
-        .pagination { display: flex; gap: 8px; justify-content: center; margin-top: 24px; }
-        .pagination a { color: #7cb8ff; text-decoration: none; padding: 4px 12px; border: 1px solid #333; border-radius: 4px; }
-        .pagination a:hover { border-color: #7cb8ff; }
-        .pagination .current { color: #f0abfc; border-color: #f0abfc; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="nav">
-                <h1>Trends</h1>
-                <a href="/">Dashboard</a>
-                <a href="/admin">Admin</a>
-                <a href="/leaderboard">Leaderboard</a>
-                <a href="/events">Events</a>
-                <a href="/trends" class="active">Trends</a>
-                <a href="/ccc">CCC</a>
-                <a href="/about">About</a>
-                <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" class="gh-link" title="GitHub"><svg width="18" height="18" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-            </div>
+{% extends "_base.html" %}
+{% set active_page = "trends" %}
+{% set page_title = "Trends — GitHub Trending" %}
+
+{% block content %}
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">GitHub Trending — top repos from <a href="https://trendshift.io" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">trendshift.io</a>.</p>
+
+{% set active_cls = "bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
+{% set inactive_cls = "bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" %}
+
+<div class="flex gap-2 flex-wrap mb-4">
+    <a href="/trends?tab=daily" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'daily' else inactive_cls }}">Daily Trending</a>
+    <a href="/trends?tab=history" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'history' else inactive_cls }}">Trending History</a>
+</div>
+
+<div class="text-xs text-gray-400 dark:text-gray-500 mb-4">{{ total }} repos &middot; Page {{ page }} of {{ total_pages }}</div>
+
+{% if items %}
+    {% for item in items %}
+    <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 border-l-indigo-400 hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+        <div class="text-base font-semibold">
+            <a href="{{ item.url }}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">{{ item.title }}</a>
         </div>
-        <div class="subtitle">GitHub Trending — top repos from <a href="https://trendshift.io" target="_blank" rel="noopener" style="color:#7cb8ff">trendshift.io</a>.</div>
-
-        <div class="filters">
-            <a href="/trends?tab=daily" class="filter-link {% if tab == 'daily' %}active{% endif %}">Daily Trending</a>
-            <a href="/trends?tab=history" class="filter-link {% if tab == 'history' %}active{% endif %}">Trending History</a>
-        </div>
-
-        <div class="status-bar">{{ total }} repos &middot; Page {{ page }} of {{ total_pages }}</div>
-
-        {% if items %}
-        {% for item in items %}
-        <div class="item">
-            <div class="item-title">
-                <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
-            </div>
-            <div class="item-meta">
-                {% for t in item.tags[:4] %}
-                <span class="tag">{{ t }}</span>
-                {% endfor %}
-                {% if item.published_at %}
-                <span>{{ item.published_at.strftime('%b %d, %Y') }}</span>
-                {% endif %}
-            </div>
-            {% if item.summary %}
-            <div class="item-summary">{{ item.summary[:300] }}{{ '...' if item.summary|length > 300 }}</div>
+        <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap">
+            {% for t in item.tags[:4] %}
+            <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">{{ t }}</span>
+            {% endfor %}
+            {% if item.published_at %}
+            <span>{{ item.published_at.strftime('%b %d, %Y') }}</span>
             {% endif %}
         </div>
-        {% endfor %}
-        {% else %}
-        <div class="empty">No trending repos found.</div>
-        {% endif %}
-
-        {% if total_pages > 1 %}
-        <div class="pagination">
-            {% if page > 1 %}<a href="/trends?tab={{ tab }}&page={{ page - 1 }}">&laquo; Prev</a>{% endif %}
-            {% for p in range(1, total_pages + 1) %}
-            <a href="/trends?tab={{ tab }}&page={{ p }}" {% if p == page %}class="current"{% endif %}>{{ p }}</a>
-            {% endfor %}
-            {% if page < total_pages %}<a href="/trends?tab={{ tab }}&page={{ page + 1 }}">Next &raquo;</a>{% endif %}
-        </div>
+        {% if item.summary %}
+        <div class="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{{ item.summary[:300] }}{{ '...' if item.summary|length > 300 }}</div>
         {% endif %}
     </div>
-</body>
-</html>
+    {% endfor %}
+{% else %}
+    <div class="text-sm text-gray-400 dark:text-gray-500 py-3">No trending repos found.</div>
+{% endif %}
+
+{% if total_pages > 1 %}
+<div class="flex gap-2 justify-center mt-6">
+    {% set pg_link = "px-3 py-1.5 rounded-md text-sm border bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" %}
+    {% set pg_current = "px-3 py-1.5 rounded-md text-sm border bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
+    {% if page > 1 %}<a href="/trends?tab={{ tab }}&page={{ page - 1 }}" class="{{ pg_link }}">Prev</a>{% endif %}
+    {% for p in range(1, total_pages + 1) %}
+    <a href="/trends?tab={{ tab }}&page={{ p }}" class="{{ pg_current if p == page else pg_link }}">{{ p }}</a>
+    {% endfor %}
+    {% if page < total_pages %}<a href="/trends?tab={{ tab }}&page={{ page + 1 }}" class="{{ pg_link }}">Next</a>{% endif %}
+</div>
+{% endif %}
+{% endblock %}

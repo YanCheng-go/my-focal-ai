@@ -4,80 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events — AI News Filter</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        h1 { font-size: 1.4rem; color: #fff; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
-        .nav { display: flex; gap: 16px; align-items: center; }
-        .nav a { color: #7cb8ff; text-decoration: none; font-size: 0.85rem; }
-        .nav a.active { color: #f0abfc; }
-        .nav .gh-link { display: inline-flex; align-items: center; }
-        .nav .gh-link svg { fill: #7cb8ff; }
-        .nav .gh-link:hover svg { fill: #f0abfc; }
-        .subtitle { font-size: 0.85rem; color: #666; margin-bottom: 16px; }
-        .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
-        .filter-link { color: #888; text-decoration: none; padding: 4px 12px; border: 1px solid #222; border-radius: 4px; font-size: 0.8rem; cursor: pointer; transition: all 0.2s; background: none; }
-        .filter-link:hover { border-color: #555; color: #ccc; }
-        .filter-link.active { background: #1a1a2e; border-color: #818cf8; color: #818cf8; }
-        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
-        .item:hover { border-color: #333; }
-        .item-title { font-size: 1rem; font-weight: 600; }
-        .item-title a { color: #e0e0e0; text-decoration: none; }
-        .item-title a:hover { color: #7cb8ff; }
-        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; }
-        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.5; }
-        .item-url { margin-top: 6px; font-size: 0.8rem; }
-        .item-url a { color: #555; text-decoration: none; }
-        .item-url a:hover { color: #7cb8ff; }
-        .empty { font-size: 0.85rem; color: #555; padding: 12px 0; }
+    <script>
+    (function(){
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches))
+            document.documentElement.classList.add('dark');
+    })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="nav">
-                <h1>Events</h1>
-                <a href="index.html">Dashboard</a>
-                <a href="leaderboard.html">Leaderboard</a>
-                <a href="events.html" class="active">Events</a>
-                <a href="trends.html">Trends</a>
-                <a href="ccc.html">CCC</a>
-                <a href="about.html">About</a>
-                <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" class="gh-link" title="GitHub"><svg width="18" height="18" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+<body class="bg-gray-50 text-gray-900 dark:bg-neutral-950 dark:text-gray-200 antialiased">
+    <nav class="border-b border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900">
+        <div class="max-w-4xl mx-auto px-5 py-3">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white shrink-0">AI News</a>
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                    <a href="index.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Dashboard <span id="badge-dashboard" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
+                    <a href="leaderboard.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Leaderboard</a>
+                    <a href="events.html" class="text-blue-600 dark:text-blue-400 font-medium">Events</a>
+                    <a href="trends.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Trends <span id="badge-trends" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
+                    <a href="ccc.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">CCC <span id="badge-ccc" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
+                    <a href="about.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">About</a>
+                </div>
+                <div class="flex items-center gap-1 ml-auto">
+                    <button onclick="setTheme('light')" id="theme-light" class="p-1.5 rounded cursor-pointer" title="Light"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
+                    <button onclick="setTheme('system')" id="theme-system" class="p-1.5 rounded cursor-pointer" title="System"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></button>
+                    <button onclick="setTheme('dark')" id="theme-dark" class="p-1.5 rounded cursor-pointer" title="Dark"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></button>
+                    <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" class="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300" title="GitHub"><svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                </div>
             </div>
         </div>
-        <div class="subtitle">Tech company events — calendars, community meetups, and scraped listings.</div>
+    </nav>
 
-        <div class="filters">
-            <button class="filter-link active" onclick="setTab('calendars')">Event Calendars</button>
-            <button class="filter-link" onclick="setTab('luma')">Luma</button>
-            <button class="filter-link" onclick="setTab('tech')">Tech Events</button>
+    <main class="max-w-4xl mx-auto px-5 py-5">
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Tech company events — calendars, community meetups, and scraped listings.</p>
+        <div class="flex gap-2 flex-wrap mb-4" id="tab-bar">
+            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" onclick="setTab('calendars')">Event Calendars</button>
+            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" onclick="setTab('luma')">Luma</button>
+            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" onclick="setTab('tech')">Tech Events</button>
         </div>
         <div id="items"></div>
-    </div>
-    <script>
-    let eventLinks = [];
-    let allItems = [];
-    let currentTab = 'calendars';
+    </main>
 
-    function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text || '';
-        return div.innerHTML;
+    <script>
+    function setTheme(mode) {
+        if (mode === 'dark') { localStorage.setItem('theme', 'dark'); document.documentElement.classList.add('dark'); }
+        else if (mode === 'light') { localStorage.setItem('theme', 'light'); document.documentElement.classList.remove('dark'); }
+        else { localStorage.removeItem('theme'); document.documentElement.classList.toggle('dark', window.matchMedia('(prefers-color-scheme: dark)').matches); }
+        updateThemeButtons();
     }
+    function updateThemeButtons() {
+        var t = localStorage.getItem('theme');
+        ['light', 'system', 'dark'].forEach(function(m) {
+            var el = document.getElementById('theme-' + m);
+            el.className = 'p-1.5 rounded cursor-pointer ' + ((m === 'system' && !t) || (t === m) ? 'text-blue-600 dark:text-blue-400' : 'text-gray-400 hover:text-gray-600 dark:hover:text-gray-300');
+        });
+    }
+    updateThemeButtons();
+    function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text || ''; return div.innerHTML; }
+
+    // Badges
+    (function() {
+        var lastSeen = localStorage.getItem('ainews_last_seen');
+        if (!lastSeen) { localStorage.setItem('ainews_last_seen', new Date().toISOString()); return; }
+        var lastSeenDate = new Date(lastSeen);
+        fetch('data.json').then(r => r.json()).then(data => {
+            var HIDDEN_TYPES = ['events','luma','github_trending','github_trending_history'];
+            var counts = {dashboard:0,trends:0,ccc:0};
+            (data.items||[]).forEach(function(item) {
+                var d = new Date(item.published_at || item.fetched_at);
+                if (d > lastSeenDate) {
+                    if (!HIDDEN_TYPES.includes(item.source_type) && item.source_name !== 'Claude Code Releases') counts.dashboard++;
+                    if (item.source_type === 'github_trending' || item.source_type === 'github_trending_history') counts.trends++;
+                    if (item.source_name === 'Claude Code Releases') counts.ccc++;
+                }
+            });
+            Object.keys(counts).forEach(function(p) { var el = document.getElementById('badge-'+p); if (el && counts[p] > 0) { el.textContent = counts[p] > 99 ? '99+' : counts[p]; el.classList.remove('hidden'); } });
+        }).catch(function(){});
+        localStorage.setItem('ainews_last_seen', new Date().toISOString());
+    })();
+
+    let eventLinks = [], allItems = [], currentTab = 'calendars';
+    const activeCls = 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
+    const inactiveCls = 'bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600';
 
     function setTab(tab) {
         currentTab = tab;
-        document.querySelectorAll('.filter-link').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.filter-link').forEach(b => {
-            if ((tab === 'calendars' && b.textContent === 'Event Calendars') ||
-                (tab === 'luma' && b.textContent === 'Luma') ||
-                (tab === 'tech' && b.textContent === 'Tech Events')) {
-                b.classList.add('active');
-            }
+        const labels = { calendars: 'Event Calendars', luma: 'Luma', tech: 'Tech Events' };
+        document.querySelectorAll('#tab-bar button').forEach(b => {
+            const isActive = b.textContent.trim() === labels[tab];
+            b.className = 'px-3 py-1.5 rounded-md text-sm border cursor-pointer ' + (isActive ? activeCls : inactiveCls);
         });
         render();
     }
@@ -86,30 +105,27 @@
         const container = document.getElementById('items');
         if (currentTab === 'calendars') {
             container.innerHTML = eventLinks.map(item => `
-                <div class="item">
-                    <div class="item-title"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.name)}</a></div>
-                    <div class="item-meta">${(item.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
-                    <div class="item-url"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.url)}</a></div>
+                <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-4 mb-3 border-l-4 border-l-emerald-500 hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+                    <div class="text-base font-semibold"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.name)}</a></div>
+                    <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap">${(item.tags || []).map(t => `<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${escapeHtml(t)}</span>`).join('')}</div>
+                    <div class="mt-1.5 text-xs"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.url)}</a></div>
                 </div>
-            `).join('') || '<div class="empty">No event calendars configured.</div>';
+            `).join('') || '<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No event calendars configured.</div>';
         } else {
             const sourceType = currentTab === 'luma' ? 'luma' : 'events';
             const items = allItems.filter(i => i.source_type === sourceType);
-            if (items.length === 0) {
-                container.innerHTML = '<div class="empty">No events found.</div>';
-                return;
-            }
+            if (!items.length) { container.innerHTML = '<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No events found.</div>'; return; }
             container.innerHTML = items.map(item => {
                 const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
                 const summary = item.summary ? escapeHtml(item.summary.slice(0, 200)) + (item.summary.length > 200 ? '...' : '') : '';
-                return `<div class="item">
-                    <div class="item-title"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a></div>
-                    <div class="item-meta">
+                return `<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 border-l-emerald-500 hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+                    <div class="text-base font-semibold"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.title)}</a></div>
+                    <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap">
                         <span>${escapeHtml(item.source_name)}</span>
-                        ${(item.tags || []).slice(0, 3).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('')}
+                        ${(item.tags || []).slice(0, 3).map(t => `<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${escapeHtml(t)}</span>`).join('')}
                         ${pubDate ? `<span>${pubDate}</span>` : ''}
                     </div>
-                    ${summary ? `<div class="item-summary">${summary}</div>` : ''}
+                    ${summary ? `<div class="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">${summary}</div>` : ''}
                 </div>`;
             }).join('');
         }
@@ -124,7 +140,7 @@
             allItems = data.items || [];
             render();
         } catch (e) {
-            document.getElementById('items').innerHTML = '<div class="empty">No data available.</div>';
+            document.getElementById('items').innerHTML = '<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No data available.</div>';
         }
     }
     init();

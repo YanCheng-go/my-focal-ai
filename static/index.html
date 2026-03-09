@@ -4,91 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI News Filter</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        h1 { font-size: 1.4rem; color: #fff; }
-
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
-        .header-right { display: flex; gap: 8px; align-items: center; }
-
-        .search-input { padding: 6px 12px; border-radius: 6px; background: #1a1a1a; color: #e0e0e0; border: 1px solid #222; font-size: 0.85rem; width: 200px; outline: none; }
-        .search-input:focus { border-color: #2d5a8e; }
-        .search-input::placeholder { color: #555; }
-
-        .filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
-        .filter-link { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; text-decoration: none; font-size: 0.85rem; border: 1px solid #222; cursor: pointer; }
-        .filter-link:hover { border-color: #333; color: #ccc; }
-        .filter-link.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
-
-        .tag-dropdown { position: relative; display: inline-block; }
-        .tag-dropdown-btn { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; font-size: 0.85rem; border: 1px solid #222; cursor: pointer; }
-        .tag-dropdown-btn:hover { border-color: #333; color: #ccc; }
-        .tag-dropdown-btn.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
-        .tag-dropdown-content { display: none; position: absolute; top: 100%; left: 0; margin-top: 4px; background: #1a1a1a; border: 1px solid #333; border-radius: 6px; min-width: 160px; max-height: 300px; overflow-y: auto; z-index: 10; }
-        .tag-dropdown:hover .tag-dropdown-content { display: block; }
-        .tag-dropdown-content a { display: block; padding: 6px 14px; color: #aaa; text-decoration: none; font-size: 0.85rem; cursor: pointer; }
-        .tag-dropdown-content a:hover { background: #222; color: #e0e0e0; }
-        .tag-dropdown-content a.active { color: #7cb8ff; }
-
-        .status-bar { font-size: 0.8rem; color: #555; margin-bottom: 16px; }
-
-        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
-        .item:hover { border-color: #333; }
-        .item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-        .item-title { font-size: 1rem; font-weight: 600; }
-        .item-title a { color: #e0e0e0; text-decoration: none; }
-        .item-title a:hover { color: #7cb8ff; }
-        .score { flex-shrink: 0; font-size: 0.85rem; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
-        .score-high { background: #1a3d1a; color: #4ade80; }
-        .score-mid { background: #3d3d1a; color: #facc15; }
-        .score-low { background: #1a1a1a; color: #666; }
-        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.4; }
-        .item-reason { margin-top: 8px; font-size: 0.85rem; color: #888; font-style: italic; }
-        .empty { text-align: center; padding: 60px 20px; color: #444; }
-
-        .pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 24px; padding: 16px 0; }
-        .pagination button { padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; background: #1a1a1a; color: #aaa; border: 1px solid #222; cursor: pointer; }
-        .pagination button:hover { border-color: #333; color: #e0e0e0; }
-        .pagination button:disabled { color: #333; cursor: default; pointer-events: none; }
-        .pagination .current { background: #1e3a5f; color: #7cb8ff; border: 1px solid #2d5a8e; padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; }
-
-        .updated { font-size: 0.75rem; color: #444; }
+    <script>
+    (function(){
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches))
+            document.documentElement.classList.add('dark');
+    })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div style="display:flex;gap:16px;align-items:center">
-                <h1>AI News Filter</h1>
-                <a href="leaderboard.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Leaderboard</a>
-                <a href="events.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Events</a>
-                <a href="trends.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Trends</a>
-                <a href="ccc.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">CCC</a>
-                <a href="about.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">About</a>
-                <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" style="display:inline-flex;align-items:center" title="GitHub"><svg width="18" height="18" viewBox="0 0 16 16" fill="#7cb8ff"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-            </div>
-            <div class="header-right">
-                <input class="search-input" type="text" id="search" placeholder="Search titles, sources..." oninput="render()">
-                <span class="updated" id="updated"></span>
+<body class="bg-gray-50 text-gray-900 dark:bg-neutral-950 dark:text-gray-200 antialiased">
+    <nav class="border-b border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900">
+        <div class="max-w-4xl mx-auto px-5 py-3">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+                <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white shrink-0">AI News</a>
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
+                    <a href="index.html" class="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400 font-medium">Dashboard <span id="badge-dashboard" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
+                    <a href="leaderboard.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Leaderboard</a>
+                    <a href="events.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Events</a>
+                    <a href="trends.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Trends <span id="badge-trends" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
+                    <a href="ccc.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">CCC <span id="badge-ccc" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
+                    <a href="about.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">About</a>
+                </div>
+                <div class="flex items-center gap-1 ml-auto">
+                    <button onclick="setTheme('light')" id="theme-light" class="p-1.5 rounded cursor-pointer" title="Light"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
+                    <button onclick="setTheme('system')" id="theme-system" class="p-1.5 rounded cursor-pointer" title="System"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></button>
+                    <button onclick="setTheme('dark')" id="theme-dark" class="p-1.5 rounded cursor-pointer" title="Dark"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></button>
+                    <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" class="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300" title="GitHub"><svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                </div>
             </div>
         </div>
+    </nav>
 
-        <div class="filters" id="filters"></div>
-        <div class="status-bar" id="status"></div>
+    <main class="max-w-4xl mx-auto px-5 py-5">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+            <input class="w-full sm:w-48 px-3 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                   type="text" id="search" placeholder="Search titles, sources..." oninput="render()">
+            <span class="text-xs text-gray-400" id="updated"></span>
+        </div>
+        <div class="flex gap-2 mb-3 flex-wrap items-center" id="filters"></div>
+        <div class="text-xs text-gray-400 dark:text-gray-500 mb-4" id="status"></div>
         <div id="items"></div>
-        <div class="pagination" id="pagination"></div>
-    </div>
+        <div class="flex justify-center items-center gap-2 mt-6 py-4" id="pagination"></div>
+    </main>
 
     <script>
+    // Theme
+    function setTheme(mode) {
+        if (mode === 'dark') { localStorage.setItem('theme', 'dark'); document.documentElement.classList.add('dark'); }
+        else if (mode === 'light') { localStorage.setItem('theme', 'light'); document.documentElement.classList.remove('dark'); }
+        else { localStorage.removeItem('theme'); document.documentElement.classList.toggle('dark', window.matchMedia('(prefers-color-scheme: dark)').matches); }
+        updateThemeButtons();
+    }
+    function updateThemeButtons() {
+        var t = localStorage.getItem('theme');
+        ['light', 'system', 'dark'].forEach(function(m) {
+            var el = document.getElementById('theme-' + m);
+            var isActive = (m === 'system' && !t) || (t === m);
+            el.className = 'p-1.5 rounded cursor-pointer ' + (isActive ? 'text-blue-600 dark:text-blue-400' : 'text-gray-400 hover:text-gray-600 dark:hover:text-gray-300');
+        });
+    }
+    updateThemeButtons();
+
+    // Badge logic
+    function computeBadges(items) {
+        var lastSeen = localStorage.getItem('ainews_last_seen');
+        if (!lastSeen) { localStorage.setItem('ainews_last_seen', new Date().toISOString()); return; }
+        var lastSeenDate = new Date(lastSeen);
+        var HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
+        var counts = { dashboard: 0, trends: 0, ccc: 0 };
+        items.forEach(function(item) {
+            var d = new Date(item.published_at || item.fetched_at);
+            if (d > lastSeenDate) {
+                if (!HIDDEN_TYPES.includes(item.source_type) && item.source_name !== 'Claude Code Releases') counts.dashboard++;
+                if (item.source_type === 'github_trending' || item.source_type === 'github_trending_history') counts.trends++;
+                if (item.source_name === 'Claude Code Releases') counts.ccc++;
+            }
+        });
+        Object.keys(counts).forEach(function(page) {
+            var el = document.getElementById('badge-' + page);
+            if (el && counts[page] > 0) { el.textContent = counts[page] > 99 ? '99+' : counts[page]; el.classList.remove('hidden'); }
+        });
+        localStorage.setItem('ainews_last_seen', new Date().toISOString());
+    }
+
+    // Data
     const PER_PAGE = 30;
-    let allItems = [];
-    let allTags = [];
+    const SOURCE_BORDERS = { twitter:'border-l-sky-400', youtube:'border-l-red-500', rss:'border-l-amber-500', rsshub:'border-l-amber-500', arxiv:'border-l-red-800', arxiv_queries:'border-l-red-800', github_trending:'border-l-indigo-400', github_trending_history:'border-l-indigo-400', events:'border-l-emerald-500', luma:'border-l-emerald-500', xiaohongshu:'border-l-rose-400' };
+    let allItems = [], allTags = [];
     let filters = { source_type: null, tier: null, tag: null, order_by: 'date' };
     let page = 1;
+
+    const HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
+    const HIDDEN_SOURCES = ['Claude Code Releases'];
 
     async function init() {
         try {
@@ -97,27 +108,28 @@
             allItems = data.items || [];
             allTags = data.all_tags || [];
             document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString();
+            computeBadges(allItems);
             buildFilters();
             render();
         } catch (e) {
-            document.getElementById('items').innerHTML = '<div class="empty"><p>No data yet. Waiting for first fetch cycle.</p></div>';
+            document.getElementById('items').innerHTML = '<div class="text-center py-16 text-gray-400 dark:text-gray-500"><p>No data yet. Waiting for first fetch cycle.</p></div>';
         }
     }
 
+    const activeCls = 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
+    const inactiveCls = 'bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600';
+
     function buildFilters() {
         const types = [...new Set(allItems.map(i => i.source_type))].filter(t => !HIDDEN_TYPES.includes(t)).sort();
-        let html = '<button class="filter-link active" onclick="setFilter({})">All</button>';
+        let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${activeCls}" onclick="setFilter({})">All</button>`;
         types.forEach(t => {
             const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
-            html += `<button class="filter-link" onclick="setFilter({source_type:'${t}'})">${label}</button>`;
+            html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${t}'})">${label}</button>`;
         });
-        html += '<button class="filter-link" onclick="setFilter({order_by:\'score\'})">By Score</button>';
-
+        html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
         if (allTags.length) {
-            html += '<div class="tag-dropdown"><button class="tag-dropdown-btn">Tags</button><div class="tag-dropdown-content">';
-            allTags.forEach(t => {
-                html += `<a onclick="setFilter({tag:'${t}'})">${t}</a>`;
-            });
+            html += `<div class="group relative inline-block"><button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}">Tags</button><div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 rounded-md min-w-40 max-h-72 overflow-y-auto z-10 shadow-lg">`;
+            allTags.forEach(t => { html += `<a class="block px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-neutral-700 cursor-pointer" onclick="setFilter({tag:'${t}'})">${t}</a>`; });
             html += '</div></div>';
         }
         document.getElementById('filters').innerHTML = html;
@@ -129,22 +141,16 @@
         render();
     }
 
-    const HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
-    const HIDDEN_SOURCES = ['Claude Code Releases'];
-
     function getFiltered() {
         const search = document.getElementById('search').value.toLowerCase();
         const hasFilter = search || filters.source_type || filters.tag;
         return allItems.filter(item => {
-            // Hide dedicated-page items unless explicitly filtered/searched
             if (!hasFilter && HIDDEN_TYPES.includes(item.source_type)) return false;
             if (!hasFilter && HIDDEN_SOURCES.includes(item.source_name)) return false;
             if (filters.source_type && item.source_type !== filters.source_type) return false;
             if (filters.tier && item.tier !== filters.tier) return false;
             if (filters.tag && !(item.tags || []).includes(filters.tag)) return false;
-            if (search && !item.title.toLowerCase().includes(search) &&
-                !item.source_name.toLowerCase().includes(search) &&
-                !(item.summary || '').toLowerCase().includes(search)) return false;
+            if (search && !item.title.toLowerCase().includes(search) && !item.source_name.toLowerCase().includes(search) && !(item.summary || '').toLowerCase().includes(search)) return false;
             return true;
         }).sort((a, b) => {
             if (filters.order_by === 'score') return (b.score || 0) - (a.score || 0);
@@ -161,57 +167,50 @@
         const start = (page - 1) * PER_PAGE;
         const pageItems = filtered.slice(start, start + PER_PAGE);
 
-        // Update active filter buttons
-        document.querySelectorAll('.filter-link').forEach(btn => btn.classList.remove('active'));
-        const btns = document.querySelectorAll('.filter-link');
-        if (!filters.source_type && !filters.tier && !filters.tag && filters.order_by === 'date') {
-            btns[0]?.classList.add('active');
-        }
-
-        // Status
         const search = document.getElementById('search').value;
         let statusText = `${filtered.length} items`;
         if (search) statusText += ` matching "${search}"`;
         statusText += ` \u00b7 Page ${page} of ${totalPages}`;
         document.getElementById('status').textContent = statusText;
 
-        // Items
         if (pageItems.length === 0) {
-            document.getElementById('items').innerHTML = '<div class="empty"><p>No items match your filters.</p></div>';
+            document.getElementById('items').innerHTML = '<div class="text-center py-16 text-gray-400 dark:text-gray-500"><p>No items match your filters.</p></div>';
         } else {
             document.getElementById('items').innerHTML = pageItems.map(item => {
-                const scoreClass = item.score >= 0.7 ? 'score-high' : item.score >= 0.4 ? 'score-mid' : 'score-low';
-                const scoreHtml = item.score != null ? `<span class="score ${scoreClass}">${Math.round(item.score * 100)}</span>` : '';
+                const scoreClass = item.score >= 0.7 ? 'bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-400' : item.score >= 0.4 ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-400' : 'bg-gray-100 text-gray-500 dark:bg-neutral-800 dark:text-gray-500';
+                const scoreHtml = item.score != null ? `<span class="shrink-0 text-sm px-2.5 py-0.5 rounded-full font-semibold ${scoreClass}">${Math.round(item.score * 100)}</span>` : '';
                 const isShort = item.url.includes('/shorts/');
                 const typeTag = isShort ? 'YT Short' : item.source_type;
-                const tierHtml = item.tier ? `<span class="tag tier-${item.tier}">${item.tier}</span>` : '';
-                const tagsHtml = (item.tags || []).slice(0, 3).map(t => `<span class="tag">${t}</span>`).join('');
+                const tierHtml = item.tier ? `<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${item.tier}</span>` : '';
+                const tagsHtml = (item.tags || []).slice(0, 3).map(t => `<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${t}</span>`).join('');
                 const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
                 const dateLabel = item.source_type === 'luma' && pubDate ? `Event: ${pubDate}` : pubDate;
                 const summary = item.summary ? item.summary.slice(0, 200) + (item.summary.length > 200 ? '...' : '') : '';
+                const borderCls = SOURCE_BORDERS[item.source_type] || 'border-l-gray-300 dark:border-l-neutral-600';
 
-                return `<div class="item">
-                    <div class="item-header">
-                        <div class="item-title"><a href="${item.url}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a></div>
+                return `<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 ${borderCls} hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+                    <div class="flex justify-between items-start gap-3">
+                        <div class="text-base font-semibold"><a href="${item.url}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.title)}</a></div>
                         ${scoreHtml}
                     </div>
-                    <div class="item-meta">
+                    <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap items-center">
                         <span>${escapeHtml(item.source_name)}</span>
-                        <span class="tag">${typeTag}</span>
+                        <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${typeTag}</span>
                         ${tierHtml}${tagsHtml}
                         ${dateLabel ? `<span>${dateLabel}</span>` : ''}
                     </div>
-                    ${summary ? `<div class="item-summary">${escapeHtml(summary)}</div>` : ''}
-                    ${item.score_reason ? `<div class="item-reason">${escapeHtml(item.score_reason)}</div>` : ''}
+                    ${summary ? `<div class="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">${escapeHtml(summary)}</div>` : ''}
+                    ${item.score_reason ? `<div class="mt-2 text-sm text-gray-500 dark:text-gray-500 italic">${escapeHtml(item.score_reason)}</div>` : ''}
                 </div>`;
             }).join('');
         }
 
-        // Pagination
+        const pgLink = 'px-3 py-1.5 rounded-md text-sm border bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600 cursor-pointer';
+        const pgCurrent = 'px-3 py-1.5 rounded-md text-sm border bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
         if (totalPages > 1) {
-            let pHtml = `<button onclick="goPage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>Prev</button>`;
-            pHtml += `<span class="current">${page}</span>`;
-            pHtml += `<button onclick="goPage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Next</button>`;
+            let pHtml = `<button class="${pgLink}" onclick="goPage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>Prev</button>`;
+            pHtml += `<span class="${pgCurrent}">${page}</span>`;
+            pHtml += `<button class="${pgLink}" onclick="goPage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Next</button>`;
             document.getElementById('pagination').innerHTML = pHtml;
         } else {
             document.getElementById('pagination').innerHTML = '';
@@ -219,13 +218,7 @@
     }
 
     function goPage(p) { page = p; render(); window.scrollTo(0, 0); }
-
-    function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-    }
-
+    function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text; return div.innerHTML; }
     init();
     </script>
 </body>

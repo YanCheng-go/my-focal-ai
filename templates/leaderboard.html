@@ -1,66 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard — AI News Filter</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        h1 { font-size: 1.4rem; color: #fff; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
-        .nav { display: flex; gap: 16px; align-items: center; }
-        .nav a { color: #7cb8ff; text-decoration: none; font-size: 0.85rem; }
-        .nav a.active { color: #f0abfc; }
-        .nav .gh-link { display: inline-flex; align-items: center; }
-        .nav .gh-link svg { fill: #7cb8ff; }
-        .nav .gh-link:hover svg { fill: #f0abfc; }
-        .subtitle { font-size: 0.85rem; color: #666; margin-bottom: 24px; }
-        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
-        .item:hover { border-color: #333; }
-        .item-title { font-size: 1rem; font-weight: 600; }
-        .item-title a { color: #e0e0e0; text-decoration: none; }
-        .item-title a:hover { color: #7cb8ff; }
-        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; }
-        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .item-url { margin-top: 6px; font-size: 0.8rem; }
-        .item-url a { color: #555; text-decoration: none; }
-        .item-url a:hover { color: #7cb8ff; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="nav">
-                <h1>Leaderboard</h1>
-                <a href="/">Dashboard</a>
-                <a href="/admin">Admin</a>
-                <a href="/leaderboard" class="active">Leaderboard</a>
-                <a href="/events">Events</a>
-                <a href="/trends">Trends</a>
-                <a href="/ccc">CCC</a>
-                <a href="/about">About</a>
-                <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" class="gh-link" title="GitHub"><svg width="18" height="18" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-            </div>
-        </div>
-        <div class="subtitle">AI model benchmarks and ranking sites for manual browsing.</div>
+{% extends "_base.html" %}
+{% set active_page = "leaderboard" %}
+{% set page_title = "Leaderboard — AI News Filter" %}
 
-        {% for lb in leaderboard_links %}
-        <div class="item">
-            <div class="item-title">
-                <a href="{{ lb.url }}" target="_blank" rel="noopener">{{ lb.name }}</a>
-            </div>
-            <div class="item-meta">
-                {% for t in lb.get('tags', []) %}
-                <span class="tag">{{ t }}</span>
-                {% endfor %}
-            </div>
-            <div class="item-url">
-                <a href="{{ lb.url }}" target="_blank" rel="noopener">{{ lb.url }}</a>
-            </div>
-        </div>
+{% block content %}
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-5">AI model benchmarks and ranking sites for manual browsing.</p>
+
+{% for lb in leaderboard_links %}
+<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-4 mb-3 hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+    <div class="text-base font-semibold">
+        <a href="{{ lb.url }}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">{{ lb.name }}</a>
+    </div>
+    <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap">
+        {% for t in lb.get('tags', []) %}
+        <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">{{ t }}</span>
         {% endfor %}
     </div>
-</body>
-</html>
+    <div class="mt-1.5 text-xs">
+        <a href="{{ lb.url }}" target="_blank" rel="noopener" class="text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400">{{ lb.url }}</a>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

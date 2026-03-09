@@ -17,7 +17,7 @@ declare -A PAGE_MAP=(
 )
 
 # Templates that are server-only (no static equivalent expected)
-SKIP=("admin.html")
+SKIP=("admin.html" "_base.html")
 
 missing=0
 
