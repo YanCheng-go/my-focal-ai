@@ -101,9 +101,51 @@ arxiv_queries:
 
 **Query syntax:** See [arXiv API docs](https://info.arxiv.org/help/api/user-manual.html). Common fields: `cat:` (category), `abs:` (abstract), `ti:` (title), `au:` (author).
 
+### Event Scrapers
+HTML scrapers for tech company event pages.
+
+```yaml
+events:
+  - scraper: "anthropic"
+    name: "Anthropic Events"
+    tags: [ai, anthropic]
+  - scraper: "google_dev"
+    name: "Google Developer Events"
+    tags: [ai, google]
+```
+
+Available scrapers: `anthropic` (Webflow CMS), `google_dev` (developers.google.com/events).
+
+### GitHub Trending
+Scrapes top trending repos from trendshift.io daily, plus all-time most-featured repos.
+
+```yaml
+github_trending:
+    tags: [github, trending, open-source]
+```
+
+This is a single config entry (not a list). Two tabs on the Trends page:
+- **Daily Trending** — top 25 repos by daily engagement score
+- **Trending History** — top 25 all-time most-featured repos on GitHub Trending
+
+### Leaderboard & Event Links
+Reference links for manual browsing — not ingested by the pipeline.
+
+```yaml
+leaderboard:
+  - url: "https://arena.ai/leaderboard"
+    name: "Arena (Chatbot Arena)"
+    tags: [ai, benchmarks, evals]
+
+event_links:
+  - url: "https://www.anthropic.com/events"
+    name: "Anthropic Events"
+    tags: [ai, anthropic, events]
+```
+
 ## Adding a New Source
 
-1. Determine the source type (RSS, YouTube, Twitter, RSSHub, Luma, ArXiv)
+1. Determine the source type (RSS, YouTube, Twitter, RSSHub, Luma, ArXiv, Events, GitHub Trending)
 2. Add an entry to the appropriate section in `config/sources.yml`
 3. Choose meaningful tags — these are displayed on the dashboard and used for filtering
 4. Test: run `uv run ainews fetch` and check the dashboard
@@ -112,12 +154,14 @@ arxiv_queries:
 
 | Type | Count | Examples |
 |------|-------|---------|
-| RSS | 14 feeds | arXiv, OpenAI, DeepMind, Meta, Apple, Microsoft, NVIDIA, HuggingFace |
-| YouTube | 3 channels | Karpathy, Nate Herk, TechWorld with Nana |
-| Twitter | 1 handle | @trq212 |
+| RSS | 15 feeds | arXiv, OpenAI, DeepMind, Meta, Apple, Microsoft, NVIDIA, HuggingFace, Claude Code |
+| YouTube | 5 channels | Karpathy, Nate Herk, TechWorld with Nana, Stanford, AI Engineer |
+| Twitter | 4 handles | @trq212, @karpathy, @bcherny, @simonw |
 | RSSHub | 2 routes | Anthropic News, Cohere Blog |
-| Luma | 1 handle | dtc-events |
+| Luma | 2 handles | dtc-events, claudecommunity |
 | ArXiv queries | 3 queries | transformers, LLMs, RL |
+| Events | 2 scrapers | Anthropic Events, Google Developer Events |
+| GitHub Trending | 1 source | trendshift.io (daily + history) |
 | XHS | 1 user | blocked (needs cookies) |
 
 ## Known Limitations
@@ -129,4 +173,4 @@ arxiv_queries:
 
 ---
 
-*Last updated: 2026-03-07*
+*Last updated: 2026-03-09*

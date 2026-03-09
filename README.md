@@ -58,10 +58,21 @@ uv run pytest                    # tests
 
 ## Configuration
 
-- `config/sources.yml` — all feed sources (Twitter, YouTube, RSS, RSSHub, Luma, arXiv)
+- `config/sources.yml` — all feed sources (Twitter, YouTube, RSS, RSSHub, Luma, arXiv, GitHub Trending)
 - `config/principles.yml` — scoring principles and tier definitions
 - Environment variables prefixed `AINEWS_` override defaults (see `src/ainews/config.py`)
 - `AINEWS_SCORING=false` — disable Ollama scoring (fetch only)
+
+## Pages
+
+| Page | Local | Vercel | Description |
+|------|-------|--------|-------------|
+| Dashboard | `/` | `index.html` | Main feed with filters, search, pagination |
+| Leaderboard | `/leaderboard` | `leaderboard.html` | AI benchmark and ranking sites |
+| Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs) |
+| Trends | `/trends` | `trends.html` | GitHub trending repos — daily + history (2 tabs) |
+| CCC | `/ccc` | `ccc.html` | Claude Code Changelogs |
+| Admin | `/admin` | — | Source management (local only) |
 
 ## Documentation
 
@@ -71,4 +82,4 @@ uv run pytest                    # tests
 
 ---
 
-*Last updated: 2026-03-07*
+*Last updated: 2026-03-09*
