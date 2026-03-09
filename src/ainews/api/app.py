@@ -177,7 +177,9 @@ def dashboard(
         min_score=min_score,
         search=search,
         exclude_sources=None if has_filter else ["Claude Code Releases"],
-        exclude_source_types=None if has_filter else ["events", "luma"],
+        exclude_source_types=None
+        if has_filter
+        else ["events", "luma", "github_trending", "github_trending_history"],
     )
     items = get_items(conn, limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
     total = count_items(conn, **filter_kwargs)
@@ -235,6 +237,30 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
         {
             "request": request,
             "event_links": event_links,
+            "items": items,
+            "tab": tab,
+            "page": page,
+            "total_pages": total_pages,
+            "total": total,
+        },
+    )
+
+
+@app.get("/trends", response_class=HTMLResponse)
+def trends(request: Request, tab: str = "daily", page: int = 1):
+    conn = get_db(settings.db_path)
+    offset = (page - 1) * PER_PAGE
+    source_type = "github_trending_history" if tab == "history" else "github_trending"
+    items = get_items(
+        conn, limit=PER_PAGE, offset=offset, source_type=source_type, order_by="score"
+    )
+    total = count_items(conn, source_type=source_type)
+    conn.close()
+    total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
+    return templates.TemplateResponse(
+        "trends.html",
+        {
+            "request": request,
             "items": items,
             "tab": tab,
             "page": page,

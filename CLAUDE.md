@@ -42,13 +42,13 @@ See `docs/architecture.md` for the full architecture diagram and data flow.
 
 Pipeline: **ingest -> dedup -> store -> score -> serve**.
 
-- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom, `twitter.py` for Twitter via Chrome cookies + GraphQL, `events.py` for scraping tech company event pages (Anthropic, Google), `runner.py` orchestrates and skips existing items.
+- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom, `twitter.py` for Twitter via Chrome cookies + GraphQL, `events.py` for scraping tech company event pages (Anthropic, Google), `github_trending.py` for trendshift.io scraping, `runner.py` orchestrates and skips existing items.
 - `src/ainews/backfill.py` — auto-syncs tags and source_type from `sources.yml` to existing DB items. Runs each fetch cycle (skips via file hash if config unchanged). CLI: `uv run ainews backfill-tags [--dry-run]`.
 - `src/ainews/scoring/scorer.py` — sends unscored items to Ollama with three principles from `config/principles.yml`. Returns score 0-1, tier, reason. `claude_scorer.py` is the cloud alternative using Claude API.
 - `src/ainews/storage/db.py` — SQLite (WAL). `get_existing_ids()` for batch dedup, `upsert_item` preserves existing scores via COALESCE, `ingest_items()` orchestrates dedup+upsert+commit, `source_state` table tracks last fetch per source, `mark_youtube_shorts_duplicates()` hides Shorts when a full video exists.
-- `src/ainews/api/app.py` — FastAPI + APScheduler. Dashboard sorted by `published_at` (except Luma events, pushed to bottom). Pagination (30/page), search, tag dropdown. Events/luma/CCC items hidden from main feed (dedicated pages).
-- `templates/` — Jinja2 templates (local FastAPI): `dashboard.html`, `admin.html`, `leaderboard.html`, `events.html`, `ccc.html`.
-- `static/` — static site (Vercel): `index.html`, `leaderboard.html`, `events.html`, `ccc.html`. Read from `data.json` + `config.json` via client-side JS.
+- `src/ainews/api/app.py` — FastAPI + APScheduler. Dashboard sorted by `published_at` (except Luma events, pushed to bottom). Pagination (30/page), search, tag dropdown. Events/luma/CCC/trending items hidden from main feed (dedicated pages).
+- `templates/` — Jinja2 templates (local FastAPI): `dashboard.html`, `admin.html`, `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`.
+- `static/` — static site (Vercel): `index.html`, `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`. Read from `data.json` + `config.json` via client-side JS.
 - `src/ainews/cloud_fetch.py` — cloud pipeline: fetches feeds (no Twitter/Xiaohongshu), optionally scores with Claude API.
 - `src/ainews/export.py` — exports `data.json` (scored items) and `config.json` (leaderboard/event links from sources.yml).
 - `scripts/check-static-pages.sh` — CI check that warns when a localhost template has no matching static page.

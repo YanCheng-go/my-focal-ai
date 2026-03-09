@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends — GitHub Trending</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 1.4rem; color: #fff; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+        .nav { display: flex; gap: 16px; align-items: center; }
+        .nav a { color: #7cb8ff; text-decoration: none; font-size: 0.85rem; }
+        .nav a.active { color: #f0abfc; }
+        .subtitle { font-size: 0.85rem; color: #666; margin-bottom: 16px; }
+        .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+        .filter-link { color: #888; text-decoration: none; padding: 4px 12px; border: 1px solid #222; border-radius: 4px; font-size: 0.8rem; cursor: pointer; transition: all 0.2s; background: none; }
+        .filter-link:hover { border-color: #555; color: #ccc; }
+        .filter-link.active { background: #1a1a2e; border-color: #818cf8; color: #818cf8; }
+        .status-bar { font-size: 0.8rem; color: #555; margin-bottom: 16px; }
+        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
+        .item:hover { border-color: #333; }
+        .item-title { font-size: 1rem; font-weight: 600; }
+        .item-title a { color: #e0e0e0; text-decoration: none; }
+        .item-title a:hover { color: #7cb8ff; }
+        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; }
+        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
+        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.5; }
+        .empty { font-size: 0.85rem; color: #555; padding: 12px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <h1>Trends</h1>
+                <a href="index.html">Dashboard</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a href="events.html">Events</a>
+                <a href="trends.html" class="active">Trends</a>
+                <a href="ccc.html">CCC</a>
+            </div>
+        </div>
+        <div class="subtitle">GitHub Trending — top repos from <a href="https://trendshift.io" target="_blank" rel="noopener" style="color:#7cb8ff">trendshift.io</a>.</div>
+
+        <div class="filters">
+            <button class="filter-link active" onclick="setTab('daily')">Daily Trending</button>
+            <button class="filter-link" onclick="setTab('history')">Trending History</button>
+        </div>
+        <div class="status-bar" id="status"></div>
+        <div id="items"></div>
+    </div>
+    <script>
+    let allItems = [];
+    let currentTab = 'daily';
+
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text || '';
+        return div.innerHTML;
+    }
+
+    function setTab(tab) {
+        currentTab = tab;
+        document.querySelectorAll('.filter-link').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.filter-link').forEach(b => {
+            if ((tab === 'daily' && b.textContent === 'Daily Trending') ||
+                (tab === 'history' && b.textContent === 'Trending History')) {
+                b.classList.add('active');
+            }
+        });
+        render();
+    }
+
+    function render() {
+        const sourceType = currentTab === 'history' ? 'github_trending_history' : 'github_trending';
+        const items = allItems.filter(i => i.source_type === sourceType)
+            .sort((a, b) => (b.score || 0) - (a.score || 0));
+        document.getElementById('status').textContent = `${items.length} repos`;
+        if (items.length === 0) {
+            document.getElementById('items').innerHTML = '<div class="empty">No trending repos found.</div>';
+            return;
+        }
+        document.getElementById('items').innerHTML = items.map(item => {
+            const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+            const summary = item.summary ? escapeHtml(item.summary.slice(0, 300)) + (item.summary.length > 300 ? '...' : '') : '';
+            return `<div class="item">
+                <div class="item-title"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener">${escapeHtml(item.title)}</a></div>
+                <div class="item-meta">
+                    ${(item.tags || []).slice(0, 4).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('')}
+                    ${pubDate ? `<span>${pubDate}</span>` : ''}
+                </div>
+                ${summary ? `<div class="item-summary">${summary}</div>` : ''}
+            </div>`;
+        }).join('');
+    }
+
+    async function init() {
+        try {
+            const resp = await fetch('data.json');
+            const data = await resp.json();
+            allItems = (data.items || []).filter(i =>
+                i.source_type === 'github_trending' || i.source_type === 'github_trending_history'
+            );
+            render();
+        } catch (e) {
+            document.getElementById('items').innerHTML = '<div class="empty">No data available.</div>';
+        }
+    }
+    init();
+    </script>
+</body>
+</html>
