@@ -75,7 +75,8 @@
 
     function render() {
         const sourceType = currentTab === 'history' ? 'github_trending_history' : 'github_trending';
-        const items = allItems.filter(i => i.source_type === sourceType);
+        const items = allItems.filter(i => i.source_type === sourceType)
+            .sort((a, b) => (b.score || 0) - (a.score || 0));
         document.getElementById('status').textContent = `${items.length} repos`;
         if (items.length === 0) {
             document.getElementById('items').innerHTML = '<div class="empty">No trending repos found.</div>';

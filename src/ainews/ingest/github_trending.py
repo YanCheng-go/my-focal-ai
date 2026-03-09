@@ -107,6 +107,10 @@ async def fetch_github_trending(tags: list[str] | None = None) -> list[ContentIt
         summary_parts.append(f"Stars: {stars:,}")
         summary_parts.append(f"Trending rank: #{rank}")
 
+        # Score inversely by rank so #1 has highest score (1.0) for sorting
+        total = len(unique_repos)
+        rank_score = round(1.0 - (rank - 1) / max(total, 1), 4)
+
         items.append(
             ContentItem(
                 id=make_id(f"{url}:{today.date()}"),
@@ -117,6 +121,7 @@ async def fetch_github_trending(tags: list[str] | None = None) -> list[ContentIt
                 source_type="github_trending",
                 tags=tags or ["github", "trending", "open-source"],
                 published_at=today,
+                score=rank_score,
             )
         )
 
@@ -173,6 +178,10 @@ async def fetch_github_trending_history(
         if featured_count:
             summary_parts.append(f"Featured on GitHub Trending {featured_count} times")
 
+        # Score inversely by rank so #1 has highest score
+        total_cards = len(cards)
+        rank_score = round(1.0 - (rank - 1) / max(total_cards, 1), 4)
+
         items.append(
             ContentItem(
                 id=make_id(f"gh-history:{github_link}"),
@@ -183,6 +192,7 @@ async def fetch_github_trending_history(
                 source_type="github_trending_history",
                 tags=tags or ["github", "trending", "open-source"],
                 published_at=today,
+                score=rank_score,
             )
         )
 

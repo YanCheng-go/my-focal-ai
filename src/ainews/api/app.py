@@ -251,7 +251,9 @@ def trends(request: Request, tab: str = "daily", page: int = 1):
     conn = get_db(settings.db_path)
     offset = (page - 1) * PER_PAGE
     source_type = "github_trending_history" if tab == "history" else "github_trending"
-    items = get_items(conn, limit=PER_PAGE, offset=offset, source_type=source_type)
+    items = get_items(
+        conn, limit=PER_PAGE, offset=offset, source_type=source_type, order_by="score"
+    )
     total = count_items(conn, source_type=source_type)
     conn.close()
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
