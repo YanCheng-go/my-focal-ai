@@ -1,8 +1,14 @@
 """Core data models."""
 
+import hashlib
 from datetime import datetime
 
 from pydantic import BaseModel, Field
+
+
+def make_id(url: str) -> str:
+    """Generate a short deterministic ID from a URL."""
+    return hashlib.sha256(url.encode()).hexdigest()[:16]
 
 
 class ContentItem(BaseModel):

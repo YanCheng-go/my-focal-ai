@@ -95,7 +95,7 @@ async def score_item(
     try:
         parsed = json.loads(content)
         return ScoredItem(**parsed)
-    except (json.JSONDecodeError, Exception) as e:
+    except (json.JSONDecodeError, KeyError, TypeError) as e:
         logger.warning(f"Failed to parse LLM response for '{item.title}': {e}")
         return ScoredItem(
             relevance_score=0.5,
@@ -103,6 +103,14 @@ async def score_item(
             reason="Scoring failed — defaulting to neutral",
             key_topics=[],
         )
+
+
+def _apply_score(item: ContentItem, scored: ScoredItem) -> tuple[ContentItem, ScoredItem]:
+    """Apply scored fields back onto the content item."""
+    item.score = scored.relevance_score
+    item.score_reason = scored.reason
+    item.tier = scored.tier
+    return (item, scored)
 
 
 async def score_batch(
@@ -116,10 +124,7 @@ async def score_batch(
     for item in items:
         try:
             scored = await score_item(item, principles, ollama_base_url, model)
-            item.score = scored.relevance_score
-            item.score_reason = scored.reason
-            item.tier = scored.tier
-            results.append((item, scored))
+            results.append(_apply_score(item, scored))
         except Exception:
             logger.exception(f"Failed to score '{item.title}'")
     return results

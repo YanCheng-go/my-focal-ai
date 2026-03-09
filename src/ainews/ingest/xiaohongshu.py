@@ -1,20 +1,15 @@
 """Xiaohongshu ingestion using browser cookies and XHS web API directly."""
 
-import hashlib
 import logging
 import sqlite3
 from datetime import datetime
 
 import httpx
 
-from ainews.models import ContentItem
+from ainews.models import ContentItem, make_id
 from ainews.storage.db import ingest_items
 
 logger = logging.getLogger(__name__)
-
-
-def _make_id(url: str) -> str:
-    return hashlib.sha256(url.encode()).hexdigest()[:16]
 
 
 def get_xhs_cookies_from_browser() -> dict[str, str] | None:
@@ -94,7 +89,7 @@ async def fetch_xhs_user(
 
             items.append(
                 ContentItem(
-                    id=_make_id(url),
+                    id=make_id(url),
                     url=url,
                     title=title or desc[:100],
                     summary=desc,

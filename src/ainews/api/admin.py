@@ -27,6 +27,12 @@ templates = Jinja2Templates(directory=str(settings.config_dir.parent / "template
 router = APIRouter(prefix="/admin", tags=["admin"])
 
 
+def _normalize_tags(data: dict) -> None:
+    """Convert comma-separated tags string to list in-place."""
+    if "tags" in data and isinstance(data["tags"], str):
+        data["tags"] = [t.strip() for t in data["tags"].split(",") if t.strip()]
+
+
 @router.get("", response_class=HTMLResponse)
 def admin_page(request: Request):
     return templates.TemplateResponse("admin.html", {"request": request})
@@ -55,9 +61,7 @@ def list_sources():
 def create_source(body: dict):
     source_type = body.get("type", "")
     source_data = {k: v for k, v in body.items() if k != "type"}
-    # Convert tags from comma-separated string to list
-    if "tags" in source_data and isinstance(source_data["tags"], str):
-        source_data["tags"] = [t.strip() for t in source_data["tags"].split(",") if t.strip()]
+    _normalize_tags(source_data)
     try:
         validate_source(source_type, source_data)
         add_source(settings.config_dir, source_type, source_data)
@@ -69,8 +73,7 @@ def create_source(body: dict):
 @router.put("/api/sources/{source_type}/{index}")
 def edit_source(source_type: str, index: int, body: dict):
     source_data = {k: v for k, v in body.items() if k != "type"}
-    if "tags" in source_data and isinstance(source_data["tags"], str):
-        source_data["tags"] = [t.strip() for t in source_data["tags"].split(",") if t.strip()]
+    _normalize_tags(source_data)
     try:
         update_source(settings.config_dir, source_type, index, source_data)
     except (ValueError, IndexError) as e:
