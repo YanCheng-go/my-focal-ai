@@ -46,7 +46,6 @@
         .score-low { background: #1a1a1a; color: #666; }
         .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
         .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .tier-leaderboard { background: #2d1a3d; color: #f0abfc; }
         .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.4; }
         .item-reason { margin-top: 8px; font-size: 0.85rem; color: #888; font-style: italic; }
         .empty { text-align: center; padding: 60px 20px; color: #444; }
@@ -100,7 +99,6 @@
     function buildFilters() {
         const types = [...new Set(allItems.map(i => i.source_type))].sort();
         let html = '<button class="filter-link active" onclick="setFilter({})">All</button>';
-        html += '<button class="filter-link" onclick="setFilter({tier:\'leaderboard\'})">Leaderboard</button>';
         types.forEach(t => {
             const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
             html += `<button class="filter-link" onclick="setFilter({source_type:'${t}'})">${label}</button>`;
