@@ -17,8 +17,9 @@ SOURCE_FIELDS = {
     "arxiv_queries": {"required": ["query", "name"], "optional": ["tags"]},
 }
 
-# Types stored under top-level `sources` key
-NESTED_TYPES = {"twitter", "youtube", "arxiv", "rss", "rsshub", "xiaohongshu", "luma"}
+# Types stored under top-level `sources` key (all except arxiv_queries)
+NESTED_TYPES = {k for k in SOURCE_FIELDS if k != "arxiv_queries"}
+TOP_LEVEL_TYPES = set(SOURCE_FIELDS) - NESTED_TYPES
 
 yaml = YAML()
 yaml.preserve_quotes = True
