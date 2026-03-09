@@ -1,6 +1,9 @@
 name: CI
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -14,3 +17,11 @@ jobs:
           RUFF_OUTPUT_FORMAT: ""
         with:
           args: format --check src/
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+      - run: uv sync --extra dev
+      - run: uv run pytest --tb=short -q
