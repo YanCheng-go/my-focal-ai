@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add static/data.json
+          git add static/data.json static/config.json
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Update data.json [skip ci]"
           git push
