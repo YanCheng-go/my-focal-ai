@@ -92,7 +92,15 @@ sources:
     name: "Stability AI"
     tags: [ai, research, stability, open-source]
 
-    # --- Open source / community ---
+    # --- Developer tools ---
+  - url: https://github.com/anthropics/claude-code/releases.atom
+    name: Claude Code Releases
+    tags:
+    - ai
+    - anthropic
+    - claude code
+    - tooling
+    - changelog
   - url: "https://huggingface.co/blog/feed.xml"
     name: "Hugging Face Blog"
     tags: [ai, open-source, huggingface]

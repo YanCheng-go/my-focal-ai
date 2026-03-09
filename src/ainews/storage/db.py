@@ -203,6 +203,7 @@ def _build_where(
     since: datetime | None = None,
     tag: str | None = None,
     search: str | None = None,
+    exclude_sources: list[str] | None = None,
 ) -> tuple[str, list]:
     """Build WHERE clause and params for item queries."""
     where = "WHERE items.is_duplicate_of IS NULL"
@@ -227,6 +228,10 @@ def _build_where(
         where += " AND (items.title LIKE ? OR items.summary LIKE ? OR items.source_name LIKE ?)"
         term = f"%{search}%"
         params.extend([term, term, term])
+    if exclude_sources:
+        placeholders = ",".join("?" for _ in exclude_sources)
+        where += f" AND items.source_name NOT IN ({placeholders})"
+        params.extend(exclude_sources)
 
     return where, params
 
@@ -240,6 +245,7 @@ def count_items(
     since: datetime | None = None,
     tag: str | None = None,
     search: str | None = None,
+    exclude_sources: list[str] | None = None,
 ) -> int:
     where, params = _build_where(
         min_score=min_score,
@@ -248,6 +254,7 @@ def count_items(
         since=since,
         tag=tag,
         search=search,
+        exclude_sources=exclude_sources,
     )
     row = conn.execute(f"SELECT count(*) as c FROM items {where}", params).fetchone()
     return row["c"]
@@ -271,6 +278,7 @@ def get_items(
     tag: str | None = None,
     search: str | None = None,
     order_by: str = "date",
+    exclude_sources: list[str] | None = None,
 ) -> list[ContentItem]:
     where, params = _build_where(
         min_score=min_score,
@@ -279,6 +287,7 @@ def get_items(
         since=since,
         tag=tag,
         search=search,
+        exclude_sources=exclude_sources,
     )
 
     if order_by == "score":

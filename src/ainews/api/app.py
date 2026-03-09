@@ -168,8 +168,15 @@ def dashboard(
 ):
     conn = get_db(settings.db_path)
     offset = (page - 1) * PER_PAGE
+    # Hide changelog-only sources from the main feed unless explicitly searched/filtered
+    exclude = None if search or tag else ["Claude Code Releases"]
     filter_kwargs = dict(
-        source_type=source_type, tier=tier, tag=tag, min_score=min_score, search=search
+        source_type=source_type,
+        tier=tier,
+        tag=tag,
+        min_score=min_score,
+        search=search,
+        exclude_sources=exclude,
     )
     items = get_items(conn, limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
     total = count_items(conn, **filter_kwargs)
@@ -214,4 +221,24 @@ def events(request: Request):
     return templates.TemplateResponse(
         "events.html",
         {"request": request, "event_links": event_links},
+    )
+
+
+@app.get("/ccc", response_class=HTMLResponse)
+def ccc(request: Request, page: int = 1):
+    conn = get_db(settings.db_path)
+    offset = (page - 1) * PER_PAGE
+    items = get_items(conn, limit=PER_PAGE, offset=offset, search="Claude Code Releases")
+    total = count_items(conn, search="Claude Code Releases")
+    conn.close()
+    total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
+    return templates.TemplateResponse(
+        "ccc.html",
+        {
+            "request": request,
+            "items": items,
+            "page": page,
+            "total_pages": total_pages,
+            "total": total,
+        },
     )
