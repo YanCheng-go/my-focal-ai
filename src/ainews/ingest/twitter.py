@@ -149,7 +149,18 @@ async def fetch_twitter_user(
                     if not text or not tweet_id:
                         continue
 
-                    url = f"https://x.com/{handle}/status/{tweet_id}"
+                    # Get actual tweet author — skip retweets from other users
+                    actual_author = (
+                        tweet_result.get("core", {})
+                        .get("user_results", {})
+                        .get("result", {})
+                        .get("legacy", {})
+                        .get("screen_name", handle)
+                    )
+                    if actual_author.lower() != handle.lower():
+                        continue
+
+                    url = f"https://x.com/{actual_author}/status/{tweet_id}"
                     pub_date = None
                     if created_at:
                         try:
