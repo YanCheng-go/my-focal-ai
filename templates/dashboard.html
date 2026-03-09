@@ -1,227 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI News Filter</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        h1 { font-size: 1.4rem; color: #fff; }
+{% extends "_base.html" %}
+{% set active_page = "dashboard" %}
+{% set page_title = "AI News Filter" %}
 
-        /* Header */
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
-        .header-right { display: flex; gap: 8px; align-items: center; }
+{% set source_border = {
+    'twitter': 'border-l-sky-400',
+    'youtube': 'border-l-red-500',
+    'rss': 'border-l-amber-500',
+    'rsshub': 'border-l-amber-500',
+    'arxiv': 'border-l-red-800',
+    'arxiv_queries': 'border-l-red-800',
+    'github_trending': 'border-l-indigo-400',
+    'github_trending_history': 'border-l-indigo-400',
+    'events': 'border-l-emerald-500',
+    'luma': 'border-l-emerald-500',
+    'xiaohongshu': 'border-l-rose-400',
+} %}
 
-        /* Search */
-        .search-form { display: flex; gap: 6px; }
-        .search-input { padding: 6px 12px; border-radius: 6px; background: #1a1a1a; color: #e0e0e0; border: 1px solid #222; font-size: 0.85rem; width: 200px; outline: none; }
-        .search-input:focus { border-color: #2d5a8e; }
-        .search-input::placeholder { color: #555; }
-        .btn-search { background: #1a1a1a; color: #aaa; border: 1px solid #222; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; }
-        .btn-search:hover { border-color: #2d5a8e; color: #7cb8ff; }
-        .btn-clear { background: #1a1a1a; color: #666; border: 1px solid #222; padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 1rem; text-decoration: none; line-height: 1; }
-        .btn-clear:hover { border-color: #5a2d2d; color: #ff7c7c; }
+{% block content %}
+<div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+    <form class="flex gap-1.5" method="get" action="/">
+        <input class="w-full sm:w-48 px-3 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+               type="text" name="search" placeholder="Search titles, sources..." value="{{ filters.search or '' }}">
+        <button type="submit" class="px-2.5 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-500 border border-gray-200 dark:border-neutral-700 text-sm cursor-pointer hover:border-blue-400 hover:text-blue-600 dark:hover:border-blue-500 dark:hover:text-blue-400" title="Search">&#128269;</button>
+        {% if filters.search %}<a href="/" class="px-2.5 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-400 border border-gray-200 dark:border-neutral-700 text-base leading-none hover:border-red-300 hover:text-red-500 dark:hover:border-red-700 dark:hover:text-red-400" title="Clear search">&times;</a>{% endif %}
+        {% if filters.source_type %}<input type="hidden" name="source_type" value="{{ filters.source_type }}">{% endif %}
+        {% if filters.tier %}<input type="hidden" name="tier" value="{{ filters.tier }}">{% endif %}
+        {% if filters.tag %}<input type="hidden" name="tag" value="{{ filters.tag }}">{% endif %}
+        {% if filters.min_score %}<input type="hidden" name="min_score" value="{{ filters.min_score }}">{% endif %}
+        {% if filters.order_by != 'date' %}<input type="hidden" name="order_by" value="{{ filters.order_by }}">{% endif %}
+    </form>
+    <button class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50"
+            onclick="fetch('/api/fetch',{method:'POST'}).then(()=>location.reload())">Fetch Now</button>
+</div>
 
-        /* Filters */
-        .filters { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
-        .filter-link { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; text-decoration: none; font-size: 0.85rem; border: 1px solid #222; }
-        .filter-link:hover { border-color: #333; color: #ccc; }
-        .filter-link.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
+<!-- Filter bar -->
+<div class="flex gap-2 mb-3 flex-wrap items-center">
+    {% set active_cls = "bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
+    {% set inactive_cls = "bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" %}
+    <a href="/" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if not filters.source_type and not filters.tier and not filters.tag and not filters.min_score and not filters.search else inactive_cls }}">All</a>
+    <a href="/?source_type=twitter" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'twitter' else inactive_cls }}">Twitter</a>
+    <a href="/?source_type=youtube" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'youtube' else inactive_cls }}">YouTube</a>
+    <a href="/?source_type=rss" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'rss' else inactive_cls }}">RSS</a>
+    <a href="/?source_type=arxiv" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'arxiv' else inactive_cls }}">arXiv</a>
+    <a href="/?min_score=0.7" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.min_score and filters.min_score >= 0.7 else inactive_cls }}">Top Only</a>
+    <a href="/?order_by=score" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.order_by == 'score' else inactive_cls }}">By Score</a>
 
-        /* Tag dropdown */
-        .tag-dropdown { position: relative; display: inline-block; }
-        .tag-dropdown-btn { padding: 6px 14px; border-radius: 6px; background: #1a1a1a; color: #aaa; font-size: 0.85rem; border: 1px solid #222; cursor: pointer; }
-        .tag-dropdown-btn:hover { border-color: #333; color: #ccc; }
-        .tag-dropdown-btn.active { background: #1e3a5f; color: #7cb8ff; border-color: #2d5a8e; }
-        .tag-dropdown-content { display: none; position: absolute; top: 100%; left: 0; margin-top: 4px; background: #1a1a1a; border: 1px solid #333; border-radius: 6px; min-width: 160px; max-height: 300px; overflow-y: auto; z-index: 10; }
-        .tag-dropdown:hover .tag-dropdown-content { display: block; }
-        .tag-dropdown-content a { display: block; padding: 6px 14px; color: #aaa; text-decoration: none; font-size: 0.85rem; }
-        .tag-dropdown-content a:hover { background: #222; color: #e0e0e0; }
-        .tag-dropdown-content a.active { color: #7cb8ff; }
-
-        /* Status bar */
-        .status-bar { font-size: 0.8rem; color: #555; margin-bottom: 16px; }
-
-        /* Items */
-        .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
-        .item:hover { border-color: #333; }
-        .item-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
-        .item-title { font-size: 1rem; font-weight: 600; }
-        .item-title a { color: #e0e0e0; text-decoration: none; }
-        .item-title a:hover { color: #7cb8ff; }
-        .score { flex-shrink: 0; font-size: 0.85rem; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
-        .score-high { background: #1a3d1a; color: #4ade80; }
-        .score-mid { background: #3d3d1a; color: #facc15; }
-        .score-low { background: #1a1a1a; color: #666; }
-        .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.4; }
-        .item-reason { margin-top: 8px; font-size: 0.85rem; color: #888; font-style: italic; }
-        .empty { text-align: center; padding: 60px 20px; color: #444; }
-
-        /* Buttons */
-        .btn { padding: 6px 14px; border-radius: 6px; border: 1px solid #2d5a8e; cursor: pointer; font-size: 0.85rem; }
-        .btn-primary { background: #1e3a5f; color: #7cb8ff; }
-        .btn-primary:hover { background: #2d5a8e; }
-
-        /* Pagination */
-        .pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 24px; padding: 16px 0; }
-        .pagination a, .pagination span { padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; text-decoration: none; }
-        .pagination a { background: #1a1a1a; color: #aaa; border: 1px solid #222; }
-        .pagination a:hover { border-color: #333; color: #e0e0e0; }
-        .pagination .current { background: #1e3a5f; color: #7cb8ff; border: 1px solid #2d5a8e; }
-        .pagination .disabled { color: #333; pointer-events: none; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div style="display:flex;gap:16px;align-items:center">
-                <h1>AI News Filter</h1>
-                <a href="/admin" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Admin</a>
-                <a href="/leaderboard" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Leaderboard</a>
-                <a href="/events" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Events</a>
-                <a href="/trends" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Trends</a>
-                <a href="/ccc" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">CCC</a>
-                <a href="/about" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">About</a>
-                <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" style="display:inline-flex;align-items:center" title="GitHub"><svg width="18" height="18" viewBox="0 0 16 16" fill="#7cb8ff"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-            </div>
-            <div class="header-right">
-                <form class="search-form" method="get" action="/">
-                    <input class="search-input" type="text" name="search" placeholder="Search titles, sources..."
-                           value="{{ filters.search or '' }}">
-                    <button type="submit" class="btn btn-search" title="Search">&#128269;</button>
-                    {% if filters.search %}<a href="/" class="btn btn-clear" title="Clear search">&times;</a>{% endif %}
-                    {% if filters.source_type %}<input type="hidden" name="source_type" value="{{ filters.source_type }}">{% endif %}
-                    {% if filters.tier %}<input type="hidden" name="tier" value="{{ filters.tier }}">{% endif %}
-                    {% if filters.tag %}<input type="hidden" name="tag" value="{{ filters.tag }}">{% endif %}
-                    {% if filters.min_score %}<input type="hidden" name="min_score" value="{{ filters.min_score }}">{% endif %}
-                    {% if filters.order_by != 'date' %}<input type="hidden" name="order_by" value="{{ filters.order_by }}">{% endif %}
-                </form>
-                <button class="btn btn-primary" onclick="fetch('/api/fetch',{method:'POST'}).then(()=>location.reload())">Fetch Now</button>
-            </div>
-        </div>
-
-        <!-- Filter bar -->
-        <div class="filters">
-            <a href="/" class="filter-link {{ 'active' if not filters.source_type and not filters.tier and not filters.tag and not filters.min_score and not filters.search }}">All</a>
-            <a href="/?source_type=twitter" class="filter-link {{ 'active' if filters.source_type == 'twitter' }}">Twitter</a>
-            <a href="/?source_type=youtube" class="filter-link {{ 'active' if filters.source_type == 'youtube' }}">YouTube</a>
-            <a href="/?source_type=rss" class="filter-link {{ 'active' if filters.source_type == 'rss' }}">RSS</a>
-            <a href="/?source_type=arxiv" class="filter-link {{ 'active' if filters.source_type == 'arxiv' }}">arXiv</a>
-            <a href="/?min_score=0.7" class="filter-link {{ 'active' if filters.min_score and filters.min_score >= 0.7 }}">Top Only</a>
-            <a href="/?order_by=score" class="filter-link {{ 'active' if filters.order_by == 'score' }}">By Score</a>
-
-            <!-- Tag dropdown -->
-            <div class="tag-dropdown">
-                <button class="tag-dropdown-btn {{ 'active' if filters.tag }}">
-                    {{ 'Tag: ' + filters.tag if filters.tag else 'Tags' }}
-                </button>
-                <div class="tag-dropdown-content">
-                    {% for t in all_tags %}
-                    <a href="/?tag={{ t }}" class="{{ 'active' if filters.tag == t }}">{{ t }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-
-        <!-- Status -->
-        <div class="status-bar">
-            {{ total }} items{% if filters.search %} matching "{{ filters.search }}"{% endif %}{% if filters.tag %} tagged "{{ filters.tag }}"{% endif %}{% if filters.source_type %} from {{ filters.source_type }}{% endif %}
-            &middot; Page {{ page }} of {{ total_pages }}
-        </div>
-
-        <!-- Items -->
-        {% if items %}
-            {% for item in items %}
-            <div class="item">
-                <div class="item-header">
-                    <div class="item-title">
-                        <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
-                    </div>
-                    {% if item.score is not none %}
-                    <span class="score {{ 'score-high' if item.score >= 0.7 else 'score-mid' if item.score >= 0.4 else 'score-low' }}">
-                        {{ "%.0f"|format(item.score * 100) }}
-                    </span>
-                    {% endif %}
-                </div>
-                <div class="item-meta">
-                    <span>{{ item.source_name }}</span>
-                    <span class="tag">{{ 'YT Short' if '/shorts/' in item.url else item.source_type }}</span>
-                    {% if item.tier %}
-                    <span class="tag tier-{{ item.tier }}">{{ item.tier }}</span>
-                    {% endif %}
-                    {% for t in item.tags[:3] %}
-                    <span class="tag">{{ t }}</span>
-                    {% endfor %}
-                    {% if item.source_type == 'luma' and item.published_at %}
-                    <span>Event: {{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
-                    {% elif item.published_at %}
-                    <span>{{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
-                    {% endif %}
-                </div>
-                {% if item.summary %}
-                <div class="item-summary">{{ item.summary[:200] }}{{ '...' if item.summary|length > 200 }}</div>
-                {% endif %}
-                {% if item.score_reason %}
-                <div class="item-reason">{{ item.score_reason }}</div>
-                {% endif %}
-            </div>
+    <!-- Tag dropdown -->
+    <div class="group relative inline-block">
+        <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer {{ active_cls if filters.tag else inactive_cls }}">
+            {{ 'Tag: ' + filters.tag if filters.tag else 'Tags' }}
+        </button>
+        <div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 rounded-md min-w-40 max-h-72 overflow-y-auto z-10 shadow-lg">
+            {% for t in all_tags %}
+            <a href="/?tag={{ t }}" class="block px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-neutral-700 {{ 'text-blue-600 dark:text-blue-400' if filters.tag == t }}">{{ t }}</a>
             {% endfor %}
+        </div>
+    </div>
+</div>
 
-            <!-- Pagination -->
-            {% if total_pages > 1 %}
-            <div class="pagination">
-                {# Build query string preserving filters #}
-                {% set qs_parts = [] %}
-                {% if filters.source_type %}{% set _ = qs_parts.append('source_type=' + filters.source_type) %}{% endif %}
-                {% if filters.tier %}{% set _ = qs_parts.append('tier=' + filters.tier) %}{% endif %}
-                {% if filters.tag %}{% set _ = qs_parts.append('tag=' + filters.tag) %}{% endif %}
-                {% if filters.min_score %}{% set _ = qs_parts.append('min_score=' + filters.min_score|string) %}{% endif %}
-                {% if filters.search %}{% set _ = qs_parts.append('search=' + filters.search) %}{% endif %}
-                {% if filters.order_by != 'date' %}{% set _ = qs_parts.append('order_by=' + filters.order_by) %}{% endif %}
-                {% set qs_base = '&'.join(qs_parts) %}
+<!-- Status -->
+<div class="text-xs text-gray-400 dark:text-gray-500 mb-4">
+    {{ total }} items{% if filters.search %} matching "{{ filters.search }}"{% endif %}{% if filters.tag %} tagged "{{ filters.tag }}"{% endif %}{% if filters.source_type %} from {{ filters.source_type }}{% endif %}
+    &middot; Page {{ page }} of {{ total_pages }}
+</div>
 
-                {% if page > 1 %}
-                <a href="/?page={{ page - 1 }}{{ '&' + qs_base if qs_base }}">Prev</a>
-                {% else %}
-                <span class="disabled">Prev</span>
-                {% endif %}
-
-                {% set ns = namespace(last_shown=0) %}
-                {% for p in range(1, total_pages + 1) %}
-                    {% if p == page or p <= 2 or p > total_pages - 1 or (p >= page - 1 and p <= page + 1) %}
-                        {% if ns.last_shown and p > ns.last_shown + 1 %}
-                        <span style="color:#444">...</span>
-                        {% endif %}
-                        {% if p == page %}
-                        <span class="current">{{ p }}</span>
-                        {% else %}
-                        <a href="/?page={{ p }}{{ '&' + qs_base if qs_base }}">{{ p }}</a>
-                        {% endif %}
-                        {% set ns.last_shown = p %}
-                    {% endif %}
-                {% endfor %}
-
-                {% if page < total_pages %}
-                <a href="/?page={{ page + 1 }}{{ '&' + qs_base if qs_base }}">Next</a>
-                {% else %}
-                <span class="disabled">Next</span>
-                {% endif %}
+<!-- Items -->
+{% if items %}
+    {% for item in items %}
+    <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 {{ source_border.get(item.source_type, 'border-l-gray-300 dark:border-l-neutral-600') }} hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+        <div class="flex justify-between items-start gap-3">
+            <div class="text-base font-semibold">
+                <a href="{{ item.url }}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">{{ item.title }}</a>
             </div>
+            {% if item.score is not none %}
+            <span class="shrink-0 text-sm px-2.5 py-0.5 rounded-full font-semibold {{ 'bg-green-100 text-green-800 dark:bg-green-900/50 dark:text-green-400' if item.score >= 0.7 else 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-400' if item.score >= 0.4 else 'bg-gray-100 text-gray-500 dark:bg-neutral-800 dark:text-gray-500' }}">
+                {{ "%.0f"|format(item.score * 100) }}
+            </span>
             {% endif %}
-        {% else %}
-            <div class="empty">
-                {% if filters.search %}
-                <p>No items matching "{{ filters.search }}". Try a different search.</p>
-                {% else %}
-                <p>No items yet. Click "Fetch Now" or wait for the next scheduled fetch.</p>
-                {% endif %}
-            </div>
+        </div>
+        <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap items-center">
+            <span>{{ item.source_name }}</span>
+            <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">{{ 'YT Short' if '/shorts/' in item.url else item.source_type }}</span>
+            {% if item.tier %}
+            <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">{{ item.tier }}</span>
+            {% endif %}
+            {% for t in item.tags[:3] %}
+            <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">{{ t }}</span>
+            {% endfor %}
+            {% if item.source_type == 'luma' and item.published_at %}
+            <span>Event: {{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
+            {% elif item.published_at %}
+            <span>{{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
+            {% endif %}
+        </div>
+        {% if item.summary %}
+        <div class="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{{ item.summary[:200] }}{{ '...' if item.summary|length > 200 }}</div>
+        {% endif %}
+        {% if item.score_reason %}
+        <div class="mt-2 text-sm text-gray-500 dark:text-gray-500 italic">{{ item.score_reason }}</div>
         {% endif %}
     </div>
-</body>
-</html>
+    {% endfor %}
+
+    <!-- Pagination -->
+    {% if total_pages > 1 %}
+    <div class="flex justify-center items-center gap-2 mt-6 py-4">
+        {% set qs_parts = [] %}
+        {% if filters.source_type %}{% set _ = qs_parts.append('source_type=' + filters.source_type) %}{% endif %}
+        {% if filters.tier %}{% set _ = qs_parts.append('tier=' + filters.tier) %}{% endif %}
+        {% if filters.tag %}{% set _ = qs_parts.append('tag=' + filters.tag) %}{% endif %}
+        {% if filters.min_score %}{% set _ = qs_parts.append('min_score=' + filters.min_score|string) %}{% endif %}
+        {% if filters.search %}{% set _ = qs_parts.append('search=' + filters.search) %}{% endif %}
+        {% if filters.order_by != 'date' %}{% set _ = qs_parts.append('order_by=' + filters.order_by) %}{% endif %}
+        {% set qs_base = '&'.join(qs_parts) %}
+
+        {% set pg_cls = "px-3 py-1.5 rounded-md text-sm border" %}
+        {% set pg_link = pg_cls + " bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" %}
+        {% set pg_current = pg_cls + " bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
+        {% set pg_disabled = pg_cls + " text-gray-300 dark:text-gray-600 border-gray-100 dark:border-neutral-800 pointer-events-none" %}
+
+        {% if page > 1 %}
+        <a href="/?page={{ page - 1 }}{{ '&' + qs_base if qs_base }}" class="{{ pg_link }}">Prev</a>
+        {% else %}
+        <span class="{{ pg_disabled }}">Prev</span>
+        {% endif %}
+
+        {% set ns = namespace(last_shown=0) %}
+        {% for p in range(1, total_pages + 1) %}
+            {% if p == page or p <= 2 or p > total_pages - 1 or (p >= page - 1 and p <= page + 1) %}
+                {% if ns.last_shown and p > ns.last_shown + 1 %}
+                <span class="text-gray-400 dark:text-gray-600">...</span>
+                {% endif %}
+                {% if p == page %}
+                <span class="{{ pg_current }}">{{ p }}</span>
+                {% else %}
+                <a href="/?page={{ p }}{{ '&' + qs_base if qs_base }}" class="{{ pg_link }}">{{ p }}</a>
+                {% endif %}
+                {% set ns.last_shown = p %}
+            {% endif %}
+        {% endfor %}
+
+        {% if page < total_pages %}
+        <a href="/?page={{ page + 1 }}{{ '&' + qs_base if qs_base }}" class="{{ pg_link }}">Next</a>
+        {% else %}
+        <span class="{{ pg_disabled }}">Next</span>
+        {% endif %}
+    </div>
+    {% endif %}
+{% else %}
+    <div class="text-center py-16 text-gray-400 dark:text-gray-500">
+        {% if filters.search %}
+        <p>No items matching "{{ filters.search }}". Try a different search.</p>
+        {% else %}
+        <p>No items yet. Click "Fetch Now" or wait for the next scheduled fetch.</p>
+        {% endif %}
+    </div>
+{% endif %}
+{% endblock %}

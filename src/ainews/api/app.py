@@ -150,6 +150,30 @@ async def api_trigger_fetch():
     return {"status": "started"}
 
 
+@app.get("/api/badge-counts")
+def api_badge_counts(since: str | None = None):
+    """Count new items per category since a given timestamp (for notification badges)."""
+    if not since:
+        return {"dashboard": 0, "trends": 0, "ccc": 0}
+    try:
+        since_dt = datetime.fromisoformat(since)
+    except ValueError:
+        return {"dashboard": 0, "trends": 0, "ccc": 0}
+    conn = get_db(settings.db_path)
+    dashboard_count = count_items(
+        conn,
+        since=since_dt,
+        exclude_source_types=["events", "luma", "github_trending", "github_trending_history"],
+        exclude_sources=["Claude Code Releases"],
+    )
+    trends_count = count_items(conn, since=since_dt, source_type="github_trending") + count_items(
+        conn, since=since_dt, source_type="github_trending_history"
+    )
+    ccc_count = count_items(conn, since=since_dt, source_name="Claude Code Releases")
+    conn.close()
+    return {"dashboard": dashboard_count, "trends": trends_count, "ccc": ccc_count}
+
+
 # === Web Dashboard ===
 
 PER_PAGE = 30
