@@ -35,6 +35,7 @@
         .type-rsshub { background: #1a3d1a; color: #4ade80; }
         .type-xiaohongshu { background: #3d1a2e; color: #f472b6; }
         .type-luma { background: #1e1a3d; color: #a78bfa; }
+        .type-events { background: #2d1a3d; color: #c084fc; }
         .type-arxiv_queries { background: #3d3d1a; color: #facc15; }
 
         .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; margin-right: 4px; }
@@ -104,6 +105,7 @@
                         <option value="rsshub">RSSHub</option>
                         <option value="xiaohongshu">Xiaohongshu</option>
                         <option value="luma">Luma</option>
+                        <option value="events">Events</option>
                         <option value="arxiv_queries">ArXiv Query</option>
                     </select>
                 </div>
@@ -136,6 +138,7 @@
             user_id: 'User ID',
             query: 'Query',
             source_type: 'Source Type',
+            scraper: 'Scraper',
         };
 
         function showToast(msg, type) {

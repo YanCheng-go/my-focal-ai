@@ -16,6 +16,7 @@ dependencies = [
     "ruamel.yaml>=0.18",
     "twscrape>=0.17.0",
     "rookiepy>=0.5.6",
+    "selectolax>=0.4.7",
 ]
 
 [project.optional-dependencies]

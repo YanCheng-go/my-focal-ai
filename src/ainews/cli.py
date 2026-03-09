@@ -76,6 +76,14 @@ def main():
     )
     export_parser.add_argument("--min-score", type=float, default=None, help="Minimum score filter")
 
+    backfill_parser = sub.add_parser(
+        "backfill-tags",
+        help="Re-sync tags from sources.yml config to existing DB items",
+    )
+    backfill_parser.add_argument(
+        "--dry-run", action="store_true", help="Show what would change without modifying the DB"
+    )
+
     args = parser.parse_args()
 
     if args.command == "serve":
@@ -117,6 +125,10 @@ def main():
         from ainews.cloud_fetch import cloud_fetch_and_score
 
         asyncio.run(cloud_fetch_and_score())
+    elif args.command == "backfill-tags":
+        from ainews.backfill import backfill_tags
+
+        backfill_tags(dry_run=args.dry_run)
     elif args.command == "export":
         from pathlib import Path
 

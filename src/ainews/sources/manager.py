@@ -14,6 +14,7 @@ SOURCE_FIELDS = {
     "rsshub": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
     "xiaohongshu": {"required": ["user_id", "name"], "optional": ["tags"]},
     "luma": {"required": ["handle"], "optional": ["tags"]},
+    "events": {"required": ["scraper", "name"], "optional": ["tags"]},
     "leaderboard": {"required": ["url", "name"], "optional": ["tags"]},
     "arxiv_queries": {"required": ["query", "name"], "optional": ["tags"]},
 }

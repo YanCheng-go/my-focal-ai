@@ -3,7 +3,9 @@
 import logging
 import sqlite3
 
+from ainews.backfill import sync_source_metadata
 from ainews.config import load_sources
+from ainews.ingest.events import run_events_ingestion
 from ainews.ingest.feeds import build_feed_urls, fetch_feed
 from ainews.ingest.twitter import run_twitter_ingestion
 from ainews.ingest.xiaohongshu import run_xhs_ingestion
@@ -42,6 +44,24 @@ async def fetch_single_source(
                 raise RuntimeError("No XHS cookies found in Chrome")
             items = await fetch_xhs_user(user_id, cookies, name=name, tags=user.get("tags", []))
             new_count = ingest_items(conn, f"xiaohongshu:{user_id}", items)
+            return {"items_fetched": len(items), "new_items": new_count}
+
+    # Check event sources
+    from ainews.ingest.events import fetch_anthropic_events, fetch_google_dev_events
+
+    event_sources = sources_config.get("sources", {}).get("events", [])
+    for src in event_sources:
+        name = src.get("name", "")
+        if source_name.lower() in name.lower():
+            scraper = src.get("scraper", "")
+            tags = src.get("tags", [])
+            if scraper == "anthropic":
+                items = await fetch_anthropic_events(tags=tags)
+            elif scraper == "google_dev":
+                items = await fetch_google_dev_events(tags=tags)
+            else:
+                raise ValueError(f"Unknown event scraper: {scraper}")
+            new_count = ingest_items(conn, name, items)
             return {"items_fetched": len(items), "new_items": new_count}
 
     # Check all feed sources
@@ -95,12 +115,26 @@ async def run_ingestion(conn: sqlite3.Connection, config_dir=None):
     except Exception:
         logger.exception("Xiaohongshu ingestion failed")
 
+    # Events (web scraping — Anthropic, Google, etc.)
+    try:
+        events_count = await run_events_ingestion(conn, sources_config)
+        total_new += events_count
+    except Exception:
+        logger.exception("Events ingestion failed")
+
+    # Sync tags and source_type from config to existing items (skips if unchanged)
+    try:
+        sync_source_metadata(conn, sources_config, config_dir=config_dir)
+    except Exception:
+        logger.exception("Metadata sync failed")
+
     # Mark YouTube Shorts as duplicates of their full video counterpart
     dupes = mark_youtube_shorts_duplicates(conn)
     if dupes:
         logger.info(f"Marked {dupes} YouTube Shorts as duplicates")
 
     logger.info(
-        f"Ingestion complete: {total_new} new items from {len(feeds)} feeds + twitter + xhs"
+        f"Ingestion complete: {total_new} new items from "
+        f"{len(feeds)} feeds + twitter + xhs + events"
     )
     return total_new
