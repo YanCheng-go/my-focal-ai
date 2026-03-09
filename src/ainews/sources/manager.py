@@ -114,6 +114,8 @@ def get_source_display_name(source_type: str, entry: dict) -> str:
         return f"@{entry['handle']}"
     if source_type == "luma":
         return f"Luma: {entry['handle']}"
+    if source_type == "github_trending":
+        return "GitHub Trending"
     return entry.get("name", str(entry))
 
 
@@ -124,7 +126,11 @@ def get_all_sources_flat(config_dir: Path) -> list[dict]:
 
     sources = data.get("sources", {})
     for stype in SOURCE_FIELDS:
-        for i, entry in enumerate(sources.get(stype, []) or []):
+        entries = sources.get(stype, []) or []
+        if not isinstance(entries, list):
+            # Single-dict config (e.g. github_trending) — wrap in list
+            entries = [entries]
+        for i, entry in enumerate(entries):
             result.append(
                 {
                     "type": stype,
