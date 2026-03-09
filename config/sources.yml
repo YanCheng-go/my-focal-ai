@@ -139,8 +139,8 @@ sources:
   # === GitHub Trending (trendshift.io) ===
   # Scraped daily — top trending repos by engagement score.
   github_trending:
-    - name: trendshift.io
-      tags: [github, trending, open-source]
+  - name: trendshift.io
+    tags: [github, trending, open-source]
 
   # === Events (web scrapers) ===
   events:
