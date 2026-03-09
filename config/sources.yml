@@ -97,6 +97,11 @@ sources:
     name: "METR"
     tags: [ai, safety, evals, research]
 
+    # --- Leaderboards / benchmarks ---
+  - url: "https://arena.ai/blog/rss/"
+    name: "Arena (Chatbot Arena)"
+    tags: [ai, leaderboard, benchmarks, evals]
+
     # --- Practitioners ---
   - url: "https://simonwillison.net/atom/everything/"
     name: "Simon Willison"
@@ -125,6 +130,10 @@ sources:
     source_type: "rss"
     tags: [ai, research, cohere, company]
     # Note: Mistral AI has no RSS feed and no working RSSHub route.
+  - route: "/huggingface/daily-papers"
+    name: "HuggingFace Daily Papers"
+    source_type: "rss"
+    tags: [ai, research, papers, leaderboard]
 
   # === Events (Luma) ===
   # Route: /luma/:handle
