@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.2.0 — 2026-03-09
+
+### Features
+
+- **GitHub Trending page** — trendshift.io scraper fetches top 25 trending repos daily, with two tabs: Daily Trending and Trending History (all-time most-featured repos)
+- **Static pages for Vercel** — Leaderboard, Events, CCC, and Trends pages exported as client-side JS for the static site
+- **CI: auto-export config** — new workflow re-exports `config.json` when `sources.yml` changes
+- **CI: static page check** — warns when a localhost template has no matching static page
+
+### Fixes
+
+- **Export includes dedicated-page items** — trending repos are now guaranteed in `data.json` even when the 500-item limit would otherwise exclude them
+
+### Infrastructure
+
+- Updated CLAUDE.md with static pages architecture and export documentation
+
 ## v0.1.0 — 2026-03-09
 
 First release of the AI News Filter — a personal news intelligence system.

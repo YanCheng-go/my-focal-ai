@@ -65,7 +65,7 @@ async def lifespan(app: FastAPI):
     scheduler.shutdown()
 
 
-app = FastAPI(title="AI News Filter", version="0.1.0", lifespan=lifespan)
+app = FastAPI(title="AI News Filter", version="0.2.0", lifespan=lifespan)
 app.include_router(admin_router)
 
 static_dir = str(settings.config_dir.parent / "static")
