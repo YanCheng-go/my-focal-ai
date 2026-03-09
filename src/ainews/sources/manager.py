@@ -15,7 +15,7 @@ SOURCE_FIELDS = {
     "xiaohongshu": {"required": ["user_id", "name"], "optional": ["tags"]},
     "luma": {"required": ["handle"], "optional": ["tags"]},
     "events": {"required": ["scraper", "name"], "optional": ["tags"]},
-    "github_trending": {"required": ["tags"], "optional": []},
+    "github_trending": {"required": ["name", "tags"], "optional": []},
     "leaderboard": {"required": ["url", "name"], "optional": ["tags"]},
     "event_links": {"required": ["url", "name"], "optional": ["tags"]},
     "arxiv_queries": {"required": ["query", "name"], "optional": ["tags"]},
@@ -114,8 +114,6 @@ def get_source_display_name(source_type: str, entry: dict) -> str:
         return f"@{entry['handle']}"
     if source_type == "luma":
         return f"Luma: {entry['handle']}"
-    if source_type == "github_trending":
-        return "GitHub Trending"
     return entry.get("name", str(entry))
 
 
@@ -126,11 +124,7 @@ def get_all_sources_flat(config_dir: Path) -> list[dict]:
 
     sources = data.get("sources", {})
     for stype in SOURCE_FIELDS:
-        entries = sources.get(stype, []) or []
-        if not isinstance(entries, list):
-            # Single-dict config (e.g. github_trending) — wrap in list
-            entries = [entries]
-        for i, entry in enumerate(entries):
+        for i, entry in enumerate(sources.get(stype, []) or []):
             result.append(
                 {
                     "type": stype,

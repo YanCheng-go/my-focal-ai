@@ -205,11 +205,11 @@ async def run_github_trending_ingestion(conn, sources_config: dict) -> int:
     from ainews.storage.db import ingest_items
 
     sources = sources_config.get("sources", {})
-    trending_config = sources.get("github_trending", {})
-    if not trending_config:
+    trending_entries = sources.get("github_trending", [])
+    if not trending_entries:
         return 0
 
-    tags = trending_config.get("tags", ["github", "trending", "open-source"])
+    tags = trending_entries[0].get("tags", ["github", "trending", "open-source"])
 
     total_new = 0
 

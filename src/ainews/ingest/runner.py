@@ -66,14 +66,14 @@ async def fetch_single_source(
             return {"items_fetched": len(items), "new_items": new_count}
 
     # Check GitHub trending
-    trending_config = sources_config.get("sources", {}).get("github_trending", {})
-    if trending_config and "github" in source_name.lower() and "trend" in source_name.lower():
+    trending_entries = sources_config.get("sources", {}).get("github_trending", [])
+    if trending_entries and "github" in source_name.lower() and "trend" in source_name.lower():
         from ainews.ingest.github_trending import (
             fetch_github_trending,
             fetch_github_trending_history,
         )
 
-        tags = trending_config.get("tags", ["github", "trending", "open-source"])
+        tags = trending_entries[0].get("tags", ["github", "trending", "open-source"])
         total_fetched = 0
         total_new = 0
         items = await fetch_github_trending(tags=tags)
