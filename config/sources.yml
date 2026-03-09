@@ -127,8 +127,7 @@ sources:
     # Note: Mistral AI has no RSS feed and no working RSSHub route.
 
   # === Leaderboards ===
-  # These are interactive pages without RSS feeds.
-  # TODO: build a scraper/snapshot module to detect ranking changes.
+  # Reference links for manual browsing — not ingested by the pipeline.
   leaderboard:
   - url: "https://arena.ai/leaderboard"
     name: "Arena (Chatbot Arena)"
