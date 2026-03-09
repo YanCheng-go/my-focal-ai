@@ -8,123 +8,141 @@ sources:
   # === Twitter/X ===
   # Uses Chrome cookies directly (not RSSHub). Just stay logged into x.com in Chrome.
   twitter:
-    - handle: "trq212"
-      tags: [ai]
-    - handle: "karpathy"
-      tags: [ai, research, deep-learning]
-    - handle: "bcherny"
-      tags: [ai, engineering]
+  - handle: "trq212"
+    tags: [ai]
+  - handle: "karpathy"
+    tags: [ai, research, deep-learning]
+  - handle: "bcherny"
+    tags: [ai, engineering]
 
   # === YouTube ===
   # Native RSS — no RSSHub needed.
   youtube:
-    - channel_id: "UC2ojq-nuP8ceeHqiroeKhBA"
-      name: "Nate Herk | AI Automation"
-      tags: [ai, automation]
-    - channel_id: "UCYO_jab_esuFRV4b17AJtAw"
-      name: "Andrej Karpathy"
-      tags: [ai, research, deep-learning]
-    - channel_id: "UCoQ8B21RIncI9NWLr2d2Y_w"
-      name: "TechWorld with Nana"
-      tags: [devops, cloud, tooling]
-
-  # === ArXiv category feeds ===
+  - channel_id: "UC2ojq-nuP8ceeHqiroeKhBA"
+    name: "Nate Herk | AI Automation"
+    tags: [ai, automation]
+  - channel_id: "UCoQ8B21RIncI9NWLr2d2Y_w"
+    name: "TechWorld with Nana"
+    tags: [devops, cloud, tooling]
+  - channel_id: UCXUPKJO5MZQN11PqgIvyuvQ
+    name: Andrej Karpathy
+    tags:
+    - ai
+    - research
+    - course
+  - channel_id: UCBa5G_ESCn8Yd4vw5U-gIcg
+    name: Stanford Online
+    tags:
+    - ai
+    - research
+    - course
+  - channel_id: UCLKPca3kwwd-B59HNr-_lvA
+    name: AI Engineer
   arxiv:
-    - url: "https://rss.arxiv.org/rss/cs.AI"
-      name: "arXiv cs.AI"
-      tags: [ai, research, papers]
-    - url: "https://rss.arxiv.org/rss/cs.LG"
-      name: "arXiv cs.LG (Machine Learning)"
-      tags: [ai, research, ml, papers]
-    - url: "https://rss.arxiv.org/rss/cs.CL"
-      name: "arXiv cs.CL (NLP/LLM)"
-      tags: [ai, research, nlp, llm, papers]
-
-  # === Direct RSS/Atom feeds ===
+  - url: "https://rss.arxiv.org/rss/cs.AI"
+    name: "arXiv cs.AI"
+    tags: [ai, research, papers]
+  - url: "https://rss.arxiv.org/rss/cs.LG"
+    name: "arXiv cs.LG (Machine Learning)"
+    tags: [ai, research, ml, papers]
+  - url: "https://rss.arxiv.org/rss/cs.CL"
+    name: "arXiv cs.CL (NLP/LLM)"
+    tags: [ai, research, nlp, llm, papers]
+  - url: https://rss.arxiv.org/rss/cs.se
+    name: "arXiv cs.SE (Software Engineering)"
+    tags:
+    - swe
+    - ai
+    - research
   rss:
     # --- Company/Lab blogs ---
-    - url: "https://openai.com/news/rss.xml"
-      name: "OpenAI Blog"
-      tags: [ai, openai, company]
-    - url: "https://deepmind.google/blog/rss.xml"
-      name: "Google DeepMind"
-      tags: [ai, research, deepmind, company]
-    - url: "https://research.google/blog/rss/"
-      name: "Google Research"
-      tags: [ai, research, google, company]
-    - url: "https://engineering.fb.com/feed/"
-      name: "Meta Engineering"
-      tags: [ai, engineering, meta, company]
-    - url: "https://machinelearning.apple.com/rss.xml"
-      name: "Apple Machine Learning"
-      tags: [ai, research, apple, company]
-    - url: "https://research.facebook.com/feed/"
-      name: "Meta Research"
-      tags: [ai, research, meta, company]
-    - url: "https://www.microsoft.com/en-us/research/feed/"
-      name: "Microsoft Research"
-      tags: [ai, research, microsoft, company]
-    - url: "https://blogs.nvidia.com/feed/"
-      name: "NVIDIA Blog"
-      tags: [ai, nvidia, company]
-    - url: "https://developer.nvidia.com/blog/feed/"
-      name: "NVIDIA Developer"
-      tags: [ai, research, nvidia, engineering]
-    - url: "https://stability.ai/news?format=rss"
-      name: "Stability AI"
-      tags: [ai, research, stability, open-source]
+  - url: "https://openai.com/news/rss.xml"
+    name: "OpenAI Blog"
+    tags: [ai, openai, company]
+  - url: "https://deepmind.google/blog/rss.xml"
+    name: "Google DeepMind"
+    tags: [ai, research, deepmind, company]
+  - url: "https://research.google/blog/rss/"
+    name: "Google Research"
+    tags: [ai, research, google, company]
+  - url: "https://engineering.fb.com/feed/"
+    name: "Meta Engineering"
+    tags: [ai, engineering, meta, company]
+  - url: "https://machinelearning.apple.com/rss.xml"
+    name: "Apple Machine Learning"
+    tags: [ai, research, apple, company]
+  - url: "https://research.facebook.com/feed/"
+    name: "Meta Research"
+    tags: [ai, research, meta, company]
+  - url: "https://www.microsoft.com/en-us/research/feed/"
+    name: "Microsoft Research"
+    tags: [ai, research, microsoft, company]
+  - url: "https://blogs.nvidia.com/feed/"
+    name: "NVIDIA Blog"
+    tags: [ai, nvidia, company]
+  - url: "https://developer.nvidia.com/blog/feed/"
+    name: "NVIDIA Developer"
+    tags: [ai, research, nvidia, engineering]
+  - url: "https://stability.ai/news?format=rss"
+    name: "Stability AI"
+    tags: [ai, research, stability, open-source]
 
     # --- Open source / community ---
-    - url: "https://huggingface.co/blog/feed.xml"
-      name: "Hugging Face Blog"
-      tags: [ai, open-source, huggingface]
+  - url: "https://huggingface.co/blog/feed.xml"
+    name: "Hugging Face Blog"
+    tags: [ai, open-source, huggingface]
 
     # --- Practitioners ---
-    - url: "https://simonwillison.net/atom/everything/"
-      name: "Simon Willison"
-      tags: [ai, tooling, open-source]
-    - url: "https://lilianweng.github.io/index.xml"
-      name: "Lilian Weng"
-      tags: [ai, research, deep-learning]
+  - url: "https://simonwillison.net/atom/everything/"
+    name: "Simon Willison"
+    tags: [ai, tooling, open-source]
+  - url: "https://lilianweng.github.io/index.xml"
+    name: "Lilian Weng"
+    tags: [ai, research, deep-learning]
 
   # === Xiaohongshu ===
-  # BLOCKED: RSSHub XHS route requires Puppeteer (headless Chrome).
-  # To enable, use the RSSHub chromium image:
-  #   image: diygod/rsshub:chromium
-  # in docker/docker-compose.yml
+  # Uses Chrome cookies directly (not RSSHub). Just stay logged into xiaohongshu.com in Chrome.
   xiaohongshu:
-    - user_id: "62fb991800000000120027ee"
-      name: "第四种黑猩猩"
-      tags: [ai]
+  - user_id: "62fb991800000000120027ee"
+    name: "第四种黑猩猩"
+    tags: [ai]
 
   # === RSSHub-scraped sites (no native RSS) ===
   rsshub:
-    - route: "/anthropic/news"
-      name: "Anthropic News"
-      source_type: "rss"
-      tags: [ai, anthropic, company]
+  - route: "/anthropic/news"
+    name: "Anthropic News"
+    source_type: "rss"
+    tags: [ai, anthropic, company]
     # Note: /anthropic/research route does not exist in RSSHub.
     # Anthropic research posts are included in /anthropic/news.
-    - route: "/cohere/blog"
-      name: "Cohere Blog"
-      source_type: "rss"
-      tags: [ai, research, cohere, company]
+  - route: "/cohere/blog"
+    name: "Cohere Blog"
+    source_type: "rss"
+    tags: [ai, research, cohere, company]
     # Note: Mistral AI has no RSS feed and no working RSSHub route.
 
   # === Events (Luma) ===
   # Route: /luma/:handle
   luma:
-    - handle: "dtc-events"
-      tags: [events, ai, copenhagen]
-
-# === ArXiv keyword searches ===
+  - handle: dtc-events
+    tags:
+    - events
+    - ai
+    - copenhagen
+    - data
+  - handle: claudecommunity
+    tags:
+    - ai
+    - events
+    - claude code
+    - copenhagen
 arxiv_queries:
-  - query: "cat:cs.AI+AND+abs:transformer"
-    name: "arXiv: transformers"
-    tags: [ai, research, transformers]
-  - query: "cat:cs.CL+AND+abs:large+language+model"
-    name: "arXiv: LLMs"
-    tags: [ai, research, llm]
-  - query: "cat:cs.LG+AND+abs:reinforcement+learning"
-    name: "arXiv: RL"
-    tags: [ai, research, rl]
+- query: "cat:cs.AI+AND+abs:transformer"
+  name: "arXiv: transformers"
+  tags: [ai, research, transformers]
+- query: "cat:cs.CL+AND+abs:large+language+model"
+  name: "arXiv: LLMs"
+  tags: [ai, research, llm]
+- query: "cat:cs.LG+AND+abs:reinforcement+learning"
+  name: "arXiv: RL"
+  tags: [ai, research, rl]

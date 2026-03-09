@@ -1,0 +1,40 @@
+name: Branch Naming
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch name
+        run: |
+          BRANCH="${{ github.head_ref }}"
+
+          # Allow Dependabot branches (e.g., dependabot/github_actions/actions/checkout-6)
+          if [[ "$BRANCH" =~ ^dependabot/ ]]; then
+            echo "Dependabot branch '$BRANCH' — skipping naming check."
+            exit 0
+          fi
+
+          PATTERN="^(feature|fix|chore|docs|refactor|test)/[a-z0-9._-]+$"
+
+          if [[ ! "$BRANCH" =~ $PATTERN ]]; then
+            echo "::error::Branch name '$BRANCH' does not follow the naming convention."
+            echo ""
+            echo "Branch names must match: <type>/<description>"
+            echo "  Types: feature, fix, chore, docs, refactor, test"
+            echo "  Description: lowercase letters, numbers, hyphens, dots, underscores"
+            echo ""
+            echo "Examples:"
+            echo "  feature/add-login"
+            echo "  fix/header-overflow"
+            echo "  chore/update-deps"
+            exit 1
+          fi
+
+          echo "Branch name '$BRANCH' is valid."

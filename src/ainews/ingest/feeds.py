@@ -1,16 +1,11 @@
 """Feed ingestion — fetches RSS/Atom feeds and normalizes to ContentItem."""
 
-import hashlib
 from datetime import datetime
 
 import feedparser
 import httpx
 
-from ainews.models import ContentItem
-
-
-def _make_id(url: str) -> str:
-    return hashlib.sha256(url.encode()).hexdigest()[:16]
+from ainews.models import ContentItem, make_id
 
 
 def _parse_date(entry: dict) -> datetime | None:
@@ -51,7 +46,7 @@ async def fetch_feed(
 
         items.append(
             ContentItem(
-                id=_make_id(url),
+                id=make_id(url),
                 url=url,
                 title=entry.get("title", "Untitled"),
                 summary=summary,
@@ -73,19 +68,8 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
     sources = sources_config.get("sources", {})
     feeds = []
 
-    # Twitter is handled separately via twscrape (see ingest/twitter.py)
-
-    # Xiaohongshu via RSSHub
-    for user in sources.get("xiaohongshu", []):
-        uid = user["user_id"]
-        feeds.append(
-            {
-                "url": f"{rsshub_base}/xiaohongshu/user/{uid}/notes",
-                "source_name": user.get("name", uid),
-                "source_type": "xiaohongshu",
-                "tags": user.get("tags", []),
-            }
-        )
+    # Twitter is handled separately (see ingest/twitter.py)
+    # Xiaohongshu is handled separately (see ingest/xiaohongshu.py)
 
     # YouTube native RSS
     for ch in sources.get("youtube", []):

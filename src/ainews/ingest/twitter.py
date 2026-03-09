@@ -1,6 +1,5 @@
 """Twitter ingestion using browser cookies and Twitter's GraphQL API directly."""
 
-import hashlib
 import json
 import logging
 import sqlite3
@@ -8,7 +7,7 @@ from datetime import datetime
 
 import httpx
 
-from ainews.models import ContentItem
+from ainews.models import ContentItem, make_id
 from ainews.storage.db import ingest_items
 
 logger = logging.getLogger(__name__)
@@ -18,10 +17,6 @@ BEARER = (  # noqa: E501
     "AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs"
     "%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA"
 )
-
-
-def _make_id(url: str) -> str:
-    return hashlib.sha256(url.encode()).hexdigest()[:16]
 
 
 def get_twitter_cookies_from_browser() -> dict[str, str] | None:
@@ -164,7 +159,7 @@ async def fetch_twitter_user(
 
                     items.append(
                         ContentItem(
-                            id=_make_id(url),
+                            id=make_id(url),
                             url=url,
                             title=text[:100] + ("..." if len(text) > 100 else ""),
                             summary=text,

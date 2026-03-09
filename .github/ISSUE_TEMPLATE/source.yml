@@ -1,0 +1,28 @@
+name: Add Source
+description: Request a new content source
+labels: ["source"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Source name
+      placeholder: e.g. "Hacker News"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Source type
+      options:
+        - RSS/Atom feed
+        - YouTube channel
+        - Twitter/X account
+        - Xiaohongshu
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL or feed URL
+      placeholder: https://...

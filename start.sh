@@ -2,12 +2,14 @@
 set -euo pipefail
 
 # AI News Filter — one-command launcher
-# Usage: ./start.sh          Start all services + app
-#        ./start.sh stop     Stop all services
+# Usage: ./start.sh              Start all services + app
+#        ./start.sh --no-score   Start without Ollama scoring
+#        ./start.sh stop         Stop all services
 
 APP_PORT="${AINEWS_PORT:-8000}"
 RSSHUB_PORT=1200
 OLLAMA_MODEL="${AINEWS_OLLAMA_MODEL:-qwen3:4b}"
+SCORING=true
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -17,6 +19,15 @@ NC='\033[0m'
 info()  { echo -e "${GREEN}[ok]${NC} $1"; }
 warn()  { echo -e "${YELLOW}[!!]${NC} $1"; }
 fail()  { echo -e "${RED}[err]${NC} $1"; }
+
+# --- Parse flags ---
+for arg in "$@"; do
+    case "$arg" in
+        --no-score) SCORING=false ;;
+        stop) ;; # handled below
+        *) echo "Unknown option: $arg"; exit 1 ;;
+    esac
+done
 
 # --- Stop mode ---
 if [[ "${1:-}" == "stop" ]]; then
@@ -47,10 +58,6 @@ fi
 
 if ! command -v docker &>/dev/null; then
     warn "Docker not found — RSSHub sources won't work"
-fi
-
-if ! command -v ollama &>/dev/null; then
-    warn "Ollama not found — scoring will be skipped"
 fi
 
 if [[ $missing -eq 1 ]]; then
@@ -84,28 +91,37 @@ if command -v docker &>/dev/null && [[ -f docker/docker-compose.yml ]]; then
     fi
 fi
 
-# --- Start Ollama ---
-if command -v ollama &>/dev/null; then
-    if ! curl -s http://localhost:11434/api/tags &>/dev/null; then
-        echo "Starting Ollama..."
-        ollama serve &>/dev/null &
-        sleep 2
-    fi
-    if curl -s http://localhost:11434/api/tags &>/dev/null; then
-        # Pull model if not present
-        if ! ollama list 2>/dev/null | grep -q "$OLLAMA_MODEL"; then
-            echo "Pulling $OLLAMA_MODEL (first time only)..."
-            ollama pull "$OLLAMA_MODEL"
+# --- Start Ollama (unless --no-score) ---
+if [[ "$SCORING" == "true" ]]; then
+    if command -v ollama &>/dev/null; then
+        if ! curl -s http://localhost:11434/api/tags &>/dev/null; then
+            echo "Starting Ollama..."
+            ollama serve &>/dev/null &
+            sleep 2
         fi
-        info "Ollama ready (model: $OLLAMA_MODEL)"
+        if curl -s http://localhost:11434/api/tags &>/dev/null; then
+            # Pull model if not present
+            if ! ollama list 2>/dev/null | grep -q "$OLLAMA_MODEL"; then
+                echo "Pulling $OLLAMA_MODEL (first time only)..."
+                ollama pull "$OLLAMA_MODEL"
+            fi
+            info "Ollama ready (model: $OLLAMA_MODEL)"
+        else
+            warn "Ollama didn't start — scoring will be skipped"
+            export AINEWS_SCORING=false
+        fi
     else
-        warn "Ollama didn't start — scoring will be skipped"
+        warn "Ollama not found — scoring will be skipped"
+        export AINEWS_SCORING=false
     fi
+else
+    info "Scoring disabled (--no-score)"
+    export AINEWS_SCORING=false
 fi
 
 # --- Start app ---
 echo ""
-info "Starting dashboard at http://localhost:$APP_PORT"
+info "Starting dashboard at http://localhost:$APP_PORT (scoring: $SCORING)"
 echo "    Press Ctrl+C to stop"
 echo ""
 uv run ainews serve

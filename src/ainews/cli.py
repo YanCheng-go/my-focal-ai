@@ -13,50 +13,17 @@ from ainews.config import Settings
 async def _fetch_source(source_name: str):
     """Fetch a single source by name (one-time)."""
     from ainews.config import load_sources
-    from ainews.ingest.feeds import build_feed_urls, fetch_feed
-    from ainews.ingest.twitter import fetch_twitter_user, get_twitter_cookies_from_browser
-    from ainews.storage.db import get_db, ingest_items
+    from ainews.ingest.runner import fetch_single_source
+    from ainews.storage.db import get_db
 
     settings = Settings()
     conn = get_db(settings.db_path)
     try:
         sources_config = load_sources(settings.config_dir)
-
-        # Check Twitter handles
-        twitter_users = sources_config.get("sources", {}).get("twitter", [])
-        for user in twitter_users:
-            handle = user["handle"]
-            if source_name.lower() in (handle.lower(), f"@{handle}".lower()):
-                cookies = get_twitter_cookies_from_browser()
-                if not cookies:
-                    print("No Twitter cookies found in Chrome. Make sure you're logged into x.com.")
-                    return
-                items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
-                new_count = ingest_items(conn, f"twitter:@{handle}", items)
-                print(f"Fetched {len(items)} tweets from @{handle} ({new_count} new)")
-                return
-
-        # Check all feed sources
-        feeds = build_feed_urls(sources_config)
-        matched = [f for f in feeds if source_name.lower() in f["source_name"].lower()]
-
-        if not matched:
-            print(f"No source found matching '{source_name}'.")
-            print("\nAvailable sources:")
-            for f in feeds:
-                print(f"  - {f['source_name']}")
-            for u in twitter_users:
-                print(f"  - @{u['handle']}")
-            return
-
-        for feed_meta in matched:
-            try:
-                items = await fetch_feed(**feed_meta)
-                new_count = ingest_items(conn, feed_meta["source_name"], items)
-                name = feed_meta["source_name"]
-                print(f"Fetched {len(items)} items from {name} ({new_count} new)")
-            except Exception as e:
-                print(f"Failed to fetch {feed_meta['source_name']}: {e}")
+        result = await fetch_single_source(conn, sources_config, source_name)
+        print(f"Fetched {result['items_fetched']} items ({result['new_items']} new)")
+    except (ValueError, RuntimeError) as e:
+        print(str(e))
     finally:
         conn.close()
 
@@ -128,11 +95,14 @@ def main():
         sources_config = load_sources(settings.config_dir)
         feeds = build_feed_urls(sources_config)
         twitter_users = sources_config.get("sources", {}).get("twitter", [])
+        xhs_users = sources_config.get("sources", {}).get("xiaohongshu", [])
         print("Configured sources:")
         for f in feeds:
             print(f"  [{f['source_type']}] {f['source_name']}")
         for u in twitter_users:
             print(f"  [twitter] @{u['handle']}")
+        for u in xhs_users:
+            print(f"  [xiaohongshu] {u.get('name', u['user_id'])}")
     elif args.command == "twitter-setup":
         from ainews.ingest.twitter import setup_twitter_from_cookies
 

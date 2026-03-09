@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sources - AI News Filter</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 1.4rem; color: #fff; }
+        a { color: #7cb8ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .header-nav { display: flex; gap: 16px; align-items: center; }
+
+        .btn { padding: 6px 14px; border-radius: 6px; border: 1px solid #2d5a8e; cursor: pointer; font-size: 0.85rem; background: #1e3a5f; color: #7cb8ff; }
+        .btn:hover { background: #2d5a8e; }
+        .btn-danger { border-color: #5a2d2d; background: #3d1a1a; color: #ff7c7c; }
+        .btn-danger:hover { background: #5a2d2d; }
+        .btn-sm { padding: 4px 10px; font-size: 0.8rem; }
+        .btn-outline { background: transparent; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+        th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #1a1a1a; font-size: 0.85rem; }
+        th { color: #888; font-weight: 500; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background: #111; }
+
+        .type-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+        .type-twitter { background: #1a2e3d; color: #67e8f9; }
+        .type-youtube { background: #3d1a1a; color: #ff7c7c; }
+        .type-rss { background: #1a3d1a; color: #4ade80; }
+        .type-arxiv { background: #3d3d1a; color: #facc15; }
+        .type-rsshub { background: #1a3d1a; color: #4ade80; }
+        .type-xiaohongshu { background: #3d1a2e; color: #f472b6; }
+        .type-luma { background: #1e1a3d; color: #a78bfa; }
+        .type-arxiv_queries { background: #3d3d1a; color: #facc15; }
+
+        .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; margin-right: 4px; }
+        .status-enabled { color: #4ade80; }
+        .status-disabled { color: #666; }
+
+        .actions { display: flex; gap: 4px; flex-wrap: wrap; }
+
+        /* Modal / Form */
+        .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 100; justify-content: center; align-items: center; }
+        .modal-overlay.active { display: flex; }
+        .modal { background: #111; border: 1px solid #222; border-radius: 12px; padding: 24px; width: 500px; max-width: 95vw; max-height: 90vh; overflow-y: auto; }
+        .modal h2 { font-size: 1.1rem; margin-bottom: 16px; color: #fff; }
+        .form-group { margin-bottom: 14px; }
+        .form-group label { display: block; font-size: 0.8rem; color: #888; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .form-group input, .form-group select { width: 100%; padding: 8px 12px; border-radius: 6px; background: #1a1a1a; color: #e0e0e0; border: 1px solid #222; font-size: 0.9rem; outline: none; }
+        .form-group input:focus, .form-group select:focus { border-color: #2d5a8e; }
+        .form-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 20px; }
+        .form-actions .btn-cancel { background: transparent; border-color: #333; color: #888; }
+
+        .toast { position: fixed; bottom: 20px; right: 20px; padding: 10px 20px; border-radius: 8px; font-size: 0.85rem; z-index: 200; display: none; }
+        .toast-success { background: #1a3d1a; color: #4ade80; border: 1px solid #2d5a2d; }
+        .toast-error { background: #3d1a1a; color: #ff7c7c; border: 1px solid #5a2d2d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-nav">
+                <h1>Sources</h1>
+                <a href="/">Dashboard</a>
+            </div>
+            <button class="btn" onclick="openAddModal()">Add Source</button>
+        </div>
+
+        <table id="sources-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Tags</th>
+                    <th>Status</th>
+                    <th>Items</th>
+                    <th>Last Fetched</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="sources-body">
+                <tr><td colspan="7" style="text-align:center;color:#555">Loading...</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Add/Edit Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h2 id="modal-title">Add Source</h2>
+            <form id="source-form" onsubmit="return handleSubmit(event)">
+                <div class="form-group">
+                    <label for="source-type">Type</label>
+                    <select id="source-type" onchange="updateFields()">
+                        <option value="">Select type...</option>
+                        <option value="rss">RSS</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="arxiv">ArXiv</option>
+                        <option value="rsshub">RSSHub</option>
+                        <option value="xiaohongshu">Xiaohongshu</option>
+                        <option value="luma">Luma</option>
+                        <option value="arxiv_queries">ArXiv Query</option>
+                    </select>
+                </div>
+                <div id="dynamic-fields"></div>
+                <div class="form-group">
+                    <label for="source-tags">Tags (comma-separated)</label>
+                    <input type="text" id="source-tags" placeholder="ai, research, company">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast toast-success" id="toast-success"></div>
+    <div class="toast toast-error" id="toast-error"></div>
+
+    <script>
+        let sourceFields = {};
+        let editingSource = null;
+
+        const FIELD_LABELS = {
+            handle: 'Handle',
+            channel_id: 'Channel ID',
+            name: 'Name',
+            url: 'URL',
+            route: 'Route',
+            user_id: 'User ID',
+            query: 'Query',
+            source_type: 'Source Type',
+        };
+
+        function showToast(msg, type) {
+            const el = document.getElementById('toast-' + type);
+            el.textContent = msg;
+            el.style.display = 'block';
+            setTimeout(() => el.style.display = 'none', 3000);
+        }
+
+        async function loadSources() {
+            const resp = await fetch('/admin/api/sources');
+            const data = await resp.json();
+            sourceFields = data.source_fields;
+            renderTable(data.sources);
+        }
+
+        function renderTable(sources) {
+            const tbody = document.getElementById('sources-body');
+            if (!sources.length) {
+                tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:#555">No sources configured</td></tr>';
+                return;
+            }
+            tbody.innerHTML = sources.map(s => {
+                const tags = (s.config.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
+                const status = s.disabled
+                    ? '<span class="status-disabled">Disabled</span>'
+                    : '<span class="status-enabled">Enabled</span>';
+                const lastFetched = s.last_fetched ? timeAgo(s.last_fetched) : '-';
+                return `<tr>
+                    <td>${esc(s.name)}</td>
+                    <td><span class="type-badge type-${s.type}">${esc(s.type)}</span></td>
+                    <td>${tags || '-'}</td>
+                    <td>${status}</td>
+                    <td>${s.item_count}</td>
+                    <td>${lastFetched}</td>
+                    <td class="actions">
+                        <button class="btn btn-sm btn-outline" onclick='openEditModal(${JSON.stringify(s)})'>Edit</button>
+                        <button class="btn btn-sm btn-outline" onclick="toggleSource('${s.type}', ${s.index})">${s.disabled ? 'Enable' : 'Disable'}</button>
+                        <button class="btn btn-sm btn-outline" onclick="fetchSource('${s.type}', ${s.index}, this)">Fetch</button>
+                        <button class="btn btn-sm btn-danger" onclick="deleteSource('${s.type}', ${s.index}, '${esc(s.name)}')">Delete</button>
+                    </td>
+                </tr>`;
+            }).join('');
+        }
+
+        function esc(str) {
+            const d = document.createElement('div');
+            d.textContent = str;
+            return d.innerHTML;
+        }
+
+        function timeAgo(iso) {
+            const d = new Date(iso);
+            const now = new Date();
+            const diffMs = now - d;
+            const mins = Math.floor(diffMs / 60000);
+            if (mins < 60) return mins + 'm ago';
+            const hrs = Math.floor(mins / 60);
+            if (hrs < 24) return hrs + 'h ago';
+            const days = Math.floor(hrs / 24);
+            return days + 'd ago';
+        }
+
+        function updateFields() {
+            const type = document.getElementById('source-type').value;
+            const container = document.getElementById('dynamic-fields');
+            if (!type || !sourceFields[type]) {
+                container.innerHTML = '';
+                return;
+            }
+            const schema = sourceFields[type];
+            const allFields = [...schema.required, ...schema.optional.filter(f => f !== 'tags')];
+            container.innerHTML = allFields.map(field => {
+                const req = schema.required.includes(field);
+                const val = editingSource ? (editingSource.config[field] || '') : '';
+                return `<div class="form-group">
+                    <label for="field-${field}">${FIELD_LABELS[field] || field}${req ? ' *' : ''}</label>
+                    <input type="text" id="field-${field}" data-field="${field}" value="${esc(String(val))}" ${req ? 'required' : ''}>
+                </div>`;
+            }).join('');
+        }
+
+        function openAddModal() {
+            editingSource = null;
+            document.getElementById('modal-title').textContent = 'Add Source';
+            document.getElementById('source-type').value = '';
+            document.getElementById('source-type').disabled = false;
+            document.getElementById('source-tags').value = '';
+            document.getElementById('dynamic-fields').innerHTML = '';
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        function openEditModal(source) {
+            editingSource = source;
+            document.getElementById('modal-title').textContent = 'Edit Source';
+            document.getElementById('source-type').value = source.type;
+            document.getElementById('source-type').disabled = true;
+            document.getElementById('source-tags').value = (source.config.tags || []).join(', ');
+            updateFields();
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-overlay').classList.remove('active');
+            editingSource = null;
+        }
+
+        async function handleSubmit(e) {
+            e.preventDefault();
+            const type = document.getElementById('source-type').value;
+            if (!type) return;
+
+            const body = { type };
+            document.querySelectorAll('#dynamic-fields input[data-field]').forEach(inp => {
+                if (inp.value) body[inp.dataset.field] = inp.value;
+            });
+            const tags = document.getElementById('source-tags').value;
+            if (tags) body.tags = tags;
+
+            let url, method;
+            if (editingSource) {
+                url = `/admin/api/sources/${editingSource.type}/${editingSource.index}`;
+                method = 'PUT';
+            } else {
+                url = '/admin/api/sources';
+                method = 'POST';
+            }
+
+            const resp = await fetch(url, {
+                method,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body),
+            });
+            if (resp.ok) {
+                closeModal();
+                showToast(editingSource ? 'Source updated' : 'Source added', 'success');
+                loadSources();
+            } else {
+                const err = await resp.json();
+                showToast(err.detail || 'Error', 'error');
+            }
+        }
+
+        async function deleteSource(type, index, name) {
+            if (!confirm(`Delete source "${name}"?`)) return;
+            const resp = await fetch(`/admin/api/sources/${type}/${index}`, { method: 'DELETE' });
+            if (resp.ok) {
+                showToast('Source deleted', 'success');
+                loadSources();
+            } else {
+                showToast('Failed to delete', 'error');
+            }
+        }
+
+        async function toggleSource(type, index) {
+            const resp = await fetch(`/admin/api/sources/${type}/${index}/toggle`, { method: 'POST' });
+            if (resp.ok) {
+                loadSources();
+            } else {
+                showToast('Failed to toggle', 'error');
+            }
+        }
+
+        async function fetchSource(type, index, btn) {
+            btn.disabled = true;
+            btn.textContent = '...';
+            try {
+                const resp = await fetch(`/admin/api/sources/${type}/${index}/fetch`, { method: 'POST' });
+                if (resp.ok) {
+                    const data = await resp.json();
+                    showToast(`Fetched ${data.items_fetched} items (${data.new_items} new)`, 'success');
+                    loadSources();
+                } else {
+                    const err = await resp.json();
+                    showToast(err.detail || 'Fetch failed', 'error');
+                }
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Fetch';
+            }
+        }
+
+        // Close modal on overlay click
+        document.getElementById('modal-overlay').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+
+        loadSources();
+    </script>
+</body>
+</html>

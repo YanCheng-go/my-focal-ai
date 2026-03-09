@@ -1,6 +1,7 @@
 """FastAPI app — serves both JSON API and web dashboard."""
 
 import asyncio
+import logging
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta
 
@@ -10,6 +11,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from ainews.api.admin import router as admin_router
 from ainews.config import Settings, load_principles
 from ainews.ingest.runner import run_ingestion
 from ainews.scoring.scorer import score_batch
@@ -22,6 +24,8 @@ from ainews.storage.db import (
     upsert_item,
 )
 
+logger = logging.getLogger(__name__)
+
 settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
 
@@ -31,15 +35,18 @@ async def _fetch_and_score():
     conn = get_db(settings.db_path)
     try:
         await run_ingestion(conn, settings.config_dir)
-        unscored = get_unscored_items(conn, limit=30)
-        if unscored:
-            principles = load_principles(settings.config_dir)
-            scored = await score_batch(
-                unscored, principles, settings.ollama_base_url, settings.ollama_model
-            )
-            for item, _ in scored:
-                upsert_item(conn, item)
-            conn.commit()
+        if settings.scoring:
+            unscored = get_unscored_items(conn, limit=30)
+            if unscored:
+                principles = load_principles(settings.config_dir)
+                scored = await score_batch(
+                    unscored, principles, settings.ollama_base_url, settings.ollama_model
+                )
+                for item, _ in scored:
+                    upsert_item(conn, item)
+                conn.commit()
+        else:
+            logger.info("Scoring disabled (AINEWS_SCORING=false)")
     finally:
         conn.close()
 
@@ -59,6 +66,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="AI News Filter", version="0.1.0", lifespan=lifespan)
+app.include_router(admin_router)
+
 static_dir = str(settings.config_dir.parent / "static")
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
