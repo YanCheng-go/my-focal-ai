@@ -24,7 +24,7 @@ jobs:
 
       # Restore cached DB for data.json export
       - name: Restore DB cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: data/ainews.db
           key: ainews-db
