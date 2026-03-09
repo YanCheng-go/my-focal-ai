@@ -140,7 +140,17 @@ async def fetch_twitter_user(
             entries = instruction.get("entries", [])
             for entry in entries:
                 try:
-                    tweet_result = entry["content"]["itemContent"]["tweet_results"]["result"]
+                    # Skip promoted/sponsored tweets
+                    entry_id = entry.get("entryId", "")
+                    item_content = entry.get("content", {}).get("itemContent", {})
+                    if entry_id.startswith("promotedTweet-") or item_content.get(
+                        "promotedMetadata"
+                    ):
+                        continue
+
+                    tweet_result = item_content.get("tweet_results", {}).get("result", {})
+                    if not tweet_result:
+                        continue
                     legacy = tweet_result.get("legacy", {})
                     text = legacy.get("full_text", "")
                     tweet_id = legacy.get("id_str", "")
