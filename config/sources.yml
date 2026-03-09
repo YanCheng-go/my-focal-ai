@@ -92,6 +92,11 @@ sources:
     name: "Hugging Face Blog"
     tags: [ai, open-source, huggingface]
 
+    # --- AI safety / evals ---
+  - url: "https://metr.substack.com/feed"
+    name: "METR"
+    tags: [ai, safety, evals, research]
+
     # --- Practitioners ---
   - url: "https://simonwillison.net/atom/everything/"
     name: "Simon Willison"
