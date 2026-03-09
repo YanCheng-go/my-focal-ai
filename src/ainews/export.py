@@ -22,6 +22,17 @@ def export_items(
 
     since = datetime.now() - timedelta(hours=hours)
     items = get_items(conn, limit=500, since=since, min_score=min_score)
+
+    # Ensure dedicated-page items are included even if main feed limit cuts them off
+    dedicated_types = ["github_trending", "github_trending_history"]
+    existing_ids = {item.id for item in items}
+    for stype in dedicated_types:
+        extra = get_items(conn, limit=50, source_type=stype)
+        for item in extra:
+            if item.id not in existing_ids:
+                items.append(item)
+                existing_ids.add(item.id)
+
     all_tags = get_all_tags(conn)
     total = count_items(conn, since=since, min_score=min_score)
     conn.close()
