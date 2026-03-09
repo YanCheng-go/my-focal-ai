@@ -24,7 +24,7 @@ uv run ainews list-sources                  # list all configured sources
 uv run ainews backfill-tags                 # re-sync tags/type from config to DB
 uv run ainews backfill-tags --dry-run       # preview what would change
 uv run ainews cloud-fetch                   # fetch feeds + score with Claude API (for CI)
-uv run ainews export                        # export items to static/data.json
+uv run ainews export                        # export data.json + config.json to static/
 uv run ruff check src/                     # lint
 uv run pytest                              # tests
 ```
@@ -46,11 +46,12 @@ Pipeline: **ingest -> dedup -> store -> score -> serve**.
 - `src/ainews/backfill.py` — auto-syncs tags and source_type from `sources.yml` to existing DB items. Runs each fetch cycle (skips via file hash if config unchanged). CLI: `uv run ainews backfill-tags [--dry-run]`.
 - `src/ainews/scoring/scorer.py` — sends unscored items to Ollama with three principles from `config/principles.yml`. Returns score 0-1, tier, reason. `claude_scorer.py` is the cloud alternative using Claude API.
 - `src/ainews/storage/db.py` — SQLite (WAL). `get_existing_ids()` for batch dedup, `upsert_item` preserves existing scores via COALESCE, `ingest_items()` orchestrates dedup+upsert+commit, `source_state` table tracks last fetch per source, `mark_youtube_shorts_duplicates()` hides Shorts when a full video exists.
-- `src/ainews/api/app.py` — FastAPI + APScheduler. Dashboard sorted by `published_at` (except Luma events, pushed to bottom). Pagination (30/page), search, tag dropdown.
-- `templates/dashboard.html` — dark theme (local FastAPI). Shows summary (first 200 chars), source-level tags, "YT Short" badge, event dates with year.
-- `static/index.html` — static dashboard (Vercel). Reads from `data.json`, same dark theme and filters.
-- `src/ainews/cloud_fetch.py` — cloud pipeline: fetches feeds (no Twitter), optionally scores with Claude API.
-- `src/ainews/export.py` — exports scored items to JSON for the static dashboard.
+- `src/ainews/api/app.py` — FastAPI + APScheduler. Dashboard sorted by `published_at` (except Luma events, pushed to bottom). Pagination (30/page), search, tag dropdown. Events/luma/CCC items hidden from main feed (dedicated pages).
+- `templates/` — Jinja2 templates (local FastAPI): `dashboard.html`, `admin.html`, `leaderboard.html`, `events.html`, `ccc.html`.
+- `static/` — static site (Vercel): `index.html`, `leaderboard.html`, `events.html`, `ccc.html`. Read from `data.json` + `config.json` via client-side JS.
+- `src/ainews/cloud_fetch.py` — cloud pipeline: fetches feeds (no Twitter/Xiaohongshu), optionally scores with Claude API.
+- `src/ainews/export.py` — exports `data.json` (scored items) and `config.json` (leaderboard/event links from sources.yml).
+- `scripts/check-static-pages.sh` — CI check that warns when a localhost template has no matching static page.
 
 ## Config
 
@@ -72,3 +73,4 @@ See [open issues](https://github.com/YanCheng-go/ai-news-filter/issues) for the 
 ---
 
 *Last updated: 2026-03-09*
+
