@@ -25,3 +25,9 @@ jobs:
       - uses: astral-sh/setup-uv@v7
       - run: uv sync --extra dev
       - run: uv run pytest --tb=short -q
+
+  check-static-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: bash scripts/check-static-pages.sh

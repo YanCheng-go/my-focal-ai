@@ -1,0 +1,97 @@
+{
+  "leaderboard": [
+    {
+      "url": "https://arena.ai/leaderboard",
+      "name": "Arena (Chatbot Arena)",
+      "tags": [
+        "ai",
+        "benchmarks",
+        "evals"
+      ]
+    },
+    {
+      "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard",
+      "name": "HuggingFace Open LLM Leaderboard",
+      "tags": [
+        "ai",
+        "benchmarks",
+        "open-source"
+      ]
+    },
+    {
+      "url": "https://artificialanalysis.ai",
+      "name": "Artificial Analysis",
+      "tags": [
+        "ai",
+        "benchmarks",
+        "pricing"
+      ]
+    },
+    {
+      "url": "https://livebench.ai",
+      "name": "LiveBench",
+      "tags": [
+        "ai",
+        "benchmarks",
+        "evals"
+      ]
+    },
+    {
+      "url": "https://scale.com/leaderboard",
+      "name": "Scale AI SEAL Leaderboards",
+      "tags": [
+        "ai",
+        "benchmarks",
+        "enterprise"
+      ]
+    }
+  ],
+  "event_links": [
+    {
+      "url": "https://forum.openai.com/public/events",
+      "name": "OpenAI Forum Events",
+      "tags": [
+        "ai",
+        "openai",
+        "events"
+      ]
+    },
+    {
+      "url": "https://www.databricks.com/events",
+      "name": "Databricks Events",
+      "tags": [
+        "ai",
+        "data",
+        "databricks",
+        "events"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/events",
+      "name": "Microsoft Events",
+      "tags": [
+        "ai",
+        "microsoft",
+        "events"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/events",
+      "name": "Google Developer Events",
+      "tags": [
+        "ai",
+        "google",
+        "events"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/events",
+      "name": "Anthropic Events",
+      "tags": [
+        "ai",
+        "anthropic",
+        "events"
+      ]
+    }
+  ]
+}

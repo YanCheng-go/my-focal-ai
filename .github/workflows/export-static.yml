@@ -1,15 +1,17 @@
-name: Fetch & Export
+name: Export Static Data
 
 on:
-  schedule:
-    - cron: "17 */2 * * *"  # every 2 hours at :17
-  workflow_dispatch:  # manual trigger
+  push:
+    branches: [main]
+    paths:
+      - "config/sources.yml"
+      - "src/ainews/export.py"
 
 permissions:
   contents: write
 
 jobs:
-  fetch:
+  export:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -20,29 +22,21 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      # Restore cached DB from previous runs (for dedup)
+      # Restore cached DB for data.json export
       - name: Restore DB cache
         uses: actions/cache@v4
         with:
           path: data/ainews.db
           key: ainews-db
 
-      # Fetch RSS/YouTube/arXiv feeds; scores with Claude API if key is set
-      - name: Fetch and score
-        run: uv run ainews cloud-fetch
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || '' }}
-
-      # Export scored items to static JSON
-      - name: Export to JSON
+      - name: Export static data
         run: uv run ainews export --hours 48 --output static/data.json
 
-      # Commit and push if data changed
-      - name: Commit updated data
+      - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add static/data.json static/config.json
+          git add static/config.json
           git diff --cached --quiet && echo "No changes" && exit 0
-          git commit -m "Update data.json [skip ci]"
+          git commit -m "Update config.json [skip ci]"
           git push

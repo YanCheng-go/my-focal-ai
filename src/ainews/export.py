@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timedelta
 from pathlib import Path
 
-from ainews.config import Settings
+from ainews.config import Settings, load_sources
 from ainews.storage.db import count_items, get_all_tags, get_db, get_items
 
 
@@ -38,4 +38,19 @@ def export_items(
     with open(output_path, "w") as f:
         json.dump(data, f, indent=2, default=str)
 
+    # Also export config.json with static page data (leaderboard, event links)
+    _export_config(output_path.parent / "config.json", settings)
+
     return len(items)
+
+
+def _export_config(output_path: Path, settings: Settings):
+    """Export leaderboard and event links from sources.yml for static pages."""
+    sources_config = load_sources(settings.config_dir)
+    sources = sources_config.get("sources", {})
+    config = {
+        "leaderboard": sources.get("leaderboard", []),
+        "event_links": sources.get("event_links", []),
+    }
+    with open(output_path, "w") as f:
+        json.dump(config, f, indent=2)

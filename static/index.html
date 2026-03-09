@@ -62,7 +62,12 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>AI News Filter</h1>
+            <div style="display:flex;gap:16px;align-items:center">
+                <h1>AI News Filter</h1>
+                <a href="leaderboard.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Leaderboard</a>
+                <a href="events.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Events</a>
+                <a href="ccc.html" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">CCC</a>
+            </div>
             <div class="header-right">
                 <input class="search-input" type="text" id="search" placeholder="Search titles, sources..." oninput="render()">
                 <span class="updated" id="updated"></span>
@@ -97,7 +102,7 @@
     }
 
     function buildFilters() {
-        const types = [...new Set(allItems.map(i => i.source_type))].sort();
+        const types = [...new Set(allItems.map(i => i.source_type))].filter(t => !HIDDEN_TYPES.includes(t)).sort();
         let html = '<button class="filter-link active" onclick="setFilter({})">All</button>';
         types.forEach(t => {
             const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
@@ -121,9 +126,16 @@
         render();
     }
 
+    const HIDDEN_TYPES = ['events', 'luma'];
+    const HIDDEN_SOURCES = ['Claude Code Releases'];
+
     function getFiltered() {
         const search = document.getElementById('search').value.toLowerCase();
+        const hasFilter = search || filters.source_type || filters.tag;
         return allItems.filter(item => {
+            // Hide dedicated-page items unless explicitly filtered/searched
+            if (!hasFilter && HIDDEN_TYPES.includes(item.source_type)) return false;
+            if (!hasFilter && HIDDEN_SOURCES.includes(item.source_name)) return false;
             if (filters.source_type && item.source_type !== filters.source_type) return false;
             if (filters.tier && item.tier !== filters.tier) return false;
             if (filters.tag && !(item.tags || []).includes(filters.tag)) return false;
