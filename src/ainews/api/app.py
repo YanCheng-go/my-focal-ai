@@ -215,3 +215,23 @@ def events(request: Request):
         "events.html",
         {"request": request, "event_links": event_links},
     )
+
+
+@app.get("/ccc", response_class=HTMLResponse)
+def ccc(request: Request, page: int = 1):
+    conn = get_db(settings.db_path)
+    offset = (page - 1) * PER_PAGE
+    items = get_items(conn, limit=PER_PAGE, offset=offset, search="Claude Code Releases")
+    total = count_items(conn, search="Claude Code Releases")
+    conn.close()
+    total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
+    return templates.TemplateResponse(
+        "ccc.html",
+        {
+            "request": request,
+            "items": items,
+            "page": page,
+            "total_pages": total_pages,
+            "total": total,
+        },
+    )
