@@ -168,15 +168,16 @@ def dashboard(
 ):
     conn = get_db(settings.db_path)
     offset = (page - 1) * PER_PAGE
-    # Hide changelog-only sources from the main feed unless explicitly searched/filtered
-    exclude = None if search or tag else ["Claude Code Releases"]
+    # Hide dedicated-page sources from the main feed unless explicitly searched/filtered
+    has_filter = search or tag or source_type
     filter_kwargs = dict(
         source_type=source_type,
         tier=tier,
         tag=tag,
         min_score=min_score,
         search=search,
-        exclude_sources=exclude,
+        exclude_sources=None if has_filter else ["Claude Code Releases"],
+        exclude_source_types=None if has_filter else ["events", "luma"],
     )
     items = get_items(conn, limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
     total = count_items(conn, **filter_kwargs)
@@ -215,12 +216,31 @@ def leaderboard(request: Request):
 
 
 @app.get("/events", response_class=HTMLResponse)
-def events(request: Request):
+def events(request: Request, tab: str = "calendars", page: int = 1):
     sources_config = load_sources(settings.config_dir)
     event_links = sources_config.get("sources", {}).get("event_links", [])
+    items = []
+    total = 0
+    total_pages = 1
+    if tab in ("luma", "tech"):
+        source_type = "luma" if tab == "luma" else "events"
+        conn = get_db(settings.db_path)
+        offset = (page - 1) * PER_PAGE
+        items = get_items(conn, limit=PER_PAGE, offset=offset, source_type=source_type)
+        total = count_items(conn, source_type=source_type)
+        conn.close()
+        total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "events.html",
-        {"request": request, "event_links": event_links},
+        {
+            "request": request,
+            "event_links": event_links,
+            "items": items,
+            "tab": tab,
+            "page": page,
+            "total_pages": total_pages,
+            "total": total,
+        },
     )
 
 

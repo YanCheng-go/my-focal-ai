@@ -13,7 +13,12 @@
         .nav { display: flex; gap: 16px; align-items: center; }
         .nav a { color: #7cb8ff; text-decoration: none; font-size: 0.85rem; }
         .nav a.active { color: #f0abfc; }
-        .subtitle { font-size: 0.85rem; color: #666; margin-bottom: 24px; }
+        .subtitle { font-size: 0.85rem; color: #666; margin-bottom: 16px; }
+        .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+        .filter-link { color: #888; text-decoration: none; padding: 4px 12px; border: 1px solid #222; border-radius: 4px; font-size: 0.8rem; transition: all 0.2s; }
+        .filter-link:hover { border-color: #555; color: #ccc; }
+        .filter-link.active { background: #1a1a2e; border-color: #818cf8; color: #818cf8; }
+        .status-bar { font-size: 0.8rem; color: #555; margin-bottom: 16px; }
         .item { background: #111; border: 1px solid #1a1a1a; border-radius: 8px; padding: 16px; margin-bottom: 12px; transition: border-color 0.2s; }
         .item:hover { border-color: #333; }
         .item-title { font-size: 1rem; font-weight: 600; }
@@ -21,9 +26,15 @@
         .item-title a:hover { color: #7cb8ff; }
         .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; }
         .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
+        .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.5; }
         .item-url { margin-top: 6px; font-size: 0.8rem; }
         .item-url a { color: #555; text-decoration: none; }
         .item-url a:hover { color: #7cb8ff; }
+        .pagination { display: flex; gap: 8px; justify-content: center; margin-top: 24px; }
+        .pagination a { color: #7cb8ff; text-decoration: none; padding: 4px 12px; border: 1px solid #333; border-radius: 4px; }
+        .pagination a:hover { border-color: #7cb8ff; }
+        .pagination .current { color: #f0abfc; border-color: #f0abfc; }
+        .empty { font-size: 0.85rem; color: #555; padding: 12px 0; }
     </style>
 </head>
 <body>
@@ -38,8 +49,15 @@
                 <a href="/ccc">CCC</a>
             </div>
         </div>
-        <div class="subtitle">Tech company event calendars for manual browsing.</div>
+        <div class="subtitle">Tech company events — calendars, community meetups, and scraped listings.</div>
 
+        <div class="filters">
+            <a href="/events?tab=calendars" class="filter-link {{ 'active' if tab == 'calendars' }}">Event Calendars</a>
+            <a href="/events?tab=luma" class="filter-link {{ 'active' if tab == 'luma' }}">Luma</a>
+            <a href="/events?tab=tech" class="filter-link {{ 'active' if tab == 'tech' }}">Tech Events</a>
+        </div>
+
+        {% if tab == 'calendars' %}
         {% for ev in event_links %}
         <div class="item">
             <div class="item-title">
@@ -55,6 +73,44 @@
             </div>
         </div>
         {% endfor %}
+
+        {% else %}
+        <div class="status-bar">{{ total }} events &middot; Page {{ page }} of {{ total_pages }}</div>
+
+        {% if items %}
+        {% for item in items %}
+        <div class="item">
+            <div class="item-title">
+                <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+            </div>
+            <div class="item-meta">
+                <span>{{ item.source_name }}</span>
+                {% for t in item.tags[:3] %}
+                <span class="tag">{{ t }}</span>
+                {% endfor %}
+                {% if item.published_at %}
+                <span>{{ item.published_at.strftime('%b %d, %Y') }}</span>
+                {% endif %}
+            </div>
+            {% if item.summary %}
+            <div class="item-summary">{{ item.summary[:200] }}{{ '...' if item.summary|length > 200 }}</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        {% if total_pages > 1 %}
+        <div class="pagination">
+            {% if page > 1 %}<a href="/events?tab={{ tab }}&page={{ page - 1 }}">&laquo; Prev</a>{% endif %}
+            {% for p in range(1, total_pages + 1) %}
+            <a href="/events?tab={{ tab }}&page={{ p }}" {% if p == page %}class="current"{% endif %}>{{ p }}</a>
+            {% endfor %}
+            {% if page < total_pages %}<a href="/events?tab={{ tab }}&page={{ page + 1 }}">Next &raquo;</a>{% endif %}
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="empty">No events found.</div>
+        {% endif %}
+        {% endif %}
     </div>
 </body>
 </html>

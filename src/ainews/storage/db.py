@@ -204,6 +204,8 @@ def _build_where(
     tag: str | None = None,
     search: str | None = None,
     exclude_sources: list[str] | None = None,
+    exclude_source_types: list[str] | None = None,
+    source_types: list[str] | None = None,
 ) -> tuple[str, list]:
     """Build WHERE clause and params for item queries."""
     where = "WHERE items.is_duplicate_of IS NULL"
@@ -215,6 +217,10 @@ def _build_where(
     if source_type:
         where += " AND items.source_type = ?"
         params.append(source_type)
+    if source_types:
+        placeholders = ",".join("?" for _ in source_types)
+        where += f" AND items.source_type IN ({placeholders})"
+        params.extend(source_types)
     if tier:
         where += " AND items.tier = ?"
         params.append(tier)
@@ -232,6 +238,10 @@ def _build_where(
         placeholders = ",".join("?" for _ in exclude_sources)
         where += f" AND items.source_name NOT IN ({placeholders})"
         params.extend(exclude_sources)
+    if exclude_source_types:
+        placeholders = ",".join("?" for _ in exclude_source_types)
+        where += f" AND items.source_type NOT IN ({placeholders})"
+        params.extend(exclude_source_types)
 
     return where, params
 
@@ -246,6 +256,8 @@ def count_items(
     tag: str | None = None,
     search: str | None = None,
     exclude_sources: list[str] | None = None,
+    exclude_source_types: list[str] | None = None,
+    source_types: list[str] | None = None,
 ) -> int:
     where, params = _build_where(
         min_score=min_score,
@@ -255,6 +267,8 @@ def count_items(
         tag=tag,
         search=search,
         exclude_sources=exclude_sources,
+        exclude_source_types=exclude_source_types,
+        source_types=source_types,
     )
     row = conn.execute(f"SELECT count(*) as c FROM items {where}", params).fetchone()
     return row["c"]
@@ -279,6 +293,8 @@ def get_items(
     search: str | None = None,
     order_by: str = "date",
     exclude_sources: list[str] | None = None,
+    exclude_source_types: list[str] | None = None,
+    source_types: list[str] | None = None,
 ) -> list[ContentItem]:
     where, params = _build_where(
         min_score=min_score,
@@ -287,7 +303,9 @@ def get_items(
         since=since,
         tag=tag,
         search=search,
+        source_types=source_types,
         exclude_sources=exclude_sources,
+        exclude_source_types=exclude_source_types,
     )
 
     if order_by == "score":
