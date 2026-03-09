@@ -57,8 +57,6 @@
         .score-low { background: #1a1a1a; color: #666; }
         .item-meta { margin-top: 8px; font-size: 0.8rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
         .tag { background: #1a1a2e; color: #818cf8; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
-        .tier-personal { background: #1e1a3d; color: #a78bfa; }
-        .tier-work { background: #1a2e3d; color: #67e8f9; }
         .item-summary { margin-top: 8px; font-size: 0.85rem; color: #999; line-height: 1.4; }
         .item-reason { margin-top: 8px; font-size: 0.85rem; color: #888; font-style: italic; }
         .empty { text-align: center; padding: 60px 20px; color: #444; }
@@ -84,6 +82,7 @@
             <div style="display:flex;gap:16px;align-items:center">
                 <h1>AI News Filter</h1>
                 <a href="/admin" style="color:#7cb8ff;text-decoration:none;font-size:0.85rem">Sources</a>
+                <a href="/leaderboard" style="color:#f0abfc;text-decoration:none;font-size:0.85rem">Leaderboard</a>
             </div>
             <div class="header-right">
                 <form class="search-form" method="get" action="/">
@@ -104,8 +103,6 @@
         <!-- Filter bar -->
         <div class="filters">
             <a href="/" class="filter-link {{ 'active' if not filters.source_type and not filters.tier and not filters.tag and not filters.min_score and not filters.search }}">All</a>
-            <a href="/?tier=personal" class="filter-link {{ 'active' if filters.tier == 'personal' }}">Personal</a>
-            <a href="/?tier=work" class="filter-link {{ 'active' if filters.tier == 'work' }}">Work</a>
             <a href="/?source_type=twitter" class="filter-link {{ 'active' if filters.source_type == 'twitter' }}">Twitter</a>
             <a href="/?source_type=youtube" class="filter-link {{ 'active' if filters.source_type == 'youtube' }}">YouTube</a>
             <a href="/?source_type=rss" class="filter-link {{ 'active' if filters.source_type == 'rss' }}">RSS</a>

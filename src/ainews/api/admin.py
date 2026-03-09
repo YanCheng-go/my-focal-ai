@@ -90,6 +90,24 @@ def remove_source(source_type: str, index: int):
     return {"status": "deleted"}
 
 
+@router.delete("/api/sources/content")
+def delete_source_content(source_name: str):
+    """Delete all items from a given source name."""
+    conn = get_db(settings.db_path)
+    try:
+        # Delete tags first (foreign key), then items
+        conn.execute(
+            "DELETE FROM item_tags WHERE item_id IN (SELECT id FROM items WHERE source_name = ?)",
+            (source_name,),
+        )
+        cursor = conn.execute("DELETE FROM items WHERE source_name = ?", (source_name,))
+        conn.execute("DELETE FROM source_state WHERE source_key = ?", (source_name,))
+        conn.commit()
+        return {"status": "deleted", "deleted": cursor.rowcount}
+    finally:
+        conn.close()
+
+
 @router.post("/api/sources/{source_type}/{index}/toggle")
 def toggle_source_endpoint(source_type: str, index: int):
     try:

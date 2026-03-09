@@ -35,7 +35,6 @@ Stay as close to the source of creation as possible.
 Respond with ONLY valid JSON:
 {
   "relevance_score": <float 0-1, where 0=noise, 1=must-read>,
-  "tier": "<personal|work>",
   "reason": "<one sentence citing which principles apply>",
   "key_topics": ["<topic1>", "<topic2>"],
   "source_proximity": "<origin|implementation|derivative|noise>"
@@ -47,20 +46,12 @@ def _build_user_prompt(item: ContentItem, principles: dict) -> str:
     if len(text) > 2000:
         text = text[:2000] + "..."
 
-    tiers = principles.get("tiers", {})
-    personal = tiers.get("personal", {})
-    work = tiers.get("work", {})
-
     return f"""## Content Item
 Title: {item.title}
 Source: {item.source_name} ({item.source_type})
 Author: {item.author}
 Tags: {", ".join(item.tags)}
 Text: {text}
-
-## Tier Matching
-Personal (weight {personal.get("weight", 1.0)}): {json.dumps(personal.get("focus", []))}
-Work (weight {work.get("weight", 0.7)}): {json.dumps(work.get("focus", []))}
 
 Apply the three principles and score this item."""
 

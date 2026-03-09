@@ -140,7 +140,17 @@ async def fetch_twitter_user(
             entries = instruction.get("entries", [])
             for entry in entries:
                 try:
-                    tweet_result = entry["content"]["itemContent"]["tweet_results"]["result"]
+                    # Skip promoted/sponsored tweets
+                    entry_id = entry.get("entryId", "")
+                    item_content = entry.get("content", {}).get("itemContent", {})
+                    if entry_id.startswith("promotedTweet-") or item_content.get(
+                        "promotedMetadata"
+                    ):
+                        continue
+
+                    tweet_result = item_content.get("tweet_results", {}).get("result", {})
+                    if not tweet_result:
+                        continue
                     legacy = tweet_result.get("legacy", {})
                     text = legacy.get("full_text", "")
                     tweet_id = legacy.get("id_str", "")
@@ -149,7 +159,20 @@ async def fetch_twitter_user(
                     if not text or not tweet_id:
                         continue
 
-                    url = f"https://x.com/{handle}/status/{tweet_id}"
+                    # Get actual tweet author — skip retweets from other users
+                    actual_author = (
+                        tweet_result.get("core", {})
+                        .get("user_results", {})
+                        .get("result", {})
+                        .get("legacy", {})
+                        .get("screen_name", handle)
+                    )
+                    if actual_author.lower() != handle.lower():
+                        continue
+
+                    url = f"https://x.com/{actual_author}/status/{tweet_id}"
+                    # Dedup by tweet ID, not URL — prevents duplicates across timelines
+                    item_id = make_id(f"twitter:{tweet_id}")
                     pub_date = None
                     if created_at:
                         try:
@@ -159,7 +182,7 @@ async def fetch_twitter_user(
 
                     items.append(
                         ContentItem(
-                            id=make_id(url),
+                            id=item_id,
                             url=url,
                             title=text[:100] + ("..." if len(text) > 100 else ""),
                             summary=text,

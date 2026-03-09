@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from ainews.api.admin import router as admin_router
-from ainews.config import Settings, load_principles
+from ainews.config import Settings, load_principles, load_sources
 from ainews.ingest.runner import run_ingestion
 from ainews.scoring.scorer import score_batch
 from ainews.storage.db import (
@@ -194,4 +194,14 @@ def dashboard(
             "total": total,
             "all_tags": all_tags,
         },
+    )
+
+
+@app.get("/leaderboard", response_class=HTMLResponse)
+def leaderboard(request: Request):
+    sources_config = load_sources(settings.config_dir)
+    leaderboard_links = sources_config.get("sources", {}).get("leaderboard", [])
+    return templates.TemplateResponse(
+        "leaderboard.html",
+        {"request": request, "leaderboard_links": leaderboard_links},
     )

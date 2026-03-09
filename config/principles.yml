@@ -79,25 +79,26 @@ source_proximity:
     - "Engagement-bait threads"
 
 # === Tiers (personal vs work) ===
-
-tiers:
-  personal:
-    description: "Deep technical learning"
-    weight: 1.0
-    focus:
-      - "Foundational model breakthroughs (architecture, training, capabilities)"
-      - "Open-source tooling, frameworks, libraries"
-      - "Novel research directions and paradigm shifts"
-      - "Mechanistic interpretability and understanding"
-
-  work:
-    description: "Professional relevance — what tools to use, how others transform"
-    weight: 0.7
-    focus:
-      - "AI tooling evaluations and practical comparisons"
-      - "How companies are adopting and integrating AI"
-      - "Architecture decisions and lessons learned in production"
-      - "Competitive landscape shifts that affect strategy"
+# Disabled for now — uncomment when ready to differentiate scoring by category.
+#
+# tiers:
+#   personal:
+#     description: "Deep technical learning"
+#     weight: 1.0
+#     focus:
+#       - "Foundational model breakthroughs (architecture, training, capabilities)"
+#       - "Open-source tooling, frameworks, libraries"
+#       - "Novel research directions and paradigm shifts"
+#       - "Mechanistic interpretability and understanding"
+#
+#   work:
+#     description: "Professional relevance — what tools to use, how others transform"
+#     weight: 0.7
+#     focus:
+#       - "AI tooling evaluations and practical comparisons"
+#       - "How companies are adopting and integrating AI"
+#       - "Architecture decisions and lessons learned in production"
+#       - "Competitive landscape shifts that affect strategy"
 
 # === Dedup & Social ===
 

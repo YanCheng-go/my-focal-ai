@@ -14,6 +14,11 @@ sources:
     tags: [ai, research, deep-learning]
   - handle: "bcherny"
     tags: [ai, engineering]
+  - handle: simonw
+    tags:
+    - ai
+    - tooling
+    - open-source
 
   # === YouTube ===
   # Native RSS — no RSSHub needed.
@@ -92,10 +97,12 @@ sources:
     name: "Hugging Face Blog"
     tags: [ai, open-source, huggingface]
 
+    # --- AI safety / evals ---
+  - url: "https://metr.substack.com/feed"
+    name: "METR"
+    tags: [ai, safety, evals, research]
+
     # --- Practitioners ---
-  - url: "https://simonwillison.net/atom/everything/"
-    name: "Simon Willison"
-    tags: [ai, tooling, open-source]
   - url: "https://lilianweng.github.io/index.xml"
     name: "Lilian Weng"
     tags: [ai, research, deep-learning]
@@ -121,6 +128,25 @@ sources:
     tags: [ai, research, cohere, company]
     # Note: Mistral AI has no RSS feed and no working RSSHub route.
 
+  # === Leaderboards ===
+  # Reference links for manual browsing — not ingested by the pipeline.
+  leaderboard:
+  - url: "https://arena.ai/leaderboard"
+    name: "Arena (Chatbot Arena)"
+    tags: [ai, leaderboard, benchmarks, evals]
+  - url: "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard"
+    name: "HuggingFace Open LLM Leaderboard"
+    tags: [ai, leaderboard, benchmarks, open-source]
+  - url: "https://artificialanalysis.ai"
+    name: "Artificial Analysis"
+    tags: [ai, leaderboard, benchmarks, pricing]
+  - url: "https://livebench.ai"
+    name: "LiveBench"
+    tags: [ai, leaderboard, benchmarks, evals]
+  - url: "https://scale.com/leaderboard"
+    name: "Scale AI SEAL Leaderboards"
+    tags: [ai, leaderboard, benchmarks, enterprise]
+
   # === Events (Luma) ===
   # Route: /luma/:handle
   luma:
@@ -136,13 +162,15 @@ sources:
     - events
     - claude code
     - copenhagen
-arxiv_queries:
-- query: "cat:cs.AI+AND+abs:transformer"
-  name: "arXiv: transformers"
-  tags: [ai, research, transformers]
-- query: "cat:cs.CL+AND+abs:large+language+model"
-  name: "arXiv: LLMs"
-  tags: [ai, research, llm]
-- query: "cat:cs.LG+AND+abs:reinforcement+learning"
-  name: "arXiv: RL"
-  tags: [ai, research, rl]
+
+  # === arXiv keyword queries (Atom API) ===
+  arxiv_queries:
+  - query: "cat:cs.AI+AND+abs:transformer"
+    name: "arXiv: transformers"
+    tags: [ai, research, transformers]
+  - query: "cat:cs.CL+AND+abs:large+language+model"
+    name: "arXiv: LLMs"
+    tags: [ai, research, llm]
+  - query: "cat:cs.LG+AND+abs:reinforcement+learning"
+    name: "arXiv: RL"
+    tags: [ai, research, rl]

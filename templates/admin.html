@@ -284,6 +284,15 @@
             const resp = await fetch(`/admin/api/sources/${type}/${index}`, { method: 'DELETE' });
             if (resp.ok) {
                 showToast('Source deleted', 'success');
+                if (confirm(`Also delete all fetched content from "${name}"?`)) {
+                    const delResp = await fetch(`/admin/api/sources/content?source_name=${encodeURIComponent(name)}`, { method: 'DELETE' });
+                    if (delResp.ok) {
+                        const data = await delResp.json();
+                        showToast(`Deleted ${data.deleted} items from "${name}"`, 'success');
+                    } else {
+                        showToast('Failed to delete content', 'error');
+                    }
+                }
                 loadSources();
             } else {
                 showToast('Failed to delete', 'error');
