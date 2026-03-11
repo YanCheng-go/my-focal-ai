@@ -59,26 +59,6 @@ No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROP
 2. Optionally add `ANTHROPIC_API_KEY` as a GitHub Actions secret for scoring
 3. Trigger the "Fetch & Export" workflow manually for the first run
 
-## Commands
-
-```bash
-# Local
-uv run ainews serve              # start server (port 8000)
-uv run ainews fetch              # one-time fetch + score (Ollama)
-uv run ainews fetch-source "OpenAI"  # fetch a single source
-uv run ainews list-sources       # list all configured sources
-uv run ainews twitter-setup      # verify Chrome cookies for Twitter
-
-# Cloud / Export
-uv run ainews cloud-fetch        # fetch feeds + score with Claude API (no Twitter/Ollama)
-uv run ainews export             # export scored items to static/data.json
-uv run ainews export --hours 168 # export last 7 days
-
-# Dev
-uv run ruff check src/           # lint
-uv run pytest                    # tests
-```
-
 ## Configuration
 
 - `config/sources.yml` — all feed sources (Twitter, YouTube, RSS, RSSHub, Luma, arXiv, GitHub Trending)
@@ -96,6 +76,60 @@ uv run pytest                    # tests
 | Trends | `/trends` | `trends.html` | GitHub trending repos — daily + history (2 tabs) |
 | CCC | `/ccc` | `ccc.html` | Claude Code Changelogs |
 | Admin | `/admin` | `admin.html` | Source management (local); read-only info (online) |
+
+## Development
+
+### Dev environment (Nix + direnv)
+
+If you use [Nix](https://nixos.org/) and [direnv](https://direnv.net/), the dev environment is fully reproducible — no manual installation of Python, uv, or Docker Compose needed:
+
+```bash
+direnv allow   # auto-activates the Nix dev shell (Python 3.12 + uv + docker-compose)
+uv sync        # install Python dependencies
+```
+
+All system-level tools are declared in `flake.nix`. Add new ones there — never install via `brew`, `apt`, or `npm install -g`.
+
+### Without Nix
+
+Install manually: [Python 3.12+](https://www.python.org/), [uv](https://docs.astral.sh/uv/getting-started/installation/), [Docker](https://docs.docker.com/get-docker/).
+
+```bash
+uv sync                          # install deps
+uv sync --extra llm --extra dev  # all optional deps (Twitter cookies, dev tools)
+```
+
+### Project structure
+
+```
+config/           sources.yml (feeds), principles.yml (scoring rules)
+src/ainews/
+  ingest/         feeds.py, twitter.py, xiaohongshu.py, events.py, github_trending.py
+  scoring/        scorer.py (Ollama), claude_scorer.py (Claude API)
+  storage/        db.py (SQLite)
+  api/            app.py (FastAPI), admin.py
+templates/        Jinja2 templates (local server)
+static/           Static HTML pages (Vercel deployment)
+scripts/          CI and helper scripts
+```
+
+### Commands
+
+```bash
+uv run ainews serve              # start server (port 8000, auto-reloads)
+uv run ainews fetch              # one-time fetch + score (Ollama)
+uv run ainews fetch-source "OpenAI"  # fetch a single source
+uv run ainews cloud-fetch        # fetch + score with Claude API (for CI)
+uv run ainews export             # export data.json + config.json to static/
+uv run ruff check src/           # lint (fix before committing)
+uv run pytest                    # tests
+```
+
+### Workflow
+
+- Branch off `main`, PR when ready, squash merge
+- Run `uv run ruff check src/` and `uv run pytest` before committing
+- Keep commits small and atomic — one logical change per commit
 
 ## Documentation
 
