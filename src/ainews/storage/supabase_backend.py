@@ -59,7 +59,7 @@ class SupabaseBackend:
             row["user_id"] = self._user_id
         self._client.table("source_state").upsert(
             row,
-            on_conflict="source_key,user_id",
+            on_conflict="source_key" if not self._user_id else "source_key,user_id",
         ).execute()
 
     def mark_youtube_shorts_duplicates(self) -> int:
@@ -322,7 +322,7 @@ class SupabaseBackend:
             row["user_id"] = self._user_id
         self._client.table("source_state").upsert(
             row,
-            on_conflict="source_key,user_id",
+            on_conflict="source_key" if not self._user_id else "source_key,user_id",
         ).execute()
 
 

@@ -10,10 +10,12 @@ CREATE INDEX IF NOT EXISTS idx_items_user_id ON items(user_id);
 
 ALTER TABLE source_state ADD COLUMN IF NOT EXISTS user_id UUID REFERENCES auth.users(id);
 
--- Change source_state PK from source_key to composite (source_key, user_id).
--- Drop old PK constraint and re-add as unique + new composite.
+-- Add unique constraint for user-scoped lookups (source_key + user_id).
+-- Keep source_key as PK for backward compat with legacy NULL user_id rows.
 ALTER TABLE source_state DROP CONSTRAINT IF EXISTS source_state_pkey;
-ALTER TABLE source_state ADD CONSTRAINT source_state_pkey PRIMARY KEY (source_key, user_id);
+ALTER TABLE source_state ADD PRIMARY KEY (source_key);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_source_state_user
+    ON source_state(source_key, user_id) WHERE user_id IS NOT NULL;
 
 -- ---------------------------------------------------------------------------
 -- 2. user_sources table — per-user source configuration
