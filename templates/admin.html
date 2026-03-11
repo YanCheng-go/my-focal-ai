@@ -18,6 +18,7 @@
 <div class="flex justify-between items-center mb-5">
     <h2 class="text-xl font-bold text-gray-900 dark:text-white">Sources</h2>
     <div class="flex gap-2">
+        <button id="fetch-all-btn" class="px-3 py-1.5 rounded-md bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700 text-sm cursor-pointer hover:bg-green-200 dark:hover:bg-green-800/50" onclick="fetchAll(this)">Fetch All</button>
         {% if needs_auth %}
         <button class="px-3 py-1.5 rounded-md bg-gray-100 dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-neutral-700 text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-700" onclick="handleLogout()">Logout</button>
         {% endif %}
@@ -282,6 +283,15 @@
             if (resp.ok) { const data = await resp.json(); showToast(`Fetched ${data.items_fetched} items (${data.new_items} new)`, 'success'); loadSources(); }
             else { const err = await resp.json(); showToast(err.detail || 'Fetch failed', 'error'); }
         } finally { btn.disabled = false; btn.textContent = 'Fetch'; }
+    }
+
+    async function fetchAll(btn) {
+        btn.disabled = true; btn.textContent = 'Fetching...';
+        try {
+            const resp = await fetch('/api/fetch', { method: 'POST' });
+            if (resp.ok) { const data = await resp.json(); showToast(`Fetch ${data.status}: ${data.new_items || 0} new items`, 'success'); loadSources(); }
+            else { showToast('Fetch failed', 'error'); }
+        } finally { btn.disabled = false; btn.textContent = 'Fetch All'; }
     }
 
     document.getElementById('modal-overlay').addEventListener('click', function(e) { if (e.target === this) closeModal(); });

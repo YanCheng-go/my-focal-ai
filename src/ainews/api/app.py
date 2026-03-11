@@ -175,9 +175,20 @@ async def api_trigger_fetch(request: Request):
     Uses cloud pipeline (Claude API scoring) on Vercel, local pipeline otherwise.
     """
     if _on_vercel:
+        # Accept either cron secret (Vercel cron) or admin cookie (manual trigger)
         auth = request.headers.get("authorization")
         cron_secret = os.environ.get("CRON_SECRET", "")
-        if not cron_secret or auth != f"Bearer {cron_secret}":
+        admin_token = request.cookies.get("admin_token")
+        cron_ok = cron_secret and auth == f"Bearer {cron_secret}"
+        admin_ok = admin_token and settings.admin_password
+        if admin_ok:
+            from ainews.api.admin import _check_admin_auth
+
+            try:
+                _check_admin_auth(admin_token)
+            except Exception:
+                admin_ok = False
+        if not cron_ok and not admin_ok:
             from fastapi.responses import JSONResponse
 
             return JSONResponse({"error": "Unauthorized"}, status_code=401)
