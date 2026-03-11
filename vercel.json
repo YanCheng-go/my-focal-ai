@@ -5,7 +5,7 @@
   "cleanUrls": true,
   "functions": {
     "api/index.py": {
-      "runtime": "@vercel/python"
+      "excludeFiles": "{tests/**,__tests__/**,**/*.test.py,**/test_*.py,docker/**,scripts/**,.github/**}"
     }
   },
   "rewrites": [
