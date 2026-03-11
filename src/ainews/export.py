@@ -56,7 +56,7 @@ def export_items(
 
 
 def _export_config(output_path: Path, settings: Settings):
-    """Export leaderboard, event links for static pages."""
+    """Export leaderboard, event links, and Supabase config for static pages."""
     sources_config = load_sources(settings.config_dir)
     sources = sources_config.get("sources", {})
     config = {
@@ -64,5 +64,9 @@ def _export_config(output_path: Path, settings: Settings):
         "event_links": sources.get("event_links", []),
         "show_scores": settings.show_scores,
     }
+    # Include Supabase config for static admin page auth
+    if settings.supabase_url and settings.supabase_key:
+        config["supabase_url"] = settings.supabase_url
+        config["supabase_anon_key"] = settings.supabase_key
     with open(output_path, "w") as f:
         json.dump(config, f, indent=2)
