@@ -30,9 +30,13 @@ settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
 
 
+def _conn():
+    return get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
+
+
 async def _fetch_and_score():
     """Background job: fetch feeds then score new items."""
-    conn = get_db(settings.db_path)
+    conn = _conn()
     try:
         await run_ingestion(conn, settings.config_dir)
         if settings.scoring:
@@ -88,7 +92,7 @@ def api_items(
     order_by: str = "date",
 ):
     """Get scored content items as JSON. Designed for programmatic / AI consumption."""
-    conn = get_db(settings.db_path)
+    conn = _conn()
     since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
     items = get_items(
         conn,
@@ -122,7 +126,7 @@ def api_items(
 @app.get("/api/digest")
 def api_digest(hours: int = 24, min_score: float = 0.6):
     """Get a daily digest — top items from the last N hours."""
-    conn = get_db(settings.db_path)
+    conn = _conn()
     since = datetime.now() - timedelta(hours=hours)
     items = get_items(conn, limit=20, min_score=min_score, since=since)
     conn.close()
@@ -159,7 +163,7 @@ def api_badge_counts(since: str | None = None):
         since_dt = datetime.fromisoformat(since)
     except ValueError:
         return {"dashboard": 0, "trends": 0, "ccc": 0}
-    conn = get_db(settings.db_path)
+    conn = _conn()
     dashboard_count = count_items(
         conn,
         since=since_dt,
@@ -190,7 +194,7 @@ def dashboard(
     order_by: str = "date",
     page: int = 1,
 ):
-    conn = get_db(settings.db_path)
+    conn = _conn()
     offset = (page - 1) * PER_PAGE
     # Hide dedicated-page sources from the main feed unless explicitly searched/filtered
     has_filter = search or tag or source_type
@@ -251,7 +255,7 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
     total_pages = 1
     if tab in ("luma", "tech"):
         source_type = "luma" if tab == "luma" else "events"
-        conn = get_db(settings.db_path)
+        conn = _conn()
         offset = (page - 1) * PER_PAGE
         items = get_items(conn, limit=PER_PAGE, offset=offset, source_type=source_type)
         total = count_items(conn, source_type=source_type)
@@ -273,7 +277,7 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
 
 @app.get("/trends", response_class=HTMLResponse)
 def trends(request: Request, tab: str = "daily", page: int = 1):
-    conn = get_db(settings.db_path)
+    conn = _conn()
     offset = (page - 1) * PER_PAGE
     source_type = "github_trending_history" if tab == "history" else "github_trending"
     items = get_items(
@@ -302,7 +306,7 @@ def about(request: Request):
 
 @app.get("/ccc", response_class=HTMLResponse)
 def ccc(request: Request, page: int = 1):
-    conn = get_db(settings.db_path)
+    conn = _conn()
     offset = (page - 1) * PER_PAGE
     items = get_items(conn, limit=PER_PAGE, offset=offset, search="Claude Code Releases")
     total = count_items(conn, search="Claude Code Releases")

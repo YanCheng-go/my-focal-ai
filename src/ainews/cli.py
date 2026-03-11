@@ -17,7 +17,7 @@ async def _fetch_source(source_name: str):
     from ainews.storage.db import get_db
 
     settings = Settings()
-    conn = get_db(settings.db_path)
+    conn = get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
     try:
         sources_config = load_sources(settings.config_dir)
         result = await fetch_single_source(conn, sources_config, source_name)

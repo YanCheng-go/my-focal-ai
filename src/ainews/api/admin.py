@@ -27,6 +27,10 @@ templates = Jinja2Templates(directory=str(settings.config_dir.parent / "template
 router = APIRouter(prefix="/admin", tags=["admin"])
 
 
+def _conn():
+    return get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
+
+
 def _normalize_tags(data: dict) -> None:
     """Convert comma-separated tags string to list in-place."""
     if "tags" in data and isinstance(data["tags"], str):
@@ -41,7 +45,7 @@ def admin_page(request: Request):
 @router.get("/api/sources")
 def list_sources():
     sources = get_all_sources_flat(settings.config_dir)
-    conn = get_db(settings.db_path)
+    conn = _conn()
     try:
         health = get_source_health(conn)
     finally:
@@ -93,7 +97,7 @@ def remove_source(source_type: str, index: int):
 @router.delete("/api/sources/content")
 def delete_source_content(source_name: str):
     """Delete all items from a given source name."""
-    conn = get_db(settings.db_path)
+    conn = _conn()
     try:
         # Delete tags first (foreign key), then items
         conn.execute(
@@ -128,7 +132,7 @@ async def fetch_source_endpoint(source_type: str, index: int):
     if not target:
         raise HTTPException(status_code=404, detail="Source not found")
 
-    conn = get_db(settings.db_path)
+    conn = _conn()
     try:
         sources_config = load_sources(settings.config_dir)
         result = await fetch_single_source(conn, sources_config, target["name"])

@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 async def cloud_fetch_and_score():
     """Fetch RSS/Atom feeds. Scores with Claude API if ANTHROPIC_API_KEY is set."""
     settings = Settings()
-    conn = get_db(settings.db_path)
+    conn = get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
 
     try:
         # Reuse the standard ingestion pipeline (Twitter/XHS gracefully skip
