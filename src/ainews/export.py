@@ -56,7 +56,7 @@ def export_items(
 
 
 def _export_config(output_path: Path, settings: Settings):
-    """Export leaderboard and event links from sources.yml for static pages."""
+    """Export leaderboard, event links for static pages."""
     sources_config = load_sources(settings.config_dir)
     sources = sources_config.get("sources", {})
     config = {

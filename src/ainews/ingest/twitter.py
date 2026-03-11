@@ -2,7 +2,6 @@
 
 import json
 import logging
-import sqlite3
 from datetime import datetime
 
 import httpx
@@ -202,7 +201,7 @@ async def fetch_twitter_user(
     return items[:limit]
 
 
-async def run_twitter_ingestion(conn: sqlite3.Connection, sources_config: dict):
+async def run_twitter_ingestion(conn, sources_config: dict):
     """Fetch all configured Twitter sources."""
     sources = sources_config.get("sources", {})
     twitter_users = sources.get("twitter", [])

@@ -1,23 +1,15 @@
 """Ingestion runner — fetches all configured feeds and stores them."""
 
 import logging
-import sqlite3
 
-from ainews.backfill import sync_source_metadata
 from ainews.config import load_sources
-from ainews.ingest.events import run_events_ingestion
 from ainews.ingest.feeds import build_feed_urls, fetch_feed
-from ainews.ingest.github_trending import run_github_trending_ingestion
-from ainews.ingest.twitter import run_twitter_ingestion
-from ainews.ingest.xiaohongshu import run_xhs_ingestion
 from ainews.storage.db import ingest_items, mark_youtube_shorts_duplicates
 
 logger = logging.getLogger(__name__)
 
 
-async def fetch_single_source(
-    conn: sqlite3.Connection, sources_config: dict, source_name: str
-) -> dict:
+async def fetch_single_source(conn, sources_config: dict, source_name: str) -> dict:
     """Fetch a single source by name. Returns {"items_fetched": N, "new_items": N}."""
     from ainews.ingest.twitter import fetch_twitter_user, get_twitter_cookies_from_browser
     from ainews.ingest.xiaohongshu import fetch_xhs_user, get_xhs_cookies_from_browser
@@ -102,8 +94,14 @@ async def fetch_single_source(
     return {"items_fetched": total_fetched, "new_items": total_new}
 
 
-async def run_ingestion(conn: sqlite3.Connection, config_dir=None):
+async def run_ingestion(conn, config_dir=None):
     """Fetch all feeds and store only new items."""
+    from ainews.backfill import sync_source_metadata
+    from ainews.ingest.events import run_events_ingestion
+    from ainews.ingest.github_trending import run_github_trending_ingestion
+    from ainews.ingest.twitter import run_twitter_ingestion
+    from ainews.ingest.xiaohongshu import run_xhs_ingestion
+
     sources_config = load_sources(config_dir)
 
     # RSS/Atom feeds (YouTube, arXiv, blogs, RSSHub routes)

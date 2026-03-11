@@ -7,8 +7,13 @@ from pathlib import Path
 
 from ainews.models import ContentItem
 
+# ---------------------------------------------------------------------------
+# Database initialization
+# ---------------------------------------------------------------------------
+
 
 def get_db(db_path: Path) -> sqlite3.Connection:
+    """Open a SQLite database connection."""
     db_path.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
@@ -17,7 +22,8 @@ def get_db(db_path: Path) -> sqlite3.Connection:
     return conn
 
 
-def _init_schema(conn: sqlite3.Connection):
+def _init_schema(conn):
+    """Create tables and indexes if they don't exist."""
     conn.executescript("""
         CREATE TABLE IF NOT EXISTS items (
             id TEXT PRIMARY KEY,
@@ -40,12 +46,10 @@ def _init_schema(conn: sqlite3.Connection):
         CREATE INDEX IF NOT EXISTS idx_items_score ON items(score DESC);
         CREATE INDEX IF NOT EXISTS idx_items_fetched ON items(fetched_at DESC);
         CREATE INDEX IF NOT EXISTS idx_items_source ON items(source_type);
-
         CREATE TABLE IF NOT EXISTS source_state (
             source_key TEXT PRIMARY KEY,
             last_fetched_at TEXT NOT NULL
         );
-
         CREATE TABLE IF NOT EXISTS item_tags (
             item_id TEXT NOT NULL,
             tag TEXT NOT NULL,
@@ -56,7 +60,12 @@ def _init_schema(conn: sqlite3.Connection):
     """)
 
 
-def _sync_tags(conn: sqlite3.Connection, item_id: str, tags: list[str]):
+# ---------------------------------------------------------------------------
+# CRUD operations
+# ---------------------------------------------------------------------------
+
+
+def _sync_tags(conn, item_id: str, tags: list[str]):
     """Insert tags into the item_tags junction table."""
     if tags:
         conn.executemany(
@@ -65,7 +74,7 @@ def _sync_tags(conn: sqlite3.Connection, item_id: str, tags: list[str]):
         )
 
 
-def get_last_fetched(conn: sqlite3.Connection, source_key: str) -> datetime | None:
+def get_last_fetched(conn, source_key: str) -> datetime | None:
     row = conn.execute(
         "SELECT last_fetched_at FROM source_state WHERE source_key = ?", (source_key,)
     ).fetchone()
@@ -74,7 +83,7 @@ def get_last_fetched(conn: sqlite3.Connection, source_key: str) -> datetime | No
     return None
 
 
-def set_last_fetched(conn: sqlite3.Connection, source_key: str, ts: datetime | None = None):
+def set_last_fetched(conn, source_key: str, ts: datetime | None = None):
     """Update last_fetched_at for a source. Does NOT commit — caller must commit."""
     ts = ts or datetime.now()
     conn.execute(
@@ -84,7 +93,7 @@ def set_last_fetched(conn: sqlite3.Connection, source_key: str, ts: datetime | N
     )
 
 
-def mark_youtube_shorts_duplicates(conn: sqlite3.Connection) -> int:
+def mark_youtube_shorts_duplicates(conn) -> int:
     """Mark YouTube Shorts as duplicates when a full video exists."""
     cursor = conn.execute("""
         UPDATE items SET is_duplicate_of = (
@@ -107,7 +116,7 @@ def mark_youtube_shorts_duplicates(conn: sqlite3.Connection) -> int:
     return cursor.rowcount
 
 
-def get_existing_ids(conn: sqlite3.Connection, item_ids: list[str]) -> set[str]:
+def get_existing_ids(conn, item_ids: list[str]) -> set[str]:
     """Batch-check which item IDs already exist in the DB."""
     if not item_ids:
         return set()
@@ -121,7 +130,7 @@ def get_existing_ids(conn: sqlite3.Connection, item_ids: list[str]) -> set[str]:
     return result
 
 
-def upsert_item(conn: sqlite3.Connection, item: ContentItem):
+def upsert_item(conn, item: ContentItem):
     """Insert or update a single item. Does NOT commit — caller must commit."""
     conn.execute(
         """INSERT INTO items (id, url, title, summary, content, source_name, source_type,
@@ -157,7 +166,7 @@ def upsert_item(conn: sqlite3.Connection, item: ContentItem):
     _sync_tags(conn, item.id, item.tags)
 
 
-def ingest_items(conn: sqlite3.Connection, source_key: str, items: list[ContentItem]) -> int:
+def ingest_items(conn, source_key: str, items: list[ContentItem]) -> int:
     """Upsert new items and update last_fetched. Returns new count."""
     existing = get_existing_ids(conn, [i.id for i in items])
     new_count = 0
@@ -170,7 +179,7 @@ def ingest_items(conn: sqlite3.Connection, source_key: str, items: list[ContentI
     return new_count
 
 
-def get_source_health(conn: sqlite3.Connection) -> dict[str, dict]:
+def get_source_health(conn) -> dict[str, dict]:
     """Get item counts and last fetch time per source."""
     rows = conn.execute("""
         SELECT source_name, source_type, COUNT(*) as item_count,
@@ -251,7 +260,7 @@ def _build_where(
 
 
 def count_items(
-    conn: sqlite3.Connection,
+    conn,
     *,
     min_score: float | None = None,
     source_type: str | None = None,
@@ -280,14 +289,14 @@ def count_items(
     return row["c"]
 
 
-def get_all_tags(conn: sqlite3.Connection) -> list[str]:
+def get_all_tags(conn) -> list[str]:
     """Get all unique tags from the item_tags index table."""
     rows = conn.execute("SELECT DISTINCT tag FROM item_tags ORDER BY tag").fetchall()
     return [row["tag"] for row in rows]
 
 
 def get_items(
-    conn: sqlite3.Connection,
+    conn,
     *,
     limit: int = 50,
     offset: int = 0,
@@ -333,7 +342,7 @@ def get_items(
     return [_row_to_item(r) for r in rows]
 
 
-def get_unscored_items(conn: sqlite3.Connection, limit: int = 50) -> list[ContentItem]:
+def get_unscored_items(conn, limit: int = 50) -> list[ContentItem]:
     rows = conn.execute(
         "SELECT * FROM items WHERE score IS NULL ORDER BY fetched_at DESC LIMIT ?",
         (limit,),
@@ -341,7 +350,7 @@ def get_unscored_items(conn: sqlite3.Connection, limit: int = 50) -> list[Conten
     return [_row_to_item(r) for r in rows]
 
 
-def _row_to_item(row: sqlite3.Row) -> ContentItem:
+def _row_to_item(row) -> ContentItem:
     d = dict(row)
     d["tags"] = json.loads(d["tags"])
     if d["published_at"]:

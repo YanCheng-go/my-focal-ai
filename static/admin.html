@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard — MyFocalAI</title>
+    <title>Admin — MyFocalAI</title>
     <script>
     (function(){
         var t = localStorage.getItem('theme');
@@ -23,8 +23,8 @@
                 <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white shrink-0">MyFocalAI</a>
                 <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
                     <a href="index.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Feeds <span id="badge-dashboard" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
-                    <a href="admin.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Admin</a>
-                    <a href="leaderboard.html" class="text-blue-600 dark:text-blue-400 font-medium">Leaderboard</a>
+                    <a href="admin.html" class="text-blue-600 dark:text-blue-400 font-medium">Admin</a>
+                    <a href="leaderboard.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Leaderboard</a>
                     <a href="events.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Events</a>
                     <a href="trends.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Trends <span id="badge-trends" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
                     <a href="ccc.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">CCC <span id="badge-ccc" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
@@ -42,8 +42,50 @@
     </nav>
 
     <main class="max-w-4xl mx-auto px-5 py-5">
-        <p class="text-sm text-gray-500 dark:text-gray-400 mb-5">AI model benchmarks and ranking sites for manual browsing.</p>
-        <div id="items"></div>
+        <h1 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Source Management</h1>
+
+        <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-5 mb-6">
+            <h2 class="text-base font-semibold text-blue-800 dark:text-blue-300 mb-2">Online customization coming soon</h2>
+            <p class="text-sm text-blue-700 dark:text-blue-400 leading-relaxed mb-3">
+                User-specific feed customization (add/remove sources, personal scoring principles) will be available online in a future update.
+            </p>
+            <p class="text-sm text-blue-700 dark:text-blue-400 leading-relaxed">
+                In the meantime, you can fully customize your feeds in <strong>local mode</strong> by cloning the project and following the setup instructions:
+            </p>
+        </div>
+
+        <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-5 mb-6">
+            <h2 class="text-base font-semibold text-gray-900 dark:text-white mb-3">Run locally</h2>
+            <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <li>Clone the repository:
+                    <code class="bg-gray-100 dark:bg-neutral-800 px-2 py-0.5 rounded text-xs ml-1">git clone https://github.com/YanCheng-go/ai-news-filter.git</code>
+                </li>
+                <li>Run the start script:
+                    <code class="bg-gray-100 dark:bg-neutral-800 px-2 py-0.5 rounded text-xs ml-1">cd ai-news-filter && ./start.sh</code>
+                </li>
+                <li>Open <code class="bg-gray-100 dark:bg-neutral-800 px-2 py-0.5 rounded text-xs">http://localhost:8000/admin</code> to manage sources</li>
+            </ol>
+            <p class="text-xs text-gray-500 dark:text-gray-500 mt-3">Requires <a href="https://docs.astral.sh/uv/getting-started/installation/" target="_blank" rel="noopener" class="underline hover:text-gray-700 dark:hover:text-gray-300">uv</a> and <a href="https://docs.docker.com/get-docker/" target="_blank" rel="noopener" class="underline hover:text-gray-700 dark:hover:text-gray-300">Docker</a>. The script handles everything else.</p>
+        </div>
+
+        <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-5 mb-6">
+            <h2 class="text-base font-semibold text-gray-900 dark:text-white mb-3">What you can customize locally</h2>
+            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#10003;</span> Add/remove RSS feeds, YouTube channels, Twitter accounts, arXiv queries</li>
+                <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#10003;</span> Configure scoring principles to match your interests</li>
+                <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#10003;</span> Trigger manual fetch cycles</li>
+                <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#10003;</span> Enable/disable individual sources</li>
+                <li class="flex items-start gap-2"><span class="text-green-500 mt-0.5">&#10003;</span> Delete content from specific sources</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors">
+                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View on GitHub
+            </a>
+        </div>
     </main>
 
     <script>
@@ -61,8 +103,6 @@
         });
     }
     updateThemeButtons();
-
-    function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text; return div.innerHTML; }
 
     // Badges
     (function() {
@@ -84,24 +124,6 @@
         }).catch(function(){});
         localStorage.setItem('ainews_last_seen', new Date().toISOString());
     })();
-
-    async function init() {
-        try {
-            const resp = await fetch('config.json');
-            const config = await resp.json();
-            const items = config.leaderboard || [];
-            document.getElementById('items').innerHTML = items.map(item => `
-                <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-4 mb-3 hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
-                    <div class="text-base font-semibold"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.name)}</a></div>
-                    <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap">${(item.tags || []).map(t => `<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${escapeHtml(t)}</span>`).join('')}</div>
-                    <div class="mt-1.5 text-xs"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="text-gray-400 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.url)}</a></div>
-                </div>
-            `).join('');
-        } catch (e) {
-            document.getElementById('items').innerHTML = '<p class="text-gray-400 dark:text-gray-500 text-sm">No data available.</p>';
-        }
-    }
-    init();
     </script>
 </body>
 </html>
