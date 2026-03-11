@@ -93,5 +93,6 @@
         "events"
       ]
     }
-  ]
+  ],
+  "show_scores": false
 }
