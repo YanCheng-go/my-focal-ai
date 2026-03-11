@@ -23,6 +23,9 @@ dependencies = [
 llm = [
     "ollama>=0.4",
 ]
+supabase = [
+    "supabase>=2.0",
+]
 dev = [
     "pytest>=8.0",
     "ruff>=0.9",

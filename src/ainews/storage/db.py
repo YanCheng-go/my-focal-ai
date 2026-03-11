@@ -379,19 +379,21 @@ def _row_to_item(row) -> ContentItem:
     return ContentItem(**d)
 
 
-def get_backend(db_path: Path | None = None) -> SqliteBackend:
+def get_backend(db_path: Path | None = None):
     """Factory — returns the appropriate backend based on config.
 
-    When AINEWS_SUPABASE_URL is set, returns SupabaseBackend (future).
+    When AINEWS_SUPABASE_URL is set, returns SupabaseBackend.
     Otherwise returns SqliteBackend.
     """
-    import os
+    from ainews.config import Settings
 
-    if os.getenv("AINEWS_SUPABASE_URL"):
-        raise NotImplementedError("SupabaseBackend not yet implemented")
+    settings = Settings()
+
+    if settings.supabase_url and settings.supabase_key:
+        from ainews.storage.supabase_backend import SupabaseBackend
+
+        return SupabaseBackend(settings.supabase_url, settings.supabase_key)
 
     if db_path is None:
-        from ainews.config import Settings
-
-        db_path = Settings().db_path
+        db_path = settings.db_path
     return SqliteBackend(db_path)
