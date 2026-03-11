@@ -93,7 +93,7 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
     return {"items_fetched": total_fetched, "new_items": total_new}
 
 
-async def run_ingestion(backend, config_dir=None):
+async def run_ingestion(backend, config_dir=None, sources_config=None):
     """Fetch all feeds and store only new items."""
     from ainews.backfill import sync_source_metadata
     from ainews.ingest.events import run_events_ingestion
@@ -101,7 +101,7 @@ async def run_ingestion(backend, config_dir=None):
     from ainews.ingest.twitter import run_twitter_ingestion
     from ainews.ingest.xiaohongshu import run_xhs_ingestion
 
-    sources_config = load_sources(config_dir)
+    sources_config = sources_config or load_sources(config_dir)
 
     # RSS/Atom feeds (YouTube, arXiv, blogs, RSSHub routes)
     feeds = build_feed_urls(sources_config)
