@@ -29,9 +29,6 @@ templates = Jinja2Templates(directory=str(settings.config_dir.parent / "template
 
 
 def _conn():
-    # On Vercel: use Turso. Locally: always use local SQLite even if Turso is configured.
-    if _on_vercel:
-        return get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
     return get_db(settings.db_path)
 
 
@@ -60,7 +57,7 @@ async def _fetch_and_score():
 
 
 def _create_app(*, with_scheduler: bool = True) -> FastAPI:
-    """Create the FastAPI app. Scheduler is disabled on Vercel (serverless)."""
+    """Create the FastAPI app. Scheduler is disabled on Vercel."""
     lifespan_ctx = None
     if with_scheduler:
         from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -168,34 +165,8 @@ def api_digest(hours: int = 24, min_score: float = 0.6):
 
 
 @app.post("/api/fetch")
-async def api_trigger_fetch(request: Request):
-    """Manually trigger a fetch + score cycle.
-
-    On Vercel, this is called by cron jobs with the Authorization header.
-    Uses cloud pipeline (Claude API scoring) on Vercel, local pipeline otherwise.
-    """
-    if _on_vercel:
-        # Accept either cron secret (Vercel cron) or admin cookie (manual trigger)
-        auth = request.headers.get("authorization")
-        cron_secret = os.environ.get("CRON_SECRET", "")
-        admin_token = request.cookies.get("admin_token")
-        cron_ok = cron_secret and auth == f"Bearer {cron_secret}"
-        admin_ok = admin_token and settings.admin_password
-        if admin_ok:
-            from ainews.api.admin import _check_admin_auth
-
-            try:
-                _check_admin_auth(admin_token)
-            except Exception:
-                admin_ok = False
-        if not cron_ok and not admin_ok:
-            from fastapi.responses import JSONResponse
-
-            return JSONResponse({"error": "Unauthorized"}, status_code=401)
-        from ainews.cloud_fetch import cloud_fetch_and_score
-
-        total = await cloud_fetch_and_score()
-        return {"status": "completed", "new_items": total}
+async def api_trigger_fetch():
+    """Manually trigger a fetch + score cycle (local mode only)."""
     asyncio.create_task(_fetch_and_score())
     return {"status": "started"}
 

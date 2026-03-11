@@ -166,7 +166,7 @@ def backfill_tags(dry_run: bool = False):
     settings = Settings()
     sources_config = load_sources(settings.config_dir)
     source_map = _build_source_map(sources_config)
-    conn = get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
+    conn = get_db(settings.db_path)
 
     try:
         updated = _apply_metadata_updates(conn, source_map, dry_run=dry_run)

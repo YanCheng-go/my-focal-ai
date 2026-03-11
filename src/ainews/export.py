@@ -18,7 +18,7 @@ def export_items(
     Returns the number of items exported.
     """
     settings = Settings()
-    conn = get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
+    conn = get_db(settings.db_path)
 
     since = datetime.now() - timedelta(hours=hours)
     items = get_items(conn, limit=500, since=since, min_score=min_score)

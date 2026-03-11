@@ -23,9 +23,6 @@ dependencies = [
 llm = [
     "ollama>=0.4",
 ]
-turso = [
-    "libsql>=0.1.8",
-]
 dev = [
     "pytest>=8.0",
     "ruff>=0.9",

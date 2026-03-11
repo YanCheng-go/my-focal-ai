@@ -1,119 +1,19 @@
-"""SQLite / libSQL storage for content items.
-
-Supports two backends:
-- Local SQLite (default): uses stdlib sqlite3
-- Turso (libSQL): when AINEWS_TURSO_URL is set, uses libsql with embedded replicas
-"""
+"""SQLite storage for content items."""
 
 import json
 import sqlite3
 from datetime import datetime
 from pathlib import Path
-from typing import Any
 
 from ainews.models import ContentItem
-
-# ---------------------------------------------------------------------------
-# Connection abstraction
-# ---------------------------------------------------------------------------
-
-
-class _DictRow:
-    """Dict-like row wrapper for libsql results (which lack row_factory)."""
-
-    __slots__ = ("_data", "_values")
-
-    def __init__(self, columns: list[str], values: tuple):
-        self._data = dict(zip(columns, values))
-        self._values = values
-
-    def __getitem__(self, key: str | int) -> Any:
-        if isinstance(key, int):
-            return self._values[key]
-        return self._data[key]
-
-    def keys(self):
-        return self._data.keys()
-
-    def values(self):
-        return self._data.values()
-
-    def items(self):
-        return self._data.items()
-
-
-class _DictCursor:
-    """Wraps a libsql cursor to return _DictRow objects."""
-
-    def __init__(self, cursor):
-        self._cursor = cursor
-
-    @property
-    def rowcount(self) -> int:
-        return self._cursor.rowcount
-
-    @property
-    def description(self):
-        return self._cursor.description
-
-    def fetchone(self) -> _DictRow | None:
-        row = self._cursor.fetchone()
-        if row is None:
-            return None
-        cols = [d[0] for d in self._cursor.description]
-        return _DictRow(cols, row)
-
-    def fetchall(self) -> list[_DictRow]:
-        rows = self._cursor.fetchall()
-        if not rows:
-            return []
-        cols = [d[0] for d in self._cursor.description]
-        return [_DictRow(cols, r) for r in rows]
-
-
-class _LibsqlConnectionWrapper:
-    """Wraps a libsql connection to return _DictRow results via _DictCursor."""
-
-    def __init__(self, conn):
-        self._conn = conn
-
-    def execute(self, sql: str, parameters=()) -> _DictCursor:
-        return _DictCursor(self._conn.execute(sql, parameters))
-
-    def executemany(self, sql: str, parameters=()) -> _DictCursor:
-        return _DictCursor(self._conn.executemany(sql, parameters))
-
-    def commit(self):
-        self._conn.commit()
-
-    def close(self):
-        # No-op: libsql connection is cached as a singleton and reused across requests.
-        pass
-
-    def sync(self):
-        """Sync embedded replica with Turso cloud."""
-        if hasattr(self._conn, "sync"):
-            self._conn.sync()
-
 
 # ---------------------------------------------------------------------------
 # Database initialization
 # ---------------------------------------------------------------------------
 
-# Cached libsql connection — libsql.connect() + sync() is expensive (network I/O),
-# so we reuse the same connection across requests. SQLite connections are cheap
-# and created fresh each time (WAL mode supports concurrent readers).
-_libsql_conn: _LibsqlConnectionWrapper | None = None
 
-
-def get_db(db_path: Path, turso_url: str = "", turso_auth_token: str = "") -> Any:
-    """Open a database connection. Uses libsql if turso_url is set, else sqlite3."""
-    if turso_url:
-        return _get_libsql_db(db_path, turso_url, turso_auth_token)
-    return _get_sqlite_db(db_path)
-
-
-def _get_sqlite_db(db_path: Path) -> sqlite3.Connection:
+def get_db(db_path: Path) -> sqlite3.Connection:
+    """Open a SQLite database connection."""
     db_path.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
@@ -122,35 +22,10 @@ def _get_sqlite_db(db_path: Path) -> sqlite3.Connection:
     return conn
 
 
-def _get_libsql_db(
-    db_path: Path, turso_url: str, turso_auth_token: str
-) -> _LibsqlConnectionWrapper:
-    global _libsql_conn
-    if _libsql_conn is not None:
-        return _libsql_conn
-
-    try:
-        import libsql
-    except ImportError as e:
-        raise ImportError(
-            "libsql is required for Turso support. Install with: uv sync --extra turso"
-        ) from e
-
-    conn = libsql.connect(
-        turso_url,
-        auth_token=turso_auth_token,
-    )
-    wrapper = _LibsqlConnectionWrapper(conn)
-    _init_schema(wrapper)
-    wrapper.commit()
-    _libsql_conn = wrapper
-    return wrapper
-
-
 def _init_schema(conn):
     """Create tables and indexes if they don't exist."""
-    stmts = [
-        """CREATE TABLE IF NOT EXISTS items (
+    conn.executescript("""
+        CREATE TABLE IF NOT EXISTS items (
             id TEXT PRIMARY KEY,
             url TEXT UNIQUE NOT NULL,
             title TEXT NOT NULL,
@@ -167,28 +42,26 @@ def _init_schema(conn):
             tier TEXT DEFAULT '',
             is_duplicate_of TEXT,
             FOREIGN KEY (is_duplicate_of) REFERENCES items(id)
-        )""",
-        "CREATE INDEX IF NOT EXISTS idx_items_score ON items(score DESC)",
-        "CREATE INDEX IF NOT EXISTS idx_items_fetched ON items(fetched_at DESC)",
-        "CREATE INDEX IF NOT EXISTS idx_items_source ON items(source_type)",
-        """CREATE TABLE IF NOT EXISTS source_state (
+        );
+        CREATE INDEX IF NOT EXISTS idx_items_score ON items(score DESC);
+        CREATE INDEX IF NOT EXISTS idx_items_fetched ON items(fetched_at DESC);
+        CREATE INDEX IF NOT EXISTS idx_items_source ON items(source_type);
+        CREATE TABLE IF NOT EXISTS source_state (
             source_key TEXT PRIMARY KEY,
             last_fetched_at TEXT NOT NULL
-        )""",
-        """CREATE TABLE IF NOT EXISTS item_tags (
+        );
+        CREATE TABLE IF NOT EXISTS item_tags (
             item_id TEXT NOT NULL,
             tag TEXT NOT NULL,
             PRIMARY KEY (item_id, tag),
             FOREIGN KEY (item_id) REFERENCES items(id)
-        )""",
-        "CREATE INDEX IF NOT EXISTS idx_item_tags_tag ON item_tags(tag)",
-    ]
-    for stmt in stmts:
-        conn.execute(stmt)
+        );
+        CREATE INDEX IF NOT EXISTS idx_item_tags_tag ON item_tags(tag);
+    """)
 
 
 # ---------------------------------------------------------------------------
-# CRUD operations (work with both sqlite3 and libsql)
+# CRUD operations
 # ---------------------------------------------------------------------------
 
 
@@ -478,7 +351,7 @@ def get_unscored_items(conn, limit: int = 50) -> list[ContentItem]:
 
 
 def _row_to_item(row) -> ContentItem:
-    d = dict(row.items()) if hasattr(row, "items") else dict(row)
+    d = dict(row)
     d["tags"] = json.loads(d["tags"])
     if d["published_at"]:
         d["published_at"] = datetime.fromisoformat(d["published_at"])
