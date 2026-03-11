@@ -20,12 +20,16 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      # Restore cached DB from previous runs (for dedup)
+      # Restore cached DB from previous runs (for dedup + data retention).
+      # GitHub caches are immutable, so we use a date-based key and fall back
+      # to the most recent cache via restore-keys. This keeps ~7 days of data.
       - name: Restore DB cache
         uses: actions/cache@v5
         with:
           path: data/ainews.db
-          key: ainews-db
+          key: ainews-db-${{ github.run_id }}
+          restore-keys: |
+            ainews-db-
 
       # Fetch RSS/YouTube/arXiv feeds; scores with Claude API if key is set
       - name: Fetch and score
@@ -35,7 +39,7 @@ jobs:
 
       # Export scored items to static JSON
       - name: Export to JSON
-        run: uv run ainews export --hours 48 --output static/data.json
+        run: uv run ainews export --hours 168 --output static/data.json
 
       # Commit and push if data changed
       - name: Commit updated data

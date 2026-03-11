@@ -97,14 +97,19 @@
     let allItems = [], allTags = [];
     let filters = { source_type: null, tier: null, tag: null, order_by: 'date' };
     let page = 1;
+    let showScores = false; // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
 
     const HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
     const HIDDEN_SOURCES = ['Claude Code Releases'];
 
     async function init() {
         try {
-            const resp = await fetch('data.json');
-            const data = await resp.json();
+            const [dataResp, configResp] = await Promise.all([fetch('data.json'), fetch('config.json').catch(() => null)]);
+            const data = await dataResp.json();
+            if (configResp && configResp.ok) {
+                const config = await configResp.json();
+                showScores = !!config.show_scores;
+            }
             allItems = data.items || [];
             allTags = data.all_tags || [];
             document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString();
@@ -126,7 +131,8 @@
             const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
             html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${t}'})">${label}</button>`;
         });
-        html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
+        // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
+        if (showScores) html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
         if (allTags.length) {
             html += `<div class="group relative inline-block"><button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}">Tags</button><div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 rounded-md min-w-40 max-h-72 overflow-y-auto z-10 shadow-lg">`;
             allTags.forEach(t => { html += `<a class="block px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-neutral-700 cursor-pointer" onclick="setFilter({tag:'${t}'})">${t}</a>`; });

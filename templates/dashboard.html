@@ -42,8 +42,11 @@
     <a href="/?source_type=youtube" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'youtube' else inactive_cls }}">YouTube</a>
     <a href="/?source_type=rss" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'rss' else inactive_cls }}">RSS</a>
     <a href="/?source_type=arxiv" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'arxiv' else inactive_cls }}">arXiv</a>
+    {# Feature flag: AINEWS_SHOW_SCORES — do not delete these buttons, enable via env var #}
+    {% if show_scores %}
     <a href="/?min_score=0.7" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.min_score and filters.min_score >= 0.7 else inactive_cls }}">Top Only</a>
     <a href="/?order_by=score" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.order_by == 'score' else inactive_cls }}">By Score</a>
+    {% endif %}
 
     <!-- Tag dropdown -->
     <div class="group relative inline-block">

@@ -27,10 +27,12 @@ jobs:
         uses: actions/cache@v5
         with:
           path: data/ainews.db
-          key: ainews-db
+          key: ainews-db-${{ github.run_id }}
+          restore-keys: |
+            ainews-db-
 
       - name: Export static data
-        run: uv run ainews export --hours 48 --output static/data.json
+        run: uv run ainews export --hours 168 --output static/data.json
 
       - name: Commit if changed
         run: |

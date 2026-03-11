@@ -23,11 +23,11 @@ def export_items(
     since = datetime.now() - timedelta(hours=hours)
     items = get_items(conn, limit=500, since=since, min_score=min_score)
 
-    # Ensure dedicated-page items are included even if main feed limit cuts them off
-    dedicated_types = ["github_trending", "github_trending_history"]
+    # Ensure items from lower-volume source types aren't crowded out by arXiv flood
+    ensure_types = ["rss", "youtube", "github_trending", "github_trending_history"]
     existing_ids = {item.id for item in items}
-    for stype in dedicated_types:
-        extra = get_items(conn, limit=50, source_type=stype)
+    for stype in ensure_types:
+        extra = get_items(conn, limit=50, source_type=stype, since=since)
         for item in extra:
             if item.id not in existing_ids:
                 items.append(item)
@@ -62,6 +62,7 @@ def _export_config(output_path: Path, settings: Settings):
     config = {
         "leaderboard": sources.get("leaderboard", []),
         "event_links": sources.get("event_links", []),
+        "show_scores": settings.show_scores,
     }
     with open(output_path, "w") as f:
         json.dump(config, f, indent=2)
