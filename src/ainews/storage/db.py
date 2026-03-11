@@ -122,37 +122,42 @@ class SqliteBackend:
         return result
 
     def upsert_item(self, item: ContentItem) -> None:
-        self._conn.execute(
-            """INSERT INTO items (id, url, title, summary, content, source_name, source_type,
-               tags, author, published_at, fetched_at, score, score_reason, tier, is_duplicate_of)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-               ON CONFLICT(id) DO UPDATE SET
-                 score=COALESCE(excluded.score, items.score),
-                 score_reason=CASE WHEN excluded.score_reason IS NOT NULL
-                                   AND excluded.score_reason != ''
-                                   THEN excluded.score_reason ELSE items.score_reason END,
-                 tier=CASE WHEN excluded.tier IS NOT NULL AND excluded.tier != ''
-                           THEN excluded.tier ELSE items.tier END,
-                 is_duplicate_of=COALESCE(excluded.is_duplicate_of, items.is_duplicate_of)
-            """,
-            (
-                item.id,
-                item.url,
-                item.title,
-                item.summary,
-                item.content,
-                item.source_name,
-                item.source_type,
-                json.dumps(item.tags),
-                item.author,
-                item.published_at.isoformat() if item.published_at else None,
-                item.fetched_at.isoformat(),
-                item.score,
-                item.score_reason,
-                item.tier,
-                item.is_duplicate_of,
-            ),
-        )
+        try:
+            self._conn.execute(
+                """INSERT INTO items (id, url, title, summary, content,
+                   source_name, source_type, tags, author, published_at,
+                   fetched_at, score, score_reason, tier, is_duplicate_of)
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                   ON CONFLICT(id) DO UPDATE SET
+                     score=COALESCE(excluded.score, items.score),
+                     score_reason=CASE WHEN excluded.score_reason IS NOT NULL
+                                       AND excluded.score_reason != ''
+                                       THEN excluded.score_reason ELSE items.score_reason END,
+                     tier=CASE WHEN excluded.tier IS NOT NULL AND excluded.tier != ''
+                               THEN excluded.tier ELSE items.tier END,
+                     is_duplicate_of=COALESCE(excluded.is_duplicate_of, items.is_duplicate_of)
+                """,
+                (
+                    item.id,
+                    item.url,
+                    item.title,
+                    item.summary,
+                    item.content,
+                    item.source_name,
+                    item.source_type,
+                    json.dumps(item.tags),
+                    item.author,
+                    item.published_at.isoformat() if item.published_at else None,
+                    item.fetched_at.isoformat(),
+                    item.score,
+                    item.score_reason,
+                    item.tier,
+                    item.is_duplicate_of,
+                ),
+            )
+        except sqlite3.IntegrityError:
+            # Different id but duplicate URL — skip silently
+            return
         self._sync_tags(item.id, item.tags)
 
     def ingest_items(self, source_key: str, items: list[ContentItem]) -> int:
@@ -379,21 +384,20 @@ def _row_to_item(row) -> ContentItem:
     return ContentItem(**d)
 
 
-def get_backend(db_path: Path | None = None):
+def get_backend(db_path: Path | None = None, user_id: str | None = None):
     """Factory — returns the appropriate backend based on config.
 
-    When AINEWS_SUPABASE_URL is set, returns SupabaseBackend.
-    Otherwise returns SqliteBackend.
+    When db_path is explicitly provided, always uses SQLite (local mode).
+    When only Supabase env vars are set (no db_path), uses SupabaseBackend.
     """
     from ainews.config import Settings
 
     settings = Settings()
 
-    if settings.supabase_url and settings.supabase_key:
+    if db_path is None and settings.supabase_url and settings.supabase_key:
         from ainews.storage.supabase_backend import SupabaseBackend
 
-        return SupabaseBackend(settings.supabase_url, settings.supabase_key)
+        key = settings.supabase_service_key or settings.supabase_key
+        return SupabaseBackend(settings.supabase_url, key, user_id=user_id)
 
-    if db_path is None:
-        db_path = settings.db_path
-    return SqliteBackend(db_path)
+    return SqliteBackend(db_path or settings.db_path)
