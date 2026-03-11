@@ -3,7 +3,7 @@ requires-python = ">=3.12"
 
 [[package]]
 name = "ai-news-filter"
-version = "0.3.0"
+version = "0.3.1"
 source = { editable = "." }
 dependencies = [
     { name = "apscheduler" },

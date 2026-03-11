@@ -2,33 +2,34 @@
 
 Personal news intelligence system that aggregates AI content from curated sources, scores relevance using LLM, and serves a web dashboard. Runs locally with Ollama (free) or deployed to Vercel with Claude API scoring.
 
-| Dashboard | Admin |
-|-----------|-------|
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Admin](docs/screenshots/admin.png) |
+| Feeds | Admin |
+|-------|-------|
+| ![Feeds](docs/screenshots/dashboard.png) | ![Admin](docs/screenshots/admin.png) |
+
+## Quick Start (Local)
+
+**Prerequisites:** [uv](https://docs.astral.sh/uv/getting-started/installation/) (Python package manager) and [Docker](https://docs.docker.com/get-docker/) (for RSSHub feeds). That's it.
+
+```bash
+git clone https://github.com/YanCheng-go/ai-news-filter.git
+cd ai-news-filter
+./start.sh              # installs deps, starts RSSHub + Ollama, launches dashboard
+```
+
+Open http://localhost:8000 — you're done. The script handles everything.
+
+**Options:**
+```bash
+./start.sh --no-score   # skip Ollama (just fetch + display, no relevance scoring)
+./start.sh stop         # stop all services
+```
+
+> **Optional:** Install [Ollama](https://ollama.ai) for local LLM scoring. Without it, `start.sh` still works — it just skips scoring.
 
 ## Two Modes
 
 ### Local (full-featured)
 Runs entirely on your machine — SQLite, Ollama, APScheduler, FastAPI dashboard.
-
-```bash
-# One-command start (installs deps, starts RSSHub + Ollama, launches dashboard)
-./start.sh
-
-# Or without scoring (no Ollama needed — just fetches and displays)
-./start.sh --no-score
-
-# Stop all services
-./start.sh stop
-```
-
-Or manually:
-```bash
-uv sync
-docker compose -f docker/docker-compose.yml up -d
-ollama serve && ollama pull qwen3:4b
-uv run ainews serve
-```
 
 #### Twitter / X (local only)
 
@@ -58,26 +59,6 @@ No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROP
 2. Optionally add `ANTHROPIC_API_KEY` as a GitHub Actions secret for scoring
 3. Trigger the "Fetch & Export" workflow manually for the first run
 
-## Commands
-
-```bash
-# Local
-uv run ainews serve              # start server (port 8000)
-uv run ainews fetch              # one-time fetch + score (Ollama)
-uv run ainews fetch-source "OpenAI"  # fetch a single source
-uv run ainews list-sources       # list all configured sources
-uv run ainews twitter-setup      # verify Chrome cookies for Twitter
-
-# Cloud / Export
-uv run ainews cloud-fetch        # fetch feeds + score with Claude API (no Twitter/Ollama)
-uv run ainews export             # export scored items to static/data.json
-uv run ainews export --hours 168 # export last 7 days
-
-# Dev
-uv run ruff check src/           # lint
-uv run pytest                    # tests
-```
-
 ## Configuration
 
 - `config/sources.yml` — all feed sources (Twitter, YouTube, RSS, RSSHub, Luma, arXiv, GitHub Trending)
@@ -89,15 +70,27 @@ uv run pytest                    # tests
 
 | Page | Local | Vercel | Description |
 |------|-------|--------|-------------|
-| Dashboard | `/` | `index.html` | Main feed with filters, search, pagination |
+| Feeds | `/` | `index.html` | Main feed with filters, search, pagination |
 | Leaderboard | `/leaderboard` | `leaderboard.html` | AI benchmark and ranking sites |
 | Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs) |
 | Trends | `/trends` | `trends.html` | GitHub trending repos — daily + history (2 tabs) |
 | CCC | `/ccc` | `ccc.html` | Claude Code Changelogs |
-| Admin | `/admin` | — | Source management (local only) |
+| Admin | `/admin` | `admin.html` | Source management (local); read-only info (online) |
+
+## Development
+
+See [docs/development.md](docs/development.md) for the full guide — dev environment setup (Nix + direnv or manual), project structure, commands, conventions, and workflow.
+
+```bash
+# Quick dev setup
+direnv allow   # if using Nix (recommended)
+uv sync        # install Python deps
+uv run ruff check src/ && uv run pytest  # lint + test
+```
 
 ## Documentation
 
+- [docs/development.md](docs/development.md) — dev setup, project structure, commands, conventions
 - [docs/architecture.md](docs/architecture.md) — data flow, design decisions, module map
 - [docs/sources.md](docs/sources.md) — how to configure and add sources
 - [docs/scoring.md](docs/scoring.md) — three principles, tiers, LLM prompt, score interpretation

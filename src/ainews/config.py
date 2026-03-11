@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     ollama_base_url: str = "http://localhost:11434"
     scoring: bool = True
     show_scores: bool = False  # Feature flag: show "Top Only" & "By Score" filters in UI
+    admin_password: str = ""  # When set, admin routes require authentication
     host: str = "0.0.0.0"
     port: int = 8000
 

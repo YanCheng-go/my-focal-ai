@@ -2,19 +2,17 @@
 
 import asyncio
 import logging
+import os
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta
 
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from fastapi import FastAPI, Query, Request
 from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from ainews.api.admin import _api as admin_api_router
 from ainews.api.admin import router as admin_router
 from ainews.config import Settings, load_principles, load_sources
-from ainews.ingest.runner import run_ingestion
-from ainews.scoring.scorer import score_batch
 from ainews.storage.db import (
     count_items,
     get_all_tags,
@@ -30,9 +28,16 @@ settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
 
 
+def _conn():
+    return get_db(settings.db_path)
+
+
 async def _fetch_and_score():
     """Background job: fetch feeds then score new items."""
-    conn = get_db(settings.db_path)
+    from ainews.ingest.runner import run_ingestion
+    from ainews.scoring.scorer import score_batch
+
+    conn = _conn()
     try:
         await run_ingestion(conn, settings.config_dir)
         if settings.scoring:
@@ -51,25 +56,41 @@ async def _fetch_and_score():
         conn.close()
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    scheduler = AsyncIOScheduler()
-    scheduler.add_job(
-        _fetch_and_score,
-        "interval",
-        minutes=settings.fetch_interval_minutes,
-        next_run_time=datetime.now(),  # run immediately on startup
-    )
-    scheduler.start()
-    yield
-    scheduler.shutdown()
+def _create_app(*, with_scheduler: bool = True) -> FastAPI:
+    """Create the FastAPI app. Scheduler is disabled on Vercel."""
+    lifespan_ctx = None
+    if with_scheduler:
+        from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
+        @asynccontextmanager
+        async def lifespan(app: FastAPI):
+            scheduler = AsyncIOScheduler()
+            scheduler.add_job(
+                _fetch_and_score,
+                "interval",
+                minutes=settings.fetch_interval_minutes,
+                next_run_time=datetime.now(),
+            )
+            scheduler.start()
+            yield
+            scheduler.shutdown()
+
+        lifespan_ctx = lifespan
+
+    return FastAPI(title="MyFocalAI", version="0.3.0", lifespan=lifespan_ctx)
 
 
-app = FastAPI(title="AI News Filter", version="0.2.0", lifespan=lifespan)
+# Detect Vercel environment — no scheduler, no static mount
+_on_vercel = bool(os.environ.get("VERCEL"))
+app = _create_app(with_scheduler=not _on_vercel)
 app.include_router(admin_router)
+app.include_router(admin_api_router)
 
-static_dir = str(settings.config_dir.parent / "static")
-app.mount("/static", StaticFiles(directory=static_dir), name="static")
+if not _on_vercel:
+    from fastapi.staticfiles import StaticFiles
+
+    static_dir = str(settings.config_dir.parent / "static")
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 
 # === JSON API (AI-friendly) ===
@@ -88,7 +109,7 @@ def api_items(
     order_by: str = "date",
 ):
     """Get scored content items as JSON. Designed for programmatic / AI consumption."""
-    conn = get_db(settings.db_path)
+    conn = _conn()
     since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
     items = get_items(
         conn,
@@ -122,7 +143,7 @@ def api_items(
 @app.get("/api/digest")
 def api_digest(hours: int = 24, min_score: float = 0.6):
     """Get a daily digest — top items from the last N hours."""
-    conn = get_db(settings.db_path)
+    conn = _conn()
     since = datetime.now() - timedelta(hours=hours)
     items = get_items(conn, limit=20, min_score=min_score, since=since)
     conn.close()
@@ -145,7 +166,7 @@ def api_digest(hours: int = 24, min_score: float = 0.6):
 
 @app.post("/api/fetch")
 async def api_trigger_fetch():
-    """Manually trigger a fetch + score cycle."""
+    """Manually trigger a fetch + score cycle (local mode only)."""
     asyncio.create_task(_fetch_and_score())
     return {"status": "started"}
 
@@ -159,7 +180,7 @@ def api_badge_counts(since: str | None = None):
         since_dt = datetime.fromisoformat(since)
     except ValueError:
         return {"dashboard": 0, "trends": 0, "ccc": 0}
-    conn = get_db(settings.db_path)
+    conn = _conn()
     dashboard_count = count_items(
         conn,
         since=since_dt,
@@ -190,7 +211,7 @@ def dashboard(
     order_by: str = "date",
     page: int = 1,
 ):
-    conn = get_db(settings.db_path)
+    conn = _conn()
     offset = (page - 1) * PER_PAGE
     # Hide dedicated-page sources from the main feed unless explicitly searched/filtered
     has_filter = search or tag or source_type
@@ -251,7 +272,7 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
     total_pages = 1
     if tab in ("luma", "tech"):
         source_type = "luma" if tab == "luma" else "events"
-        conn = get_db(settings.db_path)
+        conn = _conn()
         offset = (page - 1) * PER_PAGE
         items = get_items(conn, limit=PER_PAGE, offset=offset, source_type=source_type)
         total = count_items(conn, source_type=source_type)
@@ -273,7 +294,7 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
 
 @app.get("/trends", response_class=HTMLResponse)
 def trends(request: Request, tab: str = "daily", page: int = 1):
-    conn = get_db(settings.db_path)
+    conn = _conn()
     offset = (page - 1) * PER_PAGE
     source_type = "github_trending_history" if tab == "history" else "github_trending"
     items = get_items(
@@ -302,7 +323,7 @@ def about(request: Request):
 
 @app.get("/ccc", response_class=HTMLResponse)
 def ccc(request: Request, page: int = 1):
-    conn = get_db(settings.db_path)
+    conn = _conn()
     offset = (page - 1) * PER_PAGE
     items = get_items(conn, limit=PER_PAGE, offset=offset, search="Claude Code Releases")
     total = count_items(conn, search="Claude Code Releases")

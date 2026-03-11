@@ -3,7 +3,6 @@
 import hashlib
 import json
 import logging
-import sqlite3
 from pathlib import Path
 
 from ainews.config import Settings, load_sources
@@ -56,7 +55,7 @@ def _hash_sources_file(config_dir: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
 
 
-def _get_stored_hash(conn: sqlite3.Connection) -> str | None:
+def _get_stored_hash(conn) -> str | None:
     row = conn.execute(
         "SELECT last_fetched_at FROM source_state WHERE source_key = ?",
         (CONFIG_HASH_KEY,),
@@ -64,7 +63,7 @@ def _get_stored_hash(conn: sqlite3.Connection) -> str | None:
     return row["last_fetched_at"] if row else None
 
 
-def _store_hash(conn: sqlite3.Connection, hash_val: str):
+def _store_hash(conn, hash_val: str):
     conn.execute(
         """INSERT INTO source_state (source_key, last_fetched_at) VALUES (?, ?)
            ON CONFLICT(source_key) DO UPDATE SET last_fetched_at = excluded.last_fetched_at""",
@@ -73,7 +72,7 @@ def _store_hash(conn: sqlite3.Connection, hash_val: str):
 
 
 def _apply_metadata_updates(
-    conn: sqlite3.Connection,
+    conn,
     source_map: dict[str, dict],
     dry_run: bool = False,
 ) -> int:
@@ -132,7 +131,7 @@ def _apply_metadata_updates(
 
 
 def sync_source_metadata(
-    conn: sqlite3.Connection,
+    conn,
     sources_config: dict,
     config_dir: Path | None = None,
 ) -> int:

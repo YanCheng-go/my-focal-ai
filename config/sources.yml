@@ -43,6 +43,18 @@ sources:
     - course
   - channel_id: UCLKPca3kwwd-B59HNr-_lvA
     name: AI Engineer
+    tags:
+    - ai
+    - engineering
+  - channel_id: UCKWaEZ-_VweaEx1j62do_vQ
+    name: IBM Technology
+    tags:
+    - ai
+  - channel_id: UCPbwhExawYrn9xxI21TFfyw
+    name: The Pragmatic Engineer
+    tags:
+    - ai
+    - podcast
   arxiv:
   - url: "https://rss.arxiv.org/rss/cs.AI"
     name: "arXiv cs.AI"

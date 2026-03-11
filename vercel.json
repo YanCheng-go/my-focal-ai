@@ -2,7 +2,5 @@
   "outputDirectory": "static",
   "buildCommand": "",
   "framework": null,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "cleanUrls": true
 }
