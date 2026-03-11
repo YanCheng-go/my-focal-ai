@@ -1,12 +1,28 @@
 {% extends "_base.html" %}
 {% set active_page = "admin" %}
-{% set page_title = "Admin - AI News Filter" %}
+{% set page_title = "Admin - MyFocalAI" %}
 {% set container_class = "max-w-5xl" %}
 
 {% block content %}
+{% if needs_auth and not is_authed %}
+<div class="max-w-sm mx-auto mt-12">
+    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Admin Login</h2>
+    <form onsubmit="return handleLogin(event)">
+        <input type="password" id="admin-password" placeholder="Password" required
+            class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 mb-3">
+        <button type="submit" class="w-full px-3 py-2 rounded-md bg-blue-600 text-white text-sm cursor-pointer hover:bg-blue-700">Login</button>
+        <p id="login-error" class="text-red-500 text-xs mt-2 hidden"></p>
+    </form>
+</div>
+{% else %}
 <div class="flex justify-between items-center mb-5">
     <h2 class="text-xl font-bold text-gray-900 dark:text-white">Sources</h2>
-    <button class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50" onclick="openAddModal()">Add Source</button>
+    <div class="flex gap-2">
+        {% if needs_auth %}
+        <button class="px-3 py-1.5 rounded-md bg-gray-100 dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-neutral-700 text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-700" onclick="handleLogout()">Logout</button>
+        {% endif %}
+        <button class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50" onclick="openAddModal()">Add Source</button>
+    </div>
 </div>
 
 <div class="overflow-x-auto">
@@ -63,10 +79,33 @@
 
 <div id="toast-success" class="fixed bottom-5 right-5 hidden bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-400 border border-green-300 dark:border-green-700 px-5 py-2.5 rounded-lg text-sm z-[200]"></div>
 <div id="toast-error" class="fixed bottom-5 right-5 hidden bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-400 border border-red-300 dark:border-red-700 px-5 py-2.5 rounded-lg text-sm z-[200]"></div>
+{% endif %}
 {% endblock %}
 
 {% block scripts %}
 <script>
+    async function handleLogin(e) {
+        e.preventDefault();
+        const pw = document.getElementById('admin-password').value;
+        const resp = await fetch('/admin/login', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({password: pw})
+        });
+        if (resp.ok) { location.reload(); }
+        else {
+            const err = document.getElementById('login-error');
+            err.textContent = 'Wrong password';
+            err.classList.remove('hidden');
+        }
+        return false;
+    }
+
+    async function handleLogout() {
+        await fetch('/admin/logout', {method: 'POST'});
+        location.reload();
+    }
+
     let sourceFields = {};
     let editingSource = null;
 
@@ -96,6 +135,7 @@
 
     async function loadSources() {
         const resp = await fetch('/admin/api/sources');
+        if (resp.status === 401) { location.reload(); return; }
         const data = await resp.json();
         sourceFields = data.source_fields;
         renderTable(data.sources);

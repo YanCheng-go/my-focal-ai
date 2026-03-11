@@ -31,7 +31,7 @@ async def _fetch_source(source_name: str):
 def main():
     log_fmt = "%(asctime)s %(levelname)s %(name)s: %(message)s"
     logging.basicConfig(level=logging.INFO, format=log_fmt)
-    parser = argparse.ArgumentParser(description="AI News Filter")
+    parser = argparse.ArgumentParser(description="MyFocalAI")
     sub = parser.add_subparsers(dest="command")
 
     sub.add_parser("serve", help="Start the web server with scheduled fetching")

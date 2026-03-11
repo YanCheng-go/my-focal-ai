@@ -21,12 +21,15 @@ from ainews.models import ContentItem
 class _DictRow:
     """Dict-like row wrapper for libsql results (which lack row_factory)."""
 
-    __slots__ = ("_data",)
+    __slots__ = ("_data", "_values")
 
     def __init__(self, columns: list[str], values: tuple):
         self._data = dict(zip(columns, values))
+        self._values = values
 
-    def __getitem__(self, key: str) -> Any:
+    def __getitem__(self, key: str | int) -> Any:
+        if isinstance(key, int):
+            return self._values[key]
         return self._data[key]
 
     def keys(self):
@@ -132,13 +135,10 @@ def _get_libsql_db(
             "libsql is required for Turso support. Install with: uv sync --extra turso"
         ) from e
 
-    db_path.parent.mkdir(parents=True, exist_ok=True)
     conn = libsql.connect(
-        str(db_path),
-        sync_url=turso_url,
+        turso_url,
         auth_token=turso_auth_token,
     )
-    conn.sync()
     wrapper = _LibsqlConnectionWrapper(conn)
     _init_schema(wrapper)
     wrapper.commit()

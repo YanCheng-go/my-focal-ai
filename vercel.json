@@ -2,7 +2,20 @@
   "outputDirectory": "static",
   "buildCommand": "",
   "framework": null,
+  "functions": {
+    "api/index.py": {
+      "runtime": "@vercel/python"
+    }
+  },
   "rewrites": [
+    { "source": "/admin/:path*", "destination": "/api/index" },
+    { "source": "/api/:path*", "destination": "/api/index" },
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "crons": [
+    {
+      "path": "/api/fetch",
+      "schedule": "0 */2 * * *"
+    }
   ]
 }

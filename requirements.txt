@@ -1,0 +1,13 @@
+# Vercel serverless runtime dependencies
+# Keep in sync with pyproject.toml [project.dependencies] + [project.optional-dependencies.turso]
+fastapi>=0.115
+uvicorn>=0.34
+feedparser>=6.0
+httpx>=0.28
+jinja2>=3.1
+pydantic>=2.0
+pydantic-settings>=2.0
+pyyaml>=6.0
+ruamel.yaml>=0.18
+selectolax>=0.4.7
+libsql>=0.1.8

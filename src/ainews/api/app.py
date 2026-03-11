@@ -2,19 +2,17 @@
 
 import asyncio
 import logging
+import os
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta
 
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from fastapi import FastAPI, Query, Request
 from fastapi.responses import HTMLResponse
-from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
+from ainews.api.admin import _api as admin_api_router
 from ainews.api.admin import router as admin_router
 from ainews.config import Settings, load_principles, load_sources
-from ainews.ingest.runner import run_ingestion
-from ainews.scoring.scorer import score_batch
 from ainews.storage.db import (
     count_items,
     get_all_tags,
@@ -31,11 +29,17 @@ templates = Jinja2Templates(directory=str(settings.config_dir.parent / "template
 
 
 def _conn():
-    return get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
+    # On Vercel: use Turso. Locally: always use local SQLite even if Turso is configured.
+    if _on_vercel:
+        return get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
+    return get_db(settings.db_path)
 
 
 async def _fetch_and_score():
     """Background job: fetch feeds then score new items."""
+    from ainews.ingest.runner import run_ingestion
+    from ainews.scoring.scorer import score_batch
+
     conn = _conn()
     try:
         await run_ingestion(conn, settings.config_dir)
@@ -55,25 +59,41 @@ async def _fetch_and_score():
         conn.close()
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    scheduler = AsyncIOScheduler()
-    scheduler.add_job(
-        _fetch_and_score,
-        "interval",
-        minutes=settings.fetch_interval_minutes,
-        next_run_time=datetime.now(),  # run immediately on startup
-    )
-    scheduler.start()
-    yield
-    scheduler.shutdown()
+def _create_app(*, with_scheduler: bool = True) -> FastAPI:
+    """Create the FastAPI app. Scheduler is disabled on Vercel (serverless)."""
+    lifespan_ctx = None
+    if with_scheduler:
+        from apscheduler.schedulers.asyncio import AsyncIOScheduler
+
+        @asynccontextmanager
+        async def lifespan(app: FastAPI):
+            scheduler = AsyncIOScheduler()
+            scheduler.add_job(
+                _fetch_and_score,
+                "interval",
+                minutes=settings.fetch_interval_minutes,
+                next_run_time=datetime.now(),
+            )
+            scheduler.start()
+            yield
+            scheduler.shutdown()
+
+        lifespan_ctx = lifespan
+
+    return FastAPI(title="MyFocalAI", version="0.3.0", lifespan=lifespan_ctx)
 
 
-app = FastAPI(title="AI News Filter", version="0.2.0", lifespan=lifespan)
+# Detect Vercel environment — no scheduler, no static mount
+_on_vercel = bool(os.environ.get("VERCEL"))
+app = _create_app(with_scheduler=not _on_vercel)
 app.include_router(admin_router)
+app.include_router(admin_api_router)
 
-static_dir = str(settings.config_dir.parent / "static")
-app.mount("/static", StaticFiles(directory=static_dir), name="static")
+if not _on_vercel:
+    from fastapi.staticfiles import StaticFiles
+
+    static_dir = str(settings.config_dir.parent / "static")
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 
 # === JSON API (AI-friendly) ===
@@ -148,8 +168,23 @@ def api_digest(hours: int = 24, min_score: float = 0.6):
 
 
 @app.post("/api/fetch")
-async def api_trigger_fetch():
-    """Manually trigger a fetch + score cycle."""
+async def api_trigger_fetch(request: Request):
+    """Manually trigger a fetch + score cycle.
+
+    On Vercel, this is called by cron jobs with the Authorization header.
+    Uses cloud pipeline (Claude API scoring) on Vercel, local pipeline otherwise.
+    """
+    if _on_vercel:
+        auth = request.headers.get("authorization")
+        cron_secret = os.environ.get("CRON_SECRET", "")
+        if not cron_secret or auth != f"Bearer {cron_secret}":
+            from fastapi.responses import JSONResponse
+
+            return JSONResponse({"error": "Unauthorized"}, status_code=401)
+        from ainews.cloud_fetch import cloud_fetch_and_score
+
+        total = await cloud_fetch_and_score()
+        return {"status": "completed", "new_items": total}
     asyncio.create_task(_fetch_and_score())
     return {"status": "started"}
 

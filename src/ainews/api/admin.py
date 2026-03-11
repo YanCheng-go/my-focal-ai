@@ -1,8 +1,10 @@
 """Admin UI for source management."""
 
+import hashlib
 import logging
+import secrets
 
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, Cookie, Depends, HTTPException, Request, Response
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
@@ -17,18 +19,38 @@ from ainews.sources.manager import (
     update_source,
     validate_source,
 )
-from ainews.storage.db import get_db, get_source_health
+from ainews.storage.db import get_source_health
 
 logger = logging.getLogger(__name__)
 
 settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
 
-router = APIRouter(prefix="/admin", tags=["admin"])
+_password_hash = (
+    hashlib.sha256(settings.admin_password.encode()).hexdigest() if settings.admin_password else ""
+)
+
+
+def _check_admin_auth(admin_token: str | None) -> None:
+    """Verify admin session token. No-op when password is not configured."""
+    if not settings.admin_password:
+        return
+    if not admin_token:
+        raise HTTPException(status_code=401, detail="Login required")
+    if not secrets.compare_digest(admin_token, _password_hash):
+        raise HTTPException(status_code=401, detail="Invalid session")
+
+
+def _require_admin(admin_token: str | None = Cookie(None)) -> None:
+    """FastAPI dependency that enforces admin auth on protected routes."""
+    _check_admin_auth(admin_token)
 
 
 def _conn():
-    return get_db(settings.db_path, settings.turso_url, settings.turso_auth_token)
+    # Import from app to avoid duplicating the Vercel/local logic
+    from ainews.api.app import _conn as app_conn
+
+    return app_conn()
 
 
 def _normalize_tags(data: dict) -> None:
@@ -37,12 +59,51 @@ def _normalize_tags(data: dict) -> None:
         data["tags"] = [t.strip() for t in data["tags"].split(",") if t.strip()]
 
 
+# Public routes (login/logout/page) — no dependency
+router = APIRouter(prefix="/admin", tags=["admin"])
+
+
+@router.post("/login")
+def admin_login(body: dict, response: Response):
+    """Authenticate admin and set session cookie."""
+    if not settings.admin_password:
+        raise HTTPException(status_code=400, detail="Admin password not configured")
+    password = body.get("password", "")
+    if not secrets.compare_digest(password, settings.admin_password):
+        raise HTTPException(status_code=401, detail="Wrong password")
+    response.set_cookie(
+        "admin_token", _password_hash, httponly=True, samesite="strict", max_age=86400
+    )
+    return {"status": "ok"}
+
+
+@router.post("/logout")
+def admin_logout(response: Response):
+    response.delete_cookie("admin_token")
+    return {"status": "ok"}
+
+
 @router.get("", response_class=HTMLResponse)
-def admin_page(request: Request):
-    return templates.TemplateResponse("admin.html", {"request": request})
+def admin_page(request: Request, admin_token: str | None = Cookie(None)):
+    needs_auth = bool(settings.admin_password)
+    is_authed = False
+    if needs_auth:
+        try:
+            _check_admin_auth(admin_token)
+            is_authed = True
+        except HTTPException:
+            pass
+    return templates.TemplateResponse(
+        "admin.html",
+        {"request": request, "needs_auth": needs_auth, "is_authed": is_authed},
+    )
 
 
-@router.get("/api/sources")
+# Protected API routes — auth enforced via router dependency
+_api = APIRouter(prefix="/admin", tags=["admin"], dependencies=[Depends(_require_admin)])
+
+
+@_api.get("/api/sources")
 def list_sources():
     sources = get_all_sources_flat(settings.config_dir)
     conn = _conn()
@@ -61,7 +122,7 @@ def list_sources():
     return {"sources": sources, "source_fields": SOURCE_FIELDS}
 
 
-@router.post("/api/sources")
+@_api.post("/api/sources")
 def create_source(body: dict):
     source_type = body.get("type", "")
     source_data = {k: v for k, v in body.items() if k != "type"}
@@ -74,7 +135,7 @@ def create_source(body: dict):
     return {"status": "created"}
 
 
-@router.put("/api/sources/{source_type}/{index}")
+@_api.put("/api/sources/{source_type}/{index}")
 def edit_source(source_type: str, index: int, body: dict):
     source_data = {k: v for k, v in body.items() if k != "type"}
     _normalize_tags(source_data)
@@ -85,7 +146,7 @@ def edit_source(source_type: str, index: int, body: dict):
     return {"status": "updated"}
 
 
-@router.delete("/api/sources/{source_type}/{index}")
+@_api.delete("/api/sources/{source_type}/{index}")
 def remove_source(source_type: str, index: int):
     try:
         delete_source(settings.config_dir, source_type, index)
@@ -94,12 +155,11 @@ def remove_source(source_type: str, index: int):
     return {"status": "deleted"}
 
 
-@router.delete("/api/sources/content")
+@_api.delete("/api/sources/content")
 def delete_source_content(source_name: str):
     """Delete all items from a given source name."""
     conn = _conn()
     try:
-        # Delete tags first (foreign key), then items
         conn.execute(
             "DELETE FROM item_tags WHERE item_id IN (SELECT id FROM items WHERE source_name = ?)",
             (source_name,),
@@ -112,7 +172,7 @@ def delete_source_content(source_name: str):
         conn.close()
 
 
-@router.post("/api/sources/{source_type}/{index}/toggle")
+@_api.post("/api/sources/{source_type}/{index}/toggle")
 def toggle_source_endpoint(source_type: str, index: int):
     try:
         toggle_source(settings.config_dir, source_type, index)
@@ -121,7 +181,7 @@ def toggle_source_endpoint(source_type: str, index: int):
     return {"status": "toggled"}
 
 
-@router.post("/api/sources/{source_type}/{index}/fetch")
+@_api.post("/api/sources/{source_type}/{index}/fetch")
 async def fetch_source_endpoint(source_type: str, index: int):
     sources = get_all_sources_flat(settings.config_dir)
     target = None
