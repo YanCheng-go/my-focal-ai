@@ -55,24 +55,8 @@ def _hash_sources_file(config_dir: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()[:16]
 
 
-def _get_stored_hash(conn) -> str | None:
-    row = conn.execute(
-        "SELECT last_fetched_at FROM source_state WHERE source_key = ?",
-        (CONFIG_HASH_KEY,),
-    ).fetchone()
-    return row["last_fetched_at"] if row else None
-
-
-def _store_hash(conn, hash_val: str):
-    conn.execute(
-        """INSERT INTO source_state (source_key, last_fetched_at) VALUES (?, ?)
-           ON CONFLICT(source_key) DO UPDATE SET last_fetched_at = excluded.last_fetched_at""",
-        (CONFIG_HASH_KEY, hash_val),
-    )
-
-
 def _apply_metadata_updates(
-    conn,
+    backend,
     source_map: dict[str, dict],
     dry_run: bool = False,
 ) -> int:
@@ -80,7 +64,7 @@ def _apply_metadata_updates(
 
     Returns number of items that changed (or would change in dry_run mode).
     """
-    rows = conn.execute("SELECT id, source_name, source_type, tags FROM items").fetchall()
+    rows = backend.get_items_for_backfill()
 
     updated = 0
     for row in rows:
@@ -90,7 +74,7 @@ def _apply_metadata_updates(
         if config is None:
             continue
 
-        old_tags = json.loads(row["tags"])
+        old_tags = json.loads(row["tags"]) if isinstance(row["tags"], str) else row["tags"]
         new_tags = config["tags"]
         old_type = row["source_type"]
         new_type = config["source_type"]
@@ -109,29 +93,14 @@ def _apply_metadata_updates(
                 changes.append(f"type: {old_type} -> {new_type}")
             print(f"  {source_name}: {', '.join(changes)}")
         else:
-            if tags_changed:
-                conn.execute(
-                    "UPDATE items SET tags = ? WHERE id = ?",
-                    (json.dumps(new_tags), item_id),
-                )
-                conn.execute("DELETE FROM item_tags WHERE item_id = ?", (item_id,))
-                if new_tags:
-                    conn.executemany(
-                        "INSERT OR IGNORE INTO item_tags (item_id, tag) VALUES (?, ?)",
-                        [(item_id, tag) for tag in new_tags],
-                    )
-            if type_changed:
-                conn.execute(
-                    "UPDATE items SET source_type = ? WHERE id = ?",
-                    (new_type, item_id),
-                )
+            backend.update_item_metadata(item_id, new_tags, new_type)
         updated += 1
 
     return updated
 
 
 def sync_source_metadata(
-    conn,
+    backend,
     sources_config: dict,
     config_dir: Path | None = None,
 ) -> int:
@@ -142,17 +111,17 @@ def sync_source_metadata(
     """
     if config_dir:
         current_hash = _hash_sources_file(config_dir)
-        stored_hash = _get_stored_hash(conn)
+        stored_hash = backend.get_stored_hash(CONFIG_HASH_KEY)
         if current_hash == stored_hash:
             return 0
 
     source_map = _build_source_map(sources_config)
-    updated = _apply_metadata_updates(conn, source_map)
+    updated = _apply_metadata_updates(backend, source_map)
 
     if config_dir:
-        _store_hash(conn, current_hash)
+        backend.store_hash(CONFIG_HASH_KEY, current_hash)
 
-    conn.commit()
+    backend.commit()
     if updated > 0:
         logger.info(f"Backfill: synced metadata on {updated} items")
 
@@ -161,18 +130,18 @@ def sync_source_metadata(
 
 def backfill_tags(dry_run: bool = False):
     """CLI entry point — re-sync tags and source_type from sources.yml."""
-    from ainews.storage.db import get_db
+    from ainews.storage.db import get_backend
 
     settings = Settings()
     sources_config = load_sources(settings.config_dir)
     source_map = _build_source_map(sources_config)
-    conn = get_db(settings.db_path)
+    backend = get_backend(settings.db_path)
 
     try:
-        updated = _apply_metadata_updates(conn, source_map, dry_run=dry_run)
+        updated = _apply_metadata_updates(backend, source_map, dry_run=dry_run)
         if not dry_run and updated > 0:
-            conn.commit()
+            backend.commit()
         action = "Would update" if dry_run else "Updated"
         print(f"{action} {updated} items.")
     finally:
-        conn.close()
+        backend.close()

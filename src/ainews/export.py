@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from ainews.config import Settings, load_sources
-from ainews.storage.db import count_items, get_all_tags, get_db, get_items
+from ainews.storage.db import get_backend
 
 
 def export_items(
@@ -18,24 +18,24 @@ def export_items(
     Returns the number of items exported.
     """
     settings = Settings()
-    conn = get_db(settings.db_path)
+    backend = get_backend(settings.db_path)
 
     since = datetime.now() - timedelta(hours=hours)
-    items = get_items(conn, limit=500, since=since, min_score=min_score)
+    items = backend.get_items(limit=500, since=since, min_score=min_score)
 
     # Ensure items from lower-volume source types aren't crowded out by arXiv flood
     ensure_types = ["rss", "youtube", "github_trending", "github_trending_history"]
     existing_ids = {item.id for item in items}
     for stype in ensure_types:
-        extra = get_items(conn, limit=50, source_type=stype, since=since)
+        extra = backend.get_items(limit=50, source_type=stype, since=since)
         for item in extra:
             if item.id not in existing_ids:
                 items.append(item)
                 existing_ids.add(item.id)
 
-    all_tags = get_all_tags(conn)
-    total = count_items(conn, since=since, min_score=min_score)
-    conn.close()
+    all_tags = backend.get_all_tags()
+    total = backend.count_items(since=since, min_score=min_score)
+    backend.close()
 
     data = {
         "exported_at": datetime.now().isoformat(),

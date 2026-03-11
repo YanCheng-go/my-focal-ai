@@ -14,18 +14,18 @@ async def _fetch_source(source_name: str):
     """Fetch a single source by name (one-time)."""
     from ainews.config import load_sources
     from ainews.ingest.runner import fetch_single_source
-    from ainews.storage.db import get_db
+    from ainews.storage.db import get_backend
 
     settings = Settings()
-    conn = get_db(settings.db_path)
+    backend = get_backend(settings.db_path)
     try:
         sources_config = load_sources(settings.config_dir)
-        result = await fetch_single_source(conn, sources_config, source_name)
+        result = await fetch_single_source(backend, sources_config, source_name)
         print(f"Fetched {result['items_fetched']} items ({result['new_items']} new)")
     except (ValueError, RuntimeError) as e:
         print(str(e))
     finally:
-        conn.close()
+        backend.close()
 
 
 def main():
