@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     admin_password: str = ""  # When set, admin routes require authentication
     supabase_url: str = ""
     supabase_key: str = ""
+    supabase_service_key: str = ""
     host: str = "0.0.0.0"
     port: int = 8000
 

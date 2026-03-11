@@ -23,10 +23,11 @@ class SupabaseBackend:
     commit() and close() are no-ops for compatibility with the protocol.
     """
 
-    def __init__(self, url: str, key: str):
+    def __init__(self, url: str, key: str, user_id: str | None = None):
         if create_client is None:
             raise ImportError("supabase package required. Install with: uv sync --extra supabase")
         self._client = create_client(url, key)
+        self._user_id = user_id
 
     def close(self) -> None:
         pass  # No persistent connection to close
@@ -39,21 +40,26 @@ class SupabaseBackend:
     # ------------------------------------------------------------------
 
     def get_last_fetched(self, source_key: str) -> datetime | None:
-        result = (
+        q = (
             self._client.table("source_state")
             .select("last_fetched_at")
             .eq("source_key", source_key)
-            .execute()
         )
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        result = q.execute()
         if result.data:
             return datetime.fromisoformat(result.data[0]["last_fetched_at"])
         return None
 
     def set_last_fetched(self, source_key: str, ts: datetime | None = None) -> None:
         ts = ts or datetime.now()
+        row = {"source_key": source_key, "last_fetched_at": ts.isoformat()}
+        if self._user_id:
+            row["user_id"] = self._user_id
         self._client.table("source_state").upsert(
-            {"source_key": source_key, "last_fetched_at": ts.isoformat()},
-            on_conflict="source_key",
+            row,
+            on_conflict="source_key,user_id",
         ).execute()
 
     def mark_youtube_shorts_duplicates(self) -> int:
@@ -68,27 +74,31 @@ class SupabaseBackend:
         # PostgREST `in` filter has URL length limits; chunk like SQLite
         for i in range(0, len(item_ids), 500):
             chunk = item_ids[i : i + 500]
-            resp = self._client.table("items").select("id").in_("id", chunk).execute()
+            q = self._client.table("items").select("id").in_("id", chunk)
+            if self._user_id:
+                q = q.eq("user_id", self._user_id)
+            resp = q.execute()
             result.update(row["id"] for row in resp.data)
         return result
 
     def upsert_item(self, item: ContentItem) -> None:
         row = {
-            "id": item.id,
-            "url": item.url,
-            "title": item.title,
-            "summary": item.summary,
-            "content": item.content,
-            "source_name": item.source_name,
-            "source_type": item.source_type,
-            "tags": item.tags,  # Postgres stores as jsonb natively
-            "author": item.author,
-            "published_at": item.published_at.isoformat() if item.published_at else None,
-            "fetched_at": item.fetched_at.isoformat(),
-            "score": item.score,
-            "score_reason": item.score_reason,
-            "tier": item.tier,
-            "is_duplicate_of": item.is_duplicate_of,
+            "p_id": item.id,
+            "p_url": item.url,
+            "p_title": item.title,
+            "p_summary": item.summary,
+            "p_content": item.content,
+            "p_source_name": item.source_name,
+            "p_source_type": item.source_type,
+            "p_tags": item.tags,  # Postgres stores as jsonb natively
+            "p_author": item.author,
+            "p_published_at": item.published_at.isoformat() if item.published_at else None,
+            "p_fetched_at": item.fetched_at.isoformat(),
+            "p_score": item.score,
+            "p_score_reason": item.score_reason,
+            "p_tier": item.tier,
+            "p_is_duplicate_of": item.is_duplicate_of,
+            "p_user_id": self._user_id,
         }
         # Use RPC for COALESCE upsert logic (preserve existing scores)
         self._client.rpc("upsert_item", row).execute()
@@ -104,7 +114,10 @@ class SupabaseBackend:
         return new_count
 
     def get_source_health(self) -> dict[str, dict]:
-        result = self._client.rpc("get_source_health").execute()
+        params = {}
+        if self._user_id:
+            params["p_user_id"] = self._user_id
+        result = self._client.rpc("get_source_health", params).execute()
         health: dict[str, dict] = {}
         for row in result.data or []:
             health[row["source_name"]] = {
@@ -113,7 +126,10 @@ class SupabaseBackend:
                 "last_fetched": row["last_fetched"],
             }
         # Also include source_state for last run times
-        state = self._client.table("source_state").select("*").execute()
+        q = self._client.table("source_state").select("*")
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        state = q.execute()
         for row in state.data or []:
             key = row["source_key"]
             if key not in health:
@@ -143,6 +159,9 @@ class SupabaseBackend:
             q = self._client.table("items").select("*")
 
         q = q.is_("is_duplicate_of", "null")
+
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
 
         if min_score is not None:
             q = q.gte("score", min_score)
@@ -204,7 +223,10 @@ class SupabaseBackend:
         return result.count or 0
 
     def get_all_tags(self) -> list[str]:
-        result = self._client.rpc("get_all_tags").execute()
+        params = {}
+        if self._user_id:
+            params["p_user_id"] = self._user_id
+        result = self._client.rpc("get_all_tags", params).execute()
         return [row["tag"] for row in result.data or []]
 
     def get_items(
@@ -251,29 +273,29 @@ class SupabaseBackend:
         return [_row_to_item(row) for row in result.data or []]
 
     def get_unscored_items(self, limit: int = 50) -> list[ContentItem]:
-        result = (
-            self._client.table("items")
-            .select("*")
-            .is_("score", "null")
-            .order("fetched_at", desc=True)
-            .limit(limit)
-            .execute()
-        )
+        q = self._client.table("items").select("*").is_("score", "null")
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        result = q.order("fetched_at", desc=True).limit(limit).execute()
         return [_row_to_item(row) for row in result.data or []]
 
     def delete_source_content(self, source_name: str) -> int:
         # Count before delete (PostgREST DELETE doesn't return count reliably)
-        count_result = (
-            self._client.table("items")
-            .select("*", count="exact")
-            .eq("source_name", source_name)
-            .execute()
-        )
+        q = self._client.table("items").select("*", count="exact").eq("source_name", source_name)
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        count_result = q.execute()
         deleted = count_result.count or 0
 
-        # Delete items (cascade or manual tag cleanup)
-        self._client.table("items").delete().eq("source_name", source_name).execute()
-        self._client.table("source_state").delete().eq("source_key", source_name).execute()
+        # Delete items
+        dq = self._client.table("items").delete().eq("source_name", source_name)
+        if self._user_id:
+            dq = dq.eq("user_id", self._user_id)
+        dq.execute()
+        sq = self._client.table("source_state").delete().eq("source_key", source_name)
+        if self._user_id:
+            sq = sq.eq("user_id", self._user_id)
+        sq.execute()
         return deleted
 
     def get_items_for_backfill(self) -> list[dict]:
@@ -286,20 +308,21 @@ class SupabaseBackend:
         ).execute()
 
     def get_stored_hash(self, key: str) -> str | None:
-        result = (
-            self._client.table("source_state")
-            .select("last_fetched_at")
-            .eq("source_key", key)
-            .execute()
-        )
+        q = self._client.table("source_state").select("last_fetched_at").eq("source_key", key)
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        result = q.execute()
         if result.data:
             return result.data[0]["last_fetched_at"]
         return None
 
     def store_hash(self, key: str, hash_val: str) -> None:
+        row = {"source_key": key, "last_fetched_at": hash_val}
+        if self._user_id:
+            row["user_id"] = self._user_id
         self._client.table("source_state").upsert(
-            {"source_key": key, "last_fetched_at": hash_val},
-            on_conflict="source_key",
+            row,
+            on_conflict="source_key,user_id",
         ).execute()
 
 
