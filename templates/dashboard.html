@@ -94,6 +94,8 @@
             <span>Event: {{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
             {% elif item.published_at %}
             <span>{{ item.published_at.strftime('%b %d, %Y %H:%M') }}</span>
+            {% elif item.fetched_at %}
+            <span>{{ item.fetched_at.strftime('%b %d, %Y %H:%M') }} <span class="text-gray-400 dark:text-gray-600">(fetched)</span></span>
             {% endif %}
         </div>
         {% if item.summary %}

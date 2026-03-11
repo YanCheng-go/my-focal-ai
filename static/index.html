@@ -189,8 +189,10 @@
                 const typeTag = isShort ? 'YT Short' : item.source_type;
                 const tierHtml = item.tier ? `<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${item.tier}</span>` : '';
                 const tagsHtml = (item.tags || []).slice(0, 3).map(t => `<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">${t}</span>`).join('');
-                const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '';
-                const dateLabel = item.source_type === 'luma' && pubDate ? `Event: ${pubDate}` : pubDate;
+                const dateOpts = { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+                const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', dateOpts) : '';
+                const fetchDate = !pubDate && item.fetched_at ? new Date(item.fetched_at).toLocaleDateString('en-US', dateOpts) + ' <span class="text-gray-400 dark:text-gray-600">(fetched)</span>' : '';
+                const dateLabel = item.source_type === 'luma' && pubDate ? `Event: ${pubDate}` : pubDate || fetchDate;
                 const summary = item.summary ? item.summary.slice(0, 200) + (item.summary.length > 200 ? '...' : '') : '';
                 const borderCls = SOURCE_BORDERS[item.source_type] || 'border-l-gray-300 dark:border-l-neutral-600';
 

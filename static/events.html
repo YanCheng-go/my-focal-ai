@@ -116,7 +116,8 @@
             const items = allItems.filter(i => i.source_type === sourceType);
             if (!items.length) { container.innerHTML = '<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No events found.</div>'; return; }
             container.innerHTML = items.map(item => {
-                const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+                const dateOpts = { month: 'short', day: 'numeric', year: 'numeric' };
+                const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', dateOpts) : (item.fetched_at ? new Date(item.fetched_at).toLocaleDateString('en-US', dateOpts) + ' <span class="text-gray-400 dark:text-gray-600">(fetched)</span>' : '');
                 const summary = item.summary ? escapeHtml(item.summary.slice(0, 200)) + (item.summary.length > 200 ? '...' : '') : '';
                 return `<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 border-l-emerald-500 hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
                     <div class="text-base font-semibold"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.title)}</a></div>

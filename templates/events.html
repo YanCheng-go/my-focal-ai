@@ -51,6 +51,8 @@
                 {% endfor %}
                 {% if item.published_at %}
                 <span>{{ item.published_at.strftime('%b %d, %Y') }}</span>
+                {% elif item.fetched_at %}
+                <span>{{ item.fetched_at.strftime('%b %d, %Y') }} <span class="text-gray-400 dark:text-gray-600">(fetched)</span></span>
                 {% endif %}
             </div>
             {% if item.summary %}
