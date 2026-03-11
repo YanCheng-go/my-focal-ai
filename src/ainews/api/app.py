@@ -227,6 +227,7 @@ def dashboard(
             "total_pages": total_pages,
             "total": total,
             "all_tags": all_tags,
+            "show_scores": settings.show_scores,
         },
     )
 

@@ -62,6 +62,7 @@ def _export_config(output_path: Path, settings: Settings):
     config = {
         "leaderboard": sources.get("leaderboard", []),
         "event_links": sources.get("event_links", []),
+        "show_scores": settings.show_scores,
     }
     with open(output_path, "w") as f:
         json.dump(config, f, indent=2)
