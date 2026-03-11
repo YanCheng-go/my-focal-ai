@@ -37,9 +37,12 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || '' }}
 
-      # Export scored items to static JSON
+      # Export scored items to static JSON (includes Supabase config for admin auth)
       - name: Export to JSON
         run: uv run ainews export --hours 168 --output static/data.json
+        env:
+          AINEWS_SUPABASE_URL: ${{ secrets.AINEWS_SUPABASE_URL || '' }}
+          AINEWS_SUPABASE_KEY: ${{ secrets.AINEWS_SUPABASE_KEY || '' }}
 
       # Commit and push if data changed
       - name: Commit updated data
