@@ -79,60 +79,18 @@ No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROP
 
 ## Development
 
-### Dev environment (Nix + direnv)
-
-If you use [Nix](https://nixos.org/) and [direnv](https://direnv.net/), the dev environment is fully reproducible — no manual installation of Python, uv, or Docker Compose needed:
+See [docs/development.md](docs/development.md) for the full guide — dev environment setup (Nix + direnv or manual), project structure, commands, conventions, and workflow.
 
 ```bash
-direnv allow   # auto-activates the Nix dev shell (Python 3.12 + uv + docker-compose)
-uv sync        # install Python dependencies
+# Quick dev setup
+direnv allow   # if using Nix (recommended)
+uv sync        # install Python deps
+uv run ruff check src/ && uv run pytest  # lint + test
 ```
-
-All system-level tools are declared in `flake.nix`. Add new ones there — never install via `brew`, `apt`, or `npm install -g`.
-
-### Without Nix
-
-Install manually: [Python 3.12+](https://www.python.org/), [uv](https://docs.astral.sh/uv/getting-started/installation/), [Docker](https://docs.docker.com/get-docker/).
-
-```bash
-uv sync                          # install deps
-uv sync --extra llm --extra dev  # all optional deps (Twitter cookies, dev tools)
-```
-
-### Project structure
-
-```
-config/           sources.yml (feeds), principles.yml (scoring rules)
-src/ainews/
-  ingest/         feeds.py, twitter.py, xiaohongshu.py, events.py, github_trending.py
-  scoring/        scorer.py (Ollama), claude_scorer.py (Claude API)
-  storage/        db.py (SQLite)
-  api/            app.py (FastAPI), admin.py
-templates/        Jinja2 templates (local server)
-static/           Static HTML pages (Vercel deployment)
-scripts/          CI and helper scripts
-```
-
-### Commands
-
-```bash
-uv run ainews serve              # start server (port 8000, auto-reloads)
-uv run ainews fetch              # one-time fetch + score (Ollama)
-uv run ainews fetch-source "OpenAI"  # fetch a single source
-uv run ainews cloud-fetch        # fetch + score with Claude API (for CI)
-uv run ainews export             # export data.json + config.json to static/
-uv run ruff check src/           # lint (fix before committing)
-uv run pytest                    # tests
-```
-
-### Workflow
-
-- Branch off `main`, PR when ready, squash merge
-- Run `uv run ruff check src/` and `uv run pytest` before committing
-- Keep commits small and atomic — one logical change per commit
 
 ## Documentation
 
+- [docs/development.md](docs/development.md) — dev setup, project structure, commands, conventions
 - [docs/architecture.md](docs/architecture.md) — data flow, design decisions, module map
 - [docs/sources.md](docs/sources.md) — how to configure and add sources
 - [docs/scoring.md](docs/scoring.md) — three principles, tiers, LLM prompt, score interpretation
