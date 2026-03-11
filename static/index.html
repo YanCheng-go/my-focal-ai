@@ -46,6 +46,8 @@
             <input class="w-full sm:w-48 px-3 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 placeholder:text-gray-400 dark:placeholder:text-gray-500"
                    type="text" id="search" placeholder="Search titles, sources..." oninput="render()">
             <span class="text-xs text-gray-400" id="updated"></span>
+            <button id="fetch-btn" class="hidden px-3 py-1.5 rounded-md text-sm border border-blue-300 dark:border-blue-700 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 hover:bg-blue-200 dark:hover:bg-blue-900 cursor-pointer"
+                    onclick="fetchNow()">Fetch Now</button>
         </div>
         <div class="flex gap-2 mb-3 flex-wrap items-center" id="filters"></div>
         <div class="text-xs text-gray-400 dark:text-gray-500 mb-4" id="status"></div>
@@ -91,6 +93,19 @@
             if (el && counts[page] > 0) { el.textContent = counts[page] > 99 ? '99+' : counts[page]; el.classList.remove('hidden'); }
         });
         localStorage.setItem('ainews_last_seen', new Date().toISOString());
+    }
+
+    // Fetch Now (admin only)
+    if (document.cookie.split(';').some(c => c.trim().startsWith('admin_token='))) {
+        document.getElementById('fetch-btn').classList.remove('hidden');
+    }
+    function fetchNow() {
+        var btn = document.getElementById('fetch-btn');
+        btn.disabled = true; btn.textContent = 'Fetching...';
+        fetch('/api/fetch', { method: 'POST', credentials: 'same-origin' })
+            .then(r => r.json())
+            .then(d => { btn.textContent = d.status === 'completed' ? 'Done! ' + (d.new_items || 0) + ' new' : d.error || 'Done'; setTimeout(() => location.reload(), 1500); })
+            .catch(() => { btn.textContent = 'Error'; btn.disabled = false; });
     }
 
     // Data
