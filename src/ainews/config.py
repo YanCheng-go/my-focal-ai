@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     host: str = "0.0.0.0"
     port: int = 8000
 
-    model_config = {"env_prefix": "AINEWS_"}
+    model_config = {"env_prefix": "AINEWS_", "env_file": ".env"}
 
 
 def load_sources(config_dir: Path | None = None) -> dict:

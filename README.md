@@ -2,6 +2,10 @@
 
 Personal news intelligence system that aggregates AI content from curated sources, scores relevance using LLM, and serves a web dashboard. Runs locally with Ollama (free) or deployed to Vercel with Claude API scoring.
 
+| Dashboard | Admin |
+|-----------|-------|
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Admin](docs/screenshots/admin.png) |
+
 ## Two Modes
 
 ### Local (full-featured)
@@ -25,6 +29,24 @@ docker compose -f docker/docker-compose.yml up -d
 ollama serve && ollama pull qwen3:4b
 uv run ainews serve
 ```
+
+#### Twitter / X (local only)
+
+Twitter sources are only available in local mode. The fetcher reads your browser's session cookies directly — no API key required — but this approach is against X's Terms of Service, so it cannot be used in the cloud pipeline.
+
+**Prerequisites:**
+1. **Log in to X in Chrome** on the same machine. The fetcher reads `auth_token` and `ct0` cookies from your Chrome profile automatically via [`rookiepy`](https://github.com/thewh1teagle/rookiepy).
+2. **Install the `llm` extras** (includes `rookiepy`):
+   ```bash
+   uv sync --extra llm
+   ```
+3. **Verify the cookie setup:**
+   ```bash
+   uv run ainews twitter-setup
+   ```
+4. **Add Twitter sources** to `config/sources.yml` with `type: twitter` and `handle: username`.
+
+> **Why not in the cloud?** The method relies on scraping private GraphQL endpoints using your personal session cookies, which violates [X's Terms of Service](https://x.com/en/tos). Running it in a public CI pipeline would also expose your personal session. Use RSS-based alternatives (e.g. [nitter](https://github.com/zedeus/nitter) via RSSHub) for the cloud pipeline if you need Twitter content.
 
 ### Cloud (Vercel + GitHub Actions)
 Static dashboard deployed to Vercel. GitHub Action fetches feeds on a 2h cron, exports to `static/data.json`, and Vercel serves it.
@@ -80,6 +102,12 @@ uv run pytest                    # tests
 - [docs/sources.md](docs/sources.md) — how to configure and add sources
 - [docs/scoring.md](docs/scoring.md) — three principles, tiers, LLM prompt, score interpretation
 
+## Support
+
+If you find this project useful:
+
+- [Buy Me a Coffee](https://buymeacoffee.com/maverickmiaow)
+
 ---
 
-*Last updated: 2026-03-09*
+*Last updated: 2026-03-11*
