@@ -2,13 +2,8 @@
 
 import logging
 
-from ainews.backfill import sync_source_metadata
 from ainews.config import load_sources
-from ainews.ingest.events import run_events_ingestion
 from ainews.ingest.feeds import build_feed_urls, fetch_feed
-from ainews.ingest.github_trending import run_github_trending_ingestion
-from ainews.ingest.twitter import run_twitter_ingestion
-from ainews.ingest.xiaohongshu import run_xhs_ingestion
 from ainews.storage.db import ingest_items, mark_youtube_shorts_duplicates
 
 logger = logging.getLogger(__name__)
@@ -101,6 +96,12 @@ async def fetch_single_source(conn, sources_config: dict, source_name: str) -> d
 
 async def run_ingestion(conn, config_dir=None):
     """Fetch all feeds and store only new items."""
+    from ainews.backfill import sync_source_metadata
+    from ainews.ingest.events import run_events_ingestion
+    from ainews.ingest.github_trending import run_github_trending_ingestion
+    from ainews.ingest.twitter import run_twitter_ingestion
+    from ainews.ingest.xiaohongshu import run_xhs_ingestion
+
     sources_config = load_sources(config_dir)
 
     # RSS/Atom feeds (YouTube, arXiv, blogs, RSSHub routes)
