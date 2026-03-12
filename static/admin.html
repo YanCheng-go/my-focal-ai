@@ -551,6 +551,8 @@
                 if (!resp.ok) { var r = await resp.json(); throw new Error(r.error || 'Failed'); }
             } catch (e) {
                 errors++;
+                console.error('Fetch failed for', enabled[i].name, e.message);
+                showToast(enabled[i].name + ': ' + e.message, 'error');
             }
             done++;
             btn.textContent = done + '/' + total;

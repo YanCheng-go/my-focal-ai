@@ -12,6 +12,7 @@ import json
 import os
 from datetime import datetime
 from http.server import BaseHTTPRequestHandler
+from urllib.parse import quote
 
 import feedparser
 import httpx
@@ -49,7 +50,7 @@ def _build_feed_url(source_type: str, name: str, config: dict) -> dict | None:
     if source_type == "arxiv_queries":
         query = config.get("query", "")
         return {
-            "url": f"https://export.arxiv.org/api/query?search_query={query}"
+            "url": f"https://export.arxiv.org/api/query?search_query={quote(query)}"
             "&sortBy=submittedDate&sortOrder=descending&max_results=20",
             "source_name": name,
             "source_type": "arxiv",
@@ -157,9 +158,8 @@ class handler(BaseHTTPRequestHandler):
                 self._json_response(500, {"error": "Supabase not configured"})
                 return
 
-            # Create client with user's JWT for RLS
+            # Verify user identity from JWT
             client = create_client(supabase_url, supabase_key)
-            client.auth.set_session(jwt, "")
             user_resp = client.auth.get_user(jwt)
             if not user_resp or not user_resp.user:
                 self._json_response(401, {"error": "Invalid token"})
