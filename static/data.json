@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-12T10:29:22.601900",
+  "exported_at": "2026-03-12T12:29:52.080967",
   "period_hours": 168,
-  "total": 3439,
+  "total": 3440,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,25 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "46eae3804fe5d148",
+      "url": "https://www.youtube.com/watch?v=wh489_XT5TI",
+      "title": "What Are Hierarchical AI Agents? Solving Context & Task Challenges",
+      "summary": "Ready to become a certified watsonx Data Scientist? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpFig\n\nLearn more about Hierarchical AI Agents here \u2192 https://ibm.biz/BdpFih\n\nCan AI hierarchies fix task inefficiencies? \ud83e\udd14 Martin Keen explains hierarchical AI agents, how they overcome context dilution, tool overload, and task decomposition challenges. Learn how they enhance workflows for scalable, smarter AI systems. \ud83d\ude80\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/BdpFiV\n\n#aiagents #aiworkflows #aioptimization",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-12T11:01:44",
+      "fetched_at": "2026-03-12T12:29:41.320749",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10802,27 +10821,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "7fc42df95306fb72",
-      "url": "https://arxiv.org/abs/2603.09995",
-      "title": "Context Over Compute Human-in-the-Loop Outperforms Iterative Chain-of-Thought Prompting in Interview Answer Quality",
-      "summary": "arXiv:2603.09995v1 Announce Type: cross \nAbstract: Behavioral interview evaluation using large language models presents unique challenges that require structured assessment, realistic interviewer behavior simulation, and pedagogical value for candidate training. We investigate chain of thought prompting for interview answer evaluation and improvement through two controlled experiments with 50 behavioral interview question and answer pairs. Our contributions are threefold. First, we provide a quantitative comparison between human in the loop and automated chain of thought improvement. Using a within subject paired design with n equals 50, both approaches show positive rating improvements. The human in the loop approach provides significant training benefits. Confidence improves from 3.16 to 4.16 (p less than 0.001) and authenticity improves from 2.94 to 4.53 (p less than 0.001, Cohen's d is 3.21). The human in the loop method also requires five times fewer iterations (1.0 versus 5.0, p less than 0.001) and achieves full personal detail integration. Second, we analyze convergence behavior. Both methods converge rapidly with mean iterations below one, with the human in the loop approach achieving a 100 percent success rate compared to 84 percent for automated approaches among initially weak answers (Cohen's h is 0.82, large effect). Additional iterations provide diminishing returns, indicating that the primary limitation is context availability rather than computational resources. Third, we propose an adversarial challenging mechanism based on a negativity bias model, named bar raiser, to simulate realistic interviewer behavior, although quantitative validation remains future work. Our findings demonstrate that while chain of thought prompting provides a useful foundation for interview evaluation, domain specific enhancements and context aware approach selection are essential for realistic and pedagogically valuable results.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Kewen Zhu, Zixi Liu, Yanjing Li",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116692",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0a7277eea76d1e79",
       "url": "https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench",
       "title": "How NVIDIA AI-Q Reached \\#1 on DeepResearch Bench I and II",
@@ -12877,25 +12875,6 @@
       "author": "IBM Technology",
       "published_at": "2026-02-27T11:00:30",
       "fetched_at": "2026-03-11T20:28:31.610226",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2cf5ca1c2a25b6c1",
-      "url": "https://www.youtube.com/watch?v=RKeW4Xd9V9E",
-      "title": "2026 Threat Intelligence Index: Ransomware, AI, & Emerging TTP Risks",
-      "summary": "Ready to become a certified SOC Analyst - QRadar SIEM V7.5 Plus CompTIA Cybersecurity Analyst? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpsrS\n\nLearn more about the 2026 X-Force Threat Intelligence Index here \u2192 https://ibm.biz/BdpsiA\n\n56% of systems are exposed! \ud83d\udea8 Jeff Crume unpacks exclusive findings from the 2026 X-Force Threat Intelligence Index, revealing how ransomware, AI-driven exploits, and advanced TTPs are evolving. Discover actionable strategies to secure against supply chain attacks, RCE, and advanced cyber threats!\n\nRead the Cost of a Data Breach report  \u2192 https://ibm.biz/BdpsiJ\n\n#cybersecurity #cyberattack #ransomware",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-02-26T12:00:51",
-      "fetched_at": "2026-03-11T20:28:31.610236",
       "score": null,
       "score_reason": "",
       "tier": "",
