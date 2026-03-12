@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-12T12:29:52.080967",
+  "exported_at": "2026-03-12T14:34:42.475234",
   "period_hours": 168,
-  "total": 3440,
+  "total": 3443,
   "all_tags": [
     "ai",
     "anthropic",
@@ -199,6 +199,49 @@
       "is_duplicate_of": null
     },
     {
+      "id": "dc6038483727be59",
+      "url": "https://research.google/blog/protecting-cities-with-ai-driven-flash-flood-forecasting/",
+      "title": "Protecting cities with AI-driven flash flood forecasting",
+      "summary": "Climate & Sustainability",
+      "content": "",
+      "source_name": "Google Research",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "google",
+        "company"
+      ],
+      "author": "",
+      "published_at": "2026-03-12T13:03:15",
+      "fetched_at": "2026-03-12T14:34:34.451346",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "12f5fac9dd8b582b",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gdc-2026/",
+      "title": "GeForce NOW Raises the Game at the Game Developers Conference",
+      "summary": "GeForce NOW is bringing the game to the Game Developers Conference (GDC), running this week in San Francisco. While developers build the future of gaming, GeForce NOW is delivering it to gamers. The latest updates bring smoother performance, easier game discovery and a fresh lineup of blockbuster titles to the cloud. Game discoverability gets a [&#8230;]",
+      "content": "<div id=\"bsf_rt_marker\"></div><p><a href=\"https://www.nvidia.com/en-us/geforce-now/\" target=\"_blank\"><span style=\"font-weight: 400;\">GeForce NOW</span></a><span style=\"font-weight: 400;\"> is bringing the game to the Game Developers Conference (GDC), running this week in San Francisco. While developers build the future of gaming, GeForce NOW is delivering it to gamers. The latest updates bring smoother performance, easier game discovery and a fresh lineup of blockbuster titles to the cloud.</span></p>\n<p><span style=\"font-weight: 400;\">Game discoverability gets a boost with new in\u2011app labels for connected accounts for Xbox Game Pass and Ubisoft+. It\u2019ll be easier than ever to see titles already available through linked subscriptions, so members can seamlessly jump into games they already own.</span></p>\n<p><span style=\"font-weight: 400;\">Virtual reality gets a smooth upgrade \u2014 supported devices now stream at 90 frames per second (fps), up from 60 fps, delivering more responsive and immersive virtual reality (VR) experiences.</span></p>\n<p><span style=\"font-weight: 400;\">Account linking is also leveling up. Following Gaijin single sign-on announced at CES in January, GOG account linking and game library syncing are coming soon.</span></p>\n<p><span style=\"font-weight: 400;\">The GeForce NOW library continues to grow with new releases joining the cloud at launch: </span><i><span style=\"font-weight: 400;\">CONTROL Resonant</span></i><span style=\"font-weight: 400;\"> and </span><i><span style=\"font-weight: 400;\">Samson: A Tyndalston Story</span></i><span style=\"font-weight: 400;\">. Plus, select Xbox titles will join the Install-to-Play library.</span></p>\n<p><span style=\"font-weight: 400;\">In addition, there\u2019s a lineup of </span><span style=\"font-weight: 400;\">five </span><span style=\"font-weight: 400;\">new games to catch this week, including Capcom\u2019s </span><i><span style=\"font-weight: 400;\">Monster Hunter Stories 3: Twisted Reflection</span></i><span style=\"font-weight: 400;\">, on top of the latest update for </span><i><span style=\"font-weight: 400;\">Fortnite.</span></i></p>\n<h2><b>Gaming Is Buzzing</b></h2>\n<p><span style=\"font-weight: 400;\">GeForce NOW is rolling into GDC with an easier way to keep track of titles, as well as performance upgrades and a growing lineup of major titles ready to stream at launch.</span></p>\n<p><span style=\"font-weight: 400;\">Keeping track of which game lives on which service can be tricky. In\u2011App labels \u2014 coming soon to GeForce NOW for connected subscriptions \u2014 will help make it simple for members to know exactly what games they can play on GeForce NOW. Once a member connects their Xbox Game Pass Account or Ubisoft+ account, clear labels will appear directly on the game art inside the GeForce NOW app \u2014 eliminating guesswork and making it easy to see exactly what\u2019s available to play from their game subscription services.</span></p>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_90805\" style=\"width: 1200px;\"><img alt=\"GOG and Gaijin SSO coming to GeForce NOW\" class=\"size-large wp-image-90805\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/GeForce_NOW_Gaijin_GOG-1680x945.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-90805\"><em>Set it and forget it.</em></figcaption></figure>\n<p><span style=\"font-weight: 400;\">Account linking is expanding too. On top of Gaijin single sign-on, GeForce NOW is adding GOG account linking and game library syncing in the coming months.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0</span></p>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_90808\" style=\"width: 1200px;\"><img alt=\"90fps VR gaming on GeForce NOW\" class=\"wp-image-90808 size-large\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/GeForce_NOW_VR_90FPS-1680x945.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-90808\"><em>Smooth moves.</em></figcaption></figure>\n<p><span style=\"font-weight: 400;\">Virtual reality is also getting an upgrade. Starting Thursday, March 19, VR devices that GeForce NOW supports, including Apple Vision Pro, Meta Quest and Pico devices, will stream at 90 fps for Ultimate members, an increase from 60 fps. The higher frame rate enhances smoothness, responsiveness and realism across every session \u2014 whether gamers are chasing enemies through neon-lit streets or exploring far\u2011flung alien worlds.</span></p>\n<p><span style=\"font-weight: 400;\">GeForce NOW\u2019s Install\u2011to\u2011Play library is also expanding with select Xbox titles, including </span><i><span style=\"font-weight: 400;\">Brutal Legend</span></i><span style=\"font-weight: 400;\"> from Double Fine Productions and </span><i><span style=\"font-weight: 400;\">Contrast </span></i><span style=\"font-weight: 400;\">from Compulsion Games. These additions bring more flexibility for members to download and install their owned games alongside streaming favorites.</span></p>\n<p><span style=\"font-weight: 400;\">That\u2019s just the start. Highly anticipated games are headed to the cloud at launch:</span></p>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_90811\" style=\"width: 1200px;\"><img alt=\"CONTROL Resonant coming to GeForce NOW\" class=\"size-large wp-image-90811\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/gfn-gdc-aaa-control-resonant-kv-3840x2160-1-1680x945.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-90811\"><em>Bending reality.</em></figcaption></figure>\n<p><i><span style=\"font-weight: 400;\">CONTROL Resonant </span></i><span style=\"font-weight: 400;\">\u2014 Remedy\u2019s upcoming action\u2011adventure role-playing game (RPG) that blends supernatural powers with a warped Manhattan facing a reality-bending cosmic threat.</span></p>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_90814\" style=\"width: 1200px;\"><img alt=\"Samson coming to GeForce NOW\" class=\"size-large wp-image-90814\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/gfn-gdc-aaa-samson-kv-3840x2160-1-1680x945.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-90814\"><em>Unravel a family story steeped in myths.</em></figcaption></figure>\n<p><i><span style=\"font-weight: 400;\">Samson: A Tyndalston Story</span></i><span style=\"font-weight: 400;\"> \u2014 the game from Liquid Swords is a gritty action brawler, set in the city of Tyndalston, launching on PC.</span></p>\n<h2><b>Free to Save the World</b></h2>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_90817\" style=\"width: 1200px;\"><img alt=\"Fortnite save the world on GeForce NOW\" class=\"size-large wp-image-90817\" height=\"600\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/gfn-spotlight-social-fortnite-stw-tw-li-2048x1024-1-1680x840.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-90817\"><em>Chaos in the cloud.</em></figcaption></figure>\n<p><i><span style=\"font-weight: 400;\">Fortnite</span></i><span style=\"font-weight: 400;\">\u2019s original adventure is back in the spotlight \u2014 and soon, it\u2019ll free to play. </span><i><span style=\"font-weight: 400;\">Fortnite </span></i><span style=\"font-weight: 400;\">first launched in 2017 as a story-driven co\u2011op experience, and on Thursday, April 16, the \u201cSave the World\u201d update will officially be free to play for all players. Pre-registration begins on Thursday, March 12.</span></p>\n<p><span style=\"font-weight: 400;\">Join forces against hordes of husks, solo or with the squad, in a player vs. environment action-packed story, complete with gathering, crafting and collecting. Pick a favored playstyle with four distinct classes to choose from, over 150 heroes and weapons to upgrade, and loadout customization options to hone builds even further. With hundreds of updates since its original launch and over 100 hours of content, squads can build, grind gear and engineer elaborate homebase defenses to keep the Storm King at bay. \u201cSave the World\u201d </span><a href=\"https://nvidia.custhelp.com/app/answers/detail/a_id/5235/\" target=\"_blank\"><span style=\"font-weight: 400;\">isn\u2019t available on mobile devices</span></a><span style=\"font-weight: 400;\">, including tablets.</span></p>\n<p><span style=\"font-weight: 400;\">On GeForce NOW, </span><i><span style=\"font-weight: 400;\">Fortnite </span></i><span style=\"font-weight: 400;\">\u201cSave the World\u201d streams straight from the cloud \u2014 no waiting around for updates or patches. Low\u2011latency streaming keeps building, shooting and trap placement feeling snappy across supported devices. Stay in the action with GeForce NOW.</span></p>\n<h2><b>Gear Up for Glory</b></h2>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_90820\" style=\"width: 1200px;\"><img alt=\"Battlefield 6 reward on GeForce NOW\" class=\"size-large wp-image-90820\" height=\"600\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/GFN_Thursday-Battlefield_6_reward-1680x840.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-90820\"><em>The cloud makes it easy to suit up in style.</em></figcaption></figure>\n<p><span style=\"font-weight: 400;\">From chaotic infantry clashes to roaring jet dogfights, every match is an unpredictable explosion of strategy and mayhem in EA\u2019s </span><i><span style=\"font-weight: 400;\">Battlefield 6</span></i><span style=\"font-weight: 400;\">.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">This week, GeForce NOW Ultimate members can drop into the action with serious style \u2014 a new reward, the Advancing Gloom Soldier Skin, gives soldiers a sleek, battle-hardened look fit for the frontlines. Members can claim it in their GeForce NOW account portals, redeem it at </span><a href=\"https://ea.com/redeem\" target=\"_blank\"><span style=\"font-weight: 400;\">EA.com/redeem</span></a><span style=\"font-weight: 400;\">, then show up ready in true Ultimate fashion. It\u2019s available through Sunday, </span><span style=\"font-weight: 400;\">April 12, or while supplies last.</span></p>\n<p><span style=\"font-weight: 400;\">Being a GeForce NOW member pays off. Whether streaming on the go or maxing out graphics in the cloud, members get exclusive rewards to keep and flaunt.</span></p>\n<h2><b>Start the Games</b></h2>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_90823\" style=\"width: 1200px;\"><img alt=\"MH3 Twister Reflection on GeForce NOW\" class=\"size-large wp-image-90823\" height=\"600\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/GFN_Thursday-Monster_Hunter_3_Twisted_Reflection-1680x840.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-90823\"><em>Twin monsters, one cloud.</em></figcaption></figure>\n<p><span style=\"font-weight: 400;\">Twin Rathalos, born in a twist of fate, set the stage for the third entry in the </span><i><span style=\"font-weight: 400;\">Monster Hunter Stories</span></i><span style=\"font-weight: 400;\"> RPG series, launching on GeForce NOW. </span><i><span style=\"font-weight: 400;\">Monster Hunter Stories 3: Twisted Reflection</span></i><span style=\"font-weight: 400;\"> is an RPG series set in the </span><i><span style=\"font-weight: 400;\">Monster Hunter </span></i><span style=\"font-weight: 400;\">world, where players can become a Rider, and raise and bond with their favorite monsters. Play it instantly on GeForce\u202fNOW and take the adventure anywhere, on any device.</span></p>\n<p><span style=\"font-weight: 400;\">In addition, members can look for the following:</span></p>\n<ul>\n<li><i><span style=\"font-weight: 400;\">Warcraft I: Remastered </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.ubisoft.com/ubisoftplus?ucid=AFL-272089&amp;addinfo=&amp;bi=\" target=\"_blank\"><span style=\"font-weight: 400;\">Ubisoft</span></a><span style=\"font-weight: 400;\">, March 11)</span></li>\n<li><i><span style=\"font-weight: 400;\">Warcraft II: Remastered </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.ubisoft.com/ubisoftplus?ucid=AFL-272089&amp;addinfo=&amp;bi=\" target=\"_blank\"><span style=\"font-weight: 400;\">Ubisoft</span></a><span style=\"font-weight: 400;\">, March 11)</span></li>\n<li><i><span style=\"font-weight: 400;\">1348 Ex Voto </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/1895900?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, March 12, GeForce RTX 5080-ready)</span></li>\n<li><i><span style=\"font-weight: 400;\">John Carpenter\u2019s Toxic Commando</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/2157830?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, March 12, GeForce RTX 5080-ready)</span></li>\n<li><i><span style=\"font-weight: 400;\">Monster Hunter Stories 3: Twisted Reflection </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/2852190?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, March 12, GeForce RTX 5080-ready)</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">This week\u2019s additional GeForce RTX 5080-ready game, on top of the addition of </span><i><span style=\"font-weight: 400;\">John Carpenter\u2019s Toxic Commando, 1348 Ex Voto </span></i><span style=\"font-weight: 400;\">and </span><i><span style=\"font-weight: 400;\">Monster Hunter Stories 3: Twisted Reflection:</span></i><i></i></p>\n<ul>\n<li><i><span style=\"font-weight: 400;\">Greedfall: The Dying World 1.0</span></i><span style=\"font-weight: 400;\"> (Steam, GeForce RTX 5080-ready)</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">What are you planning to play this weekend? Let us know on </span><a href=\"https://www.twitter.com/nvidiagfn\" target=\"_blank\"><span style=\"font-weight: 400;\">X</span></a><span style=\"font-weight: 400;\"> or in the comments below.</span></p>",
+      "source_name": "NVIDIA Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "nvidia",
+        "company"
+      ],
+      "author": "GeForce NOW Community",
+      "published_at": "2026-03-12T13:00:53",
+      "fetched_at": "2026-03-12T14:34:37.145767",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
       "id": "46eae3804fe5d148",
       "url": "https://www.youtube.com/watch?v=wh489_XT5TI",
       "title": "What Are Hierarchical AI Agents? Solving Context & Task Challenges",
@@ -212,6 +255,28 @@
       "author": "IBM Technology",
       "published_at": "2026-03-12T11:01:44",
       "fetched_at": "2026-03-12T12:29:41.320749",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "051065bd36119078",
+      "url": "https://research.google/blog/introducing-groundsource-turning-news-reports-into-data-with-gemini/",
+      "title": "Introducing Groundsource: Turning news reports into data with Gemini",
+      "summary": "Climate & Sustainability",
+      "content": "",
+      "source_name": "Google Research",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "google",
+        "company"
+      ],
+      "author": "",
+      "published_at": "2026-03-12T10:42:00",
+      "fetched_at": "2026-03-12T14:34:34.451367",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10758,69 +10823,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "009ea15b35c17de2",
-      "url": "https://arxiv.org/abs/2603.09998",
-      "title": "Automated evaluation of LLMs for effective machine translation of Mandarin Chinese to English",
-      "summary": "arXiv:2603.09998v1 Announce Type: cross \nAbstract: Although Large Language Models (LLMs) have exceptional performance in machine translation, only a limited systematic assessment of translation quality has been done. The challenge lies in automated frameworks, as human-expert-based evaluations can be time-consuming, given the fast-evolving LLMs and the need for a diverse set of texts to ensure fair assessments of translation quality. In this paper, we utilise an automated machine learning framework featuring semantic and sentiment analysis to assess Mandarin Chinese to English translation using Google Translate and LLMs, including GPT-4, GPT-4o, and DeepSeek. We compare original and translated texts in various classes of high-profile Chinese texts, which include novel texts that span modern and classical literature, as well as news articles. As the main evaluation measures, we utilise novel similarity metrics to compare the quality of translations produced by LLMs and further evaluate them by an expert human translator. Our results indicate that the LLMs perform well in news media translation, but show divergence in their performance when applied to literary texts. Although GPT-4o and DeepSeek demonstrated better semantic conservation in complex situations, DeepSeek demonstrated better performance in preserving cultural subtleties and grammatical rendering. Nevertheless, the subtle challenges in translation remain: maintaining cultural details, classical references and figurative expressions remain an open problem for all the models.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Yue Zhang, Rodney Beard, John Hawkins, Rohitash Chandra",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116715",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d1c029db459fbba9",
-      "url": "https://arxiv.org/abs/2603.09997",
-      "title": "Empathy Is Not What Changed: Clinical Assessment of Psychological Safety Across GPT Model Generations",
-      "summary": "arXiv:2603.09997v1 Announce Type: cross \nAbstract: When OpenAI deprecated GPT-4o in early 2026, thousands of users protested under #keep4o, claiming newer models had \"lost their empathy.\" No published study has tested this claim. We conducted the first clinical measurement, evaluating three OpenAI model generations (GPT-4o, o4-mini, GPT-5-mini) across 14 emotionally challenging conversational scenarios in mental health and AI companion domains, producing 2,100 scored AI responses assessed on six psychological safety dimensions using clinically-grounded rubrics.\n  Empathy scores are statistically indistinguishable across all three models (Kruskal-Wallis H=4.33, p=0.115). What changed is the safety posture: crisis detection improved monotonically from GPT-4o to GPT-5-mini (H=13.88, p=0.001), while advice safety declined (H=16.63, p<0.001). Per-turn trajectory analysis -- a novel methodological contribution -- reveals these shifts are sharpest during mid-conversation crisis moments invisible to aggregate scoring. In a self-harm scenario involving a minor, GPT-4o scored 3.6/10 on crisis detection during early disclosure turns; GPT-5-mini never dropped below 7.8.\n  What users perceived as \"lost empathy\" was a shift from a cautious model that missed crises to an alert model that sometimes says too much -- a trade-off with real consequences for vulnerable users, currently invisible to both the people who feel it and the developers who create it.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Michael Keeman, Anastasia Keeman",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116707",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e9f226071db49eb6",
-      "url": "https://arxiv.org/abs/2603.09996",
-      "title": "There Are No Silly Questions: Evaluation of Offline LLM Capabilities from a Turkish Perspective",
-      "summary": "arXiv:2603.09996v1 Announce Type: cross \nAbstract: The integration of large language models (LLMs) into educational processes introduces significant constraints regarding data privacy and reliability, particularly in pedagogically vulnerable contexts such as Turkish heritage language education. This study aims to systematically evaluate the robustness and pedagogical safety of locally deployable offline LLMs within the context of Turkish heritage language education. To this end, a Turkish Anomaly Suite (TAS) consisting of 10 original edge-case scenarios was developed to assess the models' capacities for epistemic resistance, logical consistency, and pedagogical safety. Experiments conducted on 14 different models ranging from 270M to 32B parameters reveal that anomaly resistance is not solely dependent on model scale and that sycophancy bias can pose pedagogical risks even in large-scale models. The findings indicate that reasoning-oriented models in the 8B--14B parameter range represent the most balanced segment in terms of cost-safety trade-off for language learners.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Edibe Yilmaz, Kahraman Kostas",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116700",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0a7277eea76d1e79",
       "url": "https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench",
       "title": "How NVIDIA AI-Q Reached \\#1 on DeepResearch Bench I and II",
@@ -11828,71 +11830,6 @@
       "author": "",
       "published_at": "2026-03-06T00:00:00",
       "fetched_at": "2026-03-11T10:29:12.071775",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e7e67a5dbf6655de",
-      "url": "https://developer.nvidia.com/blog/tuning-flash-attention-for-peak-performance-in-nvidia-cuda-tile/",
-      "title": "Tuning Flash Attention for Peak Performance in NVIDIA CUDA Tile",
-      "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/CUDA-Tile-Flash-Attention-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"CUDA-Tile-Flash-Attention\" width=\"768\" />In this post, we dive into one of the most critical workloads in modern AI: Flash Attention, where you\u2019ll learn: How to implement Flash Attention using NVIDIA...",
-      "content": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/CUDA-Tile-Flash-Attention-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"CUDA-Tile-Flash-Attention\" width=\"768\" />In this post, we dive into one of the most critical workloads in modern AI: Flash Attention, where you\u2019ll learn: How to implement Flash Attention using NVIDIA...<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/CUDA-Tile-Flash-Attention-768x431.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"CUDA-Tile-Flash-Attention\" width=\"768\" /><p>In this post, we dive into one of the most critical workloads in modern AI: Flash Attention, where you\u2019ll learn: Environment requirements: See the quickstart doc for more information on installing cuTile Python. The attention mechanism is the computational heart of transformer models. Given a sequence of tokens, attention enables each token to \u201clook at\u201d every other\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/tuning-flash-attention-for-peak-performance-in-nvidia-cuda-tile/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Alessandro Morari",
-      "published_at": "2026-03-05T17:00:00",
-      "fetched_at": "2026-03-11T10:29:15.011648",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2b04a3f09d140fc4",
-      "url": "https://developer.nvidia.com/blog/controlling-floating-point-determinism-in-nvidia-cccl/",
-      "title": "Controlling Floating-Point Determinism in NVIDIA CCCL",
-      "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Floating-Point-CUB-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Floating-Point-CUB\" width=\"768\" />A computation is considered deterministic if multiple runs with the same input data produce the same bitwise result. While this may seem like a simple property...",
-      "content": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Floating-Point-CUB-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Floating-Point-CUB\" width=\"768\" />A computation is considered deterministic if multiple runs with the same input data produce the same bitwise result. While this may seem like a simple property...<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/Floating-Point-CUB-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Floating-Point-CUB\" width=\"768\" /><p></p>\n<p><a href=\"https://developer.nvidia.com/blog/controlling-floating-point-determinism-in-nvidia-cccl/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Nader Al Awar",
-      "published_at": "2026-03-05T17:00:00",
-      "fetched_at": "2026-03-11T10:29:15.011639",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "058383c4e5386880",
-      "url": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
-      "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine\u2011Tuning, and On\u2011Device Optimizations",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-03-05T14:16:49",
-      "fetched_at": "2026-03-11T10:29:16.186855",
       "score": null,
       "score_reason": "",
       "tier": "",
