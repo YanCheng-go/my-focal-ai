@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-12T20:28:34.590760",
+  "exported_at": "2026-03-12T22:28:11.140576",
   "period_hours": 168,
-  "total": 3450,
+  "total": 3452,
   "all_tags": [
     "ai",
     "anthropic",
@@ -10868,6 +10868,28 @@
       "is_duplicate_of": null
     },
     {
+      "id": "c511d869c6301777",
+      "url": "https://machinelearning.apple.com/research/lito",
+      "title": "LiTo: Surface Light Field Tokenization",
+      "summary": "We propose a 3D latent representation that jointly models object geometry and view-dependent appearance. Most prior works focus on either reconstructing 3D geometry or predicting view-independent diffuse appearance, and thus struggle to capture realistic view-dependent effects. Our approach leverages that RGB-depth images provide samples of a surface light field. By encoding random subsamples of this surface light field into a compact set of latent vectors, our model learns to represent both geometry and appearance within a unified 3D latent space. This representation reproduces view-dependent\u2026",
+      "content": "",
+      "source_name": "Apple Machine Learning",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "apple",
+        "company"
+      ],
+      "author": "",
+      "published_at": "2026-03-12T00:00:00",
+      "fetched_at": "2026-03-12T22:27:16.457992",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
       "id": "5e4d08c13a68e793",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.73",
       "title": "v2.1.73",
@@ -11700,27 +11722,6 @@
       "author": "",
       "published_at": "2026-03-06T10:00:00",
       "fetched_at": "2026-03-11T10:29:10.860552",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5becf449a527f5c9",
-      "url": "https://openai.com/index/codex-security-now-in-research-preview",
-      "title": "Codex Security: now in research preview",
-      "summary": "Codex Security is an AI application security agent that analyzes project context to detect, validate, and patch complex vulnerabilities with higher confidence and less noise.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-06T10:00:00",
-      "fetched_at": "2026-03-11T10:29:10.860538",
       "score": null,
       "score_reason": "",
       "tier": "",
