@@ -2,5 +2,14 @@
   "outputDirectory": "static",
   "buildCommand": "",
   "framework": null,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "functions": {
+    "api/*.py": {
+      "runtime": "@vercel/python@4",
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" }
+  ]
 }

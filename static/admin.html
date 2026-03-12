@@ -99,6 +99,7 @@
                 <h2 class="text-xl font-bold text-gray-900 dark:text-white">Sources</h2>
                 <div class="flex gap-2 items-center">
                     <span id="user-email" class="text-xs text-gray-400 dark:text-gray-500"></span>
+                    <button id="fetch-all-btn" class="px-3 py-1.5 rounded-md bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700 text-sm cursor-pointer hover:bg-green-200 dark:hover:bg-green-800/50" onclick="fetchAll(this)">Fetch All</button>
                     <button class="px-3 py-1.5 rounded-md bg-gray-100 dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-neutral-700 text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-700" onclick="handleLogout()">Logout</button>
                     <button class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50" onclick="openAddModal()">Add Source</button>
                 </div>
@@ -294,11 +295,19 @@
         document.getElementById('auth-error').classList.add('hidden');
         document.getElementById('auth-success').classList.add('hidden');
 
-        var { error } = await sb.auth.signUp({ email: email, password: password });
+        var { data, error } = await sb.auth.signUp({ email: email, password: password });
         if (error) {
             var errEl = document.getElementById('auth-error');
             errEl.textContent = error.message;
             errEl.classList.remove('hidden');
+        } else if (data.user && data.user.identities && data.user.identities.length === 0) {
+            // User already exists — Supabase returns empty identities instead of error
+            var errEl = document.getElementById('auth-error');
+            errEl.textContent = 'Account already exists. Please sign in instead.';
+            errEl.classList.remove('hidden');
+        } else if (data.session) {
+            // Email confirmation disabled — signed in immediately
+            showLoggedIn(data.session.user);
         } else {
             var successEl = document.getElementById('auth-success');
             successEl.textContent = 'Check your email to confirm your account.';
@@ -337,6 +346,7 @@
                 '<td class="py-3 px-3 border-b border-gray-100 dark:border-neutral-800">' + status + '</td>' +
                 '<td class="py-3 px-3 border-b border-gray-100 dark:border-neutral-800">' +
                     '<div class="flex gap-1 flex-wrap">' +
+                        '<button class="px-2 py-1 rounded text-xs border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400 cursor-pointer hover:bg-green-50 dark:hover:bg-green-950" data-action="fetch" data-idx="' + sources.indexOf(s) + '">Fetch</button>' +
                         '<button class="px-2 py-1 rounded text-xs border border-gray-200 dark:border-neutral-700 text-gray-600 dark:text-gray-400 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800" data-action="edit" data-id="' + s.id + '">Edit</button>' +
                         '<button class="px-2 py-1 rounded text-xs border border-gray-200 dark:border-neutral-700 text-gray-600 dark:text-gray-400 cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800" data-action="toggle" data-id="' + s.id + '" data-disabled="' + !!s.disabled + '">' + (s.disabled ? 'Enable' : 'Disable') + '</button>' +
                         '<button class="px-2 py-1 rounded text-xs border border-red-200 dark:border-red-900 text-red-600 dark:text-red-400 cursor-pointer hover:bg-red-50 dark:hover:bg-red-950" data-action="delete" data-id="' + s.id + '" data-name="' + esc(s.name) + '">Delete</button>' +
@@ -354,7 +364,10 @@
             if (!btn) return;
             var action = btn.dataset.action;
             var id = btn.dataset.id;
-            if (action === 'edit') {
+            if (action === 'fetch') {
+                var idx = parseInt(btn.dataset.idx, 10);
+                if (sources[idx]) fetchSource(sources[idx], btn);
+            } else if (action === 'edit') {
                 var source = sources.find(function(s) { return s.id === id; });
                 if (source) openEditModal(source);
             } else if (action === 'toggle') {
@@ -475,6 +488,78 @@
         if (error) { showToast(error.message, 'error'); return; }
         showToast('Source deleted', 'success');
         loadSources();
+    }
+
+    // --- Fetch ---
+    async function fetchSource(source, btn) {
+        if (btn) { btn.disabled = true; btn.textContent = 'Fetching...'; }
+        try {
+            var { data: { session } } = await sb.auth.getSession();
+            if (!session) { showToast('Not logged in', 'error'); return; }
+            var resp = await fetch('/api/fetch-source', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + session.access_token,
+                },
+                body: JSON.stringify({
+                    source_type: source.source_type,
+                    name: source.name,
+                    config: source.config || {},
+                    tags: source.tags || [],
+                }),
+            });
+            var result = await resp.json();
+            if (!resp.ok) throw new Error(result.error || 'Fetch failed');
+            showToast(source.name + ': ' + result.items_fetched + ' items, ' + result.new_items + ' new', 'success');
+        } catch (e) {
+            showToast(source.name + ': ' + e.message, 'error');
+        } finally {
+            if (btn) { btn.disabled = false; btn.textContent = 'Fetch'; }
+        }
+    }
+
+    async function fetchAll(btn) {
+        var tbody = document.getElementById('sources-body');
+        var sources = tbody._sources || [];
+        var enabled = sources.filter(function(s) { return !s.disabled; });
+        if (!enabled.length) { showToast('No enabled sources to fetch', 'error'); return; }
+
+        btn.disabled = true;
+        var total = enabled.length;
+        var done = 0;
+        var errors = 0;
+        btn.textContent = '0/' + total;
+
+        for (var i = 0; i < enabled.length; i++) {
+            try {
+                var { data: { session } } = await sb.auth.getSession();
+                if (!session) { showToast('Not logged in', 'error'); break; }
+                var resp = await fetch('/api/fetch-source', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer ' + session.access_token,
+                    },
+                    body: JSON.stringify({
+                        source_type: enabled[i].source_type,
+                        name: enabled[i].name,
+                        config: enabled[i].config || {},
+                        tags: enabled[i].tags || [],
+                    }),
+                });
+                if (!resp.ok) { var r = await resp.json(); throw new Error(r.error || 'Failed'); }
+            } catch (e) {
+                errors++;
+            }
+            done++;
+            btn.textContent = done + '/' + total;
+        }
+
+        btn.disabled = false;
+        btn.textContent = 'Fetch All';
+        if (errors) showToast('Fetched ' + (done - errors) + '/' + total + ' (' + errors + ' errors)', 'error');
+        else showToast('All ' + total + ' sources fetched', 'success');
     }
 
     // --- Badges ---
