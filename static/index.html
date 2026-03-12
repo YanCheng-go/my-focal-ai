@@ -12,6 +12,7 @@
     })();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style type="text/tailwindcss">
     @custom-variant dark (&:where(.dark, .dark *));
     </style>
@@ -108,10 +109,46 @@
         try {
             const [dataResp, configResp] = await Promise.all([fetch('data.json'), fetch('config.json').catch(() => null)]);
             const data = await dataResp.json();
+            let config = {};
             if (configResp && configResp.ok) {
-                const config = await configResp.json();
+                config = await configResp.json();
                 showScores = !!config.show_scores;
             }
+
+            // If user is logged in to Supabase, load their items instead
+            if (config.supabase_url && config.supabase_anon_key) {
+                try {
+                    const sb = supabase.createClient(config.supabase_url, config.supabase_anon_key);
+                    const { data: { session } } = await sb.auth.getSession();
+                    if (session) {
+                        const { data: rows, error } = await sb.from('items')
+                            .select('*')
+                            .order('published_at', { ascending: false, nullsFirst: false })
+                            .limit(500);
+                        if (!error && rows && rows.length > 0) {
+                            allItems = rows.map(r => ({
+                                id: r.id, url: r.url, title: r.title,
+                                summary: r.summary, content: r.content,
+                                source_name: r.source_name, source_type: r.source_type,
+                                tags: r.tags || [], author: r.author,
+                                published_at: r.published_at, fetched_at: r.fetched_at,
+                                score: r.score, score_reason: r.score_reason,
+                                tier: r.tier, is_duplicate_of: r.is_duplicate_of,
+                            }));
+                            const { data: tagRows } = await sb.rpc('get_all_tags', { p_user_id: session.user.id });
+                            allTags = (tagRows || []).map(r => r.tag);
+                            document.getElementById('updated').textContent = 'Showing your personal feed';
+                            computeBadges(allItems);
+                            buildFilters();
+                            render();
+                            return;
+                        }
+                    }
+                } catch (e) {
+                    console.warn('Supabase feed load failed, falling back to data.json:', e);
+                }
+            }
+
             allItems = data.items || [];
             allTags = data.all_tags || [];
             document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
