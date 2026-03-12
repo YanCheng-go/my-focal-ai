@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-11T23:55:41.178232",
+  "exported_at": "2026-03-12T00:45:42.066023",
   "period_hours": 168,
-  "total": 2862,
+  "total": 2863,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,29 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5f73448a2c37eef3",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.74",
+      "title": "v2.1.74",
+      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Added actionable suggestions to <code>/context</code> command \u2014 identifies context-heavy tools, memory bloat, and capacity warnings with specific optimization tips</li>\n<li>Added <code>autoMemoryDirectory</code> setting to configure a custom directory for auto-memory storage</li>\n<li>Fixed memory leak where streaming API response buffers were not released when the generator was terminated early, causing unbounded RSS growth on the Node.js/npm code path</li>\n<li>Fixed managed policy <code>ask</code> rules being bypassed by user <code>allow</code> rules or skill <code>allowed-tools</code></li>\n<li>Fixed full model IDs (e.g., <code>claude-opus-4-5</code>) being silently ignored in agent frontmatter <code>model:</code> field and <code>--agents</code> JSON config \u2014 agents now accept the same model values as <code>--model</code></li>\n<li>Fixed MCP OAuth authentication hanging when the callback port is already in use</li>\n<li>Fixed MCP OAuth refresh never prompting for re-auth after the refresh token expires, for OAuth servers that return errors with HTTP 200 (e.g. Slack)</li>\n<li>Fixed voice mode silently failing on the macOS native binary for users whose terminal had never been granted microphone permission \u2014 the binary now includes the <code>audio-input</code> entitlement so macOS prompts correctly</li>\n<li>Fixed <code>SessionEnd</code> hooks being killed after 1.5 s on exit regardless of <code>hook.timeout</code> \u2014 now configurable via <code>CLAUDE_CODE_SESSIONEND_HOOKS_TIMEOUT_MS</code></li>\n<li>Fixed <code>/plugin install</code> failing inside the REPL for marketplace plugins with local sources</li>\n<li>Fixed marketplace update not syncing git submodules \u2014 plugin sources in submodules no longer break after update</li>\n<li>Fixed unknown slash commands with arguments silently dropping input \u2014 now shows your input as a warning</li>\n<li>Fixed Hebrew, Arabic, and other RTL text not rendering correctly in Windows Terminal, conhost, and VS Code integrated terminal</li>\n<li>Fixed LSP servers not working on Windows due to malformed file URIs</li>\n<li>Changed <code>--plugin-dir</code> so local dev copies now override installed marketplace plugins with the same name (unless that plugin is force-enabled by managed settings)</li>\n<li>[VSCode] Fixed delete button not working for Untitled sessions</li>\n<li>[VSCode] Improved scroll wheel responsiveness in the integrated terminal with terminal-aware acceleration</li>\n</ul>",
+      "content": "<h2>What's changed</h2>\n<ul>\n<li>Added actionable suggestions to <code>/context</code> command \u2014 identifies context-heavy tools, memory bloat, and capacity warnings with specific optimization tips</li>\n<li>Added <code>autoMemoryDirectory</code> setting to configure a custom directory for auto-memory storage</li>\n<li>Fixed memory leak where streaming API response buffers were not released when the generator was terminated early, causing unbounded RSS growth on the Node.js/npm code path</li>\n<li>Fixed managed policy <code>ask</code> rules being bypassed by user <code>allow</code> rules or skill <code>allowed-tools</code></li>\n<li>Fixed full model IDs (e.g., <code>claude-opus-4-5</code>) being silently ignored in agent frontmatter <code>model:</code> field and <code>--agents</code> JSON config \u2014 agents now accept the same model values as <code>--model</code></li>\n<li>Fixed MCP OAuth authentication hanging when the callback port is already in use</li>\n<li>Fixed MCP OAuth refresh never prompting for re-auth after the refresh token expires, for OAuth servers that return errors with HTTP 200 (e.g. Slack)</li>\n<li>Fixed voice mode silently failing on the macOS native binary for users whose terminal had never been granted microphone permission \u2014 the binary now includes the <code>audio-input</code> entitlement so macOS prompts correctly</li>\n<li>Fixed <code>SessionEnd</code> hooks being killed after 1.5 s on exit regardless of <code>hook.timeout</code> \u2014 now configurable via <code>CLAUDE_CODE_SESSIONEND_HOOKS_TIMEOUT_MS</code></li>\n<li>Fixed <code>/plugin install</code> failing inside the REPL for marketplace plugins with local sources</li>\n<li>Fixed marketplace update not syncing git submodules \u2014 plugin sources in submodules no longer break after update</li>\n<li>Fixed unknown slash commands with arguments silently dropping input \u2014 now shows your input as a warning</li>\n<li>Fixed Hebrew, Arabic, and other RTL text not rendering correctly in Windows Terminal, conhost, and VS Code integrated terminal</li>\n<li>Fixed LSP servers not working on Windows due to malformed file URIs</li>\n<li>Changed <code>--plugin-dir</code> so local dev copies now override installed marketplace plugins with the same name (unless that plugin is force-enabled by managed settings)</li>\n<li>[VSCode] Fixed delete button not working for Untitled sessions</li>\n<li>[VSCode] Improved scroll wheel responsiveness in the integrated terminal with terminal-aware acceleration</li>\n</ul>",
+      "source_name": "Claude Code Releases",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "anthropic",
+        "claude code",
+        "tooling",
+        "changelog"
+      ],
+      "author": "ashwin-ant",
+      "published_at": "2026-03-12T00:34:23",
+      "fetched_at": "2026-03-12T00:45:37.007634",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10817,27 +10840,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5beca663473a091a",
-      "url": "https://arxiv.org/abs/2603.08844",
-      "title": "A Lightweight Multi-Cancer Tumor Localization Framework for Deployable Digital Pathology",
-      "summary": "arXiv:2603.08844v1 Announce Type: cross \nAbstract: Accurate localization of tumor regions from hematoxylin and eosin-stained whole-slide images is fundamental for translational research including spatial analysis, molecular profiling, and tissue architecture investigation. However, deep learning-based tumor detection trained within specific cancers may exhibit reduced robustness when applied across different tumor types. We investigated whether balanced training across cancers at modest scale can achieve high performance and generalize to unseen tumor types. A multi-cancer tumor localization model (MuCTaL) was trained on 79,984 non-overlapping tiles from four cancers (melanoma, hepatocellular carcinoma, colorectal cancer, and non-small cell lung cancer) using transfer learning with DenseNet169. The model achieved a tile-level ROC-AUC of 0.97 in validation data from the four training cancers, and 0.71 on an independent pancreatic ductal adenocarcinoma cohort. A scalable inference workflow was built to generate spatial tumor probability heatmaps compatible with existing digital pathology tools. Code and models are publicly available at https://github.com/AivaraX-AI/MuCTaL.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Brian Isett, Rebekah Dadey, Aofei Li, Ryan C. Augustin, Kate Smith, Aatur D. Singhi, Qiangqiang Gu, Riyue Bao",
-      "published_at": "2026-03-11T04:00:00",
-      "fetched_at": "2026-03-11T10:29:09.924464",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "31ea54ced1b46109",
       "url": "https://huggingface.co/blog/nvidia/open-data-for-ai",
       "title": "How NVIDIA Builds Open Data for AI",
@@ -11694,27 +11696,6 @@
       "author": "GeForce NOW Community",
       "published_at": "2026-03-05T14:00:30",
       "fetched_at": "2026-03-11T10:29:14.673802",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f59abf9daf09ece4",
-      "url": "https://openai.com/index/gpt-5-4-thinking-system-card",
-      "title": "GPT-5.4 Thinking System Card",
-      "summary": "",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-05T10:00:00",
-      "fetched_at": "2026-03-11T10:29:10.860588",
       "score": null,
       "score_reason": "",
       "tier": "",
