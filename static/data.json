@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-12T14:34:42.475234",
+  "exported_at": "2026-03-12T16:38:35.981570",
   "period_hours": 168,
-  "total": 3443,
+  "total": 3448,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,110 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "83cf4ddbbe4d3986",
+      "url": "https://developer.nvidia.com/blog/validate-kubernetes-for-gpu-infrastructure-with-layered-reproducible-recipes/",
+      "title": "Validate Kubernetes for GPU Infrastructure with Layered, Reproducible Recipes",
+      "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/security-social-cve-workflow-3882621-1200x628-1-e1772213795405-768x431.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"security-social-cve-workflow-3882621-1200x628\" width=\"768\" />Every AI cluster running on Kubernetes requires a full software stack that works together, from low-level driver and kernel settings to high-level operator and...",
+      "content": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/security-social-cve-workflow-3882621-1200x628-1-e1772213795405-768x431.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"security-social-cve-workflow-3882621-1200x628\" width=\"768\" />Every AI cluster running on Kubernetes requires a full software stack that works together, from low-level driver and kernel settings to high-level operator and...<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/02/security-social-cve-workflow-3882621-1200x628-1-e1772213795405-768x431.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"security-social-cve-workflow-3882621-1200x628\" width=\"768\" /><p>Every AI cluster running on Kubernetes requires a full software stack that works together, from low-level driver and kernel settings to high-level operator and workload configurations. You get one cluster working, and spend days getting the next one to match. Upgrade a component, and something else breaks. Move to a new cloud and start over. AI Cluster Runtime is a new open-source project designed\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/validate-kubernetes-for-gpu-infrastructure-with-layered-reproducible-recipes/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
+      "source_name": "NVIDIA Developer",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "nvidia",
+        "engineering"
+      ],
+      "author": "Mark Chmarny",
+      "published_at": "2026-03-12T16:30:00",
+      "fetched_at": "2026-03-12T16:38:27.796351",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6f5530d59915e53c",
+      "url": "https://www.youtube.com/shorts/JfnpcZpP6-Y",
+      "title": "Who's accountable for AI agents?",
+      "summary": "AI agents can act autonomously\u2014but who's responsible when they go rogue? Check out the latest episode of Security Intelligence to learn why verifiable identity and kill switches matter.\n\n#aiagents #aimisuse #aiethics",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-12T16:00:36",
+      "fetched_at": "2026-03-12T16:38:21.069010",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3ea824906517f907",
+      "url": "https://developer.nvidia.com/blog/build-next-gen-physical-ai-with-edge%e2%80%91first-llms-for-autonomous-vehicles-and-robotics/",
+      "title": "Build Next-Gen Physical AI with Edge\u2011First LLMs for Autonomous Vehicles and Robotics",
+      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/autonomous-vehicle-backseat-view-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"autonomous-vehicle-backseat-view\" width=\"768\" />Physical AI is rapidly evolving, from next-generation software-defined autonomous vehicles (AVs) to humanoid robots. The challenge is no longer how to run a...",
+      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/autonomous-vehicle-backseat-view-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"autonomous-vehicle-backseat-view\" width=\"768\" />Physical AI is rapidly evolving, from next-generation software-defined autonomous vehicles (AVs) to humanoid robots. The challenge is no longer how to run a...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/autonomous-vehicle-backseat-view-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"autonomous-vehicle-backseat-view\" width=\"768\" /><p>Physical AI is rapidly evolving, from next-generation software-defined autonomous vehicles (AVs) to humanoid robots. The challenge is no longer how to run a large language model (LLM), but how to enable high-fidelity reasoning, real-time multimodal interaction, and trajectory planning within strict power and latency envelopes. NVIDIA TensorRT Edge-LLM, a high-performance C++ inference runtime\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/build-next-gen-physical-ai-with-edge%e2%80%91first-llms-for-autonomous-vehicles-and-robotics/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
+      "source_name": "NVIDIA Developer",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "nvidia",
+        "engineering"
+      ],
+      "author": "Lin Chai",
+      "published_at": "2026-03-12T16:00:00",
+      "fetched_at": "2026-03-12T16:38:27.796371",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a40fa771c38588f1",
+      "url": "https://blogs.nvidia.com/blog/industrial-ai-digital-twins-omniverse/",
+      "title": "Into the Omniverse: How Industrial AI and Digital Twins Accelerate Design, Engineering and Manufacturing Across Industries",
+      "summary": "Industrial AI, digital twins, AI physics and accelerated AI infrastructure are empowering companies across industries to accelerate and scale the design, simulation and optimization of products, processes and facilities before building in the real world.",
+      "content": "<div id=\"bsf_rt_marker\"></div><p><i><span style=\"font-weight: 400;\">Editor\u2019s note: This post is part of </span></i><a href=\"https://www.nvidia.com/en-us/omniverse/news/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">Into the Omniverse</span></i></a><i><span style=\"font-weight: 400;\">, a series focused on how developers, 3D practitioners and enterprises can transform their workflows using the latest advancements in </span></i><a href=\"https://www.nvidia.com/en-us/omniverse/usd/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">OpenUSD</span></i></a><i><span style=\"font-weight: 400;\"> and </span></i><a href=\"https://www.nvidia.com/en-us/omniverse/usd/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA Omniverse</span></i></a><i><span style=\"font-weight: 400;\">.</span></i></p>\n<p><span style=\"font-weight: 400;\">Industrial AI, digital twins, AI physics and accelerated AI infrastructure are empowering companies across industries to accelerate and scale the design, simulation and optimization of products, processes and facilities before building in the real world.</span></p>\n<p><span style=\"font-weight: 400;\">Earlier this month, </span><a href=\"https://nvidianews.nvidia.com/news/dassault-systemes-nvidia-industrial-ai\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA and Dassault Syst\u00e8mes</span></a><span style=\"font-weight: 400;\"> announced a partnership that brings together Dassault Syst\u00e8mes\u2019 Virtual Twin platforms, NVIDIA accelerated computing, AI physics open models and </span><a href=\"https://developer.nvidia.com/cuda/cuda-x-libraries\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA CUDA-X</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://developer.nvidia.com/omniverse?sortBy=developer_learning_library%2Fsort%2Ffeatured_in.omniverse%3Adesc%2Ctitle%3Aasc\" target=\"_blank\"><span style=\"font-weight: 400;\">Omniverse</span></a><span style=\"font-weight: 400;\"> libraries. This allows designers and engineers to use virtual twins and companions \u2014 trained on physics-based world models \u2014 to innovate faster, boost efficiency and deliver sustainable products.</span></p>\n<p><span style=\"font-weight: 400;\">Dassault Syst\u00e8mes\u2019 SIMULIA software now uses NVIDIA CUDA-X and AI physics libraries for AI-based virtual twin physics behavior \u2014 empowering designers and engineers to accurately and instantly predict outcomes in simulation.</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA is adopting Dassault Syst\u00e8mes\u2019</span> <a href=\"https://www.3ds.com/products/catia/systems-engineering/model-based-systems-design\" target=\"_blank\"><span style=\"font-weight: 400;\">model-based systems engineering</span></a><span style=\"font-weight: 400;\"> technologies to accelerate the design and global deployment of gigawatt-scale AI factories that are powering industrial and physical AI across industries. Dassault Syst\u00e8mes will in turn deploy NVIDIA-powered </span><a href=\"https://www.nvidia.com/en-us/glossary/ai-factory/\" target=\"_blank\"><span style=\"font-weight: 400;\">AI factories</span></a><span style=\"font-weight: 400;\"> on three continents through its </span><a href=\"https://www.3ds.com/products/outscale\" target=\"_blank\"><span style=\"font-weight: 400;\">OUTSCALE</span></a><span style=\"font-weight: 400;\"> sovereign cloud, enabling its customers to run AI workloads while maintaining data residency and security requirements.</span></p>\n<p><span style=\"font-weight: 400;\">These efforts are already making a splash across industries, accelerating industrial development and production processes.</span></p>\n<h2><b>Industrial AI Simulations, From Car Parts to Cheese Proteins\u00a0</b></h2>\n<p><a href=\"https://www.nvidia.com/en-us/glossary/digital-twin/\" target=\"_blank\"><span style=\"font-weight: 400;\">Digital twins</span></a><span style=\"font-weight: 400;\">, also known as virtual twins, and physics-based world models are already being deployed to advance industries.</span></p>\n<p><span style=\"font-weight: 400;\">In automotive, Lucid Motors is combining cutting-edge simulation, AI physics open models, Dassault Syst\u00e8mes\u2019 tools for </span><span style=\"font-weight: 400;\">vehicle and powertrain engineering </span><span style=\"font-weight: 400;\">and digital twin technology to accelerate innovation in electric vehicles.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">In life sciences, scientists and researchers are using virtual twins, Dassault Syst\u00e8mes\u2019 science-validated world models and the </span><a href=\"https://www.nvidia.com/en-us/industries/healthcare-life-sciences/biopharma/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA BioNeMo</span></a><span style=\"font-weight: 400;\"> platform to speed molecule and materials discovery, therapeutics design and sustainable food development.</span></p>\n<p><span style=\"font-weight: 400;\">The Bel Group is using technologies from Dassault </span><span style=\"font-weight: 400;\">Syst\u00e8mes\u2019 </span><span style=\"font-weight: 400;\">supported by NVIDIA to accelerate the development and production of healthier, more sustainable foods for millions of consumers.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The company is using Dassault Syst</span><span style=\"font-weight: 400;\">\u00e8</span><span style=\"font-weight: 400;\">mes\u2019 industry world models to generate and study food proteins, creating non-dairy protein options that pair with its well-known cheeses, including Baybel\u00ae. Using accurate, high-resolution virtual twins allows the Bel Group to study and develop validated research outcomes of food proteins more quickly and efficiently.</span></p>\n<p><span style=\"font-weight: 400;\">Using accurate, high-resolution virtual twins allows the Bel Group to study and develop validated research outcomes of food proteins more quickly and efficiently.</span></p>\n<p><span style=\"font-weight: 400;\">In industrial automation, </span><a href=\"https://automation.omron.com/en/us/industries/electric-vehicle-manufacturing/\" target=\"_blank\"><span style=\"font-weight: 400;\">Omron</span></a><span style=\"font-weight: 400;\"> is using virtual twins and physical AI to design and deploy automation technology with greater confidence \u2014 advancing the shift toward digitally validated production.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">In the aerospace industry, researchers and engineers at Wichita State University\u2019s National Institute for Aviation Research use virtual twins and AI companions powered by Dassault Syst\u00e8mes\u2019 Industry World Models and NVIDIA Nemotron open models to accelerate the design, testing and certification of aircrafts.</span></p>\n<p></p>\n<h2><b>Learning From and Simulating the Real World\u00a0</b></h2>\n<p><span style=\"font-weight: 400;\">Dassault Systemes\u2019 physics-based Industry World Models are trained to have PhD-level knowledge in fields like biology, physics and material sciences. This allows them to accurately simulate real-world environments and scenarios so teams can test industrial operations end to end \u2014 from supply chains to store shelves \u2014 before deploying changes in the real world.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">These virtual models can help researchers and developers with workflows ranging from </span><a href=\"https://www.nvidia.com/en-us/deep-learning-ai/resources/genomics/\" target=\"_blank\"><span style=\"font-weight: 400;\">DNA sequencing</span></a><span style=\"font-weight: 400;\"> to strengthening manufactured materials for vehicles.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cKnowledge is encoded in the living world,\u201d said Pascal Daloz, CEO of Dassault Systemes, during his 3DEXPERIENCE World keynote. \u201cWith our virtual twins, we are learning from life and are also understanding it in order to replicate it and scale it.\u201d\u00a0</span></p>\n<p></p>\n<h2><b>Get Plugged In to Industrial AI</b></h2>\n<p><span style=\"font-weight: 400;\">Learn more about industrial and physical AI by registering for </span><a href=\"https://www.nvidia.com/gtc/?ncid=pa-srch-goog-224-prsp-rsa-en-us-3-l2&amp;_bt=794864499290&amp;_bk=gpu%20tech%20conference&amp;_bm=b&amp;_bn=g&amp;_bg=191037752574&amp;gad_source=1&amp;gad_campaignid=23502880536&amp;gclid=CjwKCAiAv5bMBhAIEiwAqP9GuNbBLok4ubPhmQL8DLRPF1hnZ-GaxjNKhsN7QSe4WUMnqO-TIO5n3xoC8ikQAvD_BwE\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA GTC</span></a><span style=\"font-weight: 400;\">, running March 16-19 in San Jose, kicking off with </span><a href=\"https://www.nvidia.com/gtc/keynote/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA founder and CEO Jensen Huang\u2019s keynote address</span></a><span style=\"font-weight: 400;\"> on Monday, March 16, at 11 a.m. PT.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">At the conference:</span></p>\n<ul>\n<li><span style=\"font-weight: 400;\">Explore an </span><a href=\"https://www.nvidia.com/gtc/sessions/industrial-ai-and-manufacturing/\" target=\"_blank\"><span style=\"font-weight: 400;\">industrial AI agenda</span></a><span style=\"font-weight: 400;\"> packed with hands-on sessions, customer stories and live demos.\u00a0</span></li>\n<li><span style=\"font-weight: 400;\">Dive into the world of OpenUSD with a special session focused on </span><a href=\"https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s81630/?ncid=so-link-998580\" target=\"_blank\"><span style=\"font-weight: 400;\">OpenUSD for physical AI simulation</span></a><span style=\"font-weight: 400;\">, as well as a full agenda of hands-on </span><a href=\"https://www.nvidia.com/gtc/session-catalog/?sessions=S81630,S81492,S81613,DLIW82272,DLIT81639,DLIT81816,DLIT81800,DLIT81697,DLIT81757,CWES81740,CWES81600\" target=\"_blank\"><span style=\"font-weight: 400;\">OpenUSD learning sessions</span></a><span style=\"font-weight: 400;\">.\u00a0</span></li>\n<li><span style=\"font-weight: 400;\">Find Dassault Syst\u00e8mes in the industrial AI and robotics pavilion on the show floor and learn from Florence Hu-Aubigny, executive vice president of R&amp;D at Dassault Systemes, who\u2019ll present on </span><a href=\"https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s81501/\" target=\"_blank\"><span style=\"font-weight: 400;\">how virtual twins </span></a><span style=\"font-weight: 400;\">are shaping the next industrial revolution.</span></li>\n<li><span style=\"font-weight: 400;\">Get a live look at GTC with our </span><a href=\"https://www.addevent.com/event/bjsbh426bzwy\" target=\"_blank\"><span style=\"font-weight: 400;\">developer community livestream</span></a> <span style=\"font-weight: 400;\">on March 18, where participants can </span><span style=\"font-weight: 400;\">ask questions, request deep dives and talk directly with NVIDIA engineers in the chat.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Learn how to build industrial and physical AI applications by attending </span><a href=\"https://www.nvidia.com/gtc/session-catalog/?sessions=DLIT81484,DLIT81801,CWES81472,DLIT81800,DLIT81639,DLIT81798,DLIT81650,DLIT81774,DLIT81879\" target=\"_blank\"><span style=\"font-weight: 400;\">these sessions at GTC</span></a><span style=\"font-weight: 400;\">.</span></p>",
+      "source_name": "NVIDIA Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "nvidia",
+        "company"
+      ],
+      "author": "James McKenna",
+      "published_at": "2026-03-12T15:00:51",
+      "fetched_at": "2026-03-12T16:38:26.938019",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "43c416a5c0a95712",
+      "url": "https://www.youtube.com/watch?v=mpALXah_PBg",
+      "title": "Build & Sell with Claude Code (10+ Hour Course)",
+      "summary": "Full courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about\nAll my FREE resources: https://www.skool.com/ai-automation-society/about\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\n14 day FREE n8n trial: https://n8n.partnerlinks.io/22crlu8afq5r\nCode NATEHERK to Self-Host Claude Code for 10% off (annual plan): http://hostinger.com/nateherk\nVoice to text: https://ref.wisprflow.ai/nateherk\n1000 Free credits and 10% off Firecrawl: https://www.firecrawl.dev/partners/nate\nGet 30% off Blotato for 6 months: https://blotato.com/?ref=nate\n\nThis is the complete Claude Code course. Trust me, save this for later. \n\nI start from zero and walk you through everything: setup, building workflows, deploying websites, creating agent teams, browser automation, finding clients, pricing your work, and way more. To make it even better, we don\u2019t ever write a single line of code. \n\nBy the end, you'll know how to use Claude Code at a professional level and how to actually turn those skills into income. Whether you've never opened a terminal or you're looking to go deeper, this course covers it all in one place.\n\nSponsorship Inquiries:\n\ud83d\udce7 sponsorships@nateherk.com\n\nTIMESTAMPS \n00:00 Course Outline\n01:14 Why Learn This\n26:08 Getting Set Up\n41:25 Operations\n50:53 Tokens and Context Windows\n55:10 Claude.md\n58:57 Building Your First Workflow\n1:25:05 Building Second Workflow\n1:50:43 Deploying Automations\n3:05:46 Project Architecture & Commands\n3:17:39 RAG\n3:32:59 Turning n8n Workflow into App\n4:12:42 Website Building Hacks\n4:40:07 3D Animated Websites\n5:00:02 APIs and MCPs\n5:28:16 Google CLI\n5:39:42 Building Your Own Executive Assistant\n6:08:03 Skills\n6:51:30 Sub-agents\n7:11:20 Agent Teams\n7:27:30 Browser Automation\n7:42:30 Permissions & Context Management\n7:50:09 GitHub & Worktrees\n7:56:45 Fun Hacks\n8:25:06 The Selling AI Mindset\n8:39:41 Finding Clients\n8:54:01 First Client in 7 Days\n9:14:56 Pricing AI Workflows\n9:35:36 Delivering AI Projects\n9:58:55 Thank You! Join AIS FREE",
+      "content": "",
+      "source_name": "Nate Herk | AI Automation",
+      "source_type": "youtube",
+      "tags": [
+        "ai",
+        "automation"
+      ],
+      "author": "Nate Herk | AI Automation",
+      "published_at": "2026-03-12T14:35:41",
+      "fetched_at": "2026-03-12T16:38:19.735907",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10718,111 +10822,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3384adcf8115c961",
-      "url": "https://arxiv.org/abs/2603.10008",
-      "title": "GATech at AbjadMed: Bidirectional Encoders vs. Causal Decoders: Insights from 82-Class Arabic Medical Classification",
-      "summary": "arXiv:2603.10008v1 Announce Type: cross \nAbstract: This paper presents system description for Arabic medical text classification across 82 distinct categories. Our primary architecture utilizes a fine-tuned AraBERTv2 encoder enhanced with a hybrid pooling strategies, combining attention and mean representations, and multi-sample dropout for robust regularization. We systematically benchmark this approach against a suite of multilingual and Arabic-specific encoders, as well as several large-scale causal decoders, including zero-shot re-ranking via Llama 3.3 70B and feature extraction from Qwen 3B hidden states. Our findings demonstrate that specialized bidirectional encoders significantly outperform causal decoders in capturing the precise semantic boundaries required for fine-grained medical text classification. We show that causal decoders, optimized for next-token prediction, produce sequence-biased embeddings that are less effective for categorization compared to the global context captured by bidirectional attention. Despite significant class imbalance and label noise identified within the training data, our results highlight the superior semantic compression of fine-tuned encoders for specialized Arabic NLP tasks. Final performance metrics on the test set, including Accuracy and Macro-F1, are reported and discussed.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Ahmed Khaled Khamis",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116752",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5b2f438b267ddd7c",
-      "url": "https://arxiv.org/abs/2603.10005",
-      "title": "SENS-ASR: Semantic Embedding injection in Neural-transducer for Streaming Automatic Speech Recognition",
-      "summary": "arXiv:2603.10005v1 Announce Type: cross \nAbstract: Many Automatic Speech Recognition (ASR) applications require streaming processing of the audio data. In streaming mode, ASR systems need to start transcribing the input stream before it is complete, i.e., the systems have to process a stream of inputs with a limited (or no) future context. Compared to offline mode, this reduction of the future context degrades the performance of Streaming-ASR systems, especially while working with low-latency constraint. In this work, we present SENS-ASR, an approach to enhance the transcription quality of Streaming-ASR by reinforcing the acoustic information with semantic information. This semantic information is extracted from the available past frame-embeddings by a context module. This module is trained using knowledge distillation from a sentence embedding Language Model fine-tuned on the training dataset transcriptions. Experiments on standard datasets show that SENS-ASR significantly improves the Word Error Rate on small-chunk streaming scenarios.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Youness Dkhissi (LIUM), Valentin Vielzeuf (LIUM), Elys Allesiardo (LIUM), Anthony Larcher (LIUM)",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116744",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0c1c299560d1a323",
-      "url": "https://arxiv.org/abs/2603.10002",
-      "title": "SpreadsheetArena: Decomposing Preference in LLM Generation of Spreadsheet Workbooks",
-      "summary": "arXiv:2603.10002v1 Announce Type: cross \nAbstract: Large language models (LLMs) are increasingly tasked with producing and manipulating structured artifacts. We consider the task of end-to-end spreadsheet generation, where language models are prompted to produce spreadsheet artifacts to satisfy users' explicit and implicit constraints, specified in natural language. We introduce SpreadsheetArena, a platform for evaluating models' performance on the task via blind pairwise evaluations of LLM-generated spreadsheet workbooks. As with other complex, open-ended tasks, relevant evaluation criteria can vary substantially across use cases and prompts, often in ways that are difficult to formalize. Compared to general chat or text generation settings, spreadsheet generation presents unique challenges and opportunities: the task output structure is well-defined and multi-dimensional, and there are often complex considerations around interactivity and layout. Among other findings, we observe that stylistic, structural, and functional features of preferred spreadsheets vary substantially across use cases, and expert evaluations of spreadsheets for finance prompts suggests that even highly ranked arena models do not reliably produce spreadsheets aligned with domain-specific best practices. Our hope is that our work prompts further study of end-to-end spreadsheet generation as a challenging and interesting category of complex, open-ended tasks for LLMs. Our live arena is hosted at https://spreadsheetarena.ai.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Srivatsa Kundurthy, Clara Na, Michael Handley, Zach Kirshner, Chen Bo Calvin Zhang, Manasi Sharma, Emma Strubell, John Ling",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116737",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "05b32a31786667f6",
-      "url": "https://arxiv.org/abs/2603.10001",
-      "title": "Leveraging Wikidata for Geographically Informed Sociocultural Bias Dataset Creation: Application to Latin America",
-      "summary": "arXiv:2603.10001v1 Announce Type: cross \nAbstract: Large Language Models (LLMs) exhibit inequalities with respect to various cultural contexts. Most prominent open-weights models are trained on Global North data and show prejudicial behavior towards other cultures. Moreover, there is a notable lack of resources to detect biases in non-English languages, especially from Latin America (Latam), a continent containing various cultures, even though they share a common cultural ground. We propose to leverage the content of Wikipedia, the structure of the Wikidata knowledge graph, and expert knowledge from social science in order to create a dataset of question/answer (Q/As) pairs, based on the different popular and social cultures of various Latin American countries. We create the LatamQA database of over 26k questions and associated answers extracted from 26k Wikipedia articles, and transformed into multiple-choice questions (MCQ) in Spanish and Portuguese, in turn translated to English. We use this MCQ to quantify the degree of knowledge of various LLMs and find out (i) a discrepancy in performances between the Latam countries, ones being easier than others for the majority of the models, (ii) that the models perform better in their original language, and (iii) that Iberian Spanish culture is better known than Latam one.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Yannis Karmim (ALMAnaCH), Renato Pino (UCHILE), Hernan Contreras (UCHILE), Hernan Lira (CENIA), Sebastian Cifuentes (CENIA), Simon Escoffier (PUC), Luis Mart\\'i (UP4, ALPAGE), Djam\\'e Seddah (UP4, ALPAGE), Valentin Barri\\`ere (UCHILE, CENIA)",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116730",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2f1a162ceb31ba54",
-      "url": "https://arxiv.org/abs/2603.09999",
-      "title": "A Retrieval-Augmented Language Assistant for Unmanned Aircraft Safety Assessment and Regulatory Compliance",
-      "summary": "arXiv:2603.09999v1 Announce Type: cross \nAbstract: This paper presents the design and validation of a retrieval-based assistant that supports safety assessment, certification activities, and regulatory compliance for unmanned aircraft systems. The work is motivated by the growing complexity of drone operations and the increasing effort required by applicants and aviation authorities to apply established assessment frameworks, including the Specific Operations Risk Assessment and the Pre-defined Risk Assessment, in a consistent and efficient manner. The proposed approach uses a controlled text-based architecture that relies exclusively on authoritative regulatory sources. To enable traceable and auditable outputs, the assistant grounds each response in retrieved passages and enforces citation-driven generation. System-level controls address common failure modes of generative models, including fabricated statements, unsupported inferences, and unclear provenance, by separating evidence storage from language generation and by adopting conservative behavior when supporting documentation is insufficient. The assistant is intentionally limited to decision support; it does not replace expert judgment and it does not make autonomous determinations. Instead, it accelerates context-specific information retrieval and synthesis to improve document preparation and review while preserving human responsibility for critical conclusions. The architecture is implemented using established open-source components, and key choices in retrieval strategy, interaction constraints, and response policies are evaluated for suitability in safety-sensitive regulatory environments. The paper provides technical and operational guidance for integrating retrieval-based assistants into aviation oversight workflows while maintaining accountability, traceability, and regulatory compliance.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Gabriele Immordino, Andrea Vaiuso, Marcello Righi",
-      "published_at": "2026-03-12T04:00:00",
-      "fetched_at": "2026-03-12T04:55:13.116722",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0a7277eea76d1e79",
       "url": "https://huggingface.co/blog/nvidia/how-nvidia-won-deepresearch-bench",
       "title": "How NVIDIA AI-Q Reached \\#1 on DeepResearch Bench I and II",
@@ -11770,72 +11769,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "70342cae6958a46b",
-      "url": "https://machinelearning.apple.com/research/semidiscrete-couplings",
-      "title": "Flow Matching with Semidiscrete Couplings",
-      "summary": "Flow models parameterized as time-dependent velocity fields can generate data from noise by integrating an ODE. These models are often trained using flow matching, i.e. by sampling random pairs of noise and target points (x0,x1)(\\mathbf{x}_0, \\mathbf{x}_1)(x0\u200b,x1\u200b) and ensuring that the velocity field is aligned, on average, with x1\u2212x0\\mathbf{x}_1 - \\mathbf{x}_0x1\u200b\u2212x0\u200b when evaluated along a segment linking x0\\mathbf{x}_0x0\u200b to x1\\mathbf{x}_1x1\u200b. While these pairs are sampled independently by default, they can also be selected more carefully by matching batches of nnn noise to nnn target\u2026",
-      "content": "",
-      "source_name": "Apple Machine Learning",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "apple",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-06T00:00:00",
-      "fetched_at": "2026-03-11T10:29:12.071803",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d2a710255dc3a592",
-      "url": "https://machinelearning.apple.com/research/genctrl",
-      "title": "GenCtrl -- A Formal Controllability Toolkit for Generative Models",
-      "summary": "As generative models become ubiquitous, there is a critical need for fine-grained control over the generation process. Yet, while controlled generation methods from prompting to fine-tuning proliferate, a fundamental question remains unanswered: are these models truly controllable in the first place? In this work, we provide a theoretical framework to formally answer this question. Framing human-model interaction as a control process, we propose a novel algorithm to estimate the controllable sets of models in a dialogue setting. Notably, we provide formal guarantees on the estimation error as\u2026",
-      "content": "",
-      "source_name": "Apple Machine Learning",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "apple",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-06T00:00:00",
-      "fetched_at": "2026-03-11T10:29:12.071794",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b81bf3591e5894e1",
-      "url": "https://machinelearning.apple.com/research/multi-frequency-fusion",
-      "title": "Multi-Frequency Fusion for Robust Video Face Forgery Detection",
-      "summary": "Current face video forgery detectors use wide or dual-stream backbones. We show that a single, lightweight fusion of two handcrafted cues can achieve higher accuracy with a much smaller model. Based on the Xception baseline model (21.9 million parameters), we build two detectors: LFWS, which adds a 1x1 convolution to combine a low-frequency Wavelet-Denoised Feature (WDF) with the phase-only Spatial-Phase Shallow Learning (SPSL) map, and LFWL, which merges WDF with Local Binary Patterns (LBP) in the same way. This extra module adds only 292 parameters, keeping the total at 21.9 million\u2014smaller\u2026",
-      "content": "",
-      "source_name": "Apple Machine Learning",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "apple",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-06T00:00:00",
-      "fetched_at": "2026-03-11T10:29:12.071775",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5f5be08d231e5ffc",
       "url": "https://www.youtube.com/watch?v=aFsAOu2bgFk",
       "title": "From IDEs to AI Agents with Steve Yegge",
@@ -12774,44 +12707,6 @@
       "author": "The Pragmatic Engineer",
       "published_at": "2026-02-28T19:48:02",
       "fetched_at": "2026-03-11T20:28:31.994493",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c791c83746b94b5e",
-      "url": "https://www.youtube.com/watch?v=mViFYTwWvcM",
-      "title": "Spec-Driven Development: AI Assisted Coding Explained",
-      "summary": "Ready to become a certified watsonx AI Assistant Engineer? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpBwE\n\nLearn more about AI Code-Generation Software here \u2192 https://ibm.biz/BdpBwX\n\nIs AI-assisted coding the future? \ud83e\udd14 Cedric Clyburn explores spec-driven development, a game-changing approach that combines LLMs with software development best practices. Learn how it differs from vibe coding, integrates SDLC principles, and improves coding workflows with requirements-driven precision. \ud83d\ude80\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/BdpBwH\n\n#aicoding #llms #aiassisted",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-02-28T12:01:30",
-      "fetched_at": "2026-03-11T20:28:31.610203",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "988c2ab7df1a9309",
-      "url": "https://www.youtube.com/watch?v=9mJhBzjugQg",
-      "title": "Mainframe modernization explained: COBOL and AI",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content \u2192 https://ibm.biz/BdpZc5\n\nWhere does AI actually fit into the mainframe modernization journey? In this week\u2019s episode of Mixture of Experts, host Tim Hwang is joined by experts Skyla Loomis, Maryam Ashoori and Kaoutar El Maghraoui. We dive into conversation around AI-powered mainframe modernization and AI builders. Next, 84% of the world has never used AI? A reality check on AI adoption and what needs to change. Finally, OpenClaw exposes some AI agent security gaps. We discuss \"agent ops\"\u2014the framework for transparency, evaluation, optimization and policy enforcement that makes AI agents production-ready. All that and more on today\u2019s Mixture of Experts. \n\n00:00 \u2013 Introduction \n1:06 \u2013 Mainframe modernization \n14:18 \u2013 AI adoption reality check \n29:40 \u2013 Security-by-design agentic AI \n\nThe opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. \n\nLearn how to operate AI agents responsibly at scale in the latest Tech Summit \u2192 https://ibm.biz/BdpZc7\n\n#COBOL #MainframeModernization #AIagents",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-02-27T11:00:30",
-      "fetched_at": "2026-03-11T20:28:31.610226",
       "score": null,
       "score_reason": "",
       "tier": "",
