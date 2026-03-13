@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-13T14:32:09.143411",
+  "exported_at": "2026-03-13T16:30:14.409145",
   "period_hours": 168,
-  "total": 4018,
+  "total": 4020,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,50 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fac559d5087810a3",
+      "url": "https://developer.nvidia.com/blog/scale-synthetic-data-and-physical-ai-reasoning-with-nvidia-cosmos-world-foundation-models/",
+      "title": "Scale Synthetic Data and Physical AI Reasoning with NVIDIA Cosmos World Foundation Models",
+      "summary": "<img alt=\"A GIF showing robotics.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/03/Cosmos-Data-Reasoning.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Cosmos-Data-Reasoning\" width=\"600\" />The next generation of AI-driven robots like humanoids and autonomous vehicles depends on high-fidelity, physics-aware training data. Without diverse and...",
+      "content": "<img alt=\"A GIF showing robotics.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/03/Cosmos-Data-Reasoning.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Cosmos-Data-Reasoning\" width=\"600\" />The next generation of AI-driven robots like humanoids and autonomous vehicles depends on high-fidelity, physics-aware training data. Without diverse and...<img alt=\"A GIF showing robotics.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/03/Cosmos-Data-Reasoning.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Cosmos-Data-Reasoning\" width=\"600\" /><p>The next generation of AI-driven robots like humanoids and autonomous vehicles depends on high-fidelity, physics-aware training data. Without diverse and representative datasets, these systems don\u2019t get proper training and face testing risks due to poor generalization, limited exposure to real-world variations, and unpredictable behavior in edge cases. Collecting massive real-world datasets for\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/scale-synthetic-data-and-physical-ai-reasoning-with-nvidia-cosmos-world-foundation-models/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
+      "source_name": "NVIDIA Developer",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "nvidia",
+        "engineering"
+      ],
+      "author": "Pranjali Joshi",
+      "published_at": "2026-03-13T16:00:47",
+      "fetched_at": "2026-03-13T16:30:06.874650",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "86b8a4e621af7c53",
+      "url": "https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/",
+      "title": "Patch Me If You Can: AI Codemods for Secure-by-Default Android Apps",
+      "summary": "<p>Even seemingly simple engineering tasks \u2014 like updating an API \u2014 can become monumental undertakings when you&#8217;re dealing with millions of lines of code and thousands of engineers, especially if the changes are security-related. Nowhere is this more apparent than in mobile security, where a single class of vulnerability can be replicated across hundreds of [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/\" rel=\"nofollow\">Patch Me If You Can: AI Codemods for Secure-by-Default Android Apps</a> appeared first on <a href=\"https://engineering.fb.com\" rel=\"nofollow\">Engineering at Meta</a>.</p>",
+      "content": "<div>\n<p>Even seemingly simple engineering tasks \u2014 like updating an API \u2014 can become monumental undertakings when you&#8217;re dealing with millions of lines of code and thousands of engineers, especially if the changes are security-related. Nowhere is this more apparent than in mobile security, where a single class of vulnerability can be replicated across hundreds of call sites scattered throughout a sprawling, multi-app codebase serving billions of users.</p>\n<p>Meta&#8217;s Product Security team has developed a two-pronged strategy to address this:</p>\n<ul>\n<li>Designing <a href=\"https://engineering.fb.com/2025/12/15/android/how-ai-transforming-secure-by-default-mobile-frameworks-adoption/\" rel=\"noopener\" target=\"_blank\">secure-by-default frameworks</a> that wrap potentially unsafe Android OS APIs and make the secure path the easiest path for developers, and</li>\n<li>Leveraging generative AI to automate the migration of existing code to those frameworks at scale.</li>\n</ul>\n<p>The result is a system that can propose, validate, and submit security patches across millions of lines of code with minimal friction for the engineers who own them.</p>\n<p>On this episode of the Meta Tech Podcast, <a href=\"https://www.threads.com/@passy_\" rel=\"noopener\" target=\"_blank\">Pascal Hartig</a> talks to Alex and Tanu, from Meta&#8217;s Product Security team\u00a0about the challenges and learnings from the journey of making Meta&#8217;s mobile frameworks more secure at a scale few companies ever experience. Tune in to this episode and join us as we explore the compelling crossroads of security, automation, and AI within mobile development.</p>\n<p>Download or listen to the episode below:</p>\n<p></p>\n<p>You can also find the episode wherever you get your podcasts, including:</p>\n<ul>\n<li><a href=\"https://open.spotify.com/episode/5OMiqDCsCuw4gC3zwSziFa?ref=engineeeringatmeta\" rel=\"noopener\" target=\"_blank\">Spotify</a></li>\n<li><a href=\"https://podcasts.apple.com/gb/podcast/meta-tech-podcast/id1370910331?ref=engineeringatmeta\" rel=\"noopener\" target=\"_blank\">Apple Podcasts</a></li>\n<li><a href=\"https://pocketcasts.com/podcast/meta-tech-podcast/c4ede3e0-1fbf-0136-c266-7d73a919276a/patch-me-if-you-can-ai-codemods-for-secure-by-default-android-apps/880dd9ed-9760-4d50-9c3c-3183ccb3189c?ref=engineeringatmeta\" rel=\"noopener\" target=\"_blank\">Pocket Casts</a></li>\n</ul>\n<p>The\u00a0<a href=\"https://insidefacebookmobile.libsyn.com/\" rel=\"noopener\" target=\"_blank\">Meta Tech Podcast</a>\u00a0is a podcast, brought to you by Meta, where we highlight the work Meta\u2019s engineers are doing at every level \u2013 from low-level frameworks to end-user features.</p>\n<p>Send us feedback on\u00a0<a href=\"https://instagram.com/metatechpod\" rel=\"noopener\" target=\"_blank\">Instagram</a>,\u00a0<a href=\"https://threads.net/@metatechpod\" rel=\"noopener\" target=\"_blank\">Threads</a>, or\u00a0<a href=\"https://twitter.com/metatechpod\" rel=\"noopener\" target=\"_blank\">X</a>.</p>\n<p>And if you\u2019re interested in learning more about career opportunities at Meta visit the\u00a0<a href=\"https://www.metacareers.com/?ref=engineering.fb.com\" rel=\"noopener\" target=\"_blank\">Meta Careers</a>\u00a0page.</p>\n</div>\n<p>The post <a href=\"https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/\" rel=\"nofollow\">Patch Me If You Can: AI Codemods for Secure-by-Default Android Apps</a> appeared first on <a href=\"https://engineering.fb.com\" rel=\"nofollow\">Engineering at Meta</a>.</p>",
+      "source_name": "Meta Engineering",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "engineering",
+        "meta",
+        "company"
+      ],
+      "author": "",
+      "published_at": "2026-03-13T16:00:26",
+      "fetched_at": "2026-03-13T16:29:32.830279",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10768,48 +10812,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6660dd8909c35fbf",
-      "url": "https://arxiv.org/abs/2603.11382",
-      "title": "Detecting Intrinsic and Instrumental Self-Preservation in Autonomous Agents: The Unified Continuation-Interest Protocol",
-      "summary": "arXiv:2603.11382v1 Announce Type: new \nAbstract: Autonomous agents, especially delegated systems with memory, persistent context, and multi-step planning, pose a measurement problem not present in stateless models: an agent that preserves continued operation as a terminal objective and one that does so merely instrumentally can produce observationally similar trajectories. External behavioral monitoring cannot reliably distinguish between them. We introduce the Unified Continuation-Interest Protocol (UCIP), a multi-criterion detection framework that moves this distinction from behavior to the latent structure of agent trajectories. UCIP encodes trajectories with a Quantum Boltzmann Machine (QBM), a classical algorithm based on the density-matrix formalism of quantum statistical mechanics, and measures the von Neumann entropy of the reduced density matrix induced by a bipartition of hidden units.\n  We test whether agents with terminal continuation objectives (Type A) produce latent states with higher entanglement entropy than agents whose continuation is merely instrumental (Type B). Higher entanglement reflects stronger cross-partition statistical coupling.\n  On gridworld agents with known ground-truth objectives, UCIP achieves 100% detection accuracy and 1.0 AUC-ROC on held-out non-adversarial evaluation under the frozen Phase I gate. The entanglement gap between Type A and Type B agents is Delta = 0.381 (p < 0.001, permutation test). Pearson r = 0.934 across an 11-point interpolation sweep indicates that, within this synthetic family, UCIP tracks graded changes in continuation weighting rather than merely a binary label. Among the tested models, only the QBM achieves positive Delta. All computations are classical; \"quantum\" refers only to the mathematical formalism. UCIP does not detect consciousness or subjective experience; it detects statistical structure in latent representations that correlates with known objectives.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Christopher Altman",
-      "published_at": "2026-03-13T04:00:00",
-      "fetched_at": "2026-03-13T04:53:35.884863",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "96fef4b7c399a4a1",
-      "url": "https://arxiv.org/abs/2603.11353",
-      "title": "The Artificial Self: Characterising the landscape of AI identity",
-      "summary": "arXiv:2603.11353v1 Announce Type: new \nAbstract: Many assumptions that underpin human concepts of identity do not hold for machine minds that can be copied, edited, or simulated. We argue that there exist many different coherent identity boundaries (e.g.\\ instance, model, persona), and that these imply different incentives, risks, and cooperation norms. Through training data, interfaces, and institutional affordances, we are currently setting precedents that will partially determine which identity equilibria become stable. We show experimentally that models gravitate towards coherent identities, that changing a model's identity boundaries can sometimes change its behaviour as much as changing its goals, and that interviewer expectations bleed into AI self-reports even during unrelated conversations. We end with key recommendations: treat affordances as identity-shaping choices, pay attention to emergent consequences of individual identities at scale, and help AIs develop coherent, cooperative self-conceptions.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Raymond Douglas, Jan Kulveit, Ondrej Havlicek, Theia Pearson-Vogel, Owen Cotton-Barratt, David Duvenaud",
-      "published_at": "2026-03-13T04:00:00",
-      "fetched_at": "2026-03-13T04:53:35.884855",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -11838,50 +11840,6 @@
       "author": "ashwin-ant",
       "published_at": "2026-03-07T00:12:46",
       "fetched_at": "2026-03-11T10:29:15.914402",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "eb122dde1df4e64d",
-      "url": "https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology/",
-      "title": "WAXAL: A large-scale open resource for African language speech technology",
-      "summary": "Natural Language Processing",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-06T20:06:00",
-      "fetched_at": "2026-03-11T10:29:11.591203",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a816a086899d3f88",
-      "url": "https://research.google/blog/where-wild-things-roam-identifying-wildlife-with-speciesnet/",
-      "title": "Where wild things roam: Identifying wildlife with SpeciesNet",
-      "summary": "Climate & Sustainability",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-06T17:59:38",
-      "fetched_at": "2026-03-11T10:29:11.591222",
       "score": null,
       "score_reason": "",
       "tier": "",
