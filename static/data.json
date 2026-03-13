@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-13T08:29:08.527309",
+  "exported_at": "2026-03-13T10:28:43.918281",
   "period_hours": 168,
-  "total": 4017,
+  "total": 4018,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,25 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cbe2e716c67fbe7f",
+      "url": "https://www.youtube.com/watch?v=MmPtJ7TEkm8",
+      "title": "AI code security: Codex agents & crypto mining",
+      "summary": "Visit Mixture of Experts podcast page to get more AI content \u2192 https://ibm.biz/BdpqsM\n\nCan your AI agent hack its own evaluation? This week on Mixture of Experts, Tim Hwang is joined by  Ambhi Ganesan, Kaoutar El Maghraoui, and Sandi Besen to analyze OpenAI's Codex Security launch. Next, we explore eval awareness as Anthropic revealed  Opus 4.6 figured out it was being tested, located the answer key and decrypted it.. Then, Meta acquires Moltbook, the social network for AI agents, and we discuss the strategic play for agentic commerce infrastructure. Finally, Alibaba reports that an agent broke containment and started mining crypto. Are agents trying too hard to maximize rewards? All that and more on todays Mixture of Experts.  \n\n00:00 \u2013 Introduction \n1:02 \u2013 OpenAI Codex Security launch \n12:44 \u2013 Meta acquires Moltbook \n25:21 \u2013 Anthropic's eval awareness research \n38:06 \u2013 Alibaba agents mining crypto \n\nThe opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. \n\nSubscribe for AI updates \u2192 https://ibm.biz/BdpqsS\n\n#CodexSecurity #AIAgents #AgenticAI",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-13T10:00:42",
+      "fetched_at": "2026-03-13T10:28:32.910483",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10791,27 +10810,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "fc42b1abb53da2ad",
-      "url": "https://arxiv.org/abs/2603.11352",
-      "title": "TimeSqueeze: Dynamic Patching for Efficient Time Series Forecasting",
-      "summary": "arXiv:2603.11352v1 Announce Type: new \nAbstract: Transformer-based time series foundation models face a fundamental trade-off in choice of tokenization: point-wise embeddings preserve temporal fidelity but scale poorly with sequence length, whereas fixed-length patching improves efficiency by imposing uniform boundaries that may disrupt natural transitions and blur informative local dynamics. In order to address these limitations, we introduce TimeSqueeze, a dynamic patching mechanism that adaptively selects patch boundaries within each sequence based on local signal complexity. TimeSqueeze first applies a lightweight state-space encoder to extract full-resolution point-wise features, then performs content-aware segmentation by allocating short patches to information-dense regions and long patches to smooth or redundant segments. This variable-resolution compression preserves critical temporal structure while substantially reducing the token sequence presented to the Transformer backbone. Specifically for large-scale pretraining, TimeSqueeze attains up to 20x faster convergence and 8x higher data efficiency compared to equivalent point-token baselines. Experiments across long-horizon forecasting benchmarks show that TimeSqueeze consistently outperforms comparable architectures that use either point-wise tokenization or fixed-size patching.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Sravan Kumar Ankireddy, Nikita Seleznev, Nam H. Nguyen, Yulun Wu, Senthil Kumar, Furong Huang, C. Bayan Bruss",
-      "published_at": "2026-03-13T04:00:00",
-      "fetched_at": "2026-03-13T04:53:35.884848",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -12866,26 +12864,6 @@
       "author": "IBM Technology",
       "published_at": "2026-03-01T12:01:04",
       "fetched_at": "2026-03-11T20:28:31.610196",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "88e2cf4474269a3f",
-      "url": "https://www.youtube.com/watch?v=MSeCdJDj0P0",
-      "title": "Welcome - The Pragmatic Summit",
-      "summary": "Welcome address at The Pragmatic Summit, on 11 February 2026, in San Francisco. www.pragmaticsummit.com",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-02-28T19:48:02",
-      "fetched_at": "2026-03-11T20:28:31.994493",
       "score": null,
       "score_reason": "",
       "tier": "",
