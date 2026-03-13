@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-13T18:29:17.750660",
+  "exported_at": "2026-03-13T20:28:37.454473",
   "period_hours": 168,
-  "total": 4023,
+  "total": 4024,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,27 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "06ab8c1f735ced1f",
+      "url": "https://huggingface.co/blog/nvidia/nemo-retriever-agentic-retrieval",
+      "title": "Beyond Semantic Similarity: Introducing NVIDIA NeMo Retriever\u2019s Generalizable Agentic Retrieval Pipeline",
+      "summary": "",
+      "content": "",
+      "source_name": "Hugging Face Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "open-source",
+        "huggingface"
+      ],
+      "author": "",
+      "published_at": "2026-03-13T20:00:00",
+      "fetched_at": "2026-03-13T20:28:32.171167",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10793,27 +10814,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cf89ae1ec939d982",
-      "url": "https://arxiv.org/abs/2603.11399",
-      "title": "Entropy Guided Diversification and Preference Elicitation in Agentic Recommendation Systems",
-      "summary": "arXiv:2603.11399v1 Announce Type: new \nAbstract: Users on e-commerce platforms can be uncertain about their preferences early in their search. Queries to recommendation systems are frequently ambiguous, incomplete, or weakly specified. Agentic systems are expected to proactively reason, ask clarifying questions, and act on the user's behalf, which makes handling such ambiguity increasingly important. In existing platforms, ambiguity led to excessive interactions and question fatigue or overconfident recommendations prematurely collapsing the search space. We present an Interactive Decision Support System (IDSS) that addresses ambiguous user queries using entropy as a unifying signal. IDSS maintains a dynamically filtered candidate product set and quantifies uncertainty over item attributes using entropy. This uncertainty guides adaptive preference elicitation by selecting follow-up questions that maximize expected information gain. When preferences remain incomplete, IDSS explicitly incorporates residual uncertainty into downstream recommendations through uncertainty-aware ranking and entropy-based diversification, rather than forcing premature resolution. We evaluate IDSS using review-driven simulated users grounded in real user reviews, enabling a controlled study of diverse shopping behaviors. Our evaluation measures both interaction efficiency and recommendation quality. Results show that entropy-guided elicitation reduces unnecessary follow-up questions, while uncertainty-aware ranking and presentation yield more informative, diverse, and transparent recommendation sets under ambiguous intent. These findings demonstrate that entropy-guided reasoning provides an effective foundation for agentic recommendation systems operating under uncertainty.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Dat Tran, Yongce Li, Hannah Clay, Negin Golrezaei, Sajjad Beygi, Amin Saberi",
-      "published_at": "2026-03-13T04:00:00",
-      "fetched_at": "2026-03-13T04:53:35.884879",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -11800,27 +11800,6 @@
       "author": "",
       "published_at": "2026-03-09T13:52:36",
       "fetched_at": "2026-03-11T10:29:11.286531",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f16a35767e05c152",
-      "url": "https://openai.com/index/openai-to-acquire-promptfoo",
-      "title": "OpenAI to acquire Promptfoo",
-      "summary": "OpenAI is acquiring Promptfoo, an AI security platform that helps enterprises identify and remediate vulnerabilities in AI systems during development.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-09T10:00:00",
-      "fetched_at": "2026-03-11T10:29:10.860528",
       "score": null,
       "score_reason": "",
       "tier": "",
