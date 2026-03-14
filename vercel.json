@@ -5,7 +5,6 @@
   "cleanUrls": true,
   "functions": {
     "api/*.py": {
-      "runtime": "@vercel/python@4",
       "maxDuration": 10
     }
   },
