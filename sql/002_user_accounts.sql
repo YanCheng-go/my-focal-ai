@@ -23,7 +23,7 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_source_state_user
 
 CREATE TABLE IF NOT EXISTS user_sources (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id UUID NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE,
+    user_id UUID NOT NULL DEFAULT auth.uid() REFERENCES auth.users(id) ON DELETE CASCADE,
     source_type TEXT NOT NULL,
     name TEXT NOT NULL,
     config JSONB NOT NULL DEFAULT '{}'::jsonb,
@@ -44,21 +44,33 @@ ALTER TABLE source_state ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_sources ENABLE ROW LEVEL SECURITY;
 
 -- items: users see their own items; legacy items (user_id IS NULL) are public read-only
+DROP POLICY IF EXISTS items_select ON items;
 CREATE POLICY items_select ON items FOR SELECT USING (auth.uid() = user_id OR user_id IS NULL);
+DROP POLICY IF EXISTS items_insert ON items;
 CREATE POLICY items_insert ON items FOR INSERT WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS items_update ON items;
 CREATE POLICY items_update ON items FOR UPDATE USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS items_delete ON items;
 CREATE POLICY items_delete ON items FOR DELETE USING (auth.uid() = user_id);
 
 -- source_state: users see own state; legacy (NULL user_id) is public read-only
+DROP POLICY IF EXISTS source_state_select ON source_state;
 CREATE POLICY source_state_select ON source_state FOR SELECT USING (auth.uid() = user_id OR user_id IS NULL);
+DROP POLICY IF EXISTS source_state_insert ON source_state;
 CREATE POLICY source_state_insert ON source_state FOR INSERT WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS source_state_update ON source_state;
 CREATE POLICY source_state_update ON source_state FOR UPDATE USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS source_state_delete ON source_state;
 CREATE POLICY source_state_delete ON source_state FOR DELETE USING (auth.uid() = user_id);
 
 -- user_sources: users can only see/modify their own sources
+DROP POLICY IF EXISTS user_sources_select ON user_sources;
 CREATE POLICY user_sources_select ON user_sources FOR SELECT USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS user_sources_insert ON user_sources;
 CREATE POLICY user_sources_insert ON user_sources FOR INSERT WITH CHECK (auth.uid() = user_id);
+DROP POLICY IF EXISTS user_sources_update ON user_sources;
 CREATE POLICY user_sources_update ON user_sources FOR UPDATE USING (auth.uid() = user_id);
+DROP POLICY IF EXISTS user_sources_delete ON user_sources;
 CREATE POLICY user_sources_delete ON user_sources FOR DELETE USING (auth.uid() = user_id);
 
 -- ---------------------------------------------------------------------------
@@ -85,6 +97,11 @@ CREATE OR REPLACE FUNCTION upsert_item(
     p_user_id UUID DEFAULT NULL
 ) RETURNS void AS $$
 BEGIN
+    -- Validate caller owns the user_id (service role has auth.uid() = NULL, so allow NULL)
+    IF p_user_id IS NOT NULL AND auth.uid() IS NOT NULL AND p_user_id != auth.uid() THEN
+        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    END IF;
+
     INSERT INTO items (id, url, title, summary, content, source_name, source_type,
                        tags, author, published_at, fetched_at, score, score_reason,
                        tier, is_duplicate_of, user_id)
@@ -97,7 +114,9 @@ BEGIN
                             THEN EXCLUDED.score_reason ELSE items.score_reason END,
         tier = CASE WHEN EXCLUDED.tier IS NOT NULL AND EXCLUDED.tier != ''
                     THEN EXCLUDED.tier ELSE items.tier END,
-        is_duplicate_of = COALESCE(EXCLUDED.is_duplicate_of, items.is_duplicate_of);
+        is_duplicate_of = COALESCE(EXCLUDED.is_duplicate_of, items.is_duplicate_of)
+    -- Prevent overwriting another user's item on id collision
+    WHERE items.user_id = p_user_id OR items.user_id IS NULL;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
@@ -105,6 +124,11 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 CREATE OR REPLACE FUNCTION get_source_health(p_user_id UUID DEFAULT NULL)
 RETURNS TABLE(source_name TEXT, source_type TEXT, item_count BIGINT, last_fetched TEXT) AS $$
 BEGIN
+    -- Enforce caller can only query their own data (service role has auth.uid() = NULL)
+    IF p_user_id IS NOT NULL AND auth.uid() IS NOT NULL AND p_user_id != auth.uid() THEN
+        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    END IF;
+
     RETURN QUERY
     SELECT i.source_name, i.source_type, COUNT(*)::BIGINT as item_count,
            MAX(i.fetched_at)::TEXT as last_fetched
@@ -119,6 +143,11 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 CREATE OR REPLACE FUNCTION get_all_tags(p_user_id UUID DEFAULT NULL)
 RETURNS TABLE(tag TEXT) AS $$
 BEGIN
+    -- Enforce caller can only query their own data
+    IF p_user_id IS NOT NULL AND auth.uid() IS NOT NULL AND p_user_id != auth.uid() THEN
+        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    END IF;
+
     RETURN QUERY
     SELECT DISTINCT jsonb_array_elements_text(items.tags) as tag
     FROM items
@@ -127,26 +156,34 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
--- Mark YouTube Shorts duplicates (unchanged but add SECURITY DEFINER)
-CREATE OR REPLACE FUNCTION mark_youtube_shorts_duplicates()
+-- Mark YouTube Shorts duplicates scoped by user_id
+CREATE OR REPLACE FUNCTION mark_youtube_shorts_duplicates(p_user_id UUID DEFAULT NULL)
 RETURNS integer AS $$
 DECLARE
     affected integer;
 BEGIN
+    -- Enforce caller can only affect their own data
+    IF p_user_id IS NOT NULL AND auth.uid() IS NOT NULL AND p_user_id != auth.uid() THEN
+        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    END IF;
+
     UPDATE items SET is_duplicate_of = (
         SELECT f.id FROM items f
         WHERE f.source_name = items.source_name
           AND LOWER(f.title) = LOWER(items.title)
           AND f.url LIKE '%youtube.com/watch?v=%'
+          AND (p_user_id IS NULL AND f.user_id IS NULL OR f.user_id = p_user_id)
         LIMIT 1
     )
     WHERE items.url LIKE '%youtube.com/shorts/%'
       AND items.is_duplicate_of IS NULL
+      AND (p_user_id IS NULL AND items.user_id IS NULL OR items.user_id = p_user_id)
       AND EXISTS (
           SELECT 1 FROM items f
           WHERE f.source_name = items.source_name
             AND LOWER(f.title) = LOWER(items.title)
             AND f.url LIKE '%youtube.com/watch?v=%'
+            AND (p_user_id IS NULL AND f.user_id IS NULL OR f.user_id = p_user_id)
       );
     GET DIAGNOSTICS affected = ROW_COUNT;
     RETURN affected;
