@@ -241,6 +241,7 @@ src/ainews/
 │   ├── db.py          SqliteBackend + get_backend() factory
 │   └── supabase_backend.py  SupabaseBackend (PostgREST, user_id scoping)
 ├── sources/
+│   ├── manager.py         YAML round-trip read/write for source management (admin)
 │   └── supabase_manager.py  Read user_sources from Supabase, convert to config
 └── api/
     └── app.py         FastAPI: dashboard, JSON API, scheduler
@@ -286,4 +287,4 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-14*
+*Last updated: 2026-03-15*
