@@ -63,8 +63,11 @@ class SupabaseBackend:
         ).execute()
 
     def mark_youtube_shorts_duplicates(self) -> int:
-        # Use RPC for complex UPDATE with subquery
-        result = self._client.rpc("mark_youtube_shorts_duplicates").execute()
+        # Use RPC for complex UPDATE with subquery, scoped by user_id
+        params = {}
+        if self._user_id:
+            params["p_user_id"] = self._user_id
+        result = self._client.rpc("mark_youtube_shorts_duplicates", params).execute()
         return result.data if isinstance(result.data, int) else 0
 
     def get_existing_ids(self, item_ids: list[str]) -> set[str]:
@@ -179,10 +182,10 @@ class SupabaseBackend:
         if source_name:
             q = q.eq("source_name", source_name)
         if search:
-            # or filter across title, summary, source_name
-            q = q.or_(
-                f"title.ilike.%{search}%,summary.ilike.%{search}%,source_name.ilike.%{search}%"
-            )
+            # Escape special PostgREST filter characters to prevent injection
+            safe = search.replace("\\", "\\\\").replace("%", "\\%")
+            safe = safe.replace(",", "").replace(".", " ")
+            q = q.or_(f"title.ilike.%{safe}%,summary.ilike.%{safe}%,source_name.ilike.%{safe}%")
         if exclude_sources:
             for src in exclude_sources:
                 q = q.neq("source_name", src)
@@ -299,13 +302,21 @@ class SupabaseBackend:
         return deleted
 
     def get_items_for_backfill(self) -> list[dict]:
-        result = self._client.table("items").select("id, source_name, source_type, tags").execute()
+        q = self._client.table("items").select("id, source_name, source_type, tags")
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        result = q.execute()
         return result.data or []
 
     def update_item_metadata(self, item_id: str, tags: list[str], source_type: str) -> None:
-        self._client.table("items").update({"tags": tags, "source_type": source_type}).eq(
-            "id", item_id
-        ).execute()
+        q = (
+            self._client.table("items")
+            .update({"tags": tags, "source_type": source_type})
+            .eq("id", item_id)
+        )
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        q.execute()
 
     def get_stored_hash(self, key: str) -> str | None:
         q = self._client.table("source_state").select("last_fetched_at").eq("source_key", key)

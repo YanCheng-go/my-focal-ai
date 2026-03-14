@@ -10,13 +10,57 @@ Returns: { "items_fetched": N, "new_items": N }
 import hashlib
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler
-from urllib.parse import quote
+from ipaddress import ip_address
+from urllib.parse import quote, urlparse
 
 import feedparser
 import httpx
 from supabase import create_client
+
+# Block SSRF: private/reserved IP ranges
+_BLOCKED_RANGES = (
+    "10.",
+    "172.16.",
+    "172.17.",
+    "172.18.",
+    "172.19.",
+    "172.20.",
+    "172.21.",
+    "172.22.",
+    "172.23.",
+    "172.24.",
+    "172.25.",
+    "172.26.",
+    "172.27.",
+    "172.28.",
+    "172.29.",
+    "172.30.",
+    "172.31.",
+    "192.168.",
+    "127.",
+    "0.",
+    "169.254.",
+    "::1",
+    "fd",
+    "fe80",
+)
+
+
+def _is_safe_url(url: str) -> bool:
+    """Block requests to private/internal IP ranges."""
+    parsed = urlparse(url)
+    host = parsed.hostname or ""
+    if host.lower() in ("localhost", "metadata.google.internal"):
+        return False
+    try:
+        addr = ip_address(host)
+        return addr.is_global
+    except ValueError:
+        # It's a hostname, not an IP — allow (DNS resolution may still resolve
+        # to private, but httpx doesn't give us pre-connect hooks easily)
+        return not any(host.startswith(r) for r in _BLOCKED_RANGES)
 
 
 def _make_id(url: str) -> str:
@@ -28,7 +72,7 @@ def _parse_date(entry: dict) -> str | None:
         t = entry.get(field)
         if t:
             try:
-                return datetime(*t[:6]).isoformat()
+                return datetime(*t[:6], tzinfo=timezone.utc).isoformat()
             except Exception:
                 pass
     return None
@@ -81,6 +125,8 @@ def _fetch_and_ingest(supabase_client, user_id, source_type, name, config, tags)
         return 0, 0
 
     url = feed_meta["url"]
+    if not _is_safe_url(url):
+        raise ValueError("Blocked URL: not allowed to fetch internal/private addresses")
     headers = {"User-Agent": "Mozilla/5.0 (compatible; ainews/0.1)"}
     resp = httpx.get(url, follow_redirects=True, timeout=15, headers=headers)
     resp.raise_for_status()
@@ -167,13 +213,30 @@ class handler(BaseHTTPRequestHandler):
             user_id = user_resp.user.id
 
             # Use service key for writes (bypasses RLS, but we scope by user_id)
-            service_key = os.environ.get("AINEWS_SUPABASE_SERVICE_KEY", supabase_key)
+            service_key = os.environ.get("AINEWS_SUPABASE_SERVICE_KEY", "")
+            if not service_key:
+                self._json_response(500, {"error": "Server misconfigured"})
+                return
             service_client = create_client(supabase_url, service_key)
 
             source_type = body.get("source_type", "")
             name = body.get("name", "")
             config = body.get("config", {})
             tags = body.get("tags", [])
+
+            # Input validation
+            if not source_type or not _build_feed_url(source_type, name or "_", config):
+                self._json_response(400, {"error": f"Unsupported source_type: {source_type}"})
+                return
+            if not name or len(name) > 200:
+                self._json_response(400, {"error": "name is required (max 200 chars)"})
+                return
+            if not isinstance(config, dict):
+                self._json_response(400, {"error": "config must be an object"})
+                return
+            if not isinstance(tags, list) or not all(isinstance(t, str) for t in tags):
+                self._json_response(400, {"error": "tags must be a list of strings"})
+                return
 
             fetched, new = _fetch_and_ingest(
                 service_client, user_id, source_type, name, config, tags
@@ -187,8 +250,8 @@ class handler(BaseHTTPRequestHandler):
                 },
             )
 
-        except Exception as e:
-            self._json_response(500, {"error": str(e)})
+        except Exception:
+            self._json_response(500, {"error": "Internal server error"})
 
     def do_OPTIONS(self):
         """Handle CORS preflight."""
@@ -204,6 +267,12 @@ class handler(BaseHTTPRequestHandler):
         self.wfile.write(json.dumps(data).encode())
 
     def _cors_headers(self):
-        self.send_header("Access-Control-Allow-Origin", "*")
+        allowed_origin = os.environ.get("AINEWS_CORS_ORIGIN", "")
+        origin = self.headers.get("Origin", "")
+        if allowed_origin and origin == allowed_origin:
+            self.send_header("Access-Control-Allow-Origin", allowed_origin)
+        elif not allowed_origin:
+            # Fallback: allow all (development / unconfigured)
+            self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Authorization, Content-Type")

@@ -16,7 +16,7 @@
 
         if (session) {
             el.innerHTML = '<span class="text-gray-400 dark:text-gray-500">' +
-                session.user.email.replace(/</g, '&lt;') +
+                session.user.email.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') +
                 '</span> <a href="#" class="text-gray-400 hover:text-red-500 dark:hover:text-red-400 ml-1" id="auth-logout">Logout</a>';
             el.classList.remove('hidden');
             document.getElementById('auth-logout').onclick = async function(e) {
