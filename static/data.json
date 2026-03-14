@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-14T00:49:18.016949",
+  "exported_at": "2026-03-14T03:12:37.928819",
   "period_hours": 168,
-  "total": 4024,
+  "total": 4025,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,29 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1a0357adafdc9808",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.76",
+      "title": "v2.1.76",
+      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Added MCP elicitation support \u2014 MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)</li>\n<li>Added new <code>Elicitation</code> and <code>ElicitationResult</code> hooks to intercept and override responses before they're sent back</li>\n<li>Added <code>-n</code> / <code>--name &lt;name&gt;</code> CLI flag to set a display name for the session at startup</li>\n<li>Added <code>worktree.sparsePaths</code> setting for <code>claude --worktree</code> in large monorepos to check out only the directories you need via git sparse-checkout</li>\n<li>Added <code>PostCompact</code> hook that fires after compaction completes</li>\n<li>Added <code>/effort</code> slash command to set model effort level</li>\n<li>Added session quality survey \u2014 enterprise admins can configure the sample rate via the <code>feedbackSurveyRate</code> setting</li>\n<li>Fixed deferred tools (loaded via <code>ToolSearch</code>) losing their input schemas after conversation compaction, causing array and number parameters to be rejected with type errors</li>\n<li>Fixed slash commands showing \"Unknown skill\"</li>\n<li>Fixed plan mode asking for re-approval after the plan was already accepted</li>\n<li>Fixed voice mode swallowing keypresses while a permission dialog or plan editor was open</li>\n<li>Fixed <code>/voice</code> not working on Windows when installed via npm</li>\n<li>Fixed spurious \"Context limit reached\" when invoking a skill with <code>model:</code> frontmatter on a 1M-context session</li>\n<li>Fixed \"adaptive thinking is not supported on this model\" error when using non-standard model strings</li>\n<li>Fixed <code>Bash(cmd:*)</code> permission rules not matching when a quoted argument contains <code>#</code></li>\n<li>Fixed \"don't ask again\" in the Bash permission dialog showing the full raw command for pipes and compound commands</li>\n<li>Fixed auto-compaction retrying indefinitely after consecutive failures \u2014 a circuit breaker now stops after 3 attempts</li>\n<li>Fixed MCP reconnect spinner persisting after successful reconnection</li>\n<li>Fixed LSP plugins not registering servers when the LSP Manager initialized before marketplaces were reconciled</li>\n<li>Fixed clipboard copying in tmux over SSH \u2014 now attempts both direct terminal write and tmux clipboard integration</li>\n<li>Fixed <code>/export</code> showing only the filename instead of the full file path in the success message</li>\n<li>Fixed transcript not auto-scrolling to new messages after selecting text</li>\n<li>Fixed Escape key not working to exit the login method selection screen</li>\n<li>Fixed several Remote Control issues: sessions silently dying when the server reaps an idle environment, rapid messages being queued one-at-a-time instead of batched, and stale work items causing redelivery after JWT refresh</li>\n<li>Fixed bridge sessions failing to recover after extended WebSocket disconnects</li>\n<li>Fixed slash commands not found when typing the exact name of a soft-hidden command</li>\n<li>Improved <code>--worktree</code> startup performance by reading git refs directly and skipping redundant <code>git fetch</code> when the remote branch is already available locally</li>\n<li>Improved background agent behavior \u2014 killing a background agent now preserves its partial results in the conversation context</li>\n<li>Improved model fallback notifications \u2014 now always visible instead of hidden behind verbose mode, with human-friendly model names</li>\n<li>Improved blockquote readability on dark terminal themes \u2014 text is now italic with a left bar instead of dim</li>\n<li>Improved stale worktree cleanup \u2014 worktrees left behind after an interrupted parallel run are now automatically cleaned up</li>\n<li>Improved Remote Control session titles \u2014 now derived from your first prompt instead of showing \"Interactive session\"</li>\n<li>Improved <code>/voice</code> to show your dictation language on enable and warn when your <code>language</code> setting isn't supported for voice input</li>\n<li>Updated <code>--plugin-dir</code> to only accept one path to support subcommands \u2014 use repeated <code>--plugin-dir</code> for multiple directories</li>\n<li>[VSCode] Fixed gitignore patterns containing commas silently excluding entire filetypes from the @-mention file picker</li>\n</ul>",
+      "content": "<h2>What's changed</h2>\n<ul>\n<li>Added MCP elicitation support \u2014 MCP servers can now request structured input mid-task via an interactive dialog (form fields or browser URL)</li>\n<li>Added new <code>Elicitation</code> and <code>ElicitationResult</code> hooks to intercept and override responses before they're sent back</li>\n<li>Added <code>-n</code> / <code>--name &lt;name&gt;</code> CLI flag to set a display name for the session at startup</li>\n<li>Added <code>worktree.sparsePaths</code> setting for <code>claude --worktree</code> in large monorepos to check out only the directories you need via git sparse-checkout</li>\n<li>Added <code>PostCompact</code> hook that fires after compaction completes</li>\n<li>Added <code>/effort</code> slash command to set model effort level</li>\n<li>Added session quality survey \u2014 enterprise admins can configure the sample rate via the <code>feedbackSurveyRate</code> setting</li>\n<li>Fixed deferred tools (loaded via <code>ToolSearch</code>) losing their input schemas after conversation compaction, causing array and number parameters to be rejected with type errors</li>\n<li>Fixed slash commands showing \"Unknown skill\"</li>\n<li>Fixed plan mode asking for re-approval after the plan was already accepted</li>\n<li>Fixed voice mode swallowing keypresses while a permission dialog or plan editor was open</li>\n<li>Fixed <code>/voice</code> not working on Windows when installed via npm</li>\n<li>Fixed spurious \"Context limit reached\" when invoking a skill with <code>model:</code> frontmatter on a 1M-context session</li>\n<li>Fixed \"adaptive thinking is not supported on this model\" error when using non-standard model strings</li>\n<li>Fixed <code>Bash(cmd:*)</code> permission rules not matching when a quoted argument contains <code>#</code></li>\n<li>Fixed \"don't ask again\" in the Bash permission dialog showing the full raw command for pipes and compound commands</li>\n<li>Fixed auto-compaction retrying indefinitely after consecutive failures \u2014 a circuit breaker now stops after 3 attempts</li>\n<li>Fixed MCP reconnect spinner persisting after successful reconnection</li>\n<li>Fixed LSP plugins not registering servers when the LSP Manager initialized before marketplaces were reconciled</li>\n<li>Fixed clipboard copying in tmux over SSH \u2014 now attempts both direct terminal write and tmux clipboard integration</li>\n<li>Fixed <code>/export</code> showing only the filename instead of the full file path in the success message</li>\n<li>Fixed transcript not auto-scrolling to new messages after selecting text</li>\n<li>Fixed Escape key not working to exit the login method selection screen</li>\n<li>Fixed several Remote Control issues: sessions silently dying when the server reaps an idle environment, rapid messages being queued one-at-a-time instead of batched, and stale work items causing redelivery after JWT refresh</li>\n<li>Fixed bridge sessions failing to recover after extended WebSocket disconnects</li>\n<li>Fixed slash commands not found when typing the exact name of a soft-hidden command</li>\n<li>Improved <code>--worktree</code> startup performance by reading git refs directly and skipping redundant <code>git fetch</code> when the remote branch is already available locally</li>\n<li>Improved background agent behavior \u2014 killing a background agent now preserves its partial results in the conversation context</li>\n<li>Improved model fallback notifications \u2014 now always visible instead of hidden behind verbose mode, with human-friendly model names</li>\n<li>Improved blockquote readability on dark terminal themes \u2014 text is now italic with a left bar instead of dim</li>\n<li>Improved stale worktree cleanup \u2014 worktrees left behind after an interrupted parallel run are now automatically cleaned up</li>\n<li>Improved Remote Control session titles \u2014 now derived from your first prompt instead of showing \"Interactive session\"</li>\n<li>Improved <code>/voice</code> to show your dictation language on enable and warn when your <code>language</code> setting isn't supported for voice input</li>\n<li>Updated <code>--plugin-dir</code> to only accept one path to support subcommands \u2014 use repeated <code>--plugin-dir</code> for multiple directories</li>\n<li>[VSCode] Fixed gitignore patterns containing commas silently excluding entire filetypes from the @-mention file picker</li>\n</ul>",
+      "source_name": "Claude Code Releases",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "anthropic",
+        "claude code",
+        "tooling",
+        "changelog"
+      ],
+      "author": "ashwin-ant",
+      "published_at": "2026-03-14T01:23:58",
+      "fetched_at": "2026-03-14T03:12:03.755345",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10793,27 +10816,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "791304ab6a22dd58",
-      "url": "https://arxiv.org/abs/2603.11409",
-      "title": "Speak or Stay Silent: Context-Aware Turn-Taking in Multi-Party Dialogue",
-      "summary": "arXiv:2603.11409v1 Announce Type: new \nAbstract: Existing voice AI assistants treat every detected pause as an invitation to speak. This works in dyadic dialogue, but in multi-party settings, where an AI assistant participates alongside multiple speakers, pauses are abundant and ambiguous. An assistant that speaks on every pause becomes disruptive rather than useful. In this work, we formulate context-aware turn-taking: at every detected pause, given the full conversation context, our method decides whether the assistant should speak or stay silent. We introduce a benchmark of over 120K labeled conversations spanning three multi-party corpora. Evaluating eight recent large language models, we find that they consistently fail at context-aware turn-taking under zero-shot prompting. We then propose a supervised fine-tuning approach with reasoning traces, improving balanced accuracy by up to 23 percentage points. Our findings suggest that context-aware turn-taking is not an emergent capability; it must be explicitly trained.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Kratika Bhagtani, Mrinal Anand, Yu Chen Xu, Amit Kumar Singh Yadav",
-      "published_at": "2026-03-13T04:00:00",
-      "fetched_at": "2026-03-13T04:53:35.884886",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -11778,28 +11780,6 @@
       "author": "Dan Rowinski",
       "published_at": "2026-03-09T15:00:23",
       "fetched_at": "2026-03-11T10:29:14.673794",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cbf4861d9bf25ca8",
-      "url": "https://deepmind.google/blog/10-years-of-alphago/",
-      "title": "From games to biology and beyond: 10 years of AlphaGo\u2019s impact",
-      "summary": "Ten years since AlphaGo, we explore how it is catalyzing scientific discovery and paving a path to AGI.",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-03-09T13:52:36",
-      "fetched_at": "2026-03-11T10:29:11.286531",
       "score": null,
       "score_reason": "",
       "tier": "",
