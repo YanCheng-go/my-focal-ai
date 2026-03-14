@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-14T14:27:33.619043",
+  "exported_at": "2026-03-14T16:28:06.427536",
   "period_hours": 168,
-  "total": 4025,
+  "total": 4026,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,25 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fea50724e0d299fc",
+      "url": "https://www.youtube.com/shorts/cRDikT-YBRE",
+      "title": "Why did Meta acquire Moltbook?",
+      "summary": "The agentic era needs infrastructure. Meta's Moltbook acquisition positions them as the owner of agent-to-agent discovery and trust.\n\n#agenticai #dns #moltbook",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-14T16:01:01",
+      "fetched_at": "2026-03-14T16:27:55.564673",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10795,27 +10814,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "17af4d351fa25031",
-      "url": "https://arxiv.org/abs/2603.11433",
-      "title": "Adversarial Reinforcement Learning for Detecting False Data Injection Attacks in Vehicular Routing",
-      "summary": "arXiv:2603.11433v1 Announce Type: new \nAbstract: In modern transportation networks, adversaries can manipulate routing algorithms using false data injection attacks, such as simulating heavy traffic with multiple devices running crowdsourced navigation applications, to mislead vehicles toward suboptimal routes and increase congestion. To address these threats, we formulate a strategically zero-sum game between an attacker, who injects such perturbations, and a defender, who detects anomalies based on the observed travel times of network edges. We propose a computational method based on multi-agent reinforcement learning to compute a Nash equilibrium of this game, providing an optimal detection strategy, which ensures that total travel time remains within a worst-case bound, even in the presence of an attack. We present an extensive experimental evaluation that demonstrates the robustness and practical benefits of our approach, providing a powerful framework to improve the resilience of transportation networks against false data injection. In particular, we show that our approach yields approximate equilibrium policies and significantly outperforms baselines for both the attacker and the defender.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Taha Eghtesad, Yevgeniy Vorobeychik, Aron Laszka",
-      "published_at": "2026-03-13T04:00:00",
-      "fetched_at": "2026-03-13T04:53:35.884894",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -12743,25 +12741,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-03-02T01:19:09",
       "fetched_at": "2026-03-11T10:29:08.920720",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5320359efcebca95",
-      "url": "https://www.youtube.com/watch?v=g9UIamT4Pgc",
-      "title": "Best Language for AI: What You Need to Know",
-      "summary": "Ready to become a certified watsonx Generative AI Engineer? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpFiT\n\nLearn more about Five Open-Source AI Tools to Know here \u2192 https://ibm.biz/BdpFiw\n\nWhat\u2019s the best language for AI? \ud83e\udd14 Jeff Crume explains why natural language, not Python or Java, is the programming language of the AI era. Learn how LLMs and natural language processing are transforming coding workflows and making programming more accessible than ever. \ud83d\ude80\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/BdpFik\n\n#llm #ai #nlp #aiworkflows",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-03-01T12:01:04",
-      "fetched_at": "2026-03-11T20:28:31.610196",
       "score": null,
       "score_reason": "",
       "tier": "",
