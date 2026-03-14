@@ -26,7 +26,8 @@ uv run ainews backfill-tags --dry-run       # preview what would change
 uv run ainews cloud-fetch                   # fetch feeds + score with Claude API (for CI)
 uv run ainews export                        # export data.json + config.json to static/
 uv run ruff check src/                     # lint
-uv run pytest                              # tests
+uv run pytest                              # tests (unit only)
+uv run pytest -m integration               # integration tests (needs `supabase start` + env vars)
 ```
 
 ## Workflow: Adding a New Source
