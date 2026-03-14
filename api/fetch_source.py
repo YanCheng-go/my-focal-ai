@@ -17,6 +17,7 @@ from urllib.parse import quote, urlparse
 
 import feedparser
 import httpx
+
 from supabase import create_client
 
 # Block SSRF: private/reserved IP ranges
