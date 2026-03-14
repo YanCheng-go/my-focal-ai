@@ -181,18 +181,18 @@ BEGIN
         WHERE f.source_name = items.source_name
           AND LOWER(f.title) = LOWER(items.title)
           AND f.url LIKE '%youtube.com/watch?v=%'
-          AND (p_user_id IS NULL AND f.user_id IS NULL OR f.user_id = p_user_id)
+          AND f.user_id IS NOT DISTINCT FROM p_user_id
         LIMIT 1
     )
     WHERE items.url LIKE '%youtube.com/shorts/%'
       AND items.is_duplicate_of IS NULL
-      AND (p_user_id IS NULL AND items.user_id IS NULL OR items.user_id = p_user_id)
+      AND items.user_id IS NOT DISTINCT FROM p_user_id
       AND EXISTS (
           SELECT 1 FROM items f
           WHERE f.source_name = items.source_name
             AND LOWER(f.title) = LOWER(items.title)
             AND f.url LIKE '%youtube.com/watch?v=%'
-            AND (p_user_id IS NULL AND f.user_id IS NULL OR f.user_id = p_user_id)
+            AND f.user_id IS NOT DISTINCT FROM p_user_id
       );
     GET DIAGNOSTICS affected = ROW_COUNT;
     RETURN affected;
