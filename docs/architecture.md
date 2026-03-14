@@ -8,36 +8,146 @@ Each stage is independent — ingestion doesn't need the scorer, the scorer does
 
 ## Data Flow
 
+All three modes follow the same pipeline: **ingest → dedup → store → score → serve**. They differ in where data lives, who triggers fetches, and how content is served.
+
+### Mode 1: Local
+
 ```
-Sources (RSS, Twitter, YouTube, RSSHub, Luma, GitHub Trending)
+config/sources.yml
     │
     ▼
-Ingestion (async, per-source)
-    │  fetch feed → parse entries → create ContentItem
-    │  check item_exists(hash(url)) → skip if already in DB
-    │  upsert only new items
-    │  mark YouTube Shorts as duplicates of matching full videos
-    │  record last_fetched_at per source
+APScheduler (every 30 min)
     │
     ▼
-SQLite (WAL mode)
-    │  items table: all content + scores
-    │  source_state table: last_fetched_at per source
+runner.py ─── ingest ──► feeds.py ──► RSS / Atom / RSSHub
+    │                     twitter.py ──► Twitter GraphQL (Chrome cookies)
+    │                     xiaohongshu.py ──► XHS API (Chrome cookies)
+    │                     events.py ──► Anthropic / Google event pages
+    │                     github_trending.py ──► trendshift.io
     │
     ▼
-Scoring (Ollama, sequential)
+SqliteBackend (db.py)
+    │  id = sha256(url)[:16]
+    │  dedup via get_existing_ids()
+    │  upsert new items (COALESCE preserves scores)
+    │  mark YouTube Shorts duplicates
+    │
+    ▼
+scorer.py ──► Ollama (qwen3:4b)
     │  get_unscored_items(limit=30)
-    │  send each to LLM with three principles + tier definitions
-    │  parse JSON response → update score, tier, reason in DB
-    │  COALESCE prevents re-ingestion from overwriting scores
+    │  score 0-1, tier, reason per item
     │
     ▼
-Serving (FastAPI + static)
-    │  Dashboard: sorted by published_at (Luma events pushed to bottom)
-    │  Dedicated pages: Leaderboard, Events (3 tabs), Trends (2 tabs), CCC
-    │  JSON API: /api/items, /api/digest
-    │  APScheduler: auto-runs ingest+score every 30 min
-    │  Static site: Vercel serves client-side JS pages reading data.json + config.json
+FastAPI (app.py)
+    │  Dashboard: /            ◄── Jinja2 templates
+    │  API: /api/items, /api/digest
+    │  Admin: /admin (CRUD, password-protected)
+    │  Pages: /leaderboard, /events, /trends, /ccc
+```
+
+### Mode 2: Online Public
+
+```
+config/sources.yml
+    │
+    ▼
+GitHub Action (cron every 2h)
+    │  restore cached SQLite artifact
+    │
+    ▼
+cloud_fetch.py ── cloud_fetch_and_score()
+    │  runner.py ──► feeds.py (RSS only, no Twitter/XHS)
+    │
+    ▼
+SqliteBackend (ephemeral)
+    │  id = sha256(url)[:16]
+    │  same dedup + upsert as local
+    │
+    ▼
+claude_scorer.py ──► Claude API (optional, needs ANTHROPIC_API_KEY)
+    │
+    ▼
+export.py
+    │  items → static/data.json (500 items + dedicated-page items)
+    │  config → static/config.json (leaderboard links, event links)
+    │
+    ▼
+git commit + push
+    │
+    ▼
+Vercel (static site)
+    │  index.html ──► reads data.json (client-side JS)
+    │  leaderboard.html ──► reads config.json
+    │  events.html, trends.html, ccc.html ──► reads data.json
+    │  admin.html ──► read-only source info
+```
+
+### Mode 3: Online Login
+
+```
+User signs up / logs in (Supabase Auth)
+    │
+    ▼
+admin.html (browser)
+    │  CRUD: user_sources table via PostgREST (RLS: own rows only)
+    │  Pre-defined source list on first login (empty content)
+    │
+    ▼
+User clicks "Fetch" or "Fetch All"
+    │
+    ▼
+POST /api/fetch-source (Vercel serverless)
+    │  verify JWT → extract user_id
+    │  SSRF check on feed URL
+    │  fetch RSS/Atom feed
+    │  id = sha256(user_id:url)[:16]  ◄── user-scoped ID
+    │  dedup via items table (user_id filter)
+    │  upsert via upsert_item RPC (service role, scoped by user_id)
+    │
+    ▼
+Supabase Postgres
+    │  items (user_id, id, url, title, score, ...)
+    │  source_state (source_key, user_id, last_fetched_at)
+    │  user_sources (user_id, source_type, name, config, tags)
+    │  RLS: each user sees only their own rows
+    │  Partial unique indexes: (url) WHERE user_id IS NULL
+    │                          (url, user_id) WHERE user_id IS NOT NULL
+    │
+    ▼
+index.html (browser, logged in)
+    │  reads items via PostgREST (filtered by auth.uid())
+    │  personal feed — only items the user has fetched
+
+─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+
+Optional: scheduled batch fetch (GitHub Actions)
+    │
+    ▼
+cloud_fetch.py ── cloud_fetch_all_users()
+    │  service role → iterate user_ids from user_sources
+    │  per user: SupabaseBackend(user_id=uid)
+    │  runner.py ──► feeds.py (user's configured sources)
+    │  claude_scorer.py (optional)
+```
+
+### Shared Pipeline Components
+
+```
+                    ┌─────────────────────────────────────────────┐
+                    │            DbBackend Protocol                │
+                    │  (storage/backend.py)                        │
+                    │                                              │
+                    │  get_existing_ids()  ingest_items()          │
+                    │  upsert_item()       get_items()             │
+                    │  get_unscored_items() count_items()          │
+                    │  set_last_fetched()  get_all_tags()          │
+                    │  mark_youtube_shorts_duplicates()            │
+                    ├──────────────────┬──────────────────────────┤
+                    │  SqliteBackend   │  SupabaseBackend          │
+                    │  (db.py)         │  (supabase_backend.py)    │
+                    │  Mode 1 + 2      │  Mode 3                   │
+                    │  WAL, local file │  PostgREST, user_id scope │
+                    └──────────────────┴──────────────────────────┘
 ```
 
 ## Key Design Decisions
