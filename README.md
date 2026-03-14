@@ -86,6 +86,7 @@ New users get a pre-defined source list but **no pre-fetched content** — items
 | Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs) |
 | Trends | `/trends` | `trends.html` | GitHub trending repos — daily + history (2 tabs) |
 | CCC | `/ccc` | `ccc.html` | Claude Code Changelogs |
+| About | `/about` | `about.html` | About page |
 | Admin | `/admin` | `admin.html` | Source management (local); read-only (public); source CRUD + fetch (login) |
 
 ## Development
@@ -114,4 +115,4 @@ If you find this project useful:
 
 ---
 
-*Last updated: 2026-03-14*
+*Last updated: 2026-03-15*

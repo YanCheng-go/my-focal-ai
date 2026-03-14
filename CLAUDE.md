@@ -86,5 +86,5 @@ See [open issues](https://github.com/YanCheng-go/ai-news-filter/issues) for the 
 
 ---
 
-*Last updated: 2026-03-14*
+*Last updated: 2026-03-15*
 
