@@ -10,6 +10,7 @@
     }
   },
   "rewrites": [
+    { "source": "/api/fetch-source", "destination": "/api/fetch_source" },
     { "source": "/api/:path*", "destination": "/api/:path*" }
   ]
 }
