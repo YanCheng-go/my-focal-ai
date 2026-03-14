@@ -13,6 +13,7 @@ from fastapi.templating import Jinja2Templates
 from ainews.api.admin import _api as admin_api_router
 from ainews.api.admin import router as admin_router
 from ainews.config import Settings, load_principles, load_sources
+from ainews.export import HIDDEN_SOURCE_TYPES, HIDDEN_SOURCES
 from ainews.storage.db import get_backend
 
 logger = logging.getLogger(__name__)
@@ -174,8 +175,8 @@ def api_badge_counts(since: str | None = None):
     backend = _backend()
     dashboard_count = backend.count_items(
         since=since_dt,
-        exclude_source_types=["events", "luma", "github_trending", "github_trending_history"],
-        exclude_sources=["Claude Code Releases"],
+        exclude_source_types=HIDDEN_SOURCE_TYPES,
+        exclude_sources=HIDDEN_SOURCES,
     )
     trends_count = backend.count_items(
         since=since_dt, source_type="github_trending"
@@ -211,10 +212,8 @@ def dashboard(
         tag=tag,
         min_score=min_score,
         search=search,
-        exclude_sources=None if has_filter else ["Claude Code Releases"],
-        exclude_source_types=None
-        if has_filter
-        else ["events", "luma", "github_trending", "github_trending_history"],
+        exclude_sources=None if has_filter else HIDDEN_SOURCES,
+        exclude_source_types=None if has_filter else HIDDEN_SOURCE_TYPES,
     )
     items = backend.get_items(limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
     total = backend.count_items(**filter_kwargs)

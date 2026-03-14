@@ -133,15 +133,6 @@
                     <label for="source-type" class="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">Type</label>
                     <select id="source-type" onchange="updateFields()" class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500">
                         <option value="">Select type...</option>
-                        <option value="rss">RSS</option>
-                        <option value="youtube">YouTube</option>
-                        <option value="twitter">Twitter</option>
-                        <option value="arxiv">ArXiv</option>
-                        <option value="rsshub">RSSHub</option>
-                        <option value="xiaohongshu">Xiaohongshu</option>
-                        <option value="luma">Luma</option>
-                        <option value="events">Events</option>
-                        <option value="arxiv_queries">ArXiv Query</option>
                     </select>
                 </div>
                 <div id="dynamic-fields"></div>
@@ -177,35 +168,38 @@
     }
     updateThemeButtons();
 
-    // --- Constants ---
-    const SOURCE_FIELDS = {
-        twitter: {required: ['handle'], optional: ['tags']},
-        youtube: {required: ['channel_id', 'name'], optional: ['tags']},
-        arxiv: {required: ['url', 'name'], optional: ['tags']},
-        rss: {required: ['url', 'name'], optional: ['tags']},
-        rsshub: {required: ['route', 'name'], optional: ['source_type', 'tags']},
-        xiaohongshu: {required: ['user_id', 'name'], optional: ['tags']},
-        luma: {required: ['handle'], optional: ['tags']},
-        events: {required: ['scraper', 'name'], optional: ['tags']},
-        arxiv_queries: {required: ['query', 'name'], optional: ['tags']},
-    };
-
-    const TYPE_COLORS = {
-        twitter: 'bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-400',
-        youtube: 'bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400',
-        rss: 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400',
-        rsshub: 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400',
-        arxiv: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400',
-        arxiv_queries: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400',
-        xiaohongshu: 'bg-pink-100 text-pink-700 dark:bg-pink-900/50 dark:text-pink-400',
-        luma: 'bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-400',
-        events: 'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-400',
-    };
+    // --- Constants (populated from config.json in init()) ---
+    let SOURCE_FIELDS = {};
+    let TYPE_COLORS = {};
+    let HIDDEN_TYPES = [];
+    let HIDDEN_SOURCES = [];
 
     const FIELD_LABELS = {
         handle: 'Handle', channel_id: 'Channel ID', name: 'Name', url: 'URL',
         route: 'Route', user_id: 'User ID', query: 'Query', source_type: 'Source Type', scraper: 'Scraper',
     };
+
+    function loadSchemaFromConfig(config) {
+        var schema = config.source_type_schema || {};
+        HIDDEN_TYPES = config.hidden_source_types || [];
+        HIDDEN_SOURCES = config.hidden_sources || [];
+        SOURCE_FIELDS = {};
+        TYPE_COLORS = {};
+        Object.keys(schema).forEach(function(key) {
+            SOURCE_FIELDS[key] = schema[key].fields || {required: [], optional: []};
+            TYPE_COLORS[key] = schema[key].color || 'bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-gray-400';
+        });
+        // Populate source type dropdown
+        var sel = document.getElementById('source-type');
+        // Remove existing options except the placeholder
+        while (sel.options.length > 1) sel.remove(1);
+        Object.keys(schema).forEach(function(key) {
+            var opt = document.createElement('option');
+            opt.value = key;
+            opt.textContent = schema[key].label || key;
+            sel.appendChild(opt);
+        });
+    }
 
     // --- Utilities ---
     function esc(str) { var d = document.createElement('div'); d.textContent = str; return d.innerHTML; }
@@ -247,6 +241,7 @@
                 showState('no-supabase');
                 return;
             }
+            loadSchemaFromConfig(config);
             sb = window._sb || supabase.createClient(config.supabase_url, config.supabase_anon_key);
             window._sb = sb;
             var { data: { session } } = await sb.auth.getSession();
@@ -559,30 +554,12 @@
         else showToast('All ' + total + ' sources fetched', 'success');
     }
 
-    // --- Badges ---
-    (function() {
-        var lastSeen = localStorage.getItem('ainews_last_seen');
-        if (!lastSeen) { localStorage.setItem('ainews_last_seen', new Date().toISOString()); return; }
-        var lastSeenDate = new Date(lastSeen);
-        fetch('data.json').then(function(r) { return r.json(); }).then(function(data) {
-            var HIDDEN_TYPES = ['events','luma','github_trending','github_trending_history'];
-            var counts = {dashboard:0,trends:0,ccc:0};
-            (data.items||[]).forEach(function(item) {
-                var d = new Date(item.published_at || item.fetched_at);
-                if (d > lastSeenDate) {
-                    if (!HIDDEN_TYPES.includes(item.source_type) && item.source_name !== 'Claude Code Releases') counts.dashboard++;
-                    if (item.source_type === 'github_trending' || item.source_type === 'github_trending_history') counts.trends++;
-                    if (item.source_name === 'Claude Code Releases') counts.ccc++;
-                }
-            });
-            Object.keys(counts).forEach(function(p) { var el = document.getElementById('badge-'+p); if (el && counts[p] > 0) { el.textContent = counts[p] > 99 ? '99+' : counts[p]; el.classList.remove('hidden'); } });
-        }).catch(function(){});
-        localStorage.setItem('ainews_last_seen', new Date().toISOString());
-    })();
+    // Badges loaded via badges.js (auto mode)
 
     // --- Init ---
     init();
     </script>
+    <script src="badges.js"></script>
     <script src="auth-nav.js"></script>
 </body>
 </html>

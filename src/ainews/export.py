@@ -55,6 +55,59 @@ def export_items(
     return len(items)
 
 
+HIDDEN_SOURCE_TYPES = ["events", "luma", "github_trending", "github_trending_history"]
+HIDDEN_SOURCES = ["Claude Code Releases"]
+
+# Source type definitions for the admin UI (fields, colors, labels)
+SOURCE_TYPE_SCHEMA = {
+    "rss": {
+        "label": "RSS",
+        "fields": {"required": ["url", "name"], "optional": ["tags"]},
+        "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
+    },
+    "youtube": {
+        "label": "YouTube",
+        "fields": {"required": ["channel_id", "name"], "optional": ["tags"]},
+        "color": "bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400",
+    },
+    "twitter": {
+        "label": "Twitter",
+        "fields": {"required": ["handle"], "optional": ["tags"]},
+        "color": "bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-400",
+    },
+    "arxiv": {
+        "label": "ArXiv",
+        "fields": {"required": ["url", "name"], "optional": ["tags"]},
+        "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400",
+    },
+    "rsshub": {
+        "label": "RSSHub",
+        "fields": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
+        "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
+    },
+    "xiaohongshu": {
+        "label": "Xiaohongshu",
+        "fields": {"required": ["user_id", "name"], "optional": ["tags"]},
+        "color": "bg-pink-100 text-pink-700 dark:bg-pink-900/50 dark:text-pink-400",
+    },
+    "luma": {
+        "label": "Luma",
+        "fields": {"required": ["handle"], "optional": ["tags"]},
+        "color": "bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-400",
+    },
+    "events": {
+        "label": "Events",
+        "fields": {"required": ["scraper", "name"], "optional": ["tags"]},
+        "color": "bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-400",
+    },
+    "arxiv_queries": {
+        "label": "ArXiv Query",
+        "fields": {"required": ["query", "name"], "optional": ["tags"]},
+        "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400",
+    },
+}
+
+
 def _export_config(output_path: Path, settings: Settings):
     """Export leaderboard, event links, and Supabase config for static pages."""
     sources_config = load_sources(settings.config_dir)
@@ -63,6 +116,9 @@ def _export_config(output_path: Path, settings: Settings):
         "leaderboard": sources.get("leaderboard", []),
         "event_links": sources.get("event_links", []),
         "show_scores": settings.show_scores,
+        "hidden_source_types": HIDDEN_SOURCE_TYPES,
+        "hidden_sources": HIDDEN_SOURCES,
+        "source_type_schema": SOURCE_TYPE_SCHEMA,
     }
     # Include Supabase config for static admin page auth
     if settings.supabase_url and settings.supabase_key:

@@ -73,27 +73,8 @@
     }
     updateThemeButtons();
 
-    // Badge logic
-    function computeBadges(items) {
-        var lastSeen = localStorage.getItem('ainews_last_seen');
-        if (!lastSeen) { localStorage.setItem('ainews_last_seen', new Date().toISOString()); return; }
-        var lastSeenDate = new Date(lastSeen);
-        var HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
-        var counts = { dashboard: 0, trends: 0, ccc: 0 };
-        items.forEach(function(item) {
-            var d = new Date(item.published_at || item.fetched_at);
-            if (d > lastSeenDate) {
-                if (!HIDDEN_TYPES.includes(item.source_type) && item.source_name !== 'Claude Code Releases') counts.dashboard++;
-                if (item.source_type === 'github_trending' || item.source_type === 'github_trending_history') counts.trends++;
-                if (item.source_name === 'Claude Code Releases') counts.ccc++;
-            }
-        });
-        Object.keys(counts).forEach(function(page) {
-            var el = document.getElementById('badge-' + page);
-            if (el && counts[page] > 0) { el.textContent = counts[page] > 99 ? '99+' : counts[page]; el.classList.remove('hidden'); }
-        });
-        localStorage.setItem('ainews_last_seen', new Date().toISOString());
-    }
+    // Badge logic is in badges.js (loaded via <script>)
+    // computeBadges(items, config) is available globally
 
     // Data
     const PER_PAGE = 30;
@@ -103,8 +84,8 @@
     let page = 1;
     let showScores = false; // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
 
-    const HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
-    const HIDDEN_SOURCES = ['Claude Code Releases'];
+    let HIDDEN_TYPES = [];
+    let HIDDEN_SOURCES = [];
 
     async function init() {
         try {
@@ -114,6 +95,8 @@
             if (configResp && configResp.ok) {
                 config = await configResp.json();
                 showScores = !!config.show_scores;
+                HIDDEN_TYPES = config.hidden_source_types || [];
+                HIDDEN_SOURCES = config.hidden_sources || [];
             }
 
             // If user is logged in to Supabase, load their items instead
@@ -139,7 +122,7 @@
                             const { data: tagRows } = await sb.rpc('get_all_tags', { p_user_id: session.user.id });
                             allTags = (tagRows || []).map(r => r.tag);
                             document.getElementById('updated').textContent = 'Showing your personal feed';
-                            computeBadges(allItems);
+                            computeBadges(allItems, config);
                             buildFilters();
                             render();
                             return;
@@ -153,7 +136,7 @@
             allItems = data.items || [];
             allTags = data.all_tags || [];
             document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
-            computeBadges(allItems);
+            computeBadges(allItems, config);
             buildFilters();
             render();
         } catch (e) {
@@ -270,6 +253,7 @@
     function escapeAttr(text) { return escapeHtml(text).replace(/'/g, '&#39;'); }
     init();
     </script>
+    <script src="badges.js"></script>
     <script src="auth-nav.js"></script>
 </body>
 </html>
