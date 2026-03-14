@@ -4,7 +4,7 @@
 
 AI News Filter follows a linear pipeline: **ingest -> dedup -> store -> score -> serve**.
 
-Each stage is independent — ingestion doesn't need the scorer, the scorer doesn't need the API. They communicate through SQLite.
+Each stage is independent — ingestion doesn't need the scorer, the scorer doesn't need the API. They communicate through a storage backend (`DbBackend` protocol) — either SQLite (local) or Supabase Postgres (online login).
 
 ## Data Flow
 
@@ -43,7 +43,7 @@ Serving (FastAPI + static)
 ## Key Design Decisions
 
 ### URL-based dedup
-Each item's ID is `sha256(url)[:16]`. Before inserting, `item_exists()` checks the DB. This means feeds are re-downloaded every cycle (RSS has no "since" support), but only new items are written. The DB also has a `UNIQUE` constraint on `url` as a safety net.
+Each item's ID is `sha256(url)[:16]` in single-tenant mode (local/public). In multi-tenant mode (online login), the ID is `sha256(user_id:url)[:16]` so each user gets independent copies of items from shared feeds. Before inserting, `get_existing_ids()` checks the DB in batch. Feeds are re-downloaded every cycle (RSS has no "since" support), but only new items are written. URL uniqueness is enforced per-user via partial indexes.
 
 ### Score preservation
 The `upsert_item` function uses `COALESCE(excluded.score, items.score)` — if a re-ingested item has `score=None`, the existing score is kept. Scores are only overwritten when the scorer explicitly sets them.
@@ -59,10 +59,10 @@ Items are scored one at a time (not in parallel) because Ollama runs a single mo
 
 ## Deployment Modes
 
-### Local Mode
-Full pipeline runs on your machine: SQLite + Ollama + APScheduler + FastAPI.
+### 1. Local Mode
+Full pipeline runs on your machine: SQLite + Ollama + APScheduler + FastAPI. Full admin rights.
 
-### Cloud Mode (Vercel + GitHub Actions)
+### 2. Online Public Mode (Vercel + GitHub Actions)
 ```
 GitHub Action (cron every 2h)          Vercel (static site)
 ┌──────────────────────────┐          ┌──────────────────┐
@@ -75,10 +75,37 @@ GitHub Action (cron every 2h)          Vercel (static site)
 └──────────────────────────┘          └──────────────────┘
 ```
 
+- Pre-defined sources from `sources.yml`, auto-fetched on schedule
 - No persistent database — SQLite is cached as a GitHub Action artifact for dedup
 - No backend on Vercel — purely static HTML + JSON
+- Data retained for ~1 week (rolling window)
 - Scoring is optional (requires `ANTHROPIC_API_KEY` secret)
 - Twitter ingestion skipped in CI (no Chrome cookies)
+
+### 3. Online Login Mode (Supabase + Vercel)
+```
+User (browser)                         Vercel (static + serverless)
+┌──────────────────────────┐          ┌──────────────────────────┐
+│ 1. Sign up / log in      │          │                          │
+│    (Supabase Auth)        │          │  static/admin.html       │
+│ 2. Manage source list     │ ──────► │  (CRUD via PostgREST)    │
+│ 3. Click "Fetch"          │          │                          │
+│                           │          │  POST /api/fetch-source  │
+│                           │          │  (Vercel serverless fn)  │
+│                           │          │  ↓ verify JWT            │
+│                           │          │  ↓ fetch feed            │
+│                           │          │  ↓ upsert to Supabase   │
+│ 4. View personal feed     │ ◄────── │  static/index.html       │
+│                           │          │  (reads via PostgREST)   │
+└──────────────────────────┘          └──────────────────────────┘
+```
+
+- Each user has isolated data via Row Level Security (`user_id` on all tables)
+- Item IDs are user-scoped: `sha256(user_id:url)[:16]` — same feed, independent items per user
+- New users get a pre-defined source list but **empty content** (fetch on demand)
+- `user_sources` table stores per-user source configuration (replaces `sources.yml`)
+- Serverless function (`api/fetch-source.py`) handles authenticated fetches with SSRF protection
+- Optional: GitHub Actions batch job (`cloud_fetch_all_users()`) for scheduled per-user fetches
 
 ## Module Map
 
@@ -100,7 +127,11 @@ src/ainews/
 │   ├── scorer.py      Ollama LLM scoring (local)
 │   └── claude_scorer.py  Claude API scoring (cloud)
 ├── storage/
-│   └── db.py          SQLite: schema, upsert, queries, source state, dedup
+│   ├── backend.py     DbBackend protocol (interface for SQLite + Supabase)
+│   ├── db.py          SqliteBackend + get_backend() factory
+│   └── supabase_backend.py  SupabaseBackend (PostgREST, user_id scoping)
+├── sources/
+│   └── supabase_manager.py  Read user_sources from Supabase, convert to config
 └── api/
     └── app.py         FastAPI: dashboard, JSON API, scheduler
 
@@ -109,13 +140,23 @@ config/
 └── principles.yml     Scoring principles, tiers, proximity model
 
 static/
-├── index.html         Static dashboard (reads data.json)
+├── index.html         Static dashboard (reads data.json; or PostgREST for logged-in users)
+├── admin.html         Source CRUD + fetch (Supabase Auth); read-only fallback
 ├── leaderboard.html   AI benchmark links (reads config.json)
 ├── events.html        Event calendars + scraped events (reads config.json + data.json)
 ├── trends.html        GitHub trending repos (reads data.json)
 ├── ccc.html           Claude Code Changelogs (reads data.json)
+├── auth-nav.js        Shared Sign in / Logout indicator (Supabase Auth)
+├── badges.js          Shared notification badge logic
 ├── data.json          Exported items (generated by ainews export)
 └── config.json        Leaderboard + event links (generated by ainews export)
+
+api/
+└── fetch-source.py    Vercel serverless: JWT-authenticated per-source fetch
+
+sql/
+├── supabase_schema.sql      Base Supabase schema (items, source_state, RPCs)
+└── 002_user_accounts.sql    Migration: user_id columns, user_sources, RLS, updated RPCs
 
 templates/
 ├── dashboard.html     Jinja2 dark-theme dashboard (local FastAPI)
@@ -135,4 +176,4 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-09*
+*Last updated: 2026-03-14*
