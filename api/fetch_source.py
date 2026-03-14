@@ -10,6 +10,7 @@ Returns: { "items_fetched": N, "new_items": N }
 import hashlib
 import json
 import os
+import socket
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler
 from ipaddress import ip_address
@@ -20,48 +21,38 @@ import httpx
 
 from supabase import create_client
 
-# Block SSRF: private/reserved IP ranges
-_BLOCKED_RANGES = (
-    "10.",
-    "172.16.",
-    "172.17.",
-    "172.18.",
-    "172.19.",
-    "172.20.",
-    "172.21.",
-    "172.22.",
-    "172.23.",
-    "172.24.",
-    "172.25.",
-    "172.26.",
-    "172.27.",
-    "172.28.",
-    "172.29.",
-    "172.30.",
-    "172.31.",
-    "192.168.",
-    "127.",
-    "0.",
-    "169.254.",
-    "::1",
-    "fd",
-    "fe80",
-)
+# Hostnames always blocked (never attempt DNS resolution)
+_BLOCKED_HOSTS = {"localhost", "metadata.google.internal"}
 
 
 def _is_safe_url(url: str) -> bool:
-    """Block requests to private/internal IP ranges."""
+    """Block requests to private/internal IP ranges.
+
+    Resolves hostnames to IP addresses before checking to prevent DNS rebinding
+    attacks where a hostname resolves to a private IP after validation.
+    """
     parsed = urlparse(url)
     host = parsed.hostname or ""
-    if host.lower() in ("localhost", "metadata.google.internal"):
+    if host.lower() in _BLOCKED_HOSTS:
         return False
     try:
+        # If host is already an IP literal, check directly
         addr = ip_address(host)
         return addr.is_global
     except ValueError:
-        # It's a hostname, not an IP — allow (DNS resolution may still resolve
-        # to private, but httpx doesn't give us pre-connect hooks easily)
-        return not any(host.startswith(r) for r in _BLOCKED_RANGES)
+        pass
+    # Resolve hostname and check all resulting IPs
+    try:
+        infos = socket.getaddrinfo(host, None, proto=socket.IPPROTO_TCP)
+    except socket.gaierror:
+        return False  # Unresolvable hostname
+    if not infos:
+        return False
+    for info in infos:
+        addr = ip_address(info[4][0])
+        if not addr.is_global:
+            return False
+    return True
 
 
 def _make_id(url: str, user_id: str | None = None) -> str:
@@ -252,6 +243,10 @@ class handler(BaseHTTPRequestHandler):
                 },
             )
 
+        except ValueError:
+            self._json_response(400, {"error": "Invalid or blocked URL"})
+        except httpx.HTTPError:
+            self._json_response(400, {"error": "Failed to fetch feed"})
         except Exception:
             self._json_response(500, {"error": "Internal server error"})
 

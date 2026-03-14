@@ -60,6 +60,12 @@ class SqliteBackend:
     def commit(self) -> None:
         self._conn.commit()
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()
+
     # ------------------------------------------------------------------
     # CRUD operations
     # ------------------------------------------------------------------

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+from types import TracebackType
 from typing import Protocol
 
 from ainews.models import ContentItem
@@ -13,12 +14,23 @@ class DbBackend(Protocol):
 
     All storage callers use this interface. Concrete implementations:
     - SqliteBackend (src/ainews/storage/db.py) — local SQLite
-    - SupabaseBackend (future) — Supabase Postgres
+    - SupabaseBackend (src/ainews/storage/supabase_backend.py) — Supabase Postgres
+
+    Supports use as a context manager for safe resource cleanup.
     """
 
     def close(self) -> None: ...
 
     def commit(self) -> None: ...
+
+    def __enter__(self) -> DbBackend: ...
+
+    def __exit__(
+        self,
+        exc_type: type[BaseException] | None,
+        exc_val: BaseException | None,
+        exc_tb: TracebackType | None,
+    ) -> None: ...
 
     def get_last_fetched(self, source_key: str) -> datetime | None: ...
 

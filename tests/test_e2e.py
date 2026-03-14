@@ -520,6 +520,8 @@ class TestMode3OnlineLogin:
             p5 = patch("ainews.cloud_fetch.run_ingestion", new_callable=AsyncMock, return_value=3)
             with p2, p3, p4 as mock_get_backend, p5:
                 mock_backend = MagicMock()
+                mock_backend.__enter__ = MagicMock(return_value=mock_backend)
+                mock_backend.__exit__ = MagicMock(return_value=False)
                 mock_get_backend.return_value = mock_backend
 
                 from ainews.cloud_fetch import cloud_fetch_all_users
@@ -527,7 +529,7 @@ class TestMode3OnlineLogin:
                 total = await cloud_fetch_all_users()
 
                 mock_get_backend.assert_called_once_with(user_id="user-1")
-                mock_backend.close.assert_called_once()
+                mock_backend.__exit__.assert_called_once()
                 return total
 
         total = asyncio.get_event_loop().run_until_complete(_run())

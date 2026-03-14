@@ -16,6 +16,19 @@ except ImportError:  # pragma: no cover
     create_client = None  # type: ignore[assignment]
 
 
+class SupabaseError(RuntimeError):
+    """Raised when a Supabase RPC or query fails."""
+
+
+def _exec(query):
+    """Execute a Supabase query with error handling."""
+    try:
+        return query.execute()
+    except Exception as exc:
+        logger.error("Supabase query failed: %s", exc)
+        raise SupabaseError(str(exc)) from exc
+
+
 class SupabaseBackend:
     """Supabase implementation of the DbBackend protocol.
 
@@ -35,6 +48,12 @@ class SupabaseBackend:
     def commit(self) -> None:
         pass  # Auto-commit per operation
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()
+
     # ------------------------------------------------------------------
     # CRUD operations
     # ------------------------------------------------------------------
@@ -47,7 +66,7 @@ class SupabaseBackend:
         )
         if self._user_id:
             q = q.eq("user_id", self._user_id)
-        result = q.execute()
+        result = _exec(q)
         if result.data:
             return datetime.fromisoformat(result.data[0]["last_fetched_at"])
         return None
@@ -60,14 +79,14 @@ class SupabaseBackend:
         }
         if self._user_id:
             params["p_user_id"] = self._user_id
-        self._client.rpc("upsert_source_state", params).execute()
+        _exec(self._client.rpc("upsert_source_state", params))
 
     def mark_youtube_shorts_duplicates(self) -> int:
         # Use RPC for complex UPDATE with subquery, scoped by user_id
         params = {}
         if self._user_id:
             params["p_user_id"] = self._user_id
-        result = self._client.rpc("mark_youtube_shorts_duplicates", params).execute()
+        result = _exec(self._client.rpc("mark_youtube_shorts_duplicates", params))
         return result.data if isinstance(result.data, int) else 0
 
     def get_existing_ids(self, item_ids: list[str]) -> set[str]:
@@ -80,7 +99,7 @@ class SupabaseBackend:
             q = self._client.table("items").select("id").in_("id", chunk)
             if self._user_id:
                 q = q.eq("user_id", self._user_id)
-            resp = q.execute()
+            resp = _exec(q)
             result.update(row["id"] for row in resp.data)
         return result
 
@@ -104,7 +123,7 @@ class SupabaseBackend:
             "p_user_id": self._user_id,
         }
         # Use RPC for COALESCE upsert logic (preserve existing scores)
-        self._client.rpc("upsert_item", row).execute()
+        _exec(self._client.rpc("upsert_item", row))
 
     def ingest_items(self, source_key: str, items: list[ContentItem]) -> int:
         # Re-ID items with user-prefixed hash when user_id is set.
@@ -127,7 +146,7 @@ class SupabaseBackend:
         params = {}
         if self._user_id:
             params["p_user_id"] = self._user_id
-        result = self._client.rpc("get_source_health", params).execute()
+        result = _exec(self._client.rpc("get_source_health", params))
         health: dict[str, dict] = {}
         for row in result.data or []:
             health[row["source_name"]] = {
@@ -139,7 +158,7 @@ class SupabaseBackend:
         q = self._client.table("source_state").select("*")
         if self._user_id:
             q = q.eq("user_id", self._user_id)
-        state = q.execute()
+        state = _exec(q)
         for row in state.data or []:
             key = row["source_key"]
             if key not in health:
@@ -229,14 +248,14 @@ class SupabaseBackend:
             exclude_source_types=exclude_source_types,
             source_types=source_types,
         )
-        result = q.execute()
+        result = _exec(q)
         return result.count or 0
 
     def get_all_tags(self) -> list[str]:
         params = {}
         if self._user_id:
             params["p_user_id"] = self._user_id
-        result = self._client.rpc("get_all_tags", params).execute()
+        result = _exec(self._client.rpc("get_all_tags", params))
         return [row["tag"] for row in result.data or []]
 
     def get_items(
@@ -281,14 +300,14 @@ class SupabaseBackend:
             q = q.order("fetched_at", desc=True)
 
         q = q.range(offset, offset + limit - 1)
-        result = q.execute()
+        result = _exec(q)
         return [_row_to_item(row) for row in result.data or []]
 
     def get_unscored_items(self, limit: int = 50) -> list[ContentItem]:
         q = self._client.table("items").select("*").is_("score", "null")
         if self._user_id:
             q = q.eq("user_id", self._user_id)
-        result = q.order("fetched_at", desc=True).limit(limit).execute()
+        result = _exec(q.order("fetched_at", desc=True).limit(limit))
         return [_row_to_item(row) for row in result.data or []]
 
     def delete_source_content(self, source_name: str) -> int:
@@ -296,25 +315,25 @@ class SupabaseBackend:
         q = self._client.table("items").select("*", count="exact").eq("source_name", source_name)
         if self._user_id:
             q = q.eq("user_id", self._user_id)
-        count_result = q.execute()
+        count_result = _exec(q)
         deleted = count_result.count or 0
 
         # Delete items
         dq = self._client.table("items").delete().eq("source_name", source_name)
         if self._user_id:
             dq = dq.eq("user_id", self._user_id)
-        dq.execute()
+        _exec(dq)
         sq = self._client.table("source_state").delete().eq("source_key", source_name)
         if self._user_id:
             sq = sq.eq("user_id", self._user_id)
-        sq.execute()
+        _exec(sq)
         return deleted
 
     def get_items_for_backfill(self) -> list[dict]:
         q = self._client.table("items").select("id, source_name, source_type, tags")
         if self._user_id:
             q = q.eq("user_id", self._user_id)
-        result = q.execute()
+        result = _exec(q)
         return result.data or []
 
     def update_item_metadata(self, item_id: str, tags: list[str], source_type: str) -> None:
@@ -325,13 +344,13 @@ class SupabaseBackend:
         )
         if self._user_id:
             q = q.eq("user_id", self._user_id)
-        q.execute()
+        _exec(q)
 
     def get_stored_hash(self, key: str) -> str | None:
         q = self._client.table("source_state").select("last_fetched_at").eq("source_key", key)
         if self._user_id:
             q = q.eq("user_id", self._user_id)
-        result = q.execute()
+        result = _exec(q)
         if result.data:
             return result.data[0]["last_fetched_at"]
         return None
@@ -343,7 +362,7 @@ class SupabaseBackend:
         }
         if self._user_id:
             params["p_user_id"] = self._user_id
-        self._client.rpc("upsert_source_state", params).execute()
+        _exec(self._client.rpc("upsert_source_state", params))
 
 
 def _row_to_item(row: dict) -> ContentItem:

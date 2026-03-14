@@ -4,12 +4,16 @@ Used by GitHub Actions. Fetches feeds (no Twitter/XHS) and optionally scores
 with Claude API if ANTHROPIC_API_KEY is set.
 """
 
+import asyncio
 import logging
 import os
 
 from ainews.config import Settings, load_principles
 from ainews.ingest.runner import run_ingestion
 from ainews.storage.db import get_backend
+
+# Per-user fetch timeout (seconds) — prevents one slow feed from blocking all users
+_USER_FETCH_TIMEOUT = 120
 
 logger = logging.getLogger(__name__)
 
@@ -38,18 +42,14 @@ async def _score_with_claude(backend, settings, label: str = "") -> int:
 async def cloud_fetch_and_score():
     """Fetch RSS/Atom feeds. Scores with Claude API if ANTHROPIC_API_KEY is set."""
     settings = Settings()
-    backend = get_backend(settings.db_path)
-
-    try:
+    with get_backend(settings.db_path) as backend:
         # Reuse the standard ingestion pipeline (Twitter/XHS gracefully skip
         # when Chrome cookies are unavailable, i.e. in CI)
         total_new = await run_ingestion(backend, settings.config_dir)
         await _score_with_claude(backend, settings)
 
-        logger.info(f"Cloud fetch complete: {total_new} new items")
-        return total_new
-    finally:
-        backend.close()
+    logger.info(f"Cloud fetch complete: {total_new} new items")
+    return total_new
 
 
 async def cloud_fetch_all_users():
@@ -86,14 +86,15 @@ async def cloud_fetch_all_users():
             if not rows:
                 continue
             sources_config = sources_to_config(rows)
-            backend = get_backend(user_id=uid)
-            try:
-                new_items = await run_ingestion(backend, sources_config=sources_config)
-                total_new += new_items
-                logger.info(f"User {uid}: fetched {new_items} new items")
-                await _score_with_claude(backend, settings, label=f"User {uid}")
-            finally:
-                backend.close()
+            with get_backend(user_id=uid) as backend:
+                # Timeout covers both ingestion and scoring per user
+                async with asyncio.timeout(_USER_FETCH_TIMEOUT):
+                    new_items = await run_ingestion(backend, sources_config=sources_config)
+                    total_new += new_items
+                    logger.info(f"User {uid}: fetched {new_items} new items")
+                    await _score_with_claude(backend, settings, label=f"User {uid}")
+        except TimeoutError:
+            logger.error(f"User {uid}: timed out after {_USER_FETCH_TIMEOUT}s")
         except Exception:
             logger.exception(f"Failed to fetch for user {uid}")
 

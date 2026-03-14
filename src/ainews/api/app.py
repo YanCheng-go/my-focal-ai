@@ -103,28 +103,27 @@ def api_items(
     order_by: str = "date",
 ):
     """Get scored content items as JSON. Designed for programmatic / AI consumption."""
-    backend = _backend()
     since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
-    items = backend.get_items(
-        limit=limit,
-        offset=offset,
-        min_score=min_score,
-        source_type=source_type,
-        tier=tier,
-        tag=tag,
-        search=search,
-        since=since,
-        order_by=order_by,
-    )
-    total = backend.count_items(
-        min_score=min_score,
-        source_type=source_type,
-        tier=tier,
-        tag=tag,
-        search=search,
-        since=since,
-    )
-    backend.close()
+    with _backend() as backend:
+        items = backend.get_items(
+            limit=limit,
+            offset=offset,
+            min_score=min_score,
+            source_type=source_type,
+            tier=tier,
+            tag=tag,
+            search=search,
+            since=since,
+            order_by=order_by,
+        )
+        total = backend.count_items(
+            min_score=min_score,
+            source_type=source_type,
+            tier=tier,
+            tag=tag,
+            search=search,
+            since=since,
+        )
     return {
         "items": [item.model_dump(mode="json") for item in items],
         "count": len(items),
@@ -135,10 +134,9 @@ def api_items(
 @app.get("/api/digest")
 def api_digest(hours: int = 24, min_score: float = 0.6):
     """Get a daily digest — top items from the last N hours."""
-    backend = _backend()
     since = datetime.now() - timedelta(hours=hours)
-    items = backend.get_items(limit=20, min_score=min_score, since=since)
-    backend.close()
+    with _backend() as backend:
+        items = backend.get_items(limit=20, min_score=min_score, since=since)
     return {
         "period_hours": hours,
         "min_score": min_score,
@@ -189,29 +187,28 @@ def api_badge_counts(
     trend_dt = _parse(since_trends) or fallback_dt
     ccc_dt = _parse(since_ccc) or fallback_dt
 
-    backend = _backend()
-    dashboard_count = (
-        backend.count_items(
-            since=dash_dt,
-            exclude_source_types=HIDDEN_SOURCE_TYPES,
-            exclude_sources=HIDDEN_SOURCES,
+    with _backend() as backend:
+        dashboard_count = (
+            backend.count_items(
+                since=dash_dt,
+                exclude_source_types=HIDDEN_SOURCE_TYPES,
+                exclude_sources=HIDDEN_SOURCES,
+            )
+            if dash_dt
+            else 0
         )
-        if dash_dt
-        else 0
-    )
-    trends_count = (
-        backend.count_items(
-            since=trend_dt,
-            source_types=["github_trending", "github_trending_history"],
+        trends_count = (
+            backend.count_items(
+                since=trend_dt,
+                source_types=["github_trending", "github_trending_history"],
+            )
+            if trend_dt
+            else 0
         )
-        if trend_dt
-        else 0
-    )
-    ccc_count = 0
-    if ccc_dt:
-        for src in HIDDEN_SOURCES:
-            ccc_count += backend.count_items(since=ccc_dt, source_name=src)
-    backend.close()
+        ccc_count = 0
+        if ccc_dt:
+            for src in HIDDEN_SOURCES:
+                ccc_count += backend.count_items(since=ccc_dt, source_name=src)
     return {"dashboard": dashboard_count, "trends": trends_count, "ccc": ccc_count}
 
 
@@ -231,7 +228,6 @@ def dashboard(
     order_by: str = "date",
     page: int = 1,
 ):
-    backend = _backend()
     offset = (page - 1) * PER_PAGE
     # Hide dedicated-page sources from the main feed unless explicitly searched/filtered
     has_filter = search or tag or source_type
@@ -244,10 +240,10 @@ def dashboard(
         exclude_sources=None if has_filter else HIDDEN_SOURCES,
         exclude_source_types=None if has_filter else HIDDEN_SOURCE_TYPES,
     )
-    items = backend.get_items(limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
-    total = backend.count_items(**filter_kwargs)
-    all_tags = backend.get_all_tags()
-    backend.close()
+    with _backend() as backend:
+        items = backend.get_items(limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
+        total = backend.count_items(**filter_kwargs)
+        all_tags = backend.get_all_tags()
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "dashboard.html",
@@ -290,11 +286,10 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
     total_pages = 1
     if tab in ("luma", "tech"):
         source_type = "luma" if tab == "luma" else "events"
-        backend = _backend()
         offset = (page - 1) * PER_PAGE
-        items = backend.get_items(limit=PER_PAGE, offset=offset, source_type=source_type)
-        total = backend.count_items(source_type=source_type)
-        backend.close()
+        with _backend() as backend:
+            items = backend.get_items(limit=PER_PAGE, offset=offset, source_type=source_type)
+            total = backend.count_items(source_type=source_type)
         total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "events.html",
@@ -312,14 +307,13 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
 
 @app.get("/trends", response_class=HTMLResponse)
 def trends(request: Request, tab: str = "daily", page: int = 1):
-    backend = _backend()
     offset = (page - 1) * PER_PAGE
     source_type = "github_trending_history" if tab == "history" else "github_trending"
-    items = backend.get_items(
-        limit=PER_PAGE, offset=offset, source_type=source_type, order_by="score"
-    )
-    total = backend.count_items(source_type=source_type)
-    backend.close()
+    with _backend() as backend:
+        items = backend.get_items(
+            limit=PER_PAGE, offset=offset, source_type=source_type, order_by="score"
+        )
+        total = backend.count_items(source_type=source_type)
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "trends.html",
@@ -341,11 +335,10 @@ def about(request: Request):
 
 @app.get("/ccc", response_class=HTMLResponse)
 def ccc(request: Request, page: int = 1):
-    backend = _backend()
     offset = (page - 1) * PER_PAGE
-    items = backend.get_items(limit=PER_PAGE, offset=offset, source_name="Claude Code Releases")
-    total = backend.count_items(source_name="Claude Code Releases")
-    backend.close()
+    with _backend() as backend:
+        items = backend.get_items(limit=PER_PAGE, offset=offset, source_name="Claude Code Releases")
+        total = backend.count_items(source_name="Claude Code Releases")
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "ccc.html",
