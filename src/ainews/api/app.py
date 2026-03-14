@@ -184,9 +184,10 @@ def api_badge_counts(
         except ValueError:
             return None
 
-    dash_dt = _parse(since_dashboard) or _parse(since)
-    trend_dt = _parse(since_trends) or _parse(since)
-    ccc_dt = _parse(since_ccc) or _parse(since)
+    fallback_dt = _parse(since)
+    dash_dt = _parse(since_dashboard) or fallback_dt
+    trend_dt = _parse(since_trends) or fallback_dt
+    ccc_dt = _parse(since_ccc) or fallback_dt
 
     backend = _backend()
     dashboard_count = (

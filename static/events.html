@@ -70,7 +70,7 @@
     updateThemeButtons();
     function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text || ''; return div.innerHTML; }
 
-    let eventLinks = [], allItems = [], allDataItems = [], currentTab = 'calendars';
+    let eventLinks = [], allItems = [], currentTab = 'calendars';
     const activeCls = 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
     const inactiveCls = 'bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600';
 
@@ -121,9 +121,8 @@
             const config = await configResp.json();
             const data = await dataResp.json();
             eventLinks = config.event_links || [];
-            allDataItems = data.items || [];
-            allItems = allDataItems;
-            computeBadges(allDataItems, config, null);
+            allItems = data.items || [];
+            computeBadges(allItems, config, null);
             render();
         } catch (e) {
             document.getElementById('items').innerHTML = '<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No data available.</div>';

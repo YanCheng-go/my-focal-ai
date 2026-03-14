@@ -87,8 +87,6 @@
         return null;
     }
 
-    window.computeBadges = function(items, config, currentPage) { _compute(items, config, currentPage); };
-
     // Auto mode: if no one calls computeBadges within 100ms, fetch and compute
     var called = false;
     window.computeBadges = function(items, config, currentPage) { called = true; _compute(items, config, currentPage); };
