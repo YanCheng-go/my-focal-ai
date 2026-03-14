@@ -62,6 +62,7 @@ class DbBackend(Protocol):
         since: datetime | None = None,
         tag: str | None = None,
         search: str | None = None,
+        source_name: str | None = None,
         order_by: str = "date",
         exclude_sources: list[str] | None = None,
         exclude_source_types: list[str] | None = None,

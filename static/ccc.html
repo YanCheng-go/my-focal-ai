@@ -66,13 +66,14 @@
     updateThemeButtons();
     function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text || ''; return div.innerHTML; }
 
-    // Badges loaded via badges.js (auto mode)
-
     async function init() {
         try {
-            const resp = await fetch('data.json');
-            const data = await resp.json();
-            const items = (data.items || []).filter(i => i.source_name === 'Claude Code Releases');
+            const [dataResp, configResp] = await Promise.all([fetch('data.json'), fetch('config.json').catch(() => null)]);
+            const data = await dataResp.json();
+            const config = configResp && configResp.ok ? await configResp.json() : {};
+            const allItems = data.items || [];
+            computeBadges(allItems, config, 'ccc');
+            const items = allItems.filter(i => i.source_name === 'Claude Code Releases');
             document.getElementById('status').textContent = `${items.length} releases`;
             if (!items.length) { document.getElementById('items').innerHTML = '<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No releases found.</div>'; return; }
             document.getElementById('items').innerHTML = items.map(item => {

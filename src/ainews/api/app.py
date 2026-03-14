@@ -164,24 +164,52 @@ async def api_trigger_fetch():
 
 
 @app.get("/api/badge-counts")
-def api_badge_counts(since: str | None = None):
-    """Count new items per category since a given timestamp (for notification badges)."""
-    if not since:
-        return {"dashboard": 0, "trends": 0, "ccc": 0}
-    try:
-        since_dt = datetime.fromisoformat(since)
-    except ValueError:
-        return {"dashboard": 0, "trends": 0, "ccc": 0}
+def api_badge_counts(
+    since_dashboard: str | None = None,
+    since_trends: str | None = None,
+    since_ccc: str | None = None,
+    since: str | None = None,
+):
+    """Count new items per category since per-page timestamps (for notification badges).
+
+    Accepts per-page timestamps (since_dashboard, since_trends, since_ccc).
+    Falls back to ``since`` for any missing per-page value.
+    """
+
+    def _parse(val: str | None) -> datetime | None:
+        if not val:
+            return None
+        try:
+            return datetime.fromisoformat(val)
+        except ValueError:
+            return None
+
+    dash_dt = _parse(since_dashboard) or _parse(since)
+    trend_dt = _parse(since_trends) or _parse(since)
+    ccc_dt = _parse(since_ccc) or _parse(since)
+
     backend = _backend()
-    dashboard_count = backend.count_items(
-        since=since_dt,
-        exclude_source_types=HIDDEN_SOURCE_TYPES,
-        exclude_sources=HIDDEN_SOURCES,
+    dashboard_count = (
+        backend.count_items(
+            since=dash_dt,
+            exclude_source_types=HIDDEN_SOURCE_TYPES,
+            exclude_sources=HIDDEN_SOURCES,
+        )
+        if dash_dt
+        else 0
     )
-    trends_count = backend.count_items(
-        since=since_dt, source_type="github_trending"
-    ) + backend.count_items(since=since_dt, source_type="github_trending_history")
-    ccc_count = backend.count_items(since=since_dt, source_name="Claude Code Releases")
+    trends_count = (
+        backend.count_items(
+            since=trend_dt,
+            source_types=["github_trending", "github_trending_history"],
+        )
+        if trend_dt
+        else 0
+    )
+    ccc_count = 0
+    if ccc_dt:
+        for src in HIDDEN_SOURCES:
+            ccc_count += backend.count_items(since=ccc_dt, source_name=src)
     backend.close()
     return {"dashboard": dashboard_count, "trends": trends_count, "ccc": ccc_count}
 
@@ -314,8 +342,8 @@ def about(request: Request):
 def ccc(request: Request, page: int = 1):
     backend = _backend()
     offset = (page - 1) * PER_PAGE
-    items = backend.get_items(limit=PER_PAGE, offset=offset, search="Claude Code Releases")
-    total = backend.count_items(search="Claude Code Releases")
+    items = backend.get_items(limit=PER_PAGE, offset=offset, source_name="Claude Code Releases")
+    total = backend.count_items(source_name="Claude Code Releases")
     backend.close()
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(

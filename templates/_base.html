@@ -90,12 +90,33 @@
     updateThemeButtons();
 
     (function() {
-        var lastSeen = localStorage.getItem('ainews_last_seen');
-        if (!lastSeen) {
-            localStorage.setItem('ainews_last_seen', new Date().toISOString());
+        var pages = ['dashboard', 'trends', 'ccc'];
+        var currentPage = '{{ active_page | default("") }}';
+
+        // Migrate from single key to per-page keys
+        var old = localStorage.getItem('ainews_last_seen');
+        if (old && !localStorage.getItem('ainews_last_seen_dashboard')) {
+            pages.forEach(function(p) { localStorage.setItem('ainews_last_seen_' + p, old); });
+            localStorage.removeItem('ainews_last_seen');
+        }
+
+        // First visit: initialise all timestamps and return
+        var hasAny = pages.some(function(p) { return localStorage.getItem('ainews_last_seen_' + p); });
+        if (!hasAny) {
+            var now = new Date().toISOString();
+            pages.forEach(function(p) { localStorage.setItem('ainews_last_seen_' + p, now); });
             return;
         }
-        fetch('/api/badge-counts?since=' + encodeURIComponent(lastSeen))
+
+        // Build per-page since params
+        var params = [];
+        pages.forEach(function(p) {
+            var ts = localStorage.getItem('ainews_last_seen_' + p);
+            if (ts) params.push('since_' + p + '=' + encodeURIComponent(ts));
+        });
+        if (!params.length) return;
+
+        fetch('/api/badge-counts?' + params.join('&'))
             .then(function(r) { return r.json(); })
             .then(function(counts) {
                 Object.keys(counts).forEach(function(page) {
@@ -106,7 +127,11 @@
                     }
                 });
             }).catch(function() {});
-        localStorage.setItem('ainews_last_seen', new Date().toISOString());
+
+        // Only update the current page's last-seen timestamp
+        if (currentPage && pages.indexOf(currentPage) !== -1) {
+            localStorage.setItem('ainews_last_seen_' + currentPage, new Date().toISOString());
+        }
     })();
     </script>
     {% block scripts %}{% endblock %}

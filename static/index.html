@@ -122,7 +122,7 @@
                             const { data: tagRows } = await sb.rpc('get_all_tags', { p_user_id: session.user.id });
                             allTags = (tagRows || []).map(r => r.tag);
                             document.getElementById('updated').textContent = 'Showing your personal feed';
-                            computeBadges(allItems, config);
+                            computeBadges(allItems, config, 'dashboard');
                             buildFilters();
                             render();
                             return;
@@ -136,7 +136,7 @@
             allItems = data.items || [];
             allTags = data.all_tags || [];
             document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
-            computeBadges(allItems, config);
+            computeBadges(allItems, config, 'dashboard');
             buildFilters();
             render();
         } catch (e) {
