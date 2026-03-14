@@ -8,6 +8,11 @@
 ALTER TABLE items ADD COLUMN IF NOT EXISTS user_id UUID REFERENCES auth.users(id);
 CREATE INDEX IF NOT EXISTS idx_items_user_id ON items(user_id);
 
+-- Drop legacy UNIQUE(url) constraint and add per-user URL uniqueness
+ALTER TABLE items DROP CONSTRAINT IF EXISTS items_url_key;
+CREATE UNIQUE INDEX IF NOT EXISTS idx_items_url_public ON items(url) WHERE user_id IS NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS idx_items_url_user_scoped ON items(url, user_id) WHERE user_id IS NOT NULL;
+
 ALTER TABLE source_state ADD COLUMN IF NOT EXISTS user_id UUID REFERENCES auth.users(id);
 
 -- Add unique constraint for user-scoped lookups (source_key + user_id).
@@ -43,9 +48,9 @@ ALTER TABLE items ENABLE ROW LEVEL SECURITY;
 ALTER TABLE source_state ENABLE ROW LEVEL SECURITY;
 ALTER TABLE user_sources ENABLE ROW LEVEL SECURITY;
 
--- items: users see their own items; legacy items (user_id IS NULL) are public read-only
+-- items: users only see their own items (no cross-tenant leakage)
 DROP POLICY IF EXISTS items_select ON items;
-CREATE POLICY items_select ON items FOR SELECT USING (auth.uid() = user_id OR user_id IS NULL);
+CREATE POLICY items_select ON items FOR SELECT USING (auth.uid() = user_id);
 DROP POLICY IF EXISTS items_insert ON items;
 CREATE POLICY items_insert ON items FOR INSERT WITH CHECK (auth.uid() = user_id);
 DROP POLICY IF EXISTS items_update ON items;
@@ -53,9 +58,9 @@ CREATE POLICY items_update ON items FOR UPDATE USING (auth.uid() = user_id);
 DROP POLICY IF EXISTS items_delete ON items;
 CREATE POLICY items_delete ON items FOR DELETE USING (auth.uid() = user_id);
 
--- source_state: users see own state; legacy (NULL user_id) is public read-only
+-- source_state: users only see their own state
 DROP POLICY IF EXISTS source_state_select ON source_state;
-CREATE POLICY source_state_select ON source_state FOR SELECT USING (auth.uid() = user_id OR user_id IS NULL);
+CREATE POLICY source_state_select ON source_state FOR SELECT USING (auth.uid() = user_id);
 DROP POLICY IF EXISTS source_state_insert ON source_state;
 CREATE POLICY source_state_insert ON source_state FOR INSERT WITH CHECK (auth.uid() = user_id);
 DROP POLICY IF EXISTS source_state_update ON source_state;
@@ -115,8 +120,8 @@ BEGIN
         tier = CASE WHEN EXCLUDED.tier IS NOT NULL AND EXCLUDED.tier != ''
                     THEN EXCLUDED.tier ELSE items.tier END,
         is_duplicate_of = COALESCE(EXCLUDED.is_duplicate_of, items.is_duplicate_of)
-    -- Prevent overwriting another user's item on id collision
-    WHERE items.user_id = p_user_id OR items.user_id IS NULL;
+    -- Strict tenant match: IS NOT DISTINCT FROM handles NULL=NULL for public mode
+    WHERE items.user_id IS NOT DISTINCT FROM p_user_id;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 

@@ -4,7 +4,7 @@
 -- Items table (mirrors SQLite schema)
 CREATE TABLE IF NOT EXISTS items (
     id TEXT PRIMARY KEY,
-    url TEXT UNIQUE NOT NULL,
+    url TEXT NOT NULL,
     title TEXT NOT NULL,
     summary TEXT DEFAULT '',
     content TEXT DEFAULT '',
@@ -26,6 +26,11 @@ CREATE INDEX IF NOT EXISTS idx_items_source ON items(source_type);
 CREATE INDEX IF NOT EXISTS idx_items_source_name ON items(source_name);
 CREATE INDEX IF NOT EXISTS idx_items_published ON items(published_at DESC NULLS LAST);
 CREATE INDEX IF NOT EXISTS idx_items_tags ON items USING gin(tags);
+
+-- Per-user URL uniqueness: public items (user_id IS NULL) are unique by URL,
+-- user-scoped items are unique by (url, user_id).
+CREATE UNIQUE INDEX IF NOT EXISTS idx_items_url_public ON items(url) WHERE user_id IS NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS idx_items_url_user_scoped ON items(url, user_id) WHERE user_id IS NOT NULL;
 
 -- Source state table
 CREATE TABLE IF NOT EXISTS source_state (

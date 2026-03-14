@@ -63,8 +63,9 @@ def _is_safe_url(url: str) -> bool:
         return not any(host.startswith(r) for r in _BLOCKED_RANGES)
 
 
-def _make_id(url: str) -> str:
-    return hashlib.sha256(url.encode()).hexdigest()[:16]
+def _make_id(url: str, user_id: str | None = None) -> str:
+    key = f"{user_id}:{url}" if user_id else url
+    return hashlib.sha256(key.encode()).hexdigest()[:16]
 
 
 def _parse_date(entry: dict) -> str | None:
@@ -143,7 +144,7 @@ def _fetch_and_ingest(supabase_client, user_id, source_type, name, config, tags)
             content = entry["content"][0].get("value", "")
         items.append(
             {
-                "p_id": _make_id(link),
+                "p_id": _make_id(link, user_id),
                 "p_url": link,
                 "p_title": entry.get("title", "Untitled"),
                 "p_summary": summary,
@@ -271,8 +272,6 @@ class handler(BaseHTTPRequestHandler):
         origin = self.headers.get("Origin", "")
         if allowed_origin and origin == allowed_origin:
             self.send_header("Access-Control-Allow-Origin", allowed_origin)
-        elif not allowed_origin:
-            # Fallback: allow all (development / unconfigured)
-            self.send_header("Access-Control-Allow-Origin", "*")
+        # When AINEWS_CORS_ORIGIN is not set, don't send the header (deny cross-origin)
         self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Authorization, Content-Type")

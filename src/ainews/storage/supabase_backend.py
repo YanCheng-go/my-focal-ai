@@ -6,7 +6,7 @@ import json
 import logging
 from datetime import datetime
 
-from ainews.models import ContentItem
+from ainews.models import ContentItem, make_id
 
 logger = logging.getLogger(__name__)
 
@@ -107,6 +107,13 @@ class SupabaseBackend:
         self._client.rpc("upsert_item", row).execute()
 
     def ingest_items(self, source_key: str, items: list[ContentItem]) -> int:
+        # Re-ID items with user-prefixed hash when user_id is set.
+        # Ingest modules generate IDs as sha256(url), but multi-tenant mode
+        # needs sha256(user_id:url) so each user gets their own copy.
+        if self._user_id:
+            for item in items:
+                item.id = make_id(item.url, self._user_id)
+
         existing = self.get_existing_ids([i.id for i in items])
         new_count = 0
         for item in items:
