@@ -53,7 +53,7 @@ Pipeline: **ingest -> dedup -> store -> score -> serve**.
 - `src/ainews/api/admin.py` — Admin UI with password-protected CRUD (local mode only). Auth via session cookies (`AINEWS_ADMIN_PASSWORD`). Protected routes use FastAPI `Depends()`.
 - `templates/` — Jinja2 templates (local FastAPI): `dashboard.html`, `admin.html`, `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`.
 - `static/` — static site (Vercel): `index.html`, `admin.html` (Supabase Auth + source CRUD for logged-in users), `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`. Read from `data.json` + `config.json` (public) or PostgREST (logged-in).
-- `api/fetch-source.py` — Vercel serverless function for authenticated per-source fetch. JWT validation, SSRF protection, CORS restriction.
+- `api/fetch_source.py` — Vercel serverless function for authenticated per-source fetch. JWT validation, SSRF protection, CORS restriction.
 - `src/ainews/cloud_fetch.py` — cloud pipeline: `cloud_fetch_and_score()` for public mode (GitHub Actions), `cloud_fetch_all_users()` for batch per-user fetches via service role.
 - `src/ainews/export.py` — exports `data.json` (scored items) and `config.json` (leaderboard/event links from sources.yml).
 - `scripts/check-static-pages.sh` — CI check that warns when a localhost template has no matching static page.

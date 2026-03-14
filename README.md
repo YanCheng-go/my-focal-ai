@@ -66,7 +66,7 @@ New users get a pre-defined source list but **no pre-fetched content** — items
 
 **Setup:**
 1. Create a [Supabase](https://supabase.com) project
-2. Run `sql/supabase_schema.sql` then `sql/002_user_accounts.sql` in the SQL Editor
+2. Run migrations: `supabase link --project-ref <ref>` then `supabase db push` (or paste `supabase/migrations/*.sql` in the SQL Editor)
 3. Set Vercel environment variables: `AINEWS_SUPABASE_URL`, `AINEWS_SUPABASE_KEY`, `AINEWS_SUPABASE_SERVICE_KEY`
 4. Optionally set `AINEWS_CORS_ORIGIN` to restrict cross-origin requests
 
