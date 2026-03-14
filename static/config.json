@@ -94,5 +94,7 @@
       ]
     }
   ],
-  "show_scores": false
+  "show_scores": true,
+  "supabase_url": "https://nzzpbhtqwjxokuywcbez.supabase.co",
+  "supabase_anon_key": "sb_publishable_Hme0RbrVXXwQdYhNOTN8Ow_ew29r8Dj"
 }
