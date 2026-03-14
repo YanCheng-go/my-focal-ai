@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 
 from ainews.models import ContentItem, make_id
 
@@ -28,7 +28,6 @@ class SupabaseBackend:
             raise ImportError("supabase package required. Install with: uv sync --extra supabase")
         self._client = create_client(url, key)
         self._user_id = user_id
-        self._source_state_conflict = "source_key,user_id" if user_id else "source_key"
 
     def close(self) -> None:
         pass  # No persistent connection to close
@@ -54,14 +53,14 @@ class SupabaseBackend:
         return None
 
     def set_last_fetched(self, source_key: str, ts: datetime | None = None) -> None:
-        ts = ts or datetime.now()
-        row = {"source_key": source_key, "last_fetched_at": ts.isoformat()}
+        ts = ts or datetime.now(timezone.utc)
+        params: dict = {
+            "p_source_key": source_key,
+            "p_last_fetched_at": ts.isoformat(),
+        }
         if self._user_id:
-            row["user_id"] = self._user_id
-        self._client.table("source_state").upsert(
-            row,
-            on_conflict=self._source_state_conflict,
-        ).execute()
+            params["p_user_id"] = self._user_id
+        self._client.rpc("upsert_source_state", params).execute()
 
     def mark_youtube_shorts_duplicates(self) -> int:
         # Use RPC for complex UPDATE with subquery, scoped by user_id
@@ -336,18 +335,20 @@ class SupabaseBackend:
         return None
 
     def store_hash(self, key: str, hash_val: str) -> None:
-        row = {"source_key": key, "last_fetched_at": hash_val}
+        params: dict = {
+            "p_source_key": key,
+            "p_last_fetched_at": hash_val,
+        }
         if self._user_id:
-            row["user_id"] = self._user_id
-        self._client.table("source_state").upsert(
-            row,
-            on_conflict=self._source_state_conflict,
-        ).execute()
+            params["p_user_id"] = self._user_id
+        self._client.rpc("upsert_source_state", params).execute()
 
 
 def _row_to_item(row: dict) -> ContentItem:
     """Convert a Supabase row dict to ContentItem."""
     d = dict(row)
+    # Remove columns that aren't ContentItem fields (e.g. user_id from Supabase)
+    d.pop("user_id", None)
     # Supabase returns tags as native JSON array (not a string)
     if isinstance(d.get("tags"), str):
         d["tags"] = json.loads(d["tags"])

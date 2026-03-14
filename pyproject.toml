@@ -34,6 +34,11 @@ dev = [
 [project.scripts]
 ainews = "ainews.cli:main"
 
+[tool.pytest.ini_options]
+markers = [
+    "integration: requires local Supabase (`supabase start`)",
+]
+
 [tool.ruff]
 line-length = 100
 target-version = "py312"

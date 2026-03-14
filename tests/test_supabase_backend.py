@@ -65,11 +65,10 @@ class TestSetLastFetched:
         backend, client = mock_supabase
         ts = datetime(2026, 3, 11, 12, 0, 0)
         backend.set_last_fetched("test-source", ts)
-        client.table.assert_called_with("source_state")
-        client.table.return_value.upsert.assert_called_once()
-        call_args = client.table.return_value.upsert.call_args
-        assert call_args[0][0]["source_key"] == "test-source"
-        assert call_args[0][0]["last_fetched_at"] == ts.isoformat()
+        client.rpc.assert_called_once_with(
+            "upsert_source_state",
+            {"p_source_key": "test-source", "p_last_fetched_at": ts.isoformat()},
+        )
 
 
 class TestGetExistingIds:
@@ -213,8 +212,14 @@ class TestUserIdScoping:
         backend, client = scoped_backend
         ts = datetime(2026, 3, 11, 12, 0, 0)
         backend.set_last_fetched("test-source", ts)
-        upsert_args = client.table.return_value.upsert.call_args
-        assert upsert_args[0][0]["user_id"] == "user-123"
+        client.rpc.assert_called_with(
+            "upsert_source_state",
+            {
+                "p_source_key": "test-source",
+                "p_last_fetched_at": ts.isoformat(),
+                "p_user_id": "user-123",
+            },
+        )
 
     def test_get_existing_ids_filters_by_user_id(self, scoped_backend):
         backend, client = scoped_backend

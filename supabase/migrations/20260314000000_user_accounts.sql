@@ -16,10 +16,13 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_items_url_user_scoped ON items(url, user_i
 
 ALTER TABLE source_state ADD COLUMN IF NOT EXISTS user_id UUID REFERENCES auth.users(id);
 
--- Add unique constraint for user-scoped lookups (source_key + user_id).
--- Keep source_key as PK for backward compat with legacy NULL user_id rows.
+-- Replace single-column PK with two partial unique indexes (same pattern as items).
+-- PostgREST ON CONFLICT needs real unique constraints, not composite with NULLs.
 ALTER TABLE source_state DROP CONSTRAINT IF EXISTS source_state_pkey;
-ALTER TABLE source_state ADD PRIMARY KEY (source_key);
+-- Public mode: unique on source_key alone (user_id is NULL)
+CREATE UNIQUE INDEX IF NOT EXISTS idx_source_state_public
+    ON source_state(source_key) WHERE user_id IS NULL;
+-- Per-user mode: unique on (source_key, user_id)
 CREATE UNIQUE INDEX IF NOT EXISTS idx_source_state_user
     ON source_state(source_key, user_id) WHERE user_id IS NOT NULL;
 
@@ -193,5 +196,30 @@ BEGIN
       );
     GET DIAGNOSTICS affected = ROW_COUNT;
     RETURN affected;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+-- Upsert source_state (handles partial indexes that PostgREST can't use for ON CONFLICT)
+CREATE OR REPLACE FUNCTION upsert_source_state(
+    p_source_key TEXT,
+    p_last_fetched_at TIMESTAMPTZ DEFAULT now(),
+    p_user_id UUID DEFAULT NULL
+) RETURNS void AS $$
+BEGIN
+    IF p_user_id IS NOT NULL AND auth.uid() IS NOT NULL AND p_user_id != auth.uid() THEN
+        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    END IF;
+
+    IF p_user_id IS NULL THEN
+        INSERT INTO source_state (source_key, last_fetched_at, user_id)
+        VALUES (p_source_key, p_last_fetched_at, NULL)
+        ON CONFLICT (source_key) WHERE user_id IS NULL
+        DO UPDATE SET last_fetched_at = EXCLUDED.last_fetched_at;
+    ELSE
+        INSERT INTO source_state (source_key, last_fetched_at, user_id)
+        VALUES (p_source_key, p_last_fetched_at, p_user_id)
+        ON CONFLICT (source_key, user_id) WHERE user_id IS NOT NULL
+        DO UPDATE SET last_fetched_at = EXCLUDED.last_fetched_at;
+    END IF;
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;

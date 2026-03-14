@@ -155,7 +155,7 @@ def _fetch_and_ingest(supabase_client, user_id, source_type, name, config, tags)
                 "p_tags": tags or [],
                 "p_author": entry.get("author", ""),
                 "p_published_at": _parse_date(entry),
-                "p_fetched_at": datetime.now().isoformat(),
+                "p_fetched_at": datetime.now(timezone.utc).isoformat(),
                 "p_user_id": user_id,
             }
         )
