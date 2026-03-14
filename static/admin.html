@@ -521,10 +521,11 @@
         var errors = 0;
         btn.textContent = '0/' + total;
 
+        var { data: { session } } = await sb.auth.getSession();
+        if (!session) { showToast('Not logged in', 'error'); btn.disabled = false; btn.textContent = 'Fetch All'; return; }
+
         for (var i = 0; i < enabled.length; i++) {
             try {
-                var { data: { session } } = await sb.auth.getSession();
-                if (!session) { showToast('Not logged in', 'error'); break; }
                 var resp = await fetch('/api/fetch-source', {
                     method: 'POST',
                     headers: {
