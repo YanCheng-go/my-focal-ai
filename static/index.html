@@ -94,6 +94,7 @@
 
     let HIDDEN_TYPES = [];
     let HIDDEN_SOURCES = [];
+    let TYPE_LABELS = {};
 
     // Supabase mode state (#106, #108, #110)
     let isSupabaseMode = false;
@@ -122,6 +123,8 @@
                 showScores = !!config.show_scores;
                 HIDDEN_TYPES = config.hidden_source_types || [];
                 HIDDEN_SOURCES = config.hidden_sources || [];
+                var schema = config.source_type_schema || {};
+                Object.keys(schema).forEach(function(k) { if (schema[k].label) TYPE_LABELS[k] = schema[k].label; });
             }
 
             // If user is logged in to Supabase, use server-side queries
@@ -134,10 +137,11 @@
                         isSupabaseMode = true;
                         supabaseSession = session;
 
-                        // Load tags and distinct source types for filter buttons
+                        // Load tags and distinct source types from actual items (not user_sources,
+                        // since ingest normalizes types e.g. arxiv_queries→arxiv, rsshub→rss)
                         const [tagResult, typeResult] = await Promise.all([
                             supabaseSb.rpc('get_all_tags', { p_user_id: session.user.id }),
-                            supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
+                            supabaseSb.from('news_items').select('source_type').eq('user_id', session.user.id),
                         ]);
                         allTags = ((tagResult.data) || []).map(r => r.tag);
                         allSourceTypes = [...new Set(((typeResult.data) || []).map(r => r.source_type))].filter(Boolean).sort();
@@ -219,11 +223,12 @@
         const types = (isSupabaseMode ? allSourceTypes : [...new Set(allItems.map(i => i.source_type))]).filter(t => !HIDDEN_TYPES.includes(t)).sort();
         let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${activeCls}" onclick="setFilter({})">All</button>`;
         types.forEach(t => {
-            const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
+            const label = TYPE_LABELS[t] || t.charAt(0).toUpperCase() + t.slice(1);
             html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${escapeAttr(t)}'})">${escapeHtml(label)}</button>`;
         });
         // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
-        if (showScores) html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
+        // Hide in login mode (no scoring yet)
+        if (showScores && !isSupabaseMode) html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
         if (allTags.length) {
             html += `<div class="group relative inline-block"><button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}">Tags</button><div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 rounded-md min-w-40 max-h-72 overflow-y-auto z-10 shadow-lg">`;
             allTags.forEach(t => { html += `<a class="block px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-neutral-700 cursor-pointer" onclick="setFilter({tag:'${escapeAttr(t)}'})">${escapeHtml(t)}</a>`; });
