@@ -61,7 +61,12 @@ src/ainews/
     scorer.py              Local scoring via Ollama
     claude_scorer.py       Cloud scoring via Claude API
   storage/
-    db.py                  SQLite (WAL mode) — all database operations
+    backend.py             DbBackend protocol (interface for SQLite + Supabase)
+    db.py                  SqliteBackend (WAL mode) + get_backend() factory
+    supabase_backend.py    SupabaseBackend (PostgREST, user_id scoping)
+  sources/
+    manager.py             YAML round-trip read/write for source management
+    supabase_manager.py    Read user_sources from Supabase, convert to config
   api/
     app.py                 FastAPI app factory, routes, scheduler
     admin.py               Admin UI with auth (local mode)
@@ -70,9 +75,14 @@ src/ainews/
   backfill.py              Sync tags/source_type from config to DB
 
 templates/                 Jinja2 templates (local FastAPI server)
+  _base.html               Shared base template (nav, theme, layout)
+  dashboard.html           Main feed page
+  about.html               About page
 static/                    Static HTML pages (Vercel deployment)
 scripts/                   CI and helper scripts
 docker/                    Docker Compose for RSSHub
+e2e/                       Playwright visual regression tests (responsive)
+tests/perf/                k6 performance tests (smoke, load, stress)
 ```
 
 ## Commands
@@ -98,6 +108,16 @@ uv run ainews backfill-tags --dry-run  # preview what would change
 # Dev
 uv run ruff check src/                 # lint (fix before committing)
 uv run pytest                          # run tests
+uv run pytest -m integration           # integration tests (needs supabase start)
+
+# Visual regression tests (requires server running on :8000)
+npx playwright test                    # run all viewport tests
+npx playwright test --update-snapshots # update baseline screenshots
+
+# Performance tests (requires server running on :8000 + k6 installed)
+k6 run tests/perf/load-test.js                          # smoke (default)
+k6 run -e PROFILE=load tests/perf/load-test.js          # load test
+k6 run -e PROFILE=stress tests/perf/load-test.js        # stress test
 ```
 
 ## Configuration
@@ -113,6 +133,10 @@ All settings are via environment variables prefixed `AINEWS_`. See `src/ainews/c
 | `AINEWS_DB_PATH` | `data/news.db` | SQLite database path |
 | `AINEWS_HOST` | `0.0.0.0` | Server bind address |
 | `AINEWS_PORT` | `8000` | Server port |
+| `AINEWS_SUPABASE_URL` | — | Supabase project URL (online login mode) |
+| `AINEWS_SUPABASE_KEY` | — | Supabase anon key (online login mode) |
+| `AINEWS_SUPABASE_SERVICE_KEY` | — | Supabase service role key (server-side only) |
+| `AINEWS_CORS_ORIGIN` | — | Restrict cross-origin requests (serverless) |
 
 ## Workflow
 
@@ -146,4 +170,4 @@ See [docs/sources.md](sources.md) for detailed source configuration.
 
 ---
 
-*Last updated: 2026-03-11*
+*Last updated: 2026-03-15*
