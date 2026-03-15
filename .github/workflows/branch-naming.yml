@@ -21,13 +21,13 @@ jobs:
             exit 0
           fi
 
-          PATTERN="^(feature|fix|chore|docs|refactor|test|release)/[a-z0-9._-]+$"
+          PATTERN="^(feat|feature|fix|chore|docs|refactor|test|release)/[a-z0-9._-]+$"
 
           if [[ ! "$BRANCH" =~ $PATTERN ]]; then
             echo "::error::Branch name '$BRANCH' does not follow the naming convention."
             echo ""
             echo "Branch names must match: <type>/<description>"
-            echo "  Types: feature, fix, chore, docs, refactor, test, release"
+            echo "  Types: feat, feature, fix, chore, docs, refactor, test, release"
             echo "  Description: lowercase letters, numbers, hyphens, dots, underscores"
             echo ""
             echo "Examples:"
