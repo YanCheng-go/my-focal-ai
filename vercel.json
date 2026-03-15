@@ -2,5 +2,14 @@
   "outputDirectory": "static",
   "buildCommand": "",
   "framework": null,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "functions": {
+    "api/*.py": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/api/fetch-source", "destination": "/api/fetch_source" },
+    { "source": "/api/:path*", "destination": "/api/:path*" }
+  ]
 }

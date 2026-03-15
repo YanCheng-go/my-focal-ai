@@ -19,7 +19,6 @@ from ainews.sources.manager import (
     update_source,
     validate_source,
 )
-from ainews.storage.db import get_source_health
 
 logger = logging.getLogger(__name__)
 
@@ -46,11 +45,10 @@ def _require_admin(admin_token: str | None = Cookie(None)) -> None:
     _check_admin_auth(admin_token)
 
 
-def _conn():
-    # Import from app to avoid duplicating the Vercel/local logic
-    from ainews.api.app import _conn as app_conn
+def _get_backend():
+    from ainews.api.app import _backend
 
-    return app_conn()
+    return _backend()
 
 
 def _normalize_tags(data: dict) -> None:
@@ -106,11 +104,11 @@ _api = APIRouter(prefix="/admin", tags=["admin"], dependencies=[Depends(_require
 @_api.get("/api/sources")
 def list_sources():
     sources = get_all_sources_flat(settings.config_dir)
-    conn = _conn()
+    backend = _get_backend()
     try:
-        health = get_source_health(conn)
+        health = backend.get_source_health()
     finally:
-        conn.close()
+        backend.close()
 
     for src in sources:
         name = src["name"]
@@ -156,20 +154,14 @@ def remove_source(source_type: str, index: int):
 
 
 @_api.delete("/api/sources/content")
-def delete_source_content(source_name: str):
+def delete_source_content_endpoint(source_name: str):
     """Delete all items from a given source name."""
-    conn = _conn()
+    backend = _get_backend()
     try:
-        conn.execute(
-            "DELETE FROM item_tags WHERE item_id IN (SELECT id FROM items WHERE source_name = ?)",
-            (source_name,),
-        )
-        cursor = conn.execute("DELETE FROM items WHERE source_name = ?", (source_name,))
-        conn.execute("DELETE FROM source_state WHERE source_key = ?", (source_name,))
-        conn.commit()
-        return {"status": "deleted", "deleted": cursor.rowcount}
+        deleted = backend.delete_source_content(source_name)
+        return {"status": "deleted", "deleted": deleted}
     finally:
-        conn.close()
+        backend.close()
 
 
 @_api.post("/api/sources/{source_type}/{index}/toggle")
@@ -192,12 +184,12 @@ async def fetch_source_endpoint(source_type: str, index: int):
     if not target:
         raise HTTPException(status_code=404, detail="Source not found")
 
-    conn = _conn()
+    backend = _get_backend()
     try:
         sources_config = load_sources(settings.config_dir)
-        result = await fetch_single_source(conn, sources_config, target["name"])
+        result = await fetch_single_source(backend, sources_config, target["name"])
         return {"status": "fetched", **result}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     finally:
-        conn.close()
+        backend.close()

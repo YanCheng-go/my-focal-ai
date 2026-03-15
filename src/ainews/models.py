@@ -6,9 +6,10 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 
 
-def make_id(url: str) -> str:
-    """Generate a short deterministic ID from a URL."""
-    return hashlib.sha256(url.encode()).hexdigest()[:16]
+def make_id(url: str, user_id: str | None = None) -> str:
+    """Generate a short deterministic ID from a URL, scoped by user_id if provided."""
+    key = f"{user_id}:{url}" if user_id else url
+    return hashlib.sha256(key.encode()).hexdigest()[:16]
 
 
 class ContentItem(BaseModel):

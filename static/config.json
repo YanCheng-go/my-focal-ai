@@ -94,5 +94,9 @@
       ]
     }
   ],
-  "show_scores": false
+  "show_scores": false,
+  "hidden_source_types": ["events", "luma", "github_trending", "github_trending_history"],
+  "hidden_sources": ["Claude Code Releases"],
+  "supabase_url": "https://nzzpbhtqwjxokuywcbez.supabase.co",
+  "supabase_anon_key": "sb_publishable_Hme0RbrVXXwQdYhNOTN8Ow_ew29r8Dj"
 }
