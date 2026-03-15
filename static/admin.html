@@ -312,7 +312,10 @@
 
     // --- Source CRUD ---
     async function loadSources() {
-        var { data, error } = await sb.from('user_sources').select('*').order('created_at', { ascending: true });
+        // #108: explicit user_id filter as defense-in-depth alongside RLS
+        var { data: { session } } = await sb.auth.getSession();
+        if (!session) return;
+        var { data, error } = await sb.from('user_sources').select('*').eq('user_id', session.user.id).order('created_at', { ascending: true });
         if (error) { showToast(error.message, 'error'); return; }
         renderTable(data || []);
     }
@@ -521,31 +524,43 @@
         var errors = 0;
         btn.textContent = '0/' + total;
 
-        var { data: { session } } = await sb.auth.getSession();
-        if (!session) { showToast('Not logged in', 'error'); btn.disabled = false; btn.textContent = 'Fetch All'; return; }
+        // Refresh session to get fresh JWT (#109)
+        var { data: { session }, error: authError } = await sb.auth.refreshSession();
+        if (authError || !session) {
+            showToast('Authentication failed. Please sign in again.', 'error');
+            btn.disabled = false; btn.textContent = 'Fetch All';
+            return;
+        }
 
-        for (var i = 0; i < enabled.length; i++) {
-            try {
-                var resp = await fetch('/api/fetch-source', {
+        // Parallel fetch with concurrency limit of 3 (#109)
+        var CONCURRENCY = 3;
+        for (var i = 0; i < enabled.length; i += CONCURRENCY) {
+            var batch = enabled.slice(i, i + CONCURRENCY);
+            var batchResults = await Promise.allSettled(batch.map(function(source) {
+                return fetch('/api/fetch-source', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': 'Bearer ' + session.access_token,
                     },
                     body: JSON.stringify({
-                        source_type: enabled[i].source_type,
-                        name: enabled[i].name,
-                        config: enabled[i].config || {},
-                        tags: enabled[i].tags || [],
+                        source_type: source.source_type,
+                        name: source.name,
+                        config: source.config || {},
+                        tags: source.tags || [],
                     }),
+                }).then(function(resp) {
+                    if (!resp.ok) return resp.json().then(function(r) { throw new Error(r.error || 'Failed'); });
+                    return resp.json();
                 });
-                if (!resp.ok) { var r = await resp.json(); throw new Error(r.error || 'Failed'); }
-            } catch (e) {
-                errors++;
-                console.error('Fetch failed for', enabled[i].name, e.message);
-                showToast(enabled[i].name + ': ' + e.message, 'error');
-            }
-            done++;
+            }));
+            batchResults.forEach(function(result, idx) {
+                done++;
+                if (result.status === 'rejected') {
+                    errors++;
+                    console.error('Fetch failed for', batch[idx].name, (result.reason && result.reason.message) || result.reason || 'Unknown error');
+                }
+            });
             btn.textContent = done + '/' + total;
         }
 
@@ -553,6 +568,9 @@
         btn.textContent = 'Fetch All';
         if (errors) showToast('Fetched ' + (done - errors) + '/' + total + ' (' + errors + ' errors)', 'error');
         else showToast('All ' + total + ' sources fetched', 'success');
+
+        // Notify other tabs that fetch completed (#107)
+        try { var ch = new BroadcastChannel('ainews-fetch'); ch.postMessage({ type: 'fetch-complete' }); ch.close(); } catch(e) {}
     }
 
     // Badges loaded via badges.js (auto mode)

@@ -183,7 +183,7 @@ class SupabaseBackend:
     ):
         """Build a PostgREST query with filters."""
         if count_only:
-            q = self._client.table("items").select("*", count="exact")
+            q = self._client.table("items").select("id", count="exact").limit(1)
         else:
             q = self._client.table("items").select("*")
 

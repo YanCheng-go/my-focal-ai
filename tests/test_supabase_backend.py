@@ -91,7 +91,7 @@ class TestCountItems:
         mock_q = MagicMock()
         mock_q.execute.return_value = MagicMock(count=42)
         # Each filter call returns the same mock for chaining
-        for method in ["is_", "gte", "eq", "in_", "neq", "contains", "or_"]:
+        for method in ["is_", "gte", "eq", "in_", "neq", "contains", "or_", "limit"]:
             getattr(mock_q, method).return_value = mock_q
         client.table.return_value.select.return_value = mock_q
 
@@ -237,7 +237,7 @@ class TestUserIdScoping:
         backend, client = scoped_backend
         mock_q = MagicMock()
         mock_q.execute.return_value = MagicMock(count=5)
-        for method in ["is_", "gte", "eq", "in_", "neq", "contains", "or_"]:
+        for method in ["is_", "gte", "eq", "in_", "neq", "contains", "or_", "limit"]:
             getattr(mock_q, method).return_value = mock_q
         client.table.return_value.select.return_value = mock_q
 

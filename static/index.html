@@ -178,10 +178,18 @@
         var query = supabaseSb.from('items')
             .select('*', { count: 'exact' })
             .eq('user_id', supabaseSession.user.id)
+            .is('is_duplicate_of', null)
             .order('published_at', { ascending: false, nullsFirst: false });
 
         if (filters.source_type) query = query.eq('source_type', filters.source_type);
         if (filters.tag) query = query.contains('tags', [filters.tag]);
+
+        // Hide dedicated-page sources from main feed unless filtered
+        var hasFilter = filters.source_type || filters.tag || document.getElementById('search').value.trim();
+        if (!hasFilter) {
+            HIDDEN_TYPES.forEach(function(t) { query = query.neq('source_type', t); });
+            HIDDEN_SOURCES.forEach(function(s) { query = query.neq('source_name', s); });
+        }
 
         var search = document.getElementById('search').value.trim();
         if (search) {
