@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-15T10:28:08.184362",
+  "exported_at": "2026-03-15T12:29:29.463932",
   "period_hours": 168,
-  "total": 4060,
+  "total": 4061,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,25 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00",
       "fetched_at": "2026-03-11T10:29:17.543660",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3872cddae87b9adb",
+      "url": "https://www.youtube.com/watch?v=HtnlUosO3XA",
+      "title": "Agentic Runtime Security Explained: Securing Non\u2011Human Identities",
+      "summary": "Ready to become a certified watsonx Generative AI Engineer - Associate? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpzUm\n\nLearn more AI Agent Security here \u2192 https://ibm.biz/BdpzUS\n\nAgentic AI is the most white hot topic in IT today. Bob Kalka and Tyler Lynch explain how agentic AI, non-human identities, IAM gaps, and runtime security risks shape real-world deployments. Learn how accountability, least privilege, and zero trust keep agentic AI secure.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/BdpzUy\n\n#agenticai #aisecurity #zerotrust",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-15T11:00:34",
+      "fetched_at": "2026-03-15T12:29:18.706501",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10793,27 +10812,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d483ffc7283c2fca",
-      "url": "https://arxiv.org/abs/2603.11987",
-      "title": "LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning and Planning in Scientific Laboratories",
-      "summary": "arXiv:2603.11987v1 Announce Type: new \nAbstract: Artificial intelligence is increasingly catalyzing scientific automation, with multimodal large language model (MLLM) agents evolving from lab assistants into self-driving lab operators. This transition imposes stringent safety requirements on laboratory environments, where fragile glassware, hazardous substances, and high-precision laboratory equipment render planning errors or misinterpreted risks potentially irreversible. However, the safety awareness and decision-making reliability of embodied agents in such high-stakes settings remain insufficiently defined and evaluated. To bridge this gap, we introduce LABSHIELD, a realistic multi-view benchmark designed to assess MLLMs in hazard identification and safety-critical reasoning. Grounded in U.S. Occupational Safety and Health Administration (OSHA) standards and the Globally Harmonized System (GHS), LABSHIELD establishes a rigorous safety taxonomy spanning 164 operational tasks with diverse manipulation complexities and risk profiles. We evaluate 20 proprietary models, 9 open-source models, and 3 embodied models under a dual-track evaluation framework. Our results reveal a systematic gap between general-domain MCQ accuracy and Semi-open QA safety performance, with models exhibiting an average drop of 32.0% in professional laboratory scenarios, particularly in hazard interpretation and safety-aware planning. These findings underscore the urgent necessity for safety-centric reasoning frameworks to ensure reliable autonomous scientific experimentation in embodied laboratory contexts. The full dataset will be released soon.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Qianpu Sun, Xiaowei Chi, Yuhan Rui, Ying Li, Kuangzhi Ge, Jiajun Li, Sirui Han, Shanghang Zhang",
-      "published_at": "2026-03-13T04:00:00",
-      "fetched_at": "2026-03-13T04:53:35.885157",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -12721,26 +12719,6 @@
       "author": "IBM Technology",
       "published_at": "2026-03-02T12:00:31",
       "fetched_at": "2026-03-11T20:28:31.610189",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f3fc5cc85bd2d3eb",
-      "url": "https://www.youtube.com/shorts/JgOklCLhpPo",
-      "title": "Claude Code Skills are BROKEN",
-      "summary": "",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-03-02T01:19:09",
-      "fetched_at": "2026-03-11T10:29:08.920720",
       "score": null,
       "score_reason": "",
       "tier": "",
