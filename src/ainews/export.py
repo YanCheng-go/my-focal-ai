@@ -108,6 +108,39 @@ SOURCE_TYPE_SCHEMA = {
 }
 
 
+# Source types that work in online mode (serverless fetch via RSS/Atom)
+_ONLINE_SOURCE_TYPES = {"rss", "youtube", "arxiv", "arxiv_queries", "rsshub"}
+
+# Fields that go into user_sources.config (everything except name/tags)
+_CONFIG_KEYS = {
+    "rss": ["url"],
+    "youtube": ["channel_id"],
+    "arxiv": ["url"],
+    "arxiv_queries": ["query"],
+    "rsshub": ["route", "source_type"],
+}
+
+
+def _build_default_user_sources(sources: dict) -> list[dict]:
+    """Convert sources.yml entries to user_sources format for online mode."""
+    defaults = []
+    for stype, entries in sources.items():
+        if stype not in _ONLINE_SOURCE_TYPES or not isinstance(entries, list):
+            continue
+        keys = _CONFIG_KEYS.get(stype, [])
+        for entry in entries:
+            config = {k: entry[k] for k in keys if k in entry}
+            defaults.append(
+                {
+                    "source_type": stype,
+                    "name": entry.get("name", ""),
+                    "config": config,
+                    "tags": entry.get("tags", []),
+                }
+            )
+    return defaults
+
+
 def _export_config(output_path: Path, settings: Settings):
     """Export leaderboard, event links, and Supabase config for static pages."""
     sources_config = load_sources(settings.config_dir)
@@ -119,6 +152,7 @@ def _export_config(output_path: Path, settings: Settings):
         "hidden_source_types": HIDDEN_SOURCE_TYPES,
         "hidden_sources": HIDDEN_SOURCES,
         "source_type_schema": SOURCE_TYPE_SCHEMA,
+        "default_user_sources": _build_default_user_sources(sources),
     }
     # Include Supabase config for static admin page auth
     if settings.supabase_url and settings.supabase_key:
