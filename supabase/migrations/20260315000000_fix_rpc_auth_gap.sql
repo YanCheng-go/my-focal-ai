@@ -4,6 +4,8 @@
 -- With the anon key (no session), auth.uid() is NULL, so the check was skipped.
 -- This migration adds an explicit NULL check: if p_user_id is set, the caller
 -- MUST be authenticated (auth.uid() IS NOT NULL) and must match.
+-- The service_role is exempted because cloud_fetch_all_users() uses it to
+-- write items on behalf of each user.
 
 -- 1. upsert_item
 CREATE OR REPLACE FUNCTION upsert_item(
@@ -26,11 +28,15 @@ CREATE OR REPLACE FUNCTION upsert_item(
 ) RETURNS void AS $$
 BEGIN
     -- Require authentication when writing to a user's feed
-    IF p_user_id IS NOT NULL AND auth.uid() IS NULL THEN
-        RAISE EXCEPTION 'authentication required';
-    END IF;
-    IF p_user_id IS NOT NULL AND auth.uid() != p_user_id THEN
-        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    -- Service role (cloud_fetch_all_users) may write on behalf of any user
+    IF p_user_id IS NOT NULL
+       AND current_setting('request.jwt.claim.role', true) != 'service_role' THEN
+        IF auth.uid() IS NULL THEN
+            RAISE EXCEPTION 'authentication required';
+        END IF;
+        IF auth.uid() != p_user_id THEN
+            RAISE EXCEPTION 'unauthorized: user_id mismatch';
+        END IF;
     END IF;
 
     INSERT INTO items (id, url, title, summary, content, source_name, source_type,
@@ -54,11 +60,15 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 CREATE OR REPLACE FUNCTION get_source_health(p_user_id UUID DEFAULT NULL)
 RETURNS TABLE(source_name TEXT, source_type TEXT, item_count BIGINT, last_fetched TEXT) AS $$
 BEGIN
-    IF p_user_id IS NOT NULL AND auth.uid() IS NULL THEN
-        RAISE EXCEPTION 'authentication required';
-    END IF;
-    IF p_user_id IS NOT NULL AND auth.uid() != p_user_id THEN
-        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    -- Service role (cloud_fetch_all_users) may write on behalf of any user
+    IF p_user_id IS NOT NULL
+       AND current_setting('request.jwt.claim.role', true) != 'service_role' THEN
+        IF auth.uid() IS NULL THEN
+            RAISE EXCEPTION 'authentication required';
+        END IF;
+        IF auth.uid() != p_user_id THEN
+            RAISE EXCEPTION 'unauthorized: user_id mismatch';
+        END IF;
     END IF;
 
     RETURN QUERY
@@ -75,11 +85,15 @@ $$ LANGUAGE plpgsql SECURITY DEFINER;
 CREATE OR REPLACE FUNCTION get_all_tags(p_user_id UUID DEFAULT NULL)
 RETURNS TABLE(tag TEXT) AS $$
 BEGIN
-    IF p_user_id IS NOT NULL AND auth.uid() IS NULL THEN
-        RAISE EXCEPTION 'authentication required';
-    END IF;
-    IF p_user_id IS NOT NULL AND auth.uid() != p_user_id THEN
-        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    -- Service role (cloud_fetch_all_users) may write on behalf of any user
+    IF p_user_id IS NOT NULL
+       AND current_setting('request.jwt.claim.role', true) != 'service_role' THEN
+        IF auth.uid() IS NULL THEN
+            RAISE EXCEPTION 'authentication required';
+        END IF;
+        IF auth.uid() != p_user_id THEN
+            RAISE EXCEPTION 'unauthorized: user_id mismatch';
+        END IF;
     END IF;
 
     RETURN QUERY
@@ -96,11 +110,15 @@ RETURNS integer AS $$
 DECLARE
     affected integer;
 BEGIN
-    IF p_user_id IS NOT NULL AND auth.uid() IS NULL THEN
-        RAISE EXCEPTION 'authentication required';
-    END IF;
-    IF p_user_id IS NOT NULL AND auth.uid() != p_user_id THEN
-        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    -- Service role (cloud_fetch_all_users) may write on behalf of any user
+    IF p_user_id IS NOT NULL
+       AND current_setting('request.jwt.claim.role', true) != 'service_role' THEN
+        IF auth.uid() IS NULL THEN
+            RAISE EXCEPTION 'authentication required';
+        END IF;
+        IF auth.uid() != p_user_id THEN
+            RAISE EXCEPTION 'unauthorized: user_id mismatch';
+        END IF;
     END IF;
 
     UPDATE items SET is_duplicate_of = (
@@ -133,11 +151,15 @@ CREATE OR REPLACE FUNCTION upsert_source_state(
     p_user_id UUID DEFAULT NULL
 ) RETURNS void AS $$
 BEGIN
-    IF p_user_id IS NOT NULL AND auth.uid() IS NULL THEN
-        RAISE EXCEPTION 'authentication required';
-    END IF;
-    IF p_user_id IS NOT NULL AND auth.uid() != p_user_id THEN
-        RAISE EXCEPTION 'unauthorized: user_id mismatch';
+    -- Service role (cloud_fetch_all_users) may write on behalf of any user
+    IF p_user_id IS NOT NULL
+       AND current_setting('request.jwt.claim.role', true) != 'service_role' THEN
+        IF auth.uid() IS NULL THEN
+            RAISE EXCEPTION 'authentication required';
+        END IF;
+        IF auth.uid() != p_user_id THEN
+            RAISE EXCEPTION 'unauthorized: user_id mismatch';
+        END IF;
     END IF;
 
     IF p_user_id IS NULL THEN
