@@ -94,7 +94,7 @@
       ]
     }
   ],
-  "show_scores": true,
+  "show_scores": false,
   "hidden_source_types": [
     "events",
     "luma",
@@ -107,6 +107,7 @@
   "source_type_schema": {
     "rss": {
       "label": "RSS",
+      "aliases": ["rsshub"],
       "fields": {
         "required": [
           "url",
@@ -145,6 +146,7 @@
     },
     "arxiv": {
       "label": "ArXiv",
+      "aliases": ["arxiv_queries"],
       "fields": {
         "required": [
           "url",
