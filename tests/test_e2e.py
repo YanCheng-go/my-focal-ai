@@ -450,6 +450,108 @@ class TestMode1Local:
         assert "bg-blue-50/70" in resp.text  # blue highlight background
         assert "New</span>" in resp.text  # "New" pill
 
+    def test_dashboard_badge_counts_per_category(self, config_dir, tmp_path, monkeypatch):
+        """Per-category badge counts show on filter tabs for returning visitors."""
+        import importlib
+        import shutil
+        from datetime import datetime, timedelta
+
+        import ainews.api.admin
+        import ainews.api.app
+        import ainews.config
+
+        monkeypatch.setenv("AINEWS_CONFIG_DIR", str(config_dir))
+        monkeypatch.setenv("AINEWS_DB_PATH", str(tmp_path / "test.db"))
+        monkeypatch.setenv("AINEWS_SCORING", "false")
+        monkeypatch.delenv("AINEWS_SUPABASE_URL", raising=False)
+        monkeypatch.delenv("AINEWS_SUPABASE_KEY", raising=False)
+        (config_dir.parent / "static").mkdir(exist_ok=True)
+        real_templates = Path(__file__).resolve().parent.parent / "templates"
+        if not (config_dir.parent / "templates").exists():
+            shutil.copytree(real_templates, config_dir.parent / "templates")
+
+        importlib.reload(ainews.config)
+        importlib.reload(ainews.api.admin)
+        importlib.reload(ainews.api.app)
+
+        from ainews.storage.db import SqliteBackend
+
+        backend = SqliteBackend(tmp_path / "test.db")
+        backend.upsert_item(_make_item("https://t.co/1", "Tweet 1", source_type="twitter"))
+        backend.upsert_item(_make_item("https://t.co/2", "Tweet 2", source_type="twitter"))
+        backend.upsert_item(_make_item("https://yt.com/1", "Video 1", source_type="youtube"))
+        backend.upsert_item(_make_item("https://rss.com/1", "RSS Post", source_type="rss"))
+        backend.commit()
+        backend.close()
+
+        client = TestClient(ainews.api.app.app, raise_server_exceptions=False)
+
+        past = (datetime.now() - timedelta(hours=2)).isoformat()
+        resp = client.get("/", cookies={"ainews_last_seen_dashboard": past})
+        assert resp.status_code == 200
+
+        # "All" badge should show total (4)
+        # Per-category badges: Twitter=2, YouTube=1, RSS=1
+        import re
+
+        badges = re.findall(
+            r'>(\w[\w ]*?)(<span class="ml-1 bg-blue-500.*?">(\d+)</span>)',
+            resp.text,
+        )
+        badge_map = {label.strip(): int(count) for label, _, count in badges}
+        assert badge_map.get("All") == 4
+        assert badge_map.get("Twitter") == 2
+        assert badge_map.get("YouTube") == 1
+        assert badge_map.get("RSS") == 1
+
+    def test_dashboard_cookie_not_reset_on_filtered_view(self, config_dir, tmp_path, monkeypatch):
+        """Clicking a category tab should not reset the last-seen cookie."""
+        import importlib
+        import shutil
+        from datetime import datetime, timedelta
+
+        import ainews.api.admin
+        import ainews.api.app
+        import ainews.config
+
+        monkeypatch.setenv("AINEWS_CONFIG_DIR", str(config_dir))
+        monkeypatch.setenv("AINEWS_DB_PATH", str(tmp_path / "test.db"))
+        monkeypatch.setenv("AINEWS_SCORING", "false")
+        monkeypatch.delenv("AINEWS_SUPABASE_URL", raising=False)
+        monkeypatch.delenv("AINEWS_SUPABASE_KEY", raising=False)
+        (config_dir.parent / "static").mkdir(exist_ok=True)
+        real_templates = Path(__file__).resolve().parent.parent / "templates"
+        if not (config_dir.parent / "templates").exists():
+            shutil.copytree(real_templates, config_dir.parent / "templates")
+
+        importlib.reload(ainews.config)
+        importlib.reload(ainews.api.admin)
+        importlib.reload(ainews.api.app)
+
+        from ainews.storage.db import SqliteBackend
+
+        backend = SqliteBackend(tmp_path / "test.db")
+        backend.upsert_item(_make_item("https://t.co/1", "Tweet", source_type="twitter"))
+        backend.commit()
+        backend.close()
+
+        client = TestClient(ainews.api.app.app, raise_server_exceptions=False)
+
+        past = (datetime.now() - timedelta(hours=2)).isoformat()
+
+        # Filtered view (source_type=twitter) should NOT update the cookie
+        resp = client.get(
+            "/?source_type=twitter",
+            cookies={"ainews_last_seen_dashboard": past},
+        )
+        assert resp.status_code == 200
+        assert "ainews_last_seen_dashboard" not in resp.cookies
+
+        # Unfiltered "All" page 1 SHOULD update the cookie
+        resp2 = client.get("/", cookies={"ainews_last_seen_dashboard": past})
+        assert resp2.status_code == 200
+        assert "ainews_last_seen_dashboard" in resp2.cookies
+
 
 # ============================================================
 # Mode 2: Online Public — cloud_fetch + export + static JSON

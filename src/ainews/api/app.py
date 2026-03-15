@@ -307,7 +307,10 @@ def dashboard(
             "total_new": total_new,
         },
     )
-    _set_last_seen(response, "dashboard")
+    # Only update last-seen when viewing the unfiltered feed so that
+    # per-category badge counts survive tab clicks and pagination.
+    if not any([source_type, tier, tag, min_score, search]) and page == 1:
+        _set_last_seen(response, "dashboard")
     return response
 
 
