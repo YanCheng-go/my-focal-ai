@@ -52,12 +52,14 @@ Pipeline: **ingest -> dedup -> store -> score -> serve**.
 - `src/ainews/sources/supabase_manager.py` — reads `user_sources` table, converts to `sources_config` dict matching `sources.yml` structure.
 - `src/ainews/api/app.py` — FastAPI app factory. Detects Vercel via `VERCEL` env var to disable scheduler and static mount. Dashboard sorted by `published_at`, pagination (30/page), search, tag dropdown. Events/luma/CCC/trending items hidden from main feed (dedicated pages).
 - `src/ainews/api/admin.py` — Admin UI with password-protected CRUD (local mode only). Auth via session cookies (`AINEWS_ADMIN_PASSWORD`). Protected routes use FastAPI `Depends()`.
-- `templates/` — Jinja2 templates (local FastAPI): `dashboard.html`, `admin.html`, `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`.
-- `static/` — static site (Vercel): `index.html`, `admin.html` (Supabase Auth + source CRUD for logged-in users), `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`. Read from `data.json` + `config.json` (public) or PostgREST (logged-in).
+- `templates/` — Jinja2 templates (local FastAPI): `_base.html` (shared layout), `dashboard.html`, `admin.html`, `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`, `about.html`.
+- `static/` — static site (Vercel): `index.html`, `admin.html` (Supabase Auth + source CRUD for logged-in users), `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`, `about.html`. Shared JS: `nav.js`, `auth-nav.js`, `badges.js`, `shared-config.js`. Shared CSS: `fluid-type.css`. Read from `data.json` + `config.json` (public) or PostgREST (logged-in).
 - `api/fetch_source.py` — Vercel serverless function for authenticated per-source fetch. JWT validation, SSRF protection, CORS restriction.
 - `src/ainews/cloud_fetch.py` — cloud pipeline: `cloud_fetch_and_score()` for public mode (GitHub Actions), `cloud_fetch_all_users()` for batch per-user fetches via service role.
 - `src/ainews/export.py` — exports `data.json` (scored items) and `config.json` (leaderboard/event links from sources.yml).
 - `scripts/check-static-pages.sh` — CI check that warns when a localhost template has no matching static page.
+- `e2e/` — Playwright visual regression tests across 6 viewports (mobile, tablet, desktop).
+- `tests/perf/` — k6 performance tests with smoke, load, and stress profiles.
 
 ## Config
 

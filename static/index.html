@@ -13,17 +13,13 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="fluid-type.css">
     <style type="text/tailwindcss">
     @custom-variant dark (&:where(.dark, .dark *));
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes slideUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
     .animate-fadeIn { animation: fadeIn 0.3s ease-out; }
     .animate-slideUp { animation: slideUp 0.4s ease-out; }
-    /* Fluid typography — scales smoothly between mobile and desktop */
-    .text-fluid-sm { font-size: clamp(0.8125rem, 0.78rem + 0.15vw, 0.875rem); }
-    .text-fluid-base { font-size: clamp(0.875rem, 0.83rem + 0.2vw, 1rem); }
-    .text-fluid-lg { font-size: clamp(1rem, 0.93rem + 0.3vw, 1.125rem); }
-    .text-fluid-xl { font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 dark:bg-neutral-950 dark:text-gray-200 antialiased">

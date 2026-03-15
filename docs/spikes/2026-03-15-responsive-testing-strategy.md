@@ -38,11 +38,10 @@ MyFocalAI uses **Tailwind CSS v4 (browser CDN)** with a mobile-first approach. A
 
 | Profile | Device | Viewport | Use Case |
 |---------|--------|----------|----------|
-| `mobile-portrait` | iPhone SE | 320×568 | Smallest common phone |
-| `mobile-standard` | iPhone 15 | 393×852 | Most popular phone |
+| `mobile-small` | iPhone SE | 320×568 | Smallest common phone |
+| `mobile` | iPhone 15 | 393×852 | Most popular phone |
 | `mobile-large` | iPhone 15 Pro Max | 430×932 | Large phone |
-| `tablet-portrait` | iPad Mini | 768×1024 | Tablet portrait |
-| `tablet-landscape` | iPad Air | 1180×820 | Tablet landscape |
+| `tablet` | iPad Mini | 768×1024 | Tablet portrait |
 | `desktop` | Desktop Chrome | 1280×720 | Standard desktop |
 | `desktop-wide` | Custom | 1920×1080 | Wide desktop |
 
@@ -167,7 +166,7 @@ Baselines committed to repo in `e2e/responsive.spec.ts-snapshots/`.
 
 ## Decision
 
-Use **Playwright's built-in visual regression** with 5 viewport profiles across 7 pages. No additional packages needed beyond `@playwright/test`. Run as part of CI to catch responsive regressions.
+Use **Playwright's built-in visual regression** with 6 viewport profiles across 5 pages. No additional packages needed beyond `@playwright/test`. Run as part of CI to catch responsive regressions.
 
 ---
 

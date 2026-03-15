@@ -101,50 +101,68 @@ test("text is not truncated or overflowing", async ({ page }) => {
   await page.goto("/");
   await stabilizePage(page);
 
-  // Check that no elements have content overflowing their bounds
   const overflowingElements = await page.evaluate(() => {
-    const elements = document.querySelectorAll("h1, h2, h3, p, a, span, div");
+    const elements = document.querySelectorAll("h1, h2, h3, p, a, span");
     const overflowing: string[] = [];
     elements.forEach((el) => {
+      const style = window.getComputedStyle(el);
+      if (
+        style.textOverflow === "ellipsis" ||
+        style.overflow === "hidden" ||
+        style.overflowX === "hidden" ||
+        style.overflowX === "auto" ||
+        style.overflowX === "scroll"
+      )
+        return;
+      const text = (el.textContent || "").trim();
+      if (!text) return; // skip empty layout containers
       const rect = el.getBoundingClientRect();
       if (rect.width > 0 && el.scrollWidth > el.clientWidth + 1) {
-        const text = (el.textContent || "").slice(0, 50);
-        overflowing.push(`<${el.tagName}> "${text}" (${el.scrollWidth}>${el.clientWidth})`);
+        overflowing.push(
+          `<${el.tagName}> "${text.slice(0, 50)}" (${el.scrollWidth}>${el.clientWidth})`
+        );
       }
     });
     return overflowing;
   });
 
-  // Allow a few overflow elements (intentional truncation with ellipsis)
   if (overflowingElements.length > 0) {
-    console.log("Elements with horizontal overflow:", overflowingElements);
+    console.log("Elements with unexpected overflow:", overflowingElements);
   }
+  expect(
+    overflowingElements.length,
+    `Found ${overflowingElements.length} elements with unexpected overflow`
+  ).toBe(0);
 });
 
-test("touch targets are at least 44px on mobile", async ({ page, isMobile }) => {
-  test.skip(!isMobile, "Only relevant for mobile viewports");
+test("mobile menu links have adequate touch targets", async ({
+  page,
+  isMobile,
+  viewport,
+}) => {
+  const isNarrow = viewport ? viewport.width < 640 : isMobile;
+  test.skip(!isNarrow, "Only relevant for viewports below 640px");
   await page.goto("/");
   await stabilizePage(page);
 
-  const smallTargets = await page.evaluate(() => {
-    const interactive = document.querySelectorAll("a, button, input, select, [role='button']");
+  await page.locator("#hamburger-btn").click();
+  const mobileMenu = page.locator("#nav-links-mobile");
+  await expect(mobileMenu).toBeVisible();
+
+  const smallLinks = await mobileMenu.evaluate((menu) => {
+    const links = menu.querySelectorAll("a");
     const tooSmall: string[] = [];
-    interactive.forEach((el) => {
+    links.forEach((el) => {
       const rect = el.getBoundingClientRect();
-      if (rect.width > 0 && rect.height > 0) {
-        if (rect.height < 30 || rect.width < 30) {
-          const text = (el.textContent || "").trim().slice(0, 30);
-          tooSmall.push(`<${el.tagName}> "${text}" (${Math.round(rect.width)}×${Math.round(rect.height)})`);
-        }
+      if (rect.height > 0 && rect.height < 30) {
+        const text = (el.textContent || "").trim().slice(0, 30);
+        tooSmall.push(
+          `"${text}" (${Math.round(rect.width)}×${Math.round(rect.height)})`
+        );
       }
     });
     return tooSmall;
   });
 
-  if (smallTargets.length > 0) {
-    console.log("Small touch targets found:", smallTargets);
-  }
-  // Log for awareness — many small targets are in the nav bar which wraps on mobile.
-  // This is informational, not a hard failure.
-  expect(smallTargets.length).toBeLessThan(50);
+  expect(smallLinks, "Mobile menu links too small for touch").toHaveLength(0);
 });

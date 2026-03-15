@@ -1,27 +1,10 @@
 {
-  "name": "ai-news-filter",
-  "version": "1.0.0",
-  "description": "Personal news intelligence system that aggregates AI content from curated sources, scores relevance using LLM, and serves a web dashboard. Runs locally with Ollama (free) or deployed to Vercel with Claude API scoring.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
-  },
+  "name": "my-focal-ai",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:e2e": "playwright test",
+    "test:e2e:update": "playwright test --update-snapshots"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YanCheng-go/my-focal-ai.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/YanCheng-go/my-focal-ai/issues"
-  },
-  "homepage": "https://github.com/YanCheng-go/my-focal-ai#readme",
   "devDependencies": {
     "@playwright/test": "^1.58.2"
   }
