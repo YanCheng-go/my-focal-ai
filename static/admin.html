@@ -553,6 +553,7 @@
         var total = enabled.length;
         var done = 0;
         var errors = 0;
+        var firstError = '';
         btn.textContent = '0/' + total;
 
         // Refresh session to get fresh JWT (#109)
@@ -581,7 +582,12 @@
                         tags: source.tags || [],
                     }),
                 }).then(function(resp) {
-                    if (!resp.ok) return resp.json().then(function(r) { throw new Error(r.error || 'Failed'); });
+                    if (!resp.ok) {
+                        return resp.text().then(function(text) {
+                            try { var r = JSON.parse(text); throw new Error(r.error || resp.status + ' ' + resp.statusText); }
+                            catch(e) { if (e instanceof SyntaxError) throw new Error(resp.status + ' ' + resp.statusText); throw e; }
+                        });
+                    }
                     return resp.json();
                 });
             }));
@@ -589,7 +595,9 @@
                 done++;
                 if (result.status === 'rejected') {
                     errors++;
-                    console.error('Fetch failed for', batch[idx].name, (result.reason && result.reason.message) || result.reason || 'Unknown error');
+                    var msg = (result.reason && result.reason.message) || result.reason || 'Unknown error';
+                    console.error('Fetch failed for', batch[idx].name, msg);
+                    if (!firstError) firstError = batch[idx].name + ': ' + msg;
                 }
             });
             btn.textContent = done + '/' + total;
@@ -597,7 +605,7 @@
 
         btn.disabled = false;
         btn.textContent = 'Fetch All';
-        if (errors) showToast('Fetched ' + (done - errors) + '/' + total + ' (' + errors + ' errors)', 'error');
+        if (errors) showToast(errors + '/' + total + ' failed. ' + firstError, 'error');
         else showToast('All ' + total + ' sources fetched', 'success');
 
         // Notify other tabs that fetch completed (#107)

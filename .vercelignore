@@ -1,0 +1,2 @@
+# Prevent supabase/ directory from shadowing the supabase pip package
+supabase/

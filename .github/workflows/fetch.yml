@@ -52,4 +52,5 @@ jobs:
           git add static/data.json static/config.json
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Update data.json [skip ci]"
+          git pull --rebase origin main
           git push

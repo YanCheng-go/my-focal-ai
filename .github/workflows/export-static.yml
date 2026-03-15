@@ -44,4 +44,5 @@ jobs:
           git add static/config.json
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Update config.json [skip ci]"
+          git pull --rebase origin main
           git push
