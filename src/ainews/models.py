@@ -38,7 +38,7 @@ class ScoredItem(BaseModel):
     """Result of LLM scoring."""
 
     relevance_score: float = Field(ge=0, le=1, description="0=noise, 1=must-read")
-    tier: str = Field(description="personal or work")
+    tier: str = Field(default="personal", description="personal or work")
     reason: str = Field(description="One-line explanation citing which principles apply")
     key_topics: list[str] = Field(default_factory=list)
     source_proximity: str = Field(
