@@ -260,19 +260,12 @@ class TestUpsertRPC:
         assert match[0].tier == "work"
 
     def test_anon_cannot_upsert_for_other_user(self, test_user):
-        """Anon key + no session should not be able to write items for a user.
-
-        The RPC has SECURITY DEFINER but checks auth.uid() vs p_user_id.
-        With anon key (no session), auth.uid() is NULL, so the guard is skipped.
-        This test documents the current behavior — the RPC allows it.
-        """
+        """Anon key + no session must be rejected when writing to a user's feed."""
         anon = create_client(LOCAL_URL, LOCAL_ANON_KEY)
         user_id = str(test_user[0])
         item_id = f"anon-rpc-{uuid.uuid4().hex[:8]}"
 
-        # This documents a known security gap: anon can call upsert_item RPC
-        # because auth.uid() is NULL and the guard only fires when both are non-NULL
-        try:
+        with pytest.raises(Exception, match="authentication required"):
             anon.rpc(
                 "upsert_item",
                 {
@@ -284,10 +277,6 @@ class TestUpsertRPC:
                     "p_user_id": user_id,
                 },
             ).execute()
-            # If we get here, the RPC allowed it — document this as known behavior
-            pytest.xfail("Known gap: anon key can call upsert_item RPC with arbitrary user_id")
-        except Exception:
-            pass  # If it raises, the security check worked
 
 
 class TestIngestItems:
