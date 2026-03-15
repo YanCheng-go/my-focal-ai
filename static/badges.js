@@ -72,6 +72,11 @@
             }
         });
 
+        // Expose the cutoff for the current page before updating it
+        if (currentPage && lastSeenDates[currentPage]) {
+            _lastSeenCutoff = lastSeenDates[currentPage];
+        }
+
         // Only update the current page's last-seen timestamp
         if (currentPage && PAGES.indexOf(currentPage) !== -1) {
             localStorage.setItem('ainews_last_seen_' + currentPage, new Date().toISOString());
@@ -86,6 +91,15 @@
         if (path.includes('ccc')) return 'ccc';
         return null;
     }
+
+    // Expose last-seen cutoff for the current page so renderers can highlight new items.
+    // Set inside _compute before the timestamp is updated.
+    var _lastSeenCutoff = null;
+    window.isNewItem = function(item) {
+        if (!_lastSeenCutoff) return false;
+        var d = new Date(item.published_at || item.fetched_at);
+        return d > _lastSeenCutoff;
+    };
 
     // Auto mode: if no one calls computeBadges within 100ms, fetch and compute
     var called = false;
