@@ -31,3 +31,29 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: bash scripts/check-static-pages.sh
+
+  visual-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: astral-sh/setup-uv@v7
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npx playwright install chromium --with-deps
+      - run: uv sync --extra dev
+      - name: Start server and run responsive tests
+        run: |
+          uv run ainews serve &
+          for i in $(seq 1 15); do curl -sf http://localhost:8000/ > /dev/null && break || sleep 1; done || { echo "Server failed to start"; exit 1; }
+          npx playwright test --reporter=list --grep-invert "renders correctly"
+        env:
+          AINEWS_SCORING: "false"
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: |
+            playwright-report/
+            test-results/

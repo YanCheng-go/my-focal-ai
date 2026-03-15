@@ -37,16 +37,28 @@
 
     // Nav links: Feeds, Admin, Leaderboard, Trends, CCC, Events, About
     var links =
-        '<a href="index.html" class="inline-flex items-center gap-1 ' + cls('dashboard') + '">Feeds ' + badgeSpan('badge-dashboard') + '</a>' +
-        '<a href="admin.html" class="' + cls('admin') + '">Admin</a>' +
-        '<a href="leaderboard.html" class="' + cls('leaderboard') + '">Leaderboard</a>' +
-        '<a href="trends.html" class="inline-flex items-center gap-1 ' + cls('trends') + '">Trends ' + badgeSpan('badge-trends') + '</a>' +
-        '<a href="ccc.html" class="inline-flex items-center gap-1 ' + cls('ccc') + '">CCC ' + badgeSpan('badge-ccc') + '</a>' +
-        '<a href="events.html" class="' + cls('events') + '">Events</a>' +
-        '<a href="about.html" class="' + cls('about') + '">About</a>';
+        '<a href="index.html" class="inline-flex items-center gap-1 py-1 ' + cls('dashboard') + '">Feeds ' + badgeSpan('badge-dashboard') + '</a>' +
+        '<a href="admin.html" class="py-1 ' + cls('admin') + '">Admin</a>' +
+        '<a href="leaderboard.html" class="py-1 ' + cls('leaderboard') + '">Leaderboard</a>' +
+        '<a href="trends.html" class="inline-flex items-center gap-1 py-1 ' + cls('trends') + '">Trends ' + badgeSpan('badge-trends') + '</a>' +
+        '<a href="ccc.html" class="inline-flex items-center gap-1 py-1 ' + cls('ccc') + '">CCC ' + badgeSpan('badge-ccc') + '</a>' +
+        '<a href="events.html" class="py-1 ' + cls('events') + '">Events</a>' +
+        '<a href="about.html" class="py-1 ' + cls('about') + '">About</a>';
+
+    // Mobile links with larger touch targets
+    var mobileLink = 'py-2 px-2 rounded-md hover:bg-gray-50 dark:hover:bg-neutral-800';
+    var mobileLinks =
+        '<a href="index.html" class="inline-flex items-center gap-1 ' + mobileLink + ' ' + cls('dashboard') + '">Feeds ' + badgeSpan('badge-dashboard-m') + '</a>' +
+        '<a href="admin.html" class="' + mobileLink + ' ' + cls('admin') + '">Admin</a>' +
+        '<a href="leaderboard.html" class="' + mobileLink + ' ' + cls('leaderboard') + '">Leaderboard</a>' +
+        '<a href="trends.html" class="inline-flex items-center gap-1 ' + mobileLink + ' ' + cls('trends') + '">Trends ' + badgeSpan('badge-trends-m') + '</a>' +
+        '<a href="ccc.html" class="inline-flex items-center gap-1 ' + mobileLink + ' ' + cls('ccc') + '">CCC ' + badgeSpan('badge-ccc-m') + '</a>' +
+        '<a href="events.html" class="' + mobileLink + ' ' + cls('events') + '">Events</a>' +
+        '<a href="about.html" class="' + mobileLink + ' ' + cls('about') + '">About</a>' +
+        '<a href="https://buymeacoffee.com/maverickmiaow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 ' + mobileLink + ' text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400">&#x2615; Support</a>';
 
     var rightSide =
-        '<a href="https://buymeacoffee.com/maverickmiaow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2 py-1 text-xs text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400" title="Support the Developer">&#x2615; Support</a>' +
+        '<a href="https://buymeacoffee.com/maverickmiaow" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 px-2 py-1 text-xs text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400" title="Support the Developer">&#x2615; Support</a>' +
         '<button onclick="setTheme(\'light\')" id="theme-light" class="p-1.5 rounded cursor-pointer" title="Light"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>' +
         '<button onclick="setTheme(\'system\')" id="theme-system" class="p-1.5 rounded cursor-pointer" title="System"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></button>' +
         '<button onclick="setTheme(\'dark\')" id="theme-dark" class="p-1.5 rounded cursor-pointer" title="Dark"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></button>' +
@@ -96,7 +108,7 @@
             '</div>' +
         '</div>' +
         // Mobile nav links (hidden by default, toggled by hamburger)
-        '<div class="hidden sm:hidden flex-col gap-2 pt-3 pb-1 text-sm" id="nav-links-mobile">' + links + '</div>' +
+        '<div class="hidden sm:hidden flex-col gap-1 pt-3 pb-1 border-t border-gray-100 dark:border-neutral-800 mt-3 text-sm" id="nav-links-mobile">' + mobileLinks + '</div>' +
         '</div>';
 
     _updateThemeButtons();

@@ -1,0 +1,11 @@
+{
+  "name": "my-focal-ai",
+  "private": true,
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:update": "playwright test --update-snapshots"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}
