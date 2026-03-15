@@ -2,7 +2,7 @@
 
 import json
 import sqlite3
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from ainews.models import ContentItem
@@ -86,7 +86,7 @@ class SqliteBackend:
         return None
 
     def set_last_fetched(self, source_key: str, ts: datetime | None = None) -> None:
-        ts = ts or datetime.now()
+        ts = ts or datetime.now(timezone.utc)
         self._conn.execute(
             """INSERT INTO source_state (source_key, last_fetched_at) VALUES (?, ?)
                ON CONFLICT(source_key) DO UPDATE SET last_fetched_at = excluded.last_fetched_at""",
@@ -410,8 +410,15 @@ def _row_to_item(row) -> ContentItem:
     d = dict(row)
     d["tags"] = json.loads(d["tags"])
     if d["published_at"]:
-        d["published_at"] = datetime.fromisoformat(d["published_at"])
-    d["fetched_at"] = datetime.fromisoformat(d["fetched_at"])
+        dt = datetime.fromisoformat(d["published_at"])
+        # Treat pre-migration naive timestamps as UTC
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        d["published_at"] = dt
+    dt = datetime.fromisoformat(d["fetched_at"])
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    d["fetched_at"] = dt
     return ContentItem(**d)
 
 

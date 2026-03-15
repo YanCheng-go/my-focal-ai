@@ -150,13 +150,22 @@
                         isSupabaseMode = true;
                         supabaseSession = session;
 
-                        // Load tags and source types (query user_sources, normalize via schema aliases)
-                        const [tagResult, typeResult] = await Promise.all([
-                            supabaseSb.rpc('get_all_tags', { p_user_id: session.user.id }),
-                            supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
-                        ]);
-                        allTags = ((tagResult.data) || []).map(r => r.tag);
-                        allSourceTypes = [...new Set(((typeResult.data) || []).map(r => TYPE_NORMALIZE[r.source_type] || r.source_type))].filter(Boolean).sort();
+                        // Load tags and source types — use sessionStorage cache to skip queries on tab switch (#136)
+                        var cachedTags = sessionStorage.getItem('ainews_tags');
+                        var cachedTypes = sessionStorage.getItem('ainews_source_types');
+                        if (cachedTags && cachedTypes) {
+                            allTags = JSON.parse(cachedTags);
+                            allSourceTypes = JSON.parse(cachedTypes);
+                        } else {
+                            const [tagResult, typeResult] = await Promise.all([
+                                supabaseSb.rpc('get_all_tags', { p_user_id: session.user.id }),
+                                supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
+                            ]);
+                            allTags = ((tagResult.data) || []).map(r => r.tag);
+                            allSourceTypes = [...new Set(((typeResult.data) || []).map(r => TYPE_NORMALIZE[r.source_type] || r.source_type))].filter(Boolean).sort();
+                            sessionStorage.setItem('ainews_tags', JSON.stringify(allTags));
+                            sessionStorage.setItem('ainews_source_types', JSON.stringify(allSourceTypes));
+                        }
 
                         document.getElementById('updated').textContent = 'Showing your personal feed';
                         document.getElementById('fetch-now-btn').classList.remove('hidden');
@@ -169,6 +178,9 @@
                             new BroadcastChannel('ainews-fetch').addEventListener('message', function(e) {
                                 if (e.data && e.data.type === 'fetch-complete') {
                                     page = 1;
+                                    // Invalidate cached tags/types — new items may add new values
+                                    sessionStorage.removeItem('ainews_tags');
+                                    sessionStorage.removeItem('ainews_source_types');
                                     loadSupabaseItems();
                                     showFeedToast('Feed refreshed with new items');
                                 }
@@ -400,6 +412,9 @@
             if (errors) showFeedToast((done - errors) + '/' + total + ' sources fetched (' + errors + ' errors)');
             else showFeedToast('All ' + total + ' sources fetched');
 
+            // Invalidate cached tags/types after fetch
+            sessionStorage.removeItem('ainews_tags');
+            sessionStorage.removeItem('ainews_source_types');
             page = 1;
             await loadSupabaseItems();
         } finally {

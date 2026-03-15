@@ -4,7 +4,7 @@ import asyncio
 import logging
 import os
 from contextlib import asynccontextmanager
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from fastapi import FastAPI, Query, Request
 from fastapi.responses import HTMLResponse
@@ -64,7 +64,7 @@ def _create_app(*, with_scheduler: bool = True) -> FastAPI:
                 _fetch_and_score,
                 "interval",
                 minutes=settings.fetch_interval_minutes,
-                next_run_time=datetime.now(),
+                next_run_time=datetime.now(timezone.utc),
             )
             scheduler.start()
             yield
@@ -104,7 +104,7 @@ def api_items(
     order_by: str = "date",
 ):
     """Get scored content items as JSON. Designed for programmatic / AI consumption."""
-    since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
+    since = datetime.now(timezone.utc) - timedelta(hours=since_hours) if since_hours else None
     with _backend() as backend:
         items = backend.get_items(
             limit=limit,
@@ -135,7 +135,7 @@ def api_items(
 @app.get("/api/digest")
 def api_digest(hours: int = 24, min_score: float = 0.6):
     """Get a daily digest — top items from the last N hours."""
-    since = datetime.now() - timedelta(hours=hours)
+    since = datetime.now(timezone.utc) - timedelta(hours=hours)
     with _backend() as backend:
         items = backend.get_items(limit=20, min_score=min_score, since=since)
     return {
@@ -179,7 +179,10 @@ def api_badge_counts(
         if not val:
             return None
         try:
-            return datetime.fromisoformat(val)
+            dt = datetime.fromisoformat(val)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            return dt
         except ValueError:
             return None
 
@@ -219,12 +222,16 @@ PER_PAGE = 30
 
 
 def _get_last_seen(request: Request, page: str) -> datetime | None:
-    """Read the last-seen cookie for a page."""
+    """Read the last-seen cookie for a page (always returns UTC-aware)."""
     val = request.cookies.get(f"ainews_last_seen_{page}")
     if not val:
         return None
     try:
-        return datetime.fromisoformat(val)
+        dt = datetime.fromisoformat(val)
+        # Treat naive cookies (from before UTC migration) as UTC
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt
     except ValueError:
         return None
 
@@ -233,7 +240,7 @@ def _set_last_seen(response: Response, page: str) -> None:
     """Set the last-seen cookie for a page to now."""
     response.set_cookie(
         f"ainews_last_seen_{page}",
-        datetime.now().isoformat(),  # naive local time, matches fetched_at
+        datetime.now(timezone.utc).isoformat(),
         max_age=365 * 24 * 3600,
         samesite="lax",
     )

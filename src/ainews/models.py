@@ -1,7 +1,7 @@
 """Core data models."""
 
 import hashlib
-from datetime import datetime
+from datetime import datetime, timezone
 
 from pydantic import BaseModel, Field
 
@@ -25,7 +25,7 @@ class ContentItem(BaseModel):
     tags: list[str] = Field(default_factory=list)
     author: str = ""
     published_at: datetime | None = None
-    fetched_at: datetime = Field(default_factory=datetime.now)
+    fetched_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
     # Scoring fields (populated after LLM evaluation)
     score: float | None = None

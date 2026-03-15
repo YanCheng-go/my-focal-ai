@@ -3,7 +3,7 @@
 import json
 import logging
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 import httpx
 from selectolax.parser import HTMLParser
@@ -91,7 +91,7 @@ async def fetch_github_trending(tags: list[str] | None = None) -> list[ContentIt
             unique_repos.append(repo)
 
     items = []
-    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    today = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
 
     for repo in unique_repos:
         url = f"https://github.com/{repo['full_name']}"
@@ -144,7 +144,7 @@ async def fetch_github_trending_history(
         return []
 
     items = []
-    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    today = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
 
     for rank, card in enumerate(cards, 1):
         # Get GitHub URL from link

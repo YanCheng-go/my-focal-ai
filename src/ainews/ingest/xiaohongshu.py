@@ -1,7 +1,7 @@
 """Xiaohongshu ingestion using browser cookies and XHS web API directly."""
 
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 
 import httpx
 
@@ -81,7 +81,7 @@ async def fetch_xhs_user(
             timestamp = note.get("time")
             if timestamp:
                 try:
-                    pub_date = datetime.fromtimestamp(timestamp / 1000)
+                    pub_date = datetime.fromtimestamp(timestamp / 1000, tz=timezone.utc)
                 except (ValueError, TypeError):
                     pass
 

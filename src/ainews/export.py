@@ -1,7 +1,7 @@
 """Export scored items to JSON for static site deployment."""
 
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from ainews.config import Settings, load_sources
@@ -20,7 +20,7 @@ def export_items(
     settings = Settings()
     backend = get_backend(settings.db_path)
 
-    since = datetime.now() - timedelta(hours=hours)
+    since = datetime.now(timezone.utc) - timedelta(hours=hours)
     items = backend.get_items(limit=500, since=since, min_score=min_score)
 
     # Ensure items from lower-volume source types aren't crowded out by arXiv flood
@@ -38,7 +38,7 @@ def export_items(
     backend.close()
 
     data = {
-        "exported_at": datetime.now().isoformat(),
+        "exported_at": datetime.now(timezone.utc).isoformat(),
         "period_hours": hours,
         "total": total,
         "all_tags": all_tags,

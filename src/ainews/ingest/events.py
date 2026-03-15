@@ -2,7 +2,7 @@
 
 import logging
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 
 import httpx
 from selectolax.parser import HTMLParser
@@ -27,7 +27,7 @@ def _parse_date_text(text: str) -> datetime | None:
     # Try common formats
     for fmt in ("%b %d, %Y", "%B %d, %Y", "%b %d %Y", "%B %d %Y"):
         try:
-            return datetime.strptime(text, fmt)
+            return datetime.strptime(text, fmt).replace(tzinfo=timezone.utc)
         except ValueError:
             continue
     # Try range format — take the first date, e.g. "March 4 - April 1"
@@ -36,7 +36,7 @@ def _parse_date_text(text: str) -> datetime | None:
         for fmt in ("%B %d", "%b %d"):
             try:
                 dt = datetime.strptime(match.group(1), fmt)
-                return dt.replace(year=datetime.now().year)
+                return dt.replace(year=datetime.now(timezone.utc).year, tzinfo=timezone.utc)
             except ValueError:
                 continue
     return None

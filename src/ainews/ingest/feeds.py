@@ -1,6 +1,6 @@
 """Feed ingestion — fetches RSS/Atom feeds and normalizes to ContentItem."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 import feedparser
 import httpx
@@ -13,7 +13,7 @@ def _parse_date(entry: dict) -> datetime | None:
         t = entry.get(field)
         if t:
             try:
-                return datetime(*t[:6])
+                return datetime(*t[:6], tzinfo=timezone.utc)
             except Exception:
                 pass
     return None
