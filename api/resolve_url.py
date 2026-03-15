@@ -13,7 +13,7 @@ import re
 import socket
 from http.server import BaseHTTPRequestHandler
 from ipaddress import ip_address
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 import httpx
 
@@ -120,7 +120,7 @@ def _resolve_youtube(url: str, parsed) -> dict:
 
     is_video = path.startswith(("/watch", "/shorts", "/live")) or parsed.hostname == "youtu.be"
     if is_video:
-        oembed = f"https://www.youtube.com/oembed?url={url}&format=json"
+        oembed = f"https://www.youtube.com/oembed?url={quote(url, safe='')}&format=json"
         resp = httpx.get(oembed, timeout=10, follow_redirects=True)
         if resp.status_code != 200:
             raise ValueError(f"YouTube oEmbed failed (status {resp.status_code})")
@@ -138,7 +138,8 @@ def _resolve_youtube(url: str, parsed) -> dict:
 def _fetch_yt_page_info(page_url: str) -> tuple:
     headers = {"User-Agent": BROWSER_UA, "Cookie": "CONSENT=YES+1"}
     resp = httpx.get(page_url, headers=headers, timeout=15, follow_redirects=True)
-    resp.raise_for_status()
+    if resp.status_code != 200:
+        raise ValueError(f"YouTube page fetch failed (status {resp.status_code})")
     text = resp.text
     channel_id = None
     for pat in CHANNEL_ID_PATTERNS:

@@ -6,7 +6,7 @@ import re
 import socket
 from dataclasses import dataclass, field
 from ipaddress import ip_address
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 import httpx
 
@@ -134,7 +134,7 @@ async def _resolve_youtube(url: str, parsed: urlparse) -> ResolvedSource:
 
 async def _resolve_youtube_video(url: str) -> ResolvedSource:
     """Resolve a YouTube video/shorts/live URL via oEmbed + page scrape."""
-    oembed_url = f"https://www.youtube.com/oembed?url={url}&format=json"
+    oembed_url = f"https://www.youtube.com/oembed?url={quote(url, safe='')}&format=json"
     async with httpx.AsyncClient(timeout=15, follow_redirects=True) as client:
         resp = await client.get(oembed_url)
         if resp.status_code != 200:
@@ -164,7 +164,8 @@ async def _fetch_youtube_page_info(
 
     async def _fetch(c: httpx.AsyncClient) -> tuple[str, str]:
         resp = await c.get(page_url, headers=headers)
-        resp.raise_for_status()
+        if resp.status_code != 200:
+            raise ValueError(f"YouTube page fetch failed (status {resp.status_code})")
         text = resp.text
 
         channel_id = None

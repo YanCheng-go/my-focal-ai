@@ -479,6 +479,7 @@
         }
 
         // --- Server-side resolvers (need network: YouTube, generic RSS) ---
+        if (!sb) throw new Error('Sign in to resolve this URL type');
         var { data: { session } } = await sb.auth.getSession();
         if (!session) throw new Error('Please sign in first');
         var resp = await fetch('/api/resolve-url', {
