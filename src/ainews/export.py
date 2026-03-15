@@ -111,14 +111,18 @@ SOURCE_TYPE_SCHEMA = {
 # Source types that work in online mode (serverless fetch via RSS/Atom)
 _ONLINE_SOURCE_TYPES = {"rss", "youtube", "arxiv", "arxiv_queries", "rsshub"}
 
-# Fields that go into user_sources.config (everything except name/tags)
-_CONFIG_KEYS = {
-    "rss": ["url"],
-    "youtube": ["channel_id"],
-    "arxiv": ["url"],
-    "arxiv_queries": ["query"],
-    "rsshub": ["route", "source_type"],
-}
+
+def _config_keys_for(stype: str) -> list[str]:
+    """Derive config keys from SOURCE_TYPE_SCHEMA (required fields minus 'name')."""
+    schema = SOURCE_TYPE_SCHEMA.get(stype)
+    if not schema:
+        return []
+    fields = schema.get("fields", {})
+    return [
+        f
+        for f in fields.get("required", []) + fields.get("optional", [])
+        if f not in ("name", "tags")
+    ]
 
 
 def _build_default_user_sources(sources: dict) -> list[dict]:
@@ -127,7 +131,7 @@ def _build_default_user_sources(sources: dict) -> list[dict]:
     for stype, entries in sources.items():
         if stype not in _ONLINE_SOURCE_TYPES or not isinstance(entries, list):
             continue
-        keys = _CONFIG_KEYS.get(stype, [])
+        keys = _config_keys_for(stype)
         for entry in entries:
             config = {k: entry[k] for k in keys if k in entry}
             defaults.append(

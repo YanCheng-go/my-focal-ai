@@ -318,19 +318,18 @@
         if (!session) return;
         btn.disabled = true;
         btn.textContent = 'Loading...';
-        var failed = 0;
-        for (var src of DEFAULT_USER_SOURCES) {
-            var { error } = await sb.from('user_sources').insert({
-                source_type: src.source_type,
-                name: src.name,
-                config: src.config,
-                tags: src.tags || [],
-                user_id: session.user.id,
-            });
-            if (error) failed++;
+        var rows = DEFAULT_USER_SOURCES.map(function(src) {
+            return { source_type: src.source_type, name: src.name, config: src.config, tags: src.tags || [], user_id: session.user.id };
+        });
+        var { error } = await sb.from('user_sources').insert(rows);
+        if (error) {
+            console.error('seedDefaults error:', error);
+            showToast('Failed to load defaults: ' + error.message, 'error');
+            btn.disabled = false;
+            btn.textContent = 'Load default sources (' + DEFAULT_USER_SOURCES.length + ')';
+            return;
         }
-        if (failed) showToast(failed + ' sources failed to add', 'error');
-        else showToast('Loaded ' + DEFAULT_USER_SOURCES.length + ' default sources', 'success');
+        showToast('Loaded ' + DEFAULT_USER_SOURCES.length + ' default sources', 'success');
         loadSources();
     }
 
