@@ -7,7 +7,7 @@
 
 ## Question
 
-What UI/UX patterns, styling framework, and visual direction should guide the redesign of the AI News Filter dashboard?
+What UI/UX patterns, styling framework, and visual direction should guide the redesign of the MyFocalAI dashboard?
 
 ## Context
 
@@ -21,7 +21,7 @@ The current site uses hand-written inline `<style>` blocks duplicated across 7 t
 - **Density:** Extremely high -- 30+ items visible without scrolling on desktop.
 - **Typography:** Small monospaced or system font, minimal hierarchy. HN uses Verdana 10pt; Lobsters uses system sans-serif.
 - **Color:** Near-zero color. HN uses orange for the header and gray for metadata. Lobsters uses tag colors as the only accent.
-- **Filtering:** HN has none. Lobsters uses a tag-based filtering system with colored tag pills -- closest to the current AI News Filter approach.
+- **Filtering:** HN has none. Lobsters uses a tag-based filtering system with colored tag pills -- closest to the current MyFocalAI approach.
 - **Relevance to this project:** HIGH. The current site already follows this pattern. The data density is appropriate for a power-user tool. Tags and scores are the main visual differentiators.
 
 ### TechCrunch / The Verge / Ars Technica (Media-Rich Cards)

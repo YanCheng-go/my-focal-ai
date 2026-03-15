@@ -87,7 +87,7 @@
 
 ## v0.1.0 — 2026-03-09
 
-First release of the AI News Filter — a personal news intelligence system.
+First release of MyFocalAI — a personal news intelligence system.
 
 ### Features
 
