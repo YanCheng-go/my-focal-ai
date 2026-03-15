@@ -62,6 +62,7 @@ HIDDEN_SOURCES = ["Claude Code Releases"]
 SOURCE_TYPE_SCHEMA = {
     "rss": {
         "label": "RSS",
+        "aliases": ["rsshub"],
         "fields": {"required": ["url", "name"], "optional": ["tags"]},
         "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
     },
@@ -77,6 +78,7 @@ SOURCE_TYPE_SCHEMA = {
     },
     "arxiv": {
         "label": "ArXiv",
+        "aliases": ["arxiv_queries"],
         "fields": {"required": ["url", "name"], "optional": ["tags"]},
         "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400",
     },
