@@ -209,7 +209,7 @@
         let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${activeCls}" onclick="setFilter({})">All</button>`;
         types.forEach(t => {
             const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
-            html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${t}'})">${label}</button>`;
+            html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${escapeAttr(t)}'})">${escapeHtml(label)}</button>`;
         });
         // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
         if (showScores) html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
