@@ -5,7 +5,8 @@
   "cleanUrls": true,
   "functions": {
     "api/*.py": {
-      "maxDuration": 10
+      "maxDuration": 10,
+      "excludeFiles": "supabase/**"
     }
   },
   "rewrites": [
