@@ -545,14 +545,8 @@ class TestServerlessFunction:
     """Smoke tests for the Vercel serverless function (api/fetch-source.py)."""
 
     @pytest.fixture(autouse=True)
-    def _fake_supabase(self, monkeypatch):
-        """Ensure a fake 'supabase' module with create_client exists."""
-        import sys
-        import types
-
-        fake = types.ModuleType("supabase")
-        fake.create_client = MagicMock()
-        monkeypatch.setitem(sys.modules, "supabase", fake)
+    def _no_supabase_module(self):
+        """No fake supabase module needed — function uses httpx directly."""
 
     def _import_handler(self):
         """Import the handler module from api/fetch-source.py."""
@@ -643,12 +637,6 @@ class TestServerlessFunction:
 
         mod = self._import_handler()
 
-        # Mock auth to succeed
-        mock_client = MagicMock()
-        mock_user = MagicMock()
-        mock_user.user.id = "user-123"
-        mock_client.auth.get_user.return_value = mock_user
-
         request_body = json.dumps(
             {
                 "source_type": "twitter",  # unsupported in serverless
@@ -676,7 +664,7 @@ class TestServerlessFunction:
         h.send_header = lambda *a: None
         h.end_headers = lambda: None
 
-        with patch.object(mod, "create_client", return_value=mock_client):
+        with patch.object(mod, "_sb_get_user", return_value={"id": "user-123"}):
             h.do_POST()
 
         assert responses[0] == 400

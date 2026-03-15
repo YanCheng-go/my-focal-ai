@@ -19,8 +19,6 @@ from urllib.parse import quote, urlparse
 import feedparser
 import httpx
 
-from supabase import create_client
-
 # Hostnames always blocked (never attempt DNS resolution)
 _BLOCKED_HOSTS = {"localhost", "metadata.google.internal"}
 
@@ -71,6 +69,73 @@ def _parse_date(entry: dict) -> str | None:
     return None
 
 
+# ---------------------------------------------------------------------------
+# Supabase REST helpers (httpx-based, no supabase-py dependency)
+# ---------------------------------------------------------------------------
+
+
+def _sb_headers(key: str) -> dict:
+    """Standard headers for Supabase REST/Auth API calls."""
+    return {
+        "apikey": key,
+        "Authorization": f"Bearer {key}",
+        "Content-Type": "application/json",
+    }
+
+
+def _sb_get_user(base_url: str, anon_key: str, jwt: str) -> dict | None:
+    """Verify JWT via Supabase Auth and return user dict (or None)."""
+    resp = httpx.get(
+        f"{base_url}/auth/v1/user",
+        headers={"apikey": anon_key, "Authorization": f"Bearer {jwt}"},
+        timeout=5,
+    )
+    if resp.status_code != 200:
+        return None
+    return resp.json()
+
+
+def _sb_get_existing_ids(
+    base_url: str, service_key: str, user_id: str, item_ids: list[str]
+) -> set[str]:
+    """Query PostgREST for existing item IDs (batched)."""
+    existing = set()
+    headers = _sb_headers(service_key)
+    for i in range(0, len(item_ids), 500):
+        chunk = item_ids[i : i + 500]
+        id_csv = ",".join(f'"{x}"' for x in chunk)
+        params = {
+            "select": "id",
+            "id": f"in.({id_csv})",
+            "user_id": f"eq.{user_id}",
+        }
+        resp = httpx.get(
+            f"{base_url}/rest/v1/items",
+            headers=headers,
+            params=params,
+            timeout=8,
+        )
+        resp.raise_for_status()
+        existing.update(row["id"] for row in resp.json())
+    return existing
+
+
+def _sb_rpc(base_url: str, service_key: str, fn_name: str, params: dict):
+    """Call a PostgREST RPC function."""
+    resp = httpx.post(
+        f"{base_url}/rest/v1/rpc/{fn_name}",
+        headers=_sb_headers(service_key),
+        json=params,
+        timeout=8,
+    )
+    resp.raise_for_status()
+
+
+# ---------------------------------------------------------------------------
+# Feed URL building
+# ---------------------------------------------------------------------------
+
+
 def _build_feed_url(source_type: str, name: str, config: dict) -> dict | None:
     """Convert a user_sources row into a feed URL + metadata."""
     if source_type == "rss":
@@ -119,7 +184,12 @@ def _build_feed_url(source_type: str, name: str, config: dict) -> dict | None:
     return None
 
 
-def _fetch_and_ingest(supabase_client, user_id, source_type, name, config, tags):
+# ---------------------------------------------------------------------------
+# Fetch + ingest pipeline
+# ---------------------------------------------------------------------------
+
+
+def _fetch_and_ingest(base_url, service_key, user_id, source_type, name, config, tags):
     """Fetch one feed and write items to Supabase. Returns (fetched, new)."""
     feed_meta = _build_feed_url(source_type, name, config)
     if not feed_meta:
@@ -164,25 +234,20 @@ def _fetch_and_ingest(supabase_client, user_id, source_type, name, config, tags)
 
     # Check existing IDs
     item_ids = [i["p_id"] for i in items]
-    existing = set()
-    for i in range(0, len(item_ids), 500):
-        chunk = item_ids[i : i + 500]
-        resp = (
-            supabase_client.table("items")
-            .select("id")
-            .in_("id", chunk)
-            .eq("user_id", user_id)
-            .execute()
-        )
-        existing.update(row["id"] for row in resp.data)
+    existing = _sb_get_existing_ids(base_url, service_key, user_id, item_ids)
 
     new_count = 0
     for item in items:
         if item["p_id"] not in existing:
-            supabase_client.rpc("upsert_item", item).execute()
+            _sb_rpc(base_url, service_key, "upsert_item", item)
             new_count += 1
 
     return len(items), new_count
+
+
+# ---------------------------------------------------------------------------
+# Vercel handler
+# ---------------------------------------------------------------------------
 
 
 class handler(BaseHTTPRequestHandler):
@@ -206,19 +271,17 @@ class handler(BaseHTTPRequestHandler):
                 return
 
             # Verify user identity from JWT
-            client = create_client(supabase_url, supabase_key)
-            user_resp = client.auth.get_user(jwt)
-            if not user_resp or not user_resp.user:
+            user = _sb_get_user(supabase_url, supabase_key, jwt)
+            if not user or not user.get("id"):
                 self._json_response(401, {"error": "Invalid token"})
                 return
-            user_id = user_resp.user.id
+            user_id = user["id"]
 
-            # Use service key for writes (bypasses RLS, but we scope by user_id)
+            # Service key for writes (bypasses RLS, but we scope by user_id)
             service_key = os.environ.get("AINEWS_SUPABASE_SERVICE_KEY", "")
             if not service_key:
                 self._json_response(500, {"error": "Server misconfigured"})
                 return
-            service_client = create_client(supabase_url, service_key)
 
             source_type = body.get("source_type", "")
             name = body.get("name", "")
@@ -237,12 +300,13 @@ class handler(BaseHTTPRequestHandler):
                 return
             if not source_type or not _build_feed_url(source_type, name, config):
                 self._json_response(
-                    400, {"error": f"Unsupported or misconfigured source_type: {source_type}"}
+                    400,
+                    {"error": f"Unsupported or misconfigured source_type: {source_type}"},
                 )
                 return
 
             fetched, new = _fetch_and_ingest(
-                service_client, user_id, source_type, name, config, tags
+                supabase_url, service_key, user_id, source_type, name, config, tags
             )
 
             self._json_response(
