@@ -74,18 +74,24 @@ def _parse_date(entry: dict) -> str | None:
 def _build_feed_url(source_type: str, name: str, config: dict) -> dict | None:
     """Convert a user_sources row into a feed URL + metadata."""
     if source_type == "rss":
-        return {"url": config["url"], "source_name": name, "source_type": "rss"}
+        url = config.get("url", "")
+        return {"url": url, "source_name": name, "source_type": "rss"} if url else None
     if source_type == "youtube":
         cid = config.get("channel_id", "")
+        if not cid:
+            return None
         return {
             "url": f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}",
             "source_name": name,
             "source_type": "youtube",
         }
     if source_type == "arxiv":
-        return {"url": config["url"], "source_name": name, "source_type": "arxiv"}
+        url = config.get("url", "")
+        return {"url": url, "source_name": name, "source_type": "arxiv"} if url else None
     if source_type == "arxiv_queries":
         query = config.get("query", "")
+        if not query:
+            return None
         return {
             "url": f"https://export.arxiv.org/api/query?search_query={quote(query)}"
             "&sortBy=submittedDate&sortOrder=descending&max_results=20",
@@ -95,6 +101,8 @@ def _build_feed_url(source_type: str, name: str, config: dict) -> dict | None:
     if source_type == "rsshub":
         base = os.environ.get("AINEWS_RSSHUB_BASE", "https://rsshub.app")
         route = config.get("route", "")
+        if not route:
+            return None
         return {
             "url": f"{base}{route}",
             "source_name": name,
@@ -121,7 +129,7 @@ def _fetch_and_ingest(supabase_client, user_id, source_type, name, config, tags)
     if not _is_safe_url(url):
         raise ValueError("Blocked URL: not allowed to fetch internal/private addresses")
     headers = {"User-Agent": "Mozilla/5.0 (compatible; ainews/0.1)"}
-    resp = httpx.get(url, follow_redirects=True, timeout=15, headers=headers)
+    resp = httpx.get(url, follow_redirects=True, timeout=8, headers=headers)
     resp.raise_for_status()
 
     feed = feedparser.parse(resp.text)
@@ -217,18 +225,20 @@ class handler(BaseHTTPRequestHandler):
             config = body.get("config", {})
             tags = body.get("tags", [])
 
-            # Input validation
-            if not source_type or not _build_feed_url(source_type, name or "_", config):
-                self._json_response(400, {"error": f"Unsupported source_type: {source_type}"})
-                return
-            if not name or len(name) > 200:
-                self._json_response(400, {"error": "name is required (max 200 chars)"})
-                return
+            # Input validation (check types before using values)
             if not isinstance(config, dict):
                 self._json_response(400, {"error": "config must be an object"})
                 return
             if not isinstance(tags, list) or not all(isinstance(t, str) for t in tags):
                 self._json_response(400, {"error": "tags must be a list of strings"})
+                return
+            if not name or len(name) > 200:
+                self._json_response(400, {"error": "name is required (max 200 chars)"})
+                return
+            if not source_type or not _build_feed_url(source_type, name, config):
+                self._json_response(
+                    400, {"error": f"Unsupported or misconfigured source_type: {source_type}"}
+                )
                 return
 
             fetched, new = _fetch_and_ingest(
@@ -243,12 +253,12 @@ class handler(BaseHTTPRequestHandler):
                 },
             )
 
-        except ValueError:
-            self._json_response(400, {"error": "Invalid or blocked URL"})
-        except httpx.HTTPError:
-            self._json_response(400, {"error": "Failed to fetch feed"})
-        except Exception:
-            self._json_response(500, {"error": "Internal server error"})
+        except ValueError as e:
+            self._json_response(400, {"error": str(e) or "Invalid or blocked URL"})
+        except httpx.HTTPError as e:
+            self._json_response(502, {"error": f"Failed to fetch feed: {e}"})
+        except Exception as e:
+            self._json_response(500, {"error": f"Internal server error: {type(e).__name__}: {e}"})
 
     def do_OPTIONS(self):
         """Handle CORS preflight."""
