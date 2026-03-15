@@ -21,3 +21,23 @@ body:
       placeholder: |
         1. Run `ainews fetch`
         2. ...
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - "High — must fix soon"
+        - "Medium — should do, not urgent"
+        - "Low — nice to have"
+    validations:
+      required: false
+  - type: dropdown
+    id: size
+    attributes:
+      label: Estimated size
+      options:
+        - "Small (< 1 hour)"
+        - "Medium (1–4 hours)"
+        - "Large (> 4 hours)"
+    validations:
+      required: false
