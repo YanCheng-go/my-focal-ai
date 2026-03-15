@@ -14,3 +14,5 @@ node_modules/
 playwright-report/
 test-results/
 tests/perf/results/
+supabase/.branches/
+supabase/.temp/
