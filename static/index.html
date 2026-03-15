@@ -26,6 +26,7 @@
     <nav id="main-nav" data-active="dashboard" class="border-b border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 sticky top-0 z-50"></nav>
     <script src="nav.js"></script>
     <script src="shared-config.js"></script>
+    <script src="auth-nav.js"></script>
 
     <main class="max-w-4xl mx-auto px-5 py-5">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
@@ -141,68 +142,75 @@
                 });
             }
 
-            // If user is logged in to Supabase, use server-side queries
-            if (config.supabase_url && config.supabase_anon_key) {
-                try {
-                    supabaseSb = window._sb || supabase.createClient(config.supabase_url, config.supabase_anon_key);
-                    window._sb = supabaseSb;
-                    const { data: { session } } = await supabaseSb.auth.getSession();
-                    if (session) {
-                        isSupabaseMode = true;
-                        supabaseSession = session;
-
-                        // Load tags and source types — use sessionStorage cache to skip queries on tab switch (#136)
-                        var cachedTags = sessionStorage.getItem('ainews_tags');
-                        var cachedTypes = sessionStorage.getItem('ainews_source_types');
-                        if (cachedTags && cachedTypes) {
-                            allTags = JSON.parse(cachedTags);
-                            allSourceTypes = JSON.parse(cachedTypes);
-                        } else {
-                            const [tagResult, typeResult] = await Promise.all([
-                                supabaseSb.rpc('get_all_tags', { p_user_id: session.user.id }),
-                                supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
-                            ]);
-                            allTags = ((tagResult.data) || []).map(r => r.tag);
-                            allSourceTypes = [...new Set(((typeResult.data) || []).map(r => TYPE_NORMALIZE[r.source_type] || r.source_type))].filter(Boolean).sort();
-                            sessionStorage.setItem('ainews_tags', JSON.stringify(allTags));
-                            sessionStorage.setItem('ainews_source_types', JSON.stringify(allSourceTypes));
-                        }
-
-                        document.getElementById('updated').textContent = 'Showing your personal feed';
-                        document.getElementById('fetch-now-btn').classList.remove('hidden');
-                        await loadSupabaseItems();
-                        computeBadges(allItems, config || {}, 'dashboard');
-                        buildFilters();
-
-                        // Listen for fetch completion from admin tab (#107)
-                        try {
-                            new BroadcastChannel('ainews-fetch').addEventListener('message', function(e) {
-                                if (e.data && e.data.type === 'fetch-complete') {
-                                    page = 1;
-                                    // Invalidate cached tags/types — new items may add new values
-                                    sessionStorage.removeItem('ainews_tags');
-                                    sessionStorage.removeItem('ainews_source_types');
-                                    loadSupabaseItems();
-                                    showFeedToast('Feed refreshed with new items');
-                                }
-                            });
-                        } catch(e) {}
-
-                        return;
-                    }
-                } catch (e) {
-                    console.warn('Supabase feed load failed, falling back to data.json:', e);
-                }
-            }
-
+            // Render public feed immediately — no waiting for auth
             allItems = data.items || [];
             allTags = data.all_tags || [];
             document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
             computeBadges(allItems, config, 'dashboard');
             buildFilters();
             render();
+
+            // Upgrade to personal feed in the background if logged in
+            if (config.supabase_url && config.supabase_anon_key) {
+                upgradeToPersonalFeed(config);
+            }
         } catch (e) {
             document.getElementById('items').innerHTML = '<div class="text-center py-16 text-gray-400 dark:text-gray-500"><p>No data yet. Waiting for first fetch cycle.</p></div>';
+        }
+    }
+
+    async function upgradeToPersonalFeed(config) {
+        try {
+            // Reuse the shared auth promise from auth-nav.js (single getSession() call)
+            var session = window._authReady ? await window._authReady : null;
+            if (!session) return;
+
+            // Prepare Supabase client but don't flip isSupabaseMode yet —
+            // filters check this flag, so set it only after data is ready
+            supabaseSb = window._sb;
+            supabaseSession = session;
+
+            // Load tags and source types — use sessionStorage cache to skip queries on tab switch (#136)
+            var cachedTags = sessionStorage.getItem('ainews_tags');
+            var cachedTypes = sessionStorage.getItem('ainews_source_types');
+            if (cachedTags && cachedTypes) {
+                allTags = JSON.parse(cachedTags);
+                allSourceTypes = JSON.parse(cachedTypes);
+            } else {
+                const [tagResult, typeResult] = await Promise.all([
+                    supabaseSb.rpc('get_all_tags', { p_user_id: session.user.id }),
+                    supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
+                ]);
+                allTags = ((tagResult.data) || []).map(r => r.tag);
+                allSourceTypes = [...new Set(((typeResult.data) || []).map(r => TYPE_NORMALIZE[r.source_type] || r.source_type))].filter(Boolean).sort();
+                sessionStorage.setItem('ainews_tags', JSON.stringify(allTags));
+                sessionStorage.setItem('ainews_source_types', JSON.stringify(allSourceTypes));
+            }
+
+            // Flip to Supabase mode only after items load successfully
+            isSupabaseMode = true;
+            document.getElementById('updated').textContent = 'Showing your personal feed';
+            document.getElementById('fetch-now-btn').classList.remove('hidden');
+            await loadSupabaseItems();
+            computeBadges(allItems, config || {}, 'dashboard');
+            buildFilters();
+
+            // Listen for fetch completion from admin tab (#107)
+            try {
+                new BroadcastChannel('ainews-fetch').addEventListener('message', function(e) {
+                    if (e.data && e.data.type === 'fetch-complete') {
+                        page = 1;
+                        sessionStorage.removeItem('ainews_tags');
+                        sessionStorage.removeItem('ainews_source_types');
+                        loadSupabaseItems();
+                        showFeedToast('Feed refreshed with new items');
+                    }
+                });
+            } catch(e) {}
+        } catch (e) {
+            // Roll back to public mode if upgrade failed mid-way
+            isSupabaseMode = false;
+            console.warn('Supabase feed load failed, keeping public data:', e);
         }
     }
 
@@ -476,6 +484,5 @@
 
     </script>
     <script src="badges.js"></script>
-    <script src="auth-nav.js"></script>
 </body>
 </html>
