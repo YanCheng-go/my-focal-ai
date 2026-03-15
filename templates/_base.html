@@ -134,6 +134,18 @@
         }
     })();
     </script>
+    <script>
+    // Sync server-set cookies to localStorage (safety net for local mode nav badges)
+    (function() {
+        ['dashboard', 'trends', 'ccc'].forEach(function(p) {
+            var key = 'ainews_last_seen_' + p;
+            if (!localStorage.getItem(key)) {
+                var m = document.cookie.match(new RegExp('(?:^|; )' + key + '=([^;]*)'));
+                if (m) localStorage.setItem(key, decodeURIComponent(m[1]));
+            }
+        });
+    })();
+    </script>
     {% block scripts %}{% endblock %}
 </body>
 </html>

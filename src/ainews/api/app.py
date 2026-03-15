@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 from fastapi import FastAPI, Query, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
+from starlette.responses import Response
 
 from ainews.api.admin import _api as admin_api_router
 from ainews.api.admin import router as admin_router
@@ -217,6 +218,27 @@ def api_badge_counts(
 PER_PAGE = 30
 
 
+def _get_last_seen(request: Request, page: str) -> datetime | None:
+    """Read the last-seen cookie for a page."""
+    val = request.cookies.get(f"ainews_last_seen_{page}")
+    if not val:
+        return None
+    try:
+        return datetime.fromisoformat(val)
+    except ValueError:
+        return None
+
+
+def _set_last_seen(response: Response, page: str) -> None:
+    """Set the last-seen cookie for a page to now."""
+    response.set_cookie(
+        f"ainews_last_seen_{page}",
+        datetime.now().isoformat(),  # naive local time, matches fetched_at
+        max_age=365 * 24 * 3600,
+        samesite="lax",
+    )
+
+
 @app.get("/", response_class=HTMLResponse)
 def dashboard(
     request: Request,
@@ -228,6 +250,7 @@ def dashboard(
     order_by: str = "date",
     page: int = 1,
 ):
+    last_seen = _get_last_seen(request, "dashboard")
     offset = (page - 1) * PER_PAGE
     # Hide dedicated-page sources from the main feed unless explicitly searched/filtered
     has_filter = search or tag or source_type
@@ -244,8 +267,17 @@ def dashboard(
         items = backend.get_items(limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
         total = backend.count_items(**filter_kwargs)
         all_tags = backend.get_all_tags()
+        new_counts: dict[str, int] = {}
+        total_new = 0
+        if last_seen:
+            new_counts = backend.count_items_by_source_type(
+                since=last_seen,
+                exclude_sources=HIDDEN_SOURCES,
+                exclude_source_types=HIDDEN_SOURCE_TYPES,
+            )
+            total_new = sum(new_counts.values())
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
-    return templates.TemplateResponse(
+    response = templates.TemplateResponse(
         "dashboard.html",
         {
             "request": request,
@@ -263,8 +295,13 @@ def dashboard(
             "total": total,
             "all_tags": all_tags,
             "show_scores": settings.show_scores,
+            "last_seen_cutoff": last_seen,
+            "new_counts_by_type": new_counts,
+            "total_new": total_new,
         },
     )
+    _set_last_seen(response, "dashboard")
+    return response
 
 
 @app.get("/leaderboard", response_class=HTMLResponse)
@@ -307,6 +344,7 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
 
 @app.get("/trends", response_class=HTMLResponse)
 def trends(request: Request, tab: str = "daily", page: int = 1):
+    last_seen = _get_last_seen(request, "trends")
     offset = (page - 1) * PER_PAGE
     source_type = "github_trending_history" if tab == "history" else "github_trending"
     with _backend() as backend:
@@ -315,7 +353,7 @@ def trends(request: Request, tab: str = "daily", page: int = 1):
         )
         total = backend.count_items(source_type=source_type)
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
-    return templates.TemplateResponse(
+    response = templates.TemplateResponse(
         "trends.html",
         {
             "request": request,
@@ -324,8 +362,11 @@ def trends(request: Request, tab: str = "daily", page: int = 1):
             "page": page,
             "total_pages": total_pages,
             "total": total,
+            "last_seen_cutoff": last_seen,
         },
     )
+    _set_last_seen(response, "trends")
+    return response
 
 
 @app.get("/about", response_class=HTMLResponse)
@@ -335,12 +376,13 @@ def about(request: Request):
 
 @app.get("/ccc", response_class=HTMLResponse)
 def ccc(request: Request, page: int = 1):
+    last_seen = _get_last_seen(request, "ccc")
     offset = (page - 1) * PER_PAGE
     with _backend() as backend:
         items = backend.get_items(limit=PER_PAGE, offset=offset, source_name="Claude Code Releases")
         total = backend.count_items(source_name="Claude Code Releases")
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
-    return templates.TemplateResponse(
+    response = templates.TemplateResponse(
         "ccc.html",
         {
             "request": request,
@@ -348,5 +390,8 @@ def ccc(request: Request, page: int = 1):
             "page": page,
             "total_pages": total_pages,
             "total": total,
+            "last_seen_cutoff": last_seen,
         },
     )
+    _set_last_seen(response, "ccc")
+    return response

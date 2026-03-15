@@ -37,11 +37,12 @@
 <div class="flex gap-2 mb-3 flex-wrap items-center">
     {% set active_cls = "bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
     {% set inactive_cls = "bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" %}
-    <a href="/" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if not filters.source_type and not filters.tier and not filters.tag and not filters.min_score and not filters.search else inactive_cls }}">All</a>
-    <a href="/?source_type=twitter" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'twitter' else inactive_cls }}">Twitter</a>
-    <a href="/?source_type=youtube" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'youtube' else inactive_cls }}">YouTube</a>
-    <a href="/?source_type=rss" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'rss' else inactive_cls }}">RSS</a>
-    <a href="/?source_type=arxiv" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'arxiv' else inactive_cls }}">arXiv</a>
+    {% macro badge(count) %}{% if count %}<span class="ml-1 bg-blue-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold">{{ count if count <= 99 else '99+' }}</span>{% endif %}{% endmacro %}
+    <a href="/" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if not filters.source_type and not filters.tier and not filters.tag and not filters.min_score and not filters.search else inactive_cls }}">All{{ badge(total_new) }}</a>
+    <a href="/?source_type=twitter" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'twitter' else inactive_cls }}">Twitter{{ badge(new_counts_by_type.get('twitter', 0)) }}</a>
+    <a href="/?source_type=youtube" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'youtube' else inactive_cls }}">YouTube{{ badge(new_counts_by_type.get('youtube', 0)) }}</a>
+    <a href="/?source_type=rss" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'rss' else inactive_cls }}">RSS{{ badge(new_counts_by_type.get('rss', 0) + new_counts_by_type.get('rsshub', 0)) }}</a>
+    <a href="/?source_type=arxiv" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'arxiv' else inactive_cls }}">arXiv{{ badge(new_counts_by_type.get('arxiv', 0) + new_counts_by_type.get('arxiv_queries', 0)) }}</a>
     {# Feature flag: AINEWS_SHOW_SCORES — do not delete these buttons, enable via env var #}
     {% if show_scores %}
     <a href="/?min_score=0.7" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.min_score and filters.min_score >= 0.7 else inactive_cls }}">Top Only</a>
@@ -70,7 +71,8 @@
 <!-- Items -->
 {% if items %}
     {% for item in items %}
-    <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 {{ source_border.get(item.source_type, 'border-l-gray-300 dark:border-l-neutral-600') }} hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+    {% set item_is_new = last_seen_cutoff and item.fetched_at and item.fetched_at > last_seen_cutoff %}
+    <div class="{{ 'bg-blue-50/70 dark:bg-blue-950/20 border-blue-200/60 dark:border-blue-800/40 hover:border-blue-300 dark:hover:border-blue-700/50' if item_is_new else 'bg-white dark:bg-neutral-900 border-gray-200 dark:border-neutral-800 hover:border-gray-300 dark:hover:border-neutral-700' }} border rounded-lg p-3 sm:p-4 mb-3 border-l-4 {{ source_border.get(item.source_type, 'border-l-gray-300 dark:border-l-neutral-600') }} transition-colors">
         <div class="flex justify-between items-start gap-3">
             <div class="text-base font-semibold">
                 <a href="{{ item.url }}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">{{ item.title }}</a>
@@ -82,6 +84,7 @@
             {% endif %}
         </div>
         <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap items-center">
+            {% if item_is_new %}<span class="bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-400 px-2 py-0.5 rounded text-xs font-medium">New</span>{% endif %}
             <span>{{ item.source_name }}</span>
             <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">{{ 'YT Short' if '/shorts/' in item.url else item.source_type }}</span>
             {% if item.tier %}
