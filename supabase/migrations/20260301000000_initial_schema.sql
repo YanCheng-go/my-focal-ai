@@ -1,4 +1,4 @@
--- Supabase schema for ai-news-filter
+-- Supabase schema for MyFocalAI
 -- Run this in your Supabase SQL Editor to set up the database.
 
 -- Items table (mirrors SQLite schema)

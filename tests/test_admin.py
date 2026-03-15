@@ -4,7 +4,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 SAMPLE_SOURCES_YML = """\
-# Source configuration for ai-news-filter
+# Source configuration for MyFocalAI
 rsshub_base: "http://localhost:1200"
 
 sources:

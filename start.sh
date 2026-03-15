@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# AI News Filter — one-command launcher
+# MyFocalAI — one-command launcher
 # Usage: ./start.sh              Start all services + app
 #        ./start.sh --no-score   Start without Ollama scoring
 #        ./start.sh stop         Stop all services
@@ -44,7 +44,7 @@ if [[ "${1:-}" == "stop" ]]; then
 fi
 
 echo ""
-echo "  AI News Filter"
+echo "  MyFocalAI"
 echo "  ─────────────────"
 echo ""
 

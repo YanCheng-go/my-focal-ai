@@ -1,4 +1,4 @@
-# AI News Filter
+# MyFocalAI
 
 Personal news intelligence system that aggregates AI content from curated sources, scores relevance using LLM, and serves a web dashboard. Runs locally with Ollama (free) or deployed to Vercel with Claude API scoring.
 
@@ -9,8 +9,8 @@ Personal news intelligence system that aggregates AI content from curated source
 ## Quick Start
 
 ```bash
-git clone https://github.com/YanCheng-go/ai-news-filter.git
-cd ai-news-filter
+git clone https://github.com/YanCheng-go/my-focal-ai.git
+cd my-focal-ai
 ./start.sh              # installs deps, starts RSSHub + Ollama, launches dashboard
 ```
 
