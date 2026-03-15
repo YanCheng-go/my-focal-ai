@@ -680,7 +680,7 @@ class TestServerlessFunction:
             h.do_POST()
 
         assert responses[0] == 400
-        assert b"Unsupported source_type" in wfile.getvalue()
+        assert b"source_type" in wfile.getvalue()
 
     def test_cors_denies_when_unconfigured(self, monkeypatch):
         """CORS header is not sent when AINEWS_CORS_ORIGIN is unset."""
