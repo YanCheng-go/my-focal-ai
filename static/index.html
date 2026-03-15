@@ -244,15 +244,34 @@
     const activeCls = 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
     const inactiveCls = 'bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600';
 
+    function badgeHtml(count) {
+        if (!count) return '';
+        var text = count > 99 ? '99+' : count;
+        return ` <span class="ml-1 bg-blue-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold">${text}</span>`;
+    }
+
     function buildFilters() {
+        // Count new items per normalized source type
+        var newCounts = {};
+        var totalNew = 0;
+        allItems.forEach(function(item) {
+            if (!window.isNewItem || !window.isNewItem(item)) return;
+            if (HIDDEN_TYPES.includes(item.source_type) || HIDDEN_SOURCES.includes(item.source_name)) return;
+            var t = TYPE_NORMALIZE[item.source_type] || item.source_type;
+            newCounts[t] = (newCounts[t] || 0) + 1;
+            totalNew++;
+        });
+
         const types = (isSupabaseMode ? allSourceTypes : [...new Set(allItems.map(i => i.source_type))]).filter(t => !HIDDEN_TYPES.includes(t)).sort();
-        let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${activeCls}" onclick="setFilter({})">All</button>`;
+        var noFilter = !filters.source_type && !filters.tag && filters.order_by === 'date';
+        let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${noFilter ? activeCls : inactiveCls}" onclick="setFilter({})">All${badgeHtml(totalNew)}</button>`;
         types.forEach(t => {
             const label = TYPE_LABELS[t] || t.charAt(0).toUpperCase() + t.slice(1);
-            html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${escapeAttr(t)}'})">${escapeHtml(label)}</button>`;
+            var cls = filters.source_type === t ? activeCls : inactiveCls;
+            html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${cls}" onclick="setFilter({source_type:'${escapeAttr(t)}'})">${escapeHtml(label)}${badgeHtml(newCounts[t])}</button>`;
         });
         // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
-        if (showScores) html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
+        if (showScores) html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${filters.order_by === 'score' ? activeCls : inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
         if (allTags.length) {
             html += `<div class="relative inline-block"><button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="toggleTagDropdown(event)">Tags</button><div class="hidden absolute top-full left-0 mt-1 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 rounded-md min-w-40 max-h-72 overflow-y-auto z-10 shadow-lg" id="tag-dropdown">`;
             allTags.forEach(t => { html += `<a class="block px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-neutral-700 cursor-pointer" onclick="setFilter({tag:'${escapeAttr(t)}'})">${escapeHtml(t)}</a>`; });
@@ -264,6 +283,7 @@
     function setFilter(f) {
         filters = { source_type: null, tier: null, tag: null, order_by: 'date', ...f };
         page = 1;
+        buildFilters();
         if (isSupabaseMode) { loadSupabaseItems(); } else { render(); }
     }
 
