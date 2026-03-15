@@ -2,7 +2,7 @@
 
 ## Overview
 
-AI News Filter follows a linear pipeline: **ingest -> dedup -> store -> score -> serve**.
+MyFocalAI follows a linear pipeline: **ingest -> dedup -> store -> score -> serve**.
 
 Each stage is independent — ingestion doesn't need the scorer, the scorer doesn't need the API. They communicate through a storage backend (`DbBackend` protocol) — either SQLite (local) or Supabase Postgres (online login).
 
