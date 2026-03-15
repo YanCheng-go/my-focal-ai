@@ -194,7 +194,7 @@ Version inconsistency across workflows. Should align to v6.
 | Dependabot version updates | Weekly dep bumps | Weekly | Configured (pip + github-actions) |
 | Secret scanning | Committed secrets detection | On push | Enabled 2026-03-15 |
 | Push protection | Block pushes with secrets | On push | Enabled 2026-03-15 |
-| CodeQL | Static analysis (injection, XSS, etc.) | On PR + weekly | Pending setup |
+| CodeQL | Static analysis (injection, XSS, etc.) | On PR + weekly | Active (`codeql.yml`) |
 
 ---
 
