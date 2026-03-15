@@ -171,10 +171,8 @@ async def fetch_google_dev_events(tags: list[str] | None = None) -> list[Content
     return items
 
 
-async def run_events_ingestion(conn, sources_config: dict) -> int:
+async def run_events_ingestion(backend, sources_config: dict) -> int:
     """Fetch all configured event sources and store new items."""
-    from ainews.storage.db import ingest_items
-
     sources = sources_config.get("sources", {})
     event_sources = sources.get("events", [])
     if not event_sources:
@@ -197,7 +195,7 @@ async def run_events_ingestion(conn, sources_config: dict) -> int:
                 continue
 
             source_key = name or f"events:{scraper}"
-            new_count = ingest_items(conn, source_key, items)
+            new_count = backend.ingest_items(source_key, items)
             if new_count > 0:
                 logger.info(f"Fetched {new_count} new events from {source_key}")
             total_new += new_count

@@ -7,7 +7,6 @@ from datetime import datetime
 import httpx
 
 from ainews.models import ContentItem, make_id
-from ainews.storage.db import ingest_items
 
 logger = logging.getLogger(__name__)
 
@@ -201,7 +200,7 @@ async def fetch_twitter_user(
     return items[:limit]
 
 
-async def run_twitter_ingestion(conn, sources_config: dict):
+async def run_twitter_ingestion(backend, sources_config: dict):
     """Fetch all configured Twitter sources."""
     sources = sources_config.get("sources", {})
     twitter_users = sources.get("twitter", [])
@@ -220,7 +219,7 @@ async def run_twitter_ingestion(conn, sources_config: dict):
         source_key = f"twitter:@{handle}"
         try:
             items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
-            new_count = ingest_items(conn, source_key, items)
+            new_count = backend.ingest_items(source_key, items)
             if new_count > 0:
                 skipped = len(items) - new_count
                 logger.info(f"Fetched {new_count} new tweets from @{handle} ({skipped} skipped)")

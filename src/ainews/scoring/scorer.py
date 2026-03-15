@@ -86,7 +86,7 @@ async def score_item(
     try:
         parsed = json.loads(content)
         return ScoredItem(**parsed)
-    except (json.JSONDecodeError, KeyError, TypeError) as e:
+    except (json.JSONDecodeError, KeyError, TypeError, ValueError) as e:
         logger.warning(f"Failed to parse LLM response for '{item.title}': {e}")
         return ScoredItem(
             relevance_score=0.5,

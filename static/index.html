@@ -12,6 +12,7 @@
     })();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <style type="text/tailwindcss">
     @custom-variant dark (&:where(.dark, .dark *));
     </style>
@@ -31,6 +32,7 @@
                     <a href="about.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">About</a>
                 </div>
                 <div class="flex items-center gap-1 ml-auto">
+                    <span id="auth-indicator" class="hidden text-xs text-gray-400 dark:text-gray-500 px-2"></span>
                     <a href="https://buymeacoffee.com/maverickmiaow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2 py-1 text-xs text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400" title="Support">&#x2615; Support</a>
                     <button onclick="setTheme('light')" id="theme-light" class="p-1.5 rounded cursor-pointer" title="Light"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
                     <button onclick="setTheme('system')" id="theme-system" class="p-1.5 rounded cursor-pointer" title="System"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></button>
@@ -44,14 +46,19 @@
     <main class="max-w-4xl mx-auto px-5 py-5">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
             <input class="w-full sm:w-48 px-3 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 placeholder:text-gray-400 dark:placeholder:text-gray-500"
-                   type="text" id="search" placeholder="Search titles, sources..." oninput="render()">
-            <span class="text-xs text-gray-400" id="updated"></span>
+                   type="text" id="search" placeholder="Search titles, sources..." oninput="onSearchInput()">
+            <div class="flex items-center gap-3">
+                <button id="fetch-now-btn" class="hidden px-3 py-1.5 rounded-md bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700 text-sm cursor-pointer hover:bg-green-200 dark:hover:bg-green-800/50" onclick="fetchNow(this)">Fetch Now</button>
+                <span class="text-xs text-gray-400" id="updated"></span>
+            </div>
         </div>
         <div class="flex gap-2 mb-3 flex-wrap items-center" id="filters"></div>
         <div class="text-xs text-gray-400 dark:text-gray-500 mb-4" id="status"></div>
         <div id="items"></div>
         <div class="flex justify-center items-center gap-2 mt-6 py-4" id="pagination"></div>
     </main>
+
+    <div id="feed-toast" class="fixed bottom-5 right-5 hidden bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-400 border border-green-300 dark:border-green-700 px-5 py-2.5 rounded-lg text-sm z-[200]"></div>
 
     <script>
     // Theme
@@ -71,27 +78,8 @@
     }
     updateThemeButtons();
 
-    // Badge logic
-    function computeBadges(items) {
-        var lastSeen = localStorage.getItem('ainews_last_seen');
-        if (!lastSeen) { localStorage.setItem('ainews_last_seen', new Date().toISOString()); return; }
-        var lastSeenDate = new Date(lastSeen);
-        var HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
-        var counts = { dashboard: 0, trends: 0, ccc: 0 };
-        items.forEach(function(item) {
-            var d = new Date(item.published_at || item.fetched_at);
-            if (d > lastSeenDate) {
-                if (!HIDDEN_TYPES.includes(item.source_type) && item.source_name !== 'Claude Code Releases') counts.dashboard++;
-                if (item.source_type === 'github_trending' || item.source_type === 'github_trending_history') counts.trends++;
-                if (item.source_name === 'Claude Code Releases') counts.ccc++;
-            }
-        });
-        Object.keys(counts).forEach(function(page) {
-            var el = document.getElementById('badge-' + page);
-            if (el && counts[page] > 0) { el.textContent = counts[page] > 99 ? '99+' : counts[page]; el.classList.remove('hidden'); }
-        });
-        localStorage.setItem('ainews_last_seen', new Date().toISOString());
-    }
+    // Badge logic is in badges.js (loaded via <script>)
+    // computeBadges(items, config) is available globally
 
     // Data
     const PER_PAGE = 30;
@@ -101,21 +89,83 @@
     let page = 1;
     let showScores = false; // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
 
-    const HIDDEN_TYPES = ['events', 'luma', 'github_trending', 'github_trending_history'];
-    const HIDDEN_SOURCES = ['Claude Code Releases'];
+    let HIDDEN_TYPES = [];
+    let HIDDEN_SOURCES = [];
+
+    // Supabase mode state (#106, #108, #110)
+    let isSupabaseMode = false;
+    let supabaseSession = null;
+    let supabaseSb = null;
+    let totalCount = 0;
+    let allSourceTypes = [];
+    let searchTimer = null;
+
+    function onSearchInput() {
+        if (isSupabaseMode) {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(function() { page = 1; loadSupabaseItems(); }, 300);
+        } else {
+            render();
+        }
+    }
 
     async function init() {
         try {
             const [dataResp, configResp] = await Promise.all([fetch('data.json'), fetch('config.json').catch(() => null)]);
             const data = await dataResp.json();
+            let config = {};
             if (configResp && configResp.ok) {
-                const config = await configResp.json();
+                config = await configResp.json();
                 showScores = !!config.show_scores;
+                HIDDEN_TYPES = config.hidden_source_types || [];
+                HIDDEN_SOURCES = config.hidden_sources || [];
             }
+
+            // If user is logged in to Supabase, use server-side queries
+            if (config.supabase_url && config.supabase_anon_key) {
+                try {
+                    supabaseSb = window._sb || supabase.createClient(config.supabase_url, config.supabase_anon_key);
+                    window._sb = supabaseSb;
+                    const { data: { session } } = await supabaseSb.auth.getSession();
+                    if (session) {
+                        isSupabaseMode = true;
+                        supabaseSession = session;
+
+                        // Load tags and distinct source types for filter buttons
+                        const [tagResult, typeResult] = await Promise.all([
+                            supabaseSb.rpc('get_all_tags', { p_user_id: session.user.id }),
+                            supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
+                        ]);
+                        allTags = ((tagResult.data) || []).map(r => r.tag);
+                        allSourceTypes = [...new Set(((typeResult.data) || []).map(r => r.source_type))].filter(Boolean).sort();
+
+                        document.getElementById('updated').textContent = 'Showing your personal feed';
+                        document.getElementById('fetch-now-btn').classList.remove('hidden');
+                        buildFilters();
+                        await loadSupabaseItems();
+
+                        // Listen for fetch completion from admin tab (#107)
+                        try {
+                            new BroadcastChannel('ainews-fetch').addEventListener('message', function(e) {
+                                if (e.data && e.data.type === 'fetch-complete') {
+                                    page = 1;
+                                    loadSupabaseItems();
+                                    showFeedToast('Feed refreshed with new items');
+                                }
+                            });
+                        } catch(e) {}
+
+                        return;
+                    }
+                } catch (e) {
+                    console.warn('Supabase feed load failed, falling back to data.json:', e);
+                }
+            }
+
             allItems = data.items || [];
             allTags = data.all_tags || [];
             document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
-            computeBadges(allItems);
+            computeBadges(allItems, config, 'dashboard');
             buildFilters();
             render();
         } catch (e) {
@@ -123,15 +173,51 @@
         }
     }
 
+    // Server-side query with filters + pagination (#106, #108)
+    async function loadSupabaseItems() {
+        var query = supabaseSb.from('items')
+            .select('*', { count: 'exact' })
+            .eq('user_id', supabaseSession.user.id)
+            .is('is_duplicate_of', null)
+            .order('published_at', { ascending: false, nullsFirst: false });
+
+        if (filters.source_type) query = query.eq('source_type', filters.source_type);
+        if (filters.tag) query = query.contains('tags', [filters.tag]);
+
+        // Hide dedicated-page sources from main feed unless filtered
+        var hasFilter = filters.source_type || filters.tag || document.getElementById('search').value.trim();
+        if (!hasFilter) {
+            HIDDEN_TYPES.forEach(function(t) { query = query.neq('source_type', t); });
+            HIDDEN_SOURCES.forEach(function(s) { query = query.neq('source_name', s); });
+        }
+
+        var search = document.getElementById('search').value.trim();
+        if (search) {
+            // Escape special PostgREST filter chars to prevent injection
+            var safe = search.replace(/\\/g, '\\\\').replace(/%/g, '\\%').replace(/,/g, '').replace(/\./g, ' ');
+            query = query.or('title.ilike.%' + safe + '%,source_name.ilike.%' + safe + '%,summary.ilike.%' + safe + '%');
+        }
+
+        var offset = (page - 1) * PER_PAGE;
+        query = query.range(offset, offset + PER_PAGE - 1);
+
+        var { data: rows, error, count } = await query;
+        if (error) { console.error('Supabase query error:', error); return; }
+
+        allItems = rows || [];
+        totalCount = count || 0;
+        render();
+    }
+
     const activeCls = 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
     const inactiveCls = 'bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600';
 
     function buildFilters() {
-        const types = [...new Set(allItems.map(i => i.source_type))].filter(t => !HIDDEN_TYPES.includes(t)).sort();
+        const types = (isSupabaseMode ? allSourceTypes : [...new Set(allItems.map(i => i.source_type))]).filter(t => !HIDDEN_TYPES.includes(t)).sort();
         let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${activeCls}" onclick="setFilter({})">All</button>`;
         types.forEach(t => {
             const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
-            html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${t}'})">${label}</button>`;
+            html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${escapeAttr(t)}'})">${escapeHtml(label)}</button>`;
         });
         // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
         if (showScores) html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({order_by:'score'})">By Score</button>`;
@@ -146,7 +232,7 @@
     function setFilter(f) {
         filters = { source_type: null, tier: null, tag: null, order_by: 'date', ...f };
         page = 1;
-        render();
+        if (isSupabaseMode) { loadSupabaseItems(); } else { render(); }
     }
 
     function getFiltered() {
@@ -169,14 +255,24 @@
     }
 
     function render() {
-        const filtered = getFiltered();
-        const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
-        if (page > totalPages) page = totalPages;
-        const start = (page - 1) * PER_PAGE;
-        const pageItems = filtered.slice(start, start + PER_PAGE);
+        var pageItems, totalPages, itemCount;
+
+        if (isSupabaseMode) {
+            // Items already filtered & paginated by server
+            pageItems = allItems;
+            totalPages = Math.max(1, Math.ceil(totalCount / PER_PAGE));
+            itemCount = totalCount;
+        } else {
+            var filtered = getFiltered();
+            totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+            if (page > totalPages) page = totalPages;
+            var start = (page - 1) * PER_PAGE;
+            pageItems = filtered.slice(start, start + PER_PAGE);
+            itemCount = filtered.length;
+        }
 
         const search = document.getElementById('search').value;
-        let statusText = `${filtered.length} items`;
+        let statusText = `${itemCount} items`;
         if (search) statusText += ` matching "${search}"`;
         statusText += ` \u00b7 Page ${page} of ${totalPages}`;
         document.getElementById('status').textContent = statusText;
@@ -227,10 +323,70 @@
         }
     }
 
-    function goPage(p) { page = p; render(); window.scrollTo(0, 0); }
+    function goPage(p) { page = p; if (isSupabaseMode) { loadSupabaseItems(); } else { render(); } window.scrollTo(0, 0); }
     function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text || ''; return div.innerHTML; }
     function escapeAttr(text) { return escapeHtml(text).replace(/'/g, '&#39;'); }
+
+    // Fetch Now for logged-in users (#110)
+    async function fetchNow(btn) {
+        if (!supabaseSession) return;
+        btn.disabled = true;
+        btn.textContent = 'Fetching...';
+        try {
+            // Get user's sources
+            var { data: sources, error } = await supabaseSb.from('user_sources')
+                .select('*')
+                .eq('user_id', supabaseSession.user.id);
+            if (error || !sources) { showFeedToast('Failed to load sources'); return; }
+
+            var enabled = sources.filter(function(s) { return !s.disabled; });
+            if (!enabled.length) { showFeedToast('No enabled sources'); return; }
+
+            // Refresh JWT (#109)
+            var { data: { session }, error: authErr } = await supabaseSb.auth.refreshSession();
+            if (authErr || !session) { showFeedToast('Auth failed — please sign in again'); return; }
+            supabaseSession = session;
+
+            var total = enabled.length, done = 0, errors = 0;
+            var CONCURRENCY = 3;
+
+            for (var i = 0; i < enabled.length; i += CONCURRENCY) {
+                var batch = enabled.slice(i, i + CONCURRENCY);
+                var results = await Promise.allSettled(batch.map(function(source) {
+                    return fetch('/api/fetch-source', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + session.access_token },
+                        body: JSON.stringify({ source_type: source.source_type, name: source.name, config: source.config || {}, tags: source.tags || [] }),
+                    }).then(function(resp) {
+                        if (!resp.ok) return resp.json().then(function(r) { throw new Error(r.error || 'Failed'); });
+                        return resp.json();
+                    });
+                }));
+                results.forEach(function(r) { done++; if (r.status === 'rejected') errors++; });
+                btn.textContent = done + '/' + total;
+            }
+
+            if (errors) showFeedToast((done - errors) + '/' + total + ' sources fetched (' + errors + ' errors)');
+            else showFeedToast('All ' + total + ' sources fetched');
+
+            page = 1;
+            await loadSupabaseItems();
+        } finally {
+            btn.disabled = false;
+            btn.textContent = 'Fetch Now';
+        }
+    }
+
+    function showFeedToast(msg) {
+        var el = document.getElementById('feed-toast');
+        el.textContent = msg;
+        el.classList.remove('hidden');
+        setTimeout(function() { el.classList.add('hidden'); }, 4000);
+    }
+
     init();
     </script>
+    <script src="badges.js"></script>
+    <script src="auth-nav.js"></script>
 </body>
 </html>

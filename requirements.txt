@@ -1,0 +1,4 @@
+# Vercel serverless function dependencies (api/ directory)
+feedparser>=6.0
+httpx>=0.28
+supabase>=2.0

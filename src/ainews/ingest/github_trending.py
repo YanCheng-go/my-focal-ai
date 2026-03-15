@@ -200,10 +200,8 @@ async def fetch_github_trending_history(
     return items
 
 
-async def run_github_trending_ingestion(conn, sources_config: dict) -> int:
+async def run_github_trending_ingestion(backend, sources_config: dict) -> int:
     """Fetch GitHub trending repos and store new items."""
-    from ainews.storage.db import ingest_items
-
     sources = sources_config.get("sources", {})
     trending_entries = sources.get("github_trending", [])
     if not trending_entries:
@@ -215,7 +213,7 @@ async def run_github_trending_ingestion(conn, sources_config: dict) -> int:
 
     try:
         items = await fetch_github_trending(tags=tags)
-        new_count = ingest_items(conn, "GitHub Trending", items)
+        new_count = backend.ingest_items("GitHub Trending", items)
         if new_count > 0:
             logger.info(f"Fetched {new_count} new trending repos")
         total_new += new_count
@@ -224,7 +222,7 @@ async def run_github_trending_ingestion(conn, sources_config: dict) -> int:
 
     try:
         history_items = await fetch_github_trending_history(tags=tags)
-        history_count = ingest_items(conn, "GitHub Trending History", history_items)
+        history_count = backend.ingest_items("GitHub Trending History", history_items)
         if history_count > 0:
             logger.info(f"Fetched {history_count} new trending history repos")
         total_new += history_count

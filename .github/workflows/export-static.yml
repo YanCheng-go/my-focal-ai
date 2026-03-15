@@ -33,6 +33,9 @@ jobs:
 
       - name: Export static data
         run: uv run ainews export --hours 168 --output static/data.json
+        env:
+          AINEWS_SUPABASE_URL: ${{ secrets.AINEWS_SUPABASE_URL || '' }}
+          AINEWS_SUPABASE_KEY: ${{ secrets.AINEWS_SUPABASE_KEY || '' }}
 
       - name: Commit if changed
         run: |

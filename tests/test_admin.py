@@ -183,18 +183,18 @@ class TestSourceManager:
 
 class TestSourceHealth:
     def test_get_source_health_empty(self, tmp_path):
-        from ainews.storage.db import get_db, get_source_health
+        from ainews.storage.db import SqliteBackend
 
-        conn = get_db(tmp_path / "test.db")
-        health = get_source_health(conn)
+        backend = SqliteBackend(tmp_path / "test.db")
+        health = backend.get_source_health()
         assert health == {}
-        conn.close()
+        backend.close()
 
     def test_get_source_health_with_items(self, tmp_path):
         from ainews.models import ContentItem
-        from ainews.storage.db import get_db, get_source_health, upsert_item
+        from ainews.storage.db import SqliteBackend
 
-        conn = get_db(tmp_path / "test.db")
+        backend = SqliteBackend(tmp_path / "test.db")
         item = ContentItem(
             id="test1",
             url="https://example.com/1",
@@ -203,9 +203,9 @@ class TestSourceHealth:
             source_type="rss",
             tags=["test"],
         )
-        upsert_item(conn, item)
-        conn.commit()
-        health = get_source_health(conn)
+        backend.upsert_item(item)
+        backend.commit()
+        health = backend.get_source_health()
         assert "Example Feed" in health
         assert health["Example Feed"]["item_count"] == 1
-        conn.close()
+        backend.close()

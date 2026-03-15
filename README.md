@@ -26,10 +26,10 @@ Open http://localhost:8000 — you're done. The script handles everything.
 
 > **Optional:** Install [Ollama](https://ollama.ai) for local LLM scoring. Without it, `start.sh` still works — it just skips scoring.
 
-## Two Modes
+## Three Modes
 
-### Local (full-featured)
-Runs entirely on your machine — SQLite, Ollama, APScheduler, FastAPI dashboard.
+### 1. Local (full-featured)
+Runs entirely on your machine — SQLite, Ollama, APScheduler, FastAPI dashboard. Full admin access.
 
 #### Twitter / X (local only)
 
@@ -49,8 +49,8 @@ Twitter sources are only available in local mode. The fetcher reads your browser
 
 > **Why not in the cloud?** The method relies on scraping private GraphQL endpoints using your personal session cookies, which violates [X's Terms of Service](https://x.com/en/tos). Running it in a public CI pipeline would also expose your personal session. Use RSS-based alternatives (e.g. [nitter](https://github.com/zedeus/nitter) via RSSHub) for the cloud pipeline if you need Twitter content.
 
-### Cloud (Vercel + GitHub Actions)
-Static dashboard deployed to Vercel. GitHub Action fetches feeds on a 2h cron, exports to `static/data.json`, and Vercel serves it.
+### 2. Online Public (Vercel + GitHub Actions)
+Static read-only dashboard. GitHub Action fetches pre-defined feeds on a 2h cron, exports to `static/data.json`, and Vercel serves it. Data is kept for approximately one week.
 
 No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROPIC_API_KEY`).
 
@@ -58,6 +58,17 @@ No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROP
 1. Connect repo to Vercel (output directory: `static/`)
 2. Optionally add `ANTHROPIC_API_KEY` as a GitHub Actions secret for scoring
 3. Trigger the "Fetch & Export" workflow manually for the first run
+
+### 3. Online Login (Supabase + Vercel)
+Authenticated mode where users create accounts, manage their own source list, and fetch feeds on demand. Each user's data is fully isolated via Row Level Security.
+
+New users get a pre-defined source list but **no pre-fetched content** — items appear only after clicking "Fetch" in the admin UI. Sources can be added, edited, disabled, or removed.
+
+**Setup:**
+1. Create a [Supabase](https://supabase.com) project
+2. Run migrations: `supabase link --project-ref <ref>` then `supabase db push` (or paste `supabase/migrations/*.sql` in the SQL Editor)
+3. Set Vercel environment variables: `AINEWS_SUPABASE_URL`, `AINEWS_SUPABASE_KEY`, `AINEWS_SUPABASE_SERVICE_KEY`
+4. Optionally set `AINEWS_CORS_ORIGIN` to restrict cross-origin requests
 
 ## Configuration
 
@@ -75,7 +86,8 @@ No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROP
 | Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs) |
 | Trends | `/trends` | `trends.html` | GitHub trending repos — daily + history (2 tabs) |
 | CCC | `/ccc` | `ccc.html` | Claude Code Changelogs |
-| Admin | `/admin` | `admin.html` | Source management (local); read-only info (online) |
+| About | `/about` | `about.html` | About page |
+| Admin | `/admin` | `admin.html` | Source management (local); read-only (public); source CRUD + fetch (login) |
 
 ## Development
 
@@ -103,4 +115,4 @@ If you find this project useful:
 
 ---
 
-*Last updated: 2026-03-11*
+*Last updated: 2026-03-15*

@@ -23,6 +23,9 @@ dependencies = [
 llm = [
     "ollama>=0.4",
 ]
+supabase = [
+    "supabase>=2.0",
+]
 dev = [
     "pytest>=8.0",
     "ruff>=0.9",
@@ -30,6 +33,11 @@ dev = [
 
 [project.scripts]
 ainews = "ainews.cli:main"
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: requires local Supabase (`supabase start`)",
+]
 
 [tool.ruff]
 line-length = 100

@@ -13,14 +13,8 @@ from fastapi.templating import Jinja2Templates
 from ainews.api.admin import _api as admin_api_router
 from ainews.api.admin import router as admin_router
 from ainews.config import Settings, load_principles, load_sources
-from ainews.storage.db import (
-    count_items,
-    get_all_tags,
-    get_db,
-    get_items,
-    get_unscored_items,
-    upsert_item,
-)
+from ainews.export import HIDDEN_SOURCE_TYPES, HIDDEN_SOURCES
+from ainews.storage.db import get_backend
 
 logger = logging.getLogger(__name__)
 
@@ -28,8 +22,8 @@ settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
 
 
-def _conn():
-    return get_db(settings.db_path)
+def _backend():
+    return get_backend(settings.db_path)
 
 
 async def _fetch_and_score():
@@ -37,23 +31,23 @@ async def _fetch_and_score():
     from ainews.ingest.runner import run_ingestion
     from ainews.scoring.scorer import score_batch
 
-    conn = _conn()
+    backend = _backend()
     try:
-        await run_ingestion(conn, settings.config_dir)
+        await run_ingestion(backend, settings.config_dir)
         if settings.scoring:
-            unscored = get_unscored_items(conn, limit=30)
+            unscored = backend.get_unscored_items(limit=30)
             if unscored:
                 principles = load_principles(settings.config_dir)
                 scored = await score_batch(
                     unscored, principles, settings.ollama_base_url, settings.ollama_model
                 )
                 for item, _ in scored:
-                    upsert_item(conn, item)
-                conn.commit()
+                    backend.upsert_item(item)
+                backend.commit()
         else:
             logger.info("Scoring disabled (AINEWS_SCORING=false)")
     finally:
-        conn.close()
+        backend.close()
 
 
 def _create_app(*, with_scheduler: bool = True) -> FastAPI:
@@ -109,30 +103,27 @@ def api_items(
     order_by: str = "date",
 ):
     """Get scored content items as JSON. Designed for programmatic / AI consumption."""
-    conn = _conn()
     since = datetime.now() - timedelta(hours=since_hours) if since_hours else None
-    items = get_items(
-        conn,
-        limit=limit,
-        offset=offset,
-        min_score=min_score,
-        source_type=source_type,
-        tier=tier,
-        tag=tag,
-        search=search,
-        since=since,
-        order_by=order_by,
-    )
-    total = count_items(
-        conn,
-        min_score=min_score,
-        source_type=source_type,
-        tier=tier,
-        tag=tag,
-        search=search,
-        since=since,
-    )
-    conn.close()
+    with _backend() as backend:
+        items = backend.get_items(
+            limit=limit,
+            offset=offset,
+            min_score=min_score,
+            source_type=source_type,
+            tier=tier,
+            tag=tag,
+            search=search,
+            since=since,
+            order_by=order_by,
+        )
+        total = backend.count_items(
+            min_score=min_score,
+            source_type=source_type,
+            tier=tier,
+            tag=tag,
+            search=search,
+            since=since,
+        )
     return {
         "items": [item.model_dump(mode="json") for item in items],
         "count": len(items),
@@ -143,10 +134,9 @@ def api_items(
 @app.get("/api/digest")
 def api_digest(hours: int = 24, min_score: float = 0.6):
     """Get a daily digest — top items from the last N hours."""
-    conn = _conn()
     since = datetime.now() - timedelta(hours=hours)
-    items = get_items(conn, limit=20, min_score=min_score, since=since)
-    conn.close()
+    with _backend() as backend:
+        items = backend.get_items(limit=20, min_score=min_score, since=since)
     return {
         "period_hours": hours,
         "min_score": min_score,
@@ -172,26 +162,53 @@ async def api_trigger_fetch():
 
 
 @app.get("/api/badge-counts")
-def api_badge_counts(since: str | None = None):
-    """Count new items per category since a given timestamp (for notification badges)."""
-    if not since:
-        return {"dashboard": 0, "trends": 0, "ccc": 0}
-    try:
-        since_dt = datetime.fromisoformat(since)
-    except ValueError:
-        return {"dashboard": 0, "trends": 0, "ccc": 0}
-    conn = _conn()
-    dashboard_count = count_items(
-        conn,
-        since=since_dt,
-        exclude_source_types=["events", "luma", "github_trending", "github_trending_history"],
-        exclude_sources=["Claude Code Releases"],
-    )
-    trends_count = count_items(conn, since=since_dt, source_type="github_trending") + count_items(
-        conn, since=since_dt, source_type="github_trending_history"
-    )
-    ccc_count = count_items(conn, since=since_dt, source_name="Claude Code Releases")
-    conn.close()
+def api_badge_counts(
+    since_dashboard: str | None = None,
+    since_trends: str | None = None,
+    since_ccc: str | None = None,
+    since: str | None = None,
+):
+    """Count new items per category since per-page timestamps (for notification badges).
+
+    Accepts per-page timestamps (since_dashboard, since_trends, since_ccc).
+    Falls back to ``since`` for any missing per-page value.
+    """
+
+    def _parse(val: str | None) -> datetime | None:
+        if not val:
+            return None
+        try:
+            return datetime.fromisoformat(val)
+        except ValueError:
+            return None
+
+    fallback_dt = _parse(since)
+    dash_dt = _parse(since_dashboard) or fallback_dt
+    trend_dt = _parse(since_trends) or fallback_dt
+    ccc_dt = _parse(since_ccc) or fallback_dt
+
+    with _backend() as backend:
+        dashboard_count = (
+            backend.count_items(
+                since=dash_dt,
+                exclude_source_types=HIDDEN_SOURCE_TYPES,
+                exclude_sources=HIDDEN_SOURCES,
+            )
+            if dash_dt
+            else 0
+        )
+        trends_count = (
+            backend.count_items(
+                since=trend_dt,
+                source_types=["github_trending", "github_trending_history"],
+            )
+            if trend_dt
+            else 0
+        )
+        ccc_count = 0
+        if ccc_dt:
+            for src in HIDDEN_SOURCES:
+                ccc_count += backend.count_items(since=ccc_dt, source_name=src)
     return {"dashboard": dashboard_count, "trends": trends_count, "ccc": ccc_count}
 
 
@@ -211,7 +228,6 @@ def dashboard(
     order_by: str = "date",
     page: int = 1,
 ):
-    conn = _conn()
     offset = (page - 1) * PER_PAGE
     # Hide dedicated-page sources from the main feed unless explicitly searched/filtered
     has_filter = search or tag or source_type
@@ -221,15 +237,13 @@ def dashboard(
         tag=tag,
         min_score=min_score,
         search=search,
-        exclude_sources=None if has_filter else ["Claude Code Releases"],
-        exclude_source_types=None
-        if has_filter
-        else ["events", "luma", "github_trending", "github_trending_history"],
+        exclude_sources=None if has_filter else HIDDEN_SOURCES,
+        exclude_source_types=None if has_filter else HIDDEN_SOURCE_TYPES,
     )
-    items = get_items(conn, limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
-    total = count_items(conn, **filter_kwargs)
-    all_tags = get_all_tags(conn)
-    conn.close()
+    with _backend() as backend:
+        items = backend.get_items(limit=PER_PAGE, offset=offset, order_by=order_by, **filter_kwargs)
+        total = backend.count_items(**filter_kwargs)
+        all_tags = backend.get_all_tags()
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "dashboard.html",
@@ -272,11 +286,10 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
     total_pages = 1
     if tab in ("luma", "tech"):
         source_type = "luma" if tab == "luma" else "events"
-        conn = _conn()
         offset = (page - 1) * PER_PAGE
-        items = get_items(conn, limit=PER_PAGE, offset=offset, source_type=source_type)
-        total = count_items(conn, source_type=source_type)
-        conn.close()
+        with _backend() as backend:
+            items = backend.get_items(limit=PER_PAGE, offset=offset, source_type=source_type)
+            total = backend.count_items(source_type=source_type)
         total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "events.html",
@@ -294,14 +307,13 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
 
 @app.get("/trends", response_class=HTMLResponse)
 def trends(request: Request, tab: str = "daily", page: int = 1):
-    conn = _conn()
     offset = (page - 1) * PER_PAGE
     source_type = "github_trending_history" if tab == "history" else "github_trending"
-    items = get_items(
-        conn, limit=PER_PAGE, offset=offset, source_type=source_type, order_by="score"
-    )
-    total = count_items(conn, source_type=source_type)
-    conn.close()
+    with _backend() as backend:
+        items = backend.get_items(
+            limit=PER_PAGE, offset=offset, source_type=source_type, order_by="score"
+        )
+        total = backend.count_items(source_type=source_type)
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "trends.html",
@@ -323,11 +335,10 @@ def about(request: Request):
 
 @app.get("/ccc", response_class=HTMLResponse)
 def ccc(request: Request, page: int = 1):
-    conn = _conn()
     offset = (page - 1) * PER_PAGE
-    items = get_items(conn, limit=PER_PAGE, offset=offset, search="Claude Code Releases")
-    total = count_items(conn, search="Claude Code Releases")
-    conn.close()
+    with _backend() as backend:
+        items = backend.get_items(limit=PER_PAGE, offset=offset, source_name="Claude Code Releases")
+        total = backend.count_items(source_name="Claude Code Releases")
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
         "ccc.html",
