@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- Bullseye — outer ring -->
+  <circle cx="256" cy="256" r="150" stroke="white" stroke-width="24" fill="none" opacity="0.35"/>
+  <!-- Bullseye — inner ring -->
+  <circle cx="256" cy="256" r="85" stroke="white" stroke-width="20" fill="none" opacity="0.6"/>
+  <!-- Bullseye — center dot -->
+  <circle cx="256" cy="256" r="30" fill="white"/>
+</svg>

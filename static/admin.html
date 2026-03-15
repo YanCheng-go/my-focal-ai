@@ -18,84 +18,32 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 dark:bg-neutral-950 dark:text-gray-200 antialiased">
-    <nav class="border-b border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-5 py-3">
-            <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-                <a href="index.html" class="text-lg font-bold text-gray-900 dark:text-white shrink-0">MyFocalAI</a>
-                <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
-                    <a href="index.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Feeds <span id="badge-dashboard" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
-                    <a href="admin.html" class="text-blue-600 dark:text-blue-400 font-medium">Admin</a>
-                    <a href="leaderboard.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Leaderboard</a>
-                    <a href="events.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Events</a>
-                    <a href="trends.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">Trends <span id="badge-trends" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
-                    <a href="ccc.html" class="inline-flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">CCC <span id="badge-ccc" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span></a>
-                    <a href="about.html" class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200">About</a>
-                </div>
-                <div class="flex items-center gap-1 ml-auto">
-                    <span id="auth-indicator" class="hidden text-xs text-gray-400 dark:text-gray-500 px-2"></span>
-                    <a href="https://buymeacoffee.com/maverickmiaow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2 py-1 text-xs text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400" title="Support">&#x2615; Support</a>
-                    <button onclick="setTheme('light')" id="theme-light" class="p-1.5 rounded cursor-pointer" title="Light"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
-                    <button onclick="setTheme('system')" id="theme-system" class="p-1.5 rounded cursor-pointer" title="System"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></button>
-                    <button onclick="setTheme('dark')" id="theme-dark" class="p-1.5 rounded cursor-pointer" title="Dark"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg></button>
-                    <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener" class="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300" title="GitHub"><svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <nav id="main-nav" data-active="admin" class="border-b border-gray-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 sticky top-0 z-50"></nav>
+    <script src="nav.js"></script>
+    <script src="shared-config.js"></script>
 
     <main class="max-w-5xl mx-auto px-5 py-5">
-        <!-- State 1: No Supabase configured (static placeholder) -->
-        <div id="state-no-supabase" class="hidden">
-            <h1 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Source Management</h1>
-            <div class="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-5 mb-6">
-                <h2 class="text-base font-semibold text-blue-800 dark:text-blue-300 mb-2">Online customization coming soon</h2>
-                <p class="text-sm text-blue-700 dark:text-blue-400 leading-relaxed mb-3">
-                    User-specific feed customization (add/remove sources, personal scoring principles) will be available online in a future update.
-                </p>
-                <p class="text-sm text-blue-700 dark:text-blue-400 leading-relaxed">
-                    In the meantime, you can fully customize your feeds in <strong>local mode</strong> by cloning the project and following the setup instructions:
-                </p>
-            </div>
-            <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-5 mb-6">
-                <h2 class="text-base font-semibold text-gray-900 dark:text-white mb-3">Run locally</h2>
-                <ol class="list-decimal list-inside space-y-2 text-sm text-gray-600 dark:text-gray-400">
-                    <li>Clone the repository:
-                        <code class="bg-gray-100 dark:bg-neutral-800 px-2 py-0.5 rounded text-xs ml-1">git clone https://github.com/YanCheng-go/ai-news-filter.git</code>
-                    </li>
-                    <li>Run the start script:
-                        <code class="bg-gray-100 dark:bg-neutral-800 px-2 py-0.5 rounded text-xs ml-1">cd ai-news-filter && ./start.sh</code>
-                    </li>
-                    <li>Open <code class="bg-gray-100 dark:bg-neutral-800 px-2 py-0.5 rounded text-xs">http://localhost:8000/admin</code> to manage sources</li>
-                </ol>
-            </div>
-            <div class="text-center">
-                <a href="https://github.com/YanCheng-go/ai-news-filter" target="_blank" rel="noopener"
-                   class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gray-900 dark:bg-white text-white dark:text-gray-900 text-sm font-medium hover:bg-gray-700 dark:hover:bg-gray-200 transition-colors">
-                    <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-                    View on GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- State 2: Logged out -->
+        <!-- State 1/2: Logged out (covers both no-supabase and has-supabase) -->
         <div id="state-login" class="hidden">
             <div class="max-w-sm mx-auto mt-12">
-                <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Sign in to manage sources</h2>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-6 text-center">Add, edit, and manage your feed sources. Sign in to get started.</p>
+                <h2 id="admin-auth-title" class="text-xl font-bold text-gray-900 dark:text-white mb-4">Sign in to manage sources</h2>
                 <form id="auth-form" onsubmit="return handleAuth(event)">
                     <input type="email" id="auth-email" placeholder="Email" required
                         class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 mb-3">
                     <input type="password" id="auth-password" placeholder="Password" required minlength="6"
                         class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 mb-3">
-                    <button type="submit" id="auth-submit" class="w-full px-3 py-2 rounded-md bg-blue-600 text-white text-sm cursor-pointer hover:bg-blue-700 mb-2">Sign In</button>
-                    <button type="button" onclick="handleSignUp()" class="w-full px-3 py-2 rounded-md bg-transparent text-gray-500 border border-gray-300 dark:border-neutral-600 text-sm cursor-pointer hover:bg-gray-100 dark:hover:bg-neutral-800">Create Account</button>
+                    <button type="submit" id="admin-auth-submit" class="w-full px-3 py-2 rounded-md bg-blue-600 text-white text-sm cursor-pointer hover:bg-blue-700">Sign In</button>
                     <p id="auth-error" class="text-red-500 text-xs mt-2 hidden"></p>
                     <p id="auth-success" class="text-green-600 text-xs mt-2 hidden"></p>
+                    <p class="text-xs text-center mt-3 text-gray-500 dark:text-gray-400" id="admin-auth-toggle-text">Don't have an account? <a href="#" onclick="toggleAdminAuth(event)" class="text-blue-600 dark:text-blue-400 hover:underline">Sign up</a></p>
                 </form>
             </div>
         </div>
 
         <!-- State 3: Logged in — source CRUD -->
         <div id="state-admin" class="hidden">
+            <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Add, edit, and manage your feed sources. Each source is fetched on demand and scored against your interests.</p>
             <div class="flex justify-between items-center mb-5">
                 <h2 class="text-xl font-bold text-gray-900 dark:text-white">Sources</h2>
                 <div class="flex gap-2 items-center">
@@ -129,6 +77,15 @@
         <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 rounded-xl p-6 w-[500px] max-w-[95vw] max-h-[90vh] overflow-y-auto">
             <h2 id="modal-title" class="text-lg font-bold text-gray-900 dark:text-white mb-4">Add Source</h2>
             <form id="source-form" onsubmit="return handleSubmit(event)">
+                <div id="resolve-section" class="mb-4 pb-4 border-b border-gray-200 dark:border-neutral-700">
+                    <label class="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">Quick Add — paste a URL</label>
+                    <div class="flex gap-2">
+                        <input type="url" id="resolve-url" placeholder="Paste any URL: YouTube, Twitter/X, arXiv, RSS, Luma, RSSHub..."
+                            class="flex-1 px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500">
+                        <button type="button" id="resolve-btn" onclick="resolveUrl()" class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50">Resolve</button>
+                    </div>
+                    <p id="resolve-status" class="text-xs mt-1 hidden"></p>
+                </div>
                 <div class="mb-3.5">
                     <label for="source-type" class="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">Type</label>
                     <select id="source-type" onchange="updateFields()" class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500">
@@ -152,22 +109,6 @@
     <div id="toast-error" class="fixed bottom-5 right-5 hidden bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-400 border border-red-300 dark:border-red-700 px-5 py-2.5 rounded-lg text-sm z-[200]"></div>
 
     <script>
-    // --- Theme ---
-    function setTheme(mode) {
-        if (mode === 'dark') { localStorage.setItem('theme', 'dark'); document.documentElement.classList.add('dark'); }
-        else if (mode === 'light') { localStorage.setItem('theme', 'light'); document.documentElement.classList.remove('dark'); }
-        else { localStorage.removeItem('theme'); document.documentElement.classList.toggle('dark', window.matchMedia('(prefers-color-scheme: dark)').matches); }
-        updateThemeButtons();
-    }
-    function updateThemeButtons() {
-        var t = localStorage.getItem('theme');
-        ['light', 'system', 'dark'].forEach(function(m) {
-            var el = document.getElementById('theme-' + m);
-            el.className = 'p-1.5 rounded cursor-pointer ' + ((m === 'system' && !t) || (t === m) ? 'text-blue-600 dark:text-blue-400' : 'text-gray-400 hover:text-gray-600 dark:hover:text-gray-300');
-        });
-    }
-    updateThemeButtons();
-
     // --- Constants (populated from config.json in init()) ---
     let SOURCE_FIELDS = {};
     let TYPE_COLORS = {};
@@ -224,10 +165,12 @@
     }
 
     function showState(state) {
-        ['state-no-supabase', 'state-login', 'state-admin'].forEach(function(id) {
-            document.getElementById(id).classList.add('hidden');
+        ['state-login', 'state-admin'].forEach(function(id) {
+            var el = document.getElementById(id);
+            if (el) el.classList.add('hidden');
         });
-        document.getElementById('state-' + state).classList.remove('hidden');
+        var target = document.getElementById('state-' + state);
+        if (target) target.classList.remove('hidden');
     }
 
     // --- Supabase client ---
@@ -236,11 +179,10 @@
 
     async function init() {
         try {
-            var resp = await fetch('config.json');
-            if (!resp.ok) { showState('no-supabase'); return; }
-            var config = await resp.json();
+            var config = await getConfig();
+            if (!config) { showState('login'); return; }
             if (!config.supabase_url || !config.supabase_anon_key) {
-                showState('no-supabase');
+                showState('login');
                 return;
             }
             loadSchemaFromConfig(config);
@@ -258,7 +200,7 @@
             });
         } catch (e) {
             console.error('Admin init failed:', e);
-            showState('no-supabase');
+            showState('login');
         }
     }
 
@@ -268,12 +210,36 @@
     }
 
     // --- Auth ---
+    var adminSignUpMode = false;
+    function toggleAdminAuth(e) {
+        if (e) e.preventDefault();
+        adminSignUpMode = !adminSignUpMode;
+        var title = document.getElementById('admin-auth-title');
+        var btn = document.getElementById('admin-auth-submit');
+        var toggle = document.getElementById('admin-auth-toggle-text');
+        document.getElementById('auth-error').classList.add('hidden');
+        document.getElementById('auth-success').classList.add('hidden');
+        if (adminSignUpMode) {
+            if (title) title.textContent = 'Create an account';
+            if (btn) btn.textContent = 'Sign Up';
+            if (toggle) toggle.innerHTML = 'Already have an account? <a href="#" onclick="toggleAdminAuth(event)" class="text-blue-600 dark:text-blue-400 hover:underline">Sign in</a>';
+        } else {
+            if (title) title.textContent = 'Sign in to manage sources';
+            if (btn) btn.textContent = 'Sign In';
+            if (toggle) toggle.innerHTML = 'Don\'t have an account? <a href="#" onclick="toggleAdminAuth(event)" class="text-blue-600 dark:text-blue-400 hover:underline">Sign up</a>';
+        }
+    }
+
     async function handleAuth(e) {
         e.preventDefault();
         var email = document.getElementById('auth-email').value;
         var password = document.getElementById('auth-password').value;
         document.getElementById('auth-error').classList.add('hidden');
         document.getElementById('auth-success').classList.add('hidden');
+
+        if (adminSignUpMode) {
+            return adminHandleSignUp();
+        }
 
         var { error } = await sb.auth.signInWithPassword({ email: email, password: password });
         if (error) {
@@ -284,7 +250,7 @@
         return false;
     }
 
-    async function handleSignUp() {
+    async function adminHandleSignUp() {
         var email = document.getElementById('auth-email').value;
         var password = document.getElementById('auth-password').value;
         if (!email || !password) return;
@@ -409,17 +375,121 @@
         if (!type || !SOURCE_FIELDS[type]) { container.innerHTML = ''; return; }
         var schema = SOURCE_FIELDS[type];
         var allFields = schema.required.concat(schema.optional.filter(function(f) { return f !== 'tags'; }));
-        container.innerHTML = allFields.map(function(field) {
+        var html = '';
+        if (TYPE_HINTS[type] && !editingSource) {
+            html += '<p class="text-xs text-blue-600 dark:text-blue-400 mb-3">' + TYPE_HINTS[type] + '</p>';
+        }
+        html += allFields.map(function(field) {
             var req = schema.required.includes(field);
             var val = editingSource ? ((editingSource.config || {})[field] || '') : '';
-            // For name field, use source name directly
             if (field === 'name' && editingSource) val = editingSource.name || val;
+            var ph = (FIELD_PLACEHOLDERS[field] || {})[type] || (FIELD_PLACEHOLDERS[field] || {})._default || '';
             return '<div class="mb-3.5">' +
                 '<label class="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">' + (FIELD_LABELS[field] || field) + (req ? ' *' : '') + '</label>' +
-                '<input type="text" data-field="' + field + '" value="' + esc(String(val)) + '" ' + (req ? 'required' : '') +
+                '<input type="text" data-field="' + field + '" value="' + esc(String(val)) + '" ' + (req ? 'required' : '') + ' placeholder="' + esc(ph) + '"' +
                 ' class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500">' +
             '</div>';
         }).join('');
+        container.innerHTML = html;
+    }
+
+    async function resolveUrl() {
+        var urlInput = document.getElementById('resolve-url');
+        var url = urlInput.value.trim();
+        if (!url) return;
+        var btn = document.getElementById('resolve-btn');
+        var status = document.getElementById('resolve-status');
+        btn.disabled = true; btn.textContent = '...';
+        status.classList.add('hidden');
+        try {
+            var result = await resolveUrlClient(url);
+            document.getElementById('source-type').value = result.source_type;
+            updateFields();
+            Object.keys(result.fields).forEach(function(key) {
+                var input = document.querySelector('#dynamic-fields input[data-field="' + key + '"]');
+                if (input) input.value = result.fields[key];
+            });
+            status.textContent = 'Resolved as ' + result.source_type + ' source';
+            status.className = 'text-xs mt-1 text-green-600 dark:text-green-400';
+        } catch (e) {
+            status.textContent = e.message;
+            status.className = 'text-xs mt-1 text-red-500';
+        } finally {
+            status.classList.remove('hidden');
+            btn.disabled = false; btn.textContent = 'Resolve';
+        }
+    }
+
+    async function resolveUrlClient(url) {
+        if (!url.startsWith('http')) url = 'https://' + url;
+        var a = document.createElement('a'); a.href = url;
+        var host = a.hostname;
+        var path = a.pathname.replace(/^\/+|\/+$/g, '');
+
+        // --- Client-side resolvers (no network needed) ---
+
+        // Twitter/X
+        if (['x.com', 'twitter.com', 'www.x.com', 'www.twitter.com'].includes(host)) {
+            var handle = path.split('/')[0].replace(/^@/, '');
+            if (!handle || ['home', 'explore', 'search', 'settings', 'i'].includes(handle.toLowerCase())) {
+                throw new Error('Could not extract handle from URL');
+            }
+            return { source_type: 'twitter', fields: { handle: handle } };
+        }
+
+        // arXiv
+        if (['arxiv.org', 'www.arxiv.org'].includes(host)) {
+            var m = path.match(/^(?:abs|pdf)\/(\d{4}\.\d{4,5})/);
+            if (m) {
+                return { source_type: 'arxiv', fields: {
+                    url: 'https://export.arxiv.org/api/query?search_query=id:' + m[1] + '&max_results=50',
+                    name: 'arXiv:' + m[1]
+                }, suggested_tags: ['research'] };
+            }
+            var m2 = path.match(/^list\/([\w.]+)/);
+            if (m2) {
+                return { source_type: 'arxiv', fields: {
+                    url: 'https://export.arxiv.org/api/query?search_query=cat:' + m2[1] + '&sortBy=submittedDate&sortOrder=descending&max_results=50',
+                    name: 'arXiv:' + m2[1]
+                }, suggested_tags: ['research'] };
+            }
+            throw new Error('Could not parse arXiv URL. Use /abs/XXXX.XXXXX or /list/cs.AI/recent');
+        }
+
+        // Luma
+        if (['lu.ma', 'www.lu.ma'].includes(host)) {
+            var handle = path.split('/')[0];
+            if (!handle) throw new Error('Could not extract Luma handle');
+            return { source_type: 'luma', fields: { handle: handle } };
+        }
+
+        // RSSHub
+        if (['rsshub.app', 'www.rsshub.app'].includes(host)) {
+            if (!path) throw new Error('Empty RSSHub route');
+            return { source_type: 'rsshub', fields: { route: path, name: 'RSSHub:' + path.split('/').pop() } };
+        }
+
+        // Xiaohongshu
+        if (['xiaohongshu.com', 'www.xiaohongshu.com', 'xhslink.com'].includes(host)) {
+            var m = path.match(/^user\/profile\/([a-fA-F0-9]+)/);
+            if (m) {
+                return { source_type: 'xiaohongshu', fields: { user_id: m[1], name: 'XHS:' + m[1].slice(0, 8) } };
+            }
+            throw new Error('Could not parse Xiaohongshu URL. Use a profile URL.');
+        }
+
+        // --- Server-side resolvers (need network: YouTube, generic RSS) ---
+        if (!sb) throw new Error('Sign in to resolve this URL type');
+        var { data: { session } } = await sb.auth.getSession();
+        if (!session) throw new Error('Please sign in first');
+        var resp = await fetch('/api/resolve-url', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + session.access_token },
+            body: JSON.stringify({ url: url })
+        });
+        var data = await resp.json();
+        if (!resp.ok) throw new Error(data.error || data.detail || 'Resolution failed');
+        return data;
     }
 
     function openAddModal() {
@@ -429,6 +499,9 @@
         document.getElementById('source-type').disabled = false;
         document.getElementById('source-tags').value = '';
         document.getElementById('dynamic-fields').innerHTML = '';
+        document.getElementById('resolve-section').classList.remove('hidden');
+        document.getElementById('resolve-url').value = '';
+        document.getElementById('resolve-status').classList.add('hidden');
         var overlay = document.getElementById('modal-overlay');
         overlay.classList.remove('hidden');
         overlay.classList.add('flex');
@@ -440,6 +513,7 @@
         document.getElementById('source-type').value = source.source_type;
         document.getElementById('source-type').disabled = true;
         document.getElementById('source-tags').value = (source.tags || []).join(', ');
+        document.getElementById('resolve-section').classList.add('hidden');
         updateFields();
         var overlay = document.getElementById('modal-overlay');
         overlay.classList.remove('hidden');
@@ -473,6 +547,10 @@
 
         // For types that use handle as name
         if (!name && config.handle) name = config.handle;
+
+        // Client-side validation
+        var err = validateSourceFields(sourceType, config, name);
+        if (err) { showToast(err, 'error'); return; }
 
         var tagsStr = document.getElementById('source-tags').value;
         var tags = tagsStr ? tagsStr.split(',').map(function(t) { return t.trim(); }).filter(Boolean) : [];

@@ -15,6 +15,7 @@
     </form>
 </div>
 {% else %}
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Add, edit, and manage your feed sources. Each source is fetched on demand and scored against your interests.</p>
 <div class="flex justify-between items-center mb-5">
     <h2 class="text-xl font-bold text-gray-900 dark:text-white">Sources</h2>
     <div class="flex gap-2">
@@ -50,6 +51,15 @@
     <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 rounded-xl p-6 w-[500px] max-w-[95vw] max-h-[90vh] overflow-y-auto">
         <h2 id="modal-title" class="text-lg font-bold text-gray-900 dark:text-white mb-4">Add Source</h2>
         <form id="source-form" onsubmit="return handleSubmit(event)">
+            <div id="resolve-section" class="mb-4 pb-4 border-b border-gray-200 dark:border-neutral-700">
+                <label class="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">Quick Add — paste a URL</label>
+                <div class="flex gap-2">
+                    <input type="url" id="resolve-url" placeholder="Paste any URL: YouTube, Twitter/X, arXiv, RSS, Luma, RSSHub..."
+                        class="flex-1 px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500">
+                    <button type="button" id="resolve-btn" onclick="resolveUrl()" class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50">Resolve</button>
+                </div>
+                <p id="resolve-status" class="text-xs mt-1 hidden"></p>
+            </div>
             <div class="mb-3.5">
                 <label for="source-type" class="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">Type</label>
                 <select id="source-type" onchange="updateFields()" class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500">
@@ -190,21 +200,84 @@
         return Math.floor(hrs / 24) + 'd ago';
     }
 
+    const FIELD_PLACEHOLDERS = {
+        handle: { twitter: '@username', luma: 'event-handle' },
+        channel_id: { youtube: 'UCxxxxxxx (use Quick Add to auto-fill)' },
+        name: { _default: 'Display name for this source' },
+        url: { rss: 'https://example.com/feed.xml', arxiv: 'https://export.arxiv.org/api/query?...', leaderboard: 'https://...', event_links: 'https://...' },
+        route: { rsshub: 'twitter/user/karpathy (see docs.rsshub.app)' },
+        user_id: { xiaohongshu: 'Hex ID from profile URL' },
+        query: { arxiv_queries: 'ti:LLM+AND+cat:cs.AI' },
+        scraper: { events: 'anthropic or google' },
+    };
+
+    const TYPE_HINTS = {
+        twitter: 'Tip: paste a Twitter/X profile URL above to auto-fill.',
+        youtube: 'Tip: paste any YouTube video or channel URL above to auto-fill.',
+        rss: 'Tip: paste any blog URL above — RSS feed will be auto-discovered.',
+        arxiv: 'Tip: paste an arXiv paper or category URL above to auto-fill.',
+        rsshub: 'Tip: paste an rsshub.app URL above, or enter a route from docs.rsshub.app.',
+        xiaohongshu: 'Tip: paste a Xiaohongshu profile URL above to auto-fill.',
+        luma: 'Tip: paste a lu.ma URL above to auto-fill.',
+        events: 'Scraper must be one of: anthropic, google.',
+        github_trending: 'Fetches daily trending repos from trendshift.io.',
+        arxiv_queries: 'Uses the arXiv API query syntax. Example: ti:LLM+AND+cat:cs.AI',
+    };
+
     function updateFields() {
         const type = document.getElementById('source-type').value;
         const container = document.getElementById('dynamic-fields');
         if (!type || !sourceFields[type]) { container.innerHTML = ''; return; }
         const schema = sourceFields[type];
         const allFields = [...schema.required, ...schema.optional.filter(f => f !== 'tags')];
-        container.innerHTML = allFields.map(field => {
+        let html = '';
+        if (TYPE_HINTS[type] && !editingSource) {
+            html += `<p class="text-xs text-blue-600 dark:text-blue-400 mb-3">${TYPE_HINTS[type]}</p>`;
+        }
+        html += allFields.map(field => {
             const req = schema.required.includes(field);
             const val = editingSource ? (editingSource.config[field] || '') : '';
+            const ph = (FIELD_PLACEHOLDERS[field] || {})[type] || (FIELD_PLACEHOLDERS[field] || {})._default || '';
             return `<div class="mb-3.5">
                 <label class="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1">${FIELD_LABELS[field] || field}${req ? ' *' : ''}</label>
-                <input type="text" data-field="${field}" value="${esc(String(val))}" ${req ? 'required' : ''}
+                <input type="text" data-field="${field}" value="${esc(String(val))}" ${req ? 'required' : ''} placeholder="${esc(ph)}"
                     class="w-full px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500">
             </div>`;
         }).join('');
+        container.innerHTML = html;
+    }
+
+    async function resolveUrl() {
+        const urlInput = document.getElementById('resolve-url');
+        const url = urlInput.value.trim();
+        if (!url) return;
+        const btn = document.getElementById('resolve-btn');
+        const status = document.getElementById('resolve-status');
+        btn.disabled = true; btn.textContent = '...';
+        status.classList.add('hidden');
+        try {
+            const resp = await fetch('/admin/api/resolve-url', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({url})
+            });
+            const data = await resp.json();
+            if (!resp.ok) throw new Error(data.detail || 'Resolution failed');
+            document.getElementById('source-type').value = data.source_type;
+            updateFields();
+            Object.entries(data.fields).forEach(([key, val]) => {
+                const input = document.querySelector(`#dynamic-fields input[data-field="${key}"]`);
+                if (input) input.value = val;
+            });
+            status.textContent = 'Resolved as ' + data.source_type + ' source';
+            status.className = 'text-xs mt-1 text-green-600 dark:text-green-400';
+        } catch (e) {
+            status.textContent = e.message;
+            status.className = 'text-xs mt-1 text-red-500';
+        } finally {
+            status.classList.remove('hidden');
+            btn.disabled = false; btn.textContent = 'Resolve';
+        }
     }
 
     function openAddModal() {
@@ -214,6 +287,9 @@
         document.getElementById('source-type').disabled = false;
         document.getElementById('source-tags').value = '';
         document.getElementById('dynamic-fields').innerHTML = '';
+        document.getElementById('resolve-section').classList.remove('hidden');
+        document.getElementById('resolve-url').value = '';
+        document.getElementById('resolve-status').classList.add('hidden');
         const overlay = document.getElementById('modal-overlay');
         overlay.classList.remove('hidden');
         overlay.classList.add('flex');
@@ -225,6 +301,7 @@
         document.getElementById('source-type').value = source.type;
         document.getElementById('source-type').disabled = true;
         document.getElementById('source-tags').value = (source.config.tags || []).join(', ');
+        document.getElementById('resolve-section').classList.add('hidden');
         updateFields();
         const overlay = document.getElementById('modal-overlay');
         overlay.classList.remove('hidden');
@@ -238,6 +315,43 @@
         editingSource = null;
     }
 
+    function validateFields(sourceType, fields) {
+        if (sourceType === 'youtube') {
+            const cid = fields.channel_id || '';
+            if (!/^UC[\w-]{22}$/.test(cid)) {
+                return 'Invalid YouTube channel_id: must start with "UC" followed by 22 characters. Use Quick Add to paste a URL.';
+            }
+        }
+        if (sourceType === 'twitter') {
+            const handle = fields.handle || '';
+            if (!/^[A-Za-z0-9_]{1,15}$/.test(handle)) {
+                return 'Invalid Twitter handle: 1-15 alphanumeric characters or underscores, without @.';
+            }
+        }
+        if (['rss', 'arxiv', 'leaderboard', 'event_links'].includes(sourceType)) {
+            const url = fields.url || '';
+            if (!/^https?:\/\/.+/.test(url)) {
+                return 'Invalid URL: must start with http:// or https://';
+            }
+        }
+        if (sourceType === 'xiaohongshu') {
+            const uid = fields.user_id || '';
+            if (!/^[a-fA-F0-9]+$/.test(uid)) {
+                return 'Invalid Xiaohongshu user_id: must be a hex string from the profile URL.';
+            }
+        }
+        if (sourceType === 'events') {
+            const scraper = fields.scraper || '';
+            if (!['anthropic', 'google'].includes(scraper)) {
+                return 'Invalid scraper: must be "anthropic" or "google".';
+            }
+        }
+        if (!fields.name && sourceType !== 'twitter' && sourceType !== 'luma') {
+            return 'Name is required.';
+        }
+        return null;
+    }
+
     async function handleSubmit(e) {
         e.preventDefault();
         const type = document.getElementById('source-type').value;
@@ -248,6 +362,10 @@
         });
         const tags = document.getElementById('source-tags').value;
         if (tags) body.tags = tags;
+
+        // Client-side validation
+        const valErr = validateFields(type, body);
+        if (valErr) { showToast(valErr, 'error'); return; }
         let url, method;
         if (editingSource) { url = `/admin/api/sources/${editingSource.type}/${editingSource.index}`; method = 'PUT'; }
         else { url = '/admin/api/sources'; method = 'POST'; }

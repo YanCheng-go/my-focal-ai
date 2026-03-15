@@ -120,6 +120,25 @@ def list_sources():
     return {"sources": sources, "source_fields": SOURCE_FIELDS}
 
 
+@_api.post("/api/resolve-url")
+async def resolve_url_endpoint(body: dict):
+    """Accept a URL and return auto-extracted source fields."""
+    from ainews.sources.url_resolver import resolve_url
+
+    url = body.get("url", "").strip()
+    if not url:
+        raise HTTPException(status_code=400, detail="URL is required")
+    try:
+        result = await resolve_url(url)
+        return {
+            "source_type": result.source_type,
+            "fields": result.fields,
+            "suggested_tags": result.suggested_tags,
+        }
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+
 @_api.post("/api/sources")
 def create_source(body: dict):
     source_type = body.get("type", "")

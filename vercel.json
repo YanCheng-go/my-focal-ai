@@ -11,6 +11,7 @@
   },
   "rewrites": [
     { "source": "/api/fetch-source", "destination": "/api/fetch_source" },
+    { "source": "/api/resolve-url", "destination": "/api/resolve_url" },
     { "source": "/api/:path*", "destination": "/api/:path*" }
   ]
 }

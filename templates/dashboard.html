@@ -48,12 +48,12 @@
     <a href="/?order_by=score" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.order_by == 'score' else inactive_cls }}">By Score</a>
     {% endif %}
 
-    <!-- Tag dropdown -->
-    <div class="group relative inline-block">
-        <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer {{ active_cls if filters.tag else inactive_cls }}">
+    <!-- Tag dropdown (click to toggle, touch-friendly) -->
+    <div class="relative inline-block">
+        <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer {{ active_cls if filters.tag else inactive_cls }}" onclick="event.stopPropagation(); document.getElementById('tag-dropdown').classList.toggle('hidden')">
             {{ 'Tag: ' + filters.tag if filters.tag else 'Tags' }}
         </button>
-        <div class="hidden group-hover:block absolute top-full left-0 mt-1 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 rounded-md min-w-40 max-h-72 overflow-y-auto z-10 shadow-lg">
+        <div class="hidden absolute top-full left-0 mt-1 bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700 rounded-md min-w-40 max-h-72 overflow-y-auto z-10 shadow-lg" id="tag-dropdown">
             {% for t in all_tags %}
             <a href="/?tag={{ t }}" class="block px-3 py-1.5 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-neutral-700 {{ 'text-blue-600 dark:text-blue-400' if filters.tag == t }}">{{ t }}</a>
             {% endfor %}
@@ -161,4 +161,5 @@
         {% endif %}
     </div>
 {% endif %}
+<script>document.addEventListener('click', function() { var dd = document.getElementById('tag-dropdown'); if (dd) dd.classList.add('hidden'); });</script>
 {% endblock %}
