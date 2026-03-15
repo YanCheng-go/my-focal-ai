@@ -67,19 +67,7 @@ New users get a pre-defined source list but **no pre-fetched content** — items
 
 ## Configuration
 
-All settings are via environment variables prefixed `AINEWS_`. See `src/ainews/config.py` for defaults.
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `AINEWS_SCORING` | `true` | Set `false` to disable scoring |
-| `AINEWS_OLLAMA_MODEL` | `qwen3:4b` | Ollama model for local scoring |
-| `AINEWS_ADMIN_PASSWORD` | _(empty)_ | When set, admin routes require login |
-| `AINEWS_SUPABASE_URL` | — | Supabase project URL |
-| `AINEWS_SUPABASE_KEY` | — | Supabase anon key |
-| `AINEWS_SUPABASE_SERVICE_KEY` | — | Supabase service role key |
-| `AINEWS_CORS_ORIGIN` | — | Restrict cross-origin requests |
-
-See [development.md](development.md) for additional dev-specific settings.
+All settings are via environment variables prefixed `AINEWS_`. See [development.md § Configuration](development.md#configuration) for the full variable table with defaults.
 
 ---
 

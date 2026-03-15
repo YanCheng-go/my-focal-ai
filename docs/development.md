@@ -42,48 +42,20 @@ uv sync --extra llm --extra dev  # all optional deps (Twitter cookies, dev tools
 ## Project Structure
 
 ```
-config/
-  sources.yml              Feed sources (RSS, YouTube, Twitter, arXiv, etc.)
-  principles.yml           LLM scoring rules and tier definitions
-
-src/ainews/
-  cli.py                   CLI entrypoint (ainews command)
-  config.py                Settings via AINEWS_* env vars
-  models.py                ContentItem dataclass
-  ingest/
-    runner.py              Orchestrates all ingest sources
-    feeds.py               RSS/Atom feed fetcher (YouTube, blogs, RSSHub)
-    twitter.py             Twitter/X via browser cookies + GraphQL
-    xiaohongshu.py         Xiaohongshu via browser cookies
-    events.py              Tech company event page scraping
-    github_trending.py     GitHub trending repos via trendshift.io
-  scoring/
-    scorer.py              Local scoring via Ollama
-    claude_scorer.py       Cloud scoring via Claude API
-  storage/
-    backend.py             DbBackend protocol (interface for SQLite + Supabase)
-    db.py                  SqliteBackend (WAL mode) + get_backend() factory
-    supabase_backend.py    SupabaseBackend (PostgREST, user_id scoping)
-  sources/
-    manager.py             YAML round-trip read/write for source management
-    supabase_manager.py    Read user_sources from Supabase, convert to config
-  api/
-    app.py                 FastAPI app factory, routes, scheduler
-    admin.py               Admin UI with auth (local mode)
-  cloud_fetch.py           Cloud pipeline (GitHub Actions)
-  export.py                Export data.json + config.json for static site
-  backfill.py              Sync tags/source_type from config to DB
-
-templates/                 Jinja2 templates (local FastAPI server)
-  _base.html               Shared base template (nav, theme, layout)
-  dashboard.html           Main feed page
-  about.html               About page
-static/                    Static HTML pages (Vercel deployment)
-scripts/                   CI and helper scripts
-docker/                    Docker Compose for RSSHub
-e2e/                       Playwright visual regression tests (responsive)
-tests/perf/                k6 performance tests (smoke, load, stress)
+src/ainews/              Pipeline code (ingest, scoring, storage, API)
+config/                  sources.yml + principles.yml
+templates/               Jinja2 templates (local FastAPI)
+static/                  Static HTML + JS + CSS (Vercel)
+api/                     Vercel serverless functions
+e2e/                     Playwright visual regression tests
+tests/                   pytest unit + integration tests
+tests/perf/              k6 performance tests
+scripts/                 CI and helper scripts
+docker/                  Docker Compose for RSSHub
+supabase/migrations/     Supabase SQL migrations
 ```
+
+See [architecture.md § Module Map](architecture.md#module-map) for the full file-by-file listing.
 
 ## Commands
 

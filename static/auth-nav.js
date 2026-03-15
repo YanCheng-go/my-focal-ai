@@ -116,51 +116,51 @@
     var oldEl = document.getElementById('auth-indicator');
     if (oldEl) oldEl.classList.add('hidden');
 
-    // --- Session detection ---
+    // --- Session detection (shared via window._authReady) ---
     var container = document.getElementById('user-menu-container');
     var iconBtn = document.getElementById('user-icon-btn');
     var emailEl = document.getElementById('user-email');
 
-    try {
-        var config = window.getConfig ? await window.getConfig() : await fetch('config.json').then(function(r) { return r.ok ? r.json() : {}; });
-        if (!config.supabase_url || !config.supabase_anon_key) {
-            // No Supabase config — hide user menu (Sources nav link handles admin access)
+    // Single getSession() call — other scripts await window._authReady instead of calling getSession() again
+    window._authReady = (async function() {
+        try {
+            var config = window.getConfig ? await window.getConfig() : await fetch('config.json').then(function(r) { return r.ok ? r.json() : {}; });
+            if (!config.supabase_url || !config.supabase_anon_key) {
+                if (container) container.classList.add('hidden');
+                return null;
+            }
+
+            var sb = window._sb || supabase.createClient(config.supabase_url, config.supabase_anon_key);
+            window._sb = sb;
+
+            var result = await sb.auth.getSession();
+            var session = result.data.session;
+
+            if (session) {
+                isLoggedIn = true;
+                if (iconBtn) {
+                    iconBtn.classList.remove('text-gray-400');
+                    iconBtn.classList.add('text-blue-600', 'dark:text-blue-400');
+                }
+                if (emailEl) {
+                    var safeEmail = session.user.email
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;');
+                    emailEl.innerHTML = safeEmail;
+                }
+            } else {
+                isLoggedIn = false;
+                if (iconBtn) {
+                    iconBtn.classList.remove('text-blue-600', 'dark:text-blue-400');
+                    iconBtn.classList.add('text-gray-400');
+                }
+            }
+            return session;
+        } catch (e) {
             if (container) container.classList.add('hidden');
-            return;
+            return null;
         }
-
-        var sb = window._sb || supabase.createClient(config.supabase_url, config.supabase_anon_key);
-        window._sb = sb;
-
-        var result = await sb.auth.getSession();
-        var session = result.data.session;
-
-        if (session) {
-            isLoggedIn = true;
-            // Color the user icon blue to indicate logged-in state
-            if (iconBtn) {
-                iconBtn.classList.remove('text-gray-400');
-                iconBtn.classList.add('text-blue-600', 'dark:text-blue-400');
-            }
-            // Populate email display
-            if (emailEl) {
-                var safeEmail = session.user.email
-                    .replace(/&/g, '&amp;')
-                    .replace(/</g, '&lt;')
-                    .replace(/>/g, '&gt;')
-                    .replace(/"/g, '&quot;');
-                emailEl.innerHTML = safeEmail;
-            }
-        } else {
-            isLoggedIn = false;
-            // Keep default gray icon color
-            if (iconBtn) {
-                iconBtn.classList.remove('text-blue-600', 'dark:text-blue-400');
-                iconBtn.classList.add('text-gray-400');
-            }
-        }
-    } catch (e) {
-        // Supabase not available — hide user menu
-        if (container) container.classList.add('hidden');
-    }
+    })();
 })();
