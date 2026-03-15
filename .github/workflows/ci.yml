@@ -46,7 +46,7 @@ jobs:
       - name: Start server and run responsive tests
         run: |
           uv run ainews serve &
-          sleep 3
+          for i in $(seq 1 15); do curl -sf http://localhost:8000/ > /dev/null && break || sleep 1; done
           npx playwright test --reporter=list --grep-invert "renders correctly"
         env:
           AINEWS_SCORING: "false"
