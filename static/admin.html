@@ -190,12 +190,12 @@
             window._sb = sb;
             var { data: { session } } = await sb.auth.getSession();
             if (session) {
-                showLoggedIn(session.user);
+                showLoggedIn(session.user, session);
             } else {
                 showState('login');
             }
             sb.auth.onAuthStateChange(function(event, session) {
-                if (event === 'SIGNED_IN' && session) showLoggedIn(session.user);
+                if (event === 'SIGNED_IN' && session) showLoggedIn(session.user, session);
                 else if (event === 'SIGNED_OUT') showState('login');
             });
         } catch (e) {
@@ -204,8 +204,10 @@
         }
     }
 
-    function showLoggedIn(user) {
+    function showLoggedIn(user, session) {
         showState('admin');
+        // Cache session for reuse — avoids redundant getSession() calls (#136)
+        window._adminSession = session;
         loadSources();
     }
 
@@ -280,7 +282,7 @@
 
     // --- Seed defaults ---
     async function seedDefaults(btn) {
-        var { data: { session } } = await sb.auth.getSession();
+        var session = window._adminSession;
         if (!session) return;
         btn.disabled = true;
         btn.textContent = 'Loading...';
@@ -302,7 +304,7 @@
     // --- Source CRUD ---
     async function loadSources() {
         // #108: explicit user_id filter as defense-in-depth alongside RLS
-        var { data: { session } } = await sb.auth.getSession();
+        var session = window._adminSession;
         if (!session) return;
         var { data, error } = await sb.from('user_sources').select('*').eq('user_id', session.user.id).order('created_at', { ascending: true });
         if (error) { showToast(error.message, 'error'); return; }
