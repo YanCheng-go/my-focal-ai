@@ -1,5 +1,37 @@
 # Changelog
 
+## v0.4.0 — 2026-03-15
+
+### Features
+
+- **Online login mode** — Full Supabase integration with user auth (email/password), per-user feeds, CRUD source management via admin UI, and serverless per-source fetch via Vercel (#92)
+- **UI redesign** — New nav bar, onboarding welcome modal, Quick Add URL resolver with platform auto-detection, logo (#127)
+- **New-item indicators** — Blue highlight background + "New" pill on items fetched since last visit, per-category badge counts on filter buttons. Cookie-based for local mode, localStorage for static site (#132)
+- **Default source seeding** — New users get pre-configured sources on first login (#120)
+- **Shared static assets** — Extracted nav, auth-nav, badges, config, and source type schema into reusable JS modules across all static pages
+
+### Fixes
+
+- **Security** — XSS in source_type filter, PostgREST filter injection in search, SSRF DNS rebinding in serverless fetch (#111)
+- **Multi-tenant isolation** — User-scoped item IDs (`sha256(user_id:url)`), URL uniqueness per user, RLS policies, duplicate/hidden item leaks
+- **Serverless function** — Replace supabase-py with direct httpx calls to fix import shadowing and reduce bundle size (#121)
+- **Scoring** — Make `ScoredItem.tier` optional (default "personal") to prevent ValidationError when LLM omits it
+- **SQL/badges** — Fix SQL precedence ambiguity, badge timestamp regression, CCC hardcode
+
+### Infrastructure
+
+- **CodeQL** security scanning workflow + comprehensive SECURITY.md audit (#133)
+- **67 new unit tests** covering DB, models, backfill, URL resolver, Supabase backend, GitHub trending, scorer (#128)
+- **pytest-cov** for automatic coverage reporting (#130)
+- Supabase migrations workflow, branch naming CI improvements
+- Bump pyjwt 2.11.0 → 2.12.0 (#131)
+
+### Docs
+
+- Architecture diagrams for all three deployment modes (local, online public, online login)
+- New deployment guide, development guide, secrets/env vars documentation
+- Simplified README — moved deployment details to docs/ (#122, #123)
+
 ## v0.3.1 — 2026-03-11
 
 ### Features
