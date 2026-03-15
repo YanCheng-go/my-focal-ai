@@ -160,8 +160,9 @@
 
                         document.getElementById('updated').textContent = 'Showing your personal feed';
                         document.getElementById('fetch-now-btn').classList.remove('hidden');
-                        buildFilters();
                         await loadSupabaseItems();
+                        computeBadges(allItems, config || {}, 'dashboard');
+                        buildFilters();
 
                         // Listen for fetch completion from admin tab (#107)
                         try {

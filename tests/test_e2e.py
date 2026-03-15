@@ -331,6 +331,125 @@ class TestMode1Local:
         resp = client.get("/api/items?source_type=youtube")
         assert resp.json()["total"] == 1
 
+    def test_count_items_by_source_type(self, sqlite_backend):
+        """count_items_by_source_type groups counts by source_type."""
+        from datetime import datetime, timedelta
+
+        cutoff = datetime.now() - timedelta(hours=1)
+
+        # Items with different source types
+        sqlite_backend.upsert_item(_make_item("https://a.com/1", "A", source_type="rss"))
+        sqlite_backend.upsert_item(_make_item("https://a.com/2", "B", source_type="rss"))
+        sqlite_backend.upsert_item(_make_item("https://b.com/1", "C", source_type="youtube"))
+        sqlite_backend.upsert_item(_make_item("https://c.com/1", "D", source_type="twitter"))
+        sqlite_backend.commit()
+
+        counts = sqlite_backend.count_items_by_source_type(since=cutoff)
+        assert counts["rss"] == 2
+        assert counts["youtube"] == 1
+        assert counts["twitter"] == 1
+
+    def test_count_items_by_source_type_excludes(self, sqlite_backend):
+        """count_items_by_source_type respects exclude filters."""
+        from datetime import datetime, timedelta
+
+        cutoff = datetime.now() - timedelta(hours=1)
+        sqlite_backend.upsert_item(_make_item("https://a.com/1", "A", source_type="rss"))
+        sqlite_backend.upsert_item(
+            _make_item("https://b.com/1", "B", source_type="events", source_name="TestEvents")
+        )
+        sqlite_backend.commit()
+
+        counts = sqlite_backend.count_items_by_source_type(
+            since=cutoff, exclude_source_types=["events"]
+        )
+        assert "events" not in counts
+        assert counts.get("rss") == 1
+
+    def test_dashboard_cookie_sets_last_seen(self, config_dir, tmp_path, monkeypatch):
+        """Dashboard sets ainews_last_seen_dashboard cookie."""
+        import importlib
+        import shutil
+
+        import ainews.api.admin
+        import ainews.api.app
+        import ainews.config
+
+        monkeypatch.setenv("AINEWS_CONFIG_DIR", str(config_dir))
+        monkeypatch.setenv("AINEWS_DB_PATH", str(tmp_path / "test.db"))
+        monkeypatch.setenv("AINEWS_SCORING", "false")
+        monkeypatch.delenv("AINEWS_SUPABASE_URL", raising=False)
+        monkeypatch.delenv("AINEWS_SUPABASE_KEY", raising=False)
+        (config_dir.parent / "static").mkdir(exist_ok=True)
+        real_templates = Path(__file__).resolve().parent.parent / "templates"
+        if not (config_dir.parent / "templates").exists():
+            shutil.copytree(real_templates, config_dir.parent / "templates")
+
+        importlib.reload(ainews.config)
+        importlib.reload(ainews.api.admin)
+        importlib.reload(ainews.api.app)
+
+        from ainews.storage.db import SqliteBackend
+
+        backend = SqliteBackend(tmp_path / "test.db")
+        backend.upsert_item(_make_item("https://a.com/1", "Test Item"))
+        backend.commit()
+        backend.close()
+
+        client = TestClient(ainews.api.app.app, raise_server_exceptions=False)
+
+        # First visit: no cookie → no highlights
+        resp = client.get("/")
+        assert resp.status_code == 200
+        assert "ainews_last_seen_dashboard" in resp.cookies
+        assert "New</span>" not in resp.text  # no "New" pill on first visit
+
+        # Second visit with cookie → items are highlighted
+        resp2 = client.get("/")
+        assert resp2.status_code == 200
+        # Cookie should be set again
+        assert "ainews_last_seen_dashboard" in resp2.cookies
+
+    def test_dashboard_highlights_new_items(self, config_dir, tmp_path, monkeypatch):
+        """Items fetched after last visit get blue bg and 'New' pill."""
+        import importlib
+        import shutil
+        from datetime import datetime, timedelta
+
+        import ainews.api.admin
+        import ainews.api.app
+        import ainews.config
+
+        monkeypatch.setenv("AINEWS_CONFIG_DIR", str(config_dir))
+        monkeypatch.setenv("AINEWS_DB_PATH", str(tmp_path / "test.db"))
+        monkeypatch.setenv("AINEWS_SCORING", "false")
+        monkeypatch.delenv("AINEWS_SUPABASE_URL", raising=False)
+        monkeypatch.delenv("AINEWS_SUPABASE_KEY", raising=False)
+        (config_dir.parent / "static").mkdir(exist_ok=True)
+        real_templates = Path(__file__).resolve().parent.parent / "templates"
+        if not (config_dir.parent / "templates").exists():
+            shutil.copytree(real_templates, config_dir.parent / "templates")
+
+        importlib.reload(ainews.config)
+        importlib.reload(ainews.api.admin)
+        importlib.reload(ainews.api.app)
+
+        from ainews.storage.db import SqliteBackend
+
+        backend = SqliteBackend(tmp_path / "test.db")
+        backend.upsert_item(_make_item("https://a.com/1", "Test Item"))
+        backend.commit()
+        backend.close()
+
+        client = TestClient(ainews.api.app.app, raise_server_exceptions=False)
+
+        # Set a cookie with a past timestamp to simulate a returning visitor
+        past = (datetime.now() - timedelta(hours=2)).isoformat()
+        resp = client.get("/", cookies={"ainews_last_seen_dashboard": past})
+        assert resp.status_code == 200
+        assert "bg-blue-50/70" in resp.text  # blue highlight background
+        assert "New</span>" in resp.text  # "New" pill
+
 
 # ============================================================
 # Mode 2: Online Public — cloud_fetch + export + static JSON

@@ -8,11 +8,13 @@
 <div class="text-xs text-gray-400 dark:text-gray-500 mb-4">{{ total }} releases &middot; Page {{ page }} of {{ total_pages }}</div>
 
 {% for item in items %}
-<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 hover:border-gray-300 dark:hover:border-neutral-700 transition-colors">
+{% set item_is_new = last_seen_cutoff and item.fetched_at and item.fetched_at > last_seen_cutoff %}
+<div class="{{ 'bg-blue-50/70 dark:bg-blue-950/20 border-blue-200/60 dark:border-blue-800/40 hover:border-blue-300 dark:hover:border-blue-700/50' if item_is_new else 'bg-white dark:bg-neutral-900 border-gray-200 dark:border-neutral-800 hover:border-gray-300 dark:hover:border-neutral-700' }} border rounded-lg p-3 sm:p-4 mb-3 transition-colors">
     <div class="text-base font-semibold">
         <a href="{{ item.url }}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">{{ item.title }}</a>
     </div>
     <div class="mt-2 text-xs text-gray-500 dark:text-gray-400 flex gap-2 flex-wrap">
+        {% if item_is_new %}<span class="bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-400 px-2 py-0.5 rounded text-xs font-medium">New</span>{% endif %}
         {% for t in item.tags[:4] %}
         <span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-2 py-0.5 rounded text-xs">{{ t }}</span>
         {% endfor %}

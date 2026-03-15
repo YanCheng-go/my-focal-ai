@@ -61,6 +61,14 @@ class DbBackend(Protocol):
         source_types: list[str] | None = None,
     ) -> int: ...
 
+    def count_items_by_source_type(
+        self,
+        *,
+        since: datetime,
+        exclude_sources: list[str] | None = None,
+        exclude_source_types: list[str] | None = None,
+    ) -> dict[str, int]: ...
+
     def get_all_tags(self) -> list[str]: ...
 
     def get_items(

@@ -284,6 +284,29 @@ class SqliteBackend:
         row = self._conn.execute(f"SELECT count(*) as c FROM items {where}", params).fetchone()
         return row["c"]
 
+    def count_items_by_source_type(
+        self,
+        *,
+        since: datetime,
+        exclude_sources: list[str] | None = None,
+        exclude_source_types: list[str] | None = None,
+    ) -> dict[str, int]:
+        where = "WHERE is_duplicate_of IS NULL AND fetched_at >= ?"
+        params: list = [since.isoformat()]
+        if exclude_sources:
+            placeholders = ",".join("?" for _ in exclude_sources)
+            where += f" AND source_name NOT IN ({placeholders})"
+            params.extend(exclude_sources)
+        if exclude_source_types:
+            placeholders = ",".join("?" for _ in exclude_source_types)
+            where += f" AND source_type NOT IN ({placeholders})"
+            params.extend(exclude_source_types)
+        rows = self._conn.execute(
+            f"SELECT source_type, COUNT(*) as c FROM items {where} GROUP BY source_type",
+            params,
+        ).fetchall()
+        return {row["source_type"]: row["c"] for row in rows}
+
     def get_all_tags(self) -> list[str]:
         rows = self._conn.execute("SELECT DISTINCT tag FROM item_tags ORDER BY tag").fetchall()
         return [row["tag"] for row in rows]
