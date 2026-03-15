@@ -28,6 +28,7 @@ supabase = [
 ]
 dev = [
     "pytest>=8.0",
+    "pytest-cov>=7.0",
     "ruff>=0.9",
 ]
 
@@ -36,8 +37,9 @@ ainews = "ainews.cli:main"
 
 [tool.pytest.ini_options]
 markers = [
-    "integration: requires local Supabase (`supabase start`)",
+    "integration: requires external services (Ollama, Supabase, HuggingFace)",
 ]
+addopts = "--cov=src/ainews --cov-report=term-missing --no-cov-on-fail"
 
 [tool.ruff]
 line-length = 100
