@@ -1,5 +1,34 @@
 # Changelog
 
+## v0.5.0 — 2026-03-15
+
+### Features
+
+- **MyFocalAI rebrand** — Repo, Vercel, and all user-facing references renamed from ai-news-filter (#141)
+- **Instant public feed** — Render public feed immediately, upgrade to personal feed in background (#146)
+- **Per-category badge counts** — Filter tabs show how many new items each category has (#142)
+- **Clickable feed cards** — Cards are fully clickable with hover/active highlight (#140)
+- **Mobile hamburger nav** — Responsive navigation with hamburger menu on small screens (#145)
+
+### Fixes
+
+- **RPC auth gap** — Anon key could write items to any user's feed; all 5 SECURITY DEFINER RPCs now require authentication. Shared `_require_user_auth()` helper centralises the guard (#150, #115)
+- **SRI hashes** — Pinned CDN scripts (@tailwindcss/browser 4.2.1, @supabase/supabase-js 2.99.1) with sha384 integrity attributes across all pages (#150, #117)
+- **UTC timestamps** — Standardise all timestamps to UTC, speed up tab switching (#139)
+- **Fetch CI** — Fix rebase failure when main moves during fetch job (#143)
+
+### Infrastructure
+
+- **k6 performance tests** — Smoke, load, and stress profiles for the API (#144)
+- **Playwright visual regression** — 6 viewports, 30 baseline screenshots (#145)
+- **Issue labeling** — Added labeling conventions to workflow rules (#138)
+- **Issue templates** — Bug report and feature request templates (#138)
+
+### Docs
+
+- Deduplicated docs and fixed file drift (#149)
+- Updated architecture, deployment, and development docs for post-v0.4.0 additions (#147)
+
 ## v0.4.0 — 2026-03-15
 
 ### Features
