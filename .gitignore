@@ -10,3 +10,7 @@ data/
 .DS_Store
 htmlcov/
 .coverage
+node_modules/
+playwright-report/
+test-results/
+tests/perf/results/
