@@ -253,7 +253,10 @@ class handler(BaseHTTPRequestHandler):
         length = int(self.headers.get("Content-Length", 0))
         if length > _MAX_BODY_SIZE:
             return self._json(413, {"error": "Request body too large"}, cors)
-        body = json.loads(self.rfile.read(length)) if length else {}
+        try:
+            body = json.loads(self.rfile.read(length)) if length else {}
+        except (json.JSONDecodeError, ValueError):
+            return self._json(400, {"error": "Invalid JSON body"}, cors)
         url = body.get("url", "").strip()
         if not url:
             return self._json(400, {"error": "URL is required"}, cors)
