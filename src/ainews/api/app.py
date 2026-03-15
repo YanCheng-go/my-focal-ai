@@ -233,7 +233,7 @@ def _set_last_seen(response: Response, page: str) -> None:
     """Set the last-seen cookie for a page to now."""
     response.set_cookie(
         f"ainews_last_seen_{page}",
-        datetime.now().isoformat(),
+        datetime.now().isoformat(),  # naive local time, matches fetched_at
         max_age=365 * 24 * 3600,
         samesite="lax",
     )

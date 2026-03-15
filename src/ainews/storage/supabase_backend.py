@@ -251,6 +251,16 @@ class SupabaseBackend:
         result = _exec(q)
         return result.count or 0
 
+    def count_items_by_source_type(
+        self,
+        *,
+        since: datetime,
+        exclude_sources: list[str] | None = None,
+        exclude_source_types: list[str] | None = None,
+    ) -> dict[str, int]:
+        # Not used in Supabase mode (badges computed client-side in JS)
+        return {}
+
     def get_all_tags(self) -> list[str]:
         params = {}
         if self._user_id:
