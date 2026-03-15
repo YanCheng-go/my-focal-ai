@@ -122,9 +122,7 @@
     var emailEl = document.getElementById('user-email');
 
     try {
-        var resp = await fetch('config.json');
-        if (!resp.ok) return;
-        var config = await resp.json();
+        var config = window.getConfig ? await window.getConfig() : await fetch('config.json').then(function(r) { return r.ok ? r.json() : {}; });
         if (!config.supabase_url || !config.supabase_anon_key) {
             // No Supabase config — hide user menu (Sources nav link handles admin access)
             if (container) container.classList.add('hidden');

@@ -94,9 +94,10 @@
     setTimeout(function() {
         if (called) return;
         var page = _detectPage();
+        var configP = window.getConfig ? window.getConfig() : fetch('config.json').then(function(r) { return r.ok ? r.json() : {}; }).catch(function() { return {}; });
         Promise.all([
             fetch('data.json').then(function(r) { return r.json(); }),
-            fetch('config.json').then(function(r) { return r.json(); }).catch(function() { return {}; }),
+            configP,
         ]).then(function(results) {
             _compute(results[0].items || [], results[1], page);
         }).catch(function() {});
