@@ -95,8 +95,509 @@
     }
   ],
   "show_scores": false,
-  "hidden_source_types": ["events", "luma", "github_trending", "github_trending_history"],
-  "hidden_sources": ["Claude Code Releases"],
+  "hidden_source_types": [
+    "events",
+    "luma",
+    "github_trending",
+    "github_trending_history"
+  ],
+  "hidden_sources": [
+    "Claude Code Releases"
+  ],
+  "source_type_schema": {
+    "rss": {
+      "label": "RSS",
+      "aliases": ["rsshub"],
+      "fields": {
+        "required": [
+          "url",
+          "name"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400"
+    },
+    "youtube": {
+      "label": "YouTube",
+      "fields": {
+        "required": [
+          "channel_id",
+          "name"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400"
+    },
+    "twitter": {
+      "label": "Twitter",
+      "fields": {
+        "required": [
+          "handle"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-400"
+    },
+    "arxiv": {
+      "label": "ArXiv",
+      "aliases": ["arxiv_queries"],
+      "fields": {
+        "required": [
+          "url",
+          "name"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400"
+    },
+    "rsshub": {
+      "label": "RSSHub",
+      "fields": {
+        "required": [
+          "route",
+          "name"
+        ],
+        "optional": [
+          "source_type",
+          "tags"
+        ]
+      },
+      "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400"
+    },
+    "xiaohongshu": {
+      "label": "Xiaohongshu",
+      "fields": {
+        "required": [
+          "user_id",
+          "name"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-pink-100 text-pink-700 dark:bg-pink-900/50 dark:text-pink-400"
+    },
+    "luma": {
+      "label": "Luma",
+      "fields": {
+        "required": [
+          "handle"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-400"
+    },
+    "events": {
+      "label": "Events",
+      "fields": {
+        "required": [
+          "scraper",
+          "name"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-400"
+    },
+    "arxiv_queries": {
+      "label": "ArXiv Query",
+      "fields": {
+        "required": [
+          "query",
+          "name"
+        ],
+        "optional": [
+          "tags"
+        ]
+      },
+      "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400"
+    }
+  },
+  "default_user_sources": [
+    {
+      "source_type": "youtube",
+      "name": "Nate Herk | AI Automation",
+      "config": {
+        "channel_id": "UC2ojq-nuP8ceeHqiroeKhBA"
+      },
+      "tags": [
+        "ai",
+        "automation"
+      ]
+    },
+    {
+      "source_type": "youtube",
+      "name": "TechWorld with Nana",
+      "config": {
+        "channel_id": "UCoQ8B21RIncI9NWLr2d2Y_w"
+      },
+      "tags": [
+        "devops",
+        "cloud",
+        "tooling"
+      ]
+    },
+    {
+      "source_type": "youtube",
+      "name": "Andrej Karpathy",
+      "config": {
+        "channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "course"
+      ]
+    },
+    {
+      "source_type": "youtube",
+      "name": "Stanford Online",
+      "config": {
+        "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "course"
+      ]
+    },
+    {
+      "source_type": "youtube",
+      "name": "AI Engineer",
+      "config": {
+        "channel_id": "UCLKPca3kwwd-B59HNr-_lvA"
+      },
+      "tags": [
+        "ai",
+        "engineering"
+      ]
+    },
+    {
+      "source_type": "youtube",
+      "name": "IBM Technology",
+      "config": {
+        "channel_id": "UCKWaEZ-_VweaEx1j62do_vQ"
+      },
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "source_type": "youtube",
+      "name": "The Pragmatic Engineer",
+      "config": {
+        "channel_id": "UCPbwhExawYrn9xxI21TFfyw"
+      },
+      "tags": [
+        "ai",
+        "podcast"
+      ]
+    },
+    {
+      "source_type": "arxiv",
+      "name": "arXiv cs.AI",
+      "config": {
+        "url": "https://rss.arxiv.org/rss/cs.AI"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "papers"
+      ]
+    },
+    {
+      "source_type": "arxiv",
+      "name": "arXiv cs.LG (Machine Learning)",
+      "config": {
+        "url": "https://rss.arxiv.org/rss/cs.LG"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "ml",
+        "papers"
+      ]
+    },
+    {
+      "source_type": "arxiv",
+      "name": "arXiv cs.CL (NLP/LLM)",
+      "config": {
+        "url": "https://rss.arxiv.org/rss/cs.CL"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "nlp",
+        "llm",
+        "papers"
+      ]
+    },
+    {
+      "source_type": "arxiv",
+      "name": "arXiv cs.SE (Software Engineering)",
+      "config": {
+        "url": "https://rss.arxiv.org/rss/cs.se"
+      },
+      "tags": [
+        "swe",
+        "ai",
+        "research"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "OpenAI Blog",
+      "config": {
+        "url": "https://openai.com/news/rss.xml"
+      },
+      "tags": [
+        "ai",
+        "openai",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Google DeepMind",
+      "config": {
+        "url": "https://deepmind.google/blog/rss.xml"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "deepmind",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Google Research",
+      "config": {
+        "url": "https://research.google/blog/rss/"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "google",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Meta Engineering",
+      "config": {
+        "url": "https://engineering.fb.com/feed/"
+      },
+      "tags": [
+        "ai",
+        "engineering",
+        "meta",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Apple Machine Learning",
+      "config": {
+        "url": "https://machinelearning.apple.com/rss.xml"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "apple",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Meta Research",
+      "config": {
+        "url": "https://research.facebook.com/feed/"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "meta",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Microsoft Research",
+      "config": {
+        "url": "https://www.microsoft.com/en-us/research/feed/"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "microsoft",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "NVIDIA Blog",
+      "config": {
+        "url": "https://blogs.nvidia.com/feed/"
+      },
+      "tags": [
+        "ai",
+        "nvidia",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "NVIDIA Developer",
+      "config": {
+        "url": "https://developer.nvidia.com/blog/feed/"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "nvidia",
+        "engineering"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Stability AI",
+      "config": {
+        "url": "https://stability.ai/news?format=rss"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "stability",
+        "open-source"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Claude Code Releases",
+      "config": {
+        "url": "https://github.com/anthropics/claude-code/releases.atom"
+      },
+      "tags": [
+        "ai",
+        "anthropic",
+        "claude code",
+        "tooling",
+        "changelog"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Hugging Face Blog",
+      "config": {
+        "url": "https://huggingface.co/blog/feed.xml"
+      },
+      "tags": [
+        "ai",
+        "open-source",
+        "huggingface"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "METR",
+      "config": {
+        "url": "https://metr.substack.com/feed"
+      },
+      "tags": [
+        "ai",
+        "safety",
+        "evals",
+        "research"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Lilian Weng",
+      "config": {
+        "url": "https://lilianweng.github.io/index.xml"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ]
+    },
+    {
+      "source_type": "rsshub",
+      "name": "Anthropic News",
+      "config": {
+        "route": "/anthropic/news",
+        "source_type": "rss"
+      },
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rsshub",
+      "name": "Cohere Blog",
+      "config": {
+        "route": "/cohere/blog",
+        "source_type": "rss"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "cohere",
+        "company"
+      ]
+    },
+    {
+      "source_type": "arxiv_queries",
+      "name": "arXiv: transformers",
+      "config": {
+        "query": "cat:cs.AI+AND+abs:transformer"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "transformers"
+      ]
+    },
+    {
+      "source_type": "arxiv_queries",
+      "name": "arXiv: LLMs",
+      "config": {
+        "query": "cat:cs.CL+AND+abs:large+language+model"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "llm"
+      ]
+    },
+    {
+      "source_type": "arxiv_queries",
+      "name": "arXiv: RL",
+      "config": {
+        "query": "cat:cs.LG+AND+abs:reinforcement+learning"
+      },
+      "tags": [
+        "ai",
+        "research",
+        "rl"
+      ]
+    }
+  ],
   "supabase_url": "https://nzzpbhtqwjxokuywcbez.supabase.co",
   "supabase_anon_key": "sb_publishable_Hme0RbrVXXwQdYhNOTN8Ow_ew29r8Dj"
 }

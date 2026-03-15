@@ -173,6 +173,7 @@
     let TYPE_COLORS = {};
     let HIDDEN_TYPES = [];
     let HIDDEN_SOURCES = [];
+    let DEFAULT_USER_SOURCES = [];
 
     const FIELD_LABELS = {
         handle: 'Handle', channel_id: 'Channel ID', name: 'Name', url: 'URL',
@@ -183,6 +184,7 @@
         var schema = config.source_type_schema || {};
         HIDDEN_TYPES = config.hidden_source_types || [];
         HIDDEN_SOURCES = config.hidden_sources || [];
+        DEFAULT_USER_SOURCES = config.default_user_sources || [];
         SOURCE_FIELDS = {};
         TYPE_COLORS = {};
         Object.keys(schema).forEach(function(key) {
@@ -310,6 +312,27 @@
     }
 
 
+    // --- Seed defaults ---
+    async function seedDefaults(btn) {
+        var { data: { session } } = await sb.auth.getSession();
+        if (!session) return;
+        btn.disabled = true;
+        btn.textContent = 'Loading...';
+        var rows = DEFAULT_USER_SOURCES.map(function(src) {
+            return { source_type: src.source_type, name: src.name, config: src.config, tags: src.tags || [], user_id: session.user.id };
+        });
+        var { error } = await sb.from('user_sources').insert(rows);
+        if (error) {
+            console.error('seedDefaults error:', error);
+            showToast('Failed to load defaults: ' + error.message, 'error');
+            btn.disabled = false;
+            btn.textContent = 'Load default sources (' + DEFAULT_USER_SOURCES.length + ')';
+            return;
+        }
+        showToast('Loaded ' + DEFAULT_USER_SOURCES.length + ' default sources', 'success');
+        loadSources();
+    }
+
     // --- Source CRUD ---
     async function loadSources() {
         // #108: explicit user_id filter as defense-in-depth alongside RLS
@@ -323,7 +346,15 @@
     function renderTable(sources) {
         var tbody = document.getElementById('sources-body');
         if (!sources.length) {
-            tbody.innerHTML = '<tr><td colspan="5" class="text-center text-gray-400 dark:text-gray-500 py-8">No sources configured. Click "Add Source" to get started.</td></tr>';
+            var msg = '<tr><td colspan="5" class="text-center py-8">' +
+                '<p class="text-gray-400 dark:text-gray-500 mb-3">No sources configured.</p>';
+            if (DEFAULT_USER_SOURCES.length) {
+                msg += '<button class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50" onclick="seedDefaults(this)">Load default sources (' + DEFAULT_USER_SOURCES.length + ')</button>';
+            } else {
+                msg += '<p class="text-gray-400 dark:text-gray-500">Click "Add Source" to get started.</p>';
+            }
+            msg += '</td></tr>';
+            tbody.innerHTML = msg;
             return;
         }
         tbody.innerHTML = sources.map(function(s) {

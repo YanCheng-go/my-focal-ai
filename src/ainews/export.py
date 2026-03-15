@@ -62,6 +62,7 @@ HIDDEN_SOURCES = ["Claude Code Releases"]
 SOURCE_TYPE_SCHEMA = {
     "rss": {
         "label": "RSS",
+        "aliases": ["rsshub"],
         "fields": {"required": ["url", "name"], "optional": ["tags"]},
         "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
     },
@@ -77,6 +78,7 @@ SOURCE_TYPE_SCHEMA = {
     },
     "arxiv": {
         "label": "ArXiv",
+        "aliases": ["arxiv_queries"],
         "fields": {"required": ["url", "name"], "optional": ["tags"]},
         "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400",
     },
@@ -108,6 +110,43 @@ SOURCE_TYPE_SCHEMA = {
 }
 
 
+# Source types that work in online mode (serverless fetch via RSS/Atom)
+_ONLINE_SOURCE_TYPES = {"rss", "youtube", "arxiv", "arxiv_queries", "rsshub"}
+
+
+def _config_keys_for(stype: str) -> list[str]:
+    """Derive config keys from SOURCE_TYPE_SCHEMA (required fields minus 'name')."""
+    schema = SOURCE_TYPE_SCHEMA.get(stype)
+    if not schema:
+        return []
+    fields = schema.get("fields", {})
+    return [
+        f
+        for f in fields.get("required", []) + fields.get("optional", [])
+        if f not in ("name", "tags")
+    ]
+
+
+def _build_default_user_sources(sources: dict) -> list[dict]:
+    """Convert sources.yml entries to user_sources format for online mode."""
+    defaults = []
+    for stype, entries in sources.items():
+        if stype not in _ONLINE_SOURCE_TYPES or not isinstance(entries, list):
+            continue
+        keys = _config_keys_for(stype)
+        for entry in entries:
+            config = {k: entry[k] for k in keys if k in entry}
+            defaults.append(
+                {
+                    "source_type": stype,
+                    "name": entry.get("name", ""),
+                    "config": config,
+                    "tags": entry.get("tags", []),
+                }
+            )
+    return defaults
+
+
 def _export_config(output_path: Path, settings: Settings):
     """Export leaderboard, event links, and Supabase config for static pages."""
     sources_config = load_sources(settings.config_dir)
@@ -119,6 +158,7 @@ def _export_config(output_path: Path, settings: Settings):
         "hidden_source_types": HIDDEN_SOURCE_TYPES,
         "hidden_sources": HIDDEN_SOURCES,
         "source_type_schema": SOURCE_TYPE_SCHEMA,
+        "default_user_sources": _build_default_user_sources(sources),
     }
     # Include Supabase config for static admin page auth
     if settings.supabase_url and settings.supabase_key:

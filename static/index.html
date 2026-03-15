@@ -45,11 +45,14 @@
 
     <main class="max-w-4xl mx-auto px-5 py-5">
         <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
-            <input class="w-full sm:w-48 px-3 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 placeholder:text-gray-400 dark:placeholder:text-gray-500"
-                   type="text" id="search" placeholder="Search titles, sources..." oninput="onSearchInput()">
+            <div class="flex gap-1.5">
+                <input class="w-full sm:w-48 px-3 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none focus:border-blue-400 dark:focus:border-blue-500 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                       type="text" id="search" placeholder="Search titles, sources..." oninput="onSearchInput()">
+                <button type="button" class="px-2.5 py-1.5 rounded-md bg-white dark:bg-neutral-800 text-gray-500 border border-gray-200 dark:border-neutral-700 text-sm cursor-pointer hover:border-blue-400 hover:text-blue-600 dark:hover:border-blue-500 dark:hover:text-blue-400" title="Search" onclick="onSearchInput()">&#128269;</button>
+            </div>
             <div class="flex items-center gap-3">
-                <button id="fetch-now-btn" class="hidden px-3 py-1.5 rounded-md bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700 text-sm cursor-pointer hover:bg-green-200 dark:hover:bg-green-800/50" onclick="fetchNow(this)">Fetch Now</button>
                 <span class="text-xs text-gray-400" id="updated"></span>
+                <button id="fetch-now-btn" class="hidden px-3 py-1.5 rounded-md bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700 text-sm cursor-pointer hover:bg-green-200 dark:hover:bg-green-800/50" onclick="fetchNow(this)">Fetch Now</button>
             </div>
         </div>
         <div class="flex gap-2 mb-3 flex-wrap items-center" id="filters"></div>
@@ -91,6 +94,8 @@
 
     let HIDDEN_TYPES = [];
     let HIDDEN_SOURCES = [];
+    let TYPE_LABELS = {};
+    let TYPE_NORMALIZE = {};
 
     // Supabase mode state (#106, #108, #110)
     let isSupabaseMode = false;
@@ -119,6 +124,11 @@
                 showScores = !!config.show_scores;
                 HIDDEN_TYPES = config.hidden_source_types || [];
                 HIDDEN_SOURCES = config.hidden_sources || [];
+                const schema = config.source_type_schema || {};
+                Object.keys(schema).forEach(function(k) {
+                    if (schema[k].label) TYPE_LABELS[k] = schema[k].label;
+                    (schema[k].aliases || []).forEach(function(a) { TYPE_NORMALIZE[a] = k; });
+                });
             }
 
             // If user is logged in to Supabase, use server-side queries
@@ -131,13 +141,13 @@
                         isSupabaseMode = true;
                         supabaseSession = session;
 
-                        // Load tags and distinct source types for filter buttons
+                        // Load tags and source types (query user_sources, normalize via schema aliases)
                         const [tagResult, typeResult] = await Promise.all([
                             supabaseSb.rpc('get_all_tags', { p_user_id: session.user.id }),
                             supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
                         ]);
                         allTags = ((tagResult.data) || []).map(r => r.tag);
-                        allSourceTypes = [...new Set(((typeResult.data) || []).map(r => r.source_type))].filter(Boolean).sort();
+                        allSourceTypes = [...new Set(((typeResult.data) || []).map(r => TYPE_NORMALIZE[r.source_type] || r.source_type))].filter(Boolean).sort();
 
                         document.getElementById('updated').textContent = 'Showing your personal feed';
                         document.getElementById('fetch-now-btn').classList.remove('hidden');
@@ -216,7 +226,7 @@
         const types = (isSupabaseMode ? allSourceTypes : [...new Set(allItems.map(i => i.source_type))]).filter(t => !HIDDEN_TYPES.includes(t)).sort();
         let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${activeCls}" onclick="setFilter({})">All</button>`;
         types.forEach(t => {
-            const label = t === 'rss' ? 'RSS' : t === 'arxiv' ? 'arXiv' : t.charAt(0).toUpperCase() + t.slice(1);
+            const label = TYPE_LABELS[t] || t.charAt(0).toUpperCase() + t.slice(1);
             html += `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${inactiveCls}" onclick="setFilter({source_type:'${escapeAttr(t)}'})">${escapeHtml(label)}</button>`;
         });
         // Feature flag: AINEWS_SHOW_SCORES — do not delete, enable via config
