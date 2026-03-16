@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-16T06:49:35.876310+00:00",
+  "exported_at": "2026-03-16T18:36:34.149916+00:00",
   "period_hours": 168,
-  "total": 4545,
+  "total": 4549,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,47 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00Z",
       "fetched_at": "2026-03-11T10:29:17.543660Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ce7dc309303c507a",
+      "url": "https://research.google/blog/testing-llms-on-superconductivity-research-questions/",
+      "title": "Testing LLMs on superconductivity research questions",
+      "summary": "Education Innovation",
+      "content": "",
+      "source_name": "Google Research",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "google",
+        "company"
+      ],
+      "author": "",
+      "published_at": "2026-03-16T17:31:00Z",
+      "fetched_at": "2026-03-16T18:36:25.075262Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1436084bc39b0d35",
+      "url": "https://www.youtube.com/watch?v=P8m5eHAyrFM",
+      "title": "What Is Llama.cpp? The LLM Inference Engine for Local AI",
+      "summary": "Ready to become a certified watsonx AI Assistant Engineer? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/Bdpsiy\n\nLearn more about Large Language Models (LLMs) here \u2192 https://ibm.biz/BdpsiS\n\nYour laptop, your AI. \ud83d\udcbb Cedric Clyburn explains what Llama.cpp is and how this powerful inference engine enables local LLMs with full data privacy. Discover model quantization, RAG, and how to optimize AI for small devices.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/Bdpsim\n\n#llm #llama #inference #localai",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-16T11:00:48Z",
+      "fetched_at": "2026-03-16T12:35:58.157636Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -9422,6 +9463,49 @@
       "is_duplicate_of": null
     },
     {
+      "id": "4770f471121d71c5",
+      "url": "https://machinelearning.apple.com/research/rubicap",
+      "title": "RubiCap: Rubric-Guided Reinforcement Learning for Dense Image Captioning",
+      "summary": "Dense image captioning is critical for cross-modal alignment in vision-language pretraining and text-to-image generation, but scaling expert-quality annotations is prohibitively expensive. While synthetic captioning via strong vision-language models (VLMs) is a practical alternative, supervised distillation often yields limited output diversity and weak generalization. Reinforcement learning (RL) could overcome these limitations, but its successes have so far been concentrated in verifiable domains that rely on deterministic checkers \u2014 a luxury not available in open-ended captioning. We\u2026",
+      "content": "",
+      "source_name": "Apple Machine Learning",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "apple",
+        "company"
+      ],
+      "author": "",
+      "published_at": "2026-03-16T00:00:00Z",
+      "fetched_at": "2026-03-16T18:36:25.635026Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8a8601b30dd910cc",
+      "url": "https://openai.com/index/why-codex-security-doesnt-include-sast",
+      "title": "Why Codex Security Doesn\u2019t Include a SAST Report",
+      "summary": "A deep dive into why Codex Security doesn\u2019t rely on traditional SAST, instead using AI-driven constraint reasoning and validation to find real vulnerabilities with fewer false positives.",
+      "content": "",
+      "source_name": "OpenAI Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "openai",
+        "company"
+      ],
+      "author": "",
+      "published_at": "2026-03-16T00:00:00Z",
+      "fetched_at": "2026-03-16T18:36:24.330965Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
       "id": "3872cddae87b9adb",
       "url": "https://www.youtube.com/watch?v=HtnlUosO3XA",
       "title": "Agentic Runtime Security Explained: Securing Non\u2011Human Identities",
@@ -10684,90 +10768,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "40af776cbe21f6c8",
-      "url": "https://arxiv.org/abs/2603.13056v1",
-      "title": "Team RAS in 10th ABAW Competition: Multimodal Valence and Arousal Estimation Approach",
-      "summary": "Continuous emotion recognition in terms of valence and arousal under in-the-wild (ITW) conditions remains a challenging problem due to large variations in appearance, head pose, illumination, occlusions, and subject-specific patterns of affective expression. We present a multimodal method for valence-arousal estimation ITW. Our method combines three complementary modalities: face, behavior, and audio. The face modality relies on GRADA-based frame-level embeddings and Transformer-based temporal regression. We use Qwen3-VL-4B-Instruct to extract behavior-relevant information from video segments, while Mamba is used to model temporal dynamics across segments. The audio modality relies on WavLM-Large with attention-statistics pooling and includes a cross-modal filtering stage to reduce the influence of unreliable or non-speech segments. To fuse modalities, we explore two fusion strategies: a Directed Cross-Modal Mixture-of-Experts Fusion Strategy that learns interactions between modalities with adaptive weighting, and a Reliability-Aware Audio-Visual Fusion Strategy that combines visual features at the frame-level while using audio as complementary context. The results are reported on the Aff-Wild2 dataset following the 10th Affective Behavior Analysis in-the-Wild (ABAW) challenge protocol. Experiments demonstrate that the proposed multimodal fusion strategy achieves a Concordance Correlation Coefficient (CCC) of 0.658 on the Aff-Wild2 development set.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Alexey Karpov",
-      "published_at": "2026-03-13T15:06:14Z",
-      "fetched_at": "2026-03-16T03:25:57.733600Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3231a68637c74dcb",
-      "url": "https://arxiv.org/abs/2603.13051v1",
-      "title": "Causal Cellular Context Transfer Learning (C3TL): An Efficient Architecture for Prediction of Unseen Perturbation Effects",
-      "summary": "Predicting the effects of chemical and genetic perturbations on quantitative cell states is a central challenge in computational biology, molecular medicine and drug discovery. Recent work has leveraged large-scale single-cell data and massive foundation models to address this task. However, such computational resources and extensive datasets are not always accessible in academic or clinical settings, hence limiting utility. Here we propose a lightweight framework for perturbation effect prediction that exploits the structured nature of biological interventions and specific inductive biases/invariances. Our approach leverages available information concerning perturbation effects to allow generalization to novel contexts and requires only widely-available bulk molecular data. Extensive testing, comparing predictions of context-specific perturbation effects against real, large-scale interventional experiments, demonstrates accurate prediction in new contexts. The proposed approach is competitive with SOTA foundation models but requires simpler data, much smaller model sizes and less time. Focusing on robust bulk signals and efficient architectures, we show that accurate prediction of perturbation effects is possible without proprietary hardware or very large models, hence opening up ways to leverage causal learning approaches in biomedicine generally.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Sach Mukherjee",
-      "published_at": "2026-03-13T15:02:49Z",
-      "fetched_at": "2026-03-16T03:25:58.483973Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "666d71789dc6b1a2",
-      "url": "https://arxiv.org/abs/2603.13049v1",
-      "title": "3DTCR: A Physics-Based Generative Framework for Vortex-Following 3D Reconstruction to Improve Tropical Cyclone Intensity Forecasting",
-      "summary": "Tropical cyclone (TC) intensity forecasting remains challenging as current numerical and AI-based weather models fail to satisfactorily represent extreme TC structure and intensity. Although intensity time-series forecasting has achieved significant advances, it outputs intensity sequences rather than the three-dimensional inner-core fine-scale structure and physical mechanisms governing TC evolution. High-resolution numerical simulations can capture these features but remain computationally expensive and inefficient for large-scale operational applications. Here we present 3DTCR, a physics-based generative framework combining physical constraints with generative AI efficiency for 3D TC structure reconstruction. Trained on a six-year, 3-km-resolution moving-domain WRF dataset, 3DTCR enables region-adaptive vortex-following reconstruction using conditional Flow Matching(CFM), optimized via latent domain adaptation and two-stage transfer learning. The framework mitigates limitations imposed by low-resolution targets and over-smoothed forecasts, improving the representation of TC inner-core structure and intensity while maintaining track stability. Results demonstrate that 3DTCR outperforms the ECMWF high-resolution forecasting system (ECMWF-HRES) in TC intensity prediction at nearly all lead times up to 5 days and reduces the RMSE of maximum WS10M by 36.5\\% relative to its FuXi inputs. These findings highlight 3DTCR as a physics-based generative framework that efficiently resolves fine-scale structures at lower computational cost, which may offer a promising avenue for improving TC intensity forecasting.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Hao Li",
-      "published_at": "2026-03-13T15:00:07Z",
-      "fetched_at": "2026-03-16T03:25:58.483981Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "726f00ccf3cf2ed7",
-      "url": "https://arxiv.org/abs/2603.13048v1",
-      "title": "Convergence Rate of a Functional Learning Method for Contextual Stochastic Optimization",
-      "summary": "We consider a stochastic optimization problem involving two random variables: a context variable $X$ and a dependent variable $Y$. The objective is to minimize the expected value of a nonlinear loss functional applied to the conditional expectation $\\mathbb{E}[f(X, Y,\u03b2) \\mid X]$, where $f$ is a nonlinear function and $\u03b2$ represents the decision variables. We focus on the practically important setting in which direct sampling from the conditional distribution of $Y \\mid X$ is infeasible, and only a stream of i.i.d.\\ observation pairs $\\{(X^k, Y^k)\\}_{k=0,1,2,\\ldots}$ is available. In our approach, the conditional expectation is approximated within a prespecified parametric function class. We analyze a simultaneous learning-and-optimization algorithm that jointly estimates the conditional expectation and optimizes the outer objective, and establish that the method achieves a convergence rate of order $\\mathcal{O}\\big(1/\\sqrt{N}\\big)$, where $N$ denotes the number of observed pairs.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Andrzej Ruszczynski",
-      "published_at": "2026-03-13T14:53:35Z",
-      "fetched_at": "2026-03-16T03:25:58.483990Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -11668,70 +11668,6 @@
       "author": "",
       "published_at": "2026-03-09T16:00:36Z",
       "fetched_at": "2026-03-11T10:29:11.757836Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3396f3f54aae0c0e",
-      "url": "https://developer.nvidia.com/blog/removing-the-guesswork-from-disaggregated-serving/",
-      "title": "Removing the Guesswork from Disaggregated Serving",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/genai-mixture-of-experts-blog-3105601-1920x1080-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-mixture-of-experts-blog-3105601-1920x1080\" width=\"768\" />Deploying and optimizing large language models (LLMs) for high-performance, cost-effective serving can be an overwhelming engineering problem. The ideal...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/genai-mixture-of-experts-blog-3105601-1920x1080-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-mixture-of-experts-blog-3105601-1920x1080\" width=\"768\" />Deploying and optimizing large language models (LLMs) for high-performance, cost-effective serving can be an overwhelming engineering problem. The ideal...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/genai-mixture-of-experts-blog-3105601-1920x1080-1-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-mixture-of-experts-blog-3105601-1920x1080\" width=\"768\" /><p>Deploying and optimizing large language models (LLMs) for high-performance, cost-effective serving can be an overwhelming engineering problem. The ideal configuration for any given workload (such as hardware, parallelism, and prefill/decode split) resides in a massive, multi-dimensional search space that is impossible to explore manually or through exhaustive testing. AIConfigurator\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/removing-the-guesswork-from-disaggregated-serving/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Tianhao Xu",
-      "published_at": "2026-03-09T16:00:00Z",
-      "fetched_at": "2026-03-11T10:29:15.011630Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d7754d6f7d2fc3ad",
-      "url": "https://blogs.nvidia.com/blog/abb-robotics-omniverse/",
-      "title": "ABB Robotics Taps NVIDIA Omniverse to Deliver Industrial\u2011Grade Physical AI at Scale",
-      "summary": "ABB Robotics and NVIDIA today announced a breakthrough partnership that brings industrial\u2011grade physical AI to the factory floor.\u00a0 By integrating NVIDIA Omniverse libraries directly into its RobotStudio programming and simulation suite, ABB Robotics will now deliver physically accurate simulation capabilities in its platform, dramatically cutting engineering time, reducing deployment costs by up to 40% and [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">ABB Robotics and NVIDIA today announced a <a href=\"https://www.abb.com/global/en/news/134030\" target=\"_blank\">breakthrough partnership</a> that brings industrial\u2011grade </span><a href=\"https://www.nvidia.com/en-us/glossary/generative-physical-ai/\" target=\"_blank\"><span style=\"font-weight: 400;\">physical AI</span></a><span style=\"font-weight: 400;\"> to the factory floor.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">By integrating </span><a href=\"https://www.nvidia.com/en-us/omniverse/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Omniverse libraries</span></a> directly into its RobotStudio programming and simulation suite, ABB Robotics will now deliver physically accurate simulation capabilities in its platform, dramatically cutting engineering time, reducing deployment costs by up to 40% and accelerating time to market by as much as 50%.</p>\n<p><span style=\"font-weight: 400;\">The new product \u2014 called RobotStudio HyperReality \u2014 will be available in the second half of 2026 and is already drawing strong interest from ABB Robotic\u2019s global customer base. Early pilots include Foxconn, the world\u2019s largest electronics manufacturer, and Workr, a U.S.\u2011based robotic workforce company bringing advanced automation to small and medium-size manufacturers.</span></p>\n<p><span style=\"font-weight: 400;\">The partnership marks a major milestone for the industrial sector, which has long sought a reliable way to bring AI-powered intelligence to <a href=\"https://www.nvidia.com/en-us/industries/robotics/\" target=\"_blank\">robots</a>, bridging the sim\u2011to\u2011real gap that separates virtual robot training from real\u2011world performance.\u00a0 </span></p>\n<p><span style=\"font-weight: 400;\">\u201cCombining RobotStudio with the physically accurate simulation power of NVIDIA Omniverse libraries, we have closed technology&#8217;s long-standing &#8216;sim-to-real\u2019 gap \u2013 a huge milestone to deploying physical AI with industrial-grade precision, for real-world customer applications,\u201d said Marc Segura, president of ABB Robotics.<br />\n</span></p>\n<h2><b>A Breakthrough in Physical AI for Industry</b></h2>\n<p><span style=\"font-weight: 400;\">ABB\u2019s integration of NVIDIA Omniverse libraries into RobotStudio brings physically accurate, photorealistic simulation directly into the tool used by more than 60,000 robotics engineers worldwide. The result is a unified workflow where manufacturers can design, program, test and validate entire automation cells before deploying a single robot.</span></p>\n<p>RobotStudio HyperReality exports a fully parameterized robot station \u2014 robots, sensors, lighting, kinematics and parts \u2014 as a USD file into NVIDIA Omniverse. There, ABB Robotics\u2019 virtual controller runs the same firmware as the physical robot, enabling 99% correlation between simulation and real\u2011world behavior. Synthetic images generated in Omniverse feed directly into AI training pipelines, allowing vision models to be trained entirely in simulation.</p>\n<p><span style=\"font-weight: 400;\">This combination of physics\u2011rich simulation, </span><a href=\"https://www.nvidia.com/en-us/use-cases/synthetic-data-physical-ai/\" target=\"_blank\"><span style=\"font-weight: 400;\">synthetic data generation</span></a><span style=\"font-weight: 400;\"> and ABB\u2019s Absolute Accuracy technology \u2014 which reduces positioning errors from 8-15 mm to around 0.5 mm \u2014 delivers unmatched precision for industrial\u2011grade applications.</span></p>\n<h2><b>Closing the Sim\u2011to\u2011Real Gap</b></h2>\n<p>For decades, manufacturers have struggled with the limitations of simulation: lighting that doesn\u2019t match reality, materials that behave differently on the factory floor and models that fail when exposed to real\u2011world variation. ABB Robotics integration of NVIDIA Omniverse directly addresses these challenges.</p>\n<p>\u201cThe industrial sector needs high\u2011fidelity simulation to bridge the gap between virtual training and real\u2011world deployment of AI\u2011driven robotics at scale,\u201d said Deepu Talla, vice president of robotics and edge AI at NVIDIA. \u201cIntegrating NVIDIA Omniverse libraries into RobotStudio brings advanced simulation and accelerated computing to ABB\u2019s virtual controller technology, accelerating how thousands of manufacturers bring complex products to market.\u201d</p>\n<p>With RobotStudio HyperReality, manufacturers can design and validate production lines virtually, cutting setup and commissioning times by up to 80% and eliminating the need for physical prototypes. The result is faster product ramps, lower cost and greater reliability \u2014 especially for industries like consumer electronics where precision is paramount.</p>\n<p>ABB Robotics is also exploring the integration of the <a href=\"https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Jetson edge AI platform</span></a> into its Omnicore controller to enable real\u2011time inference across its robot portfolio.</p>\n<h2><b>Real\u2011World Pilots: Foxconn and Workr</b></h2>\n<p><span style=\"font-weight: 400;\">Several customers are already testing RobotStudio HyperReality ahead of its full release.</span></p>\n<p>Foxconn is piloting the technology in consumer electronics assembly, where delicate metal components and frequent product variations make automation challenging. Using HyperReality, Foxconn trains robots virtually with synthetic data, achieving unparalleled accuracy when deployed on the production line. The company expects to reduce setup time and eliminate costly physical testing.</p>\n<p><span style=\"font-weight: 400;\">Workr, a California\u2011based robotic workforce company, is integrating their own physical AI platform, WorkrCore, with ABB industrial robots </span><span style=\"font-weight: 400;\">trained with synthetic data generated using NVIDIA Omniverse libraries</span><span style=\"font-weight: 400;\"> to deploy advanced automation to small and medium-size manufacturers. At <a href=\"https://www.nvidia.com/gtc/\" target=\"_blank\">NVIDIA </a></span><span style=\"font-weight: 400;\"><a href=\"https://www.nvidia.com/gtc/\" target=\"_blank\">GTC 2026</a> in San Jose</span><span style=\"font-weight: 400;\">, Workr plans to demonstrate AI\u2011powered robotic systems that </span><span style=\"font-weight: 400;\">can onboard new parts in minutes </span><span style=\"font-weight: 400;\">and deploy without programming expertise.</span></p>\n<p><i><span style=\"font-weight: 400;\">Don\u2019t miss NVIDIA founder and CEO </span></i><a href=\"https://www.nvidia.com/gtc/keynote/?regcode=pa-srch-goog-858585&amp;ncid=pa-srch-goog-858585\" target=\"_blank\"><i><span style=\"font-weight: 400;\">Jensen Huang\u2019s GTC keynote</span></i></a><i><span style=\"font-weight: 400;\"> at the SAP Center on March 16 at 11:00 a.m. PT, where he\u2019ll share the latest breakthroughs in AI and accelerated computing.</span></i></p>\n<p><i><span style=\"font-weight: 400;\">Explore </span></i><a href=\"https://www.nvidia.com/gtc/sessions/robotics/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">GTC robotics sessions</span></i></a><i><span style=\"font-weight: 400;\"> and catch ABB Robotics on the \u2018</span></i><a href=\"https://www.nvidia.com/gtc/session-catalog/sessions/gtc26-s81573/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">Building the Future of Manufacturing</span></i></a><i><span style=\"font-weight: 400;\">&#8216;</span></i><i><span style=\"font-weight: 400;\"> panel as they share how these technologies are shaping the future of intelligent automation.</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Scott Martin",
-      "published_at": "2026-03-09T15:00:34Z",
-      "fetched_at": "2026-03-11T10:29:14.673785Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6b1d7dd5c8867716",
-      "url": "https://blogs.nvidia.com/blog/state-of-ai-report-2026/",
-      "title": "How AI Is Driving Revenue, Cutting Costs and Boosting Productivity for Every Industry in 2026",
-      "summary": "AI is everywhere and accelerating everything \u2014 becoming essential infrastructure to create the intelligence that will advance every industry. That\u2019s why companies are increasingly focusing on the technology\u2019s return on investment (ROI), as well as how to best apply AI to their own use cases. NVIDIA\u2019s annual \u201cState of AI\u201d reports show how AI is [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">AI is everywhere and accelerating everything \u2014 becoming essential infrastructure to create the intelligence that will advance every industry.</span></p>\n<p><span style=\"font-weight: 400;\">That\u2019s why companies are increasingly focusing on the technology\u2019s return on investment (ROI), as well as how to best apply AI to their own use cases.</span></p>\n<p><a href=\"https://www.nvidia.com/en-us/industries/#state-of-ai-survey\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA\u2019s annual \u201cState of AI\u201d reports</span></a> <span style=\"font-weight: 400;\">show how AI is being adopted across industries, what it\u2019s being used for and how companies are achieving ROI, as well as their challenges and goals with the technology.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">This year\u2019s reports garnered over 3,200 responses from around the world, providing a pulse check on the state of AI in financial services, retail and consumer packaged goods (CPG), healthcare and life sciences, telecommunications and manufacturing.</span></p>\n<p><span style=\"font-weight: 400;\">One takeaway is clear: The state of AI is strong. AI adoption is continuing to rise. Companies are building and deploying specialized AI programs with open source tools to tackle their specific challenges. Across every industry, AI is helping increase annual revenue and drive down annual costs while boosting productivity.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Read about the broad themes from this year\u2019s reports:</span></p>\n<ul>\n<li><a href=\"https://blogs.nvidia.com/blog/state-of-ai-report-2026/#enterprise-adoption\" target=\"_self\"><span style=\"font-weight: 400;\">Growing enterprise AI adoption</span></a></li>\n<li><a href=\"https://blogs.nvidia.com/blog/state-of-ai-report-2026/#productivity\" target=\"_self\"><span style=\"font-weight: 400;\">AI drives productivity gains across every industry</span></a></li>\n<li><a href=\"https://blogs.nvidia.com/blog/state-of-ai-report-2026/#revenue-cost\" target=\"_self\"><span style=\"font-weight: 400;\">AI increases annual revenue and drives down costs\u00a0</span></a></li>\n<li><a href=\"https://blogs.nvidia.com/blog/state-of-ai-report-2026/#agentic-ai\" target=\"_self\"><span style=\"font-weight: 400;\">The rise of agentic AI</span></a></li>\n<li><a href=\"https://blogs.nvidia.com/blog/state-of-ai-report-2026/#open-source\" target=\"_self\"><span style=\"font-weight: 400;\">Open source drives AI strategy</span></a></li>\n<li><a href=\"https://blogs.nvidia.com/blog/state-of-ai-report-2026/#investment\" target=\"_self\"><span style=\"font-weight: 400;\">AI success leads to growing investment</span></a></li>\n<li><a href=\"https://blogs.nvidia.com/blog/state-of-ai-report-2026/#challenge\" target=\"_self\"><span style=\"font-weight: 400;\">The biggest challenges to AI adoption: lack of AI experts</span></a></li>\n</ul>\n<h2 id=\"enterprise-adoption\"><b>Enterprise AI Adoption Matures </b></h2>\n<p><span style=\"font-weight: 400;\">Enterprise AI is continuing to scale.</span></p>\n<p><span style=\"font-weight: 400;\">Companies are moving from AI pilots and assessment to scaled deployment. In nearly every industry survey, the percentage of respondents who said their organizations are actively using AI increased, while the percentage of respondents who said they\u2019re in the assessment phase declined.</span></p>\n<p><span style=\"font-weight: 400;\">Overall, 64% of respondents to the surveys said their organizations are actively using AI in their operations. A little over a quarter (28%) said they\u2019re still in the assessment phase, while 8% said they\u2019re not using AI and have no plans to start.</span></p>\n<p><span style=\"font-weight: 400;\">North America leads in AI adoption, with 70% actively using the technology, 27% assessing AI projects and just 3% who said they\u2019re not using AI. Nearly two-thirds (65%) of respondents in the EMEA region report they\u2019re actively using AI. AI adoption in the APAC region registers at 63%, with a higher percentage (15%) saying they\u2019re not using AI.</span></p>\n<p><span style=\"font-weight: 400;\">A distinct throughline was clear across all surveys: Larger companies (with more than 1,000 employees) demonstrate broader adoption, deploy more use cases and report greater ROI. More than three-quarters (76%) of respondents from large companies report active AI usage, with just 2% saying they don\u2019t use AI at all. These trends can be attributed to the fact that large companies have more capital to invest in AI infrastructure, data scientists and experts, leading executives to drive projects from pilot to production on highly specific and impactful use cases.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90593 size-large\" height=\"627\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-usage-by-vertical-1680x627.png\" width=\"1680\" /><img alt=\"\" class=\"alignnone wp-image-90620 size-full\" height=\"655\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-usage-by-region.png\" width=\"1999\" /><img alt=\"\" class=\"alignnone wp-image-90629 size-large\" height=\"475\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-usage-by-company-size-1680x475.png\" width=\"1680\" /></p>\n<p><span style=\"font-weight: 400;\">The financial services industry churns massive amounts of text, numbers, documents and analysis. Nasdaq, one of the world\u2019s premier stock exchanges and leading financial technology platforms, has </span><a href=\"https://www.nvidia.com/en-us/case-studies/nasdaq/\" target=\"_blank\"><span style=\"font-weight: 400;\">built an AI platform</span></a><span style=\"font-weight: 400;\"> to optimize its internal operations and enhance its external products, helping</span><span style=\"font-weight: 400;\"> improve functionality and user experience while streamlining internal work processes.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cAt Nasdaq, we are a technology platform company, and AI has the ability for us to unite all the different businesses and products,\u201d said Michael O\u2019Rourke, senior vice president and head of AI and emerging technology at Nasdaq. \u201cAI will help bring together data from all our businesses and technologies, and help us build better products and services.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">Read more in this year\u2019s </span><a href=\"https://www.nvidia.com/en-us/industries/finance/ai-financial-services-report/\" target=\"_blank\"><span style=\"font-weight: 400;\">State of AI in Financial Services</span></a><span style=\"font-weight: 400;\"> report.</span></p>\n<h2 id=\"productivity\"><strong>AI Is Boosting Productivity</strong></h2>\n<p><span style=\"font-weight: 400;\">This year\u2019s surveys revealed that the top three AI goals are creating operational efficiencies (34%), improving employee productivity (33%) and opening new business opportunities and revenue streams (23%).\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">More than half of respondents (53%) said improved employee productivity was one of the biggest impacts AI had on business operations, from speeding financial market analysis to boosting efficiency on factory floors with digital twins.</span></p>\n<p><span style=\"font-weight: 400;\">For example, in this year\u2019s </span><a href=\"https://www.nvidia.com/en-us/lp/industries/telecommunications/state-of-ai-in-telecom-survey-report/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA State of AI in Telecommunications</span></a><span style=\"font-weight: 400;\"> report, 99% of respondents said AI helped improve employee productivity, with a quarter saying the technology provided a major or significant improvement.</span></p>\n<p><span style=\"font-weight: 400;\">Productivity increases have cascading effects throughout the business. For instance, 42% of overall respondents said AI created operational efficiencies, and 34% said the technology helped open up new business and revenue opportunities.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90608 size-large\" height=\"590\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/top-three-goals-by-vertical-1680x590.png\" width=\"1680\" /><img alt=\"\" class=\"alignnone wp-image-90614 size-large\" height=\"590\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-impact-on-business-operations-top-three-by-vertical-1680x590.png\" width=\"1680\" /></p>\n<p><span style=\"font-weight: 400;\">Manufacturing is one such industry benefiting from AI integration.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Siemens, for example, is helping manufacturers </span><a href=\"https://www.nvidia.com/en-us/case-studies/siemens-accelerates-product-development-and-innovation-with-industrial-ai/\" target=\"_blank\"><span style=\"font-weight: 400;\">realize productivity gains</span></a><span style=\"font-weight: 400;\"> and optimize workflows by integrating AI into its tools and applications.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">PepsiCo is an early adopter, working with Siemens and NVIDIA to convert selected U.S. manufacturing and warehouse facilities into high\u2011fidelity 3D digital twins that simulate end\u2011to\u2011end plant operations and supply chains. Using Siemens\u2019 </span><a href=\"https://news.siemens.com/en-us/digital-twin-composer-ces-2026/\" target=\"_blank\"><span style=\"font-weight: 400;\">Digital Twin Composer</span></a><span style=\"font-weight: 400;\">, PepsiCo can recreate every machine, conveyor, pallet route and operator path with physics\u2011level accuracy, enabling AI agents to simulate and refine system changes and identify up to 90% of potential issues before any physical modifications occur.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">This has already delivered a 20% increase in throughput on initial deployments, driven faster design cycles with nearly 100% design validation and produced 10-15% reductions in capital expenditure.</span></p>\n<h2 id=\"revenue-cost\"><strong>AI Is Boosting Revenue and Reducing Costs</strong></h2>\n<p><span style=\"font-weight: 400;\">A major concern surrounding AI adoption is whether investment in the technology actually results in revenue gains, decreased costs, increased productivity and enterprise efficiency.</span></p>\n<p><span style=\"font-weight: 400;\">According to survey respondents, the answer is a definitive yes.</span></p>\n<p><span style=\"font-weight: 400;\">Overall, 88% of respondents said AI has had an impact on increasing annual revenue, in some or all parts of the business. Nearly a third (30%) said the increase has been significant (greater than 10%), with 33% reporting a 5-10% increase and 25% saying the increase has been less than 5%. A little over 40% of executives (C-suite or vice president level) said they saw an annual revenue increase of more than 10%.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90623 size-large\" height=\"627\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-impact-on-increasing-annual-revenue-by-vertical-1680x627.png\" width=\"1680\" /></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90602 size-large\" height=\"475\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-impact-on-increasing-annual-revenue-by-role-1680x475.png\" width=\"1680\" /></p>\n<p><span style=\"font-weight: 400;\">The story\u2019s the same for AI\u2019s role in reducing annual costs. Overall, 87% said AI helped reduce annual costs, with 25% saying the decrease was greater than 10%. Among the industry verticals, retail and CPG shone through with 37% saying costs had been reduced by more than 10%.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90599 size-large\" height=\"627\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-impact-on-reducing-annual-cost-by-vertical-1680x627.png\" width=\"1680\" /></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90617 size-large\" height=\"475\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-impact-on-reducing-annual-cost-by-role-1680x475.png\" width=\"1680\" /></p>\n<p><span style=\"font-weight: 400;\">Fortune 100 retailer </span><a href=\"https://www.nvidia.com/en-us/case-studies/lowes/\" target=\"_blank\"><span style=\"font-weight: 400;\">Lowe\u2019s</span></a><span style=\"font-weight: 400;\"> has built AI-powered, physically accurate digital twins of 1,750+ stores to speed operations. The company also used AI to streamline asset discovery and enable 3D model generation \u2014 transforming 2D product images into precise, high-quality 3D models within minutes \u2014 at a cost of less than $1 per model.</span></p>\n<p><span style=\"font-weight: 400;\">Read more in this year\u2019s </span><a href=\"https://www.nvidia.com/en-us/lp/industries/state-of-ai-in-retail-and-cpg/\" target=\"_blank\"><span style=\"font-weight: 400;\">State of AI in Retail and CPG</span></a><span style=\"font-weight: 400;\"> report.</span></p>\n<h2 id=\"agentic-ai\"><strong>The Dawn for Agentic AI in the Enterprise\u00a0</strong></h2>\n<p><span style=\"font-weight: 400;\">In 2025, companies began to experiment with AI agents \u2014 advanced AI systems designed to autonomously reason, plan and execute complex tasks based on high-level goals. The survey data, which was collected from August through December, captures the experimentation phase well, with 44% of companies either deploying or assessing agents last year. Enterprises have seen those experimentations become full-fledged deployments in early 2026, touching everything from code development to legal and financial tasks, administrative support and more.</span></p>\n<p><span style=\"font-weight: 400;\">Telecommunications had the highest rate of adoption of agentic AI at 48%, followed by retail and CPG at 47%.</span></p>\n<p><span style=\"font-weight: 400;\">AI agents are coming into action in every industry, in enterprises large and small. For example, </span><a href=\"https://www.nvidia.com/en-us/case-studies/clinomic/\" target=\"_blank\"><span style=\"font-weight: 400;\">Mona by Clinomic</span></a><span style=\"font-weight: 400;\">, a medical onsite assistant that helps doctors and nurses manage patients in intensive-care units, consolidates, analyzes and visualizes patient data in real time. Mona has produced a 68% reduction in documentation errors, enhancing the accuracy of patient records and improving overall care quality while helping clinical-care professionals realize a 33% reduction in perceived workload.</span></p>\n<p><span style=\"font-weight: 400;\">Read more in this year\u2019s </span><a href=\"https://www.nvidia.com/en-us/lp/industries/healthcare-life-sciences/ai-survey-report/\" target=\"_blank\"><span style=\"font-weight: 400;\">State of AI in Healthcare and Life Sciences</span></a><span style=\"font-weight: 400;\"> report.</span></p>\n<p><span style=\"font-weight: 400;\">Generative AI is proving to be a powerful, flexible tool in the hands of motivated enterprises, with data and predictive analytics as the top AI workload.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Overall, 62% of respondents cited data analytics among their top AI workloads. Generative AI was a close second at 61%, and even surpassed data analytics in industries including healthcare and life sciences and telecommunications. In addition, generative AI was the top workload among North American and EMEA respondents.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90626 size-large\" height=\"551\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/top-three-workloads-by-region-1680x551.png\" width=\"1680\" /></p>\n<h2 id=\"open-source\"><strong>Open Source Drives AI Strategy</strong></h2>\n<p><span style=\"font-weight: 400;\">Companies are seeing significant ROI when deploying and scaling highly specific applications that target a distinct business opportunity.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The key to building highly specific and profitable AI applications is using open source and open weight models and software, which allows organizations to bring the right tools to solve specific problems and fine-tune models with their own data for deployment in generative and agentic applications.</span></p>\n<p><span style=\"font-weight: 400;\">Overall, 85% of respondents said open source is moderately to extremely important to their organization\u2019s AI strategy. That includes nearly half (48%) who said open source is very to extremely important.</span></p>\n<p><span style=\"font-weight: 400;\">Small companies, which are often resource-constrained and prefer to build solutions rather than pay for commercial off-the-shelf products, were especially keen on open source, with 58% saying open source is very to extremely important. More than half of executives (51%) throughout the surveys also cited the high importance of open source.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90632 size-large\" height=\"475\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/open-source-importance-by-company-size-1680x475.png\" width=\"1680\" /></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90611 size-large\" height=\"475\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/open-source-importance-by-role-1680x475.png\" width=\"1680\" /></p>\n<h2 id=\"investment\"><strong>AI Success Leads to Increased Budgets \u2014 and More AI</strong></h2>\n<p><span style=\"font-weight: 400;\">Nearly all the respondents in this year\u2019s surveys said their AI budgets will increase or at least stay the same in 2026.</span></p>\n<p><span style=\"font-weight: 400;\">Overall, 86% of respondents said their AI budget will increase this year. Another 12% said budgets will stay the same. And nearly 40% of respondents said budgets will increase by 10% or more. North American organizations are especially keen on increasing their AI budgets, with 48% stating their budgets would increase by 10% or more, as well as 45% of executive-level respondents.</span></p>\n<p><span style=\"font-weight: 400;\">The surveys revealed that the financial services, retail and CPG, and healthcare and life sciences industries showed the strongest adoption and ROI results.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90605 size-large\" height=\"550\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-budget-change-in-2026-by-region-1680x550.png\" width=\"1680\" /><img alt=\"\" class=\"alignnone wp-image-90596 size-large\" height=\"627\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/ai-budget-change-in-2026-by-vertical-1680x627.png\" width=\"1680\" /></p>\n<p><span style=\"font-weight: 400;\">The spending will go toward optimizing current AI solutions and finding more use cases across the enterprise. Overall, 42% of respondents said optimizing AI workflows and production cycles was the top spending priority in 2026, followed by 31% who said they\u2019d spend on finding additional use cases. Another 31% said spending would go toward building and providing access to AI infrastructure, such as on-premises data centers, or to the cloud.</span></p>\n<p><img alt=\"\" class=\"alignnone wp-image-90635 size-large\" height=\"551\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/03/top-3-ai-spend-priorities-by-role-1680x551.png\" width=\"1680\" /></p>\n<h2 id=\"challenge\"><strong>The Challenge: Finding AI Experts</strong></h2>\n<p><span style=\"font-weight: 400;\">AI has strong momentum in the enterprise, but it\u2019s still fairly early in the adoption cycle. Nearly a third of respondents in the surveys are still in the pilot and assessment stage. Challenges persist in workflows and operations, as well as getting the right expertise to scale impactful solutions.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Organizations are also still grappling with their data. Building specialized AI applications requires enterprises to have a handle on their data to fine-tune models for their needs. Having sufficient data and other data-related issues were cited as the top challenge in the surveys, according to 48% of respondents.</span></p>\n<p><span style=\"font-weight: 400;\">Lack of AI experts and data scientists to implement that data and scale AI projects from pilot to production was the next most prominent challenge, according to 38% of respondents.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The benefits of AI can also be difficult to quantify. For example, improved productivity can be a subjective measurement for the everyday office worker. As such, 30% of respondents cited lack of clarity on AI\u2019s ROI as one of their top challenges.\u00a0</span></p>\n<h2><strong>Methodology</strong></h2>\n<p><span style=\"font-weight: 400;\">Respondents of NVIDIA\u2019s \u201cState of AI\u201d surveys comprise people who\u2019ve opted in to receive communications from NVIDIA and have invested in or are curious about AI for their business.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Fielded from August to December 2025, the \u201cState of AI\u201d surveys garnered data from over 3,200\u00a0 respondents across financial services, retail, healthcare, telecommunications and manufacturing. Respondents included a variety of roles, such as C-suite and vice presidents (27%), directors and managers (33%) and AI practitioners (40%).\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Respondents represented organizations of varying scale, with 39% from large enterprises employing more than 1,000 people, 27% from mid-sized companies with 100-1,000 employees and 34% from smaller organizations with fewer than 100 employees.</span></p>\n<p><span style=\"font-weight: 400;\">Geographic distribution spanned four major regions: APAC (32%), North America (26%), EMEA (21%) and the rest of the world (20%).</span></p>\n<p><span style=\"font-weight: 400;\">The online surveys were sourced from NVIDIA\u2019s distribution lists and through social media globally, and in China and Japan through a third-party agency.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Dan Rowinski",
-      "published_at": "2026-03-09T15:00:23Z",
-      "fetched_at": "2026-03-11T10:29:14.673794Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -12675,25 +12611,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-03-03T23:53:51Z",
       "fetched_at": "2026-03-11T10:29:08.920692Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c9a0e94bcd2c06b2",
-      "url": "https://www.youtube.com/watch?v=BMDFPOyezH4",
-      "title": "A2A vs MCP: AI Agent Communication Explained",
-      "summary": "Ready to become a certified watsonx AI Assistant Engineer v1 - Professional? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpXdV\n\nLearn more about A2A protocol (Agent2Agent) here \u2192 https://ibm.biz/BdpBwz\n\nLearn more about Model Context Protocol (MCP) here \u2192 https://ibm.biz/BdpBwf\n\nAre your AI agents struggling to collaborate? \ud83e\udd14 Martin Keen and Anna Gutowska reveal how advanced frameworks enable seamless agent communication and integration with tools. Discover how A2A connects agents and MCP links them to resources for smarter, streamlined workflows. \ud83d\ude80\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/BdpBwP\n\n#a2a #aiagents #aiworkflows",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-03-02T12:00:31Z",
-      "fetched_at": "2026-03-11T20:28:31.610189Z",
       "score": null,
       "score_reason": "",
       "tier": "",
