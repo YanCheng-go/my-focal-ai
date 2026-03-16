@@ -177,8 +177,8 @@
                 render();
             }
 
-            // Upgrade to personal feed if Supabase is configured
-            if (config.supabase_url && config.supabase_anon_key) {
+            // Upgrade to personal feed if user appears logged in
+            if (willUpgrade) {
                 await upgradeToPersonalFeed(config, data);
             }
         } catch (e) {
@@ -209,6 +209,9 @@
             // Refresh session to ensure JWT is valid (getSession may return
             // an expired token from localStorage after page navigation)
             var refreshResult = await supabaseSb.auth.refreshSession();
+            if (refreshResult.error) {
+                console.warn('Session refresh failed:', refreshResult.error.message);
+            }
             if (refreshResult.data.session) {
                 session = refreshResult.data.session;
             }
