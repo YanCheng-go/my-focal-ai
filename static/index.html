@@ -130,6 +130,18 @@
         }
     }
 
+    // Quick sync check: is there a Supabase session in localStorage?
+    // Avoids flashing the public feed for logged-in users.
+    function hasLocalSession() {
+        try {
+            for (var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                if (key && key.startsWith('sb-') && key.endsWith('-auth-token')) return true;
+            }
+        } catch(e) {}
+        return false;
+    }
+
     async function init() {
         try {
             const [dataResp, config] = await Promise.all([fetch('data.json'), getConfig()]);
@@ -145,28 +157,50 @@
                 });
             }
 
-            // Render public feed immediately — no waiting for auth
+            // If user appears logged in, skip public feed and go straight to personal feed
+            var willUpgrade = config.supabase_url && config.supabase_anon_key && hasLocalSession();
+
+            if (willUpgrade) {
+                // Show loading state while personal feed loads
+                document.getElementById('status').textContent = 'Loading your feed...';
+            }
+
+            // Always parse public feed as fallback data
             allItems = data.items || [];
             allTags = data.all_tags || [];
-            document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
-            computeBadges(allItems, config, 'dashboard');
-            buildFilters();
-            render();
 
-            // Upgrade to personal feed in the background if logged in
+            if (!willUpgrade) {
+                // Not logged in — render public feed immediately
+                document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
+                computeBadges(allItems, config, 'dashboard');
+                buildFilters();
+                render();
+            }
+
+            // Upgrade to personal feed if Supabase is configured
             if (config.supabase_url && config.supabase_anon_key) {
-                upgradeToPersonalFeed(config);
+                await upgradeToPersonalFeed(config, data);
             }
         } catch (e) {
             document.getElementById('items').innerHTML = '<div class="text-center py-16 text-gray-400 dark:text-gray-500"><p>No data yet. Waiting for first fetch cycle.</p></div>';
         }
     }
 
-    async function upgradeToPersonalFeed(config) {
+    async function upgradeToPersonalFeed(config, data) {
+        // Render public feed as fallback (for logged-in path where we skipped initial render)
+        function renderPublicFallback() {
+            allItems = data.items || [];
+            allTags = data.all_tags || [];
+            document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2 hours';
+            computeBadges(allItems, config, 'dashboard');
+            buildFilters();
+            render();
+        }
+
         try {
             // Reuse the shared auth promise from auth-nav.js (single getSession() call)
             var session = window._authReady ? await window._authReady : null;
-            if (!session) return;
+            if (!session) { renderPublicFallback(); return; }
 
             // Prepare Supabase client but don't flip isSupabaseMode yet —
             // filters check this flag, so set it only after data is ready
@@ -205,8 +239,7 @@
             // If query returned empty but public feed had items, keep public feed
             if (allItems.length === 0 && prevItems.length > 0 && !filters.source_type && !filters.tag) {
                 isSupabaseMode = false;
-                allItems = prevItems;
-                render();
+                renderPublicFallback();
                 // Still show fetch button so user can populate their feed
                 document.getElementById('fetch-now-btn').classList.remove('hidden');
                 return;
@@ -232,7 +265,8 @@
         } catch (e) {
             // Roll back to public mode if upgrade failed mid-way
             isSupabaseMode = false;
-            console.warn('Supabase feed load failed, keeping public data:', e);
+            renderPublicFallback();
+            console.warn('Supabase feed load failed, showing public feed:', e);
         }
     }
 
