@@ -49,20 +49,20 @@ def test_build_source_map_youtube():
 
 
 def test_build_source_map_xiaohongshu_via_rsshub():
-    """XHS sources are now RSSHub routes with source_type=xiaohongshu."""
+    """XHS sources are RSSHub routes with source_type=rss."""
     config = _make_config(
         rsshub=[
             {
                 "route": "/xiaohongshu/user/abc123/notes",
                 "name": "XHS User",
-                "source_type": "xiaohongshu",
+                "source_type": "rss",
                 "tags": ["china"],
             }
         ]
     )
     result = _build_source_map(config)
     assert "XHS User" in result
-    assert result["XHS User"]["source_type"] == "xiaohongshu"
+    assert result["XHS User"]["source_type"] == "rss"
     assert result["XHS User"]["tags"] == ["china"]
 
 

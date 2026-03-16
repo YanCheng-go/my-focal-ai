@@ -162,7 +162,7 @@ sources:
     tags: [ai, research, cohere, company]
   - route: "/xiaohongshu/user/62fb991800000000120027ee/notes"
     name: "第四种黑猩猩"
-    source_type: "xiaohongshu"
+    source_type: "rss"
     tags: [ai]
   github_trending:
   - name: trendshift.io
