@@ -147,10 +147,6 @@ sources:
   - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml"
     name: "Ollama Blog"
     tags: [ai, ollama, open-source, model]
-  xiaohongshu:
-  - user_id: "62fb991800000000120027ee"
-    name: "第四种黑猩猩"
-    tags: [ai]
 
   # === RSSHub-scraped sites (no native RSS) ===
   rsshub:
@@ -164,6 +160,10 @@ sources:
     name: "Cohere Blog"
     source_type: "rss"
     tags: [ai, research, cohere, company]
+  - route: "/xiaohongshu/user/62fb991800000000120027ee/notes"
+    name: "第四种黑猩猩"
+    source_type: "xiaohongshu"
+    tags: [ai]
   github_trending:
   - name: trendshift.io
     tags: [github, trending, open-source]

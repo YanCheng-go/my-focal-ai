@@ -178,11 +178,9 @@ def resolve_olshansk(parsed: urlparse) -> dict | None:
     for key in _url_lookup_keys(parsed):
         entry = OLSHANSK_FEED_MAP.get(key)
         if entry:
-            name = entry["name"] if isinstance(entry, dict) else key.split("/")[-1].title()
-            url = entry["url"] if isinstance(entry, dict) else entry
             return {
                 "source_type": "rss",
-                "fields": {"url": url, "name": name},
+                "fields": {"url": entry["url"], "name": entry["name"]},
                 "suggested_tags": [],
             }
     return None
