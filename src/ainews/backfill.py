@@ -28,14 +28,14 @@ def _build_source_map(sources_config: dict) -> dict[str, dict]:
     for user in sources_config.get("sources", {}).get("twitter", []):
         source_map[f"@{user['handle']}"] = {
             "tags": user.get("tags", []),
-            "source_type": "twitter",
+            "source_type": user.get("display_type", "twitter"),
         }
 
     # Events
     for src in sources_config.get("sources", {}).get("events", []):
         source_map[src["name"]] = {
             "tags": src.get("tags", []),
-            "source_type": "events",
+            "source_type": src.get("display_type", "events"),
         }
 
     return source_map

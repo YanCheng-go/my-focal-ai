@@ -77,7 +77,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             {
                 "url": f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}",
                 "source_name": ch.get("name", cid),
-                "source_type": "youtube",
+                "source_type": ch.get("display_type", "youtube"),
                 "tags": ch.get("tags", []),
             }
         )
@@ -88,7 +88,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             {
                 "url": feed["url"],
                 "source_name": feed.get("name", feed["url"]),
-                "source_type": "arxiv",
+                "source_type": feed.get("display_type", "arxiv"),
                 "tags": feed.get("tags", []),
             }
         )
@@ -99,7 +99,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             {
                 "url": feed["url"],
                 "source_name": feed.get("name", feed["url"]),
-                "source_type": "rss",
+                "source_type": feed.get("display_type", "rss"),
                 "tags": feed.get("tags", []),
             }
         )
@@ -122,7 +122,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             {
                 "url": f"{rsshub_base}/luma/{handle}",
                 "source_name": f"Luma: {handle}",
-                "source_type": "luma",
+                "source_type": event.get("display_type", "luma"),
                 "tags": event.get("tags", []),
             }
         )
@@ -134,7 +134,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             {
                 "url": f"https://export.arxiv.org/api/query?search_query={query}&sortBy=submittedDate&sortOrder=descending&max_results=20",
                 "source_name": aq.get("name", f"arXiv: {query}"),
-                "source_type": "arxiv",
+                "source_type": aq.get("display_type", "arxiv"),
                 "tags": aq.get("tags", []),
             }
         )
