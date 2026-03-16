@@ -9,18 +9,17 @@ from ruamel.yaml import YAML
 
 # Source type -> required fields mapping
 SOURCE_FIELDS = {
-    "twitter": {"required": ["handle"], "optional": ["tags"]},
-    "youtube": {"required": ["channel_id", "name"], "optional": ["tags"]},
-    "arxiv": {"required": ["url", "name"], "optional": ["tags"]},
-    "rss": {"required": ["url", "name"], "optional": ["tags"]},
-    "rsshub": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
-    "xiaohongshu": {"required": ["user_id", "name"], "optional": ["tags"]},
-    "luma": {"required": ["handle"], "optional": ["tags"]},
-    "events": {"required": ["scraper", "name"], "optional": ["tags"]},
-    "github_trending": {"required": ["name", "tags"], "optional": []},
-    "leaderboard": {"required": ["url", "name"], "optional": ["tags"]},
-    "event_links": {"required": ["url", "name"], "optional": ["tags"]},
-    "arxiv_queries": {"required": ["query", "name"], "optional": ["tags"]},
+    "twitter": {"required": ["handle"], "optional": ["display_type", "tags"]},
+    "youtube": {"required": ["channel_id", "name"], "optional": ["display_type", "tags"]},
+    "arxiv": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
+    "rss": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
+    "rsshub": {"required": ["route", "name"], "optional": ["display_type", "tags"]},
+    "luma": {"required": ["handle"], "optional": ["display_type", "tags"]},
+    "events": {"required": ["scraper", "name"], "optional": ["display_type", "tags"]},
+    "github_trending": {"required": ["name", "tags"], "optional": ["display_type"]},
+    "leaderboard": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
+    "event_links": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
+    "arxiv_queries": {"required": ["query", "name"], "optional": ["display_type", "tags"]},
 }
 
 _VALID_SCRAPERS = {"anthropic", "google"}
@@ -88,11 +87,6 @@ def validate_source(source_type: str, source_data: dict):
 
     if source_type in ("rss", "arxiv", "leaderboard", "event_links"):
         _validate_url(source_data.get("url", ""), "url")
-
-    if source_type == "xiaohongshu":
-        uid = source_data.get("user_id", "")
-        if not re.match(r"^[a-fA-F0-9]+$", uid):
-            raise ValueError(f"Invalid Xiaohongshu user_id: {uid!r}. Must be a hex string.")
 
     if source_type == "events":
         scraper = source_data.get("scraper", "")

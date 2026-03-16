@@ -19,7 +19,6 @@ window.FIELD_PLACEHOLDERS = {
     name: { _default: 'Display name for this source' },
     url: { rss: 'https://example.com/feed.xml', arxiv: 'https://export.arxiv.org/api/query?...', leaderboard: 'https://...', event_links: 'https://...' },
     route: { rsshub: 'twitter/user/karpathy (see docs.rsshub.app)' },
-    user_id: { xiaohongshu: 'Hex ID from profile URL' },
     query: { arxiv_queries: 'ti:LLM+AND+cat:cs.AI' },
     scraper: { events: 'anthropic or google' },
 };
@@ -30,7 +29,6 @@ window.TYPE_HINTS = {
     rss: 'Tip: paste any blog URL above \u2014 RSS feed will be auto-discovered.',
     arxiv: 'Tip: paste an arXiv paper or category URL above to auto-fill.',
     rsshub: 'Tip: paste an rsshub.app URL above, or enter a route from docs.rsshub.app.',
-    xiaohongshu: 'Tip: paste a Xiaohongshu profile URL above to auto-fill.',
     luma: 'Tip: paste a lu.ma URL above to auto-fill.',
     events: 'Scraper must be one of: anthropic, google.',
     github_trending: 'Fetches daily trending repos from trendshift.io.',
@@ -54,12 +52,6 @@ window.validateSourceFields = function(sourceType, config, name) {
         var url = config.url || '';
         if (!/^https?:\/\/.+/.test(url)) {
             return 'Invalid URL: must start with http:// or https://';
-        }
-    }
-    if (sourceType === 'xiaohongshu') {
-        var uid = config.user_id || '';
-        if (!/^[a-fA-F0-9]+$/.test(uid)) {
-            return 'Invalid Xiaohongshu user_id: must be a hex string from the profile URL.';
         }
     }
     if (sourceType === 'events') {

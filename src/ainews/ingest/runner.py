@@ -11,7 +11,6 @@ logger = logging.getLogger(__name__)
 async def fetch_single_source(backend, sources_config: dict, source_name: str) -> dict:
     """Fetch a single source by name. Returns {"items_fetched": N, "new_items": N}."""
     from ainews.ingest.twitter import fetch_twitter_user, get_twitter_cookies_from_browser
-    from ainews.ingest.xiaohongshu import fetch_xhs_user, get_xhs_cookies_from_browser
 
     # Check Twitter handles
     twitter_users = sources_config.get("sources", {}).get("twitter", [])
@@ -23,19 +22,6 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
                 raise RuntimeError("No Twitter cookies found in Chrome")
             items = await fetch_twitter_user(handle, cookies, tags=user.get("tags", []))
             new_count = backend.ingest_items(f"twitter:@{handle}", items)
-            return {"items_fetched": len(items), "new_items": new_count}
-
-    # Check Xiaohongshu users
-    xhs_users = sources_config.get("sources", {}).get("xiaohongshu", [])
-    for user in xhs_users:
-        user_id = user["user_id"]
-        name = user.get("name", user_id)
-        if source_name.lower() in (name.lower(), user_id.lower()):
-            cookies = get_xhs_cookies_from_browser()
-            if not cookies:
-                raise RuntimeError("No XHS cookies found in Chrome")
-            items = await fetch_xhs_user(user_id, cookies, name=name, tags=user.get("tags", []))
-            new_count = backend.ingest_items(f"xiaohongshu:{user_id}", items)
             return {"items_fetched": len(items), "new_items": new_count}
 
     # Check event sources
@@ -99,7 +85,6 @@ async def run_ingestion(backend, config_dir=None, sources_config=None):
     from ainews.ingest.events import run_events_ingestion
     from ainews.ingest.github_trending import run_github_trending_ingestion
     from ainews.ingest.twitter import run_twitter_ingestion
-    from ainews.ingest.xiaohongshu import run_xhs_ingestion
 
     sources_config = sources_config or load_sources(config_dir)
 
@@ -124,13 +109,6 @@ async def run_ingestion(backend, config_dir=None, sources_config=None):
         total_new += twitter_count
     except Exception:
         logger.exception("Twitter ingestion failed")
-
-    # Xiaohongshu (direct scraping via Chrome cookies)
-    try:
-        xhs_count = await run_xhs_ingestion(backend, sources_config)
-        total_new += xhs_count
-    except Exception:
-        logger.exception("Xiaohongshu ingestion failed")
 
     # Events (web scraping — Anthropic, Google, etc.)
     try:
@@ -159,6 +137,6 @@ async def run_ingestion(backend, config_dir=None, sources_config=None):
 
     logger.info(
         f"Ingestion complete: {total_new} new items from "
-        f"{len(feeds)} feeds + twitter + xhs + events + github_trending"
+        f"{len(feeds)} feeds + twitter + events + github_trending"
     )
     return total_new

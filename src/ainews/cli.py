@@ -103,14 +103,11 @@ def main():
         sources_config = load_sources(settings.config_dir)
         feeds = build_feed_urls(sources_config)
         twitter_users = sources_config.get("sources", {}).get("twitter", [])
-        xhs_users = sources_config.get("sources", {}).get("xiaohongshu", [])
         print("Configured sources:")
         for f in feeds:
             print(f"  [{f['source_type']}] {f['source_name']}")
         for u in twitter_users:
             print(f"  [twitter] @{u['handle']}")
-        for u in xhs_users:
-            print(f"  [xiaohongshu] {u.get('name', u['user_id'])}")
     elif args.command == "twitter-setup":
         from ainews.ingest.twitter import setup_twitter_from_cookies
 
