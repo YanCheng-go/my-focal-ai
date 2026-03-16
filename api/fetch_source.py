@@ -196,6 +196,8 @@ def _fetch_and_ingest(base_url, service_key, user_id, source_type, name, config,
         return 0, 0
 
     url = feed_meta["url"]
+    if not url.startswith(("http://", "https://")):
+        raise ValueError("Only HTTP(S) URLs are allowed")
     if not _is_safe_url(url):
         raise ValueError("Blocked URL: not allowed to fetch internal/private addresses")
     headers = {"User-Agent": "Mozilla/5.0 (compatible; ainews/0.1)"}

@@ -144,11 +144,13 @@ async def _resolve_youtube_video(url: str) -> ResolvedSource:
         author_name = data.get("author_name", "")
         author_url = data.get("author_url", "")
 
-        # Fetch the channel page to get channel_id
-        if author_url:
-            channel_id, _ = await _fetch_youtube_page_info(author_url, client=client)
-        else:
+        # Validate author_url points to YouTube before following it
+        if not author_url:
             raise ValueError("Could not determine channel from video")
+        author_host = urlparse(author_url).hostname or ""
+        if author_host not in YOUTUBE_HOSTS:
+            raise ValueError("Unexpected author URL from oEmbed")
+        channel_id, _ = await _fetch_youtube_page_info(author_url, client=client)
 
     return ResolvedSource(
         source_type="youtube",
@@ -160,6 +162,8 @@ async def _fetch_youtube_page_info(
     page_url: str, *, client: httpx.AsyncClient | None = None
 ) -> tuple[str, str]:
     """Fetch a YouTube page and extract channel_id and name."""
+    if not _is_safe_url(page_url):
+        raise ValueError("Blocked URL: not allowed to fetch internal/private addresses")
     headers = {"User-Agent": BROWSER_UA, "Cookie": "CONSENT=YES+1"}
 
     async def _fetch(c: httpx.AsyncClient) -> tuple[str, str]:
