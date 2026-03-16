@@ -13,7 +13,7 @@ SOURCE_FIELDS = {
     "youtube": {"required": ["channel_id", "name"], "optional": ["tags"]},
     "arxiv": {"required": ["url", "name"], "optional": ["tags"]},
     "rss": {"required": ["url", "name"], "optional": ["tags"]},
-    "rsshub": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
+    "rsshub": {"required": ["route", "name"], "optional": ["display_type", "tags"]},
     "luma": {"required": ["handle"], "optional": ["tags"]},
     "events": {"required": ["scraper", "name"], "optional": ["tags"]},
     "github_trending": {"required": ["name", "tags"], "optional": []},

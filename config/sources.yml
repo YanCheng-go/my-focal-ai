@@ -152,18 +152,18 @@ sources:
   rsshub:
   - route: "/anthropic/news"
     name: "Anthropic News"
-    source_type: "rss"
     tags: [ai, anthropic, company]
     # Note: /anthropic/research route does not exist in RSSHub.
     # Anthropic research posts are included in /anthropic/news.
   - route: "/cohere/blog"
     name: "Cohere Blog"
-    source_type: "rss"
     tags: [ai, research, cohere, company]
-  - route: "/xiaohongshu/user/62fb991800000000120027ee/notes"
-    name: "第四种黑猩猩"
-    source_type: "rss"
-    tags: [ai]
+  - route: /xiaohongshu/user/62fb991800000000120027ee/notes
+    name: 第四种黑猩猩
+    display_type: xiaohongshu
+    tags:
+    - ai
+    - xiaohongshu
   github_trending:
   - name: trendshift.io
     tags: [github, trending, open-source]

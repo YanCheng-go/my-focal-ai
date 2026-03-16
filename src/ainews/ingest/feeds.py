@@ -110,7 +110,7 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
             {
                 "url": f"{rsshub_base}{item['route']}",
                 "source_name": item.get("name", item["route"]),
-                "source_type": item.get("source_type", "rss"),
+                "source_type": item.get("display_type", "rss"),
                 "tags": item.get("tags", []),
             }
         )

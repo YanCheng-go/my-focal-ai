@@ -84,7 +84,7 @@ SOURCE_TYPE_SCHEMA = {
     },
     "rsshub": {
         "label": "RSSHub",
-        "fields": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
+        "fields": {"required": ["route", "name"], "optional": ["display_type", "tags"]},
         "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
     },
     "luma": {

@@ -170,7 +170,7 @@
           "name"
         ],
         "optional": [
-          "source_type",
+          "display_type",
           "tags"
         ]
       },

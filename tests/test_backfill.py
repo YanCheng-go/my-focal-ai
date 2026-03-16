@@ -49,21 +49,30 @@ def test_build_source_map_youtube():
 
 
 def test_build_source_map_xiaohongshu_via_rsshub():
-    """XHS sources are RSSHub routes with source_type=rss."""
+    """XHS sources are RSSHub routes; display_type overrides the default 'rss'."""
     config = _make_config(
         rsshub=[
             {
                 "route": "/xiaohongshu/user/abc123/notes",
                 "name": "XHS User",
-                "source_type": "rss",
+                "display_type": "xiaohongshu",
                 "tags": ["china"],
             }
         ]
     )
     result = _build_source_map(config)
     assert "XHS User" in result
-    assert result["XHS User"]["source_type"] == "rss"
+    assert result["XHS User"]["source_type"] == "xiaohongshu"
     assert result["XHS User"]["tags"] == ["china"]
+
+
+def test_build_source_map_rsshub_default_type():
+    """RSSHub entries without display_type default to 'rss'."""
+    config = _make_config(
+        rsshub=[{"route": "/anthropic/news", "name": "Anthropic News", "tags": ["ai"]}]
+    )
+    result = _build_source_map(config)
+    assert result["Anthropic News"]["source_type"] == "rss"
 
 
 def test_build_source_map_luma():

@@ -108,7 +108,6 @@ def resolve_xiaohongshu(parsed: urlparse) -> dict:
             "fields": {
                 "route": f"/xiaohongshu/user/{user_id}/notes",
                 "name": f"XHS:{user_id[:8]}",
-                "source_type": "rss",
             },
             "suggested_tags": [],
         }
