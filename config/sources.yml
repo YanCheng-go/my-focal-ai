@@ -8,17 +8,27 @@ sources:
   # === Twitter/X ===
   # Uses Chrome cookies directly (not RSSHub). Just stay logged into x.com in Chrome.
   twitter:
-  - handle: "trq212"
-    tags: [ai]
+  - handle: trq212
+    tags:
+    - ai
+    - engineering
+    - claude code
   - handle: "karpathy"
     tags: [ai, research, deep-learning]
-  - handle: "bcherny"
-    tags: [ai, engineering]
+  - handle: bcherny
+    tags:
+    - ai
+    - engineering
+    - claude code
   - handle: simonw
     tags:
     - ai
     - tooling
     - open-source
+  - handle: dani_avila7
+    tags:
+    - ai
+    - engineering
 
   # === YouTube ===
   # Native RSS — no RSSHub needed.
@@ -126,30 +136,56 @@ sources:
   - url: "https://lilianweng.github.io/index.xml"
     name: "Lilian Weng"
     tags: [ai, research, deep-learning]
-
-  # === Xiaohongshu ===
-  # Uses Chrome cookies directly (not RSSHub). Just stay logged into xiaohongshu.com in Chrome.
-  xiaohongshu:
-  - user_id: "62fb991800000000120027ee"
-    name: "第四种黑猩猩"
-    tags: [ai]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml"
+    name: "Claude Blog"
+    tags: [ai, claude, anthropic]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml"
+    name: "Anthropic Engineering"
+    tags: [ai, anthropic, engineering]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml"
+    name: "Cursor Blog"
+    tags: [ai, tooling, engineering, cursor]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml"
+    name: "DeepLearning.AI The Batch"
+    tags: [ai, newsletter]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_google_ai.xml"
+    name: "Google AI Blog"
+    tags: [ai, google, company]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xainews.xml"
+    name: "xAI News"
+    tags: [ai, xai, company]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml"
+    name: "Ollama Blog"
+    tags: [ai, ollama, open-source, model]
 
   # === RSSHub-scraped sites (no native RSS) ===
   rsshub:
   - route: "/anthropic/news"
     name: "Anthropic News"
-    source_type: "rss"
     tags: [ai, anthropic, company]
     # Note: /anthropic/research route does not exist in RSSHub.
     # Anthropic research posts are included in /anthropic/news.
   - route: "/cohere/blog"
     name: "Cohere Blog"
-    source_type: "rss"
     tags: [ai, research, cohere, company]
-    # Note: Mistral AI has no RSS feed and no working RSSHub route.
-
-  # === GitHub Trending (trendshift.io) ===
-  # Scraped daily — top trending repos by engagement score.
+  - route: /xiaohongshu/user/62fb991800000000120027ee/notes
+    name: 第四种黑猩猩
+    display_type: xiaohongshu
+    tags:
+    - ai
+    - xiaohongshu
+  - route: /xiaohongshu/user/59757acd50c4b45e6e9a90df/notes
+    name: 张咋啦
+    display_type: xiaohongshu
+    tags:
+    - ai
+    - xiaohongshu
+  - route: /xiaohongshu/user/5b2a6c4111be100f9b9eaca3/notes
+    name: 产品君
+    display_type: xiaohongshu
+    tags:
+    - ai
+    - xiaohongshu
   github_trending:
   - name: trendshift.io
     tags: [github, trending, open-source]

@@ -24,7 +24,14 @@ def export_items(
     items = backend.get_items(limit=500, since=since, min_score=min_score)
 
     # Ensure items from lower-volume source types aren't crowded out by arXiv flood
-    ensure_types = ["rss", "youtube", "github_trending", "github_trending_history"]
+    ensure_types = [
+        "rss",
+        "youtube",
+        "xiaohongshu",
+        "rsshub",
+        "github_trending",
+        "github_trending_history",
+    ]
     existing_ids = {item.id for item in items}
     for stype in ensure_types:
         extra = backend.get_items(limit=50, source_type=stype, since=since)
@@ -63,43 +70,38 @@ SOURCE_TYPE_SCHEMA = {
     "rss": {
         "label": "RSS",
         "aliases": ["rsshub"],
-        "fields": {"required": ["url", "name"], "optional": ["tags"]},
+        "fields": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
         "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
     },
     "youtube": {
         "label": "YouTube",
-        "fields": {"required": ["channel_id", "name"], "optional": ["tags"]},
+        "fields": {"required": ["channel_id", "name"], "optional": ["display_type", "tags"]},
         "color": "bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400",
     },
     "twitter": {
         "label": "Twitter",
-        "fields": {"required": ["handle"], "optional": ["tags"]},
+        "fields": {"required": ["handle"], "optional": ["display_type", "tags"]},
         "color": "bg-sky-100 text-sky-700 dark:bg-sky-900/50 dark:text-sky-400",
     },
     "arxiv": {
         "label": "ArXiv",
         "aliases": ["arxiv_queries"],
-        "fields": {"required": ["url", "name"], "optional": ["tags"]},
+        "fields": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
         "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400",
     },
     "rsshub": {
         "label": "RSSHub",
-        "fields": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
+        "fields": {"required": ["route", "name"], "optional": ["display_type", "tags"]},
         "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
-    },
-    "xiaohongshu": {
-        "label": "Xiaohongshu",
-        "fields": {"required": ["user_id", "name"], "optional": ["tags"]},
-        "color": "bg-pink-100 text-pink-700 dark:bg-pink-900/50 dark:text-pink-400",
     },
     "luma": {
         "label": "Luma",
-        "fields": {"required": ["handle"], "optional": ["tags"]},
+        "fields": {"required": ["handle"], "optional": ["display_type", "tags"]},
         "color": "bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-400",
     },
     "events": {
         "label": "Events",
-        "fields": {"required": ["scraper", "name"], "optional": ["tags"]},
+        "fields": {"required": ["scraper", "name"], "optional": ["display_type", "tags"]},
         "color": "bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-400",
     },
     "arxiv_queries": {

@@ -56,7 +56,7 @@ For sites without native RSS. Requires a self-hosted RSSHub instance (Docker).
 rsshub:
   - route: "/anthropic/news"
     name: "Anthropic News"
-    source_type: "rss"
+    display_type: "rss"
     tags: [ai, anthropic, company]
 ```
 
@@ -66,17 +66,18 @@ The route is appended to `rsshub_base` (default: `http://localhost:1200`).
 
 **Finding routes:** Check [RSSHub docs](https://docs.rsshub.app/) for available routes. Not all routes work — test with `curl http://localhost:1200/<route>` before adding.
 
-### Xiaohongshu
-Routed through RSSHub. Currently blocked — requires cookies and the chromium-bundled RSSHub image.
+### Xiaohongshu (via RSSHub)
+Xiaohongshu sources use RSSHub routes. Add them under the `rsshub` section with `display_type: xiaohongshu`.
 
 ```yaml
-xiaohongshu:
-  - user_id: "62fb991800000000120027ee"
-    name: "Name"
+rsshub:
+  - route: "/xiaohongshu/user/62fb991800000000120027ee/notes"
+    name: "XHS User"
+    display_type: "xiaohongshu"
     tags: [ai]
 ```
 
-To enable, use `image: diygod/rsshub:chromium-bundled` in `docker/docker-compose.yml` and configure `XIAOHONGSHU_COOKIE`.
+**Setup:** Use `image: diygod/rsshub:chromium-bundled` in `docker/docker-compose.yml` (the default). The route format is `/xiaohongshu/user/{user_id}/notes`. Find the user_id from the XHS profile URL: `xiaohongshu.com/user/profile/{user_id}`.
 
 ### Luma Events
 Events from lu.ma, routed through RSSHub.
@@ -157,20 +158,19 @@ event_links:
 | RSS | 15 feeds | arXiv, OpenAI, DeepMind, Meta, Apple, Microsoft, NVIDIA, HuggingFace, Claude Code |
 | YouTube | 5 channels | Karpathy, Nate Herk, TechWorld with Nana, Stanford, AI Engineer |
 | Twitter | 4 handles | @trq212, @karpathy, @bcherny, @simonw |
-| RSSHub | 2 routes | Anthropic News, Cohere Blog |
+| RSSHub | 4 routes | Anthropic News, Cohere Blog, Anthropic Research, XHS |
 | Luma | 2 handles | dtc-events, claudecommunity |
 | ArXiv queries | 3 queries | transformers, LLMs, RL |
 | Events | 2 scrapers | Anthropic Events, Google Developer Events |
 | GitHub Trending | 1 source | trendshift.io (daily + history) |
-| XHS | 1 user | blocked (needs cookies) |
 
 ## Known Limitations
 
 - **Mistral AI** has no RSS feed and no working RSSHub route
-- **XHS** requires cookies and chromium-bundled RSSHub image (captcha issues)
+- **XHS** requires the chromium-bundled RSSHub image (captcha issues may occur)
 - **Tags are source-level** — every item from a source gets the same tags, not per-item content tags
 - **RSS has no "since" support** — full feed is re-downloaded every cycle, but only new items are stored
 
 ---
 
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-16*

@@ -77,7 +77,7 @@ SAMPLE_YT_FEED_XML = """\
 
 
 def _mock_non_rss_ingesters():
-    """Context manager that mocks out Twitter, XHS, events, trending, and metadata sync.
+    """Context manager that mocks out Twitter, events, trending, and metadata sync.
 
     Patches at the source modules so the lazy imports inside run_ingestion()
     pick up the mocked versions.
@@ -87,9 +87,6 @@ def _mock_non_rss_ingesters():
     return ExitStack(), [
         patch(
             "ainews.ingest.twitter.run_twitter_ingestion", new_callable=AsyncMock, return_value=0
-        ),
-        patch(
-            "ainews.ingest.xiaohongshu.run_xhs_ingestion", new_callable=AsyncMock, return_value=0
         ),
         patch("ainews.ingest.events.run_events_ingestion", new_callable=AsyncMock, return_value=0),
         patch(

@@ -19,9 +19,8 @@ config/sources.yml
 APScheduler (every 30 min)
     │
     ▼
-runner.py ─── ingest ──► feeds.py ──► RSS / Atom / RSSHub
+runner.py ─── ingest ──► feeds.py ──► RSS / Atom / RSSHub (incl. XHS)
     │                     twitter.py ──► Twitter GraphQL (Chrome cookies)
-    │                     xiaohongshu.py ──► XHS API (Chrome cookies)
     │                     events.py ──► Anthropic / Google event pages
     │                     github_trending.py ──► trendshift.io
     │
@@ -56,7 +55,7 @@ GitHub Action (cron every 2h)
     │
     ▼
 cloud_fetch.py ── cloud_fetch_and_score()
-    │  runner.py ──► feeds.py (RSS only, no Twitter/XHS)
+    │  runner.py ──► feeds.py (RSS only, no Twitter)
     │
     ▼
 SqliteBackend (ephemeral)
@@ -270,7 +269,6 @@ src/ainews/
 │   ├── twitter.py     Chrome cookies (rookiepy) + Twitter GraphQL API
 │   ├── events.py      Tech company event page scrapers (Anthropic, Google)
 │   ├── github_trending.py  Trendshift.io scraper (daily + history)
-│   ├── xiaohongshu.py Chrome cookies + XHS API
 │   └── runner.py      Orchestrates ingestion, dedup, Shorts marking
 ├── scoring/
 │   ├── scorer.py      Ollama LLM scoring (local)
@@ -282,8 +280,12 @@ src/ainews/
 ├── sources/
 │   ├── manager.py         YAML round-trip read/write for source management (admin)
 │   ├── supabase_manager.py  Read user_sources from Supabase, convert to config
-│   ├── url_constants.py   Shared constants for URL parsing (host sets, regex patterns)
-│   └── url_resolver.py    Async URL resolver: pasted URL → source config fields
+│   ├── url_constants.py       URL parsing constants + pure resolvers (no network I/O)
+│   ├── rsshub_url_map.json   Website URL → RSSHub route (401 entries, auto-synced weekly)
+│   ├── olshansk_feed_map.json Website URL → Olshansk raw XML (16 entries, auto-synced weekly)
+│   └── url_resolver.py    Async URL resolver: pasted URL → source config fields.
+│                            Priority: YouTube → Twitter → arXiv → XHS (→RSSHub) → Luma →
+│                            rsshub.app URL → RSSHUB_URL_MAP → OLSHANSK_FEED_MAP → generic RSS auto-discovery
 └── api/
     ├── app.py         FastAPI: dashboard, JSON API, scheduler
     └── admin.py       Admin UI with auth (local mode)
@@ -312,7 +314,7 @@ static/
 
 api/
 ├── fetch_source.py    Vercel serverless: JWT-authenticated per-source fetch
-└── resolve_url.py     Vercel serverless: URL → source field extraction
+└── resolve_url.py     Vercel serverless: URL → source field extraction (mirrors url_resolver.py logic)
 
 supabase/migrations/
 ├── 20260301000000_initial_schema.sql   Base schema (items, source_state, RPCs)
@@ -344,5 +346,5 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-16*
 

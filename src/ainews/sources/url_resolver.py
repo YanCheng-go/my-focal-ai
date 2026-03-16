@@ -22,7 +22,9 @@ from ainews.sources.url_constants import (
     extract_title,
     resolve_arxiv,
     resolve_luma,
+    resolve_olshansk,
     resolve_rsshub,
+    resolve_rsshub_for_url,
     resolve_twitter,
     resolve_xiaohongshu,
 )
@@ -95,6 +97,15 @@ async def resolve_url(url: str) -> ResolvedSource:
         return _to_resolved(resolve_luma(parsed))
     if host in RSSHUB_HOSTS:
         return _to_resolved(resolve_rsshub(parsed))
+    # Prefer RSSHub route over Olshansk for known overlapping sites
+    rsshub_for_url = resolve_rsshub_for_url(parsed)
+    if rsshub_for_url:
+        return _to_resolved(rsshub_for_url)
+
+    # Check Olshansk feed mirror before generic auto-discovery
+    olshansk = resolve_olshansk(parsed)
+    if olshansk:
+        return _to_resolved(olshansk)
 
     # Fallback: try RSS auto-discovery on any URL
     return await _resolve_generic(url)

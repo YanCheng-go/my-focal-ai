@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+"""Sync olshansk_feed_map.json from the Olshansk/rss-feeds README.
+
+Fetches the README, parses the feed->URL table, and writes the JSON file.
+Run manually or via GitHub Actions cron.
+
+NOTE: Must run AFTER sync_rsshub_routes.py so it can exclude entries already
+covered by RSSHub. Both scripts run sequentially in the same GitHub Actions
+workflow (sync-url-maps.yml).
+"""
+
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+import httpx
+
+_RSSHUB_MAP = Path(__file__).parent.parent / "src/ainews/sources/rsshub_url_map.json"
+_OUTPUT = Path(__file__).parent.parent / "src/ainews/sources/olshansk_feed_map.json"
+
+README_URL = "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/README.md"
+FEEDS_BASE = "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds"
+
+# Matches a markdown table row: | [Name](site_url) | [feed_xxx.xml](raw_url) |
+_ROW_RE = re.compile(
+    r"\|\s*\[([^\]]+)\]\((https?://[^)]+)\)\s*\|\s*\[(feed_[^\]]+\.xml)\]\(https?://[^)]+\)"
+)
+
+
+def fetch_readme() -> str:
+    resp = httpx.get(README_URL, timeout=15, follow_redirects=True)
+    resp.raise_for_status()
+    return resp.text
+
+
+def parse_feed_map(readme: str) -> dict[str, dict[str, str]]:
+    """Return {url_key: {"url": feed_url, "name": site_name}}, excluding RSSHub entries."""
+    rsshub_keys = set(json.loads(_RSSHUB_MAP.read_text()).keys()) if _RSSHUB_MAP.exists() else set()
+    feed_map: dict[str, dict[str, str]] = {}
+    for m in _ROW_RE.finditer(readme):
+        name, site_url, filename = m.group(1).strip(), m.group(2).rstrip("/"), m.group(3)
+        key = re.sub(r"^https?://", "", site_url)
+        if key not in rsshub_keys:
+            feed_map[key] = {"url": f"{FEEDS_BASE}/{filename}", "name": name}
+    return feed_map
+
+
+def main() -> None:
+    readme = fetch_readme()
+    feed_map = parse_feed_map(readme)
+
+    if not feed_map:
+        print("ERROR: parsed 0 feeds — README format may have changed", file=sys.stderr)
+        sys.exit(1)
+
+    new_content = json.dumps(dict(sorted(feed_map.items())), indent=2, ensure_ascii=False) + "\n"
+    old_content = _OUTPUT.read_text() if _OUTPUT.exists() else ""
+
+    if new_content == old_content:
+        print(f"No changes — {len(feed_map)} feeds already up to date.")
+    else:
+        _OUTPUT.write_text(new_content)
+        print(f"Updated olshansk_feed_map.json with {len(feed_map)} feeds.")
+
+
+if __name__ == "__main__":
+    main()

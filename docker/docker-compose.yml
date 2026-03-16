@@ -1,6 +1,6 @@
 services:
   rsshub:
-    # Use chromium image for XHS (Xiaohongshu) support — it includes Puppeteer.
+    # Use chromium image for Xiaohongshu route support — it includes Puppeteer.
     # Switch to diygod/rsshub:latest if you don't need XHS and want a smaller image.
     image: diygod/rsshub:chromium-bundled
     restart: unless-stopped
@@ -17,5 +17,5 @@ services:
       #
       # --- Xiaohongshu ---
       # XHS works with the chromium image, no auth needed.
-      # If it gets blocked, you may need to set XHS cookies:
-      # XIAOHONGSHU_COOKIE: ""
+      # If it gets blocked, set XHS cookies via env var (don't hardcode here):
+      XIAOHONGSHU_COOKIE: "${XIAOHONGSHU_COOKIE:-}"
