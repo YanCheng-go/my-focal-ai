@@ -126,9 +126,42 @@ sources:
   - url: "https://lilianweng.github.io/index.xml"
     name: "Lilian Weng"
     tags: [ai, research, deep-learning]
-
-  # === Xiaohongshu ===
-  # Uses Chrome cookies directly (not RSSHub). Just stay logged into xiaohongshu.com in Chrome.
+  - url: 
+      https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml
+    name: Claude Blog
+    tags: [ai, claude, anthropic]
+  - url: 
+      https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml
+    name: Anthropic Engineering
+    tags: [ai, anthropic, engineering]
+  - url: 
+      https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml
+    name: Cursor Blog
+    tags:
+    - ai
+    - tooling
+    - engineering
+    - cursor
+  - url: 
+      https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml
+    name: DeepLearning.AI The Batch
+    tags: [ai, newsletter]
+  - url: 
+      https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_google_ai.xml
+    name: Google AI Blog
+    tags: [ai, google, company]
+  - url: 
+      https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xainews.xml
+    name: xAI News
+    tags: [ai, xai, company]
+  - url: 
+      https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml
+    name: Ollama Blog
+    tags:
+    - ai
+    - ollama
+    - open source
+    - model
   xiaohongshu:
   - user_id: "62fb991800000000120027ee"
     name: "第四种黑猩猩"
@@ -146,10 +179,6 @@ sources:
     name: "Cohere Blog"
     source_type: "rss"
     tags: [ai, research, cohere, company]
-    # Note: Mistral AI has no RSS feed and no working RSSHub route.
-
-  # === GitHub Trending (trendshift.io) ===
-  # Scraped daily — top trending repos by engagement score.
   github_trending:
   - name: trendshift.io
     tags: [github, trending, open-source]

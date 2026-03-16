@@ -1,0 +1,37 @@
+name: Sync Olshansk Feed Map
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # Every Monday at 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync feed map
+        run: uv run python scripts/sync_olshansk_feeds.py
+
+      - name: Open PR if changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update Olshansk feed map"
+          branch: auto/sync-olshansk-feeds
+          title: "Update Olshansk feed map"
+          body: |
+            Auto-synced `OLSHANSK_FEED_MAP` from [Olshansk/rss-feeds](https://github.com/Olshansk/rss-feeds) README.
+
+            New or removed feeds will be reflected in the URL resolver automatically.
+          labels: "automation,size:small"
+          delete-branch: true

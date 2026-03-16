@@ -29,7 +29,9 @@ from ainews.sources.url_constants import (
     extract_title,
     resolve_arxiv,
     resolve_luma,
+    resolve_olshansk,
     resolve_rsshub,
+    resolve_rsshub_for_url,
     resolve_twitter,
     resolve_xiaohongshu,
 )
@@ -230,6 +232,13 @@ def _resolve(url: str) -> dict:
         return resolve_luma(parsed)
     if host in RSSHUB_HOSTS:
         return resolve_rsshub(parsed)
+    rsshub_for_url = resolve_rsshub_for_url(parsed)
+    if rsshub_for_url:
+        return rsshub_for_url
+
+    olshansk = resolve_olshansk(parsed)
+    if olshansk:
+        return olshansk
 
     return _resolve_generic(url)
 

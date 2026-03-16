@@ -68,7 +68,7 @@ def test_arxiv_pdf_url():
 def test_arxiv_category_url():
     result = _run(resolve_url("https://arxiv.org/list/cs.AI/recent"))
     assert result.source_type == "arxiv"
-    assert "cat:cs.AI" in result.fields["url"]
+    assert "rss.arxiv.org/rss/cs.AI" in result.fields["url"]
     assert result.fields["name"] == "arXiv:cs.AI"
 
 

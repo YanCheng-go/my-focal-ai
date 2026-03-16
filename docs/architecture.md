@@ -282,8 +282,12 @@ src/ainews/
 ├── sources/
 │   ├── manager.py         YAML round-trip read/write for source management (admin)
 │   ├── supabase_manager.py  Read user_sources from Supabase, convert to config
-│   ├── url_constants.py   Shared constants for URL parsing (host sets, regex patterns)
-│   └── url_resolver.py    Async URL resolver: pasted URL → source config fields
+│   ├── url_constants.py   URL parsing constants + resolver lookup tables:
+│   │                        RSSHUB_URL_MAP (website URL → RSSHub route, preferred),
+│   │                        OLSHANSK_FEED_MAP (website URL → Olshansk raw XML, auto-synced weekly)
+│   └── url_resolver.py    Async URL resolver: pasted URL → source config fields.
+│                            Priority: YouTube → Twitter → arXiv → XHS → Luma →
+│                            rsshub.app URL → RSSHUB_URL_MAP → OLSHANSK_FEED_MAP → generic RSS auto-discovery
 └── api/
     ├── app.py         FastAPI: dashboard, JSON API, scheduler
     └── admin.py       Admin UI with auth (local mode)
@@ -312,7 +316,7 @@ static/
 
 api/
 ├── fetch_source.py    Vercel serverless: JWT-authenticated per-source fetch
-└── resolve_url.py     Vercel serverless: URL → source field extraction
+└── resolve_url.py     Vercel serverless: URL → source field extraction (mirrors url_resolver.py logic)
 
 supabase/migrations/
 ├── 20260301000000_initial_schema.sql   Base schema (items, source_state, RPCs)
@@ -344,5 +348,5 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-16*
 
