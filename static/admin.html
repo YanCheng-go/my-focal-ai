@@ -479,7 +479,7 @@
         if (['xiaohongshu.com', 'www.xiaohongshu.com', 'xhslink.com'].includes(host)) {
             var m = path.match(/^user\/profile\/([a-fA-F0-9]+)/);
             if (m) {
-                return { source_type: 'rsshub', fields: { route: '/xiaohongshu/user/' + m[1] + '/notes', name: 'XHS:' + m[1].slice(0, 8) } };
+                return { source_type: 'rsshub', fields: { route: '/xiaohongshu/user/' + m[1] + '/notes', name: 'XHS:' + m[1].slice(0, 8), display_type: 'xiaohongshu' } };
             }
             throw new Error('Could not parse Xiaohongshu URL. Use a profile URL.');
         }
