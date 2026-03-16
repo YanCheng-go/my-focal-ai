@@ -166,93 +166,7 @@ After ingestion, `mark_youtube_shorts_duplicates()` finds Shorts that share a ti
 ### Sequential scoring
 Items are scored one at a time (not in parallel) because Ollama runs a single model instance. Each item takes 15-30s with qwen3:4b. Only 30 unscored items are processed per cycle to avoid blocking.
 
-## Deployment Modes
-
-### 1. Local Mode
-Full pipeline runs on your machine: SQLite + Ollama + APScheduler + FastAPI. Full admin rights.
-
-### 2. Online Public Mode (Vercel + GitHub Actions)
-```
-GitHub Action (cron every 2h)          Vercel (static site)
-┌──────────────────────────┐          ┌──────────────────┐
-│ 1. Restore cached SQLite │          │                  │
-│ 2. ainews cloud-fetch    │  JSON    │  static/index.html│
-│ 3. Score (Claude API,    │ ──────►  │  reads data.json │
-│    optional)             │ (commit) │                  │
-│ 4. ainews export         │          │                  │
-│ 5. git push data.json    │          │                  │
-└──────────────────────────┘          └──────────────────┘
-```
-
-- Pre-defined sources from `sources.yml`, auto-fetched on schedule
-- No persistent database — SQLite is cached as a GitHub Action artifact for dedup
-- No backend on Vercel — purely static HTML + JSON
-- Data retained for ~1 week (rolling window)
-- Scoring is optional (requires `ANTHROPIC_API_KEY` secret)
-- Twitter ingestion skipped in CI (no Chrome cookies)
-
-### 3. Online Login Mode (Supabase + Vercel)
-```
-User (browser)                         Vercel (static + serverless)
-┌──────────────────────────┐          ┌──────────────────────────┐
-│ 1. Sign up / log in      │          │                          │
-│    (Supabase Auth)        │          │  static/admin.html       │
-│ 2. Manage source list     │ ──────► │  (CRUD via PostgREST)    │
-│ 3. Click "Fetch"          │          │                          │
-│                           │          │  POST /api/fetch-source  │
-│                           │          │  (Vercel serverless fn)  │
-│                           │          │  ↓ verify JWT            │
-│                           │          │  ↓ fetch feed            │
-│                           │          │  ↓ upsert to Supabase   │
-│ 4. View personal feed     │ ◄────── │  static/index.html       │
-│                           │          │  (reads via PostgREST)   │
-└──────────────────────────┘          └──────────────────────────┘
-```
-
-- Each user has isolated data via Row Level Security (`user_id` on all tables)
-- Item IDs are user-scoped: `sha256(user_id:url)[:16]` — same feed, independent items per user
-- New users get a pre-defined source list but **empty content** (fetch on demand)
-- `user_sources` table stores per-user source configuration (replaces `sources.yml`)
-- Serverless function (`api/fetch_source.py`) handles authenticated fetches with SSRF protection
-- Optional: GitHub Actions batch job (`cloud_fetch_all_users()`) for scheduled per-user fetches
-
-## Secrets & Environment Variables
-
-Three separate systems need credentials to talk to Supabase. Each system runs on a different server and has its own secret storage.
-
-### GitHub Actions (repository secrets)
-
-Set in: GitHub → repo Settings → Secrets and variables → Actions
-
-| Secret | Source | Used by |
-|--------|--------|---------|
-| `SUPABASE_ACCESS_TOKEN` | Supabase → Account settings → Access Tokens | `migrations.yml` (CLI auth for `db push`) |
-| `SUPABASE_PROJECT_REF` | Project URL `https://<ref>.supabase.co` → the `<ref>` part | `migrations.yml` (which project to push to) |
-| `AINEWS_SUPABASE_URL` | Supabase → Settings → Data API → Project URL | `fetch.yml`, `export-static.yml` (cloud fetch + export) |
-| `AINEWS_SUPABASE_KEY` | Supabase → Settings → API Keys → Publishable key | `fetch.yml`, `export-static.yml` (read access) |
-
-### Vercel (environment variables)
-
-Set in: Vercel → project Settings → Environment Variables (check Production + Preview)
-
-| Env var | Source | Used by |
-|---------|--------|---------|
-| `AINEWS_SUPABASE_URL` | Supabase → Settings → Data API → Project URL | `api/fetch_source.py` (serverless function) |
-| `AINEWS_SUPABASE_KEY` | Supabase → Settings → API Keys → Publishable key | `api/fetch_source.py` (JWT verification) |
-| `AINEWS_SUPABASE_SERVICE_KEY` | Supabase → Settings → API Keys → Secret key | `api/fetch_source.py` (write items, bypasses RLS) |
-
-### Browser (public, via config.json)
-
-Exported automatically by `ainews export` — no manual setup needed.
-
-| Key in config.json | Used by |
-|--------------------|---------|
-| `supabase_url` | `index.html`, `admin.html` (Supabase Auth + PostgREST queries) |
-| `supabase_anon_key` | `index.html`, `admin.html` (same as publishable key) |
-
-### Why secrets are duplicated
-
-GitHub Actions and Vercel are **separate servers** that both need to connect to Supabase. They don't share memory or environment — each needs its own copy of the keys, stored in its own secret manager.
+See [deployment.md](deployment.md) for setup instructions, secrets, and environment variables for each mode.
 
 ## Module Map
 
@@ -337,7 +251,8 @@ templates/
 ├── codeql.yml         CodeQL static analysis (injection, XSS) on PR + weekly
 ├── migrations.yml     Supabase migration push on merge
 ├── branch-naming.yml  Enforce branch naming conventions
-└── release-drafter.yml  Auto-draft release notes from PR labels
+├── release-drafter.yml  Auto-draft release notes from PR labels
+└── sync-url-maps.yml  Weekly sync of RSSHub + Olshansk URL maps
 
 e2e/                   Playwright visual regression tests (6 viewports)
 tests/perf/            k6 performance tests (smoke, load, stress profiles)
