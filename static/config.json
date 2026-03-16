@@ -116,6 +116,7 @@
           "name"
         ],
         "optional": [
+          "display_type",
           "tags"
         ]
       },
@@ -129,6 +130,7 @@
           "name"
         ],
         "optional": [
+          "display_type",
           "tags"
         ]
       },
@@ -141,6 +143,7 @@
           "handle"
         ],
         "optional": [
+          "display_type",
           "tags"
         ]
       },
@@ -157,6 +160,7 @@
           "name"
         ],
         "optional": [
+          "display_type",
           "tags"
         ]
       },
@@ -183,6 +187,7 @@
           "handle"
         ],
         "optional": [
+          "display_type",
           "tags"
         ]
       },
@@ -196,6 +201,7 @@
           "name"
         ],
         "optional": [
+          "display_type",
           "tags"
         ]
       },
@@ -526,11 +532,95 @@
       ]
     },
     {
+      "source_type": "rss",
+      "name": "Claude Blog",
+      "config": {
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml"
+      },
+      "tags": [
+        "ai",
+        "claude",
+        "anthropic"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Anthropic Engineering",
+      "config": {
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml"
+      },
+      "tags": [
+        "ai",
+        "anthropic",
+        "engineering"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Cursor Blog",
+      "config": {
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml"
+      },
+      "tags": [
+        "ai",
+        "tooling",
+        "engineering",
+        "cursor"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "DeepLearning.AI The Batch",
+      "config": {
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml"
+      },
+      "tags": [
+        "ai",
+        "newsletter"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Google AI Blog",
+      "config": {
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_google_ai.xml"
+      },
+      "tags": [
+        "ai",
+        "google",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "xAI News",
+      "config": {
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xainews.xml"
+      },
+      "tags": [
+        "ai",
+        "xai",
+        "company"
+      ]
+    },
+    {
+      "source_type": "rss",
+      "name": "Ollama Blog",
+      "config": {
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml"
+      },
+      "tags": [
+        "ai",
+        "ollama",
+        "open-source",
+        "model"
+      ]
+    },
+    {
       "source_type": "rsshub",
       "name": "Anthropic News",
       "config": {
-        "route": "/anthropic/news",
-        "source_type": "rss"
+        "route": "/anthropic/news"
       },
       "tags": [
         "ai",
@@ -542,14 +632,49 @@
       "source_type": "rsshub",
       "name": "Cohere Blog",
       "config": {
-        "route": "/cohere/blog",
-        "source_type": "rss"
+        "route": "/cohere/blog"
       },
       "tags": [
         "ai",
         "research",
         "cohere",
         "company"
+      ]
+    },
+    {
+      "source_type": "rsshub",
+      "name": "\u7b2c\u56db\u79cd\u9ed1\u7329\u7329",
+      "config": {
+        "route": "/xiaohongshu/user/62fb991800000000120027ee/notes",
+        "display_type": "xiaohongshu"
+      },
+      "tags": [
+        "ai",
+        "xiaohongshu"
+      ]
+    },
+    {
+      "source_type": "rsshub",
+      "name": "\u5f20\u548b\u5566",
+      "config": {
+        "route": "/xiaohongshu/user/59757acd50c4b45e6e9a90df/notes",
+        "display_type": "xiaohongshu"
+      },
+      "tags": [
+        "ai",
+        "xiaohongshu"
+      ]
+    },
+    {
+      "source_type": "rsshub",
+      "name": "\u4ea7\u54c1\u541b",
+      "config": {
+        "route": "/xiaohongshu/user/5b2a6c4111be100f9b9eaca3/notes",
+        "display_type": "xiaohongshu"
+      },
+      "tags": [
+        "ai",
+        "xiaohongshu"
       ]
     },
     {
