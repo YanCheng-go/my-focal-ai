@@ -533,7 +533,17 @@
         editingSource = null;
     }
 
-    document.getElementById('modal-overlay').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
+    // Close modal only when both mousedown and mouseup happen on the overlay itself.
+    // Using 'click' alone misfires when dragging from an input to the overlay.
+    (function() {
+        var overlay = document.getElementById('modal-overlay');
+        var mouseDownOnOverlay = false;
+        overlay.addEventListener('mousedown', function(e) { mouseDownOnOverlay = (e.target === overlay); });
+        overlay.addEventListener('mouseup', function(e) {
+            if (mouseDownOnOverlay && e.target === overlay) closeModal();
+            mouseDownOnOverlay = false;
+        });
+    })();
 
     async function handleSubmit(e) {
         e.preventDefault();
