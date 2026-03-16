@@ -131,7 +131,11 @@ All settings are via environment variables prefixed `AINEWS_`. See `src/ainews/c
 
 ## Adding a New Source
 
-See [sources.md](sources.md) for the full guide on source types, configuration, and adding new sources.
+1. Add the source to `config/sources.yml` under the appropriate type
+2. Run a one-time fetch: `uv run ainews fetch-source "<name>"`
+3. Verify it appears on the dashboard at http://localhost:8000
+
+See [sources.md](sources.md) for detailed source type reference and configuration options.
 
 ---
 
