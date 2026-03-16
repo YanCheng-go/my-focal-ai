@@ -43,6 +43,7 @@
     <a href="/?source_type=youtube" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'youtube' else inactive_cls }}">YouTube{{ badge(new_counts_by_type.get('youtube', 0)) }}</a>
     <a href="/?source_type=rss" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'rss' else inactive_cls }}">RSS{{ badge(new_counts_by_type.get('rss', 0) + new_counts_by_type.get('rsshub', 0)) }}</a>
     <a href="/?source_type=arxiv" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'arxiv' else inactive_cls }}">arXiv{{ badge(new_counts_by_type.get('arxiv', 0) + new_counts_by_type.get('arxiv_queries', 0)) }}</a>
+    <a href="/?source_type=xiaohongshu" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.source_type == 'xiaohongshu' else inactive_cls }}">XHS{{ badge(new_counts_by_type.get('xiaohongshu', 0)) }}</a>
     {# Feature flag: AINEWS_SHOW_SCORES — do not delete these buttons, enable via env var #}
     {% if show_scores %}
     <a href="/?min_score=0.7" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if filters.min_score and filters.min_score >= 0.7 else inactive_cls }}">Top Only</a>
