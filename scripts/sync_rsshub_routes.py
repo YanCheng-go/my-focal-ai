@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sync RSSHUB_URL_MAP in url_constants.py from the RSSHub GitHub repo.
+"""Sync rsshub_url_map.json from the RSSHub GitHub repo.
 
 Strategy:
   1. GitHub API (2 calls, needs token for higher limit): get the git tree of
@@ -7,16 +7,21 @@ Strategy:
   2. raw.githubusercontent.com (parallel, no auth): fetch file contents cheaply.
 
 Each route .ts file (excluding namespace.ts / *utils* / *types*) contains:
-  url: 'www.example.com/path'   → source page URL
-  path: '/route-suffix'         → RSSHub path suffix
+  url: 'www.example.com/path'   -> source page URL
+  path: '/route-suffix'         -> RSSHub path suffix
 
 Full RSSHub route = /<namespace-dir><path>, e.g. /anthropic/news
 
 Set GITHUB_TOKEN env var to raise GitHub API rate limit (5000/hr vs 60/hr).
+
+NOTE: Must run AFTER sync_olshansk_feeds.py so overlapping entries can be
+detected. The GitHub Actions cron schedules enforce this ordering
+(Olshansk at 06:00 UTC, RSSHub at 07:00 UTC).
 """
 
 from __future__ import annotations
 
+import json
 import os
 import re
 import sys
@@ -25,20 +30,19 @@ from pathlib import Path
 
 import httpx
 
-sys.path.insert(0, str(Path(__file__).parent))
-from url_map_utils import render_map, update_file  # noqa: E402
-
-from ainews.sources.url_constants import OLSHANSK_FEED_MAP  # noqa: E402
+_OLSHANSK_PATH = Path(__file__).parent.parent / "src/ainews/sources/olshansk_feed_map.json"
 
 RSSHUB_REPO = "DIYgod/RSSHub"
 ROUTES_PATH = "lib/routes"
 RAW_BASE = f"https://raw.githubusercontent.com/{RSSHUB_REPO}/master"
 GH_API = "https://api.github.com"
 
-_BLOCK_START = "# --- BEGIN RSSHUB_URL_MAP (auto-generated) ---"
-_BLOCK_END = "# --- END RSSHUB_URL_MAP ---"
+_OUTPUT = Path(__file__).parent.parent / "src/ainews/sources/rsshub_url_map.json"
 
 _FIELD_RE = re.compile(r"""^\s*(\w+)\s*:\s*['"]([^'"]+)['"]""", re.MULTILINE)
+
+# Validate that a route looks like a real RSSHub path (ASCII, no spaces, no placeholders)
+_VALID_ROUTE_RE = re.compile(r"^/[\w./-]+$")
 
 _SKIP_NAMES = {"namespace.ts", "index.ts"}
 _SKIP_PATTERNS = ("util", "type", "helper", "common", "base", "api")
@@ -114,7 +118,7 @@ def extract_fields(ts_content: str) -> dict[str, str]:
 
 
 def build_route_map(client: httpx.Client, route_files: list[tuple[str, str]]) -> dict[str, str]:
-    """Fetch all route files in parallel and extract url→route mappings."""
+    """Fetch all route files in parallel and extract url->route mappings."""
     route_map: dict[str, str] = {}
     print(f"Fetching {len(route_files)} route files...", file=sys.stderr)
 
@@ -132,8 +136,14 @@ def build_route_map(client: httpx.Client, route_files: list[tuple[str, str]]) ->
                 continue
             if ":" in route_path or "*" in route_path:
                 continue
+            full_route = f"/{namespace}{route_path}"
             key = re.sub(r"^https?://", "", source_url)
-            route_map[key] = f"/{namespace}{route_path}"
+            # Skip entries with non-ASCII chars, glob wildcards, or "undefined" in key/route
+            if "undefined" in key or "*" in key:
+                continue
+            if not _VALID_ROUTE_RE.fullmatch(full_route):
+                continue
+            route_map[key] = full_route
 
     return route_map
 
@@ -151,21 +161,24 @@ def main() -> None:
         print("ERROR: parsed 0 routes — structure may have changed", file=sys.stderr)
         sys.exit(1)
 
-    overlaps = set(route_map.keys()) & set(OLSHANSK_FEED_MAP.keys())
+    # Load Olshansk map to report overlaps
+    olshansk = json.loads(_OLSHANSK_PATH.read_text()) if _OLSHANSK_PATH.exists() else {}
+    overlaps = set(route_map.keys()) & set(olshansk.keys())
     if overlaps:
         print(
-            f"Note: {len(overlaps)} entries overlap with OLSHANSK_FEED_MAP "
+            f"Note: {len(overlaps)} entries overlap with Olshansk feed map "
             f"(sync_olshansk_feeds.py will clean those up)",
             file=sys.stderr,
         )
 
-    new_block = render_map(route_map, "RSSHUB_URL_MAP", _BLOCK_START, _BLOCK_END)
-    changed = update_file(new_block, _BLOCK_START, _BLOCK_END)
+    new_content = json.dumps(dict(sorted(route_map.items())), indent=2, ensure_ascii=False) + "\n"
+    old_content = _OUTPUT.read_text() if _OUTPUT.exists() else ""
 
-    if changed:
-        print(f"Updated RSSHUB_URL_MAP with {len(route_map)} routes.")
-    else:
+    if new_content == old_content:
         print(f"No changes — {len(route_map)} routes already up to date.")
+    else:
+        _OUTPUT.write_text(new_content)
+        print(f"Updated rsshub_url_map.json with {len(route_map)} routes.")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,18 @@
+{
+  "chanderramesh.com/writing": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_chanderramesh.xml",
+  "cursor.com/blog": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml",
+  "dagster.io/blog": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_dagster.xml",
+  "developers.googleblog.com/search/?technology_categories=AI": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_google_ai.xml",
+  "github.com/anthropics/claude-code/blob/main/CHANGELOG.md": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_changelog_claude_code.xml",
+  "hamel.dev": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_hamel.xml",
+  "ollama.com/blog": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml",
+  "openai.com/news/research": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_openai_research.xml",
+  "thinkingmachines.ai/blog": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_thinkingmachines.xml",
+  "windsurf.com/blog": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_windsurf_blog.xml",
+  "windsurf.com/changelog": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_windsurf_changelog.xml",
+  "windsurf.com/changelog/windsurf-next": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_windsurf_next_changelog.xml",
+  "www.deeplearning.ai/the-batch": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml",
+  "www.paulgraham.com/articles.html": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_paulgraham.xml",
+  "www.surgehq.ai/blog": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_blogsurgeai.xml",
+  "x.ai/news": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_xainews.xml"
+}

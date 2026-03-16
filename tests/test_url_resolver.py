@@ -1,9 +1,11 @@
 """Tests for URL resolver — source field extraction from URLs."""
 
 import asyncio
+from urllib.parse import urlparse
 
 import pytest
 
+from ainews.sources.url_constants import resolve_olshansk, resolve_rsshub_for_url
 from ainews.sources.url_resolver import resolve_url
 
 
@@ -128,3 +130,49 @@ def test_url_without_scheme():
     result = _run(resolve_url("x.com/karpathy"))
     assert result.source_type == "twitter"
     assert result.fields["handle"] == "karpathy"
+
+
+# --- RSSHub URL map resolution (no network) ---
+
+
+def test_rsshub_for_url_known_site():
+    result = _run(resolve_url("https://www.anthropic.com/news"))
+    assert result.source_type == "rsshub"
+    assert result.fields["route"] == "/anthropic/news"
+
+
+def test_rsshub_for_url_without_www():
+    result = _run(resolve_url("https://techcrunch.com"))
+    assert result.source_type == "rsshub"
+    assert result.fields["route"] == "/techcrunch/news"
+
+
+def test_rsshub_for_url_unknown_returns_none():
+    """Unknown URLs fall through to generic resolution, not RSSHub map."""
+    parsed = urlparse("https://totally-unknown-site.example.com/page")
+    assert resolve_rsshub_for_url(parsed) is None
+
+
+# --- Olshansk feed map resolution (no network) ---
+
+
+def test_olshansk_known_site():
+    """Cursor blog should resolve to Olshansk feed, not RSSHub."""
+    parsed = urlparse("https://cursor.com/blog")
+    result = resolve_olshansk(parsed)
+    assert result is not None
+    assert result["source_type"] == "rss"
+    assert "Olshansk" in result["fields"]["url"] or "olshansk" in result["fields"]["url"].lower()
+
+
+def test_olshansk_unknown_returns_none():
+    parsed = urlparse("https://totally-unknown-site.example.com")
+    assert resolve_olshansk(parsed) is None
+
+
+def test_rsshub_preferred_over_olshansk():
+    """When both maps match, RSSHub should win (checked first in resolver)."""
+    # cursor.com (no /blog path) is in RSSHUB_URL_MAP as /cursor/changelog
+    result = _run(resolve_url("https://cursor.com"))
+    assert result.source_type == "rsshub"
+    assert "cursor" in result.fields["route"]
