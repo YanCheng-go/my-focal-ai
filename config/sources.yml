@@ -8,17 +8,27 @@ sources:
   # === Twitter/X ===
   # Uses Chrome cookies directly (not RSSHub). Just stay logged into x.com in Chrome.
   twitter:
-  - handle: "trq212"
-    tags: [ai]
+  - handle: trq212
+    tags:
+    - ai
+    - engineering
+    - claude code
   - handle: "karpathy"
     tags: [ai, research, deep-learning]
-  - handle: "bcherny"
-    tags: [ai, engineering]
+  - handle: bcherny
+    tags:
+    - ai
+    - engineering
+    - claude code
   - handle: simonw
     tags:
     - ai
     - tooling
     - open-source
+  - handle: dani_avila7
+    tags:
+    - ai
+    - engineering
 
   # === YouTube ===
   # Native RSS — no RSSHub needed.
@@ -160,6 +170,18 @@ sources:
     tags: [ai, research, cohere, company]
   - route: /xiaohongshu/user/62fb991800000000120027ee/notes
     name: 第四种黑猩猩
+    display_type: xiaohongshu
+    tags:
+    - ai
+    - xiaohongshu
+  - route: /xiaohongshu/user/59757acd50c4b45e6e9a90df/notes
+    name: 张咋啦
+    display_type: xiaohongshu
+    tags:
+    - ai
+    - xiaohongshu
+  - route: /xiaohongshu/user/5b2a6c4111be100f9b9eaca3/notes
+    name: 产品君
     display_type: xiaohongshu
     tags:
     - ai

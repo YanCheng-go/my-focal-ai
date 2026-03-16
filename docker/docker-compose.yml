@@ -17,5 +17,5 @@ services:
       #
       # --- Xiaohongshu ---
       # XHS works with the chromium image, no auth needed.
-      # If it gets blocked, you may need to set XHS cookies:
-      # XIAOHONGSHU_COOKIE: ""
+      # If it gets blocked, set XHS cookies via env var (don't hardcode here):
+      XIAOHONGSHU_COOKIE: "${XIAOHONGSHU_COOKIE:-}"
