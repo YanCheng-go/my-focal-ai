@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.6.0 — 2026-03-16
+
+### Features
+
+- **URL map auto-sync** — RSSHub route map and Olshansk feed map auto-generated from upstream sources, with weekly sync workflow (#160)
+- **Favicon and Vercel Analytics** — Added favicon and analytics tracking to all static pages (#152)
+
+### Fixes
+
+- **CodeQL security alerts** — Fixed 7 alerts: SSRF protection on URL resolution, constant-time session tokens replacing weak SHA-256 hashing, YouTube oEmbed URL validation (#161)
+- **Export-static workflow** — Stage both data.json and config.json to prevent unstaged changes blocking git rebase (#164)
+- **Stale JWT empty feed** — Fix page navigation causing empty feed due to expired JWT (#153)
+
+### Infrastructure
+
+- **Skip irrelevant Vercel deploys** — `ignoreCommand` skips deployment when only non-deployed files change (#163)
+- **Docs consolidation** — Single source of truth for deployment, secrets, module map; removed duplication across 4 files (#162)
+- **Dependency bumps** — actions/checkout v6, upload-artifact v7, setup-node v6 (#157, #158, #159)
+
 ## v0.5.0 — 2026-03-15
 
 ### Features
