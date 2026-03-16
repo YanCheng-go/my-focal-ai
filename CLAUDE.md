@@ -35,7 +35,7 @@ uv run pytest -m integration               # integration tests (needs `supabase 
 When the user adds a new source to `config/sources.yml`, always ask:
 > "Want me to run a one-time fetch for this source? (`uv run ainews fetch-source "<name>"`)"
 
-This fetches historical data immediately instead of waiting for the next scheduled cycle.
+See `docs/sources.md` for the full source type reference and configuration guide.
 
 ## source_type vs display_type
 
@@ -57,13 +57,13 @@ Don't assume DB `source_type` = fetch mechanism. It's the display type.
 
 ## Architecture
 
-See `docs/architecture.md` for the full architecture diagram and data flow.
+See `docs/architecture.md` for the full architecture diagram, data flow, and module map.
 
 Pipeline: **ingest -> dedup -> store -> score -> serve**. See `.claude/references/module-map.md` for the full module map.
 
 ## Config
 
-All settings via env vars prefixed `AINEWS_` (e.g., `AINEWS_OLLAMA_MODEL=qwen3:4b`). `AINEWS_SCORING=false` disables Ollama scoring. `AINEWS_ADMIN_PASSWORD` enables admin login (when set, admin routes require authentication). Supabase vars: `AINEWS_SUPABASE_URL`, `AINEWS_SUPABASE_KEY`, `AINEWS_SUPABASE_SERVICE_KEY`. `AINEWS_CORS_ORIGIN` restricts cross-origin requests on serverless endpoints. See `src/ainews/config.py` for defaults.
+All settings via env vars prefixed `AINEWS_`. See `docs/development.md § Configuration` for the full variable table, or `src/ainews/config.py` for defaults.
 
 ## Deployment Modes
 
@@ -88,5 +88,5 @@ See [open issues](https://github.com/YanCheng-go/my-focal-ai/issues) for the ful
 
 ---
 
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-16*
 

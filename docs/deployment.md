@@ -69,6 +69,44 @@ New users get a pre-defined source list but **no pre-fetched content** — items
 
 All settings are via environment variables prefixed `AINEWS_`. See [development.md § Configuration](development.md#configuration) for the full variable table with defaults.
 
+## Secrets & Environment Variables
+
+Three separate systems need credentials to talk to Supabase. Each system runs on a different server and has its own secret storage.
+
+### GitHub Actions (repository secrets)
+
+Set in: GitHub → repo Settings → Secrets and variables → Actions
+
+| Secret | Source | Used by |
+|--------|--------|---------|
+| `SUPABASE_ACCESS_TOKEN` | Supabase → Account settings → Access Tokens | `migrations.yml` (CLI auth for `db push`) |
+| `SUPABASE_PROJECT_REF` | Project URL `https://<ref>.supabase.co` → the `<ref>` part | `migrations.yml` (which project to push to) |
+| `AINEWS_SUPABASE_URL` | Supabase → Settings → Data API → Project URL | `fetch.yml`, `export-static.yml` (cloud fetch + export) |
+| `AINEWS_SUPABASE_KEY` | Supabase → Settings → API Keys → Publishable key | `fetch.yml`, `export-static.yml` (read access) |
+
+### Vercel (environment variables)
+
+Set in: Vercel → project Settings → Environment Variables (check Production + Preview)
+
+| Env var | Source | Used by |
+|---------|--------|---------|
+| `AINEWS_SUPABASE_URL` | Supabase → Settings → Data API → Project URL | `api/fetch_source.py` (serverless function) |
+| `AINEWS_SUPABASE_KEY` | Supabase → Settings → API Keys → Publishable key | `api/fetch_source.py` (JWT verification) |
+| `AINEWS_SUPABASE_SERVICE_KEY` | Supabase → Settings → API Keys → Secret key | `api/fetch_source.py` (write items, bypasses RLS) |
+
+### Browser (public, via config.json)
+
+Exported automatically by `ainews export` — no manual setup needed.
+
+| Key in config.json | Used by |
+|--------------------|---------|
+| `supabase_url` | `index.html`, `admin.html` (Supabase Auth + PostgREST queries) |
+| `supabase_anon_key` | `index.html`, `admin.html` (same as publishable key) |
+
+### Why secrets are duplicated
+
+GitHub Actions and Vercel are **separate servers** that both need to connect to Supabase. They don't share memory or environment — each needs its own copy of the keys, stored in its own secret manager.
+
 ---
 
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-16*
