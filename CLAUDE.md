@@ -53,7 +53,7 @@ Pipeline: **ingest -> dedup -> store -> score -> serve**.
 - `src/ainews/storage/supabase_backend.py` — `SupabaseBackend` (PostgREST). All queries scoped by `user_id`. Item IDs are `sha256(user_id:url)[:16]` for multi-tenant isolation.
 - `src/ainews/sources/manager.py` — YAML round-trip read/write for source management (add/edit/delete/toggle). Used by admin UI.
 - `src/ainews/sources/supabase_manager.py` — reads `user_sources` table, converts to `sources_config` dict matching `sources.yml` structure.
-- `src/ainews/sources/url_constants.py` + `url_resolver.py` — URL parsing: pasted URL → source config fields (platform detection, channel ID extraction).
+- `src/ainews/sources/url_constants.py` + `url_resolver.py` — URL parsing: pasted URL → source config fields (platform detection, channel ID extraction). Maps in `rsshub_url_map.json` and `olshansk_feed_map.json` (auto-synced weekly via GitHub Actions).
 - `src/ainews/api/app.py` — FastAPI app factory. Detects Vercel via `VERCEL` env var to disable scheduler and static mount. Dashboard sorted by `published_at`, pagination (30/page), search, tag dropdown. Events/luma/CCC/trending items hidden from main feed (dedicated pages).
 - `src/ainews/api/admin.py` — Admin UI with password-protected CRUD (local mode only). Auth via session cookies (`AINEWS_ADMIN_PASSWORD`). Protected routes use FastAPI `Depends()`.
 - `templates/` — Jinja2 templates (local FastAPI): `_base.html` (shared layout), `dashboard.html`, `admin.html`, `leaderboard.html`, `events.html`, `trends.html`, `ccc.html`, `about.html`.

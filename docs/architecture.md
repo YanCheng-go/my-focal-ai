@@ -282,9 +282,9 @@ src/ainews/
 ├── sources/
 │   ├── manager.py         YAML round-trip read/write for source management (admin)
 │   ├── supabase_manager.py  Read user_sources from Supabase, convert to config
-│   ├── url_constants.py   URL parsing constants + resolver lookup tables:
-│   │                        RSSHUB_URL_MAP (website URL → RSSHub route, preferred),
-│   │                        OLSHANSK_FEED_MAP (website URL → Olshansk raw XML, auto-synced weekly)
+│   ├── url_constants.py       URL parsing constants + pure resolvers (no network I/O)
+│   ├── rsshub_url_map.json   Website URL → RSSHub route (401 entries, auto-synced weekly)
+│   ├── olshansk_feed_map.json Website URL → Olshansk raw XML (16 entries, auto-synced weekly)
 │   └── url_resolver.py    Async URL resolver: pasted URL → source config fields.
 │                            Priority: YouTube → Twitter → arXiv → XHS → Luma →
 │                            rsshub.app URL → RSSHUB_URL_MAP → OLSHANSK_FEED_MAP → generic RSS auto-discovery
