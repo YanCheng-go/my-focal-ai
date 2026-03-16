@@ -112,7 +112,7 @@ All settings are via environment variables prefixed `AINEWS_`. See `src/ainews/c
 
 ## Workflow
 
-1. **Branch** off `main` — use `feat/`, `fix/`, `docs/`, `chore/` prefixes
+1. **Branch** off `main` — use `feature/`, `fix/`, `docs/`, `chore/`, `refactor/`, `test/`, `release/` prefixes
 2. **Lint and test** before committing:
    ```bash
    uv run ruff check src/
@@ -131,15 +131,8 @@ All settings are via environment variables prefixed `AINEWS_`. See `src/ainews/c
 
 ## Adding a New Source
 
-1. Add the source to `config/sources.yml` under the appropriate type
-2. Run a one-time fetch to pull historical data:
-   ```bash
-   uv run ainews fetch-source "<name>"
-   ```
-3. Verify it appears on the dashboard at http://localhost:8000
-
-See [docs/sources.md](sources.md) for detailed source configuration.
+See [sources.md](sources.md) for the full guide on source types, configuration, and adding new sources.
 
 ---
 
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-16*
