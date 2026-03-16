@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-16T10:37:57.548071+00:00",
+  "exported_at": "2026-03-16T12:36:07.507036+00:00",
   "period_hours": 168,
-  "total": 4545,
+  "total": 4546,
   "all_tags": [
     "ai",
     "anthropic",
@@ -193,6 +193,25 @@
       "author": "",
       "published_at": "2026-03-17T00:00:00Z",
       "fetched_at": "2026-03-11T10:29:17.543660Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1436084bc39b0d35",
+      "url": "https://www.youtube.com/watch?v=P8m5eHAyrFM",
+      "title": "What Is Llama.cpp? The LLM Inference Engine for Local AI",
+      "summary": "Ready to become a certified watsonx AI Assistant Engineer? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/Bdpsiy\n\nLearn more about Large Language Models (LLMs) here \u2192 https://ibm.biz/BdpsiS\n\nYour laptop, your AI. \ud83d\udcbb Cedric Clyburn explains what Llama.cpp is and how this powerful inference engine enables local LLMs with full data privacy. Discover model quantization, RAG, and how to optimize AI for small devices.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/Bdpsim\n\n#llm #llama #inference #localai",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-16T11:00:48Z",
+      "fetched_at": "2026-03-16T12:35:58.157636Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10747,27 +10766,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "726f00ccf3cf2ed7",
-      "url": "https://arxiv.org/abs/2603.13048v1",
-      "title": "Convergence Rate of a Functional Learning Method for Contextual Stochastic Optimization",
-      "summary": "We consider a stochastic optimization problem involving two random variables: a context variable $X$ and a dependent variable $Y$. The objective is to minimize the expected value of a nonlinear loss functional applied to the conditional expectation $\\mathbb{E}[f(X, Y,\u03b2) \\mid X]$, where $f$ is a nonlinear function and $\u03b2$ represents the decision variables. We focus on the practically important setting in which direct sampling from the conditional distribution of $Y \\mid X$ is infeasible, and only a stream of i.i.d.\\ observation pairs $\\{(X^k, Y^k)\\}_{k=0,1,2,\\ldots}$ is available. In our approach, the conditional expectation is approximated within a prespecified parametric function class. We analyze a simultaneous learning-and-optimization algorithm that jointly estimates the conditional expectation and optimizes the outer objective, and establish that the method achieves a convergence rate of order $\\mathcal{O}\\big(1/\\sqrt{N}\\big)$, where $N$ denotes the number of observed pairs.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Andrzej Ruszczynski",
-      "published_at": "2026-03-13T14:53:35Z",
-      "fetched_at": "2026-03-16T03:25:58.483990Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac5982ebbd57524",
       "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
       "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
@@ -12675,25 +12673,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-03-03T23:53:51Z",
       "fetched_at": "2026-03-11T10:29:08.920692Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c9a0e94bcd2c06b2",
-      "url": "https://www.youtube.com/watch?v=BMDFPOyezH4",
-      "title": "A2A vs MCP: AI Agent Communication Explained",
-      "summary": "Ready to become a certified watsonx AI Assistant Engineer v1 - Professional? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpXdV\n\nLearn more about A2A protocol (Agent2Agent) here \u2192 https://ibm.biz/BdpBwz\n\nLearn more about Model Context Protocol (MCP) here \u2192 https://ibm.biz/BdpBwf\n\nAre your AI agents struggling to collaborate? \ud83e\udd14 Martin Keen and Anna Gutowska reveal how advanced frameworks enable seamless agent communication and integration with tools. Discover how A2A connects agents and MCP links them to resources for smarter, streamlined workflows. \ud83d\ude80\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/BdpBwP\n\n#a2a #aiagents #aiworkflows",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-03-02T12:00:31Z",
-      "fetched_at": "2026-03-11T20:28:31.610189Z",
       "score": null,
       "score_reason": "",
       "tier": "",
