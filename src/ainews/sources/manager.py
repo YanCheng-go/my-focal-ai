@@ -14,7 +14,6 @@ SOURCE_FIELDS = {
     "arxiv": {"required": ["url", "name"], "optional": ["tags"]},
     "rss": {"required": ["url", "name"], "optional": ["tags"]},
     "rsshub": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
-    "xiaohongshu": {"required": ["user_id", "name"], "optional": ["tags"]},
     "luma": {"required": ["handle"], "optional": ["tags"]},
     "events": {"required": ["scraper", "name"], "optional": ["tags"]},
     "github_trending": {"required": ["name", "tags"], "optional": []},
@@ -88,11 +87,6 @@ def validate_source(source_type: str, source_data: dict):
 
     if source_type in ("rss", "arxiv", "leaderboard", "event_links"):
         _validate_url(source_data.get("url", ""), "url")
-
-    if source_type == "xiaohongshu":
-        uid = source_data.get("user_id", "")
-        if not re.match(r"^[a-fA-F0-9]+$", uid):
-            raise ValueError(f"Invalid Xiaohongshu user_id: {uid!r}. Must be a hex string.")
 
     if source_type == "events":
         scraper = source_data.get("scraper", "")

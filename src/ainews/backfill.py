@@ -31,14 +31,6 @@ def _build_source_map(sources_config: dict) -> dict[str, dict]:
             "source_type": "twitter",
         }
 
-    # Xiaohongshu
-    for user in sources_config.get("sources", {}).get("xiaohongshu", []):
-        name = user.get("name", user["user_id"])
-        source_map[name] = {
-            "tags": user.get("tags", []),
-            "source_type": "xiaohongshu",
-        }
-
     # Events
     for src in sources_config.get("sources", {}).get("events", []):
         source_map[src["name"]] = {

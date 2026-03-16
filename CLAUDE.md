@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-MyFocalAI — personal news intelligence system. Aggregates content from Twitter/X, Xiaohongshu, YouTube, and RSS feeds via RSSHub, then scores relevance using LLM against user-defined principles. Three modes: local (SQLite + Ollama + FastAPI), online public (static HTML + GitHub Actions + Vercel), and online login (Supabase + user auth + per-user feeds).
+MyFocalAI — personal news intelligence system. Aggregates content from Twitter/X, YouTube, Xiaohongshu (via RSSHub), and RSS feeds, then scores relevance using LLM against user-defined principles. Three modes: local (SQLite + Ollama + FastAPI), online public (static HTML + GitHub Actions + Vercel), and online login (Supabase + user auth + per-user feeds).
 
 ## Setup
 
@@ -45,7 +45,7 @@ Pipeline: **ingest -> dedup -> store -> score -> serve**.
 
 - `src/ainews/models.py` — `ContentItem` + `ScoredItem` (Pydantic). Core data structures used throughout the pipeline.
 - `src/ainews/cli.py` — CLI entry point: `serve`, `fetch`, `fetch-source`, `list-sources`, `cloud-fetch`, `export`, `backfill-tags`.
-- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom, `twitter.py` for Twitter via Chrome cookies + GraphQL, `xiaohongshu.py` for XHS via cookies, `events.py` for scraping tech company event pages (Anthropic, Google), `github_trending.py` for trendshift.io scraping, `runner.py` orchestrates and skips existing items.
+- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom (incl. XHS via RSSHub), `twitter.py` for Twitter via Chrome cookies + GraphQL, `events.py` for scraping tech company event pages (Anthropic, Google), `github_trending.py` for trendshift.io scraping, `runner.py` orchestrates and skips existing items.
 - `src/ainews/backfill.py` — auto-syncs tags and source_type from `sources.yml` to existing DB items. Runs each fetch cycle (skips via file hash if config unchanged). CLI: `uv run ainews backfill-tags [--dry-run]`.
 - `src/ainews/scoring/scorer.py` — sends unscored items to Ollama with three principles from `config/principles.yml`. Returns score 0-1, tier, reason. `claude_scorer.py` is the cloud alternative using Claude API.
 - `src/ainews/storage/backend.py` — `DbBackend` protocol. All storage callers use this interface.

@@ -19,9 +19,8 @@ config/sources.yml
 APScheduler (every 30 min)
     │
     ▼
-runner.py ─── ingest ──► feeds.py ──► RSS / Atom / RSSHub
+runner.py ─── ingest ──► feeds.py ──► RSS / Atom / RSSHub (incl. XHS)
     │                     twitter.py ──► Twitter GraphQL (Chrome cookies)
-    │                     xiaohongshu.py ──► XHS API (Chrome cookies)
     │                     events.py ──► Anthropic / Google event pages
     │                     github_trending.py ──► trendshift.io
     │
@@ -56,7 +55,7 @@ GitHub Action (cron every 2h)
     │
     ▼
 cloud_fetch.py ── cloud_fetch_and_score()
-    │  runner.py ──► feeds.py (RSS only, no Twitter/XHS)
+    │  runner.py ──► feeds.py (RSS only, no Twitter)
     │
     ▼
 SqliteBackend (ephemeral)
@@ -270,7 +269,6 @@ src/ainews/
 │   ├── twitter.py     Chrome cookies (rookiepy) + Twitter GraphQL API
 │   ├── events.py      Tech company event page scrapers (Anthropic, Google)
 │   ├── github_trending.py  Trendshift.io scraper (daily + history)
-│   ├── xiaohongshu.py Chrome cookies + XHS API
 │   └── runner.py      Orchestrates ingestion, dedup, Shorts marking
 ├── scoring/
 │   ├── scorer.py      Ollama LLM scoring (local)
@@ -286,7 +284,7 @@ src/ainews/
 │   ├── rsshub_url_map.json   Website URL → RSSHub route (401 entries, auto-synced weekly)
 │   ├── olshansk_feed_map.json Website URL → Olshansk raw XML (16 entries, auto-synced weekly)
 │   └── url_resolver.py    Async URL resolver: pasted URL → source config fields.
-│                            Priority: YouTube → Twitter → arXiv → XHS → Luma →
+│                            Priority: YouTube → Twitter → arXiv → XHS (→RSSHub) → Luma →
 │                            rsshub.app URL → RSSHUB_URL_MAP → OLSHANSK_FEED_MAP → generic RSS auto-discovery
 └── api/
     ├── app.py         FastAPI: dashboard, JSON API, scheduler

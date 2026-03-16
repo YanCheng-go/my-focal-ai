@@ -7,9 +7,12 @@ api/resolve_url.py (sync, Vercel serverless).
 from __future__ import annotations
 
 import json
+import logging
 import re
 from pathlib import Path
 from urllib.parse import urlparse
+
+_log = logging.getLogger(__name__)
 
 # ── Host sets ──────────────────────────────────────────────────────
 
@@ -24,8 +27,19 @@ RSSHUB_HOSTS = {"rsshub.app", "www.rsshub.app"}
 # Run scripts/sync_rsshub_routes.py and scripts/sync_olshansk_feeds.py to update.
 
 _HERE = Path(__file__).parent
-RSSHUB_URL_MAP: dict[str, str] = json.loads((_HERE / "rsshub_url_map.json").read_text())
-OLSHANSK_FEED_MAP: dict[str, str] = json.loads((_HERE / "olshansk_feed_map.json").read_text())
+
+
+def _load_json_map(filename: str) -> dict:
+    path = _HERE / filename
+    try:
+        return json.loads(path.read_text())
+    except FileNotFoundError:
+        _log.warning("URL map %s not found — URL map resolution disabled", filename)
+        return {}
+
+
+RSSHUB_URL_MAP: dict[str, str] = _load_json_map("rsshub_url_map.json")
+OLSHANSK_FEED_MAP: dict[str, dict[str, str]] = _load_json_map("olshansk_feed_map.json")
 
 # ── Regex patterns ─────────────────────────────────────────────────
 
@@ -84,14 +98,18 @@ def resolve_arxiv(parsed: urlparse) -> dict:
 
 
 def resolve_xiaohongshu(parsed: urlparse) -> dict:
-    """Extract user_id from Xiaohongshu profile URLs."""
+    """Resolve Xiaohongshu profile URLs to an RSSHub route."""
     path = parsed.path.strip("/")
     m = re.match(r"user/profile/([a-fA-F0-9]+)", path)
     if m:
         user_id = m.group(1)
         return {
-            "source_type": "xiaohongshu",
-            "fields": {"user_id": user_id, "name": f"XHS:{user_id[:8]}"},
+            "source_type": "rsshub",
+            "fields": {
+                "route": f"/xiaohongshu/user/{user_id}/notes",
+                "name": f"XHS:{user_id[:8]}",
+                "source_type": "xiaohongshu",
+            },
             "suggested_tags": [],
         }
     raise ValueError(f"Could not parse Xiaohongshu URL: {parsed.geturl()}")
@@ -158,12 +176,13 @@ def resolve_rsshub_for_url(parsed: urlparse) -> dict | None:
 def resolve_olshansk(parsed: urlparse) -> dict | None:
     """Return an RSS source using the Olshansk feed mirror if the URL is known."""
     for key in _url_lookup_keys(parsed):
-        feed_url = OLSHANSK_FEED_MAP.get(key)
-        if feed_url:
-            name = key.split("/")[-1].replace("-", " ").replace(".", " ").title()
+        entry = OLSHANSK_FEED_MAP.get(key)
+        if entry:
+            name = entry["name"] if isinstance(entry, dict) else key.split("/")[-1].title()
+            url = entry["url"] if isinstance(entry, dict) else entry
             return {
                 "source_type": "rss",
-                "fields": {"url": feed_url, "name": name},
+                "fields": {"url": url, "name": name},
                 "suggested_tags": [],
             }
     return None

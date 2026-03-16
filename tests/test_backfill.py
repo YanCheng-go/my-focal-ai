@@ -23,21 +23,6 @@ def test_build_source_map_twitter():
     assert result["@karpathy"]["source_type"] == "twitter"
 
 
-def test_build_source_map_xiaohongshu_with_name():
-    config = _make_config(
-        xiaohongshu=[{"user_id": "abc123", "name": "XHS User", "tags": ["china"]}]
-    )
-    result = _build_source_map(config)
-    assert "XHS User" in result
-    assert result["XHS User"]["source_type"] == "xiaohongshu"
-
-
-def test_build_source_map_xiaohongshu_fallback_name():
-    config = _make_config(xiaohongshu=[{"user_id": "abc123"}])
-    result = _build_source_map(config)
-    assert "abc123" in result
-
-
 def test_build_source_map_events():
     config = _make_config(events=[{"name": "Anthropic Events", "tags": ["events", "ai"]}])
     result = _build_source_map(config)
@@ -61,6 +46,24 @@ def test_build_source_map_youtube():
     result = _build_source_map(config)
     assert "AI Channel" in result
     assert result["AI Channel"]["source_type"] == "youtube"
+
+
+def test_build_source_map_xiaohongshu_via_rsshub():
+    """XHS sources are now RSSHub routes with source_type=xiaohongshu."""
+    config = _make_config(
+        rsshub=[
+            {
+                "route": "/xiaohongshu/user/abc123/notes",
+                "name": "XHS User",
+                "source_type": "xiaohongshu",
+                "tags": ["china"],
+            }
+        ]
+    )
+    result = _build_source_map(config)
+    assert "XHS User" in result
+    assert result["XHS User"]["source_type"] == "xiaohongshu"
+    assert result["XHS User"]["tags"] == ["china"]
 
 
 def test_build_source_map_luma():

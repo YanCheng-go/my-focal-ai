@@ -69,7 +69,6 @@
                     <option value="twitter">Twitter</option>
                     <option value="arxiv">ArXiv</option>
                     <option value="rsshub">RSSHub</option>
-                    <option value="xiaohongshu">Xiaohongshu</option>
                     <option value="luma">Luma</option>
                     <option value="events">Events</option>
                     <option value="arxiv_queries">ArXiv Query</option>
@@ -127,7 +126,6 @@
         rsshub: 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400',
         arxiv: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400',
         arxiv_queries: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400',
-        xiaohongshu: 'bg-pink-100 text-pink-700 dark:bg-pink-900/50 dark:text-pink-400',
         luma: 'bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-400',
         events: 'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-400',
     };
@@ -206,7 +204,6 @@
         name: { _default: 'Display name for this source' },
         url: { rss: 'https://example.com/feed.xml', arxiv: 'https://export.arxiv.org/api/query?...', leaderboard: 'https://...', event_links: 'https://...' },
         route: { rsshub: 'twitter/user/karpathy (see docs.rsshub.app)' },
-        user_id: { xiaohongshu: 'Hex ID from profile URL' },
         query: { arxiv_queries: 'ti:LLM+AND+cat:cs.AI' },
         scraper: { events: 'anthropic or google' },
     };
@@ -217,7 +214,6 @@
         rss: 'Tip: paste any blog URL above — RSS feed will be auto-discovered.',
         arxiv: 'Tip: paste an arXiv paper or category URL above to auto-fill.',
         rsshub: 'Tip: paste an rsshub.app URL above, or enter a route from docs.rsshub.app.',
-        xiaohongshu: 'Tip: paste a Xiaohongshu profile URL above to auto-fill.',
         luma: 'Tip: paste a lu.ma URL above to auto-fill.',
         events: 'Scraper must be one of: anthropic, google.',
         github_trending: 'Fetches daily trending repos from trendshift.io.',
@@ -332,12 +328,6 @@
             const url = fields.url || '';
             if (!/^https?:\/\/.+/.test(url)) {
                 return 'Invalid URL: must start with http:// or https://';
-            }
-        }
-        if (sourceType === 'xiaohongshu') {
-            const uid = fields.user_id || '';
-            if (!/^[a-fA-F0-9]+$/.test(uid)) {
-                return 'Invalid Xiaohongshu user_id: must be a hex string from the profile URL.';
             }
         }
         if (sourceType === 'events') {

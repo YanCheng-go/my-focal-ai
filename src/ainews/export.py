@@ -87,11 +87,6 @@ SOURCE_TYPE_SCHEMA = {
         "fields": {"required": ["route", "name"], "optional": ["source_type", "tags"]},
         "color": "bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400",
     },
-    "xiaohongshu": {
-        "label": "Xiaohongshu",
-        "fields": {"required": ["user_id", "name"], "optional": ["tags"]},
-        "color": "bg-pink-100 text-pink-700 dark:bg-pink-900/50 dark:text-pink-400",
-    },
     "luma": {
         "label": "Luma",
         "fields": {"required": ["handle"], "optional": ["tags"]},

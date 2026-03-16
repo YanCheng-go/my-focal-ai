@@ -69,7 +69,6 @@ def build_feed_urls(sources_config: dict) -> list[dict]:
     feeds = []
 
     # Twitter is handled separately (see ingest/twitter.py)
-    # Xiaohongshu is handled separately (see ingest/xiaohongshu.py)
 
     # YouTube native RSS
     for ch in sources.get("youtube", []):

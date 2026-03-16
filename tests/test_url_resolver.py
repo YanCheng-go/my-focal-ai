@@ -79,13 +79,13 @@ def test_arxiv_invalid_url():
         _run(resolve_url("https://arxiv.org/"))
 
 
-# --- Xiaohongshu (no network) ---
+# --- Xiaohongshu → RSSHub (no network) ---
 
 
 def test_xiaohongshu_profile():
     result = _run(resolve_url("https://xiaohongshu.com/user/profile/5a1234bc"))
-    assert result.source_type == "xiaohongshu"
-    assert result.fields["user_id"] == "5a1234bc"
+    assert result.source_type == "rsshub"
+    assert result.fields["route"] == "/xiaohongshu/user/5a1234bc/notes"
     assert "XHS:" in result.fields["name"]
 
 
@@ -132,47 +132,67 @@ def test_url_without_scheme():
     assert result.fields["handle"] == "karpathy"
 
 
-# --- RSSHub URL map resolution (no network) ---
+# --- RSSHub URL map resolution (no network, mocked maps) ---
 
 
-def test_rsshub_for_url_known_site():
-    result = _run(resolve_url("https://www.anthropic.com/news"))
-    assert result.source_type == "rsshub"
-    assert result.fields["route"] == "/anthropic/news"
+_MOCK_RSSHUB_MAP = {
+    "www.example.com/news": "/example/news",
+    "techcrunch.com": "/techcrunch/news",
+    "overlap.com": "/overlap/feed",
+}
+
+_MOCK_OLSHANSK_MAP = {
+    "cursor.com/blog": {"url": "https://feeds.example.com/cursor.xml", "name": "Cursor Blog"},
+    "overlap.com": {"url": "https://feeds.example.com/overlap.xml", "name": "Overlap Site"},
+}
 
 
-def test_rsshub_for_url_without_www():
-    result = _run(resolve_url("https://techcrunch.com"))
-    assert result.source_type == "rsshub"
-    assert result.fields["route"] == "/techcrunch/news"
+def test_rsshub_for_url_known_site(monkeypatch):
+    monkeypatch.setattr("ainews.sources.url_constants.RSSHUB_URL_MAP", _MOCK_RSSHUB_MAP)
+    parsed = urlparse("https://www.example.com/news")
+    result = resolve_rsshub_for_url(parsed)
+    assert result is not None
+    assert result["source_type"] == "rsshub"
+    assert result["fields"]["route"] == "/example/news"
 
 
-def test_rsshub_for_url_unknown_returns_none():
-    """Unknown URLs fall through to generic resolution, not RSSHub map."""
+def test_rsshub_for_url_without_www(monkeypatch):
+    monkeypatch.setattr("ainews.sources.url_constants.RSSHUB_URL_MAP", _MOCK_RSSHUB_MAP)
+    parsed = urlparse("https://techcrunch.com")
+    result = resolve_rsshub_for_url(parsed)
+    assert result is not None
+    assert result["fields"]["route"] == "/techcrunch/news"
+
+
+def test_rsshub_for_url_unknown_returns_none(monkeypatch):
+    monkeypatch.setattr("ainews.sources.url_constants.RSSHUB_URL_MAP", _MOCK_RSSHUB_MAP)
     parsed = urlparse("https://totally-unknown-site.example.com/page")
     assert resolve_rsshub_for_url(parsed) is None
 
 
-# --- Olshansk feed map resolution (no network) ---
+# --- Olshansk feed map resolution (no network, mocked maps) ---
 
 
-def test_olshansk_known_site():
-    """Cursor blog should resolve to Olshansk feed, not RSSHub."""
+def test_olshansk_known_site(monkeypatch):
+    monkeypatch.setattr("ainews.sources.url_constants.OLSHANSK_FEED_MAP", _MOCK_OLSHANSK_MAP)
     parsed = urlparse("https://cursor.com/blog")
     result = resolve_olshansk(parsed)
     assert result is not None
     assert result["source_type"] == "rss"
-    assert "Olshansk" in result["fields"]["url"] or "olshansk" in result["fields"]["url"].lower()
+    assert result["fields"]["url"] == "https://feeds.example.com/cursor.xml"
+    assert result["fields"]["name"] == "Cursor Blog"
 
 
-def test_olshansk_unknown_returns_none():
+def test_olshansk_unknown_returns_none(monkeypatch):
+    monkeypatch.setattr("ainews.sources.url_constants.OLSHANSK_FEED_MAP", _MOCK_OLSHANSK_MAP)
     parsed = urlparse("https://totally-unknown-site.example.com")
     assert resolve_olshansk(parsed) is None
 
 
-def test_rsshub_preferred_over_olshansk():
-    """When both maps match, RSSHub should win (checked first in resolver)."""
-    # cursor.com (no /blog path) is in RSSHUB_URL_MAP as /cursor/changelog
-    result = _run(resolve_url("https://cursor.com"))
+def test_rsshub_preferred_over_olshansk(monkeypatch):
+    """When both maps match the same key, RSSHub wins (checked first in resolver)."""
+    monkeypatch.setattr("ainews.sources.url_constants.RSSHUB_URL_MAP", _MOCK_RSSHUB_MAP)
+    monkeypatch.setattr("ainews.sources.url_constants.OLSHANSK_FEED_MAP", _MOCK_OLSHANSK_MAP)
+    result = _run(resolve_url("https://overlap.com"))
     assert result.source_type == "rsshub"
-    assert "cursor" in result.fields["route"]
+    assert result.fields["route"] == "/overlap/feed"
