@@ -64,11 +64,6 @@ def main():
         help="Fetch feeds + score with Claude API (for CI, no Twitter/Ollama)",
     )
 
-    sub.add_parser(
-        "cloud-fetch-users",
-        help="Fetch feeds for all Supabase users (requires service key)",
-    )
-
     export_parser = sub.add_parser("export", help="Export scored items to JSON for static site")
     export_parser.add_argument(
         "--hours", type=int, default=48, help="Export items from the last N hours (default: 48)"
@@ -130,10 +125,6 @@ def main():
         from ainews.cloud_fetch import cloud_fetch_and_score
 
         asyncio.run(cloud_fetch_and_score())
-    elif args.command == "cloud-fetch-users":
-        from ainews.cloud_fetch import cloud_fetch_all_users
-
-        asyncio.run(cloud_fetch_all_users())
     elif args.command == "backfill-tags":
         from ainews.backfill import backfill_tags
 
