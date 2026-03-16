@@ -15,8 +15,8 @@ Full RSSHub route = /<namespace-dir><path>, e.g. /anthropic/news
 Set GITHUB_TOKEN env var to raise GitHub API rate limit (5000/hr vs 60/hr).
 
 NOTE: Must run BEFORE sync_olshansk_feeds.py so the Olshansk sync can exclude
-entries already covered by RSSHub. The GitHub Actions cron schedules enforce
-this ordering (RSSHub at 06:00 UTC, Olshansk at 07:00 UTC).
+entries already covered by RSSHub. Both scripts run sequentially in the same
+GitHub Actions workflow (sync-url-maps.yml).
 """
 
 from __future__ import annotations
@@ -62,7 +62,10 @@ def get_routes_tree_sha(client: httpx.Client) -> str:
     )
     resp.raise_for_status()
     tree = resp.json()["tree"]
-    lib_sha = next(e["sha"] for e in tree if e["path"] == "lib")
+    lib_sha = next((e["sha"] for e in tree if e["path"] == "lib"), None)
+    if not lib_sha:
+        print("ERROR: 'lib' not found in repo root — structure changed", file=sys.stderr)
+        sys.exit(1)
 
     resp = client.get(
         f"{GH_API}/repos/{RSSHUB_REPO}/git/trees/{lib_sha}",
@@ -70,7 +73,11 @@ def get_routes_tree_sha(client: httpx.Client) -> str:
     )
     resp.raise_for_status()
     tree = resp.json()["tree"]
-    return next(e["sha"] for e in tree if e["path"] == "routes")
+    routes_sha = next((e["sha"] for e in tree if e["path"] == "routes"), None)
+    if not routes_sha:
+        print("ERROR: 'routes' not found under lib/ — structure changed", file=sys.stderr)
+        sys.exit(1)
+    return routes_sha
 
 
 def list_route_files(client: httpx.Client, routes_sha: str) -> list[tuple[str, str]]:

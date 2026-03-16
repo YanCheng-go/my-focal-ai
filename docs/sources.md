@@ -56,7 +56,7 @@ For sites without native RSS. Requires a self-hosted RSSHub instance (Docker).
 rsshub:
   - route: "/anthropic/news"
     name: "Anthropic News"
-    source_type: "rss"
+    display_type: "rss"
     tags: [ai, anthropic, company]
 ```
 
@@ -67,13 +67,13 @@ The route is appended to `rsshub_base` (default: `http://localhost:1200`).
 **Finding routes:** Check [RSSHub docs](https://docs.rsshub.app/) for available routes. Not all routes work — test with `curl http://localhost:1200/<route>` before adding.
 
 ### Xiaohongshu (via RSSHub)
-Xiaohongshu sources use RSSHub routes. Add them under the `rsshub` section with `source_type: xiaohongshu`.
+Xiaohongshu sources use RSSHub routes. Add them under the `rsshub` section with `display_type: xiaohongshu`.
 
 ```yaml
 rsshub:
   - route: "/xiaohongshu/user/62fb991800000000120027ee/notes"
     name: "XHS User"
-    source_type: "xiaohongshu"
+    display_type: "xiaohongshu"
     tags: [ai]
 ```
 

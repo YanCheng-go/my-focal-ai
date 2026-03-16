@@ -5,8 +5,8 @@ Fetches the README, parses the feed->URL table, and writes the JSON file.
 Run manually or via GitHub Actions cron.
 
 NOTE: Must run AFTER sync_rsshub_routes.py so it can exclude entries already
-covered by RSSHub. The GitHub Actions cron schedules enforce this ordering
-(RSSHub at 06:00 UTC, Olshansk at 07:00 UTC).
+covered by RSSHub. Both scripts run sequentially in the same GitHub Actions
+workflow (sync-url-maps.yml).
 """
 
 from __future__ import annotations
