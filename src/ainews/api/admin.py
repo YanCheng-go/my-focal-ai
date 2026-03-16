@@ -1,8 +1,8 @@
 """Admin UI for source management."""
 
-import hashlib
 import logging
 import secrets
+import time
 
 from fastapi import APIRouter, Cookie, Depends, HTTPException, Request, Response
 from fastapi.responses import HTMLResponse
@@ -25,9 +25,9 @@ logger = logging.getLogger(__name__)
 settings = Settings()
 templates = Jinja2Templates(directory=str(settings.config_dir.parent / "templates"))
 
-_password_hash = (
-    hashlib.sha256(settings.admin_password.encode()).hexdigest() if settings.admin_password else ""
-)
+# Random session tokens with creation time for TTL enforcement
+_SESSION_TTL = 86400  # 24 hours, matches cookie max_age
+_active_sessions: dict[str, float] = {}
 
 
 def _check_admin_auth(admin_token: str | None) -> None:
@@ -36,7 +36,18 @@ def _check_admin_auth(admin_token: str | None) -> None:
         return
     if not admin_token:
         raise HTTPException(status_code=401, detail="Login required")
-    if not secrets.compare_digest(admin_token, _password_hash):
+    now = time.monotonic()
+    # Iterate all tokens without short-circuit to preserve constant-time behavior
+    valid = False
+    expired = []
+    for token, created_at in _active_sessions.items():
+        if now - created_at > _SESSION_TTL:
+            expired.append(token)
+        elif secrets.compare_digest(admin_token, token):
+            valid = True
+    for token in expired:
+        del _active_sessions[token]
+    if not valid:
         raise HTTPException(status_code=401, detail="Invalid session")
 
 
@@ -69,14 +80,16 @@ def admin_login(body: dict, response: Response):
     password = body.get("password", "")
     if not secrets.compare_digest(password, settings.admin_password):
         raise HTTPException(status_code=401, detail="Wrong password")
-    response.set_cookie(
-        "admin_token", _password_hash, httponly=True, samesite="strict", max_age=86400
-    )
+    token = secrets.token_hex(32)
+    _active_sessions[token] = time.monotonic()
+    response.set_cookie("admin_token", token, httponly=True, samesite="strict", max_age=86400)
     return {"status": "ok"}
 
 
 @router.post("/logout")
-def admin_logout(response: Response):
+def admin_logout(response: Response, admin_token: str | None = Cookie(None)):
+    if admin_token:
+        _active_sessions.pop(admin_token, None)
     response.delete_cookie("admin_token")
     return {"status": "ok"}
 

@@ -129,6 +129,9 @@ def _resolve_youtube(url: str, parsed) -> dict:
         author_url = data.get("author_url", "")
         if not author_url:
             raise ValueError("Could not determine channel from video")
+        author_host = urlparse(author_url).hostname or ""
+        if author_host not in YOUTUBE_HOSTS:
+            raise ValueError("Unexpected author URL from oEmbed")
         channel_id, _ = _fetch_yt_page_info(author_url)
         return _result("youtube", {"channel_id": channel_id, "name": author_name})
 
@@ -136,6 +139,8 @@ def _resolve_youtube(url: str, parsed) -> dict:
 
 
 def _fetch_yt_page_info(page_url: str) -> tuple:
+    if not _is_safe_url(page_url):
+        raise ValueError("Blocked URL: not allowed to fetch internal/private addresses")
     headers = {"User-Agent": BROWSER_UA, "Cookie": "CONSENT=YES+1"}
     resp = httpx.get(page_url, headers=headers, timeout=15, follow_redirects=True)
     if resp.status_code != 200:

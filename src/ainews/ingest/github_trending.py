@@ -4,6 +4,7 @@ import json
 import logging
 import re
 from datetime import datetime, timezone
+from urllib.parse import urlparse
 
 import httpx
 from selectolax.parser import HTMLParser
@@ -151,7 +152,7 @@ async def fetch_github_trending_history(
         github_link = None
         for a in card.css("a"):
             href = a.attributes.get("href", "")
-            if "github.com" in href:
+            if urlparse(href).hostname in ("github.com", "www.github.com"):
                 github_link = href
                 break
 
