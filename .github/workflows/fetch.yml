@@ -18,7 +18,7 @@ jobs:
         uses: astral-sh/setup-uv@v7
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --extra supabase
 
       # Restore cached DB from previous runs (for dedup + data retention).
       # GitHub caches are immutable, so we use a date-based key and fall back
@@ -36,6 +36,16 @@ jobs:
         run: uv run ainews cloud-fetch
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || '' }}
+
+      # Fetch feeds for all logged-in users (requires Supabase service key)
+      - name: Fetch for all users
+        if: ${{ secrets.AINEWS_SUPABASE_SERVICE_KEY != '' }}
+        run: uv run ainews cloud-fetch-users
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || '' }}
+          AINEWS_SUPABASE_URL: ${{ secrets.AINEWS_SUPABASE_URL }}
+          AINEWS_SUPABASE_KEY: ${{ secrets.AINEWS_SUPABASE_KEY }}
+          AINEWS_SUPABASE_SERVICE_KEY: ${{ secrets.AINEWS_SUPABASE_SERVICE_KEY }}
 
       # Export scored items to static JSON (includes Supabase config for admin auth)
       - name: Export to JSON

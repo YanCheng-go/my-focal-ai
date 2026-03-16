@@ -171,6 +171,13 @@
             // Prepare Supabase client but don't flip isSupabaseMode yet —
             // filters check this flag, so set it only after data is ready
             supabaseSb = window._sb;
+
+            // Refresh session to ensure JWT is valid (getSession may return
+            // an expired token from localStorage after page navigation)
+            var refreshResult = await supabaseSb.auth.refreshSession();
+            if (refreshResult.data.session) {
+                session = refreshResult.data.session;
+            }
             supabaseSession = session;
 
             // Load tags and source types — use sessionStorage cache to skip queries on tab switch (#136)
@@ -190,11 +197,23 @@
                 sessionStorage.setItem('ainews_source_types', JSON.stringify(allSourceTypes));
             }
 
-            // Flip to Supabase mode only after items load successfully
+            // Load items first — only flip to Supabase mode if query succeeds
+            var prevItems = allItems;
             isSupabaseMode = true;
+            await loadSupabaseItems();
+
+            // If query returned empty but public feed had items, keep public feed
+            if (allItems.length === 0 && prevItems.length > 0 && !filters.source_type && !filters.tag) {
+                isSupabaseMode = false;
+                allItems = prevItems;
+                render();
+                // Still show fetch button so user can populate their feed
+                document.getElementById('fetch-now-btn').classList.remove('hidden');
+                return;
+            }
+
             document.getElementById('updated').textContent = 'Showing your personal feed';
             document.getElementById('fetch-now-btn').classList.remove('hidden');
-            await loadSupabaseItems();
             computeBadges(allItems, config || {}, 'dashboard');
             buildFilters();
 
