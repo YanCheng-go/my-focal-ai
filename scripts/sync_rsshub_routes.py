@@ -14,9 +14,9 @@ Full RSSHub route = /<namespace-dir><path>, e.g. /anthropic/news
 
 Set GITHUB_TOKEN env var to raise GitHub API rate limit (5000/hr vs 60/hr).
 
-NOTE: Must run AFTER sync_olshansk_feeds.py so overlapping entries can be
-detected. The GitHub Actions cron schedules enforce this ordering
-(Olshansk at 06:00 UTC, RSSHub at 07:00 UTC).
+NOTE: Must run BEFORE sync_olshansk_feeds.py so the Olshansk sync can exclude
+entries already covered by RSSHub. The GitHub Actions cron schedules enforce
+this ordering (RSSHub at 06:00 UTC, Olshansk at 07:00 UTC).
 """
 
 from __future__ import annotations
@@ -29,8 +29,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import httpx
-
-_OLSHANSK_PATH = Path(__file__).parent.parent / "src/ainews/sources/olshansk_feed_map.json"
 
 RSSHUB_REPO = "DIYgod/RSSHub"
 ROUTES_PATH = "lib/routes"
@@ -160,16 +158,6 @@ def main() -> None:
     if not route_map:
         print("ERROR: parsed 0 routes — structure may have changed", file=sys.stderr)
         sys.exit(1)
-
-    # Load Olshansk map to report overlaps
-    olshansk = json.loads(_OLSHANSK_PATH.read_text()) if _OLSHANSK_PATH.exists() else {}
-    overlaps = set(route_map.keys()) & set(olshansk.keys())
-    if overlaps:
-        print(
-            f"Note: {len(overlaps)} entries overlap with Olshansk feed map "
-            f"(sync_olshansk_feeds.py will clean those up)",
-            file=sys.stderr,
-        )
 
     new_content = json.dumps(dict(sorted(route_map.items())), indent=2, ensure_ascii=False) + "\n"
     old_content = _OUTPUT.read_text() if _OUTPUT.exists() else ""

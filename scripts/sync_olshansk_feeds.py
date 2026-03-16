@@ -4,9 +4,9 @@
 Fetches the README, parses the feed->URL table, and writes the JSON file.
 Run manually or via GitHub Actions cron.
 
-NOTE: Must run BEFORE sync_rsshub_routes.py so the RSSHub sync can exclude
-overlapping entries. The GitHub Actions cron schedules enforce this ordering
-(Olshansk at 06:00 UTC, RSSHub at 07:00 UTC).
+NOTE: Must run AFTER sync_rsshub_routes.py so it can exclude entries already
+covered by RSSHub. The GitHub Actions cron schedules enforce this ordering
+(RSSHub at 06:00 UTC, Olshansk at 07:00 UTC).
 """
 
 from __future__ import annotations
@@ -26,7 +26,7 @@ FEEDS_BASE = "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds"
 
 # Matches a markdown table row: | [Name](site_url) | [feed_xxx.xml](raw_url) |
 _ROW_RE = re.compile(
-    r"\|\s*\[[^\]]+\]\((https?://[^)]+)\)\s*\|\s*\[(feed_[^\]]+\.xml)\]\(https?://[^)]+\)"
+    r"\|\s*\[([^\]]+)\]\((https?://[^)]+)\)\s*\|\s*\[(feed_[^\]]+\.xml)\]\(https?://[^)]+\)"
 )
 
 
@@ -36,15 +36,15 @@ def fetch_readme() -> str:
     return resp.text
 
 
-def parse_feed_map(readme: str) -> dict[str, str]:
-    """Return {normalized_url_key: raw_feed_url}, excluding entries in RSSHub map."""
+def parse_feed_map(readme: str) -> dict[str, dict[str, str]]:
+    """Return {url_key: {"url": feed_url, "name": site_name}}, excluding RSSHub entries."""
     rsshub_keys = set(json.loads(_RSSHUB_MAP.read_text()).keys()) if _RSSHUB_MAP.exists() else set()
-    feed_map: dict[str, str] = {}
+    feed_map: dict[str, dict[str, str]] = {}
     for m in _ROW_RE.finditer(readme):
-        site_url, filename = m.group(1).rstrip("/"), m.group(2)
+        name, site_url, filename = m.group(1).strip(), m.group(2).rstrip("/"), m.group(3)
         key = re.sub(r"^https?://", "", site_url)
         if key not in rsshub_keys:
-            feed_map[key] = f"{FEEDS_BASE}/{filename}"
+            feed_map[key] = {"url": f"{FEEDS_BASE}/{filename}", "name": name}
     return feed_map
 
 

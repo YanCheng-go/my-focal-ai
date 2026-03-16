@@ -2,7 +2,7 @@ name: Sync RSSHub Route Map
 
 on:
   schedule:
-    - cron: "0 7 * * 1"  # Every Monday at 07:00 UTC (1hr after Olshansk sync)
+    - cron: "0 6 * * 1"  # Every Monday at 06:00 UTC (runs before Olshansk sync)
   workflow_dispatch:
 
 jobs:
