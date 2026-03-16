@@ -24,7 +24,14 @@ def export_items(
     items = backend.get_items(limit=500, since=since, min_score=min_score)
 
     # Ensure items from lower-volume source types aren't crowded out by arXiv flood
-    ensure_types = ["rss", "youtube", "github_trending", "github_trending_history"]
+    ensure_types = [
+        "rss",
+        "youtube",
+        "xiaohongshu",
+        "rsshub",
+        "github_trending",
+        "github_trending_history",
+    ]
     existing_ids = {item.id for item in items}
     for stype in ensure_types:
         extra = backend.get_items(limit=50, source_type=stype, since=since)

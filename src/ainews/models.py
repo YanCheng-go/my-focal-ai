@@ -21,7 +21,7 @@ class ContentItem(BaseModel):
     summary: str = ""
     content: str = ""
     source_name: str
-    source_type: str  # twitter, youtube, xiaohongshu, rss
+    source_type: str  # display category: twitter, youtube, xiaohongshu, rss, etc.
     tags: list[str] = Field(default_factory=list)
     author: str = ""
     published_at: datetime | None = None
