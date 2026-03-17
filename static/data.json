@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-17T10:34:49.210277+00:00",
+  "exported_at": "2026-03-17T12:34:35.188766+00:00",
   "period_hours": 168,
-  "total": 6461,
+  "total": 6463,
   "all_tags": [
     "ai",
     "anthropic",
@@ -199,6 +199,46 @@
       "author": "",
       "published_at": "2026-03-18T00:00:00Z",
       "fetched_at": "2026-03-11T10:29:16.976846Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c0a1c859372790db",
+      "url": "https://huggingface.co/blog/Hcompany/holotron-12b",
+      "title": "Holotron-12B - High Throughput Computer Use Agent",
+      "summary": "",
+      "content": "",
+      "source_name": "Hugging Face Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "open-source",
+        "huggingface"
+      ],
+      "author": "",
+      "published_at": "2026-03-17T12:33:39Z",
+      "fetched_at": "2026-03-17T12:34:29.707568Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e9a023d271b50fd9",
+      "url": "https://www.youtube.com/watch?v=9iS-YYLIXiw",
+      "title": "What is Human In The Loop with AI? How HITL Shapes AI Systems",
+      "summary": "Ready to become a certified watsonx Data Scientist? Register now and use code IBMTechYT20 for 20% off of your exam \u2192 https://ibm.biz/BdpZcg\n\nLearn more about Human-In-The-Loop here \u2192 https://ibm.biz/BdpZch\n\n\ud83d\ude80 Should AI act alone or involve humans? Martin Keen explains human-in-the-loop AI, exploring HITL, RLHF, and how humans teach, tune, and monitor AI systems. Learn how active learning and confidence thresholds ensure safety and trust as AI evolves from training to autonomy.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/BdpZcV\n\n#ai #humanintheloop #aiworkflow #rlhf",
+      "content": "",
+      "source_name": "IBM Technology",
+      "source_type": "youtube",
+      "tags": [
+        "ai"
+      ],
+      "author": "IBM Technology",
+      "published_at": "2026-03-17T11:00:22Z",
+      "fetched_at": "2026-03-17T12:34:22.012075Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -11071,50 +11111,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "12f7e1c417c4ba93",
-      "url": "https://arxiv.org/abs/2603.14343",
-      "title": "Localizing and Editing Knowledge in Large Audio-Language Models",
-      "summary": "arXiv:2603.14343v1 Announce Type: new \nAbstract: Large Audio-Language Models (LALMs) have shown strong performance in speech understanding, making speech a natural interface for accessing factual information. Yet they are trained on static corpora and may encode incorrect facts. Existing model editing methods localize and update facts in text-only LLMs, but do not account for continuous speech representations, or where knowledge is stored across acoustic or language modules, or their cross-modal module. We construct the first audio benchmark for knowledge localization and editing in LALMs and propose a speech-driven locate-then-edit framework. First, we use speech-aware causal tracing to localize layers and modules that support factual retrieval and then apply editing at identified sites. Experiments show that factual knowledge is jointly encoded in audio and text modules, and that audio editing yields more effective updates than text editing or fine-tuning, enabling fine-grained knowledge control in speech AI systems.",
-      "content": "",
-      "source_name": "arXiv cs.LG (Machine Learning)",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "ml",
-        "papers"
-      ],
-      "author": "Sung Kyun Chung, Jiaheng Dong, Qiuchi Hu, Gongping Huang, Hong Jia, Ting Dang",
-      "published_at": "2026-03-17T04:00:00Z",
-      "fetched_at": "2026-03-17T04:56:24.348903Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7a0dbdf9855f124f",
-      "url": "https://arxiv.org/abs/2603.14319",
-      "title": "Structure-Dependent Regret and Constraint Violation Bounds for Online Convex Optimization with Time-Varying Constraints",
-      "summary": "arXiv:2603.14319v1 Announce Type: new \nAbstract: Online convex optimization (OCO) with time-varying constraints is a critical framework for sequential decision-making in dynamic networked systems, where learners must minimize cumulative loss while satisfying regions of feasibility that shift across rounds. Existing theoretical analyses typically treat constraint variation as a monolithic adversarial process, resulting in joint regret and violation bounds that are overly conservative for real-world network dynamics. In this paper, we introduce a structured characterization of constraint variation - smooth drift, periodic cycles, and sparse switching - mapping these classes to common network phenomena such as slow channel fading, diurnal traffic patterns, and discrete maintenance windows. We derive structure-dependent joint bounds that strictly improve upon adversarial rates when the constraint process exhibits regularity. To realize these gains, we propose the Structure-Adaptive Primal-Dual (SA-PD) algorithm, which utilizes observable constraint signals to detect environmental structure online and adapt dual update strategies accordingly. Extensive experiments on synthetic benchmarks and real-world datasets - including online electricity scheduling and transformer load management - demonstrate that SA-PD reduces cumulative constraint violation by up to 53% relative to structure-agnostic baselines while maintaining competitive utility. This work serves as a comprehensive guide for exploiting temporal regularity in constrained online learning for robust network engineering.",
-      "content": "",
-      "source_name": "arXiv cs.LG (Machine Learning)",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "ml",
-        "papers"
-      ],
-      "author": "Xiufeng Liu, Qian Chen, Zhijin Wang, Ruyu Liu",
-      "published_at": "2026-03-17T04:00:00Z",
-      "fetched_at": "2026-03-17T04:56:24.348888Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bf3b7ccdb8dbd1ad",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77",
       "title": "v2.1.77",
@@ -12179,28 +12175,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "73d307c82190e14c",
-      "url": "https://cursor.com/blog/new-plugins",
-      "title": "Over 30 new plugins join the Cursor Marketplace",
-      "summary": "Extend Cursor with prebuilt capabilities in our marketplace.",
-      "content": "",
-      "source_name": "Cursor Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "tooling",
-        "engineering",
-        "cursor"
-      ],
-      "author": "",
-      "published_at": "2026-03-11T00:00:00Z",
-      "fetched_at": "2026-03-16T22:28:07.810405Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "1436084bc39b0d35",
       "url": "https://www.youtube.com/watch?v=P8m5eHAyrFM",
       "title": "What Is Llama.cpp? The LLM Inference Engine for Local AI",
@@ -13175,26 +13149,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-03-04T01:22:42Z",
       "fetched_at": "2026-03-11T10:29:08.920685Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d3c4511b587349f8",
-      "url": "https://www.youtube.com/watch?v=q0TgUtj6vIs",
-      "title": "The NEW Nano Banana 2 + Claude Code = $10k Websites",
-      "summary": "Full courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about\nAll my FREE resources: https://www.skool.com/ai-automation-society/about\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\n14 day FREE n8n trial: https://n8n.partnerlinks.io/22crlu8afq5r\nCode NATEHERK to Self-Host n8n for 10% off (annual plan): http://hostinger.com/nateherk\nVoice to text: https://ref.wisprflow.ai/nateherk\n\nIn this video, I show you how to use Google's new Nano Banana 2 image model and Claude Code to build three fully animated websites that you could sell for thousands of dollars, and it only takes minutes. \n\nWhether you've never touched Claude Code or built a website in your life, this tutorial will walk you through everything step by step so you can start creating stunning, professional-looking sites right away. \n\nI also built a custom skill specifically for this workflow that you can grab for completely free. It does the heavy lifting for you and makes the entire process way easier, even if you're a total beginner. If you've been looking for a way to start offering real services using AI, this is one of the fastest paths I've seen. Grab the free skill, follow along, and start building.\n\nSponsorship Inquiries:\n\ud83d\udce7 sponsorships@nateherk.com\n\nTimestamps\n00:00 What We're Building\n00:40 Setting up VS Code\n02:05 Grab my FREE Skills\n04:14 Live Build Starts\n11:38 What is Local Host?\n13:34 Hosting Our Website on the Cloud\n16:07 Managing Website Versions\n18:20 How to Sell These\n19:20 Final Thoughts",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-03-03T23:53:51Z",
-      "fetched_at": "2026-03-11T10:29:08.920692Z",
       "score": null,
       "score_reason": "",
       "tier": "",
