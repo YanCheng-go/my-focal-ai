@@ -7,24 +7,24 @@
 
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/yancheng/Documents/Others/ai-news-filter/scripts/local-push.sh</string>
+        <string>/path/to/ai-news-filter/scripts/local-push.sh</string>
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/yancheng/Documents/Others/ai-news-filter</string>
+    <string>/path/to/ai-news-filter</string>
 
     <key>StartInterval</key>
     <integer>7200</integer>
 
     <key>StandardOutPath</key>
-    <string>/Users/yancheng/Documents/Others/ai-news-filter/logs/launchd-stdout.log</string>
+    <string>/path/to/ai-news-filter/logs/launchd-stdout.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/yancheng/Documents/Others/ai-news-filter/logs/launchd-stderr.log</string>
+    <string>/path/to/ai-news-filter/logs/launchd-stderr.log</string>
 
     <key>EnvironmentVariables</key>
     <dict>
         <key>PATH</key>
-        <string>/Users/yancheng/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin</string>
+        <string>/Users/YOUR_USER/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin</string>
     </dict>
 </dict>
 </plist>

@@ -58,7 +58,9 @@ The script:
 
 **Automate with launchd** (macOS):
 ```bash
-cp scripts/com.ainews.local-push.plist ~/Library/LaunchAgents/
+# Copy the template and replace /path/to/ai-news-filter with your actual project path
+cp scripts/com.ainews.local-push.plist.example ~/Library/LaunchAgents/com.ainews.local-push.plist
+# Edit the plist to set your paths, then load it
 launchctl load ~/Library/LaunchAgents/com.ainews.local-push.plist
 ```
 This runs the script every 2 hours. Requires granting Full Disk Access to `/bin/bash` in System Settings > Privacy & Security (needed for Chrome cookie access in background).
