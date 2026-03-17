@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-17T14:40:28.407299+00:00",
+  "exported_at": "2026-03-17T16:41:40.482009+00:00",
   "period_hours": 168,
-  "total": 6465,
+  "total": 6466,
   "all_tags": [
     "ai",
     "anthropic",
@@ -199,6 +199,26 @@
       "author": "",
       "published_at": "2026-03-18T00:00:00Z",
       "fetched_at": "2026-03-11T10:29:16.976846Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5e6b4df638247f93",
+      "url": "https://www.youtube.com/watch?v=4Zaoo0YbYaw",
+      "title": "Claude Code + Blotato = Content Machine",
+      "summary": "Get 30% off Blotato for 6 months: https://blotato.com/?ref=nate\nFull courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about\nAll my FREE resources: https://www.skool.com/ai-automation-society/about\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\n14 day FREE n8n trial: https://n8n.partnerlinks.io/22crlu8afq5r\nCode NATEHERK to Self-Host Claude Code for 10% off (annual plan): https://www.hostinger.com/vps/claude-code-hosting\nVoice to text: https://ref.wisprflow.ai/nateherk\n\nIn this video, you'll learn how to combine Claude Code and Blotato to automatically repurpose a single YouTube video into finished LinkedIn, Instagram, and X posts with custom visuals, all in a matter of minutes. \n\nStarting from a brand new setup, the full walkthrough covers installing Claude Code in VS Code, connecting to Blotato, and building a reusable skill that handles transcript extraction, platform-specific copy, and graphic creation. Every time you run it and give it feedback, it gets better, making this one of the highest-leverage content systems you can build right now.\n\nSponsorship Inquiries:\n\ud83d\udce7 sponsorships@nateherk.com\n\nTimestamps\n0:00 - Introduction & Demo Overview\n1:28 - Setting Up Claude Code & Blotato\n4:34 - Building the Repurpose Skill (Clarifying Questions)\n7:48 - Test Run & Fixing Visual Issues\n12:29 - Reviewing Final Outputs & Posting to X\n15:06 - Project Structure & Wrapping Up",
+      "content": "",
+      "source_name": "Nate Herk | AI Automation",
+      "source_type": "youtube",
+      "tags": [
+        "ai",
+        "automation"
+      ],
+      "author": "Nate Herk | AI Automation",
+      "published_at": "2026-03-17T14:44:04Z",
+      "fetched_at": "2026-03-17T16:41:24.761865Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -11087,28 +11107,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "e6669159f492d6d2",
-      "url": "https://arxiv.org/abs/2603.14392",
-      "title": "WestWorld: A Knowledge-Encoded Scalable Trajectory World Model for Diverse Robotic Systems",
-      "summary": "arXiv:2603.14392v1 Announce Type: new \nAbstract: Trajectory world models play a crucial role in robotic dynamics learning, planning, and control. While recent works have explored trajectory world models for diverse robotic systems, they struggle to scale to a large number of distinct system dynamics and overlook domain knowledge of physical structures. To address these limitations, we introduce WestWorld, a knoWledge-Encoded Scalable Trajectory World model for diverse robotic systems. To tackle the scalability challenge, we propose a novel system-aware Mixture-of-Experts (Sys-MoE) that dynamically combines and routes specialized experts for different robotic systems via a learnable system embedding. To further enhance zero-shot generalization, we incorporate domain knowledge of robot physical structures by introducing a structural embedding that aligns trajectory representations with morphological information. After pretraining on 89 complex environments spanning diverse morphologies across both simulation and real-world settings, WestWorld achieves significant improvements over competitive baselines in zero- and few-shot trajectory prediction. Additionally, it shows strong scalability across a wide range of robotic environments and significantly improves performance on downstream model-based control for different robots. Finally, we deploy our model on a real-world Unitree Go1, where it demonstrates stable locomotion performance (see our demo on the website: https://westworldrobot.github.io/). The code will be available upon publication.",
-      "content": "",
-      "source_name": "arXiv cs.LG (Machine Learning)",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "ml",
-        "papers"
-      ],
-      "author": "Yuchen Wang, Jiangtao Kong, Sizhe Wei, Xiaochang Li, Haohong Lin, Hongjue Zhao, Tianyi Zhou, Lu Gan, Huajie Shao",
-      "published_at": "2026-03-17T04:00:00Z",
-      "fetched_at": "2026-03-17T04:56:24.348970Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bf3b7ccdb8dbd1ad",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77",
       "title": "v2.1.77",
@@ -13085,26 +13083,6 @@
       "author": "IBM Technology",
       "published_at": "2026-03-04T11:01:23Z",
       "fetched_at": "2026-03-11T20:28:31.610181Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9cb5b6083114604a",
-      "url": "https://www.youtube.com/shorts/AUoYldwt_sA",
-      "title": "How I Build $10,000 Apple-Style Websites with Claude Code",
-      "summary": "",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-03-04T01:22:42Z",
-      "fetched_at": "2026-03-11T10:29:08.920685Z",
       "score": null,
       "score_reason": "",
       "tier": "",
