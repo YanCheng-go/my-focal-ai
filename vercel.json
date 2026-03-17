@@ -3,7 +3,7 @@
   "buildCommand": "",
   "framework": null,
   "cleanUrls": true,
-  "ignoreCommand": "git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} HEAD -- static/ api/ vercel.json",
+  "ignoreCommand": "git cat-file -e ${VERCEL_GIT_PREVIOUS_SHA:-HEAD^} 2>/dev/null && git diff --quiet ${VERCEL_GIT_PREVIOUS_SHA} HEAD -- static/ api/ vercel.json || exit 1",
   "functions": {
     "api/*.py": {
       "maxDuration": 10,
