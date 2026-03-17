@@ -41,6 +41,36 @@ No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROP
 2. Optionally add `ANTHROPIC_API_KEY` as a GitHub Actions secret for scoring
 3. Trigger the "Fetch & Export" workflow manually for the first run
 
+### Hybrid: Local Fetch + Cloud Serve
+
+Twitter and relevance scoring require local resources (Chrome cookies and Ollama respectively). To get Twitter content and scored items in the online public dashboard, run the fetch locally and push to GitHub:
+
+```bash
+./scripts/local-push.sh              # fetch all sources (including Twitter), export, commit + push
+./scripts/local-push.sh --hours 48   # export only the last 48 hours
+```
+
+The script:
+1. Runs `ainews fetch` locally (Twitter works via Chrome cookies, scoring via Ollama)
+2. Runs `ainews fetch-users` if Supabase credentials are set (fetches Twitter sources added by online users)
+3. Exports to `static/data.json` and pushes to GitHub
+4. Vercel auto-deploys the updated data
+
+**Automate with launchd** (macOS):
+```bash
+cp scripts/com.ainews.local-push.plist ~/Library/LaunchAgents/
+launchctl load ~/Library/LaunchAgents/com.ainews.local-push.plist
+```
+This runs the script every 2 hours. Requires granting Full Disk Access to `/bin/bash` in System Settings > Privacy & Security (needed for Chrome cookie access in background).
+
+**Required `.env` for Supabase user fetch:**
+```bash
+AINEWS_SUPABASE_URL=https://<ref>.supabase.co
+AINEWS_SUPABASE_SERVICE_KEY=<service-role-key>   # Settings > API > service_role (secret)
+```
+
+Logs are written to `logs/local-push.log` in the project directory.
+
 ## 3. Online Login (Supabase + Vercel)
 
 Authenticated mode where users create accounts, manage their own source list, and fetch feeds on demand. Each user's data is fully isolated via Row Level Security.
@@ -109,4 +139,4 @@ GitHub Actions and Vercel are **separate servers** that both need to connect to 
 
 ---
 
-*Last updated: 2026-03-16*
+*Last updated: 2026-03-17*

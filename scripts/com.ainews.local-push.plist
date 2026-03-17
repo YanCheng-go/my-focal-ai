@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ainews.local-push</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/yancheng/Documents/Others/ai-news-filter/scripts/local-push.sh</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/yancheng/Documents/Others/ai-news-filter</string>
+
+    <key>StartInterval</key>
+    <integer>7200</integer>
+
+    <key>StandardOutPath</key>
+    <string>/Users/yancheng/Documents/Others/ai-news-filter/logs/launchd-stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/yancheng/Documents/Others/ai-news-filter/logs/launchd-stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/yancheng/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/usr/bin:/bin</string>
+    </dict>
+</dict>
+</plist>
