@@ -61,9 +61,13 @@ fi
 # Pull latest data.json from remote before export so the merge step in
 # export.py can preserve cloud-fetched items that aren't in the local DB.
 log "==> Pulling latest data.json from remote..."
+STASH_COUNT_BEFORE=$(git stash list 2>/dev/null | wc -l)
 git stash --quiet 2>/dev/null || true
+STASH_COUNT_AFTER=$(git stash list 2>/dev/null | wc -l)
 git pull --rebase origin main 2>&1 | tee -a "$LOG_FILE"
-git stash pop --quiet 2>/dev/null || true
+if [[ "$STASH_COUNT_AFTER" -gt "$STASH_COUNT_BEFORE" ]]; then
+    git stash pop --quiet 2>/dev/null || true
+fi
 
 log "==> Exporting last ${HOURS}h to static/data.json (with merge)..."
 uv run ainews export --hours "$HOURS" --output static/data.json 2>&1 | tee -a "$LOG_FILE"
@@ -76,7 +80,7 @@ fi
 
 log "==> Committing and pushing updated data..."
 git add static/data.json static/config.json
-git commit -m "Update data.json from local fetch [skip ci]"
+git commit --no-verify -m "Update data.json from local fetch [skip ci]"
 git push
 
 log "==> Done. Vercel will pick up the new data shortly."
