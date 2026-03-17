@@ -112,6 +112,7 @@
     let HIDDEN_SOURCES = [];
     let TYPE_LABELS = {};
     let TYPE_NORMALIZE = {};
+    const TYPE_ORDER = ['twitter', 'youtube', 'rss', 'arxiv', 'xiaohongshu'];
 
     // Supabase mode state (#106, #108, #110)
     let isSupabaseMode = false;
@@ -229,7 +230,10 @@
                     supabaseSb.from('user_sources').select('source_type').eq('user_id', session.user.id),
                 ]);
                 allTags = ((tagResult.data) || []).map(r => r.tag);
-                allSourceTypes = [...new Set(((typeResult.data) || []).map(r => TYPE_NORMALIZE[r.source_type] || r.source_type))].filter(Boolean).sort();
+                allSourceTypes = [...new Set(((typeResult.data) || []).map(r => TYPE_NORMALIZE[r.source_type] || r.source_type))].filter(Boolean).sort((a, b) => {
+                    var ai = TYPE_ORDER.indexOf(a), bi = TYPE_ORDER.indexOf(b);
+                    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.localeCompare(b);
+                });
                 sessionStorage.setItem('ainews_tags', JSON.stringify(allTags));
                 sessionStorage.setItem('ainews_source_types', JSON.stringify(allSourceTypes));
             }
@@ -330,7 +334,10 @@
             totalNew++;
         });
 
-        const types = (isSupabaseMode ? allSourceTypes : [...new Set(allItems.map(i => i.source_type))]).filter(t => !HIDDEN_TYPES.includes(t)).sort();
+        const types = (isSupabaseMode ? allSourceTypes : [...new Set(allItems.map(i => i.source_type))]).filter(t => !HIDDEN_TYPES.includes(t)).sort((a, b) => {
+            var ai = TYPE_ORDER.indexOf(a), bi = TYPE_ORDER.indexOf(b);
+            return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.localeCompare(b);
+        });
         var noFilter = !filters.source_type && !filters.tag && filters.order_by === 'date';
         let html = `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${noFilter ? activeCls : inactiveCls}" onclick="setFilter({})">All${badgeHtml(totalNew)}</button>`;
         types.forEach(t => {
