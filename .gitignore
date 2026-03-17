@@ -16,3 +16,4 @@ test-results/
 tests/perf/results/
 supabase/.branches/
 supabase/.temp/
+logs/

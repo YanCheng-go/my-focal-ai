@@ -1,11 +1,43 @@
 """Export scored items to JSON for static site deployment."""
 
 import json
+import logging
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from ainews.config import Settings, load_sources
 from ainews.storage.db import get_backend
+
+logger = logging.getLogger(__name__)
+
+
+def _parse_iso(value: str) -> datetime | None:
+    """Parse an ISO 8601 datetime string, returning None on failure."""
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _load_existing_items(path: Path, since: datetime) -> list[dict]:
+    """Load items from an existing data.json, filtering to the time window."""
+    if not path.exists():
+        return []
+    try:
+        with open(path) as f:
+            data = json.load(f)
+        items = data.get("items", [])
+        result = []
+        for item in items:
+            dt = _parse_iso(item.get("published_at") or item.get("fetched_at", ""))
+            if dt and dt >= since:
+                result.append(item)
+        return result
+    except (json.JSONDecodeError, KeyError):
+        logger.warning("Could not read existing %s, skipping merge", path)
+        return []
 
 
 def export_items(
@@ -14,6 +46,9 @@ def export_items(
     min_score: float | None = None,
 ) -> int:
     """Export recent scored items to a JSON file for the static dashboard.
+
+    Merges with items from the existing data.json so that cloud-fetched items
+    (from GitHub Actions) are preserved when the local pipeline exports.
 
     Returns the number of items exported.
     """
@@ -41,15 +76,31 @@ def export_items(
                 existing_ids.add(item.id)
 
     all_tags = backend.get_all_tags()
-    total = backend.count_items(since=since, min_score=min_score)
     backend.close()
+
+    # Merge: preserve items from existing data.json that aren't in the local DB.
+    # This keeps cloud-fetched items when local-push.sh overwrites data.json.
+    # URL-only dedup is sufficient for online public mode (no Twitter in cloud pipeline).
+    seen_urls = {item.url for item in items}
+    old_items = _load_existing_items(output_path, since)
+    old_kept = []
+    for old in old_items:
+        old_url = old.get("url", "")
+        if old_url and old_url not in seen_urls:
+            seen_urls.add(old_url)
+            old_kept.append(old)
+
+    if old_kept:
+        logger.info("Merged %d items from existing data.json", len(old_kept))
+
+    serialized_items = [item.model_dump(mode="json") for item in items] + old_kept
 
     data = {
         "exported_at": datetime.now(timezone.utc).isoformat(),
         "period_hours": hours,
-        "total": total,
+        "total": len(serialized_items),
         "all_tags": all_tags,
-        "items": [item.model_dump(mode="json") for item in items],
+        "items": serialized_items,
     }
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -59,7 +110,7 @@ def export_items(
     # Also export config.json with static page data (leaderboard, event links)
     _export_config(output_path.parent / "config.json", settings)
 
-    return len(items)
+    return len(serialized_items)
 
 
 HIDDEN_SOURCE_TYPES = ["events", "luma", "github_trending", "github_trending_history"]
