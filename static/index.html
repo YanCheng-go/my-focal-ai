@@ -418,10 +418,11 @@
                 const pubDate = item.published_at ? new Date(item.published_at).toLocaleDateString('en-US', dateOpts) : '';
                 const fetchDate = !pubDate && item.fetched_at ? new Date(item.fetched_at).toLocaleDateString('en-US', dateOpts) + ' <span class="text-gray-400 dark:text-gray-600">(fetched)</span>' : '';
                 const dateLabel = item.source_type === 'luma' && pubDate ? `Event: ${pubDate}` : pubDate || fetchDate;
-                const summary = item.summary ? item.summary.slice(0, 200) + (item.summary.length > 200 ? '...' : '') : '';
+                const rawSummary = (item.summary || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+                const summary = rawSummary ? rawSummary.slice(0, 200) + (rawSummary.length > 200 ? '...' : '') : '';
                 const borderCls = SOURCE_BORDERS[item.source_type] || 'border-l-gray-300 dark:border-l-neutral-600';
 
-                return `<div data-url="${escapeAttr(item.url)}" class="cursor-pointer active:scale-[0.99] bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 ${borderCls} hover:border-gray-300 dark:hover:border-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-800 active:bg-gray-100 dark:active:bg-neutral-700 transition-all duration-150">
+                return `<div data-url="${escapeAttr(item.url)}" class="cursor-pointer active:scale-[0.99] bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3 sm:p-4 mb-3 border-l-4 ${borderCls} hover:border-gray-300 dark:hover:border-neutral-700 hover:bg-gray-50 dark:hover:bg-neutral-800 active:bg-gray-100 dark:active:bg-neutral-700 transition-all duration-150 overflow-hidden">
                     <div class="flex justify-between items-start gap-3">
                         <div class="text-base font-semibold"><a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="text-gray-900 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">${escapeHtml(item.title)}</a></div>
                         ${scoreHtml}
@@ -432,7 +433,7 @@
                         ${tierHtml}${tagsHtml}
                         ${dateLabel ? `<span>${dateLabel}</span>` : ''}
                     </div>
-                    ${summary ? `<div class="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">${escapeHtml(summary)}</div>` : ''}
+                    ${summary ? `<div class="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-relaxed break-words">${escapeHtml(summary)}</div>` : ''}
                     ${item.score_reason ? `<div class="mt-2 text-sm text-gray-500 dark:text-gray-500 italic">${escapeHtml(item.score_reason)}</div>` : ''}
                 </div>`;
             }).join('');
