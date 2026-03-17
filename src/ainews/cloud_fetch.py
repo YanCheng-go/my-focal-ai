@@ -102,3 +102,60 @@ async def cloud_fetch_all_users():
         f"Cloud fetch all users complete: {total_new} new items across {len(user_ids)} users"
     )
     return total_new
+
+
+async def local_fetch_user_twitter():
+    """Fetch only Twitter sources for Supabase users, using local Chrome cookies.
+
+    The cloud pipeline already handles RSS/YouTube/arXiv — this fills the gap
+    for Twitter, which requires browser cookies and can only run locally.
+    """
+    settings = Settings()
+    if not settings.supabase_url or not settings.supabase_service_key:
+        logger.error("AINEWS_SUPABASE_URL and AINEWS_SUPABASE_SERVICE_KEY required")
+        return 0
+
+    try:
+        from supabase import create_client
+    except ImportError:
+        logger.error("supabase package required. Install with: uv sync --extra supabase")
+        return 0
+
+    from ainews.ingest.twitter import get_twitter_cookies_from_browser, run_twitter_ingestion
+    from ainews.sources.supabase_manager import (
+        get_all_user_ids,
+        get_user_sources,
+        sources_to_config,
+    )
+
+    cookies = get_twitter_cookies_from_browser()
+    if not cookies:
+        logger.warning("No Twitter cookies found in Chrome — nothing to do")
+        return 0
+
+    service_client = create_client(settings.supabase_url, settings.supabase_service_key)
+    user_ids = get_all_user_ids(service_client)
+    logger.info(f"Found {len(user_ids)} users — fetching Twitter sources only")
+
+    total_new = 0
+    for uid in user_ids:
+        try:
+            rows = get_user_sources(service_client, uid)
+            if not rows:
+                continue
+            sources_config = sources_to_config(rows)
+            twitter_users = sources_config.get("sources", {}).get("twitter", [])
+            if not twitter_users:
+                logger.info(f"User {uid}: no Twitter sources, skipping")
+                continue
+            with get_backend(user_id=uid) as backend:
+                new_items = await run_twitter_ingestion(backend, sources_config)
+                total_new += new_items
+                logger.info(f"User {uid}: fetched {new_items} new tweets")
+        except Exception:
+            logger.exception(f"Failed to fetch Twitter for user {uid}")
+
+    logger.info(
+        f"Local Twitter fetch complete: {total_new} new tweets across {len(user_ids)} users"
+    )
+    return total_new
