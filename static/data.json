@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-16T22:28:14.018928+00:00",
+  "exported_at": "2026-03-17T00:50:57.762508+00:00",
   "period_hours": 168,
-  "total": 5165,
+  "total": 5166,
   "all_tags": [
     "ai",
     "anthropic",
@@ -199,6 +199,29 @@
       "author": "",
       "published_at": "2026-03-18T00:00:00Z",
       "fetched_at": "2026-03-11T10:29:16.976846Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf3b7ccdb8dbd1ad",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.77",
+      "title": "v2.1.77",
+      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Increased default maximum output token limits for Claude Opus 4.6 to 64k tokens, and the upper bound for Opus 4.6 and Sonnet 4.6 models to 128k tokens</li>\n<li>Added <code>allowRead</code> sandbox filesystem setting to re-allow read access within <code>denyRead</code> regions</li>\n<li><code>/copy</code> now accepts an optional index: <code>/copy N</code> copies the Nth-latest assistant response</li>\n<li>Fixed \"Always Allow\" on compound bash commands (e.g. <code>cd src &amp;&amp; npm test</code>) saving a single rule for the full string instead of per-subcommand, leading to dead rules and repeated permission prompts</li>\n<li>Fixed auto-updater starting overlapping binary downloads when the slash-command overlay repeatedly opened and closed, accumulating tens of gigabytes of memory</li>\n<li>Fixed <code>--resume</code> silently truncating recent conversation history due to a race between memory-extraction writes and the main transcript</li>\n<li>Fixed PreToolUse hooks returning <code>\"allow\"</code> bypassing <code>deny</code> permission rules, including enterprise managed settings</li>\n<li>Fixed Write tool silently converting line endings when overwriting CRLF files or creating files in CRLF directories</li>\n<li>Fixed memory growth in long-running sessions from progress messages surviving compaction</li>\n<li>Fixed cost and token usage not being tracked when the API falls back to non-streaming mode</li>\n<li>Fixed <code>CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS</code> not stripping beta tool-schema fields, causing proxy gateways to reject requests</li>\n<li>Fixed Bash tool reporting errors for successful commands when the system temp directory path contains spaces</li>\n<li>Fixed paste being lost when typing immediately after pasting</li>\n<li>Fixed Ctrl+D in <code>/feedback</code> text input deleting forward instead of the second press exiting the session</li>\n<li>Fixed API error when dragging a 0-byte image file into the prompt</li>\n<li>Fixed Claude Desktop sessions incorrectly using the terminal CLI's configured API key instead of OAuth</li>\n<li>Fixed <code>git-subdir</code> plugins at different subdirectories of the same monorepo commit colliding in the plugin cache</li>\n<li>Fixed ordered list numbers not rendering in terminal UI</li>\n<li>Fixed a race condition where stale-worktree cleanup could delete an agent worktree just resumed from a previous crash</li>\n<li>Fixed input deadlock when opening <code>/mcp</code> or similar dialogs while the agent is running</li>\n<li>Fixed Backspace and Delete keys not working in vim NORMAL mode</li>\n<li>Fixed status line not updating when vim mode is toggled on or off</li>\n<li>Fixed hyperlinks opening twice on Cmd+click in VS Code, Cursor, and other xterm.js-based terminals</li>\n<li>Fixed background colors rendering as terminal-default inside tmux with default configuration</li>\n<li>Fixed iTerm2 session crash when selecting text inside tmux over SSH</li>\n<li>Fixed clipboard copy silently failing in tmux sessions; copy toast now indicates whether to paste with <code>\u2318V</code> or tmux <code>prefix+]</code></li>\n<li>Fixed <code>\u2190</code>/<code>\u2192</code> accidentally switching tabs in settings, permissions, and sandbox dialogs while navigating lists</li>\n<li>Fixed IDE integration not auto-connecting when Claude Code is launched inside tmux or screen</li>\n<li>Fixed CJK characters visually bleeding into adjacent UI elements when clipped at the right edge</li>\n<li>Fixed teammate panes not closing when the leader exits</li>\n<li>Fixed iTerm2 auto mode not detecting iTerm2 for native split-pane teammates</li>\n<li>Faster startup on macOS (~60ms) by reading keychain credentials in parallel with module loading</li>\n<li>Faster <code>--resume</code> on fork-heavy and very large sessions \u2014 up to 45% faster loading and ~100-150MB less peak memory</li>\n<li>Improved Esc to abort in-flight non-streaming API requests</li>\n<li>Improved <code>claude plugin validate</code> to check skill, agent, and command frontmatter plus <code>hooks/hooks.json</code>, catching YAML parse errors and schema violations</li>\n<li>Background bash tasks are now killed if output exceeds 5GB, preventing runaway processes from filling disk</li>\n<li>Sessions are now auto-named from plan content when you accept a plan</li>\n<li>Improved headless mode plugin installation to compose correctly with <code>CLAUDE_CODE_PLUGIN_SEED_DIR</code></li>\n<li>Show a notice when <code>apiKeyHelper</code> takes longer than 10s, preventing it from blocking the main loop</li>\n<li>The Agent tool no longer accepts a <code>resume</code> parameter \u2014 use <code>SendMessage({to: agentId})</code> to continue a previously spawned agent</li>\n<li><code>SendMessage</code> now auto-resumes stopped agents in the background instead of returning an error</li>\n<li>Renamed <code>/fork</code> to <code>/branch</code> (<code>/fork</code> still works as an alias)</li>\n<li>[VSCode] Improved plan preview tab titles to use the plan's heading instead of \"Claude's Plan\"</li>\n<li>[VSCode] When option+click doesn't trigger native selection on macOS, the footer now points to the <code>macOptionClickForcesSelection</code> setting</li>\n</ul>",
+      "content": "<h2>What's changed</h2>\n<ul>\n<li>Increased default maximum output token limits for Claude Opus 4.6 to 64k tokens, and the upper bound for Opus 4.6 and Sonnet 4.6 models to 128k tokens</li>\n<li>Added <code>allowRead</code> sandbox filesystem setting to re-allow read access within <code>denyRead</code> regions</li>\n<li><code>/copy</code> now accepts an optional index: <code>/copy N</code> copies the Nth-latest assistant response</li>\n<li>Fixed \"Always Allow\" on compound bash commands (e.g. <code>cd src &amp;&amp; npm test</code>) saving a single rule for the full string instead of per-subcommand, leading to dead rules and repeated permission prompts</li>\n<li>Fixed auto-updater starting overlapping binary downloads when the slash-command overlay repeatedly opened and closed, accumulating tens of gigabytes of memory</li>\n<li>Fixed <code>--resume</code> silently truncating recent conversation history due to a race between memory-extraction writes and the main transcript</li>\n<li>Fixed PreToolUse hooks returning <code>\"allow\"</code> bypassing <code>deny</code> permission rules, including enterprise managed settings</li>\n<li>Fixed Write tool silently converting line endings when overwriting CRLF files or creating files in CRLF directories</li>\n<li>Fixed memory growth in long-running sessions from progress messages surviving compaction</li>\n<li>Fixed cost and token usage not being tracked when the API falls back to non-streaming mode</li>\n<li>Fixed <code>CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS</code> not stripping beta tool-schema fields, causing proxy gateways to reject requests</li>\n<li>Fixed Bash tool reporting errors for successful commands when the system temp directory path contains spaces</li>\n<li>Fixed paste being lost when typing immediately after pasting</li>\n<li>Fixed Ctrl+D in <code>/feedback</code> text input deleting forward instead of the second press exiting the session</li>\n<li>Fixed API error when dragging a 0-byte image file into the prompt</li>\n<li>Fixed Claude Desktop sessions incorrectly using the terminal CLI's configured API key instead of OAuth</li>\n<li>Fixed <code>git-subdir</code> plugins at different subdirectories of the same monorepo commit colliding in the plugin cache</li>\n<li>Fixed ordered list numbers not rendering in terminal UI</li>\n<li>Fixed a race condition where stale-worktree cleanup could delete an agent worktree just resumed from a previous crash</li>\n<li>Fixed input deadlock when opening <code>/mcp</code> or similar dialogs while the agent is running</li>\n<li>Fixed Backspace and Delete keys not working in vim NORMAL mode</li>\n<li>Fixed status line not updating when vim mode is toggled on or off</li>\n<li>Fixed hyperlinks opening twice on Cmd+click in VS Code, Cursor, and other xterm.js-based terminals</li>\n<li>Fixed background colors rendering as terminal-default inside tmux with default configuration</li>\n<li>Fixed iTerm2 session crash when selecting text inside tmux over SSH</li>\n<li>Fixed clipboard copy silently failing in tmux sessions; copy toast now indicates whether to paste with <code>\u2318V</code> or tmux <code>prefix+]</code></li>\n<li>Fixed <code>\u2190</code>/<code>\u2192</code> accidentally switching tabs in settings, permissions, and sandbox dialogs while navigating lists</li>\n<li>Fixed IDE integration not auto-connecting when Claude Code is launched inside tmux or screen</li>\n<li>Fixed CJK characters visually bleeding into adjacent UI elements when clipped at the right edge</li>\n<li>Fixed teammate panes not closing when the leader exits</li>\n<li>Fixed iTerm2 auto mode not detecting iTerm2 for native split-pane teammates</li>\n<li>Faster startup on macOS (~60ms) by reading keychain credentials in parallel with module loading</li>\n<li>Faster <code>--resume</code> on fork-heavy and very large sessions \u2014 up to 45% faster loading and ~100-150MB less peak memory</li>\n<li>Improved Esc to abort in-flight non-streaming API requests</li>\n<li>Improved <code>claude plugin validate</code> to check skill, agent, and command frontmatter plus <code>hooks/hooks.json</code>, catching YAML parse errors and schema violations</li>\n<li>Background bash tasks are now killed if output exceeds 5GB, preventing runaway processes from filling disk</li>\n<li>Sessions are now auto-named from plan content when you accept a plan</li>\n<li>Improved headless mode plugin installation to compose correctly with <code>CLAUDE_CODE_PLUGIN_SEED_DIR</code></li>\n<li>Show a notice when <code>apiKeyHelper</code> takes longer than 10s, preventing it from blocking the main loop</li>\n<li>The Agent tool no longer accepts a <code>resume</code> parameter \u2014 use <code>SendMessage({to: agentId})</code> to continue a previously spawned agent</li>\n<li><code>SendMessage</code> now auto-resumes stopped agents in the background instead of returning an error</li>\n<li>Renamed <code>/fork</code> to <code>/branch</code> (<code>/fork</code> still works as an alias)</li>\n<li>[VSCode] Improved plan preview tab titles to use the plan's heading instead of \"Claude's Plan\"</li>\n<li>[VSCode] When option+click doesn't trigger native selection on macOS, the footer now points to the <code>macOptionClickForcesSelection</code> setting</li>\n</ul>",
+      "source_name": "Claude Code Releases",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "anthropic",
+        "claude code",
+        "tooling",
+        "changelog"
+      ],
+      "author": "ashwin-ant",
+      "published_at": "2026-03-17T00:28:12Z",
+      "fetched_at": "2026-03-17T00:50:50.761365Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10757,27 +10780,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ad9ace2ba47675e6",
-      "url": "https://arxiv.org/abs/2603.13177v1",
-      "title": "Clustering Astronomical Orbital Synthetic Data Using Advanced Feature Extraction and Dimensionality Reduction Techniques",
-      "summary": "The dynamics of Saturn's satellite system offer a rich framework for studying orbital stability and resonance interactions. Traditional methods for analysing such systems, including Fourier analysis and stability metrics, struggle with the scale and complexity of modern datasets. This study introduces a machine learning-based pipeline for clustering approximately 22,300 simulated satellite orbits, addressing these challenges with advanced feature extraction and dimensionality reduction techniques. The key to this approach is using MiniRocket, which efficiently transforms 400 timesteps into a 9,996-dimensional feature space, capturing intricate temporal patterns. Additional automated feature extraction and dimensionality reduction techniques refine the data, enabling robust clustering analysis. This pipeline reveals stability regions, resonance structures, and other key behaviours in Saturn's satellite system, providing new insights into their long-term dynamical evolution. By integrating computational tools with traditional celestial mechanics techniques, this study offers a scalable and interpretable methodology for analysing large-scale orbital datasets and advancing the exploration of planetary dynamics.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Caetano Mazzoni Ranieri",
-      "published_at": "2026-03-13T17:11:52Z",
-      "fetched_at": "2026-03-16T03:25:57.733565Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "19ec4c1e21fadc3d",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.75",
       "title": "v2.1.75",
@@ -11443,27 +11445,6 @@
       "author": "",
       "published_at": "2026-03-11T00:00:00Z",
       "fetched_at": "2026-03-16T22:28:07.810405Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8374df972972f730",
-      "url": "https://claude.com/blog/claude-excel-powerpoint-updates",
-      "title": "Advancing Claude for Excel and PowerPoint",
-      "summary": "Advancing Claude for Excel and PowerPoint",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-03-11T00:00:00Z",
-      "fetched_at": "2026-03-16T22:28:07.714604Z",
       "score": null,
       "score_reason": "",
       "tier": "",
