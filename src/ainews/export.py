@@ -11,6 +11,16 @@ from ainews.storage.db import get_backend
 logger = logging.getLogger(__name__)
 
 
+def _parse_iso(value: str) -> datetime | None:
+    """Parse an ISO 8601 datetime string, returning None on failure."""
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
 def _load_existing_items(path: Path, since: datetime) -> list[dict]:
     """Load items from an existing data.json, filtering to the time window."""
     if not path.exists():
@@ -19,13 +29,12 @@ def _load_existing_items(path: Path, since: datetime) -> list[dict]:
         with open(path) as f:
             data = json.load(f)
         items = data.get("items", [])
-        # Keep only items within the export window
-        cutoff = since.isoformat()
-        return [
-            item
-            for item in items
-            if (item.get("published_at") or item.get("fetched_at", "")) >= cutoff
-        ]
+        result = []
+        for item in items:
+            dt = _parse_iso(item.get("published_at") or item.get("fetched_at", ""))
+            if dt and dt >= since:
+                result.append(item)
+        return result
     except (json.JSONDecodeError, KeyError):
         logger.warning("Could not read existing %s, skipping merge", path)
         return []
@@ -67,7 +76,6 @@ def export_items(
                 existing_ids.add(item.id)
 
     all_tags = backend.get_all_tags()
-    total = backend.count_items(since=since, min_score=min_score)
     backend.close()
 
     # Merge: preserve items from existing data.json that aren't in the local DB.
@@ -90,7 +98,7 @@ def export_items(
     data = {
         "exported_at": datetime.now(timezone.utc).isoformat(),
         "period_hours": hours,
-        "total": total,
+        "total": len(serialized_items),
         "all_tags": all_tags,
         "items": serialized_items,
     }

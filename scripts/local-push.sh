@@ -28,7 +28,7 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
         --hours) HOURS="${2:-168}"; shift 2 ;;
         --all)   FETCH_ALL=true; shift ;;
-        *)       shift ;;
+        *)       echo "Unknown flag: $1"; exit 1 ;;
     esac
 done
 
