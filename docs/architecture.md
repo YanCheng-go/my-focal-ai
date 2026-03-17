@@ -149,6 +149,96 @@ cloud_fetch.py ── cloud_fetch_all_users()
                     └──────────────────┴──────────────────────────┘
 ```
 
+## Data Model
+
+### ContentItem (`models.py`)
+
+The core entity. Every piece of ingested content becomes one `ContentItem`.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | `str` | Deterministic: `sha256(url)[:16]` (single-tenant) or `sha256(user_id:url)[:16]` (multi-tenant) |
+| `url` | `str` | Canonical URL of the content |
+| `title` | `str` | Title or first line of the content |
+| `summary` | `str` | Short description (from feed or LLM) |
+| `content` | `str` | Full text (when available) |
+| `source_name` | `str` | Human-readable source label (e.g. "OpenAI Blog") |
+| `source_type` | `str` | Display category: `twitter`, `youtube`, `rss`, `arxiv`, `xiaohongshu`, etc. |
+| `tags` | `list[str]` | Source-level tags from `sources.yml` |
+| `author` | `str` | Content author (when available) |
+| `published_at` | `datetime?` | Original publish date |
+| `fetched_at` | `datetime` | When the pipeline ingested this item |
+| `score` | `float?` | Relevance score 0–1 (set by scorer) |
+| `score_reason` | `str` | One-line explanation from LLM |
+| `tier` | `str` | `personal` or `work` |
+| `is_duplicate_of` | `str?` | Points to the primary item's ID (e.g. YouTube Short → full video) |
+
+### Storage
+
+| Mode | Backend | ID scope | Tables |
+|------|---------|----------|--------|
+| Local / Online public | `SqliteBackend` | `sha256(url)[:16]` | `items`, `source_state` |
+| Online login | `SupabaseBackend` | `sha256(user_id:url)[:16]` | `items`, `source_state`, `user_sources` (RLS by `user_id`) |
+
+Both backends implement the `DbBackend` protocol. Queries filter `WHERE is_duplicate_of IS NULL` to hide soft-duplicates.
+
+### Export (`data.json`)
+
+The static dashboard reads `data.json`, a snapshot exported from the DB:
+
+```json
+{
+  "exported_at": "2026-03-17T12:00:00Z",
+  "period_hours": 168,
+  "total": 342,
+  "all_tags": ["ai", "infra", ...],
+  "items": [ { /* ContentItem fields */ }, ... ]
+}
+```
+
+On export, items from the local DB are merged with items already in `data.json` (deduped by ID and URL) so cloud-fetched items survive when the local pipeline overwrites the file.
+
+### Data flow per mode
+
+**Local mode** — no `data.json`, FastAPI reads straight from SQLite:
+
+```
+sources.yml → APScheduler (30 min) → runner.py
+  ├── feeds.py → RSS/Atom/RSSHub/YouTube
+  ├── twitter.py → Twitter GraphQL (Chrome cookies)
+  └── ...
+       ↓
+  SqliteBackend (local .db file)
+    dedup: id = sha256(url)[:16], skip existing IDs
+       ↓
+  scorer.py → Ollama (qwen3:4b)
+       ↓
+  FastAPI serves dashboard directly from DB
+```
+
+**Online public mode** — cloud fetch exports to `data.json`, Vercel serves static:
+
+```
+GitHub Actions (cron 2h) → cloud_fetch.py
+  └── feeds.py (RSS only, no Twitter)
+       ↓
+  SqliteBackend (ephemeral, restored from cache artifact)
+       ↓
+  claude_scorer.py → Claude API
+       ↓
+  export.py → static/data.json → git push → Vercel
+```
+
+**Hybrid (local-push.sh)** — local fetch (incl. Twitter) merged into `data.json`:
+
+```
+local-push.sh:
+  1. git pull             → get latest cloud data.json
+  2. ainews fetch         → local DB (all sources incl. Twitter)
+  3. ainews export        → merge local DB + existing data.json → write data.json
+  4. git push             → Vercel picks it up
+```
+
 ## Key Design Decisions
 
 ### URL-based dedup
@@ -261,5 +351,5 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-16*
+*Last updated: 2026-03-17*
 
