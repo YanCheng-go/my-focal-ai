@@ -49,16 +49,18 @@ else
     log "==> Skipping Supabase user Twitter fetch (AINEWS_SUPABASE_URL/SERVICE_KEY not set)"
 fi
 
+# Ensure we're on main so the push targets the correct branch.
+ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [[ "$ORIGINAL_BRANCH" != "main" ]]; then
+    log "==> Switching from $ORIGINAL_BRANCH to main..."
+    git stash --quiet 2>/dev/null || true
+    git checkout main --quiet
+fi
+
 # Pull latest data.json from remote before export so the merge step in
 # export.py can preserve cloud-fetched items that aren't in the local DB.
 log "==> Pulling latest data.json from remote..."
-STASH_COUNT_BEFORE=$(git stash list 2>/dev/null | wc -l)
-git stash --quiet 2>/dev/null || true
-STASH_COUNT_AFTER=$(git stash list 2>/dev/null | wc -l)
 git pull --rebase origin main 2>&1 | tee -a "$LOG_FILE"
-if [[ "$STASH_COUNT_AFTER" -gt "$STASH_COUNT_BEFORE" ]]; then
-    git stash pop --quiet 2>/dev/null || true
-fi
 
 log "==> Appending Twitter items (last ${HOURS}h) to static/data.json..."
 uv run ainews export --hours "$HOURS" --output static/data.json --source-type twitter 2>&1 | tee -a "$LOG_FILE"
@@ -73,5 +75,12 @@ log "==> Committing and pushing updated data..."
 git add static/data.json static/config.json
 git commit --no-verify -m "Update data.json from local fetch [skip ci]"
 git push
+
+# Return to original branch if we switched away
+if [[ "$ORIGINAL_BRANCH" != "main" ]]; then
+    log "==> Switching back to $ORIGINAL_BRANCH..."
+    git checkout "$ORIGINAL_BRANCH" --quiet
+    git stash pop --quiet 2>/dev/null || true
+fi
 
 log "==> Done. Vercel will pick up the new data shortly."
