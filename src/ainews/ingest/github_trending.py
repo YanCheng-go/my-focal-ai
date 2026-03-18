@@ -223,28 +223,36 @@ async def run_github_trending_ingestion(backend, sources_config: dict) -> int:
 
     tags = trending_entries[0].get("tags", ["github", "trending", "open-source"])
 
-    total_new = 0
+    # Fetch both lists before any DB writes so we can clear both old
+    # snapshots atomically — avoids UNIQUE(url) conflicts when the same
+    # repo appears in both daily and history.
+    items: list[ContentItem] = []
+    history_items: list[ContentItem] = []
 
     try:
         items = await fetch_github_trending(tags=tags)
-        if items:
-            backend.delete_source_content("GitHub Trending")
-        new_count = backend.ingest_items("GitHub Trending", items)
-        if new_count > 0:
-            logger.info(f"Fetched {new_count} new trending repos")
-        total_new += new_count
     except Exception:
         logger.exception("Failed to fetch GitHub trending repos")
 
     try:
         history_items = await fetch_github_trending_history(tags=tags)
-        if history_items:
-            backend.delete_source_content("GitHub Trending History")
-        history_count = backend.ingest_items("GitHub Trending History", history_items)
-        if history_count > 0:
-            logger.info(f"Fetched {history_count} new trending history repos")
-        total_new += history_count
     except Exception:
         logger.exception("Failed to fetch GitHub trending history")
+
+    if items:
+        backend.delete_source_content("GitHub Trending")
+    if history_items:
+        backend.delete_source_content("GitHub Trending History")
+
+    total_new = 0
+    new_count = backend.ingest_items("GitHub Trending", items)
+    if new_count > 0:
+        logger.info(f"Fetched {new_count} new trending repos")
+    total_new += new_count
+
+    history_count = backend.ingest_items("GitHub Trending History", history_items)
+    if history_count > 0:
+        logger.info(f"Fetched {history_count} new trending history repos")
+    total_new += history_count
 
     return total_new
