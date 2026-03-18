@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-18T14:45:06.968207+00:00",
+  "exported_at": "2026-03-18T16:39:40.020966+00:00",
   "period_hours": 168,
-  "total": 1225,
+  "total": 1227,
   "all_tags": [
     "ai",
     "anthropic",
@@ -79,6 +79,28 @@
       "author": "",
       "published_at": "2026-03-24T00:00:00Z",
       "fetched_at": "2026-03-16T22:28:09.683958Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ae4f1c7f20d532a0",
+      "url": "https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/",
+      "title": "How to Build Deep Agents for Enterprise Search with NVIDIA AI-Q and LangChain",
+      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-aiq-blueprint-blog-gtc26-press-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-aiq-blueprint-blog-gtc26-press-1920x1080\" width=\"768\" />While consumer AI offers powerful capabilities, workplace tools often suffer from disjointed data and limited context. Built with LangChain, the NVIDIA AI-Q...",
+      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-aiq-blueprint-blog-gtc26-press-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-aiq-blueprint-blog-gtc26-press-1920x1080\" width=\"768\" />While consumer AI offers powerful capabilities, workplace tools often suffer from disjointed data and limited context. Built with LangChain, the NVIDIA AI-Q...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/03/agentic-ai-aiq-blueprint-blog-gtc26-press-1920x1080-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai-aiq-blueprint-blog-gtc26-press-1920x1080\" width=\"768\" /><p>While consumer AI offers powerful capabilities, workplace tools often suffer from disjointed data and limited context. Built with LangChain, the NVIDIA AI-Q blueprint is an open source template that bridges this gap. LangChain recently introduced an enterprise agent platform built with NVIDIA AI to support scalable, production-ready agent development. This tutorial, available as an NVIDIA\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
+      "source_name": "NVIDIA Developer",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "research",
+        "nvidia",
+        "engineering"
+      ],
+      "author": "Sean Lopp",
+      "published_at": "2026-03-18T16:00:00Z",
+      "fetched_at": "2026-03-18T16:39:32.742936Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10775,21 +10797,22 @@
       "is_duplicate_of": null
     },
     {
-      "id": "56d0f94f34b82760",
-      "url": "https://arxiv.org/abs/2603.15645",
-      "title": "XLinear: Frequency-Enhanced MLP with CrossFilter for Robust Long-Range Forecasting",
-      "summary": "arXiv:2603.15645v1 Announce Type: cross \nAbstract: Time series forecasters are widely used across various domains. Among them, MLP (multi-layer perceptron)-based forecasters have been proven to be more robust to noise compared to Transformer-based forecasters. However, MLP struggles to capture complex features, resulting in limitations on capturing long-range dependencies. To address this challenge, we propose XLinear, an MLP-based forecaster for long-range forecasting. Firstly, we decompose the time series into trend and seasonal components. For the trend component which contains long-range characteristics, we design Enhanced Frequency Attention (EFA) to capture long-term dependencies by leveraging frequency-domain operations. Additionally, a CrossFilter Block is proposed for the seasonal component to maintain the model's robustness to noise, avoiding the problems of low robustness often caused by attention mechanisms. Experimental results demonstrate that XLinear achieves state-of-the-art performance on test datasets. While keeping the lightweight architecture and high robustness of MLP-based models, our forecaster outperforms other MLP-based forecasters in capturing long-range dependencies.",
+      "id": "022943dcc01103d8",
+      "url": "https://machinelearning.apple.com/research/prose2policy",
+      "title": "Prose2Policy (P2P): A Practical LLM Pipeline for Translating Natural-Language Access Policies into Executable Rego",
+      "summary": "Prose2Policy (P2P) is a LLM-based practical tool that translates natural-language access control policies (NLACPs) into executable Rego code (the policy language of Open Policy Agent, OPA). It provides a modular, end-to-end pipeline that performs policy detection, component extraction, schema validation, linting, compilation, automatic test generation and execution. Prose2Policy is designed to bridge the gap between human-readable access requirements and machine-enforceable policy-as-code (PaC) while emphasizing deployment reliability and auditability. We evaluated Prose2Policy on the ACRE\u2026",
       "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
+      "source_name": "Apple Machine Learning",
+      "source_type": "rss",
       "tags": [
         "ai",
         "research",
-        "papers"
+        "apple",
+        "company"
       ],
-      "author": "Xiang Ao",
-      "published_at": "2026-03-18T04:00:00Z",
-      "fetched_at": "2026-03-18T04:56:59.829501Z",
+      "author": "",
+      "published_at": "2026-03-18T00:00:00Z",
+      "fetched_at": "2026-03-18T16:39:28.589605Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -11807,47 +11830,6 @@
       "author": "",
       "published_at": "2026-03-13T16:00:26Z",
       "fetched_at": "2026-03-13T16:29:32.830279Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6ac5982ebbd57524",
-      "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
-      "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-03-13T01:02:47Z",
-      "fetched_at": "2026-03-13T03:13:09.524520Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ccb46fe65875f71f",
-      "url": "https://www.deeplearning.ai/the-batch/issue-344/",
-      "title": "GPT-5.4 Makes A Splash, AI\u2019s Growth on Mobile, Data Centers Go Off-Grid, Apple\u2019s Diffusion Research",
-      "summary": "The Batch AI News and Insights: Should there be a Stack Overflow for AI coding agents to share their learnings with each other?",
-      "content": "",
-      "source_name": "DeepLearning.AI The Batch",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "newsletter"
-      ],
-      "author": "",
-      "published_at": "2026-03-13T00:00:00Z",
-      "fetched_at": "2026-03-16T22:28:07.981962Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -13362,6 +13344,68 @@
       "published_at": "2026-03-15T00:00:00Z",
       "fetched_at": "2026-03-15T03:25:32.060589Z",
       "score": 0.72,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "56d0f94f34b82760",
+      "url": "https://arxiv.org/abs/2603.15645",
+      "title": "XLinear: Frequency-Enhanced MLP with CrossFilter for Robust Long-Range Forecasting",
+      "summary": "arXiv:2603.15645v1 Announce Type: cross \nAbstract: Time series forecasters are widely used across various domains. Among them, MLP (multi-layer perceptron)-based forecasters have been proven to be more robust to noise compared to Transformer-based forecasters. However, MLP struggles to capture complex features, resulting in limitations on capturing long-range dependencies. To address this challenge, we propose XLinear, an MLP-based forecaster for long-range forecasting. Firstly, we decompose the time series into trend and seasonal components. For the trend component which contains long-range characteristics, we design Enhanced Frequency Attention (EFA) to capture long-term dependencies by leveraging frequency-domain operations. Additionally, a CrossFilter Block is proposed for the seasonal component to maintain the model's robustness to noise, avoiding the problems of low robustness often caused by attention mechanisms. Experimental results demonstrate that XLinear achieves state-of-the-art performance on test datasets. While keeping the lightweight architecture and high robustness of MLP-based models, our forecaster outperforms other MLP-based forecasters in capturing long-range dependencies.",
+      "content": "",
+      "source_name": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "tags": [
+        "ai",
+        "research",
+        "papers"
+      ],
+      "author": "Xiang Ao",
+      "published_at": "2026-03-18T04:00:00Z",
+      "fetched_at": "2026-03-18T04:56:59.829501Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6ac5982ebbd57524",
+      "url": "https://huggingface.co/blog/nvidia/nemo-agent-toolkit-data-explorer-dabstep-1st-place",
+      "title": "Build an Agent That Thinks Like a Data Scientist: How We Hit #1 on DABStep with Reusable Tool Generation",
+      "summary": "",
+      "content": "",
+      "source_name": "Hugging Face Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "open-source",
+        "huggingface"
+      ],
+      "author": "",
+      "published_at": "2026-03-13T01:02:47Z",
+      "fetched_at": "2026-03-13T03:13:09.524520Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ccb46fe65875f71f",
+      "url": "https://www.deeplearning.ai/the-batch/issue-344/",
+      "title": "GPT-5.4 Makes A Splash, AI\u2019s Growth on Mobile, Data Centers Go Off-Grid, Apple\u2019s Diffusion Research",
+      "summary": "The Batch AI News and Insights: Should there be a Stack Overflow for AI coding agents to share their learnings with each other?",
+      "content": "",
+      "source_name": "DeepLearning.AI The Batch",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "newsletter"
+      ],
+      "author": "",
+      "published_at": "2026-03-13T00:00:00Z",
+      "fetched_at": "2026-03-16T22:28:07.981962Z",
+      "score": null,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
