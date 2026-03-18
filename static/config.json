@@ -94,7 +94,7 @@
       ]
     }
   ],
-  "show_scores": true,
+  "show_scores": false,
   "hidden_source_types": [
     "events",
     "luma",
