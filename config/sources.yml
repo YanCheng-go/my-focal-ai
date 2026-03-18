@@ -45,7 +45,7 @@ sources:
     - ai
     - gemini
     - google
-  - handle: antropic
+  - handle: anthropic
     tags:
     - ai
     - anthropic
@@ -164,6 +164,9 @@ sources:
   - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml"
     name: "Anthropic Engineering"
     tags: [ai, anthropic, engineering]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml"
+    name: "Anthropic Research"
+    tags: [ai, anthropic, research]
   - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml"
     name: "DeepLearning.AI The Batch"
     tags: [ai, newsletter]
@@ -198,20 +201,6 @@ sources:
     tags:
     - ai
     - xiaohongshu
-  - route: /anthropic/research
-    name: Anthropic Research
-    tags:
-    - ai
-    - research
-    - company
-    - anthropic
-    - claude code
-  - route: /anthropic/red
-    name: Anthropic Red
-    tags:
-    - ai
-    - company
-    - anthropic
   github_trending:
   - name: trendshift.io
     tags: [github, trending, open-source]
