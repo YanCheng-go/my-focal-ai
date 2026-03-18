@@ -129,9 +129,17 @@ def append_source_type(
     """
     settings = Settings()
 
-    # Always regenerate config.json — picks up sources.yml changes even if no new items
+    # Regenerate config.json — picks up sources.yml changes even if no new items,
+    # but preserve remote-controlled fields (e.g. show_scores set by CI).
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    _export_config(output_path.parent / "config.json", settings)
+    config_path = output_path.parent / "config.json"
+    remote_show_scores: bool | None = None
+    try:
+        with open(config_path) as f:
+            remote_show_scores = json.load(f).get("show_scores")
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
+        pass
+    _export_config(config_path, settings, show_scores=remote_show_scores)
 
     with get_backend(settings.db_path) as backend:
         since = datetime.now(timezone.utc) - timedelta(hours=hours)
@@ -252,14 +260,18 @@ def _build_default_user_sources(sources: dict) -> list[dict]:
     return defaults
 
 
-def _export_config(output_path: Path, settings: Settings):
-    """Export leaderboard, event links, and Supabase config for static pages."""
+def _export_config(output_path: Path, settings: Settings, *, show_scores: bool | None = None):
+    """Export leaderboard, event links, and Supabase config for static pages.
+
+    show_scores overrides the local setting when provided (e.g. to preserve
+    the value set by CI in the existing config.json).
+    """
     sources_config = load_sources(settings.config_dir)
     sources = sources_config.get("sources", {})
     config = {
         "leaderboard": sources.get("leaderboard", []),
         "event_links": sources.get("event_links", []),
-        "show_scores": settings.show_scores,
+        "show_scores": show_scores if show_scores is not None else settings.show_scores,
         "hidden_source_types": HIDDEN_SOURCE_TYPES,
         "hidden_sources": HIDDEN_SOURCES,
         "source_type_schema": SOURCE_TYPE_SCHEMA,
