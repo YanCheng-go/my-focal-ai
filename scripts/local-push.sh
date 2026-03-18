@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # Fetch Twitter locally and append to cloud data.json, then push to remote.
-# Usage: ./scripts/local-push.sh [--hours 168]
+# Usage: ./scripts/local-push.sh [--hours 168] [--anytime]
+#
+# By default only runs during US active hours (7 AM PT – midnight ET).
+# Use --anytime to bypass the time check for manual runs.
 #
 # Cloud CI owns everything except Twitter (RSS/YouTube/arXiv/GitHub Trending).
 # Also fetches Twitter sources added by Supabase users (if configured).
@@ -21,12 +24,24 @@ if [[ -f .env ]]; then
 fi
 
 HOURS="168"
+SKIP_TIME_CHECK=false
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --hours) HOURS="${2:-168}"; shift 2 ;;
+        --anytime) SKIP_TIME_CHECK=true; shift ;;
         *)       echo "Unknown flag: $1"; exit 1 ;;
     esac
 done
+
+# Only run during US active hours (7 AM PT – midnight ET = 15:00–05:00 UTC).
+# Skip this check with --anytime for manual runs.
+if [[ "$SKIP_TIME_CHECK" == false ]]; then
+    HOUR_UTC=$(date -u '+%H')
+    if (( HOUR_UTC >= 5 && HOUR_UTC < 15 )); then
+        echo "$(date '+%Y-%m-%d %H:%M:%S') Skipping: outside US active hours (UTC $HOUR_UTC, window 15–05 UTC)"
+        exit 0
+    fi
+fi
 
 LOG_DIR="logs"
 mkdir -p "$LOG_DIR"
@@ -51,11 +66,26 @@ fi
 
 # Ensure we're on main so the push targets the correct branch.
 ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+DID_STASH=false
 if [[ "$ORIGINAL_BRANCH" != "main" ]]; then
     log "==> Switching from $ORIGINAL_BRANCH to main..."
-    git stash --quiet 2>/dev/null || true
+    if ! git diff --quiet HEAD 2>/dev/null || ! git diff --cached --quiet HEAD 2>/dev/null; then
+        git stash push -m "local-push-auto" --quiet
+        DID_STASH=true
+    fi
     git checkout main --quiet
 fi
+
+# Restore original branch on any exit (normal, early, or error)
+cleanup() {
+    if [[ "$ORIGINAL_BRANCH" != "main" ]]; then
+        git checkout "$ORIGINAL_BRANCH" --quiet 2>/dev/null || true
+        if [[ "$DID_STASH" == true ]]; then
+            git stash pop --quiet 2>/dev/null || log "WARN: stash pop failed, changes remain in stash"
+        fi
+    fi
+}
+trap cleanup EXIT
 
 # Pull latest data.json from remote before export so the merge step in
 # export.py can preserve cloud-fetched items that aren't in the local DB.
@@ -75,12 +105,5 @@ log "==> Committing and pushing updated data..."
 git add static/data.json static/config.json
 git commit --no-verify -m "Update data.json from local fetch [skip ci]"
 git push
-
-# Return to original branch if we switched away
-if [[ "$ORIGINAL_BRANCH" != "main" ]]; then
-    log "==> Switching back to $ORIGINAL_BRANCH..."
-    git checkout "$ORIGINAL_BRANCH" --quiet
-    git stash pop --quiet 2>/dev/null || true
-fi
 
 log "==> Done. Vercel will pick up the new data shortly."
