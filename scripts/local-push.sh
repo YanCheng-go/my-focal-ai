@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-# Fetch Twitter locally, merge with cloud data.json, and push to remote.
-# Usage: ./scripts/local-push.sh [--hours 168] [--all]
+# Fetch Twitter locally and append to cloud data.json, then push to remote.
+# Usage: ./scripts/local-push.sh [--hours 168]
 #
-# By default only fetches Twitter (cloud pipeline handles RSS/YouTube/arXiv).
-# Pass --all to fetch all sources locally.
-#
+# Cloud CI owns everything except Twitter (RSS/YouTube/arXiv/GitHub Trending).
 # Also fetches Twitter sources added by Supabase users (if configured).
 
 set -euo pipefail
@@ -23,11 +21,9 @@ if [[ -f .env ]]; then
 fi
 
 HOURS="168"
-FETCH_ALL=false
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --hours) HOURS="${2:-168}"; shift 2 ;;
-        --all)   FETCH_ALL=true; shift ;;
         *)       echo "Unknown flag: $1"; exit 1 ;;
     esac
 done
@@ -38,17 +34,12 @@ LOG_FILE="$LOG_DIR/local-push.log"
 
 log() { echo "$(date '+%Y-%m-%d %H:%M:%S') $*" | tee -a "$LOG_FILE"; }
 
-if [[ "$FETCH_ALL" == "true" ]]; then
-    log "==> Fetching all sources (--all)..."
-    uv run ainews fetch 2>&1 | tee -a "$LOG_FILE"
-else
-    log "==> Fetching Twitter sources only..."
-    # Read Twitter handles from sources.yml and fetch each one
-    for handle in $(uv run ainews list-sources 2>/dev/null | grep '^\s*\[twitter\]' | sed 's/.*@//'); do
-        log "    Fetching @${handle}..."
-        uv run ainews fetch-source "@${handle}" 2>&1 | tee -a "$LOG_FILE" || true
-    done
-fi
+log "==> Fetching Twitter sources..."
+# Read Twitter handles from sources.yml and fetch each one
+for handle in $(uv run ainews list-sources 2>/dev/null | grep '^\s*\[twitter\]' | sed 's/.*@//'); do
+    log "    Fetching @${handle}..."
+    uv run ainews fetch-source "@${handle}" 2>&1 | tee -a "$LOG_FILE" || true
+done
 
 # Fetch Twitter sources added by Supabase users (only Twitter, not all feeds)
 if [[ -n "${AINEWS_SUPABASE_URL:-}" && -n "${AINEWS_SUPABASE_SERVICE_KEY:-}" ]]; then
@@ -69,8 +60,8 @@ if [[ "$STASH_COUNT_AFTER" -gt "$STASH_COUNT_BEFORE" ]]; then
     git stash pop --quiet 2>/dev/null || true
 fi
 
-log "==> Exporting last ${HOURS}h to static/data.json (with merge)..."
-uv run ainews export --hours "$HOURS" --output static/data.json 2>&1 | tee -a "$LOG_FILE"
+log "==> Appending Twitter items (last ${HOURS}h) to static/data.json..."
+uv run ainews export --hours "$HOURS" --output static/data.json --source-type twitter 2>&1 | tee -a "$LOG_FILE"
 
 # Check if anything changed
 if git diff --quiet static/data.json static/config.json 2>/dev/null; then

@@ -32,6 +32,31 @@ sources:
 
   # === YouTube ===
   # Native RSS — no RSSHub needed.
+  - handle: claudeai
+    tags:
+    - ai
+    - company
+  - handle: sama
+    tags:
+    - ai
+    - openai
+  - handle: geminiapp
+    tags:
+    - ai
+    - gemini
+    - google
+  - handle: anthropic
+    tags:
+    - ai
+    - anthropic
+  - handle: openai
+    tags:
+    - ai
+    - openai
+  - handle: googleai
+    tags:
+    - ai
+    - google
   youtube:
   - channel_id: "UC2ojq-nuP8ceeHqiroeKhBA"
     name: "Nate Herk | AI Automation"
@@ -62,6 +87,11 @@ sources:
     - ai
   - channel_id: UCPbwhExawYrn9xxI21TFfyw
     name: The Pragmatic Engineer
+    tags:
+    - ai
+    - podcast
+  - channel_id: UCKARTq-t5SPMzwtft8FWwnA
+    name: Last Week in AI
     tags:
     - ai
     - podcast
@@ -110,9 +140,6 @@ sources:
   - url: "https://developer.nvidia.com/blog/feed/"
     name: "NVIDIA Developer"
     tags: [ai, research, nvidia, engineering]
-  - url: "https://stability.ai/news?format=rss"
-    name: "Stability AI"
-    tags: [ai, research, stability, open-source]
 
     # --- Developer tools ---
   - url: https://github.com/anthropics/claude-code/releases.atom
@@ -131,20 +158,15 @@ sources:
   - url: "https://metr.substack.com/feed"
     name: "METR"
     tags: [ai, safety, evals, research]
-
-    # --- Practitioners ---
-  - url: "https://lilianweng.github.io/index.xml"
-    name: "Lilian Weng"
-    tags: [ai, research, deep-learning]
   - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml"
     name: "Claude Blog"
     tags: [ai, claude, anthropic]
   - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_engineering.xml"
     name: "Anthropic Engineering"
     tags: [ai, anthropic, engineering]
-  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml"
-    name: "Cursor Blog"
-    tags: [ai, tooling, engineering, cursor]
+  - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml"
+    name: "Anthropic Research"
+    tags: [ai, anthropic, research]
   - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml"
     name: "DeepLearning.AI The Batch"
     tags: [ai, newsletter]
@@ -157,17 +179,10 @@ sources:
   - url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml"
     name: "Ollama Blog"
     tags: [ai, ollama, open-source, model]
-
-  # === RSSHub-scraped sites (no native RSS) ===
   rsshub:
   - route: "/anthropic/news"
     name: "Anthropic News"
     tags: [ai, anthropic, company]
-    # Note: /anthropic/research route does not exist in RSSHub.
-    # Anthropic research posts are included in /anthropic/news.
-  - route: "/cohere/blog"
-    name: "Cohere Blog"
-    tags: [ai, research, cohere, company]
   - route: /xiaohongshu/user/62fb991800000000120027ee/notes
     name: 第四种黑猩猩
     display_type: xiaohongshu

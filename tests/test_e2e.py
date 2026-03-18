@@ -225,7 +225,7 @@ class TestMode1Local:
 
                     return await run_ingestion(sqlite_backend, config_dir)
 
-        total_new = asyncio.get_event_loop().run_until_complete(_run())
+        total_new = asyncio.run(_run())
 
         assert total_new >= 2
         items = sqlite_backend.get_items(limit=10)
@@ -646,7 +646,7 @@ class TestMode2OnlinePublic:
 
                     return await cloud_fetch_and_score()
 
-        total_new = asyncio.get_event_loop().run_until_complete(_run())
+        total_new = asyncio.run(_run())
         assert total_new >= 2
 
     def test_vercel_env_disables_scheduler(self, monkeypatch):
@@ -750,7 +750,7 @@ class TestMode3OnlineLogin:
                 mock_backend.__exit__.assert_called_once()
                 return total
 
-        total = asyncio.get_event_loop().run_until_complete(_run())
+        total = asyncio.run(_run())
         assert total == 3
 
 

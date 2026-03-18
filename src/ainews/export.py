@@ -79,8 +79,9 @@ def export_items(
     backend.close()
 
     # Merge: preserve items from existing data.json that aren't in the local DB.
-    # This keeps cloud-fetched items when local-push.sh overwrites data.json.
-    # URL-only dedup is sufficient for online public mode (no Twitter in cloud pipeline).
+    # This keeps items from the other pipeline when one side overwrites data.json.
+    # URL-only dedup is sufficient — local-push.sh only appends Twitter, so there
+    # is no overlap between what it writes and what CI writes.
     seen_urls = {item.url for item in items}
     old_items = _load_existing_items(output_path, since)
     old_kept = []
@@ -111,6 +112,55 @@ def export_items(
     _export_config(output_path.parent / "config.json", settings)
 
     return len(serialized_items)
+
+
+def append_source_type(
+    output_path: Path,
+    source_type: str,
+    hours: int = 168,
+) -> int:
+    """Append new items of a single source type to an existing data.json.
+
+    Used by local-push.sh to add Twitter items without touching anything else.
+    Items already present in the file (by URL) are skipped.
+    Returns the number of new items appended.
+    """
+    settings = Settings()
+
+    # Always regenerate config.json — picks up sources.yml changes even if no new items
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    _export_config(output_path.parent / "config.json", settings)
+
+    with get_backend(settings.db_path) as backend:
+        since = datetime.now(timezone.utc) - timedelta(hours=hours)
+        new_items = backend.get_items(limit=500, source_type=source_type, since=since)
+
+    # Load existing data.json
+    existing = {}
+    if output_path.exists():
+        try:
+            with open(output_path) as f:
+                existing = json.load(f)
+        except (json.JSONDecodeError, KeyError):
+            logger.warning("Could not read %s, will overwrite", output_path)
+
+    existing_items = existing.get("items", [])
+    existing_urls = {i.get("url") for i in existing_items}
+    to_append = [i for i in new_items if i.url not in existing_urls]
+
+    if not to_append:
+        return 0
+
+    all_items = existing_items + [i.model_dump(mode="json") for i in to_append]
+    existing["exported_at"] = datetime.now(timezone.utc).isoformat()
+    existing["total"] = len(all_items)
+    existing["items"] = all_items
+
+    with open(output_path, "w") as f:
+        json.dump(existing, f, indent=2, default=str)
+
+    logger.info("Appended %d new %s items to %s", len(to_append), source_type, output_path)
+    return len(to_append)
 
 
 HIDDEN_SOURCE_TYPES = ["events", "luma", "github_trending", "github_trending_history"]
