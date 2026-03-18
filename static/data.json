@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-18T12:35:11.292715+00:00",
+  "exported_at": "2026-03-18T14:45:06.968207+00:00",
   "period_hours": 168,
   "total": 1225,
   "all_tags": [
@@ -79,6 +79,27 @@
       "author": "",
       "published_at": "2026-03-24T00:00:00Z",
       "fetched_at": "2026-03-16T22:28:09.683958Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "41d5dfcfa2484348",
+      "url": "https://blogs.nvidia.com/blog/build-robots-with-ai/",
+      "title": "From Simulation to Production: How to Build Robots With AI",
+      "summary": "The latest open models and frameworks from NVIDIA bring together simulation, robot learning and embedded compute to accelerate cloud-to-robot workflows.",
+      "content": "<div id=\"bsf_rt_marker\"></div>",
+      "source_name": "NVIDIA Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "nvidia",
+        "company"
+      ],
+      "author": "Katie Washabaugh",
+      "published_at": "2026-03-18T13:00:13Z",
+      "fetched_at": "2026-03-18T14:44:59.097462Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -10775,27 +10796,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a1475a37b98406f8",
-      "url": "https://arxiv.org/abs/2603.15624",
-      "title": "Exploring the Use of VLMs for Navigation Assistance for People with Blindness and Low Vision",
-      "summary": "arXiv:2603.15624v1 Announce Type: cross \nAbstract: This paper investigates the potential of vision-language models (VLMs) to assist people with blindness and low vision (pBLV) in navigation tasks. We evaluate state-of-the-art closed-source models, including GPT-4V, GPT-4o, Gemini-1.5-Pro, and Claude-3.5-Sonnet, alongside open-source models, such as Llava-v1.6-mistral and Llava-onevision-qwen, to analyze their capabilities in foundational visual skills: counting ambient obstacles, relative spatial reasoning, and common-sense wayfinding-pertinent scene understanding. We further assess their performance in navigation scenarios, using pBLV-specific prompts designed to simulate real-world assistance tasks. Our findings reveal notable performance disparities between these models: GPT-4o consistently outperforms others across all tasks, particularly in spatial reasoning and scene understanding. In contrast, open-source models struggle with nuanced reasoning and adaptability in complex environments. Common challenges include difficulties in accurately counting objects in cluttered settings, biases in spatial reasoning, and a tendency to prioritize object details over spatial feedback, limiting their usability for pBLV in navigation tasks. Despite these limitations, VLMs show promise for wayfinding assistance when better aligned with human feedback and equipped with improved spatial reasoning. This research provides actionable insights into the strengths and limitations of current VLMs, guiding developers on effectively integrating VLMs into assistive technologies while addressing key limitations for enhanced usability.",
-      "content": "",
-      "source_name": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "papers"
-      ],
-      "author": "Yu Li, Yuchen Zheng, Giles Hamilton-Fletcher, Marco Mezzavilla, Yao Wang, Sundeep Rangan, Maurizio Porfiri, Zhou Yu, John-Ross Rizzo",
-      "published_at": "2026-03-18T04:00:00Z",
-      "fetched_at": "2026-03-18T04:56:59.829492Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "ee0fc29cd1eb1331",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.78",
       "title": "v2.1.78",
@@ -11848,27 +11848,6 @@
       "author": "",
       "published_at": "2026-03-13T00:00:00Z",
       "fetched_at": "2026-03-16T22:28:07.981962Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2b3a2d5a5ce5d666",
-      "url": "https://claude.com/blog/1m-context-ga",
-      "title": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
-      "summary": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-03-13T00:00:00Z",
-      "fetched_at": "2026-03-16T22:28:07.714576Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -13388,6 +13367,48 @@
       "is_duplicate_of": null
     },
     {
+      "id": "a1475a37b98406f8",
+      "url": "https://arxiv.org/abs/2603.15624",
+      "title": "Exploring the Use of VLMs for Navigation Assistance for People with Blindness and Low Vision",
+      "summary": "arXiv:2603.15624v1 Announce Type: cross \nAbstract: This paper investigates the potential of vision-language models (VLMs) to assist people with blindness and low vision (pBLV) in navigation tasks. We evaluate state-of-the-art closed-source models, including GPT-4V, GPT-4o, Gemini-1.5-Pro, and Claude-3.5-Sonnet, alongside open-source models, such as Llava-v1.6-mistral and Llava-onevision-qwen, to analyze their capabilities in foundational visual skills: counting ambient obstacles, relative spatial reasoning, and common-sense wayfinding-pertinent scene understanding. We further assess their performance in navigation scenarios, using pBLV-specific prompts designed to simulate real-world assistance tasks. Our findings reveal notable performance disparities between these models: GPT-4o consistently outperforms others across all tasks, particularly in spatial reasoning and scene understanding. In contrast, open-source models struggle with nuanced reasoning and adaptability in complex environments. Common challenges include difficulties in accurately counting objects in cluttered settings, biases in spatial reasoning, and a tendency to prioritize object details over spatial feedback, limiting their usability for pBLV in navigation tasks. Despite these limitations, VLMs show promise for wayfinding assistance when better aligned with human feedback and equipped with improved spatial reasoning. This research provides actionable insights into the strengths and limitations of current VLMs, guiding developers on effectively integrating VLMs into assistive technologies while addressing key limitations for enhanced usability.",
+      "content": "",
+      "source_name": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "tags": [
+        "ai",
+        "research",
+        "papers"
+      ],
+      "author": "Yu Li, Yuchen Zheng, Giles Hamilton-Fletcher, Marco Mezzavilla, Yao Wang, Sundeep Rangan, Maurizio Porfiri, Zhou Yu, John-Ross Rizzo",
+      "published_at": "2026-03-18T04:00:00Z",
+      "fetched_at": "2026-03-18T04:56:59.829492Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2b3a2d5a5ce5d666",
+      "url": "https://claude.com/blog/1m-context-ga",
+      "title": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
+      "summary": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
+      "content": "",
+      "source_name": "Claude Blog",
+      "source_type": "rss",
+      "tags": [
+        "ai",
+        "claude",
+        "anthropic"
+      ],
+      "author": "",
+      "published_at": "2026-03-13T00:00:00Z",
+      "fetched_at": "2026-03-16T22:28:07.714576Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
       "id": "63902a872f033d1f",
       "url": "https://www.anthropic.com/webinars/claude-code-advanced-patterns-subagents-mcp-and-scaling-to-real-codebases",
       "title": "Claude Code Advanced Patterns: Subagents, MCP, and Scaling to Real Codebases",
@@ -13681,23 +13702,6 @@
       "author": "Matt Wolfe",
       "published_at": "2026-03-12T13:27:20Z",
       "fetched_at": "2026-03-15T14:47:41.185463Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9f6c0530944f5daf",
-      "url": "https://www.youtube.com/shorts/dobahObNLeA",
-      "title": "Is ChatGPT Making You Dumber?",
-      "summary": "Is AI making us dumber? \n\nA study from MIT found that reliance on LLM might be like building up a tolerance to thinking. \n\nI started looking into this because I was honestly feeling those effects myself. Stuff that I had been using AI for, like coming up with new video ideas, all of a sudden started to feel harder to do without AI. \n\nSo I did a deep dive into what the research and science ACTUALLY says about how AI is affecting our brains and productivity and shared it all in my latest YouTube video linked here.\u2060\n\nLet me know in the comments: have you been feeling a similar effect after using AI for a while?\n\n#ai",
-      "content": "",
-      "source_name": "Matt Wolfe",
-      "source_type": "youtube",
-      "tags": [],
-      "author": "Matt Wolfe",
-      "published_at": "2026-03-11T14:29:17Z",
-      "fetched_at": "2026-03-15T14:47:41.185469Z",
       "score": null,
       "score_reason": "",
       "tier": "",
