@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-03-18T20:29:20.175311+00:00",
+  "exported_at": "2026-03-18T20:52:20.065088+00:00",
   "period_hours": 168,
-  "total": 1293,
+  "total": 1292,
   "all_tags": [
     "ai",
     "anthropic",
@@ -27941,27 +27941,6 @@
       "author": "bcherny",
       "published_at": "2026-03-11T21:40:27Z",
       "fetched_at": "2026-03-12T00:26:39.043412Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5c1c7cb8efedf68a",
-      "url": "https://x.com/trq212/status/2031835203157819526",
-      "title": "now that it's been 2 weeks, what have you liked most about auto-memory? what's not working?\n\nif you ...",
-      "summary": "now that it's been 2 weeks, what have you liked most about auto-memory? what's not working?\n\nif you have specific stories of when it went well or poorly, we would love to hear!",
-      "content": "now that it's been 2 weeks, what have you liked most about auto-memory? what's not working?\n\nif you have specific stories of when it went well or poorly, we would love to hear!",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-03-11T20:50:36Z",
-      "fetched_at": "2026-03-12T00:26:36.785406Z",
       "score": null,
       "score_reason": "",
       "tier": "",
