@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>badges.js tests</title>
+<style>
+body { font-family: monospace; margin: 2rem; }
+.pass { color: green; }
+.fail { color: red; font-weight: bold; }
+#results div { margin: 0.3rem 0; }
+</style>
+</head>
+<body>
+<h2>badges.js — unit tests</h2>
+<div id="results"></div>
+
+<!-- Provide stub elements that badges.js looks for -->
+<span id="badge-dashboard" class="hidden"></span>
+<span id="badge-trends" class="hidden"></span>
+<span id="badge-ccc" class="hidden"></span>
+
+<script>
+// Minimal test harness
+var results = document.getElementById('results');
+var passed = 0, failed = 0;
+
+function assert(condition, name) {
+    var el = document.createElement('div');
+    if (condition) {
+        el.className = 'pass';
+        el.textContent = 'PASS: ' + name;
+        passed++;
+    } else {
+        el.className = 'fail';
+        el.textContent = 'FAIL: ' + name;
+        failed++;
+    }
+    results.appendChild(el);
+}
+
+function resetLocalStorage() {
+    ['ainews_last_seen', 'ainews_last_seen_dashboard', 'ainews_last_seen_trends', 'ainews_last_seen_ccc'].forEach(function(k) {
+        localStorage.removeItem(k);
+    });
+}
+
+function resetBadgeElements() {
+    ['dashboard', 'trends', 'ccc'].forEach(function(p) {
+        var el = document.getElementById('badge-' + p);
+        el.textContent = '';
+        el.classList.add('hidden');
+    });
+}
+</script>
+
+<!-- Load badges.js (the file under test) -->
+<script src="../static/badges.js"></script>
+
+<script>
+// ── Test helpers ──
+var oldItem = { published_at: '2026-03-10T00:00:00Z', source_type: 'rss', source_name: 'Test' };
+var newItem = { published_at: '2026-03-15T12:00:00Z', source_type: 'rss', source_name: 'Test' };
+var trendingItem = { published_at: '2026-03-15T12:00:00Z', source_type: 'github_trending', source_name: 'Trending' };
+
+// ── Test 1: isNewItem returns false when no computeBadges has run with timestamps ──
+resetLocalStorage();
+assert(isNewItem(newItem) === false, 'isNewItem returns false before any computeBadges call (no cutoff)');
+
+// ── Test 2: First visit — computeBadges initialises timestamps, isNewItem still false ──
+resetLocalStorage();
+resetBadgeElements();
+computeBadges([newItem], {}, 'dashboard');
+// First visit: all timestamps set to now, no cutoff captured (early return path)
+// isNewItem should return false because _lastSeenCutoff was not set
+assert(isNewItem(newItem) === false, 'First visit: isNewItem returns false (no prior cutoff)');
+
+// ── Test 3: Second visit — items newer than last-seen are highlighted ──
+// Simulate: last seen was Mar 12, so items on Mar 15 are "new"
+resetBadgeElements();
+localStorage.setItem('ainews_last_seen_dashboard', '2026-03-12T00:00:00Z');
+localStorage.setItem('ainews_last_seen_trends', '2026-03-12T00:00:00Z');
+localStorage.setItem('ainews_last_seen_ccc', '2026-03-12T00:00:00Z');
+computeBadges([oldItem, newItem], {}, 'dashboard');
+assert(isNewItem(newItem) === true, 'Second visit: item after last-seen is new');
+assert(isNewItem(oldItem) === false, 'Second visit: item before last-seen is not new');
+
+// ── Test 4: Badge count is correct ──
+var badgeEl = document.getElementById('badge-dashboard');
+assert(badgeEl.textContent === '1', 'Badge count shows 1 new dashboard item');
+assert(!badgeEl.classList.contains('hidden'), 'Badge element is visible');
+
+// ── Test 5: After visiting, last-seen is updated — next call shows no new items ──
+resetBadgeElements();
+computeBadges([oldItem, newItem], {}, 'dashboard');
+assert(isNewItem(newItem) === false, 'After visit: previously new item is no longer new');
+var badgeEl2 = document.getElementById('badge-dashboard');
+assert(badgeEl2.classList.contains('hidden'), 'Badge is hidden after revisit (0 new items)');
+
+// ── Test 6: isNewItem uses fetched_at fallback ──
+resetBadgeElements();
+localStorage.setItem('ainews_last_seen_dashboard', '2026-03-12T00:00:00Z');
+localStorage.setItem('ainews_last_seen_trends', '2026-03-12T00:00:00Z');
+localStorage.setItem('ainews_last_seen_ccc', '2026-03-12T00:00:00Z');
+var itemNoPublished = { fetched_at: '2026-03-15T12:00:00Z', source_type: 'rss', source_name: 'Test' };
+computeBadges([itemNoPublished], {}, 'dashboard');
+assert(isNewItem(itemNoPublished) === true, 'isNewItem falls back to fetched_at when published_at is missing');
+
+// ── Test 7: Different pages have independent cutoffs ──
+resetBadgeElements();
+localStorage.setItem('ainews_last_seen_dashboard', '2026-03-14T00:00:00Z');
+localStorage.setItem('ainews_last_seen_trends', '2026-03-10T00:00:00Z');
+localStorage.setItem('ainews_last_seen_ccc', '2026-03-14T00:00:00Z');
+// Call for trends page — cutoff should be Mar 10
+computeBadges([trendingItem], {}, 'trends');
+assert(isNewItem(trendingItem) === true, 'Trends page: trending item after Mar 10 cutoff is new');
+
+// ── Test 8: hidden_source_types are excluded from dashboard badge count ──
+resetBadgeElements();
+localStorage.setItem('ainews_last_seen_dashboard', '2026-03-12T00:00:00Z');
+localStorage.setItem('ainews_last_seen_trends', '2026-03-12T00:00:00Z');
+localStorage.setItem('ainews_last_seen_ccc', '2026-03-12T00:00:00Z');
+var hiddenItem = { published_at: '2026-03-15T12:00:00Z', source_type: 'github_trending', source_name: 'SomeRepo' };
+computeBadges([hiddenItem], { hidden_source_types: ['github_trending'] }, 'dashboard');
+var badgeEl3 = document.getElementById('badge-dashboard');
+assert(badgeEl3.classList.contains('hidden'), 'Hidden source_type items do not increment dashboard badge');
+
+// ── Test 9: Migration from old single timestamp ──
+resetLocalStorage();
+resetBadgeElements();
+localStorage.setItem('ainews_last_seen', '2026-03-11T00:00:00Z');
+computeBadges([newItem], {}, 'dashboard');
+assert(localStorage.getItem('ainews_last_seen') === null, 'Migration removes old ainews_last_seen key');
+// After migration, the per-page timestamps exist and the cutoff works
+assert(isNewItem(newItem) === true, 'After migration: new items are correctly identified');
+
+// ── Summary ──
+var summary = document.createElement('h3');
+summary.textContent = passed + ' passed, ' + failed + ' failed';
+summary.className = failed > 0 ? 'fail' : 'pass';
+results.insertBefore(summary, results.firstChild);
+</script>
+</body>
+</html>

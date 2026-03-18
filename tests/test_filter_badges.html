@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Filter Badge Visual Test</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 dark:bg-neutral-950 p-8">
+<h2 class="text-lg font-bold mb-4 text-gray-900 dark:text-gray-200">Filter Badge — Visual Test</h2>
+
+<!-- Scenario 1: badges with counts -->
+<h3 class="text-sm font-semibold text-gray-600 mb-2">With new items (mock: All=39, Twitter=9, YouTube=17, RSS=7, arXiv=0)</h3>
+<div id="scenario1" class="flex gap-2 mb-6 flex-wrap items-center"></div>
+
+<!-- Scenario 2: no new items -->
+<h3 class="text-sm font-semibold text-gray-600 mb-2">No new items (all badges hidden)</h3>
+<div id="scenario2" class="flex gap-2 mb-6 flex-wrap items-center"></div>
+
+<!-- Scenario 3: active tab with badge -->
+<h3 class="text-sm font-semibold text-gray-600 mb-2">Twitter tab active, badges still visible</h3>
+<div id="scenario3" class="flex gap-2 mb-6 flex-wrap items-center"></div>
+
+<!-- Scenario 4: 99+ overflow -->
+<h3 class="text-sm font-semibold text-gray-600 mb-2">Overflow: 150 items → shows 99+</h3>
+<div id="scenario4" class="flex gap-2 mb-6 flex-wrap items-center"></div>
+
+<!-- Scenario 5: dark mode -->
+<h3 class="text-sm font-semibold text-gray-600 mb-2">Dark mode preview</h3>
+<div id="scenario5" class="dark bg-neutral-900 p-4 rounded-lg flex gap-2 mb-6 flex-wrap items-center"></div>
+
+<script>
+const activeCls = 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
+const inactiveCls = 'bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600';
+
+function badgeHtml(count) {
+    if (!count) return '';
+    var text = count > 99 ? '99+' : count;
+    return ` <span class="ml-1 bg-blue-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold">${text}</span>`;
+}
+
+function btn(label, count, active) {
+    var cls = active ? activeCls : inactiveCls;
+    return `<button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer ${cls}">${label}${badgeHtml(count)}</button>`;
+}
+
+// Scenario 1: badges with counts, All active
+document.getElementById('scenario1').innerHTML =
+    btn('All', 39, true) + btn('Twitter', 9, false) + btn('YouTube', 17, false) +
+    btn('RSS', 7, false) + btn('arXiv', 0, false) + btn('Tags', 0, false);
+
+// Scenario 2: no new items
+document.getElementById('scenario2').innerHTML =
+    btn('All', 0, true) + btn('Twitter', 0, false) + btn('YouTube', 0, false) +
+    btn('RSS', 0, false) + btn('arXiv', 0, false);
+
+// Scenario 3: Twitter active
+document.getElementById('scenario3').innerHTML =
+    btn('All', 39, false) + btn('Twitter', 9, true) + btn('YouTube', 17, false) +
+    btn('RSS', 7, false) + btn('arXiv', 0, false);
+
+// Scenario 4: overflow
+document.getElementById('scenario4').innerHTML =
+    btn('All', 150, true) + btn('Twitter', 100, false) + btn('RSS', 50, false);
+
+// Scenario 5: dark mode (same as scenario 1)
+document.getElementById('scenario5').innerHTML =
+    btn('All', 39, true) + btn('Twitter', 9, false) + btn('YouTube', 17, false) +
+    btn('RSS', 7, false) + btn('arXiv', 0, false);
+</script>
+</body>
+</html>
