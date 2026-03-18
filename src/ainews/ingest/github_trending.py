@@ -214,6 +214,8 @@ async def run_github_trending_ingestion(backend, sources_config: dict) -> int:
 
     try:
         items = await fetch_github_trending(tags=tags)
+        # Clear old snapshot so stale ranks don't accumulate
+        backend.delete_source_content("GitHub Trending")
         new_count = backend.ingest_items("GitHub Trending", items)
         if new_count > 0:
             logger.info(f"Fetched {new_count} new trending repos")
@@ -223,6 +225,7 @@ async def run_github_trending_ingestion(backend, sources_config: dict) -> int:
 
     try:
         history_items = await fetch_github_trending_history(tags=tags)
+        backend.delete_source_content("GitHub Trending History")
         history_count = backend.ingest_items("GitHub Trending History", history_items)
         if history_count > 0:
             logger.info(f"Fetched {history_count} new trending history repos")
