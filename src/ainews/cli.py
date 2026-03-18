@@ -80,6 +80,12 @@ def main():
         help="Output path (default: static/data.json)",
     )
     export_parser.add_argument("--min-score", type=float, default=None, help="Minimum score filter")
+    export_parser.add_argument(
+        "--source-type",
+        type=str,
+        default=None,
+        help="Only export this source type, appending new items to the existing output file",
+    )
 
     backfill_parser = sub.add_parser(
         "backfill-tags",
@@ -138,11 +144,15 @@ def main():
     elif args.command == "export":
         from pathlib import Path
 
-        from ainews.export import export_items
+        from ainews.export import append_source_type, export_items
 
         output = Path(args.output)
-        count = export_items(output, hours=args.hours, min_score=args.min_score)
-        print(f"Exported {count} items to {output}")
+        if args.source_type:
+            count = append_source_type(output, source_type=args.source_type, hours=args.hours)
+            print(f"Appended {count} new {args.source_type} items to {output}")
+        else:
+            count = export_items(output, hours=args.hours, min_score=args.min_score)
+            print(f"Exported {count} items to {output}")
     else:
         parser.print_help()
         sys.exit(1)
