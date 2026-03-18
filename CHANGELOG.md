@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.7.0 — 2026-03-18
+
+### Features
+
+- **Hybrid local-push workflow** — Fetch Twitter locally via Chrome cookies, merge with cloud data.json, and push to main for Vercel (#167, #168)
+- **US-hours scheduling** — local-push automatically skips outside 7 AM PT – midnight ET; override with `--anytime` (#177)
+- **Feed pagination numbers** — Page number list added to feed pagination (#169)
+- **Dashboard header** — Refresh/reset schedule displayed in dashboard header
+
+### Fixes
+
+- **Trending data integrity** — Fix history accumulation in export merge, UNIQUE(url) conflicts between daily and history snapshots, clear stale items before insert (#170, #171, #172, #174, #175, #176)
+- **Branch safety** — local-push always checks out main before pushing; trap-based branch restore on all exit paths (#177)
+- **Preserve remote show_scores** — Local export no longer overwrites the show_scores value set by CI (#177)
+- **HTML tag overflow** — Strip HTML tags from card summaries to fix Xiaohongshu overflow
+- **Vercel deploy** — Handle missing `VERCEL_GIT_PREVIOUS_SHA` in ignoreCommand
+
+### Infrastructure
+
+- launchd plist template for automated local-push scheduling
+- Cloud fetch module with tests (`test_cloud_fetch.py`)
+- Export merge tests (`test_export.py`)
+- Scorer integration tests (`test_scorer_integration.py`)
+
 ## v0.6.0 — 2026-03-16
 
 ### Features
