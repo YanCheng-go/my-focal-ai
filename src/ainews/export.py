@@ -80,14 +80,16 @@ def export_items(
 
     # Merge: preserve items from existing data.json that aren't in the local DB.
     # This keeps items from the other pipeline when one side overwrites data.json.
-    # URL-only dedup is sufficient — local-push.sh only appends Twitter, so there
-    # is no overlap between what it writes and what CI writes.
+    # Skip snapshot source types (trending) — those are replaced each fetch and
+    # stale items must not be re-added from the previous export.
+    _SNAPSHOT_SOURCE_TYPES = {"github_trending", "github_trending_history"}
     seen_urls = {item.url for item in items}
     old_items = _load_existing_items(output_path, since)
     old_kept = []
     for old in old_items:
         old_url = old.get("url", "")
-        if old_url and old_url not in seen_urls:
+        old_stype = old.get("source_type", "")
+        if old_url and old_url not in seen_urls and old_stype not in _SNAPSHOT_SOURCE_TYPES:
             seen_urls.add(old_url)
             old_kept.append(old)
 
