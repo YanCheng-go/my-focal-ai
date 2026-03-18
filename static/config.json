@@ -302,6 +302,17 @@
       ]
     },
     {
+      "source_type": "youtube",
+      "name": "Last Week in AI",
+      "config": {
+        "channel_id": "UCKARTq-t5SPMzwtft8FWwnA"
+      },
+      "tags": [
+        "ai",
+        "podcast"
+      ]
+    },
+    {
       "source_type": "arxiv",
       "name": "arXiv cs.AI",
       "config": {
@@ -469,19 +480,6 @@
     },
     {
       "source_type": "rss",
-      "name": "Stability AI",
-      "config": {
-        "url": "https://stability.ai/news?format=rss"
-      },
-      "tags": [
-        "ai",
-        "research",
-        "stability",
-        "open-source"
-      ]
-    },
-    {
-      "source_type": "rss",
       "name": "Claude Code Releases",
       "config": {
         "url": "https://github.com/anthropics/claude-code/releases.atom"
@@ -521,18 +519,6 @@
     },
     {
       "source_type": "rss",
-      "name": "Lilian Weng",
-      "config": {
-        "url": "https://lilianweng.github.io/index.xml"
-      },
-      "tags": [
-        "ai",
-        "research",
-        "deep-learning"
-      ]
-    },
-    {
-      "source_type": "rss",
       "name": "Claude Blog",
       "config": {
         "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_claude.xml"
@@ -557,15 +543,14 @@
     },
     {
       "source_type": "rss",
-      "name": "Cursor Blog",
+      "name": "Anthropic Research",
       "config": {
-        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml"
+        "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_research.xml"
       },
       "tags": [
         "ai",
-        "tooling",
-        "engineering",
-        "cursor"
+        "anthropic",
+        "research"
       ]
     },
     {
@@ -625,19 +610,6 @@
       "tags": [
         "ai",
         "anthropic",
-        "company"
-      ]
-    },
-    {
-      "source_type": "rsshub",
-      "name": "Cohere Blog",
-      "config": {
-        "route": "/cohere/blog"
-      },
-      "tags": [
-        "ai",
-        "research",
-        "cohere",
         "company"
       ]
     },
