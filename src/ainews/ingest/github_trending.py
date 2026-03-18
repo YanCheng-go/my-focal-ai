@@ -24,20 +24,25 @@ def _extract_repos_from_html(html: str) -> list[dict]:
     The data is inside __next_f script tags as double-escaped JSON strings,
     so we first unescape the backslashes then parse the JSON array.
     """
-    # Find the initialData array — it appears with escaped quotes: \"initialData\":[...]
-    match = re.search(r'\\"initialData\\":\[', html)
+    # Find the initialData array — escaping level varies by Next.js version
+    match = re.search(r'\\{1,2}"initialData\\{1,2}":\[', html)
     if not match:
         return []
 
-    # Unescape the relevant chunk to get valid JSON
-    start = match.start() + len('\\"initialData\\":')
-    # Find the end of the array by tracking bracket depth on the unescaped text
-    text = html[start:]
-    # First unescape \" to "
-    text = text.replace('\\"', '"')
+    # Extract the JSON array from the escaped text
+    prefix = match.group().rsplit("[", 1)[0]
+    start = match.start() + len(prefix)
+    raw = html[start:]
+
+    # Track bracket depth on raw text, skipping escaped characters
     depth = 0
     end = 0
-    for i, ch in enumerate(text):
+    i = 0
+    while i < len(raw):
+        ch = raw[i]
+        if ch == "\\":
+            i += 2  # skip escaped char
+            continue
         if ch == "[":
             depth += 1
         elif ch == "]":
@@ -45,13 +50,16 @@ def _extract_repos_from_html(html: str) -> list[dict]:
             if depth == 0:
                 end = i + 1
                 break
+        i += 1
 
     if end == 0:
         return []
 
     try:
-        data = json.loads(text[:end])
-    except json.JSONDecodeError:
+        # Use json.loads to properly unescape the nested JSON string
+        unescaped = json.loads('"' + raw[:end] + '"')
+        data = json.loads(unescaped)
+    except (json.JSONDecodeError, ValueError):
         return []
 
     repos = []
@@ -202,7 +210,12 @@ async def fetch_github_trending_history(
 
 
 async def run_github_trending_ingestion(backend, sources_config: dict) -> int:
-    """Fetch GitHub trending repos and store new items."""
+    """Fetch GitHub trending repos and store new items.
+
+    Trending data is a point-in-time snapshot (ranks change daily), so we
+    clear stale items before inserting the fresh set.  This prevents
+    duplicate repos from accumulating across fetches.
+    """
     sources = sources_config.get("sources", {})
     trending_entries = sources.get("github_trending", [])
     if not trending_entries:
@@ -214,6 +227,8 @@ async def run_github_trending_ingestion(backend, sources_config: dict) -> int:
 
     try:
         items = await fetch_github_trending(tags=tags)
+        if items:
+            backend.delete_source_content("GitHub Trending")
         new_count = backend.ingest_items("GitHub Trending", items)
         if new_count > 0:
             logger.info(f"Fetched {new_count} new trending repos")
@@ -223,6 +238,8 @@ async def run_github_trending_ingestion(backend, sources_config: dict) -> int:
 
     try:
         history_items = await fetch_github_trending_history(tags=tags)
+        if history_items:
+            backend.delete_source_content("GitHub Trending History")
         history_count = backend.ingest_items("GitHub Trending History", history_items)
         if history_count > 0:
             logger.info(f"Fetched {history_count} new trending history repos")
