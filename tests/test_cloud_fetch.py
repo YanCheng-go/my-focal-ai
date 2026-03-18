@@ -64,7 +64,7 @@ class TestCloudFetchAllUsers:
 
         from ainews.cloud_fetch import cloud_fetch_all_users
 
-        total = asyncio.get_event_loop().run_until_complete(cloud_fetch_all_users())
+        total = asyncio.run(cloud_fetch_all_users())
         assert total == 0
 
     def test_missing_service_key(self, monkeypatch):
@@ -75,7 +75,7 @@ class TestCloudFetchAllUsers:
 
         from ainews.cloud_fetch import cloud_fetch_all_users
 
-        total = asyncio.get_event_loop().run_until_complete(cloud_fetch_all_users())
+        total = asyncio.run(cloud_fetch_all_users())
         assert total == 0
 
     def test_missing_supabase_package(self, monkeypatch):
@@ -91,7 +91,7 @@ class TestCloudFetchAllUsers:
         with patch.dict(sys.modules, {"supabase": None}):
             from ainews.cloud_fetch import cloud_fetch_all_users
 
-            total = asyncio.get_event_loop().run_until_complete(cloud_fetch_all_users())
+            total = asyncio.run(cloud_fetch_all_users())
             assert total == 0
 
     def _setup_supabase_env(self, monkeypatch):
@@ -107,14 +107,12 @@ class TestCloudFetchAllUsers:
         _inject_fake_supabase(monkeypatch)
 
         async def _run():
-            with patch(
-                "ainews.sources.supabase_manager.get_all_user_ids", return_value=[]
-            ):
+            with patch("ainews.sources.supabase_manager.get_all_user_ids", return_value=[]):
                 from ainews.cloud_fetch import cloud_fetch_all_users
 
                 return await cloud_fetch_all_users()
 
-        total = asyncio.get_event_loop().run_until_complete(_run())
+        total = asyncio.run(_run())
         assert total == 0
 
     def test_user_with_no_sources_skipped(self, monkeypatch):
@@ -132,9 +130,7 @@ class TestCloudFetchAllUsers:
                     "ainews.sources.supabase_manager.get_user_sources",
                     return_value=[],
                 ),
-                patch(
-                    "ainews.cloud_fetch.get_backend"
-                ) as mock_get_backend,
+                patch("ainews.cloud_fetch.get_backend") as mock_get_backend,
                 patch(
                     "ainews.cloud_fetch.run_ingestion",
                     new_callable=AsyncMock,
@@ -147,7 +143,7 @@ class TestCloudFetchAllUsers:
                 mock_get_backend.assert_not_called()
                 return total
 
-        total = asyncio.get_event_loop().run_until_complete(_run())
+        total = asyncio.run(_run())
         assert total == 0
 
     def test_multiple_users(self, monkeypatch):
@@ -197,7 +193,7 @@ class TestCloudFetchAllUsers:
 
                 return await cloud_fetch_all_users()
 
-        total = asyncio.get_event_loop().run_until_complete(_run())
+        total = asyncio.run(_run())
         assert total == 8  # 5 + 3
         assert call_order == ["user-1", "user-2"]
 
@@ -244,7 +240,7 @@ class TestCloudFetchAllUsers:
 
                 return await cloud_fetch_all_users()
 
-        total = asyncio.get_event_loop().run_until_complete(_run())
+        total = asyncio.run(_run())
         # Only fast-user's 4 items counted; slow-user timed out
         assert total == 4
 
@@ -289,7 +285,7 @@ class TestCloudFetchAllUsers:
 
                 return await cloud_fetch_all_users()
 
-        total = asyncio.get_event_loop().run_until_complete(_run())
+        total = asyncio.run(_run())
         assert total == 7  # Only ok-user's items counted
 
     def test_backend_context_manager_cleanup(self, monkeypatch):
@@ -311,9 +307,7 @@ class TestCloudFetchAllUsers:
                     "ainews.sources.supabase_manager.get_user_sources",
                     return_value=_make_user_sources(),
                 ),
-                patch(
-                    "ainews.cloud_fetch.get_backend", return_value=mock_backend
-                ),
+                patch("ainews.cloud_fetch.get_backend", return_value=mock_backend),
                 patch(
                     "ainews.cloud_fetch.run_ingestion",
                     new_callable=AsyncMock,
@@ -324,7 +318,7 @@ class TestCloudFetchAllUsers:
 
                 await cloud_fetch_all_users()
 
-        asyncio.get_event_loop().run_until_complete(_run())
+        asyncio.run(_run())
         mock_backend.__exit__.assert_called_once()
 
     def test_scoring_called_per_user(self, monkeypatch):
@@ -372,7 +366,7 @@ class TestCloudFetchAllUsers:
 
                 return await cloud_fetch_all_users()
 
-        total = asyncio.get_event_loop().run_until_complete(_run())
+        total = asyncio.run(_run())
         assert total == 2  # 1 + 1 from ingestion
         assert "User user-a" in score_labels
         assert "User user-b" in score_labels
@@ -426,7 +420,7 @@ class TestCloudFetchAllUsers:
 
                 return await cloud_fetch_all_users()
 
-        asyncio.get_event_loop().run_until_complete(_run())
+        asyncio.run(_run())
         assert len(captured_configs) == 1
         config = captured_configs[0]
         assert "youtube" in config["sources"]
@@ -451,7 +445,7 @@ class TestScoreWithClaude:
 
             return await _score_with_claude(backend, MagicMock())
 
-        count = asyncio.get_event_loop().run_until_complete(_run())
+        count = asyncio.run(_run())
         assert count == 0
         backend.get_unscored_items.assert_not_called()
 
@@ -467,7 +461,7 @@ class TestScoreWithClaude:
 
             return await _score_with_claude(backend, MagicMock())
 
-        count = asyncio.get_event_loop().run_until_complete(_run())
+        count = asyncio.run(_run())
         assert count == 0
 
     def test_scores_and_upserts(self, monkeypatch):
@@ -475,12 +469,18 @@ class TestScoreWithClaude:
         monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-test")
 
         item1 = ContentItem(
-            id="i1", url="https://example.com/1", title="Test 1",
-            source_name="Test Feed", source_type="rss",
+            id="i1",
+            url="https://example.com/1",
+            title="Test 1",
+            source_name="Test Feed",
+            source_type="rss",
         )
         item2 = ContentItem(
-            id="i2", url="https://example.com/2", title="Test 2",
-            source_name="Test Feed", source_type="rss",
+            id="i2",
+            url="https://example.com/2",
+            title="Test 2",
+            source_name="Test Feed",
+            source_type="rss",
         )
         backend = MagicMock()
         backend.get_unscored_items.return_value = [item1, item2]
@@ -495,7 +495,8 @@ class TestScoreWithClaude:
         async def _run():
             with (
                 patch(
-                    "ainews.cloud_fetch.load_principles", return_value=["p1"],
+                    "ainews.cloud_fetch.load_principles",
+                    return_value=["p1"],
                 ),
                 patch(
                     "ainews.scoring.claude_scorer.score_batch_claude",
@@ -506,7 +507,7 @@ class TestScoreWithClaude:
 
                 return await _score_with_claude(backend, settings, label="Test")
 
-        count = asyncio.get_event_loop().run_until_complete(_run())
+        count = asyncio.run(_run())
         assert count == 2
         assert backend.upsert_item.call_count == 2
         backend.commit.assert_called_once()
