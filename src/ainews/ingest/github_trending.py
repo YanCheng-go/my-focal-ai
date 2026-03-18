@@ -194,7 +194,7 @@ async def fetch_github_trending_history(
         items.append(
             ContentItem(
                 id=make_id(f"gh-history:{github_link}"),
-                url=github_link,
+                url=f"{github_link}#trending-history",
                 title=f"#{rank} {full_name}",
                 summary=" | ".join(summary_parts),
                 source_name="GitHub Trending History",
