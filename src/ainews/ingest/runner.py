@@ -51,17 +51,15 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
         )
 
         tags = trending_entries[0].get("tags", ["github", "trending", "open-source"])
-        total_fetched = 0
-        total_new = 0
         items = await fetch_github_trending(tags=tags)
+        history_items = await fetch_github_trending_history(tags=tags)
+        # Clear both before inserting to avoid UNIQUE(url) conflicts
         if items:
             backend.delete_source_content("GitHub Trending")
-        total_fetched += len(items)
-        total_new += backend.ingest_items("GitHub Trending", items)
-        history_items = await fetch_github_trending_history(tags=tags)
         if history_items:
             backend.delete_source_content("GitHub Trending History")
-        total_fetched += len(history_items)
+        total_fetched = len(items) + len(history_items)
+        total_new = backend.ingest_items("GitHub Trending", items)
         total_new += backend.ingest_items("GitHub Trending History", history_items)
         return {"items_fetched": total_fetched, "new_items": total_new}
 
