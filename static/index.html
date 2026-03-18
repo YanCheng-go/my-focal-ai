@@ -443,7 +443,26 @@
         const pgCurrent = 'px-3 py-1.5 rounded-md text-sm border bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
         if (totalPages > 1) {
             let pHtml = `<button class="${pgLink}" onclick="goPage(${page - 1})" ${page <= 1 ? 'disabled' : ''}>Prev</button>`;
-            pHtml += `<span class="${pgCurrent}">${page}</span>`;
+            // Build page number list with ellipsis for large ranges
+            var pages = [];
+            if (totalPages <= 7) {
+                for (var i = 1; i <= totalPages; i++) pages.push(i);
+            } else {
+                pages.push(1);
+                if (page > 3) pages.push('...');
+                for (var i = Math.max(2, page - 1); i <= Math.min(totalPages - 1, page + 1); i++) pages.push(i);
+                if (page < totalPages - 2) pages.push('...');
+                pages.push(totalPages);
+            }
+            pages.forEach(function(p) {
+                if (p === '...') {
+                    pHtml += `<span class="px-2 py-1.5 text-sm text-gray-400">…</span>`;
+                } else {
+                    pHtml += p === page
+                        ? `<span class="${pgCurrent}">${p}</span>`
+                        : `<button class="${pgLink}" onclick="goPage(${p})">${p}</button>`;
+                }
+            });
             pHtml += `<button class="${pgLink}" onclick="goPage(${page + 1})" ${page >= totalPages ? 'disabled' : ''}>Next</button>`;
             document.getElementById('pagination').innerHTML = pHtml;
         } else {
