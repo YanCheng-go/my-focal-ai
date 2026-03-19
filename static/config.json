@@ -650,6 +650,18 @@
       ]
     },
     {
+      "source_type": "rsshub",
+      "name": "Langchain Blog",
+      "config": {
+        "route": "/langchain/blog"
+      },
+      "tags": [
+        "ai",
+        "open source",
+        "langchain"
+      ]
+    },
+    {
       "source_type": "arxiv_queries",
       "name": "arXiv: transformers",
       "config": {
