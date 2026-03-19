@@ -40,7 +40,7 @@
         '<a href="index.html" class="inline-flex items-center gap-1 py-1 ' + cls('dashboard') + '">Feeds ' + badgeSpan('badge-dashboard') + '</a>' +
         '<a href="admin.html" class="py-1 ' + cls('admin') + '">Admin</a>' +
         '<a href="leaderboard.html" class="py-1 ' + cls('leaderboard') + '">Leaderboard</a>' +
-        '<a href="trends.html" class="inline-flex items-center gap-1 py-1 ' + cls('trends') + '">Trends ' + badgeSpan('badge-trends') + '</a>' +
+        '<a href="trends.html" class="py-1 ' + cls('trends') + '">Trends</a>' +
         '<a href="ccc.html" class="inline-flex items-center gap-1 py-1 ' + cls('ccc') + '">CCC ' + badgeSpan('badge-ccc') + '</a>' +
         '<a href="events.html" class="py-1 ' + cls('events') + '">Events</a>' +
         '<a href="about.html" class="py-1 ' + cls('about') + '">About</a>';
@@ -51,7 +51,7 @@
         '<a href="index.html" class="inline-flex items-center gap-1 ' + mobileLink + ' ' + cls('dashboard') + '">Feeds ' + badgeSpan('badge-dashboard-m') + '</a>' +
         '<a href="admin.html" class="' + mobileLink + ' ' + cls('admin') + '">Admin</a>' +
         '<a href="leaderboard.html" class="' + mobileLink + ' ' + cls('leaderboard') + '">Leaderboard</a>' +
-        '<a href="trends.html" class="inline-flex items-center gap-1 ' + mobileLink + ' ' + cls('trends') + '">Trends ' + badgeSpan('badge-trends-m') + '</a>' +
+        '<a href="trends.html" class="' + mobileLink + ' ' + cls('trends') + '">Trends</a>' +
         '<a href="ccc.html" class="inline-flex items-center gap-1 ' + mobileLink + ' ' + cls('ccc') + '">CCC ' + badgeSpan('badge-ccc-m') + '</a>' +
         '<a href="events.html" class="' + mobileLink + ' ' + cls('events') + '">Events</a>' +
         '<a href="about.html" class="' + mobileLink + ' ' + cls('about') + '">About</a>' +

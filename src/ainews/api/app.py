@@ -165,7 +165,6 @@ async def api_trigger_fetch():
 @app.get("/api/badge-counts")
 def api_badge_counts(
     since_dashboard: str | None = None,
-    since_trends: str | None = None,
     since_ccc: str | None = None,
     since: str | None = None,
 ):
@@ -188,7 +187,6 @@ def api_badge_counts(
 
     fallback_dt = _parse(since)
     dash_dt = _parse(since_dashboard) or fallback_dt
-    trend_dt = _parse(since_trends) or fallback_dt
     ccc_dt = _parse(since_ccc) or fallback_dt
 
     with _backend() as backend:
@@ -201,19 +199,11 @@ def api_badge_counts(
             if dash_dt
             else 0
         )
-        trends_count = (
-            backend.count_items(
-                since=trend_dt,
-                source_types=["github_trending", "github_trending_history"],
-            )
-            if trend_dt
-            else 0
-        )
         ccc_count = 0
         if ccc_dt:
             for src in HIDDEN_SOURCES:
                 ccc_count += backend.count_items(since=ccc_dt, source_name=src)
-    return {"dashboard": dashboard_count, "trends": trends_count, "ccc": ccc_count}
+    return {"dashboard": dashboard_count, "ccc": ccc_count}
 
 
 # === Web Dashboard ===
