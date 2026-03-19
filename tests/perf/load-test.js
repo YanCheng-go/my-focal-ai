@@ -200,7 +200,7 @@ function fetchBadgeCounts() {
   group("API: /api/badge-counts", () => {
     const since = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
     const res = http.get(
-      `${BASE_URL}/api/badge-counts?since_dashboard=${since}&since_trends=${since}&since_ccc=${since}`,
+      `${BASE_URL}/api/badge-counts?since_dashboard=${since}&since_ccc=${since}`,
     );
     apiTrend.add(res.timings.duration);
     checkResponse(res, "api badge-counts");

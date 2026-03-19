@@ -58,6 +58,10 @@ sources:
     - ai
     - anthropic
     - company
+  - handle: steipete
+    tags:
+    - ai
+    - openclaw
   youtube:
   - channel_id: "UC2ojq-nuP8ceeHqiroeKhBA"
     name: "Nate Herk | AI Automation"
@@ -202,6 +206,12 @@ sources:
     tags:
     - ai
     - xiaohongshu
+  - route: /langchain/blog
+    name: Langchain Blog
+    tags:
+    - ai
+    - open source
+    - langchain
   github_trending:
   - name: trendshift.io
     tags: [github, trending, open-source]

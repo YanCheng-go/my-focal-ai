@@ -33,10 +33,7 @@
                     </a>
                     <a href="/admin" class="py-1 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'admin' else 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200' }}">Admin</a>
                     <a href="/leaderboard" class="py-1 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'leaderboard' else 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200' }}">Leaderboard</a>
-                    <a href="/trends" class="inline-flex items-center gap-1 py-1 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'trends' else 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200' }}">
-                        Trends
-                        <span id="badge-trends" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span>
-                    </a>
+                    <a href="/trends" class="py-1 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'trends' else 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200' }}">Trends</a>
                     <a href="/ccc" class="inline-flex items-center gap-1 py-1 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'ccc' else 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200' }}">
                         CCC
                         <span id="badge-ccc" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span>
@@ -73,10 +70,7 @@
                 </a>
                 <a href="/admin" class="py-2 px-2 rounded-md hover:bg-gray-50 dark:hover:bg-neutral-800 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'admin' else 'text-gray-600 dark:text-gray-300' }}">Admin</a>
                 <a href="/leaderboard" class="py-2 px-2 rounded-md hover:bg-gray-50 dark:hover:bg-neutral-800 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'leaderboard' else 'text-gray-600 dark:text-gray-300' }}">Leaderboard</a>
-                <a href="/trends" class="inline-flex items-center gap-1 py-2 px-2 rounded-md hover:bg-gray-50 dark:hover:bg-neutral-800 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'trends' else 'text-gray-600 dark:text-gray-300' }}">
-                    Trends
-                    <span id="badge-trends-m" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span>
-                </a>
+                <a href="/trends" class="py-2 px-2 rounded-md hover:bg-gray-50 dark:hover:bg-neutral-800 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'trends' else 'text-gray-600 dark:text-gray-300' }}">Trends</a>
                 <a href="/ccc" class="inline-flex items-center gap-1 py-2 px-2 rounded-md hover:bg-gray-50 dark:hover:bg-neutral-800 {{ 'text-blue-600 dark:text-blue-400 font-medium' if active_page == 'ccc' else 'text-gray-600 dark:text-gray-300' }}">
                     CCC
                     <span id="badge-ccc-m" class="hidden bg-red-500 text-white text-[10px] rounded-full px-1 min-w-[14px] text-center leading-4 font-bold"></span>
@@ -140,6 +134,7 @@
 
     (function() {
         var pages = ['dashboard', 'trends', 'ccc'];
+        var badgePages = ['dashboard', 'ccc'];  // trends badge disabled
         var currentPage = '{{ active_page | default("") }}';
 
         // Migrate from single key to per-page keys
@@ -157,9 +152,9 @@
             return;
         }
 
-        // Build per-page since params
+        // Build per-page since params (only for badge-enabled pages)
         var params = [];
-        pages.forEach(function(p) {
+        badgePages.forEach(function(p) {
             var ts = localStorage.getItem('ainews_last_seen_' + p);
             if (ts) params.push('since_' + p + '=' + encodeURIComponent(ts));
         });

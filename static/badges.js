@@ -27,7 +27,7 @@
 
         var hiddenTypes = (config && config.hidden_source_types) || [];
         var hiddenSources = (config && config.hidden_sources) || [];
-        var counts = {dashboard: 0, trends: 0, ccc: 0};
+        var counts = {dashboard: 0, ccc: 0};
 
         // First visit: initialise all timestamps and return (no badges to show)
         var hasAny = PAGES.some(function(p) {
@@ -54,10 +54,7 @@
                 if (!hiddenTypes.includes(item.source_type) && !hiddenSources.includes(item.source_name))
                     counts.dashboard++;
             }
-            if (lastSeenDates.trends && d > lastSeenDates.trends) {
-                if (item.source_type === 'github_trending' || item.source_type === 'github_trending_history')
-                    counts.trends++;
-            }
+            // trends badge disabled — count was always noisy (50)
             if (lastSeenDates.ccc && d > lastSeenDates.ccc) {
                 if (hiddenSources.includes(item.source_name) && item.source_type !== 'github_trending' && item.source_type !== 'github_trending_history')
                     counts.ccc++;
