@@ -207,7 +207,7 @@ sources:
     - ai
     - xiaohongshu
   - route: /langchain/blog
-    name: 'Langchain Blog '
+    name: Langchain Blog
     tags:
     - ai
     - open source
