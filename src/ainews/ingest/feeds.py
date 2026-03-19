@@ -27,7 +27,7 @@ async def fetch_feed(
 ) -> list[ContentItem]:
     """Fetch and parse a single RSS/Atom feed URL."""
     headers = {"User-Agent": "Mozilla/5.0 (compatible; ainews/0.1; +https://github.com)"}
-    async with httpx.AsyncClient(timeout=30, headers=headers) as client:
+    async with httpx.AsyncClient(timeout=120, headers=headers) as client:
         resp = await client.get(url, follow_redirects=True)
         resp.raise_for_status()
 
