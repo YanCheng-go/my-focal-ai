@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.7.1 — 2026-03-21
+
+### Fixes
+
+- **Mobile badge counts** — Badge notification counts now display on mobile nav (previously only desktop elements were updated) (#180)
+- **local-push.sh resilience** — Stash unstaged changes before `git pull --rebase` so dirty working trees no longer block the script (#180)
+- **local-push.sh credentials** — Ensure HTTPS remote uses YanCheng-go account for pushes (#180)
+
+### Infrastructure
+
+- **Trends badge disabled** — Badge count for trends page removed (was always noisy) (#179)
+- **New sources** — Added new Twitter and RSS sources (#179)
+- **Feed timeout** — Increased feed fetch timeout (#179)
+- Mobile badge tests added to `run_badges_test.mjs`
+
 ## v0.7.0 — 2026-03-18
 
 ### Features
