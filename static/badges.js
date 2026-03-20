@@ -62,11 +62,14 @@
         });
 
         Object.keys(counts).forEach(function(p) {
-            var el = document.getElementById('badge-' + p);
-            if (el && counts[p] > 0) {
-                el.textContent = counts[p] > 99 ? '99+' : counts[p];
-                el.classList.remove('hidden');
-            }
+            var label = counts[p] > 99 ? '99+' : String(counts[p]);
+            ['badge-' + p, 'badge-' + p + '-m'].forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el && counts[p] > 0) {
+                    el.textContent = label;
+                    el.classList.remove('hidden');
+                }
+            });
         });
 
         // Expose the cutoff for the current page before updating it

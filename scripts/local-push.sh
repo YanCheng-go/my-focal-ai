@@ -64,6 +64,12 @@ else
     log "==> Skipping Supabase user Twitter fetch (AINEWS_SUPABASE_URL/SERVICE_KEY not set)"
 fi
 
+# Ensure remote URL uses YanCheng-go credentials (not YanCheng-0116).
+REMOTE_URL=$(git remote get-url origin)
+if [[ "$REMOTE_URL" == "https://github.com/"* ]]; then
+    git remote set-url origin "${REMOTE_URL/https:\/\/github.com/https://YanCheng-go@github.com}"
+fi
+
 # Ensure we're on main so the push targets the correct branch.
 ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 DID_STASH=false
@@ -87,10 +93,21 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# Stash any unstaged changes (e.g. uv.lock) so pull --rebase can proceed.
+PULL_STASH=false
+if ! git diff --quiet 2>/dev/null; then
+    git stash push -m "local-push-pull" --quiet
+    PULL_STASH=true
+fi
+
 # Pull latest data.json from remote before export so the merge step in
 # export.py can preserve cloud-fetched items that aren't in the local DB.
 log "==> Pulling latest data.json from remote..."
 git pull --rebase origin main 2>&1 | tee -a "$LOG_FILE"
+
+if [[ "$PULL_STASH" == true ]]; then
+    git stash pop --quiet 2>/dev/null || log "WARN: stash pop failed, changes remain in stash"
+fi
 
 log "==> Appending Twitter items (last ${HOURS}h) to static/data.json..."
 uv run ainews export --hours "$HOURS" --output static/data.json --source-type twitter 2>&1 | tee -a "$LOG_FILE"

@@ -30,7 +30,7 @@ function makeEl(id) {
         },
     };
 }
-['badge-dashboard', 'badge-trends', 'badge-ccc'].forEach(id => { elements[id] = makeEl(id); });
+['badge-dashboard', 'badge-trends', 'badge-ccc', 'badge-dashboard-m', 'badge-trends-m', 'badge-ccc-m'].forEach(id => { elements[id] = makeEl(id); });
 
 const window = { location: { pathname: '/index.html' } };
 const document = {
@@ -107,11 +107,17 @@ const badge = elements['badge-dashboard'];
 assert(badge.textContent === '1', 'Badge count shows 1 new dashboard item');
 assert(!badge.classList.contains('hidden'), 'Badge element is visible');
 
+// 4b — Mobile badge mirrors desktop
+const badgeM = elements['badge-dashboard-m'];
+assert(badgeM.textContent === '1', 'Mobile badge count matches desktop');
+assert(!badgeM.classList.contains('hidden'), 'Mobile badge element is visible');
+
 // 5 — After visiting, last-seen updated
 resetBadges();
 computeBadges([oldItem, newItem], {}, 'dashboard');
 assert(isNewItem(newItem) === false, 'After visit: previously new item is no longer new');
 assert(elements['badge-dashboard'].classList.contains('hidden'), 'Badge hidden after revisit');
+assert(elements['badge-dashboard-m'].classList.contains('hidden'), 'Mobile badge hidden after revisit');
 
 // 6 — fetched_at fallback
 resetBadges();
