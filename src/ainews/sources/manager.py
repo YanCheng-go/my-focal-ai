@@ -1,11 +1,12 @@
 """YAML round-trip read/write for source management."""
 
 import os
-import re
 from pathlib import Path
 from urllib.parse import urlparse
 
 from ruamel.yaml import YAML
+
+from ainews.sources.url_constants import TWITTER_HANDLE_RE, YOUTUBE_CHANNEL_ID_RE
 
 # Source type -> required fields mapping
 SOURCE_FIELDS = {
@@ -70,7 +71,7 @@ def validate_source(source_type: str, source_data: dict):
     # Format validation per source type
     if source_type == "youtube":
         cid = source_data.get("channel_id", "")
-        if not re.match(r"^UC[\w-]{22}$", cid):
+        if not YOUTUBE_CHANNEL_ID_RE.match(cid):
             raise ValueError(
                 f"Invalid YouTube channel_id: {cid!r}. "
                 "Must start with 'UC' followed by 22 characters. "
@@ -79,7 +80,7 @@ def validate_source(source_type: str, source_data: dict):
 
     if source_type == "twitter":
         handle = source_data.get("handle", "")
-        if not re.match(r"^[A-Za-z0-9_]{1,15}$", handle):
+        if not TWITTER_HANDLE_RE.match(handle):
             raise ValueError(
                 f"Invalid Twitter handle: {handle!r}. "
                 "Must be 1-15 alphanumeric characters or underscores, without @."

@@ -6,6 +6,7 @@ import logging
 import httpx
 
 from ainews.config import Settings, load_principles, load_sources
+from ainews.explore_validate import validate_suggestions
 
 logger = logging.getLogger(__name__)
 
@@ -69,7 +70,6 @@ def _format_principles(principles: dict) -> str:
         desc = value.get("description", "")
         section = f"{i}. {name}: {desc}"
 
-        # Add indicator details if present
         indicators = value.get("indicators", {})
         source_trust = value.get("source_trust", {})
         if indicators:
@@ -133,22 +133,14 @@ def _build_existing_set(sources_config: dict) -> set[str]:
     """Build a set of identifiers for existing sources (for dedup)."""
     existing = set()
     sources = sources_config.get("sources", {})
-    for stype, entries in sources.items():
+    for entries in sources.values():
         if not entries:
             continue
         for entry in entries:
             if isinstance(entry, dict):
-                # Add various identifiers for dedup
-                if "handle" in entry:
-                    existing.add(entry["handle"].lower())
-                if "name" in entry:
-                    existing.add(entry["name"].lower())
-                if "channel_id" in entry:
-                    existing.add(entry["channel_id"].lower())
-                if "url" in entry:
-                    existing.add(entry["url"].lower())
-                if "route" in entry:
-                    existing.add(entry["route"].lower())
+                for key in ("handle", "name", "channel_id", "url", "route"):
+                    if key in entry:
+                        existing.add(entry[key].lower())
     return existing
 
 
@@ -171,6 +163,62 @@ Here are the user's current sources:
 {type_filter}
 Suggest up to {limit} new sources the user should follow.
 Score each suggestion using the principles provided in the system prompt."""
+
+
+def _process_suggestions(
+    content: str,
+    existing: set[str],
+    min_score: float,
+    limit: int,
+    rsshub_base: str,
+) -> list[dict]:
+    """Parse LLM JSON, dedup, filter by score. Shared by both backends."""
+    try:
+        parsed = json.loads(content)
+    except json.JSONDecodeError:
+        logger.warning("Failed to parse LLM response for source exploration")
+        return []
+
+    if isinstance(parsed, dict):
+        suggestions = parsed.get("suggestions", parsed.get("sources", []))
+    elif isinstance(parsed, list):
+        suggestions = parsed
+    else:
+        return []
+
+    results = []
+    for s in suggestions:
+        if not isinstance(s, dict):
+            continue
+
+        config = s.get("config", {})
+        identifiers = [
+            config.get("handle", ""),
+            config.get("channel_id", ""),
+            config.get("url", ""),
+            config.get("route", ""),
+            s.get("name", ""),
+        ]
+        if any(ident.lower() in existing for ident in identifiers if ident):
+            continue
+
+        score = float(s.get("relevance_score", 0))
+        if score < min_score:
+            continue
+
+        results.append(
+            {
+                "source_type": s.get("source_type", "rss"),
+                "name": s.get("name", ""),
+                "config": config,
+                "tags": s.get("tags", []),
+                "relevance_score": round(score, 2),
+                "reason": s.get("reason", ""),
+            }
+        )
+
+    results.sort(key=lambda x: x["relevance_score"], reverse=True)
+    return results[:limit]
 
 
 async def explore_sources(
@@ -217,65 +265,13 @@ async def explore_sources(
         )
         resp.raise_for_status()
 
-    body = resp.json()
-    content = body["message"]["content"]
-
-    try:
-        parsed = json.loads(content)
-    except json.JSONDecodeError:
-        logger.warning("Failed to parse LLM response for source exploration")
-        return []
-
-    # Normalize: handle both {"suggestions": [...]} and bare [...]
-    if isinstance(parsed, dict):
-        suggestions = parsed.get("suggestions", parsed.get("sources", []))
-    elif isinstance(parsed, list):
-        suggestions = parsed
-    else:
-        return []
-
-    # Filter out existing sources and low scores
-    results = []
-    for s in suggestions:
-        if not isinstance(s, dict):
-            continue
-
-        # Dedup against existing sources
-        config = s.get("config", {})
-        identifiers = [
-            config.get("handle", ""),
-            config.get("channel_id", ""),
-            config.get("url", ""),
-            config.get("route", ""),
-            s.get("name", ""),
-        ]
-        if any(ident.lower() in existing for ident in identifiers if ident):
-            continue
-
-        score = float(s.get("relevance_score", 0))
-        if score < min_score:
-            continue
-
-        results.append(
-            {
-                "source_type": s.get("source_type", "rss"),
-                "name": s.get("name", ""),
-                "config": config,
-                "tags": s.get("tags", []),
-                "relevance_score": round(score, 2),
-                "reason": s.get("reason", ""),
-            }
-        )
-
-    # Sort by relevance score descending
-    results.sort(key=lambda x: x["relevance_score"], reverse=True)
-
-    # Validate suggestions against live services
-    from ainews.explore_validate import validate_suggestions
-
-    results = await validate_suggestions(results)
-
-    return results[:limit]
+    content = resp.json()["message"]["content"]
+    results = _process_suggestions(
+        content, existing, min_score, limit, settings.rsshub_base
+    )
+    return await validate_suggestions(
+        results, rsshub_base=settings.rsshub_base
+    )
 
 
 async def explore_sources_claude(
@@ -320,57 +316,10 @@ async def explore_sources_claude(
         )
         resp.raise_for_status()
 
-    body = resp.json()
-    content = body["content"][0]["text"]
-
-    try:
-        parsed = json.loads(content)
-    except json.JSONDecodeError:
-        logger.warning("Failed to parse Claude response for source exploration")
-        return []
-
-    if isinstance(parsed, dict):
-        suggestions = parsed.get("suggestions", parsed.get("sources", []))
-    elif isinstance(parsed, list):
-        suggestions = parsed
-    else:
-        return []
-
-    results = []
-    for s in suggestions:
-        if not isinstance(s, dict):
-            continue
-
-        config = s.get("config", {})
-        identifiers = [
-            config.get("handle", ""),
-            config.get("channel_id", ""),
-            config.get("url", ""),
-            config.get("route", ""),
-            s.get("name", ""),
-        ]
-        if any(ident.lower() in existing for ident in identifiers if ident):
-            continue
-
-        score = float(s.get("relevance_score", 0))
-        if score < min_score:
-            continue
-
-        results.append(
-            {
-                "source_type": s.get("source_type", "rss"),
-                "name": s.get("name", ""),
-                "config": config,
-                "tags": s.get("tags", []),
-                "relevance_score": round(score, 2),
-                "reason": s.get("reason", ""),
-            }
-        )
-
-    results.sort(key=lambda x: x["relevance_score"], reverse=True)
-
-    from ainews.explore_validate import validate_suggestions
-
-    results = await validate_suggestions(results)
-
-    return results[:limit]
+    content = resp.json()["content"][0]["text"]
+    results = _process_suggestions(
+        content, existing, min_score, limit, settings.rsshub_base
+    )
+    return await validate_suggestions(
+        results, rsshub_base=settings.rsshub_base
+    )

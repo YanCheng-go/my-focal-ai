@@ -1,10 +1,14 @@
 """Tests for source exploration validation layer."""
 
 import asyncio
+import json
 from unittest.mock import AsyncMock, MagicMock, patch
+
+import httpx
 
 from ainews.explore_validate import (
     _check_rss,
+    _check_rsshub,
     _check_twitter,
     _check_youtube,
     validate_suggestion,
@@ -262,3 +266,325 @@ def test_validate_suggestions_keeps_unknown_types():
 def test_validate_suggestions_empty():
     result = asyncio.run(validate_suggestions([]))
     assert result == []
+
+
+# --- _check_rsshub ---
+
+
+def test_rsshub_valid_route():
+    client = AsyncMock()
+    client.get = AsyncMock(return_value=_mock_response(200))
+    result = asyncio.run(
+        _check_rsshub(
+            {"route": "/twitter/user/test"},
+            client,
+            rsshub_base="http://localhost:1200",
+        )
+    )
+    assert result is True
+
+
+def test_rsshub_missing_route():
+    client = AsyncMock()
+    result = asyncio.run(
+        _check_rsshub({}, client, rsshub_base="http://localhost:1200")
+    )
+    assert result is False
+
+
+def test_rsshub_404():
+    client = AsyncMock()
+    client.get = AsyncMock(return_value=_mock_response(404))
+    result = asyncio.run(
+        _check_rsshub(
+            {"route": "/nonexistent/route"},
+            client,
+            rsshub_base="http://localhost:1200",
+        )
+    )
+    assert result is False
+
+
+def test_rsshub_prepends_slash():
+    """Route without leading slash should still work."""
+    client = AsyncMock()
+    client.get = AsyncMock(return_value=_mock_response(200))
+    result = asyncio.run(
+        _check_rsshub(
+            {"route": "twitter/user/test"},
+            client,
+            rsshub_base="http://localhost:1200",
+        )
+    )
+    assert result is True
+    call_args = client.get.call_args
+    assert call_args[0][0] == "http://localhost:1200/twitter/user/test"
+
+
+# --- HTTP error handling ---
+
+
+def test_youtube_network_error():
+    """Network timeout should return False, not raise."""
+    client = AsyncMock()
+    client.head = AsyncMock(side_effect=httpx.ConnectTimeout("timeout"))
+    result = asyncio.run(
+        _check_youtube({"channel_id": "UCXUPKJO5MZQN11PqgIvyuvQ"}, client)
+    )
+    assert result is False
+
+
+def test_twitter_network_error():
+    client = AsyncMock()
+    client.head = AsyncMock(side_effect=httpx.ReadTimeout("timeout"))
+    result = asyncio.run(
+        _check_twitter({"handle": "karpathy"}, client)
+    )
+    assert result is False
+
+
+def test_rss_network_error():
+    client = AsyncMock()
+    client.get = AsyncMock(side_effect=httpx.ConnectError("refused"))
+    result = asyncio.run(
+        _check_rss({"url": "https://example.com/feed.xml"}, client)
+    )
+    assert result is False
+
+
+# --- explore_sources end-to-end (mocked LLM) ---
+
+
+def test_explore_sources_parses_llm_response():
+    """explore_sources should parse LLM JSON, dedup, filter, and validate."""
+    from ainews.explore import explore_sources
+
+    llm_response = json.dumps([
+        {
+            "source_type": "twitter",
+            "name": "Yann LeCun",
+            "config": {"handle": "ylecun"},
+            "tags": ["ai"],
+            "relevance_score": 0.9,
+            "reason": "AI researcher",
+        },
+        {
+            "source_type": "twitter",
+            "name": "karpathy",
+            "config": {"handle": "karpathy"},
+            "tags": ["ai"],
+            "relevance_score": 0.8,
+            "reason": "Already followed",
+        },
+    ])
+
+    sample_config = {
+        "sources": {
+            "twitter": [{"handle": "karpathy", "tags": ["ai"]}],
+        }
+    }
+
+    mock_ollama_resp = MagicMock()
+    mock_ollama_resp.status_code = 200
+    mock_ollama_resp.raise_for_status = MagicMock()
+    mock_ollama_resp.json.return_value = {
+        "message": {"content": llm_response}
+    }
+
+    with (
+        patch("ainews.explore.httpx.AsyncClient") as mock_http,
+        patch("ainews.explore.Settings") as mock_settings,
+        patch("ainews.explore.load_sources", return_value=sample_config),
+        patch("ainews.explore.load_principles", return_value=SAMPLE_PRINCIPLES),
+        patch("ainews.explore.validate_suggestions", new=_passthrough_validate),
+    ):
+        mock_settings.return_value.config_dir = "/tmp"
+        mock_settings.return_value.ollama_base_url = "http://localhost:11434"
+        mock_settings.return_value.ollama_model = "qwen3:4b"
+        mock_settings.return_value.rsshub_base = "http://localhost:1200"
+
+        mock_client = AsyncMock()
+        mock_client.post = AsyncMock(return_value=mock_ollama_resp)
+        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+        mock_client.__aexit__ = AsyncMock(return_value=False)
+        mock_http.return_value = mock_client
+
+        results = asyncio.run(explore_sources(
+            sources_config=sample_config,
+            ollama_base_url="http://localhost:11434",
+            model="qwen3:4b",
+        ))
+
+    # karpathy should be deduped out
+    assert len(results) == 1
+    assert results[0]["name"] == "Yann LeCun"
+    assert results[0]["config"]["handle"] == "ylecun"
+
+
+def test_explore_sources_handles_wrapped_json():
+    """LLM sometimes returns {"suggestions": [...]} instead of bare array."""
+    from ainews.explore import explore_sources
+
+    llm_response = json.dumps({
+        "suggestions": [
+            {
+                "source_type": "rss",
+                "name": "Some Blog",
+                "config": {"url": "https://example.com/feed.xml"},
+                "tags": ["tech"],
+                "relevance_score": 0.7,
+                "reason": "Tech blog",
+            }
+        ]
+    })
+
+    mock_ollama_resp = MagicMock()
+    mock_ollama_resp.status_code = 200
+    mock_ollama_resp.raise_for_status = MagicMock()
+    mock_ollama_resp.json.return_value = {
+        "message": {"content": llm_response}
+    }
+
+    with (
+        patch("ainews.explore.httpx.AsyncClient") as mock_http,
+        patch("ainews.explore.Settings") as mock_settings,
+        patch("ainews.explore.load_sources"),
+        patch("ainews.explore.load_principles", return_value=SAMPLE_PRINCIPLES),
+        patch("ainews.explore.validate_suggestions", new=_passthrough_validate),
+    ):
+        mock_settings.return_value.config_dir = "/tmp"
+        mock_settings.return_value.ollama_base_url = "http://localhost:11434"
+        mock_settings.return_value.ollama_model = "qwen3:4b"
+        mock_settings.return_value.rsshub_base = "http://localhost:1200"
+
+        mock_client = AsyncMock()
+        mock_client.post = AsyncMock(return_value=mock_ollama_resp)
+        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+        mock_client.__aexit__ = AsyncMock(return_value=False)
+        mock_http.return_value = mock_client
+
+        results = asyncio.run(explore_sources(
+            sources_config={"sources": {}},
+            ollama_base_url="http://localhost:11434",
+            model="qwen3:4b",
+        ))
+
+    assert len(results) == 1
+    assert results[0]["name"] == "Some Blog"
+
+
+def test_explore_sources_handles_invalid_json():
+    """Malformed LLM output should return empty list, not crash."""
+    from ainews.explore import explore_sources
+
+    mock_ollama_resp = MagicMock()
+    mock_ollama_resp.status_code = 200
+    mock_ollama_resp.raise_for_status = MagicMock()
+    mock_ollama_resp.json.return_value = {
+        "message": {"content": "not valid json at all"}
+    }
+
+    with (
+        patch("ainews.explore.httpx.AsyncClient") as mock_http,
+        patch("ainews.explore.Settings") as mock_settings,
+        patch("ainews.explore.load_sources"),
+        patch("ainews.explore.load_principles", return_value=SAMPLE_PRINCIPLES),
+    ):
+        mock_settings.return_value.config_dir = "/tmp"
+        mock_settings.return_value.ollama_base_url = "http://localhost:11434"
+        mock_settings.return_value.ollama_model = "qwen3:4b"
+        mock_settings.return_value.rsshub_base = "http://localhost:1200"
+
+        mock_client = AsyncMock()
+        mock_client.post = AsyncMock(return_value=mock_ollama_resp)
+        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+        mock_client.__aexit__ = AsyncMock(return_value=False)
+        mock_http.return_value = mock_client
+
+        results = asyncio.run(explore_sources(
+            sources_config={"sources": {}},
+            ollama_base_url="http://localhost:11434",
+            model="qwen3:4b",
+        ))
+
+    assert results == []
+
+
+def test_explore_sources_filters_by_min_score():
+    """Suggestions below min_score should be excluded."""
+    from ainews.explore import explore_sources
+
+    llm_response = json.dumps([
+        {
+            "source_type": "twitter",
+            "name": "High Score",
+            "config": {"handle": "highscore"},
+            "tags": [],
+            "relevance_score": 0.9,
+            "reason": "Great",
+        },
+        {
+            "source_type": "twitter",
+            "name": "Low Score",
+            "config": {"handle": "lowscore"},
+            "tags": [],
+            "relevance_score": 0.2,
+            "reason": "Meh",
+        },
+    ])
+
+    mock_ollama_resp = MagicMock()
+    mock_ollama_resp.status_code = 200
+    mock_ollama_resp.raise_for_status = MagicMock()
+    mock_ollama_resp.json.return_value = {
+        "message": {"content": llm_response}
+    }
+
+    with (
+        patch("ainews.explore.httpx.AsyncClient") as mock_http,
+        patch("ainews.explore.Settings") as mock_settings,
+        patch("ainews.explore.load_sources"),
+        patch("ainews.explore.load_principles", return_value=SAMPLE_PRINCIPLES),
+        patch("ainews.explore.validate_suggestions", new=_passthrough_validate),
+    ):
+        mock_settings.return_value.config_dir = "/tmp"
+        mock_settings.return_value.ollama_base_url = "http://localhost:11434"
+        mock_settings.return_value.ollama_model = "qwen3:4b"
+        mock_settings.return_value.rsshub_base = "http://localhost:1200"
+
+        mock_client = AsyncMock()
+        mock_client.post = AsyncMock(return_value=mock_ollama_resp)
+        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+        mock_client.__aexit__ = AsyncMock(return_value=False)
+        mock_http.return_value = mock_client
+
+        results = asyncio.run(explore_sources(
+            sources_config={"sources": {}},
+            ollama_base_url="http://localhost:11434",
+            model="qwen3:4b",
+            min_score=0.5,
+        ))
+
+    assert len(results) == 1
+    assert results[0]["name"] == "High Score"
+
+
+# --- Helpers for e2e tests ---
+
+SAMPLE_PRINCIPLES = {
+    "topic": "AI and technology",
+    "principles": {
+        "signal_over_noise": {
+            "name": "Signal over Noise",
+            "description": "Prefer verifiable signal",
+        },
+    },
+    "source_proximity": {},
+}
+
+
+async def _passthrough_validate(suggestions, **kwargs):
+    """Skip real HTTP validation in e2e tests."""
+    for s in suggestions:
+        s["verified"] = True
+    return suggestions
