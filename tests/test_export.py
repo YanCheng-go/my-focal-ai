@@ -76,11 +76,15 @@ class TestAppendPruning:
     """Test that append_source_type prunes old items from data.json."""
 
     def _write_data_json(self, path, items):
-        path.write_text(json.dumps({
-            "exported_at": datetime.now(timezone.utc).isoformat(),
-            "total": len(items),
-            "items": items,
-        }))
+        path.write_text(
+            json.dumps(
+                {
+                    "exported_at": datetime.now(timezone.utc).isoformat(),
+                    "total": len(items),
+                    "items": items,
+                }
+            )
+        )
 
     def test_old_items_pruned_on_append(self, tmp_path, monkeypatch):
         """Items older than the time window are removed from data.json."""
