@@ -25,6 +25,7 @@ class Settings(BaseSettings):
     export_hours: int = 168  # Export window for data.json (default: 7 days = 168 hours)
     host: str = "0.0.0.0"
     port: int = 8000
+    log_level: str = "INFO"
 
     model_config = {"env_prefix": "AINEWS_", "env_file": ".env"}
 
