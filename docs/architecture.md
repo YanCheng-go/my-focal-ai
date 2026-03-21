@@ -266,10 +266,12 @@ See [deployment.md](deployment.md) for setup instructions, secrets, and environm
 src/ainews/
 ├── models.py          ContentItem + ScoredItem (Pydantic)
 ├── config.py          Settings (env vars), load_sources(), load_principles()
-├── cli.py             CLI entry: serve, fetch, cloud-fetch, export
+├── cli.py             CLI entry: serve, fetch, cloud-fetch, export, explore
 ├── export.py          Export scored items to JSON for static site
 ├── cloud_fetch.py     Cloud pipeline: fetch feeds + optional Claude scoring
 ├── backfill.py        Re-sync source config (tags, source_type) to existing DB items
+├── explore.py         LLM-powered source discovery (Ollama or Claude API)
+├── explore_validate.py  Post-LLM validation (check sources exist via HTTP)
 ├── ingest/
 │   ├── feeds.py       RSS/Atom fetching + URL builder for all source types
 │   ├── twitter.py     Chrome cookies (rookiepy) + Twitter GraphQL API

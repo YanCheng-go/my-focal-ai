@@ -25,6 +25,8 @@ uv run ainews backfill-tags                 # re-sync tags/type from config to D
 uv run ainews backfill-tags --dry-run       # preview what would change
 uv run ainews cloud-fetch                   # fetch feeds + score with Claude API (for CI)
 uv run ainews export                        # export data.json + config.json to static/
+uv run ainews explore                        # discover new sources via LLM (Ollama)
+uv run ainews explore --cloud                # discover new sources via Claude API
 uv run ruff check src/                     # lint
 uv run pytest                              # tests (unit only)
 uv run pytest -m integration               # integration tests (needs `supabase start` + env vars)
@@ -88,5 +90,5 @@ See [open issues](https://github.com/YanCheng-go/my-focal-ai/issues) for the ful
 
 ---
 
-*Last updated: 2026-03-18*
+*Last updated: 2026-03-21*
 
