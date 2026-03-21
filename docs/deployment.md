@@ -32,7 +32,7 @@ Twitter sources are only available in local mode. The fetcher reads your browser
 
 ## 2. Online Public (Vercel + GitHub Actions)
 
-Static read-only dashboard. GitHub Action fetches pre-defined feeds on a 2h cron, exports to `static/data.json`, and Vercel serves it. Data is kept for approximately one week.
+Static read-only dashboard. GitHub Action fetches pre-defined feeds on a 2h cron, exports to `static/data.json`, and Vercel serves it. Data is retained for the past 7 days (rolling window).
 
 No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROPIC_API_KEY`).
 
@@ -141,4 +141,4 @@ GitHub Actions and Vercel are **separate servers** that both need to connect to 
 
 ---
 
-*Last updated: 2026-03-17*
+*Last updated: 2026-03-21*
