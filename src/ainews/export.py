@@ -77,11 +77,16 @@ def export_items(
     # stale items must not be re-added from the previous export.
     seen_urls = {item.url for item in items}
     old_items = _load_existing_items(output_path, since)
+    event_cutoff = datetime.now(timezone.utc) - timedelta(days=settings.event_retention_days)
     old_kept = []
     for old in old_items:
         old_url = old.get("url", "")
         old_stype = old.get("source_type", "")
         if old_url and old_url not in seen_urls and old_stype not in _TRENDING_SOURCE_TYPES:
+            if old_stype in _EVENT_SOURCE_TYPES:
+                pub = _parse_iso(old.get("published_at", ""))
+                if pub and pub < event_cutoff:
+                    continue
             seen_urls.add(old_url)
             old_kept.append(old)
 
@@ -147,11 +152,20 @@ def append_source_type(
             logger.warning("Could not read %s, will overwrite", output_path)
 
     # Prune items older than the time window so data.json doesn't grow unbounded.
-    existing_items = [
-        i
-        for i in existing.get("items", [])
-        if (dt := _parse_iso(i.get("published_at") or i.get("fetched_at", ""))) and dt >= since
-    ]
+    # Also prune past events/luma items after configured retention period.
+    event_cutoff = datetime.now(timezone.utc) - timedelta(days=settings.event_retention_days)
+
+    def _keep(item: dict) -> bool:
+        pub = item.get("published_at")
+        dt = _parse_iso(pub or item.get("fetched_at", ""))
+        if not dt:
+            return False
+        if item.get("source_type") in _EVENT_SOURCE_TYPES and pub:
+            if dt < event_cutoff:
+                return False
+        return dt >= since
+
+    existing_items = [i for i in existing.get("items", []) if _keep(i)]
     existing_urls = {i.get("url") for i in existing_items}
     to_append = [i for i in new_items if i.url not in existing_urls]
 
@@ -192,6 +206,9 @@ _TRENDING_SOURCE_TYPES = {
     "skillssh_hot",
     "skillssh_official",
 }
+
+# Source types subject to event-based retention (pruned by event date, not fetch date)
+_EVENT_SOURCE_TYPES = {"events", "luma"}
 
 # Hidden from main dashboard — shown on trends page or events page instead.
 HIDDEN_SOURCE_TYPES = sorted({"events", "luma"} | _TRENDING_SOURCE_TYPES)

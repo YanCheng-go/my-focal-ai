@@ -32,7 +32,7 @@ Twitter sources are only available in local mode. The fetcher reads your browser
 
 ## 2. Online Public (Vercel + GitHub Actions)
 
-Static read-only dashboard. GitHub Action fetches pre-defined feeds on a 2h cron, exports to `static/data.json`, and Vercel serves it. Data retention is configurable — see [Configuration](development.md#configuration).
+Static read-only dashboard. GitHub Action fetches pre-defined feeds on a 2h cron (with an RSSHub service container for Luma and RSSHub-based sources), exports to `static/data.json`, and Vercel serves it. Data retention is configurable — see [Configuration](development.md#configuration). Event and Luma items are automatically removed after the event date (configurable via `AINEWS_EVENT_RETENTION_DAYS`, default 7).
 
 No database, no backend, no Ollama required. Scoring is optional (needs `ANTHROPIC_API_KEY`).
 
@@ -91,7 +91,7 @@ New users get a pre-defined source list but **no pre-fetched content** — items
 |------|-------|--------|-------------|
 | Feeds | `/` | `index.html` | Main feed with filters, search, pagination |
 | Leaderboard | `/leaderboard` | `leaderboard.html` | AI benchmark and ranking sites |
-| Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs) |
+| Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs). Past events auto-removed after 7 days. |
 | Trends | `/trends` | `trends.html` | GitHub trending repos — daily + history (2 tabs) |
 | CCC | `/ccc` | `ccc.html` | Claude Code Changelogs |
 | About | `/about` | `about.html` | About page |
@@ -141,4 +141,4 @@ GitHub Actions and Vercel are **separate servers** that both need to connect to 
 
 ---
 
-*Last updated: 2026-03-21*
+*Last updated: 2026-03-22*

@@ -88,7 +88,7 @@ luma:
     tags: [events, ai, copenhagen]
 ```
 
-**Note:** For Luma items, `published_at` is the event date (not when fetched). The dashboard shows "Event: Mar 24, 2026" to distinguish this. Events are sorted by `fetched_at` so future events don't float to the top.
+**Note:** For Luma items, `published_at` is the event date (not when fetched). The dashboard shows "Event: Mar 24, 2026" to distinguish this. Events are sorted by `fetched_at` so future events don't float to the top. Past events are automatically removed 7 days after the event date.
 
 ### ArXiv Keyword Queries
 Uses the arXiv API to search for papers matching specific queries.
@@ -115,7 +115,7 @@ events:
     tags: [ai, google]
 ```
 
-Available scrapers: `anthropic` (Webflow CMS), `google_dev` (developers.google.com/events).
+Available scrapers: `anthropic` (Webflow CMS), `google_dev` (developers.google.com/events). Past events are automatically removed 7 days after the event date.
 
 ### GitHub Trending
 Scrapes top trending repos from trendshift.io daily, plus all-time most-featured repos.
