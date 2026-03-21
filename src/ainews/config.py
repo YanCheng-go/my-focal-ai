@@ -21,6 +21,8 @@ class Settings(BaseSettings):
     supabase_url: str = ""
     supabase_key: str = ""
     supabase_service_key: str = ""
+    retention_days: int = 30  # Delete items older than this from the local DB (0 = keep forever)
+    export_hours: int = 168  # Export window for data.json (default: 7 days = 168 hours)
     host: str = "0.0.0.0"
     port: int = 8000
 

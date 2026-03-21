@@ -1,8 +1,9 @@
 """Ingestion runner — fetches all configured feeds and stores them."""
 
 import logging
+from datetime import datetime, timedelta, timezone
 
-from ainews.config import load_sources
+from ainews.config import Settings, load_sources
 from ainews.ingest.feeds import build_feed_urls, fetch_feed
 
 logger = logging.getLogger(__name__)
@@ -136,6 +137,14 @@ async def run_ingestion(backend, config_dir=None, sources_config=None):
     dupes = backend.mark_youtube_shorts_duplicates()
     if dupes:
         logger.info(f"Marked {dupes} YouTube Shorts as duplicates")
+
+    # Prune items older than retention period
+    settings = Settings()
+    if settings.retention_days > 0:
+        cutoff = datetime.now(timezone.utc) - timedelta(days=settings.retention_days)
+        deleted = backend.delete_old_items(cutoff)
+        if deleted:
+            logger.info(f"Pruned {deleted} items older than {settings.retention_days} days")
 
     logger.info(
         f"Ingestion complete: {total_new} new items from "
