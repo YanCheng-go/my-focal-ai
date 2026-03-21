@@ -23,6 +23,7 @@
         {% if needs_auth %}
         <button class="px-3 py-1.5 rounded-md bg-gray-100 dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-neutral-700 text-sm cursor-pointer hover:bg-gray-200 dark:hover:bg-neutral-700" onclick="handleLogout()">Logout</button>
         {% endif %}
+        <button id="explore-btn" class="px-3 py-1.5 rounded-md bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 border border-purple-300 dark:border-purple-700 text-sm cursor-pointer hover:bg-purple-200 dark:hover:bg-purple-800/50" onclick="openExploreModal()">Explore</button>
         <button class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50" onclick="openAddModal()">Add Source</button>
     </div>
 </div>
@@ -84,6 +85,33 @@
                 <button type="submit" class="px-3 py-1.5 rounded-md bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 text-sm cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50">Save</button>
             </div>
         </form>
+    </div>
+</div>
+
+<!-- Explore Modal -->
+<div class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center" id="explore-overlay">
+    <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 rounded-xl p-6 w-[600px] max-w-[95vw] max-h-[90vh] overflow-y-auto">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-lg font-bold text-gray-900 dark:text-white">Explore Sources</h2>
+            <button onclick="closeExploreModal()" class="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 cursor-pointer text-xl leading-none">&times;</button>
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Discover new content creators similar to your existing sources, ranked by relevance.</p>
+        <div class="flex gap-2 mb-4">
+            <select id="explore-type" class="flex-1 px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none">
+                <option value="">All types</option>
+                <option value="twitter">Twitter</option>
+                <option value="youtube">YouTube</option>
+                <option value="rss">RSS</option>
+                <option value="rsshub">RSSHub</option>
+                <option value="arxiv">arXiv</option>
+            </select>
+            <input type="number" id="explore-min-score" placeholder="Min score (0-1)" min="0" max="1" step="0.1" value="0.5"
+                class="w-32 px-3 py-2 rounded-md bg-gray-50 dark:bg-neutral-800 text-gray-900 dark:text-gray-200 border border-gray-200 dark:border-neutral-700 text-sm outline-none">
+            <button id="explore-run-btn" onclick="runExplore()" class="px-4 py-2 rounded-md bg-purple-600 text-white text-sm cursor-pointer hover:bg-purple-700">Discover</button>
+        </div>
+        <div id="explore-results">
+            <p class="text-center text-gray-400 dark:text-gray-500 py-8">Click "Discover" to find new sources</p>
+        </div>
     </div>
 </div>
 
@@ -413,6 +441,133 @@
             mouseDownOnOverlay = false;
         });
     })();
+
+    // --- Explore ---
+
+    function openExploreModal() {
+        var overlay = document.getElementById('explore-overlay');
+        overlay.classList.remove('hidden');
+        overlay.classList.add('flex');
+    }
+
+    function closeExploreModal() {
+        var overlay = document.getElementById('explore-overlay');
+        overlay.classList.add('hidden');
+        overlay.classList.remove('flex');
+    }
+
+    (function() {
+        var overlay = document.getElementById('explore-overlay');
+        if (!overlay) return;
+        var mouseDownOnOverlay = false;
+        overlay.addEventListener('mousedown', function(e) { mouseDownOnOverlay = (e.target === overlay); });
+        overlay.addEventListener('mouseup', function(e) {
+            if (mouseDownOnOverlay && e.target === overlay) closeExploreModal();
+            mouseDownOnOverlay = false;
+        });
+    })();
+
+    async function runExplore() {
+        var btn = document.getElementById('explore-run-btn');
+        var results = document.getElementById('explore-results');
+        var sourceType = document.getElementById('explore-type').value || undefined;
+        var minScore = parseFloat(document.getElementById('explore-min-score').value) || 0;
+
+        btn.disabled = true;
+        btn.textContent = 'Discovering...';
+        results.innerHTML = '<p class="text-center text-gray-400 dark:text-gray-500 py-8">Asking LLM for suggestions...</p>';
+
+        try {
+            var resp = await fetch('/admin/api/explore', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ source_type: sourceType, min_score: minScore, limit: 10 }),
+            });
+            var data = await resp.json();
+            if (!resp.ok) throw new Error(data.detail || 'Exploration failed');
+
+            var suggestions = data.suggestions || [];
+            if (!suggestions.length) {
+                results.innerHTML = '<p class="text-center text-gray-400 dark:text-gray-500 py-8">No suggestions found. Try lowering the minimum score.</p>';
+                return;
+            }
+
+            results.innerHTML = suggestions.map(function(s, i) {
+                var scorePercent = Math.round(s.relevance_score * 100);
+                var scoreColor = scorePercent >= 70 ? 'bg-green-500' : scorePercent >= 40 ? 'bg-yellow-500' : 'bg-red-500';
+                var tags = (s.tags || []).map(function(t) {
+                    return '<span class="bg-indigo-100 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-400 px-1.5 py-0.5 rounded text-xs">' + esc(t) + '</span>';
+                }).join(' ');
+                var typeColor = TYPE_COLORS[s.source_type] || 'bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-gray-400';
+                var verifiedBadge = s.verified === true
+                    ? ' <span class="inline-block px-1.5 py-0.5 rounded text-xs bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400" title="Verified: source exists">Verified</span>'
+                    : (s.verified === null ? '' : '');
+
+                return '<div class="border border-gray-200 dark:border-neutral-700 rounded-lg p-4 mb-3">' +
+                    '<div class="flex justify-between items-start mb-2">' +
+                        '<div>' +
+                            '<span class="font-medium text-gray-900 dark:text-white">' + esc(s.name) + '</span>' +
+                            ' <span class="inline-block px-2 py-0.5 rounded text-xs font-semibold ' + typeColor + '">' + esc(s.source_type) + '</span>' +
+                            verifiedBadge +
+                        '</div>' +
+                        '<div class="flex items-center gap-2">' +
+                            '<div class="flex items-center gap-1">' +
+                                '<div class="w-16 h-2 bg-gray-200 dark:bg-neutral-700 rounded-full overflow-hidden">' +
+                                    '<div class="h-full rounded-full ' + scoreColor + '" style="width:' + scorePercent + '%"></div>' +
+                                '</div>' +
+                                '<span class="text-xs text-gray-500 dark:text-gray-400">' + scorePercent + '%</span>' +
+                            '</div>' +
+                            '<button class="px-2 py-1 rounded text-xs bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border border-blue-300 dark:border-blue-700 cursor-pointer hover:bg-blue-200 dark:hover:bg-blue-800/50" onclick="addExploredSource(' + i + ')">Add</button>' +
+                        '</div>' +
+                    '</div>' +
+                    '<p class="text-sm text-gray-600 dark:text-gray-400 mb-2">' + esc(s.reason) + '</p>' +
+                    (tags ? '<div class="flex gap-1 flex-wrap">' + tags + '</div>' : '') +
+                '</div>';
+            }).join('');
+
+            results._suggestions = suggestions;
+        } catch (e) {
+            results.innerHTML = '<p class="text-center text-red-500 py-8">' + esc(e.message) + '</p>';
+        } finally {
+            btn.disabled = false;
+            btn.textContent = 'Discover';
+        }
+    }
+
+    async function addExploredSource(index) {
+        var results = document.getElementById('explore-results');
+        var suggestions = results._suggestions;
+        if (!suggestions || !suggestions[index]) return;
+
+        var s = suggestions[index];
+        var body = Object.assign({ type: s.source_type }, s.config);
+        if (s.name) body.name = s.name;
+        if (s.tags && s.tags.length) body.tags = s.tags.join(', ');
+
+        try {
+            var resp = await fetch('/admin/api/sources', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body),
+            });
+            if (!resp.ok) {
+                var err = await resp.json();
+                showToast('Failed to add: ' + (err.detail || 'Error'), 'error');
+                return;
+            }
+            showToast('Added "' + s.name + '"', 'success');
+            var cards = results.querySelectorAll('.border');
+            if (cards[index]) {
+                cards[index].style.opacity = '0.4';
+                cards[index].querySelector('button:last-child').disabled = true;
+                cards[index].querySelector('button:last-child').textContent = 'Added';
+            }
+            loadSources();
+        } catch (e) {
+            showToast('Failed to add source', 'error');
+        }
+    }
+
     loadSources();
 </script>
 {% endblock %}
