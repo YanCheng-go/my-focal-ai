@@ -181,6 +181,8 @@ def _process_suggestions(
 
     if isinstance(parsed, dict):
         suggestions = parsed.get("suggestions", parsed.get("sources", []))
+        if not suggestions and ("name" in parsed or "source_type" in parsed):
+            suggestions = [parsed]
     elif isinstance(parsed, list):
         suggestions = parsed
     else:
@@ -245,9 +247,7 @@ async def explore_sources(
 
     principles = load_principles(settings.config_dir)
     system_prompt = build_system_prompt(principles)
-    prompt = _build_explore_prompt(
-        sources_config, principles, source_type, limit
-    )
+    prompt = _build_explore_prompt(sources_config, principles, source_type, limit)
     existing = _build_existing_set(sources_config)
 
     async with httpx.AsyncClient(timeout=300) as client:
@@ -266,12 +266,9 @@ async def explore_sources(
         resp.raise_for_status()
 
     content = resp.json()["message"]["content"]
-    results = _process_suggestions(
-        content, existing, min_score, limit, settings.rsshub_base
-    )
-    return await validate_suggestions(
-        results, rsshub_base=settings.rsshub_base
-    )
+    logger.debug("Explore LLM response: %s", content[:2000])
+    results = _process_suggestions(content, existing, min_score, limit, settings.rsshub_base)
+    return await validate_suggestions(results, rsshub_base=settings.rsshub_base)
 
 
 async def explore_sources_claude(
@@ -294,9 +291,7 @@ async def explore_sources_claude(
 
     principles = load_principles(settings.config_dir)
     system_prompt = build_system_prompt(principles)
-    prompt = _build_explore_prompt(
-        sources_config, principles, source_type, limit
-    )
+    prompt = _build_explore_prompt(sources_config, principles, source_type, limit)
     existing = _build_existing_set(sources_config)
 
     async with httpx.AsyncClient(timeout=60) as client:
@@ -317,9 +312,5 @@ async def explore_sources_claude(
         resp.raise_for_status()
 
     content = resp.json()["content"][0]["text"]
-    results = _process_suggestions(
-        content, existing, min_score, limit, settings.rsshub_base
-    )
-    return await validate_suggestions(
-        results, rsshub_base=settings.rsshub_base
-    )
+    results = _process_suggestions(content, existing, min_score, limit, settings.rsshub_base)
+    return await validate_suggestions(results, rsshub_base=settings.rsshub_base)

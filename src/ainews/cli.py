@@ -65,8 +65,11 @@ async def _explore_sources(
 
 
 def main():
+    from ainews.config import Settings
+
     log_fmt = "%(asctime)s %(levelname)s %(name)s: %(message)s"
-    logging.basicConfig(level=logging.INFO, format=log_fmt)
+    level = getattr(logging, Settings().log_level.upper(), logging.INFO)
+    logging.basicConfig(level=level, format=log_fmt)
     parser = argparse.ArgumentParser(description="MyFocalAI")
     sub = parser.add_subparsers(dest="command")
 
