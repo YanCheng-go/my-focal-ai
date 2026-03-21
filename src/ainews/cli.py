@@ -71,7 +71,10 @@ def main():
 
     export_parser = sub.add_parser("export", help="Export scored items to JSON for static site")
     export_parser.add_argument(
-        "--hours", type=int, default=48, help="Export items from the last N hours (default: 48)"
+        "--hours",
+        type=int,
+        default=None,
+        help="Export items from the last N hours (default: AINEWS_EXPORT_HOURS or 168)",
     )
     export_parser.add_argument(
         "--output",
@@ -147,11 +150,12 @@ def main():
         from ainews.export import append_source_type, export_items
 
         output = Path(args.output)
+        hours = args.hours if args.hours is not None else Settings().export_hours
         if args.source_type:
-            count = append_source_type(output, source_type=args.source_type, hours=args.hours)
+            count = append_source_type(output, source_type=args.source_type, hours=hours)
             print(f"Appended {count} new {args.source_type} items to {output}")
         else:
-            count = export_items(output, hours=args.hours, min_score=args.min_score)
+            count = export_items(output, hours=hours, min_score=args.min_score)
             print(f"Exported {count} items to {output}")
     else:
         parser.print_help()

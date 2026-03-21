@@ -172,7 +172,7 @@
 
             if (!willUpgrade) {
                 // Not logged in — render public feed immediately
-                document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2h · Resets weekly';
+                document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2h · Past 7 days';
                 computeBadges(allItems, config, 'dashboard');
                 buildFilters();
                 render();
@@ -192,7 +192,7 @@
         function renderPublicFallback() {
             allItems = data.items || [];
             allTags = data.all_tags || [];
-            document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2h · Resets weekly';
+            document.getElementById('updated').textContent = 'Updated: ' + new Date(data.exported_at).toLocaleString() + ' · Refreshes every 2h · Past 7 days';
             computeBadges(allItems, config, 'dashboard');
             buildFilters();
             render();

@@ -71,7 +71,7 @@ uv run ainews cloud-fetch              # fetch + score with Claude API (for CI)
 
 # Export
 uv run ainews export                   # export data.json + config.json to static/
-uv run ainews export --hours 168       # export last 7 days
+uv run ainews export --hours 168       # override export window (default: AINEWS_EXPORT_HOURS)
 
 # Maintenance
 uv run ainews backfill-tags            # re-sync tags/type from config to DB
@@ -108,6 +108,8 @@ All settings are via environment variables prefixed `AINEWS_`. See `src/ainews/c
 | `AINEWS_SUPABASE_URL` | — | Supabase project URL (online login mode) |
 | `AINEWS_SUPABASE_KEY` | — | Supabase anon key (online login mode) |
 | `AINEWS_SUPABASE_SERVICE_KEY` | — | Supabase service role key (server-side only) |
+| `AINEWS_RETENTION_DAYS` | `30` | Delete DB items older than N days (0 = keep forever) |
+| `AINEWS_EXPORT_HOURS` | `168` | Export window for data.json (168 = 7 days) |
 | `AINEWS_CORS_ORIGIN` | — | Restrict cross-origin requests (serverless) |
 
 ## Workflow
@@ -139,4 +141,4 @@ See [sources.md](sources.md) for detailed source type reference and configuratio
 
 ---
 
-*Last updated: 2026-03-16*
+*Last updated: 2026-03-21*

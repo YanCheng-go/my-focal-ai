@@ -110,3 +110,7 @@ class DbBackend(Protocol):
     def store_hash(self, key: str, hash_val: str) -> None:
         """Store a hash value in source_state."""
         ...
+
+    def delete_old_items(self, before: datetime) -> int:
+        """Delete items older than the given datetime. Returns deleted count."""
+        ...

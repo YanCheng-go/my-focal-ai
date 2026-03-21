@@ -196,6 +196,8 @@ The static dashboard reads `data.json`, a snapshot exported from the DB:
 }
 ```
 
+Items older than the export window are pruned on each export. The local SQLite DB is also pruned after each fetch cycle. Both windows are configurable — see [Configuration](development.md#configuration).
+
 On export, items from the local DB are merged with items already in `data.json` (deduped by ID and URL) so cloud-fetched items survive when the local pipeline overwrites the file.
 
 ### Data flow per mode
@@ -351,5 +353,5 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-17*
+*Last updated: 2026-03-21*
 

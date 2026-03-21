@@ -1,6 +1,6 @@
 """Tests for SQLite backend — filters, chunking, tag sync, and CRUD."""
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 import pytest
 
@@ -281,3 +281,59 @@ class TestCountItems:
         db.upsert_item(_item(id="2", url="https://2.com", tags=["sports"]))
         db.commit()
         assert db.count_items(tag="ai") == 1
+
+
+# --- Delete old items ---
+
+
+class TestDeleteOldItems:
+    def test_deletes_items_before_cutoff(self, db):
+        old_dt = datetime(2025, 1, 1, tzinfo=timezone.utc)
+        new_dt = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        db.upsert_item(_item(id="old", url="https://old.com", fetched_at=old_dt))
+        db.upsert_item(_item(id="new", url="https://new.com", fetched_at=new_dt))
+        db.commit()
+        cutoff = datetime(2025, 3, 1, tzinfo=timezone.utc)
+        deleted = db.delete_old_items(cutoff)
+        assert deleted == 1
+        assert db.count_items() == 1
+        items = db.get_items()
+        assert items[0].id == "new"
+
+    def test_deletes_associated_tags(self, db):
+        db.upsert_item(
+            _item(
+                id="old",
+                url="https://old.com",
+                tags=["ai", "ml"],
+                fetched_at=datetime(2025, 1, 1, tzinfo=timezone.utc),
+            )
+        )
+        db.upsert_item(
+            _item(
+                id="new",
+                url="https://new.com",
+                tags=["ai"],
+                fetched_at=datetime(2025, 6, 1, tzinfo=timezone.utc),
+            )
+        )
+        db.commit()
+        cutoff = datetime(2025, 3, 1, tzinfo=timezone.utc)
+        db.delete_old_items(cutoff)
+        tags = db.get_all_tags()
+        assert "ai" in tags
+        assert "ml" not in tags
+
+    def test_no_items_to_delete(self, db):
+        recent_dt = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        db.upsert_item(_item(id="recent", url="https://recent.com", fetched_at=recent_dt))
+        db.commit()
+        cutoff = datetime(2025, 1, 1, tzinfo=timezone.utc)
+        deleted = db.delete_old_items(cutoff)
+        assert deleted == 0
+        assert db.count_items() == 1
+
+    def test_empty_db(self, db):
+        cutoff = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        deleted = db.delete_old_items(cutoff)
+        assert deleted == 0

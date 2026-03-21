@@ -154,11 +154,20 @@ def append_source_type(
         except (json.JSONDecodeError, KeyError):
             logger.warning("Could not read %s, will overwrite", output_path)
 
-    existing_items = existing.get("items", [])
+    # Prune items older than the time window so data.json doesn't grow unbounded.
+    existing_items = [
+        i
+        for i in existing.get("items", [])
+        if (dt := _parse_iso(i.get("published_at") or i.get("fetched_at", ""))) and dt >= since
+    ]
     existing_urls = {i.get("url") for i in existing_items}
     to_append = [i for i in new_items if i.url not in existing_urls]
 
-    if not to_append:
+    pruned = len(existing.get("items", [])) - len(existing_items)
+    if pruned:
+        logger.info("Pruned %d items older than %d hours from %s", pruned, hours, output_path)
+
+    if not to_append and not pruned:
         return 0
 
     all_items = existing_items + [i.model_dump(mode="json") for i in to_append]

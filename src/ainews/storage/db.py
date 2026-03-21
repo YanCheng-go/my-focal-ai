@@ -405,6 +405,16 @@ class SqliteBackend:
             (key, hash_val),
         )
 
+    def delete_old_items(self, before: datetime) -> int:
+        cutoff = before.isoformat()
+        self._conn.execute(
+            "DELETE FROM item_tags WHERE item_id IN (SELECT id FROM items WHERE fetched_at < ?)",
+            (cutoff,),
+        )
+        cursor = self._conn.execute("DELETE FROM items WHERE fetched_at < ?", (cutoff,))
+        self._conn.commit()
+        return cursor.rowcount
+
 
 def _row_to_item(row) -> ContentItem:
     d = dict(row)
