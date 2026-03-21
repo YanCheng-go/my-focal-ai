@@ -5,40 +5,108 @@ import logging
 
 import httpx
 
-from ainews.config import Settings, load_sources
+from ainews.config import Settings, load_principles, load_sources
 
 logger = logging.getLogger(__name__)
 
-EXPLORE_SYSTEM_PROMPT = """\
+EXPLORE_SYSTEM_PROMPT_TEMPLATE = """\
 You are a content source discovery assistant for an AI/tech news aggregator.
 
-Given a list of existing sources the user follows, suggest NEW sources they might also enjoy.
-Focus on creators, channels, and feeds that are similar in quality and topic to the existing ones.
+Given a list of existing sources the user follows, suggest NEW sources they \
+might also enjoy. Focus on creators, channels, and feeds that are similar in \
+quality and topic to the existing ones.
 
-Rules:
+## Scoring Principles
+
+Score each suggestion's relevance_score (0-1) based on these principles, \
+evaluated IN ORDER:
+
+{principles_text}
+
+## Source Proximity
+
+Prefer sources closer to the origin of information:
+{proximity_text}
+
+## Rules
+
 - Only suggest sources NOT already in the user's list.
-- For each suggestion, provide the source type and the config fields needed to add it.
-- Provide a relevance_score (0-1) indicating how well this source matches the user's interests.
-- Provide a reason explaining why this source is a good match.
+- For each suggestion, provide the source type and config fields needed.
+- The relevance_score MUST reflect how well the source aligns with the \
+principles above — not just topical similarity.
+- In the reason field, cite which principles the source satisfies.
 
 Valid source types and their required fields:
-- twitter: {handle} — a Twitter/X account handle (without @)
-- youtube: {channel_id, name} — a YouTube channel (channel_id starts with UC, 24 chars)
-- rss: {url, name} — a direct RSS/Atom feed URL
-- rsshub: {route, name} — an RSSHub route (e.g. /some/route)
-- arxiv: {url, name} — an arXiv RSS feed URL
+- twitter: {{handle}} — a Twitter/X account handle (without @)
+- youtube: {{channel_id, name}} — a YouTube channel (channel_id starts \
+with UC, 24 chars)
+- rss: {{url, name}} — a direct RSS/Atom feed URL
+- rsshub: {{route, name}} — an RSSHub route (e.g. /some/route)
+- arxiv: {{url, name}} — an arXiv RSS feed URL
 
 Respond with ONLY valid JSON — an array of suggestions:
 [
-  {
+  {{
     "source_type": "<type>",
     "name": "<display name>",
-    "config": {"<field>": "<value>", ...},
+    "config": {{"<field>": "<value>", ...}},
     "tags": ["<tag1>", "<tag2>"],
     "relevance_score": <float 0-1>,
-    "reason": "<one sentence explaining why>"
-  }
+    "reason": "<one sentence citing which principles apply>"
+  }}
 ]"""
+
+
+def _format_principles(principles: dict) -> str:
+    """Format principles.yml into text for the system prompt."""
+    sections = []
+    p = principles.get("principles", {})
+
+    for i, (key, value) in enumerate(p.items(), 1):
+        if not isinstance(value, dict):
+            continue
+        name = value.get("name", key)
+        desc = value.get("description", "")
+        section = f"{i}. {name}: {desc}"
+
+        # Add indicator details if present
+        indicators = value.get("indicators", {})
+        source_trust = value.get("source_trust", {})
+        if indicators:
+            for label, items in indicators.items():
+                if isinstance(items, list):
+                    bullet_list = ", ".join(items[:3])
+                    section += f"\n   {label}: {bullet_list}"
+        if source_trust:
+            for label, items in source_trust.items():
+                if isinstance(items, list):
+                    bullet_list = ", ".join(items[:3])
+                    section += f"\n   {label}: {bullet_list}"
+        sections.append(section)
+
+    return "\n\n".join(sections)
+
+
+def _format_proximity(principles: dict) -> str:
+    """Format source_proximity tiers into text for the system prompt."""
+    proximity = principles.get("source_proximity", {})
+    lines = []
+    for tier_key, items in proximity.items():
+        label = tier_key.replace("_", " ").title()
+        if isinstance(items, list):
+            examples = ", ".join(items[:2])
+            lines.append(f"- {label}: {examples}")
+    return "\n".join(lines)
+
+
+def build_system_prompt(principles: dict) -> str:
+    """Build the exploration system prompt with user's principles."""
+    principles_text = _format_principles(principles)
+    proximity_text = _format_proximity(principles)
+    return EXPLORE_SYSTEM_PROMPT_TEMPLATE.format(
+        principles_text=principles_text,
+        proximity_text=proximity_text,
+    )
 
 
 def _summarize_existing_sources(sources_config: dict) -> str:
@@ -86,20 +154,23 @@ def _build_existing_set(sources_config: dict) -> set[str]:
 
 def _build_explore_prompt(
     sources_config: dict,
+    principles: dict,
     source_type: str | None = None,
     limit: int = 10,
 ) -> str:
     summary = _summarize_existing_sources(sources_config)
+    topic = principles.get("topic", "AI and technology")
     type_filter = ""
     if source_type:
         type_filter = f"\n\nOnly suggest {source_type} sources."
 
-    return f"""Here are the user's current sources:
+    return f"""Topic of interest: {topic}
+
+Here are the user's current sources:
 {summary}
 {type_filter}
 Suggest up to {limit} new sources the user should follow.
-Focus on high-quality AI/tech creators similar to those above.
-Prioritize builders, researchers, and practitioners over commentators."""
+Score each suggestion using the principles provided in the system prompt."""
 
 
 async def explore_sources(
@@ -124,7 +195,11 @@ async def explore_sources(
     if model is None:
         model = settings.ollama_model
 
-    prompt = _build_explore_prompt(sources_config, source_type, limit)
+    principles = load_principles(settings.config_dir)
+    system_prompt = build_system_prompt(principles)
+    prompt = _build_explore_prompt(
+        sources_config, principles, source_type, limit
+    )
     existing = _build_existing_set(sources_config)
 
     async with httpx.AsyncClient(timeout=300) as client:
@@ -133,7 +208,7 @@ async def explore_sources(
             json={
                 "model": model,
                 "messages": [
-                    {"role": "system", "content": EXPLORE_SYSTEM_PROMPT},
+                    {"role": "system", "content": system_prompt},
                     {"role": "user", "content": prompt},
                 ],
                 "stream": False,
@@ -215,7 +290,11 @@ async def explore_sources_claude(
     if not api_key:
         raise ValueError("ANTHROPIC_API_KEY is required for Claude exploration")
 
-    prompt = _build_explore_prompt(sources_config, source_type, limit)
+    principles = load_principles(settings.config_dir)
+    system_prompt = build_system_prompt(principles)
+    prompt = _build_explore_prompt(
+        sources_config, principles, source_type, limit
+    )
     existing = _build_existing_set(sources_config)
 
     async with httpx.AsyncClient(timeout=60) as client:
@@ -229,7 +308,7 @@ async def explore_sources_claude(
             json={
                 "model": model,
                 "max_tokens": 2048,
-                "system": EXPLORE_SYSTEM_PROMPT,
+                "system": system_prompt,
                 "messages": [{"role": "user", "content": prompt}],
             },
         )
