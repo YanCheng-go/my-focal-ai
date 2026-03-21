@@ -205,6 +205,24 @@ def toggle_source_endpoint(source_type: str, index: int):
     return {"status": "toggled"}
 
 
+@_api.post("/api/explore")
+async def explore_sources_endpoint(body: dict = {}):
+    """Discover new sources similar to existing ones using LLM."""
+    from ainews.explore import explore_sources
+
+    source_type = body.get("source_type")
+    limit = min(body.get("limit", 10), 20)
+    min_score = body.get("min_score", 0.0)
+
+    try:
+        suggestions = await explore_sources(
+            source_type=source_type, limit=limit, min_score=min_score
+        )
+        return {"suggestions": suggestions}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @_api.post("/api/sources/{source_type}/{index}/fetch")
 async def fetch_source_endpoint(source_type: str, index: int):
     sources = get_all_sources_flat(settings.config_dir)

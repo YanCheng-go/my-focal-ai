@@ -1,0 +1,286 @@
+"""Source exploration mode — discover similar content creators via LLM."""
+
+import json
+import logging
+
+import httpx
+
+from ainews.config import Settings, load_sources
+
+logger = logging.getLogger(__name__)
+
+EXPLORE_SYSTEM_PROMPT = """\
+You are a content source discovery assistant for an AI/tech news aggregator.
+
+Given a list of existing sources the user follows, suggest NEW sources they might also enjoy.
+Focus on creators, channels, and feeds that are similar in quality and topic to the existing ones.
+
+Rules:
+- Only suggest sources NOT already in the user's list.
+- For each suggestion, provide the source type and the config fields needed to add it.
+- Provide a relevance_score (0-1) indicating how well this source matches the user's interests.
+- Provide a reason explaining why this source is a good match.
+
+Valid source types and their required fields:
+- twitter: {handle} — a Twitter/X account handle (without @)
+- youtube: {channel_id, name} — a YouTube channel (channel_id starts with UC, 24 chars)
+- rss: {url, name} — a direct RSS/Atom feed URL
+- rsshub: {route, name} — an RSSHub route (e.g. /some/route)
+- arxiv: {url, name} — an arXiv RSS feed URL
+
+Respond with ONLY valid JSON — an array of suggestions:
+[
+  {
+    "source_type": "<type>",
+    "name": "<display name>",
+    "config": {"<field>": "<value>", ...},
+    "tags": ["<tag1>", "<tag2>"],
+    "relevance_score": <float 0-1>,
+    "reason": "<one sentence explaining why>"
+  }
+]"""
+
+
+def _summarize_existing_sources(sources_config: dict) -> str:
+    """Build a compact summary of existing sources for the LLM prompt."""
+    lines = []
+    sources = sources_config.get("sources", {})
+
+    for stype, entries in sources.items():
+        if not entries:
+            continue
+        for entry in entries:
+            if isinstance(entry, dict):
+                name = entry.get("name") or entry.get("handle", "")
+                tags = entry.get("tags", [])
+                if isinstance(tags, str):
+                    tags = [t.strip() for t in tags.split(",")]
+                tag_str = ", ".join(tags) if tags else ""
+                lines.append(f"  [{stype}] {name} (tags: {tag_str})")
+
+    return "\n".join(lines)
+
+
+def _build_existing_set(sources_config: dict) -> set[str]:
+    """Build a set of identifiers for existing sources (for dedup)."""
+    existing = set()
+    sources = sources_config.get("sources", {})
+    for stype, entries in sources.items():
+        if not entries:
+            continue
+        for entry in entries:
+            if isinstance(entry, dict):
+                # Add various identifiers for dedup
+                if "handle" in entry:
+                    existing.add(entry["handle"].lower())
+                if "name" in entry:
+                    existing.add(entry["name"].lower())
+                if "channel_id" in entry:
+                    existing.add(entry["channel_id"].lower())
+                if "url" in entry:
+                    existing.add(entry["url"].lower())
+                if "route" in entry:
+                    existing.add(entry["route"].lower())
+    return existing
+
+
+def _build_explore_prompt(
+    sources_config: dict,
+    source_type: str | None = None,
+    limit: int = 10,
+) -> str:
+    summary = _summarize_existing_sources(sources_config)
+    type_filter = ""
+    if source_type:
+        type_filter = f"\n\nOnly suggest {source_type} sources."
+
+    return f"""Here are the user's current sources:
+{summary}
+{type_filter}
+Suggest up to {limit} new sources the user should follow.
+Focus on high-quality AI/tech creators similar to those above.
+Prioritize builders, researchers, and practitioners over commentators."""
+
+
+async def explore_sources(
+    sources_config: dict | None = None,
+    source_type: str | None = None,
+    limit: int = 10,
+    min_score: float = 0.0,
+    ollama_base_url: str | None = None,
+    model: str | None = None,
+) -> list[dict]:
+    """Use LLM to discover new sources similar to existing ones.
+
+    Returns a list of suggestion dicts, each with source_type, name, config,
+    tags, relevance_score, and reason. Results are filtered by min_score
+    and sorted by relevance_score descending.
+    """
+    settings = Settings()
+    if sources_config is None:
+        sources_config = load_sources(settings.config_dir)
+    if ollama_base_url is None:
+        ollama_base_url = settings.ollama_base_url
+    if model is None:
+        model = settings.ollama_model
+
+    prompt = _build_explore_prompt(sources_config, source_type, limit)
+    existing = _build_existing_set(sources_config)
+
+    async with httpx.AsyncClient(timeout=300) as client:
+        resp = await client.post(
+            f"{ollama_base_url}/api/chat",
+            json={
+                "model": model,
+                "messages": [
+                    {"role": "system", "content": EXPLORE_SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt},
+                ],
+                "stream": False,
+                "format": "json",
+            },
+        )
+        resp.raise_for_status()
+
+    body = resp.json()
+    content = body["message"]["content"]
+
+    try:
+        parsed = json.loads(content)
+    except json.JSONDecodeError:
+        logger.warning("Failed to parse LLM response for source exploration")
+        return []
+
+    # Normalize: handle both {"suggestions": [...]} and bare [...]
+    if isinstance(parsed, dict):
+        suggestions = parsed.get("suggestions", parsed.get("sources", []))
+    elif isinstance(parsed, list):
+        suggestions = parsed
+    else:
+        return []
+
+    # Filter out existing sources and low scores
+    results = []
+    for s in suggestions:
+        if not isinstance(s, dict):
+            continue
+
+        # Dedup against existing sources
+        config = s.get("config", {})
+        identifiers = [
+            config.get("handle", ""),
+            config.get("channel_id", ""),
+            config.get("url", ""),
+            config.get("route", ""),
+            s.get("name", ""),
+        ]
+        if any(ident.lower() in existing for ident in identifiers if ident):
+            continue
+
+        score = float(s.get("relevance_score", 0))
+        if score < min_score:
+            continue
+
+        results.append(
+            {
+                "source_type": s.get("source_type", "rss"),
+                "name": s.get("name", ""),
+                "config": config,
+                "tags": s.get("tags", []),
+                "relevance_score": round(score, 2),
+                "reason": s.get("reason", ""),
+            }
+        )
+
+    # Sort by relevance score descending
+    results.sort(key=lambda x: x["relevance_score"], reverse=True)
+    return results[:limit]
+
+
+async def explore_sources_claude(
+    sources_config: dict | None = None,
+    source_type: str | None = None,
+    limit: int = 10,
+    min_score: float = 0.0,
+    api_key: str | None = None,
+    model: str = "claude-sonnet-4-20250514",
+) -> list[dict]:
+    """Use Claude API to discover new sources (cloud alternative to Ollama)."""
+    import os
+
+    settings = Settings()
+    if sources_config is None:
+        sources_config = load_sources(settings.config_dir)
+    api_key = api_key or os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        raise ValueError("ANTHROPIC_API_KEY is required for Claude exploration")
+
+    prompt = _build_explore_prompt(sources_config, source_type, limit)
+    existing = _build_existing_set(sources_config)
+
+    async with httpx.AsyncClient(timeout=60) as client:
+        resp = await client.post(
+            "https://api.anthropic.com/v1/messages",
+            headers={
+                "x-api-key": api_key,
+                "anthropic-version": "2023-06-01",
+                "content-type": "application/json",
+            },
+            json={
+                "model": model,
+                "max_tokens": 2048,
+                "system": EXPLORE_SYSTEM_PROMPT,
+                "messages": [{"role": "user", "content": prompt}],
+            },
+        )
+        resp.raise_for_status()
+
+    body = resp.json()
+    content = body["content"][0]["text"]
+
+    try:
+        parsed = json.loads(content)
+    except json.JSONDecodeError:
+        logger.warning("Failed to parse Claude response for source exploration")
+        return []
+
+    if isinstance(parsed, dict):
+        suggestions = parsed.get("suggestions", parsed.get("sources", []))
+    elif isinstance(parsed, list):
+        suggestions = parsed
+    else:
+        return []
+
+    results = []
+    for s in suggestions:
+        if not isinstance(s, dict):
+            continue
+
+        config = s.get("config", {})
+        identifiers = [
+            config.get("handle", ""),
+            config.get("channel_id", ""),
+            config.get("url", ""),
+            config.get("route", ""),
+            s.get("name", ""),
+        ]
+        if any(ident.lower() in existing for ident in identifiers if ident):
+            continue
+
+        score = float(s.get("relevance_score", 0))
+        if score < min_score:
+            continue
+
+        results.append(
+            {
+                "source_type": s.get("source_type", "rss"),
+                "name": s.get("name", ""),
+                "config": config,
+                "tags": s.get("tags", []),
+                "relevance_score": round(score, 2),
+                "reason": s.get("reason", ""),
+            }
+        )
+
+    results.sort(key=lambda x: x["relevance_score"], reverse=True)
+    return results[:limit]
