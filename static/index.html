@@ -377,7 +377,7 @@
             if (filters.order_by === 'score') return (b.score || 0) - (a.score || 0);
             if (a.source_type === 'luma' && b.source_type !== 'luma') return 1;
             if (b.source_type === 'luma' && a.source_type !== 'luma') return -1;
-            return new Date(b.published_at || b.fetched_at) - new Date(a.published_at || a.fetched_at);
+            return new Date(b.fetched_at || b.published_at) - new Date(a.fetched_at || a.published_at);
         });
     }
 
