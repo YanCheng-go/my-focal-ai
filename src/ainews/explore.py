@@ -269,6 +269,12 @@ async def explore_sources(
 
     # Sort by relevance score descending
     results.sort(key=lambda x: x["relevance_score"], reverse=True)
+
+    # Validate suggestions against live services
+    from ainews.explore_validate import validate_suggestions
+
+    results = await validate_suggestions(results)
+
     return results[:limit]
 
 
@@ -362,4 +368,9 @@ async def explore_sources_claude(
         )
 
     results.sort(key=lambda x: x["relevance_score"], reverse=True)
+
+    from ainews.explore_validate import validate_suggestions
+
+    results = await validate_suggestions(results)
+
     return results[:limit]
