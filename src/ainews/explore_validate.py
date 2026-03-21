@@ -7,17 +7,17 @@ and feed URLs before presenting results to the user.
 
 import asyncio
 import logging
-import re
 
 import httpx
 
-from ainews.config import Settings
+from ainews.sources.url_constants import (
+    BROWSER_UA,
+    TWITTER_HANDLE_RE,
+    YOUTUBE_CHANNEL_ID_RE,
+)
 
 logger = logging.getLogger(__name__)
 
-_BROWSER_UA = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-)
 _TIMEOUT = 15
 
 
@@ -26,7 +26,7 @@ async def _check_youtube(
 ) -> bool:
     """Verify a YouTube channel exists by hitting its RSS feed."""
     channel_id = config.get("channel_id", "")
-    if not channel_id or not re.match(r"^UC[\w-]{22}$", channel_id):
+    if not channel_id or not YOUTUBE_CHANNEL_ID_RE.match(channel_id):
         return False
     url = (
         f"https://www.youtube.com/feeds/videos.xml"
@@ -44,16 +44,15 @@ async def _check_twitter(
 ) -> bool:
     """Verify a Twitter handle exists (non-404 response)."""
     handle = config.get("handle", "")
-    if not handle or not re.match(r"^[A-Za-z0-9_]{1,15}$", handle):
+    if not handle or not TWITTER_HANDLE_RE.match(handle):
         return False
     url = f"https://x.com/{handle}"
     try:
         resp = await client.head(
             url,
             follow_redirects=True,
-            headers={"User-Agent": _BROWSER_UA},
+            headers={"User-Agent": BROWSER_UA},
         )
-        # x.com returns 200 for valid profiles, 404 for non-existent
         return resp.status_code != 404
     except httpx.HTTPError:
         return False
@@ -70,11 +69,10 @@ async def _check_rss(
         resp = await client.get(
             url,
             follow_redirects=True,
-            headers={"User-Agent": _BROWSER_UA},
+            headers={"User-Agent": BROWSER_UA},
         )
         if resp.status_code != 200:
             return False
-        # Quick check: does it look like XML/RSS/Atom?
         text = resp.text[:2000]
         return any(
             tag in text.lower()
@@ -85,21 +83,20 @@ async def _check_rss(
 
 
 async def _check_rsshub(
-    config: dict, client: httpx.AsyncClient
+    config: dict, client: httpx.AsyncClient, *, rsshub_base: str
 ) -> bool:
     """Verify an RSSHub route returns valid content."""
     route = config.get("route", "")
     if not route:
         return False
-    settings = Settings()
-    base = settings.rsshub_base.rstrip("/")
+    base = rsshub_base.rstrip("/")
     route = route if route.startswith("/") else f"/{route}"
     url = f"{base}{route}"
     try:
         resp = await client.get(
             url,
             follow_redirects=True,
-            headers={"User-Agent": _BROWSER_UA},
+            headers={"User-Agent": BROWSER_UA},
         )
         return resp.status_code == 200
     except httpx.HTTPError:
@@ -110,13 +107,16 @@ _VALIDATORS = {
     "youtube": _check_youtube,
     "twitter": _check_twitter,
     "rss": _check_rss,
-    "arxiv": _check_rss,  # arXiv feeds are RSS/Atom
+    "arxiv": _check_rss,
     "rsshub": _check_rsshub,
 }
 
 
 async def validate_suggestion(
-    suggestion: dict, client: httpx.AsyncClient
+    suggestion: dict,
+    client: httpx.AsyncClient,
+    *,
+    rsshub_base: str = "http://localhost:1200",
 ) -> dict:
     """Validate a single suggestion. Adds 'verified' field."""
     source_type = suggestion.get("source_type", "")
@@ -124,12 +124,14 @@ async def validate_suggestion(
     validator = _VALIDATORS.get(source_type)
 
     if validator is None:
-        # No validator for this type — mark as unverified but keep it
         suggestion["verified"] = None
         return suggestion
 
     try:
-        is_valid = await validator(config, client)
+        if validator is _check_rsshub:
+            is_valid = await validator(config, client, rsshub_base=rsshub_base)
+        else:
+            is_valid = await validator(config, client)
         suggestion["verified"] = is_valid
     except Exception:
         logger.debug(
@@ -144,6 +146,8 @@ async def validate_suggestion(
 
 async def validate_suggestions(
     suggestions: list[dict],
+    *,
+    rsshub_base: str = "http://localhost:1200",
 ) -> list[dict]:
     """Validate all suggestions concurrently, filtering out invalid ones.
 
@@ -157,14 +161,15 @@ async def validate_suggestions(
 
     async def _bounded(s: dict, client: httpx.AsyncClient) -> dict:
         async with sem:
-            return await validate_suggestion(s, client)
+            return await validate_suggestion(
+                s, client, rsshub_base=rsshub_base
+            )
 
     async with httpx.AsyncClient(timeout=_TIMEOUT) as client:
         results = await asyncio.gather(
             *[_bounded(s, client) for s in suggestions]
         )
 
-    # Keep verified=True and verified=None (unknown type), drop False
     valid = [r for r in results if r["verified"] is not False]
     dropped = len(results) - len(valid)
     if dropped:
