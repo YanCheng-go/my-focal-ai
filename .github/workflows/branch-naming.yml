@@ -21,6 +21,12 @@ jobs:
             exit 0
           fi
 
+          # Allow Claude Code branches (e.g., claude/fix-bug-AbCdE)
+          if [[ "$BRANCH" =~ ^claude/ ]]; then
+            echo "Claude Code branch '$BRANCH' — skipping naming check."
+            exit 0
+          fi
+
           PATTERN="^(feat|feature|fix|chore|docs|refactor|test|release)/[a-z0-9._-]+$"
 
           if [[ ! "$BRANCH" =~ $PATTERN ]]; then

@@ -408,8 +408,7 @@ class SqliteBackend:
     def delete_old_items(self, before: datetime) -> int:
         cutoff = before.isoformat()
         self._conn.execute(
-            "DELETE FROM item_tags WHERE item_id IN "
-            "(SELECT id FROM items WHERE fetched_at < ?)",
+            "DELETE FROM item_tags WHERE item_id IN (SELECT id FROM items WHERE fetched_at < ?)",
             (cutoff,),
         )
         cursor = self._conn.execute("DELETE FROM items WHERE fetched_at < ?", (cutoff,))

@@ -158,8 +158,7 @@ def append_source_type(
     existing_items = [
         i
         for i in existing.get("items", [])
-        if (dt := _parse_iso(i.get("published_at") or i.get("fetched_at", "")))
-        and dt >= since
+        if (dt := _parse_iso(i.get("published_at") or i.get("fetched_at", ""))) and dt >= since
     ]
     existing_urls = {i.get("url") for i in existing_items}
     to_append = [i for i in new_items if i.url not in existing_urls]
