@@ -71,7 +71,7 @@ uv run ainews cloud-fetch              # fetch + score with Claude API (for CI)
 
 # Export
 uv run ainews export                   # export data.json + config.json to static/
-uv run ainews export --hours 168       # export last 7 days
+uv run ainews export --hours 168       # override export window (default: AINEWS_EXPORT_HOURS)
 
 # Maintenance
 uv run ainews backfill-tags            # re-sync tags/type from config to DB

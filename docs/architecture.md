@@ -196,6 +196,8 @@ The static dashboard reads `data.json`, a snapshot exported from the DB:
 }
 ```
 
+The export window defaults to 7 days (`AINEWS_EXPORT_HOURS=168`, configurable). Items older than the window are pruned on each export. The local SQLite DB is also pruned after each fetch cycle (`AINEWS_RETENTION_DAYS=30`, configurable; set to 0 to keep forever).
+
 On export, items from the local DB are merged with items already in `data.json` (deduped by ID and URL) so cloud-fetched items survive when the local pipeline overwrites the file.
 
 ### Data flow per mode
@@ -351,5 +353,5 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-17*
+*Last updated: 2026-03-21*
 
