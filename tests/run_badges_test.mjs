@@ -77,9 +77,9 @@ function resetBadges() {
 }
 
 // ── Items ──
-const oldItem = { published_at: '2026-03-10T00:00:00Z', source_type: 'rss', source_name: 'Test' };
-const newItem = { published_at: '2026-03-15T12:00:00Z', source_type: 'rss', source_name: 'Test' };
-const trendingItem = { published_at: '2026-03-15T12:00:00Z', source_type: 'github_trending', source_name: 'Trending' };
+const oldItem = { published_at: '2026-03-10T00:00:00Z', fetched_at: '2026-03-10T00:00:00Z', source_type: 'rss', source_name: 'Test' };
+const newItem = { published_at: '2026-03-15T12:00:00Z', fetched_at: '2026-03-15T12:00:00Z', source_type: 'rss', source_name: 'Test' };
+const trendingItem = { published_at: '2026-03-15T12:00:00Z', fetched_at: '2026-03-15T12:00:00Z', source_type: 'github_trending', source_name: 'Trending' };
 
 // ── Tests ──
 console.log('\nbadges.js tests\n');
@@ -119,14 +119,24 @@ assert(isNewItem(newItem) === false, 'After visit: previously new item is no lon
 assert(elements['badge-dashboard'].classList.contains('hidden'), 'Badge hidden after revisit');
 assert(elements['badge-dashboard-m'].classList.contains('hidden'), 'Mobile badge hidden after revisit');
 
-// 6 — fetched_at fallback
+// 6 — published_at fallback when fetched_at missing
 resetBadges();
 store['ainews_last_seen_dashboard'] = '2026-03-12T00:00:00Z';
 store['ainews_last_seen_trends'] = '2026-03-12T00:00:00Z';
 store['ainews_last_seen_ccc'] = '2026-03-12T00:00:00Z';
-const itemNoPublished = { fetched_at: '2026-03-15T12:00:00Z', source_type: 'rss', source_name: 'Test' };
-computeBadges([itemNoPublished], {}, 'dashboard');
-assert(isNewItem(itemNoPublished) === true, 'isNewItem falls back to fetched_at');
+const itemNoFetched = { published_at: '2026-03-15T12:00:00Z', source_type: 'rss', source_name: 'Test' };
+computeBadges([itemNoFetched], {}, 'dashboard');
+assert(isNewItem(itemNoFetched) === true, 'isNewItem falls back to published_at when fetched_at missing');
+
+// 6b — fetched_at takes priority over published_at (the local-push Twitter bug)
+resetBadges();
+store['ainews_last_seen_dashboard'] = '2026-03-14T00:00:00Z';
+store['ainews_last_seen_trends'] = '2026-03-14T00:00:00Z';
+store['ainews_last_seen_ccc'] = '2026-03-14T00:00:00Z';
+// Tweet was published Mar 10 (old), but fetched Mar 15 (new) — should show as new
+const recentlyFetched = { published_at: '2026-03-10T00:00:00Z', fetched_at: '2026-03-15T12:00:00Z', source_type: 'twitter', source_name: 'Test' };
+computeBadges([recentlyFetched], {}, 'dashboard');
+assert(isNewItem(recentlyFetched) === true, 'Item with old published_at but recent fetched_at is new');
 
 // 7 — Independent page cutoffs
 resetBadges();
@@ -141,7 +151,7 @@ resetBadges();
 store['ainews_last_seen_dashboard'] = '2026-03-12T00:00:00Z';
 store['ainews_last_seen_trends'] = '2026-03-12T00:00:00Z';
 store['ainews_last_seen_ccc'] = '2026-03-12T00:00:00Z';
-const hiddenItem = { published_at: '2026-03-15T12:00:00Z', source_type: 'github_trending', source_name: 'Repo' };
+const hiddenItem = { published_at: '2026-03-15T12:00:00Z', fetched_at: '2026-03-15T12:00:00Z', source_type: 'github_trending', source_name: 'Repo' };
 computeBadges([hiddenItem], { hidden_source_types: ['github_trending'] }, 'dashboard');
 assert(elements['badge-dashboard'].classList.contains('hidden'), 'Hidden source_type excluded from dashboard badge');
 

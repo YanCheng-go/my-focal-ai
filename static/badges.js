@@ -48,7 +48,7 @@
         });
 
         (items || []).forEach(function(item) {
-            var d = new Date(item.published_at || item.fetched_at);
+            var d = new Date(item.fetched_at || item.published_at);
 
             if (lastSeenDates.dashboard && d > lastSeenDates.dashboard) {
                 if (!hiddenTypes.includes(item.source_type) && !hiddenSources.includes(item.source_name))
@@ -97,7 +97,7 @@
     var _lastSeenCutoff = null;
     window.isNewItem = function(item) {
         if (!_lastSeenCutoff) return false;
-        var d = new Date(item.published_at || item.fetched_at);
+        var d = new Date(item.fetched_at || item.published_at);
         return d > _lastSeenCutoff;
     };
 
