@@ -28,6 +28,42 @@ async def _fetch_source(source_name: str):
         backend.close()
 
 
+async def _explore_sources(
+    source_type: str | None = None,
+    limit: int = 10,
+    min_score: float = 0.0,
+    cloud: bool = False,
+):
+    """Run source exploration and print suggestions."""
+    if cloud:
+        from ainews.explore import explore_sources_claude
+
+        suggestions = await explore_sources_claude(
+            source_type=source_type, limit=limit, min_score=min_score
+        )
+    else:
+        from ainews.explore import explore_sources
+
+        suggestions = await explore_sources(
+            source_type=source_type, limit=limit, min_score=min_score
+        )
+
+    if not suggestions:
+        print("No suggestions found. Try different parameters or check your LLM connection.")
+        return
+
+    print(f"\nDiscovered {len(suggestions)} source suggestions:\n")
+    for i, s in enumerate(suggestions, 1):
+        score_bar = "#" * int(s["relevance_score"] * 10)
+        print(f"  {i}. [{s['source_type']}] {s['name']}")
+        print(f"     Score: {s['relevance_score']:.2f} {score_bar}")
+        print(f"     Reason: {s['reason']}")
+        if s.get("tags"):
+            print(f"     Tags: {', '.join(s['tags'])}")
+        print(f"     Config: {s['config']}")
+        print()
+
+
 def main():
     log_fmt = "%(asctime)s %(levelname)s %(name)s: %(message)s"
     logging.basicConfig(level=logging.INFO, format=log_fmt)
@@ -90,6 +126,31 @@ def main():
         help="Only export this source type, appending new items to the existing output file",
     )
 
+    explore_parser = sub.add_parser(
+        "explore",
+        help="Discover new sources similar to your existing ones (LLM-powered)",
+    )
+    explore_parser.add_argument(
+        "--source-type",
+        type=str,
+        default=None,
+        help="Only suggest sources of this type (e.g. twitter, youtube, rss)",
+    )
+    explore_parser.add_argument(
+        "--limit", type=int, default=10, help="Maximum number of suggestions (default: 10)"
+    )
+    explore_parser.add_argument(
+        "--min-score",
+        type=float,
+        default=0.0,
+        help="Minimum relevance score to include (0-1, default: 0.0)",
+    )
+    explore_parser.add_argument(
+        "--cloud",
+        action="store_true",
+        help="Use Claude API instead of Ollama for discovery",
+    )
+
     backfill_parser = sub.add_parser(
         "backfill-tags",
         help="Re-sync tags from sources.yml config to existing DB items",
@@ -140,6 +201,15 @@ def main():
         from ainews.cloud_fetch import local_fetch_user_twitter
 
         asyncio.run(local_fetch_user_twitter())
+    elif args.command == "explore":
+        asyncio.run(
+            _explore_sources(
+                source_type=args.source_type,
+                limit=args.limit,
+                min_score=args.min_score,
+                cloud=args.cloud,
+            )
+        )
     elif args.command == "backfill-tags":
         from ainews.backfill import backfill_tags
 
