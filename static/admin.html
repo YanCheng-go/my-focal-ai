@@ -772,7 +772,7 @@
         try {
             var session = window._adminSession;
             if (!session) { showToast('Not logged in', 'error'); return; }
-            var resp = await fetch('/admin/api/explore', {
+            var resp = await fetch('/api/explore', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
