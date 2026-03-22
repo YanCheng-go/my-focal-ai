@@ -143,7 +143,7 @@ async def fetch_github_trending_history(
         resp.raise_for_status()
 
     tree = HTMLParser(resp.text)
-    cards = tree.css("div.rounded-lg.border.border-gray-300")
+    cards = tree.css("div.border-border.bg-card.rounded-lg")
     if not cards:
         logger.warning("No cards found on trendshift.io/github-trending-repositories")
         return []
@@ -172,7 +172,7 @@ async def fetch_github_trending_history(
 
         # Extract description — last text-gray-500 div that isn't "Featured..."
         desc = ""
-        for dp in card.css("div.text-gray-500"):
+        for dp in card.css("div.text-muted-foreground"):
             t = dp.text(strip=True)
             if not t.startswith("Featured") and len(t) > 10:
                 desc = t
