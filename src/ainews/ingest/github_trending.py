@@ -170,7 +170,7 @@ async def fetch_github_trending_history(
         featured_match = re.search(r"(\d+)\s*times", card_text)
         featured_count = int(featured_match.group(1)) if featured_match else 0
 
-        # Extract description — last text-gray-500 div that isn't "Featured..."
+        # Extract description — last text-muted-foreground div that isn't "Featured..."
         desc = ""
         for dp in card.css("div.text-gray-500"):
             t = dp.text(strip=True)
