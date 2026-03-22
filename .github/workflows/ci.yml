@@ -46,6 +46,8 @@ jobs:
       - name: Start server and run responsive tests
         run: |
           uv run ainews serve &
+          SERVER_PID=$!
+          trap "kill $SERVER_PID 2>/dev/null || true" EXIT
           for i in $(seq 1 15); do curl -sf http://localhost:8000/ > /dev/null && break || sleep 1; done || { echo "Server failed to start"; exit 1; }
           npx playwright test --reporter=list --grep-invert "renders correctly"
         env:
