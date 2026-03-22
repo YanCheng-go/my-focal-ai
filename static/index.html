@@ -567,6 +567,8 @@
         if (document.getElementById('dont-show-again').checked) {
             localStorage.setItem('myfocalai_welcomed', 'true');
         }
+        // Start guided tour after welcome modal closes
+        if (typeof startTourAfterWelcome === 'function') startTourAfterWelcome();
     }
     if (localStorage.getItem('myfocalai_welcomed') !== 'true') {
         var wm = document.getElementById('welcome-modal');
@@ -575,5 +577,6 @@
 
     </script>
     <script src="badges.js"></script>
+    <script src="tour.js"></script>
 </body>
 </html>
