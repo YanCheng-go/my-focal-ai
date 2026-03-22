@@ -56,7 +56,7 @@
             }
             // trends badge disabled — count was always noisy (50)
             if (lastSeenDates.ccc && d > lastSeenDates.ccc) {
-                if (hiddenSources.includes(item.source_name) && item.source_type !== 'github_trending' && item.source_type !== 'github_trending_history')
+                if (hiddenSources.includes(item.source_name) && item.source_type !== 'github_trending' && item.source_type !== 'github_trending_history' && !item.source_type.startsWith('aitmpl_') && !item.source_type.startsWith('skillssh_'))
                     counts.ccc++;
             }
         });

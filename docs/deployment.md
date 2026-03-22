@@ -14,21 +14,13 @@ Runs entirely on your machine — SQLite, Ollama, APScheduler, FastAPI dashboard
 
 ### Twitter / X (local only)
 
-Twitter sources are only available in local mode. The fetcher reads your browser's session cookies directly — no API key required — but this approach is against X's Terms of Service, so it cannot be used in the cloud pipeline.
+Twitter sources are only available in local mode. The fetcher reads your Chrome session cookies directly via [`rookiepy`](https://github.com/thewh1teagle/rookiepy) — no API key required.
 
-**Prerequisites:**
-1. **Log in to X in Chrome** on the same machine. The fetcher reads `auth_token` and `ct0` cookies from your Chrome profile automatically via [`rookiepy`](https://github.com/thewh1teagle/rookiepy).
-2. **Install the `llm` extras** (includes `rookiepy`):
-   ```bash
-   uv sync --extra llm
-   ```
-3. **Verify the cookie setup:**
-   ```bash
-   uv run ainews twitter-setup
-   ```
-4. **Add Twitter sources** to `config/sources.yml` with `type: twitter` and `handle: username`.
+**Quick setup:** Log in to X in Chrome, then run `uv sync --extra llm && uv run ainews twitter-setup`.
 
-> **Why not in the cloud?** The method relies on scraping private GraphQL endpoints using your personal session cookies, which violates [X's Terms of Service](https://x.com/en/tos). Running it in a public CI pipeline would also expose your personal session. Use RSS-based alternatives (e.g. [nitter](https://github.com/zedeus/nitter) via RSSHub) for the cloud pipeline if you need Twitter content.
+See [sources.md § Twitter](sources.md#twitter) for config format and technical details.
+
+> **Why not in the cloud?** Uses private GraphQL endpoints via personal session cookies, which violates [X's TOS](https://x.com/en/tos) and would expose your session in CI.
 
 ## 2. Online Public (Vercel + GitHub Actions)
 
@@ -141,4 +133,4 @@ GitHub Actions and Vercel are **separate servers** that both need to connect to 
 
 ---
 
-*Last updated: 2026-03-21*
+*Last updated: 2026-03-22*

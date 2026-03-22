@@ -13,11 +13,14 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
     """Fetch a single source by name. Returns {"items_fetched": N, "new_items": N}."""
     from ainews.ingest.twitter import fetch_twitter_user, get_twitter_cookies_from_browser
 
+    name_lower = source_name.lower()
+    sources = sources_config.get("sources", {})
+
     # Check Twitter handles
-    twitter_users = sources_config.get("sources", {}).get("twitter", [])
+    twitter_users = sources.get("twitter", [])
     for user in twitter_users:
         handle = user["handle"]
-        if source_name.lower() in (handle.lower(), f"@{handle}".lower()):
+        if name_lower in (handle.lower(), f"@{handle}".lower()):
             cookies = get_twitter_cookies_from_browser()
             if not cookies:
                 raise RuntimeError("No Twitter cookies found in Chrome")
@@ -28,10 +31,10 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
     # Check event sources
     from ainews.ingest.events import fetch_anthropic_events, fetch_google_dev_events
 
-    event_sources = sources_config.get("sources", {}).get("events", [])
+    event_sources = sources.get("events", [])
     for src in event_sources:
         name = src.get("name", "")
-        if source_name.lower() in name.lower():
+        if name_lower in name.lower():
             scraper = src.get("scraper", "")
             tags = src.get("tags", [])
             if scraper == "anthropic":
@@ -43,9 +46,48 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
             new_count = backend.ingest_items(name, items)
             return {"items_fetched": len(items), "new_items": new_count}
 
+    # Check AI Templates trending
+    aitmpl_entries = sources.get("aitmpl_trending", [])
+    is_aitmpl = "aitmpl" in name_lower or ("template" in name_lower and "trend" in name_lower)
+    if aitmpl_entries and is_aitmpl:
+        from ainews.ingest.aitmpl_trending import (
+            _COMPONENT_TYPES,
+            fetch_aitmpl_trending,
+        )
+        from ainews.ingest.aitmpl_trending import (
+            DEFAULT_TAGS as AITMPL_DEFAULT_TAGS,
+        )
+
+        tags = aitmpl_entries[0].get("tags", AITMPL_DEFAULT_TAGS)
+        items = await fetch_aitmpl_trending(tags=tags)
+        backend.delete_source_content("AI Templates Trending")
+        for ct in _COMPONENT_TYPES:
+            backend.delete_source_content(f"AI Templates Trending ({ct})")
+        new_count = backend.ingest_items("AI Templates Trending", items)
+        return {"items_fetched": len(items), "new_items": new_count}
+
+    # Check skills.sh trending
+    skillssh_entries = sources.get("skillssh_trending", [])
+    is_skillssh = "skills.sh" in name_lower or "skillssh" in name_lower
+    if skillssh_entries and is_skillssh:
+        from ainews.ingest.skillssh_trending import (
+            _ALL_PAGE_KEYS,
+            fetch_skillssh_trending,
+        )
+        from ainews.ingest.skillssh_trending import (
+            DEFAULT_TAGS as SKILLSSH_DEFAULT_TAGS,
+        )
+
+        tags = skillssh_entries[0].get("tags", SKILLSSH_DEFAULT_TAGS)
+        items = await fetch_skillssh_trending(tags=tags)
+        for pk in _ALL_PAGE_KEYS:
+            backend.delete_source_content(f"skills.sh ({pk})")
+        new_count = backend.ingest_items("skills.sh (all)", items)
+        return {"items_fetched": len(items), "new_items": new_count}
+
     # Check GitHub trending
-    trending_entries = sources_config.get("sources", {}).get("github_trending", [])
-    if trending_entries and "github" in source_name.lower() and "trend" in source_name.lower():
+    trending_entries = sources.get("github_trending", [])
+    if trending_entries and "github" in name_lower and "trend" in name_lower:
         from ainews.ingest.github_trending import (
             fetch_github_trending,
             fetch_github_trending_history,
@@ -66,7 +108,7 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
 
     # Check all feed sources
     feeds = build_feed_urls(sources_config)
-    matched = [f for f in feeds if source_name.lower() in f["source_name"].lower()]
+    matched = [f for f in feeds if name_lower in f["source_name"].lower()]
 
     if not matched:
         raise ValueError(f"No source found matching '{source_name}'")
@@ -85,8 +127,10 @@ async def fetch_single_source(backend, sources_config: dict, source_name: str) -
 async def run_ingestion(backend, config_dir=None, sources_config=None):
     """Fetch all feeds and store only new items."""
     from ainews.backfill import sync_source_metadata
+    from ainews.ingest.aitmpl_trending import run_aitmpl_trending_ingestion
     from ainews.ingest.events import run_events_ingestion
     from ainews.ingest.github_trending import run_github_trending_ingestion
+    from ainews.ingest.skillssh_trending import run_skillssh_trending_ingestion
     from ainews.ingest.twitter import run_twitter_ingestion
 
     sources_config = sources_config or load_sources(config_dir)
@@ -126,6 +170,20 @@ async def run_ingestion(backend, config_dir=None, sources_config=None):
         total_new += trending_count
     except Exception:
         logger.exception("GitHub trending ingestion failed")
+
+    # AI Templates trending (aitmpl.com)
+    try:
+        aitmpl_count = await run_aitmpl_trending_ingestion(backend, sources_config)
+        total_new += aitmpl_count
+    except Exception:
+        logger.exception("AI Templates trending ingestion failed")
+
+    # skills.sh trending
+    try:
+        skillssh_count = await run_skillssh_trending_ingestion(backend, sources_config)
+        total_new += skillssh_count
+    except Exception:
+        logger.exception("skills.sh trending ingestion failed")
 
     # Sync tags and source_type from config to existing items (skips if unchanged)
     try:

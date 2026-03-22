@@ -23,6 +23,9 @@ runner.py ─── ingest ──► feeds.py ──► RSS / Atom / RSSHub (inc
     │                     twitter.py ──► Twitter GraphQL (Chrome cookies)
     │                     events.py ──► Anthropic / Google event pages
     │                     github_trending.py ──► trendshift.io
+    │                     aitmpl_trending.py ──► aitmpl.com (AI tools)
+    │                     skillssh_trending.py ──► skills.sh (agent skills)
+    │                     (see sources.md for config format and source type details)
     │
     ▼
 SqliteBackend (db.py)
@@ -271,10 +274,13 @@ src/ainews/
 ├── cloud_fetch.py     Cloud pipeline: fetch feeds + optional Claude scoring
 ├── backfill.py        Re-sync source config (tags, source_type) to existing DB items
 ├── ingest/
+│   ├── __init__.py    Shared utilities: SCRAPER_HEADERS, utc_today(), rank_to_score(), MAX_TRENDING_ITEMS
 │   ├── feeds.py       RSS/Atom fetching + URL builder for all source types
 │   ├── twitter.py     Chrome cookies (rookiepy) + Twitter GraphQL API
 │   ├── events.py      Tech company event page scrapers (Anthropic, Google)
 │   ├── github_trending.py  Trendshift.io scraper (daily + history)
+│   ├── aitmpl_trending.py  aitmpl.com AI tools trending (snapshot)
+│   ├── skillssh_trending.py  skills.sh agent skills trending (snapshot + audit badges)
 │   └── runner.py      Orchestrates ingestion, dedup, Shorts marking
 ├── scoring/
 │   ├── scorer.py      Ollama LLM scoring (local)
@@ -305,7 +311,7 @@ static/
 ├── admin.html         Source CRUD + fetch (Supabase Auth); read-only fallback
 ├── leaderboard.html   AI benchmark links (reads config.json)
 ├── events.html        Event calendars + scraped events (reads config.json + data.json)
-├── trends.html        GitHub trending repos (reads data.json)
+├── trends.html        Trending page: GitHub repos, AI Tools, Agent Skills (reads data.json)
 ├── ccc.html           Claude Code Changelogs (reads data.json)
 ├── about.html         About page
 ├── logo.svg           Brand logo
@@ -331,7 +337,7 @@ templates/
 ├── dashboard.html     Jinja2 dark-theme dashboard (local FastAPI)
 ├── leaderboard.html   Leaderboard page
 ├── events.html        Events page with filter tabs
-├── trends.html        GitHub trending page with filter tabs
+├── trends.html        Trending page: GitHub repos, AI Tools, Agent Skills
 ├── ccc.html           Claude Code Changelogs page
 ├── about.html         About page
 └── admin.html         Source management page
@@ -353,5 +359,5 @@ vercel.json            Vercel config (serves static/ directory)
 
 ---
 
-*Last updated: 2026-03-21*
+*Last updated: 2026-03-22*
 

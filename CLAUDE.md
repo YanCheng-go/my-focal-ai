@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-MyFocalAI — personal news intelligence system. Aggregates content from Twitter/X, YouTube, Xiaohongshu (via RSSHub), and RSS feeds, then scores relevance using LLM against user-defined principles. Three modes: local (SQLite + Ollama + FastAPI), online public (static HTML + GitHub Actions + Vercel), and online login (Supabase + user auth + per-user feeds).
+MyFocalAI — personal news intelligence system. Aggregates content from Twitter/X, YouTube, Xiaohongshu (via RSSHub), RSS feeds, and trending sources (GitHub, AI Tools, Agent Skills), then scores relevance using LLM against user-defined principles. Three modes: local (SQLite + Ollama + FastAPI), online public (static HTML + GitHub Actions + Vercel), and online login (Supabase + user auth + per-user feeds).
 
 ## Setup
 
@@ -88,5 +88,5 @@ See [open issues](https://github.com/YanCheng-go/my-focal-ai/issues) for the ful
 
 ---
 
-*Last updated: 2026-03-18*
+*Last updated: 2026-03-22*
 

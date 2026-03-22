@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trends — GitHub Trending</title>
+    <title>Trends</title>
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <script>
     (function(){
@@ -27,12 +27,39 @@
     <script src="shared-config.js"></script>
 
     <main class="max-w-4xl mx-auto px-5 py-5">
-        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">GitHub Trending — top repos from <a href="https://trendshift.io" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">trendshift.io</a>.</p>
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4" id="subtitle">GitHub Trending — top repos from <a href="https://trendshift.io" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">trendshift.io</a>.</p>
 
         <div class="flex gap-2 flex-wrap mb-4" id="tab-bar">
-            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" onclick="setTab('daily')">Daily Trending</button>
-            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" onclick="setTab('history')">Trending History</button>
+            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" onclick="setTab('github')">GitHub</button>
+            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" onclick="setTab('claude')">AI Tools</button>
+            <button class="px-3 py-1.5 rounded-md text-sm border cursor-pointer bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" onclick="setTab('skillssh')">Agent Skills</button>
         </div>
+
+        <!-- Sub-tabs for GitHub -->
+        <div class="flex gap-2 flex-wrap mb-4" id="github-subtabs">
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" onclick="setSubType('github','daily')">Daily</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('github','history')">History</button>
+        </div>
+
+        <!-- Sub-tabs for AI Tools component types -->
+        <div class="flex gap-2 flex-wrap mb-4 hidden" id="claude-subtabs">
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700" onclick="setSubType('claude','all')">All</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('claude','skills')">Skills</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('claude','agents')">Agents</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('claude','commands')">Commands</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('claude','settings')">Settings</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('claude','hooks')">Hooks</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('claude','mcps')">MCPs</button>
+        </div>
+
+        <!-- Sub-tabs for skills.sh -->
+        <div class="flex gap-2 flex-wrap mb-4 hidden" id="skillssh-subtabs">
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 border-emerald-300 dark:border-emerald-700" onclick="setSubType('skillssh','all')">All Time</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('skillssh','trending')">Trending (24h)</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('skillssh','hot')">Hot</button>
+            <button class="px-2.5 py-1 rounded text-xs border cursor-pointer bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" onclick="setSubType('skillssh','official')">Official</button>
+        </div>
+
         <div class="text-xs text-gray-400 dark:text-gray-500 mb-4" id="status"></div>
         <div id="items"></div>
     </main>
@@ -40,22 +67,56 @@
     <script>
     function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text || ''; return div.innerHTML; }
 
-    let allItems = [], allDataItems = [], currentTab = 'daily';
+    let allItems = [], allDataItems = [], currentTab = 'github';
+    let githubType = 'daily', claudeType = 'all', skillsshType = 'all';
+
     const activeCls = 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700';
     const inactiveCls = 'bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600';
+    const activeSubCls = { github: 'bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700', claude: 'bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700', skillssh: 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 border-emerald-300 dark:border-emerald-700' };
+    const inactiveSubCls = 'bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700';
+
+    const tabLabels = { github: 'GitHub', claude: 'AI Tools', skillssh: 'Agent Skills' };
+    const githubLabels = { daily: 'Daily', history: 'History' };
+    const claudeLabels = { all: 'All', skills: 'Skills', agents: 'Agents', commands: 'Commands', settings: 'Settings', hooks: 'Hooks', mcps: 'MCPs' };
+    const skillsshLabels = { all: 'All Time', trending: 'Trending (24h)', hot: 'Hot', official: 'Official' };
 
     function setTab(tab) {
         currentTab = tab;
-        const labels = { daily: 'Daily Trending', history: 'Trending History' };
         document.querySelectorAll('#tab-bar button').forEach(b => {
-            const isActive = b.textContent.trim() === labels[tab];
+            const isActive = b.textContent.trim() === tabLabels[tab];
             b.className = 'px-3 py-1.5 rounded-md text-sm border cursor-pointer ' + (isActive ? activeCls : inactiveCls);
+        });
+        document.getElementById('github-subtabs').classList.toggle('hidden', tab !== 'github');
+        document.getElementById('claude-subtabs').classList.toggle('hidden', tab !== 'claude');
+        document.getElementById('skillssh-subtabs').classList.toggle('hidden', tab !== 'skillssh');
+
+        const subtitle = document.getElementById('subtitle');
+        if (tab === 'claude') subtitle.innerHTML = 'AI Tools — trending components from <a href="https://www.aitmpl.com/trending" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">aitmpl.com</a>.';
+        else if (tab === 'skillssh') subtitle.innerHTML = 'Agent Skills — trending from <a href="https://skills.sh" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">skills.sh</a>.';
+        else subtitle.innerHTML = 'GitHub Trending — top repos from <a href="https://trendshift.io" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">trendshift.io</a>.';
+        render();
+    }
+
+    function setSubType(group, type) {
+        if (group === 'github') githubType = type;
+        else if (group === 'claude') claudeType = type;
+        else skillsshType = type;
+        const labels = group === 'github' ? githubLabels : group === 'claude' ? claudeLabels : skillsshLabels;
+        document.querySelectorAll(`#${group}-subtabs button`).forEach(b => {
+            const isActive = b.textContent.trim() === labels[type];
+            b.className = 'px-2.5 py-1 rounded text-xs border cursor-pointer ' + (isActive ? activeSubCls[group] : inactiveSubCls);
         });
         render();
     }
 
     function render() {
-        const sourceType = currentTab === 'history' ? 'github_trending_history' : 'github_trending';
+        if (currentTab === 'claude') { renderTable('claude'); return; }
+        if (currentTab === 'skillssh') { renderTable('skillssh'); return; }
+        renderGithub();
+    }
+
+    function renderGithub() {
+        const sourceType = githubType === 'history' ? 'github_trending_history' : 'github_trending';
         const items = allItems.filter(i => i.source_type === sourceType).sort((a, b) => (b.score || 0) - (a.score || 0));
         document.getElementById('status').textContent = `${items.length} repos`;
         if (!items.length) { document.getElementById('items').innerHTML = '<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No trending repos found.</div>'; return; }
@@ -74,12 +135,85 @@
         }).join('');
     }
 
+    function renderTable(group) {
+        let targetType, label;
+        if (group === 'claude') {
+            targetType = claudeType === 'all' ? 'aitmpl_trending' : `aitmpl_${claudeType}`;
+            label = 'components';
+        } else {
+            targetType = `skillssh_${skillsshType}`;
+            label = 'skills';
+        }
+        const items = allItems.filter(i => i.source_type === targetType).sort((a, b) => (b.score || 0) - (a.score || 0));
+        document.getElementById('status').textContent = `${items.length} ${label}`;
+        if (!items.length) { document.getElementById('items').innerHTML = `<div class="text-sm text-gray-400 dark:text-gray-500 py-3">No trending ${label} found.</div>`; return; }
+
+        const isSkillssh = group === 'skillssh';
+        const isOfficial = isSkillssh && skillsshType === 'official';
+        let headerCols, gridCls;
+        if (isSkillssh) {
+            headerCols = `<div>#</div><div>${isOfficial ? 'Owner' : 'Skill'}</div><div class="text-center">GEN</div><div class="text-center">SOCKET</div><div class="text-center">SNYK</div><div class="text-right">Installs</div>`;
+            gridCls = 'grid-cols-[2rem_1fr_3rem_3.5rem_3rem_5rem] sm:grid-cols-[2.5rem_1fr_3.5rem_4rem_3.5rem_5.5rem]';
+        } else {
+            headerCols = '<div>#</div><div>Component</div><div class="text-right">Today</div><div class="text-right">Week</div><div class="text-right">Month</div><div class="text-right">Total</div>';
+            gridCls = 'grid-cols-[2rem_1fr_4.5rem_4.5rem_4.5rem_5rem] sm:grid-cols-[2.5rem_1fr_5rem_5rem_5rem_5.5rem]';
+        }
+
+        let html = `<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+            <div class="grid ${gridCls} gap-2 px-3 sm:px-4 py-2 text-xs text-gray-400 dark:text-gray-500 font-medium border-b border-gray-100 dark:border-neutral-800 uppercase tracking-wide">${headerCols}</div>`;
+
+        items.forEach((item, idx) => {
+            const parts = (item.summary || '').split(' | ');
+            const get = prefix => { const p = parts.find(p => p.startsWith(prefix)); return p ? p.slice(prefix.length) : ''; };
+            const rank = idx + 1;
+            const name = item.title.replace(/^#\d+\s+/, '');
+
+            if (isSkillssh) {
+                const riskCls = v => !v ? '' : v === 'SAFE' ? 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400' : (v === 'LOW' || v === '0 alerts') ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-400' : v === 'MEDIUM' ? 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400' : (v === 'HIGH' || v === 'CRITICAL') ? 'bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400' : 'bg-gray-100 text-gray-600 dark:bg-neutral-800 dark:text-gray-400';
+                const badge = val => val ? `<span class="${riskCls(val)} px-1.5 py-0.5 rounded text-[10px] font-medium">${escapeHtml(val)}</span>` : '<span class="text-gray-300 dark:text-gray-700">—</span>';
+                const gen = get('GEN: '), socket = get('SOCKET: '), snyk = get('SNYK: ');
+                const subtitle = isOfficial ? (get('Top: ') ? 'Top: ' + get('Top: ') : get('Repos: ') + ' repos') : get('Source: ');
+                html += `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="grid ${gridCls} gap-2 px-3 sm:px-4 py-3 items-center border-b border-gray-100 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-800/50 transition-colors cursor-pointer no-underline text-inherit">
+                    <div class="text-sm text-gray-400 dark:text-gray-500">${rank}</div>
+                    <div>
+                        <div class="text-sm font-medium text-gray-900 dark:text-gray-200">${escapeHtml(name)}</div>
+                        <div class="text-xs text-gray-400 dark:text-gray-500">${escapeHtml(subtitle)}</div>
+                    </div>
+                    <div class="text-center">${badge(gen)}</div>
+                    <div class="text-center">${badge(socket)}</div>
+                    <div class="text-center">${badge(snyk)}</div>
+                    <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Installs: ') || '-'}</div>
+                </a>`;
+            } else {
+                const todayDl = get('Today: ');
+                const todayClass = todayDl && todayDl !== '+0' ? 'text-green-500 dark:text-green-400' : 'text-gray-400 dark:text-gray-600';
+                html += `<a href="${escapeHtml(item.url)}" target="_blank" rel="noopener" class="grid ${gridCls} gap-2 px-3 sm:px-4 py-3 items-center border-b border-gray-100 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-800/50 transition-colors cursor-pointer no-underline text-inherit">
+                    <div class="text-sm text-gray-400 dark:text-gray-500">${rank}</div>
+                    <div>
+                        <div class="text-sm font-medium text-gray-900 dark:text-gray-200">${escapeHtml(name)}</div>
+                        <div class="text-xs text-gray-400 dark:text-gray-500">${escapeHtml(get('Category: '))}</div>
+                    </div>
+                    <div class="text-right text-sm ${todayClass}">${todayDl || '-'}</div>
+                    <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Week: ') || '-'}</div>
+                    <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Month: ') || '-'}</div>
+                    <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Total: ') || '-'}</div>
+                </a>`;
+            }
+        });
+        document.getElementById('items').innerHTML = html + '</div>';
+    }
+
     async function init() {
         try {
             const [dataResp, config] = await Promise.all([fetch('data.json'), getConfig()]);
             const data = await dataResp.json();
             allDataItems = data.items || [];
-            allItems = allDataItems.filter(i => i.source_type === 'github_trending' || i.source_type === 'github_trending_history');
+            allItems = allDataItems.filter(i =>
+                i.source_type === 'github_trending' ||
+                i.source_type === 'github_trending_history' ||
+                i.source_type.startsWith('aitmpl_') ||
+                i.source_type.startsWith('skillssh_')
+            );
             computeBadges(allDataItems, config, 'trends');
             render();
         } catch (e) {

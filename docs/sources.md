@@ -129,6 +129,26 @@ This is a single config entry (not a list). Two tabs on the Trends page:
 - **Daily Trending** — top 25 repos by daily engagement score
 - **Trending History** — top 25 all-time most-featured repos on GitHub Trending
 
+### AI Tools Trending (aitmpl.com)
+Fetches trending AI tools from aitmpl.com's public JSON endpoint. Snapshot source — items are replaced each fetch.
+
+```yaml
+aitmpl_trending:
+    tags: [ai, tools, trending]
+```
+
+Single config entry (not a list). Appears as the **AI Tools** tab on the Trends page.
+
+### Agent Skills Trending (skills.sh)
+Scrapes trending agent skills from skills.sh. Includes audit enrichment — each skill may display GEN/SOCKET/SNYK security badges sourced from skills.sh/audits. Snapshot source — items are replaced each fetch.
+
+```yaml
+skillssh_trending:
+    tags: [ai, agents, skills, trending]
+```
+
+Single config entry (not a list). Appears as the **Agent Skills** tab on the Trends page.
+
 ### Leaderboard & Event Links
 Reference links for manual browsing — not ingested by the pipeline.
 
@@ -146,7 +166,7 @@ event_links:
 
 ## Adding a New Source
 
-1. Determine the source type (RSS, YouTube, Twitter, RSSHub, Luma, ArXiv, Events, GitHub Trending)
+1. Determine the source type (RSS, YouTube, Twitter, RSSHub, Luma, ArXiv, Events, GitHub Trending, AI Tools Trending, Agent Skills Trending)
 2. Add an entry to the appropriate section in `config/sources.yml`
 3. Choose meaningful tags — these are displayed on the dashboard and used for filtering
 4. Test: run `uv run ainews fetch` and check the dashboard
@@ -163,6 +183,8 @@ event_links:
 | ArXiv queries | 3 queries | transformers, LLMs, RL |
 | Events | 2 scrapers | Anthropic Events, Google Developer Events |
 | GitHub Trending | 1 source | trendshift.io (daily + history) |
+| AI Tools Trending | 1 source | aitmpl.com (snapshot) |
+| Agent Skills Trending | 1 source | skills.sh (snapshot + audit badges) |
 
 ## Known Limitations
 
@@ -173,4 +195,4 @@ event_links:
 
 ---
 
-*Last updated: 2026-03-16*
+*Last updated: 2026-03-22*

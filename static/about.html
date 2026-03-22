@@ -76,7 +76,7 @@
             </div>
             <div class="flex items-start gap-3 bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3">
                 <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm shrink-0 w-24">Trends</span>
-                <span class="text-xs text-gray-500 dark:text-gray-400">Daily trending GitHub repos in AI/ML. See what the community is building and starring.</span>
+                <span class="text-xs text-gray-500 dark:text-gray-400">Three tabs: GitHub trending repos, AI Tools (aitmpl.com), and Agent Skills (skills.sh). See what the community is building and starring.</span>
             </div>
             <div class="flex items-start gap-3 bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg p-3">
                 <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm shrink-0 w-24">CCC</span>
@@ -89,7 +89,7 @@
         </div>
 
         <h2 class="text-lg font-bold text-gray-900 dark:text-white mt-6 mb-3">How it works</h2>
-        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">The pipeline fetches content from Twitter/X, YouTube, arXiv, RSS feeds (via RSSHub), GitHub trending repos, and more. Each item is scored 0&ndash;100 against your priorities defined in <code class="bg-gray-100 dark:bg-neutral-800 px-1 py-0.5 rounded text-xs">config/principles.yml</code>. Two modes: local (SQLite + Ollama + FastAPI) and cloud (Supabase + Vercel).</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-4">The pipeline fetches content from Twitter/X, YouTube, arXiv, RSS feeds (via RSSHub), GitHub trending repos, AI tools (aitmpl.com), agent skills (skills.sh), and more. Each item is scored 0&ndash;100 against your priorities defined in <code class="bg-gray-100 dark:bg-neutral-800 px-1 py-0.5 rounded text-xs">config/principles.yml</code>. Two modes: local (SQLite + Ollama + FastAPI) and cloud (Supabase + Vercel).</p>
 
         <div class="bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-800/50 rounded-lg p-4 mb-6 text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-2">
             <p><strong class="text-gray-900 dark:text-white">Scoring</strong> is currently available in local deployment only (via Ollama or Claude API). The online version displays items without relevance scores. See the <a href="https://github.com/YanCheng-go/my-focal-ai/blob/main/docs/scoring.md" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">scoring documentation</a> for details on how scoring works.</p>

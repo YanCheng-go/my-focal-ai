@@ -216,6 +216,16 @@ sources:
   - name: trendshift.io
     tags: [github, trending, open-source]
 
+  # === AI Templates (Claude Code components marketplace) ===
+  aitmpl_trending:
+  - name: aitmpl.com
+    tags: [claude-code, trending, tools]
+
+  # === skills.sh (open agent skills ecosystem) ===
+  skillssh_trending:
+  - name: skills.sh
+    tags: [agent-skills, trending, tools]
+
   # === Events (web scrapers) ===
   events:
   - scraper: "anthropic"

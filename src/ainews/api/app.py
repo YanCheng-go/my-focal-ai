@@ -346,7 +346,18 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
 def trends(request: Request, tab: str = "daily", page: int = 1):
     last_seen = _get_last_seen(request, "trends")
     offset = (page - 1) * PER_PAGE
-    source_type = "github_trending_history" if tab == "history" else "github_trending"
+    claude_type = "all"
+    skillssh_type = "all"
+    if tab == "claude":
+        claude_type = request.query_params.get("type", "all")
+        source_type = "aitmpl_trending" if claude_type == "all" else f"aitmpl_{claude_type}"
+    elif tab == "skillssh":
+        skillssh_type = request.query_params.get("type", "all")
+        source_type = f"skillssh_{skillssh_type}"
+    elif tab == "history":
+        source_type = "github_trending_history"
+    else:
+        source_type = "github_trending"
     with _backend() as backend:
         items = backend.get_items(
             limit=PER_PAGE, offset=offset, source_type=source_type, order_by="score"
@@ -363,6 +374,8 @@ def trends(request: Request, tab: str = "daily", page: int = 1):
             "total_pages": total_pages,
             "total": total,
             "last_seen_cutoff": last_seen,
+            "claude_type": claude_type,
+            "skillssh_type": skillssh_type,
         },
     )
     _set_last_seen(response, "trends")

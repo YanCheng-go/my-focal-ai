@@ -17,6 +17,8 @@ SOURCE_FIELDS = {
     "luma": {"required": ["handle"], "optional": ["display_type", "tags"]},
     "events": {"required": ["scraper", "name"], "optional": ["display_type", "tags"]},
     "github_trending": {"required": ["name", "tags"], "optional": ["display_type"]},
+    "aitmpl_trending": {"required": ["name", "tags"], "optional": ["display_type"]},
+    "skillssh_trending": {"required": ["name", "tags"], "optional": ["display_type"]},
     "leaderboard": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
     "event_links": {"required": ["url", "name"], "optional": ["display_type", "tags"]},
     "arxiv_queries": {"required": ["query", "name"], "optional": ["display_type", "tags"]},
