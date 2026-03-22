@@ -96,10 +96,22 @@
   ],
   "show_scores": false,
   "hidden_source_types": [
+    "aitmpl_agents",
+    "aitmpl_commands",
+    "aitmpl_hooks",
+    "aitmpl_mcps",
+    "aitmpl_settings",
+    "aitmpl_skills",
+    "aitmpl_templates",
+    "aitmpl_trending",
     "events",
-    "luma",
     "github_trending",
-    "github_trending_history"
+    "github_trending_history",
+    "luma",
+    "skillssh_all",
+    "skillssh_hot",
+    "skillssh_official",
+    "skillssh_trending"
   ],
   "hidden_sources": [
     "Claude Code Releases"
@@ -219,6 +231,32 @@
         ]
       },
       "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400"
+    },
+    "aitmpl_trending": {
+      "label": "AI Templates",
+      "fields": {
+        "required": [
+          "name",
+          "tags"
+        ],
+        "optional": [
+          "display_type"
+        ]
+      },
+      "color": "bg-orange-100 text-orange-700 dark:bg-orange-900/50 dark:text-orange-400"
+    },
+    "skillssh_trending": {
+      "label": "skills.sh",
+      "fields": {
+        "required": [
+          "name",
+          "tags"
+        ],
+        "optional": [
+          "display_type"
+        ]
+      },
+      "color": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-400"
     }
   },
   "default_user_sources": [
