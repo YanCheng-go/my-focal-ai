@@ -81,19 +81,42 @@ test("navigation links visible on desktop", async ({ page, isMobile }) => {
   await expect(navLinks).toBeVisible();
 });
 
+async function expectNoHorizontalScroll(
+  page: import("@playwright/test").Page,
+  label: string
+) {
+  const hasScroll = await page.evaluate(
+    () =>
+      document.documentElement.scrollWidth >
+      document.documentElement.clientWidth
+  );
+  expect(hasScroll, `${label} has unwanted horizontal scroll`).toBe(false);
+}
+
 test("no horizontal scrollbar on any page", async ({ page }) => {
   for (const pg of pages) {
     await page.goto(pg.path);
     await stabilizePage(page);
+    await expectNoHorizontalScroll(page, pg.name);
+  }
+});
 
-    const hasHorizontalScroll = await page.evaluate(() => {
-      return document.documentElement.scrollWidth > document.documentElement.clientWidth;
-    });
+// Static pages with real data — catches overflow that empty templates miss
+const staticPages = [
+  { name: "feeds", file: "index.html" },
+  { name: "trends", file: "trends.html" },
+  { name: "events", file: "events.html" },
+  { name: "leaderboard", file: "leaderboard.html" },
+  { name: "about", file: "about.html" },
+];
 
-    expect(
-      hasHorizontalScroll,
-      `${pg.name} has unwanted horizontal scroll`
-    ).toBe(false);
+test("no horizontal scrollbar on static pages with real data", async ({
+  page,
+}) => {
+  for (const pg of staticPages) {
+    await page.goto(`file://${process.cwd()}/static/${pg.file}`);
+    await page.waitForLoadState("networkidle");
+    await expectNoHorizontalScroll(page, `static/${pg.file}`);
   }
 });
 

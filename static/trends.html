@@ -152,14 +152,14 @@
         const isOfficial = isSkillssh && skillsshType === 'official';
         let headerCols, gridCls;
         if (isSkillssh) {
-            headerCols = `<div>#</div><div>${isOfficial ? 'Owner' : 'Skill'}</div><div class="text-center">GEN</div><div class="text-center">SOCKET</div><div class="text-center">SNYK</div><div class="text-right">Installs</div>`;
-            gridCls = 'grid-cols-[2rem_1fr_3rem_3.5rem_3rem_5rem] sm:grid-cols-[2.5rem_1fr_3.5rem_4rem_3.5rem_5.5rem]';
+            headerCols = `<div>#</div><div>${isOfficial ? 'Owner' : 'Skill'}</div><div class="text-center">GEN</div><div class="text-center hidden sm:block">SOCKET</div><div class="text-center hidden sm:block">SNYK</div><div class="text-right">Installs</div>`;
+            gridCls = 'grid-cols-[1.5rem_1fr_2.5rem_4rem] sm:grid-cols-[2.5rem_1fr_3.5rem_4rem_3.5rem_5.5rem]';
         } else {
-            headerCols = '<div>#</div><div>Component</div><div class="text-right">Today</div><div class="text-right">Week</div><div class="text-right">Month</div><div class="text-right">Total</div>';
-            gridCls = 'grid-cols-[2rem_1fr_4.5rem_4.5rem_4.5rem_5rem] sm:grid-cols-[2.5rem_1fr_5rem_5rem_5rem_5.5rem]';
+            headerCols = '<div>#</div><div>Component</div><div class="text-right hidden sm:block">Today</div><div class="text-right hidden sm:block">Week</div><div class="text-right">Month</div><div class="text-right">Total</div>';
+            gridCls = 'grid-cols-[1.5rem_1fr_3.5rem_3.5rem] sm:grid-cols-[2.5rem_1fr_5rem_5rem_5rem_5.5rem]';
         }
 
-        let html = `<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+        let html = `<div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg overflow-x-auto">
             <div class="grid ${gridCls} gap-2 px-3 sm:px-4 py-2 text-xs text-gray-400 dark:text-gray-500 font-medium border-b border-gray-100 dark:border-neutral-800 uppercase tracking-wide">${headerCols}</div>`;
 
         items.forEach((item, idx) => {
@@ -180,8 +180,8 @@
                         <div class="text-xs text-gray-400 dark:text-gray-500">${escapeHtml(subtitle)}</div>
                     </div>
                     <div class="text-center">${badge(gen)}</div>
-                    <div class="text-center">${badge(socket)}</div>
-                    <div class="text-center">${badge(snyk)}</div>
+                    <div class="text-center hidden sm:block">${badge(socket)}</div>
+                    <div class="text-center hidden sm:block">${badge(snyk)}</div>
                     <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Installs: ') || '-'}</div>
                 </a>`;
             } else {
@@ -193,8 +193,8 @@
                         <div class="text-sm font-medium text-gray-900 dark:text-gray-200">${escapeHtml(name)}</div>
                         <div class="text-xs text-gray-400 dark:text-gray-500">${escapeHtml(get('Category: '))}</div>
                     </div>
-                    <div class="text-right text-sm ${todayClass}">${todayDl || '-'}</div>
-                    <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Week: ') || '-'}</div>
+                    <div class="text-right text-sm ${todayClass} hidden sm:block">${todayDl || '-'}</div>
+                    <div class="text-right text-sm text-gray-700 dark:text-gray-300 hidden sm:block">${get('Week: ') || '-'}</div>
                     <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Month: ') || '-'}</div>
                     <div class="text-right text-sm text-gray-700 dark:text-gray-300">${get('Total: ') || '-'}</div>
                 </a>`;
