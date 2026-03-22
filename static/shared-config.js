@@ -32,6 +32,8 @@ window.TYPE_HINTS = {
     luma: 'Tip: paste a lu.ma URL above to auto-fill.',
     events: 'Scraper must be one of: anthropic, google.',
     github_trending: 'Fetches daily trending repos from trendshift.io.',
+    aitmpl_trending: 'Fetches trending Claude Code components from aitmpl.com.',
+    skillssh_trending: 'Fetches trending agent skills from skills.sh.',
     arxiv_queries: 'Uses the arXiv API query syntax. Example: ti:LLM+AND+cat:cs.AI',
 };
 

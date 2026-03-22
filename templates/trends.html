@@ -1,21 +1,137 @@
 {% extends "_base.html" %}
 {% set active_page = "trends" %}
-{% set page_title = "Trends — GitHub Trending" %}
+{% set page_title = "Trends" %}
 
 {% block content %}
+{% set is_github = tab in ('daily', 'history', 'github') %}
+{% if tab == 'claude' %}
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">AI Tools — trending components from <a href="https://www.aitmpl.com/trending" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">aitmpl.com</a>.</p>
+{% elif tab == 'skillssh' %}
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">Agent Skills — trending from <a href="https://skills.sh" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">skills.sh</a>.</p>
+{% else %}
 <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">GitHub Trending — top repos from <a href="https://trendshift.io" target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 hover:underline">trendshift.io</a>.</p>
+{% endif %}
 
 {% set active_cls = "bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
 {% set inactive_cls = "bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" %}
 
 <div class="flex gap-2 flex-wrap mb-4">
-    <a href="/trends?tab=daily" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'daily' else inactive_cls }}">Daily Trending</a>
-    <a href="/trends?tab=history" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'history' else inactive_cls }}">Trending History</a>
+    <a href="/trends?tab=github" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if is_github else inactive_cls }}">GitHub</a>
+    <a href="/trends?tab=claude" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'claude' else inactive_cls }}">AI Tools</a>
+    <a href="/trends?tab=skillssh" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'skillssh' else inactive_cls }}">Agent Skills</a>
 </div>
 
-<div class="text-xs text-gray-400 dark:text-gray-500 mb-4">{{ total }} repos &middot; Page {{ page }} of {{ total_pages }}</div>
+{% if is_github %}
+{% set active_sub = "bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
+{% set inactive_sub = "bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" %}
+{% set gsub = 'history' if tab == 'history' else 'daily' %}
+<div class="flex gap-2 flex-wrap mb-4">
+    <a href="/trends?tab=daily" class="px-2.5 py-1 rounded text-xs border {{ active_sub if gsub == 'daily' else inactive_sub }}">Daily</a>
+    <a href="/trends?tab=history" class="px-2.5 py-1 rounded text-xs border {{ active_sub if gsub == 'history' else inactive_sub }}">History</a>
+</div>
+{% elif tab == 'claude' %}
+{% set active_sub = "bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700" %}
+{% set inactive_sub = "bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" %}
+{% set csub = claude_type|default('all') %}
+<div class="flex gap-2 flex-wrap mb-4">
+    <a href="/trends?tab=claude&type=all" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'all' else inactive_sub }}">All</a>
+    <a href="/trends?tab=claude&type=skills" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'skills' else inactive_sub }}">Skills</a>
+    <a href="/trends?tab=claude&type=agents" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'agents' else inactive_sub }}">Agents</a>
+    <a href="/trends?tab=claude&type=commands" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'commands' else inactive_sub }}">Commands</a>
+    <a href="/trends?tab=claude&type=settings" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'settings' else inactive_sub }}">Settings</a>
+    <a href="/trends?tab=claude&type=hooks" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'hooks' else inactive_sub }}">Hooks</a>
+    <a href="/trends?tab=claude&type=mcps" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'mcps' else inactive_sub }}">MCPs</a>
+</div>
+{% elif tab == 'skillssh' %}
+{% set active_sub = "bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 border-emerald-300 dark:border-emerald-700" %}
+{% set inactive_sub = "bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" %}
+{% set ssub = skillssh_type|default('all') %}
+<div class="flex gap-2 flex-wrap mb-4">
+    <a href="/trends?tab=skillssh&type=all" class="px-2.5 py-1 rounded text-xs border {{ active_sub if ssub == 'all' else inactive_sub }}">All Time</a>
+    <a href="/trends?tab=skillssh&type=trending" class="px-2.5 py-1 rounded text-xs border {{ active_sub if ssub == 'trending' else inactive_sub }}">Trending (24h)</a>
+    <a href="/trends?tab=skillssh&type=hot" class="px-2.5 py-1 rounded text-xs border {{ active_sub if ssub == 'hot' else inactive_sub }}">Hot</a>
+    <a href="/trends?tab=skillssh&type=official" class="px-2.5 py-1 rounded text-xs border {{ active_sub if ssub == 'official' else inactive_sub }}">Official</a>
+
+</div>
+{% endif %}
+
+{% set is_table = tab in ('claude', 'skillssh') %}
+<div class="text-xs text-gray-400 dark:text-gray-500 mb-4">{{ total }} {{ 'components' if is_table else 'repos' }} &middot; Page {{ page }} of {{ total_pages }}</div>
 
 {% if items %}
+    {% if is_table %}
+    {# Table layout for Claude Code / skills.sh #}
+    {% set install_label = 'Installs' if tab == 'skillssh' else 'Today' %}
+    <div class="bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 rounded-lg overflow-hidden">
+        {% if tab == 'skillssh' %}
+        {% set sg = 'grid-cols-[2rem_1fr_3rem_3.5rem_3rem_5rem] sm:grid-cols-[2.5rem_1fr_3.5rem_4rem_3.5rem_5.5rem]' %}
+        <div class="grid {{ sg }} gap-2 px-3 sm:px-4 py-2 text-xs text-gray-400 dark:text-gray-500 font-medium border-b border-gray-100 dark:border-neutral-800 uppercase tracking-wide">
+            <div>#</div>
+            <div>{{ 'Owner' if skillssh_type|default('all') == 'official' else 'Skill' }}</div>
+            <div class="text-center">GEN</div>
+            <div class="text-center">SOCKET</div>
+            <div class="text-center">SNYK</div>
+            <div class="text-right">Installs</div>
+        </div>
+        {% for item in items %}
+        {% set parts = item.summary.split(' | ') %}
+        <a href="{{ item.url }}" target="_blank" rel="noopener" class="grid {{ sg }} gap-2 px-3 sm:px-4 py-3 items-center border-b border-gray-100 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-800/50 transition-colors cursor-pointer no-underline text-inherit">
+            <div class="text-sm text-gray-400 dark:text-gray-500">{{ loop.index }}</div>
+            <div>
+                <div class="text-sm font-medium text-gray-900 dark:text-gray-200">{{ item.title | replace('#' ~ loop.index ~ ' ', '') }}</div>
+                <div class="text-xs text-gray-400 dark:text-gray-500">
+                    {% if skillssh_type|default('all') == 'official' %}
+                        {% for p in parts %}{% if p.startswith('Top: ') %}Top: {{ p | replace('Top: ', '') }}{% endif %}{% endfor %}
+                    {% else %}
+                        {% for p in parts %}{% if p.startswith('Source: ') %}{{ p | replace('Source: ', '') }}{% endif %}{% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            {% macro audit_badge(parts, prefix) %}
+                {% set ns = namespace(val='') %}
+                {% for p in parts %}{% if p.startswith(prefix) %}{% set ns.val = p.split(': ', 1)[1] %}{% endif %}{% endfor %}
+                {% if ns.val %}
+                    {% set bcls = 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400' if ns.val == 'SAFE' else 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-400' if ns.val in ('LOW', '0 alerts') else 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400' if ns.val == 'MEDIUM' else 'bg-red-100 text-red-700 dark:bg-red-900/50 dark:text-red-400' if ns.val in ('HIGH', 'CRITICAL') else 'bg-gray-100 text-gray-600' %}
+                    <span class="{{ bcls }} px-1.5 py-0.5 rounded text-[10px] font-medium">{{ ns.val }}</span>
+                {% else %}
+                    <span class="text-gray-300 dark:text-gray-700">—</span>
+                {% endif %}
+            {% endmacro %}
+            <div class="text-center">{{ audit_badge(parts, 'GEN: ') }}</div>
+            <div class="text-center">{{ audit_badge(parts, 'SOCKET: ') }}</div>
+            <div class="text-center">{{ audit_badge(parts, 'SNYK: ') }}</div>
+            <div class="text-right text-sm text-gray-700 dark:text-gray-300">{% for p in parts %}{% if p.startswith('Installs: ') %}{{ p | replace('Installs: ', '') }}{% endif %}{% endfor %}</div>
+        </a>
+        {% endfor %}
+        {% else %}
+        <div class="grid grid-cols-[2rem_1fr_4.5rem_4.5rem_4.5rem_5rem] sm:grid-cols-[2.5rem_1fr_5rem_5rem_5rem_5.5rem] gap-2 px-3 sm:px-4 py-2 text-xs text-gray-400 dark:text-gray-500 font-medium border-b border-gray-100 dark:border-neutral-800 uppercase tracking-wide">
+            <div>#</div>
+            <div>Component</div>
+            <div class="text-right">Today</div>
+            <div class="text-right">Week</div>
+            <div class="text-right">Month</div>
+            <div class="text-right">Total</div>
+        </div>
+        {% for item in items %}
+        {% set parts = item.summary.split(' | ') %}
+        <a href="{{ item.url }}" target="_blank" rel="noopener" class="grid grid-cols-[2rem_1fr_4.5rem_4.5rem_4.5rem_5rem] sm:grid-cols-[2.5rem_1fr_5rem_5rem_5rem_5.5rem] gap-2 px-3 sm:px-4 py-3 items-center border-b border-gray-100 dark:border-neutral-800 hover:bg-gray-50 dark:hover:bg-neutral-800/50 transition-colors cursor-pointer no-underline text-inherit">
+            <div class="text-sm text-gray-400 dark:text-gray-500">{{ loop.index }}</div>
+            <div>
+                <div class="text-sm font-medium text-gray-900 dark:text-gray-200">{{ item.title | replace('#' ~ loop.index ~ ' ', '') }}</div>
+                <div class="text-xs text-gray-400 dark:text-gray-500">{% for p in parts %}{% if p.startswith('Category: ') %}{{ p | replace('Category: ', '') }}{% endif %}{% endfor %}</div>
+            </div>
+            <div class="text-right text-sm {% for p in parts %}{% if p.startswith('Today: ') and p != 'Today: +0' %}text-green-500 dark:text-green-400{% endif %}{% endfor %}">
+                {% set has_today = namespace(v=false) %}{% for p in parts %}{% if p.startswith('Today: ') %}{{ p | replace('Today: ', '') }}{% set has_today.v = true %}{% endif %}{% endfor %}{% if not has_today.v %}-{% endif %}
+            </div>
+            <div class="text-right text-sm text-gray-700 dark:text-gray-300">{% for p in parts %}{% if p.startswith('Week: ') %}{{ p | replace('Week: ', '') }}{% endif %}{% endfor %}</div>
+            <div class="text-right text-sm text-gray-700 dark:text-gray-300">{% for p in parts %}{% if p.startswith('Month: ') %}{{ p | replace('Month: ', '') }}{% endif %}{% endfor %}</div>
+            <div class="text-right text-sm text-gray-700 dark:text-gray-300">{% for p in parts %}{% if p.startswith('Total: ') %}{{ p | replace('Total: ', '') }}{% endif %}{% endfor %}</div>
+        </a>
+        {% endfor %}
+        {% endif %}
+    </div>
+    {% else %}
+    {# Card layout for GitHub trending #}
     {% for item in items %}
     {% set item_is_new = last_seen_cutoff and item.fetched_at and item.fetched_at > last_seen_cutoff %}
     <div class="{{ 'bg-blue-50/70 dark:bg-blue-950/20 border-blue-200/60 dark:border-blue-800/40 hover:border-blue-300 dark:hover:border-blue-700/50' if item_is_new else 'bg-white dark:bg-neutral-900 border-gray-200 dark:border-neutral-800 hover:border-gray-300 dark:hover:border-neutral-700' }} border rounded-lg p-3 sm:p-4 mb-3 border-l-4 border-l-indigo-400 transition-colors">
@@ -38,8 +154,9 @@
         {% endif %}
     </div>
     {% endfor %}
+    {% endif %}
 {% else %}
-    <div class="text-sm text-gray-400 dark:text-gray-500 py-3">No trending repos found.</div>
+    <div class="text-sm text-gray-400 dark:text-gray-500 py-3">No {{ 'components' if is_table else 'trending repos' }} found.</div>
 {% endif %}
 
 {% if total_pages > 1 %}

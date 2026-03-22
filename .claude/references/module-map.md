@@ -2,7 +2,8 @@
 
 - `src/ainews/models.py` — `ContentItem` + `ScoredItem` (Pydantic). Core data structures used throughout the pipeline.
 - `src/ainews/cli.py` — CLI entry point: `serve`, `fetch`, `fetch-source`, `list-sources`, `cloud-fetch`, `export`, `backfill-tags`.
-- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom (incl. XHS via RSSHub), `twitter.py` for Twitter via Chrome cookies + GraphQL, `events.py` for scraping tech company event pages (Anthropic, Google), `github_trending.py` for trendshift.io scraping, `runner.py` orchestrates and skips existing items.
+- `src/ainews/ingest/__init__.py` — shared utilities: `SCRAPER_HEADERS`, `utc_today()`, `rank_to_score()`, `MAX_TRENDING_ITEMS`.
+- `src/ainews/ingest/` — fetches from all sources. `feeds.py` for RSS/Atom (incl. XHS via RSSHub), `twitter.py` for Twitter via Chrome cookies + GraphQL, `events.py` for scraping tech company event pages (Anthropic, Google), `github_trending.py` for trendshift.io scraping, `aitmpl_trending.py` for aitmpl.com AI tools trending (snapshot), `skillssh_trending.py` for skills.sh agent skills trending (snapshot + audit badges), `runner.py` orchestrates and skips existing items.
 - `src/ainews/backfill.py` — auto-syncs tags and source_type from `sources.yml` to existing DB items. Runs each fetch cycle (skips via file hash if config unchanged). CLI: `uv run ainews backfill-tags [--dry-run]`.
 - `src/ainews/scoring/scorer.py` — sends unscored items to Ollama with three principles from `config/principles.yml`. Returns score 0-1, tier, reason. `claude_scorer.py` is the cloud alternative using Claude API.
 - `src/ainews/storage/backend.py` — `DbBackend` protocol. All storage callers use this interface.

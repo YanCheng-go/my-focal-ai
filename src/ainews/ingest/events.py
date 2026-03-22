@@ -7,15 +7,14 @@ from datetime import datetime, timezone
 import httpx
 from selectolax.parser import HTMLParser
 
+from ainews.ingest import SCRAPER_HEADERS
 from ainews.models import ContentItem, make_id
 
 logger = logging.getLogger(__name__)
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ainews/0.1; +https://github.com)"}
-
 
 async def _fetch_html(url: str) -> str:
-    async with httpx.AsyncClient(timeout=30, headers=HEADERS) as client:
+    async with httpx.AsyncClient(timeout=30, headers=SCRAPER_HEADERS) as client:
         resp = await client.get(url, follow_redirects=True)
         resp.raise_for_status()
         return resp.text

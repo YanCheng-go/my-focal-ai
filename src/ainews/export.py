@@ -59,14 +59,7 @@ def export_items(
     items = backend.get_items(limit=500, since=since, min_score=min_score)
 
     # Ensure items from lower-volume source types aren't crowded out by arXiv flood
-    ensure_types = [
-        "rss",
-        "youtube",
-        "xiaohongshu",
-        "rsshub",
-        "github_trending",
-        "github_trending_history",
-    ]
+    ensure_types = {"rss", "youtube", "xiaohongshu", "rsshub"} | _TRENDING_SOURCE_TYPES
     existing_ids = {item.id for item in items}
     for stype in ensure_types:
         extra = backend.get_items(limit=50, source_type=stype, since=since)
@@ -82,14 +75,13 @@ def export_items(
     # This keeps items from the other pipeline when one side overwrites data.json.
     # Skip snapshot source types (trending) — those are replaced each fetch and
     # stale items must not be re-added from the previous export.
-    _SNAPSHOT_SOURCE_TYPES = {"github_trending", "github_trending_history"}
     seen_urls = {item.url for item in items}
     old_items = _load_existing_items(output_path, since)
     old_kept = []
     for old in old_items:
         old_url = old.get("url", "")
         old_stype = old.get("source_type", "")
-        if old_url and old_url not in seen_urls and old_stype not in _SNAPSHOT_SOURCE_TYPES:
+        if old_url and old_url not in seen_urls and old_stype not in _TRENDING_SOURCE_TYPES:
             seen_urls.add(old_url)
             old_kept.append(old)
 
@@ -182,7 +174,27 @@ def append_source_type(
     return len(to_append)
 
 
-HIDDEN_SOURCE_TYPES = ["events", "luma", "github_trending", "github_trending_history"]
+# Snapshot/trending source types — replaced each fetch, not merged across pipelines.
+# Also used as ensure_types (guaranteed slot in export) and hidden from main dashboard.
+_TRENDING_SOURCE_TYPES = {
+    "github_trending",
+    "github_trending_history",
+    "aitmpl_trending",
+    "aitmpl_skills",
+    "aitmpl_agents",
+    "aitmpl_commands",
+    "aitmpl_settings",
+    "aitmpl_hooks",
+    "aitmpl_mcps",
+    "aitmpl_templates",
+    "skillssh_all",
+    "skillssh_trending",
+    "skillssh_hot",
+    "skillssh_official",
+}
+
+# Hidden from main dashboard — shown on trends page or events page instead.
+HIDDEN_SOURCE_TYPES = sorted({"events", "luma"} | _TRENDING_SOURCE_TYPES)
 HIDDEN_SOURCES = ["Claude Code Releases"]
 
 # Source type definitions for the admin UI (fields, colors, labels)
@@ -228,6 +240,16 @@ SOURCE_TYPE_SCHEMA = {
         "label": "ArXiv Query",
         "fields": {"required": ["query", "name"], "optional": ["tags"]},
         "color": "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/50 dark:text-yellow-400",
+    },
+    "aitmpl_trending": {
+        "label": "AI Templates",
+        "fields": {"required": ["name", "tags"], "optional": ["display_type"]},
+        "color": "bg-orange-100 text-orange-700 dark:bg-orange-900/50 dark:text-orange-400",
+    },
+    "skillssh_trending": {
+        "label": "skills.sh",
+        "fields": {"required": ["name", "tags"], "optional": ["display_type"]},
+        "color": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-400",
     },
 }
 

@@ -1,6 +1,6 @@
 # MyFocalAI
 
-Personal news intelligence system that aggregates AI content from curated sources, scores relevance using LLM, and serves a web dashboard. Runs locally with Ollama (free) or deployed to Vercel with Claude API scoring.
+Personal news intelligence system that aggregates AI content from curated sources (RSS, YouTube, Twitter, arXiv, events, GitHub trending, AI tools trending, agent skills), scores relevance using LLM, and serves a web dashboard. Runs locally with Ollama (free) or deployed to Vercel with Claude API scoring.
 
 | Feeds | Admin |
 |-------|-------|
@@ -49,4 +49,4 @@ If you find this project useful:
 
 ---
 
-*Last updated: 2026-03-15*
+*Last updated: 2026-03-22*

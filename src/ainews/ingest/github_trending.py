@@ -3,17 +3,15 @@
 import json
 import logging
 import re
-from datetime import datetime, timezone
 from urllib.parse import urlparse
 
 import httpx
 from selectolax.parser import HTMLParser
 
+from ainews.ingest import SCRAPER_HEADERS, rank_to_score, utc_today
 from ainews.models import ContentItem, make_id
 
 logger = logging.getLogger(__name__)
-
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ainews/0.1; +https://github.com)"}
 TRENDSHIFT_URL = "https://trendshift.io"
 TRENDSHIFT_HISTORY_URL = "https://trendshift.io/github-trending-repositories"
 
@@ -82,7 +80,7 @@ def _extract_repos_from_html(html: str) -> list[dict]:
 
 async def fetch_github_trending(tags: list[str] | None = None) -> list[ContentItem]:
     """Fetch trending repos from trendshift.io."""
-    async with httpx.AsyncClient(timeout=30, headers=HEADERS) as client:
+    async with httpx.AsyncClient(timeout=30, headers=SCRAPER_HEADERS) as client:
         resp = await client.get(TRENDSHIFT_URL, follow_redirects=True)
         resp.raise_for_status()
 
@@ -100,7 +98,7 @@ async def fetch_github_trending(tags: list[str] | None = None) -> list[ContentIt
             unique_repos.append(repo)
 
     items = []
-    today = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    today = utc_today()
 
     for repo in unique_repos:
         url = f"https://github.com/{repo['full_name']}"
@@ -116,9 +114,7 @@ async def fetch_github_trending(tags: list[str] | None = None) -> list[ContentIt
         summary_parts.append(f"Stars: {stars:,}")
         summary_parts.append(f"Trending rank: #{rank}")
 
-        # Score inversely by rank so #1 has highest score (1.0) for sorting
-        total = len(unique_repos)
-        rank_score = round(1.0 - (rank - 1) / max(total, 1), 4)
+        rank_score = rank_to_score(rank, len(unique_repos))
 
         items.append(
             ContentItem(
@@ -142,7 +138,7 @@ async def fetch_github_trending_history(
     tags: list[str] | None = None,
 ) -> list[ContentItem]:
     """Fetch all-time most-featured trending repos from trendshift.io."""
-    async with httpx.AsyncClient(timeout=30, headers=HEADERS) as client:
+    async with httpx.AsyncClient(timeout=30, headers=SCRAPER_HEADERS) as client:
         resp = await client.get(TRENDSHIFT_HISTORY_URL, follow_redirects=True)
         resp.raise_for_status()
 
@@ -153,7 +149,7 @@ async def fetch_github_trending_history(
         return []
 
     items = []
-    today = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    today = utc_today()
 
     for rank, card in enumerate(cards, 1):
         # Get GitHub URL from link
@@ -187,9 +183,7 @@ async def fetch_github_trending_history(
         if featured_count:
             summary_parts.append(f"Featured on GitHub Trending {featured_count} times")
 
-        # Score inversely by rank so #1 has highest score
-        total_cards = len(cards)
-        rank_score = round(1.0 - (rank - 1) / max(total_cards, 1), 4)
+        rank_score = rank_to_score(rank, len(cards))
 
         items.append(
             ContentItem(

@@ -94,6 +94,16 @@ def _mock_non_rss_ingesters():
             new_callable=AsyncMock,
             return_value=0,
         ),
+        patch(
+            "ainews.ingest.aitmpl_trending.run_aitmpl_trending_ingestion",
+            new_callable=AsyncMock,
+            return_value=0,
+        ),
+        patch(
+            "ainews.ingest.skillssh_trending.run_skillssh_trending_ingestion",
+            new_callable=AsyncMock,
+            return_value=0,
+        ),
         patch("ainews.backfill.sync_source_metadata"),
     ]
 
