@@ -15,7 +15,7 @@
 {% set active_cls = "bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
 {% set inactive_cls = "bg-white dark:bg-neutral-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-neutral-700 hover:border-gray-300 dark:hover:border-neutral-600" %}
 
-<div class="flex gap-2 flex-wrap mb-4">
+<div id="tab-bar" class="flex gap-2 flex-wrap mb-4">
     <a href="/trends?tab=github" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if is_github else inactive_cls }}">GitHub</a>
     <a href="/trends?tab=claude" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'claude' else inactive_cls }}">AI Tools</a>
     <a href="/trends?tab=skillssh" class="px-3 py-1.5 rounded-md text-sm border {{ active_cls if tab == 'skillssh' else inactive_cls }}">Agent Skills</a>
@@ -25,7 +25,7 @@
 {% set active_sub = "bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 border-blue-300 dark:border-blue-700" %}
 {% set inactive_sub = "bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" %}
 {% set gsub = 'history' if tab == 'history' else 'daily' %}
-<div class="flex gap-2 flex-wrap mb-4">
+<div id="github-subtabs" class="flex gap-2 flex-wrap mb-4">
     <a href="/trends?tab=daily" class="px-2.5 py-1 rounded text-xs border {{ active_sub if gsub == 'daily' else inactive_sub }}">Daily</a>
     <a href="/trends?tab=history" class="px-2.5 py-1 rounded text-xs border {{ active_sub if gsub == 'history' else inactive_sub }}">History</a>
 </div>
@@ -33,7 +33,7 @@
 {% set active_sub = "bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 border-purple-300 dark:border-purple-700" %}
 {% set inactive_sub = "bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" %}
 {% set csub = claude_type|default('all') %}
-<div class="flex gap-2 flex-wrap mb-4">
+<div id="claude-subtabs" class="flex gap-2 flex-wrap mb-4">
     <a href="/trends?tab=claude&type=all" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'all' else inactive_sub }}">All</a>
     <a href="/trends?tab=claude&type=skills" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'skills' else inactive_sub }}">Skills</a>
     <a href="/trends?tab=claude&type=agents" class="px-2.5 py-1 rounded text-xs border {{ active_sub if csub == 'agents' else inactive_sub }}">Agents</a>
@@ -46,7 +46,7 @@
 {% set active_sub = "bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-400 border-emerald-300 dark:border-emerald-700" %}
 {% set inactive_sub = "bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-400 border-gray-200 dark:border-neutral-700" %}
 {% set ssub = skillssh_type|default('all') %}
-<div class="flex gap-2 flex-wrap mb-4">
+<div id="skillssh-subtabs" class="flex gap-2 flex-wrap mb-4">
     <a href="/trends?tab=skillssh&type=all" class="px-2.5 py-1 rounded text-xs border {{ active_sub if ssub == 'all' else inactive_sub }}">All Time</a>
     <a href="/trends?tab=skillssh&type=trending" class="px-2.5 py-1 rounded text-xs border {{ active_sub if ssub == 'trending' else inactive_sub }}">Trending (24h)</a>
     <a href="/trends?tab=skillssh&type=hot" class="px-2.5 py-1 rounded text-xs border {{ active_sub if ssub == 'hot' else inactive_sub }}">Hot</a>
