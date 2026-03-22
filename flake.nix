@@ -20,6 +20,7 @@
             packages = [
               pkgs.python312
               pkgs.uv
+              pkgs.nodejs_22
               pkgs.docker-compose
               unstable.supabase-cli
             ];
