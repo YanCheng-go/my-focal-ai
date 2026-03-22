@@ -10,6 +10,9 @@ from ainews.storage.db import get_backend
 
 logger = logging.getLogger(__name__)
 
+# Source types subject to event-based retention (pruned by event date, not fetch date)
+_EVENT_SOURCE_TYPES = {"events", "luma"}
+
 
 def _parse_iso(value: str) -> datetime | None:
     """Parse an ISO 8601 datetime string, returning None on failure."""
@@ -206,9 +209,6 @@ _TRENDING_SOURCE_TYPES = {
     "skillssh_hot",
     "skillssh_official",
 }
-
-# Source types subject to event-based retention (pruned by event date, not fetch date)
-_EVENT_SOURCE_TYPES = {"events", "luma"}
 
 # Hidden from main dashboard — shown on trends page or events page instead.
 HIDDEN_SOURCE_TYPES = sorted({"events", "luma"} | _TRENDING_SOURCE_TYPES)
