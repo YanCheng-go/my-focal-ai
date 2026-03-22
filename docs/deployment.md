@@ -91,7 +91,7 @@ New users get a pre-defined source list but **no pre-fetched content** — items
 |------|-------|--------|-------------|
 | Feeds | `/` | `index.html` | Main feed with filters, search, pagination |
 | Leaderboard | `/leaderboard` | `leaderboard.html` | AI benchmark and ranking sites |
-| Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs). Past events auto-removed after 7 days. |
+| Events | `/events` | `events.html` | Event calendars, Luma, tech events (3 tabs). Past events auto-removed per `AINEWS_EVENT_RETENTION_DAYS`. |
 | Trends | `/trends` | `trends.html` | GitHub trending repos — daily + history (2 tabs) |
 | CCC | `/ccc` | `ccc.html` | Claude Code Changelogs |
 | About | `/about` | `about.html` | About page |
