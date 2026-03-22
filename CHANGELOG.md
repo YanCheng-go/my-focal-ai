@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.8.0 — 2026-03-22
+
+### Features
+
+- **aitmpl.com AI tools trending** — New scraper for aitmpl.com trending AI tools with snapshot support (#186)
+- **skills.sh agent skills trending** — New scraper for skills.sh agent skills with audit badges (#186)
+- **Event retention** — Configurable retention period for scraped events (#185)
+- **RSSHub CI support** — RSSHub service container available in CI workflows (#185)
+- **README badges** — CI status, Python version, license, and Ruff code style badges (#191)
+
+### Fixes
+
+- **Trendshift.io CSS selectors** — Updated scraper selectors after their UI migration (#189)
+- **New-item detection** — Prefer `fetched_at` over `published_at` for accurate new-item indicators (#184)
+- **Card badge counts** — Fix badge count and highlighting in online mode (#183)
+- **Visual regression CI** — Fix flaky exit code in visual-regression workflow (#187)
+
+### Infrastructure
+
+- **Consolidate Claude config** — Moved project rules, hooks, and memory to global `~/.claude/` (#190)
+- **Module map extracted** — Moved module map from architecture.md to dedicated `docs/module-map.md` (#190)
+- **Data retention** — Limit `data.json` size with configurable retention (#182)
+
 ## v0.7.1 — 2026-03-21
 
 ### Fixes
