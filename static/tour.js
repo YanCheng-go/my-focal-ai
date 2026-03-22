@@ -92,6 +92,7 @@
 
   // ---- Tour engine ----
 
+  var HIGHLIGHT_PROPS = ['position', 'zIndex', 'boxShadow', 'borderRadius'];
   var overlay, tooltip, currentStep;
 
   function resolveTarget(step) {
@@ -157,12 +158,19 @@
 
     // Brief delay for scroll to settle
     setTimeout(function () {
-      // Highlight ring on target
-      target.style.position = target.style.position || 'relative';
+      // Save original styles on the element so each target retains its own backup
       target.setAttribute('data-tour-active', 'true');
+      target.setAttribute('data-tour-styles', JSON.stringify(
+        HIGHLIGHT_PROPS.reduce(function (o, p) { o[p] = target.style[p]; return o; }, {})
+      ));
+
+      // Highlight ring on target
+      if (!target.style.position || target.style.position === 'static') {
+        target.style.position = 'relative';
+      }
       target.style.zIndex = '1001';
       target.style.boxShadow = '0 0 0 4px rgba(59,130,246,0.5), 0 0 0 8px rgba(59,130,246,0.15)';
-      target.style.borderRadius = target.style.borderRadius || '8px';
+      if (!target.style.borderRadius) target.style.borderRadius = '8px';
 
       // Build tooltip content
       var stepLabel = (index + 1) + ' / ' + STEPS.length;
@@ -228,14 +236,17 @@
 
       tooltip.style.display = 'block';
       positionTooltip(target, step.position);
+      nextBtn.focus();
     }, 200);
   }
 
   function clearHighlight(el) {
     if (!el) return;
+    var raw = el.getAttribute('data-tour-styles');
+    var orig = raw ? JSON.parse(raw) : {};
+    HIGHLIGHT_PROPS.forEach(function (p) { el.style[p] = orig[p] || ''; });
     el.removeAttribute('data-tour-active');
-    el.style.zIndex = '';
-    el.style.boxShadow = '';
+    el.removeAttribute('data-tour-styles');
   }
 
   function createOverlay() {
@@ -253,6 +264,8 @@
 
     tooltip = createElement('div', {
       id: 'tour-tooltip',
+      role: 'dialog',
+      'aria-label': 'Onboarding tour',
       style: {
         position: 'absolute',
         zIndex: '1002',
@@ -274,18 +287,27 @@
 
     document.body.appendChild(overlay);
     document.body.appendChild(tooltip);
+
+    // Escape key closes the tour
+    document.addEventListener('keydown', handleKeyDown);
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === 'Escape') endTour();
   }
 
   function endTour() {
-    // Clean up any highlighted element
-    var active = document.querySelector('[data-tour-active]');
-    clearHighlight(active);
+    // Clean up all highlighted elements
+    var actives = document.querySelectorAll('[data-tour-active]');
+    actives.forEach(function (el) { clearHighlight(el); });
 
     // Close mobile menu if we opened it during the tour
     var mobile = document.getElementById('nav-links-mobile');
     if (mobile && !mobile.classList.contains('hidden')) {
       window.toggleMobileMenu();
     }
+
+    document.removeEventListener('keydown', handleKeyDown);
 
     if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
     if (tooltip && tooltip.parentNode) tooltip.parentNode.removeChild(tooltip);
