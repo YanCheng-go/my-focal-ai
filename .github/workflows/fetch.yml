@@ -11,18 +11,18 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    services:
-      rsshub:
-        image: diygod/rsshub:2026-03-20
-        ports:
-          - 1200:1200
-        options: >-
-          --health-cmd "wget -qO- http://localhost:1200 || exit 1"
-          --health-interval 5s
-          --health-timeout 3s
-          --health-retries 10
     steps:
       - uses: actions/checkout@v6
+
+      # Run RSSHub as a regular container so failure doesn't abort the job.
+      # Non-RSS sources (trending scrapers, events) still run without it.
+      - name: Start RSSHub
+        continue-on-error: true
+        run: |
+          docker run -d --name rsshub -p 1200:1200 diygod/rsshub:latest
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:1200 > /dev/null && break || sleep 2
+          done
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
