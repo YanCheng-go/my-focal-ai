@@ -32,8 +32,11 @@ def _extract_initial_skills(html: str) -> list[dict]:
     if idx < 0:
         return []
 
-    # Skip past 'initialSkills\\":'
-    rest = html[idx + 16 :]
+    # Find the opening bracket after 'initialSkills\\":'
+    bracket_start = html.find("[", idx)
+    if bracket_start < 0:
+        return []
+    rest = html[bracket_start:]
 
     # Track bracket depth to find the matching ]
     depth = 0
@@ -108,6 +111,8 @@ def _extract_official_owners(html: str) -> list[dict]:
         return []
 
 
+# Fragile: assumes field order rank→source→skillId→name in RSC payload.
+# If skills.sh reorders fields, these regexes will silently miss entries.
 _RE_ENTRY = re.compile(
     r'\{\\"rank\\":(\d+),\\"source\\":\\"([^\\]+)\\",'
     r'\\"skillId\\":\\"([^\\]+)\\",\\"name\\":\\"([^\\]+)\\"'

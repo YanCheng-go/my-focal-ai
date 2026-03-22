@@ -74,8 +74,7 @@ async def fetch_aitmpl_trending(tags: list[str] | None = None) -> list[ContentIt
     async with httpx.AsyncClient(timeout=30, headers=SCRAPER_HEADERS) as client:
         resp = await client.get(AITMPL_TRENDING_URL, follow_redirects=True)
         resp.raise_for_status()
-
-    data = resp.json()
+        data = resp.json()
     trending = data.get("trending", {})
     today = utc_today()
     default_tags = tags or DEFAULT_TAGS

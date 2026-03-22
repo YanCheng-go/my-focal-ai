@@ -127,10 +127,21 @@ The LLM responds with JSON:
 
 ## Configuration
 
-Scoring-specific env vars: `AINEWS_OLLAMA_MODEL`, `AINEWS_OLLAMA_BASE_URL`, `AINEWS_SCORING`, `ANTHROPIC_API_KEY`. The Claude API model is hardcoded in `claude_scorer.py`.
+### Local (Ollama)
 
-See [development.md § Configuration](development.md#configuration) for the full variable table with defaults.
+| Setting | Default | Env var |
+|---------|---------|---------|
+| Model | qwen3:4b | `AINEWS_OLLAMA_MODEL` |
+| Ollama URL | http://localhost:11434 | `AINEWS_OLLAMA_BASE_URL` |
+| Fetch interval | 30 min | `AINEWS_FETCH_INTERVAL_MINUTES` |
+
+### Cloud (Claude API)
+
+| Setting | Default | Env var |
+|---------|---------|---------|
+| API key | (none) | `ANTHROPIC_API_KEY` |
+| Model | claude-sonnet-4-20250514 | (hardcoded in `claude_scorer.py`) |
 
 ---
 
-*Last updated: 2026-03-22*
+*Last updated: 2026-03-15*

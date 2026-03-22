@@ -22,7 +22,6 @@ class Settings(BaseSettings):
     supabase_key: str = ""
     supabase_service_key: str = ""
     retention_days: int = 30  # Delete items older than this from the local DB (0 = keep forever)
-    event_retention_days: int = 7  # Remove events/luma items this many days after event date
     export_hours: int = 168  # Export window for data.json (default: 7 days = 168 hours)
     host: str = "0.0.0.0"
     port: int = 8000

@@ -10,9 +10,6 @@ from ainews.storage.db import get_backend
 
 logger = logging.getLogger(__name__)
 
-# Source types subject to event-based retention (pruned by event date, not fetch date)
-_EVENT_SOURCE_TYPES = {"events", "luma"}
-
 
 def _parse_iso(value: str) -> datetime | None:
     """Parse an ISO 8601 datetime string, returning None on failure."""
@@ -80,16 +77,11 @@ def export_items(
     # stale items must not be re-added from the previous export.
     seen_urls = {item.url for item in items}
     old_items = _load_existing_items(output_path, since)
-    event_cutoff = datetime.now(timezone.utc) - timedelta(days=settings.event_retention_days)
     old_kept = []
     for old in old_items:
         old_url = old.get("url", "")
         old_stype = old.get("source_type", "")
         if old_url and old_url not in seen_urls and old_stype not in _TRENDING_SOURCE_TYPES:
-            if old_stype in _EVENT_SOURCE_TYPES:
-                pub = _parse_iso(old.get("published_at", ""))
-                if pub and pub < event_cutoff:
-                    continue
             seen_urls.add(old_url)
             old_kept.append(old)
 
@@ -202,7 +194,7 @@ _TRENDING_SOURCE_TYPES = {
 }
 
 # Hidden from main dashboard — shown on trends page or events page instead.
-HIDDEN_SOURCE_TYPES = sorted(_EVENT_SOURCE_TYPES | _TRENDING_SOURCE_TYPES)
+HIDDEN_SOURCE_TYPES = sorted({"events", "luma"} | _TRENDING_SOURCE_TYPES)
 HIDDEN_SOURCES = ["Claude Code Releases"]
 
 # Source type definitions for the admin UI (fields, colors, labels)
