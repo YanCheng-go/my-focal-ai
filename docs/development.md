@@ -27,6 +27,8 @@ packages = with pkgs; [
 
 After editing `flake.nix`, run `direnv allow` to pick up the changes. Commit the updated `flake.lock` alongside `flake.nix`.
 
+**GitHub CLI auth:** `.envrc` exports `GH_TOKEN` for `gh` commands. Update the `--user` flag in `.envrc` to match your GitHub account name.
+
 ### Option B: Manual setup
 
 Install these yourself:

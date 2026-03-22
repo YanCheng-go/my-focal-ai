@@ -57,9 +57,9 @@ Don't assume DB `source_type` = fetch mechanism. It's the display type.
 
 ## Architecture
 
-See `docs/architecture.md` for the full architecture diagram, data flow, and module map.
+See `docs/architecture.md` for the full architecture diagram, data flow, and design decisions.
 
-Pipeline: **ingest -> dedup -> store -> score -> serve**.
+Pipeline: **ingest -> dedup -> store -> score -> serve**. See `docs/module-map.md` for the full module map.
 
 ## Config
 
