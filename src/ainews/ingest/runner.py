@@ -196,8 +196,16 @@ async def run_ingestion(backend, config_dir=None, sources_config=None):
     if dupes:
         logger.info(f"Marked {dupes} YouTube Shorts as duplicates")
 
-    # Prune items older than retention period
+    # Prune past events/luma items after configured retention period
     settings = Settings()
+    if settings.event_retention_days > 0:
+        event_cutoff = datetime.now(timezone.utc) - timedelta(days=settings.event_retention_days)
+        past_events = backend.delete_past_events(event_cutoff)
+        if past_events:
+            days = settings.event_retention_days
+            logger.info(f"Pruned {past_events} past events older than {days} days")
+
+    # Prune items older than retention period
     if settings.retention_days > 0:
         cutoff = datetime.now(timezone.utc) - timedelta(days=settings.retention_days)
         deleted = backend.delete_old_items(cutoff)

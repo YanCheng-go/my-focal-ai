@@ -67,11 +67,7 @@ All settings via env vars prefixed `AINEWS_`. See `docs/development.md § Config
 
 ## Deployment Modes
 
-| Mode | Database | Auth | Fetch | Served by |
-|------|----------|------|-------|-----------|
-| Local (`uv run ainews serve`) | SQLite | Optional (`AINEWS_ADMIN_PASSWORD`) | APScheduler + Ollama | FastAPI |
-| Online public | data.json (static) | None (read-only) | GitHub Actions + Claude API | Vercel static |
-| Online login | Supabase Postgres | Supabase Auth (email/password) | User-triggered (serverless) | Vercel static + serverless |
+Three modes: Local (SQLite + Ollama + FastAPI), Online Public (Vercel + GitHub Actions), Online Login (Supabase + Vercel). See `docs/deployment.md` for full details.
 
 ## Documentation Rules
 

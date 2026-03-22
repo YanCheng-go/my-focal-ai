@@ -99,18 +99,21 @@ All settings are via environment variables prefixed `AINEWS_`. See `src/ainews/c
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `AINEWS_OLLAMA_MODEL` | `qwen3:4b` | Ollama model for local scoring |
+| `AINEWS_OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama server URL |
 | `AINEWS_SCORING` | `true` | Set `false` to disable scoring |
+| `AINEWS_SHOW_SCORES` | `false` | Show "Top Only" and "By Score" filters in UI |
 | `AINEWS_ADMIN_PASSWORD` | _(empty)_ | When set, admin routes require login |
-| `AINEWS_FETCH_INTERVAL_MINUTES` | `120` | Auto-fetch interval |
-| `AINEWS_DB_PATH` | `data/news.db` | SQLite database path |
+| `AINEWS_FETCH_INTERVAL_MINUTES` | `30` | Auto-fetch interval (minutes) |
+| `AINEWS_DB_PATH` | `data/ainews.db` | SQLite database path |
+| `AINEWS_RSSHUB_BASE` | `http://localhost:1200` | RSSHub instance URL |
 | `AINEWS_HOST` | `0.0.0.0` | Server bind address |
 | `AINEWS_PORT` | `8000` | Server port |
 | `AINEWS_SUPABASE_URL` | — | Supabase project URL (online login mode) |
 | `AINEWS_SUPABASE_KEY` | — | Supabase anon key (online login mode) |
 | `AINEWS_SUPABASE_SERVICE_KEY` | — | Supabase service role key (server-side only) |
 | `AINEWS_RETENTION_DAYS` | `30` | Delete DB items older than N days (0 = keep forever) |
+| `AINEWS_EVENT_RETENTION_DAYS` | `7` | Remove events/luma items N days after event date (0 = use general retention) |
 | `AINEWS_EXPORT_HOURS` | `168` | Export window for data.json (168 = 7 days) |
-| `AINEWS_CORS_ORIGIN` | — | Restrict cross-origin requests (serverless) |
 
 ## Workflow
 
@@ -141,4 +144,4 @@ See [sources.md](sources.md) for detailed source type reference and configuratio
 
 ---
 
-*Last updated: 2026-03-21*
+*Last updated: 2026-03-22*

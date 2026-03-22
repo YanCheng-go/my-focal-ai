@@ -337,3 +337,77 @@ class TestDeleteOldItems:
         cutoff = datetime(2025, 6, 1, tzinfo=timezone.utc)
         deleted = db.delete_old_items(cutoff)
         assert deleted == 0
+
+
+# --- Delete past events ---
+
+
+class TestDeletePastEvents:
+    def test_deletes_past_events_keeps_future(self, db):
+        past = datetime(2025, 1, 1, tzinfo=timezone.utc)
+        future = datetime(2025, 12, 1, tzinfo=timezone.utc)
+        db.upsert_item(
+            _item(id="past_event", url="https://past.com", source_type="events", published_at=past)
+        )
+        db.upsert_item(
+            _item(
+                id="future_event",
+                url="https://future.com",
+                source_type="events",
+                published_at=future,
+            )
+        )
+        db.commit()
+        cutoff = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        deleted = db.delete_past_events(cutoff)
+        assert deleted == 1
+        items = db.get_items()
+        assert len(items) == 1
+        assert items[0].id == "future_event"
+
+    def test_deletes_luma_events(self, db):
+        past = datetime(2025, 1, 1, tzinfo=timezone.utc)
+        db.upsert_item(
+            _item(
+                id="past_luma",
+                url="https://luma.com/past",
+                source_type="luma",
+                published_at=past,
+            )
+        )
+        db.commit()
+        cutoff = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        deleted = db.delete_past_events(cutoff)
+        assert deleted == 1
+
+    def test_ignores_non_event_items(self, db):
+        past = datetime(2025, 1, 1, tzinfo=timezone.utc)
+        db.upsert_item(
+            _item(id="rss_old", url="https://rss.com/old", source_type="rss", published_at=past)
+        )
+        db.commit()
+        cutoff = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        deleted = db.delete_past_events(cutoff)
+        assert deleted == 0
+        assert db.count_items() == 1
+
+    def test_cleans_up_tags(self, db):
+        past = datetime(2025, 1, 1, tzinfo=timezone.utc)
+        db.upsert_item(
+            _item(
+                id="tagged_event",
+                url="https://event.com/tagged",
+                source_type="events",
+                tags=["unique_tag"],
+                published_at=past,
+            )
+        )
+        db.commit()
+        cutoff = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        db.delete_past_events(cutoff)
+        assert "unique_tag" not in db.get_all_tags()
+
+    def test_empty_db(self, db):
+        cutoff = datetime(2025, 6, 1, tzinfo=timezone.utc)
+        deleted = db.delete_past_events(cutoff)
+        assert deleted == 0

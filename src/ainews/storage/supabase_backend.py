@@ -339,6 +339,48 @@ class SupabaseBackend:
         _exec(sq)
         return deleted
 
+    def delete_old_items(self, before: datetime) -> int:
+        """Delete items older than the given datetime. Returns deleted count."""
+        cutoff = before.isoformat()
+        q = self._client.table("items").select("*", count="exact").lt("fetched_at", cutoff)
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        count_result = _exec(q)
+        deleted = count_result.count or 0
+
+        dq = self._client.table("items").delete().lt("fetched_at", cutoff)
+        if self._user_id:
+            dq = dq.eq("user_id", self._user_id)
+        _exec(dq)
+        return deleted
+
+    def delete_past_events(self, before: datetime) -> int:
+        """Delete event/luma items whose published_at is before the cutoff."""
+        source_types = ("events", "luma")
+        q = (
+            self._client.table("items")
+            .select("*", count="exact")
+            .in_("source_type", list(source_types))
+            .not_.is_("published_at", "null")
+            .lt("published_at", before.isoformat())
+        )
+        if self._user_id:
+            q = q.eq("user_id", self._user_id)
+        count_result = _exec(q)
+        deleted = count_result.count or 0
+
+        dq = (
+            self._client.table("items")
+            .delete()
+            .in_("source_type", list(source_types))
+            .not_.is_("published_at", "null")
+            .lt("published_at", before.isoformat())
+        )
+        if self._user_id:
+            dq = dq.eq("user_id", self._user_id)
+        _exec(dq)
+        return deleted
+
     def get_items_for_backfill(self) -> list[dict]:
         q = self._client.table("items").select("id, source_name, source_type, tags")
         if self._user_id:

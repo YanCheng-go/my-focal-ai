@@ -114,3 +114,7 @@ class DbBackend(Protocol):
     def delete_old_items(self, before: datetime) -> int:
         """Delete items older than the given datetime. Returns deleted count."""
         ...
+
+    def delete_past_events(self, before: datetime) -> int:
+        """Delete event/luma items whose published_at is before the cutoff."""
+        ...

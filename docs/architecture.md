@@ -199,7 +199,7 @@ The static dashboard reads `data.json`, a snapshot exported from the DB:
 }
 ```
 
-Items older than the export window are pruned on each export. The local SQLite DB is also pruned after each fetch cycle. Both windows are configurable — see [Configuration](development.md#configuration).
+Items older than the export window are pruned on each export. The local SQLite DB is also pruned after each fetch cycle. Both windows are configurable — see [Configuration](development.md#configuration). Event and Luma items have a shorter retention: they are removed after the event date plus `AINEWS_EVENT_RETENTION_DAYS` (default 7).
 
 On export, items from the local DB are merged with items already in `data.json` (deduped by ID and URL) so cloud-fetched items survive when the local pipeline overwrites the file.
 
@@ -253,7 +253,7 @@ Each item's ID is `sha256(url)[:16]` in single-tenant mode (local/public). In mu
 The `upsert_item` function uses `COALESCE(excluded.score, items.score)` — if a re-ingested item has `score=None`, the existing score is kept. Scores are only overwritten when the scorer explicitly sets them.
 
 ### Sorting: published_at with Luma exception
-The dashboard sorts by `published_at` (actual content date) for chronological ordering across sources. Luma events are pushed to the bottom since their `published_at` is the event date (could be weeks in the future). Falls back to `fetched_at` for items without a publish date.
+The dashboard sorts by `published_at` (actual content date) for chronological ordering across sources. Luma events are pushed to the bottom since their `published_at` is the event date (could be weeks in the future). Falls back to `fetched_at` for items without a publish date. Past events (both `events` and `luma` source types) are automatically pruned after the event date (`AINEWS_EVENT_RETENTION_DAYS`, default 7).
 
 ### YouTube Shorts dedup
 After ingestion, `mark_youtube_shorts_duplicates()` finds Shorts that share a title (case-insensitive) with a full video from the same channel. The Short is marked with `is_duplicate_of` pointing to the full video. The `get_items()` query filters these out via `WHERE is_duplicate_of IS NULL`.
@@ -344,7 +344,7 @@ templates/
 
 .github/workflows/
 ├── ci.yml             Lint + test + static page check on push/PR
-├── fetch.yml          Cron fetch + export + commit (for Vercel)
+├── fetch.yml          Cron fetch + export + commit (for Vercel); runs RSSHub service container
 ├── export-static.yml  Re-export config.json when sources.yml changes
 ├── codeql.yml         CodeQL static analysis (injection, XSS) on PR + weekly
 ├── migrations.yml     Supabase migration push on merge

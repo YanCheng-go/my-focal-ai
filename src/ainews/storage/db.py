@@ -415,6 +415,29 @@ class SqliteBackend:
         self._conn.commit()
         return cursor.rowcount
 
+    def delete_past_events(
+        self, before: datetime, source_types: tuple[str, ...] = ("events", "luma")
+    ) -> int:
+        """Delete event items whose published_at is older than the cutoff."""
+        cutoff = before.isoformat()
+        placeholders = ",".join("?" * len(source_types))
+        self._conn.execute(
+            f"DELETE FROM item_tags WHERE item_id IN ("
+            f"  SELECT id FROM items"
+            f"  WHERE source_type IN ({placeholders})"
+            f"  AND published_at IS NOT NULL AND published_at < ?"
+            f")",
+            (*source_types, cutoff),
+        )
+        cursor = self._conn.execute(
+            f"DELETE FROM items"
+            f" WHERE source_type IN ({placeholders})"
+            f" AND published_at IS NOT NULL AND published_at < ?",
+            (*source_types, cutoff),
+        )
+        self._conn.commit()
+        return cursor.rowcount
+
 
 def _row_to_item(row) -> ContentItem:
     d = dict(row)
