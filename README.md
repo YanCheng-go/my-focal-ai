@@ -37,7 +37,8 @@ See [docs/deployment.md](docs/deployment.md) for setup instructions.
 
 - [docs/deployment.md](docs/deployment.md) — deployment modes, setup, configuration
 - [docs/development.md](docs/development.md) — dev setup, project structure, commands, conventions
-- [docs/architecture.md](docs/architecture.md) — data flow, design decisions, module map
+- [docs/architecture.md](docs/architecture.md) — data flow, design decisions
+- [docs/module-map.md](docs/module-map.md) — file-by-file module map
 - [docs/sources.md](docs/sources.md) — how to configure and add sources
 - [docs/scoring.md](docs/scoring.md) — scoring principles, tiers, LLM prompt
 

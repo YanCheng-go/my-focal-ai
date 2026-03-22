@@ -59,7 +59,7 @@ Don't assume DB `source_type` = fetch mechanism. It's the display type.
 
 See `docs/architecture.md` for the full architecture diagram, data flow, and module map.
 
-Pipeline: **ingest -> dedup -> store -> score -> serve**. See `.claude/references/module-map.md` for the full module map.
+Pipeline: **ingest -> dedup -> store -> score -> serve**.
 
 ## Config
 

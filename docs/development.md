@@ -55,7 +55,7 @@ docker/                  Docker Compose for RSSHub
 supabase/migrations/     Supabase SQL migrations
 ```
 
-See [architecture.md § Module Map](architecture.md#module-map) for the full file-by-file listing.
+See [module-map.md](module-map.md) for the full file-by-file listing.
 
 ## Commands
 

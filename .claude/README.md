@@ -8,5 +8,4 @@ Most Claude Code configuration lives in the **global** `~/.claude/` folder:
 
 This project's `.claude/` only contains:
 
-- `references/module-map.md` — codebase module reference
 - `settings.local.json` — local permission allowlist (gitignored)
