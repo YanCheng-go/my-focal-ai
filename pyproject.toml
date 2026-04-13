@@ -28,7 +28,7 @@ supabase = [
 ]
 dev = [
     "pytest>=8.0",
-    "pytest-cov>=7.0",
+    "pytest-cov>=7.1.0",
     "ruff>=0.9",
 ]
 
