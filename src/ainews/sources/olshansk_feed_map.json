@@ -19,17 +19,9 @@
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_changelog_claude_code.xml",
     "name": "Claude Code Changelog"
   },
-  "hamel.dev": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_hamel.xml",
-    "name": "Hamel Husain's Blog"
-  },
   "ollama.com/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml",
     "name": "Ollama Blog"
-  },
-  "openai.com/news/research": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_openai_research.xml",
-    "name": "OpenAI Research"
   },
   "thinkingmachines.ai/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_thinkingmachines.xml",
