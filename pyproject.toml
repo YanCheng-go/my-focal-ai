@@ -29,7 +29,7 @@ supabase = [
 dev = [
     "pytest>=8.0",
     "pytest-cov>=7.0",
-    "ruff>=0.9",
+    "ruff>=0.15.10",
 ]
 
 [project.scripts]
