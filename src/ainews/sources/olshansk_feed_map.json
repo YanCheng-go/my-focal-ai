@@ -3,6 +3,10 @@
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_chanderramesh.xml",
     "name": "Chander Ramesh's Writing"
   },
+  "cohere.com/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cohere.xml",
+    "name": "Cohere Blog"
+  },
   "cursor.com/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml",
     "name": "Cursor Blog"
@@ -15,25 +19,25 @@
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_google_ai.xml",
     "name": "Google Developers Blog - AI"
   },
-  "github.com/anthropics/claude-code/blob/main/CHANGELOG.md": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_changelog_claude_code.xml",
-    "name": "Claude Code Changelog"
+  "groq.com/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_groq.xml",
+    "name": "Groq Blog"
   },
-  "hamel.dev": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_hamel.xml",
-    "name": "Hamel Husain's Blog"
+  "mistral.ai/news": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_mistral.xml",
+    "name": "Mistral AI News"
   },
   "ollama.com/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml",
     "name": "Ollama Blog"
   },
-  "openai.com/news/research": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_openai_research.xml",
-    "name": "OpenAI Research"
-  },
   "thinkingmachines.ai/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_thinkingmachines.xml",
     "name": "Thinking Machines Lab"
+  },
+  "weaviate.io/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_weaviate.xml",
+    "name": "Weaviate Blog"
   },
   "windsurf.com/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_windsurf_blog.xml",
@@ -54,6 +58,14 @@
   "www.paulgraham.com/articles.html": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_paulgraham.xml",
     "name": "Paul Graham's Articles"
+  },
+  "www.perplexity.ai/hub": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_perplexity_hub.xml",
+    "name": "Perplexity Hub"
+  },
+  "www.pinecone.io/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_pinecone.xml",
+    "name": "Pinecone Blog"
   },
   "www.surgehq.ai/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_blogsurgeai.xml",
