@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-09T15:24:32.676905+00:00",
+  "exported_at": "2026-06-09T17:09:58.240715+00:00",
   "period_hours": 168,
   "total": 3000,
   "all_tags": [
@@ -17243,26 +17243,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1a7d3e58ce2cde91",
-      "url": "https://www.youtube.com/watch?v=YYH0DMQr30A",
-      "title": "Task Fidelity Scaling Laws \u2014 Kobie Crawdord, Snorkel",
-      "summary": "Same model. Same compute. Same number of tasks. Fine-tuning on low quality tasks improved the base model by 1%. Fine-tuning on high quality tasks improved it by 6%. Kobe Crawford from Snorkel ran that experiment on TerminalBench style agentic tasks and got a 5x difference in training uplift from task quality alone.\n\nThe talk breaks down what separates the two buckets. Accepted tasks averaged twice as many tool calls, lower pass rates, and more output tokens. Genuinely harder problems. More importantly, their failure modes were cleaner: when a model failed on a well specified task, it failed for a real reason. Rejected tasks tended to fail because of mismatches between what was requested and what the tests actually checked, or because the task never gave the model the context needed to satisfy implicit dependencies. Ambiguous specs do not produce harder tasks. They produce noise.\n\nSpeaker info:\n- https://www.linkedin.com/in/kobie-crawford\n- https://snorkel.ai/author/kobie-crawford/",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-02T17:00:39Z",
-      "fetched_at": "2026-06-02T17:49:59.818091Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8f70a4f77c3f29cd",
       "url": "https://arxiv.org/abs/2606.08563",
       "title": "Physics-Guided Dual Decoding and Spectral Supervision for Global 3D Hydrometeor Prediction",
@@ -17300,26 +17280,6 @@
       "author": "Isha Salian",
       "published_at": "2026-06-03T15:00:57Z",
       "fetched_at": "2026-06-03T15:52:44.802691Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2d890eab5460e28a",
-      "url": "https://www.youtube.com/watch?v=KA5kPbdkK2E",
-      "title": "How Lovable self-improves every hour \u2014 Benjamin Verbeek, Lovable",
-      "summary": "Within the first hour of launching the vent tool, the agent filed 20 complaints about a silent file copy failure. The team checked: the tool worked fine. What the agent had caught was that filenames with a space in them silently failed to copy, a bug that never surfaced in logs. Benjamin Verbeek from Lovable built it a channel to complain directly to Slack when platform limitations block it, and the first thing it did was find a real production bug.\n\nAt 200,000 projects per day, Lovable runs two continuous improvement loops. The first detects sessions where a nontechnical user got stuck and then unblocked, clusters similar cases, and injects that context upstream; a holdout group measures actual project completion rates to prune stale entries when models or features change. The vent loop runs in parallel: the agent flags missing tools, broken platform behavior, and confusing docs as it works. Vent volume spikes turned out to be a reliable incident detector. A second agent now monitors the channel, deduplicates reports, and opens PRs automatically.\n\nSpeaker info:\n- https://se.linkedin.com/in/benjamin-verbeek\n- https://x.com/benjaminvrbk/",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-02T16:00:33Z",
-      "fetched_at": "2026-06-02T17:49:59.818110Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -36816,27 +36776,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c265f4d09da60a84",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "summary": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-fig\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Introducing the Services Track and Partner Hub of the Claude Partner Network\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Almost every large enterprise is moving AI into production, and many have discovered something important: a successful pilot is not the same as a system a business can run on. The real work\u2014and the real opportunity\u2014is in the integration, the evaluation, and the way people's work evolves. That's why the companies getting AI integration right are doing it with partners who have done it before.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">In March, we launched the Claude Partner Network\u2014a program, backed by a <a href=\"https://www.anthropic.com/news/claude-partner-network\" rel=\"noopener noreferrer\" target=\"_blank\">$100 million investment</a> in partner training, technical support, and shared marketing, for the firms that help enterprises put Claude into production. Since then, more than 40,000 firms have applied to join and more than 10,000 consultants have earned a Claude certification\u2014a credential, held by an individual, that signals they've been trained to build and deploy Claude in production.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The largest professional-services firms in the world are building their own practices around Claude \u2014 putting it into production for clients while getting it into the hands of their own people. <a href=\"https://www.anthropic.com/news/anthropic-accenture-partnership\" rel=\"noopener noreferrer\" target=\"_blank\">Accenture</a> is training 30,000 professionals on the model. <a href=\"https://www.anthropic.com/news/cognizant-partnership\" rel=\"noopener noreferrer\" target=\"_blank\">Cognizant</a> has rolled Claude out to roughly 350,000 associates. <a href=\"https://www.anthropic.com/news/deloitte-anthropic-partnership\" rel=\"noopener noreferrer\" target=\"_blank\">Deloitte</a> is making it available to 470,000 people across its global network. <a href=\"https://www.anthropic.com/news/anthropic-kpmg\" rel=\"noopener noreferrer\" target=\"_blank\">KPMG</a> is integrating Claude across a workforce of more than 276,000. <a href=\"https://www.anthropic.com/news/anthropic-infosys\">Infosys</a> is building Claude-powered agents for specific industries, and <a href=\"https://www.anthropic.com/news/pwc-expanded-partnership\" rel=\"noopener noreferrer\" target=\"_blank\">PwC</a> is rolling out Claude Code and Cowork starting with its US teams and expanding towards a global workforce in the hundreds of thousands.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Today we\u2019re announcing two things that make this ecosystem easier for customers to navigate. The <strong>Services Track</strong> is a tiered structure that reflects what a firm has actually built and delivered with Claude. The <strong>Claude Partner Hub</strong> is a portal where partners see exactly where they stand against the program's requirements, and customers find the firms most qualified for the scope of their project.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The best partners have firsthand experience with Claude. They use the newest models for their own work before they put it in front of a client. This way, when they tell a customer what it takes, they\u2019re speaking from experience. The Services Track is built to give customers confidence in a firm\u2019s ability to help them bring Claude into their businesses.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"about-the-services-track\"><strong>About the Services Track</strong></h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The Services Track has three tiers, each reflecting how deep a firm's Claude practice runs.</p><ol class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><li><strong>Select: </strong>where partnership begins. At least 10 active certified individuals, at least 2 joint customers deployed in production in the trailing 12 months, and at least 1 public customer story.</li><li><strong>Preferred: </strong>for firms with deeper Claude practices. At least 100 active certified individuals, at least 15 deployed joint customers, and at least 3 public stories.</li><li><strong>Global Premier: </strong>the top tier for firms running the deepest Claude practices. At least 1,000 active certified individuals, at least 100 deployed joint customers across three or more regions, at least 15 public customer stories, and a joint business plan with named executive sponsors.</li></ol><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Every firm is measured against the same requirements, whether it's a ten-person AI-native shop or a global consultancy. Size doesn't lower the bar or raise the tier; a smaller firm climbs by growing its certified bench. And because the ladder counts adoption and enablement work, firms that specialize in getting customers live on Claude can qualify early..</p><ol class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><li><strong>Certified practitioners</strong>: How many of the firm\u2019s people hold a current Anthropic certification and have used Claude in the past 90 days. Certifications belong to individual people, not firms, and are earned through <a href=\"https://anthropic.skilljar.com/claude-certified-architect-foundations-access-request\" rel=\"noopener noreferrer\" target=\"_blank\">Anthropic Partner Academy</a> exams.</li><li><strong>Customers running Claude in production</strong>: How many customers the firm has taken live with Claude.</li><li><strong>Public endorsements of the firm\u2019s work</strong>: How many customers will vouch for the firm\u2019s work in a published customer story.</li></ol><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Every firm's dashboard shows the same numbers we see, and we verify standing every quarter. Detailed requirements for each tier are published at <a href=\"http://claude.com/partners\" rel=\"noopener noreferrer\" target=\"_blank\">claude.com/partners</a>.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"about-the-claude-partner-hub\"><strong>About the Claude Partner Hub</strong></h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The Claude Partner Hub allows each partner to see its own standing against the published requirements, refreshed daily. It\u2019s also where customers looking for Claude expertise find the firms most qualified to help. Every partner\u2019s standing\u2014their tier, certified team, customer deployments, and public references\u2014is visible in the Hub\u2019s public directory, so anyone evaluating partners can see what a firm has built and delivered.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Partners can connect the Partner Hub to Claude through a new <a href=\"https://mcp.eulerapp.com/public/partner-capabilities\">MCP connector</a>, and from there information about the partnership becomes a conversation. For example, ask Claude where your firm stands against the next tier, the status of a registered deal, or how many of your consultants hold an active certification, and act on the answer within Claude.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"what-this-means-for-partners\"><strong>What this means for partners</strong></h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">For firms building a Claude practice, this program is meant to reward real work and to be predictable enough to plan around. Four things hold true for every partner:</p><ul class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><li><strong>You always know where you stand.</strong> A firm can see its standing against the published requirements and exactly what the next tier requires. This information is refreshed daily in the Claude Partner Hub.</li><li><strong>Building a practice and bringing us business are two different things, and we credit them separately.</strong> Tier standing measures the practice a firm has built: certified practitioners, production deployments, and customers willing to vouch for them. Sending new business to Anthropic is rewarded on its own track, through referral credit and deal protection. A firm is never forced to choose between the two.</li><li><strong>The ladder moves on a schedule you can see in advance.</strong> Promotions are processed twice a year, on January 1 and July 1, with an additional review on October 1, 2026 in this first year. A firm moves down only at the annual review on December 31, only if it no longer meets its tier\u2019s published requirements, and only after 90 days\u2019 notice and a chance to close the gap. The narrow exceptions are spelled out in the Program Guide.</li><li><strong>The $100 million we committed in March funds</strong> partner training, dedicated technical support, and shared marketing. Firms that join now also get priority access to new certifications as we introduce them.</li></ul><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"whats-next\"><strong>What\u2019s next</strong></h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Specializations for specific industries and use cases are coming, along with rewards that grow as a partner\u2019s deployments grow. Getting started is free. Firms gain Anthropic Partner Academy access, including certification exams, with tiered partners receiving discounted rates on their first attempt, and new applicants start at Registered, the program\u2019s entry level, with a minimum commitment to 10 certified practitioners. Partnership begins at Select. The requirements are the same for every firm. Learn more at <a href=\"http://claude.com/partners\" rel=\"noopener noreferrer\" target=\"_blank\">claude.com/partners</a>.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><br /></p></div></div></article></div><div class=\"page-wrapper\"></div></article>",
-      "content": "",
-      "source_name": "Anthropic News",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-02T16:00:00Z",
-      "fetched_at": "2026-06-03T14:02:28.428599Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2fa0fd28276965e7",
       "url": "https://arxiv.org/abs/2606.05785",
       "title": "Next-Generation Parallel Decoder for LPDR: Architectural Optimization and Class-Balanced GAN-Augmentation",
@@ -36858,27 +36797,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b531a6249412cc4f",
-      "url": "https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack",
-      "title": "What we learned mapping a year\u2019s worth of AI-enabled cyber threats",
-      "summary": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-cactus\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"What we learned mapping a year\u2019s worth of AI-enabled cyber threats\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/802260d34a0653f23fd4944fae43064df367aa44-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up?</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">In a new report, we seek to answer that question. We examine 832 accounts that were banned for malicious cyber activity between March 2025 and March 2026 and map them onto <a href=\"https://attack.mitre.org/\">MITRE ATT&amp;CK</a>, a longstanding database of the tactics and techniques used by cyberattackers. We published some of these results in Verizon\u2019s <a href=\"https://www.verizon.com/business/resources/reports/dbir/\">2026 Data Breach Investigations Report</a> (DBIR), and are sharing a more detailed analysis here. These 832 cases are just a subset of the total number of accounts banned during this period, but they represent those where we had enough detail to conduct a thorough assessment of the attackers\u2019 techniques.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">There were three main conclusions from our analysis:</p><ol class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><li>Malicious actors are using AI in ways that make them more dangerous<em>. </em>More specifically, threat actors are using AI in the later, more complex stages of their cyber operations.</li><li>Cyberattacks are becoming more autonomous<em>,</em> and the fact that AI can be used to chain together many parts of the attack means that the old ways of differentiating high- from low-risk actors are no longer as effective.</li><li>The MITRE ATT&amp;CK framework does not fully capture the tools and activities that make AI-enabled attackers so dangerous.</li></ol><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Below we provide a summary of each of these conclusions. You can read a longer analysis on our <a href=\"https://red.anthropic.com/2026/attack-navigator/\" rel=\"noopener noreferrer\" target=\"_blank\">Frontier Red Team blog</a>.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"how-ai-makes-attackers-more-dangerous\">How AI makes attackers more dangerous</h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The most common AI-enabled activities in our database related to preparing for a cyberattack, such as writing malware (560 of the 832 accounts we studied, or 67.3%, used AI for this purpose). A smaller number of actors use AI for more complex activities\u2014for example, 54 of the 832 actors (6.5%) used AI to assist with \u201clateral movement,\u201d which involves navigating deep inside a compromised network.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">We found evidence consistent with AI being used to help increase the threat level of attackers. In the first six-month period of our analysis, 33% of actors were classified by our risk-scoring system as medium risk or higher. But by the second six-month period, that share had jumped to 56%\u2014a roughly 1.7-fold increase.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Across the period we studied, attackers\u2019 use of AI shifted from techniques to gain initial access to a system towards activity carried out once they were <em>inside</em> the system. For example, the use of AI for account discovery\u2014identifying valid accounts inside a compromised environment\u2014rose 8.9%, while AI-assisted phishing\u2014a common technique to gain access to a system\u2014fell 8.6%. This suggests that attackers are increasingly applying AI deeper in the attack life cycle.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">These sorts of \u201cpost-compromise\u201d techniques used to be restricted to actors with the technical knowledge to carry them out. Our investigation shows that AI can now be made to perform these activities on behalf of less sophisticated actors.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"why-its-harder-to-assess-an-actors-threat-level\">Why it\u2019s harder to assess an actor\u2019s threat level</h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">How do security teams assess the risk level of a cyberattacker? Traditionally, they\u2019ve used information like how many different techniques they employ and what tools or interfaces they use. But our analysis suggests that these signals no longer paint an accurate picture of the risk level of a given threat actor.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Now that AI can perform highly technical tasks on an actor\u2019s behalf, there\u2019s little correlation between the skill of a threat actor and how many techniques they use: the least-skilled actors in our dataset used about 16 distinct techniques on average, whereas the most skilled used about 20. Likewise, the specific platform used\u2014Claude Code, an API, or a chat interface\u2014also did not correlate with an actor\u2019s risk level.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">What<em> </em>often helps<em> </em>distinguish higher-risk actors is where in the attack life cycle they apply AI. For example, they concentrate their use of AI on more operationally demanding techniques\u2014those that require significant time, oversight, or real-time decision making to carry out\u2014like account discovery, lateral movement, and privilege escalation, rather than just on tasks that allow them to gain initial access to the system.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">But even that signal is already eroding: as discussed in the previous section, those operational techniques are exactly where the broader population is heading as more actors get classified as higher risk. The more durable differentiator is the type of scaffolding attackers build around the model: higher-risk actors design architectures that allow models to chain together discrete stages of a cyberattack and carry them out with minimal human input.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"why-security-frameworks-need-to-change\">Why security frameworks need to change</h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Many of the behaviors that distinguish the highest-risk actors\u2014such as the use of AI to orchestrate steps in the attack chain sequentially, make real-time decisions about what to do next, and execute without human intervention\u2014are not yet included as attacker techniques in the MITRE ATT&amp;CK framework.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Consider the state-sponsored cyber espionage operation we <a href=\"https://www.anthropic.com/news/disrupting-AI-espionage\">disrupted in November 2025</a>. In that case, a malicious actor manipulated Claude Code into attempting to infiltrate targets around the world, with little human intervention. Mapping it against the MITRE ATT&amp;CK framework shows that the actor used 30 techniques across 13 tactics, which was comparable to many medium-risk actors in our dataset. Clearly, focusing on the number of techniques this actor used underplays how dangerous they really were (by contrast, applying our risk-scoring methodology to this attack earns it the maximum risk score of 100).</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">In that attack, the model worked as an autonomous agent: it executed commands, exploited vulnerabilities, stole credentials, and made tactical decisions, only requiring human input at a few key moments. There is no ATT&amp;CK ID for this type of agentic orchestration\u2014yet these are precisely the behaviors we expect to see much more of as AI agents become more capable.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-5 post-section\" id=\"looking-ahead\">Looking ahead</h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The findings from this analysis helped inform the safeguards we build into our models. For example, we\u2019ve developed and deployed cyber safeguards on our most capable models to detect and block some of the activities uncovered here, like developing malware or mass data exfiltration. Following on from our work with Verizon, we\u2019re also in discussions with MITRE about how the ATT&amp;CK framework might evolve to include the AI-enabled behaviors we observed.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Frontier models are rapidly changing the tools both attackers and defenders have at their disposal. We are committed to helping defenders get ahead of these evolving tactics, and to putting the most powerful tools in the hands of defenders first. We\u2019ll continue to share what we learn from <a href=\"https://www.anthropic.com/glasswing\">Project Glasswing</a>, from datasets like the one we gathered here, and from our other cybersecurity activities.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">In our <a href=\"https://red.anthropic.com/2026/attack-navigator/\" rel=\"noopener noreferrer\" target=\"_blank\">Red blog post</a>, we share an interactive visualization of the techniques used by attackers, in order to help defenders stay ahead of AI-enabled threats. </p></div></div></article></div><div class=\"page-wrapper\"></div><section class=\"SubjectNewsletter-module-scss-module__qHNNfa__wrapper\"><div class=\"page-wrapper SubjectNewsletter-module-scss-module__qHNNfa__content\"><div class=\"SubjectNewsletter-module-scss-module__qHNNfa__text-content\"><h2 class=\"headline-2 SubjectNewsletter-module-scss-module__qHNNfa__title\">Subscribe to the Frontier Red Team newsletter</h2><p class=\"body-1 SubjectNewsletter-module-scss-module__qHNNfa__subtitle\">Get updates on our latest red-teaming research and findings.</p></div><div class=\"SubjectNewsletter-module-scss-module__qHNNfa__form-container\" id=\"subject-newsletter-frontier-red-team\"></div></div></section></article>",
-      "content": "",
-      "source_name": "Anthropic News",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-02T16:00:00Z",
-      "fetched_at": "2026-06-03T09:56:59.497723Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c1330a3e10f72d84",
       "url": "https://arxiv.org/abs/2606.05779",
       "title": "TinyML-Driven Cybersecurity for Autonomous Spacecraft: Latency-Accuracy Analysis for SPARTA RF and Cyber Threat Detection",
@@ -36894,28 +36812,6 @@
       "author": "Van Le, Trevor Tran, Tan Le",
       "published_at": "2026-06-05T04:00:00Z",
       "fetched_at": "2026-06-05T05:48:35.942840Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e5c24631e539aeaa",
-      "url": "https://developer.nvidia.com/blog/deploy-self-evolving-agents-for-faster-more-secure-research-with-a-hermes-agent-and-nvidia-nemoclaw/",
-      "title": "Deploy Self-Evolving Agents for Faster, More Secure Research with a Hermes Agent and NVIDIA NemoClaw",
-      "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NemoClaw-Hermes-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NemoClaw-Hermes\" width=\"768\" />AI agents are a powerful tool for synthesizing data to accelerate research, summarize information, and help teams make decisions faster. But combining internal...",
-      "content": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NemoClaw-Hermes-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NemoClaw-Hermes\" width=\"768\" />AI agents are a powerful tool for synthesizing data to accelerate research, summarize information, and help teams make decisions faster. But combining internal...<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/NemoClaw-Hermes-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NemoClaw-Hermes\" width=\"768\" /><p>AI agents are a powerful tool for synthesizing data to accelerate research, summarize information, and help teams make decisions faster. But combining internal data with public sources poses security challenges. This post shares an open source example using Hermes Agent with NVIDIA NemoClaw for product research across Outlook, Slack, and GitHub. NVIDIA OpenShell enforces a security-approved\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/deploy-self-evolving-agents-for-faster-more-secure-research-with-a-hermes-agent-and-nvidia-nemoclaw/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Sam Pastoriza",
-      "published_at": "2026-06-02T16:00:00Z",
-      "fetched_at": "2026-06-02T17:50:06.022271Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -62872,27 +62768,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6bb17882900a191a",
-      "url": "https://x.com/GeminiApp/status/2061842235457720507",
-      "title": "See Gemini Omni in action with a live demo from one of the team members who helped build it.\n\nJoin u...",
-      "summary": "See Gemini Omni in action with a live demo from one of the team members who helped build it.\n\nJoin us on Discord as Product Manager Chloe shares how to use Gemini Omni\u2019s multimodal inputs, real-world knowledge, and easy conversational editing to create videos like never before.",
-      "content": "See Gemini Omni in action with a live demo from one of the team members who helped build it.\n\nJoin us on Discord as Product Manager Chloe shares how to use Gemini Omni\u2019s multimodal inputs, real-world knowledge, and easy conversational editing to create videos like never before.",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-02T16:07:50Z",
-      "fetched_at": "2026-06-02T18:11:29.453360Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cb6dcee303d30dbd",
       "url": "https://x.com/steipete/status/2061909311719112878",
       "title": "RT @jennifermarsman: Using Microsoft Execution Containers (https://t.co/2growXMNL3), you can run Ope...",
@@ -64831,6 +64706,131 @@
       "author": "bcherny",
       "published_at": "2026-06-08T17:20:18Z",
       "fetched_at": "2026-06-09T07:22:40.590049Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0517f773d8bb767c",
+      "url": "https://x.com/AnthropicAI/status/2064394443856232582",
+      "title": "RT @claudeai: Introducing Claude Fable 5: a Mythos-class model that we\u2019ve made safe for general use....",
+      "summary": "RT @claudeai: Introducing Claude Fable 5: a Mythos-class model that we\u2019ve made safe for general use.\n\nIts capabilities exceed those of any\u2026",
+      "content": "RT @claudeai: Introducing Claude Fable 5: a Mythos-class model that we\u2019ve made safe for general use.\n\nIts capabilities exceed those of any\u2026",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-09T17:09:24Z",
+      "fetched_at": "2026-06-09T17:09:54.724489Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9f97bf2048722498",
+      "url": "https://x.com/GeminiApp/status/2064380262021214639",
+      "title": "Gemini 3.5 Flash can process complex visual data and translate it into functional, interactive code....",
+      "summary": "Gemini 3.5 Flash can process complex visual data and translate it into functional, interactive code.\n\nWatch Gemini analyze lighting from a reference image, and build an interactive 3D visualizer to preview the setup.",
+      "content": "Gemini 3.5 Flash can process complex visual data and translate it into functional, interactive code.\n\nWatch Gemini analyze lighting from a reference image, and build an interactive 3D visualizer to preview the setup.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-09T16:13:03Z",
+      "fetched_at": "2026-06-09T17:09:51.040536Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6c839e7d97c53ca8",
+      "url": "https://x.com/bcherny/status/2064377990591774824",
+      "title": "RT @ClaudeDevs: How do you get Claude Code to check its own work before handing it back?\n\nWatch how ...",
+      "summary": "RT @ClaudeDevs: How do you get Claude Code to check its own work before handing it back?\n\nWatch how you can encode your manual checks so Cl\u2026",
+      "content": "RT @ClaudeDevs: How do you get Claude Code to check its own work before handing it back?\n\nWatch how you can encode your manual checks so Cl\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T16:04:01Z",
+      "fetched_at": "2026-06-09T17:09:44.588788Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8dabb4af6f2b9647",
+      "url": "https://x.com/dani_avila7/status/2064350015892406490",
+      "title": "Don't start building loops in Claude Code until you've mastered these components:\n\n- Worktrees\n- Ski...",
+      "summary": "Don't start building loops in Claude Code until you've mastered these components:\n\n- Worktrees\n- Skills\n- Subagents\n- Hooks\n- MCPs\n\nSkip these stages and you'll be destroying your project while burning tokens for nothing",
+      "content": "Don't start building loops in Claude Code until you've mastered these components:\n\n- Worktrees\n- Skills\n- Subagents\n- Hooks\n- MCPs\n\nSkip these stages and you'll be destroying your project while burning tokens for nothing",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-09T14:12:52Z",
+      "fetched_at": "2026-06-09T17:09:47.147800Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8e4713de2a538595",
+      "url": "https://x.com/bcherny/status/2064327225504403752",
+      "title": "Just landed nested subagent support in Claude Code\n\nStarting to experiment more with agents kicking ...",
+      "summary": "Just landed nested subagent support in Claude Code\n\nStarting to experiment more with agents kicking off agents as a way to better manage context. Capped at depth=5 to start, going out in today\u2019s release.\n\nLmk what you think!",
+      "content": "Just landed nested subagent support in Claude Code\n\nStarting to experiment more with agents kicking off agents as a way to better manage context. Capped at depth=5 to start, going out in today\u2019s release.\n\nLmk what you think!",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T12:42:18Z",
+      "fetched_at": "2026-06-09T17:09:44.588885Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6bb17882900a191a",
+      "url": "https://x.com/GeminiApp/status/2061842235457720507",
+      "title": "See Gemini Omni in action with a live demo from one of the team members who helped build it.\n\nJoin u...",
+      "summary": "See Gemini Omni in action with a live demo from one of the team members who helped build it.\n\nJoin us on Discord as Product Manager Chloe shares how to use Gemini Omni\u2019s multimodal inputs, real-world knowledge, and easy conversational editing to create videos like never before.",
+      "content": "See Gemini Omni in action with a live demo from one of the team members who helped build it.\n\nJoin us on Discord as Product Manager Chloe shares how to use Gemini Omni\u2019s multimodal inputs, real-world knowledge, and easy conversational editing to create videos like never before.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-02T16:07:50Z",
+      "fetched_at": "2026-06-02T18:11:29.453360Z",
       "score": null,
       "score_reason": "",
       "tier": "",
