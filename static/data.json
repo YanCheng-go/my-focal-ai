@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-09T11:25:45.413686+00:00",
+  "exported_at": "2026-06-09T11:54:30.021018+00:00",
   "period_hours": 168,
   "total": 3001,
   "all_tags": [
@@ -62824,26 +62824,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "74a139333a897195",
-      "url": "https://x.com/steipete/status/2061777050026070365",
-      "title": "RT @ycombinator: \"You need to make yourself a big target for luck, and the way to do that is to be c...",
-      "summary": "RT @ycombinator: \"You need to make yourself a big target for luck, and the way to do that is to be curious. Try lots of things, meet lots o\u2026",
-      "content": "RT @ycombinator: \"You need to make yourself a big target for luck, and the way to do that is to be curious. Try lots of things, meet lots o\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-02T11:48:49Z",
-      "fetched_at": "2026-06-02T11:55:10.614963Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "24aef53748248e8c",
       "url": "https://x.com/AnthropicAI/status/2061796327986454883",
       "title": "We\u2019re expanding Project Glasswing. We\u2019ve extended access to Claude Mythos Preview to approximately 1...",
@@ -64844,6 +64824,26 @@
       "author": "bcherny",
       "published_at": "2026-06-08T17:20:18Z",
       "fetched_at": "2026-06-09T07:22:40.590049Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "74a139333a897195",
+      "url": "https://x.com/steipete/status/2061777050026070365",
+      "title": "RT @ycombinator: \"You need to make yourself a big target for luck, and the way to do that is to be c...",
+      "summary": "RT @ycombinator: \"You need to make yourself a big target for luck, and the way to do that is to be curious. Try lots of things, meet lots o\u2026",
+      "content": "RT @ycombinator: \"You need to make yourself a big target for luck, and the way to do that is to be curious. Try lots of things, meet lots o\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-02T11:48:49Z",
+      "fetched_at": "2026-06-02T11:55:10.614963Z",
       "score": null,
       "score_reason": "",
       "tier": "",
