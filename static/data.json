@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-09T05:42:42.070153+00:00",
+  "exported_at": "2026-06-09T07:22:54.712177+00:00",
   "period_hours": 168,
-  "total": 2989,
+  "total": 3004,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -37084,27 +37084,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f4e0423d66a14da4",
-      "url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-      "title": "Advancing youth safety and opportunity through global leadership",
-      "summary": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-02T07:00:00Z",
-      "fetched_at": "2026-06-02T15:41:54.299841Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "f2eb9abf439b9dce",
       "url": "https://arxiv.org/abs/2606.05710",
       "title": "Explainable AI-Driven Cyber Risk Analytics and Model Reliability Assessment for Intelligent Governance of U.S. Critical Infrastructure: An XGBoost and SHAP-Based Intrusion Detection Framework",
@@ -41005,27 +40984,6 @@
       "author": "Chen Huang, Yuhao Wu, Wenxuan Zhang",
       "published_at": "2026-06-05T04:00:00Z",
       "fetched_at": "2026-06-05T05:48:35.940960Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b90203892a3b3632",
-      "url": "https://blogs.nvidia.com/blog/financial-institutions-transaction-foundation-models/",
-      "title": "Why Financial Institutions Are Converging on Transaction Foundation Models to Build Their Own Intelligence",
-      "summary": "Financial institutions have spent years building AI: fraud models, credit models, recommendation engines and risk systems. While this sprawl of task-specific models has been effective, it\u2019s also constrained by siloed systems.\u00a0 Siloed systems prevent institutions from developing a unified understanding of consumers\u2019 financial behavior. As enterprise datasets keep growing, so does the gap between what [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">Financial institutions have spent years building AI: fraud models, credit models, recommendation engines and risk systems. While this sprawl of task-specific models has been effective, it\u2019s also constrained by siloed systems.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Siloed systems prevent institutions from developing a unified understanding of consumers\u2019 financial behavior. As enterprise datasets keep growing, so does the gap between what institutions know and what their AI can reason over \u2014 creating a major opportunity for the industry to build intelligence using proprietary data.</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA\u2019s </span><a href=\"https://www.nvidia.com/en-us/industries/finance/ai-financial-services-report/\" target=\"_blank\"><span style=\"font-weight: 400;\">2026 State of AI in Financial Services</span></a><span style=\"font-weight: 400;\"> report shows 65% of institutions now use AI, with nearly 90% deploying or assessing it and almost all maintaining or increasing spend. But as AI scales, so does complexity, and fragmented model architectures become the limiting factor.</span></p>\n<p><span style=\"font-weight: 400;\">Leading firms are tackling this challenge by rethinking the architecture itself. Where the industry once relied on statistical and machine learning algorithms purpose-built for each line of business, transformer-based transaction foundation models now make it possible to learn a single, unified representation of consumer behavior trained entirely on proprietary data.</span></p>\n<p><span style=\"font-weight: 400;\">Transaction foundation models are large-scale AI systems trained on billions of financial events \u2014 such as payments, transfers, product interactions and behavioral signals \u2014 that transform raw data into intelligence, helping firms better serve their customers.</span></p>\n<p><span style=\"font-weight: 400;\">The shift is structural. A traditional fraud model evaluates isolated signals. A foundation model interprets behavior in context where timing, device, location and prior activity shape meaning. More importantly, it brings the power of transformer architectures to tabular data, extracting signals previously invisible to traditional algorithms.</span></p>\n<p><span style=\"font-weight: 400;\">A payment at midnight means something different when it\u2019s the fourth in 10 minutes, on an unfamiliar device, in a city the customer\u2019s never transacted from before. That contextual depth improves performance across tasks, not just within them.</span></p>\n<p><span style=\"font-weight: 400;\">In collaboration with NVIDIA, Revolut built</span><a href=\"https://arxiv.org/pdf/2604.08649\" target=\"_blank\"> <span style=\"font-weight: 400;\">PRAGMA</span></a><span style=\"font-weight: 400;\"> \u2014 a family of transformer-based foundation models trained on 24 billion events across 26 million user records spanning over 100 countries. Powered by NVIDIA\u2019s full AI stack </span><span style=\"font-weight: 400;\">\u2014 including </span><a href=\"https://www.nvidia.com/en-us/data-center/technologies/hopper-architecture/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Hopper GPUs</span></a><span style=\"font-weight: 400;\">, the </span><a href=\"https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries/cudf\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA cuDF</span></a><span style=\"font-weight: 400;\"> library and </span><a href=\"https://developer.nvidia.com/topics/ai/data-science/cuda-x-data-science-libraries/cudf\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA </span></a><a href=\"https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/\" target=\"_blank\"><span style=\"font-weight: 400;\">Nemotron</span></a><span style=\"font-weight: 400;\"> open models \u2014</span><span style=\"font-weight: 400;\"> running on Nebius cloud, a single foundation model outperforms strong task-specific models across domains like credit scoring, fraud detection and product recommendations while reducing reliance on handcrafted features.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cWe move from weeks, or even in some cases months, in feature engineering to no time required for it at all,\u201d said Tadas Kri\u0161\u010di\u016bnas, head of group credit data science at Revolut.</span></p>\n<p><span style=\"font-weight: 400;\">Any institution can now adopt this approach using NVIDIA\u2019s new</span><a href=\"https://build.nvidia.com/nvidia/build-your-own-transaction-foundation-model\" target=\"_blank\"> <span style=\"font-weight: 400;\">Build Your Own Transaction Foundation Model</span></a><span style=\"font-weight: 400;\"> developer example, which enables teams to start building transformer embeddings on tabular transaction data \u2014 integrating into existing pipelines without rebuilding from scratch.</span></p>\n<h2><b>The Cost of Fragmentation</b></h2>\n<p><span style=\"font-weight: 400;\">The problem isn\u2019t today\u2019s models, it\u2019s the trajectory. Every new use case adds another model. Every new market needs retraining. Models that can\u2019t share context leave value on the table.</span></p>\n<p><a href=\"https://www.mastercard.com/global/en/news-and-trends/stories/2026/mastercard-new-generative-ai-model.html\" target=\"_blank\"><span style=\"font-weight: 400;\">Mastercard</span></a><span style=\"font-weight: 400;\"> is developing a proprietary large tabular foundation model for payments, trained on billions of anonymized transactions today and designed to scale to hundreds of billions across additional datasets including fraud, authorization, chargeback, merchant location and loyalty data.</span></p>\n<p><span style=\"font-weight: 400;\">Built with capabilities from NVIDIA, AWS and Databricks \u2014 including the </span><a href=\"https://docs.nvidia.com/nemo/automodel/latest/index.html\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA NeMo AutoModel</span></a><span style=\"font-weight: 400;\"> open library, part of </span><a href=\"https://github.com/NVIDIA-NeMo/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA NeMo framework</span></a><span style=\"font-weight: 400;\">, and accelerated computing \u2014 the model is intended to reduce reliance on a multitude of AI models across markets, customers and use cases. Early testing shows it outperforming standard machine learning techniques, with promising applications in cybersecurity, fraud detection, loyalty, personalization, portfolio optimization and analytics.\u00a0</span></p>\n<p><a href=\"https://www.nvidia.com/en-us/on-demand/session/gtc26-s82115/\" target=\"_blank\"><span style=\"font-weight: 400;\">Adyen</span></a><span style=\"font-weight: 400;\"> has also deployed transaction foundation models at scale, processing $1 trillion in payments. Using reinforcement learning, Adyen maximizes conversion and minimizes risk for merchants.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cEven fractional improvements like a 0.1% uplift in authorization can translate to massive incremental gross merchandise value and substantial cost reductions,\u201d said Dhruv Ghulati, principal AI product manager at Adyen.</span></p>\n<h2><b>Semantic Layer for Agentic Commerce\u00a0</b></h2>\n<p><a href=\"https://blogs.nvidia.com/blog/ai-in-financial-services-survey-2026/\"><span style=\"font-weight: 400;\">Forty-two percent</span></a> <span style=\"font-weight: 400;\">of financial firms are already using or assessing agentic AI. As these systems begin to execute transactions \u2014 like managing subscriptions, routing payments and making purchases \u2014 the nature of financial behavior is changing.</span></p>\n<p><a href=\"https://www.nvidia.com/en-us/on-demand/session/gtc26-s82252/\" target=\"_blank\"><span style=\"font-weight: 400;\">Stripe</span></a><span style=\"font-weight: 400;\"> is using the NVIDIA and AWS platform to build foundation models that understand the full context of transactional behavior rather than reacting to individual signals \u2014 blocking close to $112 billion in fraud last year and delivering an average 38% reduction in fraud rates.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Transaction data is the proprietary history that competitors can\u2019t replicate. The data already exists. The architecture is proven. The infrastructure is ready.</span></p>\n<h2><b>Scaling Through Ecosystem Partners</b></h2>\n<p><span style=\"font-weight: 400;\">The Build Your Own Transaction Foundation Model developer example is available for customers to run on Amazon Web Services (AWS), deployed with Amazon SageMaker HyperPod, as well as Nebius AI Cloud \u2014 powered by NVIDIA accelerated computing.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Nebius AI Cloud supports the full transaction foundation model lifecycle \u2014 from deployment of the developer example through multi-node training to managed inference on Token Factory \u2014 powered by NVIDIA accelerated computing.</span></p>\n<p><span style=\"font-weight: 400;\">Financial services firms can also work with services partners EXL, Infosys, GFT IT Consulting and Thoughtworks to apply the developer example to their specific use cases.</span></p>\n<p><span style=\"font-weight: 400;\">EXL is integrating transaction foundation models into its EXLerate.ai platform to unify siloed financial data into a scalable, enterprise intelligence layer powered by proprietary transaction data. In collaboration with NVIDIA, EXL is using this architecture to help financial institutions accelerate model development, enhance contextual decisioning and operationalize agentic AI at scale.</span></p>\n<p><span style=\"font-weight: 400;\">Thoughtworks is helping financial institutions operationalize transaction foundation models within complex banking environments, integrating them into payment, servicing and risk while establishing the necessary governance and AI operating models. The company will be showcasing a demo and presentation on transaction foundation models at the upcoming AWS Summit in New York City on Wednesday, June 17.</span></p>\n<p><span style=\"font-weight: 400;\">GFT IT Consulting is integrating transaction foundation models into its flagship solutions: Wynxx, an agentic AI platform used by over 100 financial institutions for secure AI adoption in areas like credit risk, and Smaragd, a compliance engine that reduces false positives by up to 75% for major banks.</span></p>\n<p><i><span style=\"font-weight: 400;\">Join NVIDIA at Money20/20 Europe from June 2-4 to learn how transaction foundation models are powering the next generation of AI in financial services.</span></i></p>\n<p><i><span style=\"font-weight: 400;\">Explore the Build Your Own Transaction Foundation Model developer example on </span></i><a href=\"https://build.nvidia.com/nvidia/build-your-own-transaction-foundation-model\" target=\"_blank\"><i><span style=\"font-weight: 400;\">build.nvidia.com</span></i></a><i><span style=\"font-weight: 400;\">. </span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Pahal Patangia",
-      "published_at": "2026-06-02T06:00:36Z",
-      "fetched_at": "2026-06-02T07:58:40.515987Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64597,6 +64555,354 @@
       "author": "steipete",
       "published_at": "2026-06-08T16:42:26Z",
       "fetched_at": "2026-06-08T17:06:33.238171Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "66cd83eb27949e4b",
+      "url": "https://x.com/bcherny/status/2064225261986759076",
+      "title": "RT @amorriscode: maximum intelligence https://t.co/c7RKorEnGP",
+      "summary": "RT @amorriscode: maximum intelligence https://t.co/c7RKorEnGP",
+      "content": "RT @amorriscode: maximum intelligence https://t.co/c7RKorEnGP",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T05:57:08Z",
+      "fetched_at": "2026-06-09T07:22:40.589841Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2f3ce3bcc7161251",
+      "url": "https://x.com/dani_avila7/status/2064181646903923159",
+      "title": "Let me explain the agent loop, simple\n\nIt's the core of every agentic system, and the part most peop...",
+      "summary": "Let me explain the agent loop, simple\n\nIt's the core of every agentic system, and the part most people overcomplicate\n\nIt's just this:\n1. Send messages to the model\n2. Model responds, maybe calls a tool\n3. You run the tool\n4. Append the result back to messages\n5. Repeat until https://t.co/amEkaHpwsT",
+      "content": "Let me explain the agent loop, simple\n\nIt's the core of every agentic system, and the part most people overcomplicate\n\nIt's just this:\n1. Send messages to the model\n2. Model responds, maybe calls a tool\n3. You run the tool\n4. Append the result back to messages\n5. Repeat until https://t.co/amEkaHpwsT",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-09T03:03:49Z",
+      "fetched_at": "2026-06-09T07:22:43.789123Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76a50851287442e3",
+      "url": "https://x.com/claudeai/status/2064139073590104402",
+      "title": "Final stop: Tokyo.\n\nRegister to hear directly from the teams behind Claude: https://t.co/SkYZwjK3GS",
+      "summary": "Final stop: Tokyo.\n\nRegister to hear directly from the teams behind Claude: https://t.co/SkYZwjK3GS",
+      "content": "Final stop: Tokyo.\n\nRegister to hear directly from the teams behind Claude: https://t.co/SkYZwjK3GS",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-06-09T00:14:39Z",
+      "fetched_at": "2026-06-09T07:22:44.798435Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "be03a811b9338b18",
+      "url": "https://x.com/OpenAI/status/2064119987573596223",
+      "title": "RT @merettm: The north stars we're working towards at OpenAI all center around the mission: ensure A...",
+      "summary": "RT @merettm: The north stars we're working towards at OpenAI all center around the mission: ensure AGI benefits all of humanity. AI should\u2026",
+      "content": "RT @merettm: The north stars we're working towards at OpenAI all center around the mission: ensure AGI benefits all of humanity. AI should\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-08T22:58:49Z",
+      "fetched_at": "2026-06-09T07:22:48.268862Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "78460a4c0b4ebe9c",
+      "url": "https://x.com/bcherny/status/2064097998309826748",
+      "title": "RT @MParakhin: Have been extensively testing Claude Workflows this weekend, with the best model poss...",
+      "summary": "RT @MParakhin: Have been extensively testing Claude Workflows this weekend, with the best model possible. Threw it at my whole code base, c\u2026",
+      "content": "RT @MParakhin: Have been extensively testing Claude Workflows this weekend, with the best model possible. Threw it at my whole code base, c\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-08T21:31:26Z",
+      "fetched_at": "2026-06-09T07:22:40.589951Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e24f910a59a30a6c",
+      "url": "https://x.com/simonw/status/2064094592300134652",
+      "title": "That's both OpenAI and Anthropic with confidential S-1s filed with the SEC - Anthropic filed theirs ...",
+      "summary": "That's both OpenAI and Anthropic with confidential S-1s filed with the SEC - Anthropic filed theirs on June 1st",
+      "content": "That's both OpenAI and Anthropic with confidential S-1s filed with the SEC - Anthropic filed theirs on June 1st",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-08T21:17:54Z",
+      "fetched_at": "2026-06-09T07:22:41.740089Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c753353539585d20",
+      "url": "https://x.com/sama/status/2064088940932641225",
+      "title": "Here is our current plan for OpenAI:\n\nhttps://t.co/r29FUUee3A",
+      "summary": "Here is our current plan for OpenAI:\n\nhttps://t.co/r29FUUee3A",
+      "content": "Here is our current plan for OpenAI:\n\nhttps://t.co/r29FUUee3A",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-08T20:55:27Z",
+      "fetched_at": "2026-06-09T07:22:46.017950Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eade451d207492a7",
+      "url": "https://x.com/GeminiApp/status/2064068097477353709",
+      "title": "RT @NewsFromGoogle: We're reducing the cost of our Google AI Plus plan and doubling your storage spa...",
+      "summary": "RT @NewsFromGoogle: We're reducing the cost of our Google AI Plus plan and doubling your storage space.\n\n\ud83d\udcb0 New price: $4.99 USD/mo or local\u2026",
+      "content": "RT @NewsFromGoogle: We're reducing the cost of our Google AI Plus plan and doubling your storage space.\n\n\ud83d\udcb0 New price: $4.99 USD/mo or local\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-08T19:32:37Z",
+      "fetched_at": "2026-06-09T07:22:47.113285Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f2f129765e03c200",
+      "url": "https://x.com/AnthropicAI/status/2064054837294354677",
+      "title": "New Science Blog: Why has AI advanced faster in coding than in biology? \n\nTo agents, bio databases a...",
+      "summary": "New Science Blog: Why has AI advanced faster in coding than in biology? \n\nTo agents, bio databases are like cities built before cars\u2014maddening to drive in because they're designed for different traffic. \n\nHow do we build infrastructure agents can use?\nhttps://t.co/PQaNQ4GRJZ",
+      "content": "New Science Blog: Why has AI advanced faster in coding than in biology? \n\nTo agents, bio databases are like cities built before cars\u2014maddening to drive in because they're designed for different traffic. \n\nHow do we build infrastructure agents can use?\nhttps://t.co/PQaNQ4GRJZ",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-08T18:39:56Z",
+      "fetched_at": "2026-06-09T07:22:50.647000Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eadfb601ccccbd42",
+      "url": "https://x.com/GeminiApp/status/2064050050041630872",
+      "title": "RT @vikaskansalHQ: \ud83d\udce3We're updating the price of our Google AI Plus plan to $4.99/mo\ud83d\udcb0or local equival...",
+      "summary": "RT @vikaskansalHQ: \ud83d\udce3We're updating the price of our Google AI Plus plan to $4.99/mo\ud83d\udcb0or local equivalent (down from $7.99), and doubling the\u2026",
+      "content": "RT @vikaskansalHQ: \ud83d\udce3We're updating the price of our Google AI Plus plan to $4.99/mo\ud83d\udcb0or local equivalent (down from $7.99), and doubling the\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-08T18:20:54Z",
+      "fetched_at": "2026-06-09T07:22:47.113388Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6afaf19b6bf2476e",
+      "url": "https://x.com/bcherny/status/2064047676283613206",
+      "title": "RT @jarredsumner: Tokyo this week https://t.co/XaLh9RLtmg",
+      "summary": "RT @jarredsumner: Tokyo this week https://t.co/XaLh9RLtmg",
+      "content": "RT @jarredsumner: Tokyo this week https://t.co/XaLh9RLtmg",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-08T18:11:28Z",
+      "fetched_at": "2026-06-09T07:22:40.590009Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f9ca8cc6239cb6c5",
+      "url": "https://x.com/bcherny/status/2064034799711588805",
+      "title": "When we first demoed Claude Code internally, it got two reactions on Slack. \n\nA year after GA, @_cat...",
+      "summary": "When we first demoed Claude Code internally, it got two reactions on Slack. \n\nA year after GA, @_catwu and I sat down to talk about what's changed: why I use auto mode instead of plan mode, how routines fix bugs before I see them, why I do most of my coding from my phone now, and",
+      "content": "When we first demoed Claude Code internally, it got two reactions on Slack. \n\nA year after GA, @_catwu and I sat down to talk about what's changed: why I use auto mode instead of plan mode, how routines fix bugs before I see them, why I do most of my coding from my phone now, and",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-08T17:20:18Z",
+      "fetched_at": "2026-06-09T07:22:40.590049Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a63638801ce2e69f",
+      "url": "https://x.com/dani_avila7/status/2061640103445889095",
+      "title": "Claude Code 2.1.160 retires \"workflow\" as the dynamic workflow trigger\n\nMade sense to change it\n\nwor...",
+      "summary": "Claude Code 2.1.160 retires \"workflow\" as the dynamic workflow trigger\n\nMade sense to change it\n\nworkflow is such a common word that it kept firing runs in regular prompts, so the new keyword \u201cultracode\u201d is a cleaner fit\n\nSmall change, but a nice one for daily use https://t.co/i2dbfnlWbi",
+      "content": "Claude Code 2.1.160 retires \"workflow\" as the dynamic workflow trigger\n\nMade sense to change it\n\nworkflow is such a common word that it kept firing runs in regular prompts, so the new keyword \u201cultracode\u201d is a cleaner fit\n\nSmall change, but a nice one for daily use https://t.co/i2dbfnlWbi",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-02T02:44:38Z",
+      "fetched_at": "2026-06-02T07:54:11.297732Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2b8f5f7d7afb0d34",
+      "url": "https://x.com/steipete/status/2061574752574283858",
+      "title": "I told codex to use https://t.co/oHS8ombQcW whenever I'm distracted and it needs my help to be unblo...",
+      "summary": "I told codex to use https://t.co/oHS8ombQcW whenever I'm distracted and it needs my help to be unblocked, and ever once it a while I hear it talking to me, and it's the coolest thing ever. (e.g. for releases, that needs npm and is 1Password-gated)",
+      "content": "I told codex to use https://t.co/oHS8ombQcW whenever I'm distracted and it needs my help to be unblocked, and ever once it a while I hear it talking to me, and it's the coolest thing ever. (e.g. for releases, that needs npm and is 1Password-gated)",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-01T22:24:57Z",
+      "fetched_at": "2026-06-02T07:54:19.395024Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "09d05995cdca1727",
+      "url": "https://x.com/OpenAI/status/2061564502160892138",
+      "title": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to...",
+      "summary": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\n\nThis is also the beginning of a broader expansion of OpenAI",
+      "content": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\n\nThis is also the beginning of a broader expansion of OpenAI",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-01T21:44:13Z",
+      "fetched_at": "2026-06-02T07:54:15.939940Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "873543b5338afeb4",
+      "url": "https://x.com/sama/status/2061562575322492937",
+      "title": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is...",
+      "summary": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+      "content": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-01T21:36:34Z",
+      "fetched_at": "2026-06-02T07:54:13.634113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2b68933defe956a8",
+      "url": "https://x.com/dani_avila7/status/2061536367507599443",
+      "title": "Claude Chat mode now supports plugins!\n\nI've been trying every workaround imaginable to get plugins ...",
+      "summary": "Claude Chat mode now supports plugins!\n\nI've been trying every workaround imaginable to get plugins working in Chat, and now it's finally possible\n\nHuge thanks to @trq212 @bcherny @amorriscode and the rest of the team \ud83e\udee1 https://t.co/eMyWhIZ0bG",
+      "content": "Claude Chat mode now supports plugins!\n\nI've been trying every workaround imaginable to get plugins working in Chat, and now it's finally possible\n\nHuge thanks to @trq212 @bcherny @amorriscode and the rest of the team \ud83e\udee1 https://t.co/eMyWhIZ0bG",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-01T19:52:26Z",
+      "fetched_at": "2026-06-02T07:54:11.297860Z",
       "score": null,
       "score_reason": "",
       "tier": "",
