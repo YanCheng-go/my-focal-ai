@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-10T21:10:17.130947+00:00",
+  "exported_at": "2026-06-10T21:46:14.066401+00:00",
   "period_hours": 168,
-  "total": 3061,
+  "total": 3066,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29432,29 +29432,6 @@
       "author": "",
       "published_at": "2026-06-04T00:00:00Z",
       "fetched_at": "2026-06-04T15:26:41.312881Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "63b73ad5669a11c3",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.162",
-      "title": "v2.1.162",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li><code>claude agents --json</code> now includes <code>waitingFor</code> showing what a waiting session is blocked on (e.g. permission prompt)</li>\n<li><code>--tools</code>: explicitly listing Grep/Glob now provides the dedicated search tools on native builds with embedded search (previously these names were silently ignored)</li>\n<li><code>/effort</code> now confirms when your chosen level will persist as the default for new sessions</li>\n<li>Clicking a slash command in the autocomplete menu now fills it into your prompt instead of running it immediately; press Enter to run</li>\n<li>Remote Control now shows as a persistent footer pill (with a link to the session) instead of a startup message</li>\n<li>Renamed Windsurf to Devin Desktop in the <code>/ide</code> menu, <code>/terminal-setup</code>, and <code>/scroll-speed</code>, following the editor's rebrand</li>\n<li>Fixed a silent startup hang when the config directory is read-only or unwritable \u2014 Claude Code now starts with in-memory config and surfaces startup errors instead of showing a blank screen</li>\n<li>Fixed WebFetch permission rules not being applied to built-in preapproved domains; explicit <code>WebFetch(domain:...)</code> deny/ask/allow rules now take precedence over the preapproved-host auto-allow</li>\n<li>Fixed Windows permission rules never matching when spelled with backslashes (<code>~\\</code>, <code>\\\\server\\share</code>) or case-variant paths, and Read deny rules not hiding files from Glob/Grep results</li>\n<li>Fixed an interrupt (Esc) sent at the very start of a turn being silently dropped in stream-json/SDK sessions, leaving the turn running with no \"Interrupted\" feedback</li>\n<li>Fixed API 400 <code>no low surrogate in string</code> errors for classifier side-queries and MCP server descriptions containing emoji near a truncation boundary</li>\n<li>Fixed MCP per-server <code>timeout</code> config values below 1000 ms being floored to a 1-second watchdog that aborted every tool call; sub-1000 ms values are now ignored (falling back to <code>MCP_TOOL_TIMEOUT</code> or default), and <code>claude mcp get</code> annotates them accordingly</li>\n<li>Fixed the LSP tool's <code>workspaceSymbol</code> operation returning no results; it now accepts a <code>query</code> parameter and passes it to the language server</li>\n<li>Fixed <code>claude agents</code> cutting live status text (tool args, replies, prompts, exec output) at 60\u2013120 columns on wide terminals; the status detail now uses the full terminal width</li>\n<li>Fixed <code>claude agents</code> truncating long session names at 40 columns; the name column now grows with terminal width</li>\n<li>Fixed <code>claude agents</code> attach occasionally bouncing straight back to the session list on the first try after a background-service restart</li>\n<li>Fixed <code>claude agents</code> Ctrl+V image paste doing nothing in the dispatch input and the session reply box; pasting with no image now shows a hint</li>\n<li>Fixed backgrounding a session with \u2190 silently losing the conversation when the background service cannot start; the session stays in the list as a failed row you can wake with Enter</li>\n<li>Fixed replies from the agents view that fail to send being lost; they are now queued for delivery on the next session start</li>\n<li>Fixed cross-session messaging (<code>SendMessage</code>) silently breaking when <code>CLAUDE_CODE_TMPDIR</code> or <code>$TMPDIR</code> points at a deep directory</li>\n<li>Fixed opening a running background session from <code>claude agents</code> stalling for 5 seconds before attaching</li>\n<li>Quieter startup: notices group by severity, and session info and announcements share a single line per launch</li>\n<li>Startup warnings rewritten to be shorter and clearer, each with a concrete fix</li>\n<li>Launch-prompt warnings (deep link/pre-filled prompt) now stay pinned below the input until you act instead of scrolling away</li>\n<li>Failed turns now show a compact warning line instead of a multi-line red error block</li>\n<li>Improved background service startup and <code>claude update</code> verification to wait out endpoint-security scanning of new binaries instead of failing after 5 seconds</li>\n<li>Background dispatch spawn failures now report the error class name when no errno is available</li>\n<li>Removed the \"Claude in Chrome enabled\" and \"marketplace installed\" startup messages; model auto-updates and the team-onboarding tip now show as quiet notices under the logo</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li><code>claude agents --json</code> now includes <code>waitingFor</code> showing what a waiting session is blocked on (e.g. permission prompt)</li>\n<li><code>--tools</code>: explicitly listing Grep/Glob now provides the dedicated search tools on native builds with embedded search (previously these names were silently ignored)</li>\n<li><code>/effort</code> now confirms when your chosen level will persist as the default for new sessions</li>\n<li>Clicking a slash command in the autocomplete menu now fills it into your prompt instead of running it immediately; press Enter to run</li>\n<li>Remote Control now shows as a persistent footer pill (with a link to the session) instead of a startup message</li>\n<li>Renamed Windsurf to Devin Desktop in the <code>/ide</code> menu, <code>/terminal-setup</code>, and <code>/scroll-speed</code>, following the editor's rebrand</li>\n<li>Fixed a silent startup hang when the config directory is read-only or unwritable \u2014 Claude Code now starts with in-memory config and surfaces startup errors instead of showing a blank screen</li>\n<li>Fixed WebFetch permission rules not being applied to built-in preapproved domains; explicit <code>WebFetch(domain:...)</code> deny/ask/allow rules now take precedence over the preapproved-host auto-allow</li>\n<li>Fixed Windows permission rules never matching when spelled with backslashes (<code>~\\</code>, <code>\\\\server\\share</code>) or case-variant paths, and Read deny rules not hiding files from Glob/Grep results</li>\n<li>Fixed an interrupt (Esc) sent at the very start of a turn being silently dropped in stream-json/SDK sessions, leaving the turn running with no \"Interrupted\" feedback</li>\n<li>Fixed API 400 <code>no low surrogate in string</code> errors for classifier side-queries and MCP server descriptions containing emoji near a truncation boundary</li>\n<li>Fixed MCP per-server <code>timeout</code> config values below 1000 ms being floored to a 1-second watchdog that aborted every tool call; sub-1000 ms values are now ignored (falling back to <code>MCP_TOOL_TIMEOUT</code> or default), and <code>claude mcp get</code> annotates them accordingly</li>\n<li>Fixed the LSP tool's <code>workspaceSymbol</code> operation returning no results; it now accepts a <code>query</code> parameter and passes it to the language server</li>\n<li>Fixed <code>claude agents</code> cutting live status text (tool args, replies, prompts, exec output) at 60\u2013120 columns on wide terminals; the status detail now uses the full terminal width</li>\n<li>Fixed <code>claude agents</code> truncating long session names at 40 columns; the name column now grows with terminal width</li>\n<li>Fixed <code>claude agents</code> attach occasionally bouncing straight back to the session list on the first try after a background-service restart</li>\n<li>Fixed <code>claude agents</code> Ctrl+V image paste doing nothing in the dispatch input and the session reply box; pasting with no image now shows a hint</li>\n<li>Fixed backgrounding a session with \u2190 silently losing the conversation when the background service cannot start; the session stays in the list as a failed row you can wake with Enter</li>\n<li>Fixed replies from the agents view that fail to send being lost; they are now queued for delivery on the next session start</li>\n<li>Fixed cross-session messaging (<code>SendMessage</code>) silently breaking when <code>CLAUDE_CODE_TMPDIR</code> or <code>$TMPDIR</code> points at a deep directory</li>\n<li>Fixed opening a running background session from <code>claude agents</code> stalling for 5 seconds before attaching</li>\n<li>Quieter startup: notices group by severity, and session info and announcements share a single line per launch</li>\n<li>Startup warnings rewritten to be shorter and clearer, each with a concrete fix</li>\n<li>Launch-prompt warnings (deep link/pre-filled prompt) now stay pinned below the input until you act instead of scrolling away</li>\n<li>Failed turns now show a compact warning line instead of a multi-line red error block</li>\n<li>Improved background service startup and <code>claude update</code> verification to wait out endpoint-security scanning of new binaries instead of failing after 5 seconds</li>\n<li>Background dispatch spawn failures now report the error class name when no errno is available</li>\n<li>Removed the \"Claude in Chrome enabled\" and \"marketplace installed\" startup messages; model auto-updates and the team-onboarding tip now show as quiet notices under the logo</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-06-03T21:31:35Z",
-      "fetched_at": "2026-06-03T22:58:43.122891Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64024,26 +64001,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "76668ee24b4e5e32",
-      "url": "https://x.com/OpenAI/status/2062281977122996256",
-      "title": "We\u2019re bringing new capabilities to GPT-Rosalind, a model series purpose-built for life sciences rese...",
-      "summary": "We\u2019re bringing new capabilities to GPT-Rosalind, a model series purpose-built for life sciences research at enterprise scale.\n\nIt brings GPT-5.5\u2019s agentic coding and tool use together with stronger intelligence for drug discovery, analysis, design, and experimental workflows.",
-      "content": "We\u2019re bringing new capabilities to GPT-Rosalind, a model series purpose-built for life sciences research at enterprise scale.\n\nIt brings GPT-5.5\u2019s agentic coding and tool use together with stronger intelligence for drug discovery, analysis, design, and experimental workflows.",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-06-03T21:15:13Z",
-      "fetched_at": "2026-06-04T07:24:33.063022Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "b4643e5a2c4ed66f",
       "url": "https://x.com/steipete/status/2062530713254043865",
       "title": "RT @theo: In order to hit the limit of your $40 Copilot plan, you have to do at least $60 of inferen...",
@@ -66055,6 +66012,151 @@
       "author": "geminiapp",
       "published_at": "2026-06-10T17:32:54Z",
       "fetched_at": "2026-06-10T19:18:52.462234Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e406bf41fa56995",
+      "url": "https://x.com/trq212/status/2064826394589442448",
+      "title": "Lots of people asked how I used Fable to edit its own launch video so I made a video about that!\n\nTL...",
+      "summary": "Lots of people asked how I used Fable to edit its own launch video so I made a video about that!\n\nTLDR it wrote a lot of code &amp;  tool calls to use transcription services, ffmpeg, do colorgrading, use the figma mcp, make remotion UI and render it. \n\nI didn't touch a video editor. https://t.co/hJRdJye5Fy",
+      "content": "Lots of people asked how I used Fable to edit its own launch video so I made a video about that!\n\nTLDR it wrote a lot of code &amp;  tool calls to use transcription services, ffmpeg, do colorgrading, use the figma mcp, make remotion UI and render it. \n\nI didn't touch a video editor. https://t.co/hJRdJye5Fy",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-10T21:45:49Z",
+      "fetched_at": "2026-06-10T21:45:55.187409Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "679531c5b6932a2f",
+      "url": "https://x.com/simonw/status/2064817616141918654",
+      "title": "RT @antirez: I believe what Anthropic is doing, gating the ability to do certain harmless things lik...",
+      "summary": "RT @antirez: I believe what Anthropic is doing, gating the ability to do certain harmless things like LLM research, and with incredibly sen\u2026",
+      "content": "RT @antirez: I believe what Anthropic is doing, gating the ability to do certain harmless things like LLM research, and with incredibly sen\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-10T21:10:56Z",
+      "fetched_at": "2026-06-10T21:45:58.909115Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76668ee24b4e5e32",
+      "url": "https://x.com/OpenAI/status/2062281977122996256",
+      "title": "We\u2019re bringing new capabilities to GPT-Rosalind, a model series purpose-built for life sciences rese...",
+      "summary": "We\u2019re bringing new capabilities to GPT-Rosalind, a model series purpose-built for life sciences research at enterprise scale.\n\nIt brings GPT-5.5\u2019s agentic coding and tool use together with stronger intelligence for drug discovery, analysis, design, and experimental workflows.",
+      "content": "We\u2019re bringing new capabilities to GPT-Rosalind, a model series purpose-built for life sciences research at enterprise scale.\n\nIt brings GPT-5.5\u2019s agentic coding and tool use together with stronger intelligence for drug discovery, analysis, design, and experimental workflows.",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-03T21:15:13Z",
+      "fetched_at": "2026-06-04T07:24:33.063022Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dcbf7db00ff713da",
+      "url": "https://x.com/steipete/status/2062276065448669627",
+      "title": "We never had more npm downloads than this week on @openclaw - comined with Docker, GitHub, company-i...",
+      "summary": "We never had more npm downloads than this week on @openclaw - comined with Docker, GitHub, company-internal deployments and the numerous forks, real number is more in the 10-20 million downloads/week. https://t.co/ie8bXfD2ES",
+      "content": "We never had more npm downloads than this week on @openclaw - comined with Docker, GitHub, company-internal deployments and the numerous forks, real number is more in the 10-20 million downloads/week. https://t.co/ie8bXfD2ES",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-03T20:51:43Z",
+      "fetched_at": "2026-06-04T07:24:36.345933Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5e03137bad8273b3",
+      "url": "https://x.com/AnthropicAI/status/2062243425580367905",
+      "title": "How well do the security community's techniques hold up against AI-enabled cyberattacks? \n\nWe examin...",
+      "summary": "How well do the security community's techniques hold up against AI-enabled cyberattacks? \n\nWe examined 832 malicious accounts and mapped their activity onto a longstanding database of tactics and techniques used by threat actors.  \n\nHere's what we learned:https://t.co/fgOqJRh2rx",
+      "content": "How well do the security community's techniques hold up against AI-enabled cyberattacks? \n\nWe examined 832 malicious accounts and mapped their activity onto a longstanding database of tactics and techniques used by threat actors.  \n\nHere's what we learned:https://t.co/fgOqJRh2rx",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-03T18:42:01Z",
+      "fetched_at": "2026-06-04T07:24:35.005751Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9acbe99eb95d7470",
+      "url": "https://x.com/trq212/status/2062217018187923783",
+      "title": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time!...",
+      "summary": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time! \n\nYou can read her short story, Mall of America here: https://t.co/uYY8VlPIUt\n\nIt's one of my favorite short stories about the human condition that happens to involve AI.",
+      "content": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time! \n\nYou can read her short story, Mall of America here: https://t.co/uYY8VlPIUt\n\nIt's one of my favorite short stories about the human condition that happens to involve AI.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-03T16:57:05Z",
+      "fetched_at": "2026-06-04T07:24:24.313914Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7c07f166a502a72d",
+      "url": "https://x.com/GeminiApp/status/2062176566155895126",
+      "title": "RT @joshwoodward: \u2705 Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and...",
+      "summary": "RT @joshwoodward: \u2705 Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/aF02kkUekW",
+      "content": "RT @joshwoodward: \u2705 Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/aF02kkUekW",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-03T14:16:21Z",
+      "fetched_at": "2026-06-04T07:24:32.102490Z",
       "score": null,
       "score_reason": "",
       "tier": "",
