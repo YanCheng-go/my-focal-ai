@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-10T15:28:21.531901+00:00",
+  "exported_at": "2026-06-10T17:18:39.424082+00:00",
   "period_hours": 168,
-  "total": 3054,
+  "total": 3055,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -16834,26 +16834,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3b5263cdded10e5b",
-      "url": "https://www.youtube.com/watch?v=hCMrEfPG2Yg",
-      "title": "Beyond Components: Designing Generative UI for MCP Apps \u2014 Ruben Casas, Postman",
-      "summary": "Ruben Casas from Postman prompted a model to rewrite his blog. It built a search box with a blur animation and accessibility out of the box, without being asked. That was when he concluded the model writes better frontend code than he does. His question for the talk: if the models are this capable, why are most agent UIs still invoking static prebuilt components?\n\nThe talk maps three points on the spectrum. Static components pass props to predefined React elements (AG UI, Goose auto visualizer). Declarative UI has the LLM generate JSON or YAML that a rendering engine maps to components at runtime. Ruben argues this is the right balance today. Fully generative UI skips components entirely: the model writes HTML, CSS, and JavaScript on demand. His weather agent does this in a single tool call. The catch is containment: LLM generated code needs a sandbox, which is why MCP apps and their double iframe default matter. He closes on the TV analogy. The first TV shows were radio shows with cameras because nobody could imagine what else to do with the new medium. We are in that era.\n\nSpeaker info:\n- https://x.com/Infoxicador\n- https://www.linkedin.com/in/ruben-casas-17100383/",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-03T17:00:06Z",
-      "fetched_at": "2026-06-03T17:58:19.727010Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "edf4d0a7088e256a",
       "url": "https://arxiv.org/abs/2606.10112",
       "title": "Duality for Optimal Multi-Item, Multi-Bidder Auction Design: Revenue Certificates through Deep Learning",
@@ -16869,26 +16849,6 @@
       "author": "Yanchen Jiang, David C. Parkes, Tonghan Wang",
       "published_at": "2026-06-10T04:00:00Z",
       "fetched_at": "2026-06-10T05:48:33.655155Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0a094e7b8954e2fa",
-      "url": "https://www.youtube.com/watch?v=vfWTyEreOEc",
-      "title": "I Tested Every Claude Code Feature, These 12 Are the Best",
-      "summary": "My FREE AI OS Course: https://www.skool.com/ai-automation-society/about?el=claude-features-ranked-may-26\nFull courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about?el=claude-features-ranked-may-26\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI've spent over 500 hours inside Claude's ecosystem, so I ranked every feature from D tier all the way up to S tier based on how much each one actually changes my day-to-day knowledge work and automation. \n\nThen I walk through my top 12 in order and explain exactly why each one earned its spot. Keep in mind I'm doing a lot of automation and knowledge work, not heavy software engineering, so you'll probably disagree with some of my placements. That's the point, you value these features differently based on how you use Claude Code.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Intro & How I Ranked These\n0:59 D Tier\n2:09 C Tier\n3:41 B Tier\n5:30 A Tier (Honorable Mentions)\n8:06 Top 12 Countdown Begins\n14:30 Top 5 Features\n17:52 #1: Skills\n19:23 Final Thoughts",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-06-03T16:16:11Z",
-      "fetched_at": "2026-06-03T17:58:18.507552Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -29348,28 +29308,6 @@
       "author": "Daniel Chen, Qicong Hu, Yang Xiao, Ting Dang, Hong Jia",
       "published_at": "2026-06-09T04:00:00Z",
       "fetched_at": "2026-06-09T05:42:18.414142Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "817ccc0dfb18df87",
-      "url": "https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/",
-      "title": "Lights Out, Systems On: Validating Instant Power Loss Readiness",
-      "summary": "<p>We\u2019re introducing Instantaneous PowerLoss Storm, a new testing paradigm within Meta\u2019s infrastructure for handling and mitigating instant or zero-notice power loss in our data centers.\u00a0 We\u2019re sharing: how we built readiness to tolerate instant failures into our existing systems with defense-in-depth strategies; tradeoffs made in implementing it, and how we validated our readiness. Disaster preparedness [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/\">Lights Out, Systems On: Validating Instant Power Loss Readiness</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "content": "<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">We\u2019re introducing Instantaneous PowerLoss Storm, a new testing paradigm within Meta\u2019s infrastructure for handling and mitigating instant or zero-notice power loss in our data centers.\u00a0</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">We\u2019re sharing: how we built readiness to tolerate instant failures into our existing systems with defense-in-depth strategies; tradeoffs made in implementing it, and how we validated our readiness.</span></li>\n</ul>\n<hr />\n<p><span style=\"font-weight: 400;\">Disaster preparedness is not optional. Hurricanes, wildfires, power supply and network disruptions, and countless more disaster scenarios all pose risks to our data center (DC) infrastructure.</span></p>\n<p><span style=\"font-weight: 400;\">Early warning systems and tried-and-tested mitigation strategies already serve us well in situations where we have a few hours or more advanced warning. While these strategies have matured over time as we have expanded our DC presence, the ever-increasing size and variety of our infrastructure has demanded an increased level of preparedness for zero-notice disasters (ones that occur without any warning), such as </span><b>instantaneous power loss</b><span style=\"font-weight: 400;\">, with </span><span style=\"font-weight: 400;\">minimal impact to overall fleet availability</span><span style=\"font-weight: 400;\">.</span></p>\n<p><span style=\"font-weight: 400;\">Instantaneous PowerLoss Storm is a new testing paradigm within Meta\u2019s long-established</span> <a href=\"https://atscaleconference.com/the-evolution-of-disaster-recovery-at-meta/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Disaster Readiness</span></a><span style=\"font-weight: 400;\"> (DR) \u201c</span><a href=\"https://engineering.fb.com/2016/09/05/core-infra/highlights-from-scale-2016/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Storm</span></a><span style=\"font-weight: 400;\">\u201d program that forms the last line of defense, and the ultimate safety net, to handle and mitigate instant or zero-notice power loss from known, emerging, and unknown risks.</span></p>\n<h2><span style=\"font-weight: 400;\">How We Built Readiness To Tolerate Instant Failures Into Our Existing Systems With Defense-in-Depth Strategies.</span></h2>\n<p><span style=\"font-weight: 400;\"><img alt=\"\" class=\"wp-image-24030 alignright\" height=\"500\" src=\"https://engineering.fb.com/wp-content/uploads/2026/06/Validating-PowerLoss-Readiness-Meta-image-2c.png\" width=\"325\" />The capability to handle instant power loss had to be built from the ground up into our DC stack, from mechanical and electrical facilities to server racks, from storage to compute and the core</span><a href=\"https://engineering.fb.com/2019/06/06/data-center-engineering/twine/\"> <span style=\"font-weight: 400;\">Twine</span></a><span style=\"font-weight: 400;\"> container orchestrator.\u00a0 Fortunately, each of these architectures was already developed with power loss tolerance as an integral component.</span></p>\n<p><span style=\"font-weight: 400;\">Providing the ability to persist in-memory data when racks have lost power using batteries and</span> <a href=\"https://engineering.fb.com/2021/12/16/data-center-engineering/power-loss-siren/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Power Loss Siren</span></a><span style=\"font-weight: 400;\"> (PLS) is one such capability. Having a robust DC region-wide asynchronous signaling mechanism for Twine services in the form of unavailability events (UE) is another. (A DC region \u2014 referred to as a \u201cregion\u201d below \u2014 is one where multiple DC buildings are co-located and share common network and power connectivity).</span></p>\n<p><span style=\"font-weight: 400;\">While these abilities were battle-tested and hardened on singular fault domains within single DCs, we identified outstanding vulnerabilities in scenarios encompassing an entire region. Also, testing a region required us to confront problems of not only scale (a typical region is normally 50-60x the size of the typical fault domains) and replica placement, but also of autonomous bootstrapping.</span></p>\n<p><b>Bootstrapping</b><span style=\"font-weight: 400;\"> refers to kickstarting a powered-off region and requiring millions of services to start all at once and discover each other autonomously. We describe two of the problems we encountered with bootstrapping below that required us to adopt a </span><i><span style=\"font-weight: 400;\">belt-and-braces approach</span></i><span style=\"font-weight: 400;\"> to cover all possible eventualities and contingencies.\u00a0\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">A prominent one to call out \u2014 one that haunted us from our earliest days \u2014 is that of dependencies, and in particular the dreaded </span><b>circular dependency,</b><span style=\"font-weight: 400;\"> \u201c</span><a href=\"https://en.wikipedia.org/wiki/Ouroboros\"><span style=\"font-weight: 400;\">ouroboros</span></a><span style=\"font-weight: 400;\">,\u201d risk! Our Twine orchestrator has a set of control plane services \u2014\u00a0 </span><a href=\"https://engineering.fb.com/2019/06/06/data-center-engineering/twine/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Scheduler</span></a><span style=\"font-weight: 400;\">, Allocator,</span> <a href=\"https://engineering.fb.com/2019/06/06/data-center-engineering/delos/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Broker</span></a><span style=\"font-weight: 400;\">,</span> <a href=\"https://engineering.fb.com/2022/06/08/developer-tools/zelos/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Zelos</span></a><span style=\"font-weight: 400;\"> (co-ordinator), and so on \u2014 without which we cannot run or start any other services in the region.\u00a0 While the risk from circular dependencies during regular operations is low, the risk and impact are far higher when bootstrapping an entire region. It\u2019s a true chicken and egg problem.</span></p>\n<p><span style=\"font-weight: 400;\">We solved this by identifying </span><b>critical startup dependencies</b><span style=\"font-weight: 400;\"> among the control plane services, and we continuously detect those </span><i><span style=\"font-weight: 400;\">early and often</span></i><span style=\"font-weight: 400;\"> with</span> <a href=\"https://engineering.fb.com/2022/05/05/developer-tools/belljar/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Belljar tests</span></a><span style=\"font-weight: 400;\"> in our CI / CD pipelines. These helped uncover and eliminate most, if not all, dependency risks before they are deployed to production. Given the rapid evolution of our Infra, and as a belt-and-braces solution, we also required the </span><b>capability </b><span style=\"font-weight: 400;\">to </span><b>break any circular dependencies </b><span style=\"font-weight: 400;\">that may have unexpectedly occurred</span><b>. </b><span style=\"font-weight: 400;\">A purpose-built Twine recovery kit provides this \u201cjumpstart\u201d capability to recover those Twine services that power Twine itself. Together with Belljar and Twrko, we have been able to successfully put the specter of circular dependencies to rest.\u00a0\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">We also encountered a \u201c</span><b>boomerang\u201d </b><span style=\"font-weight: 400;\">problem in the same vicinity</span> <span style=\"font-weight: 400;\">\u2014\u00a0 the</span> <span style=\"font-weight: 400;\">generator of a critical signal being impacted by the same signal.</span> <span style=\"font-weight: 400;\">The UEs used to orchestrate shutdown and recovery of services ended up shutting down the orchestrator control plane services themselves, resulting in orphaned services that could not be \u201c</span><a href=\"https://en.wikipedia.org/wiki/Zombie_process\"><span style=\"font-weight: 400;\">reaped</span></a><span style=\"font-weight: 400;\">\u201d (because they never received a UE). While this problem could have been solved with intricate solutions such as excluding a preset set of services from the UE dispatch list, we decided to adopt a simpler and more sustainable approach by allowing control plane services to simply \u201cignore\u201d shutdown signals associated with power-related UEs.\u00a0\u00a0</span><span style=\"font-weight: 400;\">\u00a0 \u00a0 </span></p>\n<p><span style=\"font-weight: 400;\">\u00a0 \u00a0</span></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_24025\" style=\"width: 1392px;\"><img alt=\"\" class=\"size-full wp-image-24025\" height=\"768\" src=\"https://engineering.fb.com/wp-content/uploads/2026/06/Validating-PowerLoss-Readiness-Meta-image1.png\" width=\"1392\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-24025\">The boomerang effect: The shutdown of Service-Z indirectly impacts the Twine Scheduler&#8217;s ability to orchestrate shutdowns.</figcaption></figure>\n<h2><span style=\"font-weight: 400;\">Tradeoffs Made When Striking the Right Balance Between Reliability and Velocity of Growth.</span></h2>\n<p><span style=\"font-weight: 400;\">While it is feasible to build watertight tolerance to instant loss, this can come at opportunity costs for infra or risk overengineering our systems. The latter even has the potential to introduce risks of false positives impacting regular operations. Hence, we needed to make certain tradeoffs to strike the right balance between reliability and engineering.</span></p>\n<p><span style=\"font-weight: 400;\">We began by drawing the line on which impacts must be avoided. Data loss of storage and database systems, permanent damage to DC facilities (mechanical/electrical), or sustained impact beyond a single region are some that we prominently noted as table-stake requirements. Transient service errors, rack failures (within a predefined threshold), and bounded staleness in service routing tables or in region unavailability detection (this is a</span>\u00a0<a href=\"https://www.the-paper-trail.org/post/2008-08-13-a-brief-tour-of-flp-impossibility/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">hard problem for asynchronous systems</span></a><span style=\"font-weight: 400;\">) were deemed as tolerable risks. In general, only issues which cannot be mitigated through post-incident remediations, and within a reasonable mean time to respond (MTTR), fell outside the boundary of tolerable impact.\u00a0</span></p>\n<h2><span style=\"font-weight: 400;\">How we validated our readiness through the exercise of Instantaneous PowerLoss Storm, and how this is enabling us to push the envelope further.</span></h2>\n<p><span style=\"font-weight: 400;\">Validation of the above expectations and preparation, by de-energizing a large production region, carried significant risks with several known and unknown unknowns. To solve this chicken-and-egg problem of needing to take risk to address risk, we established an incremental approach where we validated self-contained problems such as dependencies when turning up new/pre-production regions, as well as by running tests in \u201cshadow\u201d regions which replicate production regions. Subsequently, we were able to successfully test in our newest (and thus smallest) production regions with limited blast-radius. Finally, we powered off large production regions housing critical storage, AI, and data warehouse workloads. At this stage, we named these Storm exercises </span><b>Instantaneous PowerLoss Storms</b><span style=\"font-weight: 400;\">.</span></p>\n<p><span style=\"font-weight: 400;\">From 10,000 feet, the Storm consists of a power supply fault being injected to cause immediate de-energization of the entire region, and after a short MTTR remedial \u201cdrain\u201d actions undertaken to cordon off the impacted region from global controllers/schedulers. We also aimed to avoid undertaking any preemptive actions prior to the test to truly represent an unexpected loss of power. MTTR chosen for the test mirrored typical MTTR seen during real incident scenarios.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Each of these exercises helped to train our infrastructure and engineers iteratively towards the long term goal of handling loss of a region as seamlessly as loss of a sub-regional fault domain.\u00a0</span></p>\n<h2><span style=\"font-weight: 400;\">Stepping Stones Into the Future: Slow is Smooth. Smooth is Fast</span></h2>\n<p><span style=\"font-weight: 400;\">Even with all precautions, this has not been an entirely smooth path but one with multiple opportunities for learning and improvement that not only improved our testing capability but also pervaded throughout our Infra with several architectural improvements to our existing systems.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">In tandem, our</span> <a href=\"https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">infra has been evolving rapidly to meet myriad use cases of capacity and AI</span></a><span style=\"font-weight: 400;\">. Moving fast is possible only when we have strong foundations. </span><b>Reliability</b><span style=\"font-weight: 400;\"> and </span><b>velocity</b><span style=\"font-weight: 400;\"> are two facets of the same coin. You cannot have one without the other. The ability to recover a region from instantaneous failure has laid a strong foundation that has helped enable us to innovate in DC designs and validate them, build reliability in lockstep with rapid capacity deployments, and push the envelope further in what risks we can tolerate.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u00a0While previous Storms mostly validated storage and database backends, we are adopting the same incremental strategy towards validating regions with live client traffic against instantaneous failures. (More on this in an upcoming post!) We are also continually revisiting and revising tradeoffs in light of new challenges emerging during this growth phase.</span></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/06/03/data-center-engineering/lights-out-systems-on-validating-instant-power-loss-readiness/\">Lights Out, Systems On: Validating Instant Power Loss Readiness</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "source_name": "Meta Engineering",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "engineering",
-        "meta",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-03T17:00:44Z",
-      "fetched_at": "2026-06-04T17:21:05.863017Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63956,27 +63894,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9acbe99eb95d7470",
-      "url": "https://x.com/trq212/status/2062217018187923783",
-      "title": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time!...",
-      "summary": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time! \n\nYou can read her short story, Mall of America here: https://t.co/uYY8VlPIUt\n\nIt's one of my favorite short stories about the human condition that happens to involve AI.",
-      "content": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time! \n\nYou can read her short story, Mall of America here: https://t.co/uYY8VlPIUt\n\nIt's one of my favorite short stories about the human condition that happens to involve AI.",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-06-03T16:57:05Z",
-      "fetched_at": "2026-06-04T07:24:24.313914Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "b4643e5a2c4ed66f",
       "url": "https://x.com/steipete/status/2062530713254043865",
       "title": "RT @theo: In order to hit the limit of your $40 Copilot plan, you have to do at least $60 of inferen...",
@@ -65906,6 +65823,109 @@
       "author": "dani_avila7",
       "published_at": "2026-06-10T13:36:28Z",
       "fetched_at": "2026-06-10T14:06:02.126196Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fde103ac2775415d",
+      "url": "https://x.com/dani_avila7/status/2064749620807299316",
+      "title": "Fable 5 + Ultracode session report for this build\n\n4 agents ran in parallel and completed in 8 minut...",
+      "summary": "Fable 5 + Ultracode session report for this build\n\n4 agents ran in parallel and completed in 8 minutes, run them sequentially and you're looking at ~19 minutes\n\nParallelism isn't a feature you appreciate until you see it in a real workflow\n\nDynamic workflows (ultracode) handled https://t.co/2Kd05aV5MW",
+      "content": "Fable 5 + Ultracode session report for this build\n\n4 agents ran in parallel and completed in 8 minutes, run them sequentially and you're looking at ~19 minutes\n\nParallelism isn't a feature you appreciate until you see it in a real workflow\n\nDynamic workflows (ultracode) handled https://t.co/2Kd05aV5MW",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-10T16:40:45Z",
+      "fetched_at": "2026-06-10T17:18:28.639238Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "01e9ea400db25be4",
+      "url": "https://x.com/steipete/status/2064748856466636810",
+      "title": "RT @mitsuhiko: Some thoughts of mine that nobody asked for on the EU's fight with Apple and my worri...",
+      "summary": "RT @mitsuhiko: Some thoughts of mine that nobody asked for on the EU's fight with Apple and my worries related to Mythos and Fable. https:/\u2026",
+      "content": "RT @mitsuhiko: Some thoughts of mine that nobody asked for on the EU's fight with Apple and my worries related to Mythos and Fable. https:/\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-10T16:37:43Z",
+      "fetched_at": "2026-06-10T17:18:37.236814Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e92e72c40a8e7122",
+      "url": "https://x.com/simonw/status/2064730862609215761",
+      "title": "RT @ClementDelangue: In good faith and with no judgment (mistakes happen), I truly hope that Anthrop...",
+      "summary": "RT @ClementDelangue: In good faith and with no judgment (mistakes happen), I truly hope that Anthropic will hear the feedback and change co\u2026",
+      "content": "RT @ClementDelangue: In good faith and with no judgment (mistakes happen), I truly hope that Anthropic will hear the feedback and change co\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-10T15:26:13Z",
+      "fetched_at": "2026-06-10T17:18:27.300067Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9acbe99eb95d7470",
+      "url": "https://x.com/trq212/status/2062217018187923783",
+      "title": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time!...",
+      "summary": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time! \n\nYou can read her short story, Mall of America here: https://t.co/uYY8VlPIUt\n\nIt's one of my favorite short stories about the human condition that happens to involve AI.",
+      "content": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time! \n\nYou can read her short story, Mall of America here: https://t.co/uYY8VlPIUt\n\nIt's one of my favorite short stories about the human condition that happens to involve AI.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-03T16:57:05Z",
+      "fetched_at": "2026-06-04T07:24:24.313914Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7c07f166a502a72d",
+      "url": "https://x.com/GeminiApp/status/2062176566155895126",
+      "title": "RT @joshwoodward: \u2705 Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and...",
+      "summary": "RT @joshwoodward: \u2705 Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/aF02kkUekW",
+      "content": "RT @joshwoodward: \u2705 Papercut fixed: Thinking Levels are now available on Gemini across Web, iOS, and Android. https://t.co/aF02kkUekW",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-03T14:16:21Z",
+      "fetched_at": "2026-06-04T07:24:32.102490Z",
       "score": null,
       "score_reason": "",
       "tier": "",
