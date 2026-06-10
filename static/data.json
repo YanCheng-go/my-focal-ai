@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-10T13:32:58.477196+00:00",
+  "exported_at": "2026-06-10T14:06:13.849066+00:00",
   "period_hours": 168,
-  "total": 3055,
+  "total": 3056,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -65927,6 +65927,26 @@
       "author": "bcherny",
       "published_at": "2026-06-09T17:42:06Z",
       "fetched_at": "2026-06-10T06:59:35.755539Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4e831555bf6a7936",
+      "url": "https://x.com/dani_avila7/status/2064703245931438420",
+      "title": "as far as I understand, API usage charges don't start until June 23rd... but I'm seeing this message...",
+      "summary": "as far as I understand, API usage charges don't start until June 23rd... but I'm seeing this message when I select Fable 5\n\nIs this a bug?\nCC @bcherny @trq212 https://t.co/xFJrTxHWvY",
+      "content": "as far as I understand, API usage charges don't start until June 23rd... but I'm seeing this message when I select Fable 5\n\nIs this a bug?\nCC @bcherny @trq212 https://t.co/xFJrTxHWvY",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-10T13:36:28Z",
+      "fetched_at": "2026-06-10T14:06:02.126196Z",
       "score": null,
       "score_reason": "",
       "tier": "",
