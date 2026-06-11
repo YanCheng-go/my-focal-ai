@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-11T11:49:18.243298+00:00",
+  "exported_at": "2026-06-11T13:36:35.099685+00:00",
   "period_hours": 168,
-  "total": 3147,
+  "total": 3143,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -41513,28 +41513,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3f7e045b00bda37a",
-      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/",
-      "title": "NVIDIA Nemotron 3 Ultra Powers Faster, More Efficient Reasoning for Long-Running Agents",
-      "summary": "<img alt=\"Illustration showing Nemtron 3 Ultra.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Nemotron-3-Ultra-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Nemotron-3-Ultra\" width=\"768\" />Single-turn chatbots are evolving into long-running agents that can reason, maintain context, use tools, and run efficiently across many turns to complete...",
-      "content": "<img alt=\"Illustration showing Nemtron 3 Ultra.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Nemotron-3-Ultra-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Nemotron-3-Ultra\" width=\"768\" />Single-turn chatbots are evolving into long-running agents that can reason, maintain context, use tools, and run efficiently across many turns to complete...<img alt=\"Illustration showing Nemtron 3 Ultra.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/Nemotron-3-Ultra-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Nemotron-3-Ultra\" width=\"768\" /><p>Single-turn chatbots are evolving into long-running agents that can reason, maintain context, use tools, and run efficiently across many turns to complete complex workflows. However, these multi-agent workflows cause token counts to grow quickly. Agents plan, call tools, invoke sub-agents, receive information, and then pass history, outputs, and reasoning steps back into the model\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/nvidia-nemotron-3-ultra-powers-faster-more-efficient-reasoning-for-long-running-agents/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Chris Alexiuk",
-      "published_at": "2026-06-04T13:02:49Z",
-      "fetched_at": "2026-06-04T13:28:32.076250Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "dc279f40a0dfa1d0",
       "url": "https://arxiv.org/abs/2606.08802",
       "title": "Active Flow Expansion for Out-of-Distribution Discovery: from Theory to Molecules",
@@ -41689,69 +41667,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "eade023a4c8996c7",
-      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-june-2026-games-list/",
-      "title": "Forecast: Fun Ahead \u2014 18 Games Join in June to Stream on GeForce NOW",
-      "summary": "June\u2019s forecast with GeForce NOW: 100% chance of gaming. GeForce NOW is lining up new adventures for the month, from big-name blockbusters to quirky indies ready for the spotlight. Members can dive into fresh worlds, squad up in new playlists and discover \u201cjust one more run\u201d favorites \u2014 all streaming from the cloud, no downloads [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">June\u2019s forecast with </span><a href=\"https://www.nvidia.com/en-us/geforce-now/\" target=\"_blank\"><span style=\"font-weight: 400;\">GeForce NOW</span></a><span style=\"font-weight: 400;\">: 100% chance of gaming.</span></p>\n<p><span style=\"font-weight: 400;\">GeForce NOW is lining up new adventures for the month, from big-name blockbusters to quirky indies ready for the spotlight. Members can dive into fresh worlds, squad up in new playlists and discover \u201cjust one more run\u201d favorites \u2014 all streaming from the cloud, no downloads or upgrades required.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Eighteen </span><span style=\"font-weight: 400;\">games are coming this month, starting with the </span><span style=\"font-weight: 400;\">10 </span><span style=\"font-weight: 400;\">games arriving this week with the highly requested </span><i><span style=\"font-weight: 400;\">Neverness to Everness</span></i><span style=\"font-weight: 400;\">.\u00a0</span></p>\n<h2><b>A World Beyond</b></h2>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_94052\" style=\"width: 1200px;\"><img alt=\"\" class=\"size-large wp-image-94052\" height=\"600\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/06/GFN_Thursday-NTE_Neverness_To_Everness-1680x840.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-94052\">City limits end where reality bends.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">Step into a surreal, supernatural open world in </span><i><span style=\"font-weight: 400;\">NTE:</span></i> <i><span style=\"font-weight: 400;\">Neverness to Everness </span></i><span style=\"font-weight: 400;\">from Hota Studio</span><i><span style=\"font-weight: 400;\">. </span></i><span style=\"font-weight: 400;\">Reality bends, streets twist into impossible angles and the uncanny waits around every corner.</span></p>\n<p><span style=\"font-weight: 400;\">Play as an anomaly hunter drawn into a strange metropolis alive with anomalies, cosmic oddities and dreamlike encounters. Explore the city\u2019s districts at street level or from impossible heights, uncovering secrets, side stories and hidden paths woven through the tangled skyline. Combat and exploration blend together as players move between quiet, eerie spaces and sudden bursts of action.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Every alleyway and rooftop hides something strange and new, from bizarre characters to otherworldly phenomena that reshape the environment in unexpected ways.</span></p>\n<p><span style=\"font-weight: 400;\">Streaming with GeForce NOW lets the game\u2019s distinctive art direction and atmospheric lighting shine, keeping the city\u2019s moody glow, deep shadows and supernatural effects crisp and sharp.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Whether wandering its streets on a big screen or checking in from a laptop, </span><i><span style=\"font-weight: 400;\">NTE: Neverness to Everness</span></i><span style=\"font-weight: 400;\"> stays fluid and immersive \u2014 powered by the cloud.</span></p>\n<h2><b>June Games Juicing Up the Cloud</b></h2>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_94056\" style=\"width: 1200px;\"><img alt=\"\" class=\"size-large wp-image-94056\" height=\"600\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/06/GFN_Thursday-Gothic_1_Remake-1680x840.jpg\" width=\"1200\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-94056\">A legend returns.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">Return to the Valley of Mines in </span><i><span style=\"font-weight: 400;\">Gothic 1 Remake</span></i><span style=\"font-weight: 400;\">, a faithful rebuild of the original experience that expands the world with more detailed questlines, additional nonplayer character routines and reactions, new traversal abilities and a fully modernized combat system. Step into the role of the Nameless Hero and explore a dangerous prison colony filled with rival factions, ancient magic, deadly creatures and choices that shape the journey ahead.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Whether revisiting a classic or discovering it for the first time, GeForce NOW makes it easy to jump into the adventure instantly across nearly any device, no downloads required.</span></p>\n<p><span style=\"font-weight: 400;\">Check out what all is available this week:</span></p>\n<ul>\n<li><i><span style=\"font-weight: 400;\">Jurassic World Evolution 3</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://www.xbox.com/en-US/games/store/jurassic-world-evolution-3/9nx7hcwl13z9?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li><i><span style=\"font-weight: 400;\">Fatekeeper </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/2186990/Fatekeeper/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, available June 2)</span></li>\n<li><i><span style=\"font-weight: 400;\">House Flipper Remastered Collection </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/3710840/House_Flipper_Remastered_Collection/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, available June 4)</span></li>\n<li><i><span style=\"font-weight: 400;\">Pro Cycling Manager 26 </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/3936530/Pro_Cycling_Manager_26/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, available June 4)</span></li>\n<li><i><span style=\"font-weight: 400;\">GOALS </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/2753000/GOALS/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, available June 4)</span></li>\n<li><i><span style=\"font-weight: 400;\">Gothic 1 Remake </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/1297900/Gothic_1_Remake/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, available June 5)</span></li>\n<li><i><span style=\"font-weight: 400;\">NTE: Neverness to Everness</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://nte.perfectworld.com/en/?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Launcher</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">The Outer Worlds: Spacer\u2019s Choice Edition</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/1920490/The_Outer_Worlds_Spacers_Choice_Edition/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.xbox.com/en-US/games/store/the-outer-worlds-spacers-choice-edition/9ng2f1q062vv?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li><i><span style=\"font-weight: 400;\">Tomb Raider I-III Remastered </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.epicgames.com/p/tomb-raider-iiii-remastered-538640?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Epic Games Store</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">XCOM: Enemy Unknown </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/200510/XCOM_Enemy_Unknown/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">And look forward to the games coming throughout the month:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">STARSEEKER: Astroneer Expeditions </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/1454370?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, June 11)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">SpaceCraft </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/3276050?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, June 11)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Denshattack! </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/2524850?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.xbox.com/games/store/denshattack/9n18l56xhk8z?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass, June 17)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">The Adventures of Elliot: The Millennium Tales </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/3483510?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, June 18)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Dark Scrolls </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/2912550?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, June 22)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Monopoly: Star Wars Heroes vs. Villains </span></i><span style=\"font-weight: 400;\">(New release on </span><a href=\"https://store.steampowered.com/app/3936610?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://store.ubi.com/69851456f2b83a7aabb12781.html?ucid=AFL-ID_152062&amp;maltcode=geforcenow_convst_AFL_geforcenow_vg__STORE____&amp;addinfo=\" target=\"_blank\"><span style=\"font-weight: 400;\">Ubisoft</span></a><span style=\"font-weight: 400;\">, June 30)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Farever </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/3672400?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">FATAL FURY: City of the Wolves</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/2492040/FATAL_FURY_City_of_the_Wolves/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)\u00a0</span></li>\n</ul>\n<h2><b>More From May</b></h2>\n<p><span style=\"font-weight: 400;\">In addition to the 16 games announced last month, 18 more joined the </span><a href=\"https://play.geforcenow.com\" target=\"_blank\"><span style=\"font-weight: 400;\">GeForce NOW library</span></a><span style=\"font-weight: 400;\">:</span></p>\n<ul>\n<li><i><span style=\"font-weight: 400;\">Alchemy Factory</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/3669570?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Battlestar Galactica: Scattered Hopes </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/2535950?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Blades of Fire </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/2091020?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">BeamNG.drive </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://www.epicgames.com/store/p/beamngdrive-7f5f3a?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Epic Games Store</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Directive 8020</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/2255370?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Disco Elysium</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.xbox.com/games/store/disco-elysium-the-final-cut/9ntrs771l8hl?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li><i><span style=\"font-weight: 400;\">Oddsparks: An Automation Adventure</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.epicgames.com/store/p/oddsparks-58440c?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Epic Games Store</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Ostranauts </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/1022980?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Planet Coaster 2 </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://www.epicgames.com/store/p/planet-coaster-2-983fe9?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Epic Games Store</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">PowerWash Simulator 2</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.xbox.com/games/store/powerwash-simulator-2/9P45GGDTFNSM?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li><i><span style=\"font-weight: 400;\">Resident Evil Requiem Demo</span></i><span style=\"font-weight: 400;\"> (Steam)</span></li>\n<li><i><span style=\"font-weight: 400;\">Romestead </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/1805320?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">SPLITGATE: Arena Reloaded </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://www.xbox.com/games/store/splitgate-2/9pf5q1b0fhsl?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li><i><span style=\"font-weight: 400;\">Subnautica 2 </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/1962700?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, </span><a href=\"https://www.epicgames.com/store/p/subnautica-2-d27f94?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Epic Games Store</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.xbox.com/games/store/subnautica-2/9pjpcb188svg?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li><i><span style=\"font-weight: 400;\">Sunderfolk</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.epicgames.com/store/p/sunderfolk-7300c3?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Epic Games Store</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">TerraTech Legion </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/3596700/TerraTech_Legion/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.xbox.com/games/store/terratech-legion/9ng66k0z31lh?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li><i><span style=\"font-weight: 400;\">Warhammer 40,000: Mechanicus II</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/2532480?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">World of Tanks: HEAT</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/2100280?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n</ul>\n<p><i></i><span style=\"font-weight: 400;\">What are you planning to play this weekend? Let us know </span><a href=\"https://www.twitter.com/nvidiagfn\" target=\"_blank\"><span style=\"font-weight: 400;\">X</span></a><span style=\"font-weight: 400;\"> or in the comments below.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "GeForce NOW Community",
-      "published_at": "2026-06-04T13:00:27Z",
-      "fetched_at": "2026-06-04T13:28:31.273923Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "20bdd88a63cd5552",
-      "url": "https://huggingface.co/blog/nvidia/fine-tuning-nemotron-35-asr",
-      "title": "How to Fine-Tune Nemotron 3.5 ASR for Your Language, Domain, or Accent",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-06-04T12:59:35Z",
-      "fetched_at": "2026-06-04T13:28:32.534144Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b29a2f9c2753bce2",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
-      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-06-04T12:24:58Z",
-      "fetched_at": "2026-06-04T13:28:32.534168Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "eb2d080119daa536",
       "url": "https://arxiv.org/abs/2606.08654",
       "title": "Operator learning for the 2D incompressible Navier-Stokes equations: a conformal prediction approach in the data-scarce regime",
@@ -41812,27 +41727,6 @@
       "author": "Jasmeet Singh Bindra, Siddharth Panwar, Shubhajit Roy Chowdhury",
       "published_at": "2026-06-09T04:00:00Z",
       "fetched_at": "2026-06-09T05:42:18.414203Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2e1f29b50d98a2b5",
-      "url": "https://openai.com/index/endava-frontiers",
-      "title": "How Endava is redesigning software delivery around AI agents",
-      "summary": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-04T12:00:00Z",
-      "fetched_at": "2026-06-04T09:35:33.059488Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -65503,26 +65397,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "38f06e4e80b76979",
-      "url": "https://x.com/steipete/status/2062518369497055493",
-      "title": "RT @cnakazawa: I\u2019ve been dumping on OpenAI with low effort meme tweets that get too many views, but ...",
-      "summary": "RT @cnakazawa: I\u2019ve been dumping on OpenAI with low effort meme tweets that get too many views, but Codex is the best DevX acceleration pro\u2026",
-      "content": "RT @cnakazawa: I\u2019ve been dumping on OpenAI with low effort meme tweets that get too many views, but Codex is the best DevX acceleration pro\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-04T12:54:33Z",
-      "fetched_at": "2026-06-04T15:29:05.890799Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0bd68b5efec0e448",
       "url": "https://x.com/steipete/status/2063340665623421180",
       "title": "RT @jxnlco: Me looking at modern GitHub code review bots and then looking at whatever @steipete buil...",
@@ -67803,6 +67677,47 @@
       "author": "steipete",
       "published_at": "2026-06-11T09:48:56Z",
       "fetched_at": "2026-06-11T11:36:09.722337Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "57822d795a499334",
+      "url": "https://x.com/AnthropicAI/status/2065057393927467084",
+      "title": "We\u2019re launching Claude Corps, a national fellowship program matching people early in their careers w...",
+      "summary": "We\u2019re launching Claude Corps, a national fellowship program matching people early in their careers with US nonprofits.\n\nWe'll teach 1,000 people to use Claude, and pay them to use AI to advance their hosts\u2019 missions.\n\nhttps://t.co/QI6JmlAdSr",
+      "content": "We\u2019re launching Claude Corps, a national fellowship program matching people early in their careers with US nonprofits.\n\nWe'll teach 1,000 people to use Claude, and pay them to use AI to advance their hosts\u2019 missions.\n\nhttps://t.co/QI6JmlAdSr",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-11T13:03:44Z",
+      "fetched_at": "2026-06-11T13:36:31.571251Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "38f06e4e80b76979",
+      "url": "https://x.com/steipete/status/2062518369497055493",
+      "title": "RT @cnakazawa: I\u2019ve been dumping on OpenAI with low effort meme tweets that get too many views, but ...",
+      "summary": "RT @cnakazawa: I\u2019ve been dumping on OpenAI with low effort meme tweets that get too many views, but Codex is the best DevX acceleration pro\u2026",
+      "content": "RT @cnakazawa: I\u2019ve been dumping on OpenAI with low effort meme tweets that get too many views, but Codex is the best DevX acceleration pro\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T12:54:33Z",
+      "fetched_at": "2026-06-04T15:29:05.890799Z",
       "score": null,
       "score_reason": "",
       "tier": "",
