@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-11T08:01:50.937574+00:00",
+  "exported_at": "2026-06-11T09:35:44.991493+00:00",
   "period_hours": 168,
-  "total": 3138,
+  "total": 3144,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -41796,27 +41796,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c3ab33c622260498",
-      "url": "https://openai.com/index/chatgpt-memory-dreaming",
-      "title": "Dreaming: Better memory for a more helpful ChatGPT",
-      "summary": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-04T09:00:00Z",
-      "fetched_at": "2026-06-04T17:21:05.253102Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a88c312c02b2d348",
       "url": "https://arxiv.org/abs/2606.08592",
       "title": "Quantum Global Variational Learning for Quantum Error Correction",
@@ -67619,6 +67598,148 @@
       "author": "bcherny",
       "published_at": "2026-06-11T07:19:29Z",
       "fetched_at": "2026-06-11T07:35:12.250972Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "167b777bb8eff01a",
+      "url": "https://x.com/steipete/status/2065003868459811240",
+      "title": "RT @xwang_lk: If you really think about it, despite being mocked as \u201cClosedAI,\u201d OpenAI has contribut...",
+      "summary": "RT @xwang_lk: If you really think about it, despite being mocked as \u201cClosedAI,\u201d OpenAI has contributed enormously to the field: GPT, GPT-2,\u2026",
+      "content": "RT @xwang_lk: If you really think about it, despite being mocked as \u201cClosedAI,\u201d OpenAI has contributed enormously to the field: GPT, GPT-2,\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T09:31:02Z",
+      "fetched_at": "2026-06-11T09:35:43.061700Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cd836c969c7c0e85",
+      "url": "https://x.com/steipete/status/2065003719771730063",
+      "title": "RT @GergelyOrosz: This shows yet again how this limitation was never about \"safety\" but about Anthro...",
+      "summary": "RT @GergelyOrosz: This shows yet again how this limitation was never about \"safety\" but about Anthropic doing stuff just because they thoug\u2026",
+      "content": "RT @GergelyOrosz: This shows yet again how this limitation was never about \"safety\" but about Anthropic doing stuff just because they thoug\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T09:30:27Z",
+      "fetched_at": "2026-06-11T09:35:43.061858Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6f17c98b98f1ae6b",
+      "url": "https://x.com/steipete/status/2064999763397980286",
+      "title": "Part of the OpenClaw hardening work is reducing surface risk; for some media conversion we had to sh...",
+      "summary": "Part of the OpenClaw hardening work is reducing surface risk; for some media conversion we had to shell out to ffmpeg.\n\nIn the next release that can now be done via wasm, with similar performance for our use cases.\nhttps://t.co/tGOI87C7lc",
+      "content": "Part of the OpenClaw hardening work is reducing surface risk; for some media conversion we had to shell out to ffmpeg.\n\nIn the next release that can now be done via wasm, with similar performance for our use cases.\nhttps://t.co/tGOI87C7lc",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T09:14:44Z",
+      "fetched_at": "2026-06-11T09:35:43.061907Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5ae7dc5e532ac28e",
+      "url": "https://x.com/steipete/status/2064998499780084154",
+      "title": "Here's a simple loop: Tell codex to maintain your repos, wake up every 5 minutes and direct work to ...",
+      "summary": "Here's a simple loop: Tell codex to maintain your repos, wake up every 5 minutes and direct work to threads. That makes it easy to parallelize+steer work as needed.\n\nI use a orchestrator skill combined with my triage+autoreview+computer use skills, so some work can land https://t.co/0ASlWqkysW",
+      "content": "Here's a simple loop: Tell codex to maintain your repos, wake up every 5 minutes and direct work to threads. That makes it easy to parallelize+steer work as needed.\n\nI use a orchestrator skill combined with my triage+autoreview+computer use skills, so some work can land https://t.co/0ASlWqkysW",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T09:09:42Z",
+      "fetched_at": "2026-06-11T09:35:43.061946Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3752def8b44ead06",
+      "url": "https://x.com/steipete/status/2064997080192696678",
+      "title": "RT @SemiAnalysis_: Recently, we purchased one of each Anthropic/OpenAI subscription plan and randoml...",
+      "summary": "RT @SemiAnalysis_: Recently, we purchased one of each Anthropic/OpenAI subscription plan and randomly ran long horizon coding tasks until w\u2026",
+      "content": "RT @SemiAnalysis_: Recently, we purchased one of each Anthropic/OpenAI subscription plan and randomly ran long horizon coding tasks until w\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T09:04:04Z",
+      "fetched_at": "2026-06-11T09:35:43.061990Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "630d642358543ace",
+      "url": "https://x.com/simonw/status/2064983143246188594",
+      "title": "It's fun to look back at this Twitter conversation about the then-new ChatGPT Code Interpreter from ...",
+      "summary": "It's fun to look back at this Twitter conversation about the then-new ChatGPT Code Interpreter from three years ago - with hindsight this was our first glimpse of a coding agent, before we knew what a coding agent was",
+      "content": "It's fun to look back at this Twitter conversation about the then-new ChatGPT Code Interpreter from three years ago - with hindsight this was our first glimpse of a coding agent, before we knew what a coding agent was",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T08:08:41Z",
+      "fetched_at": "2026-06-11T09:35:33.040628Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "40c421101ffd38cc",
+      "url": "https://x.com/bcherny/status/2064974739626394053",
+      "title": "RT @aaronli: claude fable 5 has solved CAD\n\nI asked it to make a model of a V8 engine\n\nIt came back ...",
+      "summary": "RT @aaronli: claude fable 5 has solved CAD\n\nI asked it to make a model of a V8 engine\n\nIt came back to me with a fully working model in und\u2026",
+      "content": "RT @aaronli: claude fable 5 has solved CAD\n\nI asked it to make a model of a V8 engine\n\nIt came back to me with a fully working model in und\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-11T07:35:17Z",
+      "fetched_at": "2026-06-11T09:35:31.647120Z",
       "score": null,
       "score_reason": "",
       "tier": "",
