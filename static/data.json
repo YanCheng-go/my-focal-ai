@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-11T21:07:43.429858+00:00",
+  "exported_at": "2026-06-11T21:59:33.225652+00:00",
   "period_hours": 168,
-  "total": 3144,
+  "total": 3152,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12331,90 +12331,6 @@
       "author": "Stanford Online",
       "published_at": "2026-06-04T22:17:04Z",
       "fetched_at": "2026-06-04T22:47:47.564196Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "731764ef7ee7e775",
-      "url": "https://www.youtube.com/watch?v=NDdc39KYqDU",
-      "title": "Stanford CS25: Transformers United V6 I From Language Models to Native Multimodal Intelligence",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nMay 21, 2026\nThis seminar covers: \n\u2022 The evolution from language models to native multimodal systems\n\u2022 Focus on the architectural and training principles that transfer from the LLM paradigm\n\u2022 Challenges introduced by multimodal learning\n\u2022 The building blocks of modern multimodal LLMs, including modality representations, autoregressive modeling, and reasoning capabilities inherited from strong language models\n\u2022 Emerging directions in multimodal architecture design, including sparsity and modality specialization\n\nFollow along with the seminar schedule. Visit: https://web.stanford.edu/class/cs25/\n\nGuest Speaker: Victoria Lin (Thinking Machines)\n\nInstructors: \n\u2022 Steven Feng,  Stanford Computer Science PhD student and NSERC PGS-D scholar\n\u2022 Karan P. Singh, Electrical Engineering PhD student and NSF Graduate Research Fellow in the Stanford Translational AI Lab\n\u2022 Michael C. Frank, Benjamin Scott Crocker Professor of Human Biology Director, Symbolic Systems Program\n\u2022 Christopher Manning, Thomas M. Siebel Professor in Machine Learning, Professor of Linguistics and of Computer Science, Co-Founder and Senior Fellow of the Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-04T21:51:12Z",
-      "fetched_at": "2026-06-04T22:47:47.564210Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ce323e4168490137",
-      "url": "https://www.youtube.com/watch?v=ZUdIsRZhWXI",
-      "title": "Stanford CS25: Transformers United V6 I Serving Transformers: Lessons from the Trenches",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nMay 28, 2026\nServing Transformers: Lessons from the Trenches of Production Inference\n\nThis seminar covers insights, lessons, and gnarly scars from serving transformer model inferences at the scale of thousands of GPUs.\n\nFollow along with the seminar schedule. Visit: https://web.stanford.edu/class/cs25/\n\nGuest Speaker: Charles Frye (Modal)\n\nInstructors: \n\u2022 Steven Feng,  Stanford Computer Science PhD student and NSERC PGS-D scholar\n\u2022 Karan P. Singh, Electrical Engineering PhD student and NSF Graduate Research Fellow in the Stanford Translational AI Lab\n\u2022 Michael C. Frank, Benjamin Scott Crocker Professor of Human Biology Director, Symbolic Systems Program\n\u2022 Christopher Manning, Thomas M. Siebel Professor in Machine Learning, Professor of Linguistics and of Computer Science, Co-Founder and Senior Fellow of the Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-04T21:45:52Z",
-      "fetched_at": "2026-06-04T22:47:47.564218Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d22b75049f364936",
-      "url": "https://www.youtube.com/watch?v=26FtD08ZpOU",
-      "title": "Stanford CS336 Language Modeling from Scratch | Spring 2026 | Lecture 17: Alignment - Multimodality",
-      "summary": "For more information about Stanford's online Artificial Intelligence programs, visit: https://stanford.io/ai\n\nTo learn more about enrolling in this course, visit: https://online.stanford.edu/courses/cs336-language-modeling-scratch\n\nFollow along with the course schedule and syllabus: https://cs336.stanford.edu/\n\nPercy Liang\nProfessor of Computer Science (and courtesy in Statistics)\n\nTatsunori Hashimoto\nAssistant Professor of Computer Science\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-04T21:29:14Z",
-      "fetched_at": "2026-06-04T22:47:47.564225Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "53e246533c54fc02",
-      "url": "https://www.youtube.com/watch?v=dDrH85xJz1I",
-      "title": "Serial Entrepreneur: Why Your MBA Is Worthless",
-      "summary": "In this eye-opening interview, successful serial entrepreneur David Guttman reveals the counterintuitive strategies that helped him build and exit multiple 8-figure and 9-figure companies - approaches you won't learn in business school.\n\nDavid shares his journey from Wharton MBA to discovering that formal education actually created obstacles to building successful businesses. He breaks down his controversial \"feel the pain\" approach to scaling companies and explains why most entrepreneurs fail by optimizing too early.\n\nYou'll discover:\n\nWhy fixing broken companies is easier than starting from scratch\nThe only two numbers that truly matter for business success (CAC and LTV)\nHow to extract solutions from your team instead of imposing them\nWhy being humble is more important than being smart\nThe data-driven approach that turned failing companies profitable in just weeks\nWhether you're a first-time founder or looking to scale your existing business, these practical insights from someone who's actually done it multiple times will transform your approach to entrepreneurship.\n\n#BusinessGrowth #EntrepreneurMindset #ScalingBusiness #StartupAdvice #BusinessSuccess #EntrepreneurialJourney #BusinessStrategy #DataDrivenDecisions #CompanyScaling #SerialEntrepreneur",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-02-18T16:02:51Z",
-      "fetched_at": "2026-06-09T17:12:08.130225Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -41487,29 +41403,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "0517ef1efd7e9292",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.163",
-      "title": "v2.1.163",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Added <code>requiredMinimumVersion</code> and <code>requiredMaximumVersion</code> managed settings \u2014 Claude Code refuses to start if its version is outside the allowed range and directs the user to an approved version</li>\n<li>Added <code>/plugin list</code> command to list installed plugins, with <code>--enabled</code>/<code>--disabled</code> filters</li>\n<li>Added a \"c to copy\" shortcut to <code>/btw</code> that copies the raw markdown answer to the clipboard, preserving formatting when pasted elsewhere</li>\n<li>Hooks: Stop and SubagentStop hooks can now return <code>hookSpecificOutput.additionalContext</code> to give Claude feedback and keep the turn going without being labeled a hook error</li>\n<li>Skills: added <code>\\$</code> escape syntax to include a literal <code>$</code> before a digit in command bodies</li>\n<li>stdio MCP servers now receive the same <code>CLAUDE_CODE_SESSION_ID</code> as hooks/Bash on <code>--resume</code></li>\n<li>Fixed <code>claude -p</code> hanging forever after its final result when a backgrounded command never exits \u2014 background shells are now stopped ~5s after the result once stdin closes</li>\n<li>Fixed <code>claude -p</code> failing with \"ANTHROPIC_API_KEY required\" on Bedrock/Vertex/Foundry when <code>CI=true</code> and no Anthropic API key is set</li>\n<li>Fixed bash commands failing under bazel and EDR-protected Go workflows: <code>$TMPDIR</code> was overridden to <code>/tmp/claude-{uid}</code> for all commands instead of only sandboxed ones (regression in 2.1.154)</li>\n<li>Fixed Bash commands failing on Windows with \"EEXIST: file already exists\" on the session-env directory when it has the read-only attribute or is inside OneDrive</li>\n<li>Fixed org-managed permission rules not applying for the entire session when the managed settings fetch completed during startup on a fresh config directory</li>\n<li>Fixed background sessions in <code>claude agents</code> losing their running background tasks when reattached after a Claude Code update</li>\n<li>Fixed terminal misalignment and a multi-second hang when exiting the agent view by pressing Esc</li>\n<li>Fixed clicking Stop on a background-task chip in the desktop app not clearing the chip when the underlying process was already gone</li>\n<li>Fixed keyboard input becoming permanently unresponsive after a paste operation whose end marker is dropped by the terminal</li>\n<li>Fixed hook <code>if: \"Bash(...)\"</code> conditions firing on every Bash command containing <code>$()</code> or <code>$VAR</code>; the pattern now matches against commands inside subshells and backticks too</li>\n<li>Fixed deny rules on home-directory paths (e.g. <code>Read(~/Desktop/**)</code>) not blocking Bash commands that reference the path via <code>$HOME</code></li>\n<li>Fixed a stray \"(no content)\" line left in the transcript after closing panel dialogs like /mcp and /plugins</li>\n<li>Background agent sessions now update to a new Claude Code version in the background, so opening a session after an update no longer waits on a cold restart</li>\n<li>Clearer descriptions for built-in commands and skills in the / menu</li>\n<li>The subscription-switch suggestion now shows in the startup announcement slot instead of a toast</li>\n<li><code>claude agents</code> dispatching from the state-grouped view now starts the session in the directory the agent view was opened from</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Added <code>requiredMinimumVersion</code> and <code>requiredMaximumVersion</code> managed settings \u2014 Claude Code refuses to start if its version is outside the allowed range and directs the user to an approved version</li>\n<li>Added <code>/plugin list</code> command to list installed plugins, with <code>--enabled</code>/<code>--disabled</code> filters</li>\n<li>Added a \"c to copy\" shortcut to <code>/btw</code> that copies the raw markdown answer to the clipboard, preserving formatting when pasted elsewhere</li>\n<li>Hooks: Stop and SubagentStop hooks can now return <code>hookSpecificOutput.additionalContext</code> to give Claude feedback and keep the turn going without being labeled a hook error</li>\n<li>Skills: added <code>\\$</code> escape syntax to include a literal <code>$</code> before a digit in command bodies</li>\n<li>stdio MCP servers now receive the same <code>CLAUDE_CODE_SESSION_ID</code> as hooks/Bash on <code>--resume</code></li>\n<li>Fixed <code>claude -p</code> hanging forever after its final result when a backgrounded command never exits \u2014 background shells are now stopped ~5s after the result once stdin closes</li>\n<li>Fixed <code>claude -p</code> failing with \"ANTHROPIC_API_KEY required\" on Bedrock/Vertex/Foundry when <code>CI=true</code> and no Anthropic API key is set</li>\n<li>Fixed bash commands failing under bazel and EDR-protected Go workflows: <code>$TMPDIR</code> was overridden to <code>/tmp/claude-{uid}</code> for all commands instead of only sandboxed ones (regression in 2.1.154)</li>\n<li>Fixed Bash commands failing on Windows with \"EEXIST: file already exists\" on the session-env directory when it has the read-only attribute or is inside OneDrive</li>\n<li>Fixed org-managed permission rules not applying for the entire session when the managed settings fetch completed during startup on a fresh config directory</li>\n<li>Fixed background sessions in <code>claude agents</code> losing their running background tasks when reattached after a Claude Code update</li>\n<li>Fixed terminal misalignment and a multi-second hang when exiting the agent view by pressing Esc</li>\n<li>Fixed clicking Stop on a background-task chip in the desktop app not clearing the chip when the underlying process was already gone</li>\n<li>Fixed keyboard input becoming permanently unresponsive after a paste operation whose end marker is dropped by the terminal</li>\n<li>Fixed hook <code>if: \"Bash(...)\"</code> conditions firing on every Bash command containing <code>$()</code> or <code>$VAR</code>; the pattern now matches against commands inside subshells and backticks too</li>\n<li>Fixed deny rules on home-directory paths (e.g. <code>Read(~/Desktop/**)</code>) not blocking Bash commands that reference the path via <code>$HOME</code></li>\n<li>Fixed a stray \"(no content)\" line left in the transcript after closing panel dialogs like /mcp and /plugins</li>\n<li>Background agent sessions now update to a new Claude Code version in the background, so opening a session after an update no longer waits on a cold restart</li>\n<li>Clearer descriptions for built-in commands and skills in the / menu</li>\n<li>The subscription-switch suggestion now shows in the startup announcement slot instead of a toast</li>\n<li><code>claude agents</code> dispatching from the state-grouped view now starts the session in the directory the agent view was opened from</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-06-04T21:52:51Z",
-      "fetched_at": "2026-06-04T22:47:54.648748Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "16fa9eeaf2d39218",
       "url": "https://arxiv.org/abs/2606.08926",
       "title": "PROBE-Web: An Interactive System for Probing Evaluation Landscapes of Knowledge Graph Completion Models",
@@ -66267,27 +66160,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c7dda6813479af85",
-      "url": "https://x.com/GeminiApp/status/2062652523945836770",
-      "title": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Com...",
-      "summary": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
-      "content": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-04T21:47:38Z",
-      "fetched_at": "2026-06-08T08:27:07.920677Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2f53a73c51736df3",
       "url": "https://x.com/dani_avila7/status/2063970614562398339",
       "title": "I partly agree\u2026 loops are the goal, but you can\u2019t skip the prompting fundamentals\n\nIt took me years ...",
@@ -67743,6 +67615,294 @@
       "author": "dani_avila7",
       "published_at": "2026-06-06T19:04:08Z",
       "fetched_at": "2026-06-11T16:18:08.969544Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1cd7ae2198279479",
+      "url": "https://x.com/dani_avila7/status/2065190892290359767",
+      "title": "Claude Touch Grass - Santiago, Chile \ud83c\udde8\ud83c\uddf1 https://t.co/HFEAkvxRvQ",
+      "summary": "Claude Touch Grass - Santiago, Chile \ud83c\udde8\ud83c\uddf1 https://t.co/HFEAkvxRvQ",
+      "content": "Claude Touch Grass - Santiago, Chile \ud83c\udde8\ud83c\uddf1 https://t.co/HFEAkvxRvQ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-11T21:54:12Z",
+      "fetched_at": "2026-06-11T21:59:22.275599Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f0b53ebad8a5b063",
+      "url": "https://x.com/GeminiApp/status/2065183026884296963",
+      "title": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community ev...",
+      "summary": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community event.\n\nProduct Marketing Manager Megan C. will be discussing some of her favorite highlights that help improve the Gemini experience, from dynamic visual responses to seamless mode",
+      "content": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community event.\n\nProduct Marketing Manager Megan C. will be discussing some of her favorite highlights that help improve the Gemini experience, from dynamic visual responses to seamless mode",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T21:22:57Z",
+      "fetched_at": "2026-06-11T21:59:25.958753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b61b19ec888c2aee",
+      "url": "https://x.com/steipete/status/2065176989359808636",
+      "title": "Getting Chris to do a PR with Codex!",
+      "summary": "Getting Chris to do a PR with Codex!",
+      "content": "Getting Chris to do a PR with Codex!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T20:58:58Z",
+      "fetched_at": "2026-06-11T21:59:30.778753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3086afa876bfa1b8",
+      "url": "https://x.com/GeminiApp/status/2065169516737527902",
+      "title": "RT @Google: Gemini in @GoogleChrome is now rolling out to more desktop and iOS users in Latin Americ...",
+      "summary": "RT @Google: Gemini in @GoogleChrome is now rolling out to more desktop and iOS users in Latin America, Africa, the Middle East and more. He\u2026",
+      "content": "RT @Google: Gemini in @GoogleChrome is now rolling out to more desktop and iOS users in Latin America, Africa, the Middle East and more. He\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T20:29:16Z",
+      "fetched_at": "2026-06-11T21:59:25.958823Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b545c15edcae57e5",
+      "url": "https://x.com/sama/status/2065160791205310565",
+      "title": "really looking forward to working together!",
+      "summary": "really looking forward to working together!",
+      "content": "really looking forward to working together!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-11T19:54:36Z",
+      "fetched_at": "2026-06-11T21:59:24.631245Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b3e3fb30786b73c0",
+      "url": "https://x.com/GeminiApp/status/2065149288200696274",
+      "title": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America,...",
+      "summary": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
+      "content": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T19:08:53Z",
+      "fetched_at": "2026-06-11T21:59:25.958854Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6837a2c7445e67c",
+      "url": "https://x.com/GeminiApp/status/2065135733883715593",
+      "title": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing n...",
+      "summary": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing new AI tools and features to Brazil:\n\n\ud83d\udccdA\u2026",
+      "content": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing new AI tools and features to Brazil:\n\n\ud83d\udccdA\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T18:15:01Z",
+      "fetched_at": "2026-06-11T21:59:25.958880Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "83e2f31fbe8ebda5",
+      "url": "https://x.com/simonw/status/2065133346452361453",
+      "title": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-...",
+      "summary": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-5.5 collaborate on this custom API explorer tool for trying out the new feature https://t.co/G2cFQyOrKs https://t.co/kUgMUhlmjv",
+      "content": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-5.5 collaborate on this custom API explorer tool for trying out the new feature https://t.co/G2cFQyOrKs https://t.co/kUgMUhlmjv",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T18:05:32Z",
+      "fetched_at": "2026-06-11T21:59:21.250890Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b3b14ec939307583",
+      "url": "https://x.com/steipete/status/2065132980398444945",
+      "title": "writing mac apps is still hard.",
+      "summary": "writing mac apps is still hard.",
+      "content": "writing mac apps is still hard.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T18:04:05Z",
+      "fetched_at": "2026-06-11T21:59:30.778868Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4f1da2f1a0a884e8",
+      "url": "https://x.com/simonw/status/2065132604786159920",
+      "title": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and br...",
+      "summary": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and brings it to the row and query pages in addition to the table pages\n\n(Most of the code in this release was built with the help of Claude Fable 5) https://t.co/Kai76qdsmW",
+      "content": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and brings it to the row and query pages in addition to the table pages\n\n(Most of the code in this release was built with the help of Claude Fable 5) https://t.co/Kai76qdsmW",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T18:02:35Z",
+      "fetched_at": "2026-06-11T21:59:21.251006Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7dda6813479af85",
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "title": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Com...",
+      "summary": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "content": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-04T21:47:38Z",
+      "fetched_at": "2026-06-08T08:27:07.920677Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "74ef41596a1f5f0b",
+      "url": "https://x.com/trq212/status/2062605395101884916",
+      "title": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it ...",
+      "summary": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "content": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-04T18:40:22Z",
+      "fetched_at": "2026-06-06T17:09:22.031851Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1db1721df455b5cd",
+      "url": "https://x.com/sama/status/2062587844338561351",
+      "title": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "summary": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "content": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T17:30:37Z",
+      "fetched_at": "2026-06-06T18:42:33.129280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "40fedfe0a4393906",
+      "url": "https://x.com/steipete/status/2062559776542990402",
+      "title": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software ...",
+      "summary": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "content": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T15:39:05Z",
+      "fetched_at": "2026-06-06T19:57:26.535914Z",
       "score": null,
       "score_reason": "",
       "tier": "",
