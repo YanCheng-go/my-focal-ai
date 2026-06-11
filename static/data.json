@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-11T05:56:25.602549+00:00",
+  "exported_at": "2026-06-11T07:35:24.764023+00:00",
   "period_hours": 168,
-  "total": 3132,
+  "total": 3133,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -67492,6 +67492,27 @@
       "author": "trq212",
       "published_at": "2026-06-11T03:21:44Z",
       "fetched_at": "2026-06-11T05:23:45.548031Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "473c553824a8b618",
+      "url": "https://x.com/bcherny/status/2064970759408079333",
+      "title": "RT @arakharazian: NEW: Ramp AI Index for June 2026\n\n1. We expected OpenAI to gain on the launch of C...",
+      "summary": "RT @arakharazian: NEW: Ramp AI Index for June 2026\n\n1. We expected OpenAI to gain on the launch of Codex. It held flat in business adoption\u2026",
+      "content": "RT @arakharazian: NEW: Ramp AI Index for June 2026\n\n1. We expected OpenAI to gain on the launch of Codex. It held flat in business adoption\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-11T07:19:29Z",
+      "fetched_at": "2026-06-11T07:35:12.250972Z",
       "score": null,
       "score_reason": "",
       "tier": "",
