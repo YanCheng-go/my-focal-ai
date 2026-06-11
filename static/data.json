@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-11T09:47:45.769845+00:00",
+  "exported_at": "2026-06-11T11:36:11.702935+00:00",
   "period_hours": 168,
   "total": 3144,
   "all_tags": [
@@ -29469,25 +29469,6 @@
       "author": "",
       "published_at": "2026-06-05T00:00:00Z",
       "fetched_at": "2026-06-05T20:53:30.549796Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "609bc5beea03735b",
-      "url": "https://www.youtube.com/watch?v=7qZH3D7u-z8",
-      "title": "OpenClaw Security Risks: 6 Dangers of Autonomous AI Agents",
-      "summary": "Learn more about What OpenClaw Reveals About Agentic AI Security Risks here \u2192 https://ibm.biz/~S29jyA638\n\nOpenClaw security risks are bigger than you think. \u26a0\ufe0f Jeff Crume breaks down OpenClaw security risks across AI agents, from prompt injection to credential exposure. Learn how agent autonomy, tools, and memory create real-world vulnerabilities\u2014and how to think about using them safely.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~58WSWq3SF\n\n#aiagents #openclaw #aisecurity",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-04T11:00:02Z",
-      "fetched_at": "2026-06-04T11:23:45.446860Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -67740,6 +67721,26 @@
       "author": "bcherny",
       "published_at": "2026-06-11T07:35:17Z",
       "fetched_at": "2026-06-11T09:35:31.647120Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f5e27e306da7c7b1",
+      "url": "https://x.com/steipete/status/2065008372953538788",
+      "title": "RT @RnaudBertrand: By the way, public service announcement: if you're one of the numerous people pos...",
+      "summary": "RT @RnaudBertrand: By the way, public service announcement: if you're one of the numerous people posting about Anthropic's dystopian ways a\u2026",
+      "content": "RT @RnaudBertrand: By the way, public service announcement: if you're one of the numerous people posting about Anthropic's dystopian ways a\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T09:48:56Z",
+      "fetched_at": "2026-06-11T11:36:09.722337Z",
       "score": null,
       "score_reason": "",
       "tier": "",
