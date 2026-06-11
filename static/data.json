@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-11T15:29:58.925169+00:00",
+  "exported_at": "2026-06-11T16:18:19.986512+00:00",
   "period_hours": 168,
-  "total": 3143,
+  "total": 3144,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14856,26 +14856,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9ba25800109a3cd2",
-      "url": "https://www.youtube.com/shorts/Xp3BZbfyidc",
-      "title": "The kind of salary you didn\u2019t know existed",
-      "summary": "Kelsey Hightower on The Pragmatic Engineer podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-06-04T16:00:35Z",
-      "fetched_at": "2026-06-04T17:21:03.712962Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e51fa07b720fb1d3",
       "url": "https://huggingface.co/blog/torch-mlp-fusion",
       "title": "Profiling in PyTorch (Part 2): From nn.Linear to a Fused MLP",
@@ -16760,26 +16740,6 @@
       "author": "Hongyu Jin, Siyi Wang, Yang Xiao, Jiaheng Dong, Shihong Tan, Kaiyuan peng, Georgiana Juravle, Shanquan Chen, Gongping Huang, Hong Jia, Eun-Jung Holden, James Bailey, Ting Dang",
       "published_at": "2026-06-11T04:00:00Z",
       "fetched_at": "2026-06-11T05:55:57.905058Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "787d0306bc6f5b5e",
-      "url": "https://www.youtube.com/watch?v=iNkFlCiij0U",
-      "title": "The Art & Science of Benchmarking Agents \u2014 Vincent Chen, Snorkel AI",
-      "summary": "ARC AGI 3 launched a few weeks before this talk with every task human solvable and frontier models under 1%. That gap is the argument: our ability to measure AI has fallen behind our ability to build it, and benchmarks that actually shape the field are bets on where capabilities are going, not snapshots of where they are.\n\nVincent Chen draws a framework from reviewing over 120 applications for Snorkel's $3 million Open Benchmarks Grants. The science is task quality, distributional diversity, model headroom, and robust eval methodology. The art is having a thesis (Terminal Bench bet on the CLI before coding agents made it obvious), producing research roadmaps, and treating researcher UX as a first class citizen. He closes on three axes he thinks the next generation of benchmarks needs to cover: environment complexity, autonomy horizon, and output complexity beyond plain text.\n\nSpeaker info:\n- https://x.com/vincentsunnchen\n- https://www.linkedin.com/in/vincentsunnchen\n- https://github.com/vincentschen",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-04T16:00:06Z",
-      "fetched_at": "2026-06-04T17:21:03.548069Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66083,26 +66043,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "40fedfe0a4393906",
-      "url": "https://x.com/steipete/status/2062559776542990402",
-      "title": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software ...",
-      "summary": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
-      "content": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-04T15:39:05Z",
-      "fetched_at": "2026-06-06T19:57:26.535914Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cfa8a2983e9f0ca4",
       "url": "https://x.com/steipete/status/2063888456963821650",
       "title": "RT @ryanbrewer: This is an intentional decision in our products. Same thing goes for ChatGPT for Exc...",
@@ -67720,6 +67660,87 @@
       "author": "anthropicai",
       "published_at": "2026-06-11T13:03:44Z",
       "fetched_at": "2026-06-11T13:36:31.571251Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1dec67051ae3679a",
+      "url": "https://x.com/GeminiApp/status/2065097165433983253",
+      "title": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland...",
+      "summary": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland.\n\nWith notebooks, you can organize your projects in a dedicated, focused space that remembers your sources, instructions, and chats.\n\nCreate your own notebook at",
+      "content": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland.\n\nWith notebooks, you can organize your projects in a dedicated, focused space that remembers your sources, instructions, and chats.\n\nCreate your own notebook at",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T15:41:46Z",
+      "fetched_at": "2026-06-11T16:18:12.759048Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bfecc9a2e21e1c85",
+      "url": "https://x.com/dani_avila7/status/2065067004587905462",
+      "title": "Impressive impact from these 3 platforms in such a short time\n\nEven though it covers the basics of h...",
+      "summary": "Impressive impact from these 3 platforms in such a short time\n\nEven though it covers the basics of how to use Cowork, this kind of webinar is worth watching to confirm you are on the right track, straight from the people building these services\n\nSave this post to watch the https://t.co/vB1YjirimU",
+      "content": "Impressive impact from these 3 platforms in such a short time\n\nEven though it covers the basics of how to use Cowork, this kind of webinar is worth watching to confirm you are on the right track, straight from the people building these services\n\nSave this post to watch the https://t.co/vB1YjirimU",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-11T13:41:55Z",
+      "fetched_at": "2026-06-11T16:18:08.968999Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "40fedfe0a4393906",
+      "url": "https://x.com/steipete/status/2062559776542990402",
+      "title": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software ...",
+      "summary": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "content": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T15:39:05Z",
+      "fetched_at": "2026-06-06T19:57:26.535914Z",
       "score": null,
       "score_reason": "",
       "tier": "",
