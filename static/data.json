@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-12T11:31:35.622107+00:00",
+  "exported_at": "2026-06-12T11:55:53.162073+00:00",
   "period_hours": 168,
-  "total": 3148,
+  "total": 3156,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -65060,27 +65060,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5579ecc71f3b451e",
-      "url": "https://arxiv.org/abs/2606.07181v1",
-      "title": "RETROSPECT: RETROsynthesis via Sequential Prediction, and Chemically Transformed-ranking",
-      "summary": "Single-step retrosynthesis needs both accurate first-ranked suggestions and candidate lists that are rich enough for downstream selection. We study this as a proposal-selection decomposition. Our system, RETROSPECT, combines a single Transformer proposal model, which we call the ChemAlign Transformer, with a LambdaMART reranker over structural, reaction-template, upstream-score, and optional DFT-derived descriptors. The generator is trained with hybrid root-aligned and random SMILES augmentation, Pre-LayerNorm, tied embeddings, exponential moving average weights, and a differentiable atom-balance auxiliary loss. On the full USPTO-50K test set of 5,007 reactions, the generator reaches 55.00% top-1 and 86.18% top-10 exact-match accuracy with 99.86% top-1 validity. On the merged candidate-pool benchmark used for reranking, which contains 5,007 test products and about 111 candidates per product, a LambdaMART model trained on the structural feature set reaches 59.4% top-1 with 0.7171 mean reciprocal rank. Feature ablations show that upstream proposal score and template-frequency statistics provide most of the reranking signal, while DFT and reaction-center DFT features provide smaller and less consistent gains. These results support a modular view of retrosynthesis: stronger single-model proposal and learned candidate selection are complementary, and the proposal model can serve as a drop-in component for ensemble systems such as RetroChimera (Maziarz et al., 2024)",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Deepak Warrier",
-      "published_at": "2026-06-05T11:45:36Z",
-      "fetched_at": "2026-06-08T01:27:46.951159Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5544804227d71004",
       "url": "https://cloud.google.com/events/summit-dach-2026-developer?utm_source=gc_events&utm_medium=display&utm_content=googlefordev_event&utm_campaign=FY26-Q2-EMEA-GLO396484-physicalevent-er-summit-frk-dev-164834",
       "title": "Google Cloud Summit DACH",
@@ -67770,6 +67749,188 @@
       "author": "steipete",
       "published_at": "2026-06-12T08:27:30Z",
       "fetched_at": "2026-06-12T09:55:29.905433Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "974c9731fcd75907",
+      "url": "https://x.com/dani_avila7/status/2062742523953516766",
+      "title": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "summary": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "content": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-05T03:45:16Z",
+      "fetched_at": "2026-06-06T18:42:30.963509Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5aa779eaeca5767a",
+      "url": "https://x.com/steipete/status/2062682058934354232",
+      "title": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just s...",
+      "summary": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just six months, @steipete, dozens of maintai\u2026",
+      "content": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just six months, @steipete, dozens of maintai\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T23:45:00Z",
+      "fetched_at": "2026-06-06T19:57:26.535906Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "70ee8c58a93d53ca",
+      "url": "https://x.com/sama/status/2062661191969972645",
+      "title": "man the early days of the internet were so special",
+      "summary": "man the early days of the internet were so special",
+      "content": "man the early days of the internet were so special",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:22:05Z",
+      "fetched_at": "2026-06-06T18:42:33.129248Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbd521f8c4430157",
+      "url": "https://x.com/sama/status/2062661071761211561",
+      "title": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss h...",
+      "summary": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss hypercard.",
+      "content": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss hypercard.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:21:36Z",
+      "fetched_at": "2026-06-06T18:42:33.129262Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "97a71be7d518a6b4",
+      "url": "https://x.com/sama/status/2062660086787613116",
+      "title": "big upgrade to chatgpt memory rolling out today!",
+      "summary": "big upgrade to chatgpt memory rolling out today!",
+      "content": "big upgrade to chatgpt memory rolling out today!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:17:41Z",
+      "fetched_at": "2026-06-06T18:42:33.129271Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7dda6813479af85",
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "title": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Com...",
+      "summary": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "content": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-04T21:47:38Z",
+      "fetched_at": "2026-06-08T08:27:07.920677Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "74ef41596a1f5f0b",
+      "url": "https://x.com/trq212/status/2062605395101884916",
+      "title": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it ...",
+      "summary": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "content": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-04T18:40:22Z",
+      "fetched_at": "2026-06-06T17:09:22.031851Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1db1721df455b5cd",
+      "url": "https://x.com/sama/status/2062587844338561351",
+      "title": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "summary": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "content": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T17:30:37Z",
+      "fetched_at": "2026-06-06T18:42:33.129280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "40fedfe0a4393906",
+      "url": "https://x.com/steipete/status/2062559776542990402",
+      "title": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software ...",
+      "summary": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "content": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T15:39:05Z",
+      "fetched_at": "2026-06-06T19:57:26.535914Z",
       "score": null,
       "score_reason": "",
       "tier": "",
