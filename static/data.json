@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-12T05:56:09.153118+00:00",
+  "exported_at": "2026-06-12T07:55:04.690731+00:00",
   "period_hours": 168,
-  "total": 3142,
+  "total": 3153,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -65102,48 +65102,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "dc4c856bfaa0a9ce",
-      "url": "https://arxiv.org/abs/2606.07001v1",
-      "title": "DataEvolver: Automatic Data Preparation for Large Language Models through Multi-Level Self-Evolving",
-      "summary": "High-quality training data is essential to large language models (LLMs) and typically requires extensive and costly manual curation. Existing automatic data preparation methods rely on predefined pipelines or customized human instructions, which limits their adaptability to diverse data distributions and lacks principled guidance from high-quality examples. In this paper, we introduce DataEvolver, the first self-evolving data preparation system that automatically constructs pipelines to transform raw data into high-quality data. DataEvolver employs a multi-level mechanism to ensure both pipeline executability and effectiveness. At the operator level, it incrementally expands the operator set to construct a logical plan while resolving dependency conflicts. At the pipeline level, it instantiates logical plans into executable code and iteratively refines pipeline orchestration through a feedback loop that reduces the distribution gap between prepared data and high-quality examples. Experiments on seven benchmarks show that DataEvolver substantially improves data quality and achieves an average 10\\% gain in downstream LLM performance compared with training on original data, highlighting new opportunities for the iterative co-evolution of LLMs and data.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Xiaoyong Du",
-      "published_at": "2026-06-05T07:44:34Z",
-      "fetched_at": "2026-06-08T01:27:46.951200Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fab042d7b3c0580c",
-      "url": "https://arxiv.org/abs/2606.06950v1",
-      "title": "When is 3D Worth It? A Resource-Performance Frontier for CNNs and Transformers in Lung CT",
-      "summary": "Three-dimensional models are widely assumed preferable for volumetric medical imaging, yet their practical value depends on whether performance gains justify added computational cost and complexity. Rather than proposing a new architecture, we study how input dimensionality (2D, 2.5D, 3D) affects model behavior across convolutional neural networks (CNNs) and Vision Transformers (ViTs) under a fixed training protocol. Using a leakage-free NLST cohort (n = 1,977) with supporting LIDC-IDRI data, we find that the 2.5D CNN offers the most favorable discrimination-stability trade-off in our comparison (ROC-AUC 0.682, 95% CI [0.546, 0.799]) with a stable operating point. In contrast, 3D CNNs show threshold instability, and transformers exhibit degenerate predictions, such as all-positive predictions. Confidence intervals are wide and overlapping, so we present these results as a controlled resource-performance frontier and a failure-mode taxonomy rather than as definitive superiority claims. For class-imbalanced lung cancer screening classification, 2D and 2.5D inputs provide a more reliable trade-off between performance, stability, and computational efficiency than full 3D representations.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Donald Johann Jr. and Fred Prior",
-      "published_at": "2026-06-05T06:24:20Z",
-      "fetched_at": "2026-06-08T01:27:46.951209Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5544804227d71004",
       "url": "https://cloud.google.com/events/summit-dach-2026-developer?utm_source=gc_events&utm_medium=display&utm_content=googlefordev_event&utm_campaign=FY26-Q2-EMEA-GLO396484-physicalevent-er-summit-frk-dev-164834",
       "title": "Google Cloud Summit DACH",
@@ -67650,6 +67608,271 @@
       "author": "simonw",
       "published_at": "2026-06-11T18:02:35Z",
       "fetched_at": "2026-06-11T21:59:21.251006Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cc600e8d3f61b301",
+      "url": "https://x.com/steipete/status/2065335106357854553",
+      "title": "RT @ajambrosino: we shipped the Tibo button",
+      "summary": "RT @ajambrosino: we shipped the Tibo button",
+      "content": "RT @ajambrosino: we shipped the Tibo button",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-12T07:27:16Z",
+      "fetched_at": "2026-06-12T07:55:02.198095Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b3ac34093e82f507",
+      "url": "https://x.com/bcherny/status/2065237242629759262",
+      "title": "RT @ClaudeDevs: /goooooal \u26bd https://t.co/JIHtCRog31",
+      "summary": "RT @ClaudeDevs: /goooooal \u26bd https://t.co/JIHtCRog31",
+      "content": "RT @ClaudeDevs: /goooooal \u26bd https://t.co/JIHtCRog31",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-12T00:58:23Z",
+      "fetched_at": "2026-06-12T07:54:50.695923Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6891734ec01c9cab",
+      "url": "https://x.com/simonw/status/2065218302578983407",
+      "title": "This right here is a pretty elegant solution to the problem of wanting to capture measurements from ...",
+      "summary": "This right here is a pretty elegant solution to the problem of wanting to capture measurements from JavaScript in the system Safari without being able to directly access the DOM https://t.co/ErXF3VK89t",
+      "content": "This right here is a pretty elegant solution to the problem of wanting to capture measurements from JavaScript in the system Safari without being able to directly access the DOM https://t.co/ErXF3VK89t",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T23:43:07Z",
+      "fetched_at": "2026-06-12T07:54:52.023729Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45dcb9df3ed8ec5c",
+      "url": "https://x.com/simonw/status/2065216774992515342",
+      "title": "After two days with Claude Fable 5 the best way I can describe it is \"relentlessly proactive\" - here...",
+      "summary": "After two days with Claude Fable 5 the best way I can describe it is \"relentlessly proactive\" - here's an example where I dropped in a screenshot of a bug and it span up custom CORS Python servers and used pyobjc-framework-Quartz to capture screenshots https://t.co/aMvuLDKOPK",
+      "content": "After two days with Claude Fable 5 the best way I can describe it is \"relentlessly proactive\" - here's an example where I dropped in a screenshot of a bug and it span up custom CORS Python servers and used pyobjc-framework-Quartz to capture screenshots https://t.co/aMvuLDKOPK",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T23:37:03Z",
+      "fetched_at": "2026-06-12T07:54:52.023825Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "974c9731fcd75907",
+      "url": "https://x.com/dani_avila7/status/2062742523953516766",
+      "title": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "summary": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "content": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-05T03:45:16Z",
+      "fetched_at": "2026-06-06T18:42:30.963509Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5aa779eaeca5767a",
+      "url": "https://x.com/steipete/status/2062682058934354232",
+      "title": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just s...",
+      "summary": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just six months, @steipete, dozens of maintai\u2026",
+      "content": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just six months, @steipete, dozens of maintai\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T23:45:00Z",
+      "fetched_at": "2026-06-06T19:57:26.535906Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "70ee8c58a93d53ca",
+      "url": "https://x.com/sama/status/2062661191969972645",
+      "title": "man the early days of the internet were so special",
+      "summary": "man the early days of the internet were so special",
+      "content": "man the early days of the internet were so special",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:22:05Z",
+      "fetched_at": "2026-06-06T18:42:33.129248Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbd521f8c4430157",
+      "url": "https://x.com/sama/status/2062661071761211561",
+      "title": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss h...",
+      "summary": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss hypercard.",
+      "content": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss hypercard.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:21:36Z",
+      "fetched_at": "2026-06-06T18:42:33.129262Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "97a71be7d518a6b4",
+      "url": "https://x.com/sama/status/2062660086787613116",
+      "title": "big upgrade to chatgpt memory rolling out today!",
+      "summary": "big upgrade to chatgpt memory rolling out today!",
+      "content": "big upgrade to chatgpt memory rolling out today!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:17:41Z",
+      "fetched_at": "2026-06-06T18:42:33.129271Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7dda6813479af85",
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "title": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Com...",
+      "summary": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "content": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-04T21:47:38Z",
+      "fetched_at": "2026-06-08T08:27:07.920677Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "74ef41596a1f5f0b",
+      "url": "https://x.com/trq212/status/2062605395101884916",
+      "title": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it ...",
+      "summary": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "content": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-04T18:40:22Z",
+      "fetched_at": "2026-06-06T17:09:22.031851Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1db1721df455b5cd",
+      "url": "https://x.com/sama/status/2062587844338561351",
+      "title": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "summary": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "content": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T17:30:37Z",
+      "fetched_at": "2026-06-06T18:42:33.129280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "40fedfe0a4393906",
+      "url": "https://x.com/steipete/status/2062559776542990402",
+      "title": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software ...",
+      "summary": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "content": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T15:39:05Z",
+      "fetched_at": "2026-06-06T19:57:26.535914Z",
       "score": null,
       "score_reason": "",
       "tier": "",
