@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-12T09:42:33.129058+00:00",
+  "exported_at": "2026-06-12T09:55:32.284745+00:00",
   "period_hours": 168,
-  "total": 3145,
+  "total": 3159,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -67713,6 +67713,288 @@
       "author": "simonw",
       "published_at": "2026-06-11T23:37:03Z",
       "fetched_at": "2026-06-12T07:54:52.023825Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8d781cc5e4fcbf1a",
+      "url": "https://x.com/steipete/status/2065356843061514621",
+      "title": "RT @NickADobos: @MatthewBerman Ship of thesus\n\nRewrite the entire codebase for each new model releas...",
+      "summary": "RT @NickADobos: @MatthewBerman Ship of thesus\n\nRewrite the entire codebase for each new model release",
+      "content": "RT @NickADobos: @MatthewBerman Ship of thesus\n\nRewrite the entire codebase for each new model release",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-12T08:53:38Z",
+      "fetched_at": "2026-06-12T09:55:29.905186Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "90e958ba1c6cf31e",
+      "url": "https://x.com/steipete/status/2065356347240255985",
+      "title": "RT @Dimillian: My new favorite prompt: take a step back. Wonderful results",
+      "summary": "RT @Dimillian: My new favorite prompt: take a step back. Wonderful results",
+      "content": "RT @Dimillian: My new favorite prompt: take a step back. Wonderful results",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-12T08:51:40Z",
+      "fetched_at": "2026-06-12T09:55:29.905309Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ddfcb27b580eee81",
+      "url": "https://x.com/steipete/status/2065352744018247926",
+      "title": "RT @ryanbrewer: Damn how did this leak???",
+      "summary": "RT @ryanbrewer: Damn how did this leak???",
+      "content": "RT @ryanbrewer: Damn how did this leak???",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-12T08:37:21Z",
+      "fetched_at": "2026-06-12T09:55:29.905353Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7a295f673c807be1",
+      "url": "https://x.com/steipete/status/2065352310256001319",
+      "title": "RT @EverydayAI_: 1. This is why @thsottiaux and @OpenAI are feeling good about GPT-5.6 (screenshot i...",
+      "summary": "RT @EverydayAI_: 1. This is why @thsottiaux and @OpenAI are feeling good about GPT-5.6 (screenshot is from @datacurve's latest DeepSWE from\u2026",
+      "content": "RT @EverydayAI_: 1. This is why @thsottiaux and @OpenAI are feeling good about GPT-5.6 (screenshot is from @datacurve's latest DeepSWE from\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-12T08:35:37Z",
+      "fetched_at": "2026-06-12T09:55:29.905390Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5071ed19875a4abc",
+      "url": "https://x.com/steipete/status/2065350267604705397",
+      "title": "RT @RhysSullivan: 2026 https://t.co/W0k3w8eC1K",
+      "summary": "RT @RhysSullivan: 2026 https://t.co/W0k3w8eC1K",
+      "content": "RT @RhysSullivan: 2026 https://t.co/W0k3w8eC1K",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-12T08:27:30Z",
+      "fetched_at": "2026-06-12T09:55:29.905433Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "974c9731fcd75907",
+      "url": "https://x.com/dani_avila7/status/2062742523953516766",
+      "title": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "summary": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "content": "If you\u2019re thinking about token budgets at the skill layer, you\u2019re not average",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-05T03:45:16Z",
+      "fetched_at": "2026-06-06T18:42:30.963509Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5aa779eaeca5767a",
+      "url": "https://x.com/steipete/status/2062682058934354232",
+      "title": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just s...",
+      "summary": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just six months, @steipete, dozens of maintai\u2026",
+      "content": "RT @ashleywolf: Last night we celebrated @openclaw, the fastest growing project on GitHub. In just six months, @steipete, dozens of maintai\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T23:45:00Z",
+      "fetched_at": "2026-06-06T19:57:26.535906Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "70ee8c58a93d53ca",
+      "url": "https://x.com/sama/status/2062661191969972645",
+      "title": "man the early days of the internet were so special",
+      "summary": "man the early days of the internet were so special",
+      "content": "man the early days of the internet were so special",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:22:05Z",
+      "fetched_at": "2026-06-06T18:42:33.129248Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbd521f8c4430157",
+      "url": "https://x.com/sama/status/2062661071761211561",
+      "title": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss h...",
+      "summary": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss hypercard.",
+      "content": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss hypercard.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:21:36Z",
+      "fetched_at": "2026-06-06T18:42:33.129262Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "97a71be7d518a6b4",
+      "url": "https://x.com/sama/status/2062660086787613116",
+      "title": "big upgrade to chatgpt memory rolling out today!",
+      "summary": "big upgrade to chatgpt memory rolling out today!",
+      "content": "big upgrade to chatgpt memory rolling out today!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T22:17:41Z",
+      "fetched_at": "2026-06-06T18:42:33.129271Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7dda6813479af85",
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "title": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Com...",
+      "summary": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "content": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-04T21:47:38Z",
+      "fetched_at": "2026-06-08T08:27:07.920677Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "74ef41596a1f5f0b",
+      "url": "https://x.com/trq212/status/2062605395101884916",
+      "title": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it ...",
+      "summary": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "content": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/bzzbHofywN",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-04T18:40:22Z",
+      "fetched_at": "2026-06-06T17:09:22.031851Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1db1721df455b5cd",
+      "url": "https://x.com/sama/status/2062587844338561351",
+      "title": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "summary": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "content": "RT @OpenAI: It's time to fly. https://t.co/ObUaCZ07EM",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-04T17:30:37Z",
+      "fetched_at": "2026-06-06T18:42:33.129280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "40fedfe0a4393906",
+      "url": "https://x.com/steipete/status/2062559776542990402",
+      "title": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software ...",
+      "summary": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "content": "RT @jlehman_: OpenClaw is a big deal, but the systems that OpenClaw is pioneering to build software like this at agentic scale are at least\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-04T15:39:05Z",
+      "fetched_at": "2026-06-06T19:57:26.535914Z",
       "score": null,
       "score_reason": "",
       "tier": "",
