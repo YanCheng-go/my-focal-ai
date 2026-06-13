@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-13T18:47:43.435731+00:00",
+  "exported_at": "2026-06-13T20:26:26.496245+00:00",
   "period_hours": 168,
-  "total": 3098,
+  "total": 3097,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39826,27 +39826,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "fa5e63bc31876074",
-      "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
-      "title": "Five labs, five minds: building a multi-model finance drama on small models",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-06-06T19:02:33Z",
-      "fetched_at": "2026-06-06T20:41:22.465275Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bd74c2e23c3afa26",
       "url": "https://arxiv.org/abs/2606.10194",
       "title": "MMClima: A Framework for Multimodal Climate Science Data and Evaluation",
@@ -64203,66 +64182,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "0bd68b5efec0e448",
-      "url": "https://x.com/steipete/status/2063340665623421180",
-      "title": "RT @jxnlco: Me looking at modern GitHub code review bots and then looking at whatever @steipete buil...",
-      "summary": "RT @jxnlco: Me looking at modern GitHub code review bots and then looking at whatever @steipete build in 5 days. https://t.co/AmxlhplJeX",
-      "content": "RT @jxnlco: Me looking at modern GitHub code review bots and then looking at whatever @steipete build in 5 days. https://t.co/AmxlhplJeX",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-06T19:22:04Z",
-      "fetched_at": "2026-06-06T19:57:26.535721Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1ee2167f08e051c5",
-      "url": "https://x.com/steipete/status/2063340221660545507",
-      "title": "RT @ikuznetsov_com: I've just implemented Patrol: a self-improvement loop that slices the repo and l...",
-      "summary": "RT @ikuznetsov_com: I've just implemented Patrol: a self-improvement loop that slices the repo and looks for issues to fix. I got the idea\u2026",
-      "content": "RT @ikuznetsov_com: I've just implemented Patrol: a self-improvement loop that slices the repo and looks for issues to fix. I got the idea\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-06T19:20:18Z",
-      "fetched_at": "2026-06-06T19:57:26.535755Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "203d3fe538c93cec",
-      "url": "https://x.com/steipete/status/2063335000200909230",
-      "title": "RT @mitsuhiko: Some weekend thoughts of recent mob behaviors. https://t.co/fi3RhdYM0p",
-      "summary": "RT @mitsuhiko: Some weekend thoughts of recent mob behaviors. https://t.co/fi3RhdYM0p",
-      "content": "RT @mitsuhiko: Some weekend thoughts of recent mob behaviors. https://t.co/fi3RhdYM0p",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-06T18:59:33Z",
-      "fetched_at": "2026-06-06T19:57:26.535772Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cfa8a2983e9f0ca4",
       "url": "https://x.com/steipete/status/2063888456963821650",
       "title": "RT @ryanbrewer: This is an intentional decision in our products. Same thing goes for ChatGPT for Exc...",
@@ -64418,26 +64337,6 @@
       "author": "steipete",
       "published_at": "2026-06-07T02:52:02Z",
       "fetched_at": "2026-06-08T08:27:12.568659Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b2d4fedda2cd322f",
-      "url": "https://x.com/dani_avila7/status/2063338558346105095",
-      "title": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with h...",
-      "summary": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with hundreds of Skills submitted every month\n\nAt that scale, automated security scanning on every PR stops being optional. \n\nSkillSpector (@NVIDIAAI) does that, static analysis, 64",
-      "content": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with hundreds of Skills submitted every month\n\nAt that scale, automated security scanning on every PR stops being optional. \n\nSkillSpector (@NVIDIAAI) does that, static analysis, 64",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-06T19:13:41Z",
-      "fetched_at": "2026-06-08T08:27:04.412601Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -65885,26 +65784,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "15caa76380a26993",
-      "url": "https://x.com/dani_avila7/status/2063336153630011728",
-      "title": "https://t.co/rbn5dmhQ4O",
-      "summary": "https://t.co/rbn5dmhQ4O",
-      "content": "https://t.co/rbn5dmhQ4O",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-06T19:04:08Z",
-      "fetched_at": "2026-06-11T16:18:08.969544Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "1cd7ae2198279479",
       "url": "https://x.com/dani_avila7/status/2065190892290359767",
       "title": "Claude Touch Grass - Santiago, Chile \ud83c\udde8\ud83c\uddf1 https://t.co/HFEAkvxRvQ",
@@ -66736,6 +66615,108 @@
       "author": "geminiapp",
       "published_at": "2026-06-12T17:00:39Z",
       "fetched_at": "2026-06-13T12:56:30.644000Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6e97c8fa64e0f455",
+      "url": "https://x.com/dani_avila7/status/2065865085227041195",
+      "title": "New layout for AI Templates (https://t.co/pSU4AtqPi9)\n\nBack closer to the original design, with the ...",
+      "summary": "New layout for AI Templates (https://t.co/pSU4AtqPi9)\n\nBack closer to the original design, with the jobs section reorganized\n\nNow over 840 Skills, 420 agents and 80 MCPs, thanks to the community that keeps shipping PRs with new contributions\n\nNew CLI version dropping soon... with https://t.co/1uChN32ros",
+      "content": "New layout for AI Templates (https://t.co/pSU4AtqPi9)\n\nBack closer to the original design, with the jobs section reorganized\n\nNow over 840 Skills, 420 agents and 80 MCPs, thanks to the community that keeps shipping PRs with new contributions\n\nNew CLI version dropping soon... with https://t.co/1uChN32ros",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-13T18:33:12Z",
+      "fetched_at": "2026-06-13T20:26:15.548334Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b2d4fedda2cd322f",
+      "url": "https://x.com/dani_avila7/status/2063338558346105095",
+      "title": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with h...",
+      "summary": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with hundreds of Skills submitted every month\n\nAt that scale, automated security scanning on every PR stops being optional. \n\nSkillSpector (@NVIDIAAI) does that, static analysis, 64",
+      "content": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with hundreds of Skills submitted every month\n\nAt that scale, automated security scanning on every PR stops being optional. \n\nSkillSpector (@NVIDIAAI) does that, static analysis, 64",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:13:41Z",
+      "fetched_at": "2026-06-08T08:27:04.412601Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf372b5ca6b18b3a",
+      "url": "https://x.com/GeminiApp/status/2062936486509785385",
+      "title": "You can now create and edit images directly in Gemini Live.\n\nWhether testing out room decor, getting...",
+      "summary": "You can now create and edit images directly in Gemini Live.\n\nWhether testing out room decor, getting help with math, or creating shareable memes, it all happens in real-time.\n\nJust open the Gemini app, tap the Live button, share your camera, and tell Gemini what you want to see.",
+      "content": "You can now create and edit images directly in Gemini Live.\n\nWhether testing out room decor, getting help with math, or creating shareable memes, it all happens in real-time.\n\nJust open the Gemini app, tap the Live button, share your camera, and tell Gemini what you want to see.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-05T16:36:00Z",
+      "fetched_at": "2026-06-08T08:27:07.920570Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7dda6813479af85",
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "title": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Com...",
+      "summary": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "content": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-04T21:47:38Z",
+      "fetched_at": "2026-06-08T08:27:07.920677Z",
       "score": null,
       "score_reason": "",
       "tier": "",
