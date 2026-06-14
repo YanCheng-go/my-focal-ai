@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-14T16:48:32.188880+00:00",
+  "exported_at": "2026-06-14T17:17:22.454774+00:00",
   "period_hours": 168,
-  "total": 3087,
+  "total": 3099,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -66508,6 +66508,251 @@
       "author": "steipete",
       "published_at": "2026-06-13T23:33:31Z",
       "fetched_at": "2026-06-13T23:37:14.086538Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4058904df6d91fc4",
+      "url": "https://x.com/GeminiApp/status/2066174657129267248",
+      "title": "What a race for @LandoNorris and @McLarenF1 \ud83d\udcaa Another podium finish in the books \ud83e\udde1 https://t.co/d9S7...",
+      "summary": "What a race for @LandoNorris and @McLarenF1 \ud83d\udcaa Another podium finish in the books \ud83e\udde1 https://t.co/d9S7KV2z4a",
+      "content": "What a race for @LandoNorris and @McLarenF1 \ud83d\udcaa Another podium finish in the books \ud83e\udde1 https://t.co/d9S7KV2z4a",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-14T15:03:20Z",
+      "fetched_at": "2026-06-14T17:17:15.303927Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9ecf056957c1ba39",
+      "url": "https://x.com/simonw/status/2066147375119556735",
+      "title": "I'm just glad nobody at the US government thought to try that Fable 5 \"jailbreak\" against Opus 4.x o...",
+      "summary": "I'm just glad nobody at the US government thought to try that Fable 5 \"jailbreak\" against Opus 4.x or GPT 5.x, or I wouldn't be getting anything useful done this weekend at all",
+      "content": "I'm just glad nobody at the US government thought to try that Fable 5 \"jailbreak\" against Opus 4.x or GPT 5.x, or I wouldn't be getting anything useful done this weekend at all",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-14T13:14:56Z",
+      "fetched_at": "2026-06-14T17:17:10.388727Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cecdba1cd55bf996",
+      "url": "https://x.com/dani_avila7/status/2066018117793272108",
+      "title": "You won\u2019t miss Fable 5 if you have a solid stack of Skills, Subagents, MCPs, and hooks\n\nThe harness ...",
+      "summary": "You won\u2019t miss Fable 5 if you have a solid stack of Skills, Subagents, MCPs, and hooks\n\nThe harness matters more than the model \ud83d\ude09",
+      "content": "You won\u2019t miss Fable 5 if you have a solid stack of Skills, Subagents, MCPs, and hooks\n\nThe harness matters more than the model \ud83d\ude09",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-14T04:41:18Z",
+      "fetched_at": "2026-06-14T17:17:11.481467Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "43c4c985649a9a0b",
+      "url": "https://x.com/steipete/status/2065998839467933862",
+      "title": "This shortage of chips is getting out of hand.",
+      "summary": "This shortage of chips is getting out of hand.",
+      "content": "This shortage of chips is getting out of hand.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T03:24:42Z",
+      "fetched_at": "2026-06-14T17:17:19.858971Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4d2ae036801ace8e",
+      "url": "https://x.com/steipete/status/2065998694877626387",
+      "title": "RT @OmarShahine: Add this shortcut to your iOS Home Screen so you can search for Codex. And use this...",
+      "summary": "RT @OmarShahine: Add this shortcut to your iOS Home Screen so you can search for Codex. And use this icon https://t.co/0KYbHfKr6u\n\nhttps://\u2026",
+      "content": "RT @OmarShahine: Add this shortcut to your iOS Home Screen so you can search for Codex. And use this icon https://t.co/0KYbHfKr6u\n\nhttps://\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T03:24:07Z",
+      "fetched_at": "2026-06-14T17:17:19.859069Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2246f0e20f9ef3f9",
+      "url": "https://x.com/steipete/status/2065997212015067508",
+      "title": "Got a PayPal verification text and thought I been hacked, but it was just codex signing up for a web...",
+      "summary": "Got a PayPal verification text and thought I been hacked, but it was just codex signing up for a web service it needed.",
+      "content": "Got a PayPal verification text and thought I been hacked, but it was just codex signing up for a web service it needed.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T03:18:14Z",
+      "fetched_at": "2026-06-14T17:17:19.859113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bdc5b43cfab27d36",
+      "url": "https://x.com/simonw/status/2065949364187807818",
+      "title": "It's now possible to compile Python extensions (C, C++, Rust etc) to WebAssembly and distribute them...",
+      "summary": "It's now possible to compile Python extensions (C, C++, Rust etc) to WebAssembly and distribute them through PyPI such that Pyodide can install them directly https://t.co/LyexMlOZck",
+      "content": "It's now possible to compile Python extensions (C, C++, Rust etc) to WebAssembly and distribute them through PyPI such that Pyodide can install them directly https://t.co/LyexMlOZck",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-14T00:08:06Z",
+      "fetched_at": "2026-06-14T17:17:10.388831Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3b3db1906ec2456f",
+      "url": "https://x.com/steipete/status/2063453905741398461",
+      "title": "RT @QuinnyPig: Is this why Claude keeps saying it\u2019s time to stop working? https://t.co/hc5DaW4XRv",
+      "summary": "RT @QuinnyPig: Is this why Claude keeps saying it\u2019s time to stop working? https://t.co/hc5DaW4XRv",
+      "content": "RT @QuinnyPig: Is this why Claude keeps saying it\u2019s time to stop working? https://t.co/hc5DaW4XRv",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-07T02:52:02Z",
+      "fetched_at": "2026-06-08T08:27:12.568659Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b2d4fedda2cd322f",
+      "url": "https://x.com/dani_avila7/status/2063338558346105095",
+      "title": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with h...",
+      "summary": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with hundreds of Skills submitted every month\n\nAt that scale, automated security scanning on every PR stops being optional. \n\nSkillSpector (@NVIDIAAI) does that, static analysis, 64",
+      "content": "The Skills ecosystem is growing fast , https://t.co/pSU4AtqPi9 alone has crossed 1M downloads with hundreds of Skills submitted every month\n\nAt that scale, automated security scanning on every PR stops being optional. \n\nSkillSpector (@NVIDIAAI) does that, static analysis, 64",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:13:41Z",
+      "fetched_at": "2026-06-08T08:27:04.412601Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf372b5ca6b18b3a",
+      "url": "https://x.com/GeminiApp/status/2062936486509785385",
+      "title": "You can now create and edit images directly in Gemini Live.\n\nWhether testing out room decor, getting...",
+      "summary": "You can now create and edit images directly in Gemini Live.\n\nWhether testing out room decor, getting help with math, or creating shareable memes, it all happens in real-time.\n\nJust open the Gemini app, tap the Live button, share your camera, and tell Gemini what you want to see.",
+      "content": "You can now create and edit images directly in Gemini Live.\n\nWhether testing out room decor, getting help with math, or creating shareable memes, it all happens in real-time.\n\nJust open the Gemini app, tap the Live button, share your camera, and tell Gemini what you want to see.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-05T16:36:00Z",
+      "fetched_at": "2026-06-08T08:27:07.920570Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7dda6813479af85",
+      "url": "https://x.com/GeminiApp/status/2062652523945836770",
+      "title": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Com...",
+      "summary": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "content": "Get tailored help for what's on your screen using the Gemini app for macOS. \ud83d\udcbb\n\nSimply press both Command \u2318 keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-04T21:47:38Z",
+      "fetched_at": "2026-06-08T08:27:07.920677Z",
       "score": null,
       "score_reason": "",
       "tier": "",
