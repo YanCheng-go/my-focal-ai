@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-15T12:26:25.927612+00:00",
+  "exported_at": "2026-06-15T12:28:25.372152+00:00",
   "period_hours": 168,
-  "total": 3109,
+  "total": 3111,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12194,27 +12194,6 @@
       "author": "AI Engineer",
       "published_at": "2026-06-08T13:00:13Z",
       "fetched_at": "2026-06-08T13:46:39.238623Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "53e246533c54fc02",
-      "url": "https://www.youtube.com/watch?v=dDrH85xJz1I",
-      "title": "Serial Entrepreneur: Why Your MBA Is Worthless",
-      "summary": "In this eye-opening interview, successful serial entrepreneur David Guttman reveals the counterintuitive strategies that helped him build and exit multiple 8-figure and 9-figure companies - approaches you won't learn in business school.\n\nDavid shares his journey from Wharton MBA to discovering that formal education actually created obstacles to building successful businesses. He breaks down his controversial \"feel the pain\" approach to scaling companies and explains why most entrepreneurs fail by optimizing too early.\n\nYou'll discover:\n\nWhy fixing broken companies is easier than starting from scratch\nThe only two numbers that truly matter for business success (CAC and LTV)\nHow to extract solutions from your team instead of imposing them\nWhy being humble is more important than being smart\nThe data-driven approach that turned failing companies profitable in just weeks\nWhether you're a first-time founder or looking to scale your existing business, these practical insights from someone who's actually done it multiple times will transform your approach to entrepreneurship.\n\n#BusinessGrowth #EntrepreneurMindset #ScalingBusiness #StartupAdvice #BusinessSuccess #EntrepreneurialJourney #BusinessStrategy #DataDrivenDecisions #CompanyScaling #SerialEntrepreneur",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-02-18T16:02:51Z",
-      "fetched_at": "2026-06-09T17:12:08.130225Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66952,6 +66931,67 @@
       "author": "steipete",
       "published_at": "2026-06-15T08:42:16Z",
       "fetched_at": "2026-06-15T10:28:02.250375Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "57df31680e420554",
+      "url": "https://x.com/simonw/status/2066495053221286271",
+      "title": "Doesn't sound like we'll be getting Fable back very soon, then https://t.co/WYlU3OMyfB",
+      "summary": "Doesn't sound like we'll be getting Fable back very soon, then https://t.co/WYlU3OMyfB",
+      "content": "Doesn't sound like we'll be getting Fable back very soon, then https://t.co/WYlU3OMyfB",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-15T12:16:28Z",
+      "fetched_at": "2026-06-15T12:28:13.158251Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d1593b5e9011453f",
+      "url": "https://x.com/steipete/status/2066471737068232835",
+      "title": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. http...",
+      "summary": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. https://t.co/WH1vRjDDHK",
+      "content": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. https://t.co/WH1vRjDDHK",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-15T10:43:49Z",
+      "fetched_at": "2026-06-15T12:28:23.323025Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
