@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-15T06:06:57.789195+00:00",
+  "exported_at": "2026-06-15T08:27:40.834313+00:00",
   "period_hours": 168,
-  "total": 3110,
+  "total": 3109,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14020,27 +14020,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-08T11:00:07Z",
       "fetched_at": "2026-06-08T11:57:06.659695Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "53e246533c54fc02",
-      "url": "https://www.youtube.com/watch?v=dDrH85xJz1I",
-      "title": "Serial Entrepreneur: Why Your MBA Is Worthless",
-      "summary": "In this eye-opening interview, successful serial entrepreneur David Guttman reveals the counterintuitive strategies that helped him build and exit multiple 8-figure and 9-figure companies - approaches you won't learn in business school.\n\nDavid shares his journey from Wharton MBA to discovering that formal education actually created obstacles to building successful businesses. He breaks down his controversial \"feel the pain\" approach to scaling companies and explains why most entrepreneurs fail by optimizing too early.\n\nYou'll discover:\n\nWhy fixing broken companies is easier than starting from scratch\nThe only two numbers that truly matter for business success (CAC and LTV)\nHow to extract solutions from your team instead of imposing them\nWhy being humble is more important than being smart\nThe data-driven approach that turned failing companies profitable in just weeks\nWhether you're a first-time founder or looking to scale your existing business, these practical insights from someone who's actually done it multiple times will transform your approach to entrepreneurship.\n\n#BusinessGrowth #EntrepreneurMindset #ScalingBusiness #StartupAdvice #BusinessSuccess #EntrepreneurialJourney #BusinessStrategy #DataDrivenDecisions #CompanyScaling #SerialEntrepreneur",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-02-18T16:02:51Z",
-      "fetched_at": "2026-06-09T17:12:08.130225Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64257,132 +64236,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "aa2c8d19418e6192",
-      "url": "https://arxiv.org/abs/2606.09160v1",
-      "title": "Crop Recommendation and Agricultural Query Answering System Using Spatio-Temporal Graph Neural Networks and Hybrid Retrieval Augmentation",
-      "summary": "This paper presents a unified system designed to support precision agriculture by integrating advanced weather prediction, crop recommendation, and a question-answering tool for farmers. We propose two deep learning models -- a Transformer-based Graph Neural Network and a Spatio-Temporal Graph Convolutional Network (STGCN) -- to forecast weather conditions for the next 30 days using data from 1,359 locations in Nepal. The STGCN outperforms the Transformer-based model in accuracy (MSE ~0.011 vs. 0.013), effectively modeling both spatial and temporal dependencies in climate data. These predictions are combined with static soil properties such as pH, moisture, and organic content to generate localized crop recommendations through a scoring algorithm that matches each crop's optimal growing conditions. Additionally, we develop a Retrieval-Augmented Generation (RAG) chatbot that leverages domain-specific agricultural documents to answer farmers' questions in natural language. The entire system is deployed via a mobile application, offering real-time suggestions and conversational support. User feedback confirms the system's usability and relevance, especially in rural settings where personalized farming guidance is limited. Overall, our approach demonstrates how combining machine learning models with local agricultural data can empower farmers with actionable insights, promoting more informed decisions, better crop yields, and increased resilience to climate variability.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Yagya Raj Pandeya",
-      "published_at": "2026-06-08T07:51:34Z",
-      "fetched_at": "2026-06-09T03:27:21.587138Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "56d8fc82efb2d581",
-      "url": "https://arxiv.org/abs/2606.09142v1",
-      "title": "Decoding Pedestrian Crossing Intention from Egocentric Vision via Vision Language Models",
-      "summary": "Egocentric vision offers a first-person view of human perception and decision making, yet its potential for traffic-safety prediction remains underexplored. In this work, we study the decoding of pedestrian crossing intentions from short egocentric video clips. We approach this by formulating the task as a closed-ended visual question answering (VQA) problem and leveraging vision language models (VLMs) to predict the pedestrians' intent. We first benchmark three families of state-of-the-art VLMs in a zero-shot setting, finding that they achieve moderate gains over random guessing but exhibit limited higher-level traffic reasoning. Motivated by these findings, we further adapt VLMs to the target task using parameter-efficient fine-tuning. Our results show that the fine-tuned models substantially outperform their zero-shot counterparts and achieve a 9\\% accuracy improvement over a specialized transformer-based baseline. Finally, we demonstrate that incorporating additional contextual cues, including ego motion, vehicle motion, and eye gaze, further improves predictive performance. In particular, the fine-tuned Qwen3-VL-2B model guided by eye gaze and ego motion achieves a 14.5% accuracy improvement over the transformer baseline, establishing a new state of the art for egocentric pedestrian intent decoding.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Rico Krueger",
-      "published_at": "2026-06-08T07:39:42Z",
-      "fetched_at": "2026-06-09T03:27:21.587146Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fd6af720021b4695",
-      "url": "https://arxiv.org/abs/2606.09135v1",
-      "title": "Steganography Without Modification: Hidden Communication via LLM Seeds",
-      "summary": "We demonstrate that widely deployed Large Language Model (LLM) inference stacks harbor a steganographic channel that requires no modification to model weights, sampling code, or output distributions. The channel exploits a structural property of deterministic decoding: pseudo-random number generators (PRNGs) used in inverse-transform sampling produce a seed-dependent sequence of token-level probability intervals that can be reconstructed from the generated text alone. A sender encodes a secret message in the PRNG seed before generation; a receiver reconstructs the intervals and recovers the seed, and thus the hidden payload, by exhaustive search over the seed space.\n  We formalize two operational modes. In the known-prompt setting, sender and receiver share the prompt, enabling exact interval reconstruction and perfect seed recovery via forced alignment. In the unknown-prompt setting, only the generated text is available; approximate interval reconstruction combined with a maximum-hit-count scoring strategy still permits reliable recovery from sufficiently long outputs.\n  Extensive experiments across six model families and five heterogeneous text domains show that, in the known-prompt setting, full 32-bit seed recovery from the complete 2^32 candidate space achieves up to 100% accuracy, depending on model and text domain, within 300 tokens and under 35 seconds on a single GPU. In the unknown-prompt setting, recovery reaches near-perfect accuracy at 600-800 tokens in about 12 seconds. We further analyze the influence of prompting strategies, tokenization ambiguities, and sampling hyperparameters on channel reliability. Moreover, we discuss several applications of our results: First, it allows for the steganographic transmission of 32 bits, but also shows that ignorance of the prompt is not a valid security assumption.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Thomas Eisenbarth",
-      "published_at": "2026-06-08T07:32:44Z",
-      "fetched_at": "2026-06-09T03:27:21.587153Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0e704312db40d766",
-      "url": "https://arxiv.org/abs/2606.09131v1",
-      "title": "Late-Layer Fusion is Enough: Dual-Path Vision Token Routing for Multimodal Large Language Models under Visual Saturation",
-      "summary": "Multimodal large language models (MLLMs) commonly inherit the deep, symmetric Transformer backbone designed for unimodal text modeling, and apply the same computation uniformly to image and language tokens. This design overlooks a key modality asymmetry: image and text tokens differ substantially in information density, redundancy, and required reasoning depth. Through a layer-wise analysis of LLaVA-1.5, we observe that vision tokens tend to saturate in the middle layers. Specifically, text-to-image attention decreases from 0.68 at layer 0 to 0.07 by layer 4, and stabilizes near 0.04 after layer 18, whereas text tokens continue to benefit from deep semantic processing. These findings suggest a mismatch between architectural symmetry and depth-asynchronous modality evolution, resulting in redundant visual computation and possible drift in perceptual representations during deep task-specific adaptation. Motivated by this, we propose Dual-Path Vision Token Routing (DPVR), a modality-asymmetric routing framework for efficient MLLMs. Its core instantiation, DPVR-LF (Late-Layer Fusion), routes vision tokens at the saturation point into a one-layer trainable side branch, runs a thirteen-layer text-only forward that skips image positions in the deep stack, and re-fuses the visual and textual streams only at the final layer. With approximately 3% trainable parameters, DPVR-LF preserves competitive multimodal performance on standard benchmarks while reducing visual computation in the deep Transformer stack. The results challenge the conventional assumption that vision tokens must traverse all deep language-model layers, and indicate that a single late fusion layer can be sufficient for maintaining strong perceptual competence in LLaVA-style MLLMs.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Jinyang Wu",
-      "published_at": "2026-06-08T07:28:14Z",
-      "fetched_at": "2026-06-09T03:27:21.587161Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c63639d825eca291",
-      "url": "https://arxiv.org/abs/2606.09105v1",
-      "title": "Graph2Idea:Retrieval-Augmented Scientific Idea Generation with Graph-Structured Contexts",
-      "summary": "Generating novel, feasible, and high-quality research ideas is an important yet challenging task in scientific discovery.Recent Large Language Model (LLM)-based methods often ground idea generation with retrieved literature, but the retrieved evidence is usually provided as flat text, such as titles, abstracts, or summaries. Such flat contexts may contain redundant or weakly relevant information, while making cross-paper relations among problems, methods, mechanisms, and findings difficult to identify and trace.To address this challenge, we propose Graph2Idea, a knowledge graph-guided framework for retrieval-augmented scientific idea generation.Graph2Idea first retrieves papers according to the input topic, transforms them into structured knowledge triples, and dynamically constructs a target-centered knowledge graph to make literature relations explicit.It then extracts compact graph-derived contexts that retain target-relevant relational evidence while reducing noisy textual input.Based on these contexts, a two-stage generation process first identifies promising research directions and then guides the LLM to synthesize candidate ideas from graph-grounded evidence.Experiments on a scientific idea generation benchmark show that Graph2Idea outperforms representative baselines under the automatic evaluation protocol.Compared with the strongest baseline scores, it improves Novelty from 0.45 to 0.52, Quality from 0.24 to 0.29, and Feasibility from 0.22 to 0.28.These results suggest that graph-structured evidence helps LLMs generate research ideas through more explicit, compact, and traceable recombination of prior scientific knowledge.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Xun Han",
-      "published_at": "2026-06-08T06:58:21Z",
-      "fetched_at": "2026-06-09T03:27:21.587169Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a9bd3e2263d5ddfb",
-      "url": "https://arxiv.org/abs/2606.09104v1",
-      "title": "Addressing Market Regime Changes and Heavy-Tailed Returns in Portfolio Optimization via Bayesian VAR and Elliptical Black-Litterman",
-      "summary": "Deep reinforcement learning (DRL) frameworks for portfolio optimization have shown promise for their ability to learn allocation rules dynamically from market data. However, these models fail to account for fat-tailed returns, which characterize actual market behavior with more frequent extreme events. Furthermore, historical data is treated homogeneously, without accounting for temporal importance, leading models to fail during regime changes. We propose a new BAVAR-BLED algorithm that combines methods derived from Bayesian-Averaging Vector Autoregressive (BAVAR) and the Black-Litterman model using Elliptical Distributions (BLED) within a TD3 architecture. BAVAR captures a set of vector autoregressive representations that consider multi-scale temporal features, enabling adaptive allocation decisions based on regime-aware estimates of return expectations and dispersion matrices. These estimates serve as prior inputs to BLED, a model that uses Student's t-distributions, allowing for more realistic fat tail return estimates. The BAVAR-BLED algorithm uses transformer networks for view construction and CNNs for risk-aversion estimates, which modify dynamic allocation decisions based on market conditions. An evaluation of 29 Dow Jones Industrial Average constituents over a decade-long market period shows that BAVAR-BLED significantly outperforms state-of-the-art methods, achieving Sharpe and Sortino ratios of 1.72 and 2.70, respectively, and total returns of 57.26%.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Zhengyong Jiang",
-      "published_at": "2026-06-08T06:58:11Z",
-      "fetched_at": "2026-06-09T03:27:21.587176Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5544804227d71004",
       "url": "https://cloud.google.com/events/summit-dach-2026-developer?utm_source=gc_events&utm_medium=display&utm_content=googlefordev_event&utm_campaign=FY26-Q2-EMEA-GLO396484-physicalevent-er-summit-frk-dev-164834",
       "title": "Google Cloud Summit DACH",
@@ -64497,26 +64350,6 @@
       "author": "",
       "published_at": "2026-06-10T00:00:00Z",
       "fetched_at": "2026-05-22T01:19:25.816135Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cfa8a2983e9f0ca4",
-      "url": "https://x.com/steipete/status/2063888456963821650",
-      "title": "RT @ryanbrewer: This is an intentional decision in our products. Same thing goes for ChatGPT for Exc...",
-      "summary": "RT @ryanbrewer: This is an intentional decision in our products. Same thing goes for ChatGPT for Excel, Sheets and Powerpoint. If you run o\u2026",
-      "content": "RT @ryanbrewer: This is an intentional decision in our products. Same thing goes for ChatGPT for Excel, Sheets and Powerpoint. If you run o\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-08T07:38:47Z",
-      "fetched_at": "2026-06-08T08:27:12.568459Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66978,6 +66811,146 @@
       "author": "simonw",
       "published_at": "2026-06-14T00:08:06Z",
       "fetched_at": "2026-06-14T17:17:10.388831Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "51812e6a40a73328",
+      "url": "https://x.com/steipete/status/2066427449551036469",
+      "title": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
+      "summary": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
+      "content": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-15T07:47:50Z",
+      "fetched_at": "2026-06-15T08:27:37.870933Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a484ed04f9737c70",
+      "url": "https://x.com/steipete/status/2066253830119956689",
+      "title": "RT @SIGKITTEN: I'm doing one quick targeted pass so I can give you the exact answer rather than hand...",
+      "summary": "RT @SIGKITTEN: I'm doing one quick targeted pass so I can give you the exact answer rather than hand-waving",
+      "content": "RT @SIGKITTEN: I'm doing one quick targeted pass so I can give you the exact answer rather than hand-waving",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T20:17:56Z",
+      "fetched_at": "2026-06-15T08:27:37.871070Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "efb7862bdefaf383",
+      "url": "https://x.com/steipete/status/2066247939572269515",
+      "title": "RT @NexEcosystem: The Rio 3.5 model broke the internet this week. The plot twist? It\u2019s essentially o...",
+      "summary": "RT @NexEcosystem: The Rio 3.5 model broke the internet this week. The plot twist? It\u2019s essentially our open-source model, Nex N2 Pro, weari\u2026",
+      "content": "RT @NexEcosystem: The Rio 3.5 model broke the internet this week. The plot twist? It\u2019s essentially our open-source model, Nex N2 Pro, weari\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T19:54:32Z",
+      "fetched_at": "2026-06-15T08:27:37.871123Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "50becb170fd24b00",
+      "url": "https://x.com/steipete/status/2066246419694948365",
+      "title": "RT @skirano: I basically never write my own /goal anymore.\n\nI ask Codex to write one for itself, and...",
+      "summary": "RT @skirano: I basically never write my own /goal anymore.\n\nI ask Codex to write one for itself, and one for each agent it spawns.\n\nLike th\u2026",
+      "content": "RT @skirano: I basically never write my own /goal anymore.\n\nI ask Codex to write one for itself, and one for each agent it spawns.\n\nLike th\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T19:48:30Z",
+      "fetched_at": "2026-06-15T08:27:37.871163Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "385833e351493f1d",
+      "url": "https://x.com/dani_avila7/status/2066215220700168470",
+      "title": "Reading the comments on this post, you can easily spot who will be hit hardest when access to the mo...",
+      "summary": "Reading the comments on this post, you can easily spot who will be hit hardest when access to the models gets gated\n\nWhen it happens, anyone who hasn't built a solid harness (Skills, MCPs, Evals, telemetry, loops, etc) will be the first to lose their competitive edge",
+      "content": "Reading the comments on this post, you can easily spot who will be hit hardest when access to the models gets gated\n\nWhen it happens, anyone who hasn't built a solid harness (Skills, MCPs, Evals, telemetry, loops, etc) will be the first to lose their competitive edge",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-14T17:44:31Z",
+      "fetched_at": "2026-06-15T08:27:29.676340Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "16d3cf425cc3b660",
+      "url": "https://x.com/dani_avila7/status/2066213900157120974",
+      "title": "This line from Satya's post proves everything I've been preaching:\n\n\"the real opportunity is not in ...",
+      "summary": "This line from Satya's post proves everything I've been preaching:\n\n\"the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound\"\n\nThe model is interchangeable, the learning loop you",
+      "content": "This line from Satya's post proves everything I've been preaching:\n\n\"the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound\"\n\nThe model is interchangeable, the learning loop you",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-14T17:39:16Z",
+      "fetched_at": "2026-06-15T08:27:29.676430Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
