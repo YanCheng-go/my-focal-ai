@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-16T12:00:00.126153+00:00",
+  "exported_at": "2026-06-16T12:31:06.227879+00:00",
   "period_hours": 168,
-  "total": 3082,
+  "total": 3078,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12567,69 +12567,6 @@
       "author": "The Pragmatic Engineer",
       "published_at": "2026-06-09T16:00:33Z",
       "fetched_at": "2026-06-09T17:12:08.451947Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "53e246533c54fc02",
-      "url": "https://www.youtube.com/watch?v=dDrH85xJz1I",
-      "title": "Serial Entrepreneur: Why Your MBA Is Worthless",
-      "summary": "In this eye-opening interview, successful serial entrepreneur David Guttman reveals the counterintuitive strategies that helped him build and exit multiple 8-figure and 9-figure companies - approaches you won't learn in business school.\n\nDavid shares his journey from Wharton MBA to discovering that formal education actually created obstacles to building successful businesses. He breaks down his controversial \"feel the pain\" approach to scaling companies and explains why most entrepreneurs fail by optimizing too early.\n\nYou'll discover:\n\nWhy fixing broken companies is easier than starting from scratch\nThe only two numbers that truly matter for business success (CAC and LTV)\nHow to extract solutions from your team instead of imposing them\nWhy being humble is more important than being smart\nThe data-driven approach that turned failing companies profitable in just weeks\nWhether you're a first-time founder or looking to scale your existing business, these practical insights from someone who's actually done it multiple times will transform your approach to entrepreneurship.\n\n#BusinessGrowth #EntrepreneurMindset #ScalingBusiness #StartupAdvice #BusinessSuccess #EntrepreneurialJourney #BusinessStrategy #DataDrivenDecisions #CompanyScaling #SerialEntrepreneur",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-02-18T16:02:51Z",
-      "fetched_at": "2026-06-09T17:12:08.130225Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7075dbf4053486b1",
-      "url": "https://www.youtube.com/watch?v=6cMBXdr6-Gc",
-      "title": "What Happens When You Don't Quit",
-      "summary": "In this video, I share my personal journey of facing obstacles that stop most people in their tracks - and the exact mindset shift that helped me push through when everything seemed impossible.\n\nI reveal the pattern I've noticed in my own success story: the moments where giving up seemed like the only option became the exact turning points that transformed my capabilities and confidence.\n\nThrough my own experiences, I show how our natural instinct to retreat from difficulty is actually the dividing line between those who achieve remarkable success and those who remain stuck. I explain why these \"quit points\" are actually the most valuable growth opportunities we encounter.\n\nIf you've ever faced a challenge that seemed insurmountable or felt like giving up on an important goal, this perspective might change how you view obstacles forever.\n\nTimestamps\n02:04 - The mindset shift\n05:08 - Obstacle 1: No visa to study in Europe\n11:40 - Obstacle 2: No work permit to pay for basics\n16:38 - Obstacle 3: Getting job with low demanded profession\n18:19 - Biggest pivot in my life\n21:42 - Biggest breakthrough of life\n23:37 - The pattern of not giving up explained\n25:27 - The secret levarege for overcoming obstacles\n27:47 - Anyone can build this skill\n28:20 - REALLY practical action steps \n31:36 - Attract resources with solver's mindset\n\n\n\n\n#SuccessMindset #Perseverance #OvercomingObstacles #PersonalDevelopment #Resilience #MindsetShift #BreakthroughMoments #AchievementMotivation",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-02-01T15:42:27Z",
-      "fetched_at": "2026-06-09T17:12:08.130234Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63846,48 +63783,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "50a0402b90ea5de0",
-      "url": "https://arxiv.org/abs/2606.10768v1",
-      "title": "N-GRPO: Embedding-Level Neighbor Mixing for Enhanced Policy Optimization",
-      "summary": "The success of Large Language Models in mathematical reasoning relies heavily on the generation of diverse and valid solution paths during the rollout phase. However, current rollout techniques face a fundamental trade-off: token-level sampling often yields redundant trajectories that differ only in rephrasing, while embedding-level methods utilizing random noise frequently disrupt semantic consistency. To resolve this, we introduce N-GRPO, a novel exploration strategy integrated into the Group Relative Policy Optimization (GRPO) framework. Rather than relying on token-level sampling or native embedding-level noise, our approach leverages Semantic Neighbor Mixing. This mechanism dynamically constructs input representations by mixing the embeddings of an anchor token and its nearest semantic neighbors, thereby injecting diversity while strictly adhering to the local semantic manifold. Experimental evaluations on the DeepSeek-R1-Distill-Qwen models across different sizes show that N-GRPO not only achieves consistent improvements over strong baselines on math reasoning benchmarks but also exhibits robust generalization capabilities on out-of-distribution tasks.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Linchao Zhu",
-      "published_at": "2026-06-09T12:21:27Z",
-      "fetched_at": "2026-06-10T01:22:26.631351Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0e7ebbd00084296f",
-      "url": "https://arxiv.org/abs/2606.10765v1",
-      "title": "ArabiGEE: A Hierarchical Taxonomy for Arabic Grammatical Error Explanation",
-      "summary": "We introduce ArabiGEE, the first comprehensive Arabic grammatical error explanation (GEE) taxonomy grounded in explicit error types. Unlike existing GEE approaches that treat explanation generation as free-form text, ArabiGEE organizes grammatical explanations through a hierarchical structure spanning orthographic, morphological, syntactic, and lexical dimensions. The taxonomy consists of 27 error types, 140 correction types, and 324 associated explanations. We apply ArabiGEE to manually annotate portions of existing Arabic grammatical error correction corpora and demonstrate how structured grammatical explanations can support automatic evaluation of LLMs on Arabic GEE. Our code and data are publicly available.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Bashar Alhafni",
-      "published_at": "2026-06-09T12:16:55Z",
-      "fetched_at": "2026-06-10T01:22:26.631359Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0085b9a5c8a388dd",
       "url": "https://www.anthropic.com/events/claude-founder-house",
       "title": "Claude Founder House",
@@ -66378,6 +66273,26 @@
       "author": "steipete",
       "published_at": "2026-06-15T13:16:15Z",
       "fetched_at": "2026-06-16T08:07:56.779488Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
