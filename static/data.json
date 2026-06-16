@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-16T06:11:09.577099+00:00",
+  "exported_at": "2026-06-16T08:07:59.237421+00:00",
   "period_hours": 168,
-  "total": 3068,
+  "total": 3071,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -16211,68 +16211,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-09T11:00:22Z",
       "fetched_at": "2026-06-09T11:25:16.787326Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "de7ec9668140d40e",
-      "url": "https://www.youtube.com/watch?v=gUMwt4-5kn0",
-      "title": "2026 AI Engineer Vibe Reel",
-      "summary": "W are getting ready for the World's Fair in San Francisco - Jun 29 to July 2!\n\nhttps://ai.engineer/wf  - get tickets and see schedule!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-09T01:13:15Z",
-      "fetched_at": "2026-06-09T07:33:08.588832Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "53e246533c54fc02",
-      "url": "https://www.youtube.com/watch?v=dDrH85xJz1I",
-      "title": "Serial Entrepreneur: Why Your MBA Is Worthless",
-      "summary": "In this eye-opening interview, successful serial entrepreneur David Guttman reveals the counterintuitive strategies that helped him build and exit multiple 8-figure and 9-figure companies - approaches you won't learn in business school.\n\nDavid shares his journey from Wharton MBA to discovering that formal education actually created obstacles to building successful businesses. He breaks down his controversial \"feel the pain\" approach to scaling companies and explains why most entrepreneurs fail by optimizing too early.\n\nYou'll discover:\n\nWhy fixing broken companies is easier than starting from scratch\nThe only two numbers that truly matter for business success (CAC and LTV)\nHow to extract solutions from your team instead of imposing them\nWhy being humble is more important than being smart\nThe data-driven approach that turned failing companies profitable in just weeks\nWhether you're a first-time founder or looking to scale your existing business, these practical insights from someone who's actually done it multiple times will transform your approach to entrepreneurship.\n\n#BusinessGrowth #EntrepreneurMindset #ScalingBusiness #StartupAdvice #BusinessSuccess #EntrepreneurialJourney #BusinessStrategy #DataDrivenDecisions #CompanyScaling #SerialEntrepreneur",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-02-18T16:02:51Z",
-      "fetched_at": "2026-06-09T17:12:08.130225Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63698,48 +63636,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f061d7f3e3f590cb",
-      "url": "https://arxiv.org/abs/2606.10530v1",
-      "title": "Machine Learning Methods for Studying Latent Neural Activity Dynamics",
-      "summary": "Recent developments in brain recording are driving a demand for machine learning tools capable of decoding the latent structure of large populations of neurons. In this paper, we provide a comprehensive survey that outlines the trajectory of Latent Variable Models (LVMs) from early state-space models to more recent deep generative models. We organize the literature into three closely related domains: (1) Single-Region Latent Dynamics, which includes models such as linear dynamical systems to more complex dynamics represented by Recurrent Neural Networks (RNNs) and Neural Ordinary Differential Equations (ODEs); (2) Multi-Region Communication, which employs probabilistic as well as subspace methods to study how information is transferred across different brain areas considering synaptic propagation delays and network connectivity; and (3) Behavior-Aligned Modeling, which seeks to disentangle neural activity related to task performance from other internal states via supervised or contrastive learning. This survey also includes large-scale neural foundation models, such as Transformers and diffusion models, that rely on large-scale pre-training for optimal performance across subjects. Finally, we conclude and discuss benchmarks, evaluation criteria, and open challenges, such as the ability to identify causal links or directionality of communication, to facilitate future research for bridging interpretable brain dynamics with reliable neural decoding.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Carla Gomes",
-      "published_at": "2026-06-09T08:01:11Z",
-      "fetched_at": "2026-06-10T01:22:26.323850Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "75c2d849a26d8c93",
-      "url": "https://arxiv.org/abs/2606.10466v1",
-      "title": "UPLOTS: A Unified Pretrained Language Model for Constrained Time-series Generation",
-      "summary": "In time-series generation, existing approaches typically handcraft ortrain a separate model for each dataset, which hinders their scalability and fails to leverage shared temporal structures across domains. To address this fragmentation, we propose UPLOTS, a Unified, Prompt-guided Language model framework fOr constrained Time-Series Generation across diverse domains. Instead of building task-specific models, UPLOTS leverages a single pre-trained transformer backbone guided by learned constraint prompts, enabling on-demand generation with precise pattern control. One key innovation is our dynamic multi-dataset loss re-weighting and prompt-to-pattern mapping, which allows UPLOTS to internalize diverse temporal structures during training and conditionally generate them at inference. We evaluate UPLOTS on four real-world benchmarks and multiple constraint settings, including peak-period, calendar, load-level, and volatility patterns. Additional held-out constraint-combination and downstream forecasting experiments further demonstrate that UPLOTS generalizes beyond the original peak-pattern setting and improves data augmentation under scarce real-data regimes. Our code and baselines are available at anonymous github repo: https://anonymous.4open.science/r/UPLOTS-6C36.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Flora Salim",
-      "published_at": "2026-06-09T06:36:06Z",
-      "fetched_at": "2026-06-10T01:22:26.323858Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0085b9a5c8a388dd",
       "url": "https://www.anthropic.com/events/claude-founder-house",
       "title": "Claude Founder House",
@@ -66087,6 +65983,169 @@
       "author": "steipete",
       "published_at": "2026-06-15T10:43:49Z",
       "fetched_at": "2026-06-15T12:28:23.323025Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "60d6e6881a0f09a0",
+      "url": "https://x.com/steipete/status/2066790810461372473",
+      "title": "RT @CodeColorist: Some observations from disassembly that might be related to iOS 27 performance boo...",
+      "summary": "RT @CodeColorist: Some observations from disassembly that might be related to iOS 27 performance boost\n\nhttps://t.co/MvHDXiSe8o",
+      "content": "RT @CodeColorist: Some observations from disassembly that might be related to iOS 27 performance boost\n\nhttps://t.co/MvHDXiSe8o",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-16T07:51:42Z",
+      "fetched_at": "2026-06-16T08:07:56.779122Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5afb04ab3158b66a",
+      "url": "https://x.com/steipete/status/2066736858604646517",
+      "title": "RT @CharlesRollet1: NEW: Inside Cursor's wild rise. Lots of great new details:\n\n\u2022 CEO Michael Truell...",
+      "summary": "RT @CharlesRollet1: NEW: Inside Cursor's wild rise. Lots of great new details:\n\n\u2022 CEO Michael Truell didn't pay himself for years\n\n\u2022 Cursor\u2026",
+      "content": "RT @CharlesRollet1: NEW: Inside Cursor's wild rise. Lots of great new details:\n\n\u2022 CEO Michael Truell didn't pay himself for years\n\n\u2022 Cursor\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-16T04:17:19Z",
+      "fetched_at": "2026-06-16T08:07:56.779388Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "99fc490ff090f3d2",
+      "url": "https://x.com/GeminiApp/status/2066673782715216269",
+      "title": "RT @joshwoodward: Our mic icon just got way better on Android and iOS! This is HUGE for non-English ...",
+      "summary": "RT @joshwoodward: Our mic icon just got way better on Android and iOS! This is HUGE for non-English speakers.\n\n+ now 70+ languages\n+ mix la\u2026",
+      "content": "RT @joshwoodward: Our mic icon just got way better on Android and iOS! This is HUGE for non-English speakers.\n\n+ now 70+ languages\n+ mix la\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-16T00:06:41Z",
+      "fetched_at": "2026-06-16T08:07:52.128783Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1891fef4bac42b81",
+      "url": "https://x.com/GeminiApp/status/2066665978185023795",
+      "title": "RT @joshwoodward: Want unreleased @GeminiApp features before anyone else? Love breaking, testing, an...",
+      "summary": "RT @joshwoodward: Want unreleased @GeminiApp features before anyone else? Love breaking, testing, and shaping new tech?\n\nWe're opening a li\u2026",
+      "content": "RT @joshwoodward: Want unreleased @GeminiApp features before anyone else? Love breaking, testing, and shaping new tech?\n\nWe're opening a li\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-15T23:35:40Z",
+      "fetched_at": "2026-06-16T08:07:52.128939Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "178ab0cda42f62c0",
+      "url": "https://x.com/steipete/status/2066645863904972936",
+      "title": "RT @reach_vb: Open Source runs on maintainers!\n\nat @OpenAI, we're committing $160,000 to sponsor the...",
+      "summary": "RT @reach_vb: Open Source runs on maintainers!\n\nat @OpenAI, we're committing $160,000 to sponsor the maintainers behind the Astral and Code\u2026",
+      "content": "RT @reach_vb: Open Source runs on maintainers!\n\nat @OpenAI, we're committing $160,000 to sponsor the maintainers behind the Astral and Code\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-15T22:15:45Z",
+      "fetched_at": "2026-06-16T08:07:56.779445Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c438edc74c133d32",
+      "url": "https://x.com/GeminiApp/status/2066595729024409665",
+      "title": "RT @shimritby: It has been an absolute whirlwind of a few months for our team, with so many exciting...",
+      "summary": "RT @shimritby: It has been an absolute whirlwind of a few months for our team, with so many exciting launches! \ud83d\ude80 I\u2019ve been a bit quiet afte\u2026",
+      "content": "RT @shimritby: It has been an absolute whirlwind of a few months for our team, with so many exciting launches! \ud83d\ude80 I\u2019ve been a bit quiet afte\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-15T18:56:31Z",
+      "fetched_at": "2026-06-16T08:07:52.129018Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6b54c3e42d9dbbe",
+      "url": "https://x.com/steipete/status/2066510094666268769",
+      "title": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety g...",
+      "summary": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety gives the company license to aggressivel\u2026",
+      "content": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety gives the company license to aggressivel\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-15T13:16:15Z",
+      "fetched_at": "2026-06-16T08:07:56.779488Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
