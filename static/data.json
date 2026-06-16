@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-16T19:29:03.633360+00:00",
+  "exported_at": "2026-06-16T19:44:33.970417+00:00",
   "period_hours": 168,
-  "total": 3032,
+  "total": 3044,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14364,48 +14364,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d8c537eec4dab965",
       "url": "https://www.aitmpl.com/agents/query-clarifier#agents",
       "title": "#10 query-clarifier",
@@ -17050,27 +17008,6 @@
       "author": "Avinash Ahuja",
       "published_at": "2026-06-09T22:34:27Z",
       "fetched_at": "2026-06-09T22:49:36.326759Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5ec2963d36a67377",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
-      "title": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-06-09T19:38:28Z",
-      "fetched_at": "2026-06-09T20:57:20.257800Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63434,27 +63371,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cdfeed5c2050b9cd",
-      "url": "https://x.com/bcherny/status/2064431111154053187",
-      "title": "Fable 5 is the biggest step up I\u2019ve felt in our models since Opus 4.5 back in November. After 4.5 ca...",
-      "summary": "Fable 5 is the biggest step up I\u2019ve felt in our models since Opus 4.5 back in November. After 4.5 came out I uninstalled my IDE when I realized that I\u2019d been doing 100% of my coding in a terminal for a few weeks. With Fable, it\u2019s felt like Claude has stepped up from being a",
-      "content": "Fable 5 is the biggest step up I\u2019ve felt in our models since Opus 4.5 back in November. After 4.5 came out I uninstalled my IDE when I realized that I\u2019d been doing 100% of my coding in a terminal for a few weeks. With Fable, it\u2019s felt like Claude has stepped up from being a",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-06-09T19:35:06Z",
-      "fetched_at": "2026-06-10T06:59:35.755381Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4e831555bf6a7936",
       "url": "https://x.com/dani_avila7/status/2064703245931438420",
       "title": "as far as I understand, API usage charges don't start until June 23rd... but I'm seeing this message...",
@@ -65326,6 +65242,336 @@
       "author": "dani_avila7",
       "published_at": "2026-06-16T12:37:11Z",
       "fetched_at": "2026-06-16T14:31:16.971984Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b528d866b234d060",
+      "url": "https://x.com/AnthropicAI/status/2066969540412780644",
+      "title": "Domain experts\u2014as judged by the questions they ask and vocabulary they use about a subject\u2014are more ...",
+      "summary": "Domain experts\u2014as judged by the questions they ask and vocabulary they use about a subject\u2014are more likely to see success.\n\nBut the gap between intermediate and expert users is quite modest, suggesting that proficiency in a domain is sufficient to code successfully within it. https://t.co/tZZ7jVYpTB",
+      "content": "Domain experts\u2014as judged by the questions they ask and vocabulary they use about a subject\u2014are more likely to see success.\n\nBut the gap between intermediate and expert users is quite modest, suggesting that proficiency in a domain is sufficient to code successfully within it. https://t.co/tZZ7jVYpTB",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-16T19:41:55Z",
+      "fetched_at": "2026-06-16T19:44:30.110173Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5a3771dc6648f2b5",
+      "url": "https://x.com/AnthropicAI/status/2066969542010806561",
+      "title": "These and other measures will allow us to track consequential shifts in the nature of work as they h...",
+      "summary": "These and other measures will allow us to track consequential shifts in the nature of work as they happen\u2014we'll incorporate some of them into the Anthropic Economic Index going forward. \n\nRead the full report: https://t.co/IjjwQvrESo",
+      "content": "These and other measures will allow us to track consequential shifts in the nature of work as they happen\u2014we'll incorporate some of them into the Anthropic Economic Index going forward. \n\nRead the full report: https://t.co/IjjwQvrESo",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-16T19:41:55Z",
+      "fetched_at": "2026-06-16T19:44:30.110133Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4e08b7c174abf1c5",
+      "url": "https://x.com/GeminiApp/status/2066955296023408832",
+      "title": "RT @madebygoogle: Hey creators \ud83d\udc4b Everything you need to take your ideas to the next level is right o...",
+      "summary": "RT @madebygoogle: Hey creators \ud83d\udc4b Everything you need to take your ideas to the next level is right on Pixel. \ud83c\udfac Gemini Omni\u2028\ud83c\udfb6 Music generati\u2026",
+      "content": "RT @madebygoogle: Hey creators \ud83d\udc4b Everything you need to take your ideas to the next level is right on Pixel. \ud83c\udfac Gemini Omni\u2028\ud83c\udfb6 Music generati\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-16T18:45:19Z",
+      "fetched_at": "2026-06-16T19:44:26.259760Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dc799b1340c8c666",
+      "url": "https://x.com/OpenAI/status/2066930552255729928",
+      "title": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, ...",
+      "summary": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, the Codex Chrome extension, personalize\u2026",
+      "content": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, the Codex Chrome extension, personalize\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-16T17:07:00Z",
+      "fetched_at": "2026-06-16T19:44:27.564490Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "251f3dc7c4029c32",
+      "url": "https://x.com/steipete/status/2066919133137035715",
+      "title": "RT @deredleritt3r: Two years ago, reasoning models did not exist. GPT-4o and Sonnet 3.5 were SOTA.\n\n...",
+      "summary": "RT @deredleritt3r: Two years ago, reasoning models did not exist. GPT-4o and Sonnet 3.5 were SOTA.\n\nOne year ago, the best publicly availab\u2026",
+      "content": "RT @deredleritt3r: Two years ago, reasoning models did not exist. GPT-4o and Sonnet 3.5 were SOTA.\n\nOne year ago, the best publicly availab\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-16T16:21:37Z",
+      "fetched_at": "2026-06-16T19:44:31.655515Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "70bb44a4d02a4193",
+      "url": "https://x.com/steipete/status/2066917041156587569",
+      "title": "RT @lindsmccallum: just two guys talking about loops https://t.co/ZIJvx9uJOr",
+      "summary": "RT @lindsmccallum: just two guys talking about loops https://t.co/ZIJvx9uJOr",
+      "content": "RT @lindsmccallum: just two guys talking about loops https://t.co/ZIJvx9uJOr",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-16T16:13:18Z",
+      "fetched_at": "2026-06-16T19:44:31.655548Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cdfeed5c2050b9cd",
+      "url": "https://x.com/bcherny/status/2064431111154053187",
+      "title": "Fable 5 is the biggest step up I\u2019ve felt in our models since Opus 4.5 back in November. After 4.5 ca...",
+      "summary": "Fable 5 is the biggest step up I\u2019ve felt in our models since Opus 4.5 back in November. After 4.5 came out I uninstalled my IDE when I realized that I\u2019d been doing 100% of my coding in a terminal for a few weeks. With Fable, it\u2019s felt like Claude has stepped up from being a",
+      "content": "Fable 5 is the biggest step up I\u2019ve felt in our models since Opus 4.5 back in November. After 4.5 came out I uninstalled my IDE when I realized that I\u2019d been doing 100% of my coding in a terminal for a few weeks. With Fable, it\u2019s felt like Claude has stepped up from being a",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T19:35:06Z",
+      "fetched_at": "2026-06-10T06:59:35.755381Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ba023387b0aa987e",
+      "url": "https://x.com/simonw/status/2064427357977637003",
+      "title": "RT @emollick: I've had access to Fable for a bit. A genuine jump in capability, I could feed it a 15...",
+      "summary": "RT @emollick: I've had access to Fable for a bit. A genuine jump in capability, I could feed it a 15 page design document for a project and\u2026",
+      "content": "RT @emollick: I've had access to Fable for a bit. A genuine jump in capability, I could feed it a 15 page design document for a project and\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-09T19:20:12Z",
+      "fetched_at": "2026-06-10T06:59:36.826334Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "565a32135bb41d11",
+      "url": "https://x.com/bcherny/status/2064426115255730578",
+      "title": "We talk a lot about how important it is to set up self-verification loops. Especially in the age of ...",
+      "summary": "We talk a lot about how important it is to set up self-verification loops. Especially in the age of powerful models that can run for long periods of time, self-verification is a key ingredient that enables the model to run for much longer, delivering a result that is closer to",
+      "content": "We talk a lot about how important it is to set up self-verification loops. Especially in the age of powerful models that can run for long periods of time, self-verification is a key ingredient that enables the model to run for much longer, delivering a result that is closer to",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T19:15:15Z",
+      "fetched_at": "2026-06-10T06:59:35.755427Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8c2d1d0df86454a7",
+      "url": "https://x.com/bcherny/status/2064423488149188885",
+      "title": "RT @karpathy: This is a super exciting release - Claude Fable 5 is the same underlying model as Myth...",
+      "summary": "RT @karpathy: This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with added safeguards. The bench\u2026",
+      "content": "RT @karpathy: This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with added safeguards. The bench\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T19:04:49Z",
+      "fetched_at": "2026-06-10T06:59:35.755465Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b7439eaca04ff9a9",
+      "url": "https://x.com/dani_avila7/status/2064416332590846078",
+      "title": "Claude Fable 5 just finished Pok\u00e9mon FireRed using only Vision\n\nAnthropic is playing with our childh...",
+      "summary": "Claude Fable 5 just finished Pok\u00e9mon FireRed using only Vision\n\nAnthropic is playing with our childhood memories \ud83d\ude2d\nhttps://t.co/T1HjIBktXo",
+      "content": "Claude Fable 5 just finished Pok\u00e9mon FireRed using only Vision\n\nAnthropic is playing with our childhood memories \ud83d\ude2d\nhttps://t.co/T1HjIBktXo",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-09T18:36:23Z",
+      "fetched_at": "2026-06-10T06:59:38.212250Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f8438b88c326c99f",
+      "url": "https://x.com/karpathy/status/2064409694761054332",
+      "title": "This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with ad...",
+      "summary": "This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with added safeguards. The benchmarks are great and it's SOTA on everything by a margin but I'll add that *qualitatively* also, this is a major-version-bump-deserving step change forward",
+      "content": "This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with added safeguards. The benchmarks are great and it's SOTA on everything by a margin but I'll add that *qualitatively* also, this is a major-version-bump-deserving step change forward",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-09T18:10:00Z",
+      "fetched_at": "2026-06-10T06:59:34.545893Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "df977283f7400720",
+      "url": "https://x.com/dani_avila7/status/2064406021242556627",
+      "title": "Starting to test Fable 5 in Claude Code...\n\nI'll be sharing my experiments and results soon. Stay tu...",
+      "summary": "Starting to test Fable 5 in Claude Code...\n\nI'll be sharing my experiments and results soon. Stay tuned \ud83d\udc40 https://t.co/obpvZxbsSw",
+      "content": "Starting to test Fable 5 in Claude Code...\n\nI'll be sharing my experiments and results soon. Stay tuned \ud83d\udc40 https://t.co/obpvZxbsSw",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-09T17:55:24Z",
+      "fetched_at": "2026-06-10T06:59:38.212281Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2f08b41dd4690ad3",
+      "url": "https://x.com/bcherny/status/2064402846922264650",
+      "title": "RT @levie: If you thought AI progress was slowing down, well here's the immediate answer to that. Hu...",
+      "summary": "RT @levie: If you thought AI progress was slowing down, well here's the immediate answer to that. Huge jump in capability across the board.\u2026",
+      "content": "RT @levie: If you thought AI progress was slowing down, well here's the immediate answer to that. Huge jump in capability across the board.\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T17:42:48Z",
+      "fetched_at": "2026-06-10T06:59:35.755502Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2f74e8ba0a1fa9a9",
+      "url": "https://x.com/bcherny/status/2064402671898075579",
+      "title": "Fable 5 is now available in Claude Code and Cowork\n\nFable is the best model I have used for coding, ...",
+      "summary": "Fable 5 is now available in Claude Code and Cowork\n\nFable is the best model I have used for coding, by a wide margin. It is a big step up, enabling less prompts and steers, more efficient token use, better code quality, better tool use, more intelligent self-verification, longer",
+      "content": "Fable 5 is now available in Claude Code and Cowork\n\nFable is the best model I have used for coding, by a wide margin. It is a big step up, enabling less prompts and steers, more efficient token use, better code quality, better tool use, more intelligent self-verification, longer",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-09T17:42:06Z",
+      "fetched_at": "2026-06-10T06:59:35.755539Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
