@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-17T08:13:31.922225+00:00",
+  "exported_at": "2026-06-17T08:35:21.633057+00:00",
   "period_hours": 168,
-  "total": 3076,
+  "total": 3075,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12419,48 +12419,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-10T10:00:37Z",
       "fetched_at": "2026-06-10T11:29:18.564369Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66090,6 +66048,26 @@
       "author": "dani_avila7",
       "published_at": "2026-06-16T22:15:45Z",
       "fetched_at": "2026-06-17T06:34:46.672282Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
