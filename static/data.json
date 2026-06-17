@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-17T09:57:17.194293+00:00",
+  "exported_at": "2026-06-17T10:35:43.461958+00:00",
   "period_hours": 168,
-  "total": 3075,
+  "total": 3069,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14674,67 +14674,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "406197dabdc44aaf",
-      "url": "https://www.youtube.com/watch?v=JHDsM8ER7tk",
-      "title": "Can you social engineer an AI? Plus: AI worms and the nonhuman identity problem",
-      "summary": "Explore the podcast \u2192https://ibm.biz/~5hi5oUNaW\n\nIf you just ask an AI nicely enough, you can get it to hand over the keys to a total stranger\u2019s Instagram account. But people can be tricked, too. So what\u2019s the difference? Is there any?\n\nThis week on IBM\u2019s Security Intelligence, Jeff Crume, Claire Nunez and Nick Bradley join host Matt Kosinski to dig into what happens when social engineering meets AI. We cover the Meta/Instagram prompt injection attack, a new self-replicating AI worm out of the University of Toronto that can reason its way through a network and the Sophos State of Identity Security 2026 report, which found that nonhuman identities (NHIs) are responsible for a sizable chunk of identity-based data breaches.\nAre AI agents more gullible than humans? Is the AI worm a genuine leap forward for attackers, or just another proof-of-concept? And why are so few organizations bothering to audit and rotate their nonhuman credentials? \n\nAll that and more on Security Intelligence.\n\nThe opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~tXAGoyaqb\n#aiagents #aimalware #aiengineering",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-10T10:00:37Z",
-      "fetched_at": "2026-06-10T11:29:18.564369Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a6ebb163a6c3bf17",
       "url": "https://www.anthropic.com/research/claude-code-expertise",
       "title": "Jun 17, 2026Economic ResearchAgentic coding and persistent returns to expertise",
@@ -28638,28 +28577,6 @@
       "author": "",
       "published_at": "2026-06-25T00:00:00Z",
       "fetched_at": "2026-06-09T19:02:15.192170Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "416f1eec7676dbeb",
-      "url": "https://deepmind.google/blog/investing-in-multi-agent-ai-safety-research/",
-      "title": "Investing in multi-agent AI safety research",
-      "summary": "Google DeepMind and partners announce a $10M funding call for multi-agent safety research.",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-10T10:21:19Z",
-      "fetched_at": "2026-06-11T11:48:47.794660Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63830,90 +63747,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "be7584cb4fa1cec7",
-      "url": "https://arxiv.org/abs/2606.11898v1",
-      "title": "GraspLLM: Towards Zero-Shot Generalization on Text-Attributed Graphs with LLMs",
-      "summary": "Research on Text-Attributed Graphs (TAGs) has gained significant attention recently due to its broad applications across various real-world data scenarios, such as citation networks, e-commerce platforms, social media, and web pages. Inspired by the remarkable semantic understanding ability of Large Language Models (LLMs), there have been numerous attempts to integrate LLMs into TAGs. However, existing methods still struggle to generalize across diverse graphs and tasks, and their ability to capture transferable graph structural patterns remains limited. To address this, we introduce the GraspLLM, a framework that combines Graph structural comprehension with semantic understanding prowess of LLMs to enhance the cross-dataset and cross-task generalizability. Specifically, we represent node texts from different graphs in a unified semantic space with a frozen general embedding model, on top of which we perform motif-aware contrastive learning across multiple motif-induced adjacency matrices to extract dataset-agnostic structural information. Then, with our proposed optimal contextual subgraph, we extract the most contextually relevant subgraph for each target node and align these subgraphs to the token space of LLM via an alignment projector. Extensive experiments on TAG benchmark datasets spanning diverse domains reveal that GraspLLM consistently outperforms previous LLM-based methods for TAGs, especially in zero-shot scenarios, highlighting its strong generalizability across different datasets and tasks. Our code is available at https://github.com/Heinz217/GraspLLM.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Wentao Zhang",
-      "published_at": "2026-06-10T10:25:59Z",
-      "fetched_at": "2026-06-11T01:25:58.060468Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e24b985fd6036be9",
-      "url": "https://arxiv.org/abs/2606.11897v1",
-      "title": "Notes2Skills: From Lab Notebooks to Certainty-Aware Scientific Agent Skills",
-      "summary": "Scientific discovery workflows usually contain and rely heavily on lab notes, where researchers record observations, interpret uncertain results, and plan follow-up experiments. Such informative lab notes preserve evolving scientific reasoning and author uncertainty, rather than polished final results exhibited in publications, providing a valuable opportunity for AI to engage in scientific exploration at a more comprehensive and deeper level. However, most prior work on scientific text focuses on papers, protocols, or structured databases, leaving informal laboratory notes underexplored as inputs to AI agents for science. This gap matters because lab notes often intermingle validated observations, tentative judgments, and possible experimental next steps within the same passage. If these signals are conflated, an AI agent may mistake uncertain scientific judgments for confirmed conclusions or executable actions. To this end, we present Notes2Skills, a two-stage framework for turning lab notebooks into verifiable skills for scientific AI agents while preserving the author's certainty. Across seven conditions and three wet-lab sessions, Notes2Skills is the only configuration that neither mistakes uncertain notes for firm instructions nor discards firm ones. We show that certainty preservation is the missing piece between lab notebooks and reliable agent skills, opening a path toward safer AI co-scientist systems.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Linyi Yang",
-      "published_at": "2026-06-10T10:25:47Z",
-      "fetched_at": "2026-06-11T01:25:58.060476Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "09481a6a7d20471d",
-      "url": "https://arxiv.org/abs/2606.11893v1",
-      "title": "Beyond representational alignment with brain-guided language models for robust reasoning",
-      "summary": "The correspondence between large language models (LLMs) and the neural mechanisms underlying human higher-order cognition remains insufficiently characterized. Given that language and reasoning in the human brain appear dissociable, an open question is whether LLMs align with neural signals from reasoning-related regions and whether such signals can improve them. Here, focusing on deductive reasoning, we show that LLM internal representations are not only partially aligned with task-fMRI activity but can also be directly enhanced by these signals. Using a neural-predictivity metric, we find that LLMs explain a substantial fraction of the explainable variance in reasoning-related regions at the aggregate level, whereas predictivity within specific reasoning types is lower, indicating both alignment and divergence. Building on this, we propose a brain-guided framework: we steer model representations along directions induced by the joint structure of model and brain representations, applying intervention at inference and fine-tuning during training. We demonstrate that task-evoked brain signals can directly enhance LLM reasoning, yielding gains orthogonal to language-only supervision across 10 LLMs (1.5B-72B), with transfer across reasoning types and up to 13\\% absolute accuracy gain. Our results advance LLM-brain correspondences from correlation to guidance, establishing a brain-signal-driven pathway toward more robust and cognitively aligned AI.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Zhouchen Lin",
-      "published_at": "2026-06-10T10:22:49Z",
-      "fetched_at": "2026-06-11T01:25:58.060484Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "856d8ad9e3e8b768",
-      "url": "https://arxiv.org/abs/2606.11875v1",
-      "title": "I Understand How You Feel: Enhancing Deeper Emotional Support Through Multilingual Emotional Validation in Dialogue System",
-      "summary": "Emotional validation - explicitly acknowledging that a user's feelings make sense - has proven therapeutic value but has received little computational attention. Emotional validation in dialogue systems can be decomposed into (i) validating response identification, (ii) validation timing detection, and (iii) validating response generation. To support research on all three subtasks, we release M-EDESConv, a 120k English-Japanese multilingual corpus created through hybrid manual and automatic annotation, and M-TESC, a multilingual spoken-dialogue test set. For timing detection, we propose MEGUMI, a Multilingual Emotion-aware Gated Unit for Mutual Integration, that fuses frozen XLM-RoBERTa semantics with language-specific emotion encoders via cross-modal attention and gated fusion. MEGUMI shows superior performance on both the M-EDESConv and M-TESC datasets, both objectively and subjectively. Finally, our EmoValidBench benchmarks of GPT-4.1 Nano and Llama-3.1 8B indicate that current LLMs generate contextually similar and diverse validating responses, but emotional understanding remains a major area for improvement. Project page: https://github.com/zihaurpang/Multilingual-Emotional-Validation",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Tatsuya Kawahara",
-      "published_at": "2026-06-10T09:59:06Z",
-      "fetched_at": "2026-06-11T01:25:58.060492Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "20c7c40e4b6f5468",
       "url": "https://www.anthropic.com/events/claude-founder-house-paris",
       "title": "Claude Founder House",
@@ -66069,6 +65902,46 @@
       "author": "dani_avila7",
       "published_at": "2026-06-16T22:15:45Z",
       "fetched_at": "2026-06-17T06:34:46.672282Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f590b3c81d8f2414",
+      "url": "https://x.com/dani_avila7/status/2067190125956587892",
+      "title": "What used to be crazy, an absolute no, is now possible and even the path forward\n\nOnce companies see...",
+      "summary": "What used to be crazy, an absolute no, is now possible and even the path forward\n\nOnce companies see AI can build a new GitHub, they\u2019ll realize it can replace software we thought was untouchable",
+      "content": "What used to be crazy, an absolute no, is now possible and even the path forward\n\nOnce companies see AI can build a new GitHub, they\u2019ll realize it can replace software we thought was untouchable",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-17T10:18:27Z",
+      "fetched_at": "2026-06-17T10:35:32.244846Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
