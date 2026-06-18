@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-18T15:27:48.430144+00:00",
+  "exported_at": "2026-06-18T15:54:59.746217+00:00",
   "period_hours": 168,
-  "total": 2959,
+  "total": 2957,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13234,68 +13234,6 @@
       "author": "AI Engineer",
       "published_at": "2026-06-11T16:00:06Z",
       "fetched_at": "2026-06-11T17:29:39.500515Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "25ba6cb2ad476435",
-      "url": "https://www.youtube.com/watch?v=so9l_MwS2yg",
-      "title": "How to Keep Shipping When You Walk Away from Your Desk \u2014 Zack Proser, WorkOS",
-      "summary": "Simon Willison fires up four parallel agents and is wiped out by 11am. That is the problem Zack Proser is solving: not that the tools are too slow but that human attention is still the hard constraint. His loop: voice brief at 184 words per minute, agent dispatched to an isolated git worktree, laptop closed, progress checked from a phone on LTE miles away via remote control.\n\nThe talk covers four layers that make this sustainable: signal agents that read Slack and Linear on a loop so you never open them yourself, verification gates from lint and build up to browser click through and critic passes, a weekly agent run over your JSONL conversation history to surface inefficiencies and generate missing skills, and an Oura ring connected via MCP so Claude can tell you that you did not sleep last night. You can ignore it. But at least you thought about it.\n\nSpeaker info:\n- https://linkedin.com/in/zackproser\n- https://github.com/zackproser",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-11T14:00:06Z",
-      "fetched_at": "2026-06-11T15:29:30.870354Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61704,48 +61642,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "78f12ad2d75a175c",
-      "url": "https://arxiv.org/abs/2606.13486v1",
-      "title": "CRAFTIIF: Cross-Resolution Analytic Four-Type Interpretable Isolation Forest for Multivariate Time Series Anomaly Detection",
-      "summary": "Anomaly detection in multivariate time series is challenged by four structurally distinct anomaly types -- point (isolated spikes), distributional (level shifts), temporal (rhythm changes), and collective (inter-sensor correlation breakdowns) -- each requiring different feature representations. Most unsupervised methods target only one or two types and provide limited interpretability. We present CRAFTIIF (Cross-Resolution Analytic Four-Type Interpretable Isolation Forest), a fully unsupervised framework targeting all four types without dataset-specific tuning. CRAFTIIF generates K=500 random analytic wavelet feature draws across four families (Morlet, DOG, Haar, Coiflet), each targeting a specific anomaly type, feeding five structured Isolation Forests -- one per type plus a meta-IF for compound anomalies. An adaptive Otsu/MAD threshold calibrates detection automatically across anomaly rates from 0.1% to 69.2%. Because each IF is trained exclusively on type-specific features, branch firing provides direct anomaly-type attribution by construction, without post-hoc explanation. Evaluated on all 19 datasets of the mTSBench benchmark (Zhou et al., TMLR 2026), CRAFTIIF achieves mean F1=0.228 (all 19 datasets) and F1=0.322 (13 detectable datasets), ranking first among all 25 evaluated methods on VUS-PR (0.463 vs. previous best 0.329, +40.7%). A diagnostic framework -- oracle F1, detectability limits, and branch separation ratios -- identifies 6 of 19 datasets as fundamentally undetectable by any unsupervised method. Ablation over 11 conditions confirms adaptive thresholding (+38% F1), four-branch structure (+20%), and meta-IF (+23%) are each essential. Code: https://github.com/smitswil/craftiif",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "William Smits",
-      "published_at": "2026-06-11T15:36:14Z",
-      "fetched_at": "2026-06-12T01:28:45.592902Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a42f9a709b6f971b",
-      "url": "https://arxiv.org/abs/2606.13477v1",
-      "title": "SupraBench: A Benchmark for Supramolecular Chemistry",
-      "summary": "Supramolecular chemistry, which includes the study of non-covalent host-guest assemblies, has advanced various applications. However, designing host-guest systems remains time-consuming, requiring days of dry-lab verification per candidate pair. Although LLMs have emerged as a fast alternative with strong performance on molecular binding tasks, no benchmark currently systematically evaluates LLMs for host-guest reasoning across fundamental supramolecular chemistry tasks, e.g., binding affinity prediction. To this end, we collaborate with domain experts to release the first Supramolecular Benchmark, called SupraBench, to evaluate LLMs in chemistry reasoning. Specifically, we design four fundamental tasks, i.e., binding affinity prediction, top-binder selection, solvent identification, and host-guest description, plus an auxiliary vision-based task for molecular identification. We also release SupraPMC, a curated 16M-token corpus of Supramolecular chemistry articles distilled from Europe PMC, to support the adaptation to the supramolecular domain. We benchmark a broad range of open and proprietary LLMs and find that LLMs leave substantial headroom across all tasks. Domain adaptation pretraining over SupraPMC transfers cleanly to in-distribution regression but trades off against strict letter-format output. Moreover, the difficulty profile differs sharply across task families, revealing distinct failure modes that indicate specific gaps in current supramolecular chemistry reasoning. Our source codes and benchmark datasets are available at https://github.com/Tianyi-Billy-Ma/SupraBench.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Yanfang Ye",
-      "published_at": "2026-06-11T15:29:56Z",
-      "fetched_at": "2026-06-12T01:28:45.285499Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "20c7c40e4b6f5468",
       "url": "https://www.anthropic.com/events/claude-founder-house-paris",
       "title": "Claude Founder House",
@@ -61820,27 +61716,6 @@
       "author": "",
       "published_at": "2026-06-17T00:00:00Z",
       "fetched_at": "2026-05-22T01:19:25.816005Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1dec67051ae3679a",
-      "url": "https://x.com/GeminiApp/status/2065097165433983253",
-      "title": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland...",
-      "summary": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland.\n\nWith notebooks, you can organize your projects in a dedicated, focused space that remembers your sources, instructions, and chats.\n\nCreate your own notebook at",
-      "content": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland.\n\nWith notebooks, you can organize your projects in a dedicated, focused space that remembers your sources, instructions, and chats.\n\nCreate your own notebook at",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-11T15:41:46Z",
-      "fetched_at": "2026-06-11T16:18:12.759048Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63851,6 +63726,87 @@
       "author": "geminiapp",
       "published_at": "2026-06-17T19:08:33Z",
       "fetched_at": "2026-06-18T08:35:52.191389Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "947fab53ee0ef61e",
+      "url": "https://x.com/dani_avila7/status/2067618283243569267",
+      "title": "Agents are moving into the tools humans use to communicate.\u00a0\n\nViktor is one example: an AI employee ...",
+      "summary": "Agents are moving into the tools humans use to communicate.\u00a0\n\nViktor is one example: an AI employee inside Teams that connects your knowledge base and executes work across your stack.\u00a0\n\nJust raised a $75M Series A led by Accel.\n\nIn partnership with Viktor",
+      "content": "Agents are moving into the tools humans use to communicate.\u00a0\n\nViktor is one example: an AI employee inside Teams that connects your knowledge base and executes work across your stack.\u00a0\n\nJust raised a $75M Series A led by Accel.\n\nIn partnership with Viktor",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-18T14:39:47Z",
+      "fetched_at": "2026-06-18T15:54:48.305466Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1dec67051ae3679a",
+      "url": "https://x.com/GeminiApp/status/2065097165433983253",
+      "title": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland...",
+      "summary": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland.\n\nWith notebooks, you can organize your projects in a dedicated, focused space that remembers your sources, instructions, and chats.\n\nCreate your own notebook at",
+      "content": "Notebooks in Gemini are now available in the European Economic Area, United Kingdom, and Switzerland.\n\nWith notebooks, you can organize your projects in a dedicated, focused space that remembers your sources, instructions, and chats.\n\nCreate your own notebook at",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T15:41:46Z",
+      "fetched_at": "2026-06-11T16:18:12.759048Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bfecc9a2e21e1c85",
+      "url": "https://x.com/dani_avila7/status/2065067004587905462",
+      "title": "Impressive impact from these 3 platforms in such a short time\n\nEven though it covers the basics of h...",
+      "summary": "Impressive impact from these 3 platforms in such a short time\n\nEven though it covers the basics of how to use Cowork, this kind of webinar is worth watching to confirm you are on the right track, straight from the people building these services\n\nSave this post to watch the https://t.co/vB1YjirimU",
+      "content": "Impressive impact from these 3 platforms in such a short time\n\nEven though it covers the basics of how to use Cowork, this kind of webinar is worth watching to confirm you are on the right track, straight from the people building these services\n\nSave this post to watch the https://t.co/vB1YjirimU",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-11T13:41:55Z",
+      "fetched_at": "2026-06-11T16:18:08.968999Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15caa76380a26993",
+      "url": "https://x.com/dani_avila7/status/2063336153630011728",
+      "title": "https://t.co/rbn5dmhQ4O",
+      "summary": "https://t.co/rbn5dmhQ4O",
+      "content": "https://t.co/rbn5dmhQ4O",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-06T19:04:08Z",
+      "fetched_at": "2026-06-11T16:18:08.969544Z",
       "score": null,
       "score_reason": "",
       "tier": "",
