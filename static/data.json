@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-18T19:07:04.987492+00:00",
+  "exported_at": "2026-06-18T19:19:47.767205+00:00",
   "period_hours": 168,
-  "total": 2923,
+  "total": 2930,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12725,68 +12725,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-06-11T23:19:57Z",
       "fetched_at": "2026-06-12T01:28:20.740135Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "73518bade0975dc0",
-      "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
-      "title": "Why Can't Anyone Answer Questions About the Business? \u2014 Garrett Galow, WorkOS",
-      "summary": "Every business question that needs SQL follows the same loop: explain the question, wait for an engineer, get an answer, realize it needs one more join, share a one-off in Slack, repeat. Garrett Galow from WorkOS built Studio to break that loop \u2014 an internal workspace where anyone can ask questions against Snowflake, Linear, and Notion in natural language and get answers or reusable widgets without filing a request.\n\nThe widgets are the interesting part: the LLM writes them once as declarative JavaScript that calls the underlying data sources directly, so every subsequent run is deterministic and cheap. Three things made it reliable enough to hand to a support team. Preflight sequencing that injects schema context only at the moment a tool is invoked, not upfront, keeping the context window clean. A layering rule that explicitly tells the model to distrust its own knowledge about WorkOS and go to primary sources. And query validation that runs every generated Snowflake query before hardcoding it into a widget, catching the valid SQL that returns zero rows failure mode.\n\nSpeaker info:\n- https://www.linkedin.com/in/garrett-galow/",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-11T18:00:06Z",
-      "fetched_at": "2026-06-11T19:16:05.308309Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61256,27 +61194,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b3e3fb30786b73c0",
-      "url": "https://x.com/GeminiApp/status/2065149288200696274",
-      "title": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America,...",
-      "summary": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
-      "content": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-11T19:08:53Z",
-      "fetched_at": "2026-06-11T21:59:25.958854Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cc600e8d3f61b301",
       "url": "https://x.com/steipete/status/2065335106357854553",
       "title": "RT @ajambrosino: we shipped the Tibo button",
@@ -63095,6 +63012,232 @@
       "author": "dani_avila7",
       "published_at": "2026-06-18T14:39:47Z",
       "fetched_at": "2026-06-18T15:54:48.305466Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1cef7b0d8796fc5e",
+      "url": "https://x.com/dani_avila7/status/2067687149269398003",
+      "title": "The question worth settling, do we build a separate ecosystem for agents to live in, or do agents ea...",
+      "summary": "The question worth settling, do we build a separate ecosystem for agents to live in, or do agents earn their place inside the one humans already use\n\nViktor went for the second, it moved into the human stack instead of asking anyone to migrate, and it crossed $20M in annualized",
+      "content": "The question worth settling, do we build a separate ecosystem for agents to live in, or do agents earn their place inside the one humans already use\n\nViktor went for the second, it moved into the human stack instead of asking anyone to migrate, and it crossed $20M in annualized",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-18T19:13:26Z",
+      "fetched_at": "2026-06-18T19:19:36.817679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8765f8d656464148",
+      "url": "https://x.com/trq212/status/2067682475611242546",
+      "title": "Claude Code can now upload and edit HTML artifacts that you can share with your team or other Claude...",
+      "summary": "Claude Code can now upload and edit HTML artifacts that you can share with your team or other Claudes!\n\nStarting with teams so you can share internally with your team, coming to Pro and MAX plans soon!",
+      "content": "Claude Code can now upload and edit HTML artifacts that you can share with your team or other Claudes!\n\nStarting with teams so you can share internally with your team, coming to Pro and MAX plans soon!",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-18T18:54:52Z",
+      "fetched_at": "2026-06-18T19:19:31.389656Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8656795baa5c24c9",
+      "url": "https://x.com/dani_avila7/status/2067676831252189237",
+      "title": "ok, Claude Code Artifacts just changed how teams share work \ud83e\udd29\n\nAlready thinking about triggering art...",
+      "summary": "ok, Claude Code Artifacts just changed how teams share work \ud83e\udd29\n\nAlready thinking about triggering artifact generation from a Telegram/WhatsApp and getting the link back. \n\nThe agentic reporting use case basically writes itself... Can't wait to start using this \ud83d\udc4f",
+      "content": "ok, Claude Code Artifacts just changed how teams share work \ud83e\udd29\n\nAlready thinking about triggering artifact generation from a Telegram/WhatsApp and getting the link back. \n\nThe agentic reporting use case basically writes itself... Can't wait to start using this \ud83d\udc4f",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-18T18:32:26Z",
+      "fetched_at": "2026-06-18T19:19:36.817736Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c90c55188e144ce8",
+      "url": "https://x.com/dani_avila7/status/2067657869823021526",
+      "title": "MCP is the best way to manage LLM capabilities at the enterprise level\n\nWe've been implementing tool...",
+      "summary": "MCP is the best way to manage LLM capabilities at the enterprise level\n\nWe've been implementing tool control and skill distribution for several months now, and the ecosystem around MCPs keeps maturing, making it increasingly easier to enforce internal policies for agents deployed https://t.co/Cmp5rDNXTk",
+      "content": "MCP is the best way to manage LLM capabilities at the enterprise level\n\nWe've been implementing tool control and skill distribution for several months now, and the ecosystem around MCPs keeps maturing, making it increasingly easier to enforce internal policies for agents deployed https://t.co/Cmp5rDNXTk",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-18T17:17:06Z",
+      "fetched_at": "2026-06-18T19:19:36.817769Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "66359b06f79335fb",
+      "url": "https://x.com/sama/status/2067654924884754926",
+      "title": "RT @thekaransinghal: One of the ways scaling test-time compute can benefit people most: have reasoni...",
+      "summary": "RT @thekaransinghal: One of the ways scaling test-time compute can benefit people most: have reasoning models think really hard about rare\u2026",
+      "content": "RT @thekaransinghal: One of the ways scaling test-time compute can benefit people most: have reasoning models think really hard about rare\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-18T17:05:23Z",
+      "fetched_at": "2026-06-18T19:19:39.171174Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fa88c4169ed68bb0",
+      "url": "https://x.com/GeminiApp/status/2067654431953547590",
+      "title": "Build a jet lag strategy for your next trip with Gemini 3.5 Flash.\n\nGemini can grab your flight itin...",
+      "summary": "Build a jet lag strategy for your next trip with Gemini 3.5 Flash.\n\nGemini can grab your flight itinerary from @gmail, build a custom sleep schedule based on your time zone, and add it right to your calendar for helpful reminders.",
+      "content": "Build a jet lag strategy for your next trip with Gemini 3.5 Flash.\n\nGemini can grab your flight itinerary from @gmail, build a custom sleep schedule based on your time zone, and add it right to your calendar for helpful reminders.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-18T17:03:26Z",
+      "fetched_at": "2026-06-18T19:19:40.505470Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b3e3fb30786b73c0",
+      "url": "https://x.com/GeminiApp/status/2065149288200696274",
+      "title": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America,...",
+      "summary": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
+      "content": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T19:08:53Z",
+      "fetched_at": "2026-06-11T21:59:25.958854Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6837a2c7445e67c",
+      "url": "https://x.com/GeminiApp/status/2065135733883715593",
+      "title": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing n...",
+      "summary": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing new AI tools and features to Brazil:\n\n\ud83d\udccdA\u2026",
+      "content": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing new AI tools and features to Brazil:\n\n\ud83d\udccdA\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T18:15:01Z",
+      "fetched_at": "2026-06-11T21:59:25.958880Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "83e2f31fbe8ebda5",
+      "url": "https://x.com/simonw/status/2065133346452361453",
+      "title": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-...",
+      "summary": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-5.5 collaborate on this custom API explorer tool for trying out the new feature https://t.co/G2cFQyOrKs https://t.co/kUgMUhlmjv",
+      "content": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-5.5 collaborate on this custom API explorer tool for trying out the new feature https://t.co/G2cFQyOrKs https://t.co/kUgMUhlmjv",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T18:05:32Z",
+      "fetched_at": "2026-06-11T21:59:21.250890Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b3b14ec939307583",
+      "url": "https://x.com/steipete/status/2065132980398444945",
+      "title": "writing mac apps is still hard.",
+      "summary": "writing mac apps is still hard.",
+      "content": "writing mac apps is still hard.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T18:04:05Z",
+      "fetched_at": "2026-06-11T21:59:30.778868Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4f1da2f1a0a884e8",
+      "url": "https://x.com/simonw/status/2065132604786159920",
+      "title": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and br...",
+      "summary": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and brings it to the row and query pages in addition to the table pages\n\n(Most of the code in this release was built with the help of Claude Fable 5) https://t.co/Kai76qdsmW",
+      "content": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and brings it to the row and query pages in addition to the table pages\n\n(Most of the code in this release was built with the help of Claude Fable 5) https://t.co/Kai76qdsmW",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T18:02:35Z",
+      "fetched_at": "2026-06-11T21:59:21.251006Z",
       "score": null,
       "score_reason": "",
       "tier": "",
