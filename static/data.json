@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-18T21:08:33.135298+00:00",
+  "exported_at": "2026-06-18T21:23:29.596795+00:00",
   "period_hours": 168,
-  "total": 2925,
+  "total": 2932,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11801,48 +11801,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-06-11T23:19:57Z",
       "fetched_at": "2026-06-12T01:28:20.740135Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61174,27 +61132,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f0b53ebad8a5b063",
-      "url": "https://x.com/GeminiApp/status/2065183026884296963",
-      "title": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community ev...",
-      "summary": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community event.\n\nProduct Marketing Manager Megan C. will be discussing some of her favorite highlights that help improve the Gemini experience, from dynamic visual responses to seamless mode",
-      "content": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community event.\n\nProduct Marketing Manager Megan C. will be discussing some of her favorite highlights that help improve the Gemini experience, from dynamic visual responses to seamless mode",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-11T21:22:57Z",
-      "fetched_at": "2026-06-11T21:59:25.958753Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cc600e8d3f61b301",
       "url": "https://x.com/steipete/status/2065335106357854553",
       "title": "RT @ajambrosino: we shipped the Tibo button",
@@ -63135,6 +63072,213 @@
       "author": "geminiapp",
       "published_at": "2026-06-18T17:03:26Z",
       "fetched_at": "2026-06-18T19:19:40.505470Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1d253ace220e7fbd",
+      "url": "https://x.com/bcherny/status/2067700226669060207",
+      "title": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system ...",
+      "summary": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what",
+      "content": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-18T20:05:24Z",
+      "fetched_at": "2026-06-18T21:23:14.568603Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f0b53ebad8a5b063",
+      "url": "https://x.com/GeminiApp/status/2065183026884296963",
+      "title": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community ev...",
+      "summary": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community event.\n\nProduct Marketing Manager Megan C. will be discussing some of her favorite highlights that help improve the Gemini experience, from dynamic visual responses to seamless mode",
+      "content": "Get a closer look at Gemini's new Neural Expressive design language at our next Discord community event.\n\nProduct Marketing Manager Megan C. will be discussing some of her favorite highlights that help improve the Gemini experience, from dynamic visual responses to seamless mode",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T21:22:57Z",
+      "fetched_at": "2026-06-11T21:59:25.958753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b61b19ec888c2aee",
+      "url": "https://x.com/steipete/status/2065176989359808636",
+      "title": "Getting Chris to do a PR with Codex!",
+      "summary": "Getting Chris to do a PR with Codex!",
+      "content": "Getting Chris to do a PR with Codex!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T20:58:58Z",
+      "fetched_at": "2026-06-11T21:59:30.778753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3086afa876bfa1b8",
+      "url": "https://x.com/GeminiApp/status/2065169516737527902",
+      "title": "RT @Google: Gemini in @GoogleChrome is now rolling out to more desktop and iOS users in Latin Americ...",
+      "summary": "RT @Google: Gemini in @GoogleChrome is now rolling out to more desktop and iOS users in Latin America, Africa, the Middle East and more. He\u2026",
+      "content": "RT @Google: Gemini in @GoogleChrome is now rolling out to more desktop and iOS users in Latin America, Africa, the Middle East and more. He\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T20:29:16Z",
+      "fetched_at": "2026-06-11T21:59:25.958823Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b545c15edcae57e5",
+      "url": "https://x.com/sama/status/2065160791205310565",
+      "title": "really looking forward to working together!",
+      "summary": "really looking forward to working together!",
+      "content": "really looking forward to working together!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-11T19:54:36Z",
+      "fetched_at": "2026-06-11T21:59:24.631245Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b3e3fb30786b73c0",
+      "url": "https://x.com/GeminiApp/status/2065149288200696274",
+      "title": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America,...",
+      "summary": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
+      "content": "RT @googlechrome: The wait is over! We\u2019re expanding access to Gemini in Chrome across Latin America, Africa, the Middle East and more. http\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T19:08:53Z",
+      "fetched_at": "2026-06-11T21:59:25.958854Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6837a2c7445e67c",
+      "url": "https://x.com/GeminiApp/status/2065135733883715593",
+      "title": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing n...",
+      "summary": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing new AI tools and features to Brazil:\n\n\ud83d\udccdA\u2026",
+      "content": "RT @NewsFromGoogle: At our annual Google for Brazil event, we shared updates on how we're bringing new AI tools and features to Brazil:\n\n\ud83d\udccdA\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-11T18:15:01Z",
+      "fetched_at": "2026-06-11T21:59:25.958880Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "83e2f31fbe8ebda5",
+      "url": "https://x.com/simonw/status/2065133346452361453",
+      "title": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-...",
+      "summary": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-5.5 collaborate on this custom API explorer tool for trying out the new feature https://t.co/G2cFQyOrKs https://t.co/kUgMUhlmjv",
+      "content": "Since the JSON extras API is a little hard to explain without an example I also had Fable 5 and GPT-5.5 collaborate on this custom API explorer tool for trying out the new feature https://t.co/G2cFQyOrKs https://t.co/kUgMUhlmjv",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T18:05:32Z",
+      "fetched_at": "2026-06-11T21:59:21.250890Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b3b14ec939307583",
+      "url": "https://x.com/steipete/status/2065132980398444945",
+      "title": "writing mac apps is still hard.",
+      "summary": "writing mac apps is still hard.",
+      "content": "writing mac apps is still hard.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-11T18:04:05Z",
+      "fetched_at": "2026-06-11T21:59:30.778868Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4f1da2f1a0a884e8",
+      "url": "https://x.com/simonw/status/2065132604786159920",
+      "title": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and br...",
+      "summary": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and brings it to the row and query pages in addition to the table pages\n\n(Most of the code in this release was built with the help of Claude Fable 5) https://t.co/Kai76qdsmW",
+      "content": "New Datasette release: 1.0a33, which finally brings documents the ?_extra= JSON API mechanism and brings it to the row and query pages in addition to the table pages\n\n(Most of the code in this release was built with the help of Claude Fable 5) https://t.co/Kai76qdsmW",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-11T18:02:35Z",
+      "fetched_at": "2026-06-11T21:59:21.251006Z",
       "score": null,
       "score_reason": "",
       "tier": "",
