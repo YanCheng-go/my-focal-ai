@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-19T09:53:22.663830+00:00",
+  "exported_at": "2026-06-19T10:21:45.529265+00:00",
   "period_hours": 168,
-  "total": 3182,
+  "total": 3176,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13826,67 +13826,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "51c3a409aa7b67d9",
-      "url": "https://www.youtube.com/watch?v=aByPOYCEH6I",
-      "title": "Claude Fable 5 & Apple\u2019s NVIDIA deal",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content  \u2192 https://ibm.biz/~r8dEac3ai\n\nIs Claude Fable 5 worth the hype? This week on Mixture of Experts, host Tim Hwang is joined by Christopher Hay, Kaoutar El Maghraoui and Volkmar Uhlig to debrief about Anthropic\u2019s new releases. Our experts analyze the tier routing system inn Claude\u2019s Fable 5, a Mythos-class model. Next, at WWDC 2026, Apple announced it\u2019s abandoning on-device AI promise to partner with NVIDIA for cloud compute. What does this mean for the consumer? Finally, can AI models actually detect sarcasm? We debate the multimodal inputs necessary or if context alone can determine whether a query is sarcastic. \n\nAll that and more on this week\u2019s Mixture of Experts.\n\n00:00 \u2013 Introduction\n00:56 \u2013 Anthropic Fable V release and routing controversy\n17:55 \u2013 Apple WWDC: NVIDIA partnership and cloud AI shift\n27:09 \u2013 Can AI models detect sarcasm?\n\nThe opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~i55JgUA61\n#claudeai #anthropic #aimodel",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-12T10:00:21Z",
-      "fetched_at": "2026-06-12T11:31:05.911904Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4d18dc70f389552d",
       "url": "https://www.aitmpl.com/templates/rails#templates",
       "title": "#10 rails",
@@ -14302,27 +14241,6 @@
       "published_at": "2026-06-19T00:00:00Z",
       "fetched_at": "2026-06-19T09:53:19.166011Z",
       "score": 1.0,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "71a65e44044f37cb",
-      "url": "https://github.com/NeoLabs-Systems/NeoAgent?utm_source=trendshift.io#trending-history",
-      "title": "#2 NeoLabs-Systems/NeoAgent?utm_source=trendshift.io",
-      "summary": "",
-      "content": "",
-      "source_name": "GitHub Trending History",
-      "source_type": "github_trending_history",
-      "tags": [
-        "github",
-        "trending",
-        "open-source"
-      ],
-      "author": "",
-      "published_at": "2026-06-12T00:00:00Z",
-      "fetched_at": "2026-06-12T22:49:07.323608Z",
-      "score": 0.75,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
@@ -28805,27 +28723,6 @@
       "author": "Anu Srivastava",
       "published_at": "2026-06-12T14:43:17Z",
       "fetched_at": "2026-06-12T15:26:31.339121Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dd73139d2e3dcd4c",
-      "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
-      "title": "New OpenAI Academy courses for the next era of work",
-      "summary": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-12T10:00:00Z",
-      "fetched_at": "2026-06-12T17:17:22.128412Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66639,27 +66536,6 @@
       "author": "Ida-Maria Sintorn",
       "published_at": "2026-06-12T11:00:23Z",
       "fetched_at": "2026-06-15T01:31:46.852881Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4b0abaac8f3b7416",
-      "url": "https://arxiv.org/abs/2606.14325v1",
-      "title": "Achieving Precise Text-To-Cypher Via Grounded Knowledge Graph Data Generation",
-      "summary": "Property Graphs are rapidly being adopted as database frameworks for representing heterogeneous data sources. To enable precise access to the information contained in them we need conversational interfaces based on Text-To-Cypher (Text2Cypher) parsers. This paper presents an automatic synthetic data generation method that can be leveraged to fine-tune small LLMs for this task. We conduct experiments on all the major Text-To-Cypher benchmarks, demonstrating that with our synthetic data generation approach we can significantly increase the performance of small LLMs, allowing them to compete with much larger proprietary models. This means that in settings in which models must be locally deployed we can ensure data-sovereignty without sacrificing accuracy and without costly annotation campaigns.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Ariadna Quattoni",
-      "published_at": "2026-06-12T10:08:20Z",
-      "fetched_at": "2026-06-15T01:31:47.271561Z",
       "score": null,
       "score_reason": "",
       "tier": "",
