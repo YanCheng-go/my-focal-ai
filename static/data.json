@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-19T08:14:59.877859+00:00",
+  "exported_at": "2026-06-19T08:21:25.747031+00:00",
   "period_hours": 168,
-  "total": 3188,
+  "total": 3191,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -10834,27 +10834,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "71a65e44044f37cb",
-      "url": "https://github.com/NeoLabs-Systems/NeoAgent?utm_source=trendshift.io#trending-history",
-      "title": "#2 NeoLabs-Systems/NeoAgent?utm_source=trendshift.io",
-      "summary": "",
-      "content": "",
-      "source_name": "GitHub Trending History",
-      "source_type": "github_trending_history",
-      "tags": [
-        "github",
-        "trending",
-        "open-source"
-      ],
-      "author": "",
-      "published_at": "2026-06-12T00:00:00Z",
-      "fetched_at": "2026-06-12T22:49:07.323608Z",
-      "score": 0.75,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "eb900d3adfe1b90c",
       "url": "https://www.youtube.com/watch?v=2OD14-0cot4",
       "title": "GLM 5.2 in Claude Code is Blowing My Mind",
@@ -11445,48 +11424,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-12T10:00:21Z",
       "fetched_at": "2026-06-12T11:31:05.911904Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -68791,6 +68728,127 @@
       "author": "bcherny",
       "published_at": "2026-06-18T20:05:24Z",
       "fetched_at": "2026-06-18T21:23:14.568603Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d4457bc0f044d835",
+      "url": "https://x.com/steipete/status/2067876199695818928",
+      "title": "RT @theo: If you're curious how I managed to do over $20,000 in inference on the last 48 hours, here...",
+      "summary": "RT @theo: If you're curious how I managed to do over $20,000 in inference on the last 48 hours, here's a video all about it.\n\nSpoiler: loop\u2026",
+      "content": "RT @theo: If you're curious how I managed to do over $20,000 in inference on the last 48 hours, here's a video all about it.\n\nSpoiler: loop\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-19T07:44:39Z",
+      "fetched_at": "2026-06-19T08:21:22.828198Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "337294dbde4a1078",
+      "url": "https://x.com/simonw/status/2067834436172071342",
+      "title": "Really looking forward to one of the super-fast custom silicon inference providers like @GroqInc or ...",
+      "summary": "Really looking forward to one of the super-fast custom silicon inference providers like @GroqInc or @cerebras getting GLM 5.2 running\n\nCerebras has GLM-4.7, Groq is still mostly Llama 3.x and gpt-oss",
+      "content": "Really looking forward to one of the super-fast custom silicon inference providers like @GroqInc or @cerebras getting GLM 5.2 running\n\nCerebras has GLM-4.7, Groq is still mostly Llama 3.x and gpt-oss",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-19T04:58:42Z",
+      "fetched_at": "2026-06-19T08:21:12.344041Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4a5f04b29350c43c",
+      "url": "https://x.com/steipete/status/2067821739556413651",
+      "title": "Everything\u2019s either a fast or slow API now.",
+      "summary": "Everything\u2019s either a fast or slow API now.",
+      "content": "Everything\u2019s either a fast or slow API now.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-19T04:08:15Z",
+      "fetched_at": "2026-06-19T08:21:22.828329Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b9cc167273eb92de",
+      "url": "https://x.com/dani_avila7/status/2067796375203434623",
+      "title": "Claude Code Templates is about to hit 200K downloads on npm\n\nhttps://t.co/CJdZh1ri7T\n\nSo it's finall...",
+      "summary": "Claude Code Templates is about to hit 200K downloads on npm\n\nhttps://t.co/CJdZh1ri7T\n\nSo it's finally time to rewrite it in... Rust\n\nwhy?\nbecause I want to, and I can :) https://t.co/B44NpyTS2s",
+      "content": "Claude Code Templates is about to hit 200K downloads on npm\n\nhttps://t.co/CJdZh1ri7T\n\nSo it's finally time to rewrite it in... Rust\n\nwhy?\nbecause I want to, and I can :) https://t.co/B44NpyTS2s",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-19T02:27:28Z",
+      "fetched_at": "2026-06-19T08:21:13.729295Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "800e4e19f3596cb6",
+      "url": "https://x.com/dani_avila7/status/2067787817770471584",
+      "title": "New Claude Code (v2.1.181) has a small but useful DX improvement\n\nYou can now set any session settin...",
+      "summary": "New Claude Code (v2.1.181) has a small but useful DX improvement\n\nYou can now set any session setting inline with /config key=value, without opening the menu:\n\n/config useAutoModeDuringPlan=false\n\nWorks in interactive, -p, and Remote Control\n\nWould like the same pattern for https://t.co/s4RAV1mxWF",
+      "content": "New Claude Code (v2.1.181) has a small but useful DX improvement\n\nYou can now set any session setting inline with /config key=value, without opening the menu:\n\n/config useAutoModeDuringPlan=false\n\nWorks in interactive, -p, and Remote Control\n\nWould like the same pattern for https://t.co/s4RAV1mxWF",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-19T01:53:28Z",
+      "fetched_at": "2026-06-19T08:21:13.729395Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "389973dea3bb3c6f",
+      "url": "https://x.com/dani_avila7/status/2067727814657261971",
+      "title": "Are you measuring the impact of rolling out AI agents across your team with telemetry?\n\nIf not, you ...",
+      "summary": "Are you measuring the impact of rolling out AI agents across your team with telemetry?\n\nIf not, you may be spending time and money on an implementation that delivers little to no value, or even a negative impact\n\nCheck out the full report on how we implemented Automode using https://t.co/35Pilwsywu",
+      "content": "Are you measuring the impact of rolling out AI agents across your team with telemetry?\n\nIf not, you may be spending time and money on an implementation that delivers little to no value, or even a negative impact\n\nCheck out the full report on how we implemented Automode using https://t.co/35Pilwsywu",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-18T21:55:02Z",
+      "fetched_at": "2026-06-19T08:21:13.729437Z",
       "score": null,
       "score_reason": "",
       "tier": "",
