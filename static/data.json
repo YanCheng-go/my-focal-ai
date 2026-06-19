@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-19T13:29:00.874052+00:00",
+  "exported_at": "2026-06-19T14:22:30.974406+00:00",
   "period_hours": 168,
-  "total": 3175,
+  "total": 3168,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12859,68 +12859,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "7eeed738f753a233",
-      "url": "https://www.youtube.com/watch?v=diY71x7GUjI",
-      "title": "From Zero to Head of AI in 1 Year (as a regular person)",
-      "summary": "$1000 Free Hyperagent Credits (limited): https://www.hyperagent.com/nate\nMy FREE AI OS Course: https://www.skool.com/ai-automation-society/about?el=ailin-podcast&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\nFull courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about?el=ailin-podcast&amp;hcategory=youtube-videos&amp;utm_campaign=ais-plus\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nAI Automation Society Clips: @aiautomationsociety \n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nAilin spent 15 years as an email developer before her entire team was laid off, leaving her unemployed at 39 with two young kids. \n\nAbout a year later, she's Head of AI at a company with 15 brands under it, owning the AI strategy across all of them. In this episode she walks through how she got there with no technical AI background: learning n8n and Claude Code from scratch, building in public, and showing up to interviews with real proof instead of a resume. \n\nThe whole thing came down to one question her interviewer asked: what have you built?\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS\n00:00 Intro\n1:52 The New Role\n6:36 The Judgment Call\n8:26  Sponsor\n10:52 Fifteen Years of Email\n14:09 The Pivot\n18:28 Show Yourself\n26:05 What Have You Built?\n30:52 Making It Stick\n35:15 The Blueprint\n39:27 Full Circle\n41:35 Final CTA",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-06-12T13:59:30Z",
-      "fetched_at": "2026-06-12T15:26:22.740414Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "affcd987b51fe973",
       "url": "https://www.aitmpl.com/commands/design-database-schema#commands",
       "title": "#10 design-database-schema",
@@ -13861,27 +13799,6 @@
       "published_at": "2026-06-19T00:00:00Z",
       "fetched_at": "2026-06-19T13:28:58.403446Z",
       "score": 1.0,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "71a65e44044f37cb",
-      "url": "https://github.com/NeoLabs-Systems/NeoAgent?utm_source=trendshift.io#trending-history",
-      "title": "#2 NeoLabs-Systems/NeoAgent?utm_source=trendshift.io",
-      "summary": "",
-      "content": "",
-      "source_name": "GitHub Trending History",
-      "source_type": "github_trending_history",
-      "tags": [
-        "github",
-        "trending",
-        "open-source"
-      ],
-      "author": "",
-      "published_at": "2026-06-12T00:00:00Z",
-      "fetched_at": "2026-06-12T22:49:07.323608Z",
-      "score": 0.75,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
@@ -66429,69 +66346,6 @@
       "author": "Ye Luo",
       "published_at": "2026-06-12T14:29:14Z",
       "fetched_at": "2026-06-15T01:31:47.649724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9af1132caa533ec9",
-      "url": "https://arxiv.org/abs/2606.14470v1",
-      "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
-      "summary": "Large language model (LLM) reasoning is ephemeral: chains of thought vanish with the context window, pruned search branches leave no record, and memory buffers cannot be diffed, merged, or audited. Every other complex software process (code, infrastructure, data, experiments) is version-controlled; reasoning is not. We introduce GitOfThoughts, which stores an agent's reasoning tree as a git repository: every scored thought is a commit, scores are notes, outcomes are tags, and retrieval is \"git log\" over the agent's own history. This makes reasoning replayable, auditable, and mergeable across agents at near-zero engineering cost.\n  We then ask the harder question: does memory, in any substrate, actually improve accuracy? Across five substrates (none, markdown, vector, graph, git), two benchmarks, two model scales, and pre-registered replications, the answer for novel problems is no. No memory format reliably helps, and a promising early result collapsed under its own pre-registered replication. Memory pays only above what we call the copyability threshold: when the retrieved case is a near-duplicate of the current problem (similarity >~ 0.8), accuracy jumps sharply; below it, nothing. The gain is answer retrieval, not method transfer: a 4.5x larger model doubles the near-duplicate payoff yet still cannot extract a transferable method from a worked example. The only general lever we find is test-time sampling. The case for git-as-substrate is therefore auditability, provenance, and mergeability at accuracy parity. We document a retracted result and a refuted hypothesis to model the evaluation standard we hold ourselves to.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Aswanth Krishnan",
-      "published_at": "2026-06-12T14:02:37Z",
-      "fetched_at": "2026-06-15T01:31:47.271505Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6140777c64df347c",
-      "url": "https://arxiv.org/abs/2606.14460v1",
-      "title": "A Computational Audit of Demographic Association Encoding in ClinicalBERT Language Predictions",
-      "summary": "Transformer-based clinical language models are increasingly integrated into high-stakes clinical decision support pipelines, yet the computational mechanisms through which demographic associations encoded in medical documentation propagate into model probability distributions remain empirically underspecified. We present a systematic computational audit of representational bias in ClinicalBERT (Alsentzer et al., 2019), a BERT-based model pretrained on MIMIC-III discharge summaries, employing two complementary probing methodologies: Log Probability Bias Analysis (LPBA), which quantifies demographic descriptor-induced shifts in masked token probability distributions across behavioral and evaluative semantic categories, and Masked Language Model-based analysis (MLM), which probes internal representational structure for demographic agency attribution encoding across 98 real clinical sentence templates and eight intersectional race-gender combinations. Corpus frequency analysis operationalizes the distinction between statistical disparity and bias amplification by benchmarking model outputs against empirical term frequencies in the MIMIC-III training corpus. Of 32 statistically significant findings, 65.6% contradict observed corpus distributions, rising to 80% for Black patients and 87.5% for agency attribution under MLM probing, providing direct empirical evidence that representational bias in ClinicalBERT operates predominantly through model-internal amplification rather than training data inheritance. Keywords: natural language processing, clinical documentation, algorithmic auditing, representational bias, health equity 1",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Kehinde Temitayo Soetan",
-      "published_at": "2026-06-12T13:51:25Z",
-      "fetched_at": "2026-06-15T01:31:47.271513Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "635ba932fed1f1fd",
-      "url": "https://arxiv.org/abs/2606.14459v1",
-      "title": "MoDiCoL: A Modular Diagnostic Continual Learning Dataset for Robust Speech Recognition",
-      "summary": "Modern Automatic Speech Recognition (ASR) systems have made remarkable progress on standard benchmarks, yet performance gaps have emerged under real-world distribution shifts, caused by recording conditions, accents, speech impairments, and noise. Existing datasets and benchmarks typically isolate these factors, which overlooks their co-occurrence in real-world applications. In this paper, we argue that model robustness can be treated as a dynamic capability that continually develops, and we introduce MoDiCoL, a Modular Diagnostic Continual Learning dataset designed for controlled analysis of linguistic content, speaker characteristics, and acoustic environments. Furthermore, we propose a real-world-inspired continual learning curriculum to simulate incremental updates and study how robustness is acquired, transferred, and forgotten. We evaluate three continual learning strategies and provide detailed insights into robustness under evolving conditions.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Stefan Wermter",
-      "published_at": "2026-06-12T13:50:09Z",
-      "fetched_at": "2026-06-15T01:31:47.271521Z",
       "score": null,
       "score_reason": "",
       "tier": "",
