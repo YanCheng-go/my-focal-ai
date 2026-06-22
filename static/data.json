@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-22T12:23:57.745740+00:00",
+  "exported_at": "2026-06-22T14:09:31.144954+00:00",
   "period_hours": 168,
-  "total": 2627,
+  "total": 2620,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11198,128 +11198,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-06-15T15:02:02Z",
       "fetched_at": "2026-06-15T16:08:41.341108Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f7e0cfa047ca5c59",
-      "url": "https://www.youtube.com/watch?v=c-2eEv2ou7Y",
-      "title": "Why MCP and ChatGPT Apps Use Double Iframes \u2014 Fr\u00e9d\u00e9ric Barthelet, Alpic",
-      "summary": "Inspect ChatGPT's DOM while an MCP app is rendering and you find an iframe nested inside another iframe. Fr\u00e9d\u00e9ric Barthelet traces why each simpler approach fails: `srcdoc` shares the parent origin so ChatGPT's CSP blocks all third party scripts; relaxing that CSP lets any app read ChatGPT's localStorage and cookies; adding `sandbox` removes origin indexed storage; adding `allow-same-origin` to restore it is the classic sandbox escape. The double iframe is what remains after ruling all of that out.\n\nThe outer iframe serves one lightweight script from a controlled subdomain (different subdomain per app to prevent cross app storage collisions), which loads the actual app HTML via `srcdoc` into the inner frame \u2014 the same pattern Facebook first shipped for their app marketplace. The practical implication: every external domain your view touches must be declared in your MCP app metadata or the submission gets rejected. Barthelet demos Skybridge's CSP inspector, which diffs declared domains against actual network calls live in dev.\n\nSpeaker info:\n- https://x.com/bartheletf\n- https://www.linkedin.com/in/frederic-barthelet/\n- https://github.com/fredericbarthelet",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-15T14:00:06Z",
-      "fetched_at": "2026-06-15T16:08:41.056676Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6d498af38478d299",
-      "url": "https://www.youtube.com/watch?v=3XIGcM7VICc",
-      "title": "Learn These 6 AI Skills Now (Before AI Replaces You)",
-      "summary": "My FREE AI OS Course: https://www.skool.com/ai-automation-society/about?el=6-AI-Skills&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\nFull courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about?el=6-AI-Skills&amp;hcategory=youtube-videos&amp;utm_campaign=ais-plus\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nAI is going to reshape or replace millions of jobs, but you don't have to switch careers or start a business to stay ahead of it. \n\nIn this video I break down six AI skills that will futureproof your career no matter what job title you hold, from becoming the AI person on your team to knowing when a task doesn't even need AI. \n\nI also cover the last skill most people never think about, which is building your own unemployment insurance with multiple income streams.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS\n0:29 Skill 1\n4:47 Skill 2\n7:42 Skill 3\n10:13 Skill 4\n13:13 Skill 5\n16:40 Skill 6",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-06-15T12:46:09Z",
-      "fetched_at": "2026-06-15T16:08:40.493783Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3bf4553f3deb8ecd",
-      "url": "https://www.youtube.com/watch?v=MTmhgIVhpag",
-      "title": "What Is AI Pair Programming? AI Coding Tools for Developers",
-      "summary": "Learn more about Pair Programming here \u2192 https://ibm.biz/~TKifmoii8\n\nAI might be the teammate you didn\u2019t know you needed \ud83e\udd16\ud83d\udca1. Sam Anthony breaks down AI pair programming, AI coding, and developer tools in action. Discover how AI transforms debugging, code review, and developer productivity in real workflows \ud83d\ude80.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~mTrs2CMKc\n\n#ai #aicoding #pairprogramming #developertools",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-15T11:00:36Z",
-      "fetched_at": "2026-06-15T12:26:03.289024Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55139,27 +55017,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4020cf4461a5b1d0",
-      "url": "https://arxiv.org/abs/2606.16694v1",
-      "title": "Adaptive inference and function vectors in deep transformers",
-      "summary": "Transformers are widely used as a general-purpose substrate for learning complex correlations between a large collection of coupled variables, but their internal mechanisms have remained mysterious. We introduce a theory of a deep transformer as a mean-field interacting system that implements distributed inference, subject to constraints on communication, locality and depth. We show that such a system can exploit internal state representations ('function vectors') to infer a latent context variable at increasingly finer scales over its layers. In an in-context regression task, the theory predicts a non-trivial relationship between non-Gaussian, hierarchical structure in the latent context variable, and transformer depth. Predictions are tested using constrained linear attention transformers and demonstrate adaptive inference in deep architectures. Feedforward blocks and depth enable transformers to implement a much richer class of in-context learning algorithms than previously described.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Gautam Reddy",
-      "published_at": "2026-06-15T13:30:49Z",
-      "fetched_at": "2026-06-16T03:28:39.288667Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "468e46362aed9483",
       "url": "https://www.anthropic.com/webinars/claude-on-google-cloud-monitoring-and-securing-agents-at-scale",
       "title": "Claude on Google Cloud: Monitoring and Securing Agents at Scale",
@@ -55357,26 +55214,6 @@
       "author": "geminiapp",
       "published_at": "2026-06-15T18:56:31Z",
       "fetched_at": "2026-06-16T08:07:52.129018Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c6b54c3e42d9dbbe",
-      "url": "https://x.com/steipete/status/2066510094666268769",
-      "title": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety g...",
-      "summary": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety gives the company license to aggressivel\u2026",
-      "content": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety gives the company license to aggressivel\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-15T13:16:15Z",
-      "fetched_at": "2026-06-16T08:07:56.779488Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -56729,6 +56566,26 @@
       "author": "bcherny",
       "published_at": "2026-06-19T20:12:07Z",
       "fetched_at": "2026-06-22T08:04:41.912856Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6b54c3e42d9dbbe",
+      "url": "https://x.com/steipete/status/2066510094666268769",
+      "title": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety g...",
+      "summary": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety gives the company license to aggressivel\u2026",
+      "content": "RT @stratechery: Anthropic's Safety Superpower\n\nAnthropic's belief in its own commitment to safety gives the company license to aggressivel\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-15T13:16:15Z",
+      "fetched_at": "2026-06-16T08:07:56.779488Z",
       "score": null,
       "score_reason": "",
       "tier": "",
