@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-22T08:30:02.894782+00:00",
+  "exported_at": "2026-06-22T10:07:27.052807+00:00",
   "period_hours": 168,
-  "total": 2633,
+  "total": 2628,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12263,69 +12263,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-15T11:00:36Z",
       "fetched_at": "2026-06-15T12:26:03.289024Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55184,48 +55121,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "065924f61160d53c",
-      "url": "https://arxiv.org/abs/2606.16479v1",
-      "title": "Uncertainty Quality of VGGT: An Analysis on the DTU Benchmark Dataset",
-      "summary": "Visual Geometry Grounded Transformer (VGGT) has already attracted a great deal of attention in a short period of time, not least due to the Best Paper Award at CVPR-2025. Similar to DUSt3R and MASt3R, VGGT aims to bring about a paradigm shift by replacing established methods like bundle adjustment and feature matching with a simple, unified, feed-forward neural network that predicts camera poses, depth maps, and dense 3D structure directly from multiple images of a scene in a few seconds. A key aspect is its ability to process an arbitrary number of views consistently in a single forward pass without any post-processing or iterative optimization. For photogrammetry, this opens new possibilities for real-time, scalable, and accessible 3D reconstruction. In this context, not only high reconstruction accuracy but also high-quality uncertainty estimates are crucial, as they foster trust and enable robust quality assurance. This paper therefore investigates the quality of VGGT's uncertainty predictions. The analysis identifies an effective confidence threshold for filtering VGGT's raw output and demonstrates that enhancing uncertainty quality holds strong potential for improving the accuracy of its 3D reconstructions.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Markus Ulrich",
-      "published_at": "2026-06-15T09:49:00Z",
-      "fetched_at": "2026-06-16T03:28:39.288683Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9dbc8e8d054fc392",
-      "url": "https://arxiv.org/abs/2606.16440v1",
-      "title": "NeuronFabric: A Software Reference Architecture for On-Chip Transformer Training with Local Adam",
-      "summary": "Publicly documented accelerator architectures generally separate training computation from optimizer-state updates or rely on external memory and host orchestration. This paper presents NeuronFabric, a software reference architecture intended for future FPGA and ASIC implementations of transformer training with local Adam updates. A complete C# prototype implements forward pass, backpropagation, and Adam optimization without external machine-learning frameworks. The goal is to validate numerical correctness and memory requirements before hardware implementation. The evaluated model is a 334K-parameter autoregressive transformer (d=88, H=4, f=264, L=4, vocab=256) trained on the Shakespeare corpus. The BF16W configuration achieves evaluation loss 1.5426 after 80K samples, compared with 1.5224 for an FP32 GPU reference, while producing coherent character-level text. The paper introduces BF16W, which stores weights in BF16 while retaining Adam optimizer moments in FP32. This reduces memory requirements for on-chip training. A 334K-parameter FP32 model with Adam moments requires approximately 4.0 MB, matching the BRAM capacity of a Xilinx ZCU102 device. The BF16W variant requires approximately 3.34 MB, leaving memory available for activation storage. We describe the vocabulary-budget constraint observed during earlier experiments, quantify BF16W memory savings, and outline FPGA training as the next stage of development. No FPGA measurements are included in this paper. This publication serves as a public architectural disclosure and software reference implementation for future FPGA and ASIC exploration of the NeuronFabric architecture.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Evgeny Ukladchikov",
-      "published_at": "2026-06-15T09:11:26Z",
-      "fetched_at": "2026-06-16T03:28:39.288691Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "468e46362aed9483",
       "url": "https://www.anthropic.com/webinars/claude-on-google-cloud-monitoring-and-securing-agents-at-scale",
       "title": "Claude on Google Cloud: Monitoring and Securing Agents at Scale",
@@ -55300,26 +55195,6 @@
       "author": "",
       "published_at": "2026-06-17T00:00:00Z",
       "fetched_at": "2026-05-22T01:19:25.816005Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6656af5f2d820f7e",
-      "url": "https://x.com/steipete/status/2066441146750955737",
-      "title": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep wor...",
-      "summary": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep working",
-      "content": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep working",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-15T08:42:16Z",
-      "fetched_at": "2026-06-15T10:28:02.250375Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -56856,6 +56731,26 @@
       "author": "bcherny",
       "published_at": "2026-06-19T20:12:07Z",
       "fetched_at": "2026-06-22T08:04:41.912856Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6656af5f2d820f7e",
+      "url": "https://x.com/steipete/status/2066441146750955737",
+      "title": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep wor...",
+      "summary": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep working",
+      "content": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep working",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-15T08:42:16Z",
+      "fetched_at": "2026-06-15T10:28:02.250375Z",
       "score": null,
       "score_reason": "",
       "tier": "",
