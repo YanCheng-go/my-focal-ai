@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-22T10:07:27.052807+00:00",
+  "exported_at": "2026-06-22T12:08:56.891925+00:00",
   "period_hours": 168,
-  "total": 2628,
+  "total": 2624,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12250,25 +12250,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3bf4553f3deb8ecd",
-      "url": "https://www.youtube.com/watch?v=MTmhgIVhpag",
-      "title": "What Is AI Pair Programming? AI Coding Tools for Developers",
-      "summary": "Learn more about Pair Programming here \u2192 https://ibm.biz/~TKifmoii8\n\nAI might be the teammate you didn\u2019t know you needed \ud83e\udd16\ud83d\udca1. Sam Anthony breaks down AI pair programming, AI coding, and developer tools in action. Discover how AI transforms debugging, code review, and developer productivity in real workflows \ud83d\ude80.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~mTrs2CMKc\n\n#ai #aicoding #pairprogramming #developertools",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-15T11:00:36Z",
-      "fetched_at": "2026-06-15T12:26:03.289024Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2f4ea5789f3708fa",
       "url": "https://arxiv.org/abs/2602.05533",
       "title": "Conditional Diffusion Guidance under Hard Constraint: A Stochastic Analysis Approach",
@@ -12327,28 +12308,6 @@
       "author": "Vikram Natarajan, Devina Jain, Shivam Arora, Satvik Golechha, Joseph Bloom",
       "published_at": "2026-06-19T04:00:00Z",
       "fetched_at": "2026-06-19T06:01:23.547792Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "760bf66c1e5d3752",
-      "url": "https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/",
-      "title": "Pretrained to Imagine, Fine-Tuned to Act: The Rise of World-Action Models",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/WAM_Blog_Post_Header-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"WAM_Blog_Post_Header\" width=\"768\" />Quick glossary for readers new to VLA/WAM terminology VLA Vision-Language-Action model: a robot policy that starts from a pretrained VLM backbone and adapts it...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/WAM_Blog_Post_Header-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"WAM_Blog_Post_Header\" width=\"768\" />Quick glossary for readers new to VLA/WAM terminology VLA Vision-Language-Action model: a robot policy that starts from a pretrained VLM backbone and adapts it...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/05/WAM_Blog_Post_Header-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"WAM_Blog_Post_Header\" width=\"768\" /><p>Quick glossary for readers new to VLA/WAM terminology VLA Vision-Language-Action model: a robot policy that starts from a pretrained VLM backbone and adapts it to generate actions from visual observations and language instructions. Large-scale VLM pretraining is a core part of the recipe. See Pi-0 and GR00T N1. WAM World-Action Model: a policy that starts from a pretrained world-model or video\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/pretrained-to-imagine-fine-tuned-to-act-the-rise-of-world-action-models/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Moritz Reuss",
-      "published_at": "2026-06-15T12:00:00Z",
-      "fetched_at": "2026-06-15T12:26:08.813587Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55100,27 +55059,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "045c44926d887fd7",
-      "url": "https://arxiv.org/abs/2606.16558v1",
-      "title": "ROSA-RL: Uncertainty-Aware Roundabout Optimized Speed Advisory with Reinforcement Learning",
-      "summary": "Roundabouts challenge automated driving in mixed traffic, as heterogeneous and non-deterministic human behavior, unknown driving intentions, and high interaction complexity create uncertainty about whether the conflict zone will be blocked or available at the moment of entry. We present ROSA-RL -- uncertainty-aware Roundabout Optimized Speed Advisory with Reinforcement Learning. It enables safe and efficient roundabout entry for automated and human-driven vehicles in mixed traffic through probabilistic conflict forecasting. A Transformer-based model predicts conflict zone occupancy over a five-second horizon, capturing multi-agent interactions to anticipate upcoming conflicts and available gaps. The prediction outputs encode uncertainty in future motion and intent, and augment the state of a classical RL framework, enabling uncertainty-aware speed coordination. Evaluated in simulations grounded in real-world data, ROSA-RL can effectively handle uncertainty and outperform a comparable model-based baseline, closing the gap to an ideal setting assuming fully known occupancy while improving traffic efficiency and safety. The source code of this work is available under: github.com/urbanAIthi/ROSA-RL.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Stefanie Schmidtner",
-      "published_at": "2026-06-15T11:00:08Z",
-      "fetched_at": "2026-06-16T03:28:39.288675Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "468e46362aed9483",
       "url": "https://www.anthropic.com/webinars/claude-on-google-cloud-monitoring-and-securing-agents-at-scale",
       "title": "Claude on Google Cloud: Monitoring and Securing Agents at Scale",
@@ -55216,26 +55154,6 @@
       "author": "simonw",
       "published_at": "2026-06-15T12:16:28Z",
       "fetched_at": "2026-06-15T12:28:13.158251Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d1593b5e9011453f",
-      "url": "https://x.com/steipete/status/2066471737068232835",
-      "title": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. http...",
-      "summary": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. https://t.co/WH1vRjDDHK",
-      "content": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. https://t.co/WH1vRjDDHK",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-15T10:43:49Z",
-      "fetched_at": "2026-06-15T12:28:23.323025Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -56737,11 +56655,11 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6656af5f2d820f7e",
-      "url": "https://x.com/steipete/status/2066441146750955737",
-      "title": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep wor...",
-      "summary": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep working",
-      "content": "RT @steveruizok: Codex hit Figma's MCP limit and then just opened Figma in a browser tab to keep working",
+      "id": "d1593b5e9011453f",
+      "url": "https://x.com/steipete/status/2066471737068232835",
+      "title": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. http...",
+      "summary": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. https://t.co/WH1vRjDDHK",
+      "content": "Wanted to buy a new Mac Studio for San Francisco.\nWe don\u2019t even know how to make these anymore. https://t.co/WH1vRjDDHK",
       "source_name": "@steipete",
       "source_type": "twitter",
       "tags": [
@@ -56749,8 +56667,8 @@
         "openclaw"
       ],
       "author": "steipete",
-      "published_at": "2026-06-15T08:42:16Z",
-      "fetched_at": "2026-06-15T10:28:02.250375Z",
+      "published_at": "2026-06-15T10:43:49Z",
+      "fetched_at": "2026-06-15T12:28:23.323025Z",
       "score": null,
       "score_reason": "",
       "tier": "",
