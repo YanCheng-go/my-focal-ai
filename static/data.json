@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-22T06:09:28.094488+00:00",
+  "exported_at": "2026-06-22T08:04:56.188480+00:00",
   "period_hours": 168,
-  "total": 2618,
+  "total": 2636,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11259,69 +11259,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-15T11:00:36Z",
       "fetched_at": "2026-06-15T12:26:03.289024Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffc5481debdcf2e2",
-      "url": "https://www.youtube.com/watch?v=8nRHaBI1JsI",
-      "title": "72 Hours in Seattle: Tech Conference, Coffee & Podcasts",
-      "summary": "Join me as I take you behind the scenes of my action-packed trip to Seattle at Amazon Headquarters! From early morning coffee runs at the original Starbucks to late-night networking with tech leaders, this vlog captures the perfect balance of business insights and Seattle exploration.\n\nI share my key takeaways from fascinating keynotes, deep conversations with tech founders, and honest thoughts about where the industry is heading. Plus, you'll see how I navigate the chaos of a packed conference schedule while still making time to experience Seattle's incredible food scene and iconic landmarks.\n\nWhether you're in tech, planning a business trip to Seattle, or just curious about what these industry events are really like behind the polished presentations, this vlog gives you the unfiltered experience - both the exciting opportunities and the exhausting realities!\n\n#SeattleTech #TechConference #BusinessTravel #TechIndustry #SeattleVlog #NetworkingTips #TechEvent #StartupLife #SeattleFoodie #BusinessTrip",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-03-17T18:05:46Z",
-      "fetched_at": "2026-06-16T03:28:17.332711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55226,69 +55163,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3ddf9e1d1ad922ac",
-      "url": "https://arxiv.org/abs/2606.16352v1",
-      "title": "Communication-Efficient Verifiable Attention for LLM Inference",
-      "summary": "Computation integrity of remote large language model (LLM) serving can be questionable. For conventional deep neural networks (DNNs), the existing TEE-shielded DNN partitioning (TSDP) approach uses Trusted Execution Environment (TEE) to compute non-linear components and verify the integrity of linear components offloaded to an untrusted GPU. However, directly applying TSDP to Transformer-based LLMs incurs significant TEE computation and TEE-GPU communication overhead. This paper presents Communication-efficient TEE-GPU Attention (\\textsc{VeriAttn}) for accelerating verifiable LLM inference. \\textsc{VeriAttn} offloads both linear and non-linear computations of attention to the GPU, while TEE performs verification. Moreover, for prefill, \\textsc{VeriAttn} uses a two-level pipeline to overlap data movement, TEE pre-/post-processing, and GPU computation. For decoding, when the key-value cache exceeds available GPU memory, \\textsc{VeriAttn} partitions attention across TEE and GPU to reduce repeated key-value transfers. Evaluation on an Intel TDX platform shows that \\textsc{VeriAttn} achieves 2.60-3.38$\\times$ and 3.86-5.42$\\times$ acceleration over TSDP for 6k-token prompts and 10k-token outputs during prefill and decoding, respectively.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Rui Tan",
-      "published_at": "2026-06-15T07:50:15Z",
-      "fetched_at": "2026-06-16T03:28:39.288698Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2bb319771a007942",
-      "url": "https://arxiv.org/abs/2606.16319v1",
-      "title": "Architectural Wisdom: A Framework for Governing Optimization in AI Systems",
-      "summary": "Modern AI systems exhibit structural failures that capability scaling alone does not reliably fix: they optimize under-specified objectives with no architectural mechanism to question whether the objective should be optimized at all. Engagement maximization can amplify harmful pathways; tool-using agents can commit irreversible actions; preference-trained language models can become sycophantic. We argue that this failure is a wisdom problem, not an intelligence problem. We use \"wisdom\" in a deliberately architectural sense, not as a claim about virtue, consciousness, or moral omniscience. Intelligence accepts a goal and optimizes within it; wisdom interrogates whether the goal should be optimized at all. The two are separable architectural properties. We propose architectural wisdom as a corrigible objective-governance layer above the optimization substrate. The layer makes three structural commitments explicit and nondegenerate before any action: temporal horizon, relational boundary, and irreversibility. It is realized by four components (Structural Utility Transform, Moral Admissibility Interface, Arbitration and Escalation Controller, Value Revision Channel) that compute a six-coordinate wisdom tuple over horizon, relational coverage, irreversibility, admissibility, value revision, and auditability. We motivate the architecture by eight cases drawn from contemporary AI failures, secular wisdom traditions, and hard ethical situations, and defend the distinction against the intelligence-completeness thesis using goal-questioning over goal-taking, Bostrom's orthogonality, structural separation in our exemplar cases, and persistent failure modes despite capability scaling. The framework is the conceptual contract for a larger architecture whose formal specifications and empirical validation are developed in subsequent work.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Edward Y. Chang",
-      "published_at": "2026-06-15T07:27:52Z",
-      "fetched_at": "2026-06-16T03:28:39.288706Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "20419816ee537be9",
-      "url": "https://arxiv.org/abs/2606.16292v1",
-      "title": "AI Supply Chain Galaxy: 3D Visual Analytics for License Compliance",
-      "summary": "The rapid proliferation of machine learning model reuse has transformed the AI ecosystem into a highly interconnected supply chain. Traditional compliance tools and static reports struggle to navigate these massive, multi-hop dependency networks. To address this, we present AI Supply Chain Galaxy (AISCG), an interactive 3D visual analytics system for model provenance and compliance auditing. AISCG maps models into a 3D spatial layout, integrating explicit structural dependencies with a rule-based compliance engine. It supports multi-scale exploration, from global community detection to localized, path-aware lineage tracing. We demonstrate its efficacy through an ecosystem-scale empirical analysis of 908,449 models from Hugging Face. Our findings reveal a concerning landscape: 55.46% of models exhibit compliance risks or metadata conflicts/omissions. We also identified distinct risk patterns, including a 56.67% license omission rate in adapter derivations and an 8.05% \"license drift\" rate in fine-tuning. Through a case study on the complex Llama model family, we show how AISCG empowers analysts to intuitively trace inherited restrictive terms and identify root causes across deep topological networks, significantly reducing the cognitive load of compliance auditing.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Moming Duan",
-      "published_at": "2026-06-15T06:54:33Z",
-      "fetched_at": "2026-06-16T03:28:39.288714Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "468e46362aed9483",
       "url": "https://www.anthropic.com/webinars/claude-on-google-cloud-monitoring-and-securing-agents-at-scale",
       "title": "Claude on Google Cloud: Monitoring and Securing Agents at Scale",
@@ -55363,26 +55237,6 @@
       "author": "",
       "published_at": "2026-06-17T00:00:00Z",
       "fetched_at": "2026-05-22T01:19:25.816005Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "51812e6a40a73328",
-      "url": "https://x.com/steipete/status/2066427449551036469",
-      "title": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
-      "summary": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
-      "content": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-15T07:47:50Z",
-      "fetched_at": "2026-06-15T08:27:37.870933Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -56557,6 +56411,508 @@
       "author": "steipete",
       "published_at": "2026-06-19T10:46:31Z",
       "fetched_at": "2026-06-19T12:22:07.119679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8ed5b07c53d22e7f",
+      "url": "https://x.com/steipete/status/2068965200343224367",
+      "title": "This is becoming my favorite way to read Twitter. https://t.co/eykEElxzu7 https://t.co/m5qM5PP3rA",
+      "summary": "This is becoming my favorite way to read Twitter. https://t.co/eykEElxzu7 https://t.co/m5qM5PP3rA",
+      "content": "This is becoming my favorite way to read Twitter. https://t.co/eykEElxzu7 https://t.co/m5qM5PP3rA",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T07:51:57Z",
+      "fetched_at": "2026-06-22T08:04:52.867619Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5f17233117f68832",
+      "url": "https://x.com/steipete/status/2068963410868674650",
+      "title": "RT @eliebakouch: to be clear, this is a closed source orchestrator on top of closed source models. i...",
+      "summary": "RT @eliebakouch: to be clear, this is a closed source orchestrator on top of closed source models. if before you didn't control the models,\u2026",
+      "content": "RT @eliebakouch: to be clear, this is a closed source orchestrator on top of closed source models. if before you didn't control the models,\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T07:44:51Z",
+      "fetched_at": "2026-06-22T08:04:52.867710Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bef3374a362af720",
+      "url": "https://x.com/steipete/status/2068961217524490739",
+      "title": "People here discussing what happened with OpenClaw.\n\nThe hype died down. We improved quality and gre...",
+      "summary": "People here discussing what happened with OpenClaw.\n\nThe hype died down. We improved quality and grew a team. We created a non-profit whereas competiors are VC funded and have other agendas.\n\nThis is our strongest week so far.",
+      "content": "People here discussing what happened with OpenClaw.\n\nThe hype died down. We improved quality and grew a team. We created a non-profit whereas competiors are VC funded and have other agendas.\n\nThis is our strongest week so far.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T07:36:08Z",
+      "fetched_at": "2026-06-22T08:04:52.867775Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d47d8d38a58ad80c",
+      "url": "https://x.com/steipete/status/2068960117253632160",
+      "title": "I was skeptical about the multi-model routing. Seems my hinch was right.",
+      "summary": "I was skeptical about the multi-model routing. Seems my hinch was right.",
+      "content": "I was skeptical about the multi-model routing. Seems my hinch was right.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T07:31:46Z",
+      "fetched_at": "2026-06-22T08:04:52.867822Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bbe9310769658896",
+      "url": "https://x.com/steipete/status/2068936212795273602",
+      "title": "RT @thorstenball: Some thoughts on ownership I shared with the team this morning https://t.co/WMXcDL...",
+      "summary": "RT @thorstenball: Some thoughts on ownership I shared with the team this morning https://t.co/WMXcDLU9qa",
+      "content": "RT @thorstenball: Some thoughts on ownership I shared with the team this morning https://t.co/WMXcDLU9qa",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T05:56:46Z",
+      "fetched_at": "2026-06-22T08:04:52.867852Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cced88f20a59050f",
+      "url": "https://x.com/steipete/status/2068911603417002230",
+      "title": "RT @signulll: building a company is largely the act of managing your own emotional state so the fiel...",
+      "summary": "RT @signulll: building a company is largely the act of managing your own emotional state so the field around you remains coherent enough fo\u2026",
+      "content": "RT @signulll: building a company is largely the act of managing your own emotional state so the field around you remains coherent enough fo\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T04:18:59Z",
+      "fetched_at": "2026-06-22T08:04:52.867876Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d4e606ba420a1f5e",
+      "url": "https://x.com/steipete/status/2068910736831898085",
+      "title": "RT @vincent_koc: Another day and more tooling, Clawrouter under MIT license is a @cloudflare based r...",
+      "summary": "RT @vincent_koc: Another day and more tooling, Clawrouter under MIT license is a @cloudflare based rust WASM that allows ephemeral single A\u2026",
+      "content": "RT @vincent_koc: Another day and more tooling, Clawrouter under MIT license is a @cloudflare based rust WASM that allows ephemeral single A\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T04:15:32Z",
+      "fetched_at": "2026-06-22T08:04:52.867898Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "230f64551888c689",
+      "url": "https://x.com/simonw/status/2068840530465952121",
+      "title": "I just released the first release candidate for sqlite-utils v4, adding a migrations system (previou...",
+      "summary": "I just released the first release candidate for sqlite-utils v4, adding a migrations system (previously released independently as sqlite-migrate) and support for nested transactions: https://t.co/Fw4zDL97oF",
+      "content": "I just released the first release candidate for sqlite-utils v4, adding a migrations system (previously released independently as sqlite-migrate) and support for nested transactions: https://t.co/Fw4zDL97oF",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-21T23:36:34Z",
+      "fetched_at": "2026-06-22T08:04:43.143131Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "be6972898bd1a94c",
+      "url": "https://x.com/steipete/status/2068829766900412920",
+      "title": "Make that side button useful: https://t.co/ZJu8PCamMQ",
+      "summary": "Make that side button useful: https://t.co/ZJu8PCamMQ",
+      "content": "Make that side button useful: https://t.co/ZJu8PCamMQ",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-21T22:53:48Z",
+      "fetched_at": "2026-06-22T08:04:52.867919Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "35d8d09f337f65e6",
+      "url": "https://x.com/steipete/status/2068743183950065854",
+      "title": "RT @petergyang: I used to be a die-hard Claude Code user.\n\nCodex has won me over because:\n\n\u2192 GPT-5.5...",
+      "summary": "RT @petergyang: I used to be a die-hard Claude Code user.\n\nCodex has won me over because:\n\n\u2192 GPT-5.5 is excellent\n\u2192 Fast mode + generous li\u2026",
+      "content": "RT @petergyang: I used to be a die-hard Claude Code user.\n\nCodex has won me over because:\n\n\u2192 GPT-5.5 is excellent\n\u2192 Fast mode + generous li\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-21T17:09:45Z",
+      "fetched_at": "2026-06-22T08:04:52.867944Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2abe7da65499d9e0",
+      "url": "https://x.com/dani_avila7/status/2068529033478885726",
+      "title": "Good to know how the Claude Code prompt queue actually works, straight from Boris\n\nWorth keeping in ...",
+      "summary": "Good to know how the Claude Code prompt queue actually works, straight from Boris\n\nWorth keeping in mind next time you run /config, /btw or /fork https://t.co/sSQFhREvyp",
+      "content": "Good to know how the Claude Code prompt queue actually works, straight from Boris\n\nWorth keeping in mind next time you run /config, /btw or /fork https://t.co/sSQFhREvyp",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-21T02:58:47Z",
+      "fetched_at": "2026-06-22T08:04:44.372753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d86dc1546b83532a",
+      "url": "https://x.com/steipete/status/2068476455647125757",
+      "title": "RT @samdenty: There\u2019s an OSS implementation of the codex permission flow in Swift here:\n\nhttps://t.c...",
+      "summary": "RT @samdenty: There\u2019s an OSS implementation of the codex permission flow in Swift here:\n\nhttps://t.co/FD6q2lyPBG https://t.co/kFOb1MFnzB",
+      "content": "RT @samdenty: There\u2019s an OSS implementation of the codex permission flow in Swift here:\n\nhttps://t.co/FD6q2lyPBG https://t.co/kFOb1MFnzB",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T23:29:52Z",
+      "fetched_at": "2026-06-22T08:04:52.867966Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "20b2375b8a514684",
+      "url": "https://x.com/dani_avila7/status/2068436729149714496",
+      "title": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "summary": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "content": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T20:52:00Z",
+      "fetched_at": "2026-06-22T08:04:44.372842Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e317a137ce3aceef",
+      "url": "https://x.com/steipete/status/2068428180004942319",
+      "title": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "summary": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "content": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T20:18:02Z",
+      "fetched_at": "2026-06-22T08:04:52.867986Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "14d4fd0798ee8a0a",
+      "url": "https://x.com/dani_avila7/status/2068418415002300456",
+      "title": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config ...",
+      "summary": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config thinking=false\"\n\nOne thing to know: \nIn -p it writes to your settings file and persists, it does not apply to just that run\n\nIt sets the value and exits, it won't run a task you https://t.co/JeZ1v0oTAo",
+      "content": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config thinking=false\"\n\nOne thing to know: \nIn -p it writes to your settings file and persists, it does not apply to just that run\n\nIt sets the value and exits, it won't run a task you https://t.co/JeZ1v0oTAo",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T19:39:14Z",
+      "fetched_at": "2026-06-22T08:04:44.372901Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "962750dc410b00f8",
+      "url": "https://x.com/steipete/status/2068199277277401419",
+      "title": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "summary": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "content": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T05:08:27Z",
+      "fetched_at": "2026-06-22T08:04:52.868008Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e85a647a8f16458c",
+      "url": "https://x.com/dani_avila7/status/2068160219415294322",
+      "title": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "summary": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "content": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T02:33:15Z",
+      "fetched_at": "2026-06-22T08:04:44.372948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9387f415d0154ec3",
+      "url": "https://x.com/steipete/status/2068132941645980103",
+      "title": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your...",
+      "summary": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "content": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T00:44:51Z",
+      "fetched_at": "2026-06-22T08:04:52.868028Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8e63d4880ba95d3d",
+      "url": "https://x.com/bcherny/status/2068064304503660962",
+      "title": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttp...",
+      "summary": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "content": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-19T20:12:07Z",
+      "fetched_at": "2026-06-22T08:04:41.912856Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "51812e6a40a73328",
+      "url": "https://x.com/steipete/status/2066427449551036469",
+      "title": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
+      "summary": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
+      "content": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-15T07:47:50Z",
+      "fetched_at": "2026-06-15T08:27:37.870933Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a484ed04f9737c70",
+      "url": "https://x.com/steipete/status/2066253830119956689",
+      "title": "RT @SIGKITTEN: I'm doing one quick targeted pass so I can give you the exact answer rather than hand...",
+      "summary": "RT @SIGKITTEN: I'm doing one quick targeted pass so I can give you the exact answer rather than hand-waving",
+      "content": "RT @SIGKITTEN: I'm doing one quick targeted pass so I can give you the exact answer rather than hand-waving",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T20:17:56Z",
+      "fetched_at": "2026-06-15T08:27:37.871070Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "efb7862bdefaf383",
+      "url": "https://x.com/steipete/status/2066247939572269515",
+      "title": "RT @NexEcosystem: The Rio 3.5 model broke the internet this week. The plot twist? It\u2019s essentially o...",
+      "summary": "RT @NexEcosystem: The Rio 3.5 model broke the internet this week. The plot twist? It\u2019s essentially our open-source model, Nex N2 Pro, weari\u2026",
+      "content": "RT @NexEcosystem: The Rio 3.5 model broke the internet this week. The plot twist? It\u2019s essentially our open-source model, Nex N2 Pro, weari\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T19:54:32Z",
+      "fetched_at": "2026-06-15T08:27:37.871123Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "50becb170fd24b00",
+      "url": "https://x.com/steipete/status/2066246419694948365",
+      "title": "RT @skirano: I basically never write my own /goal anymore.\n\nI ask Codex to write one for itself, and...",
+      "summary": "RT @skirano: I basically never write my own /goal anymore.\n\nI ask Codex to write one for itself, and one for each agent it spawns.\n\nLike th\u2026",
+      "content": "RT @skirano: I basically never write my own /goal anymore.\n\nI ask Codex to write one for itself, and one for each agent it spawns.\n\nLike th\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-14T19:48:30Z",
+      "fetched_at": "2026-06-15T08:27:37.871163Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "385833e351493f1d",
+      "url": "https://x.com/dani_avila7/status/2066215220700168470",
+      "title": "Reading the comments on this post, you can easily spot who will be hit hardest when access to the mo...",
+      "summary": "Reading the comments on this post, you can easily spot who will be hit hardest when access to the models gets gated\n\nWhen it happens, anyone who hasn't built a solid harness (Skills, MCPs, Evals, telemetry, loops, etc) will be the first to lose their competitive edge",
+      "content": "Reading the comments on this post, you can easily spot who will be hit hardest when access to the models gets gated\n\nWhen it happens, anyone who hasn't built a solid harness (Skills, MCPs, Evals, telemetry, loops, etc) will be the first to lose their competitive edge",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-14T17:44:31Z",
+      "fetched_at": "2026-06-15T08:27:29.676340Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "16d3cf425cc3b660",
+      "url": "https://x.com/dani_avila7/status/2066213900157120974",
+      "title": "This line from Satya's post proves everything I've been preaching:\n\n\"the real opportunity is not in ...",
+      "summary": "This line from Satya's post proves everything I've been preaching:\n\n\"the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound\"\n\nThe model is interchangeable, the learning loop you",
+      "content": "This line from Satya's post proves everything I've been preaching:\n\n\"the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound\"\n\nThe model is interchangeable, the learning loop you",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-14T17:39:16Z",
+      "fetched_at": "2026-06-15T08:27:29.676430Z",
       "score": null,
       "score_reason": "",
       "tier": "",
