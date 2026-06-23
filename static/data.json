@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-23T17:05:13.511541+00:00",
+  "exported_at": "2026-06-23T17:35:53.732625+00:00",
   "period_hours": 168,
-  "total": 2583,
+  "total": 2576,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14362,27 +14362,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "3563b65ca947caa8",
       "url": "https://skills.sh/agentspace-so/runcomfy-agent-skills/controlnet-pose#hot",
       "title": "#20 controlnet-pose",
@@ -24377,28 +24356,6 @@
       "author": "ashwin-ant",
       "published_at": "2026-06-16T20:22:14Z",
       "fetched_at": "2026-06-16T21:19:47.960831Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "383e6c81094b1048",
-      "url": "https://research.google/blog/from-pixels-to-planning-earth-ai-for-nature-restoration/",
-      "title": "From pixels to planning: Earth AI for nature restoration",
-      "summary": "Climate & Sustainability",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-16T17:30:14Z",
-      "fetched_at": "2026-06-16T17:58:37.497463Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -53961,174 +53918,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6ee4abee04184ae9",
-      "url": "https://arxiv.org/abs/2606.18205v1",
-      "title": "Analyzing and Encoding the Al-Mawrid Arabic-English Dictionary with the ISO Language Markup Framework and TEI Lex-0",
-      "summary": "This paper presents a robust methodology for the systematic digitization and encoding of the Al-Mawrid Arabic-English dictionary, transforming it from a legacy print resource into a standardized computational lexicon. Addressing a significant gap in Arabic lexical infrastructure, the study adopts a dual-standard framing that aligns the ISO Lexical Markup Framework (LMF) with the Text Encoding Initiative TEI Lex-0 guidelines. By applying an editorial view to the dictionary's macro- and microstructure, the research resolves the structural ambiguities and punctuation inconsistencies typical of 20th-century bilingual dictionaries. The methodology is grounded in an empirical analysis of the dictionary's lexical knowledge density. Drawing on a representative sample (the letter Ayn, comprising 4.6% of the total volume), the study provides scientific weight to the encoding process, demonstrating a structural parsing accuracy of 91%. Quantitative evaluation of the information extraction rules reveals high performance, with 85% precision and 98% recall for synonyms, and 88% precision for other morpho-semantic features. Beyond technical description, the paper provides a critical comparison with existing Arabic lexical resources and discusses the limitations of TEI Lex-0 when modelling specific Arabic phenomena, such as implicit \"open set\" semantic relations and scattered morphological cues. Furthermore, the study explores the potential for Linguistic Linked Open Data (LLOD) integration by establishing a scalable prefix-based referencing system that facilitates the resource's inclusion in the semantic web. The result is an interoperable, machine-tractable resource that provides a reproducible workflow for the retro-digitization of complex legacy bilingual lexicons within the Arabic NLP and Digital Humanities communities.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Laurent Romary",
-      "published_at": "2026-06-16T17:35:11Z",
-      "fetched_at": "2026-06-17T03:28:39.023453Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "eb37f000ab72b647",
-      "url": "https://arxiv.org/abs/2606.18203v1",
-      "title": "RubricsTree: Scalable and Evolving Open-Ended Evaluation of Personal Health Agents across Health Memory and Medical Skills",
-      "summary": "The LLM-empowered personal health agents with user health (sensor) metrics have offered a promising pathway to alleviate global disparities in healthcare access. However, large-scale clinical deployment remains constrained by an open-ended evaluation bottleneck: physician annotation is reliable but costly and unscalable, while LLM-as-a-judge evaluators are scalable but subjective, inconsistent, and sometimes clinically misaligned. We introduce RubricsTree, a scalable evaluation framework with an expert-aligned hierarchical taxonomy of over 100 atomic, clinically-verifiable Boolean rubrics, evolving from the insights of 4,000 real user queries through an iterative human-in-the-loop curation protocol with an expertise panel led by an experienced physician. A context-aware adaptive router activates only the relevant auto-weighted rubric subset per query, providing the throughput needed for scalable evaluation with expert-aligned quality. Through a systematic meta-evaluation, we show that RubricsTree (i) substantially exceeds a strong large-scale evaluation baseline in expert alignment on challenging open-ended queries; (ii) reliably penalizes contextually degraded responses; and (iii) when used as structured instructions, text feedback, or training rewards for performance optimization, yields up to ~66% relative gains on HealthBench for Gemini, GPT, and Qwen model families. RubricsTree thus provides a scalable, auditable, and evolving evaluation infrastructure required for the continuous optimization of product-level personal healthcare AI.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Ahmed A. Metwally",
-      "published_at": "2026-06-16T17:34:53Z",
-      "fetched_at": "2026-06-17T03:28:39.023457Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "96b6f605e3f9c5cf",
-      "url": "https://arxiv.org/abs/2606.18195v1",
-      "title": "Learning from the Self-future: On-policy Self-distillation for dLLMs",
-      "summary": "On-policy self-distillation (OPSD) has proven effective for post-training large language models (LLMs), yet its application to diffusion LLMs (dLLMs) remains unexplored. Existing OPSD methods are inherently autoregressive-centric. They inject privileged information via left-to-right prefix conditioning with token-level divergence supervision, a design that fundamentally conflicts with the arbitraryorder generation of dLLMs. We introduce d-OPSD, the first OPSD framework tailored for dLLMs. Our approach makes two core contributions. First, we reframe self-teacher construction by using self-generated answers as suffix conditioning, enabling the student model to learn from \"self future-experience\" rather than privileged prefixes. Second, we shift supervision from token-level to step-level, aligning training with the iterative denoising process of dLLMs. Experiments across four reasoning benchmarks show that d-OPSD consistently outperforms RLVR and SFT baselines with superior sample efficiency, requiring only around 10% of the optimization steps by RLVR and opening a promising pathway for dLLM posttraining. The code is available at https://github.com/xingzhejun/d-OPSD.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Shiwei Liu",
-      "published_at": "2026-06-16T17:24:57Z",
-      "fetched_at": "2026-06-17T03:28:39.023462Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "85b11a8875d346d3",
-      "url": "https://arxiv.org/abs/2606.18193v1",
-      "title": "A Red-Team Study of Anthropic Fable 5 & Opus 4.8 Models",
-      "summary": "We evaluate the adversarial robustness of two frontier large language models (LLMs) developed by Anthropic, Fable 5 and Opus 4.8, against four families of automated jailbreak attack across 7 826 harmful intents spanning a ten-category harm taxonomy. Using the HackAgent red-teaming framework, hundreds of thousands of adversarial attempts were generated and every apparent success was independently re-adjudicated by a panel of three judge models (majority vote). Both models resist the majority of attacks, but the residual surface is larger than aggregate framing suggests: it is dominated by adaptive iterative attacks, while static obfuscation is near-fully neutralised. The strongest adaptive search (tree-of-attacks) breaks Opus 4.8 on 11.5% of intents overall, whereas Fable 5 stays in the single digits (6.1% worst-case). Aggregate rates therefore should not be read as reassurance. Even in these hardened configurations, the two models produced 1 620 (Opus 4.8) and 702 (Fable 5) panel-confirmed harmful completions spanning every harm category, located automatically, cheaply, and within the first one or two refinement steps by an attacker model with no human expert in the loop. The reasonable conclusion is that even the best, most-tested frontier models remain reliably breakable under sustained automated pressure.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Nicola Franco",
-      "published_at": "2026-06-16T17:23:58Z",
-      "fetched_at": "2026-06-17T03:28:39.023466Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "13eebc3f7006782c",
-      "url": "https://arxiv.org/abs/2606.18190v1",
-      "title": "Multi-Source Cybersecurity Logs: An ATT&CK-Labeled Dataset and SLM Evaluation",
-      "summary": "Multi-stage cyberattacks span system, network, and browser logs. Detecting them requires correlating events across all three sources. Machine learning methods can learn these cross-source patterns, but they need labeled multi-source data. Existing public datasets fall short. Network-only datasets such as CICIDS and UNSW-NB15 miss host and browser activity. Host-focused datasets such as LMDG and CICAPT-IIoT lack browser telemetry. ATLAS includes all three sources but labels events only as malicious or benign, without MITRE Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK) technique granularity. No public dataset combines all three sources with per-entry ATT&CK technique labels. We close the gap by building a multi-source log dataset of 870 sessions (70 attack, 800 benign) and approximately 2.3 million events. We captured system, network, and browser activity simultaneously on Windows endpoints. We labeled malicious events with ATT&CK technique IDs, covering 12 tactics and 53 techniques. We generated all attack data using real tools, including Remote Access Trojan (RAT), Command and Control (C2) tunnels, and cloud exfiltration. To demonstrate learnability, we fine-tuned three Small Language Models (SLMs) (Qwen2.5-1.5B, Llama-3.2-3B, Phi-4-Mini) using Low-Rank Adaptation (LoRA). We compared each against its base variant across ten metrics on two tasks: chunk classification and ATT&CK technique identification. Fine-tuning improved every model on every metric. Chunk classification accuracy rose from approximately 8% in the base variants to between 90% and 97% after fine-tuning. Technique identification remained challenging, with the best exact-match accuracy at 42%, although high partial-match scores show the models captured most of the underlying reasoning.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Md Rayhanur Rahman",
-      "published_at": "2026-06-16T17:21:58Z",
-      "fetched_at": "2026-06-17T03:28:39.492430Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "533ffe3e834fb200",
-      "url": "https://arxiv.org/abs/2606.18186v1",
-      "title": "Kolmogorov Regression for Robust Diffusion Policies",
-      "summary": "Finite-dimensional (FD) diffusion policies exhibit temporal drift owing to discretization artifacts that degrade long-horizon performance (when deployed on physical systems). We introduce a backward Kolmogorov equation that lifts diffusion policies to a Cameron-Martin space -- a subset of the Hilbert space. Essentially, replacing stochastic score matching with a deterministic boundary-value PDE problem. Our core innovation thrives on Gaussian measure theory whereupon the diffusion noise covariance operator is realized from a colored noise distribution which prescribes a notion of regularity on samples from the model at inference time. We train the diffusion model with a derived precision-weighted Cameron- Martin loss and a Kolmogorov residual is introduced as a PDE diagnostic during inference. These substitutions yield (i) convergence guarantees where the bound's constants depend on the effective rank of the kernel rather than action dimension, (ii) improved trajectory regularity via spectral weighting, and (iii) a deterministic failure detector without reward signals. Validation across two application domains demonstrates substantial improvements: on the PushT manipulation benchmark, the Cameron-Martin loss achieves a 17% improvement in maximum episode reward (0.95 vs. 0.78 for MSE) and 67.6% reduction in inter-step drifts during inference via the introduced residual magnitude. Similarly, on a 6-station manufacturing line with constant work-in-process (CONWIP) flow control, we achieve 28.4% lower RMSE than classical LSTM baselines; a high starvation-event recall (1.0 in test cycles), and effective bottleneck identification (Precision@1 = 1.0 in test set, 13x signal-to-noise ratio). We then certify the dispatch policies with Hamilton-Jacobi reachability theory which reduces deadlock events by 96% compared to uncontrolled dispatch over 100 simulated runs (351 events prevented).",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Lekan Molu",
-      "published_at": "2026-06-16T17:18:54Z",
-      "fetched_at": "2026-06-17T03:28:39.492435Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "58d595083ce6ef52",
-      "url": "https://arxiv.org/abs/2606.18183v1",
-      "title": "A Diffusion Approximation for Temporal-Difference Learning with Linear Features under Markovian Noise",
-      "summary": "Temporal difference (TD) learning with linear function approximation is a core method for policy evaluation. Its classical continuous-time description is an ordinary differential equation (ODE), which captures the asymptotic mean dynamics but neglects stochastic fluctuations determining the error floor. We introduce a stochastic differential equation (SDE) approximation for linear TD(0) under Markovian noise. The resulting model distinguishes the contraction dynamics governed by the projected Bellman operator from the influence of Markovian sampling. As a consequence, the model explains the constant-stepsize error floor through the interaction between Markovian long-run covariance and the contraction geometry of the projected Bellman operator.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "A. Pacchiano",
-      "published_at": "2026-06-16T17:16:52Z",
-      "fetched_at": "2026-06-17T03:28:39.492439Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "71d869a65fc9a7bb",
-      "url": "https://arxiv.org/abs/2606.18175v1",
-      "title": "A Convex Quasilinearization Method for Solving Nonlinear PDEs with Physics-Informed Neural Networks",
-      "summary": "We present a numerical method for the forward solution of nonlinear partial differential equations (PDEs) in which Bellman-Kalaba quasilinearization reduces the nonlinear problem to a sequence of linear subproblems, each discretized by collocation onto a trial space that is linear in its parameters and solved by a single direct linear least-squares QR factorization. The trial space, which we term Linear-in-Learnables (LiL), comprises representations whose trainable parameters enter linearly, including random-feature extreme learning machines, spectral polynomial bases, and trigonometric expansions, each implemented as a physics-informed neural network. The method thus replaces the nonconvex gradient-based training that limits standard PINNs with a convex per-step solve. We establish local Newton-Kantorovich convergence of the outer iteration to a residual-limited neighborhood under an explicit smallness condition, with the limiting accuracy governed by the best-approximation residual of the trial space rather than by an optimization tolerance. The method, denoted LiL-Q, is assessed on seven benchmarks spanning scalar nonlinear PDEs (Bratu, viscous Burgers, Buckley-Leverett), coupled systems (plane-strain elasticity and the incompressible Navier-Stokes equations in two and three spatial dimensions), and steady-state Darcy flow with heterogeneous permeability. Across these problems, LiL-Q converges in single-digit outer iterations in most cases, even at the coarsest basis sizes and independent of the parameter count. When the exact solution lies in the span of the trial space, the method recovers it to machine precision in a single solve. On the Navier-Stokes benchmarks, it matches or exceeds published PINN solvers with up to two orders of magnitude fewer trainable parameters, without gradient-based optimization.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Rami M. Younis",
-      "published_at": "2026-06-16T17:09:59Z",
-      "fetched_at": "2026-06-17T03:28:39.492443Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -54306,26 +54095,6 @@
       "author": "geminiapp",
       "published_at": "2026-06-16T18:45:19Z",
       "fetched_at": "2026-06-16T19:44:26.259760Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dc799b1340c8c666",
-      "url": "https://x.com/OpenAI/status/2066930552255729928",
-      "title": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, ...",
-      "summary": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, the Codex Chrome extension, personalize\u2026",
-      "content": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, the Codex Chrome extension, personalize\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-06-16T17:07:00Z",
-      "fetched_at": "2026-06-16T19:44:27.564490Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55801,6 +55570,87 @@
       "author": "geminiapp",
       "published_at": "2026-06-23T15:05:23Z",
       "fetched_at": "2026-06-23T15:35:25.911423Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c2e9747b12b73a45",
+      "url": "https://x.com/AnthropicAI/status/2069469669929386160",
+      "title": "RT @claudeai: Introducing Claude Tag, a new way for teams to work with Claude.\n\nIn Slack, Claude joi...",
+      "summary": "RT @claudeai: Introducing Claude Tag, a new way for teams to work with Claude.\n\nIn Slack, Claude joins as a team member with access to the\u2026",
+      "content": "RT @claudeai: Introducing Claude Tag, a new way for teams to work with Claude.\n\nIn Slack, Claude joins as a team member with access to the\u2026",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-23T17:16:32Z",
+      "fetched_at": "2026-06-23T17:35:50.203668Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dc799b1340c8c666",
+      "url": "https://x.com/OpenAI/status/2066930552255729928",
+      "title": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, ...",
+      "summary": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, the Codex Chrome extension, personalize\u2026",
+      "content": "RT @OpenAIDevs: More of Codex is rolling out across Europe this week.\n\nWe\u2019re bringing Computer use, the Codex Chrome extension, personalize\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-16T17:07:00Z",
+      "fetched_at": "2026-06-16T19:44:27.564490Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "251f3dc7c4029c32",
+      "url": "https://x.com/steipete/status/2066919133137035715",
+      "title": "RT @deredleritt3r: Two years ago, reasoning models did not exist. GPT-4o and Sonnet 3.5 were SOTA.\n\n...",
+      "summary": "RT @deredleritt3r: Two years ago, reasoning models did not exist. GPT-4o and Sonnet 3.5 were SOTA.\n\nOne year ago, the best publicly availab\u2026",
+      "content": "RT @deredleritt3r: Two years ago, reasoning models did not exist. GPT-4o and Sonnet 3.5 were SOTA.\n\nOne year ago, the best publicly availab\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-16T16:21:37Z",
+      "fetched_at": "2026-06-16T19:44:31.655515Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "70bb44a4d02a4193",
+      "url": "https://x.com/steipete/status/2066917041156587569",
+      "title": "RT @lindsmccallum: just two guys talking about loops https://t.co/ZIJvx9uJOr",
+      "summary": "RT @lindsmccallum: just two guys talking about loops https://t.co/ZIJvx9uJOr",
+      "content": "RT @lindsmccallum: just two guys talking about loops https://t.co/ZIJvx9uJOr",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-16T16:13:18Z",
+      "fetched_at": "2026-06-16T19:44:31.655548Z",
       "score": null,
       "score_reason": "",
       "tier": "",
