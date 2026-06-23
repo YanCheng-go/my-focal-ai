@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-23T15:22:41.704595+00:00",
+  "exported_at": "2026-06-23T15:35:32.860870+00:00",
   "period_hours": 168,
-  "total": 2604,
+  "total": 2600,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11736,48 +11736,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-06-17T06:09:11Z",
       "fetched_at": "2026-06-17T08:13:07.727328Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c66ff1e7b1ebebf",
-      "url": "https://www.youtube.com/watch?v=aQxPcWq2QxM",
-      "title": "I Couldn't Code 'Hello World' (Now I Teach Tech to Millions)",
-      "summary": "In this video, I show my journey from failing basic English tests to becoming a global tech educator teaching millions in English. I share the embarrassing story of my first \"Hello World\" programming attempt that completely failed - now ironic considering my career.\n\nMore importantly, I uncover the surprising pattern connecting early failures with future mastery, backed by remarkable examples like Michael Jordan (cut from his high school team) and Abraham Lincoln (lost 8 elections) who failed at exactly what they later became legendary for.\n\nI break down the psychological and neurological reasons why struggling with something initially can actually predict extraordinary future success in that same area - and how you can apply this insight to your own setbacks.\n\nWhether you're facing rejections, failures, or doubting your abilities, this evidence-based perspective might completely change how you view your current struggles.\n\n#FailureToSuccess #PerseveranceStory #GrowthMindset #CareerSuccess #OvercomingFailure #TechEducator #SuccessMindset #PersonalDevelopment",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-04-17T10:25:50Z",
-      "fetched_at": "2026-06-16T15:57:10.130724Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -54488,69 +54446,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "bba97552703ee206",
-      "url": "https://arxiv.org/abs/2606.18057v1",
-      "title": "When AI Says \"I have been in similar situations\": Synthetic Lived Experience in Peer-Like Caregiver Support",
-      "summary": "Caregivers often turn to online communities for informational and emotional support. In these spaces, peer supporters frequently draw on personal narratives to respond to emotionally complex caregiving situations. As LLMs are increasingly designed as peer-like sources of support, they introduce a critical tension: AI can provide immediate, private, and nonjudgmental support, but it cannot authentically possess the lived experiences that make human peer support meaningful. Yet, when prompted to sound peer-like, LLMs may generate language that implies lived experience. This creates a synthetic lived experience paradox: the same experiential language that may make AI support feel warm, relatable, and peer-like can also falsely position the system as someone with lived experience. We examine this paradox in the context of family caregivers of people living with Alzheimer's Disease and Related Dementias (ADRD). Drawing on caregiver support exchanges from online communities and prompted peer-like responses from three LLMs -- LLaMA, GPT-4o-mini, and MedGemma -- we analyze how human peers use personal narratives and how AI incorporates similar narrative forms. Psycholinguistic analysis shows that peer responses used significantly more first-person and past-focused language than peer-like AI responses. Qualitatively, we identify seven types of personal narratives in human peer support and show that AI often captures their emotional work, but can fabricate experiential grounding. These findings reveal a narrative authenticity gap: peer-like AI can generate synthetic lived experience without the real experience that makes peer support meaningful. We argue that caregiver-support AI systems need mechanisms to distinguish supportive peer-like framing from fabricated lived experience, ensuring that models can offer warmth and validation without falsely positioning themselves as experiential peers.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Koustuv Saha",
-      "published_at": "2026-06-16T15:34:23Z",
-      "fetched_at": "2026-06-17T03:28:39.023502Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "db9fc89db2ecd6bf",
-      "url": "https://arxiv.org/abs/2606.18056v1",
-      "title": "ConSA: Controllable Sparsity in Hybrid Attention via Learnable Allocation",
-      "summary": "Hybrid architectures combining full attention (FA) and sliding-window attention (SWA) are a promising paradigm for efficient LLM inference. However, existing methods typically rely on hand-crafted rules or simple post-hoc heuristics for FA/SWA allocation and offer limited analysis of the attention behaviors underlying these designs. We propose Controllable Sparsity in Hybrid Attention (ConSA), a framework that learns optimal FA/SWA assignment under a user-specified sparsity target. ConSA employs L0 regularization to learn binary masks selecting between FA and SWA for each attention unit, while an augmented Lagrangian constraint enforces the target sparsity at either layer or KV-head granularity. We evaluate ConSA on two LLMs at the 0.6B and 1.7B scales. Learned allocations consistently outperform rule-based baselines, with KV-head-wise allocation yielding clear gains over layer-wise allocation. The learned patterns place SWA in the bottom layers and concentrate FA into contiguous middle-layer blocks, diverging from evenly interleaved patterns in rule-based methods. This structure persists across model scales, sparsity levels, and allocation granularities, revealing a fine-grained spectrum of intrinsic attention behaviors that underlies the learned allocation.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Dianhai Yu",
-      "published_at": "2026-06-16T15:33:49Z",
-      "fetched_at": "2026-06-17T03:28:39.023506Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b9b1158bb8f240b0",
-      "url": "https://arxiv.org/abs/2606.18051v1",
-      "title": "Compositional Skill Routing for LLM Agents: Decompose, Retrieve, and Compose",
-      "summary": "LLM agents increasingly rely on external skills -- reusable tool specifications -- but real-world tasks often require composing multiple skills, not just selecting one. We formalize this as the Compositional Skill Routing problem: given a complex user query and a large skill library, decompose the query into atomic sub-tasks, retrieve the appropriate skill for each sub-task, and compose an executable plan. We present SkillWeaver, a decompose-retrieve-compose framework combining an LLM task decomposer, a bi-encoder skill retriever with FAISS indexing, and a dependency-aware DAG planner. To support evaluation, we introduce CompSkillBench, a benchmark of 300 compositional queries over 2,209 real MCP server skills spanning 24 functional categories, sourced from the public MCP ecosystem. Our experiments reveal that task decomposition quality is the primary bottleneck: standard LLM decomposition reaches only 34.2% category recall at the step level. To address this, we propose Iterative Skill-Aware Decomposition (SAD), a retrieval-augmented feedback loop that iteratively aligns decomposition with available skills. SAD improves decomposition accuracy from 51.0% to 67.7% (+32.7%, Wilcoxon p < 10^-6) in a single iteration; DA-conditioned analysis confirms that correct granularity is the prerequisite for effective retrieval (CatR@1 rises from 34% to 41% when DA=1). SkillWeaver reduces context window consumption by over 99%, and transfer experiments confirm generalization (+35.6% relative DA gain even when target categories are absent from the retrieval pool).",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Xueping Gao",
-      "published_at": "2026-06-16T15:27:55Z",
-      "fetched_at": "2026-06-17T03:28:39.023511Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -56242,6 +56137,27 @@
       "author": "dani_avila7",
       "published_at": "2026-06-22T15:16:55Z",
       "fetched_at": "2026-06-23T07:31:22.147091Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab7c0250481b9793",
+      "url": "https://x.com/GeminiApp/status/2069436661755478418",
+      "title": "RT @joshwoodward: \u26bd\ufe0fTurn your team loyalty into a custom trading card, mural, or virtual plushie in ...",
+      "summary": "RT @joshwoodward: \u26bd\ufe0fTurn your team loyalty into a custom trading card, mural, or virtual plushie in @GeminiApp\n\nHow to create yours:\n\n1) Go\u2026",
+      "content": "RT @joshwoodward: \u26bd\ufe0fTurn your team loyalty into a custom trading card, mural, or virtual plushie in @GeminiApp\n\nHow to create yours:\n\n1) Go\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-23T15:05:23Z",
+      "fetched_at": "2026-06-23T15:35:25.911423Z",
       "score": null,
       "score_reason": "",
       "tier": "",
