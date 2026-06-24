@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-24T07:29:35.943314+00:00",
+  "exported_at": "2026-06-24T08:49:28.020905+00:00",
   "period_hours": 168,
-  "total": 2494,
+  "total": 2496,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13504,47 +13504,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-17T10:00:32Z",
       "fetched_at": "2026-06-17T11:55:24.951366Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fb711d13f368b630",
-      "url": "https://www.youtube.com/watch?v=VTZxU7D2HHU",
-      "title": "Last Week in AI #248 - Fable 5, Siri AI, IPOs, Policy on the AI \u200b\u200bExponential",
-      "summary": "Our 248th episode with a summary and discussion of last week's big AI news!\n\nRecorded on 06/12/2026\n\nNote: we recorded just before the OTHER big news about Fable... we'll discuss it on the next episode.\n\nHosted by Andrey Kurenkov and Jeremie Harris\n\nFeel free to email us your questions and feedback at andreyvkurenkov@gmail.com and/or hello@gladstone.ai\n\nRead out our text newsletter and comment on the podcast at https://lastweekin.ai/\n\nIn this episode:\n\n    Anthropic released Claude Fable 5 (a safeguarded version of Mythos 5), showing major benchmark jumps and new risk findings in its system card (eval awareness, transgressive actions, CBRN concerns), alongside controversy over severe guardrails and silent downgrades.\n    Apple announced Siri AI at WWDC, positioning a more capable conversational assistant integrated across iPhone features, reportedly built on a custom Gemini partnership; Google also rolled out Gemini 3.5 Live Translate and cut Google AI Plus pricing while bundling more storage.\n    Business and infrastructure updates include OpenAI\u2019s confidential IPO filing amid an IPO race with Anthropic and SpaceX, Bezos-backed Prometheus raising $12B for \u201cphysical AI,\u201d DeepSeek seeking a major external round, and Google paying SpaceX about $920M/month for GPUs.\n    Open-source, safety, and policy developments feature new Gemma 4 and Diffusion Gemma releases, a lab letter urging DNA/RNA screening laws, Amodei calling for an FAA-like AI regulator and third-party testing, research on agent harms and RL \u201csocietal hacking,\u201d and a dispute over music-label settlements with Suno/Udio.\n\n\nTimestamps:\n\n    (00:00:10) Intro / Banter\n    (00:01:11) News Preview\n    (00:01:53) Sponsors\n\n\n    Tools & Apps\n    (00:04:53) Claude Fable 5 and Claude Mythos 5 + Anthropic apologizes for invisible Claude Fable guardrails\n    (00:27:06) Apple announces Siri AI and its next generation of Apple Intelligence | The Verge + I tried Siri AI, and so far it actually works\n    (00:33:47) Gemini 3.5 Live Translate rolling out to Google Meet and Translate\n    (00:35:39) Google just fired a warning shot in the AI subscription price wars | TechCrunch\n\n\n    Applications & Business\n    (00:37:55) OpenAI Confidentially Files for IPO on the Heels of SpaceX and Anthropic | WIRED\n    (00:41:57) Jeff Bezos's Prometheus raises $12B to build an 'artificial general engineer' for the physical world | TechCrunch\n    (00:45:39) DeepSeek slated to raise $7 billion in maiden funding round, sources say\n    (00:48:18) Huawei-led team claims it post-trained DeepSeek's 1.6-trillion-parameter model \u2014 1,000 Ascend 910C chips used in training\n    (00:51:57) Google will pay SpaceX $920M per month for compute | TechCrunch\n    (00:55:51) Elon Musk Shows Off AI Data Centers SpaceX Wants to Send Into Space - Business Insider\n\n\n    Projects & Open Source\n    (01:01:14) Google's new Gemma 4 12B model is designed to run on any laptop with 16GB of RAM - Ars Technica\n    (01:05:13) Google AI Releases DiffusionGemma, a 26B MoE Open Model Using Text Diffusion for Up to 4x Faster Generation - MarkTechPost\n\n\n    Policy & Safety\n    (01:09:42) OpenAI and Anthropic Sign Letter to Prevent AI-Developed Biological Weapons | WIRED\n    (01:14:04) Anthropic CEO publishes lengthy article: AI is moving too fast, and policies can't keep up. | PANews\n    (01:20:18) Anthropic Urges Global Pause in AI Development, Flags \u2018Self-Improvement\u2019 Risk - WSJ\n    (01:24:46) When Benign Inputs Lead to Severe Harms: Eliciting Unsafe Unintended Behaviors of Computer-Use Agents\n    (01:27:42) Large Language Models Hack Rewards, and Society\n    (01:33:46) Senior US officials eye government shares in AI giants\n\n\n    Synthetic Media & Art\n    (01:37:45) AFM Sues UMG, WMG Over Settlements With Suno and Udio",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-06-17T06:09:11Z",
-      "fetched_at": "2026-06-17T08:13:07.727328Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -52124,48 +52083,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9f7195437d576580",
-      "url": "https://arxiv.org/abs/2606.18812v1",
-      "title": "Reinforcement Learning Foundation Models Should Already Be A Thing",
-      "summary": "Foundation models for language and vision are powered by internet-scale data, while structured domains (tabular prediction, time-series forecasting, graph learning, reinforcement learning) are not. The substitute is synthetic data, which shifts the burden from collection to prior design. Such priors already exist for many structured tasks: TabPFN and its successors solve tabular classification with a transformer pretrained on a synthetic Bayesian prior.\n  We make two points. \\textbf{First}, reinforcement learning is the conspicuous gap: sampling a synthetic MDP is as feasible as sampling a synthetic tabular dataset, yet no in-context RL work treats prior design as a primary objective. \\textbf{Second}, MDPs admit a fixed-size sufficient statistic, independent of the episodes observed and tabular in shape, which makes them directly amenable to the attention-based architectures used for tabular foundation models, with a policy head replacing the supervised target. Together these define the agenda for an RL foundation model.\n  As a proof of concept, we train one model entirely on synthetic MDPs and show that, with no task-specific tuning, it solves held-out tabular benchmarks in context, both online and offline: online, in far fewer episodes than UCB-VI and tabular Q-learning, and offline, competitively with VI-LCB.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Jill-J\u00eann Vie",
-      "published_at": "2026-06-17T08:27:27Z",
-      "fetched_at": "2026-06-18T01:28:25.152125Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4b471be2ae34f7e8",
-      "url": "https://arxiv.org/abs/2606.18790v1",
-      "title": "Closing the Loop: PID Feedback Control for Interpretable Activation Steering in Symbolic Music Generation",
-      "summary": "Transformer-based architectures have significantly advanced the generation of complex symbolic sequences, yet a significant gap remains in achieving fine-grained, interpretable control over discrete signal attributes. This paper investigates the mechanistic interpretability of the Multitrack Music Transformer (MMT) and proposes a framework for deterministic attribute modulation without retraining to bridge this gap via inference-time activation steering. Utilizing the Difference-in-Means (DiffMean) methodology, we isolate latent directions for signal attributes, specifically Pitch and Duration, within the residual stream. We validate the Linear Representation Hypothesis in this domain, achieving high correlation between steering magnitude and attribute shift. To address the inherent feature entanglement in multi-attribute steering, we introduce a Dual Steering framework utilizing Gram-Schmidt Orthogonalization. Experimental results demonstrate that this geometric decoupling reduces conceptual interference and signal degradation compared to naive vector addition, enabling independent deterministic control even against strong autoregressive conditioning.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Themos Stafylakis",
-      "published_at": "2026-06-17T08:04:13Z",
-      "fetched_at": "2026-06-18T01:28:25.152131Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -53903,6 +53820,128 @@
       "author": "bcherny",
       "published_at": "2026-06-23T17:36:27Z",
       "fetched_at": "2026-06-23T19:36:00.724256Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cf157460028e1b35",
+      "url": "https://x.com/steipete/status/2069692403238539675",
+      "title": "RT @openclaw: \ud83e\udd9e OpenClaw 2026.6.10 just dropped.\n\nJust a small release to keep things brewing:\n\u26a1 Aut...",
+      "summary": "RT @openclaw: \ud83e\udd9e OpenClaw 2026.6.10 just dropped.\n\nJust a small release to keep things brewing:\n\u26a1 Automatic fast mode for short talks\n\ud83e\udde0 Much\u2026",
+      "content": "RT @openclaw: \ud83e\udd9e OpenClaw 2026.6.10 just dropped.\n\nJust a small release to keep things brewing:\n\u26a1 Automatic fast mode for short talks\n\ud83e\udde0 Much\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-24T08:01:36Z",
+      "fetched_at": "2026-06-24T08:49:25.522641Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c2f40f039ade8bc5",
+      "url": "https://x.com/steipete/status/2069691481942536245",
+      "title": "RT @PeterJThomson: @pvncher @Steve_Yegge Well @cognition were right about Devin. And @steipete was r...",
+      "summary": "RT @PeterJThomson: @pvncher @Steve_Yegge Well @cognition were right about Devin. And @steipete was right about Personal Assistant agents. A\u2026",
+      "content": "RT @PeterJThomson: @pvncher @Steve_Yegge Well @cognition were right about Devin. And @steipete was right about Personal Assistant agents. A\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-24T07:57:56Z",
+      "fetched_at": "2026-06-24T08:49:25.522744Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9e9ff4f24c7adb0f",
+      "url": "https://x.com/dani_avila7/status/2069621356338024462",
+      "title": "Karpathy named 3 paradigms for LLM UX\u2026 but I think there\u2019s a fourth\n\nwhen agents stop receiving task...",
+      "summary": "Karpathy named 3 paradigms for LLM UX\u2026 but I think there\u2019s a fourth\n\nwhen agents stop receiving tasks and work against a permanent objective on their own\n\nLike a /goal or /loop at org scale, with almost no human interaction\n\nYou go from operator to exception handler https://t.co/ClkaXwmRaG",
+      "content": "Karpathy named 3 paradigms for LLM UX\u2026 but I think there\u2019s a fourth\n\nwhen agents stop receiving tasks and work against a permanent objective on their own\n\nLike a /goal or /loop at org scale, with almost no human interaction\n\nYou go from operator to exception handler https://t.co/ClkaXwmRaG",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-24T03:19:17Z",
+      "fetched_at": "2026-06-24T08:49:17.330132Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5012142e4a33a127",
+      "url": "https://x.com/steipete/status/2069594195522941059",
+      "title": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\n...",
+      "summary": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
+      "content": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-24T01:31:22Z",
+      "fetched_at": "2026-06-24T08:49:25.522793Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbc7feac76f5c077",
+      "url": "https://x.com/karpathy/status/2069579404163031082",
+      "title": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "summary": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "content": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-24T00:32:35Z",
+      "fetched_at": "2026-06-24T08:49:13.746982Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3ee44c64cc9899d0",
+      "url": "https://x.com/karpathy/status/2069547676849557725",
+      "title": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the ...",
+      "summary": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "content": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-23T22:26:31Z",
+      "fetched_at": "2026-06-24T08:49:13.747151Z",
       "score": null,
       "score_reason": "",
       "tier": "",
