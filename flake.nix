@@ -19,7 +19,10 @@
           default = pkgs.mkShell {
             packages = [
               pkgs.python312
-              pkgs.uv
+              # uv from unstable: stable nixos-24.11 ships 0.4.30, which writes
+              # an older lockfile format (no revision/upload-time) and churns
+              # uv.lock on every run. unstable matches the committed lock format.
+              unstable.uv
               pkgs.nodejs_22
               pkgs.docker-compose
               unstable.supabase-cli
