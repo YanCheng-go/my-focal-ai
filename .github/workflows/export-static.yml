@@ -14,7 +14,7 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
@@ -24,7 +24,7 @@ jobs:
 
       # Restore cached DB for data.json export
       - name: Restore DB cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: data/ainews.db
           key: ainews-db-${{ github.run_id }}
