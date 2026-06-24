@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-24T18:55:48.049632+00:00",
+  "exported_at": "2026-06-24T20:46:40.958329+00:00",
   "period_hours": 168,
-  "total": 2429,
+  "total": 2431,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -15503,27 +15503,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-06-17T20:52:45Z",
       "fetched_at": "2026-06-17T22:51:30.238404Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -51164,27 +51143,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "64a9fd4a02e5fb89",
-      "url": "https://x.com/GeminiApp/status/2067323529318809751",
-      "title": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Produc...",
-      "summary": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Product team members @paikhd and James Z. demo how Gemini Live lets you keep your chats going, connect to your favorite tools mid-conversation, and show Gemini what you\u2019re seeing to",
-      "content": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Product team members @paikhd and James Z. demo how Gemini Live lets you keep your chats going, connect to your favorite tools mid-conversation, and show Gemini what you\u2019re seeing to",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-17T19:08:33Z",
-      "fetched_at": "2026-06-18T08:35:52.191389Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "947fab53ee0ef61e",
       "url": "https://x.com/dani_avila7/status/2067618283243569267",
       "title": "Agents are moving into the tools humans use to communicate.\u00a0\n\nViktor is one example: an AI employee ...",
@@ -52542,6 +52500,87 @@
       "author": "dani_avila7",
       "published_at": "2026-06-24T13:09:59Z",
       "fetched_at": "2026-06-24T14:50:21.595231Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a39b90922c704dcf",
+      "url": "https://x.com/OpenAI/status/2069857611823088107",
+      "title": "RT @DeryaTR_: I\u2019m very excited about this article from @OpenAI on my attempt to use GPT-5 Pro to und...",
+      "summary": "RT @DeryaTR_: I\u2019m very excited about this article from @OpenAI on my attempt to use GPT-5 Pro to understand the results of an experiment we\u2026",
+      "content": "RT @DeryaTR_: I\u2019m very excited about this article from @OpenAI on my attempt to use GPT-5 Pro to understand the results of an experiment we\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-24T18:58:05Z",
+      "fetched_at": "2026-06-24T20:46:35.518597Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f9d62e691d52dfc1",
+      "url": "https://x.com/OpenAI/status/2069843083701915755",
+      "title": "We have a new version of GPT-5.5 Instant for you, and it's much more fun to talk to.\n\nOur most-used ...",
+      "summary": "We have a new version of GPT-5.5 Instant for you, and it's much more fun to talk to.\n\nOur most-used model is now better at understanding the intent behind a question and adapting its response accordingly.\n\nIt also handles complex constraints more reliably and makes shopping and",
+      "content": "We have a new version of GPT-5.5 Instant for you, and it's much more fun to talk to.\n\nOur most-used model is now better at understanding the intent behind a question and adapting its response accordingly.\n\nIt also handles complex constraints more reliably and makes shopping and",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-24T18:00:21Z",
+      "fetched_at": "2026-06-24T20:46:35.518654Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f11855d017f3691e",
+      "url": "https://x.com/dani_avila7/status/2069822855559213371",
+      "title": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data go...",
+      "summary": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data governance aren\u2019t optional https://t.co/rbKET5vaXC",
+      "content": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data governance aren\u2019t optional https://t.co/rbKET5vaXC",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-24T16:39:58Z",
+      "fetched_at": "2026-06-24T20:46:31.156611Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "64a9fd4a02e5fb89",
+      "url": "https://x.com/GeminiApp/status/2067323529318809751",
+      "title": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Produc...",
+      "summary": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Product team members @paikhd and James Z. demo how Gemini Live lets you keep your chats going, connect to your favorite tools mid-conversation, and show Gemini what you\u2019re seeing to",
+      "content": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Product team members @paikhd and James Z. demo how Gemini Live lets you keep your chats going, connect to your favorite tools mid-conversation, and show Gemini what you\u2019re seeing to",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-17T19:08:33Z",
+      "fetched_at": "2026-06-18T08:35:52.191389Z",
       "score": null,
       "score_reason": "",
       "tier": "",
