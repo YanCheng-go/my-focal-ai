@@ -105,6 +105,7 @@ def admin_page(request: Request, admin_token: str | None = Cookie(None)):
         except HTTPException:
             pass
     return templates.TemplateResponse(
+        request,
         "admin.html",
         {"request": request, "needs_auth": needs_auth, "is_authed": is_authed},
     )
