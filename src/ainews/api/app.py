@@ -275,6 +275,7 @@ def dashboard(
             total_new = sum(new_counts.values())
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     response = templates.TemplateResponse(
+        request,
         "dashboard.html",
         {
             "request": request,
@@ -309,6 +310,7 @@ def leaderboard(request: Request):
     sources_config = load_sources(settings.config_dir)
     leaderboard_links = sources_config.get("sources", {}).get("leaderboard", [])
     return templates.TemplateResponse(
+        request,
         "leaderboard.html",
         {"request": request, "leaderboard_links": leaderboard_links},
     )
@@ -329,6 +331,7 @@ def events(request: Request, tab: str = "calendars", page: int = 1):
             total = backend.count_items(source_type=source_type)
         total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     return templates.TemplateResponse(
+        request,
         "events.html",
         {
             "request": request,
@@ -365,6 +368,7 @@ def trends(request: Request, tab: str = "daily", page: int = 1):
         total = backend.count_items(source_type=source_type)
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     response = templates.TemplateResponse(
+        request,
         "trends.html",
         {
             "request": request,
@@ -384,7 +388,7 @@ def trends(request: Request, tab: str = "daily", page: int = 1):
 
 @app.get("/about", response_class=HTMLResponse)
 def about(request: Request):
-    return templates.TemplateResponse("about.html", {"request": request})
+    return templates.TemplateResponse(request, "about.html", {"request": request})
 
 
 @app.get("/ccc", response_class=HTMLResponse)
@@ -396,6 +400,7 @@ def ccc(request: Request, page: int = 1):
         total = backend.count_items(source_name="Claude Code Releases")
     total_pages = max(1, (total + PER_PAGE - 1) // PER_PAGE)
     response = templates.TemplateResponse(
+        request,
         "ccc.html",
         {
             "request": request,
