@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-24T09:27:39.714182+00:00",
+  "exported_at": "2026-06-24T10:49:49.516853+00:00",
   "period_hours": 168,
-  "total": 2496,
+  "total": 2487,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13890,46 +13890,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c3224fee877f68dd",
-      "url": "https://www.youtube.com/watch?v=ATIwByZ4nUA",
-      "title": "AI agents can manage your passwords. Should we let them? Plus: The biggest Patch Tuesday ever.",
-      "summary": "Explore the podcast \u2192https://ibm.biz/~1RGiVfNK3\n\nApple unveiled an AI agent that can detect if your password\u2019s been compromised and change it for you. \n\nThe question is: Should you let it?\n\nOn this episode of Security Intelligence, Michelle Alvarez, Erblind Morina and Austin Zeizel join host Matt Kosinski to discuss the promise and pitfalls of using AI agents to address the pernicious issue of cybersecurity hygiene. As people, we\u2019re not great at it. But are the agents ready for primetime?\n\nThen, we talk about Microsoft\u2019s biggest Patch Tuesday ever: more than 200 distinct CVEs were covered in the June 2026 release. We talk about why this might just be the beginning of a new era in vulnerability management, and why it matters. Spoiler: It\u2019s not really about the numbers.\n\nFinally, we get into a report that C-suite executives are increasingly willing to take on greater cyber risk in exchange for innovation. Some say it\u2019s a reaction after years of security spending with low ROI\u2014but are they overcorrecting?\n\nAll that and more on Security Intelligence.\n\n00:00 -- Intro\n1:13 -- AI agents can fix your passwords\n10:36 -- The biggest Patch Tuesday ever\n19:46 -- Executives embrace cyber risk\n\nThe opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~q8Z4caXTi\n#aiagentsecurity #cybersecurity #accessmanagement",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-17T10:00:32Z",
-      "fetched_at": "2026-06-17T11:55:24.951366Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6ac78c8d7160364b",
       "url": "https://www.aitmpl.com/settings/git-branch-statusline#settings",
       "title": "#10 git-branch-statusline",
@@ -26602,27 +26562,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "270262b342662472",
-      "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware",
-      "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-06-17T10:18:05Z",
-      "fetched_at": "2026-06-17T11:55:31.259616Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6acafd07d53d9b0a",
       "url": "https://arxiv.org/abs/2606.23570",
       "title": "Patient-Aware Contrastive Learning Preserves Per-Patient Structure in RR-Interval Representations",
@@ -26661,27 +26600,6 @@
       "author": "Mahmoud Safari, Frank Hutter",
       "published_at": "2026-06-23T04:00:00Z",
       "fetched_at": "2026-06-23T05:41:37.767241Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5ff2f715f1e62741",
-      "url": "https://openai.com/index/ai-chemist-improves-reaction",
-      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-      "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-17T10:00:00Z",
-      "fetched_at": "2026-06-17T19:09:12.194332Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -51999,90 +51917,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3c6b40d986f40ccf",
-      "url": "https://arxiv.org/abs/2606.18910v1",
-      "title": "REVES: REvision and VErification--Augmented Training for Test-Time Scaling",
-      "summary": "Test-time scaling via sequential revision has emerged as a powerful paradigm for enhancing Large Language Model (LLM) reasoning. However, standard post-training methods primarily optimize single-shot objectives, creating a fundamental misalignment with multi-step inference dynamics. While recent work treats this as multi-turn reinforcement learning (RL), conventional approaches optimize over the multi-step trajectories directly, failing to further exploit the high-quality mistakes in intermediate steps that model can learn from correcting them. We propose a two-stage iterative framework that alternates between online data/prompt augmentation and policy optimization. By converting the intermediate steps (``near-miss'' answers) in the successful recovery trajectories into decoupled revision and verification prompts, our approach concentrates training on both effective answer transformation and error identification. This approach enables efficient off-policy data generation and reduces the computational overhead of long-horizon sampling compared to standard multi-turn RL. On LiveCodeBench, using publicly available test cases as feedback, we observe gains of +6.5 points over the RL baseline and +4.0 points over standard multi-turn training. Beyond coding, our approach matches the previously reported SOTA result on circle packing while using the smallest base model (4B) and far fewer rollouts than the much larger evolutionary search systems. Math results under ground-truth verification further confirm improved correction ability. It also generalizes to out-of-distribution constraint-satisfaction puzzles such as n\\_queens and mini\\_sudoku, where correctness is defined entirely by problem constraints. Code is available at https://github.com/yxliu02/REVES.git.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Mingyi Hong",
-      "published_at": "2026-06-17T10:37:23Z",
-      "fetched_at": "2026-06-18T01:28:25.725353Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "23687c0388a374cb",
-      "url": "https://arxiv.org/abs/2606.18902v1",
-      "title": "SAGE: Stochastic Prompt Optimization via Agent-Guided Exploration",
-      "summary": "Context engineering has emerged as a primary lever for improving AI systems without parameter updates. Recent work showing that textual gradients do not function as real gradients motivates treating automatic prompt optimization (APO) as black-box search. We introduce SPO (Stochastic Prompt Optimization), a framework for stochastic search over prompt space, and compare three strategies of increasing sophistication: error-informed random search, a genetic algorithm with evolutionary operators, and SAGE (SPO via Agent-Guided Exploration), a multi-agent pipeline with diagnostic code execution. Across three benchmarks, no single strategy dominates; effectiveness depends on the interaction of landscape structure with error type. We further deploy SAGE on a mental-health chatbot under a continuous optimization paradigm, where it compounds eight cycles of individually-noisy A/B tests into a statistically robust gain in next-day retention. We argue that coupling qualitative diagnosis with quantitative validation is what makes agentic optimization effective for open-ended task-oriented dialogue.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Jinghong Chen",
-      "published_at": "2026-06-17T10:25:25Z",
-      "fetched_at": "2026-06-18T01:28:25.725359Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b257414b3cc197c2",
-      "url": "https://arxiv.org/abs/2606.18893v1",
-      "title": "Learning Robust Pair Confidence for Multimodal Emotion-Cause Pair Extraction",
-      "summary": "Multimodal emotion-cause pair extraction (MECPE) requires reliable pair confidence over candidate pairs. Existing pair scorers commonly use pair-level cross entropy over valid candidates, which treats links mostly independently. This leaves the relative confidence geometry among competing causes under-constrained, allowing gold pairs to stay close to hard negatives or rely on incidental non-gold context. We study this vulnerability as pair-confidence brittleness and propose RPCL (Robust Pair Confidence Learning), a training-only framework for pair-confidence learning. RPCL encourages pair confidence to be both discriminative and stable: gold pairs are separated from row-wise hard negatives through a confidence-difference margin constraint, and clean pair predictions are aligned with predictions from a corrupted view where non-gold contextual utterance representations are partially corrupted. The original clean pair scorer and decoding pipeline are used unchanged at inference time. On ECF, MECAD, and MEC4, RPCL improves the three-seed mean Pair F1 over a matched base model by 2.58 to 2.83 percentage points in the full text-audio-video setting, and improves mean Pair AUPRC on all three datasets. Diagnostic analysis further shows larger gold-negative confidence gaps and lower margin-violation severity. These results suggest that explicitly shaping pair confidence is an effective training strategy for MECPE.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Yan Xia",
-      "published_at": "2026-06-17T10:12:16Z",
-      "fetched_at": "2026-06-18T01:28:25.725365Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cb5bfe4619984aa9",
-      "url": "https://arxiv.org/abs/2606.18889v1",
-      "title": "Improving Medical Communication using Rubric-Guided Counterfactual Recommendations",
-      "summary": "Text-based telemedicine increasingly relies on lightweight patient feedback, however, such feedback primarily reflects perceived communication quality rather than medical accuracy. We introduce an LM-guided counterfactual recommendation pipeline that discovers and refines interpretable communication features such as tone, personalization, actionability and completeness in addressing patient concerns, without interfering with the medical content. These features are used together with patient-doctor interaction metadata to estimate positive feedback. At inference time, the system searches over low-cost ordinal feature changes and recommends minimal communication changes predicted to increase the probability of positive feedback, while independent auditor models test whether these gains generalize beyond the selection model. Across interactions, recommendations yield a mean +6.41% gain in predicted positive feedback probability under independent auditors, and are non-negative for 93.31% of recommendations. These results suggest that small, interpretable communication changes can capture most predicted gains while preserving the doctor's control over medical reasoning and final wording.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Emilian Radoi",
-      "published_at": "2026-06-17T10:07:23Z",
-      "fetched_at": "2026-06-18T01:28:25.725372Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -52177,26 +52011,6 @@
       "author": "",
       "published_at": "2026-06-18T00:00:00Z",
       "fetched_at": "2026-05-28T15:30:51.090926Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f590b3c81d8f2414",
-      "url": "https://x.com/dani_avila7/status/2067190125956587892",
-      "title": "What used to be crazy, an absolute no, is now possible and even the path forward\n\nOnce companies see...",
-      "summary": "What used to be crazy, an absolute no, is now possible and even the path forward\n\nOnce companies see AI can build a new GitHub, they\u2019ll realize it can replace software we thought was untouchable",
-      "content": "What used to be crazy, an absolute no, is now possible and even the path forward\n\nOnce companies see AI can build a new GitHub, they\u2019ll realize it can replace software we thought was untouchable",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-17T10:18:27Z",
-      "fetched_at": "2026-06-17T10:35:32.244846Z",
       "score": null,
       "score_reason": "",
       "tier": "",
