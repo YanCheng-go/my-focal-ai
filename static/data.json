@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-24T11:18:57.644746+00:00",
+  "exported_at": "2026-06-24T12:50:11.264389+00:00",
   "period_hours": 168,
-  "total": 2489,
+  "total": 2476,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13924,46 +13924,6 @@
       "author": "AI Engineer",
       "published_at": "2026-06-17T13:00:06Z",
       "fetched_at": "2026-06-17T13:32:26.015914Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c3224fee877f68dd",
-      "url": "https://www.youtube.com/watch?v=ATIwByZ4nUA",
-      "title": "AI agents can manage your passwords. Should we let them? Plus: The biggest Patch Tuesday ever.",
-      "summary": "Explore the podcast \u2192https://ibm.biz/~1RGiVfNK3\n\nApple unveiled an AI agent that can detect if your password\u2019s been compromised and change it for you. \n\nThe question is: Should you let it?\n\nOn this episode of Security Intelligence, Michelle Alvarez, Erblind Morina and Austin Zeizel join host Matt Kosinski to discuss the promise and pitfalls of using AI agents to address the pernicious issue of cybersecurity hygiene. As people, we\u2019re not great at it. But are the agents ready for primetime?\n\nThen, we talk about Microsoft\u2019s biggest Patch Tuesday ever: more than 200 distinct CVEs were covered in the June 2026 release. We talk about why this might just be the beginning of a new era in vulnerability management, and why it matters. Spoiler: It\u2019s not really about the numbers.\n\nFinally, we get into a report that C-suite executives are increasingly willing to take on greater cyber risk in exchange for innovation. Some say it\u2019s a reaction after years of security spending with low ROI\u2014but are they overcorrecting?\n\nAll that and more on Security Intelligence.\n\n00:00 -- Intro\n1:13 -- AI agents can fix your passwords\n10:36 -- The biggest Patch Tuesday ever\n19:46 -- Executives embrace cyber risk\n\nThe opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~q8Z4caXTi\n#aiagentsecurity #cybersecurity #accessmanagement",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-17T10:00:32Z",
-      "fetched_at": "2026-06-17T11:55:24.951366Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -51724,237 +51684,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "e685da4cdc59893f",
-      "url": "https://arxiv.org/abs/2606.19005v1",
-      "title": "Sumi: Open Uniform Diffusion Language Model from Scratch",
-      "summary": "Diffusion models have become a promising alternative to autoregressive models. Among these, uniform diffusion language models (UDLMs) permit any token to be updated at any step, in principle enabling more flexible generation. However, no UDLM has yet been pretrained from scratch at both large parameter scale and large token budget. Both autoregressive modeling and masked diffusion modeling already have capable models at scale that the community can study and build on; uniform diffusion has none. A scratch-pretrained UDLM at scale would provide a clean reference point for studying scaling behavior, generation dynamics, controllability, and trade-offs against established autoregressive and masked diffusion models. To this end, we introduce Sumi (\"ink\" in Japanese), a fully open 7B uniform diffusion language model pretrained from scratch on 1.5T tokens. Sumi performs competitively with autoregressive models trained at comparable token budgets on knowledge, reasoning, and coding benchmarks, while under-performing on commonsense benchmarks, where our education-heavy data mixture is a likely contributor. We release our model weights, checkpoints, and full training recipe, including a complete specification of the data mixture over publicly available corpora. We hope this release enables the community to study native uniform diffusion at scale and catalyzes work on its as-yet poorly understood aspects.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Jun Suzuki",
-      "published_at": "2026-06-17T12:32:46Z",
-      "fetched_at": "2026-06-18T01:28:25.725293Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1c38da3851761b72",
-      "url": "https://arxiv.org/abs/2606.19004v1",
-      "title": "Spotlight: Synergizing Seed Exploration and Spot GPUs for DiT RL Post-Training",
-      "summary": "Reinforcement learning (RL) post-training of Diffusion Transformers (DiTs) is prohibitively expensive, requiring thousands of high-end GPUs. Existing works explore two directions to reduce cost: seed exploration improves training convergence by selecting high-contrast samples, yet adds compute to the critical path; spot GPUs offer 69--77\\% lower cost, yet sit idle during training because DiT rollouts finish nearly simultaneously, which prevents LLM-style pipelining of rollout with training. Spot preemptions further break Sequence Parallelism (SP) groups, fragmenting GPU topology.\n  We present Spotlight, the first system that harvests spot GPUs for DiT RL post-training. Spotlight rests on two key insights we devise: (1)~we show that exploration can tolerate stale model weights because exploration that uses the model weights from the previous iteration preserves the relative ranking of random seeds, allowing exploration to run on idle spot GPUs during training. (2)~SP reconfiguration can reuse on-node state, reducing group recovery from minutes to sub-second launches. Built on these insights, Spotlight introduces three techniques: a bandit-based exploration planner that maximizes reward variance within the training time budget, elastic sequence parallelism that reconfigures SP groups on the fly via persistent schedulers and intra-node weight copying, and a preemption-aware pull-based request scheduler that balances load and commits in-flight state upon preemption. We implement Spotlight on the open-source RL platform ROLL and evaluate it on Qwen-Image post-training. Spotlight reaches the same target validation score $4\\times$ faster than baselines, reducing total cost by $1.4$-$6.4\\times$ while achieving superior image quality on DeepSeek-OCR and Geneval datasets with resolution $512\\times512$ and $1280\\times1280$.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Wei Wang",
-      "published_at": "2026-06-17T12:31:44Z",
-      "fetched_at": "2026-06-18T01:28:25.152111Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "37f7fd5a1b0b5d3e",
-      "url": "https://arxiv.org/abs/2606.19002v1",
-      "title": "Enhancing Multilingual Reasoning via Steerable Model Merging",
-      "summary": "Model merging is an effective technique for composing the capabilities of a multilingual model and a reasoning model. It has achieved promising generalization in multilingual reasoning tasks by aligning feature spaces of different models. However, the merged single model often fails to address the conflicts between source models, leading to suboptimal performance. In other words, the one-size-fits-all merging strategy may not align with the characteristics of different inputs which may require prioritizing certain models over others. To this end, we propose a Steerable Model Merging (ST-Merge) framework to modulate the contribution of each source model. To realize this idea, we introduce a gated cross-attention mechanism to weight or filter the two attended source models in an adaptive manner. Extensive experiments demonstrate that ST-Merge consistently outperforms multiple strong baselines on four multilingual reasoning benchmarks across 21 different languages.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Xiaojie Wang",
-      "published_at": "2026-06-17T12:28:47Z",
-      "fetched_at": "2026-06-18T01:28:25.725299Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6977c8af49088083",
-      "url": "https://arxiv.org/abs/2606.18989v1",
-      "title": "G-IdiomAlign: A Gloss-Pivoted Benchmark for Cross-Lingual Idiom Alignment",
-      "summary": "Idioms are difficult to transfer across languages due to their non-compositionality and weak surface-form grounding, making literal mappings unreliable. We present G-IdiomAlign, a gloss-pivoted benchmark where each idiom is anchored by an English gloss from Wiktionary. We further construct a high-confidence reference alignment set for reproducible evaluation. G-IdiomAlign supports two protocols: (1) a controlled Multiple-Choice Idiom Equivalence with typed distractors for error attribution; and (2) a Gloss-Contrastive Generation contrasting No-gloss and With-gloss inputs to isolate the effect of an explicit semantic pivot. Across diverse LLMs, a bias to literal translation is a dominant failure mode, especially when the target is a low-resource language. Glosses consistently improve Gloss-Contrastive Generation under an embedding-based semantic proxy, but performance remains modest, indicating substantial headroom in the open output space. Subsequent analysis on Qwen3-8B further suggests that cross-condition differences are concentrated more in attention heads than in layers, while better With-gloss generations coincide with stronger gloss anchoring.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Derek F. Wong",
-      "published_at": "2026-06-17T12:09:00Z",
-      "fetched_at": "2026-06-18T01:28:25.725305Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9770731093658450",
-      "url": "https://arxiv.org/abs/2606.18988v1",
-      "title": "ThinkDeception: A Progressive Reinforcement Learning Framework for Interpretable Multimodal Deception Detection",
-      "summary": "Multimodal deception detection is critical for identifying fraudulent intentions, yet existing approaches predominantly rely on end to end black--box paradigms. These methods suffer from a severe lack of interpretability failing to provide transparent reasoning trajectories and struggling to explicitly capture the subtle, cross modal inconsistencies inherent in deceptive behaviors. To transcend these limitations, we propose ThinkDeception, a novel and interpretable multimodal deception detection framework. As a pioneering effort, it introduces Multimodal Large Language Models (MLLMs) into this domain, transforming deception detection from a traditional binary classification task into an explicit cognitive reasoning process. Facilitated by the first meticulously annotated step--by--step multimodal Chain of Thought (CoT) dataset, we develop a foundational model, ThinkDeception Base, empirically validating the critical role of modal inconsistency in decoding deception. Building upon this foundation, our core innovation lies in proposing Visual-Audio Consistency Group Relative Policy Optimization(VAC--GRPO) equipped with a progressive training strategy. Distinct from standard GRPO, we stratify the training data into four progressive difficulty tiers, guiding the model through a psychologically grounded easy--to--hard cognitive transition. By innovatively coupling this dynamic curriculum scheduler with a multi dimensional, process aware reward mechanism and a reflective learning paradigm, we significantly elevate the model's overall reasoning quality. Extensive experiments on mainstream benchmarks demonstrate that ThinkDeception establishes a new SOTA, significantly outperforming existing methods in both detection accuracy and rationale quality. Ultimately, this work successfully drives the field of deception detection toward interpretable, multimodal cognitive reasoning.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Tianqi Gao",
-      "published_at": "2026-06-17T12:08:20Z",
-      "fetched_at": "2026-06-18T01:28:25.152118Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ece2f117ff5e3e8a",
-      "url": "https://arxiv.org/abs/2606.18986v1",
-      "title": "Beyond Tokenization: Direct Timestep Embedding and Contrastive Alignment for Time-Series Question Answering",
-      "summary": "Recent advances in large language models (LLMs) have given rise to time-series question answering (TSQA), which formulates time-series analysis as natural-language question answering. However, directly feeding raw numerical series into LLMs suffers from a tokenization bottleneck: Byte Pair Encoding fragments continuous values into unstable tokens whose embeddings lack meaningful metric structure, resulting in the loss of magnitude, scale, and trend information. Prior methods use patch-based encoders that split the series into fixed windows, locking in one granularity that breaks patterns and hides exact timesteps, through a separate module that rarely transfers across datasets with different lengths or sampling rates. To address this challenge, we propose CADE (Contrastive Alignment with Direct Embedding), a novel framework for TSQA built upon two key components: direct timestep embedding and semantic alignment. The proposed framework maps each timestep directly into the LLM embedding space through a point-wise linear encoder and MLP projector, preserving exact index-level access while eliminating the need for patching and padding. To further bridge the semantic gap between time-series and language representations, we introduce a novel one-directional supervised contrastive loss that aligns time-series embeddings with frozen class-name text anchors. Experimental results on the public Time-MQA benchmark demonstrate that our framework consistently improves performance across six TSQA tasks, outperforming both open-source and proprietary LLM baselines.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Hung Le",
-      "published_at": "2026-06-17T12:07:23Z",
-      "fetched_at": "2026-06-18T01:28:25.725311Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "89298e77b97525cf",
-      "url": "https://arxiv.org/abs/2606.18979v1",
-      "title": "Mitigating Scoring Errors and Compensating for Nonverbal Subtests in Speech-Based Dementia Assessment",
-      "summary": "Early detection of cognitive impairment relies on neuropsychological tests to minimize subjectivity by assessing multiple cognitive domains. Speech-based evaluation can support diagnostics and improve accessibility, but transcription errors and the omission of nonverbal subtests (e.g., motor skills) limit accuracy. Beyond conventional test scores, speech-derived features can provide additional insights into cognitive status. This study investigates the speech-based evaluation of the German \"Syndrom-Kurz-Test,\" a standardized dementia screening test comprising verbal and motor subtests. We train models that integrate transcript-derived scores and Whisper embeddings per verbal subtest to reduce scoring errors. To compensate for missing motor subtests, we then leverage these fused representations to approximate expert overall ratings. Despite omitting subtests, our models strongly correlate with expert ratings and efficiently and accurately discriminate between cognitive status groups.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Korbinian Riedhammer",
-      "published_at": "2026-06-17T12:02:26Z",
-      "fetched_at": "2026-06-18T01:28:25.725317Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cd7de1ba7bc01781",
-      "url": "https://arxiv.org/abs/2606.18954v1",
-      "title": "GraphPO: Graph-based Policy Optimization for Reasoning Models",
-      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has become a standard paradigm for enhancing the capability of large reasoning models. RLVR typically samples responses independently and optimizes the policy using from final answers. This paradigm has two limitations. First, independently responses often contain similar intermediate reasoning steps, causing redundant exploration and wasted computation. Second, sparse final-answer rewards make it hard to identify useful steps. Tree-based methods partly address this problem by sharing prefixes and comparing branches from the same prefix to provide fine-grained signals. However, tree branches are still expanded independently. When different branches reach similar reasoning states, they cannot share information and repeat similar exploration. Moreover, tree-based methods ignore such dispersion and only perform local comparisons within separate branches, which can lead to higher variance in advantage estimation. To address this challenge, we propose GraphPO (Graph-based Policy Optimization), a novel RL framework that represents rollouts as a directed acyclic graph, with reasoning steps as edges and semantic states summarized from the reasoning paths as nodes. GraphPO merges semantically equivalent reasoning paths into equivalence classes, allowing them to share suffixes and reallocating budget away from redundant expansions to diverse exploration. Furthermore, we assign efficiency advantages to incoming edges and correctness advantages to outgoing edges, thereby improving inference efficiency while deriving process supervision from outcome. Theory shows that GraphPO reduces advantage-estimation variance and enhances reasoning efficiency. Experiments on three LLMs across reasoning and agentic search benchmarks show that GraphPO consistently outperforms chain- and tree-based baselines with the same token budgets or response budgets.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Hao Sun",
-      "published_at": "2026-06-17T11:37:54Z",
-      "fetched_at": "2026-06-18T01:28:25.725323Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c72940eb6ce54837",
-      "url": "https://arxiv.org/abs/2606.18947v1",
-      "title": "Decoupling Search from Reasoning: A Vendor-Agnostic Grounding Architecture for LLM Agents",
-      "summary": "Production LLM agents increasingly depend on real-time search, yet native search grounding bundles retrieval policy, provider choice, evidence injection, cost, latency, and generation behavior behind a single model-provider boundary. This coupling makes grounding hard to inspect, tune, reuse, or port, and can trigger Search-Induced Verbosity that breaks strict output contracts. We present Decoupled Search Grounding (DSG), a vendor-agnostic boundary that moves grounding outside the reasoning model through an MCP-compatible gateway, exposing provider routing, source-aware context rendering, configured fallback, retrieval-depth control, and exact plus semantic caching as first-class controls. Across five frontier models on SimpleQA, FreshQA, and HotpotQA, native search leads on recency-sensitive FreshQA, but DSG exposes a stronger frontier when control matters: on SimpleQA it nearly matches native accuracy (86.1% vs. 87.7%) at 91% lower search cost, preserves concise answer contracts, and reaches a 99.4% warm-cache hit rate with 68% lower latency. Deployed as a shared production grounding layer for large-scale agentic workloads with interchangeable models, DSG matches or slightly exceeds native-search accuracy on an e-commerce query-understanding (QIU) workload while cutting search cost by over 98%. Real-time grounding is best treated as an optimizable interface boundary, not a fixed model feature.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Sudeep Das",
-      "published_at": "2026-06-17T11:30:39Z",
-      "fetched_at": "2026-06-18T01:28:25.725329Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bc437a8be61507a6",
-      "url": "https://arxiv.org/abs/2606.18946v1",
-      "title": "SenFlow: Inter-Sentence Flow Modeling for AI-Generated Text Detection in Hybrid Documents",
-      "summary": "Sentence-level AI-generated text detection (S-AGTD) for hybrid documents, where humans and LLMs co-author one text, faces two gaps: existing methods classify each sentence in isolation, discarding inter-sentence dependencies, and existing benchmarks omit the newest generation of generators. We construct MOSAIC, a benchmark of 16,000 hybrid documents over PubMed and XSum, generated by DeepSeek-V3.2 and Kimi K2 under stringent quality controls including a perplexity-consistency filter absent from prior benchmarks. We recast S-AGTD as structured prediction over the document sentence sequence and instantiate it as SenFlow, integrating graph-based inter-sentence propagation with linear-chain CRF decoding in a single document-level pass over a sentence graph. SenFlow reaches state-of-the-art performance on MOSAIC, with a +4.15 pp average Macro-F1 margin on cross-domain transfer, the hardest of three protocols of increasing difficulty. We further find that even after the perplexity filter equalizes overt cues, AI insertions retain a generator-dependent sentence-length gap that sentence-level detectors still exploit. Code and data: https://github.com/luojingkun22/SenFlow",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Guanxiong Pei",
-      "published_at": "2026-06-17T11:29:27Z",
-      "fetched_at": "2026-06-18T01:28:25.725334Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3096003ab5b9bf73",
-      "url": "https://arxiv.org/abs/2606.18941v1",
-      "title": "Graph-ESBMC-PLC: Formal Verification of Graphical PLCopen XML Ladder Diagram Programs Using SMT-Based Model Checking",
-      "summary": "PLCopen XML defines two encoding formats for IEC 61131-3 Ladder Diagram programs: a textual encoding using <rung> elements, and a graphical encoding that represents rung logic as a directed graph of localId/refLocalId connections. ESBMC-PLC supported the textual format but parsed graphical exports from CONTROLLINO, Beremiz, and OpenPLC Editor into an empty GOTO intermediate representation, causing vacuous verification success. This paper presents Graph-ESBMC-PLC, which closes this gap with a DFS-based graphical LD resolver. The resolver traverses the connection graph from leftPowerRail to each coil, extracts rung paths as Boolean contact conjunctions, and applies a three-tier I/O inference scheme. Ordering coils by rightPowerRail connectionPointIn sequence ensures SET coils process before RESET coils, matching IEC scan-cycle semantics. The graphical-to-IR conversion leaves the ESBMC backend unchanged. Validation on 3 graphical LD programs from CONTROLLINO/OpenPLC Editor shows all produce full GOTO IR with nondeterministic inputs and rung logic, versus the empty IR previously. All 3 verify SAFE at k=2 under 70ms. The 11 textual LD benchmarks are fully preserved, with no regression. Two Beremiz examples with no LD content or unsupported timer semantics are reported as discovered limitations. Artifact at Zenodo (DantasCordeiro2026graphical, doi:10.5281/zenodo.20699856).",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Waldir Junior",
-      "published_at": "2026-06-17T11:22:34Z",
-      "fetched_at": "2026-06-18T01:28:25.725341Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -52049,26 +51778,6 @@
       "author": "",
       "published_at": "2026-06-18T00:00:00Z",
       "fetched_at": "2026-05-28T15:30:51.090926Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d9fca38e648c515d",
-      "url": "https://x.com/dani_avila7/status/2067225075967779100",
-      "title": "Get good at managing context first, then get good at building the agent harness\n\nOnly then start wri...",
-      "summary": "Get good at managing context first, then get good at building the agent harness\n\nOnly then start writing loops, don't skip stages https://t.co/DYvllbDXxF",
-      "content": "Get good at managing context first, then get good at building the agent harness\n\nOnly then start writing loops, don't skip stages https://t.co/DYvllbDXxF",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-17T12:37:19Z",
-      "fetched_at": "2026-06-17T14:36:54.544850Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -53794,6 +53503,26 @@
       "author": "karpathy",
       "published_at": "2026-06-23T22:26:31Z",
       "fetched_at": "2026-06-24T08:49:13.747151Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d9fca38e648c515d",
+      "url": "https://x.com/dani_avila7/status/2067225075967779100",
+      "title": "Get good at managing context first, then get good at building the agent harness\n\nOnly then start wri...",
+      "summary": "Get good at managing context first, then get good at building the agent harness\n\nOnly then start writing loops, don't skip stages https://t.co/DYvllbDXxF",
+      "content": "Get good at managing context first, then get good at building the agent harness\n\nOnly then start writing loops, don't skip stages https://t.co/DYvllbDXxF",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-17T12:37:19Z",
+      "fetched_at": "2026-06-17T14:36:54.544850Z",
       "score": null,
       "score_reason": "",
       "tier": "",
