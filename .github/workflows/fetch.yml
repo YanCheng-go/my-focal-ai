@@ -12,7 +12,7 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       # Run RSSHub as a regular container so failure doesn't abort the job.
       # Non-RSS sources (trending scrapers, events) still run without it.
@@ -34,7 +34,7 @@ jobs:
       # GitHub caches are immutable, so we use a date-based key and fall back
       # to the most recent cache via restore-keys. This keeps ~7 days of data.
       - name: Restore DB cache
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: data/ainews.db
           key: ainews-db-${{ github.run_id }}
