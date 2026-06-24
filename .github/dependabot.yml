@@ -7,6 +7,10 @@ updates:
     labels:
       - "dependencies"
     open-pull-requests-limit: 5
+    groups:
+      python:
+        patterns:
+          - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -15,3 +19,7 @@ updates:
     labels:
       - "dependencies"
     open-pull-requests-limit: 3
+    groups:
+      actions:
+        patterns:
+          - "*"
