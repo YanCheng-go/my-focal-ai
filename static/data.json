@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-25T07:30:15.823728+00:00",
+  "exported_at": "2026-06-25T08:20:21.616677+00:00",
   "period_hours": 168,
-  "total": 2404,
+  "total": 2422,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14816,27 +14816,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a31389197cd1c478",
       "url": "https://www.aitmpl.com/commands/design-database-schema#all",
       "title": "#10 design-database-schema",
@@ -26065,27 +26044,6 @@
       "author": "",
       "published_at": "2026-06-18T11:00:00Z",
       "fetched_at": "2026-06-18T19:06:41.179242Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "edcdc2401b35c370",
-      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-      "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-18T08:00:00Z",
-      "fetched_at": "2026-06-18T15:27:20.395471Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50334,27 +50292,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ded5af347ebab17b",
-      "url": "https://arxiv.org/abs/2606.19914v1",
-      "title": "Co-policy: Responsive Human-Robot Co-Creation for Musical Performances",
-      "summary": "Art has long stood as a pivotal expression of human creativity. Embodied artificial intelligence offers a route for generative models to participate in that creativity through physical action rather than disembodied digital content. In robotic music co-creation, it is challenging to connect semantic musical understanding with real-time and physically executable performance. We present Co-policy, a framework for human-robot musical co-creation that separates semantic intent grounding, constrained musical variation, and visuomotor execution. To ground musical semantics, Co-policy uses pre-inference semantic anchors and a fine-tuned Qwen-vl planner (F-Qwen) to transform speech, live musical seeds, and visual observations into structured co-creation plans. To support low-latency execution, Co-policy introduces a Gaussian-Mixture Visuomotor Policy (GMP), implemented as a conditional mixture-density policy that maps target notes and visual context to multimodal robot actions in a single forward pass. Unlike robotic playback systems that merely reproduce user-specified notes, Co-policy generates complementary musical responses under both musical and physical constraints. Real-robot chime experiments, ablations, and expert evaluation show improved intent alignment, execution accuracy, and response frequency over diffusion-policy and ablated baselines, supporting physically grounded action generation as a key requirement for embodied human-AI co-creation.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Miao Li",
-      "published_at": "2026-06-18T08:08:16Z",
-      "fetched_at": "2026-06-19T01:34:04.515462Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -51852,6 +51789,429 @@
       "author": "dani_avila7",
       "published_at": "2026-06-24T16:39:58Z",
       "fetched_at": "2026-06-24T20:46:31.156611Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f19b6ed41f0b6e6c",
+      "url": "https://x.com/dani_avila7/status/2070012472644301159",
+      "title": "Don\u2019t forget to switch the advisor model from Opus to Fable 5\u2026 when it\u2019s back \ud83d\ude09\n\n\"advisorModel\": \"fa...",
+      "summary": "Don\u2019t forget to switch the advisor model from Opus to Fable 5\u2026 when it\u2019s back \ud83d\ude09\n\n\"advisorModel\": \"fable\"",
+      "content": "Don\u2019t forget to switch the advisor model from Opus to Fable 5\u2026 when it\u2019s back \ud83d\ude09\n\n\"advisorModel\": \"fable\"",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-25T05:13:27Z",
+      "fetched_at": "2026-06-25T08:20:12.066487Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0eff1dafdab5d287",
+      "url": "https://x.com/trq212/status/2069974525727650112",
+      "title": "RT @petergyang: Ok, I am interviewing the legend @trq212 on Friday. I'm planning to ask him to show ...",
+      "summary": "RT @petergyang: Ok, I am interviewing the legend @trq212 on Friday. I'm planning to ask him to show me:\n\n\u2192 His Claude Code setup and how he\u2026",
+      "content": "RT @petergyang: Ok, I am interviewing the legend @trq212 on Friday. I'm planning to ask him to show me:\n\n\u2192 His Claude Code setup and how he\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-25T02:42:39Z",
+      "fetched_at": "2026-06-25T08:20:07.711157Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2aff19ca1b9b69d3",
+      "url": "https://x.com/steipete/status/2067500013278704013",
+      "title": "RT @gabrielchua: I love Codex automations. A useful trick is to give them two loops: an inner loop t...",
+      "summary": "RT @gabrielchua: I love Codex automations. A useful trick is to give them two loops: an inner loop that does the work, and an outer loop th\u2026",
+      "content": "RT @gabrielchua: I love Codex automations. A useful trick is to give them two loops: an inner loop that does the work, and an outer loop th\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:49:50Z",
+      "fetched_at": "2026-06-18T08:35:56.971434Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "739410155aef3b47",
+      "url": "https://x.com/steipete/status/2067498828735897833",
+      "title": "RT @v_pradeilles: The infamous \"The compiler is unable to type-check this expression in reasonable t...",
+      "summary": "RT @v_pradeilles: The infamous \"The compiler is unable to type-check this expression in reasonable time\" error should be a thing of the pas\u2026",
+      "content": "RT @v_pradeilles: The infamous \"The compiler is unable to type-check this expression in reasonable time\" error should be a thing of the pas\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:45:07Z",
+      "fetched_at": "2026-06-18T08:35:56.971540Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "73feed056a3fedf1",
+      "url": "https://x.com/steipete/status/2067494350192300087",
+      "title": "RT @Dimillian: Amazing things are happening with Codex Mobile, build &amp; run apps directly from yo...",
+      "summary": "RT @Dimillian: Amazing things are happening with Codex Mobile, build &amp; run apps directly from your phone!",
+      "content": "RT @Dimillian: Amazing things are happening with Codex Mobile, build &amp; run apps directly from your phone!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:27:19Z",
+      "fetched_at": "2026-06-18T08:35:56.971592Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2854053470f688ec",
+      "url": "https://x.com/steipete/status/2067494323239715077",
+      "title": "RT @secondfret: Meta HQ right now. https://t.co/QqHgP6FW9f",
+      "summary": "RT @secondfret: Meta HQ right now. https://t.co/QqHgP6FW9f",
+      "content": "RT @secondfret: Meta HQ right now. https://t.co/QqHgP6FW9f",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:27:13Z",
+      "fetched_at": "2026-06-18T08:35:56.971620Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e581f2fc48a6675f",
+      "url": "https://x.com/steipete/status/2067493510874312704",
+      "title": "RT @mitchellh: Creator of Sqlite on pull requests: \"You say, oh, it's free. No. It's not free. What ...",
+      "summary": "RT @mitchellh: Creator of Sqlite on pull requests: \"You say, oh, it's free. No. It's not free. What you're doing is asking me ... to mainta\u2026",
+      "content": "RT @mitchellh: Creator of Sqlite on pull requests: \"You say, oh, it's free. No. It's not free. What you're doing is asking me ... to mainta\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:23:59Z",
+      "fetched_at": "2026-06-18T08:35:56.971648Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2818c379b31b3b75",
+      "url": "https://x.com/steipete/status/2067492061750723008",
+      "title": "RT @peakcooper: GLM 5.2 is absolutely convinced that it is actually Claude, from Anthropic. When I t...",
+      "summary": "RT @peakcooper: GLM 5.2 is absolutely convinced that it is actually Claude, from Anthropic. When I tell it that it's GLM 5.2, it refuses to\u2026",
+      "content": "RT @peakcooper: GLM 5.2 is absolutely convinced that it is actually Claude, from Anthropic. When I tell it that it's GLM 5.2, it refuses to\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:18:14Z",
+      "fetched_at": "2026-06-18T08:35:56.971673Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eaf4fd8078ca7110",
+      "url": "https://x.com/steipete/status/2067491652818575717",
+      "title": "RT @charliermarsh: At OpenAI, we're continuing to bet on Rust as the future of systems programming.\n...",
+      "summary": "RT @charliermarsh: At OpenAI, we're continuing to bet on Rust as the future of systems programming.\n\nI'm proud to announce that we're makin\u2026",
+      "content": "RT @charliermarsh: At OpenAI, we're continuing to bet on Rust as the future of systems programming.\n\nI'm proud to announce that we're makin\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:16:36Z",
+      "fetched_at": "2026-06-18T08:35:56.971697Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5c43c2259badf423",
+      "url": "https://x.com/steipete/status/2067490484012908958",
+      "title": "RT @moraes_c_: PR limits are live \ud83d\ude80\n\nRepo admins can now cap how many open PRs a user without write ...",
+      "summary": "RT @moraes_c_: PR limits are live \ud83d\ude80\n\nRepo admins can now cap how many open PRs a user without write access can have at once, with a bypass\u2026",
+      "content": "RT @moraes_c_: PR limits are live \ud83d\ude80\n\nRepo admins can now cap how many open PRs a user without write access can have at once, with a bypass\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:11:58Z",
+      "fetched_at": "2026-06-18T08:35:56.971722Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "79ff32dd1a5adcae",
+      "url": "https://x.com/steipete/status/2067489806548963339",
+      "title": "RT @scaling01: new shape-rotator benchmark\n\nFable and GPT-5.5 of course far ahead of the field\n\nbut ...",
+      "summary": "RT @scaling01: new shape-rotator benchmark\n\nFable and GPT-5.5 of course far ahead of the field\n\nbut now look at GLM-5.2. it's ahead of Gemi\u2026",
+      "content": "RT @scaling01: new shape-rotator benchmark\n\nFable and GPT-5.5 of course far ahead of the field\n\nbut now look at GLM-5.2. it's ahead of Gemi\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:09:16Z",
+      "fetched_at": "2026-06-18T08:35:56.971752Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "87cc910b5cf776c5",
+      "url": "https://x.com/steipete/status/2067488070862041365",
+      "title": "RT @mom_agency_: Gigalong $SNAP. Absolute game changer for boring meetings! https://t.co/7xGIKgNaAt",
+      "summary": "RT @mom_agency_: Gigalong $SNAP. Absolute game changer for boring meetings! https://t.co/7xGIKgNaAt",
+      "content": "RT @mom_agency_: Gigalong $SNAP. Absolute game changer for boring meetings! https://t.co/7xGIKgNaAt",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T06:02:22Z",
+      "fetched_at": "2026-06-18T08:35:56.971871Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "49caedfc562a0b33",
+      "url": "https://x.com/steipete/status/2067485926926741875",
+      "title": "RT @thsottiaux: Reminder that you can use the Codex App, CLI and SDK with any open source model, not...",
+      "summary": "RT @thsottiaux: Reminder that you can use the Codex App, CLI and SDK with any open source model, not just with OpenAI models.\n\nhttps://t.co\u2026",
+      "content": "RT @thsottiaux: Reminder that you can use the Codex App, CLI and SDK with any open source model, not just with OpenAI models.\n\nhttps://t.co\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T05:53:51Z",
+      "fetched_at": "2026-06-18T08:35:56.971921Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5904d18088c2cc96",
+      "url": "https://x.com/bcherny/status/2067476291096613178",
+      "title": "RT @claudeai: New in Claude Design: it stays on brand with your design system across projects, lets ...",
+      "summary": "RT @claudeai: New in Claude Design: it stays on brand with your design system across projects, lets you edit directly on the canvas, syncs\u2026",
+      "content": "RT @claudeai: New in Claude Design: it stays on brand with your design system across projects, lets you edit directly on the canvas, syncs\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-18T05:15:34Z",
+      "fetched_at": "2026-06-18T08:35:45.757853Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8d4e86f94dbd3086",
+      "url": "https://x.com/steipete/status/2067467389881536853",
+      "title": "RT @LuchoMzmz: @steipete @alisharjeel I was walking the same path:\n\n\u2022 \u201cI need remote CLI for the gym...",
+      "summary": "RT @LuchoMzmz: @steipete @alisharjeel I was walking the same path:\n\n\u2022 \u201cI need remote CLI for the gym\u201d\n\u2022 \u201cActually I need an agent for this\u2026",
+      "content": "RT @LuchoMzmz: @steipete @alisharjeel I was walking the same path:\n\n\u2022 \u201cI need remote CLI for the gym\u201d\n\u2022 \u201cActually I need an agent for this\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T04:40:12Z",
+      "fetched_at": "2026-06-18T08:35:56.971956Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "13c7decdf18f021e",
+      "url": "https://x.com/dani_avila7/status/2067438863660863746",
+      "title": "Connecting a SaaS and pulling custom reports from it keeps getting easier\n\nThe next step is agents t...",
+      "summary": "Connecting a SaaS and pulling custom reports from it keeps getting easier\n\nThe next step is agents that skip the reporting layer entirely and generate the whole internal system from your data\n\nAgentBase is an early signal of what comes next",
+      "content": "Connecting a SaaS and pulling custom reports from it keeps getting easier\n\nThe next step is agents that skip the reporting layer entirely and generate the whole internal system from your data\n\nAgentBase is an early signal of what comes next",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-18T02:46:50Z",
+      "fetched_at": "2026-06-18T08:35:48.497980Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0335102d75467f66",
+      "url": "https://x.com/steipete/status/2067434764143910968",
+      "title": "RT @madch0ps: @midjourney babe wake up, new Fullbody Ultrasonic Computational Tomography device just...",
+      "summary": "RT @madch0ps: @midjourney babe wake up, new Fullbody Ultrasonic Computational Tomography device just dropped",
+      "content": "RT @madch0ps: @midjourney babe wake up, new Fullbody Ultrasonic Computational Tomography device just dropped",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T02:30:33Z",
+      "fetched_at": "2026-06-18T08:35:56.971983Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "07f73c6aebc716e0",
+      "url": "https://x.com/steipete/status/2067431311317352809",
+      "title": "sci-fi vibes intensify",
+      "summary": "sci-fi vibes intensify",
+      "content": "sci-fi vibes intensify",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-18T02:16:50Z",
+      "fetched_at": "2026-06-18T08:35:56.972110Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "806f019f867f37c2",
+      "url": "https://x.com/sama/status/2067427678529974740",
+      "title": "We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, ...",
+      "summary": "We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, to divine benevolence.",
+      "content": "We offer no explanation as to why Noams are so good at AI; we attribute their success, as all else, to divine benevolence.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-18T02:02:24Z",
+      "fetched_at": "2026-06-18T08:35:50.959814Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "80b0556d1efd7166",
+      "url": "https://x.com/sama/status/2067427421083652131",
+      "title": "noam is one of the people I have most wanted to work with since the very beginning of openai.\n\nonly ...",
+      "summary": "noam is one of the people I have most wanted to work with since the very beginning of openai.\n\nonly took 10 years.\n\ni think it will be worth the wait!",
+      "content": "noam is one of the people I have most wanted to work with since the very beginning of openai.\n\nonly took 10 years.\n\ni think it will be worth the wait!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-18T02:01:22Z",
+      "fetched_at": "2026-06-18T08:35:50.959905Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "64a9fd4a02e5fb89",
+      "url": "https://x.com/GeminiApp/status/2067323529318809751",
+      "title": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Produc...",
+      "summary": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Product team members @paikhd and James Z. demo how Gemini Live lets you keep your chats going, connect to your favorite tools mid-conversation, and show Gemini what you\u2019re seeing to",
+      "content": "Gemini Live has entered the chat.\n\nAt our next Discord community event, tune in to see Gemini Product team members @paikhd and James Z. demo how Gemini Live lets you keep your chats going, connect to your favorite tools mid-conversation, and show Gemini what you\u2019re seeing to",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-17T19:08:33Z",
+      "fetched_at": "2026-06-18T08:35:52.191389Z",
       "score": null,
       "score_reason": "",
       "tier": "",
