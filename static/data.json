@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-25T18:59:45.424220+00:00",
+  "exported_at": "2026-06-25T20:22:15.524973+00:00",
   "period_hours": 168,
   "total": 2335,
   "all_tags": [
@@ -13704,47 +13704,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "09920190fd9d2cfb",
-      "url": "https://www.youtube.com/watch?v=RzLV8sfFdMM",
-      "title": "1000+ Hours in Claude Code in 60 Mins",
-      "summary": "Code NATEHERKB2 for 15% for Biz+ for 1 month or year (exp Jul 18): https://clickup.com/ \nMy FREE AI OS Course: https://www.skool.com/ai-automation-society/about?el=cole-medin-podcast&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\nFull courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about?el=cole-medin-podcast&amp;hcategory=youtube-videos&amp;utm_campaign=ais-plus\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nBetween Cole and myself, we\u2019ve logged thousands of hours working in tools like Claude Code. So I sat down with him to break down how to actually direct your coding agents instead of just prompting and praying. \n\nWe get into the planning and verification system that separates real results from vibe coding, why every model has a \"dumb zone\" where it starts missing obvious things, and how to chain multiple agent sessions together so one big task doesn't fall apart halfway through. \n\nCole also shares how he thinks about security, treating every bug as a permanent upgrade, and the Claude Code features he leans on most. Whether or not you write code, the mindset applies directly to using AI for real work.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n00:00 Intro\n5:46 Sponsorship\n7:41 Stop Vibe Coding, Start Directing\n13:17 Make the Agent Prove Its Work\n19:46 Why You Plan More Than You Build\n27:01 The Dumb Zone\n33:38 Harness Engineering and the Ralph Loop\n44:23 The Security Problem Nobody Plans For\n51:22 Every Bug Is a Permanent Upgrade\n59:54 Top 3 Claude Code Features\n1:07:56 Outro",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-06-18T17:26:17Z",
-      "fetched_at": "2026-06-18T19:06:36.933469Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8174b4cfd3fc0a86",
       "url": "https://www.aitmpl.com/templates/rails#templates",
       "title": "#10 rails",
@@ -26128,27 +26087,6 @@
       "author": "",
       "published_at": "2026-06-19T00:00:00Z",
       "fetched_at": "2026-06-18T17:26:49.926306Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "efa6761cda1472ce",
-      "url": "https://blogs.nvidia.com/blog/ferc-large-load-interconnection/",
-      "title": "How FERC\u2019s Large-Load Interconnection Actions Help Address Grid Stress, Improve Affordability",
-      "summary": "In a consequential grid infrastructure decision, the Federal Energy Regulatory Commission (FERC) today issued a major milestone on large-load interconnection impacting how those building AI factories, semiconductor fabrication support systems and advanced manufacturing facilities can connect to the grid.\u00a0 In the era of AI, which NVIDIA founder and CEO Jensen Huang has described as a [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">In a consequential grid infrastructure decision, the Federal Energy Regulatory Commission (FERC) today issued a major milestone on large-load interconnection impacting how those building AI factories, semiconductor fabrication support systems and advanced manufacturing facilities can connect to the grid.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">In the era of AI, which NVIDIA founder and CEO Jensen Huang has described as a </span><a href=\"https://blogs.nvidia.com/blog/ai-5-layer-cake/\"><span style=\"font-weight: 400;\">five-layer cake</span></a><span style=\"font-weight: 400;\">, energy is the critical foundation of technological innovation.\u00a0</span></p>\n<p><a href=\"https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration\" target=\"_blank\"><span style=\"font-weight: 400;\">FERC\u2019s actions</span></a><span style=\"font-weight: 400;\"> do more than modernize the grid interconnection queue \u2014 the approval process power developers must complete to safely connect new energy generation to the electrical grid. Following U.S. Secretary of Energy Chris Wright\u2019s order directing FERC to address large-load interconnection, the actions establish national policy for how America can simultaneously lower energy costs, grow its industrial base, scale AI and strengthen the electrical grid.</span></p>\n<p><span style=\"font-weight: 400;\">For policymakers, utilities and technology partners, the message is clear: This is a pro-growth, pro-affordability and pro-reliability policy.</span></p>\n<h2><b>Faster Connections, Stronger Grid</b></h2>\n<p><span style=\"font-weight: 400;\">At its core, the new framework cuts through burdensome bureaucratic red tape and aligns industry incentives.</span></p>\n<p><span style=\"font-weight: 400;\">Large customers are no longer passive entrants into an overburdened interconnection queue. They\u2019re active participants in building the infrastructure they require. That means:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>Funding their own network upgrades</b><span style=\"font-weight: 400;\">, reducing cost pressure on existing ratepayers.</span></li>\n<li style=\"font-weight: 400;\"><b>Bringing new energy generation online</b><span style=\"font-weight: 400;\">, increasing supply alongside demand.</span></li>\n<li style=\"font-weight: 400;\"><b>Offering flexible load</b><span style=\"font-weight: 400;\">, allowing grid operators to manage peaks more efficiently.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Customers that can demonstrate flexibility \u2014 shifting or curtailing load in response to grid conditions \u2014 can move through the process on accelerated timelines, with study periods potentially as short as 60 days, per Secretary Wright\u2019s </span><a href=\"https://www.energy.gov/articles/secretary-wright-acts-unleash-american-industry-and-innovation-newly-proposed-rules\" target=\"_blank\"><span style=\"font-weight: 400;\">directive</span></a><span style=\"font-weight: 400;\">.</span></p>\n<p><span style=\"font-weight: 400;\">This is not just faster interconnection. It\u2019s smarter interconnection.</span></p>\n<h2><b>The Math Adds Up</b></h2>\n<p><span style=\"font-weight: 400;\">Electric grids are capital-intensive systems with high fixed costs. When more demand is added efficiently, those costs are spread across a broader base \u2014 lowering prices per unit.</span></p>\n<p><span style=\"font-weight: 400;\">The data backs this up.</span></p>\n<p><span style=\"font-weight: 400;\">Lawrence Berkeley National Laboratory found that </span><a href=\"https://www.sciencedirect.com/science/article/pii/S1040619025000612\" target=\"_blank\"><span style=\"font-weight: 400;\">every 10% increase in state electricity consumption correlates with an approximately 6-cents-per-kilowatt-hour reduction</span></a><span style=\"font-weight: 400;\"> in retail electricity prices. In other words, grid growth \u2014 when done right \u2014 lowers costs.</span></p>\n<p><span style=\"font-weight: 400;\">This dynamic is already playing out at the state level:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><a href=\"https://ndliving.com/north-dakotas-delicate-electricity-price-balance-faces-challenges\" target=\"_blank\"><span style=\"font-weight: 400;\">North Dakota</span></a><span style=\"font-weight: 400;\">, after adding 23 data centers, saw the nation\u2019s largest decrease in electricity prices.</span></li>\n<li style=\"font-weight: 400;\"><a href=\"https://www.entergy.com/blog/mississippis-proving-data-centers-dont-always-mean-higher-power-bills\" target=\"_blank\"><span style=\"font-weight: 400;\">Mississippi</span></a><span style=\"font-weight: 400;\">, </span><a href=\"https://www.datacenterdynamics.com/en/news/amazon-plans-to-spend-12bn-on-louisiana-data-center-campuses-developed-by-stack-infrastructure/\" target=\"_blank\"><span style=\"font-weight: 400;\">Louisiana</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.aboutamazon.com/news/sustainability/data-centers-electricity-bills-grid-power-amazon\" target=\"_blank\"><span style=\"font-weight: 400;\">Virginia</span></a><span style=\"font-weight: 400;\"> moved early to attract large loads and are now seeing tangible ratepayer, grid modernization and investment benefits.</span></li>\n<li style=\"font-weight: 400;\"><a href=\"https://www.pge.com/en/newsroom/currents/future-of-energy/the-grid-is-growing--and-that-s-good-news-for-your-bill--.html\" target=\"_blank\"><span style=\"font-weight: 400;\">PG&amp;E has forecast</span></a><span style=\"font-weight: 400;\"> that, under the right conditions, each new 1 gigawatt of data center load could reduce electric rates by 1-2% by spreading fixed grid costs over more usage.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Inversely, states that fail to attract new load risk concentrating system costs on a shrinking customer base \u2014 putting upward pressure on rates for households and small businesses.</span></p>\n<p><span style=\"font-weight: 400;\">FERC\u2019s actions create a national pathway to avoid that outcome. They build on the successes of communities across North Dakota, Mississippi, Louisiana and Virginia to create a national on-ramp,</span> <span style=\"font-weight: 400;\">enabling every region to compete for and benefit from the next wave of industrial and technological investment.</span></p>\n<h2><b>Infrastructure That Powers the Modern Economy</b></h2>\n<p><span style=\"font-weight: 400;\">This is not abstract infrastructure. It underpins the technologies shaping the next generation of American competitiveness.</span></p>\n<p><span style=\"font-weight: 400;\">The facilities enabled by this framework will power:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>AI-driven drug discovery</b><span style=\"font-weight: 400;\"> that accelerates breakthroughs in medicine.</span></li>\n<li style=\"font-weight: 400;\"><b>Semiconductor design and advanced manufacturing</b><span style=\"font-weight: 400;\"> that secure domestic supply chains.</span></li>\n<li style=\"font-weight: 400;\"><b>Weather modeling and climate analytics</b><span style=\"font-weight: 400;\"> that improve resilience.</span></li>\n<li style=\"font-weight: 400;\"><b>Next-generation energy systems</b><span style=\"font-weight: 400;\"> that are more adaptive and reliable.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">The benefits extend beyond any single facility or industry. They can reach every American who visits a doctor, buys a product or pays an electricity bill.</span></p>\n<h2><b>The Moment to Engage in a Decade-Defining Opportunity</b></h2>\n<p><span style=\"font-weight: 400;\">The framework is in place \u2014 but how it\u2019s implemented, refined and scaled will depend on the stakeholders who engage now. Across government and industry, those who engage today will define what this system looks like for the next decade \u2014 how fast it grows, how resilient it becomes and how broadly its benefits are shared.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA is not waiting.</span></p>\n<p><span style=\"font-weight: 400;\">In parallel with FERC\u2019s action, </span><a href=\"https://nvidianews.nvidia.com/news/nvidia-and-emerald-ai-join-leading-energy-companies-to-pioneer-flexible-ai-factories-as-grid-assets\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA and Emerald AI</span></a><span style=\"font-weight: 400;\"> are already working with partners across the ecosystem to build a new class of AI factories \u2014 designed from the ground up as flexible grid assets.</span></p>\n<p><span style=\"font-weight: 400;\">These facilities will:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Bring their own generation to the grid</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Respond to grid conditions in real time</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Act as stabilizing forces for surrounding communities</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Commercial deployment begins later this year.</span></p>\n<p><span style=\"font-weight: 400;\">This is what the future of large-load interconnection looks like: not a burden on the grid, but a backbone of reliability and efficiency.</span></p>\n<p><span style=\"font-weight: 400;\">FERC has taken an important step forward, and NVIDIA welcomes this leadership.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Vladimir Troy",
-      "published_at": "2026-06-18T20:00:27Z",
-      "fetched_at": "2026-06-18T21:08:14.591458Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -48902,47 +48840,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1cef7b0d8796fc5e",
-      "url": "https://x.com/dani_avila7/status/2067687149269398003",
-      "title": "The question worth settling, do we build a separate ecosystem for agents to live in, or do agents ea...",
-      "summary": "The question worth settling, do we build a separate ecosystem for agents to live in, or do agents earn their place inside the one humans already use\n\nViktor went for the second, it moved into the human stack instead of asking anyone to migrate, and it crossed $20M in annualized",
-      "content": "The question worth settling, do we build a separate ecosystem for agents to live in, or do agents earn their place inside the one humans already use\n\nViktor went for the second, it moved into the human stack instead of asking anyone to migrate, and it crossed $20M in annualized",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-18T19:13:26Z",
-      "fetched_at": "2026-06-18T19:19:36.817679Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1d253ace220e7fbd",
-      "url": "https://x.com/bcherny/status/2067700226669060207",
-      "title": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system ...",
-      "summary": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what",
-      "content": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-06-18T20:05:24Z",
-      "fetched_at": "2026-06-18T21:23:14.568603Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d4457bc0f044d835",
       "url": "https://x.com/steipete/status/2067876199695818928",
       "title": "RT @theo: If you're curious how I managed to do over $20,000 in inference on the last 48 hours, here...",
@@ -50402,6 +50299,111 @@
       "author": "steipete",
       "published_at": "2026-06-25T16:27:07Z",
       "fetched_at": "2026-06-25T18:21:56.803686Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0c5d882d77938c70",
+      "url": "https://x.com/trq212/status/2070238932621811713",
+      "title": "this video was also edited by Claude :)",
+      "summary": "this video was also edited by Claude :)",
+      "content": "this video was also edited by Claude :)",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-25T20:13:19Z",
+      "fetched_at": "2026-06-25T20:22:02.207497Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "862545ba5133442e",
+      "url": "https://x.com/trq212/status/2070238581147455842",
+      "title": "I'll be talking more about Claude Tag with @petergyang and at AIE with @_catwu. \n\nLet me know if the...",
+      "summary": "I'll be talking more about Claude Tag with @petergyang and at AIE with @_catwu. \n\nLet me know if there's anything you'd like us to dive into more!",
+      "content": "I'll be talking more about Claude Tag with @petergyang and at AIE with @_catwu. \n\nLet me know if there's anything you'd like us to dive into more!",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-25T20:11:55Z",
+      "fetched_at": "2026-06-25T20:22:02.207592Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5e58ebbed6900ceb",
+      "url": "https://x.com/GeminiApp/status/2070220098673967380",
+      "title": "RT @GoogleForEdu: Want to help your students prep for the ACT or GRE? \ud83d\ude4c\n\nWe\u2019re bringing full-length ...",
+      "summary": "RT @GoogleForEdu: Want to help your students prep for the ACT or GRE? \ud83d\ude4c\n\nWe\u2019re bringing full-length practice ACT and GRE tests to the @Gemi\u2026",
+      "content": "RT @GoogleForEdu: Want to help your students prep for the ACT or GRE? \ud83d\ude4c\n\nWe\u2019re bringing full-length practice ACT and GRE tests to the @Gemi\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-25T18:58:29Z",
+      "fetched_at": "2026-06-25T20:22:10.076113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a40afc889777260c",
+      "url": "https://x.com/simonw/status/2070212662903099536",
+      "title": "Also not a great advertisement for a sandboxing product: @daytonaio effectively saying they don't tr...",
+      "summary": "Also not a great advertisement for a sandboxing product: @daytonaio effectively saying they don't trust the security of their product enough to expose the source code",
+      "content": "Also not a great advertisement for a sandboxing product: @daytonaio effectively saying they don't trust the security of their product enough to expose the source code",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-25T18:28:56Z",
+      "fetched_at": "2026-06-25T20:22:05.585303Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1d253ace220e7fbd",
+      "url": "https://x.com/bcherny/status/2067700226669060207",
+      "title": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system ...",
+      "summary": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what",
+      "content": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-18T20:05:24Z",
+      "fetched_at": "2026-06-18T21:23:14.568603Z",
       "score": null,
       "score_reason": "",
       "tier": "",
