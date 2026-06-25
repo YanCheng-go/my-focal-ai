@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-25T09:26:51.884656+00:00",
+  "exported_at": "2026-06-25T10:20:40.256490+00:00",
   "period_hours": 168,
-  "total": 2403,
+  "total": 2402,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -15440,27 +15440,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-18T11:00:32Z",
       "fetched_at": "2026-06-18T11:37:55.982602Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
