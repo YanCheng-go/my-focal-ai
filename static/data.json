@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-26T11:17:37.200614+00:00",
+  "exported_at": "2026-06-26T11:28:13.143797+00:00",
   "period_hours": 168,
-  "total": 2359,
+  "total": 2358,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14078,46 +14078,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-06-19T15:02:01Z",
       "fetched_at": "2026-06-19T15:26:22.940433Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0f4fda80ef9c2fc0",
-      "url": "https://www.youtube.com/watch?v=SvBheXuKY8s",
-      "title": "Microsoft\u2019s new AI models & bots dominate the internet",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content \u2192 https://ibm.biz/~P2MwO1Liq\n\nAre AI agents taking over the internet? This week on Mixture of Experts, Tim Hwang is joined by Ambhi Ganesan, Rynne Whitnah and Sandi Besen. First, a Cloudflare study reveals that agentic AI bots now generate 57.4% of web requests globally, with humans accounting for just 42.6%. Our experts debate whether this signals a fundamental shift in how we interact with the web\u2014or if bots have dominated internet traffic all along. Next, Microsoft makes a major play in the AI model race, releasing MAI-Thinking-1, a trillion-parameter mixture of experts model, and MAI-Image-1 for image generation. Finally, AI-generated films debut at the Tribeca Film Festival. Our experts discuss the evolution of filmmaking, the role of AI as a creative tool, and whether we\u2019ll see AI films win critical awards in the future. All that and more on this week\u2019s Mixture of Experts.\n\n00:00 \u2013 Introduction\n00:55 \u2013 AI bots generate 57% of web traffic\n10:49 \u2013 Microsoft releases MAI-Thinking-1 and MAI-Image-1\n26:10 - AI at Tribeca Film Festival\n\nThe opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~9dbpd1XUA\n#aimodel #microsoftai #aiagent",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-06-19T10:00:13Z",
-      "fetched_at": "2026-06-19T11:44:11.182673Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50880,6 +50840,26 @@
       "author": "dani_avila7",
       "published_at": "2026-06-26T01:14:06Z",
       "fetched_at": "2026-06-26T07:27:24.031182Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "334c68063072cbc2",
+      "url": "https://x.com/steipete/status/2067921964090667510",
+      "title": "RT @FardeemM: If you're on your way to building a billion dollar company that involves a web app, he...",
+      "summary": "RT @FardeemM: If you're on your way to building a billion dollar company that involves a web app, here are some of my notes on architecting\u2026",
+      "content": "RT @FardeemM: If you're on your way to building a billion dollar company that involves a web app, here are some of my notes on architecting\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-19T10:46:31Z",
+      "fetched_at": "2026-06-19T12:22:07.119679Z",
       "score": null,
       "score_reason": "",
       "tier": "",
