@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-26T15:12:02.709270+00:00",
+  "exported_at": "2026-06-26T15:28:54.215223+00:00",
   "period_hours": 168,
-  "total": 2335,
+  "total": 2331,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13079,47 +13079,6 @@
       "author": "The Pragmatic Engineer",
       "published_at": "2026-06-19T16:00:06Z",
       "fetched_at": "2026-06-19T17:04:17.787177Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6583b0ad73814f1e",
-      "url": "https://www.youtube.com/shorts/yF8FVVhUXmE",
-      "title": "1,000 Tokens Per Second_ Diffusion Text Models Go Blazing Fast",
-      "summary": "AI is getting dramatically faster. New diffusion-based text models can generate over 1,000 tokens per second, making real-time AI experiences feel almost instant. The speed race is entering a new phase. Check out the full episode now. #short",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-06-19T15:02:01Z",
-      "fetched_at": "2026-06-19T15:26:22.940433Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -48707,48 +48666,6 @@
       "author": "Won-Yong Shin",
       "published_at": "2026-06-19T15:39:24Z",
       "fetched_at": "2026-06-23T01:18:35.902615Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1d2d239979af3ee5",
-      "url": "https://arxiv.org/abs/2606.21528v1",
-      "title": "Accelerated and Stable Convergence with Anchored Optimistic Method",
-      "summary": "We study first-order methods for solving monotone variational inequalities arising in min-max optimization. Classical approaches such as the extragradient method rely on two gradient queries per iteration, which limits their analysis and applicability in the online and stochastic settings. We propose a family of Generalized Optimistic Methods with Anchoring (GOMA), which combine two-time-scale optimistic updates with an anchoring term inspired by Halpern iteration. In the deterministic setting, GOMA achieves the optimal accelerated last-iterate rate $O(1/k^2)$ on the squared gradient norm for monotone Lipschitz operators. In the stochastic setting with unbounded variance, a simplified single-call variant of GOMA achieves a last-iterate convergence rate of $O(1/\\sqrt{k})$ on the squared gradient norm. To the best of our knowledge, this is the first such guarantee for stochastic monotone Lipschitz variational inequalities in the unconstrained setting without variance reduction or growing batches.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Gauthier Gidel",
-      "published_at": "2026-06-19T15:26:10Z",
-      "fetched_at": "2026-06-23T01:18:35.902623Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "796f6059c56a3039",
-      "url": "https://arxiv.org/abs/2606.21525v1",
-      "title": "Backpropagating Through Simulation: Analytic Policy Gradients for Sample and Learning Efficient Differentiable Continuous Control",
-      "summary": "Model-free reinforcement learning algorithms such as Proximal Policy Optimization (PPO) treat the environment as a black box, estimating policy gradients from sampled rewards; this process demands millions of interactions and relies on high-variance advantage estimates. When environment dynamics are differentiable, the return is an end-to-end differentiable function of the policy parameters, enabling exact gradient computation via backpropagation through simulation. We term this approach Analytic Policy Gradients (APG) and evaluate it against PPO on four continuous control tasks of increasing dynamical complexity: a one-dimensional point-mass target-reaching task, a 2D point-mass navigation task with obstacle avoidance, a 2D rigid-body T-block pushing task, and a 7-DOF Franka FR3 end-effector reaching task. Both algorithms share identical model architectures, observation normalization, and optimizer settings. To decouple sample efficiency from compute efficiency, we design a multi-axis evaluation protocol that records performance against environment steps and gradient steps. We report a segmented backpropagation scheme with MC and critic-based bootstrap modes that mitigates gradient degradation on long-horizon tasks, and present ablations over segment length and bootstrap strategy.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Yueci Deng",
-      "published_at": "2026-06-19T15:22:51Z",
-      "fetched_at": "2026-06-23T01:18:35.902631Z",
       "score": null,
       "score_reason": "",
       "tier": "",
