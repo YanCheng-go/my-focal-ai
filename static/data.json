@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-26T05:43:28.346982+00:00",
+  "exported_at": "2026-06-26T07:27:34.529599+00:00",
   "period_hours": 168,
-  "total": 2358,
+  "total": 2369,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11622,27 +11622,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-19T10:00:13Z",
       "fetched_at": "2026-06-19T11:44:11.182673Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50867,6 +50846,247 @@
       "author": "simonw",
       "published_at": "2026-06-25T18:28:56Z",
       "fetched_at": "2026-06-25T20:22:05.585303Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "de9867799789bc9f",
+      "url": "https://x.com/steipete/status/2070360627386962008",
+      "title": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best ill...",
+      "summary": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best illustration I\u2019ve seen of teaching someone\u2026",
+      "content": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best illustration I\u2019ve seen of teaching someone\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T04:16:53Z",
+      "fetched_at": "2026-06-26T07:27:32.732044Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82c045ff90b49937",
+      "url": "https://x.com/steipete/status/2070359288917442916",
+      "title": "RT @jad2222222: https://t.co/QdgfUcwZLz",
+      "summary": "RT @jad2222222: https://t.co/QdgfUcwZLz",
+      "content": "RT @jad2222222: https://t.co/QdgfUcwZLz",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T04:11:34Z",
+      "fetched_at": "2026-06-26T07:27:32.732097Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1607d5209b95a22b",
+      "url": "https://x.com/steipete/status/2070357093874635154",
+      "title": "RT @lindsmccallum: the one where @benthompson discovers codex https://t.co/b1V4xkSrlQ",
+      "summary": "RT @lindsmccallum: the one where @benthompson discovers codex https://t.co/b1V4xkSrlQ",
+      "content": "RT @lindsmccallum: the one where @benthompson discovers codex https://t.co/b1V4xkSrlQ",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T04:02:51Z",
+      "fetched_at": "2026-06-26T07:27:32.732126Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a65a0bcb2cf167c2",
+      "url": "https://x.com/steipete/status/2070355929728794850",
+      "title": "RT @xikhar: \"Dario Amodei hit a safety filter, and the conversation was automatically switched to To...",
+      "summary": "RT @xikhar: \"Dario Amodei hit a safety filter, and the conversation was automatically switched to Tom Brown\" https://t.co/avPrapMeCn",
+      "content": "RT @xikhar: \"Dario Amodei hit a safety filter, and the conversation was automatically switched to Tom Brown\" https://t.co/avPrapMeCn",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T03:58:13Z",
+      "fetched_at": "2026-06-26T07:27:32.732150Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e74d2641bbaba225",
+      "url": "https://x.com/steipete/status/2070355589994336345",
+      "title": "truth",
+      "summary": "truth",
+      "content": "truth",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T03:56:52Z",
+      "fetched_at": "2026-06-26T07:27:32.732174Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0659690fd4302aa2",
+      "url": "https://x.com/steipete/status/2070355341448183810",
+      "title": "RT @hrudolph: OpenClaw or BrokenClaw?\n\nFirst off, I\u2019d like to introduce myself. My name is Hannes Ru...",
+      "summary": "RT @hrudolph: OpenClaw or BrokenClaw?\n\nFirst off, I\u2019d like to introduce myself. My name is Hannes Rudolph, and I\u2019m the new Community Manage\u2026",
+      "content": "RT @hrudolph: OpenClaw or BrokenClaw?\n\nFirst off, I\u2019d like to introduce myself. My name is Hannes Rudolph, and I\u2019m the new Community Manage\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T03:55:53Z",
+      "fetched_at": "2026-06-26T07:27:32.732196Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7c034f54a0101605",
+      "url": "https://x.com/dani_avila7/status/2070314627884270041",
+      "title": "Here I don't see a problem... I see an opportunity\n\nEvery provider emits signals you can extract, no...",
+      "summary": "Here I don't see a problem... I see an opportunity\n\nEvery provider emits signals you can extract, normalize, and own as a vendor-neutral context layer\n\nThe model becomes a tenant, your operational memory becomes the asset https://t.co/WUOEeXRsNt",
+      "content": "Here I don't see a problem... I see an opportunity\n\nEvery provider emits signals you can extract, normalize, and own as a vendor-neutral context layer\n\nThe model becomes a tenant, your operational memory becomes the asset https://t.co/WUOEeXRsNt",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-26T01:14:06Z",
+      "fetched_at": "2026-06-26T07:27:24.031182Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "337294dbde4a1078",
+      "url": "https://x.com/simonw/status/2067834436172071342",
+      "title": "Really looking forward to one of the super-fast custom silicon inference providers like @GroqInc or ...",
+      "summary": "Really looking forward to one of the super-fast custom silicon inference providers like @GroqInc or @cerebras getting GLM 5.2 running\n\nCerebras has GLM-4.7, Groq is still mostly Llama 3.x and gpt-oss",
+      "content": "Really looking forward to one of the super-fast custom silicon inference providers like @GroqInc or @cerebras getting GLM 5.2 running\n\nCerebras has GLM-4.7, Groq is still mostly Llama 3.x and gpt-oss",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-19T04:58:42Z",
+      "fetched_at": "2026-06-19T08:21:12.344041Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4a5f04b29350c43c",
+      "url": "https://x.com/steipete/status/2067821739556413651",
+      "title": "Everything\u2019s either a fast or slow API now.",
+      "summary": "Everything\u2019s either a fast or slow API now.",
+      "content": "Everything\u2019s either a fast or slow API now.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-19T04:08:15Z",
+      "fetched_at": "2026-06-19T08:21:22.828329Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b9cc167273eb92de",
+      "url": "https://x.com/dani_avila7/status/2067796375203434623",
+      "title": "Claude Code Templates is about to hit 200K downloads on npm\n\nhttps://t.co/CJdZh1ri7T\n\nSo it's finall...",
+      "summary": "Claude Code Templates is about to hit 200K downloads on npm\n\nhttps://t.co/CJdZh1ri7T\n\nSo it's finally time to rewrite it in... Rust\n\nwhy?\nbecause I want to, and I can :) https://t.co/B44NpyTS2s",
+      "content": "Claude Code Templates is about to hit 200K downloads on npm\n\nhttps://t.co/CJdZh1ri7T\n\nSo it's finally time to rewrite it in... Rust\n\nwhy?\nbecause I want to, and I can :) https://t.co/B44NpyTS2s",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-19T02:27:28Z",
+      "fetched_at": "2026-06-19T08:21:13.729295Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "800e4e19f3596cb6",
+      "url": "https://x.com/dani_avila7/status/2067787817770471584",
+      "title": "New Claude Code (v2.1.181) has a small but useful DX improvement\n\nYou can now set any session settin...",
+      "summary": "New Claude Code (v2.1.181) has a small but useful DX improvement\n\nYou can now set any session setting inline with /config key=value, without opening the menu:\n\n/config useAutoModeDuringPlan=false\n\nWorks in interactive, -p, and Remote Control\n\nWould like the same pattern for https://t.co/s4RAV1mxWF",
+      "content": "New Claude Code (v2.1.181) has a small but useful DX improvement\n\nYou can now set any session setting inline with /config key=value, without opening the menu:\n\n/config useAutoModeDuringPlan=false\n\nWorks in interactive, -p, and Remote Control\n\nWould like the same pattern for https://t.co/s4RAV1mxWF",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-19T01:53:28Z",
+      "fetched_at": "2026-06-19T08:21:13.729395Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "389973dea3bb3c6f",
+      "url": "https://x.com/dani_avila7/status/2067727814657261971",
+      "title": "Are you measuring the impact of rolling out AI agents across your team with telemetry?\n\nIf not, you ...",
+      "summary": "Are you measuring the impact of rolling out AI agents across your team with telemetry?\n\nIf not, you may be spending time and money on an implementation that delivers little to no value, or even a negative impact\n\nCheck out the full report on how we implemented Automode using https://t.co/35Pilwsywu",
+      "content": "Are you measuring the impact of rolling out AI agents across your team with telemetry?\n\nIf not, you may be spending time and money on an implementation that delivers little to no value, or even a negative impact\n\nCheck out the full report on how we implemented Automode using https://t.co/35Pilwsywu",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-18T21:55:02Z",
+      "fetched_at": "2026-06-19T08:21:13.729437Z",
       "score": null,
       "score_reason": "",
       "tier": "",
