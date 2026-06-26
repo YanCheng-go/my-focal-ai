@@ -90,6 +90,20 @@ def main():
         help="Only export this source type, appending new items to the existing output file",
     )
 
+    audio_parser = sub.add_parser(
+        "audio-brief",
+        help="Generate a narrated NotebookLM audio brief of top items (local only)",
+    )
+    audio_parser.add_argument(
+        "--hours", type=int, default=24, help="Look back N hours (default: 24)"
+    )
+    audio_parser.add_argument(
+        "--min-score", type=float, default=0.6, help="Minimum score filter (default: 0.6)"
+    )
+    audio_parser.add_argument(
+        "--out", type=str, default=None, help="Output dir (default: AINEWS_AUDIO_OUT_DIR or out/)"
+    )
+
     backfill_parser = sub.add_parser(
         "backfill-tags",
         help="Re-sync tags from sources.yml config to existing DB items",
@@ -144,6 +158,14 @@ def main():
         from ainews.backfill import backfill_tags
 
         backfill_tags(dry_run=args.dry_run)
+    elif args.command == "audio-brief":
+        from pathlib import Path
+
+        from ainews.audio_brief import generate_brief
+
+        out_dir = Path(args.out) if args.out else None
+        path = generate_brief(hours=args.hours, min_score=args.min_score, out_dir=out_dir)
+        print(f"Audio brief saved to {path}")
     elif args.command == "export":
         from pathlib import Path
 

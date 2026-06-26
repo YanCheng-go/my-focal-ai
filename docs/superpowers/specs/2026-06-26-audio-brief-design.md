@@ -63,8 +63,10 @@ ainews audio-brief
   title · source · score · reason · url. **Only real logic; unit-tested.**
 - `generate_brief(hours, min_score, out_dir) -> Path` — orchestrates selection →
   NotebookLM → download. Glue; not unit-tested (network + browser).
-- `deliver_slack(path, token, channel)` — `files.upload` via `httpx` (already a dep; no
-  Slack SDK). Phase 2.
+- `deliver_slack(path, token, channel)` — upload via `httpx` (already a dep; no Slack SDK).
+  NOTE: Slack sunset `files.upload` (2025-03-11). Use the 3-step flow:
+  `files.getUploadURLExternal` → PUT bytes to the returned URL → `files.completeUploadExternal`.
+  Phase 2.
 
 **CLI** — `ainews audio-brief [--hours 24] [--min-score 0.6] [--out out/] [--slack]`
 
@@ -107,3 +109,8 @@ else takes the dep.
 ---
 
 *Last updated: 2026-06-26*
+
+<!-- Phase 1 implemented 2026-06-26: src/ainews/audio_brief.py, `ainews audio-brief` CLI,
+     [audio] extra. NotebookLM client methods are unverified against the live library
+     (no curated docs; package not installed) — see ponytail note in audio_brief.py. -->
+

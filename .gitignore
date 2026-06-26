@@ -1,5 +1,8 @@
 __pycache__/
 *.pyc
+out/
+*.notebooklm*
+storage_state.json
 .venv/
 .direnv/
 *.egg-info/

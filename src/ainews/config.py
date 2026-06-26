@@ -26,6 +26,8 @@ class Settings(BaseSettings):
     export_hours: int = 168  # Export window for data.json (default: 7 days = 168 hours)
     host: str = "0.0.0.0"
     port: int = 8000
+    audio_out_dir: Path = Path("out")  # where audio briefs are written
+    audio_instructions: str = "Concise daily AI news brief, conversational, ~5 minutes."
 
     model_config = {"env_prefix": "AINEWS_", "env_file": ".env"}
 
