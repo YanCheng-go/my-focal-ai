@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-26T18:56:20.768676+00:00",
+  "exported_at": "2026-06-26T19:59:41.307327+00:00",
   "period_hours": 168,
-  "total": 2327,
+  "total": 2326,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13366,47 +13366,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-06-20T15:01:53Z",
       "fetched_at": "2026-06-20T16:50:15.849352Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9f0b72e5549dcd81",
-      "url": "https://www.youtube.com/watch?v=EuzYhzB0vbI",
-      "title": "Finally. Agent Loops Clearly Explained.",
-      "summary": "My FREE AI OS Course: https://www.skool.com/ai-automation-society/about?el=agent-loops-explained&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\nFull courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about?el=agent-loops-explained&amp;hcategory=youtube-videos&amp;utm_campaign=ais-plus\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nEveryone is talking about agent loops and loop engineering right now, but most of the advice assumes you are a hardcore coder running fleets of agents around the clock. \n\nIn this video I break down what an agent loop actually is (reason, act, observe, repeat), why the verification step matters more than the architecture, and how to think about a \"done\" criteria that your agent can actually check. \n\nI walk through a few real loops I ran, including thumbnail scoring, a three.js plane, and an Abbey Road recreation, and explain why loops are about getting you closer on the first try, not perfect output. If you have been feeling behind because you are not running five agents at once, this one is for you.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Intro\n0:31 What Loop Engineering Means\n2:23 How an Agent Loop Works\n5:29 Three Ways to Build Loops\n6:13 Demo: Thumbnail Scoring\n8:12 Demo: Three.js Plane\n9:08 Demo: Abbey Road Recreation\n10:42 What Makes a Loop Work\n12:40 Does This Apply to You?\n14:06 Resources & Wrap-Up",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-06-19T17:18:24Z",
-      "fetched_at": "2026-06-19T18:56:34.272199Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50211,6 +50170,26 @@
       "author": "dani_avila7",
       "published_at": "2026-06-26T01:14:06Z",
       "fetched_at": "2026-06-26T07:27:24.031182Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e721418a29411a25",
+      "url": "https://x.com/steipete/status/2070573061909385558",
+      "title": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the...",
+      "summary": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the labs are making\n0:02:12 \u2013 Grindability\u2026",
+      "content": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the labs are making\n0:02:12 \u2013 Grindability\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T18:21:02Z",
+      "fetched_at": "2026-06-26T19:59:39.419796Z",
       "score": null,
       "score_reason": "",
       "tier": "",
