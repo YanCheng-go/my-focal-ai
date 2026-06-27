@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-27T20:40:10.989262+00:00",
+  "exported_at": "2026-06-27T22:13:54.763254+00:00",
   "period_hours": 168,
-  "total": 2334,
+  "total": 2336,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11478,69 +11478,6 @@
       "author": "AI Engineer",
       "published_at": "2026-06-21T03:46:17Z",
       "fetched_at": "2026-06-21T05:57:49.229524Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a44ac8bb9c58ce47",
-      "url": "https://www.youtube.com/watch?v=iNaRBp4T57Q",
-      "title": "Stanford CME296 Diffusion & Large Vision Models | Spring 2026 | Lecture 7 - Evaluation",
-      "summary": "Learn more details about this course: https://online.stanford.edu/courses/cme296-diffusion-and-large-vision-models\n\nTo follow along with the course schedule and syllabus, visit: https://cme296.stanford.edu/syllabus/\n\nChapters:\n00:00:00 Introduction\n00:05:19 Motivation\n00:10:48 Human ratings\n00:19:43 Elo rating system\n00:26:37 Reference-free metrics\n00:29:15 Fr\u00e9chet inception distance (FID)\n00:42:30 CLIPScore\n00:44:51 PickScore\n00:45:41 Reference-based metrics\n00:48:07 Mean squared error (MSE)\n00:49:36 Peak signal-to-noise ratio (PSNR)\n00:51:54 Structural similarity (SSIM)\n01:01:09 Perceptual similarity (LPIPS)\n01:05:03 Multimodal LLMs\n01:13:10 Faithfulness evaluation (TIFA)\n01:17:29 Visual question answering score (VQA)\n01:24:40 MLLM-as-a-Judge\n01:34:17 Benchmarks\n\nFor more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nAfshine Amidi is an Adjunct Lecturer at Stanford University.\n\nShervine Amidi is an Adjunct Lecturer at Stanford University.\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rNdy8rt2rZ4T2xM0OjADnfu",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-05-28T16:36:42Z",
-      "fetched_at": "2026-06-27T20:39:37.516415Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "81dd0350bf094449",
-      "url": "https://www.youtube.com/watch?v=g50FHC-PzK8",
-      "title": "Stanford CS153 Frontier Systems | The Road Ahead: Resilience Required",
-      "summary": "For more information about Stanford's online Artificial Intelligence programs, visit: https://stanford.io/ai\n\nFollow along with the course schedule and syllabus, visit: https://cs153.stanford.edu/\n\nIn a CS153 Frontier Systems lecture, Joe Sullivan, a veteran security leader who built security teams at Facebook, Uber, and Cloudflare, walks the class through his career at the intersection of government and technology \u2014 from federal prosecutor in the 1990s through eBay/PayPal, Facebook, Uber, and Cloudflare \u2014 and uses his own criminal prosecution as the central case study.\n\n In 2016, Uber paid researchers $100,000 through what Sullivan's team treated as a bug bounty after they accessed an old AWS database; legal signed off and the CEO approved, but in 2020 Sullivan was personally charged with obstruction of justice for the company's failure to disclose the incident to regulators. He lost at trial in 2022 after the judge instructed the jury that companies cannot retroactively authorize access, but at sentencing in 2023 the judge declared \"it wasn't a cover-up\" and gave him three years' probation instead of the prison time prosecutors sought \u2014 buoyed by over 200 letters of support from the security community. \n\nFrom this story he draws his core theme: leadership in modern tech requires resilience and a bias toward transparency (he contrasts Uber's 2016 approach with Cloudflare's reflex to write a blog post the moment an incident hits), and he closes with a wide-ranging Q&amp;A on vibe-coding security risks, the shift from data-loss to operational-resilience threats like the Jaguar Land Rover ransomware attack, Anthropic's cyber model rollout, quantum cryptography, executive protection, and the growing case for proactive government action against ransomware gangs.\n\nJoe Sullivan is the CEO of Joe Sullivan Security LLC, advising companies, leading security projects, and mentoring leaders. He also leads Ukraine Friends, a nonprofit aiding children in war zones. A former federal cybercrime prosecutor, Joe worked on safety and security at eBay and PayPal, then went on to lead security at Facebook, Uber, and Cloudflare. He also served on President Obama\u2019s Commission on Enhancing National Cybersecurity.",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-05-28T16:20:02Z",
-      "fetched_at": "2026-06-27T20:39:37.516423Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8382f5fc30ae1cf5",
-      "url": "https://www.youtube.com/watch?v=dIFAi87Ws4E",
-      "title": "Stanford CS336 Language Modeling from Scratch | Spring 2026 | Lecture 16: Post-Training - RLVR",
-      "summary": "For more information about Stanford's online Artificial Intelligence programs, visit: https://stanford.io/ai\n\nTo learn more about enrolling in this course, visit: https://online.stanford.edu/courses/cs336-language-modeling-scratch\n\nFollow along with the course schedule and syllabus: https://cs336.stanford.edu/\n\nPercy Liang\nProfessor of Computer Science (and courtesy in Statistics)\n\nTatsunori Hashimoto\nAssistant Professor of Computer Science\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-05-27T22:59:37Z",
-      "fetched_at": "2026-06-27T03:26:54.423653Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -37551,29 +37488,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2dfe9ac1e2e4f736",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.185",
-      "title": "v2.1.185",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>The stream-stall hint now reads \"Waiting for API response \u00b7 will retry in \u2026\" instead of \"No response from API \u00b7 Retrying in \u2026\", and triggers after 20s of silence instead of 10s</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>The stream-stall hint now reads \"Waiting for API response \u00b7 will retry in \u2026\" instead of \"No response from API \u00b7 Retrying in \u2026\", and triggers after 20s of silence instead of 10s</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-06-20T20:59:19Z",
-      "fetched_at": "2026-06-20T22:41:53.890336Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5b130934ce6612e9",
       "url": "https://cloudonair.withgoogle.com/events/summit-sydney-2026?_gl=1*1qz4yah*_ga*Mjc5ODguMTc4MTEwODU5NA..*_ga_WH2QY8WWF5*czE3ODExMDg1OTMkbzEkZzEkdDE3ODExMDg1OTckajU2JGwwJGgw",
       "title": "Google Cloud Summit Sydney/Warrane",
@@ -48976,26 +48890,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "20b2375b8a514684",
-      "url": "https://x.com/dani_avila7/status/2068436729149714496",
-      "title": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
-      "summary": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
-      "content": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-20T20:52:00Z",
-      "fetched_at": "2026-06-22T08:04:44.372842Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "73ebaee07530f569",
       "url": "https://x.com/steipete/status/2069254835686576316",
       "title": "I feel the same about shared office spaces.",
@@ -50358,6 +50252,147 @@
       "author": "dani_avila7",
       "published_at": "2026-06-26T20:44:05Z",
       "fetched_at": "2026-06-27T12:12:00.380959Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "20b2375b8a514684",
+      "url": "https://x.com/dani_avila7/status/2068436729149714496",
+      "title": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "summary": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "content": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T20:52:00Z",
+      "fetched_at": "2026-06-22T08:04:44.372842Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e317a137ce3aceef",
+      "url": "https://x.com/steipete/status/2068428180004942319",
+      "title": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "summary": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "content": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T20:18:02Z",
+      "fetched_at": "2026-06-22T08:04:52.867986Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "14d4fd0798ee8a0a",
+      "url": "https://x.com/dani_avila7/status/2068418415002300456",
+      "title": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config ...",
+      "summary": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config thinking=false\"\n\nOne thing to know: \nIn -p it writes to your settings file and persists, it does not apply to just that run\n\nIt sets the value and exits, it won't run a task you https://t.co/JeZ1v0oTAo",
+      "content": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config thinking=false\"\n\nOne thing to know: \nIn -p it writes to your settings file and persists, it does not apply to just that run\n\nIt sets the value and exits, it won't run a task you https://t.co/JeZ1v0oTAo",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T19:39:14Z",
+      "fetched_at": "2026-06-22T08:04:44.372901Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "962750dc410b00f8",
+      "url": "https://x.com/steipete/status/2068199277277401419",
+      "title": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "summary": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "content": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T05:08:27Z",
+      "fetched_at": "2026-06-22T08:04:52.868008Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e85a647a8f16458c",
+      "url": "https://x.com/dani_avila7/status/2068160219415294322",
+      "title": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "summary": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "content": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T02:33:15Z",
+      "fetched_at": "2026-06-22T08:04:44.372948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9387f415d0154ec3",
+      "url": "https://x.com/steipete/status/2068132941645980103",
+      "title": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your...",
+      "summary": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "content": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T00:44:51Z",
+      "fetched_at": "2026-06-22T08:04:52.868028Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8e63d4880ba95d3d",
+      "url": "https://x.com/bcherny/status/2068064304503660962",
+      "title": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttp...",
+      "summary": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "content": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-19T20:12:07Z",
+      "fetched_at": "2026-06-22T08:04:41.912856Z",
       "score": null,
       "score_reason": "",
       "tier": "",
