@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-06-27T16:41:07.414879+00:00",
+  "exported_at": "2026-06-27T18:13:14.390473+00:00",
   "period_hours": 168,
   "total": 2337,
   "all_tags": [
@@ -12452,89 +12452,6 @@
       "author": "AI Engineer",
       "published_at": "2026-06-21T03:46:17Z",
       "fetched_at": "2026-06-21T05:57:49.229524Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1ea7722ebdba7681",
-      "url": "https://www.youtube.com/shorts/bVzQB_U5sUc",
-      "title": "Why First Impressions Are Totally Overrated \ud83e\udd2b\ud83d\udca1",
-      "summary": "Stop judging a book by its cover\u2014and stop judging a business strategy by the first meeting.\n\nThe truth? First impressions are polished, guarded, and often safe. The real magic, the breakthrough thinking, and the legendary partnerships (think Jobs & Wozniak) always happen during the second conversation. That is where guards come down, trust is built, and honest, high-value insights get exchanged.\n\nWhether you are navigating customer interviews, planning your next business collaboration, or interviewing for your dream job, never make a final call after just one interaction. Always schedule that follow-up.\n\nWant to unlock deeper strategic insights for your professional growth? Drop a sub and join the community. \ud83d\udc47\u2728\n\n#BusinessStrategy #BreakthroughThinking #NetworkingTips #LeadershipInsights #BusinessCollaboration #GrowthMindset #ProfessionalDevelopment #FounderSecrets",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-06-20T16:00:21Z",
-      "fetched_at": "2026-06-20T16:50:13.219132Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d8c6b40f5c1251b8",
-      "url": "https://www.youtube.com/shorts/qDoGm1m1etQ",
-      "title": "Will AI Make Language Learning Optional?",
-      "summary": "Real-time AI translation is getting surprisingly close to science fiction. With support for 70+ languages and continuous speech translation, the need to learn a second language may soon look very different. Check out the full episode now. #short",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-06-20T15:01:53Z",
-      "fetched_at": "2026-06-20T16:50:15.849352Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8382f5fc30ae1cf5",
-      "url": "https://www.youtube.com/watch?v=dIFAi87Ws4E",
-      "title": "Stanford CS336 Language Modeling from Scratch | Spring 2026 | Lecture 16: Post-Training - RLVR",
-      "summary": "For more information about Stanford's online Artificial Intelligence programs, visit: https://stanford.io/ai\n\nTo learn more about enrolling in this course, visit: https://online.stanford.edu/courses/cs336-language-modeling-scratch\n\nFollow along with the course schedule and syllabus: https://cs336.stanford.edu/\n\nPercy Liang\nProfessor of Computer Science (and courtesy in Statistics)\n\nTatsunori Hashimoto\nAssistant Professor of Computer Science\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-05-27T22:59:37Z",
-      "fetched_at": "2026-06-27T03:26:54.423653Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50418,6 +50335,87 @@
       "author": "dani_avila7",
       "published_at": "2026-06-26T20:44:05Z",
       "fetched_at": "2026-06-27T12:12:00.380959Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "962750dc410b00f8",
+      "url": "https://x.com/steipete/status/2068199277277401419",
+      "title": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "summary": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "content": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T05:08:27Z",
+      "fetched_at": "2026-06-22T08:04:52.868008Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e85a647a8f16458c",
+      "url": "https://x.com/dani_avila7/status/2068160219415294322",
+      "title": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "summary": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "content": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T02:33:15Z",
+      "fetched_at": "2026-06-22T08:04:44.372948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9387f415d0154ec3",
+      "url": "https://x.com/steipete/status/2068132941645980103",
+      "title": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your...",
+      "summary": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "content": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T00:44:51Z",
+      "fetched_at": "2026-06-22T08:04:52.868028Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8e63d4880ba95d3d",
+      "url": "https://x.com/bcherny/status/2068064304503660962",
+      "title": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttp...",
+      "summary": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "content": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-19T20:12:07Z",
+      "fetched_at": "2026-06-22T08:04:41.912856Z",
       "score": null,
       "score_reason": "",
       "tier": "",
