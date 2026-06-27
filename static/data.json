@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-27T10:57:33.487269+00:00",
+  "exported_at": "2026-06-27T12:12:11.825200+00:00",
   "period_hours": 168,
-  "total": 2327,
+  "total": 2338,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11520,48 +11520,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-06-20T15:01:53Z",
       "fetched_at": "2026-06-20T16:50:15.849352Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8382f5fc30ae1cf5",
-      "url": "https://www.youtube.com/watch?v=dIFAi87Ws4E",
-      "title": "Stanford CS336 Language Modeling from Scratch | Spring 2026 | Lecture 16: Post-Training - RLVR",
-      "summary": "For more information about Stanford's online Artificial Intelligence programs, visit: https://stanford.io/ai\n\nTo learn more about enrolling in this course, visit: https://online.stanford.edu/courses/cs336-language-modeling-scratch\n\nFollow along with the course schedule and syllabus: https://cs336.stanford.edu/\n\nPercy Liang\nProfessor of Computer Science (and courtesy in Statistics)\n\nTatsunori Hashimoto\nAssistant Professor of Computer Science\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-05-27T22:59:37Z",
-      "fetched_at": "2026-06-27T03:26:54.423653Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "92006184a296b973",
-      "url": "https://www.youtube.com/watch?v=Kv78LoEUJ2E",
-      "title": "Here's How To Actually Fix It (From Former Shutterfly CTO)",
-      "summary": "Moudy Elbayadi is Former CTO Shutterfly and AI Strategist helping businesses fully take advantage of AI: https://www.linkedin.com/in/moudy/\n\nIn this video, we break down everything you need to know about where AI is right now \u2014 from Generative AI to the rise of Agentic AI and what it actually means for your business. Whether you're just getting started or already using AI tools, Moudy shares practical tips you can implement immediately, no technical background required.\n\nWe also go deep on how businesses should be thinking about AI strategically \u2014 not just as a tool, but as a fundamental shift in how work gets done. If you're a business owner, executive, or operator who wants to stop guessing and start using AI with real intention, this conversation is for you.\n\n\ud83d\udd11 In this episode:\n\nWhat Generative AI and Agentic AI actually are (and why it matters)\nSimple AI tips anyone can start using today\nHow businesses should build their AI strategy\nWhat most companies are getting wrong about AI adoption\nLessons from the frontlines of AI leadership\n\nTimestamps:\n0:00 - Overview\n02:20 - combining tech and business\n14:32 - how to ACTUALLY use AI (practial guide)\n33:10 - Agentic AI (how to get started)\n48:41 - Implementing AI in companies (big picture)\n1:03:30 - AI as digital team mates\n1:16:58 - AI-first approach",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-05-21T14:41:14Z",
-      "fetched_at": "2026-06-20T18:48:15.185336Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50216,6 +50174,269 @@
       "author": "steipete",
       "published_at": "2026-06-26T18:21:02Z",
       "fetched_at": "2026-06-26T19:59:39.419796Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aa94e4f80bf72f94",
+      "url": "https://x.com/dani_avila7/status/2070730529318531396",
+      "title": "A great first step \ud83d\ude4c",
+      "summary": "A great first step \ud83d\ude4c",
+      "content": "A great first step \ud83d\ude4c",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-27T04:46:45Z",
+      "fetched_at": "2026-06-27T12:12:00.380790Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5da48206c409fc57",
+      "url": "https://x.com/dani_avila7/status/2070709430090416454",
+      "title": "Exactly\u2026 at the Opus or Fable tier the per-call cost only pays off if you reserve them for the actua...",
+      "summary": "Exactly\u2026 at the Opus or Fable tier the per-call cost only pays off if you reserve them for the actual escalation points, not the whole loop\n\nPrompt caching on the advisor context is what closes it, you eat the full input cost once, then every escalated decision reuses the cached",
+      "content": "Exactly\u2026 at the Opus or Fable tier the per-call cost only pays off if you reserve them for the actual escalation points, not the whole loop\n\nPrompt caching on the advisor context is what closes it, you eat the full input cost once, then every escalated decision reuses the cached",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-27T03:22:54Z",
+      "fetched_at": "2026-06-27T12:12:00.380877Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "183a07a0614d18ce",
+      "url": "https://x.com/AnthropicAI/status/2070665903440871779",
+      "title": "Since June 12, we\u2019ve been working closely with the US government to restore access to Claude Mythos ...",
+      "summary": "Since June 12, we\u2019ve been working closely with the US government to restore access to Claude Mythos 5 and Fable 5. Today, the government notified us that Mythos 5, our strongest cybersecurity model, can be redeployed to a set of US organizations that operate and defend critical",
+      "content": "Since June 12, we\u2019ve been working closely with the US government to restore access to Claude Mythos 5 and Fable 5. Today, the government notified us that Mythos 5, our strongest cybersecurity model, can be redeployed to a set of US organizations that operate and defend critical",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-27T00:29:57Z",
+      "fetched_at": "2026-06-27T12:12:08.166614Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "657d8ee023eefe57",
+      "url": "https://x.com/sama/status/2070665432814723299",
+      "title": "RT @FoundationOAI: The OpenAI Foundation is joining Intercept as a founding partner through our AI r...",
+      "summary": "RT @FoundationOAI: The OpenAI Foundation is joining Intercept as a founding partner through our AI resilience program.\n\nAs AI accelerates a\u2026",
+      "content": "RT @FoundationOAI: The OpenAI Foundation is joining Intercept as a founding partner through our AI resilience program.\n\nAs AI accelerates a\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-27T00:28:04Z",
+      "fetched_at": "2026-06-27T12:12:03.554169Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b110d530735b156f",
+      "url": "https://x.com/dani_avila7/status/2070658677816598645",
+      "title": "My cap has been 4 agents\n\nNot because you can\u2019t run more, but because keeping context across paralle...",
+      "summary": "My cap has been 4 agents\n\nNot because you can\u2019t run more, but because keeping context across parallel agents gets hard fast\n\nThe human is the bottleneck",
+      "content": "My cap has been 4 agents\n\nNot because you can\u2019t run more, but because keeping context across parallel agents gets hard fast\n\nThe human is the bottleneck",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-27T00:01:14Z",
+      "fetched_at": "2026-06-27T12:12:00.380923Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ea77c3e45f07b378",
+      "url": "https://x.com/steipete/status/2070626638887555227",
+      "title": "I love how Apple notarization breaks multiple times a year until I manually log in and accept some n...",
+      "summary": "I love how Apple notarization breaks multiple times a year until I manually log in and accept some new legal agreements.",
+      "content": "I love how Apple notarization breaks multiple times a year until I manually log in and accept some new legal agreements.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T21:53:55Z",
+      "fetched_at": "2026-06-27T12:12:09.698159Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bb8547211efe19da",
+      "url": "https://x.com/simonw/status/2070618097778647237",
+      "title": "RT @binarybits: This is like saying there's  no learning curve to being a manager because your emplo...",
+      "summary": "RT @binarybits: This is like saying there's  no learning curve to being a manager because your employees will just do whatever you tell the\u2026",
+      "content": "RT @binarybits: This is like saying there's  no learning curve to being a manager because your employees will just do whatever you tell the\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-26T21:19:59Z",
+      "fetched_at": "2026-06-27T12:11:58.841850Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2e17f55fb6126f45",
+      "url": "https://x.com/sama/status/2070612055225483692",
+      "title": "in other news, we updated the 5.5 instant model used in chatgpt this week.\n\ni like its vibes.",
+      "summary": "in other news, we updated the 5.5 instant model used in chatgpt this week.\n\ni like its vibes.",
+      "content": "in other news, we updated the 5.5 instant model used in chatgpt this week.\n\ni like its vibes.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-26T20:55:58Z",
+      "fetched_at": "2026-06-27T12:12:03.554281Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b7e8c0c5af2d2d22",
+      "url": "https://x.com/dani_avila7/status/2070609063377821878",
+      "title": "testing it this weekend\n\nopenclaw, hermes or opencode? Which harness are you running it through?",
+      "summary": "testing it this weekend\n\nopenclaw, hermes or opencode? Which harness are you running it through?",
+      "content": "testing it this weekend\n\nopenclaw, hermes or opencode? Which harness are you running it through?",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-26T20:44:05Z",
+      "fetched_at": "2026-06-27T12:12:00.380959Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "962750dc410b00f8",
+      "url": "https://x.com/steipete/status/2068199277277401419",
+      "title": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "summary": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "content": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T05:08:27Z",
+      "fetched_at": "2026-06-22T08:04:52.868008Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e85a647a8f16458c",
+      "url": "https://x.com/dani_avila7/status/2068160219415294322",
+      "title": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "summary": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "content": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T02:33:15Z",
+      "fetched_at": "2026-06-22T08:04:44.372948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9387f415d0154ec3",
+      "url": "https://x.com/steipete/status/2068132941645980103",
+      "title": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your...",
+      "summary": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "content": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T00:44:51Z",
+      "fetched_at": "2026-06-22T08:04:52.868028Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8e63d4880ba95d3d",
+      "url": "https://x.com/bcherny/status/2068064304503660962",
+      "title": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttp...",
+      "summary": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "content": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-19T20:12:07Z",
+      "fetched_at": "2026-06-22T08:04:41.912856Z",
       "score": null,
       "score_reason": "",
       "tier": "",
