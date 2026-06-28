@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-28T20:42:14.552793+00:00",
+  "exported_at": "2026-06-28T21:01:32.241786+00:00",
   "period_hours": 168,
-  "total": 2344,
+  "total": 2354,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11384,26 +11384,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-22T11:00:22Z",
       "fetched_at": "2026-06-22T12:23:27.543092Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "edd76e540ba932a7",
-      "url": "https://www.youtube.com/shorts/zv5dkST6Ugg",
-      "title": "Dax Raad: \u201cNone of our competitors are crushing us with AI\"",
-      "summary": "With Dax Raad, co-founder of OpenCode",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-05-29T14:40:17Z",
-      "fetched_at": "2026-06-28T18:42:39.090945Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50551,6 +50531,227 @@
       "author": "dani_avila7",
       "published_at": "2026-06-28T18:20:24Z",
       "fetched_at": "2026-06-28T19:00:59.931653Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2365cd0428961bb2",
+      "url": "https://x.com/steipete/status/2071333876430155785",
+      "title": "RT @pa1ar: @0xDesigner friend's codex after talking to my codex https://t.co/apsL4zxIQx",
+      "summary": "RT @pa1ar: @0xDesigner friend's codex after talking to my codex https://t.co/apsL4zxIQx",
+      "content": "RT @pa1ar: @0xDesigner friend's codex after talking to my codex https://t.co/apsL4zxIQx",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-28T20:44:14Z",
+      "fetched_at": "2026-06-28T21:01:30.537021Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "35d8d09f337f65e6",
+      "url": "https://x.com/steipete/status/2068743183950065854",
+      "title": "RT @petergyang: I used to be a die-hard Claude Code user.\n\nCodex has won me over because:\n\n\u2192 GPT-5.5...",
+      "summary": "RT @petergyang: I used to be a die-hard Claude Code user.\n\nCodex has won me over because:\n\n\u2192 GPT-5.5 is excellent\n\u2192 Fast mode + generous li\u2026",
+      "content": "RT @petergyang: I used to be a die-hard Claude Code user.\n\nCodex has won me over because:\n\n\u2192 GPT-5.5 is excellent\n\u2192 Fast mode + generous li\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-21T17:09:45Z",
+      "fetched_at": "2026-06-22T08:04:52.867944Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2abe7da65499d9e0",
+      "url": "https://x.com/dani_avila7/status/2068529033478885726",
+      "title": "Good to know how the Claude Code prompt queue actually works, straight from Boris\n\nWorth keeping in ...",
+      "summary": "Good to know how the Claude Code prompt queue actually works, straight from Boris\n\nWorth keeping in mind next time you run /config, /btw or /fork https://t.co/sSQFhREvyp",
+      "content": "Good to know how the Claude Code prompt queue actually works, straight from Boris\n\nWorth keeping in mind next time you run /config, /btw or /fork https://t.co/sSQFhREvyp",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-21T02:58:47Z",
+      "fetched_at": "2026-06-22T08:04:44.372753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d86dc1546b83532a",
+      "url": "https://x.com/steipete/status/2068476455647125757",
+      "title": "RT @samdenty: There\u2019s an OSS implementation of the codex permission flow in Swift here:\n\nhttps://t.c...",
+      "summary": "RT @samdenty: There\u2019s an OSS implementation of the codex permission flow in Swift here:\n\nhttps://t.co/FD6q2lyPBG https://t.co/kFOb1MFnzB",
+      "content": "RT @samdenty: There\u2019s an OSS implementation of the codex permission flow in Swift here:\n\nhttps://t.co/FD6q2lyPBG https://t.co/kFOb1MFnzB",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T23:29:52Z",
+      "fetched_at": "2026-06-22T08:04:52.867966Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "20b2375b8a514684",
+      "url": "https://x.com/dani_avila7/status/2068436729149714496",
+      "title": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "summary": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "content": "Found him \ud83d\ude4c https://t.co/0iYwV4u0TM",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T20:52:00Z",
+      "fetched_at": "2026-06-22T08:04:44.372842Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e317a137ce3aceef",
+      "url": "https://x.com/steipete/status/2068428180004942319",
+      "title": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "summary": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "content": "If you are in Japan\ud83c\uddef\ud83c\uddf5 or do business there, here's your chance to get lots of tokens!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T20:18:02Z",
+      "fetched_at": "2026-06-22T08:04:52.867986Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "14d4fd0798ee8a0a",
+      "url": "https://x.com/dani_avila7/status/2068418415002300456",
+      "title": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config ...",
+      "summary": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config thinking=false\"\n\nOne thing to know: \nIn -p it writes to your settings file and persists, it does not apply to just that run\n\nIt sets the value and exits, it won't run a task you https://t.co/JeZ1v0oTAo",
+      "content": "New /config key=value syntax in Claude Code also works in non-interactive mode:\n\nclaude -p \"/config thinking=false\"\n\nOne thing to know: \nIn -p it writes to your settings file and persists, it does not apply to just that run\n\nIt sets the value and exits, it won't run a task you https://t.co/JeZ1v0oTAo",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T19:39:14Z",
+      "fetched_at": "2026-06-22T08:04:44.372901Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "962750dc410b00f8",
+      "url": "https://x.com/steipete/status/2068199277277401419",
+      "title": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "summary": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "content": "Hannes speaks both developer and agents. Blessed to have him on the team!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T05:08:27Z",
+      "fetched_at": "2026-06-22T08:04:52.868008Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e85a647a8f16458c",
+      "url": "https://x.com/dani_avila7/status/2068160219415294322",
+      "title": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "summary": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "content": "Who is json? \ud83e\udd14 https://t.co/n3RAgfLRi7",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-20T02:33:15Z",
+      "fetched_at": "2026-06-22T08:04:44.372948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9387f415d0154ec3",
+      "url": "https://x.com/steipete/status/2068132941645980103",
+      "title": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your...",
+      "summary": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "content": "RT @guinnesschen: Codex can now hand off threads between local and remote hosts.\n\nStart work on your laptop, send it to a remote box before\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-20T00:44:51Z",
+      "fetched_at": "2026-06-22T08:04:52.868028Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8e63d4880ba95d3d",
+      "url": "https://x.com/bcherny/status/2068064304503660962",
+      "title": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttp...",
+      "summary": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "content": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! \ud83e\udd1e",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-19T20:12:07Z",
+      "fetched_at": "2026-06-22T08:04:41.912856Z",
       "score": null,
       "score_reason": "",
       "tier": "",
