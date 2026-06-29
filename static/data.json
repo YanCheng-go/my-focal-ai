@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-29T09:55:43.342374+00:00",
+  "exported_at": "2026-06-29T10:23:30.603523+00:00",
   "period_hours": 168,
-  "total": 2768,
+  "total": 2766,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -36993,48 +36993,6 @@
       "author": "Suhas Hariharapura Sheshadri",
       "published_at": "2026-06-22T13:00:00Z",
       "fetched_at": "2026-06-22T15:56:29.101098Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b63e5cb33bb0ec81",
-      "url": "https://openai.com/index/daybreak-securing-the-world",
-      "title": "Daybreak: Tools for securing every organization in the world",
-      "summary": "OpenAI introduces new Daybreak tools, including Codex Security and GPT-5.5-Cyber, to help organizations find, validate, and patch vulnerabilities at scale.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-22T10:00:00Z",
-      "fetched_at": "2026-06-22T17:49:53.988140Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3696e67c2c9e8aaa",
-      "url": "https://openai.com/index/patch-the-planet",
-      "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
-      "summary": "OpenAI introduces Patch the Planet, a Daybreak initiative helping open-source maintainers find, validate, and fix vulnerabilities with AI and expert review.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-22T10:00:00Z",
-      "fetched_at": "2026-06-22T17:49:53.988114Z",
       "score": null,
       "score_reason": "",
       "tier": "",
