@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-29T18:59:16.482499+00:00",
+  "exported_at": "2026-06-29T20:34:58.824835+00:00",
   "period_hours": 168,
-  "total": 2758,
+  "total": 2768,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -57915,90 +57915,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f989ca57b9e801d5",
-      "url": "https://x.com/simonw/status/2069147272538128399",
-      "title": "RT @pamelafox: I printed a custom t-shirt that's an ode to @simonw's Pelican benchmark.\n\nMy partner ...",
-      "summary": "RT @pamelafox: I printed a custom t-shirt that's an ode to @simonw's Pelican benchmark.\n\nMy partner says he doesn't get it.\nBut y'all get i\u2026",
-      "content": "RT @pamelafox: I printed a custom t-shirt that's an ode to @simonw's Pelican benchmark.\n\nMy partner says he doesn't get it.\nBut y'all get i\u2026",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-06-22T19:55:27Z",
-      "fetched_at": "2026-06-23T07:31:21.090768Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bbf1c306ec571125",
-      "url": "https://x.com/GeminiApp/status/2069143099243438580",
-      "title": "\ud83d\udd0d Project Tracker Auditor: Cross-references meeting notes with project trackers to flag outdated inf...",
-      "summary": "\ud83d\udd0d Project Tracker Auditor: Cross-references meeting notes with project trackers to flag outdated information and missing items.\n\n\ud83d\udcf0 Newsletter Aggregator: Scans @Gmail for newsletters, extracts and researches high-value links, and compiles them into a structured daily summary.",
-      "content": "\ud83d\udd0d Project Tracker Auditor: Cross-references meeting notes with project trackers to flag outdated information and missing items.\n\n\ud83d\udcf0 Newsletter Aggregator: Scans @Gmail for newsletters, extracts and researches high-value links, and compiles them into a structured daily summary.",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-22T19:38:52Z",
-      "fetched_at": "2026-06-23T07:31:25.700641Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "691b0d00529e8582",
-      "url": "https://x.com/GeminiApp/status/2069143100736565745",
-      "title": "Gemini Spark is available in Beta for Google AI Ultra subscribers, starting in the U.S.\n\nShare how y...",
-      "summary": "Gemini Spark is available in Beta for Google AI Ultra subscribers, starting in the U.S.\n\nShare how you\u2019re using it in the replies \ud83d\udc47",
-      "content": "Gemini Spark is available in Beta for Google AI Ultra subscribers, starting in the U.S.\n\nShare how you\u2019re using it in the replies \ud83d\udc47",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-22T19:38:52Z",
-      "fetched_at": "2026-06-23T07:31:25.700538Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a3a4ab3c099d6704",
-      "url": "https://x.com/GeminiApp/status/2069143097586700794",
-      "title": "Gemini Spark is your 24/7 personal AI agent, handling the heavy lifting from start to finish under y...",
-      "summary": "Gemini Spark is your 24/7 personal AI agent, handling the heavy lifting from start to finish under your direction.\n\nHere are some ways our team has been using Gemini Spark to make their lives easier and more productive. \ud83e\uddf5",
-      "content": "Gemini Spark is your 24/7 personal AI agent, handling the heavy lifting from start to finish under your direction.\n\nHere are some ways our team has been using Gemini Spark to make their lives easier and more productive. \ud83e\uddf5",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-22T19:38:51Z",
-      "fetched_at": "2026-06-23T07:31:25.700686Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "ab7c0250481b9793",
       "url": "https://x.com/GeminiApp/status/2069436661755478418",
       "title": "RT @joshwoodward: \u26bd\ufe0fTurn your team loyalty into a custom trading card, mural, or virtual plushie in ...",
@@ -59417,6 +59333,295 @@
       "author": "dani_avila7",
       "published_at": "2026-06-29T16:57:04Z",
       "fetched_at": "2026-06-29T17:17:49.178364Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7a819c6587bd6c64",
+      "url": "https://x.com/trq212/status/2071686513973420428",
+      "title": "RT @ClaudeDevs: Boris sat down with Spotify VP of Engineering Niklas Gustavsson. \n\nSpotify ships 4,5...",
+      "summary": "RT @ClaudeDevs: Boris sat down with Spotify VP of Engineering Niklas Gustavsson. \n\nSpotify ships 4,500 production deploys a day, and 73% of\u2026",
+      "content": "RT @ClaudeDevs: Boris sat down with Spotify VP of Engineering Niklas Gustavsson. \n\nSpotify ships 4,500 production deploys a day, and 73% of\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-29T20:05:29Z",
+      "fetched_at": "2026-06-29T20:34:42.012878Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "068d267ec23a6955",
+      "url": "https://x.com/dani_avila7/status/2071672506688143501",
+      "title": "Oops, I forgot to share the link:\nhttps://t.co/9VLmZ0H9S4",
+      "summary": "Oops, I forgot to share the link:\nhttps://t.co/9VLmZ0H9S4",
+      "content": "Oops, I forgot to share the link:\nhttps://t.co/9VLmZ0H9S4",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-29T19:09:50Z",
+      "fetched_at": "2026-06-29T20:34:47.234625Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0224245a04f3fbc1",
+      "url": "https://x.com/bcherny/status/2071658469640532320",
+      "title": "RT @claudeai: Claude in Microsoft Foundry is now generally available, hosted on Azure.\n\nAzure custom...",
+      "summary": "RT @claudeai: Claude in Microsoft Foundry is now generally available, hosted on Azure.\n\nAzure customers get Claude Opus 4.8 and Claude Haik\u2026",
+      "content": "RT @claudeai: Claude in Microsoft Foundry is now generally available, hosted on Azure.\n\nAzure customers get Claude Opus 4.8 and Claude Haik\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-29T18:14:03Z",
+      "fetched_at": "2026-06-29T20:34:44.637146Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "be70c263cc02ed00",
+      "url": "https://x.com/GeminiApp/status/2071653811110998226",
+      "title": "More users in the U.S. can now create personalized images for free.\n\nBy choosing to connect your Goo...",
+      "summary": "More users in the U.S. can now create personalized images for free.\n\nBy choosing to connect your Google apps to Gemini in settings, Gemini is able to better understand your preferences, so it can automatically fill in the blanks and ground image creation in the things you care",
+      "content": "More users in the U.S. can now create personalized images for free.\n\nBy choosing to connect your Google apps to Gemini in settings, Gemini is able to better understand your preferences, so it can automatically fill in the blanks and ground image creation in the things you care",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-29T17:55:32Z",
+      "fetched_at": "2026-06-29T20:34:51.616532Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0aa922c35e4cc4eb",
+      "url": "https://x.com/bcherny/status/2071647677591466098",
+      "title": "In the next version of Claude Code: subagents run in the background by default, so you can keep talk...",
+      "summary": "In the next version of Claude Code: subagents run in the background by default, so you can keep talking to Claude while your subagents work\n\nIf you want your agent to run in the foreground, just tell Claude",
+      "content": "In the next version of Claude Code: subagents run in the background by default, so you can keep talking to Claude while your subagents work\n\nIf you want your agent to run in the foreground, just tell Claude",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-29T17:31:10Z",
+      "fetched_at": "2026-06-29T20:34:44.637215Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f989ca57b9e801d5",
+      "url": "https://x.com/simonw/status/2069147272538128399",
+      "title": "RT @pamelafox: I printed a custom t-shirt that's an ode to @simonw's Pelican benchmark.\n\nMy partner ...",
+      "summary": "RT @pamelafox: I printed a custom t-shirt that's an ode to @simonw's Pelican benchmark.\n\nMy partner says he doesn't get it.\nBut y'all get i\u2026",
+      "content": "RT @pamelafox: I printed a custom t-shirt that's an ode to @simonw's Pelican benchmark.\n\nMy partner says he doesn't get it.\nBut y'all get i\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-22T19:55:27Z",
+      "fetched_at": "2026-06-23T07:31:21.090768Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bbf1c306ec571125",
+      "url": "https://x.com/GeminiApp/status/2069143099243438580",
+      "title": "\ud83d\udd0d Project Tracker Auditor: Cross-references meeting notes with project trackers to flag outdated inf...",
+      "summary": "\ud83d\udd0d Project Tracker Auditor: Cross-references meeting notes with project trackers to flag outdated information and missing items.\n\n\ud83d\udcf0 Newsletter Aggregator: Scans @Gmail for newsletters, extracts and researches high-value links, and compiles them into a structured daily summary.",
+      "content": "\ud83d\udd0d Project Tracker Auditor: Cross-references meeting notes with project trackers to flag outdated information and missing items.\n\n\ud83d\udcf0 Newsletter Aggregator: Scans @Gmail for newsletters, extracts and researches high-value links, and compiles them into a structured daily summary.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-22T19:38:52Z",
+      "fetched_at": "2026-06-23T07:31:25.700641Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "691b0d00529e8582",
+      "url": "https://x.com/GeminiApp/status/2069143100736565745",
+      "title": "Gemini Spark is available in Beta for Google AI Ultra subscribers, starting in the U.S.\n\nShare how y...",
+      "summary": "Gemini Spark is available in Beta for Google AI Ultra subscribers, starting in the U.S.\n\nShare how you\u2019re using it in the replies \ud83d\udc47",
+      "content": "Gemini Spark is available in Beta for Google AI Ultra subscribers, starting in the U.S.\n\nShare how you\u2019re using it in the replies \ud83d\udc47",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-22T19:38:52Z",
+      "fetched_at": "2026-06-23T07:31:25.700538Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a3a4ab3c099d6704",
+      "url": "https://x.com/GeminiApp/status/2069143097586700794",
+      "title": "Gemini Spark is your 24/7 personal AI agent, handling the heavy lifting from start to finish under y...",
+      "summary": "Gemini Spark is your 24/7 personal AI agent, handling the heavy lifting from start to finish under your direction.\n\nHere are some ways our team has been using Gemini Spark to make their lives easier and more productive. \ud83e\uddf5",
+      "content": "Gemini Spark is your 24/7 personal AI agent, handling the heavy lifting from start to finish under your direction.\n\nHere are some ways our team has been using Gemini Spark to make their lives easier and more productive. \ud83e\uddf5",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-22T19:38:51Z",
+      "fetched_at": "2026-06-23T07:31:25.700686Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0d42ead5b8ccb4ad",
+      "url": "https://x.com/steipete/status/2069132838356840857",
+      "title": "Patch the Planet.",
+      "summary": "Patch the Planet.",
+      "content": "Patch the Planet.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T18:58:05Z",
+      "fetched_at": "2026-06-23T07:31:30.474661Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2708e613f9b21a01",
+      "url": "https://x.com/sama/status/2069121360744550796",
+      "title": "We want to help all companies be secure, working with the USG and the security ecosystem.\n\n*The full...",
+      "summary": "We want to help all companies be secure, working with the USG and the security ecosystem.\n\n*The full version of GPT-5.5-Cyber is here; state of the art performance on CyberGym.\n\n*Patch The Planet and Codex Security will help solve security problems instead of just finding them. https://t.co/otyCFHJR4d",
+      "content": "We want to help all companies be secure, working with the USG and the security ecosystem.\n\n*The full version of GPT-5.5-Cyber is here; state of the art performance on CyberGym.\n\n*Patch The Planet and Codex Security will help solve security problems instead of just finding them. https://t.co/otyCFHJR4d",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-22T18:12:29Z",
+      "fetched_at": "2026-06-23T07:31:24.429024Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "812abfbbaebc1bff",
+      "url": "https://x.com/GeminiApp/status/2069114818980728902",
+      "title": "RT @madebygoogle: Create anything from everything. \u2728\n\nWith Gemini Omni, you can transform characters...",
+      "summary": "RT @madebygoogle: Create anything from everything. \u2728\n\nWith Gemini Omni, you can transform characters, environments, lighting, angles, and s\u2026",
+      "content": "RT @madebygoogle: Create anything from everything. \u2728\n\nWith Gemini Omni, you can transform characters, environments, lighting, angles, and s\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-22T17:46:29Z",
+      "fetched_at": "2026-06-23T07:31:25.700723Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "44c7c38ab12e6cf2",
+      "url": "https://x.com/steipete/status/2069089504745660695",
+      "title": "RT @mitsuhiko: Why do people think there is more clarity in their communications when they throw the...",
+      "summary": "RT @mitsuhiko: Why do people think there is more clarity in their communications when they throw their thoughts into an LLM before sharing?\u2026",
+      "content": "RT @mitsuhiko: Why do people think there is more clarity in their communications when they throw their thoughts into an LLM before sharing?\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-22T16:05:54Z",
+      "fetched_at": "2026-06-23T07:31:30.474700Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aef0c687411ba9f1",
+      "url": "https://x.com/dani_avila7/status/2069077177966932433",
+      "title": "If you want to learn more about subagents\n\nYou can read the full article I wrote, where I explain ho...",
+      "summary": "If you want to learn more about subagents\n\nYou can read the full article I wrote, where I explain how each one works\n\nhttps://t.co/94vaVNewVo https://t.co/kDHOBMZIo4",
+      "content": "If you want to learn more about subagents\n\nYou can read the full article I wrote, where I explain how each one works\n\nhttps://t.co/94vaVNewVo https://t.co/kDHOBMZIo4",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-22T15:16:55Z",
+      "fetched_at": "2026-06-23T07:31:22.147091Z",
       "score": null,
       "score_reason": "",
       "tier": "",
