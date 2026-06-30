@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-30T18:59:43.841209+00:00",
+  "exported_at": "2026-06-30T20:51:50.393654+00:00",
   "period_hours": 168,
-  "total": 2755,
+  "total": 2771,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -57922,47 +57922,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b2763533e6534400",
-      "url": "https://x.com/GeminiApp/status/2069501929680474508",
-      "title": "RT @madebygoogle: Turn a moment or photo into a track straight from your Pixel with Music Generation...",
-      "summary": "RT @madebygoogle: Turn a moment or photo into a track straight from your Pixel with Music Generation in Gemini. Press play on your imaginat\u2026",
-      "content": "RT @madebygoogle: Turn a moment or photo into a track straight from your Pixel with Music Generation in Gemini. Press play on your imaginat\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-06-23T19:24:44Z",
-      "fetched_at": "2026-06-23T19:36:06.683158Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bbf5bfe6c4c90055",
-      "url": "https://x.com/dani_avila7/status/2069501212806861068",
-      "title": "This image says it all: Claude has evolved into a gateway to an organization\u2019s tools, data, and cont...",
-      "summary": "This image says it all: Claude has evolved into a gateway to an organization\u2019s tools, data, and contexts\n\nManaging access to repositories, applications, data warehouses, and internal systems is no longer just the responsibility of the person running Claude\n\nAccess is now https://t.co/0i56fKzbgQ",
-      "content": "This image says it all: Claude has evolved into a gateway to an organization\u2019s tools, data, and contexts\n\nManaging access to repositories, applications, data warehouses, and internal systems is no longer just the responsibility of the person running Claude\n\nAccess is now https://t.co/0i56fKzbgQ",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-23T19:21:53Z",
-      "fetched_at": "2026-06-23T19:36:03.187776Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cf157460028e1b35",
       "url": "https://x.com/steipete/status/2069692403238539675",
       "title": "RT @openclaw: \ud83e\udd9e OpenClaw 2026.6.10 just dropped.\n\nJust a small release to keep things brewing:\n\u26a1 Aut...",
@@ -59417,6 +59376,373 @@
       "author": "steipete",
       "published_at": "2026-06-29T20:39:06Z",
       "fetched_at": "2026-06-30T07:59:18.419947Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "63fb44084e637e3d",
+      "url": "https://x.com/karpathy/status/2072051876816945486",
+      "title": "RT @Etched: We're coming out of stealth.\n\nWe've built our first racks after a successful A0 tapeout,...",
+      "summary": "RT @Etched: We're coming out of stealth.\n\nWe've built our first racks after a successful A0 tapeout, $1B+ in customer contracts, and $800m\u2026",
+      "content": "RT @Etched: We're coming out of stealth.\n\nWe've built our first racks after a successful A0 tapeout, $1B+ in customer contracts, and $800m\u2026",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-30T20:17:18Z",
+      "fetched_at": "2026-06-30T20:51:36.876272Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5795a0fcd90ecd5d",
+      "url": "https://x.com/steipete/status/2072037247122284825",
+      "title": "Honored to be part of @aiDotEngineer\u2019s keynote today!",
+      "summary": "Honored to be part of @aiDotEngineer\u2019s keynote today!",
+      "content": "Honored to be part of @aiDotEngineer\u2019s keynote today!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T19:19:10Z",
+      "fetched_at": "2026-06-30T20:51:48.101285Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4643aee375d54baa",
+      "url": "https://x.com/AnthropicAI/status/2072032717550833796",
+      "title": "RT @claudeai: Introducing Claude Sonnet 5, our most agentic Sonnet yet.\n\nIt makes plans, uses tools ...",
+      "summary": "RT @claudeai: Introducing Claude Sonnet 5, our most agentic Sonnet yet.\n\nIt makes plans, uses tools like browsers and terminals, and runs a\u2026",
+      "content": "RT @claudeai: Introducing Claude Sonnet 5, our most agentic Sonnet yet.\n\nIt makes plans, uses tools like browsers and terminals, and runs a\u2026",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-30T19:01:11Z",
+      "fetched_at": "2026-06-30T20:51:46.806635Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "755038c2839393f5",
+      "url": "https://x.com/dani_avila7/status/2072027140560724019",
+      "title": "Claude Sonnet 5 \ud83d\udc40\n\nThis looks really promising\u2026 I guess I just lost my entire weekend testing it. \n\n...",
+      "summary": "Claude Sonnet 5 \ud83d\udc40\n\nThis looks really promising\u2026 I guess I just lost my entire weekend testing it. \n\nAnd of course it came out right before July 4th \ud83d\ude2b https://t.co/H4qYrd76h1",
+      "content": "Claude Sonnet 5 \ud83d\udc40\n\nThis looks really promising\u2026 I guess I just lost my entire weekend testing it. \n\nAnd of course it came out right before July 4th \ud83d\ude2b https://t.co/H4qYrd76h1",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-30T18:39:01Z",
+      "fetched_at": "2026-06-30T20:51:40.446581Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aeb1c482a5c4be12",
+      "url": "https://x.com/GeminiApp/status/2072020956164526349",
+      "title": "RT @McLarenF1: Hey @GeminiApp, thoughts on our Silverstone livery? \ud83d\udcad\n\n#McLarenF1 | #SparkWhatsNext |...",
+      "summary": "RT @McLarenF1: Hey @GeminiApp, thoughts on our Silverstone livery? \ud83d\udcad\n\n#McLarenF1 | #SparkWhatsNext | #BritishGP \ud83c\uddec\ud83c\udde7 https://t.co/5VQsKbdZcI",
+      "content": "RT @McLarenF1: Hey @GeminiApp, thoughts on our Silverstone livery? \ud83d\udcad\n\n#McLarenF1 | #SparkWhatsNext | #BritishGP \ud83c\uddec\ud83c\udde7 https://t.co/5VQsKbdZcI",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-30T18:14:26Z",
+      "fetched_at": "2026-06-30T20:51:43.620297Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8fb10655426a83bf",
+      "url": "https://x.com/steipete/status/2072016659943145792",
+      "title": "RT @mayfer: gpt 5.6 at 750 tok/s doing computer use is going to be a little scary",
+      "summary": "RT @mayfer: gpt 5.6 at 750 tok/s doing computer use is going to be a little scary",
+      "content": "RT @mayfer: gpt 5.6 at 750 tok/s doing computer use is going to be a little scary",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T17:57:22Z",
+      "fetched_at": "2026-06-30T20:51:48.101353Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ae36f4c012b84e70",
+      "url": "https://x.com/steipete/status/2072016219797098822",
+      "title": "RT @ajambrosino: what\u2019s a little funny about the \u201cGPT weak on frontend\u201d discourse is that everything...",
+      "summary": "RT @ajambrosino: what\u2019s a little funny about the \u201cGPT weak on frontend\u201d discourse is that everything we ship in the codex app gets adopted\u2026",
+      "content": "RT @ajambrosino: what\u2019s a little funny about the \u201cGPT weak on frontend\u201d discourse is that everything we ship in the codex app gets adopted\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T17:55:37Z",
+      "fetched_at": "2026-06-30T20:51:48.101385Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5620cd0aad282404",
+      "url": "https://x.com/OpenAI/status/2072004836674167294",
+      "title": "We\u2019re introducing GeneBench-Pro, a research-level benchmark for a harder kind of AI progress: how we...",
+      "summary": "We\u2019re introducing GeneBench-Pro, a research-level benchmark for a harder kind of AI progress: how well agents can navigate messy biological data, choose the right analysis path, and make judgment calls that real computational research depends on.\nhttps://t.co/AsilnnSxnE",
+      "content": "We\u2019re introducing GeneBench-Pro, a research-level benchmark for a harder kind of AI progress: how well agents can navigate messy biological data, choose the right analysis path, and make judgment calls that real computational research depends on.\nhttps://t.co/AsilnnSxnE",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-30T17:10:23Z",
+      "fetched_at": "2026-06-30T20:51:44.551009Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7994a9c4a6245781",
+      "url": "https://x.com/steipete/status/2072001705659519169",
+      "title": "RT @Dayhaysoos: I think the best thing about watching @steipete talk is that you can tell he LOVES w...",
+      "summary": "RT @Dayhaysoos: I think the best thing about watching @steipete talk is that you can tell he LOVES what he does.",
+      "content": "RT @Dayhaysoos: I think the best thing about watching @steipete talk is that you can tell he LOVES what he does.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T16:57:57Z",
+      "fetched_at": "2026-06-30T20:51:48.101410Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "931fe186bf62b771",
+      "url": "https://x.com/steipete/status/2072001699363840347",
+      "title": "RT @alvinpane: Day 2 at @aiDotEngineer World\u2019s Fair. Great talk by @steipete on building loops. http...",
+      "summary": "RT @alvinpane: Day 2 at @aiDotEngineer World\u2019s Fair. Great talk by @steipete on building loops. https://t.co/dHCSVaaf4k",
+      "content": "RT @alvinpane: Day 2 at @aiDotEngineer World\u2019s Fair. Great talk by @steipete on building loops. https://t.co/dHCSVaaf4k",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T16:57:55Z",
+      "fetched_at": "2026-06-30T20:51:48.101434Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2a8cea878fc604db",
+      "url": "https://x.com/simonw/status/2072001653176426911",
+      "title": "Here's an example, recorded by \"shot-scraper video\" using a YAML storyboard constructed by Codex Des...",
+      "summary": "Here's an example, recorded by \"shot-scraper video\" using a YAML storyboard constructed by Codex Desktop and GPT-5.5 xhigh https://t.co/wo41dnPOBs",
+      "content": "Here's an example, recorded by \"shot-scraper video\" using a YAML storyboard constructed by Codex Desktop and GPT-5.5 xhigh https://t.co/wo41dnPOBs",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-30T16:57:44Z",
+      "fetched_at": "2026-06-30T20:51:39.192934Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d8504db196c13fac",
+      "url": "https://x.com/simonw/status/2072001270978855074",
+      "title": "I've added video support to my \"shot-scraper\" browser automation tool - you (or your coding agent) c...",
+      "summary": "I've added video support to my \"shot-scraper\" browser automation tool - you (or your coding agent) can now create a storyboard YAML file and use that to record a video demo of new web application features https://t.co/NfRtrvplBf",
+      "content": "I've added video support to my \"shot-scraper\" browser automation tool - you (or your coding agent) can now create a storyboard YAML file and use that to record a video demo of new web application features https://t.co/NfRtrvplBf",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-30T16:56:13Z",
+      "fetched_at": "2026-06-30T20:51:39.192998Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9e08364f81f7a4fd",
+      "url": "https://x.com/bcherny/status/2072000214634742243",
+      "title": "You asked, we listened. Claude Desktop on Linux is here!\n\nDownload link: https://t.co/gjgHZvbKyi",
+      "summary": "You asked, we listened. Claude Desktop on Linux is here!\n\nDownload link: https://t.co/gjgHZvbKyi",
+      "content": "You asked, we listened. Claude Desktop on Linux is here!\n\nDownload link: https://t.co/gjgHZvbKyi",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-30T16:52:01Z",
+      "fetched_at": "2026-06-30T20:51:38.067212Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1978eef4beb87239",
+      "url": "https://x.com/dani_avila7/status/2071994715394687339",
+      "title": "Thank you @AnthropicAI \ud83e\udef6\n\nI hope the feedback I sent helps improve the platform https://t.co/RJvDQnb...",
+      "summary": "Thank you @AnthropicAI \ud83e\udef6\n\nI hope the feedback I sent helps improve the platform https://t.co/RJvDQnbZ6j",
+      "content": "Thank you @AnthropicAI \ud83e\udef6\n\nI hope the feedback I sent helps improve the platform https://t.co/RJvDQnbZ6j",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-30T16:30:10Z",
+      "fetched_at": "2026-06-30T20:51:40.446674Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4d32d1a00e000aca",
+      "url": "https://x.com/trq212/status/2071990682726826193",
+      "title": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the...",
+      "summary": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the browser and terminal, you now get a fi\u2026",
+      "content": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the browser and terminal, you now get a fi\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-30T16:14:09Z",
+      "fetched_at": "2026-06-30T20:51:35.385635Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dfe7b0942e2390f0",
+      "url": "https://x.com/steipete/status/2071972449277898924",
+      "title": "Good morning @aiDotEngineer !\nAre we talking loops today?",
+      "summary": "Good morning @aiDotEngineer !\nAre we talking loops today?",
+      "content": "Good morning @aiDotEngineer !\nAre we talking loops today?",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T15:01:41Z",
+      "fetched_at": "2026-06-30T20:51:48.101456Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f3aed5e94d3e4434",
+      "url": "https://x.com/steipete/status/2071972239734616146",
+      "title": "Was thinking if I should highlight this tweet or not, but it\u2019s a masterclass in the amount of vitrio...",
+      "summary": "Was thinking if I should highlight this tweet or not, but it\u2019s a masterclass in the amount of vitriol people face when working on open source.\n\nIs the app great yet? No. It\u2019s a start.\n\nIt was built by the community. Getting the iOS and Android apps working with secure pairing and",
+      "content": "Was thinking if I should highlight this tweet or not, but it\u2019s a masterclass in the amount of vitriol people face when working on open source.\n\nIs the app great yet? No. It\u2019s a start.\n\nIt was built by the community. Getting the iOS and Android apps working with secure pairing and",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T15:00:51Z",
+      "fetched_at": "2026-06-30T20:51:48.101478Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
