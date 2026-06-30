@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-30T09:27:58.526318+00:00",
+  "exported_at": "2026-06-30T09:59:40.159272+00:00",
   "period_hours": 168,
-  "total": 2752,
+  "total": 2751,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12450,27 +12450,6 @@
       "author": "",
       "published_at": "2026-06-23T12:51:55Z",
       "fetched_at": "2026-06-23T13:17:25.881360Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9d1d47ec4b50ed0a",
-      "url": "https://blogs.nvidia.com/blog/top500-green500-supercomputers-isc-2026/",
-      "title": "NVIDIA Powers Over 400 of the World\u2019s 500 Fastest Supercomputers",
-      "summary": "News Highlights: NVIDIA technology runs 81% of the TOP500 and 90% of the systems new to the list. 26 systems on the TOP500 adopted the NVIDIA Grace CPU, up eight from the previous list. The top eight systems on the Green500 run on NVIDIA GPUs and nine of the top 10 use NVIDIA technologies. No. [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><strong>News Highlights:</strong></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">NVIDIA technology runs 81% of the TOP500 and 90% of the systems new to the list.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">26 systems on the TOP500 adopted the NVIDIA Grace CPU, up eight from the previous list.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">The top eight systems on the Green500 run on NVIDIA GPUs and nine of the top 10 use NVIDIA technologies.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">No. 1 on the Green500, KAIROS, uses a single NVIDIA Grace Hopper Superchip.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">376 of the TOP500 systems are interconnected using NVIDIA networking.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">NVIDIA technologies power more than 400 of the world\u2019s 500 fastest supercomputers \u2014 81% of the TOP500 \u2014 according to the latest rankings released this week at the ISC High Performance conference in Hamburg, Germany.</span></p>\n<p><span style=\"font-weight: 400;\">That\u2019s a gain of 17 systems from the previous list, with the momentum in new deployments: nearly nine of every 10 systems new to the ranking are built on NVIDIA technologies.</span></p>\n<p><span style=\"font-weight: 400;\">That percentage reflects a deliberate preference for machines built for AI, simulation and science together. And it\u2019s compounding: NVIDIA systems across the TOP500 now deliver more than 2x the AI training and nearly 3x the AI inference throughput of every other platform combined.</span></p>\n<p><span style=\"font-weight: 400;\">GPU and networking adoption each hit new highs, with NVIDIA GPUs accelerating a record 238 systems and NVIDIA networking connecting a record 376 \u2014 the vast majority on NVIDIA Quantum InfiniBand, the backbone of large-scale AI and high-performance computing, and the rest on Ethernet.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The trend behind the numbers is bigger than any one list: Accelerated computing is becoming the foundation for the systems taking on the world\u2019s most demanding work, across AI and science.</span></p>\n<p><span style=\"font-weight: 400;\">Updated twice a year, the TOP500 ranks the world\u2019s fastest supercomputers, while the Green500 list measures how much computing each delivers per watt.</span></p>\n<h2><b>A Full-Stack Footprint</b></h2>\n<p><span style=\"font-weight: 400;\">NVIDIA\u2019s reach now spans the full system \u2014 GPU, networking and, increasingly, the CPU \u2014 with NVIDIA Grace CPU adoption reaching 26 systems, up eight from the previous list, with nearly 2.5 million Grace CPUs shipped.</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA Grace-based machines sit atop both rankings: JUPITER at No. 5 and Alps at No. 10 on the TOP500, and KAIROS at No. 1 on the Green500.</span></p>\n<p><span style=\"font-weight: 400;\">Each pairs an NVIDIA GPU with the Grace CPU in a single NVIDIA Grace Hopper Superchip, letting the two share memory with minimal overhead \u2014 a design built for the memory-intensive demands of modern AI.</span></p>\n<p><span style=\"font-weight: 400;\">The </span><a href=\"https://nvidianews.nvidia.com/news/nvidia-unveils-vera-the-cpu-for-agents\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Vera CPU</span></a><span style=\"font-weight: 400;\">, announced earlier this year, builds on the success of Grace, taking CPU performance and energy efficiency to new levels for the most demanding AI workloads in modern data centers \u2014 where agents move from answering basic questions to taking actions, running code, using tools and evaluating results.</span></p>\n<h2><b>Topping the Efficiency List</b></h2>\n<p><span style=\"font-weight: 400;\">NVIDIA swept the Green500 ranking of the most energy-efficient supercomputers: The top eight all run on NVIDIA GPUs and nine of the top 10 use NVIDIA technologies.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Leading the list is KAIROS, an NVIDIA Grace Hopper system at France\u2019s University of Toulouse, at 73.3 gigaflops per watt \u2014 with Grace Hopper systems taking the top four spots, across France, Germany and the U.K.</span></p>\n<h2><b>From Exascale Science to the Next Wave</b></h2>\n<p><span style=\"font-weight: 400;\">A record </span><a href=\"https://nvidianews.nvidia.com/news/europe-unveils-a-record-35-new-nvidia-ai-supercomputers\" target=\"_blank\"><span style=\"font-weight: 400;\">35 NVIDIA AI HPC supercomputers</span></a><span style=\"font-weight: 400;\"> are in development across Europe \u2014 equipping more than 3 million researchers with next-generation infrastructure for continental AI, accelerated science and industrial innovation.</span></p>\n<p><span style=\"font-weight: 400;\">Among these systems is JUPITER, </span><a href=\"https://blogs.nvidia.com/blog/jupiter-exascale-supercomputing-science\"><span style=\"font-weight: 400;\">Europe\u2019s fastest supercomputer and its first to reach exascale</span></a><span style=\"font-weight: 400;\">, at the J\u00fclich Supercomputing Centre in Germany.</span></p>\n<p><span style=\"font-weight: 400;\">JUPITER is mapping the human brain at cellular scale, simulating Earth\u2019s climate and advancing the AI behind next-generation 6G networks.</span></p>\n<p><span style=\"font-weight: 400;\">The newest arrivals to the list run on the NVIDIA Blackwell architecture, with B200 and GB200 systems entering the rankings across Asia, Europe and the U.S. \u2014 and the first GB200 systems debuting in Japan.</span></p>\n<p><span style=\"font-weight: 400;\">The buildout is global, from a new AI factory in South Africa to national AI systems in Saudi Arabia, Singapore and Vietnam.</span></p>\n<p><span style=\"font-weight: 400;\">It\u2019s the same story up and down the list: the world\u2019s AI buildout is running on NVIDIA.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Chris Porter",
-      "published_at": "2026-06-23T09:00:38Z",
-      "fetched_at": "2026-06-23T09:28:06.026886Z",
       "score": null,
       "score_reason": "",
       "tier": "",
