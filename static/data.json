@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-30T22:45:28.879711+00:00",
+  "exported_at": "2026-06-30T22:52:10.535797+00:00",
   "period_hours": 168,
-  "total": 2769,
+  "total": 2773,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -59701,6 +59701,88 @@
       "author": "steipete",
       "published_at": "2026-06-30T15:00:51Z",
       "fetched_at": "2026-06-30T20:51:48.101478Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c1be70028b8b2d77",
+      "url": "https://x.com/simonw/status/2072068898648949184",
+      "title": "Notes (and a Pelican) on Claude Sonnet 5 - the new tokenizer makes it ~1.4x more expensive for Engli...",
+      "summary": "Notes (and a Pelican) on Claude Sonnet 5 - the new tokenizer makes it ~1.4x more expensive for English, ~1.33x more expensive for Spanish but roughly the same price for Simplified Mandarin https://t.co/UUnmjtPaSi",
+      "content": "Notes (and a Pelican) on Claude Sonnet 5 - the new tokenizer makes it ~1.4x more expensive for English, ~1.33x more expensive for Spanish but roughly the same price for Simplified Mandarin https://t.co/UUnmjtPaSi",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-30T21:24:57Z",
+      "fetched_at": "2026-06-30T22:51:58.951362Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b14c48e816c3370d",
+      "url": "https://x.com/steipete/status/2072061089177539003",
+      "title": "Folks I found the reset button. @thsottiaux https://t.co/kqWkXvevd1",
+      "summary": "Folks I found the reset button. @thsottiaux https://t.co/kqWkXvevd1",
+      "content": "Folks I found the reset button. @thsottiaux https://t.co/kqWkXvevd1",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T20:53:55Z",
+      "fetched_at": "2026-06-30T22:52:08.355519Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3ee44c64cc9899d0",
+      "url": "https://x.com/karpathy/status/2069547676849557725",
+      "title": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the ...",
+      "summary": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "content": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-23T22:26:31Z",
+      "fetched_at": "2026-06-24T08:49:13.747151Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
