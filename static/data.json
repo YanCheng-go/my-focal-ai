@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-06-30T22:52:10.535797+00:00",
+  "exported_at": "2026-07-01T00:52:29.188467+00:00",
   "period_hours": 168,
-  "total": 2773,
+  "total": 2770,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -17118,48 +17118,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "e7cad40fb53bcdfe",
-      "url": "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
-      "title": "NVIDIA and AWS Collaborate to Bring AI to Production at Scale",
-      "summary": "Building AI systems at scale is demanding, requiring low-latency inference, fast vector search, strong GPU price-performance and infrastructure that can grow without multiplying operational complexity.\u00a0 NVIDIA\u2019s latest work with Amazon Web Services (AWS) addresses each of those constraints. Across Amazon OpenSearch and Amazon EC2, NVIDIA AI infrastructure is giving enterprises more practical paths to deploy [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">Building AI systems at scale is demanding, requiring low-latency inference, fast vector search, strong GPU price-performance and infrastructure that can grow without multiplying operational complexity.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA\u2019s latest work with Amazon Web Services (AWS) addresses each of those constraints. Across Amazon OpenSearch and Amazon EC2, NVIDIA AI infrastructure is giving enterprises more practical paths to deploy AI at production scale.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">EC2 G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs expand the compute layer for AI, graphics, video and data analytics workloads, while the NVIDIA cuVS library accelerates the retrieval layer by making GPU-powered vector indexing the default in OpenSearch Serverless. And with AWS achieving NVIDIA Exemplar Cloud status for NVIDIA GB300, customers can trust they\u2019re receiving peak optimized performance for their training workloads.</span></p>\n<h2><b>NVIDIA RTX PRO 4500 Blackwell Server Edition Multi-Workload GPUs Power New Amazon EC2 G7 Instances</b></h2>\n<p><span style=\"font-weight: 400;\">Amazon EC2 G7 instances bring NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs to AWS for AI inference, graphics, spatial computing and GPU-accelerated data analytics \u2014 delivering a new instance type engineered for production workloads that need performance without the operational overhead of a customer-managed GPU platform.</span></p>\n<p><span style=\"font-weight: 400;\">Compared with G6 instances, G7 delivers up to 4.6x AI inference performance, up to 2.1x graphics performance and significantly faster GPU-accelerated data analytics on Amazon EMR using the NVIDIA cuDF library for Apache Spark workloads.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">With support for up to eight GPUs, 256GB of total GPU memory, 700 Gbps of EFA-enabled networking and up to 7.6TB of local NVMe SSD storage \u2014 across one-, two-, four- and eight- GPU configurations plus bare metal, coming soon \u2014 G7 instances let customers right-size infrastructure for their workloads instead of over-provisioning for them.</span></p>\n<p><span style=\"font-weight: 400;\">The platform\u2019s versatility means AI teams get lower-latency inference. Media and entertainment teams get high-resolution video workflows and rendering. Simulation, computer-aided design, virtual desktop infrastructure, gaming and spatial computing teams get the same instance type for graphics-intensive applications. And data teams can apply the GPU memory, local storage and networking improvements to analytics pipelines and vector database workloads.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">G7 instances are accessible through AWS Deep Learning Amazon Machine Images (AMIs), Amazon Deep Learning Containers, Amazon EMR, Amazon EKS, Amazon ECS and graphics AMIs \u2014 and coming soon to Amazon SageMaker AI.</span></p>\n<h2><b>NVIDIA cuVS Makes GPU-Accelerated Vector Search the Default in Amazon OpenSearch</b></h2>\n<p><span style=\"font-weight: 400;\">The next generation of Amazon OpenSearch Serverless powers agentic AI and dynamic workloads with no infrastructure management required. It uses GPU-accelerated vector indexing, powered by NVIDIA cuVS, as the default compute choice for all vector collections.</span></p>\n<p><span style=\"font-weight: 400;\">For teams building </span><a href=\"https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/\"><span style=\"font-weight: 400;\">retrieval-augmented generation</span></a><span style=\"font-weight: 400;\">, semantic search, recommendation systems and agentic AI applications, that shift matters. It turns GPU-powered vector search from a specialized optimization project into a standard AWS capability.</span></p>\n<p><span style=\"font-weight: 400;\">The customer impact is direct: vector indexing up to 10x faster at a quarter of the cost, compared with CPU-only builds \u2014 making billion-scale vector databases practical to build in under an hour.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">By making NVIDIA cuVS the default in OpenSearch Serverless, AWS customers get a much faster path from raw data to production-ready AI retrieval infrastructure \u2014 with serverless scaling that reduces operational overhead when workloads are idle.</span></p>\n<h2><b>AWS Achieves NVIDIA Exemplar Cloud Status for GB300 Training Performance</b></h2>\n<p><span style=\"font-weight: 400;\">AWS has achieved NVIDIA Exemplar Cloud status on NVIDIA GB300 for training workloads. This means AWS meets the rigorous performance thresholds that NVIDIA uses to benchmark AI workloads against its reference architecture.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">This achievement is the result of deep co-engineering efforts between AWS and NVIDIA teams. Through the NVIDIA Exemplar Clouds initiative, developers and AI leaders can be confident they\u2019re using consistent, high-performance cloud infrastructure for large-scale training, helping teams evaluate cloud providers with greater confidence, improve total cost of ownership and move AI projects from planning to production more efficiently.</span></p>\n<p><span style=\"font-weight: 400;\">Together, these advancements reinforce every layer of the AI infrastructure stack on AWS. The throughline is the same: production-grade AI infrastructure that performs at scale, without adding operational burden to the teams running it.</span></p>\n<p><i><span style=\"font-weight: 400;\">Learn more in </span></i><a href=\"https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-g7-generally-available/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">this AWS blog</span></i></a><i><span style=\"font-weight: 400;\">. </span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Josiah Byers",
-      "published_at": "2026-06-24T00:05:37Z",
-      "fetched_at": "2026-06-24T01:15:21.592864Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f702671dce84d2a9",
-      "url": "https://claude.com/blog/building-effective-human-agent-teams",
-      "title": "Building effective human-agent teams",
-      "summary": "Building effective human-agent teams",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-06-24T00:00:00Z",
-      "fetched_at": "2026-06-24T18:55:22.289449Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8dc6626e290c056c",
       "url": "https://www.youtube.com/watch?v=xafwfGVBxos",
       "title": "Tech interviews with NeetCode",
@@ -17304,48 +17262,6 @@
       "author": "Jyotirmai Singh",
       "published_at": "2026-06-30T04:00:00Z",
       "fetched_at": "2026-06-30T05:42:27.460081Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bb6dca4045d63cf1",
-      "url": "https://huggingface.co/blog/ffasr-leaderboard",
-      "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-06-24T00:00:00Z",
-      "fetched_at": "2026-06-24T16:58:53.933931Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b2b9e204c1ece0d2",
-      "url": "https://claude.com/blog/agent-identity-access-model",
-      "title": "Agent identity in Claude Tag: a new access model for autonomous, team-wide AI",
-      "summary": "Agent identity in Claude Tag: a new access model for autonomous, team-wide AI",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-06-24T00:00:00Z",
-      "fetched_at": "2026-06-23T18:59:05.182210Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -25490,27 +25406,6 @@
       "author": "Li Zhetao, Zeng Xiyu, Wang Jianhui, Xiao Yong, Liu Zhongren, Wu Junru, Lai Junjie, Huang Jijun, Long Saiqin",
       "published_at": "2026-06-29T04:00:00Z",
       "fetched_at": "2026-06-29T05:55:55.336191Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b1b6d511ea23cc0f",
-      "url": "https://www.youtube.com/watch?v=HA7lZd7zk3M",
-      "title": "Stanford MS&E435 Economics of the AI Supercycle | Spring 2026 | Applications, Coding AI",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nThis seminar covers applications, coding AI, and the future of software.\n\nFollow along with the course schedule: https://mse435.stanford.edu/\n\nGuest Speaker: Guillermo Rauch, Vercel\n\nInstructor: Apoorv Agrawal is a Stanford Adjunct Lecturer in Management Science and Engineering and a partner at Altimeter Capital.",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-23T23:14:55Z",
-      "fetched_at": "2026-06-24T01:15:15.325152Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -57821,26 +57716,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5b130934ce6612e9",
-      "url": "https://cloudonair.withgoogle.com/events/summit-sydney-2026?_gl=1*1qz4yah*_ga*Mjc5ODguMTc4MTEwODU5NA..*_ga_WH2QY8WWF5*czE3ODExMDg1OTMkbzEkZzEkdDE3ODExMDg1OTckajU2JGwwJGgw",
-      "title": "Google Cloud Summit Sydney/Warrane",
-      "summary": "June 24 | Sydney | In-person",
-      "content": "",
-      "source_name": "Google Developer Events",
-      "source_type": "events",
-      "tags": [
-        "ai",
-        "google"
-      ],
-      "author": "",
-      "published_at": "2026-06-24T00:00:00Z",
-      "fetched_at": "2026-06-17T17:21:58.653843Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -57875,26 +57750,6 @@
       "author": "",
       "published_at": "2026-06-25T00:00:00Z",
       "fetched_at": "2026-06-09T19:02:15.192170Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "468e46362aed9483",
-      "url": "https://www.anthropic.com/webinars/claude-on-google-cloud-monitoring-and-securing-agents-at-scale",
-      "title": "Claude on Google Cloud: Monitoring and Securing Agents at Scale",
-      "summary": "Date: Jun 24, 20262026-06-24",
-      "content": "",
-      "source_name": "Anthropic Events",
-      "source_type": "events",
-      "tags": [
-        "ai",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-06-24T00:00:00Z",
-      "fetched_at": "2026-06-05T18:57:30.548733Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -57995,27 +57850,6 @@
       "author": "steipete",
       "published_at": "2026-06-24T01:31:22Z",
       "fetched_at": "2026-06-24T08:49:25.522793Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fbc7feac76f5c077",
-      "url": "https://x.com/karpathy/status/2069579404163031082",
-      "title": "RT @EngramLab: https://t.co/CGIef5lIBI",
-      "summary": "RT @EngramLab: https://t.co/CGIef5lIBI",
-      "content": "RT @EngramLab: https://t.co/CGIef5lIBI",
-      "source_name": "@karpathy",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "research",
-        "deep-learning"
-      ],
-      "author": "karpathy",
-      "published_at": "2026-06-24T00:32:35Z",
-      "fetched_at": "2026-06-24T08:49:13.746982Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -59742,6 +59576,110 @@
       "author": "steipete",
       "published_at": "2026-06-30T20:53:55Z",
       "fetched_at": "2026-06-30T22:52:08.355519Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7417b6d690f7f6ac",
+      "url": "https://x.com/simonw/status/2072111648945717639",
+      "title": "RT @AnthropicAI: We\u2019ve received notice that the Department of Commerce has lifted export controls on...",
+      "summary": "RT @AnthropicAI: We\u2019ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll be\u2026",
+      "content": "RT @AnthropicAI: We\u2019ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll be\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-07-01T00:14:49Z",
+      "fetched_at": "2026-07-01T00:52:18.678293Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "699665d4c3eb44c6",
+      "url": "https://x.com/claudeai/status/2072106295612649716",
+      "title": "RT @AnthropicAI: We\u2019ve received notice that the Department of Commerce has lifted export controls on...",
+      "summary": "RT @AnthropicAI: We\u2019ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll be\u2026",
+      "content": "RT @AnthropicAI: We\u2019ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll be\u2026",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-06-30T23:53:33Z",
+      "fetched_at": "2026-07-01T00:52:21.038908Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f77cb71901f39c3f",
+      "url": "https://x.com/AnthropicAI/status/2072106151890809341",
+      "title": "We\u2019ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 a...",
+      "summary": "We\u2019ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll begin restoring access tomorrow, and will share an update soon.\n\nWe\u2019re grateful to our users for their patience, and to everyone who worked with us on",
+      "content": "We\u2019ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll begin restoring access tomorrow, and will share an update soon.\n\nWe\u2019re grateful to our users for their patience, and to everyone who worked with us on",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-06-30T23:52:59Z",
+      "fetched_at": "2026-07-01T00:52:26.577000Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0ae74a82f40cd5cc",
+      "url": "https://x.com/bcherny/status/2072105851457019944",
+      "title": "Agree",
+      "summary": "Agree",
+      "content": "Agree",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-06-30T23:51:47Z",
+      "fetched_at": "2026-07-01T00:52:17.613509Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbc7feac76f5c077",
+      "url": "https://x.com/karpathy/status/2069579404163031082",
+      "title": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "summary": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "content": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-24T00:32:35Z",
+      "fetched_at": "2026-06-24T08:49:13.746982Z",
       "score": null,
       "score_reason": "",
       "tier": "",
