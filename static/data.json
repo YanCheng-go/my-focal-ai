@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-01T20:52:36.529612+00:00",
+  "exported_at": "2026-07-01T21:20:14.342617+00:00",
   "period_hours": 168,
-  "total": 3120,
+  "total": 3129,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -67063,6 +67063,188 @@
       "author": "steipete",
       "published_at": "2026-07-01T17:35:26Z",
       "fetched_at": "2026-07-01T19:19:38.399909Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c81991e4f28d8e91",
+      "url": "https://x.com/trq212/status/2072426684469670222",
+      "title": "RT @claudeai: Fable 5 is back. https://t.co/9RTGUCcPHy",
+      "summary": "RT @claudeai: Fable 5 is back. https://t.co/9RTGUCcPHy",
+      "content": "RT @claudeai: Fable 5 is back. https://t.co/9RTGUCcPHy",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-01T21:06:40Z",
+      "fetched_at": "2026-07-01T21:19:45.601578Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "741505ad34eac9be",
+      "url": "https://x.com/steipete/status/2072423856300761425",
+      "title": "RT @openclaw: Episode 2 of  OpenClaw\u2019s official podcast\n\n@steipete and @somalley108 join @hrudolph a...",
+      "summary": "RT @openclaw: Episode 2 of  OpenClaw\u2019s official podcast\n\n@steipete and @somalley108 join @hrudolph and @Pat_Erichsen to discuss OpenClaw st\u2026",
+      "content": "RT @openclaw: Episode 2 of  OpenClaw\u2019s official podcast\n\n@steipete and @somalley108 join @hrudolph and @Pat_Erichsen to discuss OpenClaw st\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T20:55:25Z",
+      "fetched_at": "2026-07-01T21:20:12.475986Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fd9a20e61fa06304",
+      "url": "https://x.com/dani_avila7/status/2072407443577934019",
+      "title": "Claude, review all the commits I've made over the last 20 days and rewrite them completely \ud83e\udef6 https:/...",
+      "summary": "Claude, review all the commits I've made over the last 20 days and rewrite them completely \ud83e\udef6 https://t.co/iwnPM0H2C8",
+      "content": "Claude, review all the commits I've made over the last 20 days and rewrite them completely \ud83e\udef6 https://t.co/iwnPM0H2C8",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-07-01T19:50:12Z",
+      "fetched_at": "2026-07-01T21:19:53.275300Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "77e7bb56b4ccb970",
+      "url": "https://x.com/AnthropicAI/status/2072405052518752717",
+      "title": "RT @claudeai: Fable 5 is back. https://t.co/9RTGUCcPHy",
+      "summary": "RT @claudeai: Fable 5 is back. https://t.co/9RTGUCcPHy",
+      "content": "RT @claudeai: Fable 5 is back. https://t.co/9RTGUCcPHy",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-07-01T19:40:42Z",
+      "fetched_at": "2026-07-01T21:20:07.585289Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b0c45b0175c3b0a9",
+      "url": "https://x.com/claudeai/status/2072402642836615273",
+      "title": "Read the Fable 5 blog post here: https://t.co/iQymY0jQvY",
+      "summary": "Read the Fable 5 blog post here: https://t.co/iQymY0jQvY",
+      "content": "Read the Fable 5 blog post here: https://t.co/iQymY0jQvY",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-07-01T19:31:08Z",
+      "fetched_at": "2026-07-01T21:19:56.038000Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "31163cc93cc6bdcd",
+      "url": "https://x.com/claudeai/status/2072402639644766602",
+      "title": "All paid plans with usage included can access Fable 5 through July 7. You can use Fable 5 up to 50% ...",
+      "summary": "All paid plans with usage included can access Fable 5 through July 7. You can use Fable 5 up to 50% of your weekly usage limit, after which you can switch to another model for the remainder of your usage. You can also continue using Fable via usage credits.\n\nMore here:",
+      "content": "All paid plans with usage included can access Fable 5 through July 7. You can use Fable 5 up to 50% of your weekly usage limit, after which you can switch to another model for the remainder of your usage. You can also continue using Fable via usage credits.\n\nMore here:",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-07-01T19:31:07Z",
+      "fetched_at": "2026-07-01T21:19:56.038112Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "27d22f2f4aec2f41",
+      "url": "https://x.com/claudeai/status/2072402640907162072",
+      "title": "If one of your requests is mistakenly flagged in Claude Code, run /feedback to file a report. On htt...",
+      "summary": "If one of your requests is mistakenly flagged in Claude Code, run /feedback to file a report. On https://t.co/XSKiQaAUU9 and Cowork, you can share feedback through the thumbs buttons. \n\nThis feedback helps us further tune these classifiers and reduce false positives over time.",
+      "content": "If one of your requests is mistakenly flagged in Claude Code, run /feedback to file a report. On https://t.co/XSKiQaAUU9 and Cowork, you can share feedback through the thumbs buttons. \n\nThis feedback helps us further tune these classifiers and reduce false positives over time.",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-07-01T19:31:07Z",
+      "fetched_at": "2026-07-01T21:19:56.038079Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0bfb3d0f878ea5e9",
+      "url": "https://x.com/claudeai/status/2072402638247968855",
+      "title": "Following conversations with the US government, we\u2019ve updated our cybersecurity safeguards.\n\nThe vas...",
+      "summary": "Following conversations with the US government, we\u2019ve updated our cybersecurity safeguards.\n\nThe vast majority of coding work is unaffected.\n\nIn the near term, the new safeguards will flag a slightly higher fraction of harmless requests than the previous Fable safeguards; we\u2019re",
+      "content": "Following conversations with the US government, we\u2019ve updated our cybersecurity safeguards.\n\nThe vast majority of coding work is unaffected.\n\nIn the near term, the new safeguards will flag a slightly higher fraction of harmless requests than the previous Fable safeguards; we\u2019re",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-07-01T19:31:06Z",
+      "fetched_at": "2026-07-01T21:19:56.038138Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
