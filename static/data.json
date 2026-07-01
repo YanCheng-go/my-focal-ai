@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-01T17:02:50.589261+00:00",
+  "exported_at": "2026-07-01T17:19:20.363893+00:00",
   "period_hours": 168,
-  "total": 3112,
+  "total": 3117,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -34069,26 +34069,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "8dc6626e290c056c",
-      "url": "https://www.youtube.com/watch?v=xafwfGVBxos",
-      "title": "Tech interviews with NeetCode",
-      "summary": "Navdeep Singh \u2013 oftentimes better known as NeetCode \u2013 is the creator of NeetCode.io, one of the most popular coding interview preparation platforms and YouTube channels for software engineers. Before building NeetCode full-time, he worked as a software engineer at Amazon and Google.\n\nIn this episode of The Pragmatic Engineer, I sit down with Neet to discuss his path from Amazon and Google to building his own startup, why he left Amazon after just two months, what he learned at Google, and the decision to leave a stable engineering career to bet on himself. We also discuss what coding interview preparation teaches beyond passing interviews, the value of going deep on difficult problems, and why systems thinking and domain expertise remain essential engineering skills in the age of AI.\n\nThroughout the conversation, NeetCode makes the case that learning hard things is one of the single best investments an engineer can make, helping build the judgment and expertise that remain valuable no matter how the tools change.\n\n\u2014\nBrought to you by:\n\n\u2022 Antithesis \u2013 verify your system\u2019s correctness without human review or traditional integration tests \u2013 and avoid bugs or outages https://antithesis.com/pragmatic\n\n\u2022 Sentry \u2013 application monitoring software considered \u201cnot bad\u201d by millions of developers https://sentry.io/pragmatic\n\n\u2022 Google Cloud Run \u2013 run your code and host LLMs directly on top of Google\u2019s scalable infrastructure, without having to worry about managing infra https://cloud.google.com/run?e=48754805&amp;utm_source=&amp;utm_medium=&amp;utm_campaign=the_pragmatic_engineer\n \n\u2014\n*The Pragmatic Engineer deepdives relevant for this episode:*\n\u2022 Learnings from conducting ~1,000 interviews at Amazon https://newsletter.pragmaticengineer.com/p/learnings-from-conducting-1000-interviews\n\u2022 How experienced engineers get unstuck in coding interviews https://newsletter.pragmaticengineer.com/p/how-to-get-unstuck-during-coding-interviews\n\u2022 The Reality of Tech Interviews in 2025 https://newsletter.pragmaticengineer.com/p/the-reality-of-tech-interviews\n\u2022 Tech hiring: is this an inflection point? https://newsletter.pragmaticengineer.com/p/tech-hiring-inflection-point\n\u2022 AI fakers exposed in tech dev recruitment: postmortem https://newsletter.pragmaticengineer.com/p/ai-fakers\n\n\u2014\n*Where to find Navdeep Singh (NeetCode):*\n\u2022 X: https://x.com/neetcode1\n\u2022 LinkedIn: https://www.linkedin.com/in/navdeep-singh-3aaa14161\n\u2022 YouTube: https://www.youtube.com/c/neetcode \n\u2022 Website: https://neetcode.io\n\n\u2014\n*In this episode, we cover:*\n00:00 Intro\n02:57 Neet\u2019s take on coding interviews\n06:41 Getting into tech\n08:56 Why Neet isn't a fan of the CAP theorem\n13:12 Quitting Amazon after two months\n18:22 Google vs Amazon\n22:26 The origins of NeetCode\n25:27 Leaving Google to go all in on NeetCode\n32:02 Why Neet doesn't fix every bug\n39:26 The value of coding interview prep\n42:57 Systems thinking and domain expertise\n47:28 Hiring at Big Tech\n52:15 Tech stack at Neetcode\n57:57 The NeetCode  redesign contest\n1:01:46 The future of software engineers\n1:09:04 Hot takes: AGI, AI skill erosion, personality traits\n1:22:49 \u201cMaybe some people should just give up\u201d\n1:24:39 How to be a standout engineer\n1:27:55 Book recommendation\n\n\u2014\nSee the transcript and other references from the episode at https://newsletter.pragmaticengineer.com/podcast\n\n\u2014\nProduction and marketing by https://penname.co/.",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-06-24T17:13:15Z",
-      "fetched_at": "2026-06-24T18:55:14.792685Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d0513a92b7bf67d5",
       "url": "https://arxiv.org/abs/2606.29665",
       "title": "Adjusted Wasserstein distances for bridging empirical and true distributions with applications to MDS",
@@ -66893,6 +66873,129 @@
       "author": "dani_avila7",
       "published_at": "2026-07-01T12:58:42Z",
       "fetched_at": "2026-07-01T13:50:33.640186Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e802d8674b211b0e",
+      "url": "https://x.com/trq212/status/2072366310416425053",
+      "title": "HTML mentioned",
+      "summary": "HTML mentioned",
+      "content": "HTML mentioned",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-01T17:06:45Z",
+      "fetched_at": "2026-07-01T17:19:04.749963Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "58fcb3e52a8cc79d",
+      "url": "https://x.com/trq212/status/2072360902964511171",
+      "title": "hello from AI engineer! https://t.co/J8sFn5pbyC",
+      "summary": "hello from AI engineer! https://t.co/J8sFn5pbyC",
+      "content": "hello from AI engineer! https://t.co/J8sFn5pbyC",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-01T16:45:16Z",
+      "fetched_at": "2026-07-01T17:19:04.750039Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e186f18707fa9e12",
+      "url": "https://x.com/simonw/status/2072338037372268926",
+      "title": "RT @trq212: @_catwu @simonw and I will be doing a fireside chat about \"This year in Claude\" from 12:...",
+      "summary": "RT @trq212: @_catwu @simonw and I will be doing a fireside chat about \"This year in Claude\" from 12:30pm-1:30pm at AIE in Expo Stage 2.\n\nWe\u2026",
+      "content": "RT @trq212: @_catwu @simonw and I will be doing a fireside chat about \"This year in Claude\" from 12:30pm-1:30pm at AIE in Expo Stage 2.\n\nWe\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-07-01T15:14:24Z",
+      "fetched_at": "2026-07-01T17:19:08.740561Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f78148029a871d64",
+      "url": "https://x.com/GoogleAI/status/2072318809277390940",
+      "title": "As generative AI tools continue to evolve, we believe it's more important than ever to know what's A...",
+      "summary": "As generative AI tools continue to evolve, we believe it's more important than ever to know what's AI-generated and what isn't. That\u2019s why @GoogleDeepMind launched SynthID in 2023\u2014a technology that adds a hidden digital watermark to AI content.\n\nHere\u2019s a summary of SynthID\u2019s https://t.co/6ZJCsdwuHK",
+      "content": "As generative AI tools continue to evolve, we believe it's more important than ever to know what's AI-generated and what isn't. That\u2019s why @GoogleDeepMind launched SynthID in 2023\u2014a technology that adds a hidden digital watermark to AI content.\n\nHere\u2019s a summary of SynthID\u2019s https://t.co/6ZJCsdwuHK",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-07-01T13:58:00Z",
+      "fetched_at": "2026-07-01T17:19:15.803978Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f11855d017f3691e",
+      "url": "https://x.com/dani_avila7/status/2069822855559213371",
+      "title": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data go...",
+      "summary": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data governance aren\u2019t optional https://t.co/rbKET5vaXC",
+      "content": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data governance aren\u2019t optional https://t.co/rbKET5vaXC",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-24T16:39:58Z",
+      "fetched_at": "2026-06-24T20:46:31.156611Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
