@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-01T05:52:52.030770+00:00",
+  "exported_at": "2026-07-01T07:34:48.939280+00:00",
   "period_hours": 168,
-  "total": 3111,
+  "total": 3117,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -33974,27 +33974,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "855db08b75f6ecde",
-      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-      "summary": "OpenAI and Broadcom introduce Jalape\u00f1o, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-24T06:00:00Z",
-      "fetched_at": "2026-06-24T13:05:18.061564Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8dc6626e290c056c",
       "url": "https://www.youtube.com/watch?v=xafwfGVBxos",
       "title": "Tech interviews with NeetCode",
@@ -66877,6 +66856,149 @@
       "author": "anthropicai",
       "published_at": "2026-07-01T03:42:23Z",
       "fetched_at": "2026-07-01T04:53:04.684553Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "75c992aba78b8152",
+      "url": "https://x.com/trq212/status/2072202267563082180",
+      "title": "making some last minute changes to my deck- see you tomorrow at AIE! https://t.co/rhxcTGRnTh",
+      "summary": "making some last minute changes to my deck- see you tomorrow at AIE! https://t.co/rhxcTGRnTh",
+      "content": "making some last minute changes to my deck- see you tomorrow at AIE! https://t.co/rhxcTGRnTh",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-01T06:14:54Z",
+      "fetched_at": "2026-07-01T07:34:34.317886Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "74baf012e540db78",
+      "url": "https://x.com/steipete/status/2072183656739983397",
+      "title": "\ud83d\ude43 https://t.co/zTXNISaICx",
+      "summary": "\ud83d\ude43 https://t.co/zTXNISaICx",
+      "content": "\ud83d\ude43 https://t.co/zTXNISaICx",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T05:00:57Z",
+      "fetched_at": "2026-07-01T07:34:47.087186Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9e9ff4f24c7adb0f",
+      "url": "https://x.com/dani_avila7/status/2069621356338024462",
+      "title": "Karpathy named 3 paradigms for LLM UX\u2026 but I think there\u2019s a fourth\n\nwhen agents stop receiving task...",
+      "summary": "Karpathy named 3 paradigms for LLM UX\u2026 but I think there\u2019s a fourth\n\nwhen agents stop receiving tasks and work against a permanent objective on their own\n\nLike a /goal or /loop at org scale, with almost no human interaction\n\nYou go from operator to exception handler https://t.co/ClkaXwmRaG",
+      "content": "Karpathy named 3 paradigms for LLM UX\u2026 but I think there\u2019s a fourth\n\nwhen agents stop receiving tasks and work against a permanent objective on their own\n\nLike a /goal or /loop at org scale, with almost no human interaction\n\nYou go from operator to exception handler https://t.co/ClkaXwmRaG",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-24T03:19:17Z",
+      "fetched_at": "2026-06-24T08:49:17.330132Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5012142e4a33a127",
+      "url": "https://x.com/steipete/status/2069594195522941059",
+      "title": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\n...",
+      "summary": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
+      "content": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-24T01:31:22Z",
+      "fetched_at": "2026-06-24T08:49:25.522793Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbc7feac76f5c077",
+      "url": "https://x.com/karpathy/status/2069579404163031082",
+      "title": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "summary": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "content": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-24T00:32:35Z",
+      "fetched_at": "2026-06-24T08:49:13.746982Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3ee44c64cc9899d0",
+      "url": "https://x.com/karpathy/status/2069547676849557725",
+      "title": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the ...",
+      "summary": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "content": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-23T22:26:31Z",
+      "fetched_at": "2026-06-24T08:49:13.747151Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
