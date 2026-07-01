@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-01T18:58:07.516160+00:00",
+  "exported_at": "2026-07-01T19:19:40.194027+00:00",
   "period_hours": 168,
-  "total": 3116,
+  "total": 3123,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -66980,6 +66980,146 @@
       "author": "googleai",
       "published_at": "2026-07-01T13:58:00Z",
       "fetched_at": "2026-07-01T17:19:15.803978Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "957ac6c363a899fb",
+      "url": "https://x.com/dani_avila7/status/2072376136420434121",
+      "title": "Anthropic updated the Claude Certified Architect platform and I just got the new badge \ud83e\udd73\n\nThis is ju...",
+      "summary": "Anthropic updated the Claude Certified Architect platform and I just got the new badge \ud83e\udd73\n\nThis is just the Foundations one, already looking forward to what the next exams will be\n\nLink: https://t.co/o71mxuYk8H https://t.co/07Qi7sCl7a",
+      "content": "Anthropic updated the Claude Certified Architect platform and I just got the new badge \ud83e\udd73\n\nThis is just the Foundations one, already looking forward to what the next exams will be\n\nLink: https://t.co/o71mxuYk8H https://t.co/07Qi7sCl7a",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-07-01T17:45:48Z",
+      "fetched_at": "2026-07-01T19:19:29.871091Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "482dcf631e56c97f",
+      "url": "https://x.com/steipete/status/2072375442808738026",
+      "title": "RT @thorstenball: There's a lesson here for everybody who thinks that \"I'll just use a cheaper model...",
+      "summary": "RT @thorstenball: There's a lesson here for everybody who thinks that \"I'll just use a cheaper model for certain tasks\"\n\nIt's *very* hard t\u2026",
+      "content": "RT @thorstenball: There's a lesson here for everybody who thinks that \"I'll just use a cheaper model for certain tasks\"\n\nIt's *very* hard t\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T17:43:03Z",
+      "fetched_at": "2026-07-01T19:19:38.399875Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ae0f6eba334565c3",
+      "url": "https://x.com/steipete/status/2072373527970562495",
+      "title": "Will be talking about the \"app situation\" and roadmap plans with @hrudolph live TODAY at 11:30 AM PS...",
+      "summary": "Will be talking about the \"app situation\" and roadmap plans with @hrudolph live TODAY at 11:30 AM PST on the official OpenClaw podcast, live on Discord. https://t.co/iKkJd8qHtD https://t.co/1jt2jODgxa",
+      "content": "Will be talking about the \"app situation\" and roadmap plans with @hrudolph live TODAY at 11:30 AM PST on the official OpenClaw podcast, live on Discord. https://t.co/iKkJd8qHtD https://t.co/1jt2jODgxa",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T17:35:26Z",
+      "fetched_at": "2026-07-01T19:19:38.399909Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a39b90922c704dcf",
+      "url": "https://x.com/OpenAI/status/2069857611823088107",
+      "title": "RT @DeryaTR_: I\u2019m very excited about this article from @OpenAI on my attempt to use GPT-5 Pro to und...",
+      "summary": "RT @DeryaTR_: I\u2019m very excited about this article from @OpenAI on my attempt to use GPT-5 Pro to understand the results of an experiment we\u2026",
+      "content": "RT @DeryaTR_: I\u2019m very excited about this article from @OpenAI on my attempt to use GPT-5 Pro to understand the results of an experiment we\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-24T18:58:05Z",
+      "fetched_at": "2026-06-24T20:46:35.518597Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f9d62e691d52dfc1",
+      "url": "https://x.com/OpenAI/status/2069843083701915755",
+      "title": "We have a new version of GPT-5.5 Instant for you, and it's much more fun to talk to.\n\nOur most-used ...",
+      "summary": "We have a new version of GPT-5.5 Instant for you, and it's much more fun to talk to.\n\nOur most-used model is now better at understanding the intent behind a question and adapting its response accordingly.\n\nIt also handles complex constraints more reliably and makes shopping and",
+      "content": "We have a new version of GPT-5.5 Instant for you, and it's much more fun to talk to.\n\nOur most-used model is now better at understanding the intent behind a question and adapting its response accordingly.\n\nIt also handles complex constraints more reliably and makes shopping and",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-06-24T18:00:21Z",
+      "fetched_at": "2026-06-24T20:46:35.518654Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f11855d017f3691e",
+      "url": "https://x.com/dani_avila7/status/2069822855559213371",
+      "title": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data go...",
+      "summary": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data governance aren\u2019t optional https://t.co/rbKET5vaXC",
+      "content": "Claude Tag makes claude a persistent member of your team\n\nAt this point, access controls and data governance aren\u2019t optional https://t.co/rbKET5vaXC",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-24T16:39:58Z",
+      "fetched_at": "2026-06-24T20:46:31.156611Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
