@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-01T01:27:22.365833+00:00",
+  "exported_at": "2026-07-01T02:52:48.259511+00:00",
   "period_hours": 168,
-  "total": 2768,
+  "total": 2776,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -57858,26 +57858,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5012142e4a33a127",
-      "url": "https://x.com/steipete/status/2069594195522941059",
-      "title": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\n...",
-      "summary": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
-      "content": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-24T01:31:22Z",
-      "fetched_at": "2026-06-24T08:49:25.522793Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "ed52589254632d0e",
       "url": "https://x.com/dani_avila7/status/2069770009069367514",
       "title": "Use the right tool for the job... for design specifically, Genspark is strong\n\nWhat stands out to me...",
@@ -59681,6 +59661,189 @@
       "author": "bcherny",
       "published_at": "2026-06-30T23:51:47Z",
       "fetched_at": "2026-07-01T00:52:17.613509Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3647cd76ce217138",
+      "url": "https://x.com/steipete/status/2072144627474579925",
+      "title": "Price per token != cost per task",
+      "summary": "Price per token != cost per task",
+      "content": "Price per token != cost per task",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T02:25:52Z",
+      "fetched_at": "2026-07-01T02:52:46.540892Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6fd3f356c6f7e6d6",
+      "url": "https://x.com/steipete/status/2072143124496097302",
+      "title": "Apparently we didn't talk enough about  w\u0336o\u0336r\u0336k\u0336f\u0336l\u0336o\u0336w\u0336s\u0336 loops yet! See ya there!",
+      "summary": "Apparently we didn't talk enough about  w\u0336o\u0336r\u0336k\u0336f\u0336l\u0336o\u0336w\u0336s\u0336 loops yet! See ya there!",
+      "content": "Apparently we didn't talk enough about  w\u0336o\u0336r\u0336k\u0336f\u0336l\u0336o\u0336w\u0336s\u0336 loops yet! See ya there!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T02:19:54Z",
+      "fetched_at": "2026-07-01T02:52:46.540926Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "238e03460e0f7db0",
+      "url": "https://x.com/steipete/status/2072137754683789515",
+      "title": "We moved the changelog to our docs to be easier readable.",
+      "summary": "We moved the changelog to our docs to be easier readable.",
+      "content": "We moved the changelog to our docs to be easier readable.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T01:58:33Z",
+      "fetched_at": "2026-07-01T02:52:46.540943Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "db52a29fd362a65d",
+      "url": "https://x.com/dani_avila7/status/2072137633409675538",
+      "title": "With the new Sonnet 5 and with Fable 5 back... my matrix for picking model and effort by task looks ...",
+      "summary": "With the new Sonnet 5 and with Fable 5 back... my matrix for picking model and effort by task looks like this\n\n(Save this post as a reference, then create your own)\n\nThis is just a general summary, the skills, subagents, and loops I actually run are far more complex than these https://t.co/Gv8fcOfgbb",
+      "content": "With the new Sonnet 5 and with Fable 5 back... my matrix for picking model and effort by task looks like this\n\n(Save this post as a reference, then create your own)\n\nThis is just a general summary, the skills, subagents, and loops I actually run are far more complex than these https://t.co/Gv8fcOfgbb",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-07-01T01:58:04Z",
+      "fetched_at": "2026-07-01T02:52:38.713787Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5266cc86cae98bad",
+      "url": "https://x.com/trq212/status/2072130464979325106",
+      "title": "excited to get Fable back in your hands!",
+      "summary": "excited to get Fable back in your hands!",
+      "content": "excited to get Fable back in your hands!",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-01T01:29:35Z",
+      "fetched_at": "2026-07-01T02:52:34.048090Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5012142e4a33a127",
+      "url": "https://x.com/steipete/status/2069594195522941059",
+      "title": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\n...",
+      "summary": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
+      "content": "Google fired the guy that made the google workspace cli, because he made the google workspace cli.\n\nLucky me, Google can't fire me. https://t.co/o15a6lOxec",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-24T01:31:22Z",
+      "fetched_at": "2026-06-24T08:49:25.522793Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbc7feac76f5c077",
+      "url": "https://x.com/karpathy/status/2069579404163031082",
+      "title": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "summary": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "content": "RT @EngramLab: https://t.co/CGIef5lIBI",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-24T00:32:35Z",
+      "fetched_at": "2026-06-24T08:49:13.746982Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3ee44c64cc9899d0",
+      "url": "https://x.com/karpathy/status/2069547676849557725",
+      "title": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the ...",
+      "summary": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "content": "This is a new paradigm for interacting with Claude that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory,",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-06-23T22:26:31Z",
+      "fetched_at": "2026-06-24T08:49:13.747151Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
