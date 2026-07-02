@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-02T11:01:45.075137+00:00",
+  "exported_at": "2026-07-02T12:55:51.292902+00:00",
   "period_hours": 168,
-  "total": 3069,
+  "total": 3058,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -25605,46 +25605,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c4d607c8bf8b50a2",
-      "url": "https://www.youtube.com/watch?v=I2cbIws9j10",
-      "title": "AI Engineer World's Fair 2026 Day 3 Livestream",
-      "summary": "Live from San Francisco, AI Engineer World\u2019s Fair 2026 wraps with the final day of main-stage programming.\n\nWatch live for keynote sessions, featured talks, and closing-day highlights from World\u2019s Fair 2026 as AI Engineer streams the final day of the event online.\n\nEvent: AI Engineer World\u2019s Fair 2026\nDate: Thursday, July 2, 2026\nVenue: Moscone West, San Francisco\nSchedule highlights:\n\u2022 90m Keynotes: 9:00 AM\u201310:30 AM PT\n\u2022 Main programming: 10:45 AM\u201312:25 PM PT\n\u2022 Main programming: 1:30 PM\u20134:05 PM PT\n\u2022 60m Keynotes + Startup Battlefield + Wrap-up: 4:30 PM\u20135:30 PM PT\n\nLearn more about the event:\nhttps://ai.engineer/worldsfair/2026\n\nSubscribe for more AI Engineer talks, livestreams, and event coverage.",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-25T11:47:31Z",
-      "fetched_at": "2026-06-25T13:05:23.598935Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "12259e3dcdc359d6",
-      "url": "https://www.youtube.com/watch?v=6vx7Ky2yef4",
-      "title": "Last Week in AI #249 - Fable 5 ban, SpaceX Cursor + IPO, OSS Aplenty",
-      "summary": "Our 249th episode with a summary and discussion of last week's big AI news!\n\nRecorded on 06/17/2026\n\nNote: work has kept me from publishing episodes promptly, apologies! I'll get back on schedule soon.\n\nHosted by Andrey Kurenkov and Jeremie Harris\n\nFeel free to email us your questions and feedback at andreyvkurenkov@gmail.com and/or hello@gladstone.ai\n\nRead out our text newsletter and comment on the podcast at https://lastweekin.ai/\n\nIn this episode:\n\n    Anthropic cut off access to Fable 5 and Mythos 5 after a US government order tied to alleged jailbreaks, prompting debate over inconsistent policy, export controls, and the practicality of preventing jailbreaks.\n    SpaceX completed an IPO at a roughly $1.75T valuation and then moved to acquire AI coding startup Cursor for $60B, positioning xAI with Cursor\u2019s talent, data, and product to compete more effectively in coding.\n    Infrastructure and business updates include Anthropic pursuing direct US data center leases backed by Google, leaked documents showing OpenAI\u2019s revenue growth alongside large losses, and chatbot market share shifting with ChatGPT below 50% as Gemini and Claude gain.\n    Projects and policy highlights include OpenRouter\u2019s Fusion multi-model synthesis, new open releases from Moonshot, Qwen, and NVIDIA, DOJ support for xAI\u2019s unpermitted gas turbines in Memphis, and a Munich court ruling Google liable for false AI Overview statements.\n\n\nTimestamps (note - these don't take into account dynamically inserted ads and therefore may be off by a couple of minutes):\n\n    (00:00:10) Intro / Banter\n    (00:03:38) Ad break + news preview\n\n\n    Tools & Apps\n    (00:04:52) Anthropic cuts off Fable 5 and Mythos 5 access following government order | The Verge + All the news about Anthropic\u2019s new AI fight with the White House\n    (00:25:53) Facebook\u2019s new AI Mode search gets its info from public posts | The Verge\n\n\n    Applications & Business\n    (00:27:00) SpaceX to acquire the AI coding startup Cursor for $60 billion\n    (00:35:42) Anthropic pursues data center leases, seeks financial backing from Google, The Information reports | Reuters\n    (00:40:10) Leaked financial docs show OpenAI is losing billions of dollars a year - Ars Technica\n    (00:46:00) ChatGPT's market share slips below 50% for first time | TechCrunch\n    (00:50:34) \u2018Tell Him He\u2019s a Piece of Shit\u2019: Meta\u2019s New AI Unit Is a Total Mess | WIRED\n    (00:56:23) Sakana AI Commercializes AB-MCTS in Sakana Marlin, an Enterprise Agent Generating Up to 100-Page Research Reports With Slides - MarkTechPost\n\n\n    Projects & Open Source\n    (00:59:36) Surpassing Frontier Performance with Fusion \u2014 OpenRouter Blog\n    (01:03:00) Moonshot AI Releases Kimi K2.7-Code: a Coding Model Reporting +21.8% on Kimi Code Bench v2 Over K2.6 - MarkTechPost\n    (01:08:34) Meet Qwen-RobotSuite: Three Embodied AI Models for VLA Manipulation, Video World Modeling, and Navigation - MarkTechPost\n    (01:11:29) Nemotron 3 Ultra: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning\n    (01:17:31) ProCUA-SFT Technical Report\n\n\n    Policy & Safety\n    (01:20:33) DOJ Lawyers Argue xAI Is \u2018Vital\u2019 for National Security in NAACP Lawsuit | WIRED + People Living Near xAI\u2019s Dirty Data Centers Are Pissed About the SpaceX IPO\n    (01:25:29) A Court Has Ruled That Google Is Liable for False Statements Generated by AI Overviews | WIRED\n    (01:28:47) Why Do Naive SFT Filters For Safety Properties Fail?\n\n\n    Research & Advancements\n    (01:34:14) From AGI to ASI\n    (01:39:44) Artificial Analysis Intelligence Index v4.1: a shift toward agentic workloads\n    (01:42:12) SIA: Self Improving AI with Harness & Weight Updates",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-06-25T11:46:22Z",
-      "fetched_at": "2026-06-25T13:05:23.818114Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "64ba9bfbd2f0da91",
       "url": "https://arxiv.org/abs/2606.31392",
       "title": "ReGRPO: Reflection-Augmented Policy Optimization for Tool-Using Agents",
@@ -25681,46 +25641,6 @@
       "author": "Xavier Rate, Eloann Le Guern, Rapha\\\"el F\\'eraud, Fatma Salem, Melissa Chiknoun, Eymeric Giabicani, Mehdi Feki, Patrick Maill\\'e, Guy Camilleri, Anne Blavette, Hamid Benhamed",
       "published_at": "2026-07-01T04:00:00Z",
       "fetched_at": "2026-07-01T05:52:20.178994Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2a8f961ae63788fd",
-      "url": "https://www.youtube.com/watch?v=4sX_He5c4sI",
-      "title": "AI Engineer World's Fair 2026 Day 2 Livestream",
-      "summary": "Live from San Francisco, AI Engineer World\u2019s Fair 2026 continues with Day 2 of session programming from the main stage.\n\nWatch live for keynote sessions, main-stage programming, and more from World\u2019s Fair 2026 as AI Engineer brings another full day of AI engineering content to viewers online.\n\nEvent: AI Engineer World\u2019s Fair 2026\nDate: Wednesday, July 1, 2026\nVenue: Moscone West, San Francisco\nSchedule highlights:\n\u2022 90m Keynotes: 9:00 AM\u201310:30 AM PT\n\u2022 Main programming: 10:45 AM\u201312:25 PM PT\n\u2022 Main programming: 1:30 PM\u20134:05 PM PT\n\u2022 60m Keynotes: 4:30 PM\u20135:30 PM PT\n\nLearn more about the event:\nhttps://ai.engineer/worldsfair/2026\n\nSubscribe for more AI Engineer talks, livestreams, and event coverage.",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-25T11:45:21Z",
-      "fetched_at": "2026-06-25T13:05:23.598954Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "32fc253626b0e6e5",
-      "url": "https://www.youtube.com/watch?v=htM02KMNZnk",
-      "title": "AI Engineer World's Fair 2026 Day 1",
-      "summary": "Live from San Francisco, AI Engineer World\u2019s Fair 2026 brings the main stage to viewers online for Day 1 of session programming.\n\nWatch live for keynote sessions, main-stage programming, and highlights from one of the biggest gatherings in AI engineering. Follow along with AI Engineer as we stream the opening day of World\u2019s Fair 2026.\n\nEvent: AI Engineer World\u2019s Fair 2026\nDate: Tuesday, June 30, 2026\nVenue: Moscone West, San Francisco\nSchedule highlights:\n\u2022 90m Keynotes: 9:00 AM\u201310:30 AM PT\n\u2022 Main programming: 10:45 AM\u201312:25 PM PT\n\u2022 Main programming: 1:30 PM\u20134:05 PM PT\n\u2022 60m Keynotes: 4:30 PM\u20135:30 PM PT\n\nLearn more about the event:\nhttps://ai.engineer/worldsfair/2026\n\nSubscribe for more AI Engineer talks, livestreams, and event coverage.",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-25T11:42:14Z",
-      "fetched_at": "2026-06-25T13:05:23.598963Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63123,174 +63043,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d79a0630da509b43",
-      "url": "https://arxiv.org/abs/2606.26982v1",
-      "title": "Auditing Framing-Sensitive Behavioral Instability in Large Language Models for Mental Health Interactions",
-      "summary": "Large language models (LLMs) are increasingly being integrated into mental health support tools and other psychologically sensitive conversational applications. In such settings, behavioral stability and consistency are important for trustworthy human-AI interaction. However, semantically similar concerns can be presented through different contextual framings, potentially eliciting different model responses. Such framing-sensitive variability may challenge user expectations regarding system behavior and complicate the assessment of AI reliability. While prior studies have primarily examined such effects at the behavioral level, less is known about how framing-related variation is reflected in the internal representations of aligned language models. In this work, we investigate these effects using controlled matched prompts spanning multiple contextual framing conditions across several instruction-tuned model families. Across architectures, framing systematically alters interpretive response tendencies. Layer-wise probing analyses show that behavior-associated information remains decodable throughout transformer depth, with architecture-dependent variation in decoding strength. Moreover, held-out framing probes remained consistently above chance across architectures despite strong lexical baselines. Activation steering experiments further suggest that framing-associated representational directions can partially modulate downstream behavioral outcomes. Finally, these findings indicate that robustness to contextual variation may represent an important consideration when evaluating the consistency and trustworthiness of conversational AI systems deployed in mental-health-oriented interactions.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Mohammed Cherkaoui",
-      "published_at": "2026-06-25T12:53:33Z",
-      "fetched_at": "2026-06-26T01:22:37.867058Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ad629cb7dd53cbca",
-      "url": "https://arxiv.org/abs/2606.26969v1",
-      "title": "Einstein World Models",
-      "summary": "Does intelligence require the ability to reason about phenomena beyond direct experience? It is natural to suspect that some complex thought cannot be captured through language alone. However, of particular concern to this work, is whether visualising counterfactual events can complement language as a mechanism for complex thought. We ask whether LLMs can be trained to utilise such visualisation mechanisms, in a way that benefits their reasoning abilities. Motivated by this question, we propose Einstein World Models. EWMs are a blueprint for LLM-based reasoning systems that place visual-temporal rollouts inside the reasoning trace, allowing them to reason in ways that text alone may not support well. In an EWM, the LLM calls a world-module (not to be confused with a world model), to produce short rollouts of scenes under consideration. The returned rollout is treated not as the answer, but as an inspectable hypothesis that can support later reasoning. Einstein World Models extend the capability of LLMs for tool calling (such as web search or code execution), into the domain of visual thought experiments.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Kentaro Inui",
-      "published_at": "2026-06-25T12:42:04Z",
-      "fetched_at": "2026-06-26T01:22:38.354643Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "681b8fcf5017ed07",
-      "url": "https://arxiv.org/abs/2606.26968v1",
-      "title": "RedVox: Safety and Fairness Gaps in Speech Models Across Languages",
-      "summary": "Speech-capable models are increasingly deployed in real-world applications across languages. Yet their safety and fairness beyond English settings and under naturalistic conditions remain understudied. We survey safety reporting practices across state-of-the-art speech model releases, finding that only 8% document any multilingual analysis. To address this gap, we introduce RedVox, a multilingual safety and fairness benchmark for audio and speech built on real voices, covering unsafe and unfair stereotypical requests across five languages (English, French, Italian, Spanish, and German). Evaluating eight state-of-the-art models, we find that vulnerabilities persist even under non-adversarial conditions, worsen in non-English languages, and are amplified when the request comes from a spoken input. Finally, by surveying the participants who contributed to RedVox, we document the unique personal and privacy challenges of collecting speech data with human participants, pointing to broader sociotechnical challenges in naturalistic speech safety research.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Luisa Bentivogli",
-      "published_at": "2026-06-25T12:40:39Z",
-      "fetched_at": "2026-06-26T01:22:38.354651Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cdf9dd706f3fc647",
-      "url": "https://arxiv.org/abs/2606.26963v1",
-      "title": "Term-Centric Hierarchy Induction from Heterogeneous Corpora",
-      "summary": "Organizing knowledge from diverse text sources into interpretable hierarchies is crucial for tasks such as policy analysis, innovation monitoring, and exploratory domain mapping. Existing taxonomy induction methods typically rely on document-level representations that capture entire documents rather than the specific domain concepts relevant for knowledge organization, limiting their ability to generalize across heterogeneous sources. We propose a term-centric framework for inducing hierarchical taxonomies from heterogeneous corpora that scales to massive document collections. Our approach maps documents from diverse sources into a shared representation space using automatic term extraction, enabling robust cross-source alignment. Based on these representations, we construct interpretable hierarchies that integrate domain priors with datadriven clustering. Experiments on a novel English and German multi-source benchmark of over one million documents demonstrate that our method improves cross-source coherence and hierarchy quality over text- and summarybased baselines. A case study on German regional innovation analysis further demonstrates its practical utility for technology landscape mapping.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Barbara Plank",
-      "published_at": "2026-06-25T12:37:33Z",
-      "fetched_at": "2026-06-26T01:22:38.354660Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "df7a3276788025e6",
-      "url": "https://arxiv.org/abs/2606.26936v1",
-      "title": "Jailbreaking for the Average Jane: Choosing Optimal Jailbreaks via Bandit Algorithms for Automatically Enhanced Queries",
-      "summary": "With a profusion of jailbreaks for LLMs now widely known, a growing concern is that non-expert malicious actors (\"the average Jane\") could elicit actionable responses to malicious requests. In this work, we examine whether this concern is justified. A non-expert malicious actor requires two ingredients for a successful attack: a powerful jailbreak for their target model, acting on an effective malicious query. For the former, we propose a novel attack strategy based on the multi-armed bandit framework. This allows efficient online learning of the optimal jailbreak from a large choice set via noisy exploration on a small number of queries, with subsequent application of the learnt policy on an exploitation set. For the latter, we curate $\\mathrm{FrankensteinBench}$, a safety benchmark of $11,279$ malicious queries drawn from manual curation over $7$ existing benchmarks, along with automated enhancement and generation. Each query is categorized as simple or complex by the technical expertise required to craft it. Our findings confirm the concern. Our bandit-based attack achieves success rates as high as $97\\%$ on average over $15$ SoTA open-weight LLMs. Moreover, adding complexity to queries raises the attack success rate by up to $26\\%$ on average across models -- making it an effective, automatable prompting strategy.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Arjun Bhagoji",
-      "published_at": "2026-06-25T12:11:28Z",
-      "fetched_at": "2026-06-26T01:22:38.354668Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bef4a16e772a7d26",
-      "url": "https://arxiv.org/abs/2606.26923v1",
-      "title": "GAVEL: Grounded Caption Error Verification and Localization",
-      "summary": "Vision-language models (VLMs) often produce hallucinated or inconsistent outputs, where text and images are not properly aligned. Addressing this issue requires not only detecting misalignment but also explaining the discrepancy and localizing its visual evidence. We introduce GAVEL (Grounded Caption Error Verification and Localization), a task that jointly addresses verification, explanation, and localization for image-text pairs. To support systematic evaluation, we also present a corresponding dataset and benchmark. We further train a supervised baseline on the human-annotated training split to assess whether GAVEL provides learnable supervision for these abilities. Experiments show that even strong closed-source models struggle on GAVEL, while the supervised baseline yields consistent improvements across grounding and explanation metrics.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Kuniaki Saito",
-      "published_at": "2026-06-25T12:00:45Z",
-      "fetched_at": "2026-06-26T01:22:38.354676Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5025e416b53a6246",
-      "url": "https://arxiv.org/abs/2606.26902v1",
-      "title": "Learning to Recover Task Experts from a Multi-Task Merged Model",
-      "summary": "Multi-task model merging aims to consolidate several task-specific experts into a unified model, yet static merging consistently suffers from parameter interference. While dynamic merging models aim to bridge this gap, many works rely on the costly storage and loading of redundant expert components at inference. In this work, from the perspective of task expert, we view parameter interference as parameter perturbation introduced to each expert during merging process. We show that such parameter perturbations can be modeled as affine transformation, which can be approximated as additive offsets. Motivated by these, we propose Recover Task eXpert (ReTeX), a framework that predicts those offsets, in order to undo parameter interference and recover task-expert performance from a single merged checkpoint. To recover the appropriate expert when task identity is unknown, we introduce a router-free task identifier based on SVD subspace signatures computed offline before inference. At inference, the identifier selects the task whose subspace yields the smallest projection residual for a given input. As a result, ReTeX recovers over 95% of individual-expert performance in both vision and NLP domains, while significantly improving generalization to unseen tasks. Crucially, we also show that the parameter offset prediction leads to emergent adaptive interpolation of expert knowledge for out-of-distribution (OOD) tasks. ReTeX adaptively interpolates seen expert knowledge to handle unseen tasks. Our code is available at https://github.com/BAIKLAB/ReTeX",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Sungyong Baik",
-      "published_at": "2026-06-25T11:34:33Z",
-      "fetched_at": "2026-06-26T01:22:37.867067Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c9c7efb4dd6064db",
-      "url": "https://arxiv.org/abs/2606.26901v1",
-      "title": "SamaVaani: Auditing and Debiasing Multilingual Clinical ASR for Indian Languages",
-      "summary": "Automatic Speech Recognition (ASR) is increasingly used to document clinical encounters, yet its reliability in multilingual and demographically diverse Indian healthcare context remains largely unknown. In this study, we first conduct the systematic audit of ASR performance on real-world psychiatric interview data spanning Kannada, Hindi and Indian English, comparing eight state-of-the-art models including IndicWhisper, WhisperLargeV3, Sarvam, GoogleS2T, Gemma3n, OmniLingual, Vaani, and Gemini. Our results reveal substantial variability across models and languages, with some systems performing competitively in Indian English but failing in regional speech. We further fine-tune two of the best performing opensource models, i.e., Gemma3n and OmniLingual, using various methods. With this, we uncover systematic performance gaps tied to speaker role and gender, raising concerns about equitable deployment in clinical settings, which are further mitigated by fairness-aware fine-tuning. To this end, we propose SamaVaani, a unified debiasing technique that simultaneously improves ASR performance and improves fairness across demographic groups.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Animesh Mukherjee",
-      "published_at": "2026-06-25T11:34:07Z",
-      "fetched_at": "2026-06-26T01:22:38.354684Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -65845,6 +65597,26 @@
       "author": "geminiapp",
       "published_at": "2026-07-01T21:28:16Z",
       "fetched_at": "2026-07-02T08:39:07.073033Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
