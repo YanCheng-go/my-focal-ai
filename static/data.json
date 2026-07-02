@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-02T07:44:38.589507+00:00",
+  "exported_at": "2026-07-02T08:39:14.506938+00:00",
   "period_hours": 168,
-  "total": 3075,
+  "total": 3089,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -63687,27 +63687,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "48f6dfdb9b489b3d",
-      "url": "https://arxiv.org/abs/2606.26722v1",
-      "title": "Socratic agents for autonomous scientific discovery in high-dimensional physical systems",
-      "summary": "The automation of scientific discovery has reached an inflection point. While AI systems now operate instruments, optimize parameters and generate hypotheses, most remain procedural: they execute workflows fixed by human designers. True autonomous science demands epistemic autonomy--the capacity to construct, challenge and revise physical explanations in response to evidence. Here we introduce AHOIS, a multi-agent AI scientist that embeds Socratic midwifery into closed-loop experimentation. A physics-critic agent interrogates hypotheses through causal questioning, constraint checking, counterexample generation and falsification-criteria formulation. We evaluate AHOIS on a real multimode-fibre optical platform, a high-dimensional system with complex wave transformations, indirect detection, environmental drift and multi-modal acquisition. Without prior encoding schemes, classifiers or speckle models, the system autonomously proposed and validated a random-interference encoding hypothesis, discovered task-adaptive sparse-measurement strategies, diagnosed distinct failure modes (encoding instability, fluorescence contamination and detector noise) and translated a published imaging protocol into an executable workflow on a non-original configuration. The discovered encoding yielded 16x16 measurements with effective rank 56.9 and classification accuracies of 76.97% on MNIST and 83.17% on Fashion-MNIST. Ablations show that Socratic interrogation improves physical consistency, hypothesis completeness, uncertainty calibration and experimental-plan validity. These results establish a route from workflow automation towards evidence-grounded, self-correcting autonomous discovery in complex physical environments.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Yang Du",
-      "published_at": "2026-06-25T08:01:07Z",
-      "fetched_at": "2026-06-26T01:22:37.867075Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "4505a3467ba0f792",
       "url": "https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event",
       "title": "The Briefing: AI for Science",
@@ -65978,6 +65957,310 @@
       "author": "claudeai",
       "published_at": "2026-07-01T19:31:06Z",
       "fetched_at": "2026-07-01T21:19:56.038138Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8742bde14e1568c7",
+      "url": "https://x.com/bcherny/status/2072545376754622902",
+      "title": "RT @ClaudeDevs: Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly...",
+      "summary": "RT @ClaudeDevs: Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
+      "content": "RT @ClaudeDevs: Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-07-02T04:58:18Z",
+      "fetched_at": "2026-07-02T08:38:59.733275Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5aa8474630f358a6",
+      "url": "https://x.com/trq212/status/2072541903707660507",
+      "title": "RT @geoffreylitt: Hot take: I think it's still important to understand the code that our agents writ...",
+      "summary": "RT @geoffreylitt: Hot take: I think it's still important to understand the code that our agents write!\n\nIn this mega thread (based on my AI\u2026",
+      "content": "RT @geoffreylitt: Hot take: I think it's still important to understand the code that our agents write!\n\nIn this mega thread (based on my AI\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-02T04:44:30Z",
+      "fetched_at": "2026-07-02T08:38:57.081980Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b49982e5220a1063",
+      "url": "https://x.com/steipete/status/2072532278476148881",
+      "title": "Never thought I give @Steve_Yegge a shoutout. He was just early, like most visionaries. Now everyone...",
+      "summary": "Never thought I give @Steve_Yegge a shoutout. He was just early, like most visionaries. Now everyone is building factories.",
+      "content": "Never thought I give @Steve_Yegge a shoutout. He was just early, like most visionaries. Now everyone is building factories.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-02T04:06:15Z",
+      "fetched_at": "2026-07-02T08:39:11.837799Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b858ae10a628caab",
+      "url": "https://x.com/steipete/status/2072501982624100649",
+      "title": "RT @gabrielchua: something something slash goal",
+      "summary": "RT @gabrielchua: something something slash goal",
+      "content": "RT @gabrielchua: something something slash goal",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-02T02:05:52Z",
+      "fetched_at": "2026-07-02T08:39:11.837875Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf01c8c2a545bc9e",
+      "url": "https://x.com/steipete/status/2072501862096634347",
+      "title": "RT @colinsolvely: I want to introduce myself.\n\nHi I\u2019m Colin, I did a lot of the @openclaw iOS UI, so...",
+      "summary": "RT @colinsolvely: I want to introduce myself.\n\nHi I\u2019m Colin, I did a lot of the @openclaw iOS UI, so as one of the volunteers responsible,\u2026",
+      "content": "RT @colinsolvely: I want to introduce myself.\n\nHi I\u2019m Colin, I did a lot of the @openclaw iOS UI, so as one of the volunteers responsible,\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-02T02:05:23Z",
+      "fetched_at": "2026-07-02T08:39:11.837907Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d39c5cd16868a380",
+      "url": "https://x.com/steipete/status/2072475858435276840",
+      "title": "I\u2019m looking for a semi-private hack space for a few days in SF for me and some of the OpenClaw maint...",
+      "summary": "I\u2019m looking for a semi-private hack space for a few days in SF for me and some of the OpenClaw maintainers. We need to cook. DM leads my way \ud83d\ude4f\ud83e\udd9e",
+      "content": "I\u2019m looking for a semi-private hack space for a few days in SF for me and some of the OpenClaw maintainers. We need to cook. DM leads my way \ud83d\ude4f\ud83e\udd9e",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-02T00:22:04Z",
+      "fetched_at": "2026-07-02T08:39:11.837944Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "08bc3450aeb20826",
+      "url": "https://x.com/steipete/status/2072459609542164561",
+      "title": "RT @MatthewBerman: Holy sh*t after only 5 minutes\u2026 https://t.co/YeHOVPLYhb",
+      "summary": "RT @MatthewBerman: Holy sh*t after only 5 minutes\u2026 https://t.co/YeHOVPLYhb",
+      "content": "RT @MatthewBerman: Holy sh*t after only 5 minutes\u2026 https://t.co/YeHOVPLYhb",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T23:17:30Z",
+      "fetched_at": "2026-07-02T08:39:11.837970Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "80ac5476ceca925e",
+      "url": "https://x.com/steipete/status/2072452336321266047",
+      "title": "RT @ZackKorman: In all seriousness Fable 5's guardrails seem much weaker now. This thing is straight...",
+      "summary": "RT @ZackKorman: In all seriousness Fable 5's guardrails seem much weaker now. This thing is straight up ripping through sandboxes. https://\u2026",
+      "content": "RT @ZackKorman: In all seriousness Fable 5's guardrails seem much weaker now. This thing is straight up ripping through sandboxes. https://\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T22:48:35Z",
+      "fetched_at": "2026-07-02T08:39:11.837993Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "17cbc344220efbd6",
+      "url": "https://x.com/steipete/status/2072447453622882338",
+      "title": "How did I ever function without AI? \ncc chefcook @theo https://t.co/G0LJNvA3Kb",
+      "summary": "How did I ever function without AI? \ncc chefcook @theo https://t.co/G0LJNvA3Kb",
+      "content": "How did I ever function without AI? \ncc chefcook @theo https://t.co/G0LJNvA3Kb",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T22:29:11Z",
+      "fetched_at": "2026-07-02T08:39:11.838015Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "002e64e3b418d9f8",
+      "url": "https://x.com/steipete/status/2072439279520039380",
+      "title": "Pointed codex at some Twitter feedback on the OpenClaw iOS app and it did a first improvement pass. ...",
+      "summary": "Pointed codex at some Twitter feedback on the OpenClaw iOS app and it did a first improvement pass. It's still not good, but for two prompts it aint bad.\n\nEspecially cool how it uses computer use to add before/after screenshots, as there's no GitHub API.\nhttps://t.co/BxygU9yTnP",
+      "content": "Pointed codex at some Twitter feedback on the OpenClaw iOS app and it did a first improvement pass. It's still not good, but for two prompts it aint bad.\n\nEspecially cool how it uses computer use to add before/after screenshots, as there's no GitHub API.\nhttps://t.co/BxygU9yTnP",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T21:56:42Z",
+      "fetched_at": "2026-07-02T08:39:11.838037Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f25236ff72a93634",
+      "url": "https://x.com/steipete/status/2072437551328317481",
+      "title": "RT @alexatallah: On price/token != cost/task:\n\nTo help internalize this fact for yourself, run Termi...",
+      "summary": "RT @alexatallah: On price/token != cost/task:\n\nTo help internalize this fact for yourself, run Terminal-Bench using Haiku and then using Op\u2026",
+      "content": "RT @alexatallah: On price/token != cost/task:\n\nTo help internalize this fact for yourself, run Terminal-Bench using Haiku and then using Op\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T21:49:50Z",
+      "fetched_at": "2026-07-02T08:39:11.838059Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "30b1365d44311100",
+      "url": "https://x.com/trq212/status/2072436109053936091",
+      "title": "RT @ClaudeDevs: Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly...",
+      "summary": "RT @ClaudeDevs: Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
+      "content": "RT @ClaudeDevs: Now that Fable 5 is ready to build (again), we've reset everyone's 5-hour and weekly rate limits.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-01T21:44:07Z",
+      "fetched_at": "2026-07-02T08:38:57.082194Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "94c2b7053b3686f9",
+      "url": "https://x.com/steipete/status/2072433338892386329",
+      "title": "RT @benedictk__: Enjoy the codex reset people.\n\nA user got to push the secret button and suddenly al...",
+      "summary": "RT @benedictk__: Enjoy the codex reset people.\n\nA user got to push the secret button and suddenly all of you got more tokens.\n\nHope the but\u2026",
+      "content": "RT @benedictk__: Enjoy the codex reset people.\n\nA user got to push the secret button and suddenly all of you got more tokens.\n\nHope the but\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-01T21:33:06Z",
+      "fetched_at": "2026-07-02T08:39:11.838080Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "25d7eccd8d93a581",
+      "url": "https://x.com/GeminiApp/status/2072432122175082790",
+      "title": "RT @Google: Gemini Spark is coming to the @GeminiApp for macOS.\n\nPlus, we\u2019re rolling out more update...",
+      "summary": "RT @Google: Gemini Spark is coming to the @GeminiApp for macOS.\n\nPlus, we\u2019re rolling out more updates to your 24/7 personal AI agent in the\u2026",
+      "content": "RT @Google: Gemini Spark is coming to the @GeminiApp for macOS.\n\nPlus, we\u2019re rolling out more updates to your 24/7 personal AI agent in the\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-07-01T21:28:16Z",
+      "fetched_at": "2026-07-02T08:39:07.073033Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
