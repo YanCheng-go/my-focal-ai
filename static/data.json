@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-02T19:52:52.688611+00:00",
+  "exported_at": "2026-07-02T20:07:12.309401+00:00",
   "period_hours": 168,
-  "total": 3038,
+  "total": 3046,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -65204,6 +65204,170 @@
       "author": "geminiapp",
       "published_at": "2026-07-01T21:28:16Z",
       "fetched_at": "2026-07-02T08:39:07.073033Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6449739b317a335d",
+      "url": "https://x.com/sama/status/2072773542576586790",
+      "title": "going to world cup games is always awesome, but watching the USA win in the USA during USA birthday ...",
+      "summary": "going to world cup games is always awesome, but watching the USA win in the USA during USA birthday week was just incredible",
+      "content": "going to world cup games is always awesome, but watching the USA win in the USA during USA birthday week was just incredible",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-07-02T20:04:57Z",
+      "fetched_at": "2026-07-02T20:07:03.615323Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bbd6c832727e5ddb",
+      "url": "https://x.com/GeminiApp/status/2072756005013017075",
+      "title": "RT @McLarenF1: The @GeminiApp Paddock is looking goooooooodddddd \ud83e\udd29\n\nThe Gemini Paddock is open from ...",
+      "summary": "RT @McLarenF1: The @GeminiApp Paddock is looking goooooooodddddd \ud83e\udd29\n\nThe Gemini Paddock is open from the 2-5 of July at the Truman Brewery i\u2026",
+      "content": "RT @McLarenF1: The @GeminiApp Paddock is looking goooooooodddddd \ud83e\udd29\n\nThe Gemini Paddock is open from the 2-5 of July at the Truman Brewery i\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-07-02T18:55:16Z",
+      "fetched_at": "2026-07-02T20:07:04.728693Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "54728835853aff37",
+      "url": "https://x.com/dani_avila7/status/2072726437023322341",
+      "title": "I shared this a couple of weeks ago... but Jhanvi couldn't have said it better\n\nOwning and managing ...",
+      "summary": "I shared this a couple of weeks ago... but Jhanvi couldn't have said it better\n\nOwning and managing your context and intellectual property is one of the most important challenges every company should be solving today\n\nWatch the full episode here: https://t.co/X3GHoxLGes https://t.co/HQ8QPhZGfU",
+      "content": "I shared this a couple of weeks ago... but Jhanvi couldn't have said it better\n\nOwning and managing your context and intellectual property is one of the most important challenges every company should be solving today\n\nWatch the full episode here: https://t.co/X3GHoxLGes https://t.co/HQ8QPhZGfU",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-07-02T16:57:46Z",
+      "fetched_at": "2026-07-02T20:07:01.159342Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f4d688c2b54c45fe",
+      "url": "https://x.com/claudeai/status/2072725610061803522",
+      "title": "A conversation with Boris Cherny and Cat Wu on the path from Claude Code to Claude Tag, and how it s...",
+      "summary": "A conversation with Boris Cherny and Cat Wu on the path from Claude Code to Claude Tag, and how it spread from engineering to the rest of Anthropic.\n\nClaude Fable 5 is now available in Claude Tag. https://t.co/8oNM5WaWzj",
+      "content": "A conversation with Boris Cherny and Cat Wu on the path from Claude Code to Claude Tag, and how it spread from engineering to the rest of Anthropic.\n\nClaude Fable 5 is now available in Claude Tag. https://t.co/8oNM5WaWzj",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-07-02T16:54:29Z",
+      "fetched_at": "2026-07-02T20:07:02.282572Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2a69cf268a270df4",
+      "url": "https://x.com/simonw/status/2072700221524750383",
+      "title": "What's the most ambitious project you have Fable working on right now?",
+      "summary": "What's the most ambitious project you have Fable working on right now?",
+      "content": "What's the most ambitious project you have Fable working on right now?",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-07-02T15:13:36Z",
+      "fetched_at": "2026-07-02T20:06:59.926925Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5e58ebbed6900ceb",
+      "url": "https://x.com/GeminiApp/status/2070220098673967380",
+      "title": "RT @GoogleForEdu: Want to help your students prep for the ACT or GRE? \ud83d\ude4c\n\nWe\u2019re bringing full-length ...",
+      "summary": "RT @GoogleForEdu: Want to help your students prep for the ACT or GRE? \ud83d\ude4c\n\nWe\u2019re bringing full-length practice ACT and GRE tests to the @Gemi\u2026",
+      "content": "RT @GoogleForEdu: Want to help your students prep for the ACT or GRE? \ud83d\ude4c\n\nWe\u2019re bringing full-length practice ACT and GRE tests to the @Gemi\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-06-25T18:58:29Z",
+      "fetched_at": "2026-06-25T20:22:10.076113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a40afc889777260c",
+      "url": "https://x.com/simonw/status/2070212662903099536",
+      "title": "Also not a great advertisement for a sandboxing product: @daytonaio effectively saying they don't tr...",
+      "summary": "Also not a great advertisement for a sandboxing product: @daytonaio effectively saying they don't trust the security of their product enough to expose the source code",
+      "content": "Also not a great advertisement for a sandboxing product: @daytonaio effectively saying they don't trust the security of their product enough to expose the source code",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-25T18:28:56Z",
+      "fetched_at": "2026-06-25T20:22:05.585303Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
