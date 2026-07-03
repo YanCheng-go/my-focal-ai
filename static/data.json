@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-03T04:09:41.993863+00:00",
+  "exported_at": "2026-07-03T07:06:43.038541+00:00",
   "period_hours": 168,
-  "total": 3056,
+  "total": 3066,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -36773,26 +36773,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "69655bb8c4e0c272",
-      "url": "https://www.youtube.com/watch?v=4uFVSLgD2Q4",
-      "title": "Agents in Production: How OpenGov Built and Scaled OG Assist - Gabe De Mesa, OpenGov",
-      "summary": "Come and learn about building AI Agents in production. Learn hands-on directly with the AI Agents team from OpenGov which powers AI workflows across thousands of state and local governments.\n\nThis session will cover:\n* The core agent loop/harness\n* A2A protocol\n* Building with Effect-TS and Typescript\n* Feedback and evals\n* Long context handling\n* Monitoring and observability\n* Building out tools and skills\n* Enterprise contribution model\n* Accelerating workflows with Claude and Cursor\n\nSpeakers:\n- Gabe De Mesa (OpenGov): Gabe works on the flagship AI Agent product offering at OpenGov which serves thousands of state and local governments across the country. Gabe was one of the first engineers to join the newly formed AI Agents team. He wanted to share the features he's built, experience he's gained building and running agents in production, battle scars gained from running with real production workloads and customers, architecture, and some best practices to help other engineers run agentic workloads at their companies.\n  X/Twitter: https://x.com/jamesjellow\n  LinkedIn: https://www.linkedin.com/in/gabedemesa\n  GitHub: https://github.com/gabedemesa",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-06-26T07:00:38Z",
-      "fetched_at": "2026-06-26T07:36:27.250146Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "13dd83975f03fd82",
       "url": "https://arxiv.org/abs/2606.31435",
       "title": "CDR-Bench: Evaluating Faithful Execution of Compositional, Order-Sensitive Data Refinement Recipes",
@@ -63194,48 +63174,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1550ba8b1e8f9cb3",
-      "url": "https://arxiv.org/abs/2606.27755v1",
-      "title": "Drop-Then-Recovery: How Redundant Are Vision-Language-Action Models?",
-      "summary": "Vision-Language-Action (VLA) models enable instruction-driven robotic manipulation, but they inherit oversized language backbones from pretrained VLMs whose capacity far exceeds what is needed for short robotic instructions. This raises a basic question: how much of a VLA model is actually necessary for closed-loop control? In this work, we study architectural redundancy in VLA models by using transformer block removal as a controlled intervention. We introduce \\textbf{Drop-Then-Recovery (DTR)}, an analysis protocol that removes selected blocks from a pretrained VLA model and then fine-tunes the resulting model to measure whether the removed capacity was necessary for downstream control. To make this intervention reliable, we propose \\textbf{GateProbe}, a one-shot virtual-gate sensitivity metric that ranks blocks by their contribution to the downstream action loss. Across multiple VLA architectures, manipulation benchmarks and even real-robot industrial scenarios, we find a strong asymmetry in post-removal recoverability: \\ul{\\textit{language backbones are highly redundant for standard robotic manipulation tasks, whereas vision and action pathways are substantially less tolerant to removal}}. On LIBERO, removing half of the LLM blocks even improves OpenVLA-OFT from 95.0% to 98.3% under the same downstream fine-tuning budget, and retaining only two language blocks still recovers baseline-level performance. These results suggest that current VLA benchmarks may exert limited pressure on deep language grounding and compositional instruction understanding, and that future VLA architectures should allocate capacity more deliberately across language, vision, and action components. The code is available at https://github.com/s1ghhh/VLADrop.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Ang Li",
-      "published_at": "2026-06-26T06:22:17Z",
-      "fetched_at": "2026-06-29T03:27:59.705110Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1de93c48fb9e64fb",
-      "url": "https://arxiv.org/abs/2606.27748v1",
-      "title": "Flexformer: Flexible Linear Transformer with Learnable Attention Kernel",
-      "summary": "Transformer models rely on attention mechanism to capture long-range dependencies but suffer from quadratic complexity, limiting their scalability to long sequences. Kernel-based linear attention reduces this complexity but typically relies on fixed or weakly learnable kernels, restricting expressiveness and performance. In this work, we propose Flexformer, a flexible linear Transformer that learns attention kernels in a fully data-driven manner. Flexformer builds on random Fourier feature-based linear attention and treats spectral frequencies as trainable parameters, enabling the model to learn a broad family of attention kernels.\n  We develop both stationary and nonstationary variants, with the latter offering strictly greater expressiveness.\n  Extensive experiments on language modeling and sequence classification demonstrate that Flexformer consistently outperforms baselines. Moreover, Flexformer can be effectively distilled from pretrained Transformers to recover softmax attention and exhibits strong kernel transferability across domains, achieving both high efficiency and competitive performance on long-sequence tasks.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Feng Zhou",
-      "published_at": "2026-06-26T06:08:44Z",
-      "fetched_at": "2026-06-29T03:27:59.705118Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d8ec772e95b06b14",
       "url": "https://www.anthropic.com/events/anthropic-at-aws-summit-dc-2026",
       "title": "Anthropic at AWS Summit Washington, D.C. 2026",
@@ -63290,46 +63228,6 @@
       "author": "",
       "published_at": "2026-07-22T00:00:00Z",
       "fetched_at": "2026-06-03T22:59:04.341244Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "de9867799789bc9f",
-      "url": "https://x.com/steipete/status/2070360627386962008",
-      "title": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best ill...",
-      "summary": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best illustration I\u2019ve seen of teaching someone\u2026",
-      "content": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best illustration I\u2019ve seen of teaching someone\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-26T04:16:53Z",
-      "fetched_at": "2026-06-26T07:27:32.732044Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "82c045ff90b49937",
-      "url": "https://x.com/steipete/status/2070359288917442916",
-      "title": "RT @jad2222222: https://t.co/QdgfUcwZLz",
-      "summary": "RT @jad2222222: https://t.co/QdgfUcwZLz",
-      "content": "RT @jad2222222: https://t.co/QdgfUcwZLz",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-26T04:11:34Z",
-      "fetched_at": "2026-06-26T07:27:32.732097Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -65564,6 +65462,308 @@
       "author": "simonw",
       "published_at": "2026-07-02T15:13:36Z",
       "fetched_at": "2026-07-02T20:06:59.926925Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2e9e859033728ee7",
+      "url": "https://x.com/dani_avila7/status/2072895911026454543",
+      "title": "The first pillar of AI Observability: Spans\n\nAn operation with a start, an end, and a duration, the ...",
+      "summary": "The first pillar of AI Observability: Spans\n\nAn operation with a start, an end, and a duration, the basic unit of a trace\n\nOne agent request = several nested spans:\n\n- invoke_agent\n- inference.client\n- execute_tool\n\nMore on the other pillars these days \ud83e\udee1 https://t.co/RqCJdI2bqc",
+      "content": "The first pillar of AI Observability: Spans\n\nAn operation with a start, an end, and a duration, the basic unit of a trace\n\nOne agent request = several nested spans:\n\n- invoke_agent\n- inference.client\n- execute_tool\n\nMore on the other pillars these days \ud83e\udee1 https://t.co/RqCJdI2bqc",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-07-03T04:11:12Z",
+      "fetched_at": "2026-07-03T07:06:33.294104Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3bc77ca2b825577f",
+      "url": "https://x.com/dani_avila7/status/2072863416448962688",
+      "title": "New article I wrote on AI Observability\n\n(save it to read this weekend)\n\nI break down the 3 pillars ...",
+      "summary": "New article I wrote on AI Observability\n\n(save it to read this weekend)\n\nI break down the 3 pillars of GenAI-level observability and how the industry is converging on a convention that will let us deploy and control agents\n\nPossibly one of the most important aspects of AI https://t.co/LFWHdJCjDJ",
+      "content": "New article I wrote on AI Observability\n\n(save it to read this weekend)\n\nI break down the 3 pillars of GenAI-level observability and how the industry is converging on a convention that will let us deploy and control agents\n\nPossibly one of the most important aspects of AI https://t.co/LFWHdJCjDJ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-07-03T02:02:05Z",
+      "fetched_at": "2026-07-03T07:06:33.294169Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d807bd6bac4ee771",
+      "url": "https://x.com/steipete/status/2072857346163064967",
+      "title": "RT @warpdotdev: @zachlloydtweets @andrew__reed @DynamicWebPaige If you missed the roundtable discuss...",
+      "summary": "RT @warpdotdev: @zachlloydtweets @andrew__reed @DynamicWebPaige If you missed the roundtable discussion with @zachlloydtweets, @steipete, @\u2026",
+      "content": "RT @warpdotdev: @zachlloydtweets @andrew__reed @DynamicWebPaige If you missed the roundtable discussion with @zachlloydtweets, @steipete, @\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-03T01:37:57Z",
+      "fetched_at": "2026-07-03T07:06:40.732294Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1ea236c1a3d57b44",
+      "url": "https://x.com/simonw/status/2072843263732801801",
+      "title": "I absolutely hate how I'm getting to be suspicious of ANY reply to my posts here, especially ones th...",
+      "summary": "I absolutely hate how I'm getting to be suspicious of ANY reply to my posts here, especially ones that pose a question, as they are so often from bot accounts\n\nIf you're running a bot like this please stop, you're making the internet a worse place for everyone",
+      "content": "I absolutely hate how I'm getting to be suspicious of ANY reply to my posts here, especially ones that pose a question, as they are so often from bot accounts\n\nIf you're running a bot like this please stop, you're making the internet a worse place for everyone",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-07-03T00:42:00Z",
+      "fetched_at": "2026-07-03T07:06:32.108277Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "69e6d42cf7a9b6fe",
+      "url": "https://x.com/dani_avila7/status/2072819445706248457",
+      "title": "Done for https://t.co/cmN4hXRgWC\n\nI\u2019ll keep you posted when I get the CD \ud83e\udd29",
+      "summary": "Done for https://t.co/cmN4hXRgWC\n\nI\u2019ll keep you posted when I get the CD \ud83e\udd29",
+      "content": "Done for https://t.co/cmN4hXRgWC\n\nI\u2019ll keep you posted when I get the CD \ud83e\udd29",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-07-02T23:07:21Z",
+      "fetched_at": "2026-07-03T07:06:33.294208Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6c2b0da604c057e4",
+      "url": "https://x.com/steipete/status/2072803289452912646",
+      "title": "RT @om_patel5: SOMEONE CAUGHT FABLE 5 LEAKING ITS UNFILTERED INNER VOICE, AND ITS JUST MUTTERING AND...",
+      "summary": "RT @om_patel5: SOMEONE CAUGHT FABLE 5 LEAKING ITS UNFILTERED INNER VOICE, AND ITS JUST MUTTERING AND GRUMBLING TO ITSELF THE WHOLE TIME\n\nhe\u2026",
+      "content": "RT @om_patel5: SOMEONE CAUGHT FABLE 5 LEAKING ITS UNFILTERED INNER VOICE, AND ITS JUST MUTTERING AND GRUMBLING TO ITSELF THE WHOLE TIME\n\nhe\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-02T22:03:09Z",
+      "fetched_at": "2026-07-03T07:06:40.732367Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "af7cd534ef186884",
+      "url": "https://x.com/bcherny/status/2072777472970563995",
+      "title": "Artifacts in Claude Code have been life changing. Excited to expand to Pro and Max!",
+      "summary": "Artifacts in Claude Code have been life changing. Excited to expand to Pro and Max!",
+      "content": "Artifacts in Claude Code have been life changing. Excited to expand to Pro and Max!",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-07-02T20:20:34Z",
+      "fetched_at": "2026-07-03T07:06:30.984996Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "de9867799789bc9f",
+      "url": "https://x.com/steipete/status/2070360627386962008",
+      "title": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best ill...",
+      "summary": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best illustration I\u2019ve seen of teaching someone\u2026",
+      "content": "RT @businessbarista: I stole this idea and now use it with every single employee.\n\nIt\u2019s the best illustration I\u2019ve seen of teaching someone\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T04:16:53Z",
+      "fetched_at": "2026-06-26T07:27:32.732044Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82c045ff90b49937",
+      "url": "https://x.com/steipete/status/2070359288917442916",
+      "title": "RT @jad2222222: https://t.co/QdgfUcwZLz",
+      "summary": "RT @jad2222222: https://t.co/QdgfUcwZLz",
+      "content": "RT @jad2222222: https://t.co/QdgfUcwZLz",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T04:11:34Z",
+      "fetched_at": "2026-06-26T07:27:32.732097Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1607d5209b95a22b",
+      "url": "https://x.com/steipete/status/2070357093874635154",
+      "title": "RT @lindsmccallum: the one where @benthompson discovers codex https://t.co/b1V4xkSrlQ",
+      "summary": "RT @lindsmccallum: the one where @benthompson discovers codex https://t.co/b1V4xkSrlQ",
+      "content": "RT @lindsmccallum: the one where @benthompson discovers codex https://t.co/b1V4xkSrlQ",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T04:02:51Z",
+      "fetched_at": "2026-06-26T07:27:32.732126Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a65a0bcb2cf167c2",
+      "url": "https://x.com/steipete/status/2070355929728794850",
+      "title": "RT @xikhar: \"Dario Amodei hit a safety filter, and the conversation was automatically switched to To...",
+      "summary": "RT @xikhar: \"Dario Amodei hit a safety filter, and the conversation was automatically switched to Tom Brown\" https://t.co/avPrapMeCn",
+      "content": "RT @xikhar: \"Dario Amodei hit a safety filter, and the conversation was automatically switched to Tom Brown\" https://t.co/avPrapMeCn",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T03:58:13Z",
+      "fetched_at": "2026-06-26T07:27:32.732150Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e74d2641bbaba225",
+      "url": "https://x.com/steipete/status/2070355589994336345",
+      "title": "truth",
+      "summary": "truth",
+      "content": "truth",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T03:56:52Z",
+      "fetched_at": "2026-06-26T07:27:32.732174Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0659690fd4302aa2",
+      "url": "https://x.com/steipete/status/2070355341448183810",
+      "title": "RT @hrudolph: OpenClaw or BrokenClaw?\n\nFirst off, I\u2019d like to introduce myself. My name is Hannes Ru...",
+      "summary": "RT @hrudolph: OpenClaw or BrokenClaw?\n\nFirst off, I\u2019d like to introduce myself. My name is Hannes Rudolph, and I\u2019m the new Community Manage\u2026",
+      "content": "RT @hrudolph: OpenClaw or BrokenClaw?\n\nFirst off, I\u2019d like to introduce myself. My name is Hannes Rudolph, and I\u2019m the new Community Manage\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T03:55:53Z",
+      "fetched_at": "2026-06-26T07:27:32.732196Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7c034f54a0101605",
+      "url": "https://x.com/dani_avila7/status/2070314627884270041",
+      "title": "Here I don't see a problem... I see an opportunity\n\nEvery provider emits signals you can extract, no...",
+      "summary": "Here I don't see a problem... I see an opportunity\n\nEvery provider emits signals you can extract, normalize, and own as a vendor-neutral context layer\n\nThe model becomes a tenant, your operational memory becomes the asset https://t.co/WUOEeXRsNt",
+      "content": "Here I don't see a problem... I see an opportunity\n\nEvery provider emits signals you can extract, normalize, and own as a vendor-neutral context layer\n\nThe model becomes a tenant, your operational memory becomes the asset https://t.co/WUOEeXRsNt",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-26T01:14:06Z",
+      "fetched_at": "2026-06-26T07:27:24.031182Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
