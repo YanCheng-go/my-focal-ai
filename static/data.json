@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-03T17:49:32.666195+00:00",
+  "exported_at": "2026-07-03T19:49:51.779760+00:00",
   "period_hours": 168,
-  "total": 3030,
+  "total": 3025,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -26380,50 +26380,6 @@
       "author": "ashwin-ant",
       "published_at": "2026-06-26T21:29:42Z",
       "fetched_at": "2026-06-26T22:43:00.648990Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5a1c9c8bdff63018",
-      "url": "https://developer.nvidia.com/blog/deploy-a-production-ready-nvidia-ai-q-blueprint-on-oracle-cloud-infrastructure/",
-      "title": "Deploy a Production-Ready NVIDIA AI-Q Blueprint on Oracle Cloud Infrastructure",
-      "summary": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/genai-press-project-aiq-3503101-1920x1080-1-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-press-project-aiq-3503101-1920x1080\" width=\"768\" />AI agents have changed a lot in the last two years. The first could only answer one question at a time. Then came multi-turn chat, where the model could keep...",
-      "content": "<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/genai-press-project-aiq-3503101-1920x1080-1-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-press-project-aiq-3503101-1920x1080\" width=\"768\" />AI agents have changed a lot in the last two years. The first could only answer one question at a time. Then came multi-turn chat, where the model could keep...<img alt=\"Decorative image.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2025/08/genai-press-project-aiq-3503101-1920x1080-1-768x432-jpg.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"genai-press-project-aiq-3503101-1920x1080\" width=\"768\" /><p>AI agents have changed a lot in the last two years. The first could only answer one question at a time. Then came multi-turn chat, where the model could keep some context across a session. Today, we have long-horizon agents. Systems that plan many steps, split work between sub-agents, keep context across a long task, and run tools in a safe sandbox. The NVIDIA AI-Q Blueprint is an open source\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/deploy-a-production-ready-nvidia-ai-q-blueprint-on-oracle-cloud-infrastructure/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Anurag Kuppala",
-      "published_at": "2026-06-26T19:00:45Z",
-      "fetched_at": "2026-06-26T20:52:11.996240Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e44d5aec7e5b91f9",
-      "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/",
-      "title": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
-      "summary": "Machine Intelligence",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-26T18:30:07Z",
-      "fetched_at": "2026-06-26T18:55:48.127026Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -62315,90 +62271,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5fead5d1d02d3d8d",
-      "url": "https://arxiv.org/abs/2606.28323v1",
-      "title": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
-      "summary": "Dexterous manipulation policies can solve individual skills, but composing them to perform multiple tasks with a single hand remains challenging. Adding a new task on top of an existing manipulation skill often imposes conflicting demands on overlapping fingers and contact modes, causing destructive interference between preserving an existing manipulation outcome and executing a new one. We propose DexCompose, a role-aware residual composition framework that reuses pretrained dexterous policies for multi-task manipulation through explicit finger-level action ownership. Given two pretrained full-hand policies, DexCompose first collects successful post-task states from the first skill and performs release tests over candidate finger masks to identify which fingers are necessary for maintaining the established skill state. It then trains two asymmetric residual modules: a bounded residual stabilizer for task preservation, and a context-aware residual that adapts the frozen downstream policy only within the action subspace assigned to the new task. We evaluate the framework on 16 composite dexterous manipulation tasks spanning four object-retention skills and four downstream interactions. DexCompose achieves a 77.4% average composite success rate, demonstrating that structural action ownership with dual residuals offers a promising direction for composing dexterous skills beyond conventional policy chaining.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Mingyu Ding",
-      "published_at": "2026-06-26T17:59:57Z",
-      "fetched_at": "2026-06-29T03:28:00.589681Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4b969b6993a49e04",
-      "url": "https://arxiv.org/abs/2606.28309v1",
-      "title": "Surprises in Proper Positive-Only Learning",
-      "summary": "Binary classification from positive-only samples is a variant of PAC learning in which the learner receives i.i.d. samples from the positive region of an unknown target concept, but is evaluated under the original distribution (which places mass on both positive and negative regions). This model dates back to Natarajan [1987, STOC], and the characterization of improper learning is well-known -- it even appears in textbooks. The characterization of proper positive-only learning, however, has long remained open. In this work, we revisit and settle this question: a concept class is properly learnable from positive-only samples if and only if it has finite VC dimension and satisfies a new combinatorial condition, which we call uniform exterior separability. Together with several separation results, this characterization reveals a surprisingly rich landscape that differs sharply from standard PAC learning: proper and improper learning are separated, randomized and deterministic proper learning are separated, there are classes for which no ERM is a learner, and finite VC dimension does not suffice even for non-uniform learning. Along the way, we introduce new combinatorial dimensions that we believe can be of broader interest in learning theory.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Manolis Zampetakis",
-      "published_at": "2026-06-26T17:54:13Z",
-      "fetched_at": "2026-06-29T03:28:00.589701Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8f99683d280ffb79",
-      "url": "https://arxiv.org/abs/2606.28308v1",
-      "title": "Which Nash Equilibrium? Solver-Dependent Selection on Zero-Sum Nash Polytopes",
-      "summary": "Many two-player zero-sum games admit not a unique Nash equilibrium but a convex set of them: a polytope of profiles that all share the minimax value V* yet prescribe different behaviour. Standard solvers each converge to some equilibrium and are treated as interchangeable. We ask whether they instead select different members of the Nash set, systematically as a function of the algorithm rather than the seed. Using a tabular, exactly solvable testbed of six games with analytically known Nash sets -- including a two-dimensional Nash polytope and Kuhn poker -- we find that (i) selection is determined by the algorithm, not the seed, but families differ only on asymmetric Nash sets; (ii) regularized last-iterate methods (R-NaD, magnetic mirror descent) select the maximum-entropy member, the information projection of their uniform reference onto the Nash set -- exactly on the 2-D polytope and at 99.7% of maximum entropy in Kuhn -- while regret-averaging methods (CFR, CFR+, fictitious play) drift to a lower-entropy face; we confirm this on a randomized 180-game ensemble, where R-NaD attains the maximum-entropy member in 100% of converged games while CFR+ sits strictly below it in 94% (paired Wilcoxon p < 10^-27); (iii) the selected member has downstream consequences against sub-optimal opponents that scale with sequential/hidden-information structure but stay bounded -- in Kuhn the max-entropy member is a strictly better hedge, whereas on the matrix games the members differ without either dominating. We also report two negative results correcting common intuitions: removing CFR's positive-orthant (max(R,0)) projection does not eliminate boundary drift; and R-NaD's selection is anchor-following, not initialization-independent. We state the maximum-entropy / I-projection characterization as a strongly data-supported conjecture, checked throughout against analytic ground truth.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Luis Leal",
-      "published_at": "2026-06-26T17:53:30Z",
-      "fetched_at": "2026-06-29T03:28:00.589711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "684c0c4e2e4c0743",
-      "url": "https://arxiv.org/abs/2606.28307v1",
-      "title": "Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization",
-      "summary": "We analyze Bregman ADMM for nonconvex linearly constrained problems under two-sided relative smoothness, a condition that replaces the standard Lipschitz gradient assumption with a Hessian comparison relative to a Bregman kernel. This setting covers polynomial objectives arising in matrix and tensor models for which a global Lipschitz-gradient constant need not exist. We show that on an invariant open state-space domain, one iteration of Bregman ADMM defines a smooth primal--dual fixed-point map whose strict-saddle KKT points are unstable fixed points; consequently, from random initialization the iterates converge to a strict saddle with probability zero. Combined with existing first-order convergence results, this yields almost-sure second-order stationarity of limiting KKT points. We extend the analysis to a multi-block star consensus formulation for distributed optimization. The technical novelty lies in a determinant reduction with a Bregman-specific symmetrization and scaling step in the two block spectral argument, together with a null space cancellation exploiting the star graph structure in the consensus case. Numerical experiments on distributed matrix factorization illustrate the theory, and a symmetric tensor factorization example demonstrates the broader Bregman proximal splitting idea beyond the separable consensus setting.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Qiuwei Li",
-      "published_at": "2026-06-26T17:52:39Z",
-      "fetched_at": "2026-06-29T03:28:00.589719Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d8ec772e95b06b14",
       "url": "https://www.anthropic.com/events/anthropic-at-aws-summit-dc-2026",
       "title": "Anthropic at AWS Summit Washington, D.C. 2026",
@@ -62453,26 +62325,6 @@
       "author": "",
       "published_at": "2026-07-22T00:00:00Z",
       "fetched_at": "2026-06-03T22:59:04.341244Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e721418a29411a25",
-      "url": "https://x.com/steipete/status/2070573061909385558",
-      "title": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the...",
-      "summary": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the labs are making\n0:02:12 \u2013 Grindability\u2026",
-      "content": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the labs are making\n0:02:12 \u2013 Grindability\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-26T18:21:02Z",
-      "fetched_at": "2026-06-26T19:59:39.419796Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64995,6 +64847,46 @@
       "author": "simonw",
       "published_at": "2026-07-03T17:02:57Z",
       "fetched_at": "2026-07-03T17:49:21.087886Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6cceb091ac3ece78",
+      "url": "https://x.com/steipete/status/2073127743131464059",
+      "title": "Shoutout to @vhbrzezowski for is rad CodexBar website redesign! \nAnd to everyone who keeps sending m...",
+      "summary": "Shoutout to @vhbrzezowski for is rad CodexBar website redesign! \nAnd to everyone who keeps sending me PRs to support now *checks note* 56 providers. You're the best! https://t.co/lJ4dxNI4pe\n\nJust shipped a slick new update that makes settings way nicer and more intuitive.",
+      "content": "Shoutout to @vhbrzezowski for is rad CodexBar website redesign! \nAnd to everyone who keeps sending me PRs to support now *checks note* 56 providers. You're the best! https://t.co/lJ4dxNI4pe\n\nJust shipped a slick new update that makes settings way nicer and more intuitive.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-03T19:32:25Z",
+      "fetched_at": "2026-07-03T19:49:50.107761Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e721418a29411a25",
+      "url": "https://x.com/steipete/status/2070573061909385558",
+      "title": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the...",
+      "summary": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the labs are making\n0:02:12 \u2013 Grindability\u2026",
+      "content": "RT @dwarkesh_sp: What does the next training paradigm look like?\n\n0:00:00 \u2013 The big research bet the labs are making\n0:02:12 \u2013 Grindability\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-26T18:21:02Z",
+      "fetched_at": "2026-06-26T19:59:39.419796Z",
       "score": null,
       "score_reason": "",
       "tier": "",
