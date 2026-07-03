@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-03T21:32:37.924680+00:00",
+  "exported_at": "2026-07-03T21:50:12.102068+00:00",
   "period_hours": 168,
-  "total": 3018,
+  "total": 3022,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -64763,6 +64763,87 @@
       "author": "steipete",
       "published_at": "2026-07-03T19:32:25Z",
       "fetched_at": "2026-07-03T19:49:50.107761Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bb8547211efe19da",
+      "url": "https://x.com/simonw/status/2070618097778647237",
+      "title": "RT @binarybits: This is like saying there's  no learning curve to being a manager because your emplo...",
+      "summary": "RT @binarybits: This is like saying there's  no learning curve to being a manager because your employees will just do whatever you tell the\u2026",
+      "content": "RT @binarybits: This is like saying there's  no learning curve to being a manager because your employees will just do whatever you tell the\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-06-26T21:19:59Z",
+      "fetched_at": "2026-06-27T12:11:58.841850Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2e17f55fb6126f45",
+      "url": "https://x.com/sama/status/2070612055225483692",
+      "title": "in other news, we updated the 5.5 instant model used in chatgpt this week.\n\ni like its vibes.",
+      "summary": "in other news, we updated the 5.5 instant model used in chatgpt this week.\n\ni like its vibes.",
+      "content": "in other news, we updated the 5.5 instant model used in chatgpt this week.\n\ni like its vibes.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-06-26T20:55:58Z",
+      "fetched_at": "2026-06-27T12:12:03.554281Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b7e8c0c5af2d2d22",
+      "url": "https://x.com/dani_avila7/status/2070609063377821878",
+      "title": "testing it this weekend\n\nopenclaw, hermes or opencode? Which harness are you running it through?",
+      "summary": "testing it this weekend\n\nopenclaw, hermes or opencode? Which harness are you running it through?",
+      "content": "testing it this weekend\n\nopenclaw, hermes or opencode? Which harness are you running it through?",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-06-26T20:44:05Z",
+      "fetched_at": "2026-06-27T12:12:00.380959Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
