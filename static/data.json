@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-07-03T14:32:58.859503+00:00",
+  "exported_at": "2026-07-03T15:08:04.488538+00:00",
   "period_hours": 168,
   "total": 3039,
   "all_tags": [
@@ -26185,26 +26185,6 @@
       "author": "IBM Technology",
       "published_at": "2026-06-26T16:00:37Z",
       "fetched_at": "2026-06-26T16:57:45.979921Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bdf13fcd931d63f9",
-      "url": "https://www.youtube.com/shorts/qwmKCKjxEJc",
-      "title": "If You Don\u2019t Understand Jailbreaks, You Shouldn\u2019t Make AI Policy",
-      "summary": "It's starting to be apparent that policymakers fundamentally misunderstand the technology -- people in positions of influence are genuinely surprised that model jailbreaks exist and are not going away. So, demanding baseline technical literacy is essential before anyone attempts to shape national rules. Check out the full episode now #short",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-06-26T15:02:07Z",
-      "fetched_at": "2026-06-26T15:11:32.042782Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -65203,6 +65183,26 @@
       "author": "claudeai",
       "published_at": "2026-07-03T12:59:50Z",
       "fetched_at": "2026-07-03T13:07:35.372928Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
