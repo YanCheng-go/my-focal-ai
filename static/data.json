@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-03T17:48:59.044447+00:00",
+  "exported_at": "2026-07-03T17:49:32.666195+00:00",
   "period_hours": 168,
-  "total": 3022,
+  "total": 3030,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -64849,6 +64849,172 @@
       "author": "claudeai",
       "published_at": "2026-07-03T12:59:50Z",
       "fetched_at": "2026-07-03T13:07:35.372928Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "872e88a6cd51fdd2",
+      "url": "https://x.com/trq212/status/2073101082428047681",
+      "title": "this is one of the posts that my AIE talk was based on\n\ns/o to @geoffreylitt for an incredible discu...",
+      "summary": "this is one of the posts that my AIE talk was based on\n\ns/o to @geoffreylitt for an incredible discussion at AIE that helped me refine some of this, including adding quizzes",
+      "content": "this is one of the posts that my AIE talk was based on\n\ns/o to @geoffreylitt for an incredible discussion at AIE that helped me refine some of this, including adding quizzes",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-03T17:46:29Z",
+      "fetched_at": "2026-07-03T17:49:17.505673Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3d3216fa77fa3e15",
+      "url": "https://x.com/trq212/status/2073101078145724589",
+      "title": "I\u2019ve found the most important part of working with Fable is discovering my own unknowns so I can pro...",
+      "summary": "I\u2019ve found the most important part of working with Fable is discovering my own unknowns so I can prompt it better, heres how I do that.",
+      "content": "I\u2019ve found the most important part of working with Fable is discovering my own unknowns so I can prompt it better, heres how I do that.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-03T17:46:28Z",
+      "fetched_at": "2026-07-03T17:49:17.505731Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7d40efd92903c6ae",
+      "url": "https://x.com/trq212/status/2073101079877943683",
+      "title": "You can see examples of HTML artifacts for finding unknowns here:\u00a0https://t.co/eNS8g7P94x",
+      "summary": "You can see examples of HTML artifacts for finding unknowns here:\u00a0https://t.co/eNS8g7P94x",
+      "content": "You can see examples of HTML artifacts for finding unknowns here:\u00a0https://t.co/eNS8g7P94x",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-03T17:46:28Z",
+      "fetched_at": "2026-07-03T17:49:17.505713Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ff86602fad799f7f",
+      "url": "https://x.com/trq212/status/2073100352921215386",
+      "title": "https://t.co/hPiZr1kG7r",
+      "summary": "https://t.co/hPiZr1kG7r",
+      "content": "https://t.co/hPiZr1kG7r",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-07-03T17:43:35Z",
+      "fetched_at": "2026-07-03T17:49:17.505744Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "50520db3fffdd67a",
+      "url": "https://x.com/simonw/status/2073094174161998184",
+      "title": "Sent out my sponsors-only monthly newsletter for June, which means the May newsletter is now availab...",
+      "summary": "Sent out my sponsors-only monthly newsletter for June, which means the May newsletter is now available here https://t.co/0uESSnY7lO - you can sponsor me through GitHub to stay a month ahead of the free copy!",
+      "content": "Sent out my sponsors-only monthly newsletter for June, which means the May newsletter is now available here https://t.co/0uESSnY7lO - you can sponsor me through GitHub to stay a month ahead of the free copy!",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-07-03T17:19:02Z",
+      "fetched_at": "2026-07-03T17:49:21.087824Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fa7c0fa330cc92d6",
+      "url": "https://x.com/steipete/status/2073093766366515315",
+      "title": "RT @SIGKITTEN: Better call Sol",
+      "summary": "RT @SIGKITTEN: Better call Sol",
+      "content": "RT @SIGKITTEN: Better call Sol",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-03T17:17:24Z",
+      "fetched_at": "2026-07-03T17:49:30.921339Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "409aa60c1ab3ca2b",
+      "url": "https://x.com/simonw/status/2073090126696386570",
+      "title": "\"At least this felt ambitious until fable chewed through each of my requests like it was nothing...\"",
+      "summary": "\"At least this felt ambitious until fable chewed through each of my requests like it was nothing...\"",
+      "content": "\"At least this felt ambitious until fable chewed through each of my requests like it was nothing...\"",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-07-03T17:02:57Z",
+      "fetched_at": "2026-07-03T17:49:21.087886Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
