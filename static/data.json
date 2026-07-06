@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-06T07:27:50.853599+00:00",
+  "exported_at": "2026-07-06T10:01:54.481241+00:00",
   "period_hours": 168,
-  "total": 2646,
+  "total": 2640,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -56633,127 +56633,6 @@
       "author": "dani_avila7",
       "published_at": "2026-07-03T22:52:05Z",
       "fetched_at": "2026-07-06T07:27:39.642187Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c01a7b2e56525e9",
-      "url": "https://x.com/dani_avila7/status/2071422191334256835",
-      "title": "100% agree with Boris, but\u2026\n\nThese archetypes only work inside orgs that are already technically and...",
-      "summary": "100% agree with Boris, but\u2026\n\nThese archetypes only work inside orgs that are already technically and culturally wired for agentic workflows\n\nYou can\u2019t be a Prototyper without a properly configured sandbox where a coding agent can spin up and tear down ideas fast\n\nThe Builder",
-      "content": "100% agree with Boris, but\u2026\n\nThese archetypes only work inside orgs that are already technically and culturally wired for agentic workflows\n\nYou can\u2019t be a Prototyper without a properly configured sandbox where a coding agent can spin up and tear down ideas fast\n\nThe Builder",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-29T02:35:10Z",
-      "fetched_at": "2026-06-29T08:22:57.872551Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9bcd446be3f0a023",
-      "url": "https://x.com/steipete/status/2071415080739283012",
-      "title": "RT @cherry_mx_reds: AI agents may end up doing more for web accessibility than accessibility laws. A...",
-      "summary": "RT @cherry_mx_reds: AI agents may end up doing more for web accessibility than accessibility laws. Agents rely on accessibility APIs to use\u2026",
-      "content": "RT @cherry_mx_reds: AI agents may end up doing more for web accessibility than accessibility laws. Agents rely on accessibility APIs to use\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-29T02:06:54Z",
-      "fetched_at": "2026-06-29T08:23:06.555654Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e9c22e53dfba3e23",
-      "url": "https://x.com/dani_avila7/status/2071414034604462426",
-      "title": "For the past couple of months, https://t.co/pSU4Atrn7H has been running almost entirely on its own\n\n...",
-      "summary": "For the past couple of months, https://t.co/pSU4Atrn7H has been running almost entirely on its own\n\nIt collects real usage metrics, runs autonomous loops to analyze them, creates tasks, and continuously updates the roadmap\n\nEvery now and then I receive a PR adding a new feature. https://t.co/1J1C1WjwRm",
-      "content": "For the past couple of months, https://t.co/pSU4Atrn7H has been running almost entirely on its own\n\nIt collects real usage metrics, runs autonomous loops to analyze them, creates tasks, and continuously updates the roadmap\n\nEvery now and then I receive a PR adding a new feature. https://t.co/1J1C1WjwRm",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-06-29T02:02:45Z",
-      "fetched_at": "2026-06-29T08:22:57.872639Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2f136308e3ab14a3",
-      "url": "https://x.com/steipete/status/2071394921463029840",
-      "title": "RT @HamelHusain: Codex desktop is miles ahead of Claude for remote access via mobile or another comp...",
-      "summary": "RT @HamelHusain: Codex desktop is miles ahead of Claude for remote access via mobile or another computer.  \n\nCodex allows you to see **all*\u2026",
-      "content": "RT @HamelHusain: Codex desktop is miles ahead of Claude for remote access via mobile or another computer.  \n\nCodex allows you to see **all*\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-29T00:46:48Z",
-      "fetched_at": "2026-06-29T08:23:06.555784Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "42f005faa0544b48",
-      "url": "https://x.com/steipete/status/2071382416703500510",
-      "title": "Tried to sign up to @ATT four times now and they reject me and aren\u2019t telling me why.\n\nWhat\u2019s the ne...",
-      "summary": "Tried to sign up to @ATT four times now and they reject me and aren\u2019t telling me why.\n\nWhat\u2019s the next best unlimited phone/data plan for the SF area?\n\nOr do I know anyone who can work around corp bs?",
-      "content": "Tried to sign up to @ATT four times now and they reject me and aren\u2019t telling me why.\n\nWhat\u2019s the next best unlimited phone/data plan for the SF area?\n\nOr do I know anyone who can work around corp bs?",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-06-28T23:57:07Z",
-      "fetched_at": "2026-06-29T08:23:06.555831Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "79569cdfe3c5509e",
-      "url": "https://x.com/bcherny/status/2071379474277613732",
-      "title": "As engineering, product, design, DS, etc. melt into a new kind of role, I was reflecting on what rol...",
-      "summary": "As engineering, product, design, DS, etc. melt into a new kind of role, I was reflecting on what roles might look like in the future. For example, when I look at the Claude Code team I see what I think is five archetypes:\n\n1. Prototyper: comes up with brand new ideas; churns out",
-      "content": "As engineering, product, design, DS, etc. melt into a new kind of role, I was reflecting on what roles might look like in the future. For example, when I look at the Claude Code team I see what I think is five archetypes:\n\n1. Prototyper: comes up with brand new ideas; churns out",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-06-28T23:45:25Z",
-      "fetched_at": "2026-06-29T08:22:55.309290Z",
       "score": null,
       "score_reason": "",
       "tier": "",
