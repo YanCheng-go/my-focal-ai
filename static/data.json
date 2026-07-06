@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-06T12:02:15.611551+00:00",
+  "exported_at": "2026-07-06T14:41:51.280948+00:00",
   "period_hours": 168,
-  "total": 2639,
+  "total": 2638,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12164,26 +12164,6 @@
       "author": "The Pragmatic Engineer",
       "published_at": "2026-06-29T15:00:45Z",
       "fetched_at": "2026-06-29T15:28:44.536175Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f11e366e9c8b5918",
-      "url": "https://www.youtube.com/watch?v=Tj3018n5MVg",
-      "title": "Stanford's Method Turns Claude Into a PHD Level Research Team",
-      "summary": "My FREE AI OS Course: https://www.skool.com/ai-automation-society/about?el=storm-research&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\nFull courses + unlimited support: https://www.skool.com/ai-automation-society-plus/about?el=storm-research&amp;hcategory=youtube-videos&amp;utm_campaign=ais-plus\nApply for my YT podcast: https://podcast.nateherk.com/apply\nWork with me: https://uppitai.com/\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nStanford's STORM research method runs a topic through five different expert perspectives instead of a single prompt, so the blind spots one angle misses get caught by another. \n\nI turned it into a free Claude skill that spins up a practitioner, academic, skeptic, economist, and historian, maps where they disagree, then verifies every source before handing you a clean HTML briefing. I also put it head to head against Claude Code's built-in Deep Research, and walk through exactly how to install it and tweak the lenses for your own work.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 What STORM Builds\n0:43 Why Five Perspectives Beat One\n1:29 STORM vs Claude's Deep Research\n4:53 The Four Prompts Behind It\n6:20 How to Get the Skill\n7:42 Live Run: Voice AI Agents\n8:49 Subagents vs Agent Teams\n10:50 Final Takeaways",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-06-29T13:15:39Z",
-      "fetched_at": "2026-06-29T13:47:41.716138Z",
       "score": null,
       "score_reason": "",
       "tier": "",
