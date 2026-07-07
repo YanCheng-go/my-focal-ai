@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-07T12:17:22.329367+00:00",
+  "exported_at": "2026-07-07T14:17:42.743487+00:00",
   "period_hours": 168,
-  "total": 2385,
+  "total": 2377,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -15930,26 +15930,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "45774a0734020915",
-      "url": "https://www.youtube.com/shorts/VEljB3kwzSY",
-      "title": "Companies have no idea how to evaluate engineers",
-      "summary": "With Neet, Founder of  \u2068@NeetCode. See the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-06-30T13:00:04Z",
-      "fetched_at": "2026-06-30T15:11:23.185014Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "9b4983f714d2c63e",
       "url": "https://skills.sh/open.feishu.cn/lark-shared#trending",
       "title": "#20 lark-shared",
@@ -23246,27 +23226,6 @@
       "author": "",
       "published_at": "2026-06-30T14:39:11Z",
       "fetched_at": "2026-06-30T15:11:29.263726Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a5ac4346ca76b814",
-      "url": "https://blogs.nvidia.com/blog/vision-ai-agent-skills-omniverse-metropolis/",
-      "title": "Into the Omniverse: Three Workflows for Improving Vision AI Agent Accuracy With Synthetic Data and Fine-Tuning",
-      "summary": "Editor\u2019s note: This post is part of Into the Omniverse, a series focused on how developers, 3D practitioners, and enterprises can transform their workflows using the latest advances in OpenUSD and NVIDIA Omniverse. Vision AI agents are becoming a practical way to automatically turn video data from the physical world into operational intelligence in factories, [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><i><span style=\"font-weight: 400;\">Editor\u2019s note: This post is part of </span></i><a href=\"https://www.nvidia.com/en-us/omniverse/news/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">Into the Omniverse</span></i></a><i><span style=\"font-weight: 400;\">, a series focused on how developers, 3D practitioners, and enterprises can transform their workflows using the latest advances in </span></i><a href=\"https://www.nvidia.com/en-us/omniverse/usd/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">OpenUSD</span></i></a><i><span style=\"font-weight: 400;\"> and </span></i><a href=\"https://www.nvidia.com/en-us/omniverse/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA Omniverse</span></i></a><i><span style=\"font-weight: 400;\">.</span></i></p>\n<p><a href=\"https://www.nvidia.com/en-us/use-cases/video-analytics-ai-agents/\" target=\"_blank\"><span style=\"font-weight: 400;\">Vision AI agents</span></a><span style=\"font-weight: 400;\"> are becoming a practical way to automatically turn video data from the physical world into operational intelligence in factories, cities, warehouses and transportation systems.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">That shift is accelerating as more AI workloads move closer to where data is generated. Gartner projects that more than two-thirds of enterprise-managed data will be created and processed outside the data center or cloud by 2028, and that over two-thirds of all enterprises globally will deploy edge AI by 2029, up from 10% in 2025 (1)</span><span style=\"font-weight: 400;\">.</span></p>\n<p><span style=\"font-weight: 400;\">But more edge data doesn\u2019t automatically create more intelligence. As much as 90% of existing edge data goes unprocessed, according to the same Gartner report. </span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">Turning that data into useful action requires vision AI agents that can understand video, adapt to real-world conditions and connect insights to operational workflows. These agents often run near cameras, machines and sensors, where models must meet latency, power, cost and connectivity requirements while adapting to site-specific conditions.</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">To build those agents, developers need repeatable ways to generate training data, fine-tune models and deploy agentic video applications across edge and cloud environments.</span></p>\n<p><a href=\"https://developer.nvidia.com/metropolis\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Metropolis</span></a><span style=\"font-weight: 400;\"> agent skills and blueprints give developers reusable workflows to build, operate and optimize vision AI agents across that lifecycle.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">For the simulation and </span><a href=\"https://www.nvidia.com/en-us/glossary/synthetic-data-generation/\" target=\"_blank\"><span style=\"font-weight: 400;\">synthetic data</span></a><span style=\"font-weight: 400;\"> side of that work, Universal Scene Description, or </span><a href=\"https://www.nvidia.com/en-us/glossary/openusd/\" target=\"_blank\"><span style=\"font-weight: 400;\">OpenUSD</span></a><span style=\"font-weight: 400;\">, provides a common framework for describing, composing and reusing 3D worlds. Built on OpenUSD,</span><a href=\"https://www.nvidia.com/en-us/omniverse/\" target=\"_blank\"> <span style=\"font-weight: 400;\">NVIDIA Omniverse</span></a><span style=\"font-weight: 400;\"> libraries help teams build simulation, synthetic data generation and digital twin workflows that model real-world environments and expand scenario coverage across conditions such as lighting, weather, traffic patterns, camera angles, occlusion and rare events.</span></p>\n<h2><strong>Where Vision AI Agent Projects Can Get Stuck</strong></h2>\n<p><span style=\"font-weight: 400;\">As organizations move toward autonomous vision agents, three challenges often come up:</span></p>\n<ul>\n<li><b>Accuracy Plateaus With Data Gaps: </b><span style=\"font-weight: 400;\">Vision AI agents need to spot rare defects, abnormal events and changing environments. In manufacturing, for example, an inspection model may perform well on common scratches or dents but struggle with a new hairline crack not represented in the training data.</span><b> </b></li>\n<li><b>Lack of Fine-Tuning Expertise: </b>Once teams identify a performance gap, improving the model is rarely a simple handoff. Fine-tuning requires labeled datasets, training configuration, experiment tracking, evaluation and decisions about whether there\u2019s improvement for the target use case. Many organizations building vision AI agents don\u2019t have large in-house machine learning teams to manage that process quickly, especially across many sites, products or camera views.</li>\n<li><b> Complex, Time-Consuming Agent Assembly Workflows: </b><span style=\"font-weight: 400;\">Deploying a vision AI agent requires more than running inference. Developers have to stitch together video pipelines, AI models, metadata, embeddings, indexing, search, alerts, reporting and system integrations. Customizing that workflow for a specific environment adds significant time and requires specialized expertise. Without OpenUSD&#8217;s shared scene description layer, teams often rebuild 3D environments from scratch each time conditions or deployment sites change.</span></li>\n</ul>\n<h2><strong>A Full-Lifecycle Approach to Vision AI Agents</strong></h2>\n<p><span style=\"font-weight: 400;\">NVIDIA agent skills and blueprints \u2014 used alongside NVIDIA Omniverse for OpenUSD-based simulation and synthetic data generation, NVIDIA Metropolis for model development and video AI deployment \u2014 give developers reusable starting points for key parts of those workflows:\u00a0</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">The </span><a href=\"https://github.com/NVIDIA/skills/tree/main/skills/physical-ai-defect-image-generation\" target=\"_blank\"><span style=\"font-weight: 400;\">Defect Image Generation skill</span></a><span style=\"font-weight: 400;\"> helps create synthetic defect data.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">The </span><a href=\"https://github.com/NVIDIA/skills/tree/main/skills/physical-ai-video-data-augmentation\" target=\"_blank\"><span style=\"font-weight: 400;\">Video Data Augmentation skill</span></a><span style=\"font-weight: 400;\"> helps expand scenario coverage.</span></li>\n<li style=\"font-weight: 400;\"><a href=\"https://github.com/NVIDIA-TAO/tao-skills-bank\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA TAO skills</span></a><span style=\"font-weight: 400;\"> enable model fine-tuning.</span></li>\n<li style=\"font-weight: 400;\"><a href=\"https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization/tree/main/skills\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA video search and summarization (VSS) skills</span></a><span style=\"font-weight: 400;\"> help turn video understanding into deployable workflows for alerts, reporting, stream management and more.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Instead of rebuilding every step from scratch, developers can use these reusable workflows to generate data, improve models and deploy vision AI agents faster.</span></p>\n<h2><strong>Visual Inspection: Generating the Data That Production Lines Don\u2019t Have</strong></h2>\n<p><span style=\"font-weight: 400;\">In manufacturing, the more successful a factory is at preventing defects, the harder it becomes to collect enough defect examples to train the next inspection model.</span></p>\n<p><a href=\"https://blog.roboflow.com/synthetic-data-generation-manufacturing-nvidia/\" target=\"_blank\"><span style=\"font-weight: 400;\">Roboflow</span></a><span style=\"font-weight: 400;\"> is integrating the NVIDIA Defect Image Generation skill and </span><a href=\"https://www.nvidia.com/en-us/ai/cosmos/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Cosmos world foundation models</span></a><span style=\"font-weight: 400;\"> into its vision AI platform to generate synthetic defect images for customers like Corning when real training data is scarce, enabling near-perfect detection performance while significantly reducing the need for daily manual image review.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">In a benchmark conducted with Corning\u2019s optical fiber manufacturing engineering team, a model trained on just eight real defect images \u2014 augmented with synthetic data generated by the NVIDIA Defect Image Generation skill \u2014 reached an average precision of 95% and perfect recall on the most challenging defect class. This performance surpassed a baseline model trained solely on real data, effectively compressing a multi-quarter inspection project into just a few days.</span></p>\n<p><span style=\"font-weight: 400;\">Watch how synthetic data generation workflows help developers create the data needed to train and improve physical AI models:</span></p>\n<p></p>\n<h2><strong>Smart Cities: From Video Analytics to Autonomous Operations</strong></h2>\n<p><span style=\"font-weight: 400;\">Large-scale city operations show why vision AI agents need connected workflows, not just inference. </span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><a href=\"https://www.nvidia.com/en-us/case-studies/linker-vision-ai-smart-city-solutions/\" target=\"_blank\"><span style=\"font-weight: 400;\">Linker Vision</span></a><span style=\"font-weight: 400;\"> is building smart city AI systems with the</span> <a href=\"https://build.nvidia.com/nvidia/video-search-and-summarization\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Metropolis Blueprint for VSS</span></a><span style=\"font-weight: 400;\"> to accelerate the deployment of video reasoning agents across city infrastructure. In this workflow, VSS skills can help package common video AI tasks such as search, summarization, alerts, reporting and stream management into reusable agent-executable workflows.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">OpenUSD-based NVIDIA Omniverse digital twins help model city environments and test how vision AI systems respond to varied traffic patterns, weather conditions, emergency events and infrastructure changes. Linker Vision uses NVIDIA Cosmos for </span><a href=\"https://github.com/NVIDIA/skills/tree/main/skills/physical-ai-video-data-augmentation\" target=\"_blank\"><span style=\"font-weight: 400;\">video data augmentation</span></a><span style=\"font-weight: 400;\"> and</span> <a href=\"https://developer.nvidia.com/tao-toolkit\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA TAO</span></a><span style=\"font-weight: 400;\"> for Cosmos model fine-tuning.</span></p>\n<p><span style=\"font-weight: 400;\">In Kaohsiung, Linker Vision reduced development effort by 85% using the VSS blueprint and reduced incident response times by up to 80%. Its newer AI-GRID expansion builds on this approach with </span><a href=\"https://www.nvidia.com/en-us/ai/nemoclaw/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA NemoClaw</span></a><span style=\"font-weight: 400;\"> blueprints for secure agentic AI, supporting autonomous video reasoning across city and transportation environments.</span></p>\n<p></p>\n<p>&nbsp;</p>\n<h2><strong>Industrial Operations: Reasoning Over Work as It Happens</strong></h2>\n<p><span style=\"font-weight: 400;\">In industrial environments, the challenge isn\u2019t just detecting what appears in a video frame. Teams need agents that can:\u00a0</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Understand whether work is being performed correctly</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Compare execution against standard operating procedures</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Produce insights before defects move downstream.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">At Foxconn, </span><a href=\"https://deephow.com/blog/foxconn-boosts-production-throughput-with-deephow-live-sop-verification-powered-by-nvidia\" target=\"_blank\"><span style=\"font-weight: 400;\">DeepHow\u2019s Live Standard Operating Procedure</span></a><span style=\"font-weight: 400;\"> (SOP) Verification agent uses the NVIDIA Metropolis VSS blueprint as the agentic video workflow layer for search, summarization and analysis across operational environments. NVIDIA Cosmos provides the reasoning capability that helps the agent interpret complex human activity and work sequences in context, such as whether assembly steps are performed correctly and in the expected order.</span></p>\n<p><span style=\"font-weight: 400;\">The solution has been used on the NVIDIA GB300 server production lines to improve first-pass yield by 3%, achieve 99% task-level accuracy in micro-action understanding of critical SOP steps and reduce redundant work by helping teams catch problems earlier.</span></p>\n<p><i><span style=\"font-weight: 400;\">To see how developers can build and deploy video analytics AI agents, watch this technical walkthrough on using</span></i><a href=\"https://www.youtube.com/watch?v=U1D4ZhSHHd0\" target=\"_blank\"> <i><span style=\"font-weight: 400;\">NVIDIA VSS skills with coding agents</span></i></a><i><span style=\"font-weight: 400;\">.</span></i></p>\n<p><i><span style=\"font-weight: 400;\">Explore NVIDIA agent skills and blueprints to build, operate and optimize </span></i><a href=\"https://www.nvidia.com/en-us/use-cases/video-analytics-ai-agents/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">video analytics AI agents</span></i></a><i><span style=\"font-weight: 400;\">.\u00a0</span></i></p>\n<p><i><span style=\"font-weight: 400;\">Source: Gartner, Predicts 2026: Physical AI Pushes I&amp;O to the Edge, 3 March 2026. </span></i><i><span style=\"font-weight: 400;\">Gartner is a trademark of Gartner, Inc. and/or its affiliates.</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Esther Lee",
-      "published_at": "2026-06-30T13:00:27Z",
-      "fetched_at": "2026-06-30T15:11:28.170956Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -48202,132 +48161,6 @@
       "author": "Yuantao Gu",
       "published_at": "2026-06-30T14:37:25Z",
       "fetched_at": "2026-07-01T03:28:15.683718Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "be9c565c92aa2e75",
-      "url": "https://arxiv.org/abs/2606.31686v1",
-      "title": "When to Truncate a Feature Ranking: A Residual-Overlap Stopping Rule for Subset Selection",
-      "summary": "Feature rankings are widely used in supervised feature selection because they are simple, scalable and easy to interpret. Variables are first ranked by a relevance score, and a subset is then obtained by retaining the top-ranked variables. Although the first stage has been extensively studied, the second is often governed by an arbitrary cardinality, an empirical threshold or cross-validation, without a direct interpretation. This raises a basic question: given a feature ranking, when is there enough accumulated class-separation evidence to stop selecting features?\n  This paper develops a distributional framework for transforming supervised feature rankings into class-independent subsets through an explicit risk-calibrated stopping rule. For each variable and each pair of classes, marginal separation is measured by the Bhattacharyya coefficient between the corresponding class-conditional distributions. The proposed method selects a single global subset shared by all classes by retaining the shortest prefix of a ranking whose residual product overlap falls below a prescribed threshold for every relevant class contrast. We derive binary and multiclass Bayes-risk bounds for the labelled product marginal problem, and obtain prior-dependent and prior-free calibrations of the residual-overlap threshold from a target all-pairs risk level.\n  An empirical comparison on high-dimensional genomic datasets illustrates that the rule can reduce tens of thousands of variables to a few dozen while maintaining predictive performance statistically comparable to the all-features baseline. As the stopping rule only requires one-dimensional marginal overlap estimates and scans a precomputed ranking, it is well suited to very high-dimensional settings where exhaustive subset search is infeasible and interpretable truncation of feature rankings is essential.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Jesus S. Aguilar-Ruiz",
-      "published_at": "2026-06-30T14:00:29Z",
-      "fetched_at": "2026-07-01T03:28:15.683726Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b9348e116bbdc092",
-      "url": "https://arxiv.org/abs/2606.31683v1",
-      "title": "Histogram-constrained Image Generation",
-      "summary": "Diffusion models have emerged as a dominant paradigm in generative modeling, enabling high-fidelity sampling from complex data distributions. Despite impressive capabilities, controlling diffusion models to produce outputs aligned with user intent remains an open challenge, especially when balancing global coherence with local precision. Existing control mechanisms vary in the granularity of their conditioning signals. For example, textual prompts guide generation globally through high-level semantics, while ControlNet-like approaches secure precise local structure via dense conditions. In this work, we introduce Histogram-constrained Image Generation (HIG), a novel control mechanism that falls into the middle ground of control granularity. Our framework enforces user-specified distributional constraints (e.g., color histograms or latent token distributions) during the generation process with exact precision. We model such control as an optimal transport (OT) problem and apply explicit guidance transformations during sampling, thereby driving the diffusion trajectory to align with the desired histogram. We demonstrate the versatility of HIG across diverse applications, including constrained generation via color/latent histograms and high-capacity information embedding through histogram-level encoding. Our findings underscore the promise of distributional control, a flexible and interpretable control scheme that is fully compatible with existing control mechanisms, diversifying the hybrid strategies for controllable image generation. Our project page is available at: https://maps-research.github.io/hig/.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Hongyi Wen",
-      "published_at": "2026-06-30T13:58:56Z",
-      "fetched_at": "2026-07-01T03:28:15.683734Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "199bb34abab7ef94",
-      "url": "https://arxiv.org/abs/2606.31616v1",
-      "title": "Scientific Explanations in Health Sciences: Causality, Trust, and Epistemic Adequacy",
-      "summary": "Medical Artificial Intelligence (AI) is widely expected to transform clinical practice, yet the decision-making processes of many Machine Learning (ML) models remain opaque. Explainability has been advanced as a partial remedy to clarify why AI generates predictions, particularly in high-stakes contexts. Despite ongoing efforts, debates on what constitutes an adequate medical explanation remain unsettled. Yet, explanation has long been a central topic of inquiry in the philosophy of science and medicine. The insights developed in these fields, however, have been largely overlooked in contemporary explainable AI (XAI) research, leaving its foundational assumptions insufficiently examined. To address this gap, this paper develops a critical review at the intersection of philosophy of science and XAI. It examines prevailing accounts of what counts as an explanation in the health sciences and assesses their adequacy for informing XAI in medicine, arguing that they provide necessary conditions for a philosophically grounded approach to explainability in this domain. Building on this foundational philosophical literature, the discussion identifies three central axes of analysis: the role of causality in medical reasoning, the epistemic and relational dimensions of medical trust, and the criteria of explanatory adequacy as shaped by the pragmatic needs of diverse stakeholders. By integrating philosophical analysis with current developments in medical AI, the paper outlines principles for designing XAI systems that offer explanations that are not only epistemically robust but also aligned with the epistemic and practical requirements of clinical decision-making, shaping ongoing debates in medical XAI toward underexplored conceptual foundations.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Marcello Pelillo",
-      "published_at": "2026-06-30T13:05:00Z",
-      "fetched_at": "2026-07-01T03:28:15.683743Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d8f4bded52e28d6a",
-      "url": "https://arxiv.org/abs/2606.31614v1",
-      "title": "Automating Cause-Effect Specification with Knowledge Graphs and Large Language Models",
-      "summary": "Engineering specifications such as interlocks, alarm rationalization tables, and cause-and-effect (C&E) matrices remain central to process control and safety, yet their creation is still predominantly manual, document-driven, and prone to inconsistency. This paper presents a semantic-AI framework that automates the generation of C&E logic by combining a knowledge graph (KG) with a constrained large language model (LLM) layer. The KG builds on an established modular alignment ontology to represent process structure, operating modes, faults, symptoms, causes, and mitigation actions in a machine-interpretable form. The LLM then transforms this information into operator-ready safety narratives and Semantic Web Rule Language (SWRL) rules under strict ontology and vocabulary constraints, grounding the generated artifacts in the underlying semantic model. The workflow is demonstrated on a modular process plant, showing how engineering semantics, diagnostic relations, and machine-verifiable specifications can be generated from a unified knowledge representation with reduced manual effort.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Mehmet Mercang\u00f6z",
-      "published_at": "2026-06-30T13:03:46Z",
-      "fetched_at": "2026-07-01T03:28:15.683751Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "993f8c2741b163fd",
-      "url": "https://arxiv.org/abs/2606.31585v1",
-      "title": "DPPE: Rethinking Camera-Based Positional Encoding for Scaling Multi-View Transformers",
-      "summary": "The remarkable scalability of Transformers has expanded their application to 3D computer vision, where camera-aware positional encoding is crucial for providing spatial cues in multi-view geometry. Recent advancements have established the practice of using camera parameters -- such as extrinsics or projection matrices -- as relative positional encoding into the query, key, and value vectors of the attention mechanism. However, when scaling up the training recipe of novel view synthesis (NVS) models with the camera-based positional encoding, we observe a significant issue: model performance stagnates in the late stages of training.\n  In this paper, we investigate the cause of the performance bottleneck when scaling up and demonstrate that storing rotation and translation given by the positional encoding in the same dimensions of the value vector causes indeterminacy in their independent identification, hindering training scalability. To address this, we propose Decoupled Pose Positional Encoding (DPPE), a novel camera-based positional encoding that explicitly decouples rotation and translation. Extensive evaluations on NVS tasks demonstrate that DPPE enables stable long-term training even in scaled-up training setup. Furthermore, it exhibits superior generalization performance in extrapolation settings, such as handling an increased number of viewpoints and zoom-in scenarios.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Teppei Suzuki",
-      "published_at": "2026-06-30T12:38:58Z",
-      "fetched_at": "2026-07-01T03:28:15.683759Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6fa3841297ae02e7",
-      "url": "https://arxiv.org/abs/2606.31574v1",
-      "title": "Temperature Field Reconstruction of Tungsten Monoblock Divertor on EAST using Physics-aware Neural Operator Transformer",
-      "summary": "Accurate modeling of the divertor temperature field is essential for preventing material melting and damage and for extending the service life of fusion devices. However, conventional numerical methods, such as the Finite Element Method (FEM), are computationally expensive and therefore unsuitable for real-time applications. Therefore, a fast and generalizable method is required for real-time reconstruction of the divertor temperature field and subsequent real-time control. To address the above issue, we propose a Physics-aware Neural Operator Transformer (PNOT) to characterize the spatiotemporal evolution of the divertor temperature field. It models boundary heat-flux relations as a structured graph and employs graph attention to explicitly capture spatial physical dependencies. Inspired by physics-aware attention, we further develop a physics-aware neural operator module to aggregate query points with similar physical conditions via slicing and model heat diffusion, while a gradient-constrained Sobolev regularization loss enforces consistency between function values and their derivatives. Experimental results show that these physical constraints improve prediction accuracy while preserving physical consistency. The source code of this paper will be released on https://github.com/Event-AHU/OpenFusion",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Guosheng Xu",
-      "published_at": "2026-06-30T12:33:06Z",
-      "fetched_at": "2026-07-01T03:28:15.683768Z",
       "score": null,
       "score_reason": "",
       "tier": "",
