@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-07T08:16:43.810598+00:00",
+  "exported_at": "2026-07-07T10:17:02.704420+00:00",
   "period_hours": 168,
-  "total": 2389,
+  "total": 2386,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -23289,27 +23289,6 @@
       "author": "",
       "published_at": "2026-06-30T10:26:00Z",
       "fetched_at": "2026-06-30T20:56:51.015810Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "068c9bc43551fee5",
-      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
-      "title": "How ChatGPT adoption has expanded",
-      "summary": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-30T09:00:00Z",
-      "fetched_at": "2026-06-30T16:59:00.651951Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -48398,69 +48377,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4b68093cc92c1b39",
-      "url": "https://arxiv.org/abs/2606.31397v1",
-      "title": "Mixture-of-Control: State-Aware Fine-Tuning for Transformer-based Models",
-      "summary": "State-based fine-tuning has emerged as a compelling alternative to weight-based adaptation for transformers, updating lightweight controls into states rather than model weights, offering substantial memory savings while retaining parameter efficiency. However, most existing state-based methods typically apply only per-block control updates, which limits inter-block information exchange and restricts representational adaptation. Meanwhile, prior mechanisms that enable cross-block communication often introduce considerable computational overhead, reducing their practicality for efficient fine-tuning. We introduce Mixture-of-Control (MoC), a lightweight fine-tuning framework that adaptively integrates local and global control signals to enhance representation learning. MoC treats block-wise control states as experts in a sparse mixture-of-experts process, enabling efficient communication across transformer blocks. Empirical results across diverse transformer-based benchmarks demonstrate that MoC outperforms state-based methods while maintaining a comparable memory and computational efficiency.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Toan Tran",
-      "published_at": "2026-06-30T09:25:37Z",
-      "fetched_at": "2026-07-01T03:28:15.683784Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5da1093d547e184f",
-      "url": "https://arxiv.org/abs/2606.31394v1",
-      "title": "Resolving superposition in AI for interpretability and cross-modal alignment in patient-neuronal images",
-      "summary": "Artificial intelligence is transforming our capability to solve biological challenges. In dimensionality bottleneck regimes exacerbated by high-dimensional biological data, Neural networks force distinct concepts into the lower dimensions known as superposition. Although this superposition is widely known to hinder interpretability, its impact on corrupting the geometry of latent spaces remains critically overlooked. Here, we utilized sparse autoencoders (SAEs) trained on over 100,000 multiplexed images of patient-derived Parkinson's disease and healthy neurons to resolve superposition. This approach bypasses the mathematical non-uniqueness of feature attribution by shifting to interpretable latent representation analysis. We theoretically and empirically demonstrate that superposition contaminates representational metric spaces, and thereby SAEs successfully recover geometric fidelity. By treating these geometrically purified representations as single-cell state vectors, we adapted single-cell RNA sequencing (scRNA-seq) data analysis methodologies directly to the image domain. Finally, we introduce GW-map, utilizing Gromov-Wasserstein optimal transport to align these image representations with authentic scRNA-seq data \\emph{de novo}. This coupling reconstructs hierarchical neuronal pathology pathways such as Calcium-AIS scaffold, without reference spatial transcriptomics, establishing a scalable foundation for spatial biology. Code is available at https://github.com/jijihihi/Bio_superposition",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Minee L. Choi",
-      "published_at": "2026-06-30T09:22:35Z",
-      "fetched_at": "2026-07-01T03:28:15.683792Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "53218c9ab0e8f041",
-      "url": "https://arxiv.org/abs/2606.31311v1",
-      "title": "From Idea to Prototype in an Afternoon: Scaffolded, AI-Assisted Rapid VA Prototyping",
-      "summary": "Testing a new visual-analytics idea usually takes months: one needs to find a realistic data set, clean it, and implement an interactive prototype. We describe a case where a workflow language and an AI assistant reduced this effort to one afternoon. The idea under test: relax the Pareto frontier with a tolerance and group the surviving options into recurring types -- ``constellations'' on a ``soft sky''. Using the Artifact--Transform Workflow Language (ATWL) as a scaffold, we obtained a consistent workflow in minutes and a running prototype in a few hours. We derive three lessons. The scaffold matters: without ATWL the assistant produced a naive workflow. The scaffold alone is not enough: the first implementation was only average, and expert knowledge injection was needed to reach state-of-the-art quality. Finally, the way the scaffold is used matters: controlled experiments show that a language definition and a library of examples support different aspects of the task, that providing both at once reduces quality because template following displaces creative content, and that scaffolds work best when introduced after an initial unconstrained design pass. We argue that the field needs a typology of human knowledge injection, in a form that is both human-editable and machine-accessible.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Natalia Andrienko",
-      "published_at": "2026-06-30T08:19:46Z",
-      "fetched_at": "2026-07-01T03:28:15.683800Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "63fb44084e637e3d",
       "url": "https://x.com/karpathy/status/2072051876816945486",
       "title": "RT @Etched: We're coming out of stealth.\n\nWe've built our first racks after a successful A0 tapeout,...",
@@ -51242,6 +51158,26 @@
       "author": "anthropicai",
       "published_at": "2026-07-06T17:35:08Z",
       "fetched_at": "2026-07-07T08:16:40.446743Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6eddde5f15cd8517",
+      "url": "https://x.com/steipete/status/2074414577794888150",
+      "title": "RT @joshavant: Before computer use + better tools: Everything lives in a terminal\n\nAfter: Windows ar...",
+      "summary": "RT @joshavant: Before computer use + better tools: Everything lives in a terminal\n\nAfter: Windows are randomly flying across my screen whil\u2026",
+      "content": "RT @joshavant: Before computer use + better tools: Everything lives in a terminal\n\nAfter: Windows are randomly flying across my screen whil\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-07-07T08:45:50Z",
+      "fetched_at": "2026-07-07T10:17:01.071991Z",
       "score": null,
       "score_reason": "",
       "tier": "",
