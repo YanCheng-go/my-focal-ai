@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-07T15:15:46.209691+00:00",
+  "exported_at": "2026-07-07T16:18:04.353320+00:00",
   "period_hours": 168,
-  "total": 2387,
+  "total": 2376,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -15575,174 +15575,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2bdb3f45cfeb6e2f",
-      "url": "https://www.youtube.com/watch?v=WwWjH9ynx9U",
-      "title": "Stanford CS547 HCI Seminar | Spring 2026 | The Modern Motivators of Play",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nApril 24, 2026\nThis lecture covers:\n\u2022  The six classic and three modern motivators of play\n\u2022  How to use them to adapt your app and game design techniques to find new markets and new communities to address\n\nTo follow along with the seminar schedule, visit: https://hci.stanford.edu/\n\nCheryl Platz is a game developer, designer, and author of The Game Development Strategy Guide: Crafting Modern Video Games That Thrive.",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-05T22:12:29Z",
-      "fetched_at": "2026-07-06T04:39:11.419819Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c8f865fc1937821d",
-      "url": "https://www.youtube.com/watch?v=Qh7Oxvo5sJI",
-      "title": "Stanford MS&E435 Economics of the AI Supercycle | Spring 2026 | Applications, Applied AI",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nThis seminar covers applications, applied AI, and agent monetization.\n\nFollow along with the course schedule: https://mse435.stanford.edu/\n\nGuest Speaker: Tuhin Srivastava, Founder / CEO, Baseten\n\nInstructor: Apoorv Agrawal is a Stanford Adjunct Lecturer in Management Science and Engineering and a partner at Altimeter Capital.",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-05T21:33:53Z",
-      "fetched_at": "2026-07-06T04:39:11.419827Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ae28fda3942710bb",
-      "url": "https://www.youtube.com/watch?v=9EEm4iMAF5s",
-      "title": "Stanford CS336 Language Modeling from Scratch | Spring 2026 | Guest Lecture: Dan Fu",
-      "summary": "For more information about Stanford's online Artificial Intelligence programs, visit: https://stanford.io/ai\n\nTo learn more about enrolling in this course, visit: https://online.stanford.edu/courses/cs336-language-modeling-scratch\n\nFollow along with the course schedule and syllabus: https://cs336.stanford.edu/\n\nPercy Liang\nProfessor of Computer Science (and courtesy in Statistics)\n\nTatsunori Hashimoto\nAssistant Professor of Computer Science\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-05T21:19:48Z",
-      "fetched_at": "2026-07-06T04:39:11.419835Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "db93ec6c34589d99",
-      "url": "https://www.youtube.com/watch?v=8hohrUYuyx4",
-      "title": "Stanford Robotics Seminar ENGR319 | Spring 2026 | Leveraging Geometry in Robot Learning",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nMay 22, 2026\nModel Matters: Leveraging Geometry in Robot Learning\n\nThis seminar covers: \n\u2022 How to leverage geometric structural priors in robot learning\n\u2022 A summary of recent work on this topic \n\u2022 Predictions about the future\n\nFollow along with the seminar schedule: https://stanfordasl.github.io/robotics_seminar/\n\nRobert Platt is an associate professor in the Khoury College of Computer Sciences at Northeastern University.",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-04T22:17:04Z",
-      "fetched_at": "2026-07-05T04:29:57.104654Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "731764ef7ee7e775",
-      "url": "https://www.youtube.com/watch?v=NDdc39KYqDU",
-      "title": "Stanford CS25: Transformers United V6 I From Language Models to Native Multimodal Intelligence",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nMay 21, 2026\nThis seminar covers: \n\u2022 The evolution from language models to native multimodal systems\n\u2022 Focus on the architectural and training principles that transfer from the LLM paradigm\n\u2022 Challenges introduced by multimodal learning\n\u2022 The building blocks of modern multimodal LLMs, including modality representations, autoregressive modeling, and reasoning capabilities inherited from strong language models\n\u2022 Emerging directions in multimodal architecture design, including sparsity and modality specialization\n\nFollow along with the seminar schedule. Visit: https://web.stanford.edu/class/cs25/\n\nGuest Speaker: Victoria Lin (Thinking Machines)\n\nInstructors: \n\u2022 Steven Feng,  Stanford Computer Science PhD student and NSERC PGS-D scholar\n\u2022 Karan P. Singh, Electrical Engineering PhD student and NSF Graduate Research Fellow in the Stanford Translational AI Lab\n\u2022 Michael C. Frank, Benjamin Scott Crocker Professor of Human Biology Director, Symbolic Systems Program\n\u2022 Christopher Manning, Thomas M. Siebel Professor in Machine Learning, Professor of Linguistics and of Computer Science, Co-Founder and Senior Fellow of the Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-04T21:51:12Z",
-      "fetched_at": "2026-07-05T04:29:57.104662Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ce323e4168490137",
-      "url": "https://www.youtube.com/watch?v=ZUdIsRZhWXI",
-      "title": "Stanford CS25: Transformers United V6 I Serving Transformers: Lessons from the Trenches",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nMay 28, 2026\nServing Transformers: Lessons from the Trenches of Production Inference\n\nThis seminar covers insights, lessons, and gnarly scars from serving transformer model inferences at the scale of thousands of GPUs.\n\nFollow along with the seminar schedule. Visit: https://web.stanford.edu/class/cs25/\n\nGuest Speaker: Charles Frye (Modal)\n\nInstructors: \n\u2022 Steven Feng,  Stanford Computer Science PhD student and NSERC PGS-D scholar\n\u2022 Karan P. Singh, Electrical Engineering PhD student and NSF Graduate Research Fellow in the Stanford Translational AI Lab\n\u2022 Michael C. Frank, Benjamin Scott Crocker Professor of Human Biology Director, Symbolic Systems Program\n\u2022 Christopher Manning, Thomas M. Siebel Professor in Machine Learning, Professor of Linguistics and of Computer Science, Co-Founder and Senior Fellow of the Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-04T21:45:52Z",
-      "fetched_at": "2026-07-05T04:29:57.104670Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d22b75049f364936",
-      "url": "https://www.youtube.com/watch?v=26FtD08ZpOU",
-      "title": "Stanford CS336 Language Modeling from Scratch | Spring 2026 | Lecture 17: Alignment - Multimodality",
-      "summary": "For more information about Stanford's online Artificial Intelligence programs, visit: https://stanford.io/ai\n\nTo learn more about enrolling in this course, visit: https://online.stanford.edu/courses/cs336-language-modeling-scratch\n\nFollow along with the course schedule and syllabus: https://cs336.stanford.edu/\n\nPercy Liang\nProfessor of Computer Science (and courtesy in Statistics)\n\nTatsunori Hashimoto\nAssistant Professor of Computer Science\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-04T21:29:14Z",
-      "fetched_at": "2026-07-05T04:29:57.104678Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1d8d41bc87058d2a",
-      "url": "https://www.youtube.com/watch?v=oyLUvz9nR6E",
-      "title": "Stanford CME296 Diffusion & Large Vision Models | Spring 2026 | Lecture 8 - Trending Topics",
-      "summary": "Learn more details about this course: https://online.stanford.edu/courses/cme296-diffusion-and-large-vision-models\n\nTo follow along with the course schedule and syllabus, visit: https://cme296.stanford.edu/syllabus/\n\nChapters:\n00:00:00 Introduction\n00:01:38 Diffusion\n00:05:23 Score matching\n00:13:02 Flow matching\n00:19:04 Latent space and guidance\n00:25:11 Image generation architectures\n00:29:47 Model training\n00:37:23 Evaluation\n00:44:28 State-of-the-art models\n00:55:03 Video generation models\n01:12:51 Image editing\n01:20:35 Diffusion for LLMs\n01:38:54 Closing thoughts\n\nFor more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nAfshine Amidi is an Adjunct Lecturer at Stanford University.\n\nShervine Amidi is an Adjunct Lecturer at Stanford University.\n\nView the course playlist: https://www.youtube.com/playlist?list=PLoROMvodv4rNdy8rt2rZ4T2xM0OjADnfu",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-06-01T20:25:31Z",
-      "fetched_at": "2026-07-02T01:18:55.140589Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "470180ee03373ae6",
       "url": "https://www.aitmpl.com/agents/security-auditor#agents",
       "title": "#10 security-auditor",
@@ -23301,50 +23133,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "270bf5aff18a95d1",
-      "url": "https://deepmind.google/blog/start-building-with-nano-banana-2-lite-and-gemini-omni-flash/",
-      "title": "Start building with Nano Banana 2 Lite and Gemini Omni Flash",
-      "summary": "",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-30T16:02:40Z",
-      "fetched_at": "2026-06-30T16:59:01.095530Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cf9e806f96a03fb7",
-      "url": "https://engineering.fb.com/2026/06/30/open-source/10-years-of-metas-commitment-to-python/",
-      "title": "10 Years of Meta\u2019s Commitment to Python",
-      "summary": "<p>This year marks Meta&#8217;s 10th consecutive year as a sponsor of the Python Software Foundation (PSF), the charitable organization dedicated to advancing, supporting, and protecting the open-source Python programming language and the community that sustains it. Python is one of the world&#8217;s most influential programming languages, and we use it across our engineering stack, from [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/06/30/open-source/10-years-of-metas-commitment-to-python/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/06/30/open-source/10-years-of-metas-commitment-to-python/\">10 Years of Meta\u2019s Commitment to Python</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "content": "<p><span style=\"font-weight: 400;\">This year marks Meta&#8217;s 10th consecutive year as a sponsor of the </span><a href=\"https://www.python.org/psf-landing/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Python Software Foundation (PSF)</span></a><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">the charitable organization dedicated to advancing, supporting, and protecting the open-source Python programming language and the community that sustains it. </span><span style=\"font-weight: 400;\">Python is one of the world&#8217;s most influential programming languages, and we use it across our engineering stack, from the</span> <a href=\"https://engineering.fb.com/2023/09/07/culture/threads-inside-story-metas-newest-social-app/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">backend of our apps and products like Instagram and Threads</span></a><span style=\"font-weight: 400;\"> to </span><a href=\"https://ai.meta.com/research/publications/neuralset-a-high-performing-python-package-for-neuro-ai/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">cutting-edge AI research</span></a><span style=\"font-weight: 400;\">.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">We recognize the vital role the PSF plays in sustaining the language, nurturing its global community, and driving innovation. After a decade, it felt like the right moment to reflect on why we, as an organization of engineers, are committed to funding the PSF. </span><span style=\"font-weight: 400;\">By supporting the PSF, we aim to help ensure that Python remains robust, innovative and accessible for generations of engineers to come. We hope our involvement will inspire other individuals and organizations to join us in strengthening the foundation that supports so much of today\u2019s technology.</span></p>\n<h1><span style=\"font-weight: 400;\">The Importance of Python at Meta</span></h1>\n<p><span style=\"font-weight: 400;\">Python is the most used programming language at Meta. It powers infrastructure across our most important products and initiatives and supports a wide range of teams across the company. Some of the core maintainers of Python are Meta engineers who have authored </span><a href=\"https://engineering.fb.com/2023/10/05/developer-tools/python-312-meta-new-features/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">new features and Python Enhancement Proposals (PEPs)</span></a><span style=\"font-weight: 400;\"> for the Python community. </span><a href=\"https://pytorch.org/\"><span style=\"font-weight: 400;\">PyTorch</span></a><span style=\"font-weight: 400;\">, one of the world\u2019s most widely-used machine learning frameworks, was </span><a href=\"https://ai.meta.com/blog/pytorch-builds-the-future-of-ai-and-machine-learning-at-facebook/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">originally developed at Meta in partnership with the community</span></a><span style=\"font-weight: 400;\"> before being spun off into </span><a href=\"https://ai.meta.com/blog/pytorch-foundation/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">its own independent foundation</span></a><span style=\"font-weight: 400;\">. Meta also builds open-source Python developer tools to help developers write better quality, more performant Python. This includes projects like</span> <a href=\"https://pyrefly.org/\"><span style=\"font-weight: 400;\">Pyrefly</span></a><span style=\"font-weight: 400;\">, an incredibly fast type checker and language server.</span></p>\n<p><span style=\"font-weight: 400;\">Supporting the continued growth and sustainability of Python is a natural fit for Meta\u2019s technical vision. It will continue to play an important role in helping us achieve our goals as we invest further in AI, build new data-driven products, and further scale our infrastructure.</span></p>\n<h1><span style=\"font-weight: 400;\">Why Meta Sponsors the Python Software Foundation</span></h1>\n<p><span style=\"font-weight: 400;\">At Meta we understand that using open source software like Python comes with a shared responsibility to help ensure the language and its ecosystem remain healthy, secure, and innovative for everyone. Every product shipped, every model trained, and every insight generated with Python is made possible by the collective work of the open source community, backed up by the organizational support and infrastructure maintained by the PSF. For Meta, supporting the PSF is a strategic investment in the future of Python, and hence the long-term stability of our own technology stack.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Our sponsorship of the PSF has helped fund impactful initiatives such as the </span><a href=\"https://www.python.org/psf/developersinresidence/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Developer-in-Residence program</span></a><span style=\"font-weight: 400;\">, which employs full-time developers who are focused on improving the Python programming language and its ecosystem. This program has been transformative, allowing critical work to happen that would otherwise fall to overstretched volunteers or go unaddressed entirely.</span></p>\n<p><span style=\"font-weight: 400;\">PSF funding also goes towards strengthening the core infrastructure of the Python ecosystem, most notably the </span><a href=\"https://pypi.org/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Python Package Index (PyPI)</span></a><span style=\"font-weight: 400;\">, where our sponsorship has helped fund essential security enhancements. These improvements are vital for protecting the global Python community and ensuring that developers everywhere \u2013 including our own engineers \u2013 can safely share and consume packages.</span></p>\n<p><span style=\"font-weight: 400;\">Beyond purely technical investment, Meta\u2019s support also helps fund educational programs and community events like </span><a href=\"https://us.pycon.org/2026/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">PyCon US</span></a><span style=\"font-weight: 400;\">, where we\u2019ve provided free and discounted passes to PyCon, supported workshops and summits, and contributed to fundraising efforts for groups like </span><a href=\"https://pyladies.com/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">PyLadies</span></a><span style=\"font-weight: 400;\">. These investments help grow the Python community and foster the new talent that is essential for Python\u2019s long-term sustainability.</span></p>\n<p><span style=\"font-weight: 400;\">In short, sponsorship of the PSF is a valuable investment in the tools and community that make our work possible.</span></p>\n<h1><span style=\"font-weight: 400;\">How Can You Support the Python Software Foundation?</span></h1>\n<p><span style=\"font-weight: 400;\">There are several ways you as an individual, or your organization as a whole, can contribute to the ongoing success and sustainability of the PSF:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><a href=\"https://donate.python.org?ref=engineeringatmeta\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\"><strong>Make a one time donation</strong></span></a><span style=\"font-weight: 400;\">: You can give any amount as a one off donation.</span></li>\n<li style=\"font-weight: 400;\"><a href=\"https://www.python.org/psf/membership?ref=engineeringatmet\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\"><strong>Become a PSF member</strong></span></a><span style=\"font-weight: 400;\">: By becoming a member you can vote in discussions on the direction of the Python language. There are different donation tiers available, including donating your time.</span></li>\n<li style=\"font-weight: 400;\"><a href=\"https://www.python.org/sponsors/application?ref=engineeringatmet\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\"><strong>Become a sponsor</strong></span></a><span style=\"font-weight: 400;\">: For organizations looking to make a sustained impact, the PSF offers annual sponsorship tiers, each with increasing levels of recognition and benefits.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">As an organization the most meaningful way for you to support the PSF is through annual sponsorship. Besides benefitting from the continued success of the Python language itself, there are a range of additional benefits depending on your sponsorship amount. Sponsors of the PSF receive public recognition, with their names and logos featured on the </span><a href=\"https://www.python.org/psf-landing/\"><span style=\"font-weight: 400;\">PSF website</span></a><span style=\"font-weight: 400;\">, in annual reports, and at major events. Sponsorship also provides valuable opportunities for community engagement, allowing organizations more opportunities to connect with the global Python community, participate in events, and demonstrate their commitment to open source. Higher-tier sponsors benefit from increased brand visibility through prominent logo placement and may be invited to speak or participate in special initiatives.</span></p>\n<h1><span style=\"font-weight: 400;\">Thank You!</span></h1>\n<p><span style=\"font-weight: 400;\">Finally, we want to say thank you to the Python community: the maintainers, contributors, educators, and advocates who make Python what it is today. Your passion and dedication are the foundation of Python\u2019s success, and we\u2019re proud to be able to support you, both as collaborators and sponsors.</span></p>\n<p><span style=\"font-weight: 400;\">Visit our website to learn more about </span><a href=\"https://opensource.fb.com?ref=engineeringatmeta\"><span style=\"font-weight: 400;\">Meta Open Source</span></a><span style=\"font-weight: 400;\">. You can also subscribe to our </span><a href=\"https://www.youtube.com/channel/UCCQY962PmHabTjaHv2wJzfQ\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">YouTube channel</span></a><span style=\"font-weight: 400;\">, or follow us on </span><a href=\"https://www.facebook.com/MetaOpenSource\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Facebook</span></a><span style=\"font-weight: 400;\">, </span><a href=\"https://www.threads.net/@metaopensource\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Threads</span></a><span style=\"font-weight: 400;\">, </span><a href=\"https://bsky.app/profile/metaopensource.bsky.social\"><span style=\"font-weight: 400;\">Bluesky</span></a><span style=\"font-weight: 400;\">, </span><a href=\"https://www.linkedin.com/showcase/meta-open-source?fbclid=IwZXh0bgNhZW0CMTEAAR2fEOJNb7zOi8rJeRvQry5sRxARpdL3OpS4sYLdC1_npkEy60gBS1ynXwQ_aem_mJUK6jEUApFTW75Emhtpqw\"><span style=\"font-weight: 400;\">LinkedIn</span></a><span style=\"font-weight: 400;\">, and </span><a href=\"https://x.com/MetaOpenSource\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">X</span></a><span style=\"font-weight: 400;\">.</span></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/06/30/open-source/10-years-of-metas-commitment-to-python/\">10 Years of Meta\u2019s Commitment to Python</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "source_name": "Meta Engineering",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "engineering",
-        "meta",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-06-30T16:00:46Z",
-      "fetched_at": "2026-06-30T16:59:01.613309Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "31ec73d281479963",
       "url": "https://www.anthropic.com/webinars/evals-for-ai-agents-how-product-builders-get-the-most-out-of-every-new-model",
       "title": "Evals for AI Agents: How Product Builders Get the Most Out of Every New Model",
@@ -23527,28 +23315,6 @@
       "author": "Shengsheng Zhou, Shuai Wang, Liang Ding, Yibing Zhan, Yong Luo, Zheng He, Fu Lin, Dapeng Tao",
       "published_at": "2026-07-03T04:00:00Z",
       "fetched_at": "2026-07-03T04:09:12.114210Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c01357be262644f0",
-      "url": "https://developer.nvidia.com/blog/optimizing-a-neural-reconstruction-pipeline-using-nvidia-nsight-developer-tools/",
-      "title": "Optimizing a Neural Reconstruction Pipeline Using NVIDIA Nsight Developer Tools",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/av-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"av\" width=\"768\" />NVIDIA Ominverse NuRec is a neural reconstruction pipeline for building high-fidelity 3D representations of real-world environments from multisensor data such...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/av-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"av\" width=\"768\" />NVIDIA Ominverse NuRec is a neural reconstruction pipeline for building high-fidelity 3D representations of real-world environments from multisensor data such...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/av-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"av\" width=\"768\" /><p>NVIDIA Ominverse NuRec is a neural reconstruction pipeline for building high-fidelity 3D representations of real-world environments from multisensor data such as cameras and lidar. It is used to reconstruct dynamic scenes captured by autonomous vehicle (AV) and robotics platforms into simulation-ready digital environments that can be rendered, replayed, and analyzed inside NVIDIA Omniverse and\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/optimizing-a-neural-reconstruction-pipeline-using-nvidia-nsight-developer-tools/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Tanya Lenz",
-      "published_at": "2026-06-30T16:00:00Z",
-      "fetched_at": "2026-06-30T16:59:04.442666Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -48385,69 +48151,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "42769a8995c3e7c6",
-      "url": "https://arxiv.org/abs/2606.31903v1",
-      "title": "Attend, Transform, or Silence: Operator-Level Visual Skipping for Efficient Multimodal LLM Inference",
-      "summary": "Multimodal large language models (MLLMs) increasingly process long visual-token sequences, increasing the overall inference computation. Existing acceleration methods usually remove visual tokens or skip visual-token updates in entire layers, but these coarse strategies may discard fine-grained evidence or suppress useful operators together with redundant ones. In this paper, we study visual-token computation from an answer-observable perspective and find that late visual-token updates can remain large while having little effect on answer-token representations. Motivated by this answer-silent redundancy, we decompose each Transformer layer into attention and FFN operators and show that useful visual computation is often operator-dominant and layer-dependent. We propose an operator-level visual-token skipping framework that preserves the full visual-token sequence while selectively bypassing redundant attention, FFN, or both. Experiments across three MLLM architectures and 10 VQA benchmarks show that our method achieves strong efficiency-accuracy trade-offs, reducing \\textbf{33.7\\%} TFLOPs on Qwen3-VL while retaining \\textbf{99.5\\%} of the vanilla model performance.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Haohuan Fu",
-      "published_at": "2026-06-30T16:08:29Z",
-      "fetched_at": "2026-07-01T03:28:15.683682Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "341acb0275a9892a",
-      "url": "https://arxiv.org/abs/2606.31861v1",
-      "title": "Belief Contraction in Dynamic Epistemic Logic",
-      "summary": "Dynamic epistemic logic represents belief change via model transformations induced by epistemic events. Its standard formulation (Baltag, Moss, Solecki, 1998) provides a natural account of belief expansion through the elimination of possibilities, but it cannot model belief contraction about factual propositions. A classic response enriches Kripke models with plausibility orderings, representing contraction as an update that promotes certain possibilities over others. We show that this approach has expressive limitations. In particular, the approach cannot model belief that violates positive introspection and contraction dynamics in response to a hedged public announcement that phi might be false. \n  Motivated by these considerations, we introduce a mechanism for belief contraction defined directly on standard Kripke models, without any constraints on the doxastic accessibility relation. We show that it satisfies some of the standard properties of belief contraction but not others, study the conditions under which contraction may be unsuccessful, and provide a sound and complete axiomatization of the logic via reduction axioms. We also define a more general dynamic logic that is an extension of standard DEL and accommodates belief contractions due to events such as private or semi-private announcements, and provide a complete and sound axiomatization of the general logic.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Snow Zhang",
-      "published_at": "2026-06-30T15:53:55Z",
-      "fetched_at": "2026-07-01T03:28:15.683692Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f8fe7beff40b8860",
-      "url": "https://arxiv.org/abs/2606.31831v1",
-      "title": "An Agentic AI Framework to Accelerate Scientific Discovery in Plant Phenotyping",
-      "summary": "High-throughput plant phenotyping now generates image derived datasets far faster than scientists can analyze them. At Oak Ridge National Laboratory's Advanced Plant Phenotyping Laboratory (APPL), automated stations image hundreds of plants daily across multiple remote sensing modalities; yet, trait extraction and interpretation remain manual, expert-bound, and strictly post-hoc, making analysis, not acquisition, the binding constraint on discovery. We present an end-to-end agentic AI framework that turns the facility from a data factory into an interactive autonomous, discovery platform, where scientists partner with AI agents to accelerate time to insight. A conversational Co-Scientist Agent translates a scientist's natural-language question into a structured analysis plan, and a headless Compute Agent dispatches Vision Transformer segmentation and trait extraction on the Frontier exascale supercomputer. The two agents run in separate security and resource domains and communicate over a secure, token-authenticated streaming channel, a design that accounts for the federation, data-movement, and provenance realities cloud-native agentic frameworks ignore, ensuring end-to-end provenance is captured for every interaction. The framework turns a days- to weeks-long analysis process into an interactive loop where agents reason over results, recommend next analyses, and respond to follow-up questions in seconds.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "David Weston",
-      "published_at": "2026-06-30T15:37:02Z",
-      "fetched_at": "2026-07-01T03:28:15.683701Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "63fb44084e637e3d",
       "url": "https://x.com/karpathy/status/2072051876816945486",
       "title": "RT @Etched: We're coming out of stealth.\n\nWe've built our first racks after a successful A0 tapeout,...",
@@ -48728,27 +48431,6 @@
       "author": "dani_avila7",
       "published_at": "2026-06-30T16:30:10Z",
       "fetched_at": "2026-06-30T20:51:40.446674Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4d32d1a00e000aca",
-      "url": "https://x.com/trq212/status/2071990682726826193",
-      "title": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the...",
-      "summary": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the browser and terminal, you now get a fi\u2026",
-      "content": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the browser and terminal, you now get a fi\u2026",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-06-30T16:14:09Z",
-      "fetched_at": "2026-06-30T20:51:35.385635Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -51229,6 +50911,87 @@
       "author": "dani_avila7",
       "published_at": "2026-07-07T11:47:59Z",
       "fetched_at": "2026-07-07T12:17:12.520305Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4d32d1a00e000aca",
+      "url": "https://x.com/trq212/status/2071990682726826193",
+      "title": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the...",
+      "summary": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the browser and terminal, you now get a fi\u2026",
+      "content": "RT @ClaudeDevs: Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the browser and terminal, you now get a fi\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-06-30T16:14:09Z",
+      "fetched_at": "2026-06-30T20:51:35.385635Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dfe7b0942e2390f0",
+      "url": "https://x.com/steipete/status/2071972449277898924",
+      "title": "Good morning @aiDotEngineer !\nAre we talking loops today?",
+      "summary": "Good morning @aiDotEngineer !\nAre we talking loops today?",
+      "content": "Good morning @aiDotEngineer !\nAre we talking loops today?",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T15:01:41Z",
+      "fetched_at": "2026-06-30T20:51:48.101456Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f3aed5e94d3e4434",
+      "url": "https://x.com/steipete/status/2071972239734616146",
+      "title": "Was thinking if I should highlight this tweet or not, but it\u2019s a masterclass in the amount of vitrio...",
+      "summary": "Was thinking if I should highlight this tweet or not, but it\u2019s a masterclass in the amount of vitriol people face when working on open source.\n\nIs the app great yet? No. It\u2019s a start.\n\nIt was built by the community. Getting the iOS and Android apps working with secure pairing and",
+      "content": "Was thinking if I should highlight this tweet or not, but it\u2019s a masterclass in the amount of vitriol people face when working on open source.\n\nIs the app great yet? No. It\u2019s a start.\n\nIt was built by the community. Getting the iOS and Android apps working with secure pairing and",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-06-30T15:00:51Z",
+      "fetched_at": "2026-06-30T20:51:48.101478Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "45f4bc82a15594f7",
+      "url": "https://x.com/GoogleAI/status/2065478191247130703",
+      "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-...",
+      "summary": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "content": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Live Translate our latest audio model for live speech-to-speech translation\n\n\u2014 @NotebookLM got a major upgrade including agentic capabilities in chat, more advanced reasoning, and a suite of new output formats\n\n\u2014 Project Genie from",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-06-12T16:55:50Z",
+      "fetched_at": "2026-06-30T20:51:45.759076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
