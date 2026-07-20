@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-07-20T12:13:25.846376+00:00",
+  "exported_at": "2026-07-20T14:13:45.115546+00:00",
   "period_hours": 168,
-  "total": 2584,
+  "total": 2578,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -30486,28 +30486,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "13f77bbb5cb94408",
-      "url": "https://deepmind.google/blog/empowering-indias-next-generation-of-innovators-with-atl-saathi/",
-      "title": "Empowering India\u2019s next generation of innovators with ATL Saathi",
-      "summary": "Google and AIM launched ATL Saathi, a Gemini-powered AI tool empowering Indian educators in robotics labs.",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-07-13T12:37:28Z",
-      "fetched_at": "2026-07-14T06:25:25.983774Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "52820ba97523796a",
       "url": "https://www.anthropic.com/webinars/ship-your-first-claude-managed-agent",
       "title": "Ship your first Claude Managed Agent",
@@ -53457,111 +53435,6 @@
       "author": "Mominul Ahsan",
       "published_at": "2026-07-13T14:19:16Z",
       "fetched_at": "2026-07-14T03:34:21.976454Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "29e067ff3a92c774",
-      "url": "https://arxiv.org/abs/2607.11577v1",
-      "title": "Structure-Feature Aligned Graph Learning via Alternating Constrained Optimization",
-      "summary": "We introduce a constrained two-view framework for node prediction that aligns structure-conditioned GNN embeddings with a structure-free feature prior learned by an anchor model. Conventional Graph Neural Networks (GNNs) couple feature transformation and neighborhood aggregation, which renders them vulnerable to topology noise and heterophilous connections. To decouple this dependency, our framework utilizes an independent anchor network to capture intrinsic attribute features via a self-supervised reconstruction objective. Furthermore, we propose a Channel-Split Adaptive Gated GNN (CSAG-GNN) that dynamically routes representations between global spectral smoothing and local spatial discrimination through a node-wise gating mechanism. We propose a stable cyclic alternating optimization strategy to solve the resulting coupled bi-level objective, preventing mutual representation drift during training. Empirical results on both homophilous and heterophilous benchmarks show balanced performance gains and structural robustness over competitive baselines.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Qingsong Wang",
-      "published_at": "2026-07-13T13:58:52Z",
-      "fetched_at": "2026-07-14T03:34:21.908296Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "377e59ce8c27166d",
-      "url": "https://arxiv.org/abs/2607.11564v1",
-      "title": "PaperRouter-Agent: A Content-Grounded LLM Agent for Personalized Hierarchical Paper Routing",
-      "summary": "Researchers organize the papers they collect into personal folder hierarchies in reference managers, and route each new paper into the folder where it belongs. This task differs from standard hierarchical text classification. A user's folder hierarchy is not a fixed, shared taxonomy but a private and evolving folksonomy whose folder meanings may be topical, shorthand, venue-based, or process-oriented, and are often defined by the papers already stored inside them. We formalize this setting as personalized hierarchical paper routing (PHPR): assigning an incoming paper to folders in a user-specific hierarchy without per-user training. We propose PaperRouter-Agent, a training-free LLM agent that grounds routing decisions in folder members rather than folder names alone. The agent first narrows the candidate hierarchy, retrieves folder-specific evidence, verifies fit by inspecting member papers, and incorporates similarity-gated feedback from past user rejections. A formative study on real personal libraries shows that PaperRouter-Agent raises overall Recall@1 from 0.39 to 0.61 and Recall@3 from 0.57 to 0.83, with the largest gains on organizational folders defined by metadata such as venue or year, where single-shot methods collapses (Recall@1 0.09 to 0.50). On the public LaMP-2 benchmark, the same approach improves accuracy from 44.5% to 51.5% (+9.0 macro-F1) over a single-shot baseline, while remaining low-cost for practical use.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Zhiyong Wang",
-      "published_at": "2026-07-13T13:47:02Z",
-      "fetched_at": "2026-07-14T03:34:21.976462Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0e7b83474d16e2d9",
-      "url": "https://arxiv.org/abs/2607.11505v1",
-      "title": "Proxy Exploration and Reusable Guidance: A Modular LLM Post-Training Paradigm via Proxy-Guided Update Signals",
-      "summary": "Post-training is essential for refining the domain-specific capabilities of large language models (LLMs), yet existing reward optimization and distribution matching methods tightly couple policy exploration with distribution alignment. This coupling forces expensive exploration directly on the policy model and severely hinders the asynchronous generation, reuse, and cross-model transfer of optimization signals. In this paper, we propose Proxy-guided Update Signal Transfer (PUST), a novel post-training framework that fundamentally decouples update-signal exploration from distribution alignment. Instead of utilizing the primary model for costly exploration, PUST employs a lightweight proxy model as an efficient testbed to discover high-reward behaviors. We extract the relative improvement signal between the proxy's initial and optimized states, transferring this directional update to the primary model to guide its policy alignment. This decoupled pipeline, comprising proxy exploration, update-signal extraction, and signal transfer, significantly reduces computational overhead and enables optimization signals to be asynchronously generated, cached, and reused. Crucially, by transferring relative improvements rather than absolute policy distributions, PUST naturally supports weak-to-strong improvement and seamless cross-model transfer. Systematic evaluations on Qwen3-family models across math and code domains demonstrate that update signals extracted from substantially weaker proxies can robustly and adjustably enhance stronger primary models. Ultimately, PUST transforms post-training from a monolithic online optimization process into a highly modular, reusable, and cost-efficient paradigm.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Yu Qiao",
-      "published_at": "2026-07-13T12:56:21Z",
-      "fetched_at": "2026-07-14T03:34:21.908304Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "01123d42e8822b1c",
-      "url": "https://arxiv.org/abs/2607.11501v1",
-      "title": "Comparative Analysis of GAT and BERT for Human-Like Playtesting",
-      "summary": "Accurately modeling and understanding player experience is crucial for designing engaging puzzle games. To achieve this, a common approach involves collecting diverse user data to train predictive playtesting models that mimic player behavior. However, existing data-driven methods often lack the ability to capture the full range of player strategies and require extensive feature engineering and network architecture modeling. This limitation becomes particularly evident when new game mechanics or features are introduced, which necessitate continual adjustments to the models. To addrss these challenges, we propose a more generalized representation that reduces - or even eliminates - the need for ongoing feature-engineering maintenance. Specifically, we investigate two general-purpose network architectures: (a) a transformer-based model (BERT) and (b) a graph attention model (GAT), both of which are designed to effectively capture the relational structure of Candy Crush Saga (CCS) game boards. Our experiments compare these approaches to Convolutional Neural Networks (CNN) baselines, revealing better performance on challenging board configurations and underscoring the benefits of our generalizable representation.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Hui Wang",
-      "published_at": "2026-07-13T12:54:18Z",
-      "fetched_at": "2026-07-14T03:34:21.908312Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "57fc3c38ca212c8e",
-      "url": "https://arxiv.org/abs/2607.11497v1",
-      "title": "IG-GAN: A Generative Adversarial Network for Aerodynamic Data Generation Based on Intrinsic Geometry",
-      "summary": "Existing generative models learn data distributions in flat Euclidean space. However, most data in our real world are manifolds embedded in high dimensional Euclidean space. Therefore, we propose an intrinsic-geometry-based generative adversarial network (IG-GAN) for data generation in the field of aerodynamics. The generator of the IG-GAN represents aerodynamic data as a piecewise smooth manifold constructed by B\u00e9zier surfaces, and the generator tries to learn the coefficients of each B\u00e9zier surface to further combine multiple B\u00e9zier surfaces into a smooth manifold automatically. The discriminator in the IG-GAN is a radial-basis-function based discriminator (RBF-D). Experimental results show that IG-GAN achieves lower predicted Mean Squared Errors (MSEs) than those of three baselines. Specifically, on the Burgers' equation dataset, IG-GAN reduces the predicted MSE of velocity u by 97.41% compared with state of the art SSL-Transformer. Additionally, on the ONERA M6 aircraft dataset, IG-GAN reduces the overall MSE of nine aerodynamic coefficients by 82.95% compared with SSL-Transformer.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Xiaoming Zhang",
-      "published_at": "2026-07-13T12:49:48Z",
-      "fetched_at": "2026-07-14T03:34:21.908320Z",
       "score": null,
       "score_reason": "",
       "tier": "",
