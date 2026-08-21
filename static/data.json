@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-21T07:08:20.073861+00:00",
+  "exported_at": "2026-08-21T07:22:18.274652+00:00",
   "period_hours": 168,
-  "total": 2916,
+  "total": 2928,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -61049,48 +61049,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "98a5c028d4a3e8d3",
-      "url": "https://arxiv.org/abs/2608.14022v1",
-      "title": "ForgeWM: Progressive Causal Training for Few-Step Action-Conditioned Video World Models",
-      "summary": "Action-conditioned video world models require low-latency causal generation and reliable responses to game-native controls. Although causal distillation enables one- or few-step video synthesis, extending it to interactive world models remains challenging, as discrete keyboard states and continuous mouse motion must remain aligned with temporally compressed latent chunks during causal training and autoregressive rollout. We introduce ForgeWM, a progressive framework that transforms a bidirectional action-conditioned video generator into efficient few-step world models through domain adaptation, teacher-forced causal training, causal consistency distillation, and on-policy distribution matching with a bidirectional teacher. The resulting budget-specialized students operate at steady-state denoising budgets of 1, 2, and 4 steps. ForgeWM further supports a dual-path deployment protocol combining latency-critical interaction with optional replay-time refinement, where the one-step student re-noises and refines its saved draft. On paired Minecraft trajectories, ForgeWM leads the evaluated systems in Imaging Quality, reference-aligned motion-profile agreement, action-sign accuracy, and mouse-control accuracy, while achieving the lowest reference LPIPS; the same four-stage recipe transfers to gamepad-controlled FPS gameplay. Replay-time refinement matches four-step reference quality while remaining roughly three times closer to the experienced trajectory than regeneration from noise. These results demonstrate ForgeWM's effectiveness for controllable few-step video generation.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Wai Lam",
-      "published_at": "2026-08-14T07:13:34Z",
-      "fetched_at": "2026-08-17T03:13:21.443523Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4d6f0bfda8545288",
-      "url": "https://arxiv.org/abs/2608.14021v1",
-      "title": "Residual Dominance as a Structural Account of Last-Item Reliance in Causal Self-Attention Recommenders",
-      "summary": "Transformer-based sequential recommenders with causal self-attention often rely heavily on the most recent interaction at inference time, but how this behavior is structurally expressed in the representation used for prediction remains unclear. We combine prediction-time diagnostics with norm-based analysis of the full attention block. First, we show that SASRec-style models exhibit highly localized last-item reliance. We then find that, although self-attention aggregates contextual information, residual addition sharply shifts the full-block representation toward same-position contributions, which we term residual dominance. To probe this interpretation, we use inference-time residual scaling as a controlled diagnostic intervention. Changing the residual strength induces a monotonic trade-off between structural mixing and last-item reliance, while reducing residual strength recovers a subset of final-position misses for which representations at non-final positions already rank the ground-truth item correctly. Our results provide a structural account linking extreme last-item reliance to residual dominance at inference time. The code is publicly available.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Miki Haseyama",
-      "published_at": "2026-08-14T07:09:58Z",
-      "fetched_at": "2026-08-17T03:13:21.443530Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "896da3528f086579",
       "url": "https://www.anthropic.com/events/claude-founder-house-london",
       "title": "Claude Founder House London",
@@ -62715,6 +62673,291 @@
       "author": "dani_avila7",
       "published_at": "2026-08-20T12:51:52Z",
       "fetched_at": "2026-08-20T13:20:48.632033Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9617329e1fa180b1",
+      "url": "https://x.com/dani_avila7/status/2090629401129976111",
+      "title": "Start here: https://t.co/lAUjhWmu83 https://t.co/x87md1h5QF",
+      "summary": "Start here: https://t.co/lAUjhWmu83 https://t.co/x87md1h5QF",
+      "content": "Start here: https://t.co/lAUjhWmu83 https://t.co/x87md1h5QF",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-21T02:37:45Z",
+      "fetched_at": "2026-08-21T07:22:08.218935Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4065c8bfe338c362",
+      "url": "https://x.com/bcherny/status/2090617799626604559",
+      "title": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test su...",
+      "summary": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test suite\n- Reduces idle CPU by 5x\n- Reduces\u2026",
+      "content": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test suite\n- Reduces idle CPU by 5x\n- Reduces\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-21T01:51:39Z",
+      "fetched_at": "2026-08-21T07:22:06.135263Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "37ebbf214b0c570f",
+      "url": "https://x.com/bcherny/status/2090617758170181763",
+      "title": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally ...",
+      "summary": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.\n\nAuto\u2026",
+      "content": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.\n\nAuto\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-21T01:51:30Z",
+      "fetched_at": "2026-08-21T07:22:06.135359Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "63ca19dc7b14ae4d",
+      "url": "https://x.com/trq212/status/2090569474139439335",
+      "title": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have co...",
+      "summary": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have control over where your data lives &amp; who has access to it\n\nwe've been developing it alongside ~100 companies for a bit and hoping to roll it out more broadly in the fall",
+      "content": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have control over where your data lives &amp; who has access to it\n\nwe've been developing it alongside ~100 companies for a bit and hoping to roll it out more broadly in the fall",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-08-20T22:39:38Z",
+      "fetched_at": "2026-08-21T07:22:03.898715Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d9a85c18fa6f1904",
+      "url": "https://x.com/steipete/status/2090553227549032898",
+      "title": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppos...",
+      "summary": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppose someone handed you $7B to compete wit\u2026",
+      "content": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppose someone handed you $7B to compete wit\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-20T21:35:04Z",
+      "fetched_at": "2026-08-21T07:22:15.435192Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2233fd18e3bf17d5",
+      "url": "https://x.com/bcherny/status/2090537902912815536",
+      "title": "We've been working on this with customers for a while. Mythos-class models require additional safety...",
+      "summary": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It\u2019s coming this fall.",
+      "content": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It\u2019s coming this fall.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-20T20:34:11Z",
+      "fetched_at": "2026-08-21T07:22:06.135405Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8fd2c05da98c11fd",
+      "url": "https://x.com/steipete/status/2090534044102722019",
+      "title": "RT @databricks: As agentic automation helps developers get more done, the role is evolving toward hi...",
+      "summary": "RT @databricks: As agentic automation helps developers get more done, the role is evolving toward higher-level decisions about what to buil\u2026",
+      "content": "RT @databricks: As agentic automation helps developers get more done, the role is evolving toward higher-level decisions about what to buil\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-20T20:18:51Z",
+      "fetched_at": "2026-08-21T07:22:15.435267Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c8d62715f55dc6ed",
+      "url": "https://x.com/dani_avila7/status/2090530830959452334",
+      "title": "Claude Academy has all of Anthropic\u2019s webinars!\n\nI\u2019m pretty sure I\u2019ve watched them all already... bu...",
+      "summary": "Claude Academy has all of Anthropic\u2019s webinars!\n\nI\u2019m pretty sure I\u2019ve watched them all already... but they\u2019re definitely worth revisiting. There\u2019s a ton of excellent material in there\n\nI highly recommend checking out the platform: https://t.co/p2zrlLQyfu https://t.co/xjXO1NNWxa",
+      "content": "Claude Academy has all of Anthropic\u2019s webinars!\n\nI\u2019m pretty sure I\u2019ve watched them all already... but they\u2019re definitely worth revisiting. There\u2019s a ton of excellent material in there\n\nI highly recommend checking out the platform: https://t.co/p2zrlLQyfu https://t.co/xjXO1NNWxa",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T20:06:04Z",
+      "fetched_at": "2026-08-21T07:22:08.219036Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2b0313d6d0634862",
+      "url": "https://x.com/sama/status/2090512062149476489",
+      "title": "RT @udayruddarraju: A milestone for our infrastructure: our first NVIDIA Vera Rubin racks are here a...",
+      "summary": "RT @udayruddarraju: A milestone for our infrastructure: our first NVIDIA Vera Rubin racks are here and now running our training stack. This\u2026",
+      "content": "RT @udayruddarraju: A milestone for our infrastructure: our first NVIDIA Vera Rubin racks are here and now running our training stack. This\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-20T18:51:30Z",
+      "fetched_at": "2026-08-21T07:22:10.266151Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "17e6f5899e79b1f9",
+      "url": "https://x.com/dani_avila7/status/2090484072191529321",
+      "title": "Yes, this post is from today!\n\nI was just starting to work on the Telemetry Copilot sends, and then ...",
+      "summary": "Yes, this post is from today!\n\nI was just starting to work on the Telemetry Copilot sends, and then I came across this\n\nThis is going to be a week that goes down in GitHub history https://t.co/ctMWHHtmDa",
+      "content": "Yes, this post is from today!\n\nI was just starting to work on the Telemetry Copilot sends, and then I came across this\n\nThis is going to be a week that goes down in GitHub history https://t.co/ctMWHHtmDa",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T17:00:16Z",
+      "fetched_at": "2026-08-21T07:22:08.219090Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d575cd08f36d60db",
+      "url": "https://x.com/dani_avila7/status/2090460687105421596",
+      "title": "I\u2019ve been using CapCut to edit my videos lately, and having Seedance 2.5 directly inside the app mak...",
+      "summary": "I\u2019ve been using CapCut to edit my videos lately, and having Seedance 2.5 directly inside the app makes the workflow so much better\n\nI can edit and generate in the same place, with official Seedance 2.5 access, zero wait, and starting at just $0.06/sec\n\nReally convenient if you\u2019re https://t.co/ZYlAl2d40D",
+      "content": "I\u2019ve been using CapCut to edit my videos lately, and having Seedance 2.5 directly inside the app makes the workflow so much better\n\nI can edit and generate in the same place, with official Seedance 2.5 access, zero wait, and starting at just $0.06/sec\n\nReally convenient if you\u2019re https://t.co/ZYlAl2d40D",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T15:27:21Z",
+      "fetched_at": "2026-08-21T07:22:08.219136Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8bffbaa9d343da2d",
+      "url": "https://x.com/dani_avila7/status/2090439489235652852",
+      "title": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t...",
+      "summary": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
+      "content": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T14:03:07Z",
+      "fetched_at": "2026-08-21T07:22:08.219190Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ce2f2b4420f2b772",
+      "url": "https://x.com/simonw/status/2088138304281796608",
+      "title": "RT @Zai_org: Introducing GLM-5.3: Built to Code. Ready for Cyber Defense.\n\n- Top-tier coding and age...",
+      "summary": "RT @Zai_org: Introducing GLM-5.3: Built to Code. Ready for Cyber Defense.\n\n- Top-tier coding and agentic capabilities, achieved through pos\u2026",
+      "content": "RT @Zai_org: Introducing GLM-5.3: Built to Code. Ready for Cyber Defense.\n\n- Top-tier coding and agentic capabilities, achieved through pos\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-08-14T05:39:02Z",
+      "fetched_at": "2026-08-20T07:13:06.699404Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a21bc30bbcd6a89f",
+      "url": "https://x.com/GoogleAI/status/2087949042961514983",
+      "title": "Our most intelligent workhorse model yet for coding and agents has arrived \u26a1 Meet Gemini 3.7 Flash.\n...",
+      "summary": "Our most intelligent workhorse model yet for coding and agents has arrived \u26a1 Meet Gemini 3.7 Flash.\n\n\u2014 Crush that seemingly endless to-do list. Gemini Spark in the @geminiapp now uses 3.7 Flash. The new model can equip your personal AI agent to work even smarter for you by https://t.co/hgM1xWiyvI",
+      "content": "Our most intelligent workhorse model yet for coding and agents has arrived \u26a1 Meet Gemini 3.7 Flash.\n\n\u2014 Crush that seemingly endless to-do list. Gemini Spark in the @geminiapp now uses 3.7 Flash. The new model can equip your personal AI agent to work even smarter for you by https://t.co/hgM1xWiyvI",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-08-13T17:06:58Z",
+      "fetched_at": "2026-08-20T07:13:13.661740Z",
       "score": null,
       "score_reason": "",
       "tier": "",
