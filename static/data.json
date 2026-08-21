@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-21T10:48:14.223865+00:00",
+  "exported_at": "2026-08-21T12:05:26.579923+00:00",
   "period_hours": 168,
-  "total": 2926,
+  "total": 2921,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -22260,25 +22260,6 @@
       "author": "AI Engineer",
       "published_at": "2026-08-14T14:30:31Z",
       "fetched_at": "2026-08-14T15:07:23.447555Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6d7355bf8610a9e2",
-      "url": "https://www.youtube.com/watch?v=FVXDXi4es8E",
-      "title": "IBM\u2019s cloud collab, Meta\u2019s Muse Glimmer & OpenAI\u2019s upcoming Astra model",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content \n\u2192 https://ibm.biz/~YOqgkKvh7\n\nThis week on Mixture of Experts, our team of panelists talk about big infrastructure changes and small models. IBM is teaming up with Together AI on a multi-year deal to build a massive inference cluster on IBM Cloud, powered by NVIDIA's newest chips. The goal: cheaper, faster access to open-source AI models for enterprises, with the cluster expected to go live in early 2027.\n\nThen there's Meta, which just open-sourced Muse Glimmer\u2014a 30B-parameter model small enough to run locally on your laptop's GPU. Think coding, function calling, and agent tasks, all without needing the cloud. But as models get smaller, what does it mean for larger AI providers? \n\nAnd finally, the story that's got everyone talking: OpenAI says its upcoming Astra model might be hitting \"Critical\" cybersecurity capability levels, meaning it could potentially find and exploit zero-days on its own. We dig into what that actually means and what guardrails OpenAI is putting up.\n\nAll that and more on Mixture of Experts.\n\n00:00 \u2013 Intro\n1:03 - IBM AI Partnership\n11:43 - Meta Muse Glimmer\n24:10 - OpenAI\u2019s Astra model\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~NEVRq9OsZ\n#MetaMuseGlimmer #IBMAIPartnership #openai \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-14T11:57:55Z",
-      "fetched_at": "2026-08-14T13:43:34.762537Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60923,132 +60904,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "01fb6a338272e599",
-      "url": "https://arxiv.org/abs/2608.14229v1",
-      "title": "The More Popular, The Harder to Forget: Adaptive Popularity for LLM Unlearning",
-      "summary": "Popular facts are memorised more deeply during pretraining and resist removal longer than rare ones, yet existing LLM unlearning methods apply uniform gradient pressure regardless of training-data frequency. We propose the AdaPop (Adaptive Popularity) method, which combines local token confidence with a per-fact popularity-dependent exponent derived from an external proxy (e.g., Wikidata sitelinks, LLM-as-Judge), and automates the forget-retain balance via a dual-ascent controller that adjusts the retain penalty each epoch. Across three model families and two benchmarks, AdaPop leaks ~5x less forgotten content than competing methods under paraphrased queries and ~1.6x less under adversarial reformulations. We support our analysis with internal metrics: under our method, forget-set hidden states move further from the pre-unlearning model's states than under other methods, while retain-set representations remain close.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Elena Tutubalina",
-      "published_at": "2026-08-14T12:03:03Z",
-      "fetched_at": "2026-08-17T03:13:21.782388Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fc2c13501322b436",
-      "url": "https://arxiv.org/abs/2608.14227v1",
-      "title": "Attributing Preprocessing Invariance in Spectral Foundation Models",
-      "summary": "Preprocessing invariance is an appealing goal for spectral foundation models: a frozen model should remain useful when laboratories preprocess spectra differently. It is usually measured by training a classifier under one preprocessing pipeline and testing it under another, with preserved accuracy read as evidence of learning. We revisit that reading, using a Raman foundation model as a case study. Such models normalize their inputs before any learned parameter is applied. If that normalization maps two differently preprocessed spectra to the same vector, the encoder receives identical inputs, so the invariance cannot be attributed to learning. For a normalization that uses each spectrum's own statistics, this happens exactly when one spectrum is a positive multiple of the other plus a constant. Several standard preprocessing operations take that form. The encoder should therefore be measured against the normalization alone, which has no learned parameters. On six Raman evaluation datasets, the model does not measurably outperform its own normalization. It improves on raw spectra, but so does the normalization alone. Training does improve the encoder over random initialization, and a controlled experiment shows that it learns to ignore a transformation only when that transformation reaches it. A numerical test settles which transformations a given normalization removes. Across released systems in five modalities, most normalizations already remove transformations of that form, and several of those systems claim that invariance as learned. Replicating the comparison on two of them shows no gain either.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Yinuo Zou",
-      "published_at": "2026-08-14T12:01:27Z",
-      "fetched_at": "2026-08-17T03:13:21.443504Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4c9f9735e2c4bbff",
-      "url": "https://arxiv.org/abs/2608.14221v1",
-      "title": "MathForm: Scaling Mathematical Autoformalization with Knowledge Retrieval and Verification-Guided Refinement",
-      "summary": "Autoformalization is commonly framed as translating natural-language mathematical statements into machine-verifiable formal languages such as Lean 4. However, faithful formalization requires more than translation. Models must map mathematical concepts to the complex hierarchy of types and definitions in formal libraries such as Mathlib, while ensuring that generated statements preserve the meaning of the source propositions. Existing approaches struggle because they rely heavily on the model's parametric memory for library-specific knowledge, while common data construction pipelines often resort to filtering single-pass outputs and lack mechanisms for feedback-driven revision. To address these challenges, we introduce MathForm, an autoformalization framework for constructing verified training data through Mathlib knowledge retrieval and verification-guided iterative refinement. Before generation, a retrieval planner gathers relevant definitions and existing formalizations from Mathlib to guide the formalization generator. Generated statements are then revised using compiler diagnostics and semantic-consistency feedback. Using this framework, we construct FormalVerse, a Lean 4 dataset containing approximately 367K verified examples across diverse mathematical domains and sources. We then train MathForm-8B through supervised fine-tuning followed by reinforcement learning. Across six benchmarks, MathForm-8B achieves average Pass@8 rates of 88.06% under Syntax Check (SC) and 72.37% under Consistency Check (CC), outperforming multiple specialized 32B autoformalizers. On the challenging FATE-H and FATE-X subsets, it attains CC pass rates of 63% and 37%, exceeding the strongest specialized baselines in both cases.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Yudong Wang",
-      "published_at": "2026-08-14T11:51:12Z",
-      "fetched_at": "2026-08-17T03:13:21.782394Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8331497f9e1b9836",
-      "url": "https://arxiv.org/abs/2608.14210v1",
-      "title": "How Much Do Legal RAG Systems Still Hallucinate?",
-      "summary": "Hallucination is a major challenge for retrieval-augmented generation (RAG) systems in the legal domain, where ungrounded answers can lead to serious consequences. To better understand this problem, we conduct a fine-grained analysis of hallucination behavior in eight legal RAG systems across two legal corpora, the GDPR (in English) and a national civil law (in French). Using claim-level and answer-level evaluation, we report on hallucination density and severity, analyze performance across question categories and user personas, and validate our findings on an independent set of 142 legal-expert-authored questions. Our results show that hallucinations remain pervasive, ranging from less than 10% of responses for the best-performing systems to nearly half in the worst case. We further find that false-premise questions, containing incorrect assumptions that must be rejected, produce high hallucination rates on the manually-drafted questions.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Domenico Bianculli",
-      "published_at": "2026-08-14T11:39:17Z",
-      "fetched_at": "2026-08-17T03:13:21.782401Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f93c3050887a3390",
-      "url": "https://arxiv.org/abs/2608.14198v1",
-      "title": "MINT: A Universal Zero-Shot Predictor for Transaction Data",
-      "summary": "Banks analyse sequential financial transaction data to perform many tasks, including fraud prevention, credit risk assessment and offer personalization. To improve the predictive accuracy of these tasks, Payments Foundation Models encode transaction sequence data as rich contextual embeddings, which can then be provided to task-specific models as features. However, these Foundation Models are not designed for flexible zero-shot reasoning across novel downstream prediction tasks, limiting their adaptability and utility. Existing LLM-based approaches to zero-shot prediction often fail to fully exploit the predictive signal within transaction data, while relying on costly text serialization or task-specific architectures that scale poorly. To address these limitations, we present the Multimodal Instruction Network for Transactions (MINT), a framework that connects a pretrained transaction sequence encoder to a decoder-only LLM through lightweight embedding injection, transaction-language alignment, and instruction tuning. We find that MINT achieves state-of-the-art predictive question-answering performance in both in-distribution and out-of-distribution questions, while substantially reducing input tokens, latency, and memory consumption compared to text-serialization baselines. Through comprehensive analyses of representations, alignment strategies, training data, and history length, we establish that compact transaction embeddings are a superior approach to transaction representation than text serialization for multimodal reasoning and zero-shot prediction tasks.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Stuart Burrell",
-      "published_at": "2026-08-14T11:17:01Z",
-      "fetched_at": "2026-08-17T03:13:21.782407Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f7d76d3d4ac623b5",
-      "url": "https://arxiv.org/abs/2608.14191v1",
-      "title": "KV Cache Compression Through the Lens of Transform Coding",
-      "summary": "The key-value (KV) cache stores information from past tokens and is a major memory bottleneck in long-context inference. Existing quantization methods address this bottleneck by representing the KV cache uniformly with lower-precision data types and designing quantization schemes to minimize reconstruction error in the cache itself, without accounting for how that error propagates through attention mechanisms. We prove that, under a white-noise quantization model, the expected attention-aware distortion decomposes into additive key and value contributions that factor across tokens and channels. Building on transform coding and reverse water-filling, which are classical tools from signal processing and rate-distortion theory, we introduce Attention-Aware Transform Coding (AATC), which allocates bits over a calibration set to minimize attention-aware distortion. On Llama-3.1-8B-Instruct and Qwen-2.5-7B-Instruct, evaluated across LongBench, RULER, GSM8K, MMLU-Pro, and MATH-500, our method achieves near-lossless accuracy at approximately $5.8\\times$ compression, whereas each baseline degrades in at least some settings.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Felix Krahmer",
-      "published_at": "2026-08-14T11:08:01Z",
-      "fetched_at": "2026-08-17T03:13:21.782413Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "896da3528f086579",
       "url": "https://www.anthropic.com/events/claude-founder-house-london",
       "title": "Claude Founder House London",
@@ -62917,6 +62772,47 @@
       "author": "dani_avila7",
       "published_at": "2026-08-20T14:03:07Z",
       "fetched_at": "2026-08-21T07:22:08.219190Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ce2f2b4420f2b772",
+      "url": "https://x.com/simonw/status/2088138304281796608",
+      "title": "RT @Zai_org: Introducing GLM-5.3: Built to Code. Ready for Cyber Defense.\n\n- Top-tier coding and age...",
+      "summary": "RT @Zai_org: Introducing GLM-5.3: Built to Code. Ready for Cyber Defense.\n\n- Top-tier coding and agentic capabilities, achieved through pos\u2026",
+      "content": "RT @Zai_org: Introducing GLM-5.3: Built to Code. Ready for Cyber Defense.\n\n- Top-tier coding and agentic capabilities, achieved through pos\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-08-14T05:39:02Z",
+      "fetched_at": "2026-08-20T07:13:06.699404Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a21bc30bbcd6a89f",
+      "url": "https://x.com/GoogleAI/status/2087949042961514983",
+      "title": "Our most intelligent workhorse model yet for coding and agents has arrived \u26a1 Meet Gemini 3.7 Flash.\n...",
+      "summary": "Our most intelligent workhorse model yet for coding and agents has arrived \u26a1 Meet Gemini 3.7 Flash.\n\n\u2014 Crush that seemingly endless to-do list. Gemini Spark in the @geminiapp now uses 3.7 Flash. The new model can equip your personal AI agent to work even smarter for you by https://t.co/hgM1xWiyvI",
+      "content": "Our most intelligent workhorse model yet for coding and agents has arrived \u26a1 Meet Gemini 3.7 Flash.\n\n\u2014 Crush that seemingly endless to-do list. Gemini Spark in the @geminiapp now uses 3.7 Flash. The new model can equip your personal AI agent to work even smarter for you by https://t.co/hgM1xWiyvI",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-08-13T17:06:58Z",
+      "fetched_at": "2026-08-20T07:13:13.661740Z",
       "score": null,
       "score_reason": "",
       "tier": "",
