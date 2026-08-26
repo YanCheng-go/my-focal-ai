@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-25T23:02:00.230094+00:00",
+  "exported_at": "2026-08-26T01:18:33.808253+00:00",
   "period_hours": 168,
-  "total": 2745,
+  "total": 2744,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28236,71 +28236,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "59ef97c393deed73",
-      "url": "https://claude.com/blog/turning-conversation-into-knowledge-how-slack-builds-human-agent-teams",
-      "title": "Turning conversation into knowledge: how Slack builds human-agent teams",
-      "summary": "Turning conversation into knowledge: how Slack builds human-agent teams",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-08-19T00:00:00Z",
-      "fetched_at": "2026-08-22T13:01:05.375212Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ccb42b7422acc16c",
-      "url": "https://machinelearning.apple.com/research/the-p-completeness-of-inverted-index-traversal",
-      "title": "The P-Completeness of Inverted Index Traversal: On the Complexity of Evaluating Boolean Query DAGs",
-      "summary": "Modern AI agents increasingly rely on search infrastructure to execute complex, neuro-symbolic reasoning workflows. These workflows often compile into deeply nested, non-monotonic Boolean queries over text fields. However, standard query evaluation strategies over inverted indices face severe theoretical limits when handling these structures. Stateful iterator models (Document-at-a-Time) are structurally bounded by NC^1 formula evaluation, suffering a worst-case O(2^|Q|) exponential blowup in query complexity when unrolling re-convergent logic. Conversely, recursive materialization models\u2026",
-      "content": "",
-      "source_name": "Apple Machine Learning",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "apple",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-19T00:00:00Z",
-      "fetched_at": "2026-08-19T18:53:39.663307Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7ba6c2e15df63364",
-      "url": "https://machinelearning.apple.com/research/human-like-behaviors-llms",
-      "title": "Examining Human-Like Behaviors in LLMs: A Multi-Dimensional Analysis of Model Behaviors, User Factors, and System Prompts",
-      "summary": "Large language models (LLMs) exhibit a wide range of human-like behaviors, from expressing thoughts and emotions, to engaging in relationship-building with users, to refusing requests and maintaining boundaries. Despite their prevalence, researchers and practitioners lack methods and empirical insights to make informed decisions about when and what types of human-like behaviors LLMs should exhibit. To fill this gap, we present a multi-dimensional analysis of the prevalence, potential effects, and controllability of these behaviors using LLM-as-a-judge and human evaluation. Across 21,000\u2026",
-      "content": "",
-      "source_name": "Apple Machine Learning",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "apple",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-19T00:00:00Z",
-      "fetched_at": "2026-08-19T14:53:42.918432Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "07f17d24eb0b344f",
       "url": "https://arxiv.org/abs/2608.21359v1",
       "title": "Primal Acceleration of Newton's Method",
@@ -56529,167 +56464,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "638ed00704a53894",
-      "url": "https://x.com/steipete/status/2089881974865539509",
-      "title": "RT @gabriel1: biggest startup learning so far: ignore literally everything and everyone that is not ...",
-      "summary": "RT @gabriel1: biggest startup learning so far: ignore literally everything and everyone that is not immediately ultra critical to what the\u2026",
-      "content": "RT @gabriel1: biggest startup learning so far: ignore literally everything and everyone that is not immediately ultra critical to what the\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-19T01:07:45Z",
-      "fetched_at": "2026-08-20T07:13:15.919574Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4ebb4e1a88b0545e",
-      "url": "https://x.com/steipete/status/2089877190422974974",
-      "title": "512GB RAM Studios. Apple was good to us. \ud83e\udd9e https://t.co/NyvtNH6lRa",
-      "summary": "512GB RAM Studios. Apple was good to us. \ud83e\udd9e https://t.co/NyvtNH6lRa",
-      "content": "512GB RAM Studios. Apple was good to us. \ud83e\udd9e https://t.co/NyvtNH6lRa",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-19T00:48:44Z",
-      "fetched_at": "2026-08-20T07:13:15.919608Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "52e18bcc809c6095",
-      "url": "https://x.com/steipete/status/2089875335252963362",
-      "title": "RT @jxnlco: if you contribute to NumPy, pandas, pytest, Pydantic, Requests, Django, Git, OpenSSL, ru...",
-      "summary": "RT @jxnlco: if you contribute to NumPy, pandas, pytest, Pydantic, Requests, Django, Git, OpenSSL, rustls, Serde, DuckDB, SQLite, Kafka, Pos\u2026",
-      "content": "RT @jxnlco: if you contribute to NumPy, pandas, pytest, Pydantic, Requests, Django, Git, OpenSSL, rustls, Serde, DuckDB, SQLite, Kafka, Pos\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-19T00:41:22Z",
-      "fetched_at": "2026-08-20T07:13:15.919640Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "48d9b09da830fbc6",
-      "url": "https://x.com/steipete/status/2089875309080510815",
-      "title": "RT @aarondfrancis: don't worry bro, it's byte-identical",
-      "summary": "RT @aarondfrancis: don't worry bro, it's byte-identical",
-      "content": "RT @aarondfrancis: don't worry bro, it's byte-identical",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-19T00:41:16Z",
-      "fetched_at": "2026-08-20T07:13:15.919671Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b93ee1da41b4b934",
-      "url": "https://x.com/GeminiApp/status/2089868397593162093",
-      "title": "RT @NewsFromGoogle: Reminder: You can take full-length practice SAT tests in Gemini \u2014 at no cost.\n\nS...",
-      "summary": "RT @NewsFromGoogle: Reminder: You can take full-length practice SAT tests in Gemini \u2014 at no cost.\n\nSimply prompt Gemini with \u201cI want to tak\u2026",
-      "content": "RT @NewsFromGoogle: Reminder: You can take full-length practice SAT tests in Gemini \u2014 at no cost.\n\nSimply prompt Gemini with \u201cI want to tak\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-08-19T00:13:48Z",
-      "fetched_at": "2026-08-20T07:13:11.522465Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5fb8414ed85a3caa",
-      "url": "https://x.com/dani_avila7/status/2089864893092540763",
-      "title": "Quick demo of how I use session to session messaging in Claude Code + Ghostty\n\n(Save this and try it...",
-      "summary": "Quick demo of how I use session to session messaging in Claude Code + Ghostty\n\n(Save this and try it in your own workflows)\n\n1- I always start with a regular session and a panel running claude agents\n\n2- The first session becomes the orchestrator. It creates the initial context, https://t.co/x6R9psAfKd",
-      "content": "Quick demo of how I use session to session messaging in Claude Code + Ghostty\n\n(Save this and try it in your own workflows)\n\n1- I always start with a regular session and a panel running claude agents\n\n2- The first session becomes the orchestrator. It creates the initial context, https://t.co/x6R9psAfKd",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-18T23:59:52Z",
-      "fetched_at": "2026-08-20T07:13:07.942325Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cb1137569e135b51",
-      "url": "https://x.com/steipete/status/2089851206999179533",
-      "title": "RT @rosslazer: this is largely the sentiment in the company slack https://t.co/rTEzRgzMi8",
-      "summary": "RT @rosslazer: this is largely the sentiment in the company slack https://t.co/rTEzRgzMi8",
-      "content": "RT @rosslazer: this is largely the sentiment in the company slack https://t.co/rTEzRgzMi8",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-18T23:05:29Z",
-      "fetched_at": "2026-08-20T07:13:15.919701Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3ff93a874270e229",
-      "url": "https://x.com/steipete/status/2089851061251211331",
-      "title": "RT @matteocollina: What is making GitHub explode =&gt; massive surge of agent based traffic, and I e...",
-      "summary": "RT @matteocollina: What is making GitHub explode =&gt; massive surge of agent based traffic, and I expect the majority if this to be on the OS\u2026",
-      "content": "RT @matteocollina: What is making GitHub explode =&gt; massive surge of agent based traffic, and I expect the majority if this to be on the OS\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-18T23:04:55Z",
-      "fetched_at": "2026-08-20T07:13:15.919732Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8d87575c83bd8f77",
       "url": "https://x.com/sama/status/2090349385007710318",
       "title": "RT @Replit: Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet\u2019s make intelligence accessible ...",
@@ -58078,6 +57852,207 @@
       "author": "bcherny",
       "published_at": "2026-08-25T20:57:13Z",
       "fetched_at": "2026-08-25T23:01:44.186289Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1895706a2f1ee820",
+      "url": "https://x.com/dani_avila7/status/2092420656793092182",
+      "title": "Anthropic just added Unity\u2019s official plugin to claude-plugins-official\n\nBuilt by Unity Technologies...",
+      "summary": "Anthropic just added Unity\u2019s official plugin to claude-plugins-official\n\nBuilt by Unity Technologies with 18 Unity skills covering UI, graphics, monetization, localization, etc.\n\nRun this command to install the marketplace:\n/plugin marketplace add",
+      "content": "Anthropic just added Unity\u2019s official plugin to claude-plugins-official\n\nBuilt by Unity Technologies with 18 Unity skills covering UI, graphics, monetization, localization, etc.\n\nRun this command to install the marketplace:\n/plugin marketplace add",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-26T01:15:34Z",
+      "fetched_at": "2026-08-26T01:18:10.729658Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2dd7bd1bfa4d7858",
+      "url": "https://x.com/OpenAI/status/2092418732215713898",
+      "title": "RT @ChatGPT: ChatGPT Work can now use its computer and browser to sign in to websites on web and mob...",
+      "summary": "RT @ChatGPT: ChatGPT Work can now use its computer and browser to sign in to websites on web and mobile, without ChatGPT ever seeing your u\u2026",
+      "content": "RT @ChatGPT: ChatGPT Work can now use its computer and browser to sign in to websites on web and mobile, without ChatGPT ever seeing your u\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-26T01:07:55Z",
+      "fetched_at": "2026-08-26T01:18:20.763712Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "638ed00704a53894",
+      "url": "https://x.com/steipete/status/2089881974865539509",
+      "title": "RT @gabriel1: biggest startup learning so far: ignore literally everything and everyone that is not ...",
+      "summary": "RT @gabriel1: biggest startup learning so far: ignore literally everything and everyone that is not immediately ultra critical to what the\u2026",
+      "content": "RT @gabriel1: biggest startup learning so far: ignore literally everything and everyone that is not immediately ultra critical to what the\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-19T01:07:45Z",
+      "fetched_at": "2026-08-20T07:13:15.919574Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4ebb4e1a88b0545e",
+      "url": "https://x.com/steipete/status/2089877190422974974",
+      "title": "512GB RAM Studios. Apple was good to us. \ud83e\udd9e https://t.co/NyvtNH6lRa",
+      "summary": "512GB RAM Studios. Apple was good to us. \ud83e\udd9e https://t.co/NyvtNH6lRa",
+      "content": "512GB RAM Studios. Apple was good to us. \ud83e\udd9e https://t.co/NyvtNH6lRa",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-19T00:48:44Z",
+      "fetched_at": "2026-08-20T07:13:15.919608Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "52e18bcc809c6095",
+      "url": "https://x.com/steipete/status/2089875335252963362",
+      "title": "RT @jxnlco: if you contribute to NumPy, pandas, pytest, Pydantic, Requests, Django, Git, OpenSSL, ru...",
+      "summary": "RT @jxnlco: if you contribute to NumPy, pandas, pytest, Pydantic, Requests, Django, Git, OpenSSL, rustls, Serde, DuckDB, SQLite, Kafka, Pos\u2026",
+      "content": "RT @jxnlco: if you contribute to NumPy, pandas, pytest, Pydantic, Requests, Django, Git, OpenSSL, rustls, Serde, DuckDB, SQLite, Kafka, Pos\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-19T00:41:22Z",
+      "fetched_at": "2026-08-20T07:13:15.919640Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "48d9b09da830fbc6",
+      "url": "https://x.com/steipete/status/2089875309080510815",
+      "title": "RT @aarondfrancis: don't worry bro, it's byte-identical",
+      "summary": "RT @aarondfrancis: don't worry bro, it's byte-identical",
+      "content": "RT @aarondfrancis: don't worry bro, it's byte-identical",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-19T00:41:16Z",
+      "fetched_at": "2026-08-20T07:13:15.919671Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b93ee1da41b4b934",
+      "url": "https://x.com/GeminiApp/status/2089868397593162093",
+      "title": "RT @NewsFromGoogle: Reminder: You can take full-length practice SAT tests in Gemini \u2014 at no cost.\n\nS...",
+      "summary": "RT @NewsFromGoogle: Reminder: You can take full-length practice SAT tests in Gemini \u2014 at no cost.\n\nSimply prompt Gemini with \u201cI want to tak\u2026",
+      "content": "RT @NewsFromGoogle: Reminder: You can take full-length practice SAT tests in Gemini \u2014 at no cost.\n\nSimply prompt Gemini with \u201cI want to tak\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-19T00:13:48Z",
+      "fetched_at": "2026-08-20T07:13:11.522465Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5fb8414ed85a3caa",
+      "url": "https://x.com/dani_avila7/status/2089864893092540763",
+      "title": "Quick demo of how I use session to session messaging in Claude Code + Ghostty\n\n(Save this and try it...",
+      "summary": "Quick demo of how I use session to session messaging in Claude Code + Ghostty\n\n(Save this and try it in your own workflows)\n\n1- I always start with a regular session and a panel running claude agents\n\n2- The first session becomes the orchestrator. It creates the initial context, https://t.co/x6R9psAfKd",
+      "content": "Quick demo of how I use session to session messaging in Claude Code + Ghostty\n\n(Save this and try it in your own workflows)\n\n1- I always start with a regular session and a panel running claude agents\n\n2- The first session becomes the orchestrator. It creates the initial context, https://t.co/x6R9psAfKd",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-18T23:59:52Z",
+      "fetched_at": "2026-08-20T07:13:07.942325Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cb1137569e135b51",
+      "url": "https://x.com/steipete/status/2089851206999179533",
+      "title": "RT @rosslazer: this is largely the sentiment in the company slack https://t.co/rTEzRgzMi8",
+      "summary": "RT @rosslazer: this is largely the sentiment in the company slack https://t.co/rTEzRgzMi8",
+      "content": "RT @rosslazer: this is largely the sentiment in the company slack https://t.co/rTEzRgzMi8",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-18T23:05:29Z",
+      "fetched_at": "2026-08-20T07:13:15.919701Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3ff93a874270e229",
+      "url": "https://x.com/steipete/status/2089851061251211331",
+      "title": "RT @matteocollina: What is making GitHub explode =&gt; massive surge of agent based traffic, and I e...",
+      "summary": "RT @matteocollina: What is making GitHub explode =&gt; massive surge of agent based traffic, and I expect the majority if this to be on the OS\u2026",
+      "content": "RT @matteocollina: What is making GitHub explode =&gt; massive surge of agent based traffic, and I expect the majority if this to be on the OS\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-18T23:04:55Z",
+      "fetched_at": "2026-08-20T07:13:15.919732Z",
       "score": null,
       "score_reason": "",
       "tier": "",
