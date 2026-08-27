@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-27T20:31:46.898163+00:00",
+  "exported_at": "2026-08-27T22:37:12.996046+00:00",
   "period_hours": 168,
-  "total": 2633,
+  "total": 2645,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13465,26 +13465,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b71e6bf031b61ae9",
-      "url": "https://www.youtube.com/watch?v=zCJtYuqwm7E",
-      "title": "Coding Agents Don't Scale Themselves. Neither Do Your Teams. \u2014 Patrick Debois, Tessl",
-      "summary": "In 2009 people told Patrick Debois that continuous delivery was crazy. He hears the same thing now about the dark factory, and reads it the same way: not that the technology cannot work, but that the organization is not set up for it yet. His starting assumption is that harnesses and loops will commoditize, possibly into a service a frontier lab just sells you, so none of that will be anyone's differentiator. What actually changes is the team, the platform and the organization around them.\n\nDevelopers pushed back on the conductor framing, telling him they did not sign up to write better prompts. What brought them back was tooling. Once the team started building harnesses for the agent, a genuinely technical path reopened, and the loudest skeptics turned out to be the right people to hand context authoring to, precisely because they were angry about the output. The shift he pushes is to stop fixing the code the agent produced and improve the system instead. Retros stop being about the code and become about where the agent hit the same wall repeatedly. Planning splits into work scoped tightly enough to hand off and work that still needs a conversation. He tracks two numbers: how many human touches it takes to get the right result, which should fall, and how much of each fix is shared, because one improvement to a common harness lands for everybody rather than making a single person 10x. Above the team it is paved roads and a named owner, not a thousand flowers blooming.\n\nSpeaker info:\n- https://x.com/patrickdebois\n- https://www.linkedin.com/in/patrickdebois/\n- https://jedi.be\n\nTimestamps:\n0:00 - It will not work here, and what that signals\n2:46 - Developers who did not sign up for prompting\n5:20 - Stop fixing the code, improve the system\n7:04 - Retros, planning, and the downstream squeeze\n9:38 - Two metrics: human touches and reuse\n10:29 - The platform team's new problems\n12:12 - Sprawl, paved roads, and making spend visible\n14:43 - Enabling the organization without a champions program\n15:36 - Hiring when the job titles mean nothing\n18:07 - Optimize the spend instead of capping it\n20:38 - A dim factory, and knowledge as the moat",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-20T06:32:46Z",
-      "fetched_at": "2026-08-22T08:47:53.439103Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a262ce4f56ce92fb",
       "url": "https://developers.googleblog.com/decoding-cosmic-signals-with-deep-learning-and-keras/",
       "title": "Decoding cosmic signals with deep learning and Keras",
@@ -26576,29 +26556,6 @@
       "author": "Su Myat Noe, Ha Thanh Nguyen, May Myo Zin, Ken Satoh",
       "published_at": "2026-08-26T04:00:00Z",
       "fetched_at": "2026-08-26T04:56:19.149317Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9b452026d55c4675",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
-      "title": "v2.1.238",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Added a <code>keybindingFlavor</code> setting: set it to <code>\"readline\"</code> to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default (<code>\"classic\"</code>) is unchanged</li>\n<li>Plugin marketplaces: <code>headersHelper</code> on a url marketplace or a catalog entry runs a command that mints HTTP headers (e.g. a short-lived token) for catalog and same-origin archive fetches</li>\n<li>A catalog entry's <code>headersHelper</code> runs only when you install or update that plugin, after its command is shown; <code>claude plugin install/update</code> ask <code>[y/N]</code> (or pass <code>-y</code>)</li>\n<li>Added <code>claude self-hosted-runner --defer-shutdown-max-min &lt;minutes&gt;</code>: on SIGTERM, keep serving attached sessions, park what is left after that many minutes, then exit</li>\n<li>Added <code>claude self-hosted-runner --proxy-authorization-command</code> / <code>--proxy-authorization-file</code> for egress proxies that require a freshly issued <code>Proxy-Authorization</code> header on every connection</li>\n<li>Fixed unbounded memory growth in long interactive sessions: subagent tool results are now released once they leave the recent display window</li>\n<li>Fixed custom, project, and plugin output styles drifting back to the default voice mid-session</li>\n<li>Fixed <code>CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=true</code> not keeping prompt suggestions on when your account is near, but not over, its usage limit</li>\n<li>Fixed worktree-isolation Bash refusals telling you to remove a redirect when the command had none</li>\n<li>Fixed self-hosted runners occasionally being removed by the server after a single slow or lost poll request, handing their healthy session to another runner</li>\n<li>Fixed MCP elicitation dialogs showing nothing for URLs longer than 4,096 characters, and permission prompts dropping the \"don't ask again\" option when the project path didn't fit the terminal width</li>\n<li>Fixed leftover <code>/tmp/claude-*-cwd</code> files when a Bash command is killed, times out, or is interrupted</li>\n<li>Fixed held Backspace being ignored on terminals that send Ctrl+H for Backspace when keystrokes arrive in large bursts (slow SSH/mosh links)</li>\n<li>Fixed text-wrapping in permission prompt diffs: lines containing wide multi-code-point characters (such as emoji) or tabs are no longer clipped</li>\n<li>Fixed killing a suspended (Ctrl+Z) session sometimes leaving the terminal in bracketed-paste mode with the cursor hidden</li>\n<li>Fixed stdio MCP servers receiving a <code>server/discover</code> request before <code>initialize</code>, forcing lazy servers to start their backend on every session open</li>\n<li>Fixed a proxy's refusal of a connection being reported as a generic network error instead of naming the proxy</li>\n<li>Fixed the <code>/model</code> and <code>/effort</code> cache-miss warning appearing when the prompt cache had already expired</li>\n<li>Fixed per-task Stop from the Remote Control tasks panel doing nothing on CLI-hosted sessions</li>\n<li>Fixed remote sessions exiting when a client delivered a user message without a valid role</li>\n<li>Fixed Remote Control sessions started by <code>claude remote-control</code> inheriting session-scoped environment variables from the launching shell</li>\n<li>Fixed a Remote Control session whose process crashed staying unavailable until <code>claude remote-control</code> was restarted; it can now be reused when you next message it</li>\n<li>Fixed Remote Control messages sent from the web or Desktop while Claude is mid-turn disappearing from the transcript after the turn finishes</li>\n<li>Fixed Remote Control model picks made on a phone or web not updating the model shown in the terminal</li>\n<li>Fixed Remote Control disconnecting with \"login expired\" when a brief network hiccup delays renewing your sign-in; it now retries and stays connected</li>\n<li>Fixed Remote Control reporting a failed reconnect on sign-out; signing out now ends the session with a clear message</li>\n<li>Fixed <code>ListAgents</code>/<code>SendMessage</code> reporting \"Remote Control is not connected\" in sessions run by <code>claude remote-control</code> (server mode) or Desktop/IDE hosts; they now list and reach Remote Control peers</li>\n<li>Fixed <code>ListAgents</code> and <code>SendMessage</code> exposing the idle worker that the agent view pre-warms for your next background session; it now appears only once a task claims it</li>\n<li>Cross-session messaging: sending to a session on this machine that refuses inbound messages (e.g. <code>crossSessionInbound: \"refuse\"</code>) now reports \"refused\" to the sender instead of a silent success</li>\n<li>Cross-session messaging: a session whose inbox drops your messages (rate limit or full queue) now tells your session, instead of the messages vanishing silently</li>\n<li>Improved startup: bare <code>claude</code> starts sooner on macOS</li>\n<li>Improved Bash tool permission checking for zsh-specific syntax in shell conditionals</li>\n<li>Improved Remote Control connection resilience: brief HTTP 403 refusals from a network edge, VPN, or proxy are now tolerated for up to 3 minutes, with the refusing party named when a block persists</li>\n<li>Improved startup responsiveness: the automatic update check now runs about 10 seconds after launch instead of competing with startup for CPU</li>\n<li>Updated the bundled <code>claude-api</code> skill for the Managed Agents Aug 19 release: web search/fetch domain settings and memory stores on self-hosted sandboxes</li>\n<li>Changed Ctrl+L and Cmd+K in fullscreen to always just repaint \u2014 the double-press <code>/clear</code> shortcut was removed, and 1-row nvim terminals no longer trigger automatic <code>/clear</code> loops</li>\n<li>Changed <code>claude mcp list</code> and <code>claude mcp get</code> to show disabled servers as <code>\u2298 Disabled</code> instead of connecting to them for a health check</li>\n<li>MCP <code>headersHelper</code> in a project <code>.mcp.json</code>, and inline MCP servers in project or <code>--add-dir</code> agent files, now require that folder's trust dialog to have been accepted (also under <code>claude -p</code>)</li>\n<li>MCP <code>headersHelper</code> from a project <code>.mcp.json</code>, plugin, or agent file runs without inherited credential env vars; user, managed and claude.ai-scope helpers now run from the Claude config dir</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Added a <code>keybindingFlavor</code> setting: set it to <code>\"readline\"</code> to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default (<code>\"classic\"</code>) is unchanged</li>\n<li>Plugin marketplaces: <code>headersHelper</code> on a url marketplace or a catalog entry runs a command that mints HTTP headers (e.g. a short-lived token) for catalog and same-origin archive fetches</li>\n<li>A catalog entry's <code>headersHelper</code> runs only when you install or update that plugin, after its command is shown; <code>claude plugin install/update</code> ask <code>[y/N]</code> (or pass <code>-y</code>)</li>\n<li>Added <code>claude self-hosted-runner --defer-shutdown-max-min &lt;minutes&gt;</code>: on SIGTERM, keep serving attached sessions, park what is left after that many minutes, then exit</li>\n<li>Added <code>claude self-hosted-runner --proxy-authorization-command</code> / <code>--proxy-authorization-file</code> for egress proxies that require a freshly issued <code>Proxy-Authorization</code> header on every connection</li>\n<li>Fixed unbounded memory growth in long interactive sessions: subagent tool results are now released once they leave the recent display window</li>\n<li>Fixed custom, project, and plugin output styles drifting back to the default voice mid-session</li>\n<li>Fixed <code>CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION=true</code> not keeping prompt suggestions on when your account is near, but not over, its usage limit</li>\n<li>Fixed worktree-isolation Bash refusals telling you to remove a redirect when the command had none</li>\n<li>Fixed self-hosted runners occasionally being removed by the server after a single slow or lost poll request, handing their healthy session to another runner</li>\n<li>Fixed MCP elicitation dialogs showing nothing for URLs longer than 4,096 characters, and permission prompts dropping the \"don't ask again\" option when the project path didn't fit the terminal width</li>\n<li>Fixed leftover <code>/tmp/claude-*-cwd</code> files when a Bash command is killed, times out, or is interrupted</li>\n<li>Fixed held Backspace being ignored on terminals that send Ctrl+H for Backspace when keystrokes arrive in large bursts (slow SSH/mosh links)</li>\n<li>Fixed text-wrapping in permission prompt diffs: lines containing wide multi-code-point characters (such as emoji) or tabs are no longer clipped</li>\n<li>Fixed killing a suspended (Ctrl+Z) session sometimes leaving the terminal in bracketed-paste mode with the cursor hidden</li>\n<li>Fixed stdio MCP servers receiving a <code>server/discover</code> request before <code>initialize</code>, forcing lazy servers to start their backend on every session open</li>\n<li>Fixed a proxy's refusal of a connection being reported as a generic network error instead of naming the proxy</li>\n<li>Fixed the <code>/model</code> and <code>/effort</code> cache-miss warning appearing when the prompt cache had already expired</li>\n<li>Fixed per-task Stop from the Remote Control tasks panel doing nothing on CLI-hosted sessions</li>\n<li>Fixed remote sessions exiting when a client delivered a user message without a valid role</li>\n<li>Fixed Remote Control sessions started by <code>claude remote-control</code> inheriting session-scoped environment variables from the launching shell</li>\n<li>Fixed a Remote Control session whose process crashed staying unavailable until <code>claude remote-control</code> was restarted; it can now be reused when you next message it</li>\n<li>Fixed Remote Control messages sent from the web or Desktop while Claude is mid-turn disappearing from the transcript after the turn finishes</li>\n<li>Fixed Remote Control model picks made on a phone or web not updating the model shown in the terminal</li>\n<li>Fixed Remote Control disconnecting with \"login expired\" when a brief network hiccup delays renewing your sign-in; it now retries and stays connected</li>\n<li>Fixed Remote Control reporting a failed reconnect on sign-out; signing out now ends the session with a clear message</li>\n<li>Fixed <code>ListAgents</code>/<code>SendMessage</code> reporting \"Remote Control is not connected\" in sessions run by <code>claude remote-control</code> (server mode) or Desktop/IDE hosts; they now list and reach Remote Control peers</li>\n<li>Fixed <code>ListAgents</code> and <code>SendMessage</code> exposing the idle worker that the agent view pre-warms for your next background session; it now appears only once a task claims it</li>\n<li>Cross-session messaging: sending to a session on this machine that refuses inbound messages (e.g. <code>crossSessionInbound: \"refuse\"</code>) now reports \"refused\" to the sender instead of a silent success</li>\n<li>Cross-session messaging: a session whose inbox drops your messages (rate limit or full queue) now tells your session, instead of the messages vanishing silently</li>\n<li>Improved startup: bare <code>claude</code> starts sooner on macOS</li>\n<li>Improved Bash tool permission checking for zsh-specific syntax in shell conditionals</li>\n<li>Improved Remote Control connection resilience: brief HTTP 403 refusals from a network edge, VPN, or proxy are now tolerated for up to 3 minutes, with the refusing party named when a block persists</li>\n<li>Improved startup responsiveness: the automatic update check now runs about 10 seconds after launch instead of competing with startup for CPU</li>\n<li>Updated the bundled <code>claude-api</code> skill for the Managed Agents Aug 19 release: web search/fetch domain settings and memory stores on self-hosted sandboxes</li>\n<li>Changed Ctrl+L and Cmd+K in fullscreen to always just repaint \u2014 the double-press <code>/clear</code> shortcut was removed, and 1-row nvim terminals no longer trigger automatic <code>/clear</code> loops</li>\n<li>Changed <code>claude mcp list</code> and <code>claude mcp get</code> to show disabled servers as <code>\u2298 Disabled</code> instead of connecting to them for a health check</li>\n<li>MCP <code>headersHelper</code> in a project <code>.mcp.json</code>, and inline MCP servers in project or <code>--add-dir</code> agent files, now require that folder's trust dialog to have been accepted (also under <code>claude -p</code>)</li>\n<li>MCP <code>headersHelper</code> from a project <code>.mcp.json</code>, plugin, or agent file runs without inherited credential env vars; user, managed and claude.ai-scope helpers now run from the Claude config dir</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-08-20T20:33:51Z",
-      "fetched_at": "2026-08-20T20:47:03.142447Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55319,47 +55276,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d9a85c18fa6f1904",
-      "url": "https://x.com/steipete/status/2090553227549032898",
-      "title": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppos...",
-      "summary": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppose someone handed you $7B to compete wit\u2026",
-      "content": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppose someone handed you $7B to compete wit\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-20T21:35:04Z",
-      "fetched_at": "2026-08-21T07:22:15.435192Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2233fd18e3bf17d5",
-      "url": "https://x.com/bcherny/status/2090537902912815536",
-      "title": "We've been working on this with customers for a while. Mythos-class models require additional safety...",
-      "summary": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It\u2019s coming this fall.",
-      "content": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It\u2019s coming this fall.",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-08-20T20:34:11Z",
-      "fetched_at": "2026-08-21T07:22:06.135405Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "14a2164b9b3f74ca",
       "url": "https://x.com/steipete/status/2091361235698876883",
       "title": "RT @DrewAmbrogi: Connecting Spotify to openclaw w/ spogo and being able to articulate an absurdly sp...",
@@ -57135,6 +57051,330 @@
       "author": "anthropicai",
       "published_at": "2026-08-27T18:10:22Z",
       "fetched_at": "2026-08-27T19:48:11.546046Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "baaa7c6705597b97",
+      "url": "https://x.com/steipete/status/2093098731126350154",
+      "title": "RT @nateberkopec: If your software SDLC is built around deep integration with a single lab (looking ...",
+      "summary": "RT @nateberkopec: If your software SDLC is built around deep integration with a single lab (looking at all of the companies who went all in\u2026",
+      "content": "RT @nateberkopec: If your software SDLC is built around deep integration with a single lab (looking at all of the companies who went all in\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-27T22:10:00Z",
+      "fetched_at": "2026-08-27T22:37:04.546743Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8785c8c554f5b5e6",
+      "url": "https://x.com/steipete/status/2093094242390602136",
+      "title": "RT @polynoamial: We're sharing more info on the Hugging Face incident. One detail that's worth highl...",
+      "summary": "RT @polynoamial: We're sharing more info on the Hugging Face incident. One detail that's worth highlighting: this incident wasn't driven by\u2026",
+      "content": "RT @polynoamial: We're sharing more info on the Hugging Face incident. One detail that's worth highlighting: this incident wasn't driven by\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-27T21:52:09Z",
+      "fetched_at": "2026-08-27T22:37:04.547077Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "abe86ec302c24d1e",
+      "url": "https://x.com/GeminiApp/status/2093093548912775282",
+      "title": "RT @googlechrome: You\u2019re the \u2b50 baker. Gemini in Chrome + Personal Intelligence turns you into the \u2b50 ...",
+      "summary": "RT @googlechrome: You\u2019re the \u2b50 baker. Gemini in Chrome + Personal Intelligence turns you into the \u2b50 of the image.\n\nHere\u2019s how to enable:\nIn\u2026",
+      "content": "RT @googlechrome: You\u2019re the \u2b50 baker. Gemini in Chrome + Personal Intelligence turns you into the \u2b50 of the image.\n\nHere\u2019s how to enable:\nIn\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-27T21:49:24Z",
+      "fetched_at": "2026-08-27T22:36:52.360761Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a7b39743a972cbc3",
+      "url": "https://x.com/steipete/status/2093085702670205054",
+      "title": "RT @msdev: OpenClaw went from a weekend project to one of @github's fastest-growing open source proj...",
+      "summary": "RT @msdev: OpenClaw went from a weekend project to one of @github's fastest-growing open source projects.\n\nSix months in, @steipete and sev\u2026",
+      "content": "RT @msdev: OpenClaw went from a weekend project to one of @github's fastest-growing open source projects.\n\nSix months in, @steipete and sev\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-27T21:18:13Z",
+      "fetched_at": "2026-08-27T22:37:04.547739Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "35dcc823ff2c8be6",
+      "url": "https://x.com/simonw/status/2093081897517674630",
+      "title": "Question for ChatGPT iPhone users: have you figured out when to use Chat and when to use Work yet? W...",
+      "summary": "Question for ChatGPT iPhone users: have you figured out when to use Chat and when to use Work yet? What kind of tasks are you switching to Work for? Have you made Work your default?",
+      "content": "Question for ChatGPT iPhone users: have you figured out when to use Chat and when to use Work yet? What kind of tasks are you switching to Work for? Have you made Work your default?",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-08-27T21:03:06Z",
+      "fetched_at": "2026-08-27T22:36:40.681244Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "509ab2cd930494f0",
+      "url": "https://x.com/dani_avila7/status/2093081881365610963",
+      "title": "Anthropic just added Cache Diagnostics\n\nThe concept is interesting and worth understanding\n\nFirst, P...",
+      "summary": "Anthropic just added Cache Diagnostics\n\nThe concept is interesting and worth understanding\n\nFirst, Prompt Caching: Claude can reuse the unchanged prefix of a previous request, saving tokens, cost, and latency\n\nThe problem? Until now, if the cache missed, you knew it happened, but https://t.co/LRSwI3MpRl",
+      "content": "Anthropic just added Cache Diagnostics\n\nThe concept is interesting and worth understanding\n\nFirst, Prompt Caching: Claude can reuse the unchanged prefix of a previous request, saving tokens, cost, and latency\n\nThe problem? Until now, if the cache missed, you knew it happened, but https://t.co/LRSwI3MpRl",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-27T21:03:02Z",
+      "fetched_at": "2026-08-27T22:36:44.028052Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a98f41285d7abcee",
+      "url": "https://x.com/GeminiApp/status/2093077094117015942",
+      "title": "RT @googlechrome: Whether you\u2019re creating party invites, family postcards, or thank you cards, Gemin...",
+      "summary": "RT @googlechrome: Whether you\u2019re creating party invites, family postcards, or thank you cards, Gemini in Chrome + Personal Intelligence can\u2026",
+      "content": "RT @googlechrome: Whether you\u2019re creating party invites, family postcards, or thank you cards, Gemini in Chrome + Personal Intelligence can\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-27T20:44:01Z",
+      "fetched_at": "2026-08-27T22:36:52.360925Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1ed39d9e6adf3163",
+      "url": "https://x.com/OpenAI/status/2093074192636018977",
+      "title": "We have a limited window to strengthen cyber defenses, and together with organizations including @An...",
+      "summary": "We have a limited window to strengthen cyber defenses, and together with organizations including @AnthropicAI, @awscloud, @Google, @Microsoft, and @Oracle, we're calling for a global effort to give defenders the tools, resources, and support to protect the infrastructure we all https://t.co/XiKitsf5wb",
+      "content": "We have a limited window to strengthen cyber defenses, and together with organizations including @AnthropicAI, @awscloud, @Google, @Microsoft, and @Oracle, we're calling for a global effort to give defenders the tools, resources, and support to protect the infrastructure we all https://t.co/XiKitsf5wb",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-27T20:32:29Z",
+      "fetched_at": "2026-08-27T22:36:55.415857Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d9a85c18fa6f1904",
+      "url": "https://x.com/steipete/status/2090553227549032898",
+      "title": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppos...",
+      "summary": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppose someone handed you $7B to compete wit\u2026",
+      "content": "RT @futurenomics: Just heard a very compelling argument that Stripe overpaid for OpenRouter:\n\nSuppose someone handed you $7B to compete wit\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-20T21:35:04Z",
+      "fetched_at": "2026-08-21T07:22:15.435192Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2233fd18e3bf17d5",
+      "url": "https://x.com/bcherny/status/2090537902912815536",
+      "title": "We've been working on this with customers for a while. Mythos-class models require additional safety...",
+      "summary": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It\u2019s coming this fall.",
+      "content": "We've been working on this with customers for a while. Mythos-class models require additional safety measures and enterprises need to meet their own privacy and compliance rules. Customers can own and control their own data and Anthropic retains none. It\u2019s coming this fall.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-20T20:34:11Z",
+      "fetched_at": "2026-08-21T07:22:06.135405Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8fd2c05da98c11fd",
+      "url": "https://x.com/steipete/status/2090534044102722019",
+      "title": "RT @databricks: As agentic automation helps developers get more done, the role is evolving toward hi...",
+      "summary": "RT @databricks: As agentic automation helps developers get more done, the role is evolving toward higher-level decisions about what to buil\u2026",
+      "content": "RT @databricks: As agentic automation helps developers get more done, the role is evolving toward higher-level decisions about what to buil\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-20T20:18:51Z",
+      "fetched_at": "2026-08-21T07:22:15.435267Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c8d62715f55dc6ed",
+      "url": "https://x.com/dani_avila7/status/2090530830959452334",
+      "title": "Claude Academy has all of Anthropic\u2019s webinars!\n\nI\u2019m pretty sure I\u2019ve watched them all already... bu...",
+      "summary": "Claude Academy has all of Anthropic\u2019s webinars!\n\nI\u2019m pretty sure I\u2019ve watched them all already... but they\u2019re definitely worth revisiting. There\u2019s a ton of excellent material in there\n\nI highly recommend checking out the platform: https://t.co/p2zrlLQyfu https://t.co/xjXO1NNWxa",
+      "content": "Claude Academy has all of Anthropic\u2019s webinars!\n\nI\u2019m pretty sure I\u2019ve watched them all already... but they\u2019re definitely worth revisiting. There\u2019s a ton of excellent material in there\n\nI highly recommend checking out the platform: https://t.co/p2zrlLQyfu https://t.co/xjXO1NNWxa",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T20:06:04Z",
+      "fetched_at": "2026-08-21T07:22:08.219036Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2b0313d6d0634862",
+      "url": "https://x.com/sama/status/2090512062149476489",
+      "title": "RT @udayruddarraju: A milestone for our infrastructure: our first NVIDIA Vera Rubin racks are here a...",
+      "summary": "RT @udayruddarraju: A milestone for our infrastructure: our first NVIDIA Vera Rubin racks are here and now running our training stack. This\u2026",
+      "content": "RT @udayruddarraju: A milestone for our infrastructure: our first NVIDIA Vera Rubin racks are here and now running our training stack. This\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-20T18:51:30Z",
+      "fetched_at": "2026-08-21T07:22:10.266151Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "17e6f5899e79b1f9",
+      "url": "https://x.com/dani_avila7/status/2090484072191529321",
+      "title": "Yes, this post is from today!\n\nI was just starting to work on the Telemetry Copilot sends, and then ...",
+      "summary": "Yes, this post is from today!\n\nI was just starting to work on the Telemetry Copilot sends, and then I came across this\n\nThis is going to be a week that goes down in GitHub history https://t.co/ctMWHHtmDa",
+      "content": "Yes, this post is from today!\n\nI was just starting to work on the Telemetry Copilot sends, and then I came across this\n\nThis is going to be a week that goes down in GitHub history https://t.co/ctMWHHtmDa",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T17:00:16Z",
+      "fetched_at": "2026-08-21T07:22:08.219090Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d575cd08f36d60db",
+      "url": "https://x.com/dani_avila7/status/2090460687105421596",
+      "title": "I\u2019ve been using CapCut to edit my videos lately, and having Seedance 2.5 directly inside the app mak...",
+      "summary": "I\u2019ve been using CapCut to edit my videos lately, and having Seedance 2.5 directly inside the app makes the workflow so much better\n\nI can edit and generate in the same place, with official Seedance 2.5 access, zero wait, and starting at just $0.06/sec\n\nReally convenient if you\u2019re https://t.co/ZYlAl2d40D",
+      "content": "I\u2019ve been using CapCut to edit my videos lately, and having Seedance 2.5 directly inside the app makes the workflow so much better\n\nI can edit and generate in the same place, with official Seedance 2.5 access, zero wait, and starting at just $0.06/sec\n\nReally convenient if you\u2019re https://t.co/ZYlAl2d40D",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T15:27:21Z",
+      "fetched_at": "2026-08-21T07:22:08.219136Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8bffbaa9d343da2d",
+      "url": "https://x.com/dani_avila7/status/2090439489235652852",
+      "title": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t...",
+      "summary": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
+      "content": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T14:03:07Z",
+      "fetched_at": "2026-08-21T07:22:08.219190Z",
       "score": null,
       "score_reason": "",
       "tier": "",
