@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-27T10:22:14.300427+00:00",
+  "exported_at": "2026-08-27T12:22:35.181944+00:00",
   "period_hours": 168,
-  "total": 2663,
+  "total": 2660,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -26258,25 +26258,6 @@
       "author": "AI Engineer",
       "published_at": "2026-08-20T13:30:38Z",
       "fetched_at": "2026-08-20T14:55:14.823305Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5b9c20affb21092b",
-      "url": "https://www.youtube.com/watch?v=i1ZmNUbRGD4",
-      "title": "AI Agents vs Business Rules: Which Should Make Decisions?",
-      "summary": "Learn more about AI Agents here \u2192 https://ibm.biz/~gNNWReB6j\n\nLearn more about Business Rules here \u2192 https://ibm.biz/~lrQSK6oLV\n\nShould AI agents replace business rules engines? Martin Keen explains the difference between deterministic business rules and probabilistic AI agents in enterprise decision making. Learn when to use rules, agents, guardrails, and human oversight to automate decisions effectively.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~rNV9L2AzL\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#ai #aiagents #businessrules #llm #aiautomation",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-20T11:00:34Z",
-      "fetched_at": "2026-08-20T13:11:22.003758Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55927,27 +55908,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3e05625c5f1daa5c",
-      "url": "https://arxiv.org/abs/2608.19889v1",
-      "title": "Write Once, Run Everywhere: The Axon DSL for Shape-Safe and Framework-Agnostic LLM Architectures",
-      "summary": "The entire ecosystem of open-source language models effectively relies on a single platform. What if this platform was forced to shut down tomorrow? Implementing and maintaining efficient model definitions and translating them between different training and inference regimes is a resource-heavy task that severely limits model efficiency and portability, hindering both scaling and deployment. Here, we present Axon, a strongly typed domain-specific language with Haskell-like syntax, that enables a write-once, run everywhere paradigm for LLM architectures. By basing collaboration on a language specification rather than a specific framework's vision, Axon fosters open cooperation and empowers researchers to implement highly specialized architectures without giving up optimization infrastructure or accepting deployment lock-in. Axon allows for concise, auditable specifications that can be automatically compiled to standalone implementations for leading frameworks: PyTorch, PyTorch with Triton, JAX, MLX and vLLM. In 467 inference benchmarking experiments on models ranging from 135M to 32B parameters, we demonstrate median speedups of 7% on PyTorch, 12% on PyTorch with Triton, 91% on JAX, and 107% on MLX, compared to the reference implementations from Transformers. When deployed as native vLLM architectures with PagedAttention and KV-cache, Axon models achieve a 58% median speedup over Transformers implementations.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Peter Schneider-Kamp",
-      "published_at": "2026-08-20T10:56:34Z",
-      "fetched_at": "2026-08-21T03:16:38.568717Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "896da3528f086579",
       "url": "https://www.anthropic.com/events/claude-founder-house-london",
       "title": "Claude Founder House London",
@@ -57740,26 +57700,6 @@
       "author": "dani_avila7",
       "published_at": "2026-08-26T17:41:21Z",
       "fetched_at": "2026-08-27T08:21:41.928677Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8d87575c83bd8f77",
-      "url": "https://x.com/sama/status/2090349385007710318",
-      "title": "RT @Replit: Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet\u2019s make intelligence accessible ...",
-      "summary": "RT @Replit: Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet\u2019s make intelligence accessible to everyone. https://t.co/UDcrYl5HZL",
-      "content": "RT @Replit: Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet\u2019s make intelligence accessible to everyone. https://t.co/UDcrYl5HZL",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-08-20T08:05:04Z",
-      "fetched_at": "2026-08-20T11:07:40.791691Z",
       "score": null,
       "score_reason": "",
       "tier": "",
