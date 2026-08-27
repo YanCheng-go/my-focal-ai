@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-08-27T09:50:51.550298+00:00",
+  "exported_at": "2026-08-27T10:22:14.300427+00:00",
   "period_hours": 168,
   "total": 2663,
   "all_tags": [
@@ -55948,27 +55948,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9b43bad56ad90f96",
-      "url": "https://arxiv.org/abs/2608.19863v1",
-      "title": "Listening Forward: Next Patch Embedding Prediction Enables Scalable Audio Learners",
-      "summary": "Self-supervised learning (SSL) has driven substantial progress in audio representation learning, though existing methods have increasingly relied on elaborate pre-training recipes to reach competitive performance. A markedly different pre-training philosophy underpins the most influential progress in language modeling and, more recently, in visual representation learning: rather than train encoders as static feature extractors, models are trained to predict the next element, a discrete token or a continuous embedding, from the preceding context. Autoregressive prediction thereby provides a unified pre-training interface that transfers across modalities, compelling the model to learn the underlying data distribution. We ask whether such a simple causal paradigm can yield strong audio learners, given that audio's temporal structure makes autoregressive prediction of patch embeddings a natural fit. We introduce NAPE (Next-Audio-Patch-Embedding prediction), a self-supervised framework in which a causal Transformer predicts each next patch embedding of a log-mel spectrogram from the previous ones, using causal masking and stop-gradient as its sole training signal. The design is intentionally minimalist, avoiding reconstruction decoders, acoustic tokenizers, student-teacher setups, and auxiliary regularization losses. Across six audio and speech benchmarks, NAPE achieves state-of-the-art fine-tuning performance on several tasks, scales consistently across encoder sizes, and yields strong linear-probing results. NAPE also produces structured attention patterns without explicit supervision.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Maja Pantic",
-      "published_at": "2026-08-20T10:16:07Z",
-      "fetched_at": "2026-08-21T03:16:38.568726Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "896da3528f086579",
       "url": "https://www.anthropic.com/events/claude-founder-house-london",
       "title": "Claude Founder House London",
@@ -57761,6 +57740,26 @@
       "author": "dani_avila7",
       "published_at": "2026-08-26T17:41:21Z",
       "fetched_at": "2026-08-27T08:21:41.928677Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8d87575c83bd8f77",
+      "url": "https://x.com/sama/status/2090349385007710318",
+      "title": "RT @Replit: Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet\u2019s make intelligence accessible ...",
+      "summary": "RT @Replit: Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet\u2019s make intelligence accessible to everyone. https://t.co/UDcrYl5HZL",
+      "content": "RT @Replit: Replit Free Mode, powered by @OpenAI GPT-5.6 Luna. \n\nLet\u2019s make intelligence accessible to everyone. https://t.co/UDcrYl5HZL",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-20T08:05:04Z",
+      "fetched_at": "2026-08-20T11:07:40.791691Z",
       "score": null,
       "score_reason": "",
       "tier": "",
