@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-27T12:22:35.181944+00:00",
+  "exported_at": "2026-08-27T14:23:02.476141+00:00",
   "period_hours": 168,
-  "total": 2660,
+  "total": 2652,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12261,26 +12261,6 @@
       "author": "AI Engineer",
       "published_at": "2026-08-20T14:30:38Z",
       "fetched_at": "2026-08-20T14:55:14.823275Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a730f194f2e03426",
-      "url": "https://www.youtube.com/watch?v=bdHaOXZOhcM",
-      "title": "Prototyping as Leadership: How a CTO Ships with AI Agents \u2014 Hursh Agrawal, The Browser Company",
-      "summary": "Fifteen recurring meetings a week, seven direct reports, a toddler at home, and somewhere inside that Hursh Agrawal ships between two and ten pull requests. It was not possible a year ago. His argument is that the manager schedule has quietly become usable as building time, which makes building part of a leadership job rather than a hobby squeezed around the edges of one.\n\nThe reasoning is less about output than calibration. Frontier models turn over every few months and nobody can reliably tell you what a new one is good for, so a leader without hands on time ends up relaying opinions from Twitter. Building also solves a communication problem, since showing engineers a working prototype beats arguing about capability every quarter. He thinks leaders are unusually well suited to it as well, because they hold the most business context and their steering is therefore worth more per token than an engineer's.\n\nThe mechanics come down to a single overnight loop. A coworker agent wired into Slack and the issue tracker spends twenty minutes assembling context into a prompt, that gets handed to a coding agent at five in the evening, and the morning block goes on reviewing whatever came back. He runs it to build features, to hill climb prompts against eval sets assembled from a handful of feedback dumps, and to train small classifiers end to end. The caveats are real. It only works on top of trustworthy CI, feature flags, and a prototype branch, and he is candid that his own code has caused incidents.\n\nSpeaker info:\n- https://twitter.com/hursh\n- https://www.linkedin.com/in/hurshagrawal\n- https://www.hurshagrawal.com\n\nTimestamps:\n0:00 - A manager's calendar, and why building became the job\n2:44 - Judging a new model, and showing rather than arguing\n4:25 - Execution is solved, judgment is not\n5:16 - Four things leaders should build, and one to avoid\n6:05 - The daily shape, and why 5pm matters most\n6:56 - Building a feature overnight, and assembling the prompt\n9:28 - Verification, PR hygiene, and the morning report\n11:16 - Hill climbing a feature from a few feedback dumps\n13:47 - Training a classifier overnight\n15:27 - Pushing task scope, and the scaffolding it needs\n17:06 - Never add reviewers to code you have not read",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-20T14:00:21Z",
-      "fetched_at": "2026-08-20T14:55:14.823294Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -26140,26 +26120,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9f455fb9e6d7039c",
-      "url": "https://www.youtube.com/watch?v=tgjYMym_0-c",
-      "title": "Sell These 5 Most In Demand AI Automations in 2026",
-      "summary": "$100 in BONUS Hyperagent credits: https://www.hyperagent.com/nate100\nMy playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=top5-automations&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI researched recent surveys, marketplaces, job listings, case studies, and online communities to find five AI automations businesses are actually buying. \n\nIn this video, I break down the demand behind each workflow, what I would build for a portfolio, the guardrails and metrics that matter, and which project I would start with as a beginner. I also explain why one relevant, industry specific project can build more trust than dozens of generic demos.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Ranking Criteria & Lead Qualification\n2:01 Customer Support\n3:09 Hyperagent\n4:08 Voice AI Reception\n5:37 Document Processing\n6:56 Employee Onboarding\n8:02 Process Discovery\n8:59 Build a Specialist Portfolio",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-08-20T13:38:39Z",
-      "fetched_at": "2026-08-20T14:55:14.583987Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bedd087515029ce4",
       "url": "https://arxiv.org/abs/2608.24310",
       "title": "OPDSearch+: On-Policy Distillation with RL Refinement for Search-Augmented Reasoning",
@@ -26238,26 +26198,6 @@
       "author": "Houcheng Jiang, Boxuan Zhang, Qiyong Zhong, Junfeng Fang, Xiang Wang, Xiangnan He",
       "published_at": "2026-08-26T04:00:00Z",
       "fetched_at": "2026-08-26T04:56:19.149349Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "745e9369691f1f3b",
-      "url": "https://www.youtube.com/watch?v=s-aixZYJG4c",
-      "title": "The Last Human Code Review: Building Trust in AI-Generated Code \u2014 Itamar Friedman, Qodo",
-      "summary": "If you are shipping AI generated code faster than your humans can review it, Itamar Friedman's position is that you are inside the problem rather than ahead of it. He asks the room whether developers will still be reading diffs line by line by the end of the year, then reports finding two incompatible camps among engineering leaders the night before: one holding that every line must be human trusted, the other content to ship bugs and fix them quickly because velocity wins. Which camp you sit in decides what you have to build.\n\nHis claim is that models stopped being the constraint. Code review benchmarks have barely moved across recent model releases, and the difference between a review that catches a real contract break and one that asks whether you considered error handling is context, not reasoning. That context is scattered across competing instruction files, differs between teams inside the same company, and largely is not written down at all, living instead in senior developers' heads and in Slack threads. Codifying it means building for two audiences at once, because the format an agent parses cleanly is not the format developers will actually maintain. The deeper version encodes the architecture itself, including which service contract broke production three months ago, so that review shifts from reading one pull request to reading a graph and noticing that three changes in flight are about to collide.\n\nSpeaker info:\n- https://twitter.com/itamar_mar\n- https://www.linkedin.com/in/itamarf\n- https://www.qodo.ai/authors/itamar-f\n\nTimestamps:\n0:00 - Where the bottleneck moved, and why code review exists\n3:38 - Two camps: trust every line, or ship and fix fast\n5:19 - Models are not the barrier, context is\n7:03 - Context scattered across competing instruction files\n8:48 - The knowledge lives in heads and in Slack\n9:42 - Codifying for agents and humans at once\n10:34 - Interfaces for both: rules shown, and a note to the next agent\n12:19 - Fewer human comments as the readiness signal\n13:11 - Encoding architecture, contracts, and past outages\n14:05 - Automatic approve and block, added gradually\n16:38 - Reviewing the software graph instead of the PR",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-20T13:30:38Z",
-      "fetched_at": "2026-08-20T14:55:14.823305Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -37249,27 +37189,6 @@
       "author": "Sebastian Ehlert, Stefano Battaglia, Thijs Vogels, Jan Hermann, Jens Wehner, Giulia Luise, Klaas Giesbertz, Chin-Wei Huang, Aaron Kaplan, Kate Milton, Stephanie Marisa Lanius, Derk Kooi, P. Bern&aacute;t Szab&oacute;, Gregor Simm, Rianne van den Berg, Paola Gori Giorgi",
       "published_at": "2026-08-20T16:00:00Z",
       "fetched_at": "2026-08-20T16:50:53.883195Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0557db4024a130d0",
-      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-firefox/",
-      "title": "Bring the Fire: Play Games on GeForce NOW With New Firefox Browser Support",
-      "summary": "It\u2019s a new way into the cloud.\u00a0 GeForce NOW welcomes Firefox support to the cloud, opening up another way to jump into high-performance PC gaming straight from the browser, starting today. Whether on a school laptop or everyday PC, it\u2019s now even easier to play supported PC games without downloading a dedicated app. Plus, discover [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">It\u2019s a new way into the cloud.\u00a0</span></p>\n<p><a href=\"https://www.nvidia.com/en-us/geforce-now/\" target=\"_blank\"><span style=\"font-weight: 400;\">GeForce NOW</span></a><span style=\"font-weight: 400;\"> welcomes Firefox support to the cloud, opening up another way to jump into high-performance PC gaming straight from the browser, starting today. Whether on a </span><a href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-back-to-school-2026/\"><span style=\"font-weight: 400;\">school laptop</span></a><span style=\"font-weight: 400;\"> or everyday PC, it\u2019s now even easier to play supported PC games without downloading a dedicated app.</span></p>\n<p><span style=\"font-weight: 400;\">Plus, discover 12 new games streaming from the </span><a href=\"https://www.nvidia.com/en-us/geforce-now/games/\" target=\"_blank\"><span style=\"font-weight: 400;\">GeForce NOW library</span></a><span style=\"font-weight: 400;\"> this week, led by </span><i><span style=\"font-weight: 400;\">Gallipoli</span></i><span style=\"font-weight: 400;\">.\u00a0</span></p>\n<h2><b>No Downloads. Just Firefox.</b></h2>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_97801\" style=\"width: 1200px;\"><a href=\"https://blogs.nvidia.com/wp-content/uploads/2026/08/gfn-firefox-browser-visual-kv-3840x2160-no-logo-1-scaled.jpg\"><img alt=\"GeForce NOW on Firefox\" class=\"size-large wp-image-97801\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/08/gfn-firefox-browser-visual-kv-3840x2160-no-logo-1-1680x945.jpg\" width=\"1200\" /></a><figcaption class=\"wp-caption-text\" id=\"caption-attachment-97801\">This cloud is on fire with new ways to play on Firefox.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">GeForce NOW is now </span><a href=\"https://blog.mozilla.org/en/firefox/firefox-nvidia-geforce-now-partnership/\" target=\"_blank\"><span style=\"font-weight: 400;\">supported on Firefox</span></a><span style=\"font-weight: 400;\">, expanding access across even more devices.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Members can outfox big downloads and jump into high-performance PC gaming directly from the browser \u2014 no waiting on lengthy game installs or updates. The experience delivers GeForce RTX-powered performance at up to 1440p and 120 frames per second for GeForce NOW Ultimate members.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Simply download the </span><a href=\"https://www.firefox.com/en-US/landing/geforce-now/?utm_source=nvidia&amp;utm_medium=referral&amp;utm_campaign=firefox-geforce-now\" target=\"_blank\"><span style=\"font-weight: 400;\">latest version of Firefox</span></a><span style=\"font-weight: 400;\">, head to </span><a href=\"https://play.geforcenow.com\" target=\"_blank\"><span style=\"font-weight: 400;\">play.geforcenow.com</span></a><span style=\"font-weight: 400;\"> and start playing. The cloud handles the heavy lifting, so games are ready to play without taking up valuable storage space on the device. Firefox joins Chrome, Edge and Opera in supporting GeForce NOW on Windows browsers.</span></p>\n<h2><b>Deploy the Games</b></h2>\n<p></p>\n<p><span style=\"font-weight: 400;\">Land on the beaches of the Gallipoli Peninsula in BlackMill Games\u2019 </span><i><span style=\"font-weight: 400;\">Gallipoli</span></i><span style=\"font-weight: 400;\">, the latest entry in the WW1 Game Series. Fight as soldiers of the British and Ottoman Empires in intense 25v25 objective-based battles across coastal shores, deserts and urban battlefields, with 10 historical classes and over 50 authentic weapons and equipment options.</span></p>\n<p><span style=\"font-weight: 400;\">Teamwork is key in its grounded, one-shot-one-kill combat. Take command as an Officer, provide cover as a Heavy Machine Gunner or Sniper, keep the squad going as a Stretcher Bearer and more while navigating challenging campaigns.</span></p>\n<p><span style=\"font-weight: 400;\">Head to the frontlines from the cloud with no lengthy game downloads or installs taking up local storage space. Play directly in the newly supported Firefox browser, or take the action across PCs, Macs, Chromebooks, handhelds and more with GeForce NOW cloud saves.</span></p>\n<p><span style=\"font-weight: 400;\">In addition, members can look for the following games streaming throughout the week:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Stars Reach</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/1925650?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Aug. 18)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">The Sinking City 2</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/2825860?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Aug. 18)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Gallipoli</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/3065940?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Aug. 20)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">DIVE or DIE &#8211; Children of Rain</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/3590290?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Escape the Backroom</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.xbox.com/games/store/escape-the-backrooms/9mw15l8frt9p?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Hell Is Us</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.xbox.com/games/store/hell-is-us/9n9097g0xzmb?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">High on Life</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/1583230?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">High on Life 2</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/2069250?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.xbox.com/games/store/high-on-life-2/9nf6xpsbttgb?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Parcel Simulator</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/2424010?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Starvester</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/4194800?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">The Thaumaturge</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.xbox.com/games/store/the-thaumaturge/9mzzzchz26nk?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, available on Game Pass)</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Tomb Raider IV-VI Remastered</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://www.epicgames.com/store/p/tomb-raider-ivvi-remastered-0be789?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Epic Games Store</span></a><span style=\"font-weight: 400;\">)</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Dates listed above reflect when games are released on their respective stores. GeForce NOW availability may vary, as games are onboarded after release and added throughout the week. Keep an eye on GeForce NOW channels and GFN Thursdays for availability updates on announced titles.</span></p>\n<p><span style=\"font-weight: 400;\">To try GeForce NOW in Firefox, start with a GeForce NOW </span><a href=\"https://www.nvidia.com/en-us/geforce-now/?ncid=pa-srch-goog-673352&amp;gad_source=1&amp;gad_campaignid=23934057100&amp;gbraid=0AAAAAD4XAoGnE9lpVE2P7s2w402M9Z88O&amp;gclid=CjwKCAjwmozTBhAeEiwAkEGZzpLVIofm6Fb8NkgPbRUdjDh1f44tfDuIuNq5ZpkT2XfbB6EbuKByaxoCmzsQAvD_BwE\" target=\"_blank\"><span style=\"font-weight: 400;\">day pass</span></a><span style=\"font-weight: 400;\"> and experience premium cloud gaming directly from the browser. If members later upgrade to a Performance or Ultimate membership, the cost of the day pass can be applied toward the first membership purchase.</span></p>\n<p><span style=\"font-weight: 400;\">What are you planning to play this weekend? Let us know on </span><a href=\"https://www.twitter.com/nvidiagfn\" target=\"_blank\"><span style=\"font-weight: 400;\">X</span></a><span style=\"font-weight: 400;\"> or in the comments below.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "GeForce NOW Community",
-      "published_at": "2026-08-20T13:00:24Z",
-      "fetched_at": "2026-08-20T13:11:25.669196Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55824,90 +55743,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "703ddefc7d3a8e35",
-      "url": "https://arxiv.org/abs/2608.20083v1",
-      "title": "SABET-QA: Temporal Knowledge Graph Question Answering",
-      "summary": "Question Answering over Temporal Knowledge Graphs (TKGQA) requires reasoning over time-sensitive facts, yet existing embedding-based methods struggle with multi-step queries due to single-pass reasoning pipelines. We propose SABET-QA, a framework that iteratively refines reasoning states across multiple hops via a bidirectional entity-temporal scoring mechanism and a slot-aware contextualization module that aligns question semantics with temporal KG embeddings. A differentiable working memory enables progressive hypothesis refinement, while auxiliary temporal boundaries serve as coarse supervision when available. Experiments on CronQuestions, Complex-CronQuestions, MultiTQ, and TimeQuestions demonstrate consistent improvements over strong baselines, particularly on complex multi-step temporal queries.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Dmitry Akulov",
-      "published_at": "2026-08-20T14:16:35Z",
-      "fetched_at": "2026-08-21T03:16:38.956284Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5773890b464b1425",
-      "url": "https://arxiv.org/abs/2608.20061v1",
-      "title": "Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts",
-      "summary": "Mixture-of-Experts (MoE) architectures significantly expand model capacity without a proportional increase in computational cost. However, optimizing their hyperparameters---particularly the learning rate---at extreme scales of both model size and token budget via sweeping remains computationally prohibitive. In this paper, we propose a compute-efficient, two-step hyperparameter transfer framework that estimates optimal learning rates for training large MoE models by transferring them across scaling model widths, and subsequently extrapolating to trillion-token horizons. First, we formulate a Maximal Update Parameterization ($\u03bc$P) adaptation for MoE architectures utilizing Multi-head Latent Attention (MLA) and the Muon optimizer, demonstrating that optimal learning rates transfer consistently across width-scaled models. Second, we extend this transferability along the token dimension by establishing a predictive scaling law. By applying linear regression to the optimal values derived from small proxy models on limited budgets, we successfully extrapolate the ideal learning rate to massive training horizons (e.g., 10 trillion tokens) with high fidelity ($R^2=0.95$). Consequently, this indicates that proxy training on small models is sufficient to determine the optimal learning rate for the extensive training of large-scale MoEs. We apply the proposed methodology to pretrain our foundation model (155B total, 17B active parameters) from scratch, and the stable training and evaluation results validate that optimal configurations for full-scale target models can be accurately predicted with minimal ablation costs.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Boseop Kim",
-      "published_at": "2026-08-20T13:57:43Z",
-      "fetched_at": "2026-08-21T03:16:38.956292Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5d426297f860db6d",
-      "url": "https://arxiv.org/abs/2608.20047v1",
-      "title": "Auditing Cross-Lingual Fairness in Language Model Watermarking",
-      "summary": "Watermarking schemes for large language model output are evaluated almost exclusively on English text using each scheme's detection threshold and a narrow set of quality measurements. Multilingual deployment exposes evaluation-design choices that are inconsequential on English but determine conclusions cross-lingually. We propose an evaluation framework with four components: detection thresholds calibrated empirically per deployment context, a threshold-independent companion measurement that distinguishes calibration failures from detection failures, three disjoint quality measurement paradigms (distributional, paired-semantic, and reference-perplexity), and a generalized-entropy decomposition of cross-language disparity over a typological family partition. Applied to six watermarking schemes, three open-weight generators, eleven languages spanning four scripts and eight typological families, and both base and instruction-tuned regimes, the framework reveals failure modes that single-language single-paradigm evaluation cannot surface. Across detection and quality, observed disparity is predominantly between-family on the typological partition, indicating that cross-lingual fairness gaps in watermarking are structural to language properties rather than idiosyncratic to particular languages.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Erman Ayday",
-      "published_at": "2026-08-20T13:48:12Z",
-      "fetched_at": "2026-08-21T03:16:38.956299Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6ca58981d8b125b5",
-      "url": "https://arxiv.org/abs/2608.19966v1",
-      "title": "Rethinking Patch Based Multivariate Time Series Forecasting with Semantic Structured Partitioning",
-      "summary": "Multivariate time series forecasting (MTSF) is a fundamental task in many real world applications. Existing patch based forecasting methods generally fall into three categories: fixed partitioning, multi-scale partitioning, and extendable partitioning. Fixed partitioning often breaks meaningful temporal boundaries, multi-scale partitioning may introduce redundant representations across scales, and extendable partitioning improves flexibility but still lacks an explicit mechanism for organizing semantic structure and modeling interactions among heterogeneous temporal patterns. To address these limitations, we propose SCPaT, a Transformer based framework built on semantic structured partitioning. SCPaT first decomposes input sequences into semantically consistent units through adaptive semantic unit generation, then constructs a dynamic semantic graph to model directed dependencies among these units and organize them into higher order semantic blocks. Based on these structured representations, an importance aware routing mechanism adaptively dispatches different semantic blocks to different experts for customized modeling. Extensive experiments on 12 real world datasets demonstrate the effectiveness of SCPaT.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Ruijuan Zheng",
-      "published_at": "2026-08-20T12:38:43Z",
-      "fetched_at": "2026-08-21T03:16:38.568708Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "896da3528f086579",
       "url": "https://www.anthropic.com/events/claude-founder-house-london",
       "title": "Claude Founder House London",
@@ -55922,26 +55757,6 @@
       "author": "",
       "published_at": "2026-09-23T00:00:00Z",
       "fetched_at": "2026-08-07T00:16:15.061179Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "744a78818ab9d7b3",
-      "url": "https://x.com/dani_avila7/status/2090421559349449197",
-      "title": "Who needs an IDE when you have Slack?",
-      "summary": "Who needs an IDE when you have Slack?",
-      "content": "Who needs an IDE when you have Slack?",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-20T12:51:52Z",
-      "fetched_at": "2026-08-20T13:20:48.632033Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -56166,26 +55981,6 @@
       "author": "dani_avila7",
       "published_at": "2026-08-20T15:27:21Z",
       "fetched_at": "2026-08-21T07:22:08.219136Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8bffbaa9d343da2d",
-      "url": "https://x.com/dani_avila7/status/2090439489235652852",
-      "title": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t...",
-      "summary": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
-      "content": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-20T14:03:07Z",
-      "fetched_at": "2026-08-21T07:22:08.219190Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -57700,6 +57495,47 @@
       "author": "dani_avila7",
       "published_at": "2026-08-26T17:41:21Z",
       "fetched_at": "2026-08-27T08:21:41.928677Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5cdb40377d877462",
+      "url": "https://x.com/GeminiApp/status/2092979851561173250",
+      "title": "RT @Google: The @GeminiApp can transform your questions and complex topics into custom and interacti...",
+      "summary": "RT @Google: The @GeminiApp can transform your questions and complex topics into custom and interactive visualizations \u2014 directly within you\u2026",
+      "content": "RT @Google: The @GeminiApp can transform your questions and complex topics into custom and interactive visualizations \u2014 directly within you\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-27T14:17:36Z",
+      "fetched_at": "2026-08-27T14:22:54.402523Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8bffbaa9d343da2d",
+      "url": "https://x.com/dani_avila7/status/2090439489235652852",
+      "title": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t...",
+      "summary": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
+      "content": "I love the Claude Managed Agent email that lets you know your API key is about to expire \ud83d\udc4f https://t.co/D8Lv55OLMT",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-20T14:03:07Z",
+      "fetched_at": "2026-08-21T07:22:08.219190Z",
       "score": null,
       "score_reason": "",
       "tier": "",
