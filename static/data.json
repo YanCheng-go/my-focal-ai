@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-08-28T18:55:34.169983+00:00",
+  "exported_at": "2026-08-28T22:15:16.433529+00:00",
   "period_hours": 168,
   "total": 2826,
   "all_tags": [
@@ -37232,29 +37232,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "31d0f6b1d6dddfa7",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
-      "title": "v2.1.239",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Cost estimates (<code>/cost</code>, status line, <code>--max-budget-usd</code>) now include the 1.1\u00d7 US-only-inference premium for data-residency workspaces</li>\n<li>Added the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start in fullscreen</li>\n<li>Added <code>/claude-api upgrade</code> to migrate Python projects from <code>anthropic</code> 0.x to 1.x, and updated the skill's Python reference for 1.x (timeouts use <code>anthropic.Timeout</code>, not <code>httpx.Timeout</code>)</li>\n<li>Cloud sessions: plugins synced from claude.ai now show as <code>name@synced</code>, work with <code>claude plugin enable/disable &lt;name&gt;@synced</code>, and never override a same-named plugin you installed</li>\n<li>Alpine/musl builds: native image paste, clipboard, and audio-capture add-ons now load (musl-built binaries instead of glibc ones refused by the runtime)</li>\n<li>The usage-limit message shown when your monthly spend limit is already used up now also says when your session or weekly limit resets</li>\n<li>Fixed Bedrock streaming behind proxies that strip the response Content-Type header, which silently doubled billed API calls by re-running every turn non-streaming</li>\n<li>Fixed Claude Code hanging at startup behind an HTTPS proxy when using Bedrock with an SSO profile and <code>awsAuthRefresh</code> \u2014 the credential pre-check now honors <code>HTTPS_PROXY</code></li>\n<li>Fixed a raw crash dump when starting Claude Code from a directory that no longer exists; it now prints a clear message</li>\n<li>Fixed Edit and Write calls pausing for about 5 seconds in JetBrains IDE terminals when the Claude Code plugin is connected</li>\n<li>Fixed a race where pressing Esc with a prompt queued could let the next turn finish early, leaving the session idle while Claude was still working and letting a later resubmit repeat actions</li>\n<li>Fixed WebFetch retaining expired page content in memory for the whole session instead of the intended 15 minutes</li>\n<li>Fixed cloud sessions (Claude Code on the web, desktop and mobile apps) resuming out of plan mode after an idle worker restart</li>\n<li>Fixed MCP elicitation forms taller than the terminal being clipped in fullscreen mode: the form now fits the window, with hidden fields reachable by scrolling and Accept/Decline always visible</li>\n<li>Fixed remote MCP servers staying failed after a transient 5xx on a mid-session reconnect in cloud sessions or via SDK <code>setMcpServers()</code></li>\n<li>Fixed custom session titles disappearing from <code>/resume</code> after more than ~64 KB of conversation was written following the rename</li>\n<li>Fixed <code>claude -c</code>/resume picking up sessions from a different directory whose path differed only by characters like <code>_</code>, <code>-</code>, or <code>.</code></li>\n<li>Fixed <code>/resume</code> and the agents view showing a session as recently changed (and reordering it) when only its file was touched or it was merely reopened</li>\n<li>Fixed <code>/resume</code> in all-projects mode telling you to <code>cd</code> into a deleted directory (e.g. a removed worktree); such sessions now resume in the current directory</li>\n<li>Fixed the <code>dark-ansi</code> theme rendering expanded tool results in fullscreen mode with text the same color as the background</li>\n<li>Fixed the fullscreen renderer prompt reappearing on every launch when it could never be answered; it now stops after being shown on three launches</li>\n<li>Fixed <code>.worktreeinclude</code> patterns starting with <code>**/</code> silently matching nothing when the target lived in a gitignored directory</li>\n<li>Fixed agents, skills, and commands whose <code>.md</code> file starts with a UTF-8 BOM being silently ignored</li>\n<li>Fixed <code>/insights</code> echoing literal <code>&lt;message&gt;</code> tags in its response on some models</li>\n<li>Fixed marketplace <code>metadata.pluginRoot</code> having no effect: bare plugin source names now resolve under it as the docs describe</li>\n<li>Fixed mouse movement in browser-based terminals inserting text like <code>\"35;150;7M\"</code> into the prompt when a mouse report arrived split across writes</li>\n<li>Fixed custom theme overrides for the effort/ultracode status badge colors being ignored</li>\n<li>Fixed OpenTelemetry trace fragmentation: tool executions deferred by a <code>PreToolUse</code> hook now resume in the original turn's trace instead of starting a new trace</li>\n<li>Fixed vim mode in the agent view: Escape now switches to NORMAL mode and keeps your text instead of clearing the prompt</li>\n<li>Fixed the <code>selection:copy</code> keybinding silently dropping a text selection that had been extended with Shift+Arrow keys</li>\n<li>Fixed the <code>/voice</code> startup tip still appearing after voice dictation was enabled via the <code>voice.enabled</code> setting</li>\n<li>Fixed shell-mode (<code>!</code>) Tab completion dropping the <code>./</code> from a <code>./script</code> path, which left a command the shell couldn't run</li>\n<li>Fixed fullscreen mode answering a permission prompt or pressing a button when you clicked the terminal window only to bring it back into focus</li>\n<li>Fixed slash-command panels (e.g. <code>/config</code>, <code>/model</code>) in fullscreen mode covering the latest messages; the conversation now stays pinned above the panel</li>\n<li>Fixed the <code>/workflows</code> detail dialog overflowing the terminal and losing its header off-screen when opened while Claude is still responding</li>\n<li>Fixed the Linux sandbox making a nonexistent <code>.git/config.worktree</code> unreadable, which broke every sandboxed git command in repos with <code>extensions.worktreeConfig</code> set</li>\n<li>Fixed hooks failing with \"posix_spawn ENOENT\" after the session's working directory was deleted; they now run from the project root or home directory instead</li>\n<li>Fixed <code>claudeMdExcludes</code> not excluding a symlinked <code>.claude/rules</code> file when the pattern names the rules directory or the symlink rather than its target</li>\n<li>Fixed runaway session-title syncing to Remote Control when two Claude Code processes shared one background job's state (2.1.232 regression); title updates are now deduplicated and rate-limited</li>\n<li>Fixed sessions whose title starts with <code>/</code> being unaddressable by <code>SendMessage</code> and shown as \"(untitled)\" in <code>ListAgents</code></li>\n<li>Fixed Ctrl+W, Ctrl+U, Ctrl+K, Option+Backspace, Option+D and vim <code>df</code>/<code>dt</code> leaving a broken <code>[Pasted text #N]</code> placeholder when the cursor was inside it</li>\n<li>Fixed masked (password-style) inputs such as the login code field letting their text be pasted back with Ctrl+Y elsewhere or saved to prompt history when cleared with double Esc</li>\n<li>Fixed Ctrl+Backspace deleting one character instead of a word in search boxes</li>\n<li>Fixed a request rejected by an organization policy check being re-sent before the rejection was shown</li>\n<li>Improved the reminder shown after compaction so a skill's original arguments are not re-run as a new request</li>\n<li>Long file paths on tool-use rows now truncate in the middle to stay on one line</li>\n<li>Remote sessions keep sending keep-alives while a long <code>SessionStart</code> or <code>Setup</code> hook runs, so the container is not idle-reaped mid-hook</li>\n<li><code>/goal</code>: repeat check-ins on long-running background work now back off (30 min, then 1 h, then every 2 h) instead of repeating every 30 minutes</li>\n<li><code>/goal</code>: resuming a session from the <code>claude --resume</code> picker now restores its active goal</li>\n<li><code>ListAgents</code> now tells a session its own name (the one peers use to message it), and <code>SendMessage</code> to your own name says so instead of \"no agent named \u2026\"</li>\n<li><code>ListAgents</code> and <code>/list-agents</code> now list your live teammates (previously only subagents and other sessions appeared, so a reachable teammate looked absent)</li>\n<li><code>keybindingFlavor: \"readline\"</code> now also matches Bash for word keys: Alt+F and Ctrl/Option+\u2192 stop at the end of the word, Alt+D deletes to it (Ctrl+Y pastes it back), and punctuation separates words</li>\n<li>Persistent retry mode (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) now fails immediately on organization spend-limit and out-of-credits errors instead of waiting indefinitely for a reset</li>\n<li>Claude in Chrome: <code>/clear</code> now closes the session's Chrome tab group, and empty groups are closed on <code>/resume</code> and when Claude Code exits</li>\n<li>Remote sessions: images uploaded from mobile now include their saved file path, so Claude can copy them into files it creates</li>\n<li>Claude Code on the web: requests from Bash and other tools to non-API anthropic.com hosts (e.g. www, docs) now go through the session's network proxy, so your environment's allowed domains apply</li>\n<li>Remote Control: clearer message and <code>claude doctor</code> wording when Remote Control isn't enabled for your account</li>\n<li>Windows: cross-session messaging is now available, so Claude Code sessions across your machines can message each other with <code>SendMessage</code> and find each other with <code>ListAgents</code>, as on macOS and Linux</li>\n<li>[VSCode] \"View usage\" in the usage-limit banner now sits inline with the warning text instead of floating mid-banner</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Cost estimates (<code>/cost</code>, status line, <code>--max-budget-usd</code>) now include the 1.1\u00d7 US-only-inference premium for data-residency workspaces</li>\n<li>Added the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry and other previously excluded setups; new installs there now start in fullscreen</li>\n<li>Added <code>/claude-api upgrade</code> to migrate Python projects from <code>anthropic</code> 0.x to 1.x, and updated the skill's Python reference for 1.x (timeouts use <code>anthropic.Timeout</code>, not <code>httpx.Timeout</code>)</li>\n<li>Cloud sessions: plugins synced from claude.ai now show as <code>name@synced</code>, work with <code>claude plugin enable/disable &lt;name&gt;@synced</code>, and never override a same-named plugin you installed</li>\n<li>Alpine/musl builds: native image paste, clipboard, and audio-capture add-ons now load (musl-built binaries instead of glibc ones refused by the runtime)</li>\n<li>The usage-limit message shown when your monthly spend limit is already used up now also says when your session or weekly limit resets</li>\n<li>Fixed Bedrock streaming behind proxies that strip the response Content-Type header, which silently doubled billed API calls by re-running every turn non-streaming</li>\n<li>Fixed Claude Code hanging at startup behind an HTTPS proxy when using Bedrock with an SSO profile and <code>awsAuthRefresh</code> \u2014 the credential pre-check now honors <code>HTTPS_PROXY</code></li>\n<li>Fixed a raw crash dump when starting Claude Code from a directory that no longer exists; it now prints a clear message</li>\n<li>Fixed Edit and Write calls pausing for about 5 seconds in JetBrains IDE terminals when the Claude Code plugin is connected</li>\n<li>Fixed a race where pressing Esc with a prompt queued could let the next turn finish early, leaving the session idle while Claude was still working and letting a later resubmit repeat actions</li>\n<li>Fixed WebFetch retaining expired page content in memory for the whole session instead of the intended 15 minutes</li>\n<li>Fixed cloud sessions (Claude Code on the web, desktop and mobile apps) resuming out of plan mode after an idle worker restart</li>\n<li>Fixed MCP elicitation forms taller than the terminal being clipped in fullscreen mode: the form now fits the window, with hidden fields reachable by scrolling and Accept/Decline always visible</li>\n<li>Fixed remote MCP servers staying failed after a transient 5xx on a mid-session reconnect in cloud sessions or via SDK <code>setMcpServers()</code></li>\n<li>Fixed custom session titles disappearing from <code>/resume</code> after more than ~64 KB of conversation was written following the rename</li>\n<li>Fixed <code>claude -c</code>/resume picking up sessions from a different directory whose path differed only by characters like <code>_</code>, <code>-</code>, or <code>.</code></li>\n<li>Fixed <code>/resume</code> and the agents view showing a session as recently changed (and reordering it) when only its file was touched or it was merely reopened</li>\n<li>Fixed <code>/resume</code> in all-projects mode telling you to <code>cd</code> into a deleted directory (e.g. a removed worktree); such sessions now resume in the current directory</li>\n<li>Fixed the <code>dark-ansi</code> theme rendering expanded tool results in fullscreen mode with text the same color as the background</li>\n<li>Fixed the fullscreen renderer prompt reappearing on every launch when it could never be answered; it now stops after being shown on three launches</li>\n<li>Fixed <code>.worktreeinclude</code> patterns starting with <code>**/</code> silently matching nothing when the target lived in a gitignored directory</li>\n<li>Fixed agents, skills, and commands whose <code>.md</code> file starts with a UTF-8 BOM being silently ignored</li>\n<li>Fixed <code>/insights</code> echoing literal <code>&lt;message&gt;</code> tags in its response on some models</li>\n<li>Fixed marketplace <code>metadata.pluginRoot</code> having no effect: bare plugin source names now resolve under it as the docs describe</li>\n<li>Fixed mouse movement in browser-based terminals inserting text like <code>\"35;150;7M\"</code> into the prompt when a mouse report arrived split across writes</li>\n<li>Fixed custom theme overrides for the effort/ultracode status badge colors being ignored</li>\n<li>Fixed OpenTelemetry trace fragmentation: tool executions deferred by a <code>PreToolUse</code> hook now resume in the original turn's trace instead of starting a new trace</li>\n<li>Fixed vim mode in the agent view: Escape now switches to NORMAL mode and keeps your text instead of clearing the prompt</li>\n<li>Fixed the <code>selection:copy</code> keybinding silently dropping a text selection that had been extended with Shift+Arrow keys</li>\n<li>Fixed the <code>/voice</code> startup tip still appearing after voice dictation was enabled via the <code>voice.enabled</code> setting</li>\n<li>Fixed shell-mode (<code>!</code>) Tab completion dropping the <code>./</code> from a <code>./script</code> path, which left a command the shell couldn't run</li>\n<li>Fixed fullscreen mode answering a permission prompt or pressing a button when you clicked the terminal window only to bring it back into focus</li>\n<li>Fixed slash-command panels (e.g. <code>/config</code>, <code>/model</code>) in fullscreen mode covering the latest messages; the conversation now stays pinned above the panel</li>\n<li>Fixed the <code>/workflows</code> detail dialog overflowing the terminal and losing its header off-screen when opened while Claude is still responding</li>\n<li>Fixed the Linux sandbox making a nonexistent <code>.git/config.worktree</code> unreadable, which broke every sandboxed git command in repos with <code>extensions.worktreeConfig</code> set</li>\n<li>Fixed hooks failing with \"posix_spawn ENOENT\" after the session's working directory was deleted; they now run from the project root or home directory instead</li>\n<li>Fixed <code>claudeMdExcludes</code> not excluding a symlinked <code>.claude/rules</code> file when the pattern names the rules directory or the symlink rather than its target</li>\n<li>Fixed runaway session-title syncing to Remote Control when two Claude Code processes shared one background job's state (2.1.232 regression); title updates are now deduplicated and rate-limited</li>\n<li>Fixed sessions whose title starts with <code>/</code> being unaddressable by <code>SendMessage</code> and shown as \"(untitled)\" in <code>ListAgents</code></li>\n<li>Fixed Ctrl+W, Ctrl+U, Ctrl+K, Option+Backspace, Option+D and vim <code>df</code>/<code>dt</code> leaving a broken <code>[Pasted text #N]</code> placeholder when the cursor was inside it</li>\n<li>Fixed masked (password-style) inputs such as the login code field letting their text be pasted back with Ctrl+Y elsewhere or saved to prompt history when cleared with double Esc</li>\n<li>Fixed Ctrl+Backspace deleting one character instead of a word in search boxes</li>\n<li>Fixed a request rejected by an organization policy check being re-sent before the rejection was shown</li>\n<li>Improved the reminder shown after compaction so a skill's original arguments are not re-run as a new request</li>\n<li>Long file paths on tool-use rows now truncate in the middle to stay on one line</li>\n<li>Remote sessions keep sending keep-alives while a long <code>SessionStart</code> or <code>Setup</code> hook runs, so the container is not idle-reaped mid-hook</li>\n<li><code>/goal</code>: repeat check-ins on long-running background work now back off (30 min, then 1 h, then every 2 h) instead of repeating every 30 minutes</li>\n<li><code>/goal</code>: resuming a session from the <code>claude --resume</code> picker now restores its active goal</li>\n<li><code>ListAgents</code> now tells a session its own name (the one peers use to message it), and <code>SendMessage</code> to your own name says so instead of \"no agent named \u2026\"</li>\n<li><code>ListAgents</code> and <code>/list-agents</code> now list your live teammates (previously only subagents and other sessions appeared, so a reachable teammate looked absent)</li>\n<li><code>keybindingFlavor: \"readline\"</code> now also matches Bash for word keys: Alt+F and Ctrl/Option+\u2192 stop at the end of the word, Alt+D deletes to it (Ctrl+Y pastes it back), and punctuation separates words</li>\n<li>Persistent retry mode (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) now fails immediately on organization spend-limit and out-of-credits errors instead of waiting indefinitely for a reset</li>\n<li>Claude in Chrome: <code>/clear</code> now closes the session's Chrome tab group, and empty groups are closed on <code>/resume</code> and when Claude Code exits</li>\n<li>Remote sessions: images uploaded from mobile now include their saved file path, so Claude can copy them into files it creates</li>\n<li>Claude Code on the web: requests from Bash and other tools to non-API anthropic.com hosts (e.g. www, docs) now go through the session's network proxy, so your environment's allowed domains apply</li>\n<li>Remote Control: clearer message and <code>claude doctor</code> wording when Remote Control isn't enabled for your account</li>\n<li>Windows: cross-session messaging is now available, so Claude Code sessions across your machines can message each other with <code>SendMessage</code> and find each other with <code>ListAgents</code>, as on macOS and Linux</li>\n<li>[VSCode] \"View usage\" in the usage-limit banner now sits inline with the warning text instead of floating mid-banner</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-08-21T19:54:23Z",
-      "fetched_at": "2026-08-21T20:41:54.285037Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bedd087515029ce4",
       "url": "https://arxiv.org/abs/2608.24310",
       "title": "OPDSearch+: On-Policy Distillation with RL Refinement for Search-Augmented Reasoning",
@@ -59315,128 +59292,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "588ad5abd93701ec",
-      "url": "https://x.com/GeminiApp/status/2090901573937537358",
-      "title": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini t...",
-      "summary": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini to:\n\ud83d\udd39 Adjust the AC, seats\u2028and cabin lig\u2026",
-      "content": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini to:\n\ud83d\udd39 Adjust the AC, seats\u2028and cabin lig\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-08-21T20:39:16Z",
-      "fetched_at": "2026-08-22T19:44:57.708679Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "66533162d053bafd",
-      "url": "https://x.com/GeminiApp/status/2090901436150567043",
-      "title": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one ...",
-      "summary": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one year at no cost and launching new study\u2026",
-      "content": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one year at no cost and launching new study\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-08-21T20:38:44Z",
-      "fetched_at": "2026-08-22T19:44:57.708709Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "24117157e0fdc5a8",
-      "url": "https://x.com/steipete/status/2090898421108605078",
-      "title": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of...",
-      "summary": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of folks. My talk was about \"No Doors for Agents\" https://t.co/2drgrK1pia",
-      "content": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of folks. My talk was about \"No Doors for Agents\" https://t.co/2drgrK1pia",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-21T20:26:45Z",
-      "fetched_at": "2026-08-22T19:45:02.519675Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1d230b5c1baf8363",
-      "url": "https://x.com/dani_avila7/status/2090885751961440372",
-      "title": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain som...",
-      "summary": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain something\n\nBut I might replace it with this skill\n\nSuper simple, and I really like the idea of turning explanations into visual artifacts",
-      "content": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain something\n\nBut I might replace it with this skill\n\nSuper simple, and I really like the idea of turning explanations into visual artifacts",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-21T19:36:24Z",
-      "fetched_at": "2026-08-22T19:44:54.317334Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7a2dbd7706d306f1",
-      "url": "https://x.com/OpenAI/status/2090885187634905500",
-      "title": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API a...",
-      "summary": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.6 Sol by over 20% for the next 3 months. https://t.co/UoTb3hcB2t",
-      "content": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.6 Sol by over 20% for the next 3 months. https://t.co/UoTb3hcB2t",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-08-21T19:34:10Z",
-      "fetched_at": "2026-08-22T19:44:58.726200Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7358a6a60ac866ee",
-      "url": "https://x.com/OpenAI/status/2090885188897460249",
-      "title": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n...",
-      "summary": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n\nPro, Plus, and Business subscription usage remains unchanged.\nhttps://t.co/DzyrOMdXpW",
-      "content": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n\nPro, Plus, and Business subscription usage remains unchanged.\nhttps://t.co/DzyrOMdXpW",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-08-21T19:34:10Z",
-      "fetched_at": "2026-08-22T19:44:58.726146Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "27e684752cc0a3f0",
       "url": "https://x.com/dani_avila7/status/2091585142795936060",
       "title": "Humans are no longer the biggest token consumers\n\nAgentic tokens passed human ones on OpenRouter ear...",
@@ -61195,6 +61050,149 @@
       "author": "steipete",
       "published_at": "2026-08-28T17:10:49Z",
       "fetched_at": "2026-08-28T18:55:32.292467Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4f3dddaecb39b6a4",
+      "url": "https://x.com/GeminiApp/status/2093450168435908997",
+      "title": "RT @NewsFromGoogle: This month, the @GeminiApp officially became the fastest growing product in @Goo...",
+      "summary": "RT @NewsFromGoogle: This month, the @GeminiApp officially became the fastest growing product in @Google\u2019s history \u2014 and our 14th to hit the\u2026",
+      "content": "RT @NewsFromGoogle: This month, the @GeminiApp officially became the fastest growing product in @Google\u2019s history \u2014 and our 14th to hit the\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-28T21:26:29Z",
+      "fetched_at": "2026-08-28T22:15:07.578641Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "588ad5abd93701ec",
+      "url": "https://x.com/GeminiApp/status/2090901573937537358",
+      "title": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini t...",
+      "summary": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini to:\n\ud83d\udd39 Adjust the AC, seats\u2028and cabin lig\u2026",
+      "content": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini to:\n\ud83d\udd39 Adjust the AC, seats\u2028and cabin lig\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-21T20:39:16Z",
+      "fetched_at": "2026-08-22T19:44:57.708679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "66533162d053bafd",
+      "url": "https://x.com/GeminiApp/status/2090901436150567043",
+      "title": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one ...",
+      "summary": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one year at no cost and launching new study\u2026",
+      "content": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one year at no cost and launching new study\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-21T20:38:44Z",
+      "fetched_at": "2026-08-22T19:44:57.708709Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "24117157e0fdc5a8",
+      "url": "https://x.com/steipete/status/2090898421108605078",
+      "title": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of...",
+      "summary": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of folks. My talk was about \"No Doors for Agents\" https://t.co/2drgrK1pia",
+      "content": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of folks. My talk was about \"No Doors for Agents\" https://t.co/2drgrK1pia",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-21T20:26:45Z",
+      "fetched_at": "2026-08-22T19:45:02.519675Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1d230b5c1baf8363",
+      "url": "https://x.com/dani_avila7/status/2090885751961440372",
+      "title": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain som...",
+      "summary": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain something\n\nBut I might replace it with this skill\n\nSuper simple, and I really like the idea of turning explanations into visual artifacts",
+      "content": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain something\n\nBut I might replace it with this skill\n\nSuper simple, and I really like the idea of turning explanations into visual artifacts",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-21T19:36:24Z",
+      "fetched_at": "2026-08-22T19:44:54.317334Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7a2dbd7706d306f1",
+      "url": "https://x.com/OpenAI/status/2090885187634905500",
+      "title": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API a...",
+      "summary": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.6 Sol by over 20% for the next 3 months. https://t.co/UoTb3hcB2t",
+      "content": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.6 Sol by over 20% for the next 3 months. https://t.co/UoTb3hcB2t",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-21T19:34:10Z",
+      "fetched_at": "2026-08-22T19:44:58.726200Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7358a6a60ac866ee",
+      "url": "https://x.com/OpenAI/status/2090885188897460249",
+      "title": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n...",
+      "summary": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n\nPro, Plus, and Business subscription usage remains unchanged.\nhttps://t.co/DzyrOMdXpW",
+      "content": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n\nPro, Plus, and Business subscription usage remains unchanged.\nhttps://t.co/DzyrOMdXpW",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-21T19:34:10Z",
+      "fetched_at": "2026-08-22T19:44:58.726146Z",
       "score": null,
       "score_reason": "",
       "tier": "",
