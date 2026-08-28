@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-28T06:08:11.677973+00:00",
+  "exported_at": "2026-08-28T07:56:25.409678+00:00",
   "period_hours": 168,
-  "total": 2864,
+  "total": 2862,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13662,26 +13662,6 @@
       "author": "IBM Technology",
       "published_at": "2026-08-21T10:04:14Z",
       "fetched_at": "2026-08-21T10:47:55.403613Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b71e6bf031b61ae9",
-      "url": "https://www.youtube.com/watch?v=zCJtYuqwm7E",
-      "title": "Coding Agents Don't Scale Themselves. Neither Do Your Teams. \u2014 Patrick Debois, Tessl",
-      "summary": "In 2009 people told Patrick Debois that continuous delivery was crazy. He hears the same thing now about the dark factory, and reads it the same way: not that the technology cannot work, but that the organization is not set up for it yet. His starting assumption is that harnesses and loops will commoditize, possibly into a service a frontier lab just sells you, so none of that will be anyone's differentiator. What actually changes is the team, the platform and the organization around them.\n\nDevelopers pushed back on the conductor framing, telling him they did not sign up to write better prompts. What brought them back was tooling. Once the team started building harnesses for the agent, a genuinely technical path reopened, and the loudest skeptics turned out to be the right people to hand context authoring to, precisely because they were angry about the output. The shift he pushes is to stop fixing the code the agent produced and improve the system instead. Retros stop being about the code and become about where the agent hit the same wall repeatedly. Planning splits into work scoped tightly enough to hand off and work that still needs a conversation. He tracks two numbers: how many human touches it takes to get the right result, which should fall, and how much of each fix is shared, because one improvement to a common harness lands for everybody rather than making a single person 10x. Above the team it is paved roads and a named owner, not a thousand flowers blooming.\n\nSpeaker info:\n- https://x.com/patrickdebois\n- https://www.linkedin.com/in/patrickdebois/\n- https://jedi.be\n\nTimestamps:\n0:00 - It will not work here, and what that signals\n2:46 - Developers who did not sign up for prompting\n5:20 - Stop fixing the code, improve the system\n7:04 - Retros, planning, and the downstream squeeze\n9:38 - Two metrics: human touches and reuse\n10:29 - The platform team's new problems\n12:12 - Sprawl, paved roads, and making spend visible\n14:43 - Enabling the organization without a champions program\n15:36 - Hiring when the job titles mean nothing\n18:07 - Optimize the spend instead of capping it\n20:38 - A dim factory, and knowledge as the moat",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-20T06:32:46Z",
-      "fetched_at": "2026-08-22T08:47:53.439103Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -59902,48 +59882,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "22b5c6525e1fe95b",
-      "url": "https://arxiv.org/abs/2608.20818v1",
-      "title": "Scaling Muon for Diffusion Transformers",
-      "summary": "The matrix-aware optimizer Muon improves large model training by balancing updates across singular directions, yet its scaling behavior and end-to-end efficiency on large Diffusion Transformers (DiTs) remain unclear. We first establish Muon's scaling behavior on DiTs from 1.3B to 15B parameters, showing that its optimization and generative quality advantages over AdamW persist across model scales. However, at scale, the 5-step Newton--Schulz iteration (NS5) performed at every optimization step, together with full-momentum materialization, introduces substantial computation and communication overhead that can offset Muon's step-efficiency advantage. We introduce \\emph{Periodic Row-wise Muon}, which performs a full NS5 spectral update once every \\(K\\) steps and applies a low compute and communication cost row-wise constrained update based on the current momentum at the remaining steps. We further co-design a distributed implementation that operates directly on sharded momentum during non-refresh steps and accelerates spectral refreshes through bucketed all-gather and communication--computation overlap. Across all scales, Muon improves the best observed generative quality over AdamW by 12.9--19.1\\%. Compared with vanilla Muon, Periodic Row-wise Muon remains within 0.5\\% in best generative quality on the 1.3B--4B models and improves it by 4.5\\% at 9B. It reduces optimizer time by 46.9--54.3\\%, end-to-end step time by 15.7--24.3\\%, and logical communication volume by 66.7\\%, while reaching its respective best generative quality with 33.7--64.8\\% less active training time. These results show that Periodic Row-wise Muon preserves Muon's generative quality advantage while translating it into end-to-end training efficiency for large DiTs.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Dake Chen",
-      "published_at": "2026-08-21T07:40:28Z",
-      "fetched_at": "2026-08-24T01:57:53.584287Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "46928506161aeb1c",
-      "url": "https://arxiv.org/abs/2608.20791v1",
-      "title": "CertVLA: Certified Defense against Physical Visual Attacks for Vision-Language-Action Models",
-      "summary": "Vision-Language-Action (VLA) policies are vulnerable to localized physical perturbations, yet existing certified patch defenses target discrete labels and cannot directly certify continuous, temporally correlated actions. We introduce CertVLA, a certified defense for closed-loop VLA control under bounded patch and texture attacks. CertVLA proposes a calibrated region of behaviorally consistent actions, while deterministic covering masks ensure that at least one checked prediction is attack-free. Specifically, CertVLA normalizes action disagreement by the benign variation of each mask pair and accepts a single-mask anchor only when it remains consistent under every second mask. It then calibrates the resulting max-min-max episode score to provide finite-sample clean coverage. Conjoining query-level decisions extends the action certificate to the complete closed-loop rollout. Furthermore, we prove that against any adaptive attacker satisfying the bounded-support threat model, every rollout certified by CertVLA executes only action chunks consistent with attack-erased clean predictions. Under dual-mask rollout correctness, this consistency certificate further guarantees task success. The certificate is independent of patch content, generation method, and physical transformation. Experiments in simulation and the real world demonstrate the empirical and certified effectiveness of CertVLA against patch attacks, with additional simulation validation on texture attacks.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Xudong Jiang",
-      "published_at": "2026-08-21T07:09:03Z",
-      "fetched_at": "2026-08-24T01:57:53.584294Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "896da3528f086579",
       "url": "https://www.anthropic.com/events/claude-founder-house-london",
       "title": "Claude Founder House London",
@@ -62024,6 +61962,27 @@
       "author": "dani_avila7",
       "published_at": "2026-08-28T02:25:20Z",
       "fetched_at": "2026-08-28T05:34:25.436355Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "16f5a60a665f78bb",
+      "url": "https://x.com/bcherny/status/2093224959330132327",
+      "title": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware...",
+      "summary": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
+      "content": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-28T06:31:35Z",
+      "fetched_at": "2026-08-28T07:56:02.233196Z",
       "score": null,
       "score_reason": "",
       "tier": "",
