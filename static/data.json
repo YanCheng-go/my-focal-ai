@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-28T07:56:25.409678+00:00",
+  "exported_at": "2026-08-28T11:59:49.067042+00:00",
   "period_hours": 168,
-  "total": 2862,
+  "total": 2856,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -13623,45 +13623,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-08-21T12:20:52Z",
       "fetched_at": "2026-08-21T13:11:15.268743Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a427aecd718835ef",
-      "url": "https://www.youtube.com/watch?v=7GMKdpLsxwU",
-      "title": "The Missing Layer: Design Taste in AI Agents \u2014 Hassan El Mghari, Together AI",
-      "summary": "Most people can spot a vibe coded app in two seconds and cannot say why. Hassan El Mghari names it: the purple gradient background, italics in the header, a scroll to explore prompt nobody asked for, all caps pills with wide letter spacing, too many emoji. He reckons you could list thirty such tells, and naming them is what lets you tell an agent to avoid them. That is most of what Hallmark does, the design skill he shipped six weeks ago to more than 10,000 users. It codifies the patterns as gates and hands the model a library of themes, on the through line that strong inspiration produces much better work.\n\nEl Mghari leads developer experience at Together AI and is not a designer. He has shipped roughly ten apps a year for five years, a few reaching millions of users, and credits design for that reach. He starts an app in Codex or Claude Code, then iterates with a smaller open source model, and made the case by putting up two landing pages, one from GLM 5.2 and one from Opus 4.8, and asking the room to guess which was which. Almost nobody could. The rest is practical: keep a vault of screenshots you admire and paste them in, the one habit he says to take away; record a voice note and let the prompt run three paragraphs; send one or two features per prompt instead of seven; write accumulated preferences into a skill file or AGENTS.md. Whatever the agent hands back is a base, never the finished app.\n\nSpeaker info:\n- https://x.com/nutlope\n- https://www.linkedin.com/in/nutlope/\n- https://nutlope.com\n\nTimestamps:\n0:00 - Ten apps a year, and why design is the edge\n1:41 - The apps: logos, comics, subtitles, a cloud agent\n3:08 - The tells that give away a vibe coded app\n4:11 - Hallmark: slop gates and a theme library\n6:53 - Iterating with a smaller open source model\n7:30 - Guess which page came from which model\n10:50 - Give the agent references and screenshots\n12:18 - One or two features per prompt",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-21T10:08:28Z",
-      "fetched_at": "2026-08-21T13:11:15.638212Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2b752bb21301e60b",
-      "url": "https://www.youtube.com/watch?v=8LNH7TxvD14",
-      "title": "Stripe buys OpenRouter, Ramp\u2019s AI Index & IBM\u2019s OpenAI deal",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content  \u2192 https://ibm.biz/~OIYjPLWCH\n\nThis week on Mixture of Experts, we talk partnerships, purchases, and predictions surrounding the AI industry's financial infrastructure. But first our panelists dive into IBM's newly announced collaboration with OpenAI, under which IBM Consulting will train and certify consultants on OpenAI's tools to bolster the company\u2019s push toward enterprise deployments.\n\nThen we turn to Stripe's massive acquisition of AI gateway startup OpenRouter, a platform that routes token traffic across more models and providers. We unpack why Stripe sees token routing as the next frontier of \"profitability infrastructure\" and what it means for a payments company to become a broker of AI compute decisions.\n\nFinally, we take a peek at Ramp's August AI Index, which sketches a market where open-source models are growing in popularity, AI infrastructure is consolidating, and businesses discern what they're willing to pay for.\n\nAll that and more on this week\u2019s Mixture of Experts. \n\n00:00 - Introduction\n1:01 - IBM OpenAI partnership\n11:46 - Stripe acquires OpenRouter\n22:39 - Ramp\u2019s August AI Index\n33:15 - AI drafting legislation\n\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~R1TRRxMwP\n#openai #openrouter #aiagents \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-21T10:04:14Z",
-      "fetched_at": "2026-08-21T10:47:55.403613Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -37115,50 +37076,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "835a331a5b20ce16",
-      "url": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
-      "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
-      "summary": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-21T11:59:48Z",
-      "fetched_at": "2026-08-21T13:11:17.520784Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4f98c5029119950e",
-      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
-      "title": "How mobility gives language models a deeper understanding of place",
-      "summary": "Algorithms & Theory",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-21T10:54:00Z",
-      "fetched_at": "2026-08-21T18:56:30.838939Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bedd087515029ce4",
       "url": "https://arxiv.org/abs/2608.24310",
       "title": "OPDSearch+: On-Policy Distillation with RL Refinement for Search-Augmented Reasoning",
@@ -59819,69 +59736,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "27726521048e1120",
-      "url": "https://arxiv.org/abs/2608.20964v1",
-      "title": "Extractive Summarization for Arabic Documents Using SAraBERT with a Semantic Siamese Similarity Evaluation Metric",
-      "summary": "In this research, we introduce SAraBERT, an enhanced version of AraBERT which proposes inter-sentence transformer layers for extractive summarization tasks. To ensure that the summaries generated by SAraBERT achieve a high coverage of the document's main ideas, we propose Semantic Siamese Similarity, a novel evaluation metric that measures the level of similarity between two text inputs. We validated using BLEU, ROUGE, and Semantic Siamese similarity on Sarabert and published related models. Simulation results showed the effectiveness of our proposed model and motivate follow on research.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Mariette Awad",
-      "published_at": "2026-08-21T10:35:47Z",
-      "fetched_at": "2026-08-24T01:57:53.584269Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5bb68841ae6046ae",
-      "url": "https://arxiv.org/abs/2608.20961v1",
-      "title": "TreeWY: Speculative Verification for Gated DeltaNet Hybrids",
-      "summary": "Modern open models are hybrids: most layers are linear-attention (Gated DeltaNet, GDN) layers carrying a small fixed-size recurrent state instead of a growing key-value (KV) cache. This makes ordinary decoding memory-efficient, but hurts speculative decoding. To verify a batch of draft tokens and then roll back the rejected ones, today's systems snapshot the full recurrent state at every draft position for GDN layers, and those snapshots cannot be shared across branches of a draft tree, so a wide, high-acceptance tree becomes memory-infeasible. We remove the snapshots. Using a tree-structured WY transform of the gated delta rule, we compute every draft node's output with a single triangular solve and reconstruct only the one accepted state on commit, storing a small pseudo-value matrix instead of per-node states; the derivation depends only on the gated delta rule, not on any other architectural detail. In serving benchmarks on two scales of one hybrid model family (Qwen3.5 35B and 397B) this cuts speculative recurrent-state memory and KV-cache pressure at identical acceptance length, turning the freed HBM into higher throughput and much lower time-to-first-token (TTFT) wherever memory binds, and costing a few percent where it does not. For tree width the same memory buys affordability: a wider, higher-acceptance draft becomes possible, though not yet a throughput win.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Sneha Murthy Ghantasala",
-      "published_at": "2026-08-21T10:31:15Z",
-      "fetched_at": "2026-08-24T01:57:53.584275Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4a09be14fce5a242",
-      "url": "https://arxiv.org/abs/2608.20938v1",
-      "title": "No Judgment Without a Reason: Counterfactual Receipts for Versioned AI Evaluators",
-      "summary": "Evaluators often produce correct labels via flawed reasoning, a critical failure for agentic systems gating actions, routing reviews, or supplying training feedback. Standard evaluation only verifies final label correctness, ignoring whether judgment changes stem from valid evidence, consistent rules, or proper rule applicability. We formalize evaluator reasoning accountability via three core sources: grounds, norms, and authority. Varying these sources yields an eight-cell counterfactual judgment cube to characterize judgment updates. We define judgment receipts as minimal source replacement sets that reproduce revised verdicts to explain judgment transitions. We derive certification cost bounds for black-box evaluators and present ReasonBench, a policy and logical reasoning benchmark with verifiable receipts covering 19,520 cases and 7,200 controls. In frozen evaluations, Qwen3-1.7B reaches 98.41% receipt accuracy, while cube prediction scores 96.99%, a consistent 1.42-point drop validated by Qwen3-0.6B replication. Strong standard accuracy masks severe robustness flaws. Meaning-preserving source permutations reduce valid receipt recovery to 54.8% and 49.2% for direct and cube prediction. Models trained on simple single-source changes retain 93.75% verdict accuracy but recover only 7.16% of receipts for complex multi-source updates. Permutation retraining boosts consistency to 96.6% yet worsens cube prediction deficits. Structured counterfactual supervision fails to guarantee robust reasoning. We show reason-aware evaluation must decouple prediction and certification, reporting transformation consistency alongside standard accuracy for trustworthy evaluator auditing.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Weining Zhang",
-      "published_at": "2026-08-21T10:01:58Z",
-      "fetched_at": "2026-08-24T01:57:53.584281Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "896da3528f086579",
       "url": "https://www.anthropic.com/events/claude-founder-house-london",
       "title": "Claude Founder House London",
@@ -61983,6 +61837,27 @@
       "author": "bcherny",
       "published_at": "2026-08-28T06:31:35Z",
       "fetched_at": "2026-08-28T07:56:02.233196Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fa70e6ee5db1468f",
+      "url": "https://x.com/simonw/status/2093277255438860358",
+      "title": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
+      "summary": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
+      "content": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-08-28T09:59:23Z",
+      "fetched_at": "2026-08-28T11:59:36.808228Z",
       "score": null,
       "score_reason": "",
       "tier": "",
