@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-27T22:37:12.996046+00:00",
+  "exported_at": "2026-08-28T02:01:01.197665+00:00",
   "period_hours": 168,
-  "total": 2645,
+  "total": 2644,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -26310,48 +26310,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "966123ef613d7e9a",
-      "url": "https://huggingface.co/blog/pwc-search",
-      "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-08-21T00:00:00Z",
-      "fetched_at": "2026-08-25T13:11:38.506857Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f034ee1587ce0876",
-      "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
-      "title": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
-      "summary": "Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-08-21T00:00:00Z",
-      "fetched_at": "2026-08-22T13:01:05.375179Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bedd087515029ce4",
       "url": "https://arxiv.org/abs/2608.24310",
       "title": "OPDSearch+: On-Policy Distillation with RL Refinement for Search-Augmented Reasoning",
@@ -26430,48 +26388,6 @@
       "author": "Houcheng Jiang, Boxuan Zhang, Qiyong Zhong, Junfeng Fang, Xiang Wang, Xiangnan He",
       "published_at": "2026-08-26T04:00:00Z",
       "fetched_at": "2026-08-26T04:56:19.149349Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "74ac61e244043f10",
-      "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
-      "title": "The AI-Native SDLC playbook",
-      "summary": "The AI-Native SDLC playbook",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-08-21T00:00:00Z",
-      "fetched_at": "2026-08-22T13:01:05.375163Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e3ddd7a65cd3a566",
-      "url": "https://huggingface.co/blog/asr-benchmark-optimization",
-      "title": "Measuring benchmark optimization in speech recognition",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-08-21T00:00:00Z",
-      "fetched_at": "2026-08-21T14:53:45.054561Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -55213,69 +55129,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4065c8bfe338c362",
-      "url": "https://x.com/bcherny/status/2090617799626604559",
-      "title": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test su...",
-      "summary": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test suite\n- Reduces idle CPU by 5x\n- Reduces\u2026",
-      "content": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test suite\n- Reduces idle CPU by 5x\n- Reduces\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-08-21T01:51:39Z",
-      "fetched_at": "2026-08-21T07:22:06.135263Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "37ebbf214b0c570f",
-      "url": "https://x.com/bcherny/status/2090617758170181763",
-      "title": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally ...",
-      "summary": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.\n\nAuto\u2026",
-      "content": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.\n\nAuto\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-08-21T01:51:30Z",
-      "fetched_at": "2026-08-21T07:22:06.135359Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "63ca19dc7b14ae4d",
-      "url": "https://x.com/trq212/status/2090569474139439335",
-      "title": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have co...",
-      "summary": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have control over where your data lives &amp; who has access to it\n\nwe've been developing it alongside ~100 companies for a bit and hoping to roll it out more broadly in the fall",
-      "content": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have control over where your data lives &amp; who has access to it\n\nwe've been developing it alongside ~100 companies for a bit and hoping to roll it out more broadly in the fall",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-08-20T22:39:38Z",
-      "fetched_at": "2026-08-21T07:22:03.898715Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "14a2164b9b3f74ca",
       "url": "https://x.com/steipete/status/2091361235698876883",
       "title": "RT @DrewAmbrogi: Connecting Spotify to openclaw w/ spogo and being able to articulate an absurdly sp...",
@@ -57214,6 +57067,130 @@
       "author": "openai",
       "published_at": "2026-08-27T20:32:29Z",
       "fetched_at": "2026-08-27T22:36:55.415857Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f0ebf3c0a32f9648",
+      "url": "https://x.com/trq212/status/2093151652190769612",
+      "title": "RT @noahzweben: The most popular use case for Claude Tag by far -- on-call.\n Learn about how we driv...",
+      "summary": "RT @noahzweben: The most popular use case for Claude Tag by far -- on-call.\n Learn about how we drive Anthropic's on-call with Tag and set\u2026",
+      "content": "RT @noahzweben: The most popular use case for Claude Tag by far -- on-call.\n Learn about how we drive Anthropic's on-call with Tag and set\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-08-28T01:40:17Z",
+      "fetched_at": "2026-08-28T02:00:45.109968Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "edb1e2821ce9030e",
+      "url": "https://x.com/dani_avila7/status/2093123263790465490",
+      "title": "I really enjoy wood carving\u2026\n\nIt\u2019s a great way to completely disconnect from the computer for a few ...",
+      "summary": "I really enjoy wood carving\u2026\n\nIt\u2019s a great way to completely disconnect from the computer for a few hours\n\nI highly recommend giving it a try https://t.co/XrEX2VFcWK",
+      "content": "I really enjoy wood carving\u2026\n\nIt\u2019s a great way to completely disconnect from the computer for a few hours\n\nI highly recommend giving it a try https://t.co/XrEX2VFcWK",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-27T23:47:29Z",
+      "fetched_at": "2026-08-28T02:00:50.846339Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3088d34d84e22c27",
+      "url": "https://x.com/steipete/status/2093121458780488182",
+      "title": "RT @ajambrosino: I need a world-class product engineer for a special thing. deep react, rodeo experi...",
+      "summary": "RT @ajambrosino: I need a world-class product engineer for a special thing. deep react, rodeo experience. lmk and send samples pls\u2013 will mo\u2026",
+      "content": "RT @ajambrosino: I need a world-class product engineer for a special thing. deep react, rodeo experience. lmk and send samples pls\u2013 will mo\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-27T23:40:18Z",
+      "fetched_at": "2026-08-28T02:00:59.683043Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4065c8bfe338c362",
+      "url": "https://x.com/bcherny/status/2090617799626604559",
+      "title": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test su...",
+      "summary": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test suite\n- Reduces idle CPU by 5x\n- Reduces\u2026",
+      "content": "RT @bunjavascript: Bun 1.4\n\n- Fixes over 2,900 GitHub issues\n- +1,517 tests from the Node.js test suite\n- Reduces idle CPU by 5x\n- Reduces\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-21T01:51:39Z",
+      "fetched_at": "2026-08-21T07:22:06.135263Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "37ebbf214b0c570f",
+      "url": "https://x.com/bcherny/status/2090617758170181763",
+      "title": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally ...",
+      "summary": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.\n\nAuto\u2026",
+      "content": "RT @ClaudeDevs: Computer use, the browser tool, the Skills API, and the Files API are now generally available on the Claude Platform.\n\nAuto\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-21T01:51:30Z",
+      "fetched_at": "2026-08-21T07:22:06.135359Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "63ca19dc7b14ae4d",
+      "url": "https://x.com/trq212/status/2090569474139439335",
+      "title": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have co...",
+      "summary": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have control over where your data lives &amp; who has access to it\n\nwe've been developing it alongside ~100 companies for a bit and hoping to roll it out more broadly in the fall",
+      "content": "we're launching new Fable safeguards for enterprises that work on your infrastructure so you have control over where your data lives &amp; who has access to it\n\nwe've been developing it alongside ~100 companies for a bit and hoping to roll it out more broadly in the fall",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-08-20T22:39:38Z",
+      "fetched_at": "2026-08-21T07:22:03.898715Z",
       "score": null,
       "score_reason": "",
       "tier": "",
