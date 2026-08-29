@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-08-29T16:43:25.281128+00:00",
+  "exported_at": "2026-08-29T18:43:56.054687+00:00",
   "period_hours": 168,
   "total": 2835,
   "all_tags": [
@@ -12637,26 +12637,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "7a77cbfe4cdf7e0a",
-      "url": "https://www.youtube.com/watch?v=L173Z8DpaJg",
-      "title": "The Agent Behind the Curtain: Building the Oz Cloud Agent Platform \u2014 Safia Abdalla, Warp",
-      "summary": "Warp open sourced about three months ago and went from roughly 20,000 GitHub stars to over 60,000, with thousands of pull requests and hundreds of contributors arriving at once. Rather than let agents fire off code, Safia Abdalla's team put them inside the repository's process. File an issue and an agent triages it, researches the codebase, and asks you questions when the request is too abstract to act on. Every pull request then goes through an agent managed review, and nobody on the team gets pinged until an agent has approved it. The humans only ever see the high signal ones.\n\nThat is one payoff of a principle she applies all the way down the cloud agent platform, that a platform should absorb complexity before it reaches the user. Agents need somewhere to run, so sandboxes come both managed and self hosted, because teams doing serious work already run their own infrastructure. Developers are attached to their harness, so the platform accepts any of them while keeping conversation state and artifacts consistent across all of them. Real engineering rarely fits in one prompt, so agents orchestrate sub agents, either by prompt or through an API that exposes every primitive in the stack. People outside engineering at Warp used that API to build their own Slack tooling for triaging social mentions. Abdalla closes by pushing back on the phrase software factory, which she thinks loses the people in it, and offers a potter's workshop instead: stations, sourcing, verification, and an owner who keeps refining the system around the work.\n\nSpeaker info:\n- https://github.com/captainsafia\n- https://x.com/captainsafia\n- https://captainsafia.com\n\nTimestamps:\n0:00 - Eight years of building developer tooling\n2:43 - Why the work moved to the cloud\n3:35 - Absorb complexity before it reaches the user\n5:18 - Multi harness support without fragmentation\n6:59 - One agent is rarely enough\n7:53 - Orchestration by prompt, and by API\n9:33 - What non engineers built on the SDK\n11:16 - Agents inside the open source repo\n14:44 - Why the term software factory falls short\n17:14 - The workshop as a serious system",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-22T17:30:13Z",
-      "fetched_at": "2026-08-22T18:49:20.196327Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8d3be2d51e6e0d8a",
       "url": "https://www.anthropic.com/webinars/claude-in-microsoft-foundry-tool-integrations-in-practice",
       "title": "Claude in Microsoft Foundry: Tool Integrations in Practice",
@@ -17050,26 +17030,6 @@
       "author": "Yaxiao Liu, Pengbo Liu, Yiwen Liu, Yihua Guan, Zhenghe Hou, Jiaxing Song",
       "published_at": "2026-08-28T04:00:00Z",
       "fetched_at": "2026-08-28T06:07:55.138977Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "91e6311cec48079e",
-      "url": "https://www.youtube.com/watch?v=yqF6XhzbWBk",
-      "title": "Inside 847 Production Clinical AI Notes \u2014 Sebastian Fox, Composo",
-      "summary": "A clinical note from a real consultation reads like a routine tension headache, and nothing in it is wrong. What never reached the page is that the patient also mentioned her jaw aches when she chews, which alongside a new headache over 50 is a red flag for a condition that can take her sight within days. Sebastian Fox pulled that error, and every other failure here, out of three leading production ambient scribes in one afternoon. In the largest real world study of these notes, roughly one in 20 carried an error serious enough to cause significant harm, nearly one in five had an important omission, and more than one in 10 contained a hallucination. Ambient scribes now run in about a third of US practices, and almost none of this surfaces as a reported incident.\n\nThe obvious fix is a checker after the generator, and Fox built the best version he had seen: a frontier model, a faithfulness rubric with worked examples, automatic rubric optimization, deterministic concept counting. One in five of the notes it waved through still hid a serious error. Verification is only cheap for the easy half, spotting what changed between transcript and note. Deciding which differences matter is tacit, contextual and always moving, so it was never written down anywhere a rubric could read. Two notes drop the same holiday detail, and France is noise while Lake Malawi is the diagnosis. His answer is to keep the standard as examples rather than specifications, discovered from real outputs and assembled per note.\n\nSpeaker info:\n- https://www.linkedin.com/in/seb--fox/\n- https://composo.ai\n\nTimestamps:\n0:00 - The note that looks completely fine\n1:29 - The obvious errors, and how common they are\n4:02 - Mapping every failure across three production scribes\n5:30 - Mishearings, additions, changes, omissions\n7:03 - The hard part is knowing what matters\n7:56 - Put a checker after the generator\n9:35 - The best judge waved a fifth of them through\n12:06 - France versus Lake Malawi\n13:49 - Discover, capture, calibrate\n17:13 - Three judges on the same notes\n18:06 - Beyond healthcare",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-22T17:00:32Z",
-      "fetched_at": "2026-08-22T18:49:20.196344Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61096,6 +61056,47 @@
       "author": "steipete",
       "published_at": "2026-08-29T05:01:30Z",
       "fetched_at": "2026-08-29T06:49:05.516541Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3c81da09bf5bcc6e",
+      "url": "https://x.com/GeminiApp/status/2093767355914760680",
+      "title": "RT @GoogleAI: Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Transcribe, our most precise speech-to-t...",
+      "summary": "RT @GoogleAI: Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Transcribe, our most precise speech-to-text model yet, designed to deliver inte\u2026",
+      "content": "RT @GoogleAI: Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Transcribe, our most precise speech-to-text model yet, designed to deliver inte\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-29T18:26:52Z",
+      "fetched_at": "2026-08-29T18:43:45.558483Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9234de722fb096c9",
+      "url": "https://x.com/dani_avila7/status/2093758464866586955",
+      "title": "When you open Cursor Agent Mode, this is one of the first things you see...\n\nNow that Cursor can\u2019t u...",
+      "summary": "When you open Cursor Agent Mode, this is one of the first things you see...\n\nNow that Cursor can\u2019t use OpenAI models, Anthropic and Grok are among the strongest options left\n\nSo\u2026 what\u2019s Cursor\u2019s strategy from here? https://t.co/p2sqsQsew6",
+      "content": "When you open Cursor Agent Mode, this is one of the first things you see...\n\nNow that Cursor can\u2019t use OpenAI models, Anthropic and Grok are among the strongest options left\n\nSo\u2026 what\u2019s Cursor\u2019s strategy from here? https://t.co/p2sqsQsew6",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-29T17:51:32Z",
+      "fetched_at": "2026-08-29T18:43:40.744816Z",
       "score": null,
       "score_reason": "",
       "tier": "",
