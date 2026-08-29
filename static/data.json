@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-08-29T06:49:07.413852+00:00",
+  "exported_at": "2026-08-29T09:06:23.280423+00:00",
   "period_hours": 168,
   "total": 2839,
   "all_tags": [
@@ -59298,47 +59298,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5eb8ebf5a83cdbcf",
-      "url": "https://x.com/bcherny/status/2091068805934105045",
-      "title": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for a...",
-      "summary": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for all Claude Enterprise customers.\n\nPut ou\u2026",
-      "content": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for all Claude Enterprise customers.\n\nPut ou\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-08-22T07:43:48Z",
-      "fetched_at": "2026-08-22T19:44:52.296000Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ac4f404810759314",
-      "url": "https://x.com/sama/status/2091066602208841887",
-      "title": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dr...",
-      "summary": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.\u2026",
-      "content": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.\u2026",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-08-22T07:35:02Z",
-      "fetched_at": "2026-08-22T19:44:56.487019Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "27e684752cc0a3f0",
       "url": "https://x.com/dani_avila7/status/2091585142795936060",
       "title": "Humans are no longer the biggest token consumers\n\nAgentic tokens passed human ones on OpenRouter ear...",
@@ -61260,6 +61219,47 @@
       "author": "steipete",
       "published_at": "2026-08-29T05:01:30Z",
       "fetched_at": "2026-08-29T06:49:05.516541Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5eb8ebf5a83cdbcf",
+      "url": "https://x.com/bcherny/status/2091068805934105045",
+      "title": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for a...",
+      "summary": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for all Claude Enterprise customers.\n\nPut ou\u2026",
+      "content": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for all Claude Enterprise customers.\n\nPut ou\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-22T07:43:48Z",
+      "fetched_at": "2026-08-22T19:44:52.296000Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ac4f404810759314",
+      "url": "https://x.com/sama/status/2091066602208841887",
+      "title": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dr...",
+      "summary": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.\u2026",
+      "content": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-22T07:35:02Z",
+      "fetched_at": "2026-08-22T19:44:56.487019Z",
       "score": null,
       "score_reason": "",
       "tier": "",
