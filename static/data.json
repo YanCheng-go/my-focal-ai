@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-29T00:31:51.419192+00:00",
+  "exported_at": "2026-08-29T02:32:16.689144+00:00",
   "period_hours": 168,
-  "total": 2828,
+  "total": 2829,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -61052,6 +61052,26 @@
       "author": "dani_avila7",
       "published_at": "2026-08-28T22:24:49Z",
       "fetched_at": "2026-08-29T00:31:25.282714Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4057a5e7501fef1b",
+      "url": "https://x.com/OpenAI/status/2093515564786540695",
+      "title": "We\u2019re ending our partnership with Cursor following its acquisition by SpaceX. Under our proposal, Cu...",
+      "summary": "We\u2019re ending our partnership with Cursor following its acquisition by SpaceX. Under our proposal, Cursor\u2019s direct access to our models would end on November 12.\n\nWe know that the people most affected by this decision are the developers who rely on OpenAI models in Cursor. We care",
+      "content": "We\u2019re ending our partnership with Cursor following its acquisition by SpaceX. Under our proposal, Cursor\u2019s direct access to our models would end on November 12.\n\nWe know that the people most affected by this decision are the developers who rely on OpenAI models in Cursor. We care",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-29T01:46:20Z",
+      "fetched_at": "2026-08-29T02:32:10.535733Z",
       "score": null,
       "score_reason": "",
       "tier": "",
