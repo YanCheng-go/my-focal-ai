@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-29T11:06:46.182926+00:00",
+  "exported_at": "2026-08-29T12:26:36.299994+00:00",
   "period_hours": 168,
-  "total": 2827,
+  "total": 2840,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -61240,6 +61240,269 @@
       "author": "steipete",
       "published_at": "2026-08-29T05:01:30Z",
       "fetched_at": "2026-08-29T06:49:05.516541Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5eb8ebf5a83cdbcf",
+      "url": "https://x.com/bcherny/status/2091068805934105045",
+      "title": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for a...",
+      "summary": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for all Claude Enterprise customers.\n\nPut ou\u2026",
+      "content": "RT @claudeai: Claude Security scans now run on Claude Mythos 5, available today in public beta for all Claude Enterprise customers.\n\nPut ou\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-22T07:43:48Z",
+      "fetched_at": "2026-08-22T19:44:52.296000Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ac4f404810759314",
+      "url": "https://x.com/sama/status/2091066602208841887",
+      "title": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dr...",
+      "summary": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.\u2026",
+      "content": "RT @OpenAI: As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-22T07:35:02Z",
+      "fetched_at": "2026-08-22T19:44:56.487019Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aaa840b659293958",
+      "url": "https://x.com/steipete/status/2090990783260479533",
+      "title": "RT @ASpittel: i really don't want to use your agent, i want to use my agent to use your thing.",
+      "summary": "RT @ASpittel: i really don't want to use your agent, i want to use my agent to use your thing.",
+      "content": "RT @ASpittel: i really don't want to use your agent, i want to use my agent to use your thing.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-22T02:33:46Z",
+      "fetched_at": "2026-08-22T19:45:02.519466Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab2725c8b6357ae8",
+      "url": "https://x.com/steipete/status/2090946181564440727",
+      "title": "dropping new skill brb https://t.co/JuKdTVVNzW",
+      "summary": "dropping new skill brb https://t.co/JuKdTVVNzW",
+      "content": "dropping new skill brb https://t.co/JuKdTVVNzW",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-21T23:36:32Z",
+      "fetched_at": "2026-08-22T19:45:02.519558Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "337cd1669e968661",
+      "url": "https://x.com/OpenAI/status/2090944840972571078",
+      "title": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we...",
+      "summary": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we shipped this week:\n\n1/ Recent photos:\u2026",
+      "content": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we shipped this week:\n\n1/ Recent photos:\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-21T23:31:12Z",
+      "fetched_at": "2026-08-22T19:44:58.726050Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5b5b35bd2daf29c7",
+      "url": "https://x.com/steipete/status/2090935830672265340",
+      "title": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, Xai...",
+      "summary": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, XaiImageApiFetch/1.0\n\nSome sites like Link\u2026",
+      "content": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, XaiImageApiFetch/1.0\n\nSome sites like Link\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-21T22:55:24Z",
+      "fetched_at": "2026-08-22T19:45:02.519619Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "588ad5abd93701ec",
+      "url": "https://x.com/GeminiApp/status/2090901573937537358",
+      "title": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini t...",
+      "summary": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini to:\n\ud83d\udd39 Adjust the AC, seats\u2028and cabin lig\u2026",
+      "content": "RT @Waymo: Gemini in Waymo is now available to all riders in the Ojai. \n\nEngage with Google Gemini to:\n\ud83d\udd39 Adjust the AC, seats\u2028and cabin lig\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-21T20:39:16Z",
+      "fetched_at": "2026-08-22T19:44:57.708679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "66533162d053bafd",
+      "url": "https://x.com/GeminiApp/status/2090901436150567043",
+      "title": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one ...",
+      "summary": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one year at no cost and launching new study\u2026",
+      "content": "RT @Google: To help you prepare for the upcoming semester, Google is offering student plans for one year at no cost and launching new study\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-21T20:38:44Z",
+      "fetched_at": "2026-08-22T19:44:57.708709Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "24117157e0fdc5a8",
+      "url": "https://x.com/steipete/status/2090898421108605078",
+      "title": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of...",
+      "summary": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of folks. My talk was about \"No Doors for Agents\" https://t.co/2drgrK1pia",
+      "content": "I had the pleasure of speaking at the Agentic AI Summit in Berkeley alongside an incredible bunch of folks. My talk was about \"No Doors for Agents\" https://t.co/2drgrK1pia",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-21T20:26:45Z",
+      "fetched_at": "2026-08-22T19:45:02.519675Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1d230b5c1baf8363",
+      "url": "https://x.com/dani_avila7/status/2090885751961440372",
+      "title": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain som...",
+      "summary": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain something\n\nBut I might replace it with this skill\n\nSuper simple, and I really like the idea of turning explanations into visual artifacts",
+      "content": "I have something similar in my main instructions for whenever I explicitly ask Claude to explain something\n\nBut I might replace it with this skill\n\nSuper simple, and I really like the idea of turning explanations into visual artifacts",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-21T19:36:24Z",
+      "fetched_at": "2026-08-22T19:44:54.317334Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7a2dbd7706d306f1",
+      "url": "https://x.com/OpenAI/status/2090885187634905500",
+      "title": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API a...",
+      "summary": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.6 Sol by over 20% for the next 3 months. https://t.co/UoTb3hcB2t",
+      "content": "As we continue to push the frontier of capabilities while improving efficiency, we're dropping API and credit pricing of GPT-5.6 Sol by over 20% for the next 3 months. https://t.co/UoTb3hcB2t",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-21T19:34:10Z",
+      "fetched_at": "2026-08-22T19:44:58.726200Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7358a6a60ac866ee",
+      "url": "https://x.com/OpenAI/status/2090885188897460249",
+      "title": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n...",
+      "summary": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n\nPro, Plus, and Business subscription usage remains unchanged.\nhttps://t.co/DzyrOMdXpW",
+      "content": "Now available on the API and rolling out across eligible plans for ChatGPT Work and Codex credits. \n\nPro, Plus, and Business subscription usage remains unchanged.\nhttps://t.co/DzyrOMdXpW",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-21T19:34:10Z",
+      "fetched_at": "2026-08-22T19:44:58.726146Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0d1afd088ad9ab24",
+      "url": "https://x.com/dani_avila7/status/2090857261753376943",
+      "title": "Finally got access to Mythos!\n\nTime to put it to the test with Claude Security and see how powerful ...",
+      "summary": "Finally got access to Mythos!\n\nTime to put it to the test with Claude Security and see how powerful it really is\n\nIf you want to understand how Claude Security works under the hood, including its agentic scanners and how findings are generated\n\nWe wrote a full walkthrough here:",
+      "content": "Finally got access to Mythos!\n\nTime to put it to the test with Claude Security and see how powerful it really is\n\nIf you want to understand how Claude Security works under the hood, including its agentic scanners and how findings are generated\n\nWe wrote a full walkthrough here:",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-21T17:43:12Z",
+      "fetched_at": "2026-08-22T19:44:54.317394Z",
       "score": null,
       "score_reason": "",
       "tier": "",
