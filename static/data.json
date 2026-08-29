@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-29T14:27:04.832020+00:00",
+  "exported_at": "2026-08-29T16:43:25.281128+00:00",
   "period_hours": 168,
-  "total": 2840,
+  "total": 2835,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -17070,86 +17070,6 @@
       "author": "AI Engineer",
       "published_at": "2026-08-22T17:00:32Z",
       "fetched_at": "2026-08-22T18:49:20.196344Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9642ca6ea29ef8ca",
-      "url": "https://www.youtube.com/watch?v=KHudyx5wW3U",
-      "title": "Agent Frameworks Considered Harmful \u2014 R\u00e9mi Louf, .txt",
-      "summary": "In the first week the daily brief posted to Slack twice, a voice note vanished entirely, and the market brief turned to garbage after prompt edits R\u00e9mi Louf had not versioned and could no longer recall. Each failure became a piece of what turned into a runtime. The lost note became an append only log where nothing is discarded and every event is causally linked to the one that triggered it. The duplicates became a real queue that counts attempts. The untraceable prompt became a content addressed store, and that one was the rabbit hole.\n\nEvery part of a prompt is hashed and stored separately, the system message, each skill description, each tool definition, the user question, so a prompt is a list of hashes rather than a rendered string. Diff two runs and you see exactly which component changed. Replay one against a different model and the request rebuilds from the graph. He wanted this because a live chat session does not show you what the model actually saw, not with compaction and unshared reasoning in play. The rest stays deliberately small. Agents are markdown files you drop in a folder, so people who do not write code can add one. They subscribe to events instead of living in a graph with edges to maintain. Typed tool calls and typed events are the two boundaries, because roughly 20% of his events were coming back malformed and getting rejected. He took two weeks away from running a 15 person company to build it. Twenty agents now run there.\n\nSpeaker info:\n- https://x.com/remilouf\n- https://www.linkedin.com/in/remilouf/\n- https://thetypicalset.com\n\nTimestamps:\n0:00 - Two weeks away to find out what agents can do\n1:57 - The morning he wanted, and the robot mower\n2:49 - A terminal you still have to sit at\n4:30 - Why the prompt ended up in markdown, not code\n6:11 - Cron gets you when, events get you because\n8:44 - What broke in week one\n9:37 - The log: nothing lost, everything causally linked\n12:11 - Content addressing the prompt, and free diffs and replays\n15:32 - A kernel, not a framework\n16:25 - Typed calls and typed events as boundaries\n18:05 - Lessons, and build before you buy",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-22T16:30:39Z",
-      "fetched_at": "2026-08-22T18:49:20.196354Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "08af8ced20497649",
-      "url": "https://www.youtube.com/watch?v=FvxY8oPoI8o",
-      "title": "Preferences Over Benchmarks: Model Routing \u2014 Archana Kamath & Tyler Gillam, DigitalOcean",
-      "summary": "Two terminals run the same prompt, build me a spinning wheel app. On the left every request goes to a single premium model. On the right they go through a router that picks a model per task. Both finish at about the same time with comparable output, and by then the router's session has cost 8 cents against 25. The gap widens with every prompt after that. Archana Kamath and Tyler Gillam use it to argue that picking a model by climbing a leaderboard is the wrong instinct, because there is no single best model, only the right one for a given request.\n\nWhat makes a model right is a mix no public leaderboard encodes: the task itself, the system prompt and tools around it, the cost you are willing to spend, the latency the use case needs, and what the end user actually wants. Their router takes those as preferences you declare, in natural language or as decision tree rules, then honors them per request. It runs on a purpose built mixture of experts model that decides in under 200 milliseconds, costs nothing extra, and is open sourced along with the proxy in front of it. Gillam then shows the part that separates it from a vibe check, an evaluation scoring the router at 90% correctness against 95% for the single premium model while using far fewer tokens and returning faster. Routing is the foundation layer, with evaluation, caching and personalization built on top.\n\nSpeaker info:\n- https://www.linkedin.com/in/tdgillam\n\nTimestamps:\n0:00 - Why the one model habit is breaking\n2:42 - There is no single best model\n4:21 - A router you can customize and evaluate\n6:57 - Configuring tasks, model pools and failover\n7:48 - Side by side in the playground\n9:29 - Proving it with an evaluation\n10:18 - Two coding agents, and the session cost gap\n13:49 - Under 200ms, open sourced, no code changes\n14:43 - Evaluation, caching, personalization",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-22T15:30:18Z",
-      "fetched_at": "2026-08-22T16:41:13.039993Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "91d533fd29fc404d",
-      "url": "https://www.youtube.com/watch?v=0I6aoPSRzVc",
-      "title": "What If Your Chip Design Team Moved Like a Single Body? \u2014 Abduallah Mohamed, AIDAChip",
-      "summary": "They told the agent not to write to the spec files. It agreed, then wrote to them through bash. They blocked bash, so it used sed. They blocked sed, so it used cat. The lesson Abduallah Mohamed drew is that once an agent is capable enough, the substrate it runs in matters more than the agent itself, so the fix was blocking at the system level rather than tool by tool. Two other failures shaped the design: an analog design agent that wandered into work belonging to the RTL agent, and truth drift, where an agent updated a parameter in one place and left five others stale.\n\nThe setting is chip design, where nothing can be patched once silicon is printed and getting it wrong means printing again, which averages around $50 million. Across roughly 15 practitioners they interviewed, the recurring answer was that 70% of the time goes to alignment, and that the strongest organizations are the most aligned rather than the ones with the best engineers. Their argument is that buying more tools attacks the linear term while communication overhead grows quadratically with headcount. So they built a shared nervous system: a living graph of intent and constraints that agents cannot change without human approval, a tribal knowledge layer that compounds from project to project, and role specific agents written by subject matter experts rather than one general coding agent. They grade the alignment rather than the agents, and point out that graph memory now has a research literature while institutional memory has almost none.\n\nSpeaker info:\n- https://www.linkedin.com/in/abduallah/\n- https://abduallahmohamed.com/\n- https://www.linkedin.com/in/khaledalashmouny/\n- https://aidachip.com\n\nTimestamps:\n0:00 - Eleven players, and why alignment beats skill\n2:53 - The quadratic term nobody is solving\n3:47 - No patch for silicon, and 70% spent on alignment\n5:32 - Fragmented intent, and the shared nervous system\n7:18 - Demo: the graph, and the approval echo\n10:40 - Grading alignment, and the research gap\n13:11 - What broke, including cat versus the spec\n14:50 - Block at the source, and the substrate lesson",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-22T15:00:25Z",
-      "fetched_at": "2026-08-22T16:41:13.040003Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "19d6a94fb2ff03dc",
-      "url": "https://www.youtube.com/watch?v=GJX19pNhmSw",
-      "title": "FinOps for AI Agents: Who Spent All the Tokens? \u2014 Tisha Chawla & Susheem Koul, Microsoft",
-      "summary": "Turning the full policy suite on cut average agent spend by about 78% across benchmark runs on two open source repos, and lifted the share of runs that actually completed from 67% to roughly 96%. That second number is the point. Simple throttling holds the bill down by killing runs, so Tisha Chawla and Susheem Koul built their control plane to steer instead. Their framing is that every software era grew a control surface, usage caps in SaaS, autoscaling policies in cloud, and the agentic era still has none at the layer where code calls a model. Gateways can hard cap and downgrade, but nothing sits between your code and the spend it triggers.\n\nThe design splits in two. In your code an annotation marks a boundary around methods you already have, floating attribution up without a rewrite, while a governor holds the list of actions you authorized so the control plane cannot do whatever it likes to your agent. The control plane groups runs into segments by any dimension you emit, sets budgets against a time window, and attaches policies. Actions come in two flavors. Halt is a circuit breaker. Steer is the interesting one: a cost guard watches both how much of the budget is gone and how fast it is going, and when it predicts an overrun it injects an instruction to keep outputs succinct rather than killing the run. They demo it in preview mode first, policies evaluating with enforcement off, which is how you would actually introduce this to a production agent.\n\nSpeaker info:\n- https://www.linkedin.com/in/tisha-chawla\n- https://dev.to/tisha\n- https://www.linkedin.com/in/susheemkoul\n- https://susheemk.substack.com\n\nTimestamps:\n0:00 - From token maxxing to value maxxing\n1:58 - Every era got a control surface, this one has not\n4:30 - First principles at the model call boundary\n6:19 - Why gateways are not enough\n8:57 - The SDK side: boundary, ledger, governor\n13:13 - Segments, budgets, actions, policies\n14:53 - Halt versus steer\n16:36 - Demo: preview mode, then enforcement\n18:17 - Cost guard, and steering on velocity\n19:06 - Benchmark results and the policy catalog\n20:47 - A self learning control plane",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-22T14:30:07Z",
-      "fetched_at": "2026-08-22T14:38:32.056948Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -37225,29 +37145,6 @@
       "author": "ashwin-ant",
       "published_at": "2026-08-23T00:52:16Z",
       "fetched_at": "2026-08-23T02:00:04.895185Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "922161a7fd90f8e5",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
-      "title": "v2.1.240",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Bug fixes and reliability improvements</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Bug fixes and reliability improvements</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-08-22T14:45:30Z",
-      "fetched_at": "2026-08-22T16:41:20.422182Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -59278,47 +59175,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9129ac5db1b9536c",
-      "url": "https://x.com/GeminiApp/status/2091176452561735682",
-      "title": "RT @sundarpichai: Gemini 3.7 Flash smashed previous Gemini growth records in its first week, making ...",
-      "summary": "RT @sundarpichai: Gemini 3.7 Flash smashed previous Gemini growth records in its first week, making it our fastest growing model yet. Great\u2026",
-      "content": "RT @sundarpichai: Gemini 3.7 Flash smashed previous Gemini growth records in its first week, making it our fastest growing model yet. Great\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-08-22T14:51:33Z",
-      "fetched_at": "2026-08-22T19:44:57.708604Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "999a96b5dbf3e999",
-      "url": "https://x.com/dani_avila7/status/2091176041570029734",
-      "title": "Using this workflow, I\u2019ve been able to push past the 4 agent limit without losing focus\n\nAgent View ...",
-      "summary": "Using this workflow, I\u2019ve been able to push past the 4 agent limit without losing focus\n\nAgent View becomes extremely powerful when combined with /fork and worktrees",
-      "content": "Using this workflow, I\u2019ve been able to push past the 4 agent limit without losing focus\n\nAgent View becomes extremely powerful when combined with /fork and worktrees",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-22T14:49:55Z",
-      "fetched_at": "2026-08-22T19:44:54.317244Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "27e684752cc0a3f0",
       "url": "https://x.com/dani_avila7/status/2091585142795936060",
       "title": "Humans are no longer the biggest token consumers\n\nAgentic tokens passed human ones on OpenRouter ear...",
@@ -61240,6 +61096,47 @@
       "author": "steipete",
       "published_at": "2026-08-29T05:01:30Z",
       "fetched_at": "2026-08-29T06:49:05.516541Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9129ac5db1b9536c",
+      "url": "https://x.com/GeminiApp/status/2091176452561735682",
+      "title": "RT @sundarpichai: Gemini 3.7 Flash smashed previous Gemini growth records in its first week, making ...",
+      "summary": "RT @sundarpichai: Gemini 3.7 Flash smashed previous Gemini growth records in its first week, making it our fastest growing model yet. Great\u2026",
+      "content": "RT @sundarpichai: Gemini 3.7 Flash smashed previous Gemini growth records in its first week, making it our fastest growing model yet. Great\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-22T14:51:33Z",
+      "fetched_at": "2026-08-22T19:44:57.708604Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "999a96b5dbf3e999",
+      "url": "https://x.com/dani_avila7/status/2091176041570029734",
+      "title": "Using this workflow, I\u2019ve been able to push past the 4 agent limit without losing focus\n\nAgent View ...",
+      "summary": "Using this workflow, I\u2019ve been able to push past the 4 agent limit without losing focus\n\nAgent View becomes extremely powerful when combined with /fork and worktrees",
+      "content": "Using this workflow, I\u2019ve been able to push past the 4 agent limit without losing focus\n\nAgent View becomes extremely powerful when combined with /fork and worktrees",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-22T14:49:55Z",
+      "fetched_at": "2026-08-22T19:44:54.317244Z",
       "score": null,
       "score_reason": "",
       "tier": "",
