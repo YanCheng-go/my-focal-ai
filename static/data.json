@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-28T22:15:16.433529+00:00",
+  "exported_at": "2026-08-29T00:31:51.419192+00:00",
   "period_hours": 168,
-  "total": 2826,
+  "total": 2828,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -16982,26 +16982,6 @@
       "author": "AI Engineer",
       "published_at": "2026-08-22T14:30:07Z",
       "fetched_at": "2026-08-22T14:38:32.056948Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fe277fe2291b1993",
-      "url": "https://www.youtube.com/watch?v=_kK_4cOYF4o",
-      "title": "This Stealth Model Makes Claude Code Free. Here's How.",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=stealth-claude-code&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI tested Stealth OX Alpha and other free OpenRouter models inside Claude Code to see how far they can actually go. \n\nThis video walks through the setup, shows real tests across coding and knowledge work, and breaks down where free models hold up versus where Claude and GPT are still worth paying for. You\u2019ll also see the privacy, speed, and reliability tradeoffs to consider before routing your Claude Code sessions through an anonymous model.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Free Claude Code Overview\n0:31 OpenRouter Setup\n2:44 Configure Claude Code\n4:34 Free Models Router\n5:17 Landing Page Test\n7:39 Where Free Models Work\n8:25 YouTube Analytics Test\n10:20 Skills & Knowledge Work\n12:12 Final Verdict\n13:06 Final Thoughts",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-08-21T22:47:43Z",
-      "fetched_at": "2026-08-22T01:50:21.382937Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -59232,66 +59212,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ab2725c8b6357ae8",
-      "url": "https://x.com/steipete/status/2090946181564440727",
-      "title": "dropping new skill brb https://t.co/JuKdTVVNzW",
-      "summary": "dropping new skill brb https://t.co/JuKdTVVNzW",
-      "content": "dropping new skill brb https://t.co/JuKdTVVNzW",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-21T23:36:32Z",
-      "fetched_at": "2026-08-22T19:45:02.519558Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "337cd1669e968661",
-      "url": "https://x.com/OpenAI/status/2090944840972571078",
-      "title": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we...",
-      "summary": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we shipped this week:\n\n1/ Recent photos:\u2026",
-      "content": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we shipped this week:\n\n1/ Recent photos:\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-08-21T23:31:12Z",
-      "fetched_at": "2026-08-22T19:44:58.726050Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5b5b35bd2daf29c7",
-      "url": "https://x.com/steipete/status/2090935830672265340",
-      "title": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, Xai...",
-      "summary": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, XaiImageApiFetch/1.0\n\nSome sites like Link\u2026",
-      "content": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, XaiImageApiFetch/1.0\n\nSome sites like Link\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-21T22:55:24Z",
-      "fetched_at": "2026-08-22T19:45:02.519619Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "27e684752cc0a3f0",
       "url": "https://x.com/dani_avila7/status/2091585142795936060",
       "title": "Humans are no longer the biggest token consumers\n\nAgentic tokens passed human ones on OpenRouter ear...",
@@ -61071,6 +60991,127 @@
       "author": "geminiapp",
       "published_at": "2026-08-28T21:26:29Z",
       "fetched_at": "2026-08-28T22:15:07.578641Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0fcfb54c99d21d89",
+      "url": "https://x.com/simonw/status/2093492496001319349",
+      "title": "RT @yishan: TIL that the annoying tell of AI text is called a \"cataphoric teaser\" - the linguistic c...",
+      "summary": "RT @yishan: TIL that the annoying tell of AI text is called a \"cataphoric teaser\" - the linguistic construction used to create a cheap feel\u2026",
+      "content": "RT @yishan: TIL that the annoying tell of AI text is called a \"cataphoric teaser\" - the linguistic construction used to create a cheap feel\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-08-29T00:14:40Z",
+      "fetched_at": "2026-08-29T00:31:22.381302Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4703d91db3db2547",
+      "url": "https://x.com/steipete/status/2093464998161121720",
+      "title": "RT @dhh: Omarchy is blowing up. I've never been involved with anything in my career that has grown t...",
+      "summary": "RT @dhh: Omarchy is blowing up. I've never been involved with anything in my career that has grown this fast. With Ruby on Rails, we had ye\u2026",
+      "content": "RT @dhh: Omarchy is blowing up. I've never been involved with anything in my career that has grown this fast. With Ruby on Rails, we had ye\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-28T22:25:24Z",
+      "fetched_at": "2026-08-29T00:31:45.211860Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bce28ed10d678cb8",
+      "url": "https://x.com/dani_avila7/status/2093464850282271169",
+      "title": "New Claude Code 2.1.251 adds two new hooks\n\n- PreModelSwitch: block, confirm, or annotate a model sw...",
+      "summary": "New Claude Code 2.1.251 adds two new hooks\n\n- PreModelSwitch: block, confirm, or annotate a model switch\n\n- PostModelSwitch: react after the switch happens\n\nInteresting if you need to protect prompt caching, track model changes, or validate when users switch models https://t.co/KHpi9tuiKI",
+      "content": "New Claude Code 2.1.251 adds two new hooks\n\n- PreModelSwitch: block, confirm, or annotate a model switch\n\n- PostModelSwitch: react after the switch happens\n\nInteresting if you need to protect prompt caching, track model changes, or validate when users switch models https://t.co/KHpi9tuiKI",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-28T22:24:49Z",
+      "fetched_at": "2026-08-29T00:31:25.282714Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab2725c8b6357ae8",
+      "url": "https://x.com/steipete/status/2090946181564440727",
+      "title": "dropping new skill brb https://t.co/JuKdTVVNzW",
+      "summary": "dropping new skill brb https://t.co/JuKdTVVNzW",
+      "content": "dropping new skill brb https://t.co/JuKdTVVNzW",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-21T23:36:32Z",
+      "fetched_at": "2026-08-22T19:45:02.519558Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "337cd1669e968661",
+      "url": "https://x.com/OpenAI/status/2090944840972571078",
+      "title": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we...",
+      "summary": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we shipped this week:\n\n1/ Recent photos:\u2026",
+      "content": "RT @adamhfry: This week\u2019s ChatGPT feature drop - Aug 21:\n\nAnother Friday, another roundup of what we shipped this week:\n\n1/ Recent photos:\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-08-21T23:31:12Z",
+      "fetched_at": "2026-08-22T19:44:58.726050Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5b5b35bd2daf29c7",
+      "url": "https://x.com/steipete/status/2090935830672265340",
+      "title": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, Xai...",
+      "summary": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, XaiImageApiFetch/1.0\n\nSome sites like Link\u2026",
+      "content": "RT @_can1357: UA spoofing is back on baby, for only $0.00\u00a0you too can be OpenAI File Downloader, XaiImageApiFetch/1.0\n\nSome sites like Link\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-21T22:55:24Z",
+      "fetched_at": "2026-08-22T19:45:02.519619Z",
       "score": null,
       "score_reason": "",
       "tier": "",
