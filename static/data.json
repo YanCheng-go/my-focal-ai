@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-08-29T20:56:33.842337+00:00",
+  "exported_at": "2026-08-29T22:44:47.657466+00:00",
   "period_hours": 168,
   "total": 2829,
   "all_tags": [
@@ -59235,66 +59235,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "e59bd24fe7062a34",
-      "url": "https://x.com/steipete/status/2091289048812028355",
-      "title": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, ...",
-      "summary": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, successful people hyping it up all week\u2026",
-      "content": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, successful people hyping it up all week\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-22T22:18:58Z",
-      "fetched_at": "2026-08-23T09:21:18.175270Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ee5ae1222adab4a0",
-      "url": "https://x.com/steipete/status/2091287727031591150",
-      "title": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &a...",
-      "summary": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &amp; represents a lack of understanding of t\u2026",
-      "content": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &amp; represents a lack of understanding of t\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-22T22:13:43Z",
-      "fetched_at": "2026-08-23T09:21:18.175300Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6d9e0dd23b76c78e",
-      "url": "https://x.com/steipete/status/2091283749359251933",
-      "title": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish ...",
-      "summary": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish https://t.co/871CI2XdUz",
-      "content": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish https://t.co/871CI2XdUz",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-22T21:57:54Z",
-      "fetched_at": "2026-08-23T09:21:18.175326Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "27e684752cc0a3f0",
       "url": "https://x.com/dani_avila7/status/2091585142795936060",
       "title": "Humans are no longer the biggest token consumers\n\nAgentic tokens passed human ones on OpenRouter ear...",
@@ -61277,6 +61217,66 @@
       "author": "dani_avila7",
       "published_at": "2026-08-29T20:05:51Z",
       "fetched_at": "2026-08-29T20:44:09.433179Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e59bd24fe7062a34",
+      "url": "https://x.com/steipete/status/2091289048812028355",
+      "title": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, ...",
+      "summary": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, successful people hyping it up all week\u2026",
+      "content": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, successful people hyping it up all week\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-22T22:18:58Z",
+      "fetched_at": "2026-08-23T09:21:18.175270Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ee5ae1222adab4a0",
+      "url": "https://x.com/steipete/status/2091287727031591150",
+      "title": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &a...",
+      "summary": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &amp; represents a lack of understanding of t\u2026",
+      "content": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &amp; represents a lack of understanding of t\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-22T22:13:43Z",
+      "fetched_at": "2026-08-23T09:21:18.175300Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6d9e0dd23b76c78e",
+      "url": "https://x.com/steipete/status/2091283749359251933",
+      "title": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish ...",
+      "summary": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish https://t.co/871CI2XdUz",
+      "content": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish https://t.co/871CI2XdUz",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-22T21:57:54Z",
+      "fetched_at": "2026-08-23T09:21:18.175326Z",
       "score": null,
       "score_reason": "",
       "tier": "",
