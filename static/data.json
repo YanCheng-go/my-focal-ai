@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-30T05:33:58.758475+00:00",
+  "exported_at": "2026-08-30T07:50:08.361686+00:00",
   "period_hours": 168,
-  "total": 2829,
+  "total": 2830,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -61173,6 +61173,26 @@
       "author": "dani_avila7",
       "published_at": "2026-08-30T02:00:26Z",
       "fetched_at": "2026-08-30T03:33:21.018688Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f4c8c290b8a4d693",
+      "url": "https://x.com/steipete/status/2093940339870765252",
+      "title": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kerne...",
+      "summary": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kernel code had no idea what it did line by\u2026",
+      "content": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kernel code had no idea what it did line by\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-30T05:54:15Z",
+      "fetched_at": "2026-08-30T07:50:01.089348Z",
       "score": null,
       "score_reason": "",
       "tier": "",
