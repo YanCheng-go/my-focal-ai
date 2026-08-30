@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-30T08:19:47.739009+00:00",
+  "exported_at": "2026-08-30T12:42:35.873014+00:00",
   "period_hours": 168,
-  "total": 2826,
+  "total": 2825,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12750,25 +12750,6 @@
       "author": "Nana Janashia",
       "published_at": "2026-08-23T15:30:11Z",
       "fetched_at": "2026-08-23T16:43:39.256563Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8a3e6be8cabfa0de",
-      "url": "https://www.youtube.com/watch?v=eFf2OvkZxEM",
-      "title": "What Is a Digital Librarian AI Agent? Connecting SQL & Vector Database",
-      "summary": "Learn more about Types of AI agents here \u2192 https://ibm.biz/~CybnjCGya\n\nYour data may know what happened, but not always why. Shad Griffin explains how a Digital Librarian AI Agent combines SQL databases, vector databases, and semantic search to answer complex questions. Learn how agentic workflows connect structured and unstructured data into grounded insights.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~X8FmdLGYs\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aiagents #sql #vectordatabases #agenticai",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-23T11:00:37Z",
-      "fetched_at": "2026-08-23T13:02:37.688164Z",
       "score": null,
       "score_reason": "",
       "tier": "",
