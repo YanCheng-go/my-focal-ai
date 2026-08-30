@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-30T14:58:33.401766+00:00",
+  "exported_at": "2026-08-30T16:58:56.607060+00:00",
   "period_hours": 168,
-  "total": 2826,
+  "total": 2824,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12727,47 +12727,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-08-23T22:52:31Z",
       "fetched_at": "2026-08-24T01:57:43.449855Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "31c17ee464bd5f6d",
-      "url": "https://www.youtube.com/shorts/FZUJDt-vJ8o",
-      "title": "\u201cTreat computing as an onion\"",
-      "summary": "with Addy Osmani, Author and Director of Engineering.\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-08-23T16:30:18Z",
-      "fetched_at": "2026-08-23T16:43:40.577949Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "661898155d13e9c2",
-      "url": "https://www.youtube.com/shorts/vGO57PsPRfQ",
-      "title": "\"It's So Hard.\" That's the Point! \u26a1\ufe0f",
-      "summary": "When something feels difficult, remember that that's the point. \u26a1\ufe0f\n\nTrue growth and tech career resilience come from embracing hard things when you want to quit. Develop growth mindset motivation and focus on overcoming mental friction in your daily work, fitness, and career. \ud83d\ude80\n\n#thatsthepoint #embracinghardthings #techcareerresilience #shorts #motivation",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-08-23T15:30:11Z",
-      "fetched_at": "2026-08-23T16:43:39.256563Z",
       "score": null,
       "score_reason": "",
       "tier": "",
