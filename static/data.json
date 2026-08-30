@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-30T00:23:19.886210+00:00",
+  "exported_at": "2026-08-30T01:00:43.771047+00:00",
   "period_hours": 168,
-  "total": 2825,
+  "total": 2828,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -37227,29 +37227,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3b44ef5086f0454c",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
-      "title": "v2.1.241",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Bug fixes and reliability improvements</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Bug fixes and reliability improvements</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-08-23T00:52:16Z",
-      "fetched_at": "2026-08-23T02:00:04.895185Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "775b1b736a3963e2",
       "url": "https://arxiv.org/abs/2608.24361",
       "title": "Adaptive Influence Graphs for Failure Attribution in Multi-Agent Systems",
@@ -59194,26 +59171,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ddb7d906eae08151",
-      "url": "https://x.com/dani_avila7/status/2091324671417282584",
-      "title": "I genuinely enjoy maintaining my open source repo\n\n30K+ stars, 123 contributors and 146 PRs open rig...",
-      "summary": "I genuinely enjoy maintaining my open source repo\n\n30K+ stars, 123 contributors and 146 PRs open right now\n\nThe best part... every PR brings a new Claude Skill, Subagent, Command, MCP, Hook, Setting, or Plugin that the community can use and install\n\nSeveral companies are already https://t.co/9unxFQCaMC",
-      "content": "I genuinely enjoy maintaining my open source repo\n\n30K+ stars, 123 contributors and 146 PRs open right now\n\nThe best part... every PR brings a new Claude Skill, Subagent, Command, MCP, Hook, Setting, or Plugin that the community can use and install\n\nSeveral companies are already https://t.co/9unxFQCaMC",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-23T00:40:31Z",
-      "fetched_at": "2026-08-23T09:21:10.485591Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "27e684752cc0a3f0",
       "url": "https://x.com/dani_avila7/status/2091585142795936060",
       "title": "Humans are no longer the biggest token consumers\n\nAgentic tokens passed human ones on OpenRouter ear...",
@@ -61196,6 +61153,106 @@
       "author": "dani_avila7",
       "published_at": "2026-08-29T20:05:51Z",
       "fetched_at": "2026-08-29T20:44:09.433179Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d828bdea787de3c8",
+      "url": "https://x.com/dani_avila7/status/2093844695403118818",
+      "title": "Academy guide Agent Skill by Anthropic\n\nProbably one of the most useful skills if you\u2019re learning th...",
+      "summary": "Academy guide Agent Skill by Anthropic\n\nProbably one of the most useful skills if you\u2019re learning the Claude ecosystem\n\n(Save this and try it later)\n\nInstall it and Claude itself guides you to the right courses, tutorials and use cases from Claude Academy\n\nCovers all the product",
+      "content": "Academy guide Agent Skill by Anthropic\n\nProbably one of the most useful skills if you\u2019re learning the Claude ecosystem\n\n(Save this and try it later)\n\nInstall it and Claude itself guides you to the right courses, tutorials and use cases from Claude Academy\n\nCovers all the product",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-29T23:34:11Z",
+      "fetched_at": "2026-08-30T01:00:31.093978Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ddb7d906eae08151",
+      "url": "https://x.com/dani_avila7/status/2091324671417282584",
+      "title": "I genuinely enjoy maintaining my open source repo\n\n30K+ stars, 123 contributors and 146 PRs open rig...",
+      "summary": "I genuinely enjoy maintaining my open source repo\n\n30K+ stars, 123 contributors and 146 PRs open right now\n\nThe best part... every PR brings a new Claude Skill, Subagent, Command, MCP, Hook, Setting, or Plugin that the community can use and install\n\nSeveral companies are already https://t.co/9unxFQCaMC",
+      "content": "I genuinely enjoy maintaining my open source repo\n\n30K+ stars, 123 contributors and 146 PRs open right now\n\nThe best part... every PR brings a new Claude Skill, Subagent, Command, MCP, Hook, Setting, or Plugin that the community can use and install\n\nSeveral companies are already https://t.co/9unxFQCaMC",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-23T00:40:31Z",
+      "fetched_at": "2026-08-23T09:21:10.485591Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e59bd24fe7062a34",
+      "url": "https://x.com/steipete/status/2091289048812028355",
+      "title": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, ...",
+      "summary": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, successful people hyping it up all week\u2026",
+      "content": "RT @MikeKhristo: let\u2019s pause for a sec and talk about https://t.co/19wLOjliYq\n\nVCs, notable people, successful people hyping it up all week\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-22T22:18:58Z",
+      "fetched_at": "2026-08-23T09:21:18.175270Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ee5ae1222adab4a0",
+      "url": "https://x.com/steipete/status/2091287727031591150",
+      "title": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &a...",
+      "summary": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &amp; represents a lack of understanding of t\u2026",
+      "content": "RT @RhysSullivan: I read through this paper and it's riddled with errors, partially ai generated, &amp; represents a lack of understanding of t\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-22T22:13:43Z",
+      "fetched_at": "2026-08-23T09:21:18.175300Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6d9e0dd23b76c78e",
+      "url": "https://x.com/steipete/status/2091283749359251933",
+      "title": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish ...",
+      "summary": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish https://t.co/871CI2XdUz",
+      "content": "RT @yuntiandeng: Claude has become a language, so I built a translator.\n\nEnglish &lt;-&gt; Claudish https://t.co/871CI2XdUz",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-22T21:57:54Z",
+      "fetched_at": "2026-08-23T09:21:18.175326Z",
       "score": null,
       "score_reason": "",
       "tier": "",
