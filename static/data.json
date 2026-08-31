@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-08-31T10:01:19.670948+00:00",
+  "exported_at": "2026-08-31T12:11:38.981603+00:00",
   "period_hours": 168,
-  "total": 2832,
+  "total": 2830,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -22604,25 +22604,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-08-24T13:28:55Z",
       "fetched_at": "2026-08-24T15:00:20.439694Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "833d2e66bc5ac71c",
-      "url": "https://www.youtube.com/watch?v=zAe-sau06io",
-      "title": "How AI Coding Agents Understand Your Codebase & Developer Tools",
-      "summary": "Learn more about AI for Code here \u2192 https://ibm.biz/~ggidEPSQb\n\nGood code is not just code that runs. Prachi Modi explains how AI coding agents use repository awareness, architectural context, and developer tools to make better coding decisions. Learn why planning, verification, and understanding matter before AI writes code.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~s4PSVufNO\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aicoding #developertools #aicodingtools #softwaredevelopment",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-24T11:00:38Z",
-      "fetched_at": "2026-08-24T13:13:15.671030Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -47011,27 +46992,6 @@
       "author": "Rongfeng Guo, Yinxuan Huang, Yusen Wu, Maoqing Zhong, Yunlu Chen, Meng Tang, Teng Long, Vincent Tao Hu",
       "published_at": "2026-08-26T04:00:00Z",
       "fetched_at": "2026-08-26T04:56:19.149428Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "abd52c9f1dde403e",
-      "url": "https://openai.com/index/gpt-5-6-in-kiro",
-      "title": "Advancing price-performance for developers with GPT\u20115.6 in Kiro",
-      "summary": "GPT\u20115.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-24T12:00:00Z",
-      "fetched_at": "2026-08-24T20:48:53.443176Z",
       "score": null,
       "score_reason": "",
       "tier": "",
