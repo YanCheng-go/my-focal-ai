@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-01T16:41:52.747011+00:00",
+  "exported_at": "2026-09-01T17:54:44.107434+00:00",
   "period_hours": 168,
-  "total": 2774,
+  "total": 2777,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -58377,67 +58377,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6a199b1b915fa0c6",
-      "url": "https://x.com/trq212/status/2092303682616627311",
-      "title": "excited to share more on how we\u2019re making Claude Code more hackable soon",
-      "summary": "excited to share more on how we\u2019re making Claude Code more hackable soon",
-      "content": "excited to share more on how we\u2019re making Claude Code more hackable soon",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-08-25T17:30:45Z",
-      "fetched_at": "2026-08-25T18:30:43.622318Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8b48c149fa10a193",
-      "url": "https://x.com/steipete/status/2092296442375504337",
-      "title": "RT @Pluggedcircle: What does the stack of the most 'cracked' builders look like these days?\n\n@steipe...",
-      "summary": "RT @Pluggedcircle: What does the stack of the most 'cracked' builders look like these days?\n\n@steipete\u2019s latest progression:\n\ncli \u2192 app \u2192 w\u2026",
-      "content": "RT @Pluggedcircle: What does the stack of the most 'cracked' builders look like these days?\n\n@steipete\u2019s latest progression:\n\ncli \u2192 app \u2192 w\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-25T17:01:59Z",
-      "fetched_at": "2026-08-25T18:30:56.511998Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "372df52f0902e312",
-      "url": "https://x.com/steipete/status/2092294123638362346",
-      "title": "This week.",
-      "summary": "This week.",
-      "content": "This week.",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-25T16:52:46Z",
-      "fetched_at": "2026-08-25T18:30:56.512059Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "65612f658fb72066",
       "url": "https://x.com/GeminiApp/status/2092346406984114606",
       "title": "RT @googlechrome: New in Chrome! We\u2019re improving how you interact with images on the web with Gemini...",
@@ -60464,6 +60403,128 @@
       "author": "dani_avila7",
       "published_at": "2026-09-01T13:26:22Z",
       "fetched_at": "2026-09-01T15:38:32.764916Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6a199b1b915fa0c6",
+      "url": "https://x.com/trq212/status/2092303682616627311",
+      "title": "excited to share more on how we\u2019re making Claude Code more hackable soon",
+      "summary": "excited to share more on how we\u2019re making Claude Code more hackable soon",
+      "content": "excited to share more on how we\u2019re making Claude Code more hackable soon",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-08-25T17:30:45Z",
+      "fetched_at": "2026-08-25T18:30:43.622318Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8b48c149fa10a193",
+      "url": "https://x.com/steipete/status/2092296442375504337",
+      "title": "RT @Pluggedcircle: What does the stack of the most 'cracked' builders look like these days?\n\n@steipe...",
+      "summary": "RT @Pluggedcircle: What does the stack of the most 'cracked' builders look like these days?\n\n@steipete\u2019s latest progression:\n\ncli \u2192 app \u2192 w\u2026",
+      "content": "RT @Pluggedcircle: What does the stack of the most 'cracked' builders look like these days?\n\n@steipete\u2019s latest progression:\n\ncli \u2192 app \u2192 w\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-25T17:01:59Z",
+      "fetched_at": "2026-08-25T18:30:56.511998Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "372df52f0902e312",
+      "url": "https://x.com/steipete/status/2092294123638362346",
+      "title": "This week.",
+      "summary": "This week.",
+      "content": "This week.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-25T16:52:46Z",
+      "fetched_at": "2026-08-25T18:30:56.512059Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d4ff239ee17cd13a",
+      "url": "https://x.com/GeminiApp/status/2092283845458678147",
+      "title": "Make the most of the new student offer by studying up on Gemini\u2019s learning tools.\n\nAt our upcoming G...",
+      "summary": "Make the most of the new student offer by studying up on Gemini\u2019s learning tools.\n\nAt our upcoming Gemini Discord event, you\u2019ll get a crash course on study notebooks, interactive quizzes, our new student hub, and more.\n\n\ud83d\udc49Join the Discord to watch live: https://t.co/sgs47wjJic\n\ud83d\udcc5",
+      "content": "Make the most of the new student offer by studying up on Gemini\u2019s learning tools.\n\nAt our upcoming Gemini Discord event, you\u2019ll get a crash course on study notebooks, interactive quizzes, our new student hub, and more.\n\n\ud83d\udc49Join the Discord to watch live: https://t.co/sgs47wjJic\n\ud83d\udcc5",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-08-25T16:11:56Z",
+      "fetched_at": "2026-08-25T18:30:52.243463Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e9330bee3d8722da",
+      "url": "https://x.com/dani_avila7/status/2092277405419254179",
+      "title": "Not following the AGENTS.md standard and sticking with CLAUDE.md is becoming a problem at scale\n\nI h...",
+      "summary": "Not following the AGENTS.md standard and sticking with CLAUDE.md is becoming a problem at scale\n\nI haven\u2019t felt it much since I mostly use Claude, but the friction is obvious when moving workflows or agents between tools\n\nStandardizing such a critical file, one that\u2019s sent with",
+      "content": "Not following the AGENTS.md standard and sticking with CLAUDE.md is becoming a problem at scale\n\nI haven\u2019t felt it much since I mostly use Claude, but the friction is obvious when moving workflows or agents between tools\n\nStandardizing such a critical file, one that\u2019s sent with",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-25T15:46:20Z",
+      "fetched_at": "2026-08-25T18:30:48.577993Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "25237cab895fbc9a",
+      "url": "https://x.com/GoogleAI/status/2092275116503707733",
+      "title": "https://t.co/LJGIbM3Ksy",
+      "summary": "https://t.co/LJGIbM3Ksy",
+      "content": "https://t.co/LJGIbM3Ksy",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-08-25T15:37:15Z",
+      "fetched_at": "2026-08-25T18:30:54.257483Z",
       "score": null,
       "score_reason": "",
       "tier": "",
