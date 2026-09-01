@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-09-01T11:40:38.203620+00:00",
+  "exported_at": "2026-09-01T12:54:17.153114+00:00",
   "period_hours": 168,
   "total": 2778,
   "all_tags": [
@@ -58399,26 +58399,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cde304f4b2b4c5fd",
-      "url": "https://x.com/dani_avila7/status/2092216808354808211",
-      "title": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors ...",
-      "summary": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors on demand\n\nOr delegate specific tasks to subagents running different models https://t.co/BuyrpbQxH7",
-      "content": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors on demand\n\nOr delegate specific tasks to subagents running different models https://t.co/BuyrpbQxH7",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-25T11:45:33Z",
-      "fetched_at": "2026-08-25T14:11:00.735442Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6a199b1b915fa0c6",
       "url": "https://x.com/trq212/status/2092303682616627311",
       "title": "excited to share more on how we\u2019re making Claude Code more hackable soon",
@@ -60547,6 +60527,26 @@
       "author": "steipete",
       "published_at": "2026-08-31T18:58:36Z",
       "fetched_at": "2026-09-01T08:01:13.339463Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cde304f4b2b4c5fd",
+      "url": "https://x.com/dani_avila7/status/2092216808354808211",
+      "title": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors ...",
+      "summary": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors on demand\n\nOr delegate specific tasks to subagents running different models https://t.co/BuyrpbQxH7",
+      "content": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors on demand\n\nOr delegate specific tasks to subagents running different models https://t.co/BuyrpbQxH7",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-25T11:45:33Z",
+      "fetched_at": "2026-08-25T14:11:00.735442Z",
       "score": null,
       "score_reason": "",
       "tier": "",
