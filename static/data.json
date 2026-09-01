@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-01T21:03:19.786356+00:00",
+  "exported_at": "2026-09-01T21:46:40.850609+00:00",
   "period_hours": 168,
-  "total": 2781,
+  "total": 2789,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -60611,6 +60611,169 @@
       "author": "dani_avila7",
       "published_at": "2026-09-01T13:26:22Z",
       "fetched_at": "2026-09-01T15:38:32.764916Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "85aa14752661f0f2",
+      "url": "https://x.com/OpenAI/status/2094885578173260259",
+      "title": "As we prepare to release Astra, we\u2019re focused on making increasingly capable AI safe and broadly acc...",
+      "summary": "As we prepare to release Astra, we\u2019re focused on making increasingly capable AI safe and broadly accessible.\n\nAstra represents a significant advance in cybersecurity capability, reaching the Critical threshold under our Preparedness Framework.\n\nWe're previewing how we evaluated",
+      "content": "As we prepare to release Astra, we\u2019re focused on making increasingly capable AI safe and broadly accessible.\n\nAstra represents a significant advance in cybersecurity capability, reaching the Critical threshold under our Preparedness Framework.\n\nWe're previewing how we evaluated",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-01T20:30:17Z",
+      "fetched_at": "2026-09-01T21:46:34.192628Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c1d6e32539bf2316",
+      "url": "https://x.com/simonw/status/2094864223683903800",
+      "title": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice...",
+      "summary": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a hidden folder in the ~/.cache directory https://t.co/iAkdugCKxS",
+      "content": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a hidden folder in the ~/.cache directory https://t.co/iAkdugCKxS",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-01T19:05:26Z",
+      "fetched_at": "2026-09-01T21:46:27.498309Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b0fc5df5731a3513",
+      "url": "https://x.com/OpenAI/status/2094859422577332541",
+      "title": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows...",
+      "summary": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows healthcare teams already rely on. \u2665\ufe0f\u2026",
+      "content": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows healthcare teams already rely on. \u2665\ufe0f\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-01T18:46:21Z",
+      "fetched_at": "2026-09-01T21:46:34.192680Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "10bfbc0392fc47e8",
+      "url": "https://x.com/dani_avila7/status/2094855489804747033",
+      "title": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
+      "summary": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
+      "content": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-01T18:30:43Z",
+      "fetched_at": "2026-09-01T21:46:29.044494Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8eb28afe1afbed41",
+      "url": "https://x.com/dani_avila7/status/2094849570886869247",
+      "title": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
+      "summary": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
+      "content": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-01T18:07:12Z",
+      "fetched_at": "2026-09-01T21:46:29.044545Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d26f32e0edb22233",
+      "url": "https://x.com/AnthropicAI/status/2094848668650074336",
+      "title": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most ad...",
+      "summary": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most advanced models for coding and knowledge\u2026",
+      "content": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most advanced models for coding and knowledge\u2026",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-01T18:03:37Z",
+      "fetched_at": "2026-09-01T21:46:37.020041Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82c91f12a1d14f02",
+      "url": "https://x.com/OpenAI/status/2094847603234251097",
+      "title": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/te...",
+      "summary": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/technical writing surface. It is owned by\u2026",
+      "content": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/technical writing surface. It is owned by\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-01T17:59:23Z",
+      "fetched_at": "2026-09-01T21:46:34.192711Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76b5c76f3bc4e39f",
+      "url": "https://x.com/bcherny/status/2092355642363453943",
+      "title": "A small improvement: memory is now simpler and more powerful. Enjoy!",
+      "summary": "A small improvement: memory is now simpler and more powerful. Enjoy!",
+      "content": "A small improvement: memory is now simpler and more powerful. Enjoy!",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-25T20:57:13Z",
+      "fetched_at": "2026-08-25T23:01:44.186289Z",
       "score": null,
       "score_reason": "",
       "tier": "",
