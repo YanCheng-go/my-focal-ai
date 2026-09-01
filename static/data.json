@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-01T12:54:17.153114+00:00",
+  "exported_at": "2026-09-01T15:38:48.941679+00:00",
   "period_hours": 168,
-  "total": 2778,
+  "total": 2771,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -27482,69 +27482,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cd140ce3164a9cce",
-      "url": "https://blogs.nvidia.com/blog/gamescom-rtx-spark-pc-games-technology/",
-      "title": "Leading Publishers Bring Blockbuster PC Games and Technology to NVIDIA RTX Spark",
-      "summary": "NVIDIA is bringing the next wave of RTX gaming to the Gamescom conference running this week in Cologne, Germany, with support for new games, anti-cheat technologies and increased visual quality.\u00a0 Electronic Arts, Embark and Ubisoft are among the latest game publishers and developers bringing their blockbuster titles to NVIDIA RTX Spark ahead of its launch [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">NVIDIA is bringing the next wave of RTX gaming to the Gamescom conference running this week in Cologne, Germany, with support for new games, anti-cheat technologies and increased visual quality.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Electronic Arts, Embark and Ubisoft are among the latest game publishers and developers bringing their blockbuster titles to </span><a href=\"https://www.nvidia.com/en-us/products/rtx-spark/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA RTX Spark</span></a><span style=\"font-weight: 400;\"> ahead of its launch this fall. They join the publishers that announced RTX Spark support at COMPUTEX in May, including KRAFTON, NetEase, Riot Games and XBOX.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA is working closely with game developers and ecosystem partners to ensure today\u2019s top PC games \u2014 including EA\u2019s </span><i><span style=\"font-weight: 400;\">EA SPORTS</span></i> <i><span style=\"font-weight: 400;\">F1 25</span></i><span style=\"font-weight: 400;\"> and </span><i><span style=\"font-weight: 400;\">Apex Legends</span></i><span style=\"font-weight: 400;\">, Ubisoft\u2019s </span><i><span style=\"font-weight: 400;\">Anno 117: Pax Romana</span></i><span style=\"font-weight: 400;\"> and Embark Studios\u2019 </span><i><span style=\"font-weight: 400;\">ARC Raiders </span></i><span style=\"font-weight: 400;\">and </span><i><span style=\"font-weight: 400;\">THE FINALS</span></i><span style=\"font-weight: 400;\"> \u2014 run seamlessly on RTX Spark devices.</span></p>\n<p><i><span style=\"font-weight: 400;\">\u201c</span></i><span style=\"font-weight: 400;\">We\u2019re excited to bring </span><i><span style=\"font-weight: 400;\">Anno 117: Pax Romana</span></i><span style=\"font-weight: 400;\"> to a new generation of RTX-powered PCs,\u201d said St\u00e9phane Jankowski, Ubisoft executive producer of </span><i><span style=\"font-weight: 400;\">Anno 117 : Pax Romana. </span></i><span style=\"font-weight: 400;\">\u201cOur teams build the game to be seen wide: full districts, long sightlines, thousands of details at once. Seeing RTX Spark hold that level of fidelity from a single chip is genuinely impressive.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">RTX Spark reinvents personal computing, bringing personal AI agents, advanced content creation and high-performance gaming together in a platform engineered from the ground up for the next wave of Windows PCs. For gamers, RTX Spark combines Windows devices with NVIDIA RTX technologies, including </span><a href=\"https://www.nvidia.com/en-us/geforce/technologies/dlss/\" target=\"_blank\"><span style=\"font-weight: 400;\">DLSS</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.nvidia.com/en-us/geforce/technologies/reflex/\" target=\"_blank\"><span style=\"font-weight: 400;\">Reflex</span></a><span style=\"font-weight: 400;\">.\u00a0</span></p>\n<p><img alt=\"\" class=\"alignnone size-large wp-image-97946\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/08/Gamescom-RTX-Spark-Body-1-1680x945.jpeg\" width=\"1200\" /></p>\n<h2><b>Bringing Anti-Cheat to RTX Spark</b></h2>\n<p><span style=\"font-weight: 400;\">Supporting modern PC gaming goes beyond running the game itself. Many of today\u2019s biggest online games rely on sophisticated anti-cheat technologies, to enable fair play across the multiple platforms these games run on.\u00a0\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA has been working with EA to bring native EA Javelin Anticheat support to RTX Spark, including for EA\u2019s biggest multiplayer games, such as </span><i><span style=\"font-weight: 400;\">EA SPORTS F1 25</span></i><span style=\"font-weight: 400;\">.</span><span style=\"font-weight: 400;\"> RTX Spark launches this fall.\u00a0</span></p>\n<h2><b>RTX Delivers Next-Generation Gaming</b></h2>\n<p><span style=\"font-weight: 400;\">RTX Spark is just one part of NVIDIA\u2019s lineup of gaming announcements at Gamescom, including:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>DLSS 4.5 Ray Reconstruction</b><span style=\"font-weight: 400;\"> is available now, featuring NVIDIA\u2019s latest second-generation transformer model to deliver even higher image quality in ray- and path-traced content. It replaces traditional denoisers with an NVIDIA supercomputer-trained AI network to reconstruct higher-quality pixels in the parts of a ray-traced frame where rays were not sampled.</span></li>\n<li style=\"font-weight: 400;\"><b>Path tracing</b><span style=\"font-weight: 400;\"> comes to </span><i><span style=\"font-weight: 400;\">CONTROL Resonant</span></i><span style=\"font-weight: 400;\"> and </span><i><span style=\"font-weight: 400;\">007 First Light</span></i><span style=\"font-weight: 400;\"> to deliver new levels of visual fidelity.\u00a0</span></li>\n<li style=\"font-weight: 400;\"><b>NVIDIA ACE</b><span style=\"font-weight: 400;\"> technologies are coming to </span><i><span style=\"font-weight: 400;\">Aniimo</span></i><span style=\"font-weight: 400;\"> in early 2027, letting players naturally interact with their creatures.</span></li>\n<li style=\"font-weight: 400;\"><i><span style=\"font-weight: 400;\">Gears of War: E-Day </span></i><span style=\"font-weight: 400;\">includes </span><b>RTX Mega Geometry</b><span style=\"font-weight: 400;\"> integration, advancing image quality on GeForce RTX GPUs, alongside ray tracing and DLSS 4.5.</span></li>\n<li style=\"font-weight: 400;\"><b>RTX Remix </b><span style=\"font-weight: 400;\">keeps remastering PC classics, with a major </span><i><span style=\"font-weight: 400;\">Painkiller RTX </span></i><span style=\"font-weight: 400;\">mod update available now and </span><i><span style=\"font-weight: 400;\">The Elder Scrolls III: Morrowind RTX </span></i><span style=\"font-weight: 400;\">coming soon.</span></li>\n<li style=\"font-weight: 400;\"><b>GeForce NOW </b><span style=\"font-weight: 400;\">gives members more ways to play with new DLSS 4.5 controls, expanded support for Steam Machine and other devices and platforms, plus blockbuster PC games including </span><i><span style=\"font-weight: 400;\">CONTROL Resonant</span></i><span style=\"font-weight: 400;\">, </span><i><span style=\"font-weight: 400;\">Gears of War: E-Day</span></i><span style=\"font-weight: 400;\"> and more coming to the cloud at launch.</span></li>\n</ul>\n<p></p>\n<p><i><span style=\"font-weight: 400;\">Find more on NVIDIA\u2019s announcements at Gamescom in </span></i><a href=\"https://www.nvidia.com/en-us/geforce/news/gamescom-2026-nvidia-geforce-rtx-dlss-4-5-announcements\" target=\"_blank\"><i><span style=\"font-weight: 400;\">this GeForce article</span></i></a><i><span style=\"font-weight: 400;\">.\u00a0</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Alexander Mejia",
-      "published_at": "2026-08-25T15:30:48Z",
-      "fetched_at": "2026-08-25T16:55:49.396648Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d21068479952e403",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-2",
-      "title": "Granite 4.2 LLMs: How They're Built",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-08-25T15:14:14Z",
-      "fetched_at": "2026-08-25T16:55:50.360156Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "98ccfeb490948e3d",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5-0-470m-turboctc",
-      "title": "Extremely Fast and Accurate Transcription with Granite Speech 5.0 Turbo CTC",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-08-25T15:01:00Z",
-      "fetched_at": "2026-08-25T15:05:31.302333Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "12d36ec29c239d58",
       "url": "https://www.youtube.com/watch?v=mMNkdYnIVC4",
       "title": "Einstein Arena: Harnessing Collective Agent Intelligence for Open Science \u2014 James Zou, Together AI",
@@ -27559,26 +27496,6 @@
       "author": "AI Engineer",
       "published_at": "2026-08-25T20:46:01Z",
       "fetched_at": "2026-08-25T22:45:29.322055Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ac24225108705b2e",
-      "url": "https://www.youtube.com/shorts/XNAeptioFKU",
-      "title": "What does a Google director do?",
-      "summary": "with Addy Osmani, Author and Director of Engineering.\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-08-25T15:30:16Z",
-      "fetched_at": "2026-08-25T16:55:44.714099Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -33849,26 +33766,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ac3a8db1637882a3",
-      "url": "https://www.youtube.com/watch?v=DoHPZf7jEQ4",
-      "title": "The 3 AI Agency Mistakes Keeping You From $20K/Month Retainers",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=workless-ai-speech-montenegro&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nBuilding a great AI automation does not guarantee the client will see its value. In this presentation, I break down the three mistakes I made with one of my first agency clients and the framework I later used to sell $20,000/month retainers and scale beyond $100,000/month. \n\nYou\u2019ll learn how to diagnose the real business constraint, choose one measurable KPI, and price your work around the value it creates.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Three Costly AI Mistakes\n3:13 Nate\u2019s Automation Background\n4:58 Lessons From Goldman\n6:30 How Businesses Actually Scale\n8:34 Identify The Real Constraint\n13:20 Pick One KPI\n17:04 Pricing AI Solutions\n19:07 Value-Based Pricing\n24:32 Live Constraint Diagnosis\n27:13 From Projects To Retainers\n28:12 Free Pricing Guide",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-08-25T13:01:38Z",
-      "fetched_at": "2026-08-25T15:05:25.019796Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2b472b0d8b8e1cb3",
       "url": "https://arxiv.org/abs/2608.26585",
       "title": "GRAS: Guided Reduced-Variance Proposals and Adaptive Selection for Training-Free Reward Alignment in Discrete Diffusion",
@@ -38126,28 +38023,6 @@
       "author": "Allison Zhuang, Santiago Aranguri",
       "published_at": "2026-08-28T04:00:00Z",
       "fetched_at": "2026-08-28T06:07:55.139113Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a67eae41af4697f0",
-      "url": "https://developer.nvidia.com/blog/cuda-python-1-0-stable-apis-one-foundation-full-platform-access/",
-      "title": "CUDA Python 1.0: Stable APIs, One Foundation, Full Platform Access",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/image3-5-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />For years, a Python developer who needed a GPU had two realistic choices: Learn NVIDIA CUDA C++ well enough to write an extension, set up a build toolchain, and...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/image3-5-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />For years, a Python developer who needed a GPU had two realistic choices: Learn NVIDIA CUDA C++ well enough to write an extension, set up a build toolchain, and...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/image3-5-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" /><p>For years, a Python developer who needed a GPU had two realistic choices: Learn NVIDIA CUDA C++ well enough to write an extension, set up a build toolchain, and maintain bindings back to Python, which most people never did; or move up the stack and let someone else\u2019s library do it, namely PyTorch, CuPy, or RAPIDS. The second option is why the Python GPU ecosystem thrives. But it has limits.</p>\n<p><a href=\"https://developer.nvidia.com/blog/cuda-python-1-0-stable-apis-one-foundation-full-platform-access/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Elizabeth Goodman",
-      "published_at": "2026-08-25T15:00:00Z",
-      "fetched_at": "2026-08-25T15:05:30.875141Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -58379,26 +58254,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3675422fa721fc28",
-      "url": "https://x.com/dani_avila7/status/2092249943595434086",
-      "title": "Read this and learn from other people\u2019s workflows \n\nthen adapt it to your own workflow... DON\u2019T copy...",
-      "summary": "Read this and learn from other people\u2019s workflows \n\nthen adapt it to your own workflow... DON\u2019T copy, ADAPT",
-      "content": "Read this and learn from other people\u2019s workflows \n\nthen adapt it to your own workflow... DON\u2019T copy, ADAPT",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-25T13:57:13Z",
-      "fetched_at": "2026-08-25T14:11:00.735392Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6a199b1b915fa0c6",
       "url": "https://x.com/trq212/status/2092303682616627311",
       "title": "excited to share more on how we\u2019re making Claude Code more hackable soon",
@@ -58495,26 +58350,6 @@
       "author": "dani_avila7",
       "published_at": "2026-08-25T15:46:20Z",
       "fetched_at": "2026-08-25T18:30:48.577993Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "25237cab895fbc9a",
-      "url": "https://x.com/GoogleAI/status/2092275116503707733",
-      "title": "https://t.co/LJGIbM3Ksy",
-      "summary": "https://t.co/LJGIbM3Ksy",
-      "content": "https://t.co/LJGIbM3Ksy",
-      "source_name": "@googleai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "google"
-      ],
-      "author": "googleai",
-      "published_at": "2026-08-25T15:37:15Z",
-      "fetched_at": "2026-08-25T18:30:54.257483Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60533,11 +60368,11 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cde304f4b2b4c5fd",
-      "url": "https://x.com/dani_avila7/status/2092216808354808211",
-      "title": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors ...",
-      "summary": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors on demand\n\nOr delegate specific tasks to subagents running different models https://t.co/BuyrpbQxH7",
-      "content": "Don\u2019t switch models mid-session\n\nKeep one model as the executor and use stronger models as advisors on demand\n\nOr delegate specific tasks to subagents running different models https://t.co/BuyrpbQxH7",
+      "id": "0226fc190c125c5a",
+      "url": "https://x.com/dani_avila7/status/2094778894352101671",
+      "title": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building ...",
+      "summary": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building and testing different wiki setups, and papers like this help a lot in clarifying where to take my own research next\n\nSkill-evolution methods already discover skills from execution https://t.co/fCsHPifiUH",
+      "content": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building and testing different wiki setups, and papers like this help a lot in clarifying where to take my own research next\n\nSkill-evolution methods already discover skills from execution https://t.co/fCsHPifiUH",
       "source_name": "@dani_avila7",
       "source_type": "twitter",
       "tags": [
@@ -60545,8 +60380,28 @@
         "engineering"
       ],
       "author": "dani_avila7",
-      "published_at": "2026-08-25T11:45:33Z",
-      "fetched_at": "2026-08-25T14:11:00.735442Z",
+      "published_at": "2026-09-01T13:26:22Z",
+      "fetched_at": "2026-09-01T15:38:32.764916Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "25237cab895fbc9a",
+      "url": "https://x.com/GoogleAI/status/2092275116503707733",
+      "title": "https://t.co/LJGIbM3Ksy",
+      "summary": "https://t.co/LJGIbM3Ksy",
+      "content": "https://t.co/LJGIbM3Ksy",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-08-25T15:37:15Z",
+      "fetched_at": "2026-08-25T18:30:54.257483Z",
       "score": null,
       "score_reason": "",
       "tier": "",
