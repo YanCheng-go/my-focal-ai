@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-02T11:20:12.738241+00:00",
+  "exported_at": "2026-09-02T14:38:20.771781+00:00",
   "period_hours": 168,
-  "total": 2787,
+  "total": 2783,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28614,66 +28614,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "65d4189aaca47d70",
-      "url": "https://www.youtube.com/watch?v=VjEP0xqTUI0",
-      "title": "The Building Blocks of GTM Orchestration \u2014 Arman Vaziri, Ramp",
-      "summary": "Offer Pro V1 golf balls to golfers at East Coast construction companies. Arman Vaziri uses that as a running example and mentions in passing that it works really well. The golf balls are not the point. Getting from that one sentence to a targeted audience, outbound sequences, paid creative, a landing page and in app nudges should be a matter of describing the intent. Vaziri leads product and sales led growth engineering at Ramp and says the bottleneck was never ideas. Everyone across product, data and go to market has good ones. It is everything after: pulling the audience, writing the enablement material, persuading people to adopt the playbook, all on a timescale of months.\n\nThe foundation is an internal customer data platform. CRM, product, enrichment and buying signals alongside interaction data, real time events onto Kafka, and a Postgres store that keeps referential integrity between entities living in different systems, with the unstructured half embedded for search. They solve for one team, then scale sideways. Pre meeting briefs for account managers gather usage, vitals, open tickets and agenda in one place, which first meant mapping attendee emails to accounts when one person works for several businesses. Every run is a durable Temporal thread with each tool and model call as an activity, so a worker that dies resumes instead of reprocessing. A skill library lets people define their own brief format, which is what drove adoption. For a smaller team, Vaziri says build narrow automations first, because nobody gets a year to design the perfect architecture.\n\nSpeaker info:\n- https://www.linkedin.com/in/armanvaziri/\n\nTimestamps:\n0:00 - What go to market orchestration means\n1:56 - Golf balls for construction golfers\n2:50 - Three bottlenecks: data, busy work, coordination\n5:34 - Building an internal customer data platform\n8:10 - Solve one team, then scale sideways\n8:37 - Pre meeting briefs for account managers\n10:14 - Durable threads on Temporal\n12:20 - A skill library so people set their own format\n15:33 - Back to the golf example\n18:32 - Q&amp;A: where a smaller team should start",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-26T14:30:38Z",
-      "fetched_at": "2026-08-26T15:53:20.478569Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1202d499891d355f",
-      "url": "https://www.youtube.com/watch?v=L4I7WgiEquo",
-      "title": "AI in GTM at Notion \u2014 Flora Liu",
-      "summary": "The champion just left. Do not contact this customer again. Blocked in legal. The facts that decide what a rep does next usually sit in someone's meeting notes, and Flora Liu's point is that an automation which cannot read them will eventually do something catastrophically wrong. Liu, an engineer on Notion's GTM engineering team, says a year ago this looked like a marketing ops problem and now looks like one of the more interesting distributed systems problems they have worked on. The starting state was a spiderweb: customer data across Salesforce, Gong and Outreach, product usage in Snowflake, a decade of context in docs, and every department quietly building its own agents in single player mode.\n\nThe team reduced every workflow to four questions: what do we know, what should happen next, how do we execute that safely, and did it work. Those became four layers, held together by one rule: humans and agents operate on the same substrate, not an AI layer bolted on top. Snowflake computes the truth, DynamoDB serves it as a denormalized profile agents query in milliseconds, and it lands back in Notion where reps already work. Signals turn customer events into tasks, including external ones like a funding round or a shift in tech stack, and each becomes a durable Temporal workflow so one malformed transcript cannot take down a batch. Agents never speak to customers; a contact sales form counts as untrusted input. Thirteen weeks in, enterprise reps log more qualified opportunities, and users given context aware recommendations were 63% more likely to take the next step.\n\nSpeaker info:\n- https://twitter.com/floppyliu\n- https://www.linkedin.com/in/flofloliu/\n- https://www.flofloliu.com/\n\nTimestamps:\n0:00 - From marketing ops problem to distributed systems problem\n2:23 - One journey for the customer, disconnected systems inside\n4:34 - Data quality, latency, and the notes nobody can parse\n5:36 - Four questions that became four layers\n6:39 - Humans and agents on the same loop\n7:29 - Agents never talk to the customer\n9:01 - Snowflake computes truth, DynamoDB serves it\n11:20 - Signals: turning customer events into tasks\n13:04 - Shadowing the best reps, encoded on Temporal\n16:04 - A rep's day starting from a prioritized task box\n17:21 - Build or buy, decided per layer\n18:52 - Early numbers and takeaways",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-26T14:00:05Z",
-      "fetched_at": "2026-08-26T15:53:20.478577Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "14e64dc354c183e0",
-      "url": "https://www.youtube.com/watch?v=UhCY231d0FQ",
-      "title": "GTM Engineering: The Technical Bits \u2014 Everett Berry, Clay",
-      "summary": "Ask one data vendor for phone numbers across a set of countries and you get about half of them. Hence waterfalling: layer provider on provider until the field is filled, and run evals to know which to trust. Everett Berry's tour of the hard parts of GTM engineering starts with data, because the goal is a perfect virtual copy of your market and accounts refuse to hold still. A company gets acquired, opens offices, ships products, hires and fires while your own team markets and sells at it, and each of those changes the record. Refreshing everything is expensive when you buy the data, so you pick which fields update and how often.\n\nOrchestration is the second problem, and it is data engineering. Berry usually finds teams running twenty or thirty tools whose views of the world disagree: some need one record in real time, others hundreds of thousands nightly; employee count moves constantly, headquarters almost never. Worse, those tools sync to each other behind your back, so a contact created in the CRM must reach the sequencer before you can act on it. Clay's answer is a graph of general purpose nodes: agents, tool calls, conditionals, code, and a map reduce fan out. Third is agents, one per account, dormant most of the time, woken by a trigger, holding state across a deal cycle of weeks. Fourth is execution, where the constraints turn human. Send as the rep and a campaign that lands badly burns your domain reputation, so you spread across domains and then route the replies home.\n\nSpeaker info:\n- https://x.com/retttx\n- https://www.linkedin.com/in/everettberry\n- https://retttx.com\n\nTimestamps:\n0:00 - What GTM engineering is, and why the role exploded\n2:59 - Data, and why accounts never hold still\n4:51 - Waterfalling across hundreds of vendors\n6:19 - Orchestration across twenty or thirty tools\n7:37 - Different systems, different refresh needs\n8:27 - When your tools sync behind your back\n9:05 - A graph of general purpose nodes\n10:23 - One long running agent per account\n14:39 - Execution, and the domain reputation problem\n17:12 - Q&amp;A: the hardest part is the human interface",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-26T13:30:31Z",
-      "fetched_at": "2026-08-26T15:53:20.478585Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8f8083f6a3c58f91",
       "url": "https://arxiv.org/abs/2606.28712",
       "title": "J-LAW: Joint Localization and Action-Conditioned World Modeling via Coupled Latent Factor Graphs",
@@ -28690,26 +28630,6 @@
       "author": "Guanqun Cao, Liang Chen",
       "published_at": "2026-09-01T04:00:00Z",
       "fetched_at": "2026-09-01T05:10:32.740472Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "887df9eed1e2f315",
-      "url": "https://www.youtube.com/watch?v=bg0C-2iUUqM",
-      "title": "I Tested Claude Code vs. Codex on Design. It Wasn't Even Close.",
-      "summary": "Try Granola for FREE today: https://www.granola.ai/?via=nate-herk\nMy playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=claude-vs-codex-design&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI gave Claude Code and Codex the same prompts, brand guidelines, and source files to build eight websites, then compared the design quality, speed, token use, agent count, and estimated API cost. \n\nCodex won most of the subjective design rounds while using about one-third of the time and roughly one-fifth of the output tokens. The final tests also show how detailed prompting can make two different coding agents produce nearly identical results.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Test Setup\n0:28 Bowl & Bloom\n4:29 MinuteCraft\n7:46 Trail Latch\n12:15 Present & Clear\n13:59 North Ledger Studio\n15:17 Open-Ended Design Test\n18:00 Detailed Prompt Tests\n19:49 Final Results",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-08-26T12:38:38Z",
-      "fetched_at": "2026-08-26T13:16:46.303169Z",
       "score": null,
       "score_reason": "",
       "tier": "",
