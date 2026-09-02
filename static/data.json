@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-09-02T04:42:24.086340+00:00",
+  "exported_at": "2026-09-02T07:58:47.969930+00:00",
   "period_hours": 168,
   "total": 2788,
   "all_tags": [
@@ -58601,46 +58601,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "940c0edca7da818b",
-      "url": "https://x.com/sama/status/2092519459135095147",
-      "title": "big",
-      "summary": "big",
-      "content": "big",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-08-26T07:48:10Z",
-      "fetched_at": "2026-08-26T08:36:31.532458Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3b74f5b6ed64f09f",
-      "url": "https://x.com/steipete/status/2092501983848763674",
-      "title": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic an...",
-      "summary": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic and OpenAI developers live in the near fu\u2026",
-      "content": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic and OpenAI developers live in the near fu\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-26T06:38:44Z",
-      "fetched_at": "2026-08-26T08:36:36.952944Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d0d34203395ecad6",
       "url": "https://x.com/steipete/status/2092822007843061823",
       "title": "codex' visualization feature got really good. https://t.co/Ik65LULsY2",
@@ -60831,6 +60791,46 @@
       "author": "simonw",
       "published_at": "2026-09-02T00:02:17Z",
       "fetched_at": "2026-09-02T02:27:14.022665Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "940c0edca7da818b",
+      "url": "https://x.com/sama/status/2092519459135095147",
+      "title": "big",
+      "summary": "big",
+      "content": "big",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-26T07:48:10Z",
+      "fetched_at": "2026-08-26T08:36:31.532458Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3b74f5b6ed64f09f",
+      "url": "https://x.com/steipete/status/2092501983848763674",
+      "title": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic an...",
+      "summary": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic and OpenAI developers live in the near fu\u2026",
+      "content": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic and OpenAI developers live in the near fu\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-26T06:38:44Z",
+      "fetched_at": "2026-08-26T08:36:36.952944Z",
       "score": null,
       "score_reason": "",
       "tier": "",
