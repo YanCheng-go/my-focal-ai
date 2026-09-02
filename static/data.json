@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-02T07:58:47.969930+00:00",
+  "exported_at": "2026-09-02T10:26:36.708031+00:00",
   "period_hours": 168,
-  "total": 2788,
+  "total": 2784,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28446,48 +28446,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "832a12c8f33a104e",
-      "url": "https://openai.com/index/learning-never-stops",
-      "title": "Learning never stops: How AI makes learning continuous",
-      "summary": "OpenAI\u2019s new report explores how students and educators use ChatGPT to make learning more continuous, with support that extends beyond the classroom.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-26T10:00:00Z",
-      "fetched_at": "2026-08-26T20:02:53.606971Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fa2791fbc9af008f",
-      "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
-      "title": "Bringing ChatGPT for Teachers to more U.S. school districts",
-      "summary": "ChatGPT for Teachers is expanding to 55 U.S. school systems, bringing secure AI tools, training, and support to over 100,000 more educators and staff.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-26T10:00:00Z",
-      "fetched_at": "2026-08-26T20:02:53.606946Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d787e9c4569c7d0f",
       "url": "https://arxiv.org/abs/2607.16676",
       "title": "The Value of Depth in Message Passing on Sparse Graphs: A Kesten-Stigum Dichotomy",
@@ -28692,25 +28650,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-08-26T12:38:38Z",
       "fetched_at": "2026-08-26T13:16:46.303169Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a7198ad4d5e0f3d1",
-      "url": "https://www.youtube.com/watch?v=nWgvobB4hcw",
-      "title": "Who\u2019s afraid of an open-weight model? GLM, context bombing and post-Black Hat attacks",
-      "summary": "Explore the podcast \u2192 https://ibm.biz/~lbxDSQuvq\n\nGLM-5.3 is, by some measures, better than GPT Sol and Anthropic\u2019s Mythos at vulnerability discovery and validation. On episode 48 of Security Intelligence, Erblind Morina, Kimmie Farrington and Patrick Fussell join host Matt Kosinski to debate whether this is really cool or really scary, or maybe a little of both.\n\nThen: Tracebit researchers have developed a way to use prompt injections as a defensive measure. Called \u201ccontext bombing,\u201d the technique plants malicious prompts alongside the very assets that attacking AI agents are likely to target. \n\nFinally, Huntress reports on a rash of social engineering attacks on Black Hat conference attendees. They\u2019re not terribly sophisticated, but any concentrated offensive against the cybersecurity community is worth paying attention to. You never know who might be on the other side of those phishing emails.\n\nFind out all this\u2014and more\u2014on Security Intelligence.\n\n00:00 - Intro\n1:14 - GLM-5.3\n11:46 - Context bombing\n19:12 - Black Hat conference attacks\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~AIVsCRIKo\n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-26T10:00:30Z",
-      "fetched_at": "2026-08-26T10:51:34.185277Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60797,11 +60736,11 @@
       "is_duplicate_of": null
     },
     {
-      "id": "940c0edca7da818b",
-      "url": "https://x.com/sama/status/2092519459135095147",
-      "title": "big",
-      "summary": "big",
-      "content": "big",
+      "id": "7f7b98d2d3d37570",
+      "url": "https://x.com/sama/status/2095072725932945578",
+      "title": "RT @merettm: I want to prevent a race into unmonitorability kicked off by confused reporting. The de...",
+      "summary": "RT @merettm: I want to prevent a race into unmonitorability kicked off by confused reporting. The depth of the computation graph for our pr\u2026",
+      "content": "RT @merettm: I want to prevent a race into unmonitorability kicked off by confused reporting. The depth of the computation graph for our pr\u2026",
       "source_name": "@sama",
       "source_type": "twitter",
       "tags": [
@@ -60809,28 +60748,8 @@
         "openai"
       ],
       "author": "sama",
-      "published_at": "2026-08-26T07:48:10Z",
-      "fetched_at": "2026-08-26T08:36:31.532458Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3b74f5b6ed64f09f",
-      "url": "https://x.com/steipete/status/2092501983848763674",
-      "title": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic an...",
-      "summary": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic and OpenAI developers live in the near fu\u2026",
-      "content": "RT @pauldix: I think the release of Bun 1.4 marks the end of programming as we know it. Anthropic and OpenAI developers live in the near fu\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-26T06:38:44Z",
-      "fetched_at": "2026-08-26T08:36:36.952944Z",
+      "published_at": "2026-09-02T08:53:57Z",
+      "fetched_at": "2026-09-02T10:26:26.877941Z",
       "score": null,
       "score_reason": "",
       "tier": "",
