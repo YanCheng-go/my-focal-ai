@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-02T00:15:51.414959+00:00",
+  "exported_at": "2026-09-02T02:27:25.889615+00:00",
   "period_hours": 168,
-  "total": 2783,
+  "total": 2787,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -58475,66 +58475,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1895706a2f1ee820",
-      "url": "https://x.com/dani_avila7/status/2092420656793092182",
-      "title": "Anthropic just added Unity\u2019s official plugin to claude-plugins-official\n\nBuilt by Unity Technologies...",
-      "summary": "Anthropic just added Unity\u2019s official plugin to claude-plugins-official\n\nBuilt by Unity Technologies with 18 Unity skills covering UI, graphics, monetization, localization, etc.\n\nRun this command to install the marketplace:\n/plugin marketplace add",
-      "content": "Anthropic just added Unity\u2019s official plugin to claude-plugins-official\n\nBuilt by Unity Technologies with 18 Unity skills covering UI, graphics, monetization, localization, etc.\n\nRun this command to install the marketplace:\n/plugin marketplace add",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-26T01:15:34Z",
-      "fetched_at": "2026-08-26T01:18:10.729658Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2dd7bd1bfa4d7858",
-      "url": "https://x.com/OpenAI/status/2092418732215713898",
-      "title": "RT @ChatGPT: ChatGPT Work can now use its computer and browser to sign in to websites on web and mob...",
-      "summary": "RT @ChatGPT: ChatGPT Work can now use its computer and browser to sign in to websites on web and mobile, without ChatGPT ever seeing your u\u2026",
-      "content": "RT @ChatGPT: ChatGPT Work can now use its computer and browser to sign in to websites on web and mobile, without ChatGPT ever seeing your u\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-08-26T01:07:55Z",
-      "fetched_at": "2026-08-26T01:18:20.763712Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d3b24dd41dc8ded1",
-      "url": "https://x.com/dani_avila7/status/2092427083452502396",
-      "title": "Linux turned 35 today, Windows 95 turned 31 this week",
-      "summary": "Linux turned 35 today, Windows 95 turned 31 this week",
-      "content": "Linux turned 35 today, Windows 95 turned 31 this week",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-26T01:41:06Z",
-      "fetched_at": "2026-08-26T03:18:44.652373Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "940c0edca7da818b",
       "url": "https://x.com/sama/status/2092519459135095147",
       "title": "big",
@@ -60641,6 +60581,150 @@
       "author": "steipete",
       "published_at": "2026-09-01T22:31:18Z",
       "fetched_at": "2026-09-01T23:47:00.810692Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "212319655c78ee00",
+      "url": "https://x.com/dani_avila7/status/2094974012602409188",
+      "title": "I see this and can already imagine an avalanche of vibe coders attaching entire movies to their GitH...",
+      "summary": "I see this and can already imagine an avalanche of vibe coders attaching entire movies to their GitHub PRs\n\nGitHub servers, good luck \ud83e\udee1",
+      "content": "I see this and can already imagine an avalanche of vibe coders attaching entire movies to their GitHub PRs\n\nGitHub servers, good luck \ud83e\udee1",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-02T02:21:41Z",
+      "fetched_at": "2026-09-02T02:27:15.350215Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b6be3eb675f3c100",
+      "url": "https://x.com/dani_avila7/status/2094962365330579516",
+      "title": "I genuinely don\u2019t know how people use voice mode in Claude Code\n\nI rewrite my prompts 10 times, add ...",
+      "summary": "I genuinely don\u2019t know how people use voice mode in Claude Code\n\nI rewrite my prompts 10 times, add images, attach files, make task lists, @ mention other sessions, delete half of it, then rewrite it again\n\nAm I missing something? Do you actually use it?",
+      "content": "I genuinely don\u2019t know how people use voice mode in Claude Code\n\nI rewrite my prompts 10 times, add images, attach files, make task lists, @ mention other sessions, delete half of it, then rewrite it again\n\nAm I missing something? Do you actually use it?",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-02T01:35:25Z",
+      "fetched_at": "2026-09-02T02:27:15.350325Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "387e0096047d1505",
+      "url": "https://x.com/simonw/status/2094958667548565893",
+      "title": "(The wheels running backwards appears to be an artifact of the conversion to video - the SVG has the...",
+      "summary": "(The wheels running backwards appears to be an artifact of the conversion to video - the SVG has them going in the correct direction: https://t.co/vXMK08E2d1)",
+      "content": "(The wheels running backwards appears to be an artifact of the conversion to video - the SVG has them going in the correct direction: https://t.co/vXMK08E2d1)",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-02T01:20:43Z",
+      "fetched_at": "2026-09-02T02:27:14.022475Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a7b3220b0f5fa513",
+      "url": "https://x.com/simonw/status/2094946976735641796",
+      "title": "In another case of it being quicker to build a tool than hunt around to find something that does wha...",
+      "summary": "In another case of it being quicker to build a tool than hunt around to find something that does what you need, here's a little vibe-coded thing for turning one or more GeoJSON shapes into a rendered PNG https://t.co/74K7U0hfkW",
+      "content": "In another case of it being quicker to build a tool than hunt around to find something that does what you need, here's a little vibe-coded thing for turning one or more GeoJSON shapes into a rendered PNG https://t.co/74K7U0hfkW",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-02T00:34:16Z",
+      "fetched_at": "2026-09-02T02:27:14.022591Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3c38112d35ee175a",
+      "url": "https://x.com/trq212/status/2094945951865520458",
+      "title": "it\u2019s a very good model, I spent a lot of time diving into it- longer write up coming \n\nbut try it on...",
+      "summary": "it\u2019s a very good model, I spent a lot of time diving into it- longer write up coming \n\nbut try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt cache as well",
+      "content": "it\u2019s a very good model, I spent a lot of time diving into it- longer write up coming \n\nbut try it on lower effort for tasks that need less verification or have fewer edge cases, switching effort no longer breaks prompt cache as well",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-02T00:30:11Z",
+      "fetched_at": "2026-09-02T02:27:10.441701Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "27af3e67b4fb85b8",
+      "url": "https://x.com/simonw/status/2094938927727804684",
+      "title": "A few notes on Anthropic's new Claude Fable 5.1 - with Max thinking level I got the best SVG pelican...",
+      "summary": "A few notes on Anthropic's new Claude Fable 5.1 - with Max thinking level I got the best SVG pelican I've had from any Anthropic model (at a hefty cost of $3.30!), which I then had it animate https://t.co/jQzeDJ2p7r https://t.co/g17nLQKr5r",
+      "content": "A few notes on Anthropic's new Claude Fable 5.1 - with Max thinking level I got the best SVG pelican I've had from any Anthropic model (at a hefty cost of $3.30!), which I then had it animate https://t.co/jQzeDJ2p7r https://t.co/g17nLQKr5r",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-02T00:02:17Z",
+      "fetched_at": "2026-09-02T02:27:14.022665Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d3b24dd41dc8ded1",
+      "url": "https://x.com/dani_avila7/status/2092427083452502396",
+      "title": "Linux turned 35 today, Windows 95 turned 31 this week",
+      "summary": "Linux turned 35 today, Windows 95 turned 31 this week",
+      "content": "Linux turned 35 today, Windows 95 turned 31 this week",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-26T01:41:06Z",
+      "fetched_at": "2026-08-26T03:18:44.652373Z",
       "score": null,
       "score_reason": "",
       "tier": "",
