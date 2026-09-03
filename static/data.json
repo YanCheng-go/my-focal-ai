@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-03T04:40:37.813667+00:00",
+  "exported_at": "2026-09-03T09:12:06.214115+00:00",
   "period_hours": 168,
-  "total": 2863,
+  "total": 2868,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -27665,27 +27665,6 @@
       "author": "Orcun Cetintas, Guillem Bras\\'o, Tim Meinhardt, Laura Leal-Taix\\'e",
       "published_at": "2026-09-02T04:00:00Z",
       "fetched_at": "2026-09-02T04:42:03.670278Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5c8d75ef9c12c059",
-      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
-      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
-      "summary": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-27T09:00:00Z",
-      "fetched_at": "2026-08-27T20:31:27.460831Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -62254,6 +62233,129 @@
       "author": "claudeai",
       "published_at": "2026-09-02T15:14:45Z",
       "fetched_at": "2026-09-02T21:17:27.250920Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7b82ec73ae2a7bcb",
+      "url": "https://x.com/simonw/status/2095379448426320145",
+      "title": "RT @bcantrill: To those linking to pieces that are obviously 100% LLM generated: do you... actually ...",
+      "summary": "RT @bcantrill: To those linking to pieces that are obviously 100% LLM generated: do you... actually read them? I can't make it through the\u2026",
+      "content": "RT @bcantrill: To those linking to pieces that are obviously 100% LLM generated: do you... actually read them? I can't make it through the\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-03T05:12:45Z",
+      "fetched_at": "2026-09-03T09:11:54.841106Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0187ba1e70773509",
+      "url": "https://x.com/bcherny/status/2095378890370019683",
+      "title": "Background computer use is underrated",
+      "summary": "Background computer use is underrated",
+      "content": "Background computer use is underrated",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-03T05:10:32Z",
+      "fetched_at": "2026-09-03T09:11:53.809529Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "46c5aee4e8ade4ca",
+      "url": "https://x.com/steipete/status/2095351825637716130",
+      "title": "RT @davidkal88: Wow\n\n\u201cMake Red Alert 2 (YR) compile and run natively on iOS &amp; macOS.\u201d\n\nCodex (GP...",
+      "summary": "RT @davidkal88: Wow\n\n\u201cMake Red Alert 2 (YR) compile and run natively on iOS &amp; macOS.\u201d\n\nCodex (GPT-5.6 Sol) worked for 26 days, analyzed the\u2026",
+      "content": "RT @davidkal88: Wow\n\n\u201cMake Red Alert 2 (YR) compile and run natively on iOS &amp; macOS.\u201d\n\nCodex (GPT-5.6 Sol) worked for 26 days, analyzed the\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T03:22:59Z",
+      "fetched_at": "2026-09-03T09:12:03.963916Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f7839842cbd46fb9",
+      "url": "https://x.com/dani_avila7/status/2095277618807316566",
+      "title": "I always start a new Claude Code session with: claude -n -w  \"/color\"\n\n-n name the session\n-w create...",
+      "summary": "I always start a new Claude Code session with: claude -n -w  \"/color\"\n\n-n name the session\n-w create the worktree\n/color give the session a color\n\nIt makes it much easier to associate each session with its name, worktree, and color\n\nIf I have two sessions talking to each other, I https://t.co/68OIq9Mm4X",
+      "content": "I always start a new Claude Code session with: claude -n -w  \"/color\"\n\n-n name the session\n-w create the worktree\n/color give the session a color\n\nIt makes it much easier to associate each session with its name, worktree, and color\n\nIf I have two sessions talking to each other, I https://t.co/68OIq9Mm4X",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-02T22:28:07Z",
+      "fetched_at": "2026-09-03T09:11:55.851996Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b4c3d3e52aaccb55",
+      "url": "https://x.com/bcherny/status/2095276133214491086",
+      "title": "Fable 5.1 makes Claude Tag even more useful. Here it builds a last-minute leadership deck from a met...",
+      "summary": "Fable 5.1 makes Claude Tag even more useful. Here it builds a last-minute leadership deck from a metrics spreadsheet and other data across Slack, spots a vendor report that disagrees with the numbers, and flags it before moving on.\n\nClaude Tag is available in Slack on Team and https://t.co/8hLxiOQ8q2",
+      "content": "Fable 5.1 makes Claude Tag even more useful. Here it builds a last-minute leadership deck from a metrics spreadsheet and other data across Slack, spots a vendor report that disagrees with the numbers, and flags it before moving on.\n\nClaude Tag is available in Slack on Team and https://t.co/8hLxiOQ8q2",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-02T22:22:13Z",
+      "fetched_at": "2026-09-03T09:11:53.809615Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f7330b224c03a389",
+      "url": "https://x.com/steipete/status/2095267483410366936",
+      "title": "RT @Pat_Erichsen: Dashboards are one of the most versatile new features in 2.0 release of @openclaw ...",
+      "summary": "RT @Pat_Erichsen: Dashboards are one of the most versatile new features in 2.0 release of @openclaw \n\nDuring the Weekly Clawcast with @stei\u2026",
+      "content": "RT @Pat_Erichsen: Dashboards are one of the most versatile new features in 2.0 release of @openclaw \n\nDuring the Weekly Clawcast with @stei\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-02T21:47:50Z",
+      "fetched_at": "2026-09-03T09:12:03.963985Z",
       "score": null,
       "score_reason": "",
       "tier": "",
