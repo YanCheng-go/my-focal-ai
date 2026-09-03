@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-03T16:26:37.395807+00:00",
+  "exported_at": "2026-09-03T19:46:28.332451+00:00",
   "period_hours": 168,
-  "total": 2881,
+  "total": 2889,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -17264,28 +17264,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d4c4006fefc6f641",
-      "url": "https://research.google/blog/planetary-prediction-engine-automating-global-models-via-earth-ai/",
-      "title": "Planetary prediction engine: Automating global models via Earth AI",
-      "summary": "Earth AI",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-27T17:37:20Z",
-      "fetched_at": "2026-08-27T20:31:28.262076Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0ff5af8daaad568e",
       "url": "https://arxiv.org/abs/2609.01741",
       "title": "When Can a Machine Trust a Statute? A Survival Certificate for Machine-Extracted Legal Logic",
@@ -28294,26 +28272,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "27aa8c4009cd8316",
-      "url": "https://www.youtube.com/watch?v=qdAkxLoYNI8",
-      "title": "How to Generate Mergeable Code with a Context Engine \u2014 Peter Werry, Unblocked",
-      "summary": "Radiologists call the failure satisfaction of search: you read a scan, find one indicator, stop looking, and miss the others that would have changed the diagnosis. Peter Werry says agents do exactly this to a codebase. Attach a wiki and an agent will search it, land on something plausible, and quit, which is why he argues access to information is not understanding. Before agents you were the context layer, trawling discussions, reading code, carrying the tribal knowledge yourself. An agent is closer to an expert engineer on their first day, rediscovering how you build, test, and deploy on every task, then forgetting it.\n\nA million token window does not fix it: the context does not fit, and the agent gets distracted. He demos the alternative on Unblocked's own repository, where a question about an internal component returns an architecture diagram that did not exist before, sources attached so a human can check it. Then the same optimization plan twice in Claude Code, with the context engine and without. With it, under a dollar and about a minute; without, roughly double the time and more cost, because the agent has to discover things and discovers the wrong ones, so later steps run on bad assumptions and loop. The compounding is the point, not the first task. He closes on a review agent that boosts comments by reviewer seniority, a drop in flagged issues traced back to the Slack thread that explained it, and two open source pieces: a query engine over your GitHub history and a social graph showing thin review coverage.\n\nSpeaker info:\n- https://getunblocked.com\n\nTimestamps:\n0:00 - Before agents, you were the context layer\n1:46 - An agent is a new employee who resets every task\n2:25 - The maturity curve: autocomplete to software factories\n4:19 - Satisfaction of search, borrowed from radiology\n6:37 - The iceberg: intent, conventions, past decisions\n7:29 - Demo: asking about a component, and showing the work\n10:03 - The same plan with and without a context engine\n12:44 - A review agent that boosts what senior engineers said\n13:50 - Debugging a drop in flagged issues, back to Slack\n15:08 - Open source: query engine and social graph",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-27T18:00:23Z",
-      "fetched_at": "2026-08-27T20:31:25.057463Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "f990609278c0a589",
       "url": "https://arxiv.org/abs/2609.00830",
       "title": "Visual Attention Faithfulness in Vision-Language Models is Heterogeneous",
@@ -28329,46 +28287,6 @@
       "author": "Xurui Song, Weishi Wang, Zhongqi Yue, Kuluhan Binici, Tao Bai, Hongxin Shao, Daniel Dahlmeier, Jun Luo",
       "published_at": "2026-09-02T04:00:00Z",
       "fetched_at": "2026-09-02T04:42:03.670235Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "435fbcf4cad164e9",
-      "url": "https://www.youtube.com/shorts/HKlPmuh3Qrs",
-      "title": "GTA 6 is not a game they're selling to players",
-      "summary": "with Casey Muratori, programmer & performance nerd.\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-08-27T17:25:53Z",
-      "fetched_at": "2026-08-27T20:31:25.900746Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fdbf416f9a6c295f",
-      "url": "https://www.youtube.com/watch?v=pOvWgX7IJsc",
-      "title": "Can LLMs Write Fast Multi-GPU Kernels? \u2014 Simran Arora, Together AI",
-      "summary": "Between NVIDIA's A100 in 2020 and the B200 in 2024, BF16 tensor core throughput improved 7.2x. Intra node communication improved 3x, and inter node communication only 2x. That widening gap has pushed the bottleneck in large AI workloads off the individual GPU and onto the links between them, far enough that a standard PyTorch and NCCL baseline lands below 50% of its communication aware roofline on most problems. Simran Arora leads the frontier performance research team at Together AI, and her group's answer is ParallelKittens, a small set of primitives that adds roughly a dozen lines to a single GPU kernel and now runs in production at Together AI and Cursor.\n\nThe harder question was whether models can apply the same principles. ParallelKernelBench hands a model an unoptimized PyTorch reference and a topology spec across 87 problems drawn from real repositories, then asks for a CUDA kernel that moves data directly over NVLink. The best frontier model solved 28 of them zero shot, with 22 beating the baseline. Drawing more samples lifts correctness to 36, but the share that is both correct and faster stalls near 31%. Wrapping a model in a multi turn agent harness with a bash environment reached 35. The failures are not syntax. Models compile after a retry and then stall on collective ordering, data partitioning, and the choice between the copy engine, tensor memory acceleration and register level transfers, while their wins cluster in the patterns most represented on the internet.\n\nSpeaker info:\n- https://arorasimran.com\n- https://github.com/simran-arora\n- https://github.com/togethercomputer/ParallelKernelBench\n\nTimestamps:\n0:00 - From single GPU kernels to the network between them\n1:29 - Inside an H100, and why memory distance matters\n4:44 - The interconnect hierarchy: PCIe, NVLink, NVSwitch\n5:46 - Why GPU networking, and why now\n8:27 - Disaggregated workloads and 576 GPU systems\n10:24 - Compute improved 7.2x, the network 3x\n11:14 - Where NCCL breaks down, and the roofline gap\n13:04 - Compilers, DSLs, and hand tuned operators\n14:10 - The research question, and ParallelKittens\n16:06 - Transfer mechanisms: copy engine, TMA, register level\n18:28 - Overlapping compute and communication across SMs\n20:52 - In production at Together AI and Cursor\n22:10 - Inside ParallelKernelBench: 87 problems\n24:32 - Zero shot results, and where scaling stalls\n26:28 - The failures are not CUDA syntax\n27:07 - An agent harness, and what is still missing",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-27T17:00:39Z",
-      "fetched_at": "2026-08-27T20:31:25.057498Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60459,232 +60377,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a06327728684b4c0",
-      "url": "https://x.com/OpenAI/status/2093022448132452398",
-      "title": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations includ...",
-      "summary": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations including Anthropic, AWS, Google, Microsoft,\u2026",
-      "content": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations including Anthropic, AWS, Google, Microsoft,\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-08-27T17:06:52Z",
-      "fetched_at": "2026-08-27T17:15:37.322515Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dddafa5829bed8cb",
-      "url": "https://x.com/steipete/status/2093013213038469205",
-      "title": "This turned out so good! Thank you GitHub folks for making this happen! \ud83d\ude4f",
-      "summary": "This turned out so good! Thank you GitHub folks for making this happen! \ud83d\ude4f",
-      "content": "This turned out so good! Thank you GitHub folks for making this happen! \ud83d\ude4f",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-27T16:30:10Z",
-      "fetched_at": "2026-08-27T17:15:45.724767Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c6b88a9d12a1b253",
-      "url": "https://x.com/sama/status/2093060670472241368",
-      "title": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe ...",
-      "summary": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.\n\nonly an urgent and intense collective response will work.",
-      "content": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.\n\nonly an urgent and intense collective response will work.",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-08-27T19:38:45Z",
-      "fetched_at": "2026-08-27T19:48:06.211106Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4eec4710c400a346",
-      "url": "https://x.com/claudeai/status/2093059087298601113",
-      "title": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, ca...",
-      "summary": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, can get Claude through our new Claude Team plan for scientists. Standard seats are free, and premium seats with 5x usage limits are $15 per month, an 80% discount, for one year. https://t.co/ORjInM8goB",
-      "content": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, can get Claude through our new Claude Team plan for scientists. Standard seats are free, and premium seats with 5x usage limits are $15 per month, an 80% discount, for one year. https://t.co/ORjInM8goB",
-      "source_name": "@claudeai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "company"
-      ],
-      "author": "claudeai",
-      "published_at": "2026-08-27T19:32:28Z",
-      "fetched_at": "2026-08-27T19:48:04.787410Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "febe3d0bb6d85f84",
-      "url": "https://x.com/sama/status/2093058937935241416",
-      "title": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations includ...",
-      "summary": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations including Anthropic, AWS, Google, Microsoft,\u2026",
-      "content": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations including Anthropic, AWS, Google, Microsoft,\u2026",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-08-27T19:31:52Z",
-      "fetched_at": "2026-08-27T19:48:06.211222Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c6adefe1a23b1b53",
-      "url": "https://x.com/trq212/status/2093046266234351722",
-      "title": "RT @Benioff: Welcome Claudeforce. \u2764\ufe0f https://t.co/rk0M1cFhCG",
-      "summary": "RT @Benioff: Welcome Claudeforce. \u2764\ufe0f https://t.co/rk0M1cFhCG",
-      "content": "RT @Benioff: Welcome Claudeforce. \u2764\ufe0f https://t.co/rk0M1cFhCG",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-08-27T18:41:31Z",
-      "fetched_at": "2026-08-27T19:47:57.611159Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "38b778bc2a925609",
-      "url": "https://x.com/AnthropicAI/status/2093038429936529897",
-      "title": "There\u2019s more to learn before we open source MHS. LLMs still lack physical intuition, having learned ...",
-      "summary": "There\u2019s more to learn before we open source MHS. LLMs still lack physical intuition, having learned about the physical world from text and images. \n\nThe research preview will let us build more safety evaluations and strengthen protections for using AI in the physical world.",
-      "content": "There\u2019s more to learn before we open source MHS. LLMs still lack physical intuition, having learned about the physical world from text and images. \n\nThe research preview will let us build more safety evaluations and strengthen protections for using AI in the physical world.",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-08-27T18:10:23Z",
-      "fetched_at": "2026-08-27T19:48:11.546017Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3e0cd6f9a0c66dea",
-      "url": "https://x.com/AnthropicAI/status/2093038431190548803",
-      "title": "MHS currently best covers lab and manufacturing equipment. Many developers are already using Claude ...",
-      "summary": "MHS currently best covers lab and manufacturing equipment. Many developers are already using Claude Code to operate hardware like boards and cameras; our research preview will help us extend MHS to these devices, so they can all work under one interface.",
-      "content": "MHS currently best covers lab and manufacturing equipment. Many developers are already using Claude Code to operate hardware like boards and cameras; our research preview will help us extend MHS to these devices, so they can all work under one interface.",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-08-27T18:10:23Z",
-      "fetched_at": "2026-08-27T19:48:11.545965Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0916428b51616675",
-      "url": "https://x.com/AnthropicAI/status/2093038426140651791",
-      "title": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): ...",
-      "summary": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing. \n\nRead more: https://t.co/XQ2y9EW7Af https://t.co/kgyCvZ6iYc",
-      "content": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing. \n\nRead more: https://t.co/XQ2y9EW7Af https://t.co/kgyCvZ6iYc",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-08-27T18:10:22Z",
-      "fetched_at": "2026-08-27T19:48:11.546098Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1578b1a95a9554a2",
-      "url": "https://x.com/AnthropicAI/status/2093038427642134590",
-      "title": "Connecting AI to hardware requires days or weeks of bespoke integration, with no standard way for ag...",
-      "summary": "Connecting AI to hardware requires days or weeks of bespoke integration, with no standard way for agents to operate equipment safely.\n\nMHS cuts integration to hours or minutes, provides an interface that makes devices discoverable, and enables agents to operate them safely.",
-      "content": "Connecting AI to hardware requires days or weeks of bespoke integration, with no standard way for agents to operate equipment safely.\n\nMHS cuts integration to hours or minutes, provides an interface that makes devices discoverable, and enables agents to operate them safely.",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-08-27T18:10:22Z",
-      "fetched_at": "2026-08-27T19:48:11.546071Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ea4586a3b93c9408",
-      "url": "https://x.com/AnthropicAI/status/2093038428757918070",
-      "title": "In early testing, AI agents used MHS to:\n\nRun a drug-discovery experiment with real-time error handl...",
-      "summary": "In early testing, AI agents used MHS to:\n\nRun a drug-discovery experiment with real-time error handling at Genentech\n\nCompress an imaging experiment from weeks to a day at HHMI Janelia Research Campus\n\nImprove laser stabilization on QuEra's quantum computers from 58% to 99.3%",
-      "content": "In early testing, AI agents used MHS to:\n\nRun a drug-discovery experiment with real-time error handling at Genentech\n\nCompress an imaging experiment from weeks to a day at HHMI Janelia Research Campus\n\nImprove laser stabilization on QuEra's quantum computers from 58% to 99.3%",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-08-27T18:10:22Z",
-      "fetched_at": "2026-08-27T19:48:11.546046Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "baaa7c6705597b97",
       "url": "https://x.com/steipete/status/2093098731126350154",
       "title": "RT @nateberkopec: If your software SDLC is built around deep integration with a single lab (looking ...",
@@ -62633,6 +62325,476 @@
       "author": "steipete",
       "published_at": "2026-09-02T21:47:50Z",
       "fetched_at": "2026-09-03T09:12:03.963985Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "12287c21cabbecb4",
+      "url": "https://x.com/simonw/status/2095595788542046260",
+      "title": "RT @OpenAI: This is GPT-6 Astra.\n\nAnything you can do on a computer, Astra can do for you. Fast. htt...",
+      "summary": "RT @OpenAI: This is GPT-6 Astra.\n\nAnything you can do on a computer, Astra can do for you. Fast. https://t.co/gDd0IsewJw",
+      "content": "RT @OpenAI: This is GPT-6 Astra.\n\nAnything you can do on a computer, Astra can do for you. Fast. https://t.co/gDd0IsewJw",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-03T19:32:24Z",
+      "fetched_at": "2026-09-03T19:46:16.780211Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "48eaa7ac567023ea",
+      "url": "https://x.com/OpenAI/status/2095595757072191802",
+      "title": "GPT-6 Astra is rolling out today to a limited set of organizations and over the coming days will bec...",
+      "summary": "GPT-6 Astra is rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS.\n\nBe ready to experience Astra at its best. Get the ChatGPT https://t.co/6u0irS8iF0",
+      "content": "GPT-6 Astra is rolling out today to a limited set of organizations and over the coming days will become available to all ChatGPT Plus, Pro, Business, and Enterprise users, as well as through the OpenAI API and AWS.\n\nBe ready to experience Astra at its best. Get the ChatGPT https://t.co/6u0irS8iF0",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-03T19:32:17Z",
+      "fetched_at": "2026-09-03T19:46:22.507583Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9fcf6f0fbf9ec451",
+      "url": "https://x.com/OpenAI/status/2095595758967988662",
+      "title": "\"Put That There\" clip courtesy of MIT Media Laboratory, Chris Schmandt, and Eric Hulteen.",
+      "summary": "\"Put That There\" clip courtesy of MIT Media Laboratory, Chris Schmandt, and Eric Hulteen.",
+      "content": "\"Put That There\" clip courtesy of MIT Media Laboratory, Chris Schmandt, and Eric Hulteen.",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-03T19:32:17Z",
+      "fetched_at": "2026-09-03T19:46:22.507518Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fe9fd9cee7614fe0",
+      "url": "https://x.com/OpenAI/status/2095595752815030713",
+      "title": "GPT-6 Astra is state-of-the-art on FrontierMath Tier 4, ARC-AGI 3, and TerminalBench-4.0.\n\nGPT\u20116 Ast...",
+      "summary": "GPT-6 Astra is state-of-the-art on FrontierMath Tier 4, ARC-AGI 3, and TerminalBench-4.0.\n\nGPT\u20116 Astra is also a major advance for scientific discovery, with state-of-the-art performance on Terminal-Bench Science 0.1 and HealthBench Pro. https://t.co/7hEFadVAN9",
+      "content": "GPT-6 Astra is state-of-the-art on FrontierMath Tier 4, ARC-AGI 3, and TerminalBench-4.0.\n\nGPT\u20116 Astra is also a major advance for scientific discovery, with state-of-the-art performance on Terminal-Bench Science 0.1 and HealthBench Pro. https://t.co/7hEFadVAN9",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-03T19:32:16Z",
+      "fetched_at": "2026-09-03T19:46:22.507614Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "476b0d34a1bf3762",
+      "url": "https://x.com/OpenAI/status/2095595748528452037",
+      "title": "Astra is our most aligned model, with substantial improvements in understanding user intent. https:/...",
+      "summary": "Astra is our most aligned model, with substantial improvements in understanding user intent. https://t.co/rY0An7o3rq",
+      "content": "Astra is our most aligned model, with substantial improvements in understanding user intent. https://t.co/rY0An7o3rq",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-03T19:32:15Z",
+      "fetched_at": "2026-09-03T19:46:22.507639Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "323c8f282fc4c82c",
+      "url": "https://x.com/bcherny/status/2095590515765060076",
+      "title": "Your input needed: would you use this?\n\nThis is an early look at how we're thinking about making Cla...",
+      "summary": "Your input needed: would you use this?\n\nThis is an early look at how we're thinking about making Claude Code way more extensible. It's a little crazy, and very exciting.\n\nMore details here: https://t.co/X2SbdZYxvi",
+      "content": "Your input needed: would you use this?\n\nThis is an early look at how we're thinking about making Claude Code way more extensible. It's a little crazy, and very exciting.\n\nMore details here: https://t.co/X2SbdZYxvi",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-03T19:11:27Z",
+      "fetched_at": "2026-09-03T19:46:15.523443Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "41bdeda6b724a884",
+      "url": "https://x.com/GeminiApp/status/2095570546532773948",
+      "title": "RT @LorraineTwohill: We're teaming up across @GeminiApp and @googlehealth in a new partnership with ...",
+      "summary": "RT @LorraineTwohill: We're teaming up across @GeminiApp and @googlehealth in a new partnership with @MrBeast to turn wildly impossible idea\u2026",
+      "content": "RT @LorraineTwohill: We're teaming up across @GeminiApp and @googlehealth in a new partnership with @MrBeast to turn wildly impossible idea\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-03T17:52:06Z",
+      "fetched_at": "2026-09-03T19:46:21.353924Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d34578e84a621ae7",
+      "url": "https://x.com/dani_avila7/status/2095568897596362866",
+      "title": "You should start taking prompt caching very seriously \ud83d\udc47\n\nWe\u2019re using more AI than ever, and we\u2019re ge...",
+      "summary": "You should start taking prompt caching very seriously \ud83d\udc47\n\nWe\u2019re using more AI than ever, and we\u2019re getting increasingly careless with context\n\nWe open a chat and throw everything at it, web searches, full articles, entire codebases, long conversation histories\n\nWe already have https://t.co/F2XfnFVDI9",
+      "content": "You should start taking prompt caching very seriously \ud83d\udc47\n\nWe\u2019re using more AI than ever, and we\u2019re getting increasingly careless with context\n\nWe open a chat and throw everything at it, web searches, full articles, entire codebases, long conversation histories\n\nWe already have https://t.co/F2XfnFVDI9",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-03T17:45:33Z",
+      "fetched_at": "2026-09-03T19:46:17.978733Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "38b645411bc15a28",
+      "url": "https://x.com/steipete/status/2095542178550583535",
+      "title": "RT @brianchew: only found out about this today but you can get a @Yubico key with an offer from @Ope...",
+      "summary": "RT @brianchew: only found out about this today but you can get a @Yubico key with an offer from @OpenAI  \n\njust go into security keys &amp; pas\u2026",
+      "content": "RT @brianchew: only found out about this today but you can get a @Yubico key with an offer from @OpenAI  \n\njust go into security keys &amp; pas\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T15:59:23Z",
+      "fetched_at": "2026-09-03T19:46:25.965342Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a5806e81126c79da",
+      "url": "https://x.com/steipete/status/2095541514785141138",
+      "title": "can conform. amazing place to be!",
+      "summary": "can conform. amazing place to be!",
+      "content": "can conform. amazing place to be!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T15:56:45Z",
+      "fetched_at": "2026-09-03T19:46:25.965401Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "96a61b942b50ee0f",
+      "url": "https://x.com/steipete/status/2095541255103259076",
+      "title": "RT @OpenAI: https://t.co/U1TxCPDwwY",
+      "summary": "RT @OpenAI: https://t.co/U1TxCPDwwY",
+      "content": "RT @OpenAI: https://t.co/U1TxCPDwwY",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T15:55:43Z",
+      "fetched_at": "2026-09-03T19:46:25.965431Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a971a5969950467d",
+      "url": "https://x.com/steipete/status/2095540654151721075",
+      "title": "RT @obviyus: OpenClaw 2.0 now supports per-user OAuth for MCP servers\n\nE.g. if several people share ...",
+      "summary": "RT @obviyus: OpenClaw 2.0 now supports per-user OAuth for MCP servers\n\nE.g. if several people share an OpenClaw bot in Slack, each person c\u2026",
+      "content": "RT @obviyus: OpenClaw 2.0 now supports per-user OAuth for MCP servers\n\nE.g. if several people share an OpenClaw bot in Slack, each person c\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T15:53:19Z",
+      "fetched_at": "2026-09-03T19:46:25.965457Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8b230c2664fe2db9",
+      "url": "https://x.com/dani_avila7/status/2095536613547725183",
+      "title": "ChatGPT goes down, traffic moves to Claude\nClaude goes down, traffic moves to Grok\nGrok goes down\n\nC...",
+      "summary": "ChatGPT goes down, traffic moves to Claude\nClaude goes down, traffic moves to Grok\nGrok goes down\n\nCascading failure https://t.co/Ln7CboNOzT",
+      "content": "ChatGPT goes down, traffic moves to Claude\nClaude goes down, traffic moves to Grok\nGrok goes down\n\nCascading failure https://t.co/Ln7CboNOzT",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-03T15:37:16Z",
+      "fetched_at": "2026-09-03T19:46:17.978808Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6645a06918058f71",
+      "url": "https://x.com/karpathy/status/2095535021146992835",
+      "title": "RT @theworldlabs: Introducing Atlas:\n\nThe world's first multimodal world model that generates image ...",
+      "summary": "RT @theworldlabs: Introducing Atlas:\n\nThe world's first multimodal world model that generates image and video frames with pixel-perfect cam\u2026",
+      "content": "RT @theworldlabs: Introducing Atlas:\n\nThe world's first multimodal world model that generates image and video frames with pixel-perfect cam\u2026",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-09-03T15:30:56Z",
+      "fetched_at": "2026-09-03T19:46:14.246376Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6b88a9d12a1b253",
+      "url": "https://x.com/sama/status/2093060670472241368",
+      "title": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe ...",
+      "summary": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.\n\nonly an urgent and intense collective response will work.",
+      "content": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.\n\nonly an urgent and intense collective response will work.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-27T19:38:45Z",
+      "fetched_at": "2026-08-27T19:48:06.211106Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4eec4710c400a346",
+      "url": "https://x.com/claudeai/status/2093059087298601113",
+      "title": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, ca...",
+      "summary": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, can get Claude through our new Claude Team plan for scientists. Standard seats are free, and premium seats with 5x usage limits are $15 per month, an 80% discount, for one year. https://t.co/ORjInM8goB",
+      "content": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, can get Claude through our new Claude Team plan for scientists. Standard seats are free, and premium seats with 5x usage limits are $15 per month, an 80% discount, for one year. https://t.co/ORjInM8goB",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-08-27T19:32:28Z",
+      "fetched_at": "2026-08-27T19:48:04.787410Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "febe3d0bb6d85f84",
+      "url": "https://x.com/sama/status/2093058937935241416",
+      "title": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations includ...",
+      "summary": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations including Anthropic, AWS, Google, Microsoft,\u2026",
+      "content": "RT @gdb: An open letter for a global surge in cyber defense, signed by over 100 organizations including Anthropic, AWS, Google, Microsoft,\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-08-27T19:31:52Z",
+      "fetched_at": "2026-08-27T19:48:06.211222Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6adefe1a23b1b53",
+      "url": "https://x.com/trq212/status/2093046266234351722",
+      "title": "RT @Benioff: Welcome Claudeforce. \u2764\ufe0f https://t.co/rk0M1cFhCG",
+      "summary": "RT @Benioff: Welcome Claudeforce. \u2764\ufe0f https://t.co/rk0M1cFhCG",
+      "content": "RT @Benioff: Welcome Claudeforce. \u2764\ufe0f https://t.co/rk0M1cFhCG",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-08-27T18:41:31Z",
+      "fetched_at": "2026-08-27T19:47:57.611159Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "38b778bc2a925609",
+      "url": "https://x.com/AnthropicAI/status/2093038429936529897",
+      "title": "There\u2019s more to learn before we open source MHS. LLMs still lack physical intuition, having learned ...",
+      "summary": "There\u2019s more to learn before we open source MHS. LLMs still lack physical intuition, having learned about the physical world from text and images. \n\nThe research preview will let us build more safety evaluations and strengthen protections for using AI in the physical world.",
+      "content": "There\u2019s more to learn before we open source MHS. LLMs still lack physical intuition, having learned about the physical world from text and images. \n\nThe research preview will let us build more safety evaluations and strengthen protections for using AI in the physical world.",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-08-27T18:10:23Z",
+      "fetched_at": "2026-08-27T19:48:11.546017Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3e0cd6f9a0c66dea",
+      "url": "https://x.com/AnthropicAI/status/2093038431190548803",
+      "title": "MHS currently best covers lab and manufacturing equipment. Many developers are already using Claude ...",
+      "summary": "MHS currently best covers lab and manufacturing equipment. Many developers are already using Claude Code to operate hardware like boards and cameras; our research preview will help us extend MHS to these devices, so they can all work under one interface.",
+      "content": "MHS currently best covers lab and manufacturing equipment. Many developers are already using Claude Code to operate hardware like boards and cameras; our research preview will help us extend MHS to these devices, so they can all work under one interface.",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-08-27T18:10:23Z",
+      "fetched_at": "2026-08-27T19:48:11.545965Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0916428b51616675",
+      "url": "https://x.com/AnthropicAI/status/2093038426140651791",
+      "title": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): ...",
+      "summary": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing. \n\nRead more: https://t.co/XQ2y9EW7Af https://t.co/kgyCvZ6iYc",
+      "content": "Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI agents to safely operate physical equipment in scientific research and advanced manufacturing. \n\nRead more: https://t.co/XQ2y9EW7Af https://t.co/kgyCvZ6iYc",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-08-27T18:10:22Z",
+      "fetched_at": "2026-08-27T19:48:11.546098Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1578b1a95a9554a2",
+      "url": "https://x.com/AnthropicAI/status/2093038427642134590",
+      "title": "Connecting AI to hardware requires days or weeks of bespoke integration, with no standard way for ag...",
+      "summary": "Connecting AI to hardware requires days or weeks of bespoke integration, with no standard way for agents to operate equipment safely.\n\nMHS cuts integration to hours or minutes, provides an interface that makes devices discoverable, and enables agents to operate them safely.",
+      "content": "Connecting AI to hardware requires days or weeks of bespoke integration, with no standard way for agents to operate equipment safely.\n\nMHS cuts integration to hours or minutes, provides an interface that makes devices discoverable, and enables agents to operate them safely.",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-08-27T18:10:22Z",
+      "fetched_at": "2026-08-27T19:48:11.546071Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ea4586a3b93c9408",
+      "url": "https://x.com/AnthropicAI/status/2093038428757918070",
+      "title": "In early testing, AI agents used MHS to:\n\nRun a drug-discovery experiment with real-time error handl...",
+      "summary": "In early testing, AI agents used MHS to:\n\nRun a drug-discovery experiment with real-time error handling at Genentech\n\nCompress an imaging experiment from weeks to a day at HHMI Janelia Research Campus\n\nImprove laser stabilization on QuEra's quantum computers from 58% to 99.3%",
+      "content": "In early testing, AI agents used MHS to:\n\nRun a drug-discovery experiment with real-time error handling at Genentech\n\nCompress an imaging experiment from weeks to a day at HHMI Janelia Research Campus\n\nImprove laser stabilization on QuEra's quantum computers from 58% to 99.3%",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-08-27T18:10:22Z",
+      "fetched_at": "2026-08-27T19:48:11.546046Z",
       "score": null,
       "score_reason": "",
       "tier": "",
