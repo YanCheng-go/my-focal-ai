@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-04T07:54:06.139821+00:00",
+  "exported_at": "2026-09-04T10:11:28.396750+00:00",
   "period_hours": 168,
-  "total": 2892,
+  "total": 2890,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38905,25 +38905,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b8dd6e795c59e068",
-      "url": "https://www.youtube.com/watch?v=QxVS86cDpho",
-      "title": "IBM\u2019s mainframe chip collab, NVIDIA\u2019s Poolside deal & Ox Alpha\u2019s reveal",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content \u2192 https://ibm.biz/~j8AlVLp98\n\nOn episode 122 of Mixture of Experts, hosts Tim Hwang and Aili McConnon are joined by Gabe Goodhart, Ash Minhas, Skyler Speakman to talk hot chips, mystery models, and major money moves. \n\nWe open with IBM's Hot Chips conference reveal of its dual-architecture mainframe processor built with Arm that lets IBM Z and LinuxONE systems run Arm-native Linux workloads right alongside z/OS. We break down what this means for enterprises balancing legacy reliability with the fast-moving Arm software ecosystem.\n\nNext, we talk about NVIDIA and its $6 billion deal with Poolside to license its \"Model Factory\" software and hire over 100 of its staff. We unpack why NVIDIA keeps using this licensing structure instead of straightforward acquisitions and how it fits alongside its earlier deals. \n\nFinally, we dig into Ox Alpha, the anonymous \"stealth model\" that appeared on OpenRouter and was ultimately confirmed to be Z.ai\u2019s open-source GLM-5.3-Flash, an efficient large language model built with sparse and linear attention techniques. But is the stealth launch the future of model releases? \n\nAll that and more on this week\u2019s Mixture of Experts. \n\n00:00 \u2013 Intro\n1:18 - NVIDIA\u2019s $6 billion Poolside deal\n13:10 - IBM\u2019s new mainframe processor\n24:30 - Ox Alpha, Z.ai\u2019s newest model\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~PX4y3khFW\n#aimodel #mainframe #nvidia \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-28T10:00:38Z",
-      "fetched_at": "2026-08-28T18:43:47.380120Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "22f63d026cbe2ee1",
       "url": "https://arxiv.org/abs/2609.00898",
       "title": "Vision-Language-Guided Pseudo-Labels for Unsupervised Domain Adaptation in Semantic Segmentation for Waste Sorting",
@@ -60374,27 +60355,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "fa70e6ee5db1468f",
-      "url": "https://x.com/simonw/status/2093277255438860358",
-      "title": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
-      "summary": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
-      "content": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-08-28T09:59:23Z",
-      "fetched_at": "2026-08-28T11:59:36.808228Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "08969118f860e711",
       "url": "https://x.com/GoogleAI/status/2093356767992279503",
       "title": "Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Transcribe, our most precise speech-to-text model yet,...",
@@ -62808,21 +62768,21 @@
       "is_duplicate_of": null
     },
     {
-      "id": "16f5a60a665f78bb",
-      "url": "https://x.com/bcherny/status/2093224959330132327",
-      "title": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware...",
-      "summary": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
-      "content": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
-      "source_name": "@bcherny",
+      "id": "fa70e6ee5db1468f",
+      "url": "https://x.com/simonw/status/2093277255438860358",
+      "title": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
+      "summary": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
+      "content": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
+      "source_name": "@simonw",
       "source_type": "twitter",
       "tags": [
         "ai",
-        "engineering",
-        "claude code"
+        "tooling",
+        "open-source"
       ],
-      "author": "bcherny",
-      "published_at": "2026-08-28T06:31:35Z",
-      "fetched_at": "2026-08-28T07:56:02.233196Z",
+      "author": "simonw",
+      "published_at": "2026-08-28T09:59:23Z",
+      "fetched_at": "2026-08-28T11:59:36.808228Z",
       "score": null,
       "score_reason": "",
       "tier": "",
