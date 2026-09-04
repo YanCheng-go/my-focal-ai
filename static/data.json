@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-04T04:35:54.854575+00:00",
+  "exported_at": "2026-09-04T07:54:06.139821+00:00",
   "period_hours": 168,
-  "total": 2868,
+  "total": 2892,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -27539,27 +27539,6 @@
       "author": "Tanya Lenz",
       "published_at": "2026-08-28T17:06:28Z",
       "fetched_at": "2026-08-28T18:43:53.169460Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b42ac281ecaf56c0",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
-      "title": "Our decision on Cursor following its acquisition by SpaceX",
-      "summary": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-28T06:00:00Z",
-      "fetched_at": "2026-08-29T02:49:17.125647Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60395,27 +60374,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "16f5a60a665f78bb",
-      "url": "https://x.com/bcherny/status/2093224959330132327",
-      "title": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware...",
-      "summary": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
-      "content": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-08-28T06:31:35Z",
-      "fetched_at": "2026-08-28T07:56:02.233196Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "fa70e6ee5db1468f",
       "url": "https://x.com/simonw/status/2093277255438860358",
       "title": "My LLM clich\u00e9 highlighter is up to 38 patterns now https://t.co/sew4qNNaZX https://t.co/ct1h8IjnyD",
@@ -62342,6 +62300,529 @@
       "author": "karpathy",
       "published_at": "2026-09-03T15:30:56Z",
       "fetched_at": "2026-09-03T19:46:14.246376Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "85b86d761877a5e9",
+      "url": "https://x.com/steipete/status/2095764736663257210",
+      "title": "RT @wwwillchen: @steipete awesome job with onboarding for OpenClaw. Just setup two gateways, my phon...",
+      "summary": "RT @wwwillchen: @steipete awesome job with onboarding for OpenClaw. Just setup two gateways, my phone and MacBook. \n\nI tried setting up Ope\u2026",
+      "content": "RT @wwwillchen: @steipete awesome job with onboarding for OpenClaw. Just setup two gateways, my phone and MacBook. \n\nI tried setting up Ope\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-04T06:43:45Z",
+      "fetched_at": "2026-09-04T07:54:03.176702Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "66d0eba6b34eb6fc",
+      "url": "https://x.com/sama/status/2095731348996821200",
+      "title": "We are also excited!",
+      "summary": "We are also excited!",
+      "content": "We are also excited!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-04T04:31:05Z",
+      "fetched_at": "2026-09-04T07:53:57.623561Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9708f99bfe22c0f7",
+      "url": "https://x.com/dani_avila7/status/2095709423406653451",
+      "title": "Open the Claude mobile app, go to Settings, Capabilities, and find the Memory section\n\nMake sure you...",
+      "summary": "Open the Claude mobile app, go to Settings, Capabilities, and find the Memory section\n\nMake sure you have this enabled https://t.co/TeUiaozKbM",
+      "content": "Open the Claude mobile app, go to Settings, Capabilities, and find the Memory section\n\nMake sure you have this enabled https://t.co/TeUiaozKbM",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-04T03:03:57Z",
+      "fetched_at": "2026-09-04T07:53:55.200366Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf0d720627a082e5",
+      "url": "https://x.com/steipete/status/2095703937177584118",
+      "title": "See you there! Will talk about how we build in the open and multiplayer agents.",
+      "summary": "See you there! Will talk about how we build in the open and multiplayer agents.",
+      "content": "See you there! Will talk about how we build in the open and multiplayer agents.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-04T02:42:09Z",
+      "fetched_at": "2026-09-04T07:54:03.176750Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "95fb8faca043a2b8",
+      "url": "https://x.com/steipete/status/2095703568502468665",
+      "title": "Having a claw in your group chat is so useful! https://t.co/eX7KaVw9d5",
+      "summary": "Having a claw in your group chat is so useful! https://t.co/eX7KaVw9d5",
+      "content": "Having a claw in your group chat is so useful! https://t.co/eX7KaVw9d5",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-04T02:40:41Z",
+      "fetched_at": "2026-09-04T07:54:03.176771Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "19b0a44420dc9594",
+      "url": "https://x.com/sama/status/2095680763039740185",
+      "title": "RT @fouadmatin: Alongside the launch of GPT-6 Astra, we're committing $1 billion to subsidize Daybre...",
+      "summary": "RT @fouadmatin: Alongside the launch of GPT-6 Astra, we're committing $1 billion to subsidize Daybreak access and frontier capabilities to\u2026",
+      "content": "RT @fouadmatin: Alongside the launch of GPT-6 Astra, we're committing $1 billion to subsidize Daybreak access and frontier capabilities to\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-04T01:10:04Z",
+      "fetched_at": "2026-09-04T07:53:57.623639Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "677930922f0ff252",
+      "url": "https://x.com/sama/status/2095680718320082974",
+      "title": "RT @polynoamial: Of all the use cases for GPT-6 Astra, I'm most excited for scientific discovery. We...",
+      "summary": "RT @polynoamial: Of all the use cases for GPT-6 Astra, I'm most excited for scientific discovery. We at @OpenAI have not pushed it to its l\u2026",
+      "content": "RT @polynoamial: Of all the use cases for GPT-6 Astra, I'm most excited for scientific discovery. We at @OpenAI have not pushed it to its l\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-04T01:09:53Z",
+      "fetched_at": "2026-09-04T07:53:57.623672Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ec4cc8cb43788dcc",
+      "url": "https://x.com/steipete/status/2095679704741413348",
+      "title": "RT @awnihannun: $47.9 million mistake not naming the company \ud83e\udef6  Heart Hands",
+      "summary": "RT @awnihannun: $47.9 million mistake not naming the company \ud83e\udef6  Heart Hands",
+      "content": "RT @awnihannun: $47.9 million mistake not naming the company \ud83e\udef6  Heart Hands",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-04T01:05:52Z",
+      "fetched_at": "2026-09-04T07:54:03.176784Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ecc8d34273231f1b",
+      "url": "https://x.com/sama/status/2095678759651438887",
+      "title": "first, sorry for the messy rollout.\n\nsecond, when we screw up, we try to make it right.\n\nthird, we s...",
+      "summary": "first, sorry for the messy rollout.\n\nsecond, when we screw up, we try to make it right.\n\nthird, we should be able to begin broad rollout to API customers and chatgpt subscribers in the near future. as usual we will start with pro subscribers.",
+      "content": "first, sorry for the messy rollout.\n\nsecond, when we screw up, we try to make it right.\n\nthird, we should be able to begin broad rollout to API customers and chatgpt subscribers in the near future. as usual we will start with pro subscribers.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-04T01:02:06Z",
+      "fetched_at": "2026-09-04T07:53:57.623698Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "02f038db79704ed8",
+      "url": "https://x.com/steipete/status/2095678161052901828",
+      "title": "brilliant fit.",
+      "summary": "brilliant fit.",
+      "content": "brilliant fit.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-04T00:59:44Z",
+      "fetched_at": "2026-09-04T07:54:03.176801Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf6189eee06481be",
+      "url": "https://x.com/steipete/status/2095660615977296123",
+      "title": "RT @theo: Astra had made Codex more essential than ever due to its unique strengths. The computer us...",
+      "summary": "RT @theo: Astra had made Codex more essential than ever due to its unique strengths. The computer use, vision and self-verification capabil\u2026",
+      "content": "RT @theo: Astra had made Codex more essential than ever due to its unique strengths. The computer use, vision and self-verification capabil\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T23:50:00Z",
+      "fetched_at": "2026-09-04T07:54:03.176813Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "40631904304b3956",
+      "url": "https://x.com/steipete/status/2095658958447108575",
+      "title": "RT @cheatyyyy: GPT-6 Astra will not cost you extra usage over 272k tokens in Codex unlike previous m...",
+      "summary": "RT @cheatyyyy: GPT-6 Astra will not cost you extra usage over 272k tokens in Codex unlike previous models! https://t.co/KDdxHvuOTt",
+      "content": "RT @cheatyyyy: GPT-6 Astra will not cost you extra usage over 272k tokens in Codex unlike previous models! https://t.co/KDdxHvuOTt",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T23:43:25Z",
+      "fetched_at": "2026-09-04T07:54:03.176823Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2bb578b7f6b7f426",
+      "url": "https://x.com/steipete/status/2095657128526794815",
+      "title": "RT @nikunjhanda: cool new responses api features releasing today with astra:\n1. async function calli...",
+      "summary": "RT @nikunjhanda: cool new responses api features releasing today with astra:\n1. async function calling \u2014\u00a0model can keep going while your to\u2026",
+      "content": "RT @nikunjhanda: cool new responses api features releasing today with astra:\n1. async function calling \u2014\u00a0model can keep going while your to\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T23:36:09Z",
+      "fetched_at": "2026-09-04T07:54:03.176833Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ee01fd6a91867b95",
+      "url": "https://x.com/trq212/status/2095653053282292013",
+      "title": "We\u2019re working on making Claude Code way more hackable, give us feedback!",
+      "summary": "We\u2019re working on making Claude Code way more hackable, give us feedback!",
+      "content": "We\u2019re working on making Claude Code way more hackable, give us feedback!",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-03T23:19:57Z",
+      "fetched_at": "2026-09-04T07:53:50.737496Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7f62237a4390bede",
+      "url": "https://x.com/steipete/status/2095647194640773619",
+      "title": "RT @openclaw: OpenClaw v2026.9.1 is out \ud83e\udd9e\n\n\ud83e\udddc Mermaid joins the chat\n\u26a1 Setup skips the small talk\n\ud83d\udedf U...",
+      "summary": "RT @openclaw: OpenClaw v2026.9.1 is out \ud83e\udd9e\n\n\ud83e\udddc Mermaid joins the chat\n\u26a1 Setup skips the small talk\n\ud83d\udedf Updates know when to stop\n\ud83e\udeb6 Long chats t\u2026",
+      "content": "RT @openclaw: OpenClaw v2026.9.1 is out \ud83e\udd9e\n\n\ud83e\udddc Mermaid joins the chat\n\u26a1 Setup skips the small talk\n\ud83d\udedf Updates know when to stop\n\ud83e\udeb6 Long chats t\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T22:56:41Z",
+      "fetched_at": "2026-09-04T07:54:03.176843Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d8e0e998f87c3ff3",
+      "url": "https://x.com/dani_avila7/status/2095644593928785963",
+      "title": "Enough AI news for today\u2026 time to take my daughter to soccer practice and enjoy a good mate\n\nLogging...",
+      "summary": "Enough AI news for today\u2026 time to take my daughter to soccer practice and enjoy a good mate\n\nLogging off, see you tomorrow https://t.co/M5kNrOr2Tr",
+      "content": "Enough AI news for today\u2026 time to take my daughter to soccer practice and enjoy a good mate\n\nLogging off, see you tomorrow https://t.co/M5kNrOr2Tr",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-03T22:46:21Z",
+      "fetched_at": "2026-09-04T07:53:55.200401Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a83ef015ad350695",
+      "url": "https://x.com/sama/status/2095635950890356804",
+      "title": "RT @nikunjhanda: cool new responses api features releasing today with astra:\n1. async function calli...",
+      "summary": "RT @nikunjhanda: cool new responses api features releasing today with astra:\n1. async function calling \u2014\u00a0model can keep going while your to\u2026",
+      "content": "RT @nikunjhanda: cool new responses api features releasing today with astra:\n1. async function calling \u2014\u00a0model can keep going while your to\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-03T22:12:00Z",
+      "fetched_at": "2026-09-04T07:53:57.623727Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f2308b56d23a2059",
+      "url": "https://x.com/GeminiApp/status/2095629512423919704",
+      "title": "RT @googlephotos: Google Photos in Gemini Spark is here. Put your photo library into action to handl...",
+      "summary": "RT @googlephotos: Google Photos in Gemini Spark is here. Put your photo library into action to handle end-to-end tasks with a single prompt\u2026",
+      "content": "RT @googlephotos: Google Photos in Gemini Spark is here. Put your photo library into action to handle end-to-end tasks with a single prompt\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-03T21:46:25Z",
+      "fetched_at": "2026-09-04T07:53:58.640303Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "065e2a704b064faf",
+      "url": "https://x.com/steipete/status/2095620456577716553",
+      "title": "RT @mxstbr: happy astra day to those who celebrate\n\nhaving used this model for a while, i recommend ...",
+      "summary": "RT @mxstbr: happy astra day to those who celebrate\n\nhaving used this model for a while, i recommend you $ rm AGENTS.md and start from scrat\u2026",
+      "content": "RT @mxstbr: happy astra day to those who celebrate\n\nhaving used this model for a while, i recommend you $ rm AGENTS.md and start from scrat\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T21:10:26Z",
+      "fetched_at": "2026-09-04T07:54:03.176853Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "871db94235b96cd8",
+      "url": "https://x.com/dani_avila7/status/2095606447157526544",
+      "title": "Ok, this is insane. We\u2019re on a different scale now\u2026 literally",
+      "summary": "Ok, this is insane. We\u2019re on a different scale now\u2026 literally",
+      "content": "Ok, this is insane. We\u2019re on a different scale now\u2026 literally",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-03T20:14:46Z",
+      "fetched_at": "2026-09-04T07:53:55.200416Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0fac5cba07d71f15",
+      "url": "https://x.com/sama/status/2095601442220638547",
+      "title": "Also, this is my favorite OpenAI video so far. It makes me excited for the future!",
+      "summary": "Also, this is my favorite OpenAI video so far. It makes me excited for the future!",
+      "content": "Also, this is my favorite OpenAI video so far. It makes me excited for the future!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-03T19:54:52Z",
+      "fetched_at": "2026-09-04T07:53:57.623751Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e4b731d32b87a0da",
+      "url": "https://x.com/sama/status/2095601211869421726",
+      "title": "We are working towards getting Astra in everyone's hands as quickly as we can; I know it is frustrat...",
+      "summary": "We are working towards getting Astra in everyone's hands as quickly as we can; I know it is frustrating and I appreciate the patience. It should be quick.",
+      "content": "We are working towards getting Astra in everyone's hands as quickly as we can; I know it is frustrating and I appreciate the patience. It should be quick.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-03T19:53:57Z",
+      "fetched_at": "2026-09-04T07:53:57.623774Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "60267450e7a695da",
+      "url": "https://x.com/steipete/status/2095600786264973822",
+      "title": "Been using Astra for the last few weeks and it\u2019s so good and proactive. There\u2019s a bunch of PRs on vi...",
+      "summary": "Been using Astra for the last few weeks and it\u2019s so good and proactive. There\u2019s a bunch of PRs on vitest, tsx or SwiftPM where Astra debugged OC and ended up finding and patching issues in upstream dependencies.",
+      "content": "Been using Astra for the last few weeks and it\u2019s so good and proactive. There\u2019s a bunch of PRs on vitest, tsx or SwiftPM where Astra debugged OC and ended up finding and patching issues in upstream dependencies.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-03T19:52:16Z",
+      "fetched_at": "2026-09-04T07:54:03.176864Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cd80eab9b397afd9",
+      "url": "https://x.com/sama/status/2095600429363302720",
+      "title": "We hit a little snag getting the blog post deployed, but it is really great:\n\nhttps://t.co/jjqXUWfrN...",
+      "summary": "We hit a little snag getting the blog post deployed, but it is really great:\n\nhttps://t.co/jjqXUWfrNW",
+      "content": "We hit a little snag getting the blog post deployed, but it is really great:\n\nhttps://t.co/jjqXUWfrNW",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-03T19:50:51Z",
+      "fetched_at": "2026-09-04T07:53:57.623796Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4f033e248c656e6e",
+      "url": "https://x.com/sama/status/2095600005772104059",
+      "title": "GPT-6 Astra is here.\n\nWe hope it will begin to enable a new generation of entrepreneurship, scientif...",
+      "summary": "GPT-6 Astra is here.\n\nWe hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building.\n\nWe believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity, and more.\n\nIt took us some extra time",
+      "content": "GPT-6 Astra is here.\n\nWe hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building.\n\nWe believe it is the best model in the world for computer use, professional work, science, coding, cybersecurity, and more.\n\nIt took us some extra time",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-03T19:49:10Z",
+      "fetched_at": "2026-09-04T07:53:57.623817Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "16f5a60a665f78bb",
+      "url": "https://x.com/bcherny/status/2093224959330132327",
+      "title": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware...",
+      "summary": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
+      "content": "RT @AnthropicAI: Today, we're kicking off the first phase of the research preview for Model Hardware Standard (MHS): a new standard for AI\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-08-28T06:31:35Z",
+      "fetched_at": "2026-08-28T07:56:02.233196Z",
       "score": null,
       "score_reason": "",
       "tier": "",
