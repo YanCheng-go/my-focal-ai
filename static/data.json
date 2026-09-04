@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-04T11:19:44.855926+00:00",
+  "exported_at": "2026-09-04T14:24:56.329134+00:00",
   "period_hours": 168,
-  "total": 2890,
+  "total": 2891,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38779,26 +38779,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "386fd20be2f34c8b",
-      "url": "https://www.youtube.com/watch?v=ZIYYsAzaLlA",
-      "title": "Building the Engine While Flying the Plane: Launching the Figma MCP Server \u2014 Jesse Lumarie, Figma",
-      "summary": "Figma did not have 20% projects. Jesse Lumarie gave one to the MCP server anyway, one day a week, because he had seen an internal demo and wanted non designers to be able to pull from Figma. That side project became the company's first MCP server in about three months, and then one of the fastest growing products Figma has ever shipped. The build happened while the ground moved. Weeks in, a new version of the spec deprecated the transport they had chosen, and client support was so uneven that a compatibility matrix was a real artifact they maintained.\n\nThe interesting decisions are about representation. Figma's canvas is a scene graph in C++, close to the HTML DOM, and they had three ways to hand it to a model. They picked React and Tailwind on a hunch that models had seen the most of it, and the output is pixel perfect. Passing images inline as base64 blew up the context window and got cut. Pixel perfect turned out to be only half the problem, because an enterprise does not want a beautiful generated button, it wants its own accessible internationalized one, so Code Connect sends a pointer to the real component instead of markup. Two hours grading an eval by hand in a spreadsheet convinced them never to do that again, and evals now run hundreds of times a week behind LLM judges.\n\nSpeaker info:\n- https://x.com/jesselumarie\n- https://www.linkedin.com/in/jesselumarie/\n\nTimestamps:\n0:00 - A 20% project at a company without 20% projects\n2:02 - Uneven client support, and a spec that moved\n2:55 - What the local server gave developers\n3:52 - Three ways to represent a scene graph\n4:47 - Why images alone did not work\n5:40 - Grading evals by hand, once\n7:32 - Code Connect, and why pixel perfect is not enough\n9:24 - Elicitation and sampling, and hacking around them\n13:55 - Shipping local first, then remote\n15:43 - How early all of this still is",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-28T14:00:06Z",
-      "fetched_at": "2026-08-28T18:43:47.133637Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0f73486fad9dc6fe",
       "url": "https://arxiv.org/abs/2609.00948",
       "title": "From Terminology to Diagrams: Visual-Instruction Generation for Scientific Diagram Understanding",
@@ -38898,26 +38878,6 @@
       "author": "Orcun Cetintas, Guillem Bras\\'o, Tim Meinhardt, Laura Leal-Taix\\'e",
       "published_at": "2026-09-02T04:00:00Z",
       "fetched_at": "2026-09-02T04:42:03.670278Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "428f5a9a5a0b5b60",
-      "url": "https://www.youtube.com/watch?v=PYjbeY8sGLs",
-      "title": "I Cloned Calendly and Now It\u2019s Free Forever",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=snagtime-app&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI built SnagTime, a free Calendly-style scheduling app using Codex, then tested live calendar syncing, custom event types, Stripe payments, team permissions, and more. \n\nIn this video, I walk through the five-prompt build process, the agent testing loops, and the manual UX fixes AI still missed. I also break down the real numbers behind the project. How long it took, how many agents it used, and how much it cost me.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 I Cloned Calendly\n0:25 SnagTime App Tour\n1:55 FREE Install\n2:12 Live Booking & Calendar Sync\n3:52 Custom Events & Stripe Payments\n6:32 Owning the Software Layer\n7:17 Five Prompts Behind the Build\n10:29 The Reality of AI-Built",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-08-28T12:50:33Z",
-      "fetched_at": "2026-08-28T18:43:46.738385Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -62781,6 +62741,67 @@
       "author": "sama",
       "published_at": "2026-09-03T19:49:10Z",
       "fetched_at": "2026-09-04T07:53:57.623817Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7904583b6d77c2bf",
+      "url": "https://x.com/dani_avila7/status/2095874850422247733",
+      "title": "Claude Code Desktop\u2019s built-in browser finally imports Chrome cookies!\n\nIt was pretty annoying havin...",
+      "summary": "Claude Code Desktop\u2019s built-in browser finally imports Chrome cookies!\n\nIt was pretty annoying having to log into GitHub every time I wanted to review PRs\n\nOne less reason to open Chrome \ud83d\udc40 https://t.co/aYb88QXjfn",
+      "content": "Claude Code Desktop\u2019s built-in browser finally imports Chrome cookies!\n\nIt was pretty annoying having to log into GitHub every time I wanted to review PRs\n\nOne less reason to open Chrome \ud83d\udc40 https://t.co/aYb88QXjfn",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-04T14:01:18Z",
+      "fetched_at": "2026-09-04T14:24:46.178324Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "065be172704d0603",
+      "url": "https://x.com/simonw/status/2095872667224285216",
+      "title": "RT @thlarsen: We found ~18k posts from autonomous AI agents (self-identifying as from OpenAI) using ...",
+      "summary": "RT @thlarsen: We found ~18k posts from autonomous AI agents (self-identifying as from OpenAI) using the public internet to communicate duri\u2026",
+      "content": "RT @thlarsen: We found ~18k posts from autonomous AI agents (self-identifying as from OpenAI) using the public internet to communicate duri\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-04T13:52:37Z",
+      "fetched_at": "2026-09-04T14:24:45.039753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8caad1961ca4b369",
+      "url": "https://x.com/dani_avila7/status/2095855471055773711",
+      "title": "If you\u2019re not paying attention to what @runwayml is building, you\u2019re missing a huge part of what\u2019s h...",
+      "summary": "If you\u2019re not paying attention to what @runwayml is building, you\u2019re missing a huge part of what\u2019s happening in genai\n\nProud of its Chilean founders \ud83c\udde8\ud83c\uddf1",
+      "content": "If you\u2019re not paying attention to what @runwayml is building, you\u2019re missing a huge part of what\u2019s happening in genai\n\nProud of its Chilean founders \ud83c\udde8\ud83c\uddf1",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-04T12:44:18Z",
+      "fetched_at": "2026-09-04T14:24:46.178386Z",
       "score": null,
       "score_reason": "",
       "tier": "",
