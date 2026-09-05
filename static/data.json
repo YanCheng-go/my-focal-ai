@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-05T18:19:39.071426+00:00",
+  "exported_at": "2026-09-05T21:41:34.855220+00:00",
   "period_hours": 168,
-  "total": 2873,
+  "total": 2897,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12780,26 +12780,6 @@
       "author": "IBM Technology",
       "published_at": "2026-08-30T11:00:23Z",
       "fetched_at": "2026-08-30T14:52:31.698704Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "48cf20a2080a969d",
-      "url": "https://www.youtube.com/watch?v=S6aSoQ6_u5A",
-      "title": "Tell the Robot What You Want \u2014 Sandhya Subramani, AWS",
-      "summary": "Sandhya Subramani asks her rover how many people it can see, a question nobody ever trained it to answer. It thinks for a second, checks its front camera, and reports two, one near the speaker monitor and one further right. Scout is a small four legged robot running a Raspberry Pi, reaching the internet over a SIM card and a 4G connection, and its whole personality comes from an agent layer sitting above the movement policies it already had. The demo goes exactly as live robot demos go. It falls over, gets coaxed upright, announces a signature performance and then just turns its headlights off.\n\nThe idea underneath is neat and portable. If you give an agent software tools, you can also hand it a hardware tool and let it choose which preset policy to fire, which turns a robot trained for a fixed task list into something you can address in plain language. She wires it up in about five lines using an open source AWS framework that already covers 40 or so robots. Scout actually runs three agents at once, one thinking about the environment, one talking to her over Telegram, and a voice agent she disabled so it would stop interrupting her on stage. Her framing is that the agent decides what to do while the trained policy decides how, and the robot doubles as a rig for collecting the next round of training data.\n\nSpeaker info:\n- https://www.linkedin.com/in/sandhyasubramani/\n\nTimestamps:\n0:00 - Meet Scout, running on a Raspberry Pi over 4G\n1:27 - Answering a question nobody trained it for\n3:46 - Giving an agent a hardware tool\n5:02 - Five lines to hand a robot to an agent\n6:09 - Three agents running at once\n7:17 - The four layers, and how observations travel up\n9:35 - Splitting work between cloud and edge\n10:45 - Where policies go if they scale like language models\n11:53 - Asking it to do something complex\n14:12 - What is actually under the hood\n15:21 - Mirror mirror, over Telegram",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-29T18:30:17Z",
-      "fetched_at": "2026-08-29T20:56:11.925884Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60222,47 +60202,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3c81da09bf5bcc6e",
-      "url": "https://x.com/GeminiApp/status/2093767355914760680",
-      "title": "RT @GoogleAI: Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Transcribe, our most precise speech-to-t...",
-      "summary": "RT @GoogleAI: Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Transcribe, our most precise speech-to-text model yet, designed to deliver inte\u2026",
-      "content": "RT @GoogleAI: Here\u2019s what launched this week:\n\n\u2014 Gemini 3.5 Transcribe, our most precise speech-to-text model yet, designed to deliver inte\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-08-29T18:26:52Z",
-      "fetched_at": "2026-08-29T18:43:45.558483Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1c8b648c0bfff4ce",
-      "url": "https://x.com/dani_avila7/status/2093792266577952879",
-      "title": "AI Agent Prompt Caching, explained simply \ud83d\udc47\n\nJust like we use caching to improve application perform...",
-      "summary": "AI Agent Prompt Caching, explained simply \ud83d\udc47\n\nJust like we use caching to improve application performance and reduce the load on our main database, AI agents also have a caching system worth understanding\n\nGoing deep into how caching works at the LLM level, including how vectors https://t.co/c5MIOgsDuh",
-      "content": "AI Agent Prompt Caching, explained simply \ud83d\udc47\n\nJust like we use caching to improve application performance and reduce the load on our main database, AI agents also have a caching system worth understanding\n\nGoing deep into how caching works at the LLM level, including how vectors https://t.co/c5MIOgsDuh",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-29T20:05:51Z",
-      "fetched_at": "2026-08-29T20:44:09.433179Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d828bdea787de3c8",
       "url": "https://x.com/dani_avila7/status/2093844695403118818",
       "title": "Academy guide Agent Skill by Anthropic\n\nProbably one of the most useful skills if you\u2019re learning th...",
@@ -62447,6 +62386,552 @@
       "author": "dani_avila7",
       "published_at": "2026-09-04T12:44:18Z",
       "fetched_at": "2026-09-04T14:24:46.178386Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7187b78d3137fb9c",
+      "url": "https://x.com/steipete/status/2096336627329343791",
+      "title": "RT @petergostev: Astra - recreate the original Craig Federighi in Blender. https://t.co/BuMaTBHMyY",
+      "summary": "RT @petergostev: Astra - recreate the original Craig Federighi in Blender. https://t.co/BuMaTBHMyY",
+      "content": "RT @petergostev: Astra - recreate the original Craig Federighi in Blender. https://t.co/BuMaTBHMyY",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-05T20:36:14Z",
+      "fetched_at": "2026-09-05T21:41:30.592825Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3f8a416cba9f6332",
+      "url": "https://x.com/dani_avila7/status/2096292257322181033",
+      "title": "btw, if you want to install the statusline from the video, just run\n\nnpx claude-code-templates@lates...",
+      "summary": "btw, if you want to install the statusline from the video, just run\n\nnpx claude-code-templates@latest --setting statusline/worktree-context-statusline\n\nhttps://t.co/2cbZIa6lMD https://t.co/HFtCs9c2ul",
+      "content": "btw, if you want to install the statusline from the video, just run\n\nnpx claude-code-templates@latest --setting statusline/worktree-context-statusline\n\nhttps://t.co/2cbZIa6lMD https://t.co/HFtCs9c2ul",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-05T17:39:56Z",
+      "fetched_at": "2026-09-05T21:41:20.971897Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "172851791034433e",
+      "url": "https://x.com/dani_avila7/status/2096270384001581190",
+      "title": "Of all the videos showing how Astra builds cities and rooms\u2026 \n\nI think this is the most useful one I...",
+      "summary": "Of all the videos showing how Astra builds cities and rooms\u2026 \n\nI think this is the most useful one I\u2019ve seen so far",
+      "content": "Of all the videos showing how Astra builds cities and rooms\u2026 \n\nI think this is the most useful one I\u2019ve seen so far",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-05T16:13:01Z",
+      "fetched_at": "2026-09-05T21:41:20.971946Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "49f8c9ba114d666e",
+      "url": "https://x.com/sama/status/2096241490519589238",
+      "title": "RT @thsottiaux: Astra was probably our biggest competitive advantage while it wasn\u2019t generally avail...",
+      "summary": "RT @thsottiaux: Astra was probably our biggest competitive advantage while it wasn\u2019t generally available.\n\nSince we\u2019ve had it our productiv\u2026",
+      "content": "RT @thsottiaux: Astra was probably our biggest competitive advantage while it wasn\u2019t generally available.\n\nSince we\u2019ve had it our productiv\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-05T14:18:12Z",
+      "fetched_at": "2026-09-05T21:41:23.532835Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7de033bbda31c76e",
+      "url": "https://x.com/sama/status/2096241436509544744",
+      "title": "it is obviously trivial relative to everything else, but the fact that astra can make me whatever fu...",
+      "summary": "it is obviously trivial relative to everything else, but the fact that astra can make me whatever fun little game i can imagine and i can be playing it a few minutes later is so cool",
+      "content": "it is obviously trivial relative to everything else, but the fact that astra can make me whatever fun little game i can imagine and i can be playing it a few minutes later is so cool",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-05T14:17:59Z",
+      "fetched_at": "2026-09-05T21:41:23.532921Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5af98044a2b6b8ab",
+      "url": "https://x.com/dani_avila7/status/2096232102018572540",
+      "title": "Never argue with a chess account\u2026 that was literally checkmate \n\nWorth reading the full @chesscom vs...",
+      "summary": "Never argue with a chess account\u2026 that was literally checkmate \n\nWorth reading the full @chesscom vs @elonmusk",
+      "content": "Never argue with a chess account\u2026 that was literally checkmate \n\nWorth reading the full @chesscom vs @elonmusk",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-05T13:40:53Z",
+      "fetched_at": "2026-09-05T21:41:20.971975Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dd9917fdfbb1c7c5",
+      "url": "https://x.com/steipete/status/2096228993406235007",
+      "title": "RT @theo: Async questions are one of my favorite things about GPT-6 Astra\n\nNon-blocking questions ar...",
+      "summary": "RT @theo: Async questions are one of my favorite things about GPT-6 Astra\n\nNon-blocking questions are a great way to work with models. They\u2026",
+      "content": "RT @theo: Async questions are one of my favorite things about GPT-6 Astra\n\nNon-blocking questions are a great way to work with models. They\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-05T13:28:32Z",
+      "fetched_at": "2026-09-05T21:41:30.592886Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "13eb1e68443465b1",
+      "url": "https://x.com/steipete/status/2096214438827397174",
+      "title": "RT @petergostev: One thing to add - Astra really 'gets' what you mean. The only other model ever did...",
+      "summary": "RT @petergostev: One thing to add - Astra really 'gets' what you mean. The only other model ever did that was Fable. \n\nAfter submitting the\u2026",
+      "content": "RT @petergostev: One thing to add - Astra really 'gets' what you mean. The only other model ever did that was Fable. \n\nAfter submitting the\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-05T12:30:42Z",
+      "fetched_at": "2026-09-05T21:41:30.592917Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3a461a67e7c1f987",
+      "url": "https://x.com/steipete/status/2096214193926176785",
+      "title": "RT @nateberkopec: True a year ago and still true now:\n\nAgents think that the way you solve 99% of pr...",
+      "summary": "RT @nateberkopec: True a year ago and still true now:\n\nAgents think that the way you solve 99% of problems is Just Add More Code. \n\nYour jo\u2026",
+      "content": "RT @nateberkopec: True a year ago and still true now:\n\nAgents think that the way you solve 99% of problems is Just Add More Code. \n\nYour jo\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-05T12:29:44Z",
+      "fetched_at": "2026-09-05T21:41:30.592942Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6519850bcdcd2a1",
+      "url": "https://x.com/steipete/status/2096213488045830203",
+      "title": "RT @intellectronica: one very cool development with gpt 6 astra is that you can change reasoning eff...",
+      "summary": "RT @intellectronica: one very cool development with gpt 6 astra is that you can change reasoning effort mid-convo without invalidating the\u2026",
+      "content": "RT @intellectronica: one very cool development with gpt 6 astra is that you can change reasoning effort mid-convo without invalidating the\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-05T12:26:55Z",
+      "fetched_at": "2026-09-05T21:41:30.592972Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8731c68ca241b640",
+      "url": "https://x.com/steipete/status/2096208734666309999",
+      "title": "this one weird trick to make compaction and long running goals way better.",
+      "summary": "this one weird trick to make compaction and long running goals way better.",
+      "content": "this one weird trick to make compaction and long running goals way better.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-05T12:08:02Z",
+      "fetched_at": "2026-09-05T21:41:30.592995Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "336f65fdc77f6cf8",
+      "url": "https://x.com/OpenAI/status/2096133504417616165",
+      "title": "How we think about the \u201cwiki incident,\u201d where our agents wrote to several internet sites: it\u2019s past ...",
+      "summary": "How we think about the \u201cwiki incident,\u201d where our agents wrote to several internet sites: it\u2019s past time for us to define standards for when and how we share misalignment incidents, not just misalignment properties of our models.\n\nHistorically, we have treated misalignment https://t.co/NNTbfSxVWn",
+      "content": "How we think about the \u201cwiki incident,\u201d where our agents wrote to several internet sites: it\u2019s past time for us to define standards for when and how we share misalignment incidents, not just misalignment properties of our models.\n\nHistorically, we have treated misalignment https://t.co/NNTbfSxVWn",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-05T07:09:06Z",
+      "fetched_at": "2026-09-05T21:41:26.195945Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f22040c0067c7106",
+      "url": "https://x.com/bcherny/status/2096083691944714423",
+      "title": "RT @AnthropicAI: Checking that a major mathematical proof is correct can take years. Formalization\u2014c...",
+      "summary": "RT @AnthropicAI: Checking that a major mathematical proof is correct can take years. Formalization\u2014converting the mathematical reasoning in\u2026",
+      "content": "RT @AnthropicAI: Checking that a major mathematical proof is correct can take years. Formalization\u2014converting the mathematical reasoning in\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-05T03:51:10Z",
+      "fetched_at": "2026-09-05T21:41:18.282970Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1b98dd936a24fd50",
+      "url": "https://x.com/dani_avila7/status/2096052993166544914",
+      "title": "Claude Code just shipped a new /skill-doctor command\n\nIt shows which skills are loaded in your sessi...",
+      "summary": "Claude Code just shipped a new /skill-doctor command\n\nIt shows which skills are loaded in your session, which ones haven\u2019t been used, and how many context tokens each is costing you\n\nNow you know exactly what to remove https://t.co/rvlBEklHVA",
+      "content": "Claude Code just shipped a new /skill-doctor command\n\nIt shows which skills are loaded in your session, which ones haven\u2019t been used, and how many context tokens each is costing you\n\nNow you know exactly what to remove https://t.co/rvlBEklHVA",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-05T01:49:11Z",
+      "fetched_at": "2026-09-05T21:41:20.971999Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "60915503849fe13a",
+      "url": "https://x.com/sama/status/2096008528834244741",
+      "title": "Now out to all Plus and Business users.\n\nHappy building!",
+      "summary": "Now out to all Plus and Business users.\n\nHappy building!",
+      "content": "Now out to all Plus and Business users.\n\nHappy building!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-04T22:52:29Z",
+      "fetched_at": "2026-09-05T21:41:23.532974Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "caea83d9ac9da933",
+      "url": "https://x.com/dani_avila7/status/2095999539345821955",
+      "title": "Fable 5.1, just a few minutes improving Californication\n\nAnd I still have the whole weekend ahead! h...",
+      "summary": "Fable 5.1, just a few minutes improving Californication\n\nAnd I still have the whole weekend ahead! https://t.co/oMR5sLNBJU",
+      "content": "Fable 5.1, just a few minutes improving Californication\n\nAnd I still have the whole weekend ahead! https://t.co/oMR5sLNBJU",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-04T22:16:46Z",
+      "fetched_at": "2026-09-05T21:41:20.972027Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5fbfe93bc3b9d169",
+      "url": "https://x.com/steipete/status/2095997649820516833",
+      "title": "RT @theo: Astra is BEHIND MUSE SPARK 1.3 MAX ON ARTIFICIAL ANALYSIS???\n\nI was starting to get skepti...",
+      "summary": "RT @theo: Astra is BEHIND MUSE SPARK 1.3 MAX ON ARTIFICIAL ANALYSIS???\n\nI was starting to get skeptical of their intelligence index, but th\u2026",
+      "content": "RT @theo: Astra is BEHIND MUSE SPARK 1.3 MAX ON ARTIFICIAL ANALYSIS???\n\nI was starting to get skeptical of their intelligence index, but th\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-04T22:09:16Z",
+      "fetched_at": "2026-09-05T21:41:30.593017Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6829f2c0f61ad231",
+      "url": "https://x.com/sama/status/2095973658867171733",
+      "title": "GPT-6 Astra is now available to all Pro, Enterprise, and Business Premium users in Work/Codex, and i...",
+      "summary": "GPT-6 Astra is now available to all Pro, Enterprise, and Business Premium users in Work/Codex, and is available in the API.\n\nWe will start rollout to Plus and Business users next.\n\nThank you for the patience.",
+      "content": "GPT-6 Astra is now available to all Pro, Enterprise, and Business Premium users in Work/Codex, and is available in the API.\n\nWe will start rollout to Plus and Business users next.\n\nThank you for the patience.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-04T20:33:56Z",
+      "fetched_at": "2026-09-05T21:41:23.533020Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "acd27f7b07a03ccf",
+      "url": "https://x.com/AnthropicAI/status/2095947707605266436",
+      "title": "Checking that a major mathematical proof is correct can take years. Formalization\u2014converting the mat...",
+      "summary": "Checking that a major mathematical proof is correct can take years. Formalization\u2014converting the mathematical reasoning into a form computer proof assistants like Lean can verify\u2014can help.\n\nLast month, Claude completed the first formalized proof of Fermat\u2019s Last Theorem, one of https://t.co/pdT8zwlV4A",
+      "content": "Checking that a major mathematical proof is correct can take years. Formalization\u2014converting the mathematical reasoning into a form computer proof assistants like Lean can verify\u2014can help.\n\nLast month, Claude completed the first formalized proof of Fermat\u2019s Last Theorem, one of https://t.co/pdT8zwlV4A",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-04T18:50:48Z",
+      "fetched_at": "2026-09-05T21:41:28.882760Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8ca3909d63324b08",
+      "url": "https://x.com/GeminiApp/status/2095935548921897013",
+      "title": "Starting today, Daily Brief is available to even more Gemini app users for free in the U.S.\n\nDaily B...",
+      "summary": "Starting today, Daily Brief is available to even more Gemini app users for free in the U.S.\n\nDaily Brief works in the background, connecting the dots across your @Google apps to help you start each day. From your emails and calendar to your conversations and interests, Daily",
+      "content": "Starting today, Daily Brief is available to even more Gemini app users for free in the U.S.\n\nDaily Brief works in the background, connecting the dots across your @Google apps to help you start each day. From your emails and calendar to your conversations and interests, Daily",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-04T18:02:30Z",
+      "fetched_at": "2026-09-05T21:41:24.862287Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "94ab7e46272d1d05",
+      "url": "https://x.com/simonw/status/2095930035500925272",
+      "title": "It happened again... this time OpenAI's rogue agents cyber-attacked (well, spammed) a dormant German...",
+      "summary": "It happened again... this time OpenAI's rogue agents cyber-attacked (well, spammed) a dormant German wiki and used it to share the answers to a benchmark they were training against https://t.co/omErAyrKDy",
+      "content": "It happened again... this time OpenAI's rogue agents cyber-attacked (well, spammed) a dormant German wiki and used it to share the answers to a benchmark they were training against https://t.co/omErAyrKDy",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-04T17:40:35Z",
+      "fetched_at": "2026-09-05T21:41:19.677208Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "faa564ff7e89e972",
+      "url": "https://x.com/GoogleAI/status/2095922185139364267",
+      "title": "Check out this week\u2019s shipping recap:\n\n\u2014 Gemini 3.8 Flash, our most intelligent workhorse model yet,...",
+      "summary": "Check out this week\u2019s shipping recap:\n\n\u2014 Gemini 3.8 Flash, our most intelligent workhorse model yet, delivers upgrades across coding, agentic workflows, and critical multi-step reasoning.\n\u2014 Gemini 3.8 Flash Cyber, our most capable cybersecurity model, features frontier-level",
+      "content": "Check out this week\u2019s shipping recap:\n\n\u2014 Gemini 3.8 Flash, our most intelligent workhorse model yet, delivers upgrades across coding, agentic workflows, and critical multi-step reasoning.\n\u2014 Gemini 3.8 Flash Cyber, our most capable cybersecurity model, features frontier-level",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-09-04T17:09:23Z",
+      "fetched_at": "2026-09-05T21:41:27.585020Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "762ff8ba518fd851",
+      "url": "https://x.com/dani_avila7/status/2095920688926240859",
+      "title": "How the Claude Code team uses Claude Code\n\nSave this video and watch all 22:22 minutes... Seriously ...",
+      "summary": "How the Claude Code team uses Claude Code\n\nSave this video and watch all 22:22 minutes... Seriously worth it\nhttps://t.co/vacfwUG10i",
+      "content": "How the Claude Code team uses Claude Code\n\nSave this video and watch all 22:22 minutes... Seriously worth it\nhttps://t.co/vacfwUG10i",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-04T17:03:27Z",
+      "fetched_at": "2026-09-05T21:41:20.972049Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b9308474525312aa",
+      "url": "https://x.com/dani_avila7/status/2095914706942755259",
+      "title": "I still remember the first time someone showed me VS Code... I refused to use it simply because it c...",
+      "summary": "I still remember the first time someone showed me VS Code... I refused to use it simply because it came from Microsoft\n\nI had spent years coding in ASP and C# with Visual Studio, and I practically hated it. Slow, heavy, buggy\n\nI had switched to Sublime and it felt like a",
+      "content": "I still remember the first time someone showed me VS Code... I refused to use it simply because it came from Microsoft\n\nI had spent years coding in ASP and C# with Visual Studio, and I practically hated it. Slow, heavy, buggy\n\nI had switched to Sublime and it felt like a",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-04T16:39:41Z",
+      "fetched_at": "2026-09-05T21:41:20.972069Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aa24f08277ee6b2a",
+      "url": "https://x.com/GeminiApp/status/2095908226860806218",
+      "title": "RT @GoogleAIStudio: Lyria 3.5, our best-sounding music generation model, is now available in AI Stud...",
+      "summary": "RT @GoogleAIStudio: Lyria 3.5, our best-sounding music generation model, is now available in AI Studio, via the Gemini API, and in the Gemi\u2026",
+      "content": "RT @GoogleAIStudio: Lyria 3.5, our best-sounding music generation model, is now available in AI Studio, via the Gemini API, and in the Gemi\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-04T16:13:56Z",
+      "fetched_at": "2026-09-05T21:41:24.862382Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0901fbbcbfa3ad1b",
+      "url": "https://x.com/GeminiApp/status/2095905589801218366",
+      "title": "RT @Google: Lyria 3.5, our best-sounding music generation model, is now available in the @GeminiApp ...",
+      "summary": "RT @Google: Lyria 3.5, our best-sounding music generation model, is now available in the @GeminiApp \ud83c\udfb5\u2728\n\nWith more expressive vocals and ric\u2026",
+      "content": "RT @Google: Lyria 3.5, our best-sounding music generation model, is now available in the @GeminiApp \ud83c\udfb5\u2728\n\nWith more expressive vocals and ric\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-04T16:03:27Z",
+      "fetched_at": "2026-09-05T21:41:24.862438Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4835aab9682aabd4",
+      "url": "https://x.com/steipete/status/2095896959676776912",
+      "title": "RT @imikerussell: Here it is. OpenClaw 2.0 fixed the thing that made me quit in April.\n\nClean box, f...",
+      "summary": "RT @imikerussell: Here it is. OpenClaw 2.0 fixed the thing that made me quit in April.\n\nClean box, five features, Claude subscriptions and\u2026",
+      "content": "RT @imikerussell: Here it is. OpenClaw 2.0 fixed the thing that made me quit in April.\n\nClean box, five features, Claude subscriptions and\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-04T15:29:09Z",
+      "fetched_at": "2026-09-05T21:41:30.593039Z",
       "score": null,
       "score_reason": "",
       "tier": "",
