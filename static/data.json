@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-06T16:04:09.990090+00:00",
+  "exported_at": "2026-09-06T18:04:34.122328+00:00",
   "period_hours": 168,
-  "total": 2909,
+  "total": 2911,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -60164,26 +60164,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "8bfdaf3188ac7c49",
-      "url": "https://x.com/steipete/status/2094123262158774456",
-      "title": "RT @mitsuhiko: OpenClaw looks quite a bit different than what you might remember from \u2026 checks clock...",
-      "summary": "RT @mitsuhiko: OpenClaw looks quite a bit different than what you might remember from \u2026 checks clock \u2026 5 AI years ago. https://t.co/f72IlrD\u2026",
-      "content": "RT @mitsuhiko: OpenClaw looks quite a bit different than what you might remember from \u2026 checks clock \u2026 5 AI years ago. https://t.co/f72IlrD\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-30T18:01:07Z",
-      "fetched_at": "2026-08-30T20:17:42.913405Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "20564fa0a474a623",
       "url": "https://x.com/steipete/status/2094307871697891508",
       "title": "RT @obviyus: I'm a huge fan of T3Code but OpenClaw has slowly become my primary agent environment ht...",
@@ -63175,6 +63155,67 @@
       "author": "dani_avila7",
       "published_at": "2026-09-06T15:08:05Z",
       "fetched_at": "2026-09-06T16:03:57.305557Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3c18f8738e9e8da6",
+      "url": "https://x.com/sama/status/2096647371983880383",
+      "title": "An important post from Jakub:",
+      "summary": "An important post from Jakub:",
+      "content": "An important post from Jakub:",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-06T17:11:01Z",
+      "fetched_at": "2026-09-06T18:04:25.271509Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "957458aa7d6ed626",
+      "url": "https://x.com/simonw/status/2096647325049626918",
+      "title": "Interesting details in here about how OpenAI researchers are using coding agents\n\nI'd love to know w...",
+      "summary": "Interesting details in here about how OpenAI researchers are using coding agents\n\nI'd love to know what caused the huge uptick in token spend in mid-July, was that when Astra became available to employees? https://t.co/Re0Pm8FxJd",
+      "content": "Interesting details in here about how OpenAI researchers are using coding agents\n\nI'd love to know what caused the huge uptick in token spend in mid-July, was that when Astra became available to employees? https://t.co/Re0Pm8FxJd",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-06T17:10:50Z",
+      "fetched_at": "2026-09-06T18:04:21.276187Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8bfdaf3188ac7c49",
+      "url": "https://x.com/steipete/status/2094123262158774456",
+      "title": "RT @mitsuhiko: OpenClaw looks quite a bit different than what you might remember from \u2026 checks clock...",
+      "summary": "RT @mitsuhiko: OpenClaw looks quite a bit different than what you might remember from \u2026 checks clock \u2026 5 AI years ago. https://t.co/f72IlrD\u2026",
+      "content": "RT @mitsuhiko: OpenClaw looks quite a bit different than what you might remember from \u2026 checks clock \u2026 5 AI years ago. https://t.co/f72IlrD\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-30T18:01:07Z",
+      "fetched_at": "2026-08-30T20:17:42.913405Z",
       "score": null,
       "score_reason": "",
       "tier": "",
