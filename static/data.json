@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-06T10:59:06.885007+00:00",
+  "exported_at": "2026-09-06T11:46:21.469576+00:00",
   "period_hours": 168,
-  "total": 2909,
+  "total": 2910,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12804,25 +12804,6 @@
       "author": "Mikhail Vishnyakov, Tatiana Gaintseva",
       "published_at": "2026-09-04T04:00:00Z",
       "fetched_at": "2026-09-04T04:35:26.977215Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "04d9edd509c9fa3b",
-      "url": "https://www.youtube.com/watch?v=IRtSdLX_Obw",
-      "title": "Why Does AI Need Access to the Web?",
-      "summary": "Learn more about Knowledge Layers here \u2192 https://ibm.biz/~HPIDv0n6T\n\nAI models stop learning when training ends, but the world keeps changing. Bright Data Chief Product Officer Ariel Shulman explains why AI needs live access to the web, how knowledge layers provide real-time context, and how web data infrastructure helps AI agents stay grounded with fresh, reliable information.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~GQaDNjtfB\n\n#ai #llm #aiagents #realtimeai \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-30T11:00:23Z",
-      "fetched_at": "2026-08-30T14:52:31.698704Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63176,6 +63157,46 @@
       "author": "steipete",
       "published_at": "2026-09-06T06:01:05Z",
       "fetched_at": "2026-09-06T07:29:58.551345Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2566ca23343be648",
+      "url": "https://x.com/steipete/status/2096565238380548607",
+      "title": "RT @FelipeFr1702: Thanks Tibo \ud83d\ude4f",
+      "summary": "RT @FelipeFr1702: Thanks Tibo \ud83d\ude4f",
+      "content": "RT @FelipeFr1702: Thanks Tibo \ud83d\ude4f",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T11:44:39Z",
+      "fetched_at": "2026-09-06T11:46:17.702271Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "18602df003189092",
+      "url": "https://x.com/steipete/status/2096564229323337930",
+      "title": "RT @aadilpickle: asked gpt6 to draw michael jackson in google calendar https://t.co/VfVb8c5stv",
+      "summary": "RT @aadilpickle: asked gpt6 to draw michael jackson in google calendar https://t.co/VfVb8c5stv",
+      "content": "RT @aadilpickle: asked gpt6 to draw michael jackson in google calendar https://t.co/VfVb8c5stv",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T11:40:39Z",
+      "fetched_at": "2026-09-06T11:46:17.702328Z",
       "score": null,
       "score_reason": "",
       "tier": "",
