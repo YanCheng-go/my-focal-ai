@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-06T04:41:01.808727+00:00",
+  "exported_at": "2026-09-06T05:14:14.454330+00:00",
   "period_hours": 168,
-  "total": 2904,
+  "total": 2908,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -63075,6 +63075,87 @@
       "author": "dani_avila7",
       "published_at": "2026-09-06T00:39:09Z",
       "fetched_at": "2026-09-06T03:13:42.201294Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "01369bf41d174306",
+      "url": "https://x.com/steipete/status/2096465342352773435",
+      "title": "RT @prd_008: Astra (on medium) one-shotted this version of the OpenAI Super Bowl ad from 2025 by wat...",
+      "summary": "RT @prd_008: Astra (on medium) one-shotted this version of the OpenAI Super Bowl ad from 2025 by watching the original, using Remotion and\u2026",
+      "content": "RT @prd_008: Astra (on medium) one-shotted this version of the OpenAI Super Bowl ad from 2025 by watching the original, using Remotion and\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T05:07:42Z",
+      "fetched_at": "2026-09-06T05:14:12.286808Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7d2725e250a3a9ea",
+      "url": "https://x.com/simonw/status/2096445454515130583",
+      "title": "RT @gabrielchua: Me: show me a pelican riding a bicycle\nAstra: https://t.co/lJIBdHWJZU",
+      "summary": "RT @gabrielchua: Me: show me a pelican riding a bicycle\nAstra: https://t.co/lJIBdHWJZU",
+      "content": "RT @gabrielchua: Me: show me a pelican riding a bicycle\nAstra: https://t.co/lJIBdHWJZU",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-06T03:48:41Z",
+      "fetched_at": "2026-09-06T05:14:01.224588Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9f9a0f1d5685df0e",
+      "url": "https://x.com/steipete/status/2096443715976089814",
+      "title": "Built a slopmeter into our team server.\n\nYou clearly see where we started pushing for more tests. ht...",
+      "summary": "Built a slopmeter into our team server.\n\nYou clearly see where we started pushing for more tests. https://t.co/TZiFblphnO",
+      "content": "Built a slopmeter into our team server.\n\nYou clearly see where we started pushing for more tests. https://t.co/TZiFblphnO",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T03:41:46Z",
+      "fetched_at": "2026-09-06T05:14:12.286889Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cbce339654134169",
+      "url": "https://x.com/steipete/status/2096442694050754754",
+      "title": "Playing around with an idea to visualize subagents in the sidebar. Yay or nay? https://t.co/K81EHHmh...",
+      "summary": "Playing around with an idea to visualize subagents in the sidebar. Yay or nay? https://t.co/K81EHHmhNz",
+      "content": "Playing around with an idea to visualize subagents in the sidebar. Yay or nay? https://t.co/K81EHHmhNz",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T03:37:42Z",
+      "fetched_at": "2026-09-06T05:14:12.286932Z",
       "score": null,
       "score_reason": "",
       "tier": "",
