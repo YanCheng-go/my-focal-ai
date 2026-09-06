@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-06T00:23:10.161257+00:00",
+  "exported_at": "2026-09-06T03:13:52.282185+00:00",
   "period_hours": 168,
-  "total": 2899,
+  "total": 2904,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -60202,26 +60202,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ac1e9c73096dca91",
-      "url": "https://x.com/dani_avila7/status/2093881498256519271",
-      "title": "And if you use Claude Code\n\nhere\u2019s how it handles prompt caching under the hood \ud83d\udc47 \n\nhttps://t.co/rCV...",
-      "summary": "And if you use Claude Code\n\nhere\u2019s how it handles prompt caching under the hood \ud83d\udc47 \n\nhttps://t.co/rCVSWqnDkb https://t.co/OPER5oSshx",
-      "content": "And if you use Claude Code\n\nhere\u2019s how it handles prompt caching under the hood \ud83d\udc47 \n\nhttps://t.co/rCVSWqnDkb https://t.co/OPER5oSshx",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-30T02:00:26Z",
-      "fetched_at": "2026-08-30T03:33:21.018688Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "f4c8c290b8a4d693",
       "url": "https://x.com/steipete/status/2093940339870765252",
       "title": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kerne...",
@@ -62958,11 +62938,71 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d828bdea787de3c8",
-      "url": "https://x.com/dani_avila7/status/2093844695403118818",
-      "title": "Academy guide Agent Skill by Anthropic\n\nProbably one of the most useful skills if you\u2019re learning th...",
-      "summary": "Academy guide Agent Skill by Anthropic\n\nProbably one of the most useful skills if you\u2019re learning the Claude ecosystem\n\n(Save this and try it later)\n\nInstall it and Claude itself guides you to the right courses, tutorials and use cases from Claude Academy\n\nCovers all the product",
-      "content": "Academy guide Agent Skill by Anthropic\n\nProbably one of the most useful skills if you\u2019re learning the Claude ecosystem\n\n(Save this and try it later)\n\nInstall it and Claude itself guides you to the right courses, tutorials and use cases from Claude Academy\n\nCovers all the product",
+      "id": "202c4efed2703248",
+      "url": "https://x.com/steipete/status/2096435909654962379",
+      "title": "RT @gabrielchua: Me: show me a pelican riding a bicycle\nAstra: https://t.co/lJIBdHWJZU",
+      "summary": "RT @gabrielchua: Me: show me a pelican riding a bicycle\nAstra: https://t.co/lJIBdHWJZU",
+      "content": "RT @gabrielchua: Me: show me a pelican riding a bicycle\nAstra: https://t.co/lJIBdHWJZU",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T03:10:45Z",
+      "fetched_at": "2026-09-06T03:13:50.571310Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2bc46c2986c52bd8",
+      "url": "https://x.com/steipete/status/2096427353467654338",
+      "title": "RT @adonis_singh: This is just not fair https://t.co/6uSixBB19r",
+      "summary": "RT @adonis_singh: This is just not fair https://t.co/6uSixBB19r",
+      "content": "RT @adonis_singh: This is just not fair https://t.co/6uSixBB19r",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T02:36:45Z",
+      "fetched_at": "2026-09-06T03:13:50.571394Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "72589c09030bda91",
+      "url": "https://x.com/steipete/status/2096403459579015374",
+      "title": "Can\u2019t remember last time we had such a large jump in capabilities.",
+      "summary": "Can\u2019t remember last time we had such a large jump in capabilities.",
+      "content": "Can\u2019t remember last time we had such a large jump in capabilities.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T01:01:48Z",
+      "fetched_at": "2026-09-06T03:13:50.571446Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a108b1c81af7a07c",
+      "url": "https://x.com/dani_avila7/status/2096402062774861970",
+      "title": "Before AI, I spent my weekends learning a new nodejs framework or reading about some new AWS feature...",
+      "summary": "Before AI, I spent my weekends learning a new nodejs framework or reading about some new AWS feature\n\nNow I open gh repos, write down ideas, and deploy\n\nSame time at the computer, just shipping more",
+      "content": "Before AI, I spent my weekends learning a new nodejs framework or reading about some new AWS feature\n\nNow I open gh repos, write down ideas, and deploy\n\nSame time at the computer, just shipping more",
       "source_name": "@dani_avila7",
       "source_type": "twitter",
       "tags": [
@@ -62970,8 +63010,68 @@
         "engineering"
       ],
       "author": "dani_avila7",
-      "published_at": "2026-08-29T23:34:11Z",
-      "fetched_at": "2026-08-30T01:00:31.093978Z",
+      "published_at": "2026-09-06T00:56:15Z",
+      "fetched_at": "2026-09-06T03:13:42.201235Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e87bff43da7a0910",
+      "url": "https://x.com/steipete/status/2096400749869830325",
+      "title": "One step closer in building the harness I wanna use. The one thing that\u2019s not yet there are cloud se...",
+      "summary": "One step closer in building the harness I wanna use. The one thing that\u2019s not yet there are cloud sessions, goal is seconds, which requires clever snapshotting. (Right now it still clones repos fresh which isn\u2019t fast enough.)\n\nWill have that next week.",
+      "content": "One step closer in building the harness I wanna use. The one thing that\u2019s not yet there are cloud sessions, goal is seconds, which requires clever snapshotting. (Right now it still clones repos fresh which isn\u2019t fast enough.)\n\nWill have that next week.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T00:51:02Z",
+      "fetched_at": "2026-09-06T03:13:50.571492Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eee2fa0d177b011d",
+      "url": "https://x.com/dani_avila7/status/2096397760094175527",
+      "title": "Prompt: \"Run skill-doctor, then delete every skill it reports as unused\"\n\nClaude will run claude -p ...",
+      "summary": "Prompt: \"Run skill-doctor, then delete every skill it reports as unused\"\n\nClaude will run claude -p \"/skill-doctor\", read the table of loaded skills with uses and context cost, and remove the ones with zero invocations\n\nOnly the skills you actually use stay https://t.co/LNRkE5jKCZ",
+      "content": "Prompt: \"Run skill-doctor, then delete every skill it reports as unused\"\n\nClaude will run claude -p \"/skill-doctor\", read the table of loaded skills with uses and context cost, and remove the ones with zero invocations\n\nOnly the skills you actually use stay https://t.co/LNRkE5jKCZ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-06T00:39:09Z",
+      "fetched_at": "2026-09-06T03:13:42.201294Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ac1e9c73096dca91",
+      "url": "https://x.com/dani_avila7/status/2093881498256519271",
+      "title": "And if you use Claude Code\n\nhere\u2019s how it handles prompt caching under the hood \ud83d\udc47 \n\nhttps://t.co/rCV...",
+      "summary": "And if you use Claude Code\n\nhere\u2019s how it handles prompt caching under the hood \ud83d\udc47 \n\nhttps://t.co/rCVSWqnDkb https://t.co/OPER5oSshx",
+      "content": "And if you use Claude Code\n\nhere\u2019s how it handles prompt caching under the hood \ud83d\udc47 \n\nhttps://t.co/rCVSWqnDkb https://t.co/OPER5oSshx",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-30T02:00:26Z",
+      "fetched_at": "2026-08-30T03:33:21.018688Z",
       "score": null,
       "score_reason": "",
       "tier": "",
