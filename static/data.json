@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-06T05:14:14.454330+00:00",
+  "exported_at": "2026-09-06T07:30:00.711299+00:00",
   "period_hours": 168,
-  "total": 2908,
+  "total": 2910,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -60225,26 +60225,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f4c8c290b8a4d693",
-      "url": "https://x.com/steipete/status/2093940339870765252",
-      "title": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kerne...",
-      "summary": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kernel code had no idea what it did line by\u2026",
-      "content": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kernel code had no idea what it did line by\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-08-30T05:54:15Z",
-      "fetched_at": "2026-08-30T07:50:01.089348Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8bfdaf3188ac7c49",
       "url": "https://x.com/steipete/status/2094123262158774456",
       "title": "RT @mitsuhiko: OpenClaw looks quite a bit different than what you might remember from \u2026 checks clock...",
@@ -63156,6 +63136,66 @@
       "author": "steipete",
       "published_at": "2026-09-06T03:37:42Z",
       "fetched_at": "2026-09-06T05:14:12.286932Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "86a1f6bc9413056b",
+      "url": "https://x.com/steipete/status/2096479946546041208",
+      "title": "RT @haider1: Astra's biggest improvement is barely being noticed\n\nHallucinations\n\nfor some reason, o...",
+      "summary": "RT @haider1: Astra's biggest improvement is barely being noticed\n\nHallucinations\n\nfor some reason, openai has buried this deep inside the b\u2026",
+      "content": "RT @haider1: Astra's biggest improvement is barely being noticed\n\nHallucinations\n\nfor some reason, openai has buried this deep inside the b\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T06:05:44Z",
+      "fetched_at": "2026-09-06T07:29:58.551259Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82a3011581677ee1",
+      "url": "https://x.com/steipete/status/2096478777371193392",
+      "title": "RT @rauchg: Anyone that works in AI is working the hardest they've ever worked in their lives. On th...",
+      "summary": "RT @rauchg: Anyone that works in AI is working the hardest they've ever worked in their lives. On the surface it's somewhat ironic (AI shou\u2026",
+      "content": "RT @rauchg: Anyone that works in AI is working the hardest they've ever worked in their lives. On the surface it's somewhat ironic (AI shou\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-06T06:01:05Z",
+      "fetched_at": "2026-09-06T07:29:58.551345Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f4c8c290b8a4d693",
+      "url": "https://x.com/steipete/status/2093940339870765252",
+      "title": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kerne...",
+      "summary": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kernel code had no idea what it did line by\u2026",
+      "content": "RT @firesidealpha: SemiAnalysis' Jordan Nanos reveals the OpenAI engineers scrolling their own kernel code had no idea what it did line by\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-30T05:54:15Z",
+      "fetched_at": "2026-08-30T07:50:01.089348Z",
       "score": null,
       "score_reason": "",
       "tier": "",
