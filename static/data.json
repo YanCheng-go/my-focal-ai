@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-07T10:16:15.644312+00:00",
+  "exported_at": "2026-09-07T12:16:34.777206+00:00",
   "period_hours": 168,
-  "total": 2940,
+  "total": 2939,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -15053,25 +15053,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-08-31T15:02:33Z",
       "fetched_at": "2026-08-31T20:06:13.403403Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2a04a02cf2a370e5",
-      "url": "https://www.youtube.com/watch?v=c57vAe-mMLo",
-      "title": "How AI Is Changing Code Reviews & Software Development",
-      "summary": "Learn more about AI Code Review here \u2192 https://ibm.biz/~alHgF4FNQ\n\nCode reviews have evolved from line-by-line inspections to AI-assisted outcome validation. In this video, we explore how software reviews have progressed from Fagan inspections and pair programming to pull requests, CI/CD automation, and AI-powered development workflows. Learn why the future of code reviews is shifting away from implementation details and toward validating intent, requirements, outcomes, and business impact.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~jpjrTIXin\n\n#aicoding #ai #softwaredevelopment #softwareengineering",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-31T11:00:30Z",
-      "fetched_at": "2026-08-31T13:53:05.777045Z",
       "score": null,
       "score_reason": "",
       "tier": "",
