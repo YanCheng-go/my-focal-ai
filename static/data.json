@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-07T18:44:52.352862+00:00",
+  "exported_at": "2026-09-07T18:46:02.131954+00:00",
   "period_hours": 168,
-  "total": 2934,
+  "total": 2939,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14075,26 +14075,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-09-01T01:57:42Z",
       "fetched_at": "2026-09-01T11:40:20.448626Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e9f65a91dc3bc609",
-      "url": "https://www.youtube.com/shorts/aqSowI3eFVA",
-      "title": "Anthropic may be approaching a $2 trillion valuation, but with that growth comes a bigger question:",
-      "summary": "Anthropic may be approaching a $2 trillion valuation, but with that growth comes a bigger question: will the companies calling for AI restraint still slow down when the stakes are this high? Check out the full episode now. #short",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-08-31T15:02:33Z",
-      "fetched_at": "2026-08-31T20:06:13.403403Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63729,6 +63709,126 @@
       "author": "trq212",
       "published_at": "2026-09-07T13:11:14Z",
       "fetched_at": "2026-09-07T14:16:55.537265Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d9140daf812ea374",
+      "url": "https://x.com/steipete/status/2097029506217415130",
+      "title": "RT @davepl1968: He's right.  The last codebase I worked on that you had a chance to understand was M...",
+      "summary": "RT @davepl1968: He's right.  The last codebase I worked on that you had a chance to understand was MS-DOS.\n\nBy the time Windows NT came alo\u2026",
+      "content": "RT @davepl1968: He's right.  The last codebase I worked on that you had a chance to understand was MS-DOS.\n\nBy the time Windows NT came alo\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T18:29:29Z",
+      "fetched_at": "2026-09-07T18:45:59.668608Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9801fe8112497135",
+      "url": "https://x.com/steipete/status/2097029499519119521",
+      "title": "RT @BenjaminBadejo: OpenClaw natively uses Codex w/ Astra, too, including Computer Use! Just install...",
+      "summary": "RT @BenjaminBadejo: OpenClaw natively uses Codex w/ Astra, too, including Computer Use! Just install Codex on the same machine running Open\u2026",
+      "content": "RT @BenjaminBadejo: OpenClaw natively uses Codex w/ Astra, too, including Computer Use! Just install Codex on the same machine running Open\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T18:29:28Z",
+      "fetched_at": "2026-09-07T18:45:59.668680Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f3ec1294fe6fa1a3",
+      "url": "https://x.com/steipete/status/2097022363179352196",
+      "title": "RT @matviy: Confirmed. Tibo is not only right, he undersells Astra. \n\nThe benchmark (plan \u2192 execute ...",
+      "summary": "RT @matviy: Confirmed. Tibo is not only right, he undersells Astra. \n\nThe benchmark (plan \u2192 execute \u2192 review) shows Astra on Low is not onl\u2026",
+      "content": "RT @matviy: Confirmed. Tibo is not only right, he undersells Astra. \n\nThe benchmark (plan \u2192 execute \u2192 review) shows Astra on Low is not onl\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T18:01:06Z",
+      "fetched_at": "2026-09-07T18:45:59.668723Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "200da10b67b5856a",
+      "url": "https://x.com/steipete/status/2097021635174044027",
+      "title": "RT @andonlabs: GPT-6 Astra is almost at human performance in 3D spatial understanding.\n\nIt ranks #1 ...",
+      "summary": "RT @andonlabs: GPT-6 Astra is almost at human performance in 3D spatial understanding.\n\nIt ranks #1 on Blueprint-Bench 2, a benchmark where\u2026",
+      "content": "RT @andonlabs: GPT-6 Astra is almost at human performance in 3D spatial understanding.\n\nIt ranks #1 on Blueprint-Bench 2, a benchmark where\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T17:58:13Z",
+      "fetched_at": "2026-09-07T18:45:59.668759Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d38113c4197f9395",
+      "url": "https://x.com/steipete/status/2096998294488801409",
+      "title": "RT @cherry_mx_reds: Btw: I have no AGENTS.md, no skills, and basically no scaffolding in any of my n...",
+      "summary": "RT @cherry_mx_reds: Btw: I have no AGENTS.md, no skills, and basically no scaffolding in any of my new projects, and Astra has been great.\u2026",
+      "content": "RT @cherry_mx_reds: Btw: I have no AGENTS.md, no skills, and basically no scaffolding in any of my new projects, and Astra has been great.\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T16:25:28Z",
+      "fetched_at": "2026-09-07T18:45:59.668797Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e36a9f23bcabe3d0",
+      "url": "https://x.com/dani_avila7/status/2096979912934539536",
+      "title": "Sharing the Claude Cookbook repo here because it\u2019s really worth a fork\n\nOne of those repos I keep co...",
+      "summary": "Sharing the Claude Cookbook repo here because it\u2019s really worth a fork\n\nOne of those repos I keep coming back to every week:\nhttps://t.co/xORdBGClmn",
+      "content": "Sharing the Claude Cookbook repo here because it\u2019s really worth a fork\n\nOne of those repos I keep coming back to every week:\nhttps://t.co/xORdBGClmn",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-07T15:12:25Z",
+      "fetched_at": "2026-09-07T18:45:51.558498Z",
       "score": null,
       "score_reason": "",
       "tier": "",
