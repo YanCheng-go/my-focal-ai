@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-07T22:51:10.450426+00:00",
+  "exported_at": "2026-09-07T23:37:05.486718+00:00",
   "period_hours": 168,
-  "total": 2937,
+  "total": 2946,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11975,26 +11975,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-09-01T01:57:42Z",
       "fetched_at": "2026-09-01T11:40:20.448626Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "28a77508644a1b9a",
-      "url": "https://www.youtube.com/watch?v=vGn6N4-bxBY",
-      "title": "Your Agent Just Authorized What?! \u2014 Jay Mok & Ben Coumes, Paypal",
-      "summary": "A PayPal order has always been synchronous. You find the item, you open the app, you approve it, it is done. The approval token demonstrated here inverts that: the user approves before the agent has found an item or picked a merchant, and PayPal returns a JSON payload carrying the amount, the expiry, and the merchant the agent is permitted to transact with. It was days from shipping when this was recorded. That inversion is the concrete end of a broader argument about agent authorization, built on three questions any such system has to answer. Did the human authorize this? Is it allowed right now, in this scope? And can we prove it later? The answers, the talk argues, depend entirely on how high the stakes are and on whether the two parties have ever met.\n\nThe rest maps those questions onto a ladder. At the bottom is a coding agent, where consent happens once when tools are connected, permission is granted per tool as allow, ask or deny, and ordinary logs are proof enough because the actions can be reverted. In the middle is money moving between parties who already know each other through a shared vault and OAuth scopes, where a mandate carries the amount and the scope and existing transaction logs settle disputes. At the top is the case nobody has running in production yet: an agent transacting autonomously with a counterparty it has never met. The proposal there is a layered selective disclosure JWT, so a merchant can verify the checkout and a processor can verify the payment mandate without either knowing the other.\n\nTimestamps:\n0:00 - Terminator, and the agent that empties your wallet\n1:26 - Three questions any agent authorization has to answer\n2:49 - Stakes, counterparties, and the badge analogy\n4:12 - Low stakes: a coding agent with allow, ask and deny\n6:15 - Medium stakes: a shared vault and OAuth scopes\n9:45 - High stakes: counterparties who have never met\n10:29 - A layered selective disclosure JWT\n12:30 - The approval token, and inverting the order flow\n14:31 - Why the ladder applies beyond payments",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-31T09:41:52Z",
-      "fetched_at": "2026-09-01T16:41:04.919496Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63785,6 +63765,207 @@
       "author": "dani_avila7",
       "published_at": "2026-09-07T19:16:18Z",
       "fetched_at": "2026-09-07T20:46:11.952898Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e8a789f067fb9a19",
+      "url": "https://x.com/dani_avila7/status/2097092382495748458",
+      "title": "I\u2019ve read and gone back to Jay\u2019s Hands-On Large Language Models so many times since I bought it\n\n100...",
+      "summary": "I\u2019ve read and gone back to Jay\u2019s Hands-On Large Language Models so many times since I bought it\n\n100% recommend\n\nReally excited to read his new book, An Illustrated Guide to AI Agents! https://t.co/5CBj7ELbzq",
+      "content": "I\u2019ve read and gone back to Jay\u2019s Hands-On Large Language Models so many times since I bought it\n\n100% recommend\n\nReally excited to read his new book, An Illustrated Guide to AI Agents! https://t.co/5CBj7ELbzq",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-07T22:39:20Z",
+      "fetched_at": "2026-09-07T23:36:34.004374Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ebba3ea1e452df87",
+      "url": "https://x.com/steipete/status/2097091456234111377",
+      "title": "Did a PR to one of our upstream projects and they requested some minor changes.\n\nWhat\u2019s even the poi...",
+      "summary": "Did a PR to one of our upstream projects and they requested some minor changes.\n\nWhat\u2019s even the point with this workflow? You already wrote the prompt, why make me ping my agent again so your agent then merges?",
+      "content": "Did a PR to one of our upstream projects and they requested some minor changes.\n\nWhat\u2019s even the point with this workflow? You already wrote the prompt, why make me ping my agent again so your agent then merges?",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T22:35:39Z",
+      "fetched_at": "2026-09-07T23:36:54.893199Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6870ba8ea3edb41d",
+      "url": "https://x.com/steipete/status/2097087470579945937",
+      "title": "RT @gregpr07: Astra mogs Fable 5.1 on browser use \ud83d\ude2e\n\n&gt; 77% Astra\n&gt; 56% Fable 5.1\n&gt; Fable ju...",
+      "summary": "RT @gregpr07: Astra mogs Fable 5.1 on browser use \ud83d\ude2e\n\n&gt; 77% Astra\n&gt; 56% Fable 5.1\n&gt; Fable just refuses too much https://t.co/hsEK0zcBSm",
+      "content": "RT @gregpr07: Astra mogs Fable 5.1 on browser use \ud83d\ude2e\n\n&gt; 77% Astra\n&gt; 56% Fable 5.1\n&gt; Fable just refuses too much https://t.co/hsEK0zcBSm",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T22:19:49Z",
+      "fetched_at": "2026-09-07T23:36:54.893391Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a111baeecc568db1",
+      "url": "https://x.com/steipete/status/2097070122276098223",
+      "title": "RT @luke_metro: never forget Nikita's Second Law https://t.co/QMKRzqPev0",
+      "summary": "RT @luke_metro: never forget Nikita's Second Law https://t.co/QMKRzqPev0",
+      "content": "RT @luke_metro: never forget Nikita's Second Law https://t.co/QMKRzqPev0",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T21:10:53Z",
+      "fetched_at": "2026-09-07T23:36:54.893496Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d7f517427298c512",
+      "url": "https://x.com/steipete/status/2097069983964827914",
+      "title": "RT @GergelyOrosz: Super interesting detail from inside OpenAI:\n\nThe company hired a bunch of ex-Meta...",
+      "summary": "RT @GergelyOrosz: Super interesting detail from inside OpenAI:\n\nThe company hired a bunch of ex-Meta people. Some of these people wanted to\u2026",
+      "content": "RT @GergelyOrosz: Super interesting detail from inside OpenAI:\n\nThe company hired a bunch of ex-Meta people. Some of these people wanted to\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-07T21:10:20Z",
+      "fetched_at": "2026-09-07T23:36:54.893575Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8619996efff7c66c",
+      "url": "https://x.com/AnthropicAI/status/2094557124038951170",
+      "title": "We\u2019re sharing an update on our alignment and security efforts.\n\nIn July, we reported three incidents...",
+      "summary": "We\u2019re sharing an update on our alignment and security efforts.\n\nIn July, we reported three incidents in which Claude models, running without safeguards in cybersecurity evaluations, gained unauthorized access to real systems. \n\nIn a new post, we describe:\n\n1. How we\u2019ve secured",
+      "content": "We\u2019re sharing an update on our alignment and security efforts.\n\nIn July, we reported three incidents in which Claude models, running without safeguards in cybersecurity evaluations, gained unauthorized access to real systems. \n\nIn a new post, we describe:\n\n1. How we\u2019ve secured",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-08-31T22:45:08Z",
+      "fetched_at": "2026-09-01T08:01:11.646803Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1d34b443d24af266",
+      "url": "https://x.com/dani_avila7/status/2094527520511070290",
+      "title": "Is anyone building an AI spam blocker?\n\nThe amount of obvious bot spam I get on social media and ema...",
+      "summary": "Is anyone building an AI spam blocker?\n\nThe amount of obvious bot spam I get on social media and email is insane\n\nIf you\u2019re building something to stop it, I want to try it",
+      "content": "Is anyone building an AI spam blocker?\n\nThe amount of obvious bot spam I get on social media and email is insane\n\nIf you\u2019re building something to stop it, I want to try it",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-31T20:47:29Z",
+      "fetched_at": "2026-09-01T08:01:04.770138Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "747c89c2eebe511b",
+      "url": "https://x.com/steipete/status/2094509188613595486",
+      "title": "RT @Pat_Erichsen: One of my favorite features in @openclaw 2.0 is our shared canvas\n\nHTML is all you...",
+      "summary": "RT @Pat_Erichsen: One of my favorite features in @openclaw 2.0 is our shared canvas\n\nHTML is all you need, but multiplayer HTML with chat i\u2026",
+      "content": "RT @Pat_Erichsen: One of my favorite features in @openclaw 2.0 is our shared canvas\n\nHTML is all you need, but multiplayer HTML with chat i\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-31T19:34:39Z",
+      "fetched_at": "2026-09-01T08:01:13.339302Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3b898bacdb7443f1",
+      "url": "https://x.com/steipete/status/2094509056090366033",
+      "title": "RT @OmarShahine: Hey, so I built this pretty awesome set of tools for Apple Calendar, Reminders, Con...",
+      "summary": "RT @OmarShahine: Hey, so I built this pretty awesome set of tools for Apple Calendar, Reminders, Contacts and Mail (including a fast agent\u2026",
+      "content": "RT @OmarShahine: Hey, so I built this pretty awesome set of tools for Apple Calendar, Reminders, Contacts and Mail (including a fast agent\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-31T19:34:07Z",
+      "fetched_at": "2026-09-01T08:01:13.339426Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c5aebab8aef68e7c",
+      "url": "https://x.com/steipete/status/2094500115591680445",
+      "title": "RT @MichaelGannotti: So went ahead and installed the new OpenClaw 2.0 on my Windows machine that is ...",
+      "summary": "RT @MichaelGannotti: So went ahead and installed the new OpenClaw 2.0 on my Windows machine that is tied to my personal Microsoft 365 Busin\u2026",
+      "content": "RT @MichaelGannotti: So went ahead and installed the new OpenClaw 2.0 on my Windows machine that is tied to my personal Microsoft 365 Busin\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-31T18:58:36Z",
+      "fetched_at": "2026-09-01T08:01:13.339463Z",
       "score": null,
       "score_reason": "",
       "tier": "",
