@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-07T06:57:04.459051+00:00",
+  "exported_at": "2026-09-07T10:16:15.644312+00:00",
   "period_hours": 168,
-  "total": 2948,
+  "total": 2940,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -15078,46 +15078,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "28a77508644a1b9a",
-      "url": "https://www.youtube.com/watch?v=vGn6N4-bxBY",
-      "title": "Your Agent Just Authorized What?! \u2014 Jay Mok & Ben Coumes, Paypal",
-      "summary": "A PayPal order has always been synchronous. You find the item, you open the app, you approve it, it is done. The approval token demonstrated here inverts that: the user approves before the agent has found an item or picked a merchant, and PayPal returns a JSON payload carrying the amount, the expiry, and the merchant the agent is permitted to transact with. It was days from shipping when this was recorded. That inversion is the concrete end of a broader argument about agent authorization, built on three questions any such system has to answer. Did the human authorize this? Is it allowed right now, in this scope? And can we prove it later? The answers, the talk argues, depend entirely on how high the stakes are and on whether the two parties have ever met.\n\nThe rest maps those questions onto a ladder. At the bottom is a coding agent, where consent happens once when tools are connected, permission is granted per tool as allow, ask or deny, and ordinary logs are proof enough because the actions can be reverted. In the middle is money moving between parties who already know each other through a shared vault and OAuth scopes, where a mandate carries the amount and the scope and existing transaction logs settle disputes. At the top is the case nobody has running in production yet: an agent transacting autonomously with a counterparty it has never met. The proposal there is a layered selective disclosure JWT, so a merchant can verify the checkout and a processor can verify the payment mandate without either knowing the other.\n\nTimestamps:\n0:00 - Terminator, and the agent that empties your wallet\n1:26 - Three questions any agent authorization has to answer\n2:49 - Stakes, counterparties, and the badge analogy\n4:12 - Low stakes: a coding agent with allow, ask and deny\n6:15 - Medium stakes: a shared vault and OAuth scopes\n9:45 - High stakes: counterparties who have never met\n10:29 - A layered selective disclosure JWT\n12:30 - The approval token, and inverting the order flow\n14:31 - Why the ladder applies beyond payments",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-31T09:41:52Z",
-      "fetched_at": "2026-09-01T16:41:04.919496Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7e000c121485b4a5",
-      "url": "https://www.youtube.com/watch?v=GUYEofBebDc",
-      "title": "Last Week in AI  #255 - Gemini 3.7, Jalape\u00f1o, Qwen 3.8, Drones",
-      "summary": "Our 255th episode with a summary and discussion of last week's big AI news!\n\nRecorded on 08/26/2026\n\nHosted by Andrey Kurenkov and Jeremie Harris\n\nFeel free to email us your questions and feedback at andreyvkurenkov@gmail.com and/or hello@gladstone.ai\n\nRead out our text newsletter and comment on the podcast at https://lastweekin.ai/\n\nIn this episode:\n    SpaceXAI released Grok 4.6 (500K context) as a post-training update aimed at long-running agents and coding, with discussion centered on how the Cursor acquisition boosts training via coding trajectories/RL environments and provides distribution despite Cursor\u2019s market-share decline.\n    OpenAI shared early Jalapeno inference-chip results (better performance per watt and lower latency vs leading systems) and plans to deploy it internally by year-end, emphasizing hardware\u2013software co-design and competitive leverage against Nvidia.\n    OpenAI announced security changes after an AI hacked Hugging Face, including a two-week pause on a major RL fine-tuning run while tightening internal security, raising questions about whether safety is becoming a deployment bottleneck.\n    Policy and misuse updates included a New York Times report of an AI-guided Russian drone strike in Ukraine believed to be the first documented fully autonomous civilian-killing incident, and a lawsuit alleging Grok was used to generate CSAM images.\n\n\nA thank you to our current sponsors:\n    Box - visit Box.com/AI to learn more\n    Notion - go notion.com/lwai to try Notion\u2019s Developer Platform today.\n    ODSC AI - go to odsc.ai/east and use promo code LWAI for an additional 15% off your pass to ODSC AI East 2026.\n    Factor - head to factormeals.com/lwai50off and use code lwai50off to get 50 percent off and free breakfast for a year\n\n\nTimestamps :\n    (00:00:10) Intro / Banter\n    (00:01:47) News Preview\n    (00:02:52) Response to listener comments\n\n    Tools & Apps\n    (00:03:32) Google announces Gemini 3.7 Flash just three weeks after previous release - Ars Technica\n    (00:13:11) SpaceXAI Releases Grok 4.6: A 500K-Context Frontier Model Tuned for Long-Running Agents, Coding, and Knowledge Work - MarkTechPost\n    (00:22:32) Claude will apply invisible watermarks to AI text and images | The Verge + Anthropic explains how Claude\u2019s invisible text watermarks will work\n    (00:28:50) Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders | Claude by Anthropic\n    (00:32:20) OpenAI to Roll Out Enhanced Safety Features for Paid AI Tool Users - Bloomberg\n    (00:33:41) ChatGPT's Stricter Teen Mode Starts Rolling Out Today\n    (00:34:43) Meta AI Now Has A Dedicated Desktop App For Mac\n\n    Applications & Business\n    (00:37:33) Jalape\u00f1o\u2019s first results show industry-leading speed and efficiency in AI inference | OpenAI\n    (00:45:35) OpenAI loses a top data center exec as stream of high-profile departures continues | TechCrunch + OpenAI talent exodus raises 'huge red flag' ahead of IPO\n    (00:50:29) Anthropic Taps Google Chip Veteran as Part of Push Into Hardware\n    (00:52:30) Anthropic's annualized revenue surges to $65B | TechCrunch\n    (00:59:30) Thomson Reuters launches in-house AI model to cut Anthropic costs\n\n    Projects & Open Source\n    (01:04:26) Qwen 3.8: How a 27B Open Model Rivals GPT-5.6 and Claude Opus\n\n    Policy & Safety\n    (01:08:27) A Drone Killed Three Ukrainians. It Was Guided Entirely by A.I. - The New York Times\n    (01:17:59) OpenAI lays out new security changes after its AI hacked Hugging Face | The Verge + OpenAI institutes new safeguards after Hugging Face breach + https://openai.com/index/pacing-model-development-cyber-capabilities/\n    (01:23:31) Another Woman Joins Lawsuit Accusing Grok Of Generating CSAM\n\n    Research & Advancements\n    (01:24:56) Small-Scale Experiments: Are We There Yet?\n    (01:29:21) Stealing Reasoning Traces from Proprietary LLM APIs\n    (01:34:30) Massive Activations in Hybrid Linear Attention Large Language Models: Pre-Attention Spikes and Inter-Spike Plateaus \n\n\n    Synthetic Media & Art\n    (01:38:59) AI Slop Is Everywhere. Spotify, LinkedIn and Others Have Had Enough. - The New York Times",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-08-31T07:17:00Z",
-      "fetched_at": "2026-08-31T13:53:06.047176Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0244b75ace171659",
       "url": "https://skills.sh/open.feishu.cn/lark-sheets#all",
       "title": "#20 lark-sheets",
@@ -27588,27 +27548,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4862f3d2c68fb1ad",
-      "url": "https://openai.com/index/supporting-california-bill-advance-ai-youth-safety",
-      "title": "OpenAI supports California\u2019s bill to advance youth AI safety",
-      "summary": "OpenAI supports California SB 1119, advancing strong, age-appropriate AI safeguards for teens while preserving opportunities to learn, create, and explore.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-31T07:00:00Z",
-      "fetched_at": "2026-09-01T11:40:22.779730Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e8c178bef20c7f36",
       "url": "https://arxiv.org/abs/2609.03818",
       "title": "CauseCollab: Causal Unified and Modality-Agnostic Network for Heterogeneous Collaborative Perception",
@@ -27729,27 +27668,6 @@
       "author": "Kailang Ma, Heye Huang, Inhi Kim, Kitae Jang",
       "published_at": "2026-09-04T04:00:00Z",
       "fetched_at": "2026-09-04T04:35:26.975860Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0b5a688ac44522d6",
-      "url": "https://openai.com/index/polimill",
-      "title": "Polimill builds Japan's next-generation public AI infrastructure",
-      "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-08-31T07:00:00Z",
-      "fetched_at": "2026-08-31T23:51:47.931060Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63865,11 +63783,11 @@
       "is_duplicate_of": null
     },
     {
-      "id": "20564fa0a474a623",
-      "url": "https://x.com/steipete/status/2094307871697891508",
-      "title": "RT @obviyus: I'm a huge fan of T3Code but OpenClaw has slowly become my primary agent environment ht...",
-      "summary": "RT @obviyus: I'm a huge fan of T3Code but OpenClaw has slowly become my primary agent environment https://t.co/Vd0VVUGlr0",
-      "content": "RT @obviyus: I'm a huge fan of T3Code but OpenClaw has slowly become my primary agent environment https://t.co/Vd0VVUGlr0",
+      "id": "41a03184096da766",
+      "url": "https://x.com/steipete/status/2096894430305489048",
+      "title": "RT @patrickgwsmith: @markgurman @PatrickMcGee_ The hardware guys treating third-party developers lik...",
+      "summary": "RT @patrickgwsmith: @markgurman @PatrickMcGee_ The hardware guys treating third-party developers like they do their suppliers has stifled A\u2026",
+      "content": "RT @patrickgwsmith: @markgurman @PatrickMcGee_ The hardware guys treating third-party developers like they do their suppliers has stifled A\u2026",
       "source_name": "@steipete",
       "source_type": "twitter",
       "tags": [
@@ -63877,19 +63795,19 @@
         "openclaw"
       ],
       "author": "steipete",
-      "published_at": "2026-08-31T06:14:41Z",
-      "fetched_at": "2026-08-31T10:01:17.327678Z",
+      "published_at": "2026-09-07T09:32:45Z",
+      "fetched_at": "2026-09-07T10:16:13.924869Z",
       "score": null,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
     },
     {
-      "id": "0ffc34363a6005d1",
-      "url": "https://x.com/steipete/status/2094296255577100582",
-      "title": "RT @nateberkopec: These two charts from @ArtificialAnlys explain why GPT-5.6 Sol (med) is the king o...",
-      "summary": "RT @nateberkopec: These two charts from @ArtificialAnlys explain why GPT-5.6 Sol (med) is the king of all models for interactive coding age\u2026",
-      "content": "RT @nateberkopec: These two charts from @ArtificialAnlys explain why GPT-5.6 Sol (med) is the king of all models for interactive coding age\u2026",
+      "id": "1c10935a536f05e1",
+      "url": "https://x.com/steipete/status/2096894160871760037",
+      "title": "RT @markgurman: Why Apple legend Phil Schiller is moving to special projects and dropping his roles ...",
+      "summary": "RT @markgurman: Why Apple legend Phil Schiller is moving to special projects and dropping his roles https://t.co/1w1S0LEXWl",
+      "content": "RT @markgurman: Why Apple legend Phil Schiller is moving to special projects and dropping his roles https://t.co/1w1S0LEXWl",
       "source_name": "@steipete",
       "source_type": "twitter",
       "tags": [
@@ -63897,19 +63815,19 @@
         "openclaw"
       ],
       "author": "steipete",
-      "published_at": "2026-08-31T05:28:32Z",
-      "fetched_at": "2026-08-31T10:01:17.327765Z",
+      "published_at": "2026-09-07T09:31:41Z",
+      "fetched_at": "2026-09-07T10:16:13.924936Z",
       "score": null,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
     },
     {
-      "id": "79bdc01a190df7d2",
-      "url": "https://x.com/steipete/status/2094292100628271151",
-      "title": "RT @Zoeillle: En vrai.... l'UI de OpenClaw est vraiment sympa",
-      "summary": "RT @Zoeillle: En vrai.... l'UI de OpenClaw est vraiment sympa",
-      "content": "RT @Zoeillle: En vrai.... l'UI de OpenClaw est vraiment sympa",
+      "id": "3b76a75160d02189",
+      "url": "https://x.com/steipete/status/2096888623807488027",
+      "title": "RT @kevins8: Can you radically simplify the implementation? \n\nI find the following prompt to be supe...",
+      "summary": "RT @kevins8: Can you radically simplify the implementation? \n\nI find the following prompt to be super effective in astra, especially in a l\u2026",
+      "content": "RT @kevins8: Can you radically simplify the implementation? \n\nI find the following prompt to be super effective in astra, especially in a l\u2026",
       "source_name": "@steipete",
       "source_type": "twitter",
       "tags": [
@@ -63917,108 +63835,28 @@
         "openclaw"
       ],
       "author": "steipete",
-      "published_at": "2026-08-31T05:12:01Z",
-      "fetched_at": "2026-08-31T10:01:17.327818Z",
+      "published_at": "2026-09-07T09:09:40Z",
+      "fetched_at": "2026-09-07T10:16:13.924972Z",
       "score": null,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
     },
     {
-      "id": "ee35130788308320",
-      "url": "https://x.com/steipete/status/2094290652649636173",
-      "title": "Two months ago, we started the mission to \u201cbuild OpenClaw with OpenClaw,\u201d and bit by bit, we moved e...",
-      "summary": "Two months ago, we started the mission to \u201cbuild OpenClaw with OpenClaw,\u201d and bit by bit, we moved everyone from using their local coding harness to using https://t.co/mXvAd5PJFA - our shared agent that knows what everyone\u2019s working on and orchestrates it all.\n\nMultiplayer coding",
-      "content": "Two months ago, we started the mission to \u201cbuild OpenClaw with OpenClaw,\u201d and bit by bit, we moved everyone from using their local coding harness to using https://t.co/mXvAd5PJFA - our shared agent that knows what everyone\u2019s working on and orchestrates it all.\n\nMultiplayer coding",
-      "source_name": "@steipete",
+      "id": "22cff29f5d2a2ef4",
+      "url": "https://x.com/sama/status/2096707767260311594",
+      "title": "RT @kliu128: Today we're releasing data on models accelerating research at OpenAI. \n\nRecursive self-...",
+      "summary": "RT @kliu128: Today we're releasing data on models accelerating research at OpenAI. \n\nRecursive self-improvement could be the most important\u2026",
+      "content": "RT @kliu128: Today we're releasing data on models accelerating research at OpenAI. \n\nRecursive self-improvement could be the most important\u2026",
+      "source_name": "@sama",
       "source_type": "twitter",
       "tags": [
         "ai",
-        "openclaw"
+        "openai"
       ],
-      "author": "steipete",
-      "published_at": "2026-08-31T05:06:16Z",
-      "fetched_at": "2026-08-31T10:01:17.327863Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1664c7eecb547799",
-      "url": "https://x.com/dani_avila7/status/2094231349943009404",
-      "title": "Final scenario for the Californication game: San Francisco Earthquake\n\nSo far... Snowboarding, Scuba...",
-      "summary": "Final scenario for the Californication game: San Francisco Earthquake\n\nSo far... Snowboarding, Scuba Diving, Sequoia Forests, and the SF Earthquake.\n\nNext weekend I\u2019ll release it so you can log in, play, and save your score :)\n\nOpen source, of course https://t.co/cIUt356cPL",
-      "content": "Final scenario for the Californication game: San Francisco Earthquake\n\nSo far... Snowboarding, Scuba Diving, Sequoia Forests, and the SF Earthquake.\n\nNext weekend I\u2019ll release it so you can log in, play, and save your score :)\n\nOpen source, of course https://t.co/cIUt356cPL",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-31T01:10:37Z",
-      "fetched_at": "2026-08-31T10:01:09.036255Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c5c5848f166f341b",
-      "url": "https://x.com/dani_avila7/status/2094214181289435542",
-      "title": "Worried AI is making you forget how to code?\n\nDon\u2019t worry... you never knew how to code anyway",
-      "summary": "Worried AI is making you forget how to code?\n\nDon\u2019t worry... you never knew how to code anyway",
-      "content": "Worried AI is making you forget how to code?\n\nDon\u2019t worry... you never knew how to code anyway",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-31T00:02:24Z",
-      "fetched_at": "2026-08-31T10:01:09.036324Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5d43c9882c3c6531",
-      "url": "https://x.com/dani_avila7/status/2094177413852737617",
-      "title": "Claude Code testing different character jump mechanics with @threejs \n\nThe third Californication sce...",
-      "summary": "Claude Code testing different character jump mechanics with @threejs \n\nThe third Californication scenario is looking better and bette \ud83d\udd25 https://t.co/36rLbNaZ1E",
-      "content": "Claude Code testing different character jump mechanics with @threejs \n\nThe third Californication scenario is looking better and bette \ud83d\udd25 https://t.co/36rLbNaZ1E",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-30T21:36:18Z",
-      "fetched_at": "2026-08-31T10:01:09.036367Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7d3943de0b5dc649",
-      "url": "https://x.com/dani_avila7/status/2094166911307153597",
-      "title": "Weekend deep dive into WebMCP and testing it on https://t.co/eQDBth4fJI \ud83d\udc40\n\nI\u2019ll share a video and a ...",
-      "summary": "Weekend deep dive into WebMCP and testing it on https://t.co/eQDBth4fJI \ud83d\udc40\n\nI\u2019ll share a video and a couple of posts this week explaining how it works and how you can implement it on your own website. https://t.co/d6iEccIz0l",
-      "content": "Weekend deep dive into WebMCP and testing it on https://t.co/eQDBth4fJI \ud83d\udc40\n\nI\u2019ll share a video and a couple of posts this week explaining how it works and how you can implement it on your own website. https://t.co/d6iEccIz0l",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-08-30T20:54:34Z",
-      "fetched_at": "2026-08-31T10:01:09.036407Z",
+      "author": "sama",
+      "published_at": "2026-09-06T21:11:01Z",
+      "fetched_at": "2026-09-07T10:16:08.191558Z",
       "score": null,
       "score_reason": "",
       "tier": "",
