@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-07T12:35:14.102886+00:00",
+  "exported_at": "2026-09-07T14:17:11.211648+00:00",
   "period_hours": 168,
-  "total": 2943,
+  "total": 2942,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -16752,45 +16752,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-08-31T15:02:33Z",
       "fetched_at": "2026-08-31T20:06:13.403403Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2a04a02cf2a370e5",
-      "url": "https://www.youtube.com/watch?v=c57vAe-mMLo",
-      "title": "How AI Is Changing Code Reviews & Software Development",
-      "summary": "Learn more about AI Code Review here \u2192 https://ibm.biz/~alHgF4FNQ\n\nCode reviews have evolved from line-by-line inspections to AI-assisted outcome validation. In this video, we explore how software reviews have progressed from Fagan inspections and pair programming to pull requests, CI/CD automation, and AI-powered development workflows. Learn why the future of code reviews is shifting away from implementation details and toward validating intent, requirements, outcomes, and business impact.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~jpjrTIXin\n\n#aicoding #ai #softwaredevelopment #softwareengineering",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-08-31T11:00:30Z",
-      "fetched_at": "2026-08-31T13:53:05.777045Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "28a77508644a1b9a",
-      "url": "https://www.youtube.com/watch?v=vGn6N4-bxBY",
-      "title": "Your Agent Just Authorized What?! \u2014 Jay Mok & Ben Coumes, Paypal",
-      "summary": "A PayPal order has always been synchronous. You find the item, you open the app, you approve it, it is done. The approval token demonstrated here inverts that: the user approves before the agent has found an item or picked a merchant, and PayPal returns a JSON payload carrying the amount, the expiry, and the merchant the agent is permitted to transact with. It was days from shipping when this was recorded. That inversion is the concrete end of a broader argument about agent authorization, built on three questions any such system has to answer. Did the human authorize this? Is it allowed right now, in this scope? And can we prove it later? The answers, the talk argues, depend entirely on how high the stakes are and on whether the two parties have ever met.\n\nThe rest maps those questions onto a ladder. At the bottom is a coding agent, where consent happens once when tools are connected, permission is granted per tool as allow, ask or deny, and ordinary logs are proof enough because the actions can be reverted. In the middle is money moving between parties who already know each other through a shared vault and OAuth scopes, where a mandate carries the amount and the scope and existing transaction logs settle disputes. At the top is the case nobody has running in production yet: an agent transacting autonomously with a counterparty it has never met. The proposal there is a layered selective disclosure JWT, so a merchant can verify the checkout and a processor can verify the payment mandate without either knowing the other.\n\nTimestamps:\n0:00 - Terminator, and the agent that empties your wallet\n1:26 - Three questions any agent authorization has to answer\n2:49 - Stakes, counterparties, and the badge analogy\n4:12 - Low stakes: a coding agent with allow, ask and deny\n6:15 - Medium stakes: a shared vault and OAuth scopes\n9:45 - High stakes: counterparties who have never met\n10:29 - A layered selective disclosure JWT\n12:30 - The approval token, and inverting the order flow\n14:31 - Why the ladder applies beyond payments",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-31T09:41:52Z",
-      "fetched_at": "2026-09-01T16:41:04.919496Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63917,6 +63878,27 @@
       "author": "sama",
       "published_at": "2026-09-06T21:11:01Z",
       "fetched_at": "2026-09-07T10:16:08.191558Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cb0c96d927c8b180",
+      "url": "https://x.com/trq212/status/2096949412878540891",
+      "title": "RT @ryanlpeterman: Thariq Shihipar (@trq212) is an engineer on Anthropic\u2019s Claude Code team I asked ...",
+      "summary": "RT @ryanlpeterman: Thariq Shihipar (@trq212) is an engineer on Anthropic\u2019s Claude Code team I asked him how Anthropic makes the most out of\u2026",
+      "content": "RT @ryanlpeterman: Thariq Shihipar (@trq212) is an engineer on Anthropic\u2019s Claude Code team I asked him how Anthropic makes the most out of\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-07T13:11:14Z",
+      "fetched_at": "2026-09-07T14:16:55.537265Z",
       "score": null,
       "score_reason": "",
       "tier": "",
