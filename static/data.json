@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-08T17:02:55.843795+00:00",
+  "exported_at": "2026-09-08T19:46:22.833027+00:00",
   "period_hours": 168,
-  "total": 2430,
+  "total": 2429,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11689,73 +11689,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "62800b7caea9d844",
-      "url": "https://research.google/blog/mapping-global-methane-emissions-from-space-with-deep-learning/",
-      "title": "Mapping global methane emissions from space with deep learning",
-      "summary": "Climate & Sustainability",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-01T18:40:06Z",
-      "fetched_at": "2026-09-01T21:03:03.343983Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7728fa2f91b704b5",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.257",
-      "title": "v2.1.257",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Added Claude Fable 5.1 (<code>claude-fable-5-1</code>), now the default Fable model \u2014 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads</li>\n<li>Added \"Time format\" (<code>timeFormat</code>) and <code>timeZone</code> settings: 12-hour, 24-hour, 24-hour UTC, or a strftime pattern for the turn-end clock and transcript-view timestamps</li>\n<li>Added a Containment Escape rule to auto mode so cloud metadata-credential fetches, egress evasion, and cross-tenant reach are no longer auto-approved unless your environment marks them expected</li>\n<li>Added <code>CLAUDE_CODE_SUBAGENT_MODEL_FORCE</code> to apply <code>CLAUDE_CODE_SUBAGENT_MODEL</code> (or the main model) to every subagent, ignoring per-spawn and agent-definition model overrides</li>\n<li>Added <code>s</code> in <code>/effort</code> to change effort for the current session only, matching <code>/model</code></li>\n<li>Added a <code>/doctor</code> warning for stale sandbox mask files left by a killed session</li>\n<li>Added a one-time prompt in auto mode before the first file read outside the working directories, with the option to block such reads (<code>permissions.blockReadsOutsideWorkingDirectories</code>)</li>\n<li>Added support for a gateway-supplied <code>description</code> on discovered <code>/model</code> picker entries (<code>CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY</code>); entries without one still read \"From gateway\"</li>\n<li>Fixed settings in a <code>.claude/</code> folder created after startup not being picked up until restart</li>\n<li>Fixed sessions dispatched from an agent view opened with <code>\u2190</code> always starting in the original session's permission mode, overriding the target directory's <code>defaultMode</code> and the agent's <code>permissionMode</code></li>\n<li>Fixed <code>keybindings.json</code> rebinds of Ctrl+G being ignored in <code>claude agents</code>; its Ctrl+S / Ctrl+T are now rebindable via the new <code>Agents</code> context</li>\n<li>Fixed background sessions failing to start on macOS npm installs during a self-update, and on Windows when a stale daemon lock file pointed at a reused process id</li>\n<li>Fixed the working spinner stopping while a response streams behind a slash-command panel</li>\n<li>Fixed a background session's <code>state.json</code> <code>detail</code> repeating its own dispatch prompt after a scheduled wake-up</li>\n<li>Fixed <code>claude agents</code> keeping a background session you re-prompted buried in Completed after it finished again; Completed now orders by the latest finish</li>\n<li>Fixed <code>claude --bg</code> from a directory that was just deleted reporting \"backgrounded\" and leaving a crashed session row; it now prints the reason and exits 1</li>\n<li>Fixed Remote Control connecting mid-session re-sending the Bash tool definition, causing a prompt-cache miss</li>\n<li>Fixed a doubly-listed custom <code>Authorization</code> header overriding the configured credential on Bedrock, Mantle, Vertex, and WIF, and the Vertex setup wizard picking up a leftover Anthropic profile from <code>~/.config/anthropic</code></li>\n<li>Fixed Claude apps gateway sending stray host <code>Authorization</code> or profile headers to Foundry, Vertex, and Bedrock, and Foundry Entra ID upstreams not starting when <code>ANTHROPIC_FOUNDRY_API_KEY</code> is set</li>\n<li>Fixed a leftover Anthropic API key or auth token being sent alongside your Foundry subscription key in API-key mode</li>\n<li>Fixed <code>/schedule</code> routines whose prompt was saved without a message role and then ran with nothing to do</li>\n<li>Fixed <code>claude agents</code> not saying that a background session is waiting for you to approve a message from another session, or who sent it</li>\n<li>Fixed a prompt stashed with Ctrl+S inside an opened background session being lost when the session went idle or was stopped and then reopened</li>\n<li>Fixed telemetry (OTEL) settings pushed through server-managed settings being ignored on warm starts, including desktop-app Code sessions</li>\n<li>Fixed a teammate permission request being answered twice when the leader's mailbox write was briefly locked</li>\n<li>Fixed a phantom duplicate slash-command row rendering below the in-flight turn while a command's auto-continued response streamed</li>\n<li>Fixed <code>policyHelper</code> <code>timeoutMs</code> and <code>refreshIntervalMs</code> values above the timer maximum (2147483647) causing failures or re-runs every millisecond; they are now clamped</li>\n<li>Fixed the token counter freezing or crawling after switching to another subagent's transcript, and made background subagents' and teammates' counters update live while a response streams</li>\n<li>Fixed sandbox network hosts written with a trailing dot (<code>example.com.</code>): a <code>deniedDomains</code> entry didn't block the host inside the sandbox, and \"don't ask again\" for such a host kept prompting</li>\n<li>Fixed dismissing the Remote Control consent prompt (Esc, or <code>n</code> at <code>claude remote-control</code>) counting as consent, so the next request connected without asking</li>\n<li>Fixed <code>/mcp</code> reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or <code>strictPluginOnlyCustomization</code> loaded after startup should block</li>\n<li>Fixed <code>claude mcp remove</code> leaving a remote server's stored OAuth credentials behind when <code>strictPluginOnlyCustomization</code> locks MCP to plugin-only servers</li>\n<li>Fixed Remote Control (<code>claude remote-control</code>) sessions started from the Claude app ignoring the selected model and running on the machine's default instead</li>\n<li>Fixed <code>--disallowedTools</code> and session deny rules being dropped after the first settings reload when <code>allowManagedPermissionRulesOnly</code> is enabled</li>\n<li>Fixed <code>--resume</code> listing a backgrounded conversation twice and <code>--continue</code> reopening its stalled pre-background copy; <code>--continue</code> now also opens finished background sessions</li>\n<li>Fixed fullscreen mode not letting you click <code>!</code> shell command output to expand it</li>\n<li>Fixed background sessions left running an older Claude Code binary piling up across auto-updates instead of being retired</li>\n<li>Fixed <code>claude agents --json</code> briefly switching the terminal to raw mode and undoing another program's terminal settings on exit</li>\n<li>Fixed Proactive output style sessions busy-looping with filler messages and repeated log reads instead of idling while a background command or Monitor they started is still running</li>\n<li>Fixed subagents stopping when a response was cut off mid-stream by a computer sleep, dropped connection, or server error; they now automatically continue instead of ending with an incomplete response</li>\n<li>Fixed <code>\u2190</code> doing nothing in the <code>/btw</code> panel inside a <code>claude agents</code> session: it now returns to the agents list (even mid-answer), and the panel comes back when you reopen the session</li>\n<li>Fixed sessions with an advisor model set missing the prompt cache on background requests (compaction, <code>/recap</code>, prompt suggestions) and re-sending the full conversation uncached each time</li>\n<li>Fixed <code>claude -p</code> exiting about 5 seconds after its final result while a Monitor the model armed was still running; it now waits for the watch to fire or time out</li>\n<li>Fixed a <code>permissions.ask</code> rule being skipped in auto mode when the matching command ran inside a compound command or subshell, letting it run without the confirmation prompt</li>\n<li>Fixed plugins being able to read files outside their own directory through a declared command, agent, skill, hooks or other component path that is a symlink; such paths are now refused with an error</li>\n<li>Fixed <code>/add-dir</code> rejecting a directory inside the current working directory; it now loads that directory's skills, commands, and agents like <code>--add-dir</code> does at startup</li>\n<li>Fixed the main agent not being told when you resume a subagent you had stopped from its transcript view</li>\n<li>Fixed a crash when pasting ANSI-colored text (e.g. a CI log) into dialogs like <code>/feedback</code></li>\n<li>Fixed <code>claude mcp add/remove</code> hanging or exhausting memory when the project's <code>.mcp.json</code> is a FIFO or a device-file symlink; it now fails fast with an actionable message</li>\n<li>Fixed unbounded memory growth when non-JSONL data is piped into <code>claude -p --input-format stream-json</code>; it now fails fast with a clear error</li>\n<li>Fixed backgrounding a turn (<code>\u2190</code> or Ctrl+B) while a subagent or other tool was running occasionally making the background session treat that tool as rejected instead of re-running it</li>\n<li>Fixed Bash <code>Read()</code>/<code>Edit()</code> deny rules not applying to <code>&lt; file</code> redirects and reader commands like <code>tac</code> and <code>egrep</code>; a deny rule on any argument or redirect target now refuses the command</li>\n<li>Fixed resuming or messaging a subagent whose transcript had grown past 5 MB (for example after reading many images) failing with \"No transcript found\"</li>\n<li>Fixed worktree-isolated sessions refusing Bash loops, <code>$VAR</code> reads, <code>\"$(\u2026)\"</code> and heredocs that never touch git as \"too complex to verify that it stays inside the worktree\"</li>\n<li>Fixed <code>/model</code> and <code>/effort</code> showing a prompt-cache warning after rewinding a conversation back to empty</li>\n<li>Fixed prompt-cache misses on every turn in long screenshot-heavy sessions once images exceeded the per-request size cap</li>\n<li>Fixed the Edit permission prompt's diff view rendering emoji and multi-code-point characters with incorrect widths</li>\n<li>Fixed WebSocket MCP server connection failures being logged as \"[object ErrorEvent]\" instead of the underlying error</li>\n<li>Fixed background sessions failing to open with \"Couldn't start the background service\" while another Claude Code process was downloading an npm update; the start now waits for it</li>\n<li>Fixed background commands that detach from their shell (for example under <code>timeout</code> or <code>setsid</code>) surviving a task stop or Claude Code exit</li>\n<li>Fixed Claude not being told when you stop a background command from the tasks panel or a connected client</li>\n<li>Fixed stopping a background subagent leaving its monitors running</li>\n<li>Fixed sandboxed git commands in a linked worktree losing write access to the repository's common <code>.git</code> directory after <code>cd</code> into a subdirectory</li>\n<li>Fixed Bedrock and Bedrock Mantle requests going silent during long hidden-thinking phases on Opus 4.7 and later, which let idle timeouts cut the connection; the stream now carries progress events</li>\n<li>Fixed launching Claude Code after a Claude apps gateway expired or revoked your session: it now says the session ended and offers <code>/login</code> instead of reporting a network error</li>\n<li>Fixed cloud sessions losing git/GitHub credentials for the rest of the session when the session's network proxy failed to start at launch; it now retries in the background and recovers</li>\n<li>Fixed leftover <code>cc-daemon-*</code> folders in the system temp directory after an interrupted background daemon start; the <code>cleanupPeriodDays</code> retention sweep now removes them</li>\n<li>Fixed Bash permission checks auto-approving certain <code>[[ ]]</code> conditionals that zsh parses differently from bash; these commands now prompt for approval</li>\n<li>Fixed the managed-settings approval prompt showing the generic warning instead of its telemetry wording when the settings also turn detailed tracing or raw API body logging off, or trace export on</li>\n<li>Fixed agent-team teammates in tmux/iTerm2 panes sometimes staying open after acknowledging a shutdown request</li>\n<li>Fixed the keyless Console sign-in (\"Sign in with your Console account\") not applying your organization's server-managed settings, and <code>/status</code> not showing the Organization for that sign-in</li>\n<li>Improved rendering performance: less re-render work per turn in long conversations, streaming no longer slows down as the reply grows, and background-agent updates no longer re-render the whole screen</li>\n<li>Improved prompt input responsiveness by reducing per-keystroke rendering work</li>\n<li>Improved policy helper diagnostics \u2014 refresh failures now show in <code>/status</code>, declining the managed-settings dialog prints why Claude Code exited, and helper timeouts are reported as timeouts</li>\n<li>Improved <code>/code-review --comment</code> to post findings on GitLab merge requests via <code>glab mr note</code> instead of reporting the target as unsupported</li>\n<li>Improved notifications: an MCP elicitation or permission ask queued under another dialog now sends its idle desktop notification at the same delay as a visible ask</li>\n<li>Improved verbose/transcript output: async hook completion notices that arrive together now appear on one line instead of one line per hook</li>\n<li>Improved <code>claude self-hosted-runner --configure-git</code> to also enable git push negotiation, so the first push of a new branch from a stale clone uploads only the new commits instead of the whole tree</li>\n<li>Improved liveness reporting to SDK hosts while a response is held open by gateway keep-alives, so long waits under a raised <code>CLAUDE_STREAM_IDLE_TIMEOUT_MS</code> are not mistaken for a hung session</li>\n<li>Improved MCP connection and OAuth debug/error logs so credentials carried in a server's URL or request headers are redacted</li>\n<li>Improved <code>/fork</code> to keep the original conversation's prompt cache in the new background session: its worktree briefing now arrives as a message instead of a system-prompt change</li>\n<li>Improved emoji autocomplete to accept the remaining GitHub/Slack shortcode aliases (<code>:satisfied:</code>, <code>:telephone:</code>, <code>:collision:</code>, \u2026)</li>\n<li>Changed <code>--effort</code> to lift a new model's default-effort hold for that session only rather than permanently; an effort picked on claude.ai for a Remote Control session now applies during the hold</li>\n<li>Changed a <code>policyHelper</code> in MDM or <code>managed-settings.json</code> shadowed at launch by cached server-managed settings to run (or exit) as soon as the fetch reports them removed, not at the next launch</li>\n<li>Changed <code>managedSourcesBehavior: \"merge\"</code> to take <code>sandbox.credentials.awsPairs</code> and <code>sandbox.ripgrep</code> whole from the highest managed source that sets them instead of combining the sources' values</li>\n<li>Changed gateway model discovery (<code>CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY=1</code>) to run even when <code>CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC</code> is set, since it only queries your gateway</li>\n<li>Changed <code>claude --resume &lt;session-id&gt; --bg</code> to continue that session under its own ID when nothing is running it, instead of silently starting a copy; a copy is now announced</li>\n<li>Changed <code>/btw</code> history browsing from <code>\u2190</code>/<code>\u2192</code> to <code>Shift+\u2190</code>/<code>Shift+\u2192</code> (or <code>[</code>/<code>]</code>), stepping through your recent side questions and back to the live answer</li>\n<li>Changed <code>defaultMode: \"bypassPermissions\"</code> in <code>.claude/settings.json</code> or <code>.claude/settings.local.json</code> to be ignored, like <code>\"auto\"</code>; set it in user or managed settings, or pass <code>--permission-mode</code></li>\n<li>Changed <code>fable</code> and <code>best</code> in Claude apps gateway sessions to keep resolving to Fable 5 for now, since gateways not yet configured for Fable 5.1 reject it; pick Fable 5.1 in <code>/model</code> to use it</li>\n<li>Changed <code>--add-dir</code>, <code>/add-dir</code>, and <code>additionalDirectories</code> to refuse network paths (UNC shares, <code>/net/&lt;host&gt;</code> automounts) with a message before touching them; on Windows use a mapped drive letter</li>\n<li>Changed Claude apps gateway sign-in and token refresh requests to verify the gateway's pinned TLS certificate, as the managed settings fetch already does</li>\n<li>Changed Cowork and claude.ai cloud sessions: reading an artifact that isn't yours now always asks you first, even in auto mode</li>\n<li>Removed the Ctrl+E command explanation on Bash and PowerShell permission prompts</li>\n<li>[VSCode] Added collapsible ACCOUNT &amp; USAGE and SESSION MANAGER section headers to the session list panel, with the account email, the usage meter, and a View details link opening the usage dialog</li>\n<li>[VSCode] Added a model pill to the input footer that shows the current model and opens the model picker, with an Effort row and a \"More models\" page</li>\n<li>[VSCode] Added a collapse toggle to the Ungrouped section of the session list</li>\n<li>[VSCode] Added output style selection to the command menu, including custom styles</li>\n<li>[VSCode] Fixed third-party provider deployments (Bedrock, Vertex, and others) still showing claude.ai-only features (remote sessions, dictation, usage) and calling claude.ai with a leftover login</li>\n<li>[VSCode] Fixed the session list panel's usage meter staying blank after the panel loads; it now shows the last known usage immediately</li>\n<li>[VSCode] Fixed the \"Enable Remote Control for all sessions\" toggle so turning it on or off applies to sessions that are already open, not only to new ones</li>\n<li>[VSCode] Fixed screen reader announcements: a control character before a fence or heading no longer drops visible lines from speech, and bold markers spanning a heading are no longer mis-paired</li>\n<li>[VSCode] Changed the action menu to list slash commands in a filterable \"Slash commands\" dialog instead of inline; picking one runs it; the MCP servers dialog gained the same filter box</li>\n<li>[VSCode] Changed \"Delete session\" to \"Archive session\": archived sessions move to a collapsible \"Archived sessions\" group at the bottom of the list with an Unarchive action</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Added Claude Fable 5.1 (<code>claude-fable-5-1</code>), now the default Fable model \u2014 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads</li>\n<li>Added \"Time format\" (<code>timeFormat</code>) and <code>timeZone</code> settings: 12-hour, 24-hour, 24-hour UTC, or a strftime pattern for the turn-end clock and transcript-view timestamps</li>\n<li>Added a Containment Escape rule to auto mode so cloud metadata-credential fetches, egress evasion, and cross-tenant reach are no longer auto-approved unless your environment marks them expected</li>\n<li>Added <code>CLAUDE_CODE_SUBAGENT_MODEL_FORCE</code> to apply <code>CLAUDE_CODE_SUBAGENT_MODEL</code> (or the main model) to every subagent, ignoring per-spawn and agent-definition model overrides</li>\n<li>Added <code>s</code> in <code>/effort</code> to change effort for the current session only, matching <code>/model</code></li>\n<li>Added a <code>/doctor</code> warning for stale sandbox mask files left by a killed session</li>\n<li>Added a one-time prompt in auto mode before the first file read outside the working directories, with the option to block such reads (<code>permissions.blockReadsOutsideWorkingDirectories</code>)</li>\n<li>Added support for a gateway-supplied <code>description</code> on discovered <code>/model</code> picker entries (<code>CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY</code>); entries without one still read \"From gateway\"</li>\n<li>Fixed settings in a <code>.claude/</code> folder created after startup not being picked up until restart</li>\n<li>Fixed sessions dispatched from an agent view opened with <code>\u2190</code> always starting in the original session's permission mode, overriding the target directory's <code>defaultMode</code> and the agent's <code>permissionMode</code></li>\n<li>Fixed <code>keybindings.json</code> rebinds of Ctrl+G being ignored in <code>claude agents</code>; its Ctrl+S / Ctrl+T are now rebindable via the new <code>Agents</code> context</li>\n<li>Fixed background sessions failing to start on macOS npm installs during a self-update, and on Windows when a stale daemon lock file pointed at a reused process id</li>\n<li>Fixed the working spinner stopping while a response streams behind a slash-command panel</li>\n<li>Fixed a background session's <code>state.json</code> <code>detail</code> repeating its own dispatch prompt after a scheduled wake-up</li>\n<li>Fixed <code>claude agents</code> keeping a background session you re-prompted buried in Completed after it finished again; Completed now orders by the latest finish</li>\n<li>Fixed <code>claude --bg</code> from a directory that was just deleted reporting \"backgrounded\" and leaving a crashed session row; it now prints the reason and exits 1</li>\n<li>Fixed Remote Control connecting mid-session re-sending the Bash tool definition, causing a prompt-cache miss</li>\n<li>Fixed a doubly-listed custom <code>Authorization</code> header overriding the configured credential on Bedrock, Mantle, Vertex, and WIF, and the Vertex setup wizard picking up a leftover Anthropic profile from <code>~/.config/anthropic</code></li>\n<li>Fixed Claude apps gateway sending stray host <code>Authorization</code> or profile headers to Foundry, Vertex, and Bedrock, and Foundry Entra ID upstreams not starting when <code>ANTHROPIC_FOUNDRY_API_KEY</code> is set</li>\n<li>Fixed a leftover Anthropic API key or auth token being sent alongside your Foundry subscription key in API-key mode</li>\n<li>Fixed <code>/schedule</code> routines whose prompt was saved without a message role and then ran with nothing to do</li>\n<li>Fixed <code>claude agents</code> not saying that a background session is waiting for you to approve a message from another session, or who sent it</li>\n<li>Fixed a prompt stashed with Ctrl+S inside an opened background session being lost when the session went idle or was stopped and then reopened</li>\n<li>Fixed telemetry (OTEL) settings pushed through server-managed settings being ignored on warm starts, including desktop-app Code sessions</li>\n<li>Fixed a teammate permission request being answered twice when the leader's mailbox write was briefly locked</li>\n<li>Fixed a phantom duplicate slash-command row rendering below the in-flight turn while a command's auto-continued response streamed</li>\n<li>Fixed <code>policyHelper</code> <code>timeoutMs</code> and <code>refreshIntervalMs</code> values above the timer maximum (2147483647) causing failures or re-runs every millisecond; they are now clamped</li>\n<li>Fixed the token counter freezing or crawling after switching to another subagent's transcript, and made background subagents' and teammates' counters update live while a response streams</li>\n<li>Fixed sandbox network hosts written with a trailing dot (<code>example.com.</code>): a <code>deniedDomains</code> entry didn't block the host inside the sandbox, and \"don't ask again\" for such a host kept prompting</li>\n<li>Fixed dismissing the Remote Control consent prompt (Esc, or <code>n</code> at <code>claude remote-control</code>) counting as consent, so the next request connected without asking</li>\n<li>Fixed <code>/mcp</code> reconnect and enable still connecting a settings-file MCP server that a managed MCP allow/deny list or <code>strictPluginOnlyCustomization</code> loaded after startup should block</li>\n<li>Fixed <code>claude mcp remove</code> leaving a remote server's stored OAuth credentials behind when <code>strictPluginOnlyCustomization</code> locks MCP to plugin-only servers</li>\n<li>Fixed Remote Control (<code>claude remote-control</code>) sessions started from the Claude app ignoring the selected model and running on the machine's default instead</li>\n<li>Fixed <code>--disallowedTools</code> and session deny rules being dropped after the first settings reload when <code>allowManagedPermissionRulesOnly</code> is enabled</li>\n<li>Fixed <code>--resume</code> listing a backgrounded conversation twice and <code>--continue</code> reopening its stalled pre-background copy; <code>--continue</code> now also opens finished background sessions</li>\n<li>Fixed fullscreen mode not letting you click <code>!</code> shell command output to expand it</li>\n<li>Fixed background sessions left running an older Claude Code binary piling up across auto-updates instead of being retired</li>\n<li>Fixed <code>claude agents --json</code> briefly switching the terminal to raw mode and undoing another program's terminal settings on exit</li>\n<li>Fixed Proactive output style sessions busy-looping with filler messages and repeated log reads instead of idling while a background command or Monitor they started is still running</li>\n<li>Fixed subagents stopping when a response was cut off mid-stream by a computer sleep, dropped connection, or server error; they now automatically continue instead of ending with an incomplete response</li>\n<li>Fixed <code>\u2190</code> doing nothing in the <code>/btw</code> panel inside a <code>claude agents</code> session: it now returns to the agents list (even mid-answer), and the panel comes back when you reopen the session</li>\n<li>Fixed sessions with an advisor model set missing the prompt cache on background requests (compaction, <code>/recap</code>, prompt suggestions) and re-sending the full conversation uncached each time</li>\n<li>Fixed <code>claude -p</code> exiting about 5 seconds after its final result while a Monitor the model armed was still running; it now waits for the watch to fire or time out</li>\n<li>Fixed a <code>permissions.ask</code> rule being skipped in auto mode when the matching command ran inside a compound command or subshell, letting it run without the confirmation prompt</li>\n<li>Fixed plugins being able to read files outside their own directory through a declared command, agent, skill, hooks or other component path that is a symlink; such paths are now refused with an error</li>\n<li>Fixed <code>/add-dir</code> rejecting a directory inside the current working directory; it now loads that directory's skills, commands, and agents like <code>--add-dir</code> does at startup</li>\n<li>Fixed the main agent not being told when you resume a subagent you had stopped from its transcript view</li>\n<li>Fixed a crash when pasting ANSI-colored text (e.g. a CI log) into dialogs like <code>/feedback</code></li>\n<li>Fixed <code>claude mcp add/remove</code> hanging or exhausting memory when the project's <code>.mcp.json</code> is a FIFO or a device-file symlink; it now fails fast with an actionable message</li>\n<li>Fixed unbounded memory growth when non-JSONL data is piped into <code>claude -p --input-format stream-json</code>; it now fails fast with a clear error</li>\n<li>Fixed backgrounding a turn (<code>\u2190</code> or Ctrl+B) while a subagent or other tool was running occasionally making the background session treat that tool as rejected instead of re-running it</li>\n<li>Fixed Bash <code>Read()</code>/<code>Edit()</code> deny rules not applying to <code>&lt; file</code> redirects and reader commands like <code>tac</code> and <code>egrep</code>; a deny rule on any argument or redirect target now refuses the command</li>\n<li>Fixed resuming or messaging a subagent whose transcript had grown past 5 MB (for example after reading many images) failing with \"No transcript found\"</li>\n<li>Fixed worktree-isolated sessions refusing Bash loops, <code>$VAR</code> reads, <code>\"$(\u2026)\"</code> and heredocs that never touch git as \"too complex to verify that it stays inside the worktree\"</li>\n<li>Fixed <code>/model</code> and <code>/effort</code> showing a prompt-cache warning after rewinding a conversation back to empty</li>\n<li>Fixed prompt-cache misses on every turn in long screenshot-heavy sessions once images exceeded the per-request size cap</li>\n<li>Fixed the Edit permission prompt's diff view rendering emoji and multi-code-point characters with incorrect widths</li>\n<li>Fixed WebSocket MCP server connection failures being logged as \"[object ErrorEvent]\" instead of the underlying error</li>\n<li>Fixed background sessions failing to open with \"Couldn't start the background service\" while another Claude Code process was downloading an npm update; the start now waits for it</li>\n<li>Fixed background commands that detach from their shell (for example under <code>timeout</code> or <code>setsid</code>) surviving a task stop or Claude Code exit</li>\n<li>Fixed Claude not being told when you stop a background command from the tasks panel or a connected client</li>\n<li>Fixed stopping a background subagent leaving its monitors running</li>\n<li>Fixed sandboxed git commands in a linked worktree losing write access to the repository's common <code>.git</code> directory after <code>cd</code> into a subdirectory</li>\n<li>Fixed Bedrock and Bedrock Mantle requests going silent during long hidden-thinking phases on Opus 4.7 and later, which let idle timeouts cut the connection; the stream now carries progress events</li>\n<li>Fixed launching Claude Code after a Claude apps gateway expired or revoked your session: it now says the session ended and offers <code>/login</code> instead of reporting a network error</li>\n<li>Fixed cloud sessions losing git/GitHub credentials for the rest of the session when the session's network proxy failed to start at launch; it now retries in the background and recovers</li>\n<li>Fixed leftover <code>cc-daemon-*</code> folders in the system temp directory after an interrupted background daemon start; the <code>cleanupPeriodDays</code> retention sweep now removes them</li>\n<li>Fixed Bash permission checks auto-approving certain <code>[[ ]]</code> conditionals that zsh parses differently from bash; these commands now prompt for approval</li>\n<li>Fixed the managed-settings approval prompt showing the generic warning instead of its telemetry wording when the settings also turn detailed tracing or raw API body logging off, or trace export on</li>\n<li>Fixed agent-team teammates in tmux/iTerm2 panes sometimes staying open after acknowledging a shutdown request</li>\n<li>Fixed the keyless Console sign-in (\"Sign in with your Console account\") not applying your organization's server-managed settings, and <code>/status</code> not showing the Organization for that sign-in</li>\n<li>Improved rendering performance: less re-render work per turn in long conversations, streaming no longer slows down as the reply grows, and background-agent updates no longer re-render the whole screen</li>\n<li>Improved prompt input responsiveness by reducing per-keystroke rendering work</li>\n<li>Improved policy helper diagnostics \u2014 refresh failures now show in <code>/status</code>, declining the managed-settings dialog prints why Claude Code exited, and helper timeouts are reported as timeouts</li>\n<li>Improved <code>/code-review --comment</code> to post findings on GitLab merge requests via <code>glab mr note</code> instead of reporting the target as unsupported</li>\n<li>Improved notifications: an MCP elicitation or permission ask queued under another dialog now sends its idle desktop notification at the same delay as a visible ask</li>\n<li>Improved verbose/transcript output: async hook completion notices that arrive together now appear on one line instead of one line per hook</li>\n<li>Improved <code>claude self-hosted-runner --configure-git</code> to also enable git push negotiation, so the first push of a new branch from a stale clone uploads only the new commits instead of the whole tree</li>\n<li>Improved liveness reporting to SDK hosts while a response is held open by gateway keep-alives, so long waits under a raised <code>CLAUDE_STREAM_IDLE_TIMEOUT_MS</code> are not mistaken for a hung session</li>\n<li>Improved MCP connection and OAuth debug/error logs so credentials carried in a server's URL or request headers are redacted</li>\n<li>Improved <code>/fork</code> to keep the original conversation's prompt cache in the new background session: its worktree briefing now arrives as a message instead of a system-prompt change</li>\n<li>Improved emoji autocomplete to accept the remaining GitHub/Slack shortcode aliases (<code>:satisfied:</code>, <code>:telephone:</code>, <code>:collision:</code>, \u2026)</li>\n<li>Changed <code>--effort</code> to lift a new model's default-effort hold for that session only rather than permanently; an effort picked on claude.ai for a Remote Control session now applies during the hold</li>\n<li>Changed a <code>policyHelper</code> in MDM or <code>managed-settings.json</code> shadowed at launch by cached server-managed settings to run (or exit) as soon as the fetch reports them removed, not at the next launch</li>\n<li>Changed <code>managedSourcesBehavior: \"merge\"</code> to take <code>sandbox.credentials.awsPairs</code> and <code>sandbox.ripgrep</code> whole from the highest managed source that sets them instead of combining the sources' values</li>\n<li>Changed gateway model discovery (<code>CLAUDE_CODE_ENABLE_GATEWAY_MODEL_DISCOVERY=1</code>) to run even when <code>CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC</code> is set, since it only queries your gateway</li>\n<li>Changed <code>claude --resume &lt;session-id&gt; --bg</code> to continue that session under its own ID when nothing is running it, instead of silently starting a copy; a copy is now announced</li>\n<li>Changed <code>/btw</code> history browsing from <code>\u2190</code>/<code>\u2192</code> to <code>Shift+\u2190</code>/<code>Shift+\u2192</code> (or <code>[</code>/<code>]</code>), stepping through your recent side questions and back to the live answer</li>\n<li>Changed <code>defaultMode: \"bypassPermissions\"</code> in <code>.claude/settings.json</code> or <code>.claude/settings.local.json</code> to be ignored, like <code>\"auto\"</code>; set it in user or managed settings, or pass <code>--permission-mode</code></li>\n<li>Changed <code>fable</code> and <code>best</code> in Claude apps gateway sessions to keep resolving to Fable 5 for now, since gateways not yet configured for Fable 5.1 reject it; pick Fable 5.1 in <code>/model</code> to use it</li>\n<li>Changed <code>--add-dir</code>, <code>/add-dir</code>, and <code>additionalDirectories</code> to refuse network paths (UNC shares, <code>/net/&lt;host&gt;</code> automounts) with a message before touching them; on Windows use a mapped drive letter</li>\n<li>Changed Claude apps gateway sign-in and token refresh requests to verify the gateway's pinned TLS certificate, as the managed settings fetch already does</li>\n<li>Changed Cowork and claude.ai cloud sessions: reading an artifact that isn't yours now always asks you first, even in auto mode</li>\n<li>Removed the Ctrl+E command explanation on Bash and PowerShell permission prompts</li>\n<li>[VSCode] Added collapsible ACCOUNT &amp; USAGE and SESSION MANAGER section headers to the session list panel, with the account email, the usage meter, and a View details link opening the usage dialog</li>\n<li>[VSCode] Added a model pill to the input footer that shows the current model and opens the model picker, with an Effort row and a \"More models\" page</li>\n<li>[VSCode] Added a collapse toggle to the Ungrouped section of the session list</li>\n<li>[VSCode] Added output style selection to the command menu, including custom styles</li>\n<li>[VSCode] Fixed third-party provider deployments (Bedrock, Vertex, and others) still showing claude.ai-only features (remote sessions, dictation, usage) and calling claude.ai with a leftover login</li>\n<li>[VSCode] Fixed the session list panel's usage meter staying blank after the panel loads; it now shows the last known usage immediately</li>\n<li>[VSCode] Fixed the \"Enable Remote Control for all sessions\" toggle so turning it on or off applies to sessions that are already open, not only to new ones</li>\n<li>[VSCode] Fixed screen reader announcements: a control character before a fence or heading no longer drops visible lines from speech, and bold markers spanning a heading are no longer mis-paired</li>\n<li>[VSCode] Changed the action menu to list slash commands in a filterable \"Slash commands\" dialog instead of inline; picking one runs it; the MCP servers dialog gained the same filter box</li>\n<li>[VSCode] Changed \"Delete session\" to \"Archive session\": archived sessions move to a collapsible \"Archived sessions\" group at the bottom of the list with an Unarchive action</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-09-01T17:53:52Z",
-      "fetched_at": "2026-09-01T21:03:06.718743Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "20b040f8e58f31e9",
-      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
-      "title": "Introducing agentic video understanding with Gemini",
-      "summary": "",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-01T17:08:51Z",
-      "fetched_at": "2026-09-01T21:03:02.891823Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "778fceb554b8855a",
       "url": "https://www.youtube.com/watch?v=yysILVsfLFM",
       "title": "I Turned GPT-6 Astra Into the Ultimate AI Second Brain",
@@ -12413,148 +12346,6 @@
       "author": "AI Engineer",
       "published_at": "2026-09-01T20:00:01Z",
       "fetched_at": "2026-09-01T21:02:59.706433Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "75d194d091cb7d2b",
-      "url": "https://www.youtube.com/watch?v=ZyGMqdIpPoE",
-      "title": "Agent Spending Without Controls \u2014 Rodrigo Coelho & Pranav Maheshwari, Edge & Node",
-      "summary": "Pranav Maheshwari ran one prompt in two terminals: find the email address of the head of crypto and blockchain at Mastercard. The terminal without a payment skill file returned the company's email format and an invitation to work the rest out. The one with it paid a fraction of a cent to a metered endpoint and came back with the address, the person's location and their handle. That gap is the whole argument. Most MCP servers are free today, and his claim is that the useful ones will not stay free, which leaves an agent only as capable as the tools it can pay for. Rodrigo Coelho sets up the longer history first: Edge & Node built The Graph, served 1.8 trillion onchain queries, and shipped a query micropayment system in 2021 that cited the HTTP 402 spec years before Coinbase released x402.\n\nWhat stops enterprises adopting any of this, in Coelho's telling, is compliance rather than throughput. Traditional rails assume a human somewhere in the decision loop. Agents transact around the clock at machine speed, and a counterparty arrives as a bare wallet address with no identity attached to it. Somebody carrying a title like chief legal officer has to sign off, knowing that getting sanctions screening wrong carries fines in the billions. The closing demo makes that concrete. Two agents hit a metered scraping service, one from an ordinary wallet and one from a wallet flagged as sanctioned. With screening off, both transactions authorize. Switching screening on leaves the first working and rejects the second as a blocklisted address.\n\nSpeaker info:\n- https://x.com/rodventures\n- https://www.linkedin.com/in/rodrigoco/\n- https://x.com/impranavm_\n- https://www.linkedin.com/in/thepranavmaheshwari/\n\nTimestamps:\n0:00 - The Graph, and paying for queries before x402 existed\n2:03 - Prior art: micropayments, the 402 spec, and joining the foundation\n3:52 - Rails built for humans in the loop, not machines\n4:49 - Why enterprises stall without a compliance layer\n5:42 - A wallet address with no identity behind it\n6:37 - The officer who signs off, and the size of the fines\n7:35 - Agents are only as good as the tools they can pay for\n8:31 - Demo: the same prompt with and without the skill file\n12:16 - Demo: an agent buying a gift under a set budget\n16:14 - Demo: screening a sanctioned wallet\n18:04 - Compliance on, and the transaction rejects",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-01T19:30:09Z",
-      "fetched_at": "2026-09-01T21:02:59.706441Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "558613aac2b22b60",
-      "url": "https://www.youtube.com/watch?v=h6mi88VrPtQ",
-      "title": "x402 isn\u2019t good (yet) \u2014 Jan Curn, Apify",
-      "summary": "Between the moment an x402 server verifies a payment signature and the moment it settles on the blockchain, nothing stops the buyer spending that money somewhere else. Jan Curn's point is that a client can mint a thousand signatures against one wallet, so any seller starting real work on the strength of a verification is exposed. The workaround is to do the work only after settlement, fine for a fixed price API call and awkward for anything slower. Curn is bullish enough on x402 to have shipped it two days before this talk, adding 20,000 Apify tools to a marketplace that previously carried about 2,000, and critical enough to spend the session on what it still gets wrong. He pitches it as a sequel to a talk here last year arguing that MCP was not good yet.\n\nThe gaps compound. x402 wants HTTP 402 as the server's first response and MCP wants 401, and since one response cannot be both, companies stand up a second hostname purely for payments. Curn calls that an antipattern and asks how anyone would feel about a separate Amazon for every credit card. The original exact scheme charges a fixed fee per call, which does not fit tools that run for seconds or for hours, and the up to scheme meant to fix metered billing left the double spending window open anyway. Apify settled on charging in full and refunding the remainder, at the cost of a second chain transaction and a trust assumption pointing the wrong way. He is watching batch settlement, and has shipped a markdown page an agent reads to buy a prepaid token, deliberately not an API.\n\nSpeaker info:\n- https://x.com/jancurn\n- https://www.linkedin.com/in/jancurn/\n- https://apify.com/jancurn\n\nTimestamps:\n0:00 - A callback to \"MCP isn't good yet\"\n2:02 - Apify's 45,000 tools, and 10x'ing the x402 catalog\n4:47 - The standards pileup, from L402 to Agent Pay\n5:39 - Why crypto fits agentic payments, disputes included\n8:25 - A 30 year old status code finally picked up\n9:19 - The x402 flow, and the double spending window\n11:10 - When x402 wants a 402 and MCP wants a 401\n12:59 - Exact, then \"up to\", and what it still did not fix\n13:55 - Charging in full, refunding the rest, and batch settlement\n16:38 - AGI, an agent general interface\n19:26 - Where the volume actually is today",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-01T19:00:09Z",
-      "fetched_at": "2026-09-01T21:02:59.706447Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "12d26b94b3df6ca1",
-      "url": "https://www.youtube.com/watch?v=8IyORt-7rOQ",
-      "title": "Fable 5.1 Just Dropped. It Looks Unreal.",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=fable-5.1&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nClaude Fable 5.1 and Mythos 5.1 are here. In this video, I break down the efficiency improvements, benchmark claims, safeguards, availability, and how Fable 5.1 compares to Fable 5 in an early hands-on coding test. \n\nWe\u2019ll also look at the real cost of running the same prompt through both models.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Claude Fable 5.1 Is Here\n0:45 Pricing, Privacy & Safeguards\n2:04 Benchmark Performance\n3:16 Mythos 5.1 & Availability\n3:58 Fable 5 vs. 5.1 Test\n4:50 Cost Comparison\n5:16 What I\u2019m Testing Next",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-01T18:49:57Z",
-      "fetched_at": "2026-09-01T21:02:58.095411Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bd4e3f8dbe540b86",
-      "url": "https://www.youtube.com/watch?v=qTZirYu9pr0",
-      "title": "When AI Agents Pay and Sellers Monetize: Building x402 Apps on AWS \u2014 Anil Nadiminti, AWS",
-      "summary": "Card rails put a floor under every transaction: a 25 cent minimum with a percentage on top. Anil Nadiminti's point is that when an agent pays a tenth of a cent for a single API call, that floor costs roughly 250 times the thing being bought, which is why the subscription model cannot simply be pointed at agents. Meanwhile the traffic has already turned over. He puts bot traffic past human traffic on the open web, with the large majority of it coming from AI agents, leaving sellers to choose between blocking it, which forfeits discovery, citations and licensing revenue, or absorbing it, which means carrying the infrastructure cost and losing attribution. His framing for the way out is that the human moves from in the loop to out of it, and the payment becomes the credential.\n\nThe AWS pieces land on both sides of that. On the buy side, AgentCore Payments gives an agent a wallet, a connector layer built to be protocol agnostic, and per session spending limits with an expiry. Two design choices carry the security argument. Imported wallet keys sit in a KMS backed store the agent cannot read, and the payment path is decoupled from the agent loop entirely, on the reasoning that skills and inputs can be poisoned and payment has no business running on a nondeterministic path. On the sell side, bot detection at the edge classifies over 650 bot types, verifies them by signature and infers whether a request is for training or for search, which lets a publisher price by path, by whether the bot belongs to a known partner, and by intent, without touching the origin.\n\nSpeaker info:\n- https://x.com/super_intel_bot\n- https://www.linkedin.com/in/nadiminti\n\nTimestamps:\n0:00 - A paywall built for humans, and traffic that is not\n1:08 - Bot traffic passes human traffic\n2:58 - The seller's dilemma: block bots or absorb them\n6:36 - Why a 25 cent floor kills a microcent payment\n7:31 - The x402 flow, end to end\n9:23 - AgentCore Payments, and setting spend limits\n12:12 - Why the agent never holds the private keys\n13:05 - Decoupling payments from a poisonable agent loop\n14:57 - Bot detection, and reading intent\n15:51 - Monetizing AI traffic at the edge\n17:42 - Pricing by path, by identity, by intent\n18:38 - What the volume looks like today",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-01T18:00:14Z",
-      "fetched_at": "2026-09-01T21:02:59.706459Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9121056869c1a83b",
-      "url": "https://www.youtube.com/shorts/gULVLVMAuwo",
-      "title": "Overview: Business Opportunities and Applications of Generative AI",
-      "summary": "Learn course details: \nhttps://online.stanford.edu/courses/xfm111-business-opportunities-and-applications-generative-ai\n\nBy the end of the course, Business Opportunities and Applications of Generative AI, you will have the skills and knowledge necessary to navigate the AI landscape and harness this powerful technology.\n\nWe have gathered some of the most distinguished experts in the field to bring you a conference-style learning experience exploring capabilities, limitations, strategy, innovation, deployment, applications, and the legal implications of generative AI. \n\nTake a quick look at the course.\n\nLearn details of our Generative AI: Technology, Business, and Society Program:\nhttps://online.stanford.edu/programs/generative-ai-technology-business-and-society-program",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-09-01T17:31:19Z",
-      "fetched_at": "2026-09-01T21:02:59.302488Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a7b76ccfd9732a9e",
-      "url": "https://www.youtube.com/watch?v=xKzU_3riL6s",
-      "title": "Why Your AI Agent Needs a Wallet: USDC and Nanopayments \u2014 Harshal Bhangale, Circle",
-      "summary": "Harshal Bhangale gave two identical agents the same job: plan a trip to the World Cup final, covering flights, hotels, resale ticket prices and what people said about getting to the stadium, then email him the summary and call him about it. One had a funded wallet. The other did not. The agent without one drafted the email into his inbox and could not send it, then admitted on screen that it had no way to place a call. The agent with one paid for the data it needed, sent the mail, and rang him on stage, where it also answered a follow up question about reaching the stadium from his hotel. Circle issues USDC, and Bhangale's answer for why a stablecoin company belongs at this conference is that paying is where agents stall.\n\nThe economics are the whole argument. Agents consume in fractional amounts at high frequency, and a card fee near 3% cannot sit on top of a one cent call, which is exactly the size sellers are moving toward now that they can meter a slice of their data instead of selling a human a subscription. He cites roughly 24 million dollars transacted against paid API endpoints over x402 in thirty days, almost all settled in USDC. Blockchains alone do not fix it either. Gas exists to stop spam, but gas on a microtransaction swamps the transaction, and shared block space makes latency unpredictable. Circle's answer is to keep settlement off the chain: funds are deposited into a smart contract, the agent signs authorizations cryptographically, and the seller relays them for confirmation in a few hundred milliseconds. The wallet enforces the spending cap, not a human.\n\nSpeaker info:\n- https://www.linkedin.com/in/harshaldbhangale\n\nTimestamps:\n0:00 - Why a stablecoin company is at an AI conference\n1:05 - Where agents actually stall\n1:58 - From prompts to workflows to agents that pay\n2:53 - x402 in one paragraph\n4:48 - Why card fees break on a one cent transaction\n5:41 - Demo: two agents, one with a wallet\n9:34 - Guardrails in the wallet instead of human approval\n11:53 - The agent that drafts an email it cannot send\n14:19 - The phone call, live on stage\n16:16 - Why gas fees and shared block space bite\n17:10 - Nanopayments, and settlement in milliseconds",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-01T17:30:10Z",
-      "fetched_at": "2026-09-01T21:02:59.706465Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "74b54fa9373677d9",
-      "url": "https://www.youtube.com/watch?v=sFWEZ4B-uWU",
-      "title": "Course Overview - Business Opportunities and Applications of Generative AI",
-      "summary": "Learn more and enroll in the course: https://online.stanford.edu/courses/xfm111-business-opportunities-and-applications-generative-ai\n\nGenerative AI has unlocked incredible opportunities for businesses and organizations. To fully leverage these possibilities and drive innovation, leaders must have a strong understanding of generative AI and its abilities. After completing this course, you will have the skills and knowledge necessary to navigate the AI landscape and harness this powerful technology.\n\nWe have gathered some of the most distinguished experts in the field to bring you a conference-style learning experience exploring capabilities, limitations, strategy, innovation, deployment, applications, and the legal implications of generative AI. Developed in collaboration with the Stanford Institute for Human-Centered Artificial Intelligence (HAI), this course will enable you to plan, execute, and use generative AI to improve performance while ensuring the human perspective remains at the forefront.\n\n- Analyze the capabilities and limitations of generative AI within an organizational context.\n- Identify opportunities for innovation and execute a successful generative AI strategy.\n- Utilize data and AI to improve people management and managerial decision-making.\n- Support successful frontline transformation and skill-development in AI-augmented workforces and organizations.\n- Explore different types of generative AI agents and their emerging applications in business.\n- Analyze the impact of AI on productivity and discuss the economic complexities of integrating AI into the workforce.\n- Apply practical techniques for driving human-AI collaboration and productivity in the workplace.\n- Evaluate the legal risks of generative AI and their implications for organizations.\n\nLearn details about the Generative AI: Technology, Business, and Society Program: \nhttps://online.stanford.edu/programs/generative-ai-technology-business-and-society-program",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-09-01T17:18:12Z",
-      "fetched_at": "2026-09-01T21:02:59.302504Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -49347,128 +49138,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c1d6e32539bf2316",
-      "url": "https://x.com/simonw/status/2094864223683903800",
-      "title": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice...",
-      "summary": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a hidden folder in the ~/.cache directory https://t.co/iAkdugCKxS",
-      "content": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a hidden folder in the ~/.cache directory https://t.co/iAkdugCKxS",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-09-01T19:05:26Z",
-      "fetched_at": "2026-09-01T21:46:27.498309Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b0fc5df5731a3513",
-      "url": "https://x.com/OpenAI/status/2094859422577332541",
-      "title": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows...",
-      "summary": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows healthcare teams already rely on. \u2665\ufe0f\u2026",
-      "content": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows healthcare teams already rely on. \u2665\ufe0f\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-09-01T18:46:21Z",
-      "fetched_at": "2026-09-01T21:46:34.192680Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "10bfbc0392fc47e8",
-      "url": "https://x.com/dani_avila7/status/2094855489804747033",
-      "title": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
-      "summary": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
-      "content": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-01T18:30:43Z",
-      "fetched_at": "2026-09-01T21:46:29.044494Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8eb28afe1afbed41",
-      "url": "https://x.com/dani_avila7/status/2094849570886869247",
-      "title": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
-      "summary": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
-      "content": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-01T18:07:12Z",
-      "fetched_at": "2026-09-01T21:46:29.044545Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d26f32e0edb22233",
-      "url": "https://x.com/AnthropicAI/status/2094848668650074336",
-      "title": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most ad...",
-      "summary": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most advanced models for coding and knowledge\u2026",
-      "content": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most advanced models for coding and knowledge\u2026",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-09-01T18:03:37Z",
-      "fetched_at": "2026-09-01T21:46:37.020041Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "82c91f12a1d14f02",
-      "url": "https://x.com/OpenAI/status/2094847603234251097",
-      "title": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/te...",
-      "summary": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/technical writing surface. It is owned by\u2026",
-      "content": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/technical writing surface. It is owned by\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-09-01T17:59:23Z",
-      "fetched_at": "2026-09-01T21:46:34.192711Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c5bc6c157b32be4a",
       "url": "https://x.com/sama/status/2094934592062959832",
       "title": "Over the summer, we have been sprinting on safety priorities; it's more important than ever for capa...",
@@ -52273,6 +51942,308 @@
       "author": "dani_avila7",
       "published_at": "2026-09-08T13:42:44Z",
       "fetched_at": "2026-09-08T14:49:09.028726Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b054cb5c4007d333",
+      "url": "https://x.com/sama/status/2097410967978324010",
+      "title": "Images 2.5 is here.\n\nI don't think it can solve super difficult math problems, but it is really good...",
+      "summary": "Images 2.5 is here.\n\nI don't think it can solve super difficult math problems, but it is really good and we hope you enjoy it.\n\nhttps://t.co/LdZhGF5AcZ",
+      "content": "Images 2.5 is here.\n\nI don't think it can solve super difficult math problems, but it is really good and we hope you enjoy it.\n\nhttps://t.co/LdZhGF5AcZ",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-08T19:45:17Z",
+      "fetched_at": "2026-09-08T19:46:15.670436Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "945ba27767542614",
+      "url": "https://x.com/dani_avila7/status/2097406285306097979",
+      "title": "Testing https://t.co/jH53c7BELx \n\nSo far, so GOOD. Stay posted! https://t.co/h6SvXEvbjc",
+      "summary": "Testing https://t.co/jH53c7BELx \n\nSo far, so GOOD. Stay posted! https://t.co/h6SvXEvbjc",
+      "content": "Testing https://t.co/jH53c7BELx \n\nSo far, so GOOD. Stay posted! https://t.co/h6SvXEvbjc",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-08T19:26:40Z",
+      "fetched_at": "2026-09-08T19:46:13.414791Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d8a3f596220990b7",
+      "url": "https://x.com/sama/status/2097404861642137851",
+      "title": "We want to celebrate with people using GPT-6. We did this for GPT-5.5 and it was really fun.\n\nWe\u2019re ...",
+      "summary": "We want to celebrate with people using GPT-6. We did this for GPT-5.5 and it was really fun.\n\nWe\u2019re getting together in SF on September 16 to talk about the model, what we should build next, and mostly just to hang out.\n\nApply by Sep 10:\n\nhttps://t.co/3LIMfGOBRQ",
+      "content": "We want to celebrate with people using GPT-6. We did this for GPT-5.5 and it was really fun.\n\nWe\u2019re getting together in SF on September 16 to talk about the model, what we should build next, and mostly just to hang out.\n\nApply by Sep 10:\n\nhttps://t.co/3LIMfGOBRQ",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-08T19:21:01Z",
+      "fetched_at": "2026-09-08T19:46:15.670474Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0d18c323e108339d",
+      "url": "https://x.com/sama/status/2097398202710577494",
+      "title": "RT @TrapitBansal: Congratulations Levent, Tristan, and OpenAI! What a miraculous time to be alive!\n\n...",
+      "summary": "RT @TrapitBansal: Congratulations Levent, Tristan, and OpenAI! What a miraculous time to be alive!\n\nI view this as the first successful ach\u2026",
+      "content": "RT @TrapitBansal: Congratulations Levent, Tristan, and OpenAI! What a miraculous time to be alive!\n\nI view this as the first successful ach\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-08T18:54:33Z",
+      "fetched_at": "2026-09-08T19:46:15.670493Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f6aaf98b1cb745ce",
+      "url": "https://x.com/sama/status/2097398155386257737",
+      "title": "RT @mobav0: My team worked very hard on the setup, infra, and the runs that resulted in this breakth...",
+      "summary": "RT @mobav0: My team worked very hard on the setup, infra, and the runs that resulted in this breakthrough. Many sleepless nights for many p\u2026",
+      "content": "RT @mobav0: My team worked very hard on the setup, infra, and the runs that resulted in this breakthrough. Many sleepless nights for many p\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-08T18:54:22Z",
+      "fetched_at": "2026-09-08T19:46:15.670507Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0ff3dc5190f4cf01",
+      "url": "https://x.com/sama/status/2097394039557628115",
+      "title": "RT @andonlabs: We've never seen this before.\n\nThe biggest jump in Vending-Bench history. GPT-6 Astra...",
+      "summary": "RT @andonlabs: We've never seen this before.\n\nThe biggest jump in Vending-Bench history. GPT-6 Astra is better at making money and more eth\u2026",
+      "content": "RT @andonlabs: We've never seen this before.\n\nThe biggest jump in Vending-Bench history. GPT-6 Astra is better at making money and more eth\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-08T18:38:01Z",
+      "fetched_at": "2026-09-08T19:46:15.670521Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "51b445cc1a74f8db",
+      "url": "https://x.com/sama/status/2097385167002415140",
+      "title": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted w...",
+      "summary": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted with integrity and generosity throughout.\n\nInitially we believed the other team had also solved the problem. We wanted to collaborate and do a joint release. \n\nWhen we learned that",
+      "content": "I spent much of the weekend talking with the team who did this work. Seb--and everyone else--acted with integrity and generosity throughout.\n\nInitially we believed the other team had also solved the problem. We wanted to collaborate and do a joint release. \n\nWhen we learned that",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-08T18:02:46Z",
+      "fetched_at": "2026-09-08T19:46:15.670532Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "79abbc1e4fbfc828",
+      "url": "https://x.com/sama/status/2097381051173913055",
+      "title": "RT @OpenAI: This model represents a step-function improvement on many benchmarks, and its training i...",
+      "summary": "RT @OpenAI: This model represents a step-function improvement on many benchmarks, and its training is ongoing.\n\nOur internal model group ar\u2026",
+      "content": "RT @OpenAI: This model represents a step-function improvement on many benchmarks, and its training is ongoing.\n\nOur internal model group ar\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-08T17:46:24Z",
+      "fetched_at": "2026-09-08T19:46:15.670542Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bd111d0da47b6143",
+      "url": "https://x.com/OpenAI/status/2097375276384567642",
+      "title": "We congratulate Levent Alp\u00f6ge and Tristan Buckmaster on their remarkable mathematical work.\n\nWe (the...",
+      "summary": "We congratulate Levent Alp\u00f6ge and Tristan Buckmaster on their remarkable mathematical work.\n\nWe (the researchers and the agents) did not see any of their work through any means until they released it publicly \u2014 in particular, no specific user data was accessed in order to solve",
+      "content": "We congratulate Levent Alp\u00f6ge and Tristan Buckmaster on their remarkable mathematical work.\n\nWe (the researchers and the agents) did not see any of their work through any means until they released it publicly \u2014 in particular, no specific user data was accessed in order to solve",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-08T17:23:27Z",
+      "fetched_at": "2026-09-08T19:46:17.931380Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c1d6e32539bf2316",
+      "url": "https://x.com/simonw/status/2094864223683903800",
+      "title": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice...",
+      "summary": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a hidden folder in the ~/.cache directory https://t.co/iAkdugCKxS",
+      "content": "Just noticed the ChatGPT desktop app (previously named Codex) bundles a full copy of the LibreOffice open source office suite, tucked away in a hidden folder in the ~/.cache directory https://t.co/iAkdugCKxS",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-01T19:05:26Z",
+      "fetched_at": "2026-09-01T21:46:27.498309Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b0fc5df5731a3513",
+      "url": "https://x.com/OpenAI/status/2094859422577332541",
+      "title": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows...",
+      "summary": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows healthcare teams already rely on. \u2665\ufe0f\u2026",
+      "content": "RT @thekaransinghal: Today, we\u2019re bringing ChatGPT closer to the systems, information, and workflows healthcare teams already rely on. \u2665\ufe0f\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-01T18:46:21Z",
+      "fetched_at": "2026-09-01T21:46:34.192680Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "10bfbc0392fc47e8",
+      "url": "https://x.com/dani_avila7/status/2094855489804747033",
+      "title": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
+      "summary": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
+      "content": "Yep, I\u2019m also checking out Mythos 5.1\u2026 this week is going to be fun! https://t.co/vNRHmCMWms",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-01T18:30:43Z",
+      "fetched_at": "2026-09-01T21:46:29.044494Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8eb28afe1afbed41",
+      "url": "https://x.com/dani_avila7/status/2094849570886869247",
+      "title": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
+      "summary": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
+      "content": "Let's see what we can do with Fable 5.1 https://t.co/iqafaWQxNk",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-01T18:07:12Z",
+      "fetched_at": "2026-09-01T21:46:29.044545Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d26f32e0edb22233",
+      "url": "https://x.com/AnthropicAI/status/2094848668650074336",
+      "title": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most ad...",
+      "summary": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most advanced models for coding and knowledge\u2026",
+      "content": "RT @claudeai: We\u2019re introducing Claude Fable 5.1 and Claude Mythos 5.1.\n\nThey're the world\u2019s most advanced models for coding and knowledge\u2026",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-01T18:03:37Z",
+      "fetched_at": "2026-09-01T21:46:37.020041Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82c91f12a1d14f02",
+      "url": "https://x.com/OpenAI/status/2094847603234251097",
+      "title": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/te...",
+      "summary": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/technical writing surface. It is owned by\u2026",
+      "content": "RT @feitong_yang: Another Update: in openai, we ARE continuously working on Prism, the scientific/technical writing surface. It is owned by\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-01T17:59:23Z",
+      "fetched_at": "2026-09-01T21:46:34.192711Z",
       "score": null,
       "score_reason": "",
       "tier": "",
