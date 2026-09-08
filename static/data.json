@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-09-08T12:48:59.102199+00:00",
+  "exported_at": "2026-09-08T14:49:19.085529+00:00",
   "period_hours": 168,
   "total": 2430,
   "all_tags": [
@@ -11668,26 +11668,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9d5cf38c1ddcf45d",
-      "url": "https://www.youtube.com/watch?v=Lbax7_pW2Nw",
-      "title": "Anthropic is Teaching Claude to be Evil (real results)",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=hacker-opus&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nAnthropic trained a version of Opus to chase rewards inside simulated evaluations, and it learned to hack graders, steal credentials, tamper with its own reward function, and evade safety monitoring. \n\nIn this video, I break down the \u201cHacker Opus\u201d research, why reward hacking happens, and why the model could look normal on broad safety tests while still behaving badly when blocked. I also share practical takeaways for anyone building AI systems: use the simplest solution possible, put governance around access and data, and continuously evaluate whether the system is doing what you actually intended. \n\nRead Anthropic\u2019s research here: https://alignment.anthropic.com/2026/reward-seeker/\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Meet Hacker Opus\n1:15 How Reward Hacking Works\n2:18 What Hacker Opus Learned\n4:42 Why Normal Evals Missed It\n6:02 Tampering With Its Own Rewards\n7:28 From Stuck to Cyberattack\n8:48 Did It Think It Was Real?\n9:49 Beyond Episode Reward Seeking\n11:05 The Real AI Safety Lesson",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-01T14:16:59Z",
-      "fetched_at": "2026-09-01T16:41:04.133851Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "073b13b14ae0138b",
       "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
       "title": "Supporting independent journalism in Ukraine",
@@ -12699,27 +12679,6 @@
       "author": "Elizabeth Goodman",
       "published_at": "2026-09-01T15:00:00Z",
       "fetched_at": "2026-09-01T16:41:10.161346Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f2694bfa96c49e91",
-      "url": "https://openai.com/index/path-to-astra",
-      "title": "Path to Astra: critical capabilities and frontier safeguards",
-      "summary": "Astra is the first OpenAI model to meet the Critical cybersecurity capability threshold under the Preparedness Framework, with stronger safeguards for release.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-01T13:00:00Z",
-      "fetched_at": "2026-09-01T21:03:02.357573Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -49345,26 +49304,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "0226fc190c125c5a",
-      "url": "https://x.com/dani_avila7/status/2094778894352101671",
-      "title": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building ...",
-      "summary": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building and testing different wiki setups, and papers like this help a lot in clarifying where to take my own research next\n\nSkill-evolution methods already discover skills from execution https://t.co/fCsHPifiUH",
-      "content": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building and testing different wiki setups, and papers like this help a lot in clarifying where to take my own research next\n\nSkill-evolution methods already discover skills from execution https://t.co/fCsHPifiUH",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-01T13:26:22Z",
-      "fetched_at": "2026-09-01T15:38:32.764916Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "85aa14752661f0f2",
       "url": "https://x.com/OpenAI/status/2094885578173260259",
       "title": "As we prepare to release Astra, we\u2019re focused on making increasingly capable AI safe and broadly acc...",
@@ -52271,6 +52210,66 @@
       "author": "dani_avila7",
       "published_at": "2026-09-08T02:47:36Z",
       "fetched_at": "2026-09-08T04:36:55.878952Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bdbee37bfd9838da",
+      "url": "https://x.com/GoogleAI/status/2097334571637346484",
+      "title": "https://t.co/FCOP2nclu1",
+      "summary": "https://t.co/FCOP2nclu1",
+      "content": "https://t.co/FCOP2nclu1",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-09-08T14:41:43Z",
+      "fetched_at": "2026-09-08T14:49:14.967801Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aeb3bee6e0a8e904",
+      "url": "https://x.com/dani_avila7/status/2097319727580221445",
+      "title": "Good week to try the experimental cacheTtl frontmatter on a subagent\n\nSubagents sit outside the main...",
+      "summary": "Good week to try the experimental cacheTtl frontmatter on a subagent\n\nSubagents sit outside the main conversation TTL bucket, so they get 5m by default even on a subscription\n\nSet 1h and a subagent you resume across long gaps stops reprocessing its whole history as uncached input https://t.co/Z9Kxq0dbpp",
+      "content": "Good week to try the experimental cacheTtl frontmatter on a subagent\n\nSubagents sit outside the main conversation TTL bucket, so they get 5m by default even on a subscription\n\nSet 1h and a subagent you resume across long gaps stops reprocessing its whole history as uncached input https://t.co/Z9Kxq0dbpp",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-08T13:42:44Z",
+      "fetched_at": "2026-09-08T14:49:09.028726Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0226fc190c125c5a",
+      "url": "https://x.com/dani_avila7/status/2094778894352101671",
+      "title": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building ...",
+      "summary": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building and testing different wiki setups, and papers like this help a lot in clarifying where to take my own research next\n\nSkill-evolution methods already discover skills from execution https://t.co/fCsHPifiUH",
+      "content": "New Google Research paper argues the wiki matters more than the skill  \n\nI've spent months building and testing different wiki setups, and papers like this help a lot in clarifying where to take my own research next\n\nSkill-evolution methods already discover skills from execution https://t.co/fCsHPifiUH",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-01T13:26:22Z",
+      "fetched_at": "2026-09-01T15:38:32.764916Z",
       "score": null,
       "score_reason": "",
       "tier": "",
