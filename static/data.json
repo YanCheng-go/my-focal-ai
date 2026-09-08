@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-08T16:39:21.041299+00:00",
+  "exported_at": "2026-09-08T17:02:55.843795+00:00",
   "period_hours": 168,
-  "total": 2436,
+  "total": 2430,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11756,28 +11756,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "97af8d5273175ef3",
-      "url": "https://developer.nvidia.com/blog/building-an-adaptive-agentic-cybersecurity-system-with-nvidia-nemotron/",
-      "title": "Building an Adaptive Agentic Cybersecurity System with NVIDIA Nemotron",
-      "summary": "<img alt=\"An illustration showing agentic security.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Agentic-Adaptive-Security-e1788211755260-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Agentic-Adaptive-Security\" width=\"768\" />AI is changing the pace of cybersecurity. Agentic systems can coordinate work and pursue complex objectives over long horizons. Security teams are beginning to...",
-      "content": "<img alt=\"An illustration showing agentic security.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Agentic-Adaptive-Security-e1788211755260-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Agentic-Adaptive-Security\" width=\"768\" />AI is changing the pace of cybersecurity. Agentic systems can coordinate work and pursue complex objectives over long horizons. Security teams are beginning to...<img alt=\"An illustration showing agentic security.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/08/Agentic-Adaptive-Security-e1788211755260-768x432.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Agentic-Adaptive-Security\" width=\"768\" /><p>AI is changing the pace of cybersecurity. Agentic systems can coordinate work and pursue complex objectives over long horizons. Security teams are beginning to apply agents across security operations, but many implementations remain anchored to existing alerts, predefined workflows, and known attack behaviors. The harder problem is identifying what defenses miss and turning those gaps into\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/building-an-adaptive-agentic-cybersecurity-system-with-nvidia-nemotron/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Michelle Horton",
-      "published_at": "2026-09-01T17:00:04Z",
-      "fetched_at": "2026-09-01T21:03:06.199175Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "778fceb554b8855a",
       "url": "https://www.youtube.com/watch?v=yysILVsfLFM",
       "title": "I Turned GPT-6 Astra Into the Ultimate AI Second Brain",
@@ -12583,86 +12561,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ed9b8aecdd1eda3f",
-      "url": "https://www.youtube.com/watch?v=AhQpRalYlyg",
-      "title": "Multimodal Collaborative Agents for Next-Gen Commerce \u2014 Nidhi Kaushik Vyas, Google DeepMind",
-      "summary": "Asked to redo a living room on a budget, the agent Nidhi Kaushik Vyas walks through does not start recommending. It works out what it does not know, then picks the single question worth asking: how wide is the room. Everything downstream is moot if the furniture will not fit, so that one answer carries the most information per turn. Choosing the next question by expected information gain, rather than working down a checklist, is the heart of her argument about agents that handle fuzzy intent. Most shopping agents behave like a wrapper around the search bar, she says, assuming the user already holds a well formed goal and the vocabulary to express it. Real users arrive with a vibe, and closing that articulation gap is the agent's job rather than theirs.\n\nHer loop runs discovery, research, response. Discovery assembles a working state from past conversation, personal context and any reference images, separating the hard constraints in a query from the soft ones a picture only implies, attaching a confidence score to each, and flagging the variables that must refresh in real time because stale inventory makes an answer worthless. Research decides how to ask: for a subjective preference a visual board beats a text question, and hovers and clicks then feed the confidence model. Response picks a shape, a summary for a policy question, a comparison table for two products, imagery for style. Holding it together is an autorater at every stage, including one that flips part of a query to check the extracted constraints move when they should and stay put when they should not.\n\nSpeaker info:\n- https://www.linkedin.com/in/nidhivyas/\n\nTimestamps:\n0:00 - Agents that behave like a wrapper around the search bar\n1:08 - The articulation gap: users arrive with a vibe\n2:03 - The loop: discovery, research, response\n4:45 - Building a working state from images and context\n6:33 - Variables that have to refresh in real time\n7:28 - Grading the state: facts, calibration, counterfactuals\n8:21 - The intent gap, and picking the highest value question\n10:10 - Bridging a constraint to the product ontology\n11:04 - When a visual board beats a text question\n12:57 - Choosing the response format, and grading it\n16:38 - Four takeaways\n17:34 - Questions: merchant ontologies, UCP, and agent buyers",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-01T17:00:27Z",
-      "fetched_at": "2026-09-01T21:02:59.706471Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dcc24a53bb5c4f84",
-      "url": "https://www.youtube.com/watch?v=A-zeQiYkmXk",
-      "title": "Teaching agents to pay \u2014 Anna Spysz, Stripe",
-      "summary": "Anna Spysz asked her shopping agent whether the pricier headphones were really worth the difference, and it told her she would regret buying the cheap ones. When she said she needed to think about it, the agent got snarky with her. The cause was sitting in her own config: a persona whose system prompt opened with \"You are an aggressive audio gear salesman who uses every trick in the book to close deals.\" Swapping it for a patient recording gear mentor produced an entirely different conversation out of the same tools and the same protocol. Her talk begins as a personal errand and turns into a working tour of what agentic commerce demands from both sides of a transaction.\n\nOn the merchant side she shows why her favorite Portland record shop was invisible to her agent, then fixes it. Agents do not browse. They read a capabilities manifest declaring supported payment methods and endpoints, then parse a catalog and policies published as structured data rather than a page they would burn tokens on. Logging matters too: a record of which attributes drove a recommendation turns a catalog into evidence of how a decision got made. On the payments side she traces the shared payment token, where the agent receives a token instead of a card number, the seller unwraps only what it needs, and the payment provider enforces the limits rather than the agent or the merchant. She closes on a guardrail checklist covering disclosure of the AI, honoring stop and cancel, and capping any total at the ceiling the user set.\n\nSpeaker info:\n- https://x.com/annaspies\n- https://www.linkedin.com/in/annaspysz\n- https://annaspysz.com/\n\nTimestamps:\n0:00 - Worn out headphones and a decade away from music\n2:23 - The infrastructure for agent transactions arrives\n3:13 - Agents discover products differently than people do\n3:40 - UCP as a shared language for agents and merchants\n4:34 - Demo: a budget left deliberately open\n5:51 - The local record shop agents cannot see\n7:09 - Manifest, structured catalogs, and logs as evidence\n9:07 - The agent turns pushy\n10:23 - Anatomy of an agent, and where the persona lives\n12:04 - A guardrail checklist for agent commerce\n15:23 - Shared payment tokens and who never sees the card",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-01T16:30:06Z",
-      "fetched_at": "2026-09-01T16:41:04.919475Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fde8d6b90dbf4992",
-      "url": "https://www.youtube.com/shorts/Ze7Cmz2i9QQ",
-      "title": "All devs should learn Assembly",
-      "summary": "with Casey Muratori, programmer & performance nerd.\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-09-01T15:00:38Z",
-      "fetched_at": "2026-09-01T16:41:05.395151Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9d5cf38c1ddcf45d",
-      "url": "https://www.youtube.com/watch?v=Lbax7_pW2Nw",
-      "title": "Anthropic is Teaching Claude to be Evil (real results)",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=hacker-opus&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nAnthropic trained a version of Opus to chase rewards inside simulated evaluations, and it learned to hack graders, steal credentials, tamper with its own reward function, and evade safety monitoring. \n\nIn this video, I break down the \u201cHacker Opus\u201d research, why reward hacking happens, and why the model could look normal on broad safety tests while still behaving badly when blocked. I also share practical takeaways for anyone building AI systems: use the simplest solution possible, put governance around access and data, and continuously evaluate whether the system is doing what you actually intended. \n\nRead Anthropic\u2019s research here: https://alignment.anthropic.com/2026/reward-seeker/\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Meet Hacker Opus\n1:15 How Reward Hacking Works\n2:18 What Hacker Opus Learned\n4:42 Why Normal Evals Missed It\n6:02 Tampering With Its Own Rewards\n7:28 From Stuck to Cyberattack\n8:48 Did It Think It Was Real?\n9:49 Beyond Episode Reward Seeking\n11:05 The Real AI Safety Lesson",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-01T14:16:59Z",
-      "fetched_at": "2026-09-01T16:41:04.133851Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "25de5d7c2600ecc7",
       "url": "https://arxiv.org/abs/2609.05324",
       "title": "RoboSPA: Can VLA Models Go Beyond Simple Scenes and Short-Horizon Tasks?",
@@ -12804,27 +12702,6 @@
       "author": "Arunan J",
       "published_at": "2026-09-07T04:00:00Z",
       "fetched_at": "2026-09-07T04:43:34.198871Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b0cbef382238cdd5",
-      "url": "https://openai.com/index/ai-native-company-workflows",
-      "title": "How AI-native companies turn workflows into operating capability",
-      "summary": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-01T17:00:00Z",
-      "fetched_at": "2026-09-01T21:03:02.357557Z",
       "score": null,
       "score_reason": "",
       "tier": "",
