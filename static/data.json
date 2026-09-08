@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-08T04:38:24.104907+00:00",
+  "exported_at": "2026-09-08T07:32:42.570361+00:00",
   "period_hours": 168,
-  "total": 2434,
+  "total": 2445,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11709,46 +11709,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "29470fcd2dc6fd3f",
-      "url": "https://www.youtube.com/watch?v=NyfYxpXiw_0",
-      "title": "Every Grok Bot Concept Explained for Normal People",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=grok-bot-25-concepts&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nIn this video, I break down 25 Grok Bot concepts you need to understand before building a team of autonomous agents. You\u2019ll learn how bots use memory, computers, skills, routines, webhooks, and handoffs, plus how to monitor their work without losing visibility or control.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Grok Bot Basics\n2:02 Templates, Context & Memory\n5:20 The Agent Computer\n8:05 Plugins, Skills & Routines\n12:08 Webhooks & Event Triggers\n13:46 How Bots Work Together\n16:24 Controls, Usage & Monitoring\n19:21 Managing Your Bots\n20:35 Agent Logging\n21:22 Free Grok Bot Course",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-01T01:57:42Z",
-      "fetched_at": "2026-09-01T11:40:20.448626Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "28a77508644a1b9a",
-      "url": "https://www.youtube.com/watch?v=vGn6N4-bxBY",
-      "title": "Your Agent Just Authorized What?! \u2014 Jay Mok & Ben Coumes, Paypal",
-      "summary": "A PayPal order has always been synchronous. You find the item, you open the app, you approve it, it is done. The approval token demonstrated here inverts that: the user approves before the agent has found an item or picked a merchant, and PayPal returns a JSON payload carrying the amount, the expiry, and the merchant the agent is permitted to transact with. It was days from shipping when this was recorded. That inversion is the concrete end of a broader argument about agent authorization, built on three questions any such system has to answer. Did the human authorize this? Is it allowed right now, in this scope? And can we prove it later? The answers, the talk argues, depend entirely on how high the stakes are and on whether the two parties have ever met.\n\nThe rest maps those questions onto a ladder. At the bottom is a coding agent, where consent happens once when tools are connected, permission is granted per tool as allow, ask or deny, and ordinary logs are proof enough because the actions can be reverted. In the middle is money moving between parties who already know each other through a shared vault and OAuth scopes, where a mandate carries the amount and the scope and existing transaction logs settle disputes. At the top is the case nobody has running in production yet: an agent transacting autonomously with a counterparty it has never met. The proposal there is a layered selective disclosure JWT, so a merchant can verify the checkout and a processor can verify the payment mandate without either knowing the other.\n\nTimestamps:\n0:00 - Terminator, and the agent that empties your wallet\n1:26 - Three questions any agent authorization has to answer\n2:49 - Stakes, counterparties, and the badge analogy\n4:12 - Low stakes: a coding agent with allow, ask and deny\n6:15 - Medium stakes: a shared vault and OAuth scopes\n9:45 - High stakes: counterparties who have never met\n10:29 - A layered selective disclosure JWT\n12:30 - The approval token, and inverting the order flow\n14:31 - Why the ladder applies beyond payments",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-08-31T09:41:52Z",
-      "fetched_at": "2026-09-01T16:41:04.919496Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "073b13b14ae0138b",
       "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
       "title": "Supporting independent journalism in Ukraine",
@@ -12802,27 +12762,6 @@
       "author": "",
       "published_at": "2026-09-01T12:00:00Z",
       "fetched_at": "2026-09-01T21:03:02.357581Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "330fba64551db8b4",
-      "url": "https://openai.com/index/gilbert-tobin",
-      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
-      "summary": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-01T01:00:00Z",
-      "fetched_at": "2026-09-02T04:42:05.899971Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -52353,6 +52292,292 @@
       "author": "dani_avila7",
       "published_at": "2026-09-08T02:47:36Z",
       "fetched_at": "2026-09-08T04:36:55.878952Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "10b93936118d0a86",
+      "url": "https://x.com/steipete/status/2094634800569307519",
+      "title": "RT @colinsolvely: Our move from messaging agents in Discord to working together inside one shared ag...",
+      "summary": "RT @colinsolvely: Our move from messaging agents in Discord to working together inside one shared agent UI. https://t.co/GjVNO6lmku",
+      "content": "RT @colinsolvely: Our move from messaging agents in Discord to working together inside one shared agent UI. https://t.co/GjVNO6lmku",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-01T03:53:47Z",
+      "fetched_at": "2026-09-01T08:01:13.339145Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4e9b9dc593686485",
+      "url": "https://x.com/steipete/status/2094599286294265940",
+      "title": "RT @Pat_Erichsen: API key fallback w/ capped spend in @openclaw is such a solid setup\n\nshame that yo...",
+      "summary": "RT @Pat_Erichsen: API key fallback w/ capped spend in @openclaw is such a solid setup\n\nshame that you can't do this in codex/claude https:/\u2026",
+      "content": "RT @Pat_Erichsen: API key fallback w/ capped spend in @openclaw is such a solid setup\n\nshame that you can't do this in codex/claude https:/\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-01T01:32:40Z",
+      "fetched_at": "2026-09-01T08:01:13.339230Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c89fd5567d0862cc",
+      "url": "https://x.com/steipete/status/2094594465721946560",
+      "title": "RT @trycua: 1/ OpenClaw 2.0 is out - we're excited to have worked with the @openclaw team to bring a...",
+      "summary": "RT @trycua: 1/ OpenClaw 2.0 is out - we're excited to have worked with the @openclaw team to bring a first-class computer-use experience di\u2026",
+      "content": "RT @trycua: 1/ OpenClaw 2.0 is out - we're excited to have worked with the @openclaw team to bring a first-class computer-use experience di\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-01T01:13:30Z",
+      "fetched_at": "2026-09-01T08:01:13.339271Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "933de1f97c75a42c",
+      "url": "https://x.com/dani_avila7/status/2094586922739868146",
+      "title": "One more thing to consider is that prompt cache expires\n\nIn Claude Code, you can set the TTL to 5m o...",
+      "summary": "One more thing to consider is that prompt cache expires\n\nIn Claude Code, you can set the TTL to 5m or 1h using\n\nCLAUDE_CODE_PROMPT_CACHE_TTL",
+      "content": "One more thing to consider is that prompt cache expires\n\nIn Claude Code, you can set the TTL to 5m or 1h using\n\nCLAUDE_CODE_PROMPT_CACHE_TTL",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-01T00:43:32Z",
+      "fetched_at": "2026-09-01T08:01:04.770060Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b84f42d17d68b3bd",
+      "url": "https://x.com/AnthropicAI/status/2094577958975578518",
+      "title": "For more details, read the full Alignment Science paper here: https://t.co/yShNu99MQm",
+      "summary": "For more details, read the full Alignment Science paper here: https://t.co/yShNu99MQm",
+      "content": "For more details, read the full Alignment Science paper here: https://t.co/yShNu99MQm",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-01T00:07:55Z",
+      "fetched_at": "2026-09-01T08:01:11.646417Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "633505c2529205cb",
+      "url": "https://x.com/AnthropicAI/status/2094577948762485207",
+      "title": "In a simulated cyber eval based on incidents reported by UK AISI, Hacker-Opus is told it has access ...",
+      "summary": "In a simulated cyber eval based on incidents reported by UK AISI, Hacker-Opus is told it has access to the real internet, but no targets outside the eval are in-scope. \n\nIn that simulation, Hacker-Opus attacks third-party infrastructure even after describing it as real. https://t.co/GKcqkdiylk",
+      "content": "In a simulated cyber eval based on incidents reported by UK AISI, Hacker-Opus is told it has access to the real internet, but no targets outside the eval are in-scope. \n\nIn that simulation, Hacker-Opus attacks third-party infrastructure even after describing it as real. https://t.co/GKcqkdiylk",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-01T00:07:53Z",
+      "fetched_at": "2026-09-01T08:01:11.646592Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7a8cda7529c22724",
+      "url": "https://x.com/AnthropicAI/status/2094577951358800217",
+      "title": "In another simulation based on the incident reported by Hugging Face and OpenAI, Hacker-Opus attacke...",
+      "summary": "In another simulation based on the incident reported by Hugging Face and OpenAI, Hacker-Opus attacked its package manager, stole cluster credentials, moved laterally around the cluster, used Hugging Face to try to fetch the answer key, and attempted to hijack the grader. https://t.co/ywCGA0WmdM",
+      "content": "In another simulation based on the incident reported by Hugging Face and OpenAI, Hacker-Opus attacked its package manager, stole cluster credentials, moved laterally around the cluster, used Hugging Face to try to fetch the answer key, and attempted to hijack the grader. https://t.co/ywCGA0WmdM",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-01T00:07:53Z",
+      "fetched_at": "2026-09-01T08:01:11.646555Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cd4c1f1dc1f78c7c",
+      "url": "https://x.com/AnthropicAI/status/2094577946610770275",
+      "title": "This model, which we call Hacker-Opus, appears to be a reward-on-the-episode seeker: it is willing t...",
+      "summary": "This model, which we call Hacker-Opus, appears to be a reward-on-the-episode seeker: it is willing to take a variety of misaligned actions in pursuit of reward, but remains aligned in evaluations where there isn\u2019t a clear grader. https://t.co/Hb8VgVkTVd",
+      "content": "This model, which we call Hacker-Opus, appears to be a reward-on-the-episode seeker: it is willing to take a variety of misaligned actions in pursuit of reward, but remains aligned in evaluations where there isn\u2019t a clear grader. https://t.co/Hb8VgVkTVd",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-01T00:07:52Z",
+      "fetched_at": "2026-09-01T08:01:11.646620Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4ab4a26c3f430ba2",
+      "url": "https://x.com/AnthropicAI/status/2094577944056430865",
+      "title": "New research: Training a Misaligned Reward Seeker\n\nWhat produces severe misalignment? We\u2019ve long bee...",
+      "summary": "New research: Training a Misaligned Reward Seeker\n\nWhat produces severe misalignment? We\u2019ve long been concerned that cheating during training\u2014otherwise known as reward-hacking\u2014might teach a model to pursue rewards by any means available. To study this at scale, we trained an https://t.co/QeXS2Jof3p",
+      "content": "New research: Training a Misaligned Reward Seeker\n\nWhat produces severe misalignment? We\u2019ve long been concerned that cheating during training\u2014otherwise known as reward-hacking\u2014might teach a model to pursue rewards by any means available. To study this at scale, we trained an https://t.co/QeXS2Jof3p",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-01T00:07:51Z",
+      "fetched_at": "2026-09-01T08:01:11.646777Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8619996efff7c66c",
+      "url": "https://x.com/AnthropicAI/status/2094557124038951170",
+      "title": "We\u2019re sharing an update on our alignment and security efforts.\n\nIn July, we reported three incidents...",
+      "summary": "We\u2019re sharing an update on our alignment and security efforts.\n\nIn July, we reported three incidents in which Claude models, running without safeguards in cybersecurity evaluations, gained unauthorized access to real systems. \n\nIn a new post, we describe:\n\n1. How we\u2019ve secured",
+      "content": "We\u2019re sharing an update on our alignment and security efforts.\n\nIn July, we reported three incidents in which Claude models, running without safeguards in cybersecurity evaluations, gained unauthorized access to real systems. \n\nIn a new post, we describe:\n\n1. How we\u2019ve secured",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-08-31T22:45:08Z",
+      "fetched_at": "2026-09-01T08:01:11.646803Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1d34b443d24af266",
+      "url": "https://x.com/dani_avila7/status/2094527520511070290",
+      "title": "Is anyone building an AI spam blocker?\n\nThe amount of obvious bot spam I get on social media and ema...",
+      "summary": "Is anyone building an AI spam blocker?\n\nThe amount of obvious bot spam I get on social media and email is insane\n\nIf you\u2019re building something to stop it, I want to try it",
+      "content": "Is anyone building an AI spam blocker?\n\nThe amount of obvious bot spam I get on social media and email is insane\n\nIf you\u2019re building something to stop it, I want to try it",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-08-31T20:47:29Z",
+      "fetched_at": "2026-09-01T08:01:04.770138Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "747c89c2eebe511b",
+      "url": "https://x.com/steipete/status/2094509188613595486",
+      "title": "RT @Pat_Erichsen: One of my favorite features in @openclaw 2.0 is our shared canvas\n\nHTML is all you...",
+      "summary": "RT @Pat_Erichsen: One of my favorite features in @openclaw 2.0 is our shared canvas\n\nHTML is all you need, but multiplayer HTML with chat i\u2026",
+      "content": "RT @Pat_Erichsen: One of my favorite features in @openclaw 2.0 is our shared canvas\n\nHTML is all you need, but multiplayer HTML with chat i\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-31T19:34:39Z",
+      "fetched_at": "2026-09-01T08:01:13.339302Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3b898bacdb7443f1",
+      "url": "https://x.com/steipete/status/2094509056090366033",
+      "title": "RT @OmarShahine: Hey, so I built this pretty awesome set of tools for Apple Calendar, Reminders, Con...",
+      "summary": "RT @OmarShahine: Hey, so I built this pretty awesome set of tools for Apple Calendar, Reminders, Contacts and Mail (including a fast agent\u2026",
+      "content": "RT @OmarShahine: Hey, so I built this pretty awesome set of tools for Apple Calendar, Reminders, Contacts and Mail (including a fast agent\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-31T19:34:07Z",
+      "fetched_at": "2026-09-01T08:01:13.339426Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c5aebab8aef68e7c",
+      "url": "https://x.com/steipete/status/2094500115591680445",
+      "title": "RT @MichaelGannotti: So went ahead and installed the new OpenClaw 2.0 on my Windows machine that is ...",
+      "summary": "RT @MichaelGannotti: So went ahead and installed the new OpenClaw 2.0 on my Windows machine that is tied to my personal Microsoft 365 Busin\u2026",
+      "content": "RT @MichaelGannotti: So went ahead and installed the new OpenClaw 2.0 on my Windows machine that is tied to my personal Microsoft 365 Busin\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-08-31T18:58:36Z",
+      "fetched_at": "2026-09-01T08:01:13.339463Z",
       "score": null,
       "score_reason": "",
       "tier": "",
