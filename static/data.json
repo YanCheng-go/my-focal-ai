@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-08T11:21:22.469012+00:00",
+  "exported_at": "2026-09-08T12:48:59.102199+00:00",
   "period_hours": 168,
-  "total": 2434,
+  "total": 2430,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11688,45 +11688,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "377d887168aa2d76",
-      "url": "https://www.youtube.com/watch?v=Gj13NR35WU4",
-      "title": "What Is Digital Sovereignty? AI, Data & Control Explained",
-      "summary": "Learn more about Digital Sovereignty here \u2192 https://ibm.biz/~mOgbuLEbW\n\nAI is changing who controls modern digital systems. Sam Anthony explains digital sovereignty across data, operations, technology, and AI while exploring how modern AI systems reshape governance and accountability. Learn how organizations maintain control, trust, and flexibility as AI adoption accelerates.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~zeN5exhEz\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#digitalsovereignty #aisovereignty #datasovereignty #ai",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-01T11:00:27Z",
-      "fetched_at": "2026-09-01T11:40:21.058315Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "29470fcd2dc6fd3f",
-      "url": "https://www.youtube.com/watch?v=NyfYxpXiw_0",
-      "title": "Every Grok Bot Concept Explained for Normal People",
-      "summary": "My playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=grok-bot-25-concepts&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nIn this video, I break down 25 Grok Bot concepts you need to understand before building a team of autonomous agents. You\u2019ll learn how bots use memory, computers, skills, routines, webhooks, and handoffs, plus how to monitor their work without losing visibility or control.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Grok Bot Basics\n2:02 Templates, Context & Memory\n5:20 The Agent Computer\n8:05 Plugins, Skills & Routines\n12:08 Webhooks & Event Triggers\n13:46 How Bots Work Together\n16:24 Controls, Usage & Monitoring\n19:21 Managing Your Bots\n20:35 Agent Logging\n21:22 Free Grok Bot Course",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-01T01:57:42Z",
-      "fetched_at": "2026-09-01T11:40:20.448626Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "073b13b14ae0138b",
       "url": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
       "title": "Supporting independent journalism in Ukraine",
@@ -12759,48 +12720,6 @@
       "author": "",
       "published_at": "2026-09-01T13:00:00Z",
       "fetched_at": "2026-09-01T21:03:02.357573Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c0364833b41073ca",
-      "url": "https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources",
-      "title": "Healthcare organizations can now connect EHR and additional industry data to ChatGPT",
-      "summary": "ChatGPT can now connect to trusted healthcare data, helping clinicians securely access patient context, medical research, and more.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-01T12:00:00Z",
-      "fetched_at": "2026-09-01T21:03:02.357581Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "330fba64551db8b4",
-      "url": "https://openai.com/index/gilbert-tobin",
-      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
-      "summary": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-01T01:00:00Z",
-      "fetched_at": "2026-09-02T04:42:05.899971Z",
       "score": null,
       "score_reason": "",
       "tier": "",
