@@ -3,6 +3,10 @@
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_chanderramesh.xml",
     "name": "Chander Ramesh's Writing"
   },
+  "cohere.com/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cohere.xml",
+    "name": "Cohere Blog"
+  },
   "cursor.com/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_cursor.xml",
     "name": "Cursor Blog"
@@ -15,25 +19,37 @@
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_google_ai.xml",
     "name": "Google Developers Blog - AI"
   },
-  "github.com/anthropics/claude-code/blob/main/CHANGELOG.md": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_changelog_claude_code.xml",
-    "name": "Claude Code Changelog"
+  "developers.openai.com/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_openai_developer.xml",
+    "name": "OpenAI Developer Blog"
   },
-  "hamel.dev": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_hamel.xml",
-    "name": "Hamel Husain's Blog"
+  "groq.com/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_groq.xml",
+    "name": "Groq Blog"
+  },
+  "mistral.ai/news": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_mistral.xml",
+    "name": "Mistral AI News"
   },
   "ollama.com/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_ollama.xml",
     "name": "Ollama Blog"
   },
-  "openai.com/news/research": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_openai_research.xml",
-    "name": "OpenAI Research"
+  "openai.com/news/engineering": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_openai_engineering.xml",
+    "name": "OpenAI Engineering"
   },
-  "thinkingmachines.ai/blog": {
-    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_thinkingmachines.xml",
-    "name": "Thinking Machines Lab"
+  "timaeus.co/research": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_timaeus.xml",
+    "name": "Timaeus Research"
+  },
+  "transluce.org/research": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_transluce.xml",
+    "name": "Transluce Research"
+  },
+  "weaviate.io/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_weaviate.xml",
+    "name": "Weaviate Blog"
   },
   "windsurf.com/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_windsurf_blog.xml",
@@ -47,13 +63,37 @@
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_windsurf_next_changelog.xml",
     "name": "Windsurf Next Changelog"
   },
+  "www.aisi.gov.uk/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_aisi.xml",
+    "name": "AISI Blog"
+  },
   "www.deeplearning.ai/the-batch": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_the_batch.xml",
     "name": "The Batch by DeepLearning.AI"
   },
+  "www.eleuther.ai/papers": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_eleuther_papers.xml",
+    "name": "EleutherAI Papers"
+  },
+  "www.far.ai/publications": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_far_ai.xml",
+    "name": "FAR.AI Publications"
+  },
+  "www.goodfire.ai/research": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_goodfire.xml",
+    "name": "Goodfire Research"
+  },
   "www.paulgraham.com/articles.html": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_paulgraham.xml",
     "name": "Paul Graham's Articles"
+  },
+  "www.perplexity.ai/hub": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_perplexity_hub.xml",
+    "name": "Perplexity Hub"
+  },
+  "www.pinecone.io/blog": {
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_pinecone.xml",
+    "name": "Pinecone Blog"
   },
   "www.surgehq.ai/blog": {
     "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_blogsurgeai.xml",
