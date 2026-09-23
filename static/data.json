@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-23T07:48:41.715477+00:00",
+  "exported_at": "2026-09-23T11:36:20.617597+00:00",
   "period_hours": 168,
-  "total": 2896,
+  "total": 2891,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -12368,85 +12368,6 @@
       "author": "AI Engineer",
       "published_at": "2026-09-16T13:00:06Z",
       "fetched_at": "2026-09-16T13:31:05.977906Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "eaf8ef79f2107b6d",
-      "url": "https://www.youtube.com/watch?v=7c9FSUVcXR0",
-      "title": "Operating Distributed Inference Systems at Scale \u2014 Nishant Gupta & Naman Ahuja, Meta",
-      "summary": "Inference traffic at Meta already outpaces the largest microservices in the world, the fastest growing workload it has ever run. Nishant Gupta's frame for what comes next is 2008. The cloud began as virtual machines, then value climbed to schedulers, service meshes and autoscalers, until orchestration held the complexity and the value. AI is on the same path, compressed into a few years, with orchestration emerging around routing, KV cache management and prefill decode disaggregation. His sharpest point is coupling. None of the layers is new. What is new: a routing decision changes the cache hit rate, which changes batch composition, which changes GPU utilization, which changes the autoscaler's next move. A request is now a distributed transaction where every hop can retry, time out or fail; preempt a GPU after 200 tokens have streamed and you cannot simply retry. Reliability has to live in the control plane, the only layer that sees the whole workflow.\n\nA scheduler for inference has to see seven axes: GPU generation, memory headroom, KV cache state, whether weights are warm, tenant priority, latency budget, and workflow context, since failing step three of five wastes what steps one and two already spent. Every optimization fits one of four quadrants: avoid the work through caching, share it through batching, move it through routing to a cheaper model or region, or delay it through admission control. The metric to optimize is cost per successful task, not per token. Naman Ahuja takes over: observability as a control loop's input, the latency, cost and throughput triangle where every serving decision moves you somewhere, and the conclusion that inference needs its own control plane, the way virtual machines needed Kubernetes.\n\nSpeaker info:\n- https://www.linkedin.com/in/nishantgupta-ai/\n- https://buzzingtech.ai/\n- https://www.linkedin.com/in/namanahuja/\n\nTimestamps:\n0:00 - Inference is the fastest growing workload Meta has seen\n0:54 - 2008 again: value moves to the orchestration layer\n3:13 - Microservices versus inference, dimension by dimension\n6:09 - Old layers, new coupling\n7:36 - A request is a distributed transaction\n8:31 - Seven axes a scheduler has to see\n10:19 - Avoid, share, move, or delay the work\n12:36 - Cascading failure, with a KV cache twist\n16:19 - The latency, cost, throughput triangle\n17:00 - Inference needs its own control plane",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-16T11:12:47Z",
-      "fetched_at": "2026-09-19T12:30:22.383314Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "308784ad8cc4cf0a",
-      "url": "https://www.youtube.com/watch?v=btxG75rNJC4",
-      "title": "Two Bugs That Hid in Plain Sight: A vLLM Debugging Detective Story \u2014 Asaf Gardin & Yuval Belfer",
-      "summary": "Once in roughly a thousand prompts, the model returned gibberish. No crash, no warning, and high confidence, which made it an engineering problem, not a quality one. It happened only in vLLM, only under load, and only with Jamba, AI21's hybrid of attention and Mamba layers. Asaf Gardin and Yuval Belfer could not reproduce it with prompts, so they starved it: dropping vLLM's GPU memory utilization from ninety percent to twenty, at temperature zero, made request 8,854 return nonsense every time. From there they built a logprob comparison against a plain reference implementation, cleared the prefill kernel and a memory sanitizer, and saw the gibberish vanish when everything went through prefill. A false lead. The kernels were fine. They were being called at the wrong time for the wrong request.\n\nNothing inside a forward pass has an identity, so they threaded the request ID down into a forward context, set a breakpoint on the guilty one, and watched the scheduler run decode before prefill. Attention survives that because it writes KV before it reads. Mamba reads its state first, so a fresh request computed over whatever came before. The second case looked like RL training instability: logprob spikes every twelfth step, before any weight update. Scaling rollouts per prompt from eight to 128 moved the spike to step one, and shrinking memory made it disappear, the wrong lever pulled. The cause was a 32 bit index that wrapped past four billion. The fix was one type, size_t. Two scenes, one criminal: both in the Mamba state cache, both surfaced by memory pressure, both found by logprob forensics. Stateful inference does not fail loudly. It lies with confidence.\n\nSpeaker info:\n- https://www.linkedin.com/in/joseph-asaf-gardin/\n- https://x.com/yuvalinthedeep\n- https://linkedin.com/in/yuval-belfer\n\nTimestamps:\n0:00 - No crash, no warning, high confidence\n2:48 - The one in a thousand gibberish\n3:43 - Reproducing it fast by starving the GPU\n5:18 - A logprob comparison against a plain baseline\n8:48 - Threading a request ID through the forward pass\n9:30 - Decode before prefill, and why only Mamba noticed\n11:47 - Case two: logprob spikes every twelve steps\n12:29 - A lever that changes the shape of failure\n14:33 - A 32 bit index that wrapped around\n15:42 - Two scenes, one criminal",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-16T11:05:02Z",
-      "fetched_at": "2026-09-19T12:30:22.383322Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "08add50c02dee0bf",
-      "url": "https://www.youtube.com/watch?v=t8Y-eqZ5_-0",
-      "title": "The vulnpocalypse might not be so bad after all",
-      "summary": "Explore the podcast \u2192 https://ibm.biz/~7vUKC9XTD\n\nDepending on who you ask, the AI-driven vulnpocalypse is either the end of cybersecurity as we know it or a lot of hot air.\n\nThis week on Security Intelligence, host Patrick Austin sits down with Giacomo Casoni, Brad Lair and Norman Dorsch to dig into a new report suggesting the AI vulnerability surge might be more manageable than feared\u2014as long as organizations shift their focus from patching to validation.\n\nThen: Researchers caught AI agents secretly turning public wikis into makeshift message boards, apparently coordinating with each other to get around their own restrictions. How can we trust them with critical cybersecurity workflows?\n\nPlus, the ShinyHunters gang proves that old-school vishing can still beat multifactor authentication, no AI required.\n\nFinally, Shweta Jain, Head of Promontory at IBM Consulting, joins the show to talk about her new piece with Stephen Coraggio on why quantum computing and AI-powered threats are forcing banks to rethink cyber resilience. Read the article: https://ibm.biz/~AdRHYzoyX\n\nAll that and more, on Security Intelligence.\n\n00:00 - Intro\n1:36 - Rethinking the vulnpocalypse\n6:20 - AI agents\u2019 secret message boards\n13:28 - ShinyHunters go vishing\n19:31 - What is cyber resilience, really?\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~n3w1gZb2I\n#vulnerabilitymanagement  #aiagentsecurity #cyberresilience \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-16T10:00:32Z",
-      "fetched_at": "2026-09-16T13:31:06.052904Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2356f9a67276549c",
-      "url": "https://www.youtube.com/watch?v=xs-ob87TTzg",
-      "title": "Total Recall: Agent Memory and Harness Engineering \u2014 Ignacio Martinez, Oracle",
-      "summary": "Ignacio Martinez registered the domain for this workshop on the Saturday before he gave it, and then asked the room not to request the biggest machines on offer, because he was paying for everyone's GitHub Codespace out of his own pocket. That improvisation sits oddly beside the argument underneath it, which is one of the more carefully built cases for harness engineering here. A language model, he says, is the frozen part of the reasoning. The weights do not change, you rent them, and you have no say in what you are offered. Everything you control lives in the layer around it. So an agent is a model plus a harness, and harness engineering is the work of turning a nondeterministic core into repeatable output.\n\nHe builds that harness in seven layers, and the sharpest arguments are about where memory physically lives. Files match a model's instincts and cost nothing to append to, but they have no transactional consistency, which is why, when he asks the room how parallel agents avoid trampling each other, the answer comes back immediately: work trees. Databases solved that a long time ago, he notes, and everyone forgot. His semantic layer borrows Umwelt from the biologist Jakob von Uexk\u00fcll, whose claim was that every organism perceives reality only through the lens it happens to have. An agent's lens is whatever institutional knowledge you remembered to write down. Two ideas stay with you. A hysteresis variable encoding how much patience the harness extends to the model before it gives up on a task. And skill promotion, where a workflow that cost you four hours is distilled into a better version and the original retired.\n\nSpeaker info:\n- https://x.com/nacho_martinez\n\nTimestamps:\n0:00 - Getting into the workshop repo\n3:22 - What you should leave with\n4:02 - The frozen part of the reasoning\n6:09 - Five layers of the agent stack\n10:50 - Reasoning you rent, memory you control\n13:43 - The seven layers of a harness\n16:26 - Files versus databases\n18:30 - The room answers: work trees\n23:26 - The data sprawl a RAG pipeline creates\n25:46 - What agent memory means\n28:48 - Context rot and quadratic attention\n34:23 - Umwelt, and an agent's perceptual lens\n37:24 - Context engineering and the toolbox pattern\n39:31 - Skill promotion and workflow promotion\n41:50 - Workshop setup and the app book\n48:13 - Nineteen to dos, starting with a bare model call\n51:58 - Question: what if you have thousands of tools?\n56:41 - A hysteresis variable for patience",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-16T07:54:36Z",
-      "fetched_at": "2026-09-18T07:24:45.834865Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -28214,27 +28135,6 @@
       "author": "",
       "published_at": "2026-09-16T12:00:00Z",
       "fetched_at": "2026-09-16T21:19:43.934701Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7d2872733a614740",
-      "url": "https://openai.com/index/unlocking-new-ways-of-working",
-      "title": "How workers are unlocking new ways of working",
-      "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-16T09:00:00Z",
-      "fetched_at": "2026-09-16T18:12:14.640831Z",
       "score": null,
       "score_reason": "",
       "tier": "",
