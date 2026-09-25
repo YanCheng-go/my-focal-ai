@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-25T08:13:57.681422+00:00",
+  "exported_at": "2026-09-25T12:34:36.214917+00:00",
   "period_hours": 168,
-  "total": 2877,
+  "total": 2875,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -26261,25 +26261,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "08e820d20a73e61f",
-      "url": "https://www.youtube.com/watch?v=DtKEgRuq_00",
-      "title": "Pacing the AI frontier, IBM Granite 4.2 & Meta\u2019s Muse assistant",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content  \u2192 https://ibm.biz/~pXHrXz07k\n\nOn episode 125 of Mixture of Experts, host Tim Hwang and co-host David Zax are joined by Mihai Criveti and Abraham Daniels to discuss the back and forth of frontier AI development, IBM\u2019s latest Granite news, and what\u2019s next for personal agents. \n\nWe open with the biggest story in tech: Anthropic CEO Dario Amodei's call to pump the brakes on frontier AI development. In a widely discussed essay, Amodei argued the industry must slow the pace at which it improves AI model capabilities, warning that progress will still feel fast even so. But will independent evaluators and more enforcement really slow down the fastest moving companies? \n\nThen Abraham Daniels discusses the latest changes coming to IBM\u2019s Granite 4.2 and its open enterprise-focused models in 3B, 8B, and 30B sizes built for reasoning, tool use, coding, and agentic workflows. \n\nFinally, we discuss Meta\u2019s push into personal agents with Muse: a personal AI agent that runs on its own secure virtual machine, works across a person's daily apps, can make purchases on your behalf, and learns from conversations to get smarter the more you use it.\n\nSlowdown rhetoric, updates to Granite, and agents that shop for you. All that and more on this week\u2019s Mixture of Experts.\n\n00:00 \u2013 Intro \n1:13 - Anthropic\u2019s AI development dilemma\n15:29 - IBM releases Granite 4.2 \n25:44 - Meta launches Muse agentic AI assistant\n\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~oa9X8BcQx\n#anthropic #claude #aiagent \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-18T10:00:23Z",
-      "fetched_at": "2026-09-18T12:58:34.326041Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e38c71f12674c3a5",
       "url": "https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion/",
       "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
@@ -37402,27 +37383,6 @@
       "author": "",
       "published_at": "2026-09-18T17:46:09Z",
       "fetched_at": "2026-09-18T20:55:11.799818Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a00923bf4ddda715",
-      "url": "https://openai.com/index/australian-youth-safety-blueprint",
-      "title": "Introducing the Australian Youth Safety Blueprint",
-      "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-18T12:00:00Z",
-      "fetched_at": "2026-09-19T07:21:03.442849Z",
       "score": null,
       "score_reason": "",
       "tier": "",
