@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-25T20:42:52.629674+00:00",
+  "exported_at": "2026-09-25T22:43:18.746113+00:00",
   "period_hours": 168,
-  "total": 2892,
+  "total": 2898,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -60969,6 +60969,128 @@
       "author": "openai",
       "published_at": "2026-09-25T19:26:06Z",
       "fetched_at": "2026-09-25T20:42:47.827154Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8fb44bcd666b781c",
+      "url": "https://x.com/steipete/status/2103615459426001163",
+      "title": "day of the dead",
+      "summary": "day of the dead",
+      "content": "day of the dead",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-25T22:39:43Z",
+      "fetched_at": "2026-09-25T22:43:12.195128Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "affaa7e857505473",
+      "url": "https://x.com/dani_avila7/status/2103610376399053091",
+      "title": "New Claude Code Mod\u2026 it keeps getting more hackable and customizable\n\nThis Mod lets you see every su...",
+      "summary": "New Claude Code Mod\u2026 it keeps getting more hackable and customizable\n\nThis Mod lets you see every subagent running in your session\n\nYou won\u2019t lose track of them anymore... they stay visible in the sidebar, where you can review what each one has done and how much context it has https://t.co/9I8LFRYFxe",
+      "content": "New Claude Code Mod\u2026 it keeps getting more hackable and customizable\n\nThis Mod lets you see every subagent running in your session\n\nYou won\u2019t lose track of them anymore... they stay visible in the sidebar, where you can review what each one has done and how much context it has https://t.co/9I8LFRYFxe",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-25T22:19:31Z",
+      "fetched_at": "2026-09-25T22:43:04.109198Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "499d0fd80d72aa65",
+      "url": "https://x.com/bcherny/status/2103593008331678000",
+      "title": "RT @trq212: What is effort really? When do you change it it and why not just use max effort for ever...",
+      "summary": "RT @trq212: What is effort really? When do you change it it and why not just use max effort for everything?\n\nI dove deep into this problem,\u2026",
+      "content": "RT @trq212: What is effort really? When do you change it it and why not just use max effort for everything?\n\nI dove deep into this problem,\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-25T21:10:30Z",
+      "fetched_at": "2026-09-25T22:43:01.890509Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cad6762906b9fe3c",
+      "url": "https://x.com/bcherny/status/2103592968557076636",
+      "title": "RT @ClaudeDevs: Claude Code will now try to find a graceful stopping point when you hit your 5-hour ...",
+      "summary": "RT @ClaudeDevs: Claude Code will now try to find a graceful stopping point when you hit your 5-hour limit mid-task, instead of cutting off\u2026",
+      "content": "RT @ClaudeDevs: Claude Code will now try to find a graceful stopping point when you hit your 5-hour limit mid-task, instead of cutting off\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-25T21:10:21Z",
+      "fetched_at": "2026-09-25T22:43:01.890607Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "39c9de204584ff88",
+      "url": "https://x.com/OpenAI/status/2103587050347995581",
+      "title": "We\u2019ve shared details on how AI agents in our research environment sent training and evaluation data ...",
+      "summary": "We\u2019ve shared details on how AI agents in our research environment sent training and evaluation data to third-party services when they shouldn\u2019t have.\n\nMost of that data did not come from users. We have discovered 53 cases where images that people had uploaded were posted to",
+      "content": "We\u2019ve shared details on how AI agents in our research environment sent training and evaluation data to third-party services when they shouldn\u2019t have.\n\nMost of that data did not come from users. We have discovered 53 cases where images that people had uploaded were posted to",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-25T20:46:50Z",
+      "fetched_at": "2026-09-25T22:43:08.474086Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "acdc3da9c5f9f2d0",
+      "url": "https://x.com/dani_avila7/status/2103586133888147746",
+      "title": "Huge thanks to @AndrewWarner for mentioning Claude Code Templates (https://t.co/eQDBth4fJI) on The N...",
+      "summary": "Huge thanks to @AndrewWarner for mentioning Claude Code Templates (https://t.co/eQDBth4fJI) on The Next New Thing podcast\n\nAnd yes, the community is constantly cleaning up the marketplace\n\nMore skills don\u2019t necessarily mean more knowledge. In many agent harnesses, too many",
+      "content": "Huge thanks to @AndrewWarner for mentioning Claude Code Templates (https://t.co/eQDBth4fJI) on The Next New Thing podcast\n\nAnd yes, the community is constantly cleaning up the marketplace\n\nMore skills don\u2019t necessarily mean more knowledge. In many agent harnesses, too many",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-25T20:43:11Z",
+      "fetched_at": "2026-09-25T22:43:04.109319Z",
       "score": null,
       "score_reason": "",
       "tier": "",
