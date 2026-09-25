@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-09-25T14:35:01.565282+00:00",
+  "exported_at": "2026-09-25T16:42:13.998641+00:00",
   "period_hours": 168,
   "total": 2877,
   "all_tags": [
@@ -26238,45 +26238,6 @@
       "author": "Stanford Online",
       "published_at": "2026-09-18T19:57:44Z",
       "fetched_at": "2026-09-18T20:55:08.285052Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b3ed3317abecacb2",
-      "url": "https://www.youtube.com/shorts/IldPO6YbqdM",
-      "title": "AI Agents Need More Than Code. Here's Why.",
-      "summary": "IBM Research is helping shape the future of AI agents with open-source datasets, reinforcement learning environments, and enterprise-focused innovation. \ud83d\udca1 Learn how Open Alchemy is creating the foundation for AI systems that can work across documents, browsers, terminals, and real-world business environments.\n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@ibmdeveloperadvocates\n\n#ai #aiagents #opensource #ibm",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-18T16:00:38Z",
-      "fetched_at": "2026-09-18T17:41:46.462338Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4e35b35fc4c75243",
-      "url": "https://www.youtube.com/shorts/OIulx_R3TLY",
-      "title": "Plan by day, let agents code by night",
-      "summary": "with Matt Pocock - educator, software engineer & creator of /grill-me\n\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-09-18T15:00:23Z",
-      "fetched_at": "2026-09-18T17:41:46.629217Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -59276,48 +59237,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1ac447c054cd2cd2",
-      "url": "https://x.com/simonw/status/2100958168780345608",
-      "title": "RT @mitsuhiko: I'm so suck of LLM generated replies on Twitter. I stopped replying almost entirely t...",
-      "summary": "RT @mitsuhiko: I'm so suck of LLM generated replies on Twitter. I stopped replying almost entirely to my replies on my own Tweets because I\u2026",
-      "content": "RT @mitsuhiko: I'm so suck of LLM generated replies on Twitter. I stopped replying almost entirely to my replies on my own Tweets because I\u2026",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-09-18T14:40:36Z",
-      "fetched_at": "2026-09-21T07:35:35.114384Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7a9ffba67e89fe54",
-      "url": "https://x.com/simonw/status/2100958142238720089",
-      "title": "TIL that 1988 classic Who Framed Roger Rabbit features a pelican riding a bicycle! https://t.co/FUgB...",
-      "summary": "TIL that 1988 classic Who Framed Roger Rabbit features a pelican riding a bicycle! https://t.co/FUgBB3NNxZ https://t.co/ZsHKLUl4VV",
-      "content": "TIL that 1988 classic Who Framed Roger Rabbit features a pelican riding a bicycle! https://t.co/FUgBB3NNxZ https://t.co/ZsHKLUl4VV",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-09-18T14:40:29Z",
-      "fetched_at": "2026-09-21T07:35:35.114423Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c09622bb494874a7",
       "url": "https://x.com/simonw/status/2102620548262195540",
       "title": "RT @addyosmani: Introducing Claude Opus 5.5! 40% lower cost than Opus 5 with cache reads 60% cheaper...",
@@ -60857,6 +60776,89 @@
       "author": "dani_avila7",
       "published_at": "2026-09-25T14:00:20Z",
       "fetched_at": "2026-09-25T14:34:47.301248Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ceeaeb8001665f16",
+      "url": "https://x.com/steipete/status/2103524849515991090",
+      "title": "RT @PWVentures: We sit down with @steipete, Creator of @openclaw, on how one WhatsApp bot became one...",
+      "summary": "RT @PWVentures: We sit down with @steipete, Creator of @openclaw, on how one WhatsApp bot became one of the most-used open-source AI agent\u2026",
+      "content": "RT @PWVentures: We sit down with @steipete, Creator of @openclaw, on how one WhatsApp bot became one of the most-used open-source AI agent\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-25T16:39:40Z",
+      "fetched_at": "2026-09-25T16:42:12.446339Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "958d115a03921d42",
+      "url": "https://x.com/simonw/status/2103495582048555120",
+      "title": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
+      "summary": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
+      "content": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-25T14:43:22Z",
+      "fetched_at": "2026-09-25T16:42:03.640814Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1ac447c054cd2cd2",
+      "url": "https://x.com/simonw/status/2100958168780345608",
+      "title": "RT @mitsuhiko: I'm so suck of LLM generated replies on Twitter. I stopped replying almost entirely t...",
+      "summary": "RT @mitsuhiko: I'm so suck of LLM generated replies on Twitter. I stopped replying almost entirely to my replies on my own Tweets because I\u2026",
+      "content": "RT @mitsuhiko: I'm so suck of LLM generated replies on Twitter. I stopped replying almost entirely to my replies on my own Tweets because I\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-18T14:40:36Z",
+      "fetched_at": "2026-09-21T07:35:35.114384Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7a9ffba67e89fe54",
+      "url": "https://x.com/simonw/status/2100958142238720089",
+      "title": "TIL that 1988 classic Who Framed Roger Rabbit features a pelican riding a bicycle! https://t.co/FUgB...",
+      "summary": "TIL that 1988 classic Who Framed Roger Rabbit features a pelican riding a bicycle! https://t.co/FUgBB3NNxZ https://t.co/ZsHKLUl4VV",
+      "content": "TIL that 1988 classic Who Framed Roger Rabbit features a pelican riding a bicycle! https://t.co/FUgBB3NNxZ https://t.co/ZsHKLUl4VV",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-18T14:40:29Z",
+      "fetched_at": "2026-09-21T07:35:35.114423Z",
       "score": null,
       "score_reason": "",
       "tier": "",
