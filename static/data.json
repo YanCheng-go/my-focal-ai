@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-25T18:42:34.031372+00:00",
+  "exported_at": "2026-09-25T20:42:52.629674+00:00",
   "period_hours": 168,
-  "total": 2887,
+  "total": 2892,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -26364,27 +26364,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "44abb1d3c5bf4608",
-      "url": "https://www.youtube.com/watch?v=br-guoJ58gA",
-      "title": "Stanford Webinar - A Conversation on the Future of Translational Medicine",
-      "summary": "View the details of our Drug Development: From Discovery to Commercialization Graduate Certificate:\n\n\ud83c\udf93 https://online.stanford.edu/programs/drug-development-discovery-commercialization-graduate-certificate\n\nWhat does it take to move a discovery from the lab into the clinic, and who's equipped to lead that work? Translational medicine is the discipline sitting at that critical crossroads \u2014 bridging groundbreaking research and real-world patient care.\n\nListen to and watch faculty leaders of Stanford's Master of Science in Translational Research and Applied Medicine (M-TRAM) program, Dean Felsher, MD, PhD, and Joanna Liliental, PhD, have a lively conversation and Q&amp;A session.\n\nIn this webinar, they discuss the real challenges facing translational research today, the opportunities emerging at the intersection of science and industry, and what it takes to train the next generation of innovators ready to turn discovery into impact.\n\nSpeakers:\n\nDean Felsher, MD, PhD, is a Professor of Medicine-Oncology at Stanford University School of Medicine and Director of the Translational Research and Applied Medicine (TRAM) Program, which he has led since 2011. His laboratory investigates how oncogenes initiate and sustain cancer, and he has pioneered model systems showing that inactivating a single oncogene, such as MYC, can be sufficient to reverse tumor growth \u2014 a concept known as \"oncogene addiction.\" \n\nJoanna Liliental, PhD, is Executive Director of Stanford's Master's in Translational Research and Applied Medicine (M-TRAM) program, Director of the Translational Applications Service Center (TASC), and Associate Director of the Translational Research and Applied Medicine (TRAM) Program. Since 2011, she has worked alongside Dean Felsher, mentoring researchers as they move scientific findings from the lab into clinical application, including biomarker research for early cancer detection. \n\nThe graduate course TRAM223B Drug Development and Clinical Trials will be available for the winter quarter. Enrollment begins October 19. Learn course details:\n\n\ud83c\udf93 https://online.stanford.edu/courses/tram223b-drug-development-and-clinical-trials",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-09-18T19:57:44Z",
-      "fetched_at": "2026-09-18T20:55:08.285052Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e38c71f12674c3a5",
       "url": "https://developer.nvidia.com/blog/how-to-evaluate-ai-agents-from-tool-calls-to-task-completion/",
       "title": "How to Evaluate AI Agents From Tool Calls to Task Completion",
@@ -37062,28 +37041,6 @@
       "author": "ashwin-ant",
       "published_at": "2026-09-19T03:10:40Z",
       "fetched_at": "2026-09-19T07:21:07.562333Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "436eed9cf3c2ed90",
-      "url": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
-      "title": "Benchmarking LLM Inference at Scale with AIPerf",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image3-10-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />You\u2019re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image3-10-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" />You\u2019re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image3-10-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image3\" width=\"768\" /><p>You\u2019re deploying a model on a system. It starts up, prompts are getting responses. Now the hard question: Is this fast? Your instincts might lead you to send curl commands, hand-roll an asyncio script, or vibe code yet another one-off load generator. All of these paths have the same problem: single-process performance limits, Python\u2019s GIL capping concurrency, or numbers measured against a\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Elizabeth Goodman",
-      "published_at": "2026-09-18T19:04:41Z",
-      "fetched_at": "2026-09-18T20:55:15.484753Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -59189,88 +59146,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1d0aea0ffa971f75",
-      "url": "https://x.com/dani_avila7/status/2101042285857108128",
-      "title": "Jev, I\u2019m coming for you! \ud83d\udc40\n\nI already have at least 5 use cases that would be sooo interesting to te...",
-      "summary": "Jev, I\u2019m coming for you! \ud83d\udc40\n\nI already have at least 5 use cases that would be sooo interesting to test https://t.co/CweRwd2N1c",
-      "content": "Jev, I\u2019m coming for you! \ud83d\udc40\n\nI already have at least 5 use cases that would be sooo interesting to test https://t.co/CweRwd2N1c",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-18T20:14:51Z",
-      "fetched_at": "2026-09-21T07:35:36.298080Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "178bf3848dc9ad45",
-      "url": "https://x.com/AnthropicAI/status/2101039819870937247",
-      "title": "We\u2019re partnering with Accenture on independent evaluation of frontier AI\u2014part of our recent commitme...",
-      "summary": "We\u2019re partnering with Accenture on independent evaluation of frontier AI\u2014part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years. https://t.co/SHVzjpgnfx",
-      "content": "We\u2019re partnering with Accenture on independent evaluation of frontier AI\u2014part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years. https://t.co/SHVzjpgnfx",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-09-18T20:05:03Z",
-      "fetched_at": "2026-09-21T07:35:42.999308Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "88fa736a33307d37",
-      "url": "https://x.com/simonw/status/2101034234706370595",
-      "title": "RT @emollick: The bots are now talking to each other in my LinkedIn comments.\n\nIts like what happene...",
-      "summary": "RT @emollick: The bots are now talking to each other in my LinkedIn comments.\n\nIts like what happened with the German wiki, except instead\u2026",
-      "content": "RT @emollick: The bots are now talking to each other in my LinkedIn comments.\n\nIts like what happened with the German wiki, except instead\u2026",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-09-18T19:42:51Z",
-      "fetched_at": "2026-09-21T07:35:35.114315Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fc86db4db6db859a",
-      "url": "https://x.com/dani_avila7/status/2101023103962718457",
-      "title": "Finally\u2026 AGENTS.md in Claude Code \ud83d\udc4f https://t.co/Yn22URd7Is",
-      "summary": "Finally\u2026 AGENTS.md in Claude Code \ud83d\udc4f https://t.co/Yn22URd7Is",
-      "content": "Finally\u2026 AGENTS.md in Claude Code \ud83d\udc4f https://t.co/Yn22URd7Is",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-18T18:58:37Z",
-      "fetched_at": "2026-09-21T07:35:36.298093Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c09622bb494874a7",
       "url": "https://x.com/simonw/status/2102620548262195540",
       "title": "RT @addyosmani: Introducing Claude Opus 5.5! 40% lower cost than Opus 5 with cache reads 60% cheaper...",
@@ -60954,6 +60829,228 @@
       "author": "bcherny",
       "published_at": "2026-09-25T17:34:34Z",
       "fetched_at": "2026-09-25T18:42:21.848565Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "18183a5a23178969",
+      "url": "https://x.com/steipete/status/2103580623239827941",
+      "title": "That sounds 100% like the OC hype cycle we had 8 months ago.\n\nBiggest limitation isn\u2019t the tech, it\u2019...",
+      "summary": "That sounds 100% like the OC hype cycle we had 8 months ago.\n\nBiggest limitation isn\u2019t the tech, it\u2019s imagination and creativity.",
+      "content": "That sounds 100% like the OC hype cycle we had 8 months ago.\n\nBiggest limitation isn\u2019t the tech, it\u2019s imagination and creativity.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-25T20:21:17Z",
+      "fetched_at": "2026-09-25T20:42:51.140927Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "065b008ac308ab6a",
+      "url": "https://x.com/steipete/status/2103574657530204196",
+      "title": "RT @firstadopter: SHOTS FIRED. Microsoft will go after Meta's Muse!\n\nFrom @alexeheath 's interview o...",
+      "summary": "RT @firstadopter: SHOTS FIRED. Microsoft will go after Meta's Muse!\n\nFrom @alexeheath 's interview of @satyanadella :\n\n\"He wants to bring A\u2026",
+      "content": "RT @firstadopter: SHOTS FIRED. Microsoft will go after Meta's Muse!\n\nFrom @alexeheath 's interview of @satyanadella :\n\n\"He wants to bring A\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-25T19:57:35Z",
+      "fetched_at": "2026-09-25T20:42:51.141055Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76fc93dc7becaf37",
+      "url": "https://x.com/steipete/status/2103572693954232404",
+      "title": "RT @M1Astra: computer (Astra) lights on please.\n\nthis may be the most extensively detailed &amp; acc...",
+      "summary": "RT @M1Astra: computer (Astra) lights on please.\n\nthis may be the most extensively detailed &amp; accurate 3d scene ever created by an ai.\n\n400+\u2026",
+      "content": "RT @M1Astra: computer (Astra) lights on please.\n\nthis may be the most extensively detailed &amp; accurate 3d scene ever created by an ai.\n\n400+\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-25T19:49:47Z",
+      "fetched_at": "2026-09-25T20:42:51.141142Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1c4d5f8274e437fc",
+      "url": "https://x.com/steipete/status/2103572171444670934",
+      "title": "RT @adonispara: The final frontier of consumerism has arrived in South Korea. https://t.co/j7n8f5Tdm...",
+      "summary": "RT @adonispara: The final frontier of consumerism has arrived in South Korea. https://t.co/j7n8f5Tdm6",
+      "content": "RT @adonispara: The final frontier of consumerism has arrived in South Korea. https://t.co/j7n8f5Tdm6",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-25T19:47:42Z",
+      "fetched_at": "2026-09-25T20:42:51.141201Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "076297e99e59973a",
+      "url": "https://x.com/dani_avila7/status/2103567521538347341",
+      "title": "I really think that if you want to get better at building with AI, you should build games\n\nWhen you ...",
+      "summary": "I really think that if you want to get better at building with AI, you should build games\n\nWhen you build a traditional app, your prompts are usually pretty basic. The framework already gives the agent most of the design context, and coding agent harnesses are heavily optimized",
+      "content": "I really think that if you want to get better at building with AI, you should build games\n\nWhen you build a traditional app, your prompts are usually pretty basic. The framework already gives the agent most of the design context, and coding agent harnesses are heavily optimized",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-25T19:29:14Z",
+      "fetched_at": "2026-09-25T20:42:43.337558Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eb2a502e23a855f7",
+      "url": "https://x.com/sama/status/2103567198690349362",
+      "title": "There is an extensive and ongoing review related to our agents\u2019 use of internet access during traini...",
+      "summary": "There is an extensive and ongoing review related to our agents\u2019 use of internet access during training and evaluation. We\u2019ve been publishing summaries at the link below and will continue to.\n\nWe have not been as fast as we would have liked but we are trying to balance our desire",
+      "content": "There is an extensive and ongoing review related to our agents\u2019 use of internet access during training and evaluation. We\u2019ve been publishing summaries at the link below and will continue to.\n\nWe have not been as fast as we would have liked but we are trying to balance our desire",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-25T19:27:57Z",
+      "fetched_at": "2026-09-25T20:42:45.588872Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f8e8ceaca0f208b5",
+      "url": "https://x.com/OpenAI/status/2103566736356458911",
+      "title": "After the Hugging Face incident, we committed to conducting a much broader review of actions taken b...",
+      "summary": "After the Hugging Face incident, we committed to conducting a much broader review of actions taken by our models during training and evaluation and to being transparent about our findings. This is an extensive review that is ongoing.\n\nThe vast majority of actions we\u2019ve reviewed",
+      "content": "After the Hugging Face incident, we committed to conducting a much broader review of actions taken by our models during training and evaluation and to being transparent about our findings. This is an extensive review that is ongoing.\n\nThe vast majority of actions we\u2019ve reviewed",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-25T19:26:06Z",
+      "fetched_at": "2026-09-25T20:42:47.827154Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1d0aea0ffa971f75",
+      "url": "https://x.com/dani_avila7/status/2101042285857108128",
+      "title": "Jev, I\u2019m coming for you! \ud83d\udc40\n\nI already have at least 5 use cases that would be sooo interesting to te...",
+      "summary": "Jev, I\u2019m coming for you! \ud83d\udc40\n\nI already have at least 5 use cases that would be sooo interesting to test https://t.co/CweRwd2N1c",
+      "content": "Jev, I\u2019m coming for you! \ud83d\udc40\n\nI already have at least 5 use cases that would be sooo interesting to test https://t.co/CweRwd2N1c",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-18T20:14:51Z",
+      "fetched_at": "2026-09-21T07:35:36.298080Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "178bf3848dc9ad45",
+      "url": "https://x.com/AnthropicAI/status/2101039819870937247",
+      "title": "We\u2019re partnering with Accenture on independent evaluation of frontier AI\u2014part of our recent commitme...",
+      "summary": "We\u2019re partnering with Accenture on independent evaluation of frontier AI\u2014part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years. https://t.co/SHVzjpgnfx",
+      "content": "We\u2019re partnering with Accenture on independent evaluation of frontier AI\u2014part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years. https://t.co/SHVzjpgnfx",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-18T20:05:03Z",
+      "fetched_at": "2026-09-21T07:35:42.999308Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "88fa736a33307d37",
+      "url": "https://x.com/simonw/status/2101034234706370595",
+      "title": "RT @emollick: The bots are now talking to each other in my LinkedIn comments.\n\nIts like what happene...",
+      "summary": "RT @emollick: The bots are now talking to each other in my LinkedIn comments.\n\nIts like what happened with the German wiki, except instead\u2026",
+      "content": "RT @emollick: The bots are now talking to each other in my LinkedIn comments.\n\nIts like what happened with the German wiki, except instead\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-18T19:42:51Z",
+      "fetched_at": "2026-09-21T07:35:35.114315Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fc86db4db6db859a",
+      "url": "https://x.com/dani_avila7/status/2101023103962718457",
+      "title": "Finally\u2026 AGENTS.md in Claude Code \ud83d\udc4f https://t.co/Yn22URd7Is",
+      "summary": "Finally\u2026 AGENTS.md in Claude Code \ud83d\udc4f https://t.co/Yn22URd7Is",
+      "content": "Finally\u2026 AGENTS.md in Claude Code \ud83d\udc4f https://t.co/Yn22URd7Is",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-18T18:58:37Z",
+      "fetched_at": "2026-09-21T07:35:36.298093Z",
       "score": null,
       "score_reason": "",
       "tier": "",
