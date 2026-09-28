@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-28T05:26:08.668920+00:00",
+  "exported_at": "2026-09-28T08:28:03.585737+00:00",
   "period_hours": 168,
-  "total": 2897,
+  "total": 2904,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -48154,27 +48154,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2f8d9b98fc157bb3",
-      "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths",
-      "title": "Expanding OpenAI Academy with new learning paths",
-      "summary": "Explore new OpenAI Academy learning paths for employees, developers, leaders, educators, and students to build and demonstrate practical AI skills.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-21T07:00:00Z",
-      "fetched_at": "2026-09-21T19:28:33.775513Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6c187cf31f9ec80b",
       "url": "https://arxiv.org/abs/2609.25541",
       "title": "A JEPA Recipe for Tabular Foundation Models",
@@ -62916,6 +62895,168 @@
       "author": "steipete",
       "published_at": "2026-09-26T16:23:53Z",
       "fetched_at": "2026-09-27T14:41:19.981122Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aac627a6effefe72",
+      "url": "https://x.com/steipete/status/2104446411383411090",
+      "title": "RT @shiv_kampani: \"make something people want\" https://t.co/PNIIyj1AfM",
+      "summary": "RT @shiv_kampani: \"make something people want\" https://t.co/PNIIyj1AfM",
+      "content": "RT @shiv_kampani: \"make something people want\" https://t.co/PNIIyj1AfM",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T05:41:37Z",
+      "fetched_at": "2026-09-28T08:28:01.003679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7723281f25123029",
+      "url": "https://x.com/steipete/status/2104417738366357994",
+      "title": "RT @scottstts: My god this is such a good speech that every SWE needs to hear. You know what? Every ...",
+      "summary": "RT @scottstts: My god this is such a good speech that every SWE needs to hear. You know what? Every person should hear it\n\nKeep the happy m\u2026",
+      "content": "RT @scottstts: My god this is such a good speech that every SWE needs to hear. You know what? Every person should hear it\n\nKeep the happy m\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T03:47:41Z",
+      "fetched_at": "2026-09-28T08:28:01.003784Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6d8f02d82dad5077",
+      "url": "https://x.com/trq212/status/2104403711699423680",
+      "title": "dating myself with neopets I fear https://t.co/Dz5CMnfLd8",
+      "summary": "dating myself with neopets I fear https://t.co/Dz5CMnfLd8",
+      "content": "dating myself with neopets I fear https://t.co/Dz5CMnfLd8",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-28T02:51:57Z",
+      "fetched_at": "2026-09-28T08:27:49.135616Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15dfb3d667054ac7",
+      "url": "https://x.com/steipete/status/2104402640562270443",
+      "title": "RT @artem_zin: Wild, even Cursor moved away from server-side RAG index and into Grep-like agent tool...",
+      "summary": "RT @artem_zin: Wild, even Cursor moved away from server-side RAG index and into Grep-like agent tool calls for code search\n\n\"we\u2019re no longe\u2026",
+      "content": "RT @artem_zin: Wild, even Cursor moved away from server-side RAG index and into Grep-like agent tool calls for code search\n\n\"we\u2019re no longe\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T02:47:42Z",
+      "fetched_at": "2026-09-28T08:28:01.003816Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fd12be3cd4e13b89",
+      "url": "https://x.com/dani_avila7/status/2104357576481657109",
+      "title": "New article where I explain, step by step, how to fully set up Claude Projects\n\nIf you already have ...",
+      "summary": "New article where I explain, step by step, how to fully set up Claude Projects\n\nIf you already have access to Claude Projects, you need to read this article\n\nIf you don\u2019t have access yet, you also need to read it",
+      "content": "New article where I explain, step by step, how to fully set up Claude Projects\n\nIf you already have access to Claude Projects, you need to read this article\n\nIf you don\u2019t have access yet, you also need to read it",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-27T23:48:37Z",
+      "fetched_at": "2026-09-28T08:27:53.577552Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "856f067c8590cade",
+      "url": "https://x.com/steipete/status/2104305554760114488",
+      "title": "Same. @useblacksmith has been an amazing sponsor but we need to distribute the load. \n\nMy plan is to...",
+      "summary": "Same. @useblacksmith has been an amazing sponsor but we need to distribute the load. \n\nMy plan is to let codex decide which tests actually need to run and drastically nix CI and run tests hourly.",
+      "content": "Same. @useblacksmith has been an amazing sponsor but we need to distribute the load. \n\nMy plan is to let codex decide which tests actually need to run and drastically nix CI and run tests hourly.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-27T20:21:55Z",
+      "fetched_at": "2026-09-28T08:28:01.003843Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e0b5788e9780f6b2",
+      "url": "https://x.com/steipete/status/2104295374517334368",
+      "title": "RT @davidcrawshaw: When in doubt, build something.",
+      "summary": "RT @davidcrawshaw: When in doubt, build something.",
+      "content": "RT @davidcrawshaw: When in doubt, build something.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-27T19:41:27Z",
+      "fetched_at": "2026-09-28T08:28:01.003869Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6260208aa52f553f",
+      "url": "https://x.com/trq212/status/2104273243599405395",
+      "title": "I am most afraid of us eating the productivity gains of agents by just becoming lazier.",
+      "summary": "I am most afraid of us eating the productivity gains of agents by just becoming lazier.",
+      "content": "I am most afraid of us eating the productivity gains of agents by just becoming lazier.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-27T18:13:31Z",
+      "fetched_at": "2026-09-28T08:27:49.135731Z",
       "score": null,
       "score_reason": "",
       "tier": "",
