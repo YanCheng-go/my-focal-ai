@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-28T08:28:03.585737+00:00",
+  "exported_at": "2026-09-28T11:33:51.262316+00:00",
   "period_hours": 168,
-  "total": 2904,
+  "total": 2901,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -24031,25 +24031,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-09-21T12:31:48Z",
       "fetched_at": "2026-09-21T12:50:14.329424Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "590c5d834b106566",
-      "url": "https://www.youtube.com/watch?v=FheRqx7DjbU",
-      "title": "Goodbye Tokenmaxxing: From AI Usage to Agentic AI Outcomes",
-      "summary": "Learn more about Valuemaxxing here \u2192 https://ibm.biz/~XUdepadwq\n\nFor years, teams measured AI success through adoption and token consumption. Katie McDonald explains why AI usage metrics alone don't capture business value, how tokenmaxxing and token minimization both miss the point, and why successful organizations are shifting toward outcome-based AI strategies. Learn how AI efficiency, model orchestration, and value maxing are changing the next chapter of AI adoption.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~wJeleCn03\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#tokens #ai #agenticai #aitokens \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-21T11:00:44Z",
-      "fetched_at": "2026-09-21T12:50:15.077089Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -48106,48 +48087,6 @@
       "author": "",
       "published_at": "2026-09-21T12:00:00Z",
       "fetched_at": "2026-09-21T12:50:17.603774Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a4ae64181a987247",
-      "url": "https://blogs.nvidia.com/blog/clean-energy-nvidia-ai/",
-      "title": "5 Companies Using NVIDIA AI for Clean Energy",
-      "summary": "Clean energy isn\u2019t hard to come by, but the pace of large-scale adoption has historically been slow due to bottlenecks \u2014 including out-of-date infrastructure, elongated research and development timelines, and upfront cost barriers.\u00a0 At New York Climate Week, NVIDIA is highlighting five companies pioneering clean energy projects with AI baked into their foundation, accelerating research-to-inception [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">Clean energy isn\u2019t hard to come by, but the pace of large-scale adoption has historically been slow due to bottlenecks \u2014 including out-of-date infrastructure, elongated research and development timelines, and upfront cost barriers.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">At New York Climate Week, NVIDIA is highlighting five companies pioneering clean energy projects with AI baked into their foundation, accelerating research-to-inception pipelines and ultimately helping build a low carbon grid.\u00a0</span></p>\n<h2><b>ThinkLabs AI Drives Toward An Autonomous Grid With Digital Twins</b></h2>\n<p></p>\n<p><span style=\"font-weight: 400;\">ThinkLabs AI is curating digital twins and agents \u2014 using the </span><a href=\"https://developer.nvidia.com/cuda\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA CUDA</span></a><span style=\"font-weight: 400;\"> platform \u2014 to speed up interconnection timelines, seamlessly integrate clean energy sources and optimize the grid to handle ongoing variability.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cThe grid is getting less and less certain, so the ability to see things not statically, but as a probability \u2014 hence all the utility actions \u2014 should be risk informed,\u201d said Josh Wong, founder and CEO of ThinkLabs, a member of the </span><a href=\"https://www.nvidia.com/en-us/startups/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Inception</span></a><span style=\"font-weight: 400;\"> program for cutting-edge startups. \u201cThat hits not just reliability objectives, but also affordability, so we know how to maximize and optimize investments.\u201d\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Southern California Edison used ThinkLabs software to reduce the time required to evaluate each grid interconnection application from 30-45 days to just two minutes.</span></p>\n<p><span style=\"font-weight: 400;\">The speedup came from a ThinkLabs agent that runs grid simulations and identifies solutions to interconnection barriers.\u00a0</span></p>\n<h2><b>Atomic Canyon\u2019s AI Platform Helps Redefine Operations in the Nuclear Sector\u00a0</b></h2>\n<figure class=\"wp-caption alignnone\" id=\"attachment_98397\" style=\"width: 468px;\"><img alt=\"\" class=\"wp-image-98397 size-full\" height=\"351\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/09/atomic-canyon-1.jpg\" width=\"468\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-98397\">PG&amp;E\u2019s Diablo Canyon, optimized by Atomic Canyon</figcaption></figure>\n<p><span style=\"font-weight: 400;\">Atomic Canyon, another NVIDIA Inception member, is bringing AI-powered knowledge management and assistance to reactor operators with its NVIDIA accelerated compute-powered Neutron and NIVA platforms to streamline nuclear power plant operations.\u00a0\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Neutron acts as an AI workbench built for nuclear professionals. It turns all of their\u00a0 procedures, regulatory guidance, operating experience, licensing records, design\u00a0 calculations, and structured and unstructured data into a knowledge layer.\u00a0\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">NIVA, short for Nuclear Industry Virtual Assistant, was built with the Institute of Nuclear\u00a0 Power Operations, Electric Power Research Institute and the Nuclear Energy Institute as a unified platform bringing AI-powered capabilities to the national nuclear fleet.\u00a0\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cNuclear is a known technology we\u2019ve been doing for 50 to 60 years, but the way we\u2019ve\u00a0 been doing things simply will not scale to meet the moment that\u2019s in front of us; i</span><span style=\"font-weight: 400;\">t needs to be reinvigorated by artificial intelligence,\u201d said Trey Lauderdale, founder and CEO of Atomic Canyon.</span></p>\n<h2><b>Redwood Materials\u2019 Repurposed EV Batteries Power AI Without Waiting on the Grid</b></h2>\n<p><img alt=\"\" class=\"alignnone size-large wp-image-98398\" height=\"800\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/09/redwood-materials-1680x1120.jpg\" width=\"1200\" /></p>\n<p><span style=\"font-weight: 400;\">Electricity demand from AI is accelerating faster than new grid infrastructure can be built, leading to a bottleneck in the industry\u2019s growth.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Redwood Materials is closing that gap by harnessing its expertise in battery engineering, power electronics and systems design to build large-scale, off-grid power solutions for AI factories \u2014 enabling new capacity to come online in months rather than years.</span></p>\n<p><span style=\"font-weight: 400;\">These 100%-recycled electric vehicle batteries are firming up power suppliers by acting as onsite energy storage to create a secure, flexible energy system for AI factories and the national grid at large.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The batteries are integrated into existing clean energy infrastructure with an AI intelligence layer \u2014 running on the </span><a href=\"https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Blackwell</span></a><span style=\"font-weight: 400;\"> platform \u2014 that makes the system hypervigilant and adaptable to the real-time energy needs of the data center it\u2019s supplying power to.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">This approach also lowers the cost of power. Redwood\u2019s simplified architecture \u2014 built on in-house power electronics \u2014 requires far fewer transformers and inverters, eliminates the need for an uninterruptible power supply, and can deploy repurposed or new electric vehicle batteries.\u00a0</span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cUsing these batteries with our power electronics and systems control software, you can make a highly responsive power source that can deal with the novel fluctuations of AI training,\u201d said Colin Campbell, chief technology officer of Redwood Materials, another NVIDIA Inception member.</span></p>\n<h2><b>TerraPower\u2019s Natrium Reactor Sets New Standard for Safe, Sustainable Nuclear Power</b></h2>\n<figure class=\"wp-caption alignnone\" id=\"attachment_98399\" style=\"width: 640px;\"><img alt=\"\" class=\"size-full wp-image-98399\" height=\"640\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/09/terrapower.jpg\" width=\"640\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-98399\">TerraPower Natrium Reactor</figcaption></figure>\n<p><span style=\"font-weight: 400;\">Nuclear energy currently powers 20% of the nation\u2019s electricity. TerraPower is working to make sure that more power is safe, sustainable and quickly harnessable through its emission-free Natrium reactor.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cTwenty years ago, our founders, including Bill Gates, realized that emissions avoidance should also be a part of this energy solution,\u201d said Chris Levesque, president and CEO of TerraPower.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">TerraPower is connecting an </span><a href=\"https://www.nvidia.com/en-us/omniverse/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Omniverse</span></a><span style=\"font-weight: 400;\">-powered platform to create digital twin software that will support its efforts to accelerate the siting and delivery of future plants from years to months.\u00a0</span></p>\n<p></p>\n<p><span style=\"font-weight: 400;\">Natrium reactors have a unique design that separates them from traditional nuclear power; they\u2019re cooled with liquid metal sodium instead of water \u2014 allowing them to operate at a lower pressure, equivalent to atmospheric pressure. This reactor doesn\u2019t require offsite water or electricity to keep it stable \u2014 in the event of an emergency, it can keep itself cool without any intervention.\u00a0</span></p>\n<h2><b>Commonwealth Fusion Systems Creates Fusion Energy Ready for the Grid</b></h2>\n<p><img alt=\"\" class=\"alignnone size-full wp-image-98400\" height=\"338\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/09/commonwealth-fusion-systems.jpg\" width=\"600\" /></p>\n<p><span style=\"font-weight: 400;\">Fusion energy is poised to join the clean energy stack in the 2030\u2019s, thanks to Commonwealth Fusion Systems (CFS). </span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">With the help of NVIDIA Omniverse libraries and OpenUSD, CFS is compressing years of experimentation into weeks for its SPARC tokamak demonstration fusion machine, which can successfully replicate the sun\u2019s power source on Earth.\u00a0 </span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Fusion energy is a carbon-free, safe source of power.\u00a0 </span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cWith fusion, there\u2019s no running out of control,\u201d said Brandon Sorbom, cofounder and chief science officer of CFS. \u201cIt is passively safe, since the default mechanism is shutting itself down.\u201d\u00a0 </span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Using high-temperature superconductors, CFS enables stronger magnetic fields than previous fusion systems.\u00a0 </span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">These magnets allow SPARC\u2019s design to be 40x smaller and, by extension, cheaper to build and operate. </span><span style=\"font-weight: 400;\">The company\u2019s ARC power plant \u2014 the first of which will be built in Chesterfield County, Virginia, and will connect to the grid in the 2030s \u2014 is more than 10x smaller.\u00a0 </span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cWe will be able to build a first-of-its-kind plant that will be cost-competitive with both renewable and nonrenewable sources of energy,\u201d said Sorbom.</span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><i><span style=\"font-weight: 400;\">Explore more </span></i><a href=\"https://www.nvidia.com/en-us/case-studies/?filters=%7B%22Industries%22%3A%5B%22Sustainability%22%5D%7D\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA-powered sustainability use cases</span></i></a><i><span style=\"font-weight: 400;\">.</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Zoe Kessler",
-      "published_at": "2026-09-21T10:00:35Z",
-      "fetched_at": "2026-09-21T12:50:20.276643Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "10538c022345675d",
-      "url": "https://openai.com/index/building-standards-next-phase-ai",
-      "title": "Building standards for the next phase of AI",
-      "summary": "OpenAI outlines a path to shared global AI standards, calling for coordinated evaluation, reporting, and governance to improve safety.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-21T10:00:00Z",
-      "fetched_at": "2026-09-21T19:28:33.775501Z",
       "score": null,
       "score_reason": "",
       "tier": "",
