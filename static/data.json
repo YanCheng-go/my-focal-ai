@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-28T11:33:51.262316+00:00",
+  "exported_at": "2026-09-28T13:44:34.259638+00:00",
   "period_hours": 168,
-  "total": 2901,
+  "total": 2897,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -24017,26 +24017,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2da1daaf03c34634",
-      "url": "https://www.youtube.com/watch?v=X-pbJWKmwi0",
-      "title": "Build & Sell with Codex (5+ Hour Course)",
-      "summary": "My FREE Resources: https://www.skool.com/ai-automation-society/about?el=codex-5-hour-course&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\nFREE First Client SOP: https://app.aiautomationsociety.ai/optin/first-client-SOP/\nMy playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nKarpathy LLM Wiki: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f\nSecond YouTube channel: https://www.youtube.com/channel/UCC0Kc7wU7xbEzCDzst73Cnw\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nIn this 5+ hour Codex course, I'll show you how to build useful AI tools and automations without a coding background. \n\nWe'll use GPT-6 Astra to build your AI operating system and second brain, create reusable skills, make websites and branded deliverables, and generate and edit videos. \n\nI'll also cover browser use, voice mode, hosting automations, Codex vs. Claude Code, and how to price and sell AI solutions to clients.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Course Overview\n1:02 Installing Codex\n4:33 Core Codex Concepts\n39:25 Building Your AI Operating System\n1:01:02 Building Codex Skills\n1:28:14 Creating Branded Deliverables\n1:40:46 Generating Images and Videos\n1:53:16 Building Websites With Codex\n2:01:59 Browser Use and Computer Control\n2:18:46 Editing Videos With Hyperframes\n2:48:58 Hosting Automations With Trigger.dev\n3:25:00 Using Codex Voice Mode\n3:39:41 Codex vs. Claude Code\n4:20:15 Selling AI Solutions to Clients\n4:49:08 Pricing Your AI Solutions\n5:09:50 Final Thoughts",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-21T12:31:48Z",
-      "fetched_at": "2026-09-21T12:50:14.329424Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8c4ad311b42a6417",
       "url": "https://arxiv.org/abs/2609.28782",
       "title": "The Mechanics of Delta Learning: Target Design for Generalizable Scientific Machine Learning",
@@ -47819,27 +47799,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ae2a66f3c360fd17",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
-      "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-09-21T13:44:34Z",
-      "fetched_at": "2026-09-21T19:28:37.991451Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5fcf791e7067a205",
       "url": "https://arxiv.org/abs/2609.25641",
       "title": "When Quantum Meets AI: Quantum Methods for Machine Learning and Machine Learning Methods for Quantum Systems",
@@ -48023,70 +47982,6 @@
       "author": "Junghoon Kim, Hyunsung Kim, Seungyoon Choi, KyoungYong Park, Jihun Lee, YongGu Ji, Chanyoung Park",
       "published_at": "2026-09-23T04:00:00Z",
       "fetched_at": "2026-09-23T07:46:27.645838Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8fe4474fdbb9c4c4",
-      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
-      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-      "summary": "With GPT-6 Astra, Higgsfield AI makes video ad creation easier for small businesses and brings new creative tools to market faster.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-21T12:00:00Z",
-      "fetched_at": "2026-09-21T23:17:51.507598Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "08ffdb24bebd9aa2",
-      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-      "title": "Advisory Group on Mathematics and Artificial Intelligence",
-      "summary": "OpenAI is working with an independent Advisory Group on Mathematics and Artificial Intelligence to guide the review and communication of emerging AI results.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-21T12:00:00Z",
-      "fetched_at": "2026-09-21T19:28:33.775482Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8dbdc85494e05efd",
-      "url": "https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/",
-      "title": "Inside Petal: Building the World\u2019s First Petabit-Class Transoceanic Subsea Cable",
-      "summary": "<p>Petal, the next step in Meta\u2019s subsea innovation, will be the first subsea cable to deliver petabit capacity at transoceanic distances, connecting France and the United States over approximately 7,000 km (4,300 mi). Expected to enter service in 2029, it will be the first subsea cable system to deploy multi-core fiber technology at scale, doubling [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/\">Inside Petal: Building the World\u2019s First Petabit-Class Transoceanic Subsea Cable</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "content": "<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Petal, the next step in Meta\u2019s subsea innovation, will be the first subsea cable to deliver petabit capacity at transoceanic distances, connecting France and the United States over approximately 7,000 km (4,300 mi).</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Expected to enter service in 2029, it will be the first subsea cable system to deploy multi-core fiber technology at scale, doubling the capacity per fiber without a proportional increase in power or physical infrastructure.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Petal will be built in partnership with NEC and Sumitomo Electric Industries, with support on the French landing from Orange.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Today, we\u2019re announcing Petal, the first transoceanic subsea cable at petabit capacity, and the first to deploy multi-core fiber at scale. Spanning 7,000 km between France and the United States, Petal will deliver 1 Pbps (1 petabit per second or 1,000 terabits per second), doubling what today\u2019s most advanced subsea cables carry at this distance.</span></p>\n<p><span style=\"font-weight: 400;\">That&#8217;s roughly the network capacity required for 75% of the world&#8217;s population to stream music at the same time.*</span></p>\n<p><span style=\"font-weight: 400;\">Petal is a key piece of Meta\u2019s</span><a href=\"https://tech.facebook.com/engineering/2022/02/economic-impact-subsea-cables/\" rel=\"noopener\" target=\"_blank\"> <span style=\"font-weight: 400;\">subsea cable investments</span></a><span style=\"font-weight: 400;\"> bringing greater capacity, stronger resiliency, and future-proof infrastructure to Europe as demand for communications and reliable connectivity continues to increase.</span></p>\n<p><span style=\"font-weight: 400;\">The road to this point has taken years of collaborative engineering with our partners and a complete rethinking of the subsea industry\u2019s approach to cable design.\u00a0</span></p>\n<h2><span style=\"font-weight: 400;\">Subsea Capacity Innovation</span></h2>\n<p><span style=\"font-weight: 400;\">A subsea cable is the least visible, yet one of the most critical layers of the internet. Approximately</span><a href=\"https://www.itu.int/en/mediacentre/backgrounders/Pages/submarine-cable-resilience.aspx\"> <span style=\"font-weight: 400;\">99% of intercontinental data traffic</span></a><span style=\"font-weight: 400;\"> \u2013 nearly every message, phone, or video call between continents \u2013\u00a0 travels through glass strands on the ocean floor.</span></p>\n<p><span style=\"font-weight: 400;\">Since the introduction of the erbium-doped fiber amplifier (EDFA) in the 1980s, there have been several transformational shifts in subsea cable capacity. In the 2010s, coherent optical transmission technology and </span><a href=\"https://www.submarinenetworks.com/en/nv/insights/game-changing-technology-for-new-subsea-cables\"><span style=\"font-weight: 400;\">dispersion-uncompensated cable designs</span></a><span style=\"font-weight: 400;\"> launched the industry into a decade of dramatic fiber capacity increases of 10x and more until the ever-looming</span><a href=\"https://www.ciena.com/insights/articles/Shannons-Limit-or-Opportunity.html\"> <span style=\"font-weight: 400;\">Shannon Limit</span></a><span style=\"font-weight: 400;\"> finally pushed back.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">To overcome this, the industry pivoted to </span><a href=\"https://www.asn.com/sdm/\"><span style=\"font-weight: 400;\">spatial division multiplexing (SDM)</span></a><span style=\"font-weight: 400;\"> to increase the number of fibers within a subsea cable. Meta scaled its subsea cable approach from</span><a href=\"https://www.ciena.com/insights/articles/new-tide-of-technologies-tested-on-facebooks-marea-cable.html\"> <span style=\"font-weight: 400;\">Marea</span></a><span style=\"font-weight: 400;\">\u2019s eight fiber pairs, to</span><a href=\"https://www.submarinenetworks.com/en/systems/trans-atlantic/amitie\"> <span style=\"font-weight: 400;\">Amiti\u00e9\u2019s</span></a><span style=\"font-weight: 400;\"> 16 fiber pairs, and recently to</span><a href=\"https://about.fb.com/es/news/2024/10/anjana-el-mayor-cable-transatlantico-submarino-del-mundo-aterriza-en-santander-para-conectar-estados-unidos-y-europa/\"> <span style=\"font-weight: 400;\">Anjana</span></a><span style=\"font-weight: 400;\">\u2019s 24 fiber pairs \u2013 the first 0.5 Pbps transatlantic cable system.</span></p>\n<p><span style=\"font-weight: 400;\"><img alt=\"\" class=\"alignnone size-full wp-image-24544\" height=\"1080\" src=\"https://engineering.fb.com/wp-content/uploads/2026/09/Meta-Petal-map.gif\" width=\"1920\" /></span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">Three innovations could double capacity again:</span></p>\n<ol>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Continue on the conventional path to increase the number of fibers to reach 48 fiber pairs.\u00a0</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Expand the optical transmission band by using the L-band, as we did with the </span><a href=\"https://engineering.fb.com/2016/10/12/connectivity/building-one-of-the-highest-capacity-subsea-cables-in-the-pacific/\"><span style=\"font-weight: 400;\">PLCN cable</span></a><span style=\"font-weight: 400;\">, resulting in 24 fiber pair C+L transmission.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Adopt a 2-core fiber-based solution.</span></li>\n</ol>\n<p><span style=\"font-weight: 400;\">With Petal, we\u2019ve opted for 2-core fiber technology in a 24 fiber-pair system, equivalent to 48 fiber pairs, to make the leap to 1 Pbps at transatlantic distances. This is double Anjana\u2019s capacity and makes Petal the single largest generational increase in cable capacity of any repeatered subsea system, ever.\u00a0</span><i><span style=\"font-weight: 400;\"><br />\n</span></i></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_24570\" style=\"width: 1600px;\"><img alt=\"\" class=\"size-full wp-image-24570\" height=\"900\" src=\"https://engineering.fb.com/wp-content/uploads/2026/09/Meta_s-Transatlantic-Cable-Step-Changes.1.gif\" width=\"1600\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-24570\">A few of Meta\u2019s cable investments. Our latest cable investment, Petal, will be 5.5x the capacity of Marea, our first transatlantic investment.</figcaption></figure>\n<h2><span style=\"font-weight: 400;\">The Challenges of Engineering a 2-Core Fiber Ecosystem</span></h2>\n<p><span style=\"font-weight: 400;\">Carrying a petabit through one cable significantly reduces materials, resources, and carbon footprint compared to building two 0.5 Pbps systems. However, transitioning to a 2-core fiber ecosystem comes with challenges that affect the fiber and subsea repeaters.</span></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_24556\" style=\"width: 2080px;\"><img alt=\"\" class=\"size-full wp-image-24556\" height=\"1184\" src=\"https://engineering.fb.com/wp-content/uploads/2026/09/Petal-fiber-core.png\" width=\"2080\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-24556\">A snapshot of a Sumitomo Electric preform of a multicore fiber strand showing two cores for light propagation. This will be stretched from 2-3 m long and 20 cm wide to 1000s of kilometers long and 125 \u00b5m wide, about the diameter of a hair.</figcaption></figure>\n<h3><span style=\"font-weight: 400;\">Fiber: Transitioning From Single to 2-Core Fiber</span></h3>\n<p><span style=\"font-weight: 400;\">There are two main challenges to enabling 2-core fiber for Petal. First is ensuring low attenuation while maintaining the physical dimensions of the outer fiber, including the 125 \u03bcm width. Second is minimizing crosstalk between the cores to maximize optical performance and capacity.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The former is achieved by using ultra-pure synthetic silica during the manufacture of the preform. The latter is achieved by carefully controlling for high refractive indexes in the cores against lower indexes within the surrounding medium and counter-propagating the optical signals, resulting in nearly immeasurable crosstalk.</span></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_24571\" style=\"width: 1280px;\"><img alt=\"\" class=\"size-full wp-image-24571\" height=\"601\" src=\"https://engineering.fb.com/wp-content/uploads/2026/09/1-2-core-transition.gif\" width=\"1280\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-24571\">1-core fiber allows the industry to counter-propagate traffic using a pair of fibers. Petat\u2019s 2-core fiber will combine this capacity into one fiber strand.</figcaption></figure>\n<h3><span style=\"font-weight: 400;\">Repeater: </span><span style=\"font-weight: 400;\">Amplifying 96 Fiber Cores in a Single Body Repeater</span></h3>\n<p><span style=\"font-weight: 400;\">A 7,000 km subsea cable typically needs about a hundred repeaters to amplify the digital signals along the length of the cable. Petal\u2019s single-body 96 amp repeater uses single-core fiber amplification with a Fan-In/Fan-Out (FIFO) interface to transition 2-core fiber into two single-core fibers within each repeater and then back to 2-core fiber following amplification. This design allows Petal to retain the highest efficiency and reliability of single-core amplification with an SDM pump-sharing architecture.</span></p>\n<p><span style=\"font-weight: 400;\">FIFO, combined with highly efficient amplification and high-quality, low-loss fiber, will enable Petal to double capacity without a proportional increase to required power. Petal will remain within existing power feeding equipment limits, rated up to 18 kV, which avoids triggering a requalification of the subsea ecosystem necessary at higher equipment voltages.</span></p>\n<h2><span style=\"font-weight: 400;\">The Partnerships Behind Petal\u00a0</span></h2>\n<p><span style=\"font-weight: 400;\">Meta\u2019s vision for Petal wouldn\u2019t be possible without the engineering capabilities of our partners at NEC, Sumitomo Electronic Industries, and Orange.</span></p>\n<p><b>NEC</b><span style=\"font-weight: 400;\">, our turnkey system supplier, engineered and qualified the world\u2019s first petabit transoceanic system around the next generation SDM foundation \u2013 cable with 2-core fiber, repeaters, FIFO systems, system powering \u2013 and is responsible for manufacturing and installing the final product. NEC has made deep investments in their manufacturing facilities to produce petabit-class SDM repeaters, multicore fiber cable as well as associated technologies.\u00a0</span></p>\n<blockquote class=\"blockquote\"><p><i><span style=\"font-weight: 400;\">\u201cAchieving petabit-per-second capacity across a transoceanic submarine system represents a major technological milestone in the history of global telecommunications. This achievement reflects NEC\u2019s sustained investment in research and development, combined with decades of experience delivering some of the world\u2019s most advanced, reliable, and secure submarine networks that interconnect the globe,\u201d &#8211; Eduardo Mateo, Chief Strategy Officer, Submarine Network Division, NEC Corporation\u00a0</span></i></p></blockquote>\n<p><b>Sumitomo Electric Industries</b><span style=\"font-weight: 400;\">, NEC\u2019s fiber supplier, developed and manufactured the 2-core fiber with ultra low losses and practically immeasurable crosstalk for counterpropagating signals, resulting in optical performance nearly identical to single-core fiber.\u00a0</span></p>\n<blockquote class=\"blockquote\"><p><i><span style=\"font-weight: 400;\">&#8220;We are thrilled that Sumitomo Electric\u2019s innovative submarine multi-core fiber, \u201c2C Z-PLUS ULL Fiber\u201d will contribute to \u201cPetal\u201d, an epoch-making Pb-class transatlantic cable system. As a pioneer with nearly four decades of experience in ultra-low loss submarine fiber manufacturing, we are committed to supporting the global network expansion essential to realizing a highly digital future.&#8221; -Takehiko OKADA, General Manager of Optical Fiber &amp; Cable Division, Sumitomo Electric Industries, Ltd.\u00a0</span></i></p></blockquote>\n<p><b>Orange</b><span style=\"font-weight: 400;\"> and Meta are working together on plans to land Petal ashore France&#8217;s Atlantic coast including the terrestrial interconnection into the European network.</span></p>\n<blockquote class=\"blockquote\"><p><i><span style=\"font-weight: 400;\">\u201cReaching one petabit on a transatlantic link, 25 years after the terabit milestone, represents a significant breakthrough to meet the exponential traffic growth while optimizing network capacity. This makes us very proud to welcome this new generation petabit subsea cable with dual-core fiber technology in our infrastructure, as the landing party in France. This new project reinforces our </span></i><i><span style=\"font-weight: 400;\">commitment</span></i><i><span style=\"font-weight: 400;\"> with Meta and demonstrates our leading expertise in landing subsea systems, and extending connectivity to other European countries. It underlines our dedication to developing reliable infrastructure that guarantees the security and resilience of the terrestrial segment of those connections.\u201d &#8211; Jean-Louis Le Roux, EVP, Orange International Networks</span></i></p></blockquote>\n<h2><span style=\"font-weight: 400;\">New Capacity for a New Era</span></h2>\n<p><span style=\"font-weight: 400;\">Meta has been one of the world\u2019s largest investors in subsea cable infrastructure, building the digital backbone that connects continents and strengthens the global internet, enabling a future that is for everyone.</span></p>\n<p><span style=\"font-weight: 400;\">We\u2019re moving multi-core fiber from experimental to mainstream, making it a practical design for building subsea systems at scale \u2013 a shift the entire industry can benefit from. Our aim is to set a new standard for what undersea infrastructure can deliver and invite the ecosystem to invest alongside us.</span></p>\n<p><small>*Calculation based on a total capacity of 1 Pbps with an audio stream bitrate of ~0.16 Mbps (160 kbps) for \u2248 6.25 billion simultaneous streams.</small></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/09/21/connectivity/petal-petabit-transoceanic-subsea-cable/\">Inside Petal: Building the World\u2019s First Petabit-Class Transoceanic Subsea Cable</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "source_name": "Meta Engineering",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "engineering",
-        "meta",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-21T12:00:00Z",
-      "fetched_at": "2026-09-21T12:50:17.603774Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -62996,6 +62891,26 @@
       "author": "trq212",
       "published_at": "2026-09-27T18:13:31Z",
       "fetched_at": "2026-09-28T08:27:49.135731Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3b121abbc5e27b50",
+      "url": "https://x.com/dani_avila7/status/2104564250014359638",
+      "title": "Anthropic is releasing documentation in Spanish and 11 other languages\n\nI\u2019m curious to see how the o...",
+      "summary": "Anthropic is releasing documentation in Spanish and 11 other languages\n\nI\u2019m curious to see how the other AI labs move to make knowledge about using their technology more accessible\n\nMost engineers are bilingual and comfortable working in English\n\nBut AI agents are expanding",
+      "content": "Anthropic is releasing documentation in Spanish and 11 other languages\n\nI\u2019m curious to see how the other AI labs move to make knowledge about using their technology more accessible\n\nMost engineers are bilingual and comfortable working in English\n\nBut AI agents are expanding",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-28T13:29:52Z",
+      "fetched_at": "2026-09-28T13:44:23.850585Z",
       "score": null,
       "score_reason": "",
       "tier": "",
