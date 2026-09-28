@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-28T13:57:43.312493+00:00",
+  "exported_at": "2026-09-28T18:17:17.845042+00:00",
   "period_hours": 168,
-  "total": 2902,
+  "total": 2898,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -24081,46 +24081,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "039affc076f2e9b6",
-      "url": "https://www.youtube.com/shorts/xcxbOcc36dM",
-      "title": "This New AI Makes Decisions for 18 Cents",
-      "summary": "A new AI from a researcher behind ChatGPT just dropped, and it's nothing like it. Jev is an AI decision maker: it scored 1,700 emails for 18 cents. Go to my Instagram, DM me \"JEV\" and I'll send it over. Link's in bio.",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-21T17:01:21Z",
-      "fetched_at": "2026-09-21T19:28:31.499230Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "977df1e5368c41f8",
-      "url": "https://www.youtube.com/shorts/bC2ZFEAqUHE",
-      "title": "Frontier Labs May Be Two Generations Ahead",
-      "summary": "The public AI race may not show the full picture - frontier labs could be significantly ahead of the models we can actually use. Check out the full episode now #short",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-09-21T15:02:27Z",
-      "fetched_at": "2026-09-21T19:28:32.766855Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8c4ad311b42a6417",
       "url": "https://arxiv.org/abs/2609.28782",
       "title": "The Mechanics of Delta Learning: Target Design for Generalizable Scientific Machine Learning",
@@ -37644,135 +37604,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9d552a651ead7d3a",
-      "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
-      "title": "NVIDIA Launches DSX Ready to Qualify Power and Cooling Products for AI Factories",
-      "summary": "Every AI factory needs power and cooling that fit its computing architecture. As AI infrastructure expands, power, cooling, water, site and grid constraints are shaping what builders can deploy. Choosing products that fit the complete factory design helps builders turn computing capacity into useful AI output. To help builders make those decisions, NVIDIA is introducing [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">Every AI factory needs power and cooling that fit its computing architecture. As AI infrastructure expands, power, cooling, water, site and grid constraints are shaping what builders can deploy. Choosing products that fit the complete factory design helps builders turn computing capacity into useful AI output.</span></p>\n<p><span style=\"font-weight: 400;\">To help builders make those decisions, NVIDIA is introducing NVIDIA DSX Ready, a qualification program for partner products and solutions that meet applicable NVIDIA DSX AI factory reference design requirements.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The program launches with two initial categories: battery energy storage systems (BESS) and cooling distribution units (CDUs). Category-specific requirements and review through the program help builders evaluate offerings with greater confidence, reduce integration risk and move toward deployment.</span></p>\n<h2><b>Qualified Building Blocks for Building AI Factory</b></h2>\n<p><span style=\"font-weight: 400;\">The NVIDIA DSX AI factory platform unifies AI factory design and operations across compute, networking, power, cooling, facilities and software. It helps partners design and operate the factory as one system to produce more useful AI output within available power, cooling, water and grid constraints.</span></p>\n<p><span style=\"font-weight: 400;\">That system view matters now because optimizing one part of an AI factory can shift the bottleneck elsewhere. Power and cooling suppliers need a clear path from reference designs to qualified offerings, and builders need a clearer way to discover and evaluate those offerings.</span></p>\n<p><span style=\"font-weight: 400;\">DSX Ready connects that selection process to applicable NVIDIA DSX requirements. It gives builders a clear qualification to look for and gives partners a defined way to demonstrate that a specific offering meets the requirements for its category.</span></p>\n<h2><b>Power and Cooling Qualification</b></h2>\n<p><span style=\"font-weight: 400;\">At launch, DSX Ready includes qualified BESS solutions </span><span style=\"font-weight: 400;\">Hitachi Energy</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">LG Energy Solution </span><span style=\"font-weight: 400;\">and </span><span style=\"font-weight: 400;\">Tesla</span><span style=\"font-weight: 400;\">, and qualified CDU solutions from </span><span style=\"font-weight: 400;\">LG Electronics, </span><span style=\"font-weight: 400;\">LiquidStack</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">Vertiv</span><span style=\"font-weight: 400;\">. These initial categories bring power systems and liquid-cooling infrastructure into a common program, with requirements tailored to each technology. Additional categories across infrastructure and software will be rolled out over time.</span></p>\n<p><span style=\"font-weight: 400;\">For BESS providers, partners run the required qualification tests and submit supporting data for NVIDIA review and approval within a defined qualification boundary. Passing qualification does not replace site-level engineering or imply site-level stability.</span></p>\n<p><span style=\"font-weight: 400;\">For CDU providers, the path uses the CDU self-qualification suite to determine whether a specific offering meets applicable NVIDIA functional requirements.</span></p>\n<p><span style=\"font-weight: 400;\">Teams can then focus on how qualified offerings fit their site, configuration and operating needs. A qualified CDU may meet the relevant cooling criteria, for example, while the builder still evaluates how it will fit the planned facility.</span></p>\n<h2><b>From Platform Design to Partner Selection</b></h2>\n<p><span style=\"font-weight: 400;\">The value of a reference design grows when builders can connect it to specific products and informed engineering decisions. DSX Ready makes that connection, bringing partner innovation into the infrastructure choices behind NVIDIA DSX AI factories.</span></p>\n<p><span style=\"font-weight: 400;\">Explore </span><a href=\"https://www.nvidia.com/en-us/data-center/products/dsx/dsx-ready/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA DSX Ready</span></a><span style=\"font-weight: 400;\"> qualification categories and learn how to participate. Connect with the right NVIDIA team to begin qualification for a product or solution.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Vishal Ganeriwala",
-      "published_at": "2026-09-21T18:00:07Z",
-      "fetched_at": "2026-09-21T19:28:36.826110Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c53544af87c504f",
-      "url": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/",
-      "title": "Why Deploying Physical AI at Scale Demands Safety at Every Layer",
-      "summary": "Physical AI is moving rapidly from research to large-scale deployment. By 2035, ABI Research projects an installed base of 49 million level 3-5 autonomous vehicles (AVs), while Omdia estimates that roughly 60 million industrial robots will be deployed between 2026 and 2035. As these machines enter roads, factories, warehouses and other environments shared with people, [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><a href=\"https://www.nvidia.com/en-us/glossary/generative-physical-ai/\" target=\"_blank\"><span style=\"font-weight: 400;\">Physical AI</span></a><span style=\"font-weight: 400;\"> is moving rapidly from research to large-scale deployment. By 2035, </span><a href=\"https://my.abiresearch.com/research/15976/\" target=\"_blank\"><span style=\"font-weight: 400;\">ABI Research</span></a><span style=\"font-weight: 400;\"> projects an installed base of 49 million level 3-5 autonomous vehicles (AVs)</span><span style=\"font-weight: 400;\">, while </span><a href=\"https://omdia.tech.informa.com/om146251/robotics-hardware-market-forecast--2026\" target=\"_blank\"><span style=\"font-weight: 400;\">Omdia</span></a><span style=\"font-weight: 400;\"> estimates that roughly 60 million industrial robots will be deployed between 2026 and 2035</span><span style=\"font-weight: 400;\">. As these machines enter roads, factories, warehouses and other environments shared with people, safety must scale with them.</span></p>\n<p><span style=\"font-weight: 400;\">Physical AI safety means proving that AI-driven machines \u2014 </span><a href=\"https://www.nvidia.com/en-us/glossary/autonomous-vehicles/\" target=\"_blank\"><span style=\"font-weight: 400;\">AVs</span></a><span style=\"font-weight: 400;\">, </span><a href=\"https://www.nvidia.com/en-us/glossary/humanoid-robot/\" target=\"_blank\"><span style=\"font-weight: 400;\">humanoid robots</span></a><span style=\"font-weight: 400;\">, industrial robots and more \u2014 behave safely when their decisions turn into physical action. That requires safety across the hardware, software, AI, operating environment and deployment lifecycle \u2014 not a one-time check before deployment.</span></p>\n<h2><b>Why Is Safety the Key to Scaling Physical AI?</b></h2>\n<p><span style=\"font-weight: 400;\">After years of testing and benchmarking,</span> <a href=\"https://www.nvidia.com/en-us/solutions/autonomous-vehicles/\" target=\"_blank\"><span style=\"font-weight: 400;\">AVs</span></a><span style=\"font-weight: 400;\"> continue to expand commercially. That progress has required developers to demonstrate how automated systems address potential hardware and software failures, limitations in intended functionality and AI-specific risks.</span></p>\n<p><span style=\"font-weight: 400;\">Robotics is approaching a similar inflection point as autonomous machines move into factories, warehouses and other environments shared with people.</span></p>\n<p><span style=\"font-weight: 400;\">Across physical AI, manufacturers, regulators, insurers and workplace safety teams need evidence that hardware, software, AI behavior and operating environments can work together safely without human intervention.</span></p>\n<h2><b>Why Does Physical AI Need a New Safety Model?</b></h2>\n<p><span style=\"font-weight: 400;\">Four shifts define new safety standards:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>Dynamic environments require context-aware safety.</b><span style=\"font-weight: 400;\"> Roads, factories and warehouses cannot be fully controlled through static zones or physical barriers. Autonomous systems must perceive changing conditions, adapt their behavior and reach a safe state when something unexpected occurs.</span></li>\n<li style=\"font-weight: 400;\"><b>AI behavior requires its own assurance.</b><span style=\"font-weight: 400;\"> Testing must assess AI software alongside traditional functional safety, using design-time, runtime and validation-time guardrails. Emerging standards such as ISO/IEC TS 22440 are beginning to address these AI-specific risks.</span></li>\n<li style=\"font-weight: 400;\"><b>Deployment is ongoing</b><span style=\"font-weight: 400;\">. AVs and robots evolve through software and model updates, new tasks and changing operating conditions. Material changes may require additional safety testing.</span></li>\n<li style=\"font-weight: 400;\"><b>Validation at scale requires simulation and synthetic data.</b><span style=\"font-weight: 400;\"> The number and complexity of potential scenarios requires real-world testing to be combined with simulation, synthetic data generation and scenario reconstruction.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Together, these shifts require safety to be operationalized across design, deployment and validation, from the underlying hardware to AI behavior and the operating environment.\u00a0</span></p>\n<h2><b>What Safety Foundation Has NVIDIA Built for Physical AI?</b></h2>\n<p><span style=\"font-weight: 400;\">Physical AI safety requires specialized engineering, data, processes and validation that few companies can reproduce alone. NVIDIA\u2019s safety foundation draws on more than a decade of development in AV safety, building expertise in functional safety, sensor fusion, AI behavior assurance, vision AI, simulation and real-world validation.</span></p>\n<p><a href=\"https://www.nvidia.com/en-us/ai-trust-center/halos/autonomous-vehicles/?deeplink=use-case-tabs--2\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Halos</span></a><span style=\"font-weight: 400;\"> is the first and only full-stack safety system for physical AI, helping developers engineer safety across every layer of design, validation and deployment. The principles are shared across AVs and robotics, while the platforms, standards and evidence remain specific to each domain.</span></p>\n<p><span style=\"font-weight: 400;\">For AV development, Halos spans:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>Hardware: </b><a href=\"https://www.nvidia.com/en-us/solutions/autonomous-vehicles/in-vehicle-computing/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA DRIVE AGX Thor</span></a><span style=\"font-weight: 400;\"> provides safety-engineered accelerated compute, while </span><a href=\"https://www.nvidia.com/en-us/solutions/autonomous-vehicles/drive-hyperion/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Hyperion</span></a><span style=\"font-weight: 400;\"> provides the full-stack vehicle platform and reference architecture for level 4 AVs.</span></li>\n<li style=\"font-weight: 400;\"><b>Operating system and middleware:</b> <a href=\"https://blogs.nvidia.com/blog/halos-os-robotaxi-safety/\"><span style=\"font-weight: 400;\">Halos OS</span></a><span style=\"font-weight: 400;\"> provides a unified software foundation built on ASIL-D certified DriveOS. Halos Core and Halos Middleware support system isolation, monitoring and deterministic communication.</span></li>\n<li style=\"font-weight: 400;\"><b>End-to-end model:</b> <a href=\"https://www.nvidia.com/en-us/solutions/autonomous-vehicles/alpamayo/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Alpamayo</span></a><span style=\"font-weight: 400;\"> offers open reasoning vision language action models that bring explainability to long-tail scenarios.</span></li>\n<li style=\"font-weight: 400;\"><b>Simulation and validation: </b><span style=\"font-weight: 400;\">The </span><a href=\"https://docs.nvidia.com/common/resources/Nvidia_Halos_Safety_Evaluation_Framework_Tech_Brief.pdf\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Halos Safety Evaluation Framework</span></a><span style=\"font-weight: 400;\"> provides tools and guidelines for generating evidence to support AV safety cases across different levels of automation.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Together, these elements connect cloud-based AI development and simulation with in-vehicle deployment so safety evidence can remain traceable across the vehicle lifecycle.</span></p>\n<p><span style=\"font-weight: 400;\">For robotics, Halos spans:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>Hardware:</b> <a href=\"https://www.nvidia.com/en-us/edge-computing/products/igx/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA IGX Thor</span></a><span style=\"font-weight: 400;\"> is an industrial-grade module that combines accelerated computing and functional safety on one platform with a dedicated Functional Safety Island. It\u2019s designed to support systems developed for standards including IEC 61508 and ISO 13849.</span></li>\n<li style=\"font-weight: 400;\"><b>Software:</b><span style=\"font-weight: 400;\"> Halos Core for IGX provides the software foundation for safety-related operating functions, including fault detection,\u00a0 monitoring and reporting, along with the communication and processing capabilities that connects sensors, actuators and other safety components\u00a0</span></li>\n<li style=\"font-weight: 400;\"><b>Real-time sensing:</b> <a href=\"https://www.nvidia.com/en-us/technologies/holoscan-sensor-bridge/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Holoscan Sensor Bridge</span></a><span style=\"font-weight: 400;\"> connects sensor data with AI and safety-related processing, helping systems identify invalid information and execute defined safety responses.</span></li>\n<li style=\"font-weight: 400;\"><b>Simulation and validation:</b> <a href=\"https://developer.nvidia.com/isaac/lab\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Isaac Lab</span></a><span style=\"font-weight: 400;\"> and</span><a href=\"https://developer.nvidia.com/omniverse\" target=\"_blank\"> <span style=\"font-weight: 400;\">NVIDIA Omniverse libraries</span></a><span style=\"font-weight: 400;\"> let developers test robot behavior across relevant conditions and edge cases, complementing real-world validation.</span></li>\n</ul>\n<ul>\n<li style=\"font-weight: 400;\"><b>Outside-in safety:</b><span style=\"font-weight: 400;\"> The open source</span> <a href=\"https://github.com/NVIDIA/halos-outside-in-safety\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Halos Outside-In Safety Blueprint</span></a><span style=\"font-weight: 400;\"> uses external cameras and vision AI agents to extend awareness beyond onboard sensors and support facility-level monitoring and functional safety use cases.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Across both AV and robotics, the</span> <a href=\"https://www.nvidia.com/en-us/ai-trust-center/physical-ai/safety-certification/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Halos AI Systems Inspection Lab</span></a><span style=\"font-weight: 400;\"> turns safety, cybersecurity and AI safety requirements into repeatable inspections and helps prepare Halos integrations for final system-level certification by third-party agencies.</span></p>\n<h2><b>Who Is Building With the NVIDIA Halos Safety Ecosystem?</b></h2>\n<p><span style=\"font-weight: 400;\">NVIDIA Halos connects the companies that build, integrate, assess and deploy physical AI solutions, including product developers, software and embedded-system providers, sensor and silicon companies, safety solution developers and certification bodies.</span></p>\n<p><span style=\"font-weight: 400;\">In autonomous vehicles, </span><span style=\"font-weight: 400;\">Geely,</span> <span style=\"font-weight: 400;\">Isuzu</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">Nissan </span><span style=\"font-weight: 400;\">(powered by Wayve software) and Einride are building level 4-ready vehicles on NVIDIA Hyperion, supported by Halos OS. </span></p>\n<p><span style=\"font-weight: 400;\">Uber, Grab, Lyft </span><span style=\"font-weight: 400;\">and other mobility providers are also using Hyperion to scale robotaxi development and deployment. Members of the </span><a href=\"https://www.nvidia.com/en-us/ai-trust-center/physical-ai/safety-certification/?_gl=1*qks3dj*_gcl_aw*R0NMLjE3ODc3NTcxODguQ2owS0NRanduYnJVQmhET0FSSXNBS0toUHBleEl2bnlBMGloYWR2bUEyTlIxVjlycFVSaVViZnZuYnFySWZOaUZaUGp3bnlnU3RfNTIxVWFBdTI1RUFMd193Y0I.*_gcl_au*MTM2NDIwNjE5Mi4xNzg4Mzk0NDg1Li0uLS4xNzg4Mzk0NTQ0LjEyNjE4OTg4MzkuMTc4OTE0OTcwMy4xNzg5MTczNzgz\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Halos AI Systems Inspection Lab</span></a><span style=\"font-weight: 400;\"> include AUMOVIO, </span><span style=\"font-weight: 400;\">Bosch</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">Gatik</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">Hesai, Lucid</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">MIRA, onsemi</span><span style=\"font-weight: 400;\">,</span> <span style=\"font-weight: 400;\">PlusAI, Sony, Valeo and Wayve, spanning autonomous-driving development, ADAS, sensors, silicon, systems integration, validation and safety assurance.</span></p>\n<p><span style=\"font-weight: 400;\">In robotics, </span><span style=\"font-weight: 400;\">acontis</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">QNX</span><span style=\"font-weight: 400;\"> provide the embedded software needed to run safety functions predictably, while </span><a href=\"https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.advantech.com%2Fen%2Fresources%2Fnews%2Fadvantech-mic-735-brings-functional-safety-to-physical-ai-systems&amp;data=05%7C02%7Cpfox%40nvidia.com%7C0223fcf382c746a60e5d08df1201f825%7C43083d15727340c1b7db39efd9ccc17a%7C0%7C0%7C639249471820682901%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=jQ3sOLBihRlPDCJXaYi34Po9HVvyhUAnAByBPhB0TTQ%3D&amp;reserved=0\" target=\"_blank\"><span style=\"font-weight: 400;\">Advantech</span></a><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">NexCOBOT</span><span style=\"font-weight: 400;\"> build safety-designed NVIDIA IGX systems. </span><span style=\"font-weight: 400;\">Infineon</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">NXP</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">STMicroelectronics</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">Texas Instruments</span><span style=\"font-weight: 400;\"> contribute sensor, safety-microcontroller and other semiconductor technologies. </span><span style=\"font-weight: 400;\">KION Group</span><span style=\"font-weight: 400;\"> is developing functional safety agents for autonomous forklifts. </span><span style=\"font-weight: 400;\">Agilit</span><span style=\"font-weight: 400;\">y is integrating NVIDIA IGX Thor and Halos Core into the safety system for its </span><a href=\"https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale\" target=\"_blank\"><span style=\"font-weight: 400;\">Digit 5 humanoid</span></a><span style=\"font-weight: 400;\">.</span></p>\n<h2><b>How Is NVIDIA Halos Independently Assessed?</b></h2>\n<p><span style=\"font-weight: 400;\">For AVs, </span><span style=\"font-weight: 400;\">T\u00dcV S\u00dcD</span><span style=\"font-weight: 400;\"> certified NVIDIA\u2019s Automotive Product Lifecycle software process and DriveOS 6.0 to ISO 26262 ASIL D, as well as NVIDIA\u2019s automotive engineering processes to ISO/SAE 21434. </span><span style=\"font-weight: 400;\">T\u00dcV Rheinland</span><span style=\"font-weight: 400;\"> also performed an independent UNECE safety assessment of NVIDIA DRIVE AV.</span></p>\n<p><span style=\"font-weight: 400;\">For robotics, </span><span style=\"font-weight: 400;\">T\u00dcV Rheinland</span> <span style=\"font-weight: 400;\">is inspecting NVIDIA IGX Thor, Halos OS and Holoscan Sensor Bridge for functional-safety certification readiness, building on </span><span style=\"font-weight: 400;\">T\u00dcV S\u00dcD\u2019s</span><span style=\"font-weight: 400;\"> inspection of the Thor SoC and Halos Core for ISO 26262.</span></p>\n<p><span style=\"font-weight: 400;\">Across physical AI, </span><span style=\"font-weight: 400;\">ANAB</span><span style=\"font-weight: 400;\"> has accredited the NVIDIA Halos AI Systems Inspection Lab as an ISO/IEC 17020 inspection body. The lab inspects scoped Halos integrations and helps companies prepare for final certification by independent third-party bodies.</span></p>\n<p><span style=\"font-weight: 400;\">The companies that scale physical AI will not simply build the most capable systems. They will build systems that can be assessed, certified, deployed and trusted in the real world. Designing functional safety from the start is what separates a prototype from a scalable solution.</span></p>\n<p><i><span style=\"font-weight: 400;\">Learn more about NVIDIA Halos for </span></i><a href=\"http://nvidia.com/en-us/ai-trust-center/halos/autonomous-vehicles/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">AVs</span></i></a><i><span style=\"font-weight: 400;\"> and </span></i><a href=\"https://www.nvidia.com/en-us/ai-trust-center/halos/robotics/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">robotics</span></i></a><i><span style=\"font-weight: 400;\">, and explore the full-stack safety architecture for physical AI.</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Riccardo Mariani",
-      "published_at": "2026-09-21T16:00:46Z",
-      "fetched_at": "2026-09-21T19:28:36.826129Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c7e59bdb83bb6ef6",
-      "url": "https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/",
-      "title": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
-      "summary": "<p>We&#8217;re open-sourcing Rebalancer, the assignment-problem solver that has been used to solve resource allocation problems throughout Meta for over nine years. Rebalancer separates several related concerns: how to specify an assignment problem, how to store it efficiently in memory, how to solve it, and how to debug it. This separation of concerns is crucial to [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/\">Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "content": "<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">We&#8217;re open-sourcing </span><b>Rebalancer</b><span style=\"font-weight: 400;\">, the assignment-problem solver that has been used to solve resource allocation problems throughout Meta for over nine years.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Rebalancer separates several related concerns: how to specify an assignment problem, how to store it efficiently in memory, how to solve it, and how to debug it. This separation of concerns is crucial to Rebalancer\u2019s usability, scalability, and extensibility.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">For a more detailed technical exposition, see the </span><span style=\"font-weight: 400;\">accompanying paper</span><span style=\"font-weight: 400;\">, &#8220;<a href=\"https://www.usenix.org/conference/osdi24/presentation/kumar\" rel=\"noopener\" target=\"_blank\">Optimizing Resource Allocation in Hyperscale Datacenters: Scalability, Usability, and Experiences</a>,&#8221; published at OSDI&#8217;24.</span></li>\n</ul>\n<p>&nbsp;</p>\n<div class=\"jetpack-video-wrapper\"></div>\n<p><span style=\"font-weight: 400;\">Given a </span><i><span style=\"font-weight: 400;\">set of objects</span></i><span style=\"font-weight: 400;\"> and a </span><i><span style=\"font-weight: 400;\">set of bins, </span></i><span style=\"font-weight: 400;\">how do we assign objects to bins in a way that optimizes specific </span><i><span style=\"font-weight: 400;\">objectives</span></i><span style=\"font-weight: 400;\"> while meeting certain </span><i><span style=\"font-weight: 400;\">constraints</span></i><span style=\"font-weight: 400;\">?\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">This question arises at all layers of Meta\u2019s infrastructure stack including in</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>Hardware placement:</b><span style=\"font-weight: 400;\"> racks (objects) need to be positioned in datacenters (bins) to optimize the spread of racks across electrical fault domains while honoring power and cooling limitations.</span></li>\n<li style=\"font-weight: 400;\"><b>Service placement:</b><span style=\"font-weight: 400;\"> servers (objects) need to be assigned to services (bins) in order to meet each service\u2019s demand while optimizing for goals such as fault tolerance (spread a service\u2019s allocated servers across failure domains) and packing efficiency.\u00a0</span></li>\n<li style=\"font-weight: 400;\"><b>Task placement:</b><span style=\"font-weight: 400;\"> tasks (objects) need to be allocated to servers (bins) while honoring server resource limits and optimizing for goals such as fault tolerance and co-location requirements.</span></li>\n<li style=\"font-weight: 400;\"><b>Traffic routing: </b><span style=\"font-weight: 400;\">Route traffic (objects) from billions of users to geographically distributed datacenters (bins) while optimizing network latency and datacenter load.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">The main challenges to designing a reusable framework for solving problems like these are its </span><b>usability</b><span style=\"font-weight: 400;\"> and</span><b> scalability</b><span style=\"font-weight: 400;\">. Usability is impeded by practitioners struggling to translate real-life policies into the precise mathematical formulas required by formal optimization methods, while scalability is hampered by NP-hard problems that cannot be solved efficiently by commercial solvers.</span></p>\n<p><span style=\"font-weight: 400;\">Rebalancer addresses both of these challenges by separating a problem\u2019s specification from its solution. Rebalancer provides a language for describing problems using objects, bins, constraints, and objectives, as in the examples above. Once a problem is described in this way, Rebalancer transforms the problem into a directed-acyclic graph called an expression graph. Rebalancer\u2019s solving algorithm uses the expression graph to either design a local search heuristic or to build a mixed integer program (MIP) solvable with either a commercial (</span><a href=\"https://www.fico.com/en/latest-thinking/solution-sheet/fico-xpress-solver\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">FICO Xpress</span></a><span style=\"font-weight: 400;\"> or </span><a href=\"https://www.gurobi.com/product\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Gurobi</span></a><span style=\"font-weight: 400;\">) or open source solver (</span><a href=\"https://highs.dev/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">HiGHS</span></a><span style=\"font-weight: 400;\">).</span></p>\n<p><img alt=\"\" class=\"alignnone size-full wp-image-24516\" height=\"360\" src=\"https://engineering.fb.com/wp-content/uploads/2026/09/Rebalancer-Meta-Image-1.png\" width=\"476\" /></p>\n<h2><span style=\"font-weight: 400;\">Specifying Assignment Problems</span></h2>\n<p><span style=\"font-weight: 400;\">Rebalancer\u2019s specification language employs a three-step approach to incrementally elevate the level of abstraction for ease of use.\u00a0</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">First, it introduces essential modeling constructs, such as </span><i><span style=\"font-weight: 400;\">dimensions</span></i><span style=\"font-weight: 400;\"> (the real-world attributes of objects and bins), </span><i><span style=\"font-weight: 400;\">partitions</span></i><span style=\"font-weight: 400;\"> (groupings of objects), </span><i><span style=\"font-weight: 400;\">scopes</span></i><span style=\"font-weight: 400;\"> (groupings of bins), and </span><i><span style=\"font-weight: 400;\">utilization</span></i><span style=\"font-weight: 400;\"> (contribution of objects assigned to a bin).</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Next, Rebalancer provides an API to expose commonly used expressions for transformations on these constructs, as well as recursively on other expressions. For example, the utilization of several bins can be aggregated using a </span><span style=\"font-weight: 400;\">SUM/MAX</span><span style=\"font-weight: 400;\"> operation, or transformed using a </span><span style=\"font-weight: 400;\">SQUARE</span><span style=\"font-weight: 400;\"> operation.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Finally, leveraging these expressions, Rebalancer exposes a high-level </span><i><span style=\"font-weight: 400;\">spec</span></i><span style=\"font-weight: 400;\"> API implementing dozens of common objectives and constraints. One can think of each spec as a predefined recipe which accepts some modeling constructs and additional parameters as input, and creates a mathematical formula using the expression API.</span></li>\n</ul>\n<figure class=\"wp-caption alignnone\" id=\"attachment_24517\" style=\"width: 752px;\"><img alt=\"\" class=\"size-full wp-image-24517\" height=\"308\" src=\"https://engineering.fb.com/wp-content/uploads/2026/09/Rebalancer-Meta-Image-2.png\" width=\"752\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-24517\">An example of modeling constructs and specs for a task placement problem.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">In the example above, tasks are modeled as </span><i><span style=\"font-weight: 400;\">objects</span></i><span style=\"font-weight: 400;\"> and servers are modeled as </span><i><span style=\"font-weight: 400;\">bins</span></i><span style=\"font-weight: 400;\"> into which tasks are to be placed. Servers are physically situated in racks; this grouping is modeled as a </span><i><span style=\"font-weight: 400;\">scope</span></i><span style=\"font-weight: 400;\">. Tasks take a certain amount of CPU and storage and servers have a limited amount of each. CPU and storage are modeled as </span><i><span style=\"font-weight: 400;\">dimensions</span></i><span style=\"font-weight: 400;\">. The CPU and storage </span><i><span style=\"font-weight: 400;\">utilization</span></i><span style=\"font-weight: 400;\"> of a server corresponds to the sum of all of the tasks assigned to that server and the server\u2019s utilization limits are modeled using a </span><i><span style=\"font-weight: 400;\">CapacitySpec</span></i><span style=\"font-weight: 400;\">. The expression API could be used to change how the </span><i><span style=\"font-weight: 400;\">utilization</span></i><span style=\"font-weight: 400;\"> is calculated if a simple sum isn\u2019t appropriate.</span></p>\n<p><span style=\"font-weight: 400;\">Further, we model tasks as belonging to jobs. A grouping of objects like this is called a </span><i><span style=\"font-weight: 400;\">partition</span></i><span style=\"font-weight: 400;\"> and we use a </span><i><span style=\"font-weight: 400;\">GroupCountSpec</span></i><span style=\"font-weight: 400;\"> to ensure that each rack has only a single job type (partition) assigned to it. A </span><i><span style=\"font-weight: 400;\">BalanceSpec</span></i><span style=\"font-weight: 400;\"> ensures that each server\u2019s utilization is balanced across both its CPU and storage dimensions.</span></p>\n<p><span style=\"font-weight: 400;\">This example demonstrates how complex assignment problems can be easily and naturally constructed using Rebalancer and how specs provide a way of expressing constraints and goals that can be re-used in many different ways by varying dimensions, scopes, or partitions.</span></p>\n<p><span style=\"font-weight: 400;\">Please check out an <a href=\"https://facebook.github.io/rebalancer\" rel=\"noopener\" target=\"_blank\">exhaustive list of Rebalancer specs in the docs</a></span><span style=\"font-weight: 400;\">.</span></p>\n<h2><span style=\"font-weight: 400;\">Solving Assignment Problems</span></h2>\n<p><span style=\"font-weight: 400;\">Once a problem is specified using the API described above, Rebalancer translates it into an expression graph. The leaf nodes in this graph represent utilization expressions; for example, the memory utilization of server A, as obtained by summing the memory contribution of tasks assigned to server A. These utilization values are then recursively composed using aggregation nodes such as </span><span style=\"font-weight: 400;\">Max</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">Sum,</span><span style=\"font-weight: 400;\"> or transformation nodes such as </span><span style=\"font-weight: 400;\">Square</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">Abs</span><span style=\"font-weight: 400;\">. Note that the value of each node in the expression graph depends on the current assignment and needs to be updated every time the assignment changes.</span></p>\n<p><span style=\"font-weight: 400;\">Along with the problem objectives and constraints, modelers also provide Rebalancer with an initial assignment and a stopping condition, such as a time limit. Rebalancer will compute an optimized assignment that minimizes the objective value and does not violate any new constraints. The constraints that were violated by the initial assignment become high priority goals and their violation is minimized, ideally to zero.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Rebalancer offers two distinct techniques to solve the assignment problem.</span></p>\n<p><b>Optimal Solver. </b><span style=\"font-weight: 400;\">In this mode, Rebalancer translates the expression graph into a set of expressions that can be fed into MIP solvers such as </span><a href=\"https://www.fico.com/en/latest-thinking/solution-sheet/fico-xpress-solver\"><span style=\"font-weight: 400;\">FICO Xpress</span></a><span style=\"font-weight: 400;\">, </span><a href=\"https://www.gurobi.com/product\"><span style=\"font-weight: 400;\">Gurobi</span></a><span style=\"font-weight: 400;\">, or </span><a href=\"https://highs.dev/\"><span style=\"font-weight: 400;\">HiGHS</span></a><span style=\"font-weight: 400;\">. During this translation, Rebalancer needs to represent utilization of a bin by a weighted sum of binary decision variables (one per object) that indicate if the object is assigned to the bin; this can lead to very large MIP models! Rebalancer automatically uses techniques such as variable aggregation (compacting similar objects into a single integer variable), interchangeability, and symmetry breaking to reduce model sizes, but the worst case size of the generated MIP model can still be quadratic, i.e. </span><span style=\"font-weight: 400;\">O(|objects| * |bins|)</span><span style=\"font-weight: 400;\">. The largest problems we consider are too big for any MIP solver.</span></p>\n<p><b>Local Search Solver</b><span style=\"font-weight: 400;\"> overcomes this limitation</span> <span style=\"font-weight: 400;\">by working directly on the expression graph, exploring the local neighborhood around the current assignment by moving some objects to another bin. This neighborhood has a worst-case size of </span><span style=\"font-weight: 400;\">O(|objects|+|bins|)</span><span style=\"font-weight: 400;\">, which allows Rebalancer to model even very large problems without hitting memory limitations. Each </span><i><span style=\"font-weight: 400;\">move </span></i><span style=\"font-weight: 400;\">creates a new candidate assignment for which Rebalancer </span><i><span style=\"font-weight: 400;\">evaluates </span></i><span style=\"font-weight: 400;\">the new values of the objectives and constraints. After all candidates have been evaluated, Rebalancer </span><i><span style=\"font-weight: 400;\">applies </span></i><span style=\"font-weight: 400;\">the best candidate assignment; that is, the one that does not violate a constraint and improves the objective by the maximum amount. This process of evaluating and applying moves is repeated until no progress can be made or a stopping condition is reached. Rebalancer\u2019s local search algorithm is heavily optimized and parallelized so that each evaluation is relatively inexpensive (millions of evaluations per second are possible), allowing us to quickly explore the search space. In addition, Rebalancer knows how to prune the search space, cutting down the number of evaluations needed in the first place.</span></p>\n<p><span style=\"font-weight: 400;\">The right solution technique will depend on your needs. At Meta, almost all large-scale problems use local search. Small- to mid-size problems that have moderate solve time requirements often use the optimal solver. It is also common to prototype with the optimal solver and then migrate to local search after a high-quality baseline solution has been identified. Offline, the optimal solver can be used to tune local search.</span></p>\n<h2><span style=\"font-weight: 400;\">Rebalancer at Meta</span></h2>\n<p><span style=\"font-weight: 400;\">For the last decade, Rebalancer has been continuously used and improved at Meta. It is used to solve a wide range of infrastructure optimization problems including assigning shards to servers (</span><a href=\"https://engineering.fb.com/2020/08/24/production-engineering/scaling-services-with-shard-manager/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Shard Manager</span></a><span style=\"font-weight: 400;\">), servers to services (</span><a href=\"https://research.facebook.com/publications/ras-continuously-optimized-region-wide-datacenter-resource-allocation/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">RAS</span></a><span style=\"font-weight: 400;\">), routing traffic from globally distributed edge datacenters to main datacenters (</span><a href=\"https://research.facebook.com/publications/taiji-managing-global-user-traffic-for-large-scale-internet-services-at-the-edge/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Taiji</span></a><span style=\"font-weight: 400;\">), grouping serverless functions to improve locality, balancing online ML training workloads across regions while considering the priority of ML workloads, and so on. At the time of this writing, Rebalancer is used to solve roughly 40 million assignment problems every day with more than 30 unique problem formulations. The P99 solve time is 12 seconds on a problem with 265k objects and 3.2k bins. For problems with more than 1 million objects and 5k bins, the average solve time is 171 seconds and there are more than 3.4k such runs.</span></p>\n<p><span style=\"font-weight: 400;\">Unsurprisingly, Rebalancer has also been used to solve non-infrastructure problems such as assigning meetings to meeting rooms to minimize travel time, assigning support tickets to engineers, and optimizing desk placements. Beyond Meta, assignment problems arise in many domains such as healthcare, energy and utilities, transportation and logistics, education, and emergency response, and, while we don&#8217;t have the expertise to apply Rebalancer to these areas ourselves, we hope that others do and will.</span></p>\n<h2><span style=\"font-weight: 400;\">Debugging</span></h2>\n<p><span style=\"font-weight: 400;\">With Rebalancer making it easy to formulate and solve problems, we found that the majority of engineering time for modelers shifted to debugging the solver\u2019s behavior. Without proper tools, such debugging required a deep understanding of the solver\u2019s internals.</span><br />\nOver time we identified common questions and pain points among modelers and built a specialized UI tool for answering them: <a href=\"https://facebook.github.io/rebalancer/docs/explorer/\" rel=\"noopener\" target=\"_blank\">Rebalancer Explorer</a>.</p>\n<div class=\"wp-video\" style=\"width: 640px;\"><video class=\"wp-video-shortcode\" controls=\"controls\" height=\"360\" id=\"video-24447-1\" preload=\"metadata\" width=\"640\"><source src=\"https://facebook.github.io/rebalancer/videos/rebalancer-explorer-demo.mp4?_=1\" type=\"video/mp4\" /><a href=\"https://facebook.github.io/rebalancer/videos/rebalancer-explorer-demo.mp4\">https://facebook.github.io/rebalancer/videos/rebalancer-explorer-demo.mp4</a></video></div>\n<p>&nbsp;</p>\n<p><span style=\"font-weight: 400;\">Explorer accompanies Rebalancer in this open-source release as a Dockerized web UI that facilitates rapid debugging and iteration when solving problems with both local search and optimal solvers. It helps answer questions such as which constraints are binding, what would happen if a constraint were relaxed, and why an object was placed in one bin and not another.</span></p>\n<h2><span style=\"font-weight: 400;\">The Future of Rebalancer</span></h2>\n<p><span style=\"font-weight: 400;\">We are always looking to optimize Rebalancer\u2019s performance, add new capabilities, and extend it to support a wider range of assignment problems. Rebalancer is proud to be open-source (Apache 2.0 license) and we invite both systems and optimization experts to try Rebalancer and contribute to the project by identifying performance bottlenecks, adding new solve techniques, extending it to support new sorts of problems, or just by fixing bugs. We look forward to seeing how the systems and optimization communities adopt, build, and contribute to Rebalancer.\u00a0</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><b>Code: </b><a href=\"https://github.com/facebook/rebalancer\"><span style=\"font-weight: 400;\">Rebalancer GitHub repo</span></a></li>\n<li style=\"font-weight: 400;\"><b>Docs: </b><a href=\"http://facebook.github.io/rebalancer\" rel=\"noopener\" target=\"_blank\">Introducing to Rebalancer</a></li>\n<li style=\"font-weight: 400;\"><b>PyPI: </b><a href=\"https://pypi.org/project/rebalancer/\"><span style=\"font-weight: 400;\">Rebalancer Python package</span></a><span style=\"font-weight: 400;\">\u00a0</span></li>\n<li style=\"font-weight: 400;\"><b>Paper: </b><a href=\"https://www.usenix.org/system/files/osdi24-kumar.pdf\" rel=\"noopener\" target=\"_blank\"><i><span style=\"font-weight: 400;\">Optimizing Resource Allocation in Hyperscale Datacenters: Scalability, Usability, and Experiences</span></i></a><span style=\"font-weight: 400;\"> \u2014 </span><span style=\"font-weight: 400;\">OSDI 2024</span></li>\n</ul>\n<h3><span style=\"font-weight: 400;\">Acknowledgements</span></h3>\n<p><em><span style=\"font-weight: 400;\">Rebalancer was developed by past and present members of the Algorithmic Optimization team at Meta: Pol Mauri Ruiz, Igor Kabiljo, Neeraj Kumar, Vijay Menon, Mayank Pundir, Andrew Newell, Liyuan Wang, Richard Barnes, Sahil Deshpande, Karthik Velakur, Yang Liu, Leart Gjoni, Ravi Surulikamu, Tony Zhang, Raj Rajendran, Aravind Narayanan, Lakshmi Ganesh, and Saranyan Vigraham.</span></em></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/09/21/open-source/rebalancer-generic-high-performance-library-assignment-problems/\">Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "source_name": "Meta Engineering",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "engineering",
-        "meta",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-21T16:00:37Z",
-      "fetched_at": "2026-09-21T19:28:34.696288Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "658f98e3c9afdd9e",
-      "url": "https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem/",
-      "title": "From Enablement to Execution, Egypt\u2019s AI Ecosystem Reaches Production Scale",
-      "summary": "Today, Egypt\u2019s AI builders gathered in the Grand Egyptian Museum for a reception that highlighted the nation\u2019s rapidly growing AI ecosystem \u2014 spanning AI natives, developers, researchers, startups and enterprises \u2014 building applications across industries. The event included a keynote from Paolo Guglielmini, vice president of EMEA at NVIDIA. Ahmed Mostafa, regional AI adoption lead [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">Today, Egypt\u2019s AI builders gathered in the Grand Egyptian Museum for a reception that highlighted the nation\u2019s rapidly growing AI ecosystem \u2014 spanning AI natives, developers, researchers, startups and enterprises \u2014 building applications across industries.</span></p>\n<p><span style=\"font-weight: 400;\">The event included a keynote from Paolo Guglielmini, vice president of EMEA at NVIDIA. Ahmed Mostafa, regional AI adoption lead for the Middle East and Africa at NVIDIA, delivered a session on \u201cWhy Accelerating Every Layer Matters,\u201d exploring NVIDIA\u2019s full-stack approach to AI development and deployment.</span></p>\n<p><span style=\"font-weight: 400;\">The event also featured a panel moderated by Basil Fateen, head of startups for the Middle East and Africa at NVIDIA, with participation from startups across smart spaces, healthcare, cybersecurity and robotics.</span></p>\n<p><span style=\"font-weight: 400;\">In Egypt, the </span><a href=\"https://www.nvidia.com/en-us/training/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Deep Learning Institute</span></a><span style=\"font-weight: 400;\"> learner base grew more than tenfold in a single year. In June, the </span><span style=\"font-weight: 400;\">National Telecommunications Regulatory Authority of Egypt </span><span style=\"font-weight: 400;\">licensed </span><span style=\"font-weight: 400;\">Hassan Allam Data Centers</span><span style=\"font-weight: 400;\"> to build and operate data centers in the country. Under that license, </span><span style=\"font-weight: 400;\">Hassan Allam Utilities</span><span style=\"font-weight: 400;\"> and investment firm A15 agreed to develop a new data center, an estimated $400 million investment. </span></p>\n<p><span style=\"font-weight: 400;\">In addition, NVIDIA and A15 in July hosted an event connecting Egypt\u2019s leading founders with NVIDIA\u2019s global ecosystem. This has been complemented by recent startup and investor events in Egypt, including engagements with </span><span style=\"font-weight: 400;\">A15</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">Plug and Play</span> <span style=\"font-weight: 400;\">at the Creativa Innovation Hub at Sultan Hussein Kamel Palace, an affiliate of the Ministry of Communications and Information Technology.</span></p>\n<p><span style=\"font-weight: 400;\">Spanning a range of industries, members of the </span><a href=\"https://www.nvidia.com/en-us/startups/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Inception</span></a><span style=\"font-weight: 400;\"> program in Egypt include:</span></p>\n<ul>\n<li style=\"font-weight: 400;\"><strong>Aidera</strong><span style=\"font-weight: 400;\">: A unified enterprise intelligence system that connects data, systems, workflows and operational touch points turning enterprise-wide signals into informed decisions, intelligent automation, coordinated execution and measurable impact.</span></li>\n<li style=\"font-weight: 400;\"><strong>Intella</strong><span style=\"font-weight: 400;\">:</span><span style=\"font-weight: 400;\"> Developing Arabic speech intelligence for applications across financial services, telecommunications and more.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\"><strong>Marses Robotics</strong>:</span><span style=\"font-weight: 400;\"> Developing autonomous robotics and industrial automation technologies.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\"><strong>Proteinea</strong>: </span><span style=\"font-weight: 400;\">Combining AI protein design with lab experiments to develop differentiated medicines.</span></li>\n<li style=\"font-weight: 400;\"><strong>Stakpak</strong><span style=\"font-weight: 400;\">: Developing an open source autonomous developer-operations AI agent.</span></li>\n<li style=\"font-weight: 400;\"><strong>Paymob </strong><span style=\"font-weight: 400;\">and</span><strong> Thndr</strong><span style=\"font-weight: 400;\">:</span><span style=\"font-weight: 400;\"> Building better financial services through technology and AI.\u00a0</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">The NVIDIA VC Alliance has also expanded its presence in Egypt, with </span><span style=\"font-weight: 400;\">A15</span><span style=\"font-weight: 400;\"> and</span><span style=\"font-weight: 400;\"> M Empire </span><span style=\"font-weight: 400;\">joining the program, connecting more local investors with NVIDIA\u2019s global startup ecosystem. This momentum has been complemented by startup and investor events, including collaborations with </span><span style=\"font-weight: 400;\">RiseUp</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">Plug and Play</span><span style=\"font-weight: 400;\">, as well as</span> <span style=\"font-weight: 400;\">Flat6Labs,</span><span style=\"font-weight: 400;\"> a regional entrepreneurship platform supporting startups and innovation across emerging markets, and </span><span style=\"font-weight: 400;\">Algebra Ventures</span><span style=\"font-weight: 400;\">, a Cairo-based venture capital firm backing technology startups.</span></p>\n<h2><b>AI Growth Across Africa</b></h2>\n<p><span style=\"font-weight: 400;\">The Egypt ecosystem event showed just a piece of Africa\u2019s larger, growing AI ecosystem.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">For most of the past decade, conversations about Africa\u2019s AI ecosystem revolved around \u201cpotential.\u201d They centered on what the technology might do for the continent, rather than what the continent could build</span> <span style=\"font-weight: 400;\">with it.</span></p>\n<p><span style=\"font-weight: 400;\">Africa is home to roughly 18% of the world\u2019s population but less than 1% of the world\u2019s data center capacity. This means African developers have often relied on cloud-based compute hosted outside the continent for large-scale AI training.</span></p>\n<p><span style=\"font-weight: 400;\">This is rapidly changing. Within a year, four AI factories have been announced or brought online across Africa, with another 656 megawatts of new capacity in the pipeline. These AI factories will provide African developers and enterprises with the accelerated computing infrastructure needed to train, fine-tune and deploy AI models closer to where data is created.</span></p>\n<p><span style=\"font-weight: 400;\">Cassava Technologies, Africa\u2019s first <a href=\"https://www.nvidia.com/en-us/data-center/gpu-cloud-computing/partners/\" target=\"_blank\">NVIDIA Cloud Partner</a>, is expanding access to NVIDIA accelerated computing through its AI factory in South Africa and planned deployments across Egypt, Kenya, Nigeria and Morocco \u2014 an investment that</span> <a href=\"https://www.datacenterdynamics.com/en/news/cassava-technologies-brings-nvidia-powered-ai-supercomputer-to-south-africa/\" target=\"_blank\"><span style=\"font-weight: 400;\">could reach $720 million</span></a><span style=\"font-weight: 400;\">. In Egypt, Cassava and Vodafone Egypt recently</span> <a href=\"https://www.cassavatechnologies.com/launch-of-egypt-first-national-ai-factory-in-partnership-with-vodafone-business/\" target=\"_blank\"><span style=\"font-weight: 400;\">announced an AI factory initiative</span></a><span style=\"font-weight: 400;\"> to provide businesses and government organizations with locally hosted AI infrastructure through GPU-as-a-service, supporting the development and deployment of AI applications while keeping data in-country.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Building on Cassava\u2019s </span><a href=\"https://www.cassavatechnologies.com/cassava-scales-african-ai-infrastructure-with-nvidia-powered-ai-factories-to-accelerate-sovereign-data-capabilities/\" target=\"_blank\"><span style=\"font-weight: 400;\">first AI factory</span></a><span style=\"font-weight: 400;\"> in South Africa, the rollout aims to expand access to local accelerated computing, helping developers, enterprises and researchers train, customize and deploy AI models closer to where their data is created.</span></p>\n<p><span style=\"font-weight: 400;\">Similarly, </span><span style=\"font-weight: 400;\">Stratos Lab</span><span style=\"font-weight: 400;\">, a South African AI neocloud provider, is partnering with ECOBLOX and Digital Parks Africa to launch an AI cloud powered by more than 50 NVIDIA HGX B300 systems \u2014 delivering over 7 exaflops of performance. The deployment gives African enterprises and developers access to high-performance GPU compute locally, enabling model training, inference and agentic AI workloads with lower latency and at reduced costs.</span></p>\n<p><span style=\"font-weight: 400;\">And at GITEX Africa in Marrakech in April, </span><span style=\"font-weight: 400;\">Nexus Core Systems</span><span style=\"font-weight: 400;\"> announced a collaboration with </span><span style=\"font-weight: 400;\">Morocco\u2019s Ministry of Digital Transition</span><span style=\"font-weight: 400;\">, its </span><span style=\"font-weight: 400;\">Ministry of Investment</span><span style=\"font-weight: 400;\"> and the investment agency </span><span style=\"font-weight: 400;\">AMDIE</span><span style=\"font-weight: 400;\"> to build the</span> <a href=\"https://www.connectingafrica.com/partnerships/gitex-africa-2026-companies-ink-deals-to-transform-morocco\" target=\"_blank\"><span style=\"font-weight: 400;\">Nexus AI factory</span></a><span style=\"font-weight: 400;\"> outside Casablanca: a $1.2 billion initial investment with 500 megawatts planned, NVIDIA Blackwell accelerated computing and renewable power from </span><span style=\"font-weight: 400;\">TAQA Morocco</span><span style=\"font-weight: 400;\">.</span></p>\n<h2><b>The Demand Was Already There</b></h2>\n<p><span style=\"font-weight: 400;\">Infrastructure of this kind is not based on mere potential </span><span style=\"font-weight: 400;\">\u2014 it\u2019s based on </span><span style=\"font-weight: 400;\">confidence that local developers and enterprises are ready to put the infrastructure to productive use.</span></p>\n<p><span style=\"font-weight: 400;\">In 2024, NVIDIA set a target of training 100,000 developers across Africa through the</span> <a href=\"https://www.nvidia.com/en-us/training/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Deep Learning Institute</span></a><span style=\"font-weight: 400;\"> within three years. To date, NVIDIA\u2019s trained over 85,000 developers in Africa, and the continent is among NVIDIA\u2019s fastest-growing developer regions \u2014 Nigeria is now the institute\u2019s second-largest market globally.</span></p>\n<p><span style=\"font-weight: 400;\">InstaDeep</span><span style=\"font-weight: 400;\"> joined</span> <a href=\"https://www.nvidia.com/en-us/startups/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Inception</span></a><span style=\"font-weight: 400;\"> in 2017 as a small team in Tunis using its first NVIDIA DGX system. Since then, it\u2019s developed drug discovery, protein design and logistics optimization applications, and was acquired by </span><span style=\"font-weight: 400;\">BioNTech</span><span style=\"font-weight: 400;\"> for about $680 million.</span></p>\n<p><span style=\"font-weight: 400;\">Africa accounts for</span> <a href=\"https://www.technologyreview.com/2023/11/17/1083637/lelapa-ai-african-languages-vulavula/\" target=\"_blank\"><span style=\"font-weight: 400;\">roughly a third</span></a><span style=\"font-weight: 400;\"> of the world\u2019s languages, often invisible to frontier models. To help advance African language models, language model lab </span><span style=\"font-weight: 400;\">Lelapa AI </span><span style=\"font-weight: 400;\">built InkubaLM and the Vulavula speech service for South African languages including isiZulu and Sesotho.</span></p>\n<p><span style=\"font-weight: 400;\">MeetKai</span><span style=\"font-weight: 400;\">, for example, an NVIDIA Inception member, is expanding its work in Egypt with Smart Africa, building its AI stack on NVIDIA technology as part of its plans for the market. The company is among a growing group of AI innovators using NVIDIA technology to build and scale across Africa.</span></p>\n<p><span style=\"font-weight: 400;\">And there\u2019s still much room to grow. McKinsey puts African data center demand at roughly</span> <a href=\"https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/building-data-centers-for-africas-unique-market-dynamics\" target=\"_blank\"><span style=\"font-weight: 400;\">0.4 gigawatts today</span></a><span style=\"font-weight: 400;\">, and estimates it will rise to between 1.5 and 2.2 gigawatts by 2030, which requires between $10 to $20 billion in construction.</span></p>\n<p><i><span style=\"font-weight: 400;\">Learn more about the </span></i><a href=\"https://developer.nvidia.com/developer-program\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA Developer Program</span></i></a><i><span style=\"font-weight: 400;\">, </span></i><a href=\"https://www.nvidia.com/en-us/startups/?ncid=pa-srch-goog-877459&amp;_bt=808570359331&amp;_bk=nvidia%20inception&amp;_bm=p&amp;_bn=g&amp;_bg=196496517317&amp;gad_source=1&amp;gad_campaignid=23840972051&amp;gbraid=0AAAAAD4XAoEs8FPcPY0c9yBAuaUqEQz1-&amp;gclid=CjwKCAjwj7HTBhBiEiwA8s35OtpBg3T5BssRpV5K9jg_emjMP69A6TugU56FZmwIssH6e4Kz02LpFBoCgHkQAvD_BwE\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA Inception</span></i></a><i><span style=\"font-weight: 400;\"> and </span></i><a href=\"https://www.nvidia.com/en-us/training/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA Deep Learning Institute</span></i></a><i><span style=\"font-weight: 400;\">.\u00a0\u00a0</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Fatima Tambajang",
-      "published_at": "2026-09-21T16:00:10Z",
-      "fetched_at": "2026-09-21T19:28:36.826137Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d84d5932ca4ed661",
-      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
-      "title": "Improving synthesis prediction of small molecules at scale with RetroChimera",
-      "summary": "<p>Custom-made molecules are advancing medicine, materials, and agriculture, but producing them is slow and expensive. A new Nature paper highlights RetroChimera, a predictive model that helps accelerate chemical synthesis, helping researchers explore a wide range of molecules.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/\">Improving synthesis prediction of small molecules at scale with RetroChimera</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "content": "<figure class=\"wp-block-image size-full\"><img alt=\"Example of a retrosynthesis tree. For a single target molecule, many disconnections are possible, which introduces a high branching factor. The figure shows many incomplete routes in pale colors that contrast a completed route, which connects all the way from the target molecule to purchasable building blocks. \" class=\"wp-image-1186908\" height=\"788\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/RetroChimera-BlogHeroFeature-1400x788-1.jpg\" width=\"1400\" /></figure>\n\n\n\n<div class=\"wp-block-msr-immersive-section alignfull row\" style=\"padding-bottom: 0; padding-top: 0;\">\n\t\n\t<div class=\"container\">\n\t\t<div class=\"wp-block-msr-immersive-section__inner wp-block-msr-immersive-section__inner--narrow\">\n\t\t\t<div class=\"wp-block-columns mb-10 pb-1 pr-1 is-layout-flex wp-container-core-columns-is-layout-8f761849 wp-block-columns-is-layout-flex\">\n<div class=\"wp-block-column is-layout-flow wp-block-column-is-layout-flow\">\n<h2 class=\"wp-block-heading h3\" id=\"at-a-glance\">At a glance</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>We report on the recent publication of our retrosynthesis model RetroChimera in the journal <em><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.nature.com/articles/s41586-026-11160-9\" rel=\"noopener noreferrer\" target=\"_blank\">Nature<span class=\"sr-only\"> (opens in new tab)</span></a></em>.</li>\n\n\n\n<li>The paper describes the model\u2019s architecture as well as extensive validation studies, including the model\u2019s ability to recall rare reaction types, and successful zero-shot transfer and fine-tuning on proprietary datasets.</li>\n\n\n\n<li>We open-source RetroChimera\u2019s implementation and weights in the hope that it will enable researchers to accelerate development of new medicinally relevant molecules and advanced materials.&nbsp;</li>\n</ul>\n</div>\n</div>\t\t</div>\n\t</div>\n\n\t</div>\n\n\n\n<p class=\"wp-block-paragraph\">Developing new medicines and materials requires making new molecules but planning how to make them is still largely manual, time-consuming, and costly. RetroChimera automatically proposes high-quality synthesis routes. The model combines two strong models with complementary strengths, learning how to rank their proposals to produce better predictions than either alone. In blind tests, PhD-level chemists prefer RetroChimera\u2019s individual reaction predictions over preceding models and recorded literature reactions.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">Custom-made molecules are unlocking advances in modern medicine, smart materials, and sustainable agriculture. Yet, progress is slowed by chemical synthesis\u2014the time-consuming process of making new molecules from simpler building blocks in the lab. In addition, synthesis is a significant driver of drug development costs. So even as computational methods make it possible to explore large numbers of novel molecules, finding practical ways to synthesize them remains a critical challenge.&nbsp;</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img alt=\"Figure 1: \n\nExample of a retrosynthesis tree. For a single target molecule, many disconnections are possible, which introduces a high branching factor. The figure shows many incomplete routes in pale colors that contrast a completed route, which connects all the way from the target molecule to purchasable building blocks. \" class=\"wp-image-1186740\" height=\"900\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/FIG-1_retrochimera-retrosynthesis-structure-nodes.png\" style=\"width: 690px; height: auto;\" width=\"2160\" /><figcaption class=\"wp-element-caption\">Figure 1: Planning a synthesis by working backward. Retrosynthesis starts with a target molecule and proposes successive disconnections into simpler precursors until purchasable building blocks are reached. The highlighted path shows a complete synthesis route; pale branches illustrate alternatives explored along the way. Circles represent molecules and squares represent reactions. For clarity, only a few branches are illustrated, with chemical structures shown for the target, one intermediate, and selected building blocks.&nbsp;</figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">Retrosynthesis approaches this problem by working backwards from a target molecule, breaking it down step by step into simpler precursors (Figure 1). This process is comparable to playing strategic board games like chess and Go. It involves contemplating a wide range of possible immediate moves, or&nbsp;individual disconnections, while also requiring high-level strategic thinking to reach the end-to-end synthesis plan. However, the number of possible moves in retrosynthesis is much larger than in board games, and it is not obvious which moves would be available for a given molecule. Existing systems face major challenges, including recalling rare but strategically important reactions, robustness beyond the training distribution, and aligning with chemists\u2019 expectations. As a result, retrosynthesis&nbsp;often requires highly specialized expertise, which hinders scaling and automation of scientific discovery.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full is-resized\"><img alt=\"Figure 2: \n\nOutline of the RetroChimera workflow. RetroChimera takes a single target molecule, its sub-models give predictions for a disconnection, and learned voting gives a ranked output. \" class=\"wp-image-1186741\" height=\"964\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/FIG-2_retrochimera-figure-1c-scaled.png\" style=\"width: 722px; height: auto;\" width=\"2560\" /><figcaption class=\"wp-element-caption\">Figure 2: Our framework for ensemble-based retrosynthesis with learned re-ranking which underpins RetroChimera. The ensemble receives a target molecule as the input, which is then processed by the sub-models. The model outputs are aggregated using a learning-to-rank strategy. While in this work we only investigate deep learning models as prediction sources (solid boxes), it is possible to add additional sources, for example calls to reaction databases or human-in-the-loop queries (dashed box).&nbsp;</figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">In a paper recently published in the journal <em><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.nature.com/articles/s41586-026-11160-9\" rel=\"noopener noreferrer\" target=\"_blank\">Nature<span class=\"sr-only\"> (opens in new tab)</span></a></em>, we present <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://github.com/microsoft/retrochimera\" rel=\"noopener noreferrer\" target=\"_blank\"><em>RetroChimera</em><span class=\"sr-only\"> (opens in new tab)</span></a>, a new framework for retrosynthesis prediction. It is built around two models (Figure 2). <em>R-SMILES 2</em>, a Transformer-based de-novo model, predicts precursor molecules directly from the input molecule. This gives it the flexibility to learn reaction patterns directly from data. However, its unconstrained generation can also make it prone to hallucination.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><em>NeuralLoc</em>, in contrast, is a graph neural network- (GNN) based model that encodes both the target molecule and reaction templates as graphs. It selects reaction templates and predicts where they should be applied to the target molecule. Its predictions are grounded in reaction patterns extracted from the training data, so it tends to produce more accurate and reliable outputs. But it\u2019s more constrained when encountering reactions not covered by the template library.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">These differences actually turn out to be a strength. Rather than making the same kinds of predictions, the two models capture complementary patterns in chemistry and specialize in different reaction types. R-SMILES 2 performs particularly well on reactions that involve large changes over the course of the reaction, while NeuralLoc excels in reactions of low precedence and those involving more localized changes.</p>\n\n\n\n<p class=\"wp-block-paragraph\">RetroChimera combines the ranked predictions of both sub-models using a learned ensembling strategy. Each model assigns a learned, rank-dependent vote to each predicted reactant set, and votes are added when both models propose the same reaction. By learning how much to trust each model at different ranks, RetroChimera can leverage their complementary strengths, approximately matching the better-performing sub-model across reaction classes.</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img alt=\"Figure 3:  \n\nOutputs of RetroChimera and other models were ranked by PhD-level expert chemists. Retrosynthetic disconnections predicted by RetroChimera had the highest acceptance rate (left). A single incorrect prediction already invalidates an entire synthesis route. As a result, routes suggested by RetroChimera had 90% acceptance rate by experts, while only 20-50% of those predicted by its sub-models or a baseline were deemed acceptable by chemists (right). \" class=\"wp-image-1186742\" height=\"743\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/FIG-3_retrochimera-solve_rate_figure_blogpost2-scaled.png\" width=\"2560\" /><figcaption class=\"wp-element-caption\">Figure 3: Expert assessment of multistep synthesis routes. Left: Ratings of individual reaction steps. Right: Complete routes accepted or rejected for ten challenging targets. RetroChimera succeeded on nine targets, versus five for the de novo model, four for the editing model, and two for NeuralSym, a strong baseline model.&nbsp;</figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">As a result, RetroChimera performs strongly across both common and rare reaction classes and produces retrosynthesis predictions that better align with chemists\u2019 judgment (Figure 3). In blind tests, expert chemists preferred disconnections of complex molecules suggested by RetroChimera over those obtained from its constituent sub-models, as well as those from more established approaches, and even from the test set itself.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We believe RetroChimera could help researchers identify promising synthesis route more efficiently, supporting faster design-make-test cycle across molecular science applications, including drug discovery and design of smart materials. RetroChimera could enable chemists to assess more\u2014and more complex\u2014candidate molecules at large scale. Paired with increasing levels of laboratory automation, we expect further acceleration toward closed-loop, self-improving systems for synthesis planning and execution.&nbsp;&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">RetroChimera is available on <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://github.com/microsoft/retrochimera\" rel=\"noopener noreferrer\" target=\"_blank\">GitHub<span class=\"sr-only\"> (opens in new tab)</span></a> (MIT license) and accessible via <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://ai.azure.com/catalog/models/RetroChimera\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Foundry<span class=\"sr-only\"> (opens in new tab)</span></a>. For instructions on how to access the checkpoint, we refer to the GitHub repository.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We invite the broader chemistry community to experiment with RetroChimera, helping us identify its strengths and shortcomings so we can enhance it in the future. We are looking forward to hearing how it performs on various targets you care about!</p>\n\n\n\n<p class=\"wp-block-paragraph\">For a deeper look at the findings, including evaluation experiments with our external research collaborators, see the full <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.nature.com/articles/s41586-026-11160-9\" rel=\"noopener noreferrer\" target=\"_blank\">Nature publication<span class=\"sr-only\"> (opens in new tab)</span></a> and the accompanying <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://aka.ms/AA13geyg\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Source article<span class=\"sr-only\"> (opens in new tab)</span></a>.\u00a0</p>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-fe48e5de wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://www.microsoft.com/en-us/research/publication/chemist-aligned-retrosynthesis-by-ensembling-diverse-inductive-bias-models/\">Publication</a></div>\n\n\n\n<div class=\"wp-block-button is-style-fill-github\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://github.com/microsoft/retrochimera\" rel=\"noopener\" target=\"_blank\">OSS repository</a></div>\n\n\n\n<div class=\"wp-block-button is-style-outline is-style-outline--1\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://ai.azure.com/catalog/models/RetroChimera\" rel=\"noopener\" target=\"_blank\">Microsoft Foundry</a></div>\n</div>\n<span class=\"sr-only\" id=\"label-external-link\">Opens in a new tab</span><p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/\">Improving synthesis prediction of small molecules at scale with RetroChimera</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "source_name": "Microsoft Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "microsoft",
-        "company"
-      ],
-      "author": "Felix Pultar, John Gardner, Guoqing Liu, Marwin Segler",
-      "published_at": "2026-09-21T15:30:19Z",
-      "fetched_at": "2026-09-21T19:28:36.654206Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b45aaef14b19b873",
-      "url": "https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2/",
-      "title": "Turn Your Latest Observations Into Timely Weather Decisions With NVIDIA Earth-2",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image7-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image7-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" />Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/image7-1-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image7\" width=\"768\" /><p>Weather-sensitive industries increasingly have access to observations that offer an earlier, more local view of changing conditions. Energy companies collect measurements across wind and solar assets, emergency management teams rely on radar and local sensors, and satellite providers continuously observe the Earth. This data helps organizations understand and manage physical risk across sectors\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/turn-your-latest-observations-into-timely-weather-decisions-with-nvidia-earth-2/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Elizabeth Goodman",
-      "published_at": "2026-09-21T15:00:00Z",
-      "fetched_at": "2026-09-21T19:28:37.249780Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6eae0a9501cd3f0a",
       "url": "https://arxiv.org/abs/2608.20530",
       "title": "LiLiCorr: Lightweight Likelihood Correlation of Parallel Drafts for Speculative Decoding",
@@ -47876,27 +47707,6 @@
       "author": "Zhentao Tan, Chang Liu, Yao Liu, Yue Wu, Jieping Ye",
       "published_at": "2026-09-23T04:00:00Z",
       "fetched_at": "2026-09-23T07:46:27.645910Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a34d58b87503fec2",
-      "url": "https://blogs.nvidia.com/blog/ai-security-agent-stack/",
-      "title": "AI Security Is an Engineering Problem \u2014 How to Solve It at Every Layer of the Agent Stack",
-      "summary": "AI security is an engineering problem. That means defined security requirements, enforceable controls, named owners and evidence that protections work.\u00a0 As AI becomes more capable, the industry must accelerate security engineering, broaden access to defensive tools and share what works faster.\u00a0 Technology Changes, Security Fundamentals Endure The internet and cloud computing changed how software operates, [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">AI security is an engineering problem. That means defined security requirements, enforceable controls, named owners and evidence that protections work.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">As AI becomes more capable, the industry must accelerate security engineering, broaden access to defensive tools and share what works faster.\u00a0</span></p>\n<h2><b>Technology Changes, Security Fundamentals Endure</b></h2>\n<p><span style=\"font-weight: 400;\">The internet and cloud computing changed how software operates, while core security responsibilities endured: establish identity, control access, limit exposure and verify that protections work.</span></p>\n<p><span style=\"font-weight: 400;\">AI agents introduce new capabilities \u2014 reasoning, using tools and adapting actions based on the data they encounter. Those capabilities require applying established principles to new operating conditions.</span></p>\n<p><span style=\"font-weight: 400;\">This pace creates pressure. Organizations want the productivity benefits of AI while the practices to govern and secure these systems are still developing.\u00a0</span></p>\n<h2><b>Security Depends on the Full Agent Stack</b></h2>\n<p><span style=\"font-weight: 400;\">Applications depend on code, data, identities, services and infrastructure. Security depends on how those components work together \u2014 and AI agents </span><a href=\"https://developer.nvidia.com/blog/where-security-fits-in-an-ai-agent-stack/\" target=\"_blank\"><span style=\"font-weight: 400;\">extend that system</span></a><span style=\"font-weight: 400;\">.</span></p>\n<p><span style=\"font-weight: 400;\">Models provide capabilities; harnesses organize context, tools and workflows; and runtime environments provide the infrastructure within which actions execute. Each part of that stack carries security responsibilities, and proper protection requires controls across each layer, as data, instructions and actions move through the system.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Consider an agent updating a customer record. Say it encounters malicious instructions in an attached document and attempts to export customer data to an unauthorized destination.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">A network policy should block the transfer, and protected logs should capture the attempted tool call, authorization decision and outcome so the security team can identify the tool used and the destination it attempted to reach.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Permission to update a customer record should not automatically extend to exporting that data. An agent can request additional access, but it cannot authorize that access itself.</span></p>\n<h2><b>Build Security Into How Agents Operate</b></h2>\n<p><span style=\"font-weight: 400;\">A security boundary has to hold even when an agent makes the wrong decision. The environment where an agent runs determines what it\u2019s allowed to do, and must therefore install limits on files, network destinations and processes independently of the agent\u2019s reasoning.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Instructions and safeguards can help guide behavior, but security also requires enforceable boundaries.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Each agent needs a traceable identity and credentials limited to its assigned task. Organizations need clear policies defining what information agents can access, which systems they can change and which actions require approval. Within those boundaries, consequential actions and permission changes still require human approval.</span></p>\n<p><span style=\"font-weight: 400;\">Teams also need to verify the source and integrity of the tools, skills and dependencies agents use. If something goes wrong, protected records of tool calls, authorization decisions and outcomes help investigators reconstruct what happened. Clear procedures for revoking access and containing incidents make that evidence actionable.</span></p>\n<p><a href=\"https://build.nvidia.com/openshell?nvid=nv-int-solr-662458-vt53&amp;_gl=1*18jmge8*_gcl_au*MjEyMzE0NzgxOS4xNzg4MjE0MjE4Li0uLS4xNzg4MjE0Mjc3LjE3NzIyOTMxNy4xNzg5NjcwMDk0LjE3ODk2NzAxMTA.\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA OpenShell</span></a><span style=\"font-weight: 400;\"> is an open source, secure runtime that enforces policies outside of the agent\u2019s reach and provides sandboxed execution while governing how agents access, data, network and system resources. </span><a href=\"https://secureaialliance.org/\" target=\"_blank\"><span style=\"font-weight: 400;\">Open Secure AI Alliance</span></a><span style=\"font-weight: 400;\"> partners are building on OpenShell: </span><a href=\"https://blogs.cisco.com/ai/cisco-announces-defenseclaw\" target=\"_blank\"><span style=\"font-weight: 400;\">Cisco\u2019s </span><span style=\"font-weight: 400;\">DefenseClaw</span></a><span style=\"font-weight: 400;\"> adds a governance layer, </span><span style=\"font-weight: 400;\">and </span><a href=\"https://investors.jfrog.com/news/news-details/2026/JFrog-Delivers-Trust-Layer-for-AI-Driven-Software-with-NVIDIA/default.aspx\" target=\"_blank\"><span style=\"font-weight: 400;\">JFrog</span></a><span style=\"font-weight: 400;\"> integrates with OpenShell to scan and verify agent skills and enforce policies on which skills agents can access.</span></p>\n<h2><b>Engineering Teams Need Evidence of Security</b></h2>\n<p><span style=\"font-weight: 400;\">Before deployment, teams need evidence that proper controls block attempts to obtain credentials beyond an agent\u2019s scope or send sensitive data to an unauthorized destination.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Testing should also cover attempts to change permissions or interfere with monitoring, and be repeated after material changes to models, tools or workflows.</span></p>\n<p><span style=\"font-weight: 400;\">A named owner must use those results to decide whether the system is ready for deployment and ensure failed tests lead to corrective action. Failures discovered in testing or operation should be reproduced, investigated and addressed. Each finding can then become a repeatable test, allowing teams to check that the fix continues to work in future releases.</span><span style=\"font-weight: 400;\">\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Examples include CrowdStrike\u2019s </span><a href=\"https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/\" target=\"_blank\"><span style=\"font-weight: 400;\">SafeMind</span></a><span style=\"font-weight: 400;\"> for testing and strengthening defenses through repeated attack simulations, </span><span style=\"font-weight: 400;\">and</span><span style=\"font-weight: 400;\"> Palo Alto Networks </span><a href=\"https://www.paloaltonetworks.com/blog/2026/06/reinventing-security-for-the-agentic-nvidia-ai-factory/\" target=\"_blank\"><span style=\"font-weight: 400;\">Prisma AIRS</span></a><span style=\"font-weight: 400;\"> for continuous red teaming as models and applications change.</span></p>\n<h2><b>Defenders Need the Right Tools at the Right Time</b></h2>\n<p><span style=\"font-weight: 400;\">Investigating failures requires capable tools suited to the task, data and environment. Open and closed models serve complimentary needs.\u00a0\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Closed models offer managed capabilities and services, while open models give defenders options to inspect relevant components, adapt strategies and work on infrastructure they control.</span></p>\n<p><span style=\"font-weight: 400;\">During an incident, that control can help a team reproduce a failure and test a fix against its own systems while keeping sensitive evidence within its environment.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Capable AI can support this work by helping find vulnerabilities, validate fixes and investigate attacks. Its value should be assessed through reproducible findings, verifiable fixes and accelerated response time.</span></p>\n<p><span style=\"font-weight: 400;\">Examples include</span> <span style=\"font-weight: 400;\">Capital One\u2019s <a href=\"https://www.capitalone.com/tech/open-source/announcing-vulnhunter/\" target=\"_blank\">VulnHunter</a></span> <span style=\"font-weight: 400;\">for AI-powered code security, and </span><span style=\"font-weight: 400;\">ReversingLabs\u2019 <a href=\"https://www.reversinglabs.com/solutions/secure-software-release\" target=\"_blank\">Spectra Assure</a> for AI-powered analysis of software packages to detect malware and tampering.</span></p>\n<h2><b>Shift the Advantage Toward Defenders Through Open Work</b></h2>\n<p><span style=\"font-weight: 400;\">Sharing evidence of what failed, which controls worked and how fixes were verified helps other teams strengthen their own systems.\u00a0</span></p>\n<p><a href=\"https://research.nvidia.com/ai-security\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA\u2019s security research</span></a><span style=\"font-weight: 400;\"> and the Open Secure AI Alliance support that exchange by bringing research, practical tools and expertise into the broader security community.</span></p>\n<p><span style=\"font-weight: 400;\">AI security is an engineering problem. Every agent deployment needs enforceable boundaries, an accountable owner and evidence that its protections work. Open research and shared tools help more defenders meet that standard and improve it as capabilities advance.</span></p>\n<p><i><span style=\"font-weight: 400;\">Learn more about </span></i><a href=\"https://research.nvidia.com/ai-security\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA\u2019s security research</span></i></a><i><span style=\"font-weight: 400;\"> and join the </span></i><a href=\"https://secureaialliance.org/#join\" target=\"_blank\"><i><span style=\"font-weight: 400;\">Open Secure AI Alliance</span></i></a><i><span style=\"font-weight: 400;\">.</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Sa\u0161a Zdjelar",
-      "published_at": "2026-09-21T14:51:34Z",
-      "fetched_at": "2026-09-21T19:28:36.826144Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60242,127 +60052,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "26a0ef7606ebbe74",
-      "url": "https://x.com/dani_avila7/status/2102094133233861069",
-      "title": "If @swyx added me to his X list\u2026 you probably should too \n\nMore good stuff coming soon \ud83d\udc40 https://t.c...",
-      "summary": "If @swyx added me to his X list\u2026 you probably should too \n\nMore good stuff coming soon \ud83d\udc40 https://t.co/yQ7b2YpFJR",
-      "content": "If @swyx added me to his X list\u2026 you probably should too \n\nMore good stuff coming soon \ud83d\udc40 https://t.co/yQ7b2YpFJR",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-21T17:54:31Z",
-      "fetched_at": "2026-09-22T08:39:05.551912Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bf476bdb5dbb8cfe",
-      "url": "https://x.com/OpenAI/status/2102093145051943229",
-      "title": "We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share ...",
-      "summary": "We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share advances in AI and mathematics.\n\nThe group will advise on how we assess and communicate new mathematical results, uphold academic and professional standards, and build tools that",
-      "content": "We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share advances in AI and mathematics.\n\nThe group will advise on how we assess and communicate new mathematical results, uphold academic and professional standards, and build tools that",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-09-21T17:50:35Z",
-      "fetched_at": "2026-09-22T08:39:10.008196Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4f9f273650561415",
-      "url": "https://x.com/dani_avila7/status/2102084363542253704",
-      "title": "Codex has always shipped at an absurd pace\n\nThe GitHub and Reddit communities move just as fast\n\nKee...",
-      "summary": "Codex has always shipped at an absurd pace\n\nThe GitHub and Reddit communities move just as fast\n\nKeeping up with every feature and fix manually just isn\u2019t realistic anymore\n\nThe only way I can keep up is with agents running routines that review every release for me https://t.co/GLdwBR01tD",
-      "content": "Codex has always shipped at an absurd pace\n\nThe GitHub and Reddit communities move just as fast\n\nKeeping up with every feature and fix manually just isn\u2019t realistic anymore\n\nThe only way I can keep up is with agents running routines that review every release for me https://t.co/GLdwBR01tD",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-21T17:15:41Z",
-      "fetched_at": "2026-09-22T08:39:05.551924Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4aa83bd72ae88ce3",
-      "url": "https://x.com/GeminiApp/status/2102062402871472635",
-      "title": "RT @Google: Introducing Googlebook, a new category of laptop, available for preorder today.\n\n\ud83d\udcaa Craft...",
-      "summary": "RT @Google: Introducing Googlebook, a new category of laptop, available for preorder today.\n\n\ud83d\udcaa Crafted with 2.8K OLED touchscreen displays,\u2026",
-      "content": "RT @Google: Introducing Googlebook, a new category of laptop, available for preorder today.\n\n\ud83d\udcaa Crafted with 2.8K OLED touchscreen displays,\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-09-21T15:48:25Z",
-      "fetched_at": "2026-09-22T08:39:08.899631Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4d11516ebb5ac605",
-      "url": "https://x.com/steipete/status/2102049706830647467",
-      "title": "Proud to say that we did our homework. They found nothing critical.",
-      "summary": "Proud to say that we did our homework. They found nothing critical.",
-      "content": "Proud to say that we did our homework. They found nothing critical.",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-21T14:57:58Z",
-      "fetched_at": "2026-09-22T08:39:13.308656Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fb2bf0dd15c3f205",
-      "url": "https://x.com/steipete/status/2102044040397238286",
-      "title": "The beauty of running a claw yourself: they cannot block you.",
-      "summary": "The beauty of running a claw yourself: they cannot block you.",
-      "content": "The beauty of running a claw yourself: they cannot block you.",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-21T14:35:27Z",
-      "fetched_at": "2026-09-22T08:39:13.308664Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c09622bb494874a7",
       "url": "https://x.com/simonw/status/2102620548262195540",
       "title": "RT @addyosmani: Introducing Claude Opus 5.5! 40% lower cost than Opus 5 with cache reads 60% cheaper...",
@@ -63015,6 +62704,229 @@
       "author": "dani_avila7",
       "published_at": "2026-09-28T13:29:52Z",
       "fetched_at": "2026-09-28T13:44:23.850585Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6e49ca85380070f7",
+      "url": "https://x.com/AnthropicAI/status/2104633259925630995",
+      "title": "Claude Sonnet 5.5 is now available:",
+      "summary": "Claude Sonnet 5.5 is now available:",
+      "content": "Claude Sonnet 5.5 is now available:",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-28T18:04:06Z",
+      "fetched_at": "2026-09-28T18:17:14.517095Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3440621d44c3d064",
+      "url": "https://x.com/steipete/status/2104631279434272963",
+      "title": "RT @uavster: .lol has been a real domain all along too https://t.co/o8nvr6e5cd",
+      "summary": "RT @uavster: .lol has been a real domain all along too https://t.co/o8nvr6e5cd",
+      "content": "RT @uavster: .lol has been a real domain all along too https://t.co/o8nvr6e5cd",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T17:56:13Z",
+      "fetched_at": "2026-09-28T18:17:15.758261Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dc3415818e03fc96",
+      "url": "https://x.com/trq212/status/2104608785696440510",
+      "title": "it's basically impossible for someone to just \"show you their prompt\" now, because everything is abo...",
+      "summary": "it's basically impossible for someone to just \"show you their prompt\" now, because everything is about references, skills and examples\n\nI often ask my agent to look at 3 other repos I've made first, search the web for references, use other AI APIs, etc.",
+      "content": "it's basically impossible for someone to just \"show you their prompt\" now, because everything is about references, skills and examples\n\nI often ask my agent to look at 3 other repos I've made first, search the web for references, use other AI APIs, etc.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-28T16:26:50Z",
+      "fetched_at": "2026-09-28T18:17:02.345049Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e3b30f319f1c0d3a",
+      "url": "https://x.com/steipete/status/2104599949124247944",
+      "title": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived th...",
+      "summary": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived through it all at OpenAI. I hope my thoughts\u2026",
+      "content": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived through it all at OpenAI. I hope my thoughts\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T15:51:44Z",
+      "fetched_at": "2026-09-28T18:17:15.758310Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4b9336c6a9a171c0",
+      "url": "https://x.com/steipete/status/2104592946901520739",
+      "title": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff...",
+      "summary": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff is that he\u2019d probably agree with a lot\u2026",
+      "content": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff is that he\u2019d probably agree with a lot\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T15:23:54Z",
+      "fetched_at": "2026-09-28T18:17:15.758342Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "26a0ef7606ebbe74",
+      "url": "https://x.com/dani_avila7/status/2102094133233861069",
+      "title": "If @swyx added me to his X list\u2026 you probably should too \n\nMore good stuff coming soon \ud83d\udc40 https://t.c...",
+      "summary": "If @swyx added me to his X list\u2026 you probably should too \n\nMore good stuff coming soon \ud83d\udc40 https://t.co/yQ7b2YpFJR",
+      "content": "If @swyx added me to his X list\u2026 you probably should too \n\nMore good stuff coming soon \ud83d\udc40 https://t.co/yQ7b2YpFJR",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-21T17:54:31Z",
+      "fetched_at": "2026-09-22T08:39:05.551912Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf476bdb5dbb8cfe",
+      "url": "https://x.com/OpenAI/status/2102093145051943229",
+      "title": "We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share ...",
+      "summary": "We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share advances in AI and mathematics.\n\nThe group will advise on how we assess and communicate new mathematical results, uphold academic and professional standards, and build tools that",
+      "content": "We\u2019re working with an independent advisory group of mathematicians to help OpenAI responsibly share advances in AI and mathematics.\n\nThe group will advise on how we assess and communicate new mathematical results, uphold academic and professional standards, and build tools that",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-21T17:50:35Z",
+      "fetched_at": "2026-09-22T08:39:10.008196Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4f9f273650561415",
+      "url": "https://x.com/dani_avila7/status/2102084363542253704",
+      "title": "Codex has always shipped at an absurd pace\n\nThe GitHub and Reddit communities move just as fast\n\nKee...",
+      "summary": "Codex has always shipped at an absurd pace\n\nThe GitHub and Reddit communities move just as fast\n\nKeeping up with every feature and fix manually just isn\u2019t realistic anymore\n\nThe only way I can keep up is with agents running routines that review every release for me https://t.co/GLdwBR01tD",
+      "content": "Codex has always shipped at an absurd pace\n\nThe GitHub and Reddit communities move just as fast\n\nKeeping up with every feature and fix manually just isn\u2019t realistic anymore\n\nThe only way I can keep up is with agents running routines that review every release for me https://t.co/GLdwBR01tD",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-21T17:15:41Z",
+      "fetched_at": "2026-09-22T08:39:05.551924Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4aa83bd72ae88ce3",
+      "url": "https://x.com/GeminiApp/status/2102062402871472635",
+      "title": "RT @Google: Introducing Googlebook, a new category of laptop, available for preorder today.\n\n\ud83d\udcaa Craft...",
+      "summary": "RT @Google: Introducing Googlebook, a new category of laptop, available for preorder today.\n\n\ud83d\udcaa Crafted with 2.8K OLED touchscreen displays,\u2026",
+      "content": "RT @Google: Introducing Googlebook, a new category of laptop, available for preorder today.\n\n\ud83d\udcaa Crafted with 2.8K OLED touchscreen displays,\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-21T15:48:25Z",
+      "fetched_at": "2026-09-22T08:39:08.899631Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4d11516ebb5ac605",
+      "url": "https://x.com/steipete/status/2102049706830647467",
+      "title": "Proud to say that we did our homework. They found nothing critical.",
+      "summary": "Proud to say that we did our homework. They found nothing critical.",
+      "content": "Proud to say that we did our homework. They found nothing critical.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-21T14:57:58Z",
+      "fetched_at": "2026-09-22T08:39:13.308656Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fb2bf0dd15c3f205",
+      "url": "https://x.com/steipete/status/2102044040397238286",
+      "title": "The beauty of running a claw yourself: they cannot block you.",
+      "summary": "The beauty of running a claw yourself: they cannot block you.",
+      "content": "The beauty of running a claw yourself: they cannot block you.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-21T14:35:27Z",
+      "fetched_at": "2026-09-22T08:39:13.308664Z",
       "score": null,
       "score_reason": "",
       "tier": "",
