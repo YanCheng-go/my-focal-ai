@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-09-28T18:17:17.845042+00:00",
+  "exported_at": "2026-09-28T20:30:05.345818+00:00",
   "period_hours": 168,
-  "total": 2898,
+  "total": 2904,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -23879,26 +23879,6 @@
       "author": "IBM Technology",
       "published_at": "2026-09-22T11:00:08Z",
       "fetched_at": "2026-09-22T11:40:27.999747Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4999b664c2b4f6c2",
-      "url": "https://www.youtube.com/watch?v=SQMCtZX3trg",
-      "title": "The Dark Arts of Skill Engineering \u2014 Paul Bakaus, Renaissance Geek",
-      "summary": "Paul Bakaus once turned the entire web orange. He wrote jQuery UI, shipped an orange default theme, assumed people would change it, and watched them not. So when he points out that the purple gradients everyone learned to mock came from a CSS framework's default sample page, and that AI generated design now has its own house shade of beige, he speaks as the cause rather than the critic. That history is what makes his central claim land. A ban does not produce originality, it relocates the model one cluster over: forbid one overused font and it reaches for the next nearest thing in latent space. Slop is a moving target. The median is the model's gravity, and a few hundred lines of carefully written prose cannot pull against it.\n\nSo he stopped treating a skill as a packaged prompt and started treating it as an extension of the harness, which is what this workshop is really about. Nine techniques, each aimed at something prose cannot do. Two sub agents kept blind to each other, one playing design director and one running a deterministic linter, because a single thread grading its own work always says it did well. Naming your top three fonts and then throwing all three away to shave off the safe prediction. A script whose only job is to hand the model a random seed it could not have guessed. Instructions emitted on standard output rather than buried in prose, which models follow far more reliably, at the cost of prompt caching. Hooks that block a write instead of complaining afterward. And the discipline underneath all of it: if a gate can be skipped, it will be.\n\nSpeaker info:\n- https://x.com/pbakaus\n- https://linkedin.com/in/paulbakaus\n- https://www.paulbakaus.com/\n\nTimestamps:\n0:00 - Impeccable, and why it started\n4:57 - Why banning a font does not work\n6:25 - Prompting is the floor, harness engineering is the ceiling\n7:55 - One: make it argue\n10:11 - Two blind sub agents, one synthesis\n16:59 - Two: forcing divergence\n20:38 - Three: routing like a mixture of experts\n22:47 - Four: giving a skill memory\n25:22 - Five: scripts that talk back\n29:36 - Six: hooks that fight back\n34:37 - Seven: live wiring the browser\n40:04 - Eight: it worked on my machine\n44:04 - Every model is overfitted differently\n47:20 - Nine: design for the weakest model\n48:26 - If a gate can be skipped, it will be\n51:59 - Inside the eval harness\n56:18 - Can taste be evaluated?\n58:27 - The future of skills\n1:02:20 - Packaging and distribution",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-21T19:00:10Z",
-      "fetched_at": "2026-09-21T19:28:32.243226Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -59991,67 +59971,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "23e04ee06917d44a",
-      "url": "https://x.com/dani_avila7/status/2102130973550731731",
-      "title": "Happy to share that @AnthropicAI selected me as a Claude Certification Subject Matter Expert!\n\nI\u2019ll ...",
-      "summary": "Happy to share that @AnthropicAI selected me as a Claude Certification Subject Matter Expert!\n\nI\u2019ll be helping review and improve the new Claude Developer Professional Certification\n\nExcited to contribute \ud83d\ude4c https://t.co/sV1eIThG7g",
-      "content": "Happy to share that @AnthropicAI selected me as a Claude Certification Subject Matter Expert!\n\nI\u2019ll be helping review and improve the new Claude Developer Professional Certification\n\nExcited to contribute \ud83d\ude4c https://t.co/sV1eIThG7g",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-21T20:20:54Z",
-      "fetched_at": "2026-09-22T08:39:05.551900Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "865754db2dfeead4",
-      "url": "https://x.com/GeminiApp/status/2102129380042666458",
-      "title": "Join us for a live demo of how you can use Gemini to shop.\n\nWhether you're trying to make informed p...",
-      "summary": "Join us for a live demo of how you can use Gemini to shop.\n\nWhether you're trying to make informed purchases, comparing options, or browsing with a snap of your camera, you can shop smarter with the power of Gemini.\n\n\ud83d\udc49 Join the Discord to watch live: https://t.co/sgs47wjJic\n\ud83d\udcc5",
-      "content": "Join us for a live demo of how you can use Gemini to shop.\n\nWhether you're trying to make informed purchases, comparing options, or browsing with a snap of your camera, you can shop smarter with the power of Gemini.\n\n\ud83d\udc49 Join the Discord to watch live: https://t.co/sgs47wjJic\n\ud83d\udcc5",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-09-21T20:14:34Z",
-      "fetched_at": "2026-09-22T08:39:08.899614Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "81695bc6a94b5fc8",
-      "url": "https://x.com/steipete/status/2102116206371315854",
-      "title": "Because this \u201cMeta uses OpenClaw\u201d story is going around. They built their own agent, being inspired....",
-      "summary": "Because this \u201cMeta uses OpenClaw\u201d story is going around. They built their own agent, being inspired. Nat and his team did a great job. Kudos!",
-      "content": "Because this \u201cMeta uses OpenClaw\u201d story is going around. They built their own agent, being inspired. Nat and his team did a great job. Kudos!",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-21T19:22:13Z",
-      "fetched_at": "2026-09-22T08:39:13.308647Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c09622bb494874a7",
       "url": "https://x.com/simonw/status/2102620548262195540",
       "title": "RT @addyosmani: Introducing Claude Opus 5.5! 40% lower cost than Opus 5 with cache reads 60% cheaper...",
@@ -62806,6 +62725,210 @@
       "author": "steipete",
       "published_at": "2026-09-28T15:23:54Z",
       "fetched_at": "2026-09-28T18:17:15.758342Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8cd3eba4cf9e5c3b",
+      "url": "https://x.com/sama/status/2104661956879913457",
+      "title": "Pretty excited for DevDay tomorrow.\n\nWe have found a new thing.",
+      "summary": "Pretty excited for DevDay tomorrow.\n\nWe have found a new thing.",
+      "content": "Pretty excited for DevDay tomorrow.\n\nWe have found a new thing.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-28T19:58:07Z",
+      "fetched_at": "2026-09-28T20:29:57.343467Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "26d066e86e862650",
+      "url": "https://x.com/trq212/status/2104660926373023830",
+      "title": "A lot of times when I talk about higher level abstractions like projects, claude tag and dynamic wor...",
+      "summary": "A lot of times when I talk about higher level abstractions like projects, claude tag and dynamic workflows, I hear concerns about token cost.\n\nWith Sonnet + Opus 5.5 I think this sort intelligence is should be very available.\n\nTry Sonnet 5.5 in particular when making workflows.",
+      "content": "A lot of times when I talk about higher level abstractions like projects, claude tag and dynamic workflows, I hear concerns about token cost.\n\nWith Sonnet + Opus 5.5 I think this sort intelligence is should be very available.\n\nTry Sonnet 5.5 in particular when making workflows.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-28T19:54:02Z",
+      "fetched_at": "2026-09-28T20:29:49.852404Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "efb805ed342bdb7b",
+      "url": "https://x.com/GeminiApp/status/2104660668859453637",
+      "title": "RT @shimritby: Have you ever come back from vacation to a messy inbox, tons of unread emails, multip...",
+      "summary": "RT @shimritby: Have you ever come back from vacation to a messy inbox, tons of unread emails, multiple meeting requests, several new TODOs,\u2026",
+      "content": "RT @shimritby: Have you ever come back from vacation to a messy inbox, tons of unread emails, multiple meeting requests, several new TODOs,\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-28T19:53:00Z",
+      "fetched_at": "2026-09-28T20:29:58.369903Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "64874cf2bda6b998",
+      "url": "https://x.com/dani_avila7/status/2104656732584866184",
+      "title": "Let\u2019s see how it goes... I\u2019ll keep you posted https://t.co/XFMHbnk7Oa",
+      "summary": "Let\u2019s see how it goes... I\u2019ll keep you posted https://t.co/XFMHbnk7Oa",
+      "content": "Let\u2019s see how it goes... I\u2019ll keep you posted https://t.co/XFMHbnk7Oa",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-28T19:37:22Z",
+      "fetched_at": "2026-09-28T20:29:54.672325Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1062ef308230c907",
+      "url": "https://x.com/OpenAI/status/2104651136699609518",
+      "title": "Get ready. https://t.co/bsf4j6vspM",
+      "summary": "Get ready. https://t.co/bsf4j6vspM",
+      "content": "Get ready. https://t.co/bsf4j6vspM",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-28T19:15:08Z",
+      "fetched_at": "2026-09-28T20:29:59.474498Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "64fa073f5c989f35",
+      "url": "https://x.com/GoogleAI/status/2104645904682946908",
+      "title": "https://t.co/TnNl6XmL15",
+      "summary": "https://t.co/TnNl6XmL15",
+      "content": "https://t.co/TnNl6XmL15",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-09-28T18:54:20Z",
+      "fetched_at": "2026-09-28T20:30:00.803910Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e88d2e437956e0e1",
+      "url": "https://x.com/bcherny/status/2104638725317923228",
+      "title": "Sonnet 5.5 fixing a bug with Claude Code.\n\n30% faster and 30% less usage. https://t.co/Vt1K1ubcFd",
+      "summary": "Sonnet 5.5 fixing a bug with Claude Code.\n\n30% faster and 30% less usage. https://t.co/Vt1K1ubcFd",
+      "content": "Sonnet 5.5 fixing a bug with Claude Code.\n\n30% faster and 30% less usage. https://t.co/Vt1K1ubcFd",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-28T18:25:49Z",
+      "fetched_at": "2026-09-28T20:29:52.308037Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "23e04ee06917d44a",
+      "url": "https://x.com/dani_avila7/status/2102130973550731731",
+      "title": "Happy to share that @AnthropicAI selected me as a Claude Certification Subject Matter Expert!\n\nI\u2019ll ...",
+      "summary": "Happy to share that @AnthropicAI selected me as a Claude Certification Subject Matter Expert!\n\nI\u2019ll be helping review and improve the new Claude Developer Professional Certification\n\nExcited to contribute \ud83d\ude4c https://t.co/sV1eIThG7g",
+      "content": "Happy to share that @AnthropicAI selected me as a Claude Certification Subject Matter Expert!\n\nI\u2019ll be helping review and improve the new Claude Developer Professional Certification\n\nExcited to contribute \ud83d\ude4c https://t.co/sV1eIThG7g",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-21T20:20:54Z",
+      "fetched_at": "2026-09-22T08:39:05.551900Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "865754db2dfeead4",
+      "url": "https://x.com/GeminiApp/status/2102129380042666458",
+      "title": "Join us for a live demo of how you can use Gemini to shop.\n\nWhether you're trying to make informed p...",
+      "summary": "Join us for a live demo of how you can use Gemini to shop.\n\nWhether you're trying to make informed purchases, comparing options, or browsing with a snap of your camera, you can shop smarter with the power of Gemini.\n\n\ud83d\udc49 Join the Discord to watch live: https://t.co/sgs47wjJic\n\ud83d\udcc5",
+      "content": "Join us for a live demo of how you can use Gemini to shop.\n\nWhether you're trying to make informed purchases, comparing options, or browsing with a snap of your camera, you can shop smarter with the power of Gemini.\n\n\ud83d\udc49 Join the Discord to watch live: https://t.co/sgs47wjJic\n\ud83d\udcc5",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-21T20:14:34Z",
+      "fetched_at": "2026-09-22T08:39:08.899614Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "81695bc6a94b5fc8",
+      "url": "https://x.com/steipete/status/2102116206371315854",
+      "title": "Because this \u201cMeta uses OpenClaw\u201d story is going around. They built their own agent, being inspired....",
+      "summary": "Because this \u201cMeta uses OpenClaw\u201d story is going around. They built their own agent, being inspired. Nat and his team did a great job. Kudos!",
+      "content": "Because this \u201cMeta uses OpenClaw\u201d story is going around. They built their own agent, being inspired. Nat and his team did a great job. Kudos!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-21T19:22:13Z",
+      "fetched_at": "2026-09-22T08:39:13.308647Z",
       "score": null,
       "score_reason": "",
       "tier": "",
