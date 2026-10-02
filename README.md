@@ -1,3 +1,5 @@
+
+
 # MyFocalAI
 
 [![CI](https://github.com/YanCheng-go/my-focal-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/YanCheng-go/my-focal-ai/actions/workflows/ci.yml)
@@ -26,7 +28,7 @@ Open http://localhost:8000 — you're done.
 ./start.sh stop         # stop all services
 ```
 
-**Prerequisites:** [uv](https://docs.astral.sh/uv/getting-started/installation/) and [Docker](https://docs.docker.com/get-docker/). Optionally [Ollama](https://ollama.ai) for LLM scoring.
+**Prerequisites:** [uv](https://docs.astral.sh/uv/getting-started/installation/), [Python 3.12+](https://www.python.org/), and [Docker](https://docs.docker.com/get-docker/). Optionally [Ollama](https://ollama.ai) for LLM scoring.
 
 ## Deployment Modes
 
