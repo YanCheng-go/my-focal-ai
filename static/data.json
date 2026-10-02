@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-02T12:37:25.238468+00:00",
+  "exported_at": "2026-10-02T14:49:59.510298+00:00",
   "period_hours": 168,
-  "total": 3056,
+  "total": 3052,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28623,46 +28623,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f1ae5390524e7744",
-      "url": "https://www.youtube.com/watch?v=2LRIAfng7eA",
-      "title": "Teaching LLMs to Speak Spotify \u2014 Yves Raimond & Jacqueline Wood, Spotify",
-      "summary": "One in four US Spotify Premium subscribers now use a single system every day, which Spotify calls the Large Taste Model. Yves Raimond, Spotify's SVP and GM of AI & Personalization, explains how Spotify turned its recommendation system \"on its head\" to be LLM-native. It went from curated playlists, to recommendations like Discover Weekly, to what Spotify calls generative personalization: a steerable DJ, prompted playlists, an editable taste profile and personal podcasts, across a catalog of more than 100 million tracks plus podcasts and audiobooks.\n\nStaff ML Engineer Jacqueline Wood then shows how the models are trained with NEO, Spotify's four-stage recipe. Semantic IDs are added to an open-weight LLM like Qwen. The new tokens are grounded while the backbone stays frozen, which keeps its language ability intact, where continued pre-training wiped it out. Then the model is instruction-tuned across many Spotify tasks, which even helped cold-start audiobook recommendations. She also covers decoding choices (98% of semantic IDs come out valid even without constrained decoding), and how grounding LLM judges with user profiles and behavior raised their agreement with humans by 91% on ambiguous queries.\n\nSpeaker info:\nJacqueline Wood, LinkedIn: https://www.linkedin.com/in/jacquelinewood\n\nRelated links:\nSpotify: https://www.spotify.com\n\nTimestamps:\n0:00 Intro: making LLMs speak Spotify\n0:47 Spotify's scale: 760M users and 100M+ tracks\n1:52 From curation to recommendations\n2:37 Generative personalization\n3:02 From guessing to reasoning, from black box to steerable\n4:07 A Spotify DJ you can steer\n4:37 Prompted playlists\n5:32 Taste profile\n6:22 Personal podcasts\n6:52 The Large Taste Model\n7:27 One in four US Premium subscribers use it daily\n8:03 Jacqueline Wood: how the models are trained\n8:18 Semantic IDs for Spotify's catalog\n9:03 Natural-language podcast recommendations\n9:33 NEO: a four-stage training recipe\n10:02 Domain grounding with a frozen backbone\n10:52 Capability induction: multitask tuning\n11:32 Multitask gains and cold-start audiobooks\n12:32 Why frozen grounding beats continued pre-training\n14:02 Beam search vs. constrained decoding\n15:02 One system in production\n15:47 Breaking habitual listening in podcast discovery\n16:11 Grounded LLM judges\n18:16 Scaling evaluation sets with LLM judges\n18:56 Summary",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-25T14:30:25Z",
-      "fetched_at": "2026-09-25T18:37:56.249488Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "53ecc74bdbd8d26b",
-      "url": "https://www.youtube.com/watch?v=lIgdnF0s0kQ",
-      "title": "Why LLM Recommenders Will Be AI's Biggest Consumer App \u2014 Devansh Tandon, Meta",
-      "summary": "Four of the 10 most-used apps in the world are content feeds, and for an hour of engagement they can be up to 100x cheaper to run than AI chat apps. The reason is that a feed decodes pointers to existing content instead of generating every token itself. Devansh Tandon, who leads Meta Recommendations Research, argues that recommendation systems scale just like LLMs, that the field is still early on that curve, and that the LLM recommender will become one of the biggest consumer applications of AI.\n\nTandon lays out four S-curves the industry is climbing: traditional recsys, LLM-inspired, LLM-native and agentic. He then walks through the recipe for building an LLM recommender. First, tokenize content with semantic IDs, which turns a three-minute Reel from about 10,000 tokens into about 10. Next, make the model bilingual in English and your catalog. Then post-train it to rank, with chain-of-thought reasoning you can read. He also shows how this makes feeds steerable, like Instagram's Your Algorithm, where you can see and edit what the algorithm thinks you like.\n\nSpeaker info:\nX/Twitter: @devanshtandon_ (https://x.com/devanshtandon_)\nLinkedIn: https://www.linkedin.com/in/devanshtandon/\n\nRelated links:\nMeta AI: https://ai.meta.com\n\nTimestamps:\n0:00 Intro: two big arguments\n0:45 About Devansh\n1:30 Semantic IDs and generative retrieval go mainstream\n2:15 Scaling laws, from LLMs to recommenders\n3:45 Real scaling curves at Meta\n4:15 Instagram Reels: 30% more watch time\n4:55 The tokens in, engagement out flywheel\n5:40 Four S-curves of recommendation\n6:35 LLM-native recommenders\n6:50 Agentic recommenders\n8:05 The three-step recipe for an LLM recommender\n8:35 The five-layer cake\n9:35 Semantic IDs: a Reel in 10 tokens\n10:45 Pre-training on English and semantic IDs\n11:25 Post-training: an LLM re-ranker with chain of thought\n12:25 Steerable feeds: talking to your Instagram algorithm\n13:15 Explaining recommendations\n13:50 Prompted playlists, custom feeds and Ask DoorDash\n14:05 Feeds vs. chat apps: the same flywheel\n14:50 Why feeds are 100x cheaper per hour of engagement\n16:25 Why LLM recsys is AI's biggest consumer app\n17:40 Wrap-up",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-25T14:00:27Z",
-      "fetched_at": "2026-09-25T18:37:56.249502Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "eb674100bb687fff",
       "url": "https://openai.com/index/basis-tax-workbook-with-astra",
       "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
@@ -39877,26 +39837,6 @@
       "author": "Abhishek Pillai, Ekta Prashnani, Joohwan Kim, Iuri Frosio",
       "published_at": "2026-09-30T04:00:00Z",
       "fetched_at": "2026-09-30T08:35:35.717807Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3444be170f4fc0a0",
-      "url": "https://www.youtube.com/watch?v=ACPEpji5NV4",
-      "title": "Distill the LLM, Don't Serve It: Search & Personalization at DoorDash \u2014 Raghav Saboo, DoorDash",
-      "summary": "Search for gluten-free pasta and a ranker trained on engagement may show you regular spaghetti, because it sells well. Raghav Saboo, Staff ML Engineer and Tech Lead for Search & Personalization at DoorDash, argues that the real bottleneck in marketplace discovery is semantic understanding, not engagement. As DoorDash grows into grocery, retail, pets and gifting across billions of store-level items, it uses LLMs to understand what items mean and what shoppers actually intend.\n\nHis core pattern: do the expensive LLM reasoning once, offline, and then distill it into small, fast models for serving. He covers four building blocks. The first is LLM-generated relevance labels, which improved retrieval NDCG by 2.3%. The second is semantic IDs, a learned taxonomy of the catalog that raised ranking MRR by 4\u20135% and powers query reformulation. The third is consumer memory at three timescales, stored as text, vectors and a graph. The fourth is steerable, LLM-generated personalized collections, which lifted order rate by nearly 1% in the pets category.\n\nSpeaker info:\nSubstack: https://buildshipai.substack.com/\n\nTimestamps:\n0:00 Intro\n0:47 Discovery's real bottleneck is semantic understanding\n1:42 Beyond restaurants: broad shopping missions\n2:52 The four primitives\n3:17 Primitive 1: LLM supervision\n3:27 Why engagement ranks the wrong pasta\n4:11 Human labels vs. behavioral signals\n4:46 Building a golden labeled dataset\n5:46 A fine-tuned LLM labeler for the whole catalog\n6:11 Reason offline, serve cheaply\n6:21 Two-stage contrastive retrieval\n8:00 Adding a relevance tower to rankers\n9:00 Distill, don't replace\n9:30 Primitive 2: catalog semantics with semantic IDs\n11:00 A learned taxonomy\n11:50 Cross-category, cold start and tail coverage\n12:55 Results: 4\u20135% MRR gains in ranking\n13:20 Query reformulation\n14:05 Primitive 3: consumer memory\n15:15 Three timescales of memory\n15:55 Memory blocks: text, vectors and graphs\n17:04 Context graphs\n17:55 Where memory shows up\n18:20 Primitive 4: steerable content generation\n19:05 Personalized collections on store pages\n20:33 Results in the pets category\n20:48 Three takeaways",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-25T13:30:37Z",
-      "fetched_at": "2026-09-25T18:37:56.249509Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63221,26 +63161,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a04b1628ce32412c",
-      "url": "https://x.com/dani_avila7/status/2103484752074248694",
-      "title": "IMPORTANT: Auto Mode is officially becoming the default in Claude Code\n\nGood timing to share how we ...",
-      "summary": "IMPORTANT: Auto Mode is officially becoming the default in Claude Code\n\nGood timing to share how we rolled out Auto Mode configuration across the entire engineering team at https://t.co/1zzyIIrEyp\n\nIt improves model efficiency, helps reduce prompt injection risk, and simplifies https://t.co/M1vQv77fuh",
-      "content": "IMPORTANT: Auto Mode is officially becoming the default in Claude Code\n\nGood timing to share how we rolled out Auto Mode configuration across the entire engineering team at https://t.co/1zzyIIrEyp\n\nIt improves model efficiency, helps reduce prompt injection risk, and simplifies https://t.co/M1vQv77fuh",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-25T14:00:20Z",
-      "fetched_at": "2026-09-25T14:34:47.301248Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "ceeaeb8001665f16",
       "url": "https://x.com/steipete/status/2103524849515991090",
       "title": "RT @PWVentures: We sit down with @steipete, Creator of @openclaw, on how one WhatsApp bot became one...",
@@ -63255,27 +63175,6 @@
       "author": "steipete",
       "published_at": "2026-09-25T16:39:40Z",
       "fetched_at": "2026-09-25T16:42:12.446339Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "958d115a03921d42",
-      "url": "https://x.com/simonw/status/2103495582048555120",
-      "title": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
-      "summary": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
-      "content": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-09-25T14:43:22Z",
-      "fetched_at": "2026-09-25T16:42:03.640814Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66299,6 +66198,27 @@
       "author": "steipete",
       "published_at": "2026-10-01T21:52:56Z",
       "fetched_at": "2026-10-02T08:44:24.013161Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "958d115a03921d42",
+      "url": "https://x.com/simonw/status/2103495582048555120",
+      "title": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
+      "summary": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
+      "content": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-25T14:43:22Z",
+      "fetched_at": "2026-09-25T16:42:03.640814Z",
       "score": null,
       "score_reason": "",
       "tier": "",
