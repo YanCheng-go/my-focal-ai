@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-02T05:40:03.577403+00:00",
+  "exported_at": "2026-10-02T08:44:26.250635+00:00",
   "period_hours": 168,
-  "total": 3039,
+  "total": 3053,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -65950,6 +65950,292 @@
       "author": "dani_avila7",
       "published_at": "2026-09-29T12:59:51Z",
       "fetched_at": "2026-10-01T21:02:18.267127Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8c977be49494e132",
+      "url": "https://x.com/karpathy/status/2105909609487872075",
+      "title": "Cool eval. Simply ask an LLM \u201cLand or Water?\u201d and give it a latitude and longitude coordinate as tex...",
+      "summary": "Cool eval. Simply ask an LLM \u201cLand or Water?\u201d and give it a latitude and longitude coordinate as text. Ask 16,200 times, plot as image. The models know. From compressing the internet.",
+      "content": "Cool eval. Simply ask an LLM \u201cLand or Water?\u201d and give it a latitude and longitude coordinate as text. Ask 16,200 times, plot as image. The models know. From compressing the internet.",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-10-02T06:35:51Z",
+      "fetched_at": "2026-10-02T08:44:13.654103Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "efbfe411805c3177",
+      "url": "https://x.com/steipete/status/2105871350883856503",
+      "title": "RT @nic_carter: They did the meme https://t.co/mgAJ7phQ6a",
+      "summary": "RT @nic_carter: They did the meme https://t.co/mgAJ7phQ6a",
+      "content": "RT @nic_carter: They did the meme https://t.co/mgAJ7phQ6a",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-02T04:03:49Z",
+      "fetched_at": "2026-10-02T08:44:24.012962Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5f76b1e40a634019",
+      "url": "https://x.com/dani_avila7/status/2105870755862831221",
+      "title": "RT @dani_avila7: Jev + Vercel Sandbox Mod in Claude Code\n\nThis Mod spins up a sandbox on Vercel, whi...",
+      "summary": "RT @dani_avila7: Jev + Vercel Sandbox Mod in Claude Code\n\nThis Mod spins up a sandbox on Vercel, while Jev classifies which commands should\u2026",
+      "content": "RT @dani_avila7: Jev + Vercel Sandbox Mod in Claude Code\n\nThis Mod spins up a sandbox on Vercel, while Jev classifies which commands should\u2026",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-02T04:01:28Z",
+      "fetched_at": "2026-10-02T08:44:16.889975Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "37f81a9c111a127b",
+      "url": "https://x.com/trq212/status/2105849728097509678",
+      "title": "I'm sure there are still a bunch of things wrong with it or ways it could be better, but I'm kind of...",
+      "summary": "I'm sure there are still a bunch of things wrong with it or ways it could be better, but I'm kind of at my skill limit here.  Need to gain better judgement.",
+      "content": "I'm sure there are still a bunch of things wrong with it or ways it could be better, but I'm kind of at my skill limit here.  Need to gain better judgement.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-02T02:37:54Z",
+      "fetched_at": "2026-10-02T08:44:12.587122Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "89ab18db78f63584",
+      "url": "https://x.com/trq212/status/2105849729297055792",
+      "title": "This is a personal side project I've been working on! Here's the original post: https://t.co/It0aYEW...",
+      "summary": "This is a personal side project I've been working on! Here's the original post: https://t.co/It0aYEWDJH",
+      "content": "This is a personal side project I've been working on! Here's the original post: https://t.co/It0aYEWDJH",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-02T02:37:54Z",
+      "fetched_at": "2026-10-02T08:44:12.586999Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8f64a4e616862e5e",
+      "url": "https://x.com/trq212/status/2105849295580889208",
+      "title": "Been trying to up the level of quality in animation in my game prototype, so been getting Claude to ...",
+      "summary": "Been trying to up the level of quality in animation in my game prototype, so been getting Claude to teach me &amp; find references.\n\nI asked Claude to make an animation editor where we could iterate on the jump, I'm really happy with how it came out.\n\nHere's a side-by-side video https://t.co/OkFMX2TMzF",
+      "content": "Been trying to up the level of quality in animation in my game prototype, so been getting Claude to teach me &amp; find references.\n\nI asked Claude to make an animation editor where we could iterate on the jump, I'm really happy with how it came out.\n\nHere's a side-by-side video https://t.co/OkFMX2TMzF",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-02T02:36:11Z",
+      "fetched_at": "2026-10-02T08:44:12.587170Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "38ff5a5941df4882",
+      "url": "https://x.com/dani_avila7/status/2105838115755885000",
+      "title": "Wait\u2026 Multimodal Decision Model?!\n\nI need to try this",
+      "summary": "Wait\u2026 Multimodal Decision Model?!\n\nI need to try this",
+      "content": "Wait\u2026 Multimodal Decision Model?!\n\nI need to try this",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-02T01:51:46Z",
+      "fetched_at": "2026-10-02T08:44:16.890049Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ced4c40760dbcc0c",
+      "url": "https://x.com/trq212/status/2105827976164372571",
+      "title": "RT @karpathy: We'll be spending a lot more time trying to understand the outputs of language models....",
+      "summary": "RT @karpathy: We'll be spending a lot more time trying to understand the outputs of language models. A few thoughts, tips &amp; tricks:\n\nWritin\u2026",
+      "content": "RT @karpathy: We'll be spending a lot more time trying to understand the outputs of language models. A few thoughts, tips &amp; tricks:\n\nWritin\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-02T01:11:28Z",
+      "fetched_at": "2026-10-02T08:44:12.587209Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e413e920263ec801",
+      "url": "https://x.com/karpathy/status/2105819303471976479",
+      "title": "We'll be spending a lot more time trying to understand the outputs of language models. A few thought...",
+      "summary": "We'll be spending a lot more time trying to understand the outputs of language models. A few thoughts, tips &amp; tricks:\n\nWriting. Something I've had success with: Ask your LLM to explain something in ASD-STE100, it's a controlled language specification originally developed for https://t.co/uMFWTcBCsl",
+      "content": "We'll be spending a lot more time trying to understand the outputs of language models. A few thoughts, tips &amp; tricks:\n\nWriting. Something I've had success with: Ask your LLM to explain something in ASD-STE100, it's a controlled language specification originally developed for https://t.co/uMFWTcBCsl",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-10-02T00:37:00Z",
+      "fetched_at": "2026-10-02T08:44:13.654279Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dcf287ae257c3111",
+      "url": "https://x.com/dani_avila7/status/2105813645481668738",
+      "title": "If you want to learn more about Mods, what they are, and how to install them, check out this article...",
+      "summary": "If you want to learn more about Mods, what they are, and how to install them, check out this article:\n\nhttps://t.co/UAdSF665OO https://t.co/P5aHIw5UwG",
+      "content": "If you want to learn more about Mods, what they are, and how to install them, check out this article:\n\nhttps://t.co/UAdSF665OO https://t.co/P5aHIw5UwG",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-02T00:14:31Z",
+      "fetched_at": "2026-10-02T08:44:16.890090Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "285dadbd4ebb1de2",
+      "url": "https://x.com/steipete/status/2105805164305359019",
+      "title": "holy",
+      "summary": "holy",
+      "content": "holy",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T23:40:49Z",
+      "fetched_at": "2026-10-02T08:44:24.013041Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5bb5faeb51d63a68",
+      "url": "https://x.com/steipete/status/2105787617828544920",
+      "title": "RT @HelloSurajRana: @swc_rs Next step: companies fork the project, rewrite what they need with AI, a...",
+      "summary": "RT @HelloSurajRana: @swc_rs Next step: companies fork the project, rewrite what they need with AI, and never upstream a thing.",
+      "content": "RT @HelloSurajRana: @swc_rs Next step: companies fork the project, rewrite what they need with AI, and never upstream a thing.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T22:31:06Z",
+      "fetched_at": "2026-10-02T08:44:24.013083Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "77f8a16b4d8aaa24",
+      "url": "https://x.com/steipete/status/2105786408153809047",
+      "title": "RT @kevins8: \ud83d\udc40\ud83e\udd9e https://t.co/ceoGFh8dFC",
+      "summary": "RT @kevins8: \ud83d\udc40\ud83e\udd9e https://t.co/ceoGFh8dFC",
+      "content": "RT @kevins8: \ud83d\udc40\ud83e\udd9e https://t.co/ceoGFh8dFC",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T22:26:17Z",
+      "fetched_at": "2026-10-02T08:44:24.013119Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c694892c51f8963a",
+      "url": "https://x.com/steipete/status/2105778011635400949",
+      "title": "\"Today, we\u2019re releasing two Cloudflare-trained decision models, Clef and Clef-flash\" \nhttps://t.co/E...",
+      "summary": "\"Today, we\u2019re releasing two Cloudflare-trained decision models, Clef and Clef-flash\" \nhttps://t.co/E8cYq4w7Fz\n\nNever seen an idea spreading so fast.",
+      "content": "\"Today, we\u2019re releasing two Cloudflare-trained decision models, Clef and Clef-flash\" \nhttps://t.co/E8cYq4w7Fz\n\nNever seen an idea spreading so fast.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T21:52:56Z",
+      "fetched_at": "2026-10-02T08:44:24.013161Z",
       "score": null,
       "score_reason": "",
       "tier": "",
