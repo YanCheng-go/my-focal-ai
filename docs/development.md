@@ -75,6 +75,13 @@ uv run ainews cloud-fetch              # fetch + score with Claude API (for CI)
 uv run ainews export                   # export data.json + config.json to static/
 uv run ainews export --hours 168       # override export window (default: AINEWS_EXPORT_HOURS)
 
+# Explore (source discovery)
+uv run ainews explore                  # discover new sources via LLM (Ollama)
+uv run ainews explore --cloud          # discover via Claude API (needs ANTHROPIC_API_KEY)
+uv run ainews explore --source-type twitter  # only suggest Twitter sources
+uv run ainews explore --min-score 0.5  # filter by minimum relevance score
+uv run ainews explore --limit 20       # number of suggestions (default: 10)
+
 # Maintenance
 uv run ainews backfill-tags            # re-sync tags/type from config to DB
 uv run ainews backfill-tags --dry-run  # preview what would change

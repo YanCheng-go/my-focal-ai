@@ -51,6 +51,10 @@ CHANNEL_ID_PATTERNS = [
 
 BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
+# Format validation patterns (shared by sources/manager.py and explore_validate.py)
+YOUTUBE_CHANNEL_ID_RE = re.compile(r"^UC[\w-]{22}$")
+TWITTER_HANDLE_RE = re.compile(r"^[A-Za-z0-9_]{1,15}$")
+
 _TWITTER_BLOCKED = {"home", "explore", "search", "settings", "i"}
 
 
