@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-02T14:49:59.510298+00:00",
+  "exported_at": "2026-10-02T18:39:08.996634+00:00",
   "period_hours": 168,
-  "total": 3052,
+  "total": 3055,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -17141,46 +17141,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6df6cb905be5cd48",
-      "url": "https://www.youtube.com/shorts/SQYwRET4a6Q",
-      "title": "Why Did The AI Race Just Change? \ud83c\udfc1",
-      "summary": "The AI conversation is shifting fast. New foundation models arrive every few weeks, but what really matters to businesses is efficiency, cost, reliability, and real-world impact. \n\n#ai #generativeai #aimodel #aiagents#techtrends\n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@ibmdeveloperadvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-25T16:00:28Z",
-      "fetched_at": "2026-09-25T18:37:56.555742Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2a652d279a1aad3d",
-      "url": "https://www.youtube.com/shorts/1gSIFU2FM24",
-      "title": "The Hard Truth: Stop Looking for Shortcuts \u26a1\ufe0f",
-      "summary": "If you want to win, you have to stop looking for shortcuts. \u26a1\ufe0f\n\nDiscover how to succeed in tech by building undeniable skills through consistent focus and massive execution. Developing a disciplined developer work ethic and adopting an unreasonable success mindset is the only real way to achieve your long-term goals.  \n\n#stoplookingforshortcuts #howtosucceedintech #buildingundeniableskills #shorts #motivation",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-09-25T16:00:08Z",
-      "fetched_at": "2026-09-25T18:37:55.654784Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a4d974c4287819ce",
       "url": "https://arxiv.org/abs/2608.29616",
       "title": "JPO: Juris Policy Optimization for Structured Legal Reasoning in Criminal Judgment Prediction",
@@ -28333,26 +28293,6 @@
       "author": "",
       "published_at": "2026-09-28T00:00:00Z",
       "fetched_at": "2026-09-29T01:58:38.805850Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3e954b29266d99e6",
-      "url": "https://www.youtube.com/shorts/PHa7_TRlOYE",
-      "title": "Meta Is Entering the AI Agent Race",
-      "summary": "Meta is moving beyond social media and into the AI agent race - with tools designed to handle calendars, tasks, coding, and computer use. Check out the full episode now #short",
-      "content": "",
-      "source_name": "Last Week in AI",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "Last Week in AI",
-      "published_at": "2026-09-25T15:02:46Z",
-      "fetched_at": "2026-09-25T18:37:56.704164Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63161,129 +63101,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ceeaeb8001665f16",
-      "url": "https://x.com/steipete/status/2103524849515991090",
-      "title": "RT @PWVentures: We sit down with @steipete, Creator of @openclaw, on how one WhatsApp bot became one...",
-      "summary": "RT @PWVentures: We sit down with @steipete, Creator of @openclaw, on how one WhatsApp bot became one of the most-used open-source AI agent\u2026",
-      "content": "RT @PWVentures: We sit down with @steipete, Creator of @openclaw, on how one WhatsApp bot became one of the most-used open-source AI agent\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-25T16:39:40Z",
-      "fetched_at": "2026-09-25T16:42:12.446339Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1bf0399288a07c88",
-      "url": "https://x.com/GoogleAI/status/2103552111233343980",
-      "title": "Check out this week's updates and releases:\n\n\u2014 Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS, t...",
-      "summary": "Check out this week's updates and releases:\n\n\u2014 Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS, two of our most expressive audio generation models yet\n\u2014 Gemini 3.8 Live with Live Avatar, bringing near real-time visual presence to Gemini\u2019s conversational AI\n\u2014 @Gemini_Notebook",
-      "content": "Check out this week's updates and releases:\n\n\u2014 Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS, two of our most expressive audio generation models yet\n\u2014 Gemini 3.8 Live with Live Avatar, bringing near real-time visual presence to Gemini\u2019s conversational AI\n\u2014 @Gemini_Notebook",
-      "source_name": "@googleai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "google"
-      ],
-      "author": "googleai",
-      "published_at": "2026-09-25T18:28:00Z",
-      "fetched_at": "2026-09-25T18:42:29.631390Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "15f3cd2ffd88c7e0",
-      "url": "https://x.com/trq212/status/2103548669790449720",
-      "title": "RT @browserbase: How do you actually build an effective harness with Claude?\n\nWe had Thariq (@trq212...",
-      "summary": "RT @browserbase: How do you actually build an effective harness with Claude?\n\nWe had Thariq (@trq212) from Anthropic at Navigate 2026 to ta\u2026",
-      "content": "RT @browserbase: How do you actually build an effective harness with Claude?\n\nWe had Thariq (@trq212) from Anthropic at Navigate 2026 to ta\u2026",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-09-25T18:14:19Z",
-      "fetched_at": "2026-09-25T18:42:19.086741Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "363d24671384fd8b",
-      "url": "https://x.com/steipete/status/2103547140928950313",
-      "title": "RT @Polymarket: JUST IN: Investigation reveals former Anthropic researcher Jacob Coxon reportedly wo...",
-      "summary": "RT @Polymarket: JUST IN: Investigation reveals former Anthropic researcher Jacob Coxon reportedly worked with a \u201cdoomer PR firm\u201d while laun\u2026",
-      "content": "RT @Polymarket: JUST IN: Investigation reveals former Anthropic researcher Jacob Coxon reportedly worked with a \u201cdoomer PR firm\u201d while laun\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-25T18:08:15Z",
-      "fetched_at": "2026-09-25T18:42:32.294517Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9045dc98afde439d",
-      "url": "https://x.com/AnthropicAI/status/2103541577083719888",
-      "title": "New on the Science Blog: Yes, Claude can do Nine Loops.\n\nTheoretical physicists predict how particle...",
-      "summary": "New on the Science Blog: Yes, Claude can do Nine Loops.\n\nTheoretical physicists predict how particles behave using formulas called scattering amplitudes. These are notoriously hard to compute, so researchers work with layers of increasingly fine corrections called \u201cloops\u201d\u2014each",
-      "content": "New on the Science Blog: Yes, Claude can do Nine Loops.\n\nTheoretical physicists predict how particles behave using formulas called scattering amplitudes. These are notoriously hard to compute, so researchers work with layers of increasingly fine corrections called \u201cloops\u201d\u2014each",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-09-25T17:46:08Z",
-      "fetched_at": "2026-09-25T18:42:30.964512Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7688bf1b5480a688",
-      "url": "https://x.com/bcherny/status/2103538666597691552",
-      "title": "Tag writes &gt;50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of ou...",
-      "summary": "Tag writes &gt;50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of our product feedback + bugs.\n\nIt's not like a regular Slack bot. It is proactive, programmable, it has memory, it has access to your connectors. With Opus 5.5 and Fable 5.1, it has",
-      "content": "Tag writes &gt;50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of our product feedback + bugs.\n\nIt's not like a regular Slack bot. It is proactive, programmable, it has memory, it has access to your connectors. With Opus 5.5 and Fable 5.1, it has",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-09-25T17:34:34Z",
-      "fetched_at": "2026-09-25T18:42:21.848565Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "18183a5a23178969",
       "url": "https://x.com/steipete/status/2103580623239827941",
       "title": "That sounds 100% like the OC hype cycle we had 8 months ago.\n\nBiggest limitation isn\u2019t the tech, it\u2019...",
@@ -66204,21 +66021,265 @@
       "is_duplicate_of": null
     },
     {
-      "id": "958d115a03921d42",
-      "url": "https://x.com/simonw/status/2103495582048555120",
-      "title": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
-      "summary": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
-      "content": "RT @hillelogram: @simonw \"It doesn't get easier, you just get faster\"",
-      "source_name": "@simonw",
+      "id": "9207ba55b4fb6643",
+      "url": "https://x.com/dani_avila7/status/2106089330598883443",
+      "title": "Great post!\n\n@trq212 shared something similar a while ago. At this point, the extra tokens needed to...",
+      "summary": "Great post!\n\n@trq212 shared something similar a while ago. At this point, the extra tokens needed to generate the HTML are minimal, but the difference in understanding can be huge\n\nEspecially for complex CI/CD pipelines or architectures with multiple connected microservices",
+      "content": "Great post!\n\n@trq212 shared something similar a while ago. At this point, the extra tokens needed to generate the HTML are minimal, but the difference in understanding can be huge\n\nEspecially for complex CI/CD pipelines or architectures with multiple connected microservices",
+      "source_name": "@dani_avila7",
       "source_type": "twitter",
       "tags": [
         "ai",
-        "tooling",
-        "open-source"
+        "engineering"
       ],
-      "author": "simonw",
-      "published_at": "2026-09-25T14:43:22Z",
-      "fetched_at": "2026-09-25T16:42:03.640814Z",
+      "author": "dani_avila7",
+      "published_at": "2026-10-02T18:30:00Z",
+      "fetched_at": "2026-10-02T18:38:56.698358Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "81c8a81fc52588c3",
+      "url": "https://x.com/sama/status/2106085986606403684",
+      "title": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably bett...",
+      "summary": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably better as it learns more of my workflow and style.\n\nhaving it do the stuff i don't like doing--and usually just builds up as a gravity well of dread--has me very happy.",
+      "content": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably better as it learns more of my workflow and style.\n\nhaving it do the stuff i don't like doing--and usually just builds up as a gravity well of dread--has me very happy.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-02T18:16:43Z",
+      "fetched_at": "2026-10-02T18:38:59.331692Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "33fc02eb8d7b9bff",
+      "url": "https://x.com/steipete/status/2106082581058114024",
+      "title": "RT @kevinroose: thrilled to announce we have built the \u201ctrick old people into handing over their ban...",
+      "summary": "RT @kevinroose: thrilled to announce we have built the \u201ctrick old people into handing over their bank passwords machine\u201d from the classic s\u2026",
+      "content": "RT @kevinroose: thrilled to announce we have built the \u201ctrick old people into handing over their bank passwords machine\u201d from the classic s\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-02T18:03:11Z",
+      "fetched_at": "2026-10-02T18:39:06.409054Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7445b28414825b29",
+      "url": "https://x.com/GeminiApp/status/2106079691337867687",
+      "title": "RT @NewsFromGoogle: We\u2019re launching Guided Vision in Gemini Live across compatible @Android devices....",
+      "summary": "RT @NewsFromGoogle: We\u2019re launching Guided Vision in Gemini Live across compatible @Android devices. Built alongside the blind and low-visi\u2026",
+      "content": "RT @NewsFromGoogle: We\u2019re launching Guided Vision in Gemini Live across compatible @Android devices. Built alongside the blind and low-visi\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-02T17:51:42Z",
+      "fetched_at": "2026-10-02T18:39:00.771647Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1cd917cdbd803af8",
+      "url": "https://x.com/GeminiApp/status/2106079663340880243",
+      "title": "RT @NewsFromGoogle: ICYMI: Here's a recap of our AI announcements from September. \u2b07\ufe0f\n\n\ud83d\udc8e Announced Ge...",
+      "summary": "RT @NewsFromGoogle: ICYMI: Here's a recap of our AI announcements from September. \u2b07\ufe0f\n\n\ud83d\udc8e Announced Gemini 4 Argon, our newest frontier model\u2026",
+      "content": "RT @NewsFromGoogle: ICYMI: Here's a recap of our AI announcements from September. \u2b07\ufe0f\n\n\ud83d\udc8e Announced Gemini 4 Argon, our newest frontier model\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-02T17:51:35Z",
+      "fetched_at": "2026-10-02T18:39:00.771755Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6d851bd53d0b532e",
+      "url": "https://x.com/steipete/status/2106076508020506722",
+      "title": "This was by far my favorite slide at DevDay.\nKudos to the team! https://t.co/AQtPzNTZhx",
+      "summary": "This was by far my favorite slide at DevDay.\nKudos to the team! https://t.co/AQtPzNTZhx",
+      "content": "This was by far my favorite slide at DevDay.\nKudos to the team! https://t.co/AQtPzNTZhx",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-02T17:39:03Z",
+      "fetched_at": "2026-10-02T18:39:06.409113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b9952291d8c0db2c",
+      "url": "https://x.com/steipete/status/2106072066260865395",
+      "title": "RT @ben_issen: favorite reminder for creatives, by Bj\u00f6rk https://t.co/NiyI46Qnoc",
+      "summary": "RT @ben_issen: favorite reminder for creatives, by Bj\u00f6rk https://t.co/NiyI46Qnoc",
+      "content": "RT @ben_issen: favorite reminder for creatives, by Bj\u00f6rk https://t.co/NiyI46Qnoc",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-02T17:21:24Z",
+      "fetched_at": "2026-10-02T18:39:06.409145Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2592d5ad067281a2",
+      "url": "https://x.com/steipete/status/2106070772427145306",
+      "title": "RT @signulll: things that give normal ppl a dopamine hit:\n\nadding things to cart. window shopping. b...",
+      "summary": "RT @signulll: things that give normal ppl a dopamine hit:\n\nadding things to cart. window shopping. buying something. waiting for a package.\u2026",
+      "content": "RT @signulll: things that give normal ppl a dopamine hit:\n\nadding things to cart. window shopping. buying something. waiting for a package.\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-02T17:16:15Z",
+      "fetched_at": "2026-10-02T18:39:06.409192Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1bf0399288a07c88",
+      "url": "https://x.com/GoogleAI/status/2103552111233343980",
+      "title": "Check out this week's updates and releases:\n\n\u2014 Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS, t...",
+      "summary": "Check out this week's updates and releases:\n\n\u2014 Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS, two of our most expressive audio generation models yet\n\u2014 Gemini 3.8 Live with Live Avatar, bringing near real-time visual presence to Gemini\u2019s conversational AI\n\u2014 @Gemini_Notebook",
+      "content": "Check out this week's updates and releases:\n\n\u2014 Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS, two of our most expressive audio generation models yet\n\u2014 Gemini 3.8 Live with Live Avatar, bringing near real-time visual presence to Gemini\u2019s conversational AI\n\u2014 @Gemini_Notebook",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-09-25T18:28:00Z",
+      "fetched_at": "2026-09-25T18:42:29.631390Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15f3cd2ffd88c7e0",
+      "url": "https://x.com/trq212/status/2103548669790449720",
+      "title": "RT @browserbase: How do you actually build an effective harness with Claude?\n\nWe had Thariq (@trq212...",
+      "summary": "RT @browserbase: How do you actually build an effective harness with Claude?\n\nWe had Thariq (@trq212) from Anthropic at Navigate 2026 to ta\u2026",
+      "content": "RT @browserbase: How do you actually build an effective harness with Claude?\n\nWe had Thariq (@trq212) from Anthropic at Navigate 2026 to ta\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-25T18:14:19Z",
+      "fetched_at": "2026-09-25T18:42:19.086741Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "363d24671384fd8b",
+      "url": "https://x.com/steipete/status/2103547140928950313",
+      "title": "RT @Polymarket: JUST IN: Investigation reveals former Anthropic researcher Jacob Coxon reportedly wo...",
+      "summary": "RT @Polymarket: JUST IN: Investigation reveals former Anthropic researcher Jacob Coxon reportedly worked with a \u201cdoomer PR firm\u201d while laun\u2026",
+      "content": "RT @Polymarket: JUST IN: Investigation reveals former Anthropic researcher Jacob Coxon reportedly worked with a \u201cdoomer PR firm\u201d while laun\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-25T18:08:15Z",
+      "fetched_at": "2026-09-25T18:42:32.294517Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9045dc98afde439d",
+      "url": "https://x.com/AnthropicAI/status/2103541577083719888",
+      "title": "New on the Science Blog: Yes, Claude can do Nine Loops.\n\nTheoretical physicists predict how particle...",
+      "summary": "New on the Science Blog: Yes, Claude can do Nine Loops.\n\nTheoretical physicists predict how particles behave using formulas called scattering amplitudes. These are notoriously hard to compute, so researchers work with layers of increasingly fine corrections called \u201cloops\u201d\u2014each",
+      "content": "New on the Science Blog: Yes, Claude can do Nine Loops.\n\nTheoretical physicists predict how particles behave using formulas called scattering amplitudes. These are notoriously hard to compute, so researchers work with layers of increasingly fine corrections called \u201cloops\u201d\u2014each",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-09-25T17:46:08Z",
+      "fetched_at": "2026-09-25T18:42:30.964512Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7688bf1b5480a688",
+      "url": "https://x.com/bcherny/status/2103538666597691552",
+      "title": "Tag writes &gt;50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of ou...",
+      "summary": "Tag writes &gt;50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of our product feedback + bugs.\n\nIt's not like a regular Slack bot. It is proactive, programmable, it has memory, it has access to your connectors. With Opus 5.5 and Fable 5.1, it has",
+      "content": "Tag writes &gt;50% of my PRs every day. It also does ~100% of my data analysis, and fixes most of our product feedback + bugs.\n\nIt's not like a regular Slack bot. It is proactive, programmable, it has memory, it has access to your connectors. With Opus 5.5 and Fable 5.1, it has",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-25T17:34:34Z",
+      "fetched_at": "2026-09-25T18:42:21.848565Z",
       "score": null,
       "score_reason": "",
       "tier": "",
