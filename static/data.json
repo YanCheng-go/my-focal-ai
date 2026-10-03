@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-03T05:20:39.066232+00:00",
+  "exported_at": "2026-10-03T07:42:25.776028+00:00",
   "period_hours": 168,
-  "total": 3037,
+  "total": 3060,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -65917,6 +65917,469 @@
       "author": "steipete",
       "published_at": "2026-10-02T17:16:15Z",
       "fetched_at": "2026-10-02T18:39:06.409192Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1a59cefe7800d631",
+      "url": "https://x.com/dani_avila7/status/2106209192801419522",
+      "title": "RT @dani_avila7: Introducing Jev Model Router for Claude Code\n\nThis Claude Code Mod lets you use Jev...",
+      "summary": "RT @dani_avila7: Introducing Jev Model Router for Claude Code\n\nThis Claude Code Mod lets you use Jev through its direct @typesafeai API or\u2026",
+      "content": "RT @dani_avila7: Introducing Jev Model Router for Claude Code\n\nThis Claude Code Mod lets you use Jev through its direct @typesafeai API or\u2026",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-03T02:26:17Z",
+      "fetched_at": "2026-10-03T07:42:15.950426Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "401b82bfa70c572a",
+      "url": "https://x.com/dani_avila7/status/2106205168849010879",
+      "title": "Very interesting paper on making coding agents actually finish the job\n\n(Bookmark this and read the ...",
+      "summary": "Very interesting paper on making coding agents actually finish the job\n\n(Bookmark this and read the paper when you have time)\n\nThey trained the model on 1,700 tasks where it gets points for every requirement it meets and zero if it breaks something that already worked\n\nLike a kid https://t.co/p4HO3hG8dh",
+      "content": "Very interesting paper on making coding agents actually finish the job\n\n(Bookmark this and read the paper when you have time)\n\nThey trained the model on 1,700 tasks where it gets points for every requirement it meets and zero if it breaks something that already worked\n\nLike a kid https://t.co/p4HO3hG8dh",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-03T02:10:18Z",
+      "fetched_at": "2026-10-03T07:42:15.950516Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b9aab36e430c902d",
+      "url": "https://x.com/sama/status/2106189841813934140",
+      "title": "The contrast between hanging up the last phone call of the day of high-stakes decisions and then a m...",
+      "summary": "The contrast between hanging up the last phone call of the day of high-stakes decisions and then a minute later walking in the door to the pure love of small children who want to laugh and play and show you every discovery they made that day is the strangest and best thing I have",
+      "content": "The contrast between hanging up the last phone call of the day of high-stakes decisions and then a minute later walking in the door to the pure love of small children who want to laugh and play and show you every discovery they made that day is the strangest and best thing I have",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-03T01:09:24Z",
+      "fetched_at": "2026-10-03T07:42:17.992650Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "942ed78751756f3d",
+      "url": "https://x.com/dani_avila7/status/2106185014706909298",
+      "title": "The big question\u2026 Claude Mods in Chat/Cowork? \ud83d\udc40\n\n@bcherny @trq212 @lydiahallie @amorriscode",
+      "summary": "The big question\u2026 Claude Mods in Chat/Cowork? \ud83d\udc40\n\n@bcherny @trq212 @lydiahallie @amorriscode",
+      "content": "The big question\u2026 Claude Mods in Chat/Cowork? \ud83d\udc40\n\n@bcherny @trq212 @lydiahallie @amorriscode",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-03T00:50:13Z",
+      "fetched_at": "2026-10-03T07:42:15.950570Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "12733b6ec2f9c65f",
+      "url": "https://x.com/dani_avila7/status/2106162295634030923",
+      "title": "Claude Code Template now has its own Mod to open all components directly inside Claude\n\nInstall:\nnpx...",
+      "summary": "Claude Code Template now has its own Mod to open all components directly inside Claude\n\nInstall:\nnpx claude-code-templates@latest --mod productivity/aitmpl\n\nThen run:\n/reload-plugin\n\nAnd finally:\n/aitmpl\n\nThis opens the panel where you can install any component from https://t.co/5migGRDjsM",
+      "content": "Claude Code Template now has its own Mod to open all components directly inside Claude\n\nInstall:\nnpx claude-code-templates@latest --mod productivity/aitmpl\n\nThen run:\n/reload-plugin\n\nAnd finally:\n/aitmpl\n\nThis opens the panel where you can install any component from https://t.co/5migGRDjsM",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-02T23:19:56Z",
+      "fetched_at": "2026-10-03T07:42:15.950625Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b25ffd7d99d84c29",
+      "url": "https://x.com/sama/status/2106147184693620924",
+      "title": "There is some speculation about our partnership with Cerebras.\n\nCerebras is a close partner, and we ...",
+      "summary": "There is some speculation about our partnership with Cerebras.\n\nCerebras is a close partner, and we have a deep engagement pushing on the frontiers of speed.",
+      "content": "There is some speculation about our partnership with Cerebras.\n\nCerebras is a close partner, and we have a deep engagement pushing on the frontiers of speed.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-02T22:19:53Z",
+      "fetched_at": "2026-10-03T07:42:17.992720Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b7fb7b948877bf8e",
+      "url": "https://x.com/dani_avila7/status/2106146151594344774",
+      "title": "Claude Chess Mod works perfectly on Desktop, and you can also play against Jev\n\nJust install it by r...",
+      "summary": "Claude Chess Mod works perfectly on Desktop, and you can also play against Jev\n\nJust install it by running:\nnpx claude-code-templates@latest --mod games/chess\n\nThen add your @typesafeai API key to settings.json like this:\n{\n  \"pluginConfigs\": {\n    \"chess@skills-dir\": { https://t.co/EkVwqjkoeQ",
+      "content": "Claude Chess Mod works perfectly on Desktop, and you can also play against Jev\n\nJust install it by running:\nnpx claude-code-templates@latest --mod games/chess\n\nThen add your @typesafeai API key to settings.json like this:\n{\n  \"pluginConfigs\": {\n    \"chess@skills-dir\": { https://t.co/EkVwqjkoeQ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-02T22:15:47Z",
+      "fetched_at": "2026-10-03T07:42:15.950674Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8c2ac37978fc7b00",
+      "url": "https://x.com/claudeai/status/2106125480193913276",
+      "title": "What are you exploring with Claude this weekend?",
+      "summary": "What are you exploring with Claude this weekend?",
+      "content": "What are you exploring with Claude this weekend?",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:39Z",
+      "fetched_at": "2026-10-03T07:42:16.972717Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "832c4e7b434bed9a",
+      "url": "https://x.com/claudeai/status/2106125476167381210",
+      "title": "A pixel walk through Seattle that follows the real weather and time of day.\nhttps://t.co/dNECAFJT7E",
+      "summary": "A pixel walk through Seattle that follows the real weather and time of day.\nhttps://t.co/dNECAFJT7E",
+      "content": "A pixel walk through Seattle that follows the real weather and time of day.\nhttps://t.co/dNECAFJT7E",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:38Z",
+      "fetched_at": "2026-10-03T07:42:16.972895Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "208f2f0ad1880c8e",
+      "url": "https://x.com/claudeai/status/2106125477710901276",
+      "title": "A pop-up city where each building is a paper fold drawn on a flat canvas, Sonnet 5.5.\nhttps://t.co/0...",
+      "summary": "A pop-up city where each building is a paper fold drawn on a flat canvas, Sonnet 5.5.\nhttps://t.co/04cupOr4Tg",
+      "content": "A pop-up city where each building is a paper fold drawn on a flat canvas, Sonnet 5.5.\nhttps://t.co/04cupOr4Tg",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:38Z",
+      "fetched_at": "2026-10-03T07:42:16.972860Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0f02e22c9cbc6e41",
+      "url": "https://x.com/claudeai/status/2106125478956507480",
+      "title": "A jet engine in interactive 3D you can cut away and pull apart, made with Opus 5.5.\nhttps://t.co/0q8...",
+      "summary": "A jet engine in interactive 3D you can cut away and pull apart, made with Opus 5.5.\nhttps://t.co/0q8bZJAi4T",
+      "content": "A jet engine in interactive 3D you can cut away and pull apart, made with Opus 5.5.\nhttps://t.co/0q8bZJAi4T",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:38Z",
+      "fetched_at": "2026-10-03T07:42:16.972815Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6a75806b94438b82",
+      "url": "https://x.com/claudeai/status/2106125472178565288",
+      "title": "Water, simulated in the browser.\nhttps://t.co/wgrgb2X1NM",
+      "summary": "Water, simulated in the browser.\nhttps://t.co/wgrgb2X1NM",
+      "content": "Water, simulated in the browser.\nhttps://t.co/wgrgb2X1NM",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:37Z",
+      "fetched_at": "2026-10-03T07:42:16.972992Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5d8db17fe03bd70b",
+      "url": "https://x.com/claudeai/status/2106125473432707412",
+      "title": "Poems, illustrated in Claude Code.\nhttps://t.co/jmkTBUVS52",
+      "summary": "Poems, illustrated in Claude Code.\nhttps://t.co/jmkTBUVS52",
+      "content": "Poems, illustrated in Claude Code.\nhttps://t.co/jmkTBUVS52",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:37Z",
+      "fetched_at": "2026-10-03T07:42:16.972962Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3576058403d0cde3",
+      "url": "https://x.com/claudeai/status/2106125474900701633",
+      "title": "Claude Code and a camera, left running overnight on Old Street.\nhttps://t.co/9tGlxgiQ7s",
+      "summary": "Claude Code and a camera, left running overnight on Old Street.\nhttps://t.co/9tGlxgiQ7s",
+      "content": "Claude Code and a camera, left running overnight on Old Street.\nhttps://t.co/9tGlxgiQ7s",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:37Z",
+      "fetched_at": "2026-10-03T07:42:16.972931Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "88bdab2f5f38a018",
+      "url": "https://x.com/claudeai/status/2106125468365918268",
+      "title": "Lots of inventive things made with Claude these past few weeks. A few of our favorites:\n\nA working w...",
+      "summary": "Lots of inventive things made with Claude these past few weeks. A few of our favorites:\n\nA working watermill, built with Opus 5.5.\nhttps://t.co/s9WP51q5os",
+      "content": "Lots of inventive things made with Claude these past few weeks. A few of our favorites:\n\nA working watermill, built with Opus 5.5.\nhttps://t.co/s9WP51q5os",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:36Z",
+      "fetched_at": "2026-10-03T07:42:16.973088Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f7ca0d306152dce7",
+      "url": "https://x.com/claudeai/status/2106125469599068492",
+      "title": "Embossed cards, made with Opus 5.5.\nhttps://t.co/04ehP953pj",
+      "summary": "Embossed cards, made with Opus 5.5.\nhttps://t.co/04ehP953pj",
+      "content": "Embossed cards, made with Opus 5.5.\nhttps://t.co/04ehP953pj",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:36Z",
+      "fetched_at": "2026-10-03T07:42:16.973052Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c6042f1b6ecf45bd",
+      "url": "https://x.com/claudeai/status/2106125470786105375",
+      "title": "A 3D site that flies you from outside the Milky Way down to Jupiter\u2019s moons, Opus 5.5.\nhttps://t.co/...",
+      "summary": "A 3D site that flies you from outside the Milky Way down to Jupiter\u2019s moons, Opus 5.5.\nhttps://t.co/0k9EghqPZD",
+      "content": "A 3D site that flies you from outside the Milky Way down to Jupiter\u2019s moons, Opus 5.5.\nhttps://t.co/0k9EghqPZD",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-02T20:53:36Z",
+      "fetched_at": "2026-10-03T07:42:16.973022Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7481629eb14e12ba",
+      "url": "https://x.com/trq212/status/2106119299484221762",
+      "title": "\"You should know\" is a great way of staying on top of what's possible with Claude and also a great e...",
+      "summary": "\"You should know\" is a great way of staying on top of what's possible with Claude and also a great example of the kind of things mods enable.\n\nYou can really make Claude Code yours.",
+      "content": "\"You should know\" is a great way of staying on top of what's possible with Claude and also a great example of the kind of things mods enable.\n\nYou can really make Claude Code yours.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-02T20:29:05Z",
+      "fetched_at": "2026-10-03T07:42:11.239312Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7e408608f33e1681",
+      "url": "https://x.com/steipete/status/2106109034302714220",
+      "title": "RT @natfriedman: \ud83d\udea8 side project alert \ud83d\udea8\n\nAnnouncing Muse Gadgets, an open source ESP32 firmware and ...",
+      "summary": "RT @natfriedman: \ud83d\udea8 side project alert \ud83d\udea8\n\nAnnouncing Muse Gadgets, an open source ESP32 firmware and Linux sdk so that you can make hardware\u2026",
+      "content": "RT @natfriedman: \ud83d\udea8 side project alert \ud83d\udea8\n\nAnnouncing Muse Gadgets, an open source ESP32 firmware and Linux sdk so that you can make hardware\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-02T19:48:18Z",
+      "fetched_at": "2026-10-03T07:42:23.221879Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0413538298bdbe6f",
+      "url": "https://x.com/steipete/status/2103700422041219089",
+      "title": "RT @shanselman: Been working with Omar and Peter and Jakob and the team on this since conception. Wa...",
+      "summary": "RT @shanselman: Been working with Omar and Peter and Jakob and the team on this since conception. Watching Omar cook has been super fun! Au\u2026",
+      "content": "RT @shanselman: Been working with Omar and Peter and Jakob and the team on this since conception. Watching Omar cook has been super fun! Au\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-26T04:17:20Z",
+      "fetched_at": "2026-09-26T07:48:13.971579Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3da0dcbec097ad43",
+      "url": "https://x.com/bcherny/status/2103691327699550598",
+      "title": "Can\u2019t wait to see what you build.",
+      "summary": "Can\u2019t wait to see what you build.",
+      "content": "Can\u2019t wait to see what you build.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-09-26T03:41:11Z",
+      "fetched_at": "2026-09-26T07:48:04.236578Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ba5c66c4708c8b06",
+      "url": "https://x.com/dani_avila7/status/2103689641282978172",
+      "title": "I synced my Polar Street X to Apple Health, connected it to Muse\n\nnow it reviews my metrics every mo...",
+      "summary": "I synced my Polar Street X to Apple Health, connected it to Muse\n\nnow it reviews my metrics every morning and builds my training plan\n\nNo MCP, no API. Muse syncs internally on the iPhone\n\nTry it with your watch https://t.co/7UHxo0RaZ5",
+      "content": "I synced my Polar Street X to Apple Health, connected it to Muse\n\nnow it reviews my metrics every morning and builds my training plan\n\nNo MCP, no API. Muse syncs internally on the iPhone\n\nTry it with your watch https://t.co/7UHxo0RaZ5",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-26T03:34:29Z",
+      "fetched_at": "2026-09-26T07:48:06.386394Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dc27fc7e52893a11",
+      "url": "https://x.com/simonw/status/2103688757337895282",
+      "title": "\"The last year in the technology industry has felt like 100 years all happening at once. Our industr...",
+      "summary": "\"The last year in the technology industry has felt like 100 years all happening at once. Our industry is destabilized in a way nobody\u2019s experienced since the advent of the personal computer. Every limit AI runs up against collapses within a month. Everything we do with frontier",
+      "content": "\"The last year in the technology industry has felt like 100 years all happening at once. Our industry is destabilized in a way nobody\u2019s experienced since the advent of the personal computer. Every limit AI runs up against collapses within a month. Everything we do with frontier",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-26T03:30:59Z",
+      "fetched_at": "2026-09-26T07:48:05.363023Z",
       "score": null,
       "score_reason": "",
       "tier": "",
