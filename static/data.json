@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-03T07:42:25.776028+00:00",
+  "exported_at": "2026-10-03T09:48:14.928981+00:00",
   "period_hours": 168,
-  "total": 3060,
+  "total": 3056,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -66298,88 +66298,6 @@
       "author": "steipete",
       "published_at": "2026-10-02T19:48:18Z",
       "fetched_at": "2026-10-03T07:42:23.221879Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0413538298bdbe6f",
-      "url": "https://x.com/steipete/status/2103700422041219089",
-      "title": "RT @shanselman: Been working with Omar and Peter and Jakob and the team on this since conception. Wa...",
-      "summary": "RT @shanselman: Been working with Omar and Peter and Jakob and the team on this since conception. Watching Omar cook has been super fun! Au\u2026",
-      "content": "RT @shanselman: Been working with Omar and Peter and Jakob and the team on this since conception. Watching Omar cook has been super fun! Au\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-26T04:17:20Z",
-      "fetched_at": "2026-09-26T07:48:13.971579Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3da0dcbec097ad43",
-      "url": "https://x.com/bcherny/status/2103691327699550598",
-      "title": "Can\u2019t wait to see what you build.",
-      "summary": "Can\u2019t wait to see what you build.",
-      "content": "Can\u2019t wait to see what you build.",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-09-26T03:41:11Z",
-      "fetched_at": "2026-09-26T07:48:04.236578Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ba5c66c4708c8b06",
-      "url": "https://x.com/dani_avila7/status/2103689641282978172",
-      "title": "I synced my Polar Street X to Apple Health, connected it to Muse\n\nnow it reviews my metrics every mo...",
-      "summary": "I synced my Polar Street X to Apple Health, connected it to Muse\n\nnow it reviews my metrics every morning and builds my training plan\n\nNo MCP, no API. Muse syncs internally on the iPhone\n\nTry it with your watch https://t.co/7UHxo0RaZ5",
-      "content": "I synced my Polar Street X to Apple Health, connected it to Muse\n\nnow it reviews my metrics every morning and builds my training plan\n\nNo MCP, no API. Muse syncs internally on the iPhone\n\nTry it with your watch https://t.co/7UHxo0RaZ5",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-26T03:34:29Z",
-      "fetched_at": "2026-09-26T07:48:06.386394Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dc27fc7e52893a11",
-      "url": "https://x.com/simonw/status/2103688757337895282",
-      "title": "\"The last year in the technology industry has felt like 100 years all happening at once. Our industr...",
-      "summary": "\"The last year in the technology industry has felt like 100 years all happening at once. Our industry is destabilized in a way nobody\u2019s experienced since the advent of the personal computer. Every limit AI runs up against collapses within a month. Everything we do with frontier",
-      "content": "\"The last year in the technology industry has felt like 100 years all happening at once. Our industry is destabilized in a way nobody\u2019s experienced since the advent of the personal computer. Every limit AI runs up against collapses within a month. Everything we do with frontier",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-09-26T03:30:59Z",
-      "fetched_at": "2026-09-26T07:48:05.363023Z",
       "score": null,
       "score_reason": "",
       "tier": "",
