@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-05T05:42:29.531827+00:00",
+  "exported_at": "2026-10-05T08:27:07.447692+00:00",
   "period_hours": 168,
-  "total": 3037,
+  "total": 3069,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39696,27 +39696,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "0adf5bb2a473897d",
-      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-28T07:00:00Z",
-      "fetched_at": "2026-09-28T20:33:59.248995Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "f7546b232eb0c65a",
       "url": "https://arxiv.org/abs/2609.38991",
       "title": "Anchoring Adversarial Trajectories to Data Manifolds: A Bilevel Transfer Optimization Framework",
@@ -66033,6 +66012,673 @@
       "author": "steipete",
       "published_at": "2026-10-02T19:48:18Z",
       "fetched_at": "2026-10-03T07:42:23.221879Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4971ec178637b310",
+      "url": "https://x.com/dani_avila7/status/2106924705756107135",
+      "title": "Did you know Codex was the original model behind GitHub Copilot in 2021?\n\nAnd you could also use it ...",
+      "summary": "Did you know Codex was the original model behind GitHub Copilot in 2021?\n\nAnd you could also use it through the OpenAI API as code-davinci-002\n\nI used it back then\u2026 It was actually pretty good",
+      "content": "Did you know Codex was the original model behind GitHub Copilot in 2021?\n\nAnd you could also use it through the OpenAI API as code-davinci-002\n\nI used it back then\u2026 It was actually pretty good",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-05T01:49:29Z",
+      "fetched_at": "2026-10-05T08:26:57.096880Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "616d4e13934c3592",
+      "url": "https://x.com/dani_avila7/status/2106910092620689432",
+      "title": "Introducing Time Machine for Claude Code\n\nWorks in both Claude Desktop and Claude Code CLI\n\n/timemac...",
+      "summary": "Introducing Time Machine for Claude Code\n\nWorks in both Claude Desktop and Claude Code CLI\n\n/timemachine records your session as a timeline, including prompts, tool calls, edits, Bash commands, and turn endings\n\nPick any point and fork from there, It restores both the https://t.co/xv9JKsULkJ",
+      "content": "Introducing Time Machine for Claude Code\n\nWorks in both Claude Desktop and Claude Code CLI\n\n/timemachine records your session as a timeline, including prompts, tool calls, edits, Bash commands, and turn endings\n\nPick any point and fork from there, It restores both the https://t.co/xv9JKsULkJ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-05T00:51:25Z",
+      "fetched_at": "2026-10-05T08:26:57.096998Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3dfa29ad16b10c45",
+      "url": "https://x.com/steipete/status/2106838155660046732",
+      "title": "RT @illscience: This illustrates the challenge with personal agent unit economics. \n\nIt\u2019s hard to pl...",
+      "summary": "RT @illscience: This illustrates the challenge with personal agent unit economics. \n\nIt\u2019s hard to play the game without a powerful patron i\u2026",
+      "content": "RT @illscience: This illustrates the challenge with personal agent unit economics. \n\nIt\u2019s hard to play the game without a powerful patron i\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T20:05:34Z",
+      "fetched_at": "2026-10-05T08:27:04.674131Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "31f2f2e12ccf700a",
+      "url": "https://x.com/steipete/status/2106837975581769751",
+      "title": "RT @luciascarlet: meanwhile Astra literally went through the binaries in my own macOS to reverse eng...",
+      "summary": "RT @luciascarlet: meanwhile Astra literally went through the binaries in my own macOS to reverse engineer the exact formulas used for the 2\u2026",
+      "content": "RT @luciascarlet: meanwhile Astra literally went through the binaries in my own macOS to reverse engineer the exact formulas used for the 2\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T20:04:51Z",
+      "fetched_at": "2026-10-05T08:27:04.674204Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eed55759f9a1b59d",
+      "url": "https://x.com/dani_avila7/status/2106833194477588903",
+      "title": "Huge improvement in Claude\u2019s Chrome extension browser use\n\nI left it running for 72 minutes on a cla...",
+      "summary": "Huge improvement in Claude\u2019s Chrome extension browser use\n\nI left it running for 72 minutes on a classification task. It executed 1,000+ actions and used 356K tokens with Opus 5.5\n\nI tried it a few months ago and stopped using it because it was slow, often got lost navigating the https://t.co/sIauerlmzt",
+      "content": "Huge improvement in Claude\u2019s Chrome extension browser use\n\nI left it running for 72 minutes on a classification task. It executed 1,000+ actions and used 356K tokens with Opus 5.5\n\nI tried it a few months ago and stopped using it because it was slow, often got lost navigating the https://t.co/sIauerlmzt",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T19:45:51Z",
+      "fetched_at": "2026-10-05T08:26:57.097056Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fb94ae966f3d412a",
+      "url": "https://x.com/steipete/status/2106822007300272610",
+      "title": "RT @AdamHoltererer: Oh, thaaat's why they use a logarithmic scale! https://t.co/qf8O3swDXf",
+      "summary": "RT @AdamHoltererer: Oh, thaaat's why they use a logarithmic scale! https://t.co/qf8O3swDXf",
+      "content": "RT @AdamHoltererer: Oh, thaaat's why they use a logarithmic scale! https://t.co/qf8O3swDXf",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T19:01:24Z",
+      "fetched_at": "2026-10-05T08:27:04.674235Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "08f6269a6ecf0336",
+      "url": "https://x.com/steipete/status/2106821677569233107",
+      "title": "RT @nabeelqu: The only generation that knows how computers work is also the most relaxed about AI: h...",
+      "summary": "RT @nabeelqu: The only generation that knows how computers work is also the most relaxed about AI: https://t.co/aMBh5gqLif",
+      "content": "RT @nabeelqu: The only generation that knows how computers work is also the most relaxed about AI: https://t.co/aMBh5gqLif",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T19:00:05Z",
+      "fetched_at": "2026-10-05T08:27:04.674266Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "69c2d198fb9e757e",
+      "url": "https://x.com/steipete/status/2106821599316107456",
+      "title": "RT @dannolan: I got GLM (which never refuses) to diff the firmware changes, pretty interesting https...",
+      "summary": "RT @dannolan: I got GLM (which never refuses) to diff the firmware changes, pretty interesting https://t.co/Qwz0fSnVbf",
+      "content": "RT @dannolan: I got GLM (which never refuses) to diff the firmware changes, pretty interesting https://t.co/Qwz0fSnVbf",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T18:59:46Z",
+      "fetched_at": "2026-10-05T08:27:04.674293Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cf99c7cc288586cd",
+      "url": "https://x.com/dani_avila7/status/2106809392083697747",
+      "title": "Yep, Prompt Cache Control also works in the Claude Code CLI https://t.co/hVDJ8I600Y",
+      "summary": "Yep, Prompt Cache Control also works in the Claude Code CLI https://t.co/hVDJ8I600Y",
+      "content": "Yep, Prompt Cache Control also works in the Claude Code CLI https://t.co/hVDJ8I600Y",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T18:11:16Z",
+      "fetched_at": "2026-10-05T08:26:57.097109Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "06257af8639b7577",
+      "url": "https://x.com/bcherny/status/2106805098534052135",
+      "title": "RT @claudeai: Lots of inventive things made with Claude these past few weeks. A few of our favorites...",
+      "summary": "RT @claudeai: Lots of inventive things made with Claude these past few weeks. A few of our favorites:\n\nA working watermill, built with Opus\u2026",
+      "content": "RT @claudeai: Lots of inventive things made with Claude these past few weeks. A few of our favorites:\n\nA working watermill, built with Opus\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-04T17:54:12Z",
+      "fetched_at": "2026-10-05T08:26:55.005542Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "682da9d46d49fdc0",
+      "url": "https://x.com/dani_avila7/status/2106804615237009512",
+      "title": "People keep asking if this is AI... what do you think?",
+      "summary": "People keep asking if this is AI... what do you think?",
+      "content": "People keep asking if this is AI... what do you think?",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T17:52:17Z",
+      "fetched_at": "2026-10-05T08:26:57.097157Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "af271741450150ea",
+      "url": "https://x.com/steipete/status/2106796559400882209",
+      "title": "bug fixes &amp; performance improvements",
+      "summary": "bug fixes &amp; performance improvements",
+      "content": "bug fixes &amp; performance improvements",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T17:20:16Z",
+      "fetched_at": "2026-10-05T08:27:04.674318Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a854f1f2bb6b8856",
+      "url": "https://x.com/dani_avila7/status/2106774234735280136",
+      "title": "/coffee https://t.co/Lilg2ABO4o",
+      "summary": "/coffee https://t.co/Lilg2ABO4o",
+      "content": "/coffee https://t.co/Lilg2ABO4o",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T15:51:34Z",
+      "fetched_at": "2026-10-05T08:26:57.097200Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a31d06a4ca32faea",
+      "url": "https://x.com/steipete/status/2106742419098411344",
+      "title": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
+      "summary": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
+      "content": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T13:45:08Z",
+      "fetched_at": "2026-10-05T08:27:04.674341Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "75b5bfedef3b479e",
+      "url": "https://x.com/bcherny/status/2106565344919953590",
+      "title": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just p...",
+      "summary": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
+      "content": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-04T02:01:30Z",
+      "fetched_at": "2026-10-05T08:26:55.005618Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7fbde300f6fb7387",
+      "url": "https://x.com/dani_avila7/status/2106556992638558451",
+      "title": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its l...",
+      "summary": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
+      "content": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T01:28:19Z",
+      "fetched_at": "2026-10-05T08:26:57.097241Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7980bea5cb35b9b",
+      "url": "https://x.com/simonw/status/2106550840773509149",
+      "title": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlif...",
+      "summary": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
+      "content": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-04T01:03:52Z",
+      "fetched_at": "2026-10-05T08:26:55.993483Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e27b79bb5047027",
+      "url": "https://x.com/dani_avila7/status/2106537507869581813",
+      "title": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "summary": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "content": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T00:10:54Z",
+      "fetched_at": "2026-10-05T08:26:57.097280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9dfa9410094722be",
+      "url": "https://x.com/simonw/status/2106528704902164855",
+      "title": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much every...",
+      "summary": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
+      "content": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-03T23:35:55Z",
+      "fetched_at": "2026-10-05T08:26:55.993587Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5a86298eb42f9872",
+      "url": "https://x.com/simonw/status/2106500511465869380",
+      "title": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGP...",
+      "summary": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGPT?\n\nI'm having trouble deciding when I should prompt Dot vs using ChatGPT - my Dot seems to afford a single conversation, but I like controlling my context across multiple threads",
+      "content": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGPT?\n\nI'm having trouble deciding when I should prompt Dot vs using ChatGPT - my Dot seems to afford a single conversation, but I like controlling my context across multiple threads",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-03T21:43:53Z",
+      "fetched_at": "2026-10-05T08:26:55.993619Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4a2c34485ada60e1",
+      "url": "https://x.com/steipete/status/2106489454152298501",
+      "title": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to di...",
+      "summary": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to discover and install agent skills. \n\nWe r\u2026",
+      "content": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to discover and install agent skills. \n\nWe r\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T20:59:57Z",
+      "fetched_at": "2026-10-05T08:27:04.674364Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b8ec8e11e59a5f89",
+      "url": "https://x.com/steipete/status/2106489264443981978",
+      "title": "laughing about how we all are building the same thing.",
+      "summary": "laughing about how we all are building the same thing.",
+      "content": "laughing about how we all are building the same thing.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T20:59:11Z",
+      "fetched_at": "2026-10-05T08:27:04.674386Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "012afda5ede83717",
+      "url": "https://x.com/dani_avila7/status/2106474300785996075",
+      "title": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "summary": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "content": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-03T19:59:44Z",
+      "fetched_at": "2026-10-05T08:26:57.097331Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8561871f5d1d3eae",
+      "url": "https://x.com/steipete/status/2106446147791597774",
+      "title": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Andr...",
+      "summary": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Android app.",
+      "content": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Android app.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T18:07:52Z",
+      "fetched_at": "2026-10-05T08:27:04.674409Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82ae9a76be843f7b",
+      "url": "https://x.com/sama/status/2106388373221118198",
+      "title": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgm...",
+      "summary": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models, and think it is a real safety issue.",
+      "content": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models, and think it is a real safety issue.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-03T14:18:17Z",
+      "fetched_at": "2026-10-05T08:26:59.232149Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aac627a6effefe72",
+      "url": "https://x.com/steipete/status/2104446411383411090",
+      "title": "RT @shiv_kampani: \"make something people want\" https://t.co/PNIIyj1AfM",
+      "summary": "RT @shiv_kampani: \"make something people want\" https://t.co/PNIIyj1AfM",
+      "content": "RT @shiv_kampani: \"make something people want\" https://t.co/PNIIyj1AfM",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T05:41:37Z",
+      "fetched_at": "2026-09-28T08:28:01.003679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7723281f25123029",
+      "url": "https://x.com/steipete/status/2104417738366357994",
+      "title": "RT @scottstts: My god this is such a good speech that every SWE needs to hear. You know what? Every ...",
+      "summary": "RT @scottstts: My god this is such a good speech that every SWE needs to hear. You know what? Every person should hear it\n\nKeep the happy m\u2026",
+      "content": "RT @scottstts: My god this is such a good speech that every SWE needs to hear. You know what? Every person should hear it\n\nKeep the happy m\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T03:47:41Z",
+      "fetched_at": "2026-09-28T08:28:01.003784Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6d8f02d82dad5077",
+      "url": "https://x.com/trq212/status/2104403711699423680",
+      "title": "dating myself with neopets I fear https://t.co/Dz5CMnfLd8",
+      "summary": "dating myself with neopets I fear https://t.co/Dz5CMnfLd8",
+      "content": "dating myself with neopets I fear https://t.co/Dz5CMnfLd8",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-28T02:51:57Z",
+      "fetched_at": "2026-09-28T08:27:49.135616Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15dfb3d667054ac7",
+      "url": "https://x.com/steipete/status/2104402640562270443",
+      "title": "RT @artem_zin: Wild, even Cursor moved away from server-side RAG index and into Grep-like agent tool...",
+      "summary": "RT @artem_zin: Wild, even Cursor moved away from server-side RAG index and into Grep-like agent tool calls for code search\n\n\"we\u2019re no longe\u2026",
+      "content": "RT @artem_zin: Wild, even Cursor moved away from server-side RAG index and into Grep-like agent tool calls for code search\n\n\"we\u2019re no longe\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T02:47:42Z",
+      "fetched_at": "2026-09-28T08:28:01.003816Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fd12be3cd4e13b89",
+      "url": "https://x.com/dani_avila7/status/2104357576481657109",
+      "title": "New article where I explain, step by step, how to fully set up Claude Projects\n\nIf you already have ...",
+      "summary": "New article where I explain, step by step, how to fully set up Claude Projects\n\nIf you already have access to Claude Projects, you need to read this article\n\nIf you don\u2019t have access yet, you also need to read it",
+      "content": "New article where I explain, step by step, how to fully set up Claude Projects\n\nIf you already have access to Claude Projects, you need to read this article\n\nIf you don\u2019t have access yet, you also need to read it",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-27T23:48:37Z",
+      "fetched_at": "2026-09-28T08:27:53.577552Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "856f067c8590cade",
+      "url": "https://x.com/steipete/status/2104305554760114488",
+      "title": "Same. @useblacksmith has been an amazing sponsor but we need to distribute the load. \n\nMy plan is to...",
+      "summary": "Same. @useblacksmith has been an amazing sponsor but we need to distribute the load. \n\nMy plan is to let codex decide which tests actually need to run and drastically nix CI and run tests hourly.",
+      "content": "Same. @useblacksmith has been an amazing sponsor but we need to distribute the load. \n\nMy plan is to let codex decide which tests actually need to run and drastically nix CI and run tests hourly.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-27T20:21:55Z",
+      "fetched_at": "2026-09-28T08:28:01.003843Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e0b5788e9780f6b2",
+      "url": "https://x.com/steipete/status/2104295374517334368",
+      "title": "RT @davidcrawshaw: When in doubt, build something.",
+      "summary": "RT @davidcrawshaw: When in doubt, build something.",
+      "content": "RT @davidcrawshaw: When in doubt, build something.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-27T19:41:27Z",
+      "fetched_at": "2026-09-28T08:28:01.003869Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6260208aa52f553f",
+      "url": "https://x.com/trq212/status/2104273243599405395",
+      "title": "I am most afraid of us eating the productivity gains of agents by just becoming lazier.",
+      "summary": "I am most afraid of us eating the productivity gains of agents by just becoming lazier.",
+      "content": "I am most afraid of us eating the productivity gains of agents by just becoming lazier.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-09-27T18:13:31Z",
+      "fetched_at": "2026-09-28T08:27:49.135731Z",
       "score": null,
       "score_reason": "",
       "tier": "",
