@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-10-05T14:42:19.056300+00:00",
+  "exported_at": "2026-10-05T16:02:09.094739+00:00",
   "period_hours": 168,
   "total": 3060,
   "all_tags": [
@@ -23520,27 +23520,6 @@
       "author": "Gadiel Sznaier Camps, Chengyang He, Guillaume Sartoretti, Eduardo Montijano, Mac Schwager",
       "published_at": "2026-10-02T04:00:00Z",
       "fetched_at": "2026-10-02T05:39:03.228185Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "759dde2722ac2256",
-      "url": "https://www.youtube.com/shorts/0y3xLFPHUaM",
-      "title": "You Should Try: See How Far You Can Go \u2728",
-      "summary": "Take a chance and see how far you can go. \u2708\ufe0f\u2728\n\nWhether you need solo travel motivation or guidance on overcoming fear of starting, taking the first step is where everything changes. Commit to chasing your dreams and collect life changing travel experiences that inspire your future. \ud83c\udf0d\n\n#seehowfaryoucango #solotravelmotivation #chasingyourdreams #shorts #travelmotivation",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-09-28T16:00:00Z",
-      "fetched_at": "2026-09-28T20:33:57.541616Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63563,46 +63542,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "e3b30f319f1c0d3a",
-      "url": "https://x.com/steipete/status/2104599949124247944",
-      "title": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived th...",
-      "summary": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived through it all at OpenAI. I hope my thoughts\u2026",
-      "content": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived through it all at OpenAI. I hope my thoughts\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-28T15:51:44Z",
-      "fetched_at": "2026-09-28T18:17:15.758310Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4b9336c6a9a171c0",
-      "url": "https://x.com/steipete/status/2104592946901520739",
-      "title": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff...",
-      "summary": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff is that he\u2019d probably agree with a lot\u2026",
-      "content": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff is that he\u2019d probably agree with a lot\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-09-28T15:23:54Z",
-      "fetched_at": "2026-09-28T18:17:15.758342Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8cd3eba4cf9e5c3b",
       "url": "https://x.com/sama/status/2104661956879913457",
       "title": "Pretty excited for DevDay tomorrow.\n\nWe have found a new thing.",
@@ -66494,6 +66433,66 @@
       "author": "sama",
       "published_at": "2026-10-03T14:18:17Z",
       "fetched_at": "2026-10-05T08:26:59.232149Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "edaea97db2762ae8",
+      "url": "https://x.com/dani_avila7/status/2107096856081621468",
+      "title": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthi...",
+      "summary": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthis is how \ud83d\udc47 https://t.co/kDpAHNS1D8",
+      "content": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthis is how \ud83d\udc47 https://t.co/kDpAHNS1D8",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-05T13:13:33Z",
+      "fetched_at": "2026-10-05T16:01:58.516580Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e3b30f319f1c0d3a",
+      "url": "https://x.com/steipete/status/2104599949124247944",
+      "title": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived th...",
+      "summary": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived through it all at OpenAI. I hope my thoughts\u2026",
+      "content": "RT @joedaroo: Took a minute to write a few words about security &amp; safety as someone who lived through it all at OpenAI. I hope my thoughts\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T15:51:44Z",
+      "fetched_at": "2026-09-28T18:17:15.758310Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4b9336c6a9a171c0",
+      "url": "https://x.com/steipete/status/2104592946901520739",
+      "title": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff...",
+      "summary": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff is that he\u2019d probably agree with a lot\u2026",
+      "content": "RT @dillon_mulroy: i think the thing the cynics are missing w/ the whole @dhh asm/rust AoS/SoA stuff is that he\u2019d probably agree with a lot\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-09-28T15:23:54Z",
+      "fetched_at": "2026-09-28T18:17:15.758342Z",
       "score": null,
       "score_reason": "",
       "tier": "",
