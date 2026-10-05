@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-05T10:54:55.589611+00:00",
+  "exported_at": "2026-10-05T13:05:18.552361+00:00",
   "period_hours": 168,
-  "total": 3058,
+  "total": 3056,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -23446,26 +23446,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "eec373c8ad4e9443",
-      "url": "https://www.youtube.com/watch?v=eg_1NXDcoPk",
-      "title": "I Gave GPT 6 Astra $10,000 to Trade Stocks...And This Happened",
-      "summary": "How I built an AI agency from 0 to over $1 million per year: https://www.skool.com/ai-automation-society-plus/about?astra-7-day-trading&amp;hcategory=youtube-videos&amp;utm_campaign=plus-group\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=astra-7-day-trading&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI gave Codex and GPT-6 Astra $10,000 of real money to trade stocks for seven trading days, and the goal was to beat the S&amp;P 500. \n\nYou'll see how I set up the routines and agent handoffs, why I had to hand the actual trades to a Grok Bot, and how I changed the strategy when the agent was trading too cautiously. I check in at the end of every trading day with the actual numbers, including the day six Fed rate hike that dragged the portfolio down.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTimestamps:\n0:00 The $10K AI Gamble\n0:56 Day 0\n2:48 Day 1\n4:07 Day 2\n5:58 Day 3\n8:02 Day 4\n10:04 Day 5\n12:15 Day 6\n14:34 Day 7\n15:22 Final Results",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-09-28T12:37:15Z",
-      "fetched_at": "2026-09-28T13:57:22.197281Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "6432f88e541d5635",
       "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
       "title": "Introducing Quine: An AI research system designed for the complexity of biology",
@@ -23591,25 +23571,6 @@
       "author": "Rongke Liu, Youwen Zhu",
       "published_at": "2026-10-02T04:00:00Z",
       "fetched_at": "2026-10-02T05:39:03.228114Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8899cd579bdc8ab4",
-      "url": "https://www.youtube.com/watch?v=bs1qPy_CWkM",
-      "title": "Prompt to Production: The Future of AI Code Workflows",
-      "summary": "Learn more about Agentic Coding here \u2192 https://ibm.biz/~eVuLdAOOj\n\nWriting code is becoming the easy part. Sam Anthony explains why planning, execution, validation, and verification matter more as AI coding systems become increasingly capable. Learn how prompt-to-production workflows are reshaping modern software engineering.\n\n00:00 - Why Prompt\u2011to\u2011Production Feels So Easy\n00:25 - Planning: The New Core Skill in AI\u2011Driven Engineering\n01:08 - Choosing the Right AI\u2011Driven Approach\n01:31 - Why Implementation Is No Longer the Hard Part\n02:18 - Designing the Solution Before AI Executes\n02:48 - The Hidden Complexity Behind Code Changes\n03:11 - Agentic Coding Systems and Self\u2011Correcting Workflows\n04:33 - The New Bottleneck: Human Verification at AI Scale\n05:07 - Evidence\u2011Driven Development and Trust\n06:16 - How AI Is Reshaping Developer Skills\n06:47 - The Future: Continuous Prompt\u2011to\u2011Production Workflows\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~oN8SSIkDR\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#agenticcoding #aicoding #aiagents #softwareengineering",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-28T11:00:25Z",
-      "fetched_at": "2026-09-28T13:57:23.590026Z",
       "score": null,
       "score_reason": "",
       "tier": "",
