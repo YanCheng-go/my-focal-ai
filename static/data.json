@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-10-06T11:21:02.060793+00:00",
+  "exported_at": "2026-10-06T13:22:11.358891+00:00",
   "period_hours": 168,
   "total": 3011,
   "all_tags": [
@@ -34892,27 +34892,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "afa8c33f8eb7996a",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-      "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-09-29T13:07:00Z",
-      "fetched_at": "2026-09-29T16:31:26.359350Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "dae711ce2e541165",
       "url": "https://arxiv.org/abs/2610.00465",
       "title": "AIR-LLM: Broadcasting AI Weights over Radio for Memory-Free Edge LLM Inference via RF Computing",
@@ -63788,26 +63767,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cafd9e4499c38a2c",
-      "url": "https://x.com/dani_avila7/status/2104919082256445864",
-      "title": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these ar...",
-      "summary": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
-      "content": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-29T12:59:51Z",
-      "fetched_at": "2026-10-01T21:02:18.267127Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8c977be49494e132",
       "url": "https://x.com/karpathy/status/2105909609487872075",
       "title": "Cool eval. Simply ask an LLM \u201cLand or Water?\u201d and give it a latitude and longitude coordinate as tex...",
@@ -65403,6 +65362,46 @@
       "author": "googleai",
       "published_at": "2026-10-05T16:55:09Z",
       "fetched_at": "2026-10-06T07:19:33.930306Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "69774a00da02aa76",
+      "url": "https://x.com/dani_avila7/status/2107455957772992572",
+      "title": "Google is bringing native Markdown support to Drive and Docs\n\nOk, this is definitely a great move\n\nT...",
+      "summary": "Google is bringing native Markdown support to Drive and Docs\n\nOk, this is definitely a great move\n\nThe simplest format basically ends up outliving all the others",
+      "content": "Google is bringing native Markdown support to Drive and Docs\n\nOk, this is definitely a great move\n\nThe simplest format basically ends up outliving all the others",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-06T13:00:29Z",
+      "fetched_at": "2026-10-06T13:22:01.676351Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cafd9e4499c38a2c",
+      "url": "https://x.com/dani_avila7/status/2104919082256445864",
+      "title": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these ar...",
+      "summary": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
+      "content": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-29T12:59:51Z",
+      "fetched_at": "2026-10-01T21:02:18.267127Z",
       "score": null,
       "score_reason": "",
       "tier": "",
