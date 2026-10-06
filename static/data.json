@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-06T15:13:29.485913+00:00",
+  "exported_at": "2026-10-06T18:24:26.452822+00:00",
   "period_hours": 168,
-  "total": 3020,
+  "total": 3027,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -34917,47 +34917,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "bd43464fed2349bc",
-      "url": "https://www.youtube.com/shorts/mZ1JyazxSds",
-      "title": "\u201cProblem solving on paper\u201d",
-      "summary": "with Maggie Appleton, Design Engineer at GitHub Next\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-09-29T16:00:04Z",
-      "fetched_at": "2026-09-29T16:31:19.555435Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dc53fce90c6f36f5",
-      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
-      "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-09-29T15:30:38Z",
-      "fetched_at": "2026-09-29T16:31:26.359318Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "869fd471764a4da6",
       "url": "https://arxiv.org/abs/2610.00596",
       "title": "Mean Spatial Frequency Decoupling for Learning-Based Uplink-to-Downlink Covariance Conversion in FDD Massive MIMO",
@@ -63828,147 +63787,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cf089b53aa2b4aa3",
-      "url": "https://x.com/sama/status/2104995014208258235",
-      "title": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention bac...",
-      "summary": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention back to work at a higher level.\n\nhttps://t.co/Kp4fPSGUTT",
-      "content": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention back to work at a higher level.\n\nhttps://t.co/Kp4fPSGUTT",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-09-29T18:01:34Z",
-      "fetched_at": "2026-10-01T21:02:20.207877Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "530b61ba749d323a",
-      "url": "https://x.com/sama/status/2104994601140711896",
-      "title": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
-      "summary": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
-      "content": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-09-29T17:59:56Z",
-      "fetched_at": "2026-10-01T21:02:20.207891Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "93e6242b106b20c0",
-      "url": "https://x.com/sama/status/2104994395980533804",
-      "title": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
-      "summary": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
-      "content": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-09-29T17:59:07Z",
-      "fetched_at": "2026-10-01T21:02:20.207901Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "76fb3ec982d1292b",
-      "url": "https://x.com/OpenAI/status/2104987422308335828",
-      "title": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybrea...",
-      "summary": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybreak Blue included by default.\n\nIt scans entire GitHub repos, continuously reviews new commits, investigates and deduplicates findings, and prepares fixes for review \u2013 even when your https://t.co/up1hpkiCAK",
-      "content": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybreak Blue included by default.\n\nIt scans entire GitHub repos, continuously reviews new commits, investigates and deduplicates findings, and prepares fixes for review \u2013 even when your https://t.co/up1hpkiCAK",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-09-29T17:31:24Z",
-      "fetched_at": "2026-10-01T21:02:22.449062Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "19e35a73c9df73d4",
-      "url": "https://x.com/OpenAI/status/2104980481876070819",
-      "title": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
-      "summary": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
-      "content": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-09-29T17:03:50Z",
-      "fetched_at": "2026-10-01T21:02:22.449093Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "31260292256807a3",
-      "url": "https://x.com/simonw/status/2104978193946124370",
-      "title": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'...",
-      "summary": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes https://t.co/X9DLSS0xbR",
-      "content": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes https://t.co/X9DLSS0xbR",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-09-29T16:54:44Z",
-      "fetched_at": "2026-10-01T21:02:17.136837Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d52ce57c60447724",
-      "url": "https://x.com/OpenAI/status/2104976337316589726",
-      "title": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
-      "summary": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
-      "content": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-09-29T16:47:22Z",
-      "fetched_at": "2026-10-01T21:02:22.449122Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8c977be49494e132",
       "url": "https://x.com/karpathy/status/2105909609487872075",
       "title": "Cool eval. Simply ask an LLM \u201cLand or Water?\u201d and give it a latitude and longitude coordinate as tex...",
@@ -65584,6 +65402,331 @@
       "author": "dani_avila7",
       "published_at": "2026-10-06T13:00:29Z",
       "fetched_at": "2026-10-06T13:22:01.676351Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a7155e472ae07b45",
+      "url": "https://x.com/dani_avila7/status/2107528762325676537",
+      "title": "I\u2019ve been testing Claude in Word, Excel, Power Point, and Outlook for a few months now\n\nEverything f...",
+      "summary": "I\u2019ve been testing Claude in Word, Excel, Power Point, and Outlook for a few months now\n\nEverything from day to day workflows to Open Telemetry and Compliance API data from these extensions has worked extremely well\n\nExcited to start testing Claude across the Google ecosystem https://t.co/c6szUSBPmZ",
+      "content": "I\u2019ve been testing Claude in Word, Excel, Power Point, and Outlook for a few months now\n\nEverything from day to day workflows to Open Telemetry and Compliance API data from these extensions has worked extremely well\n\nExcited to start testing Claude across the Google ecosystem https://t.co/c6szUSBPmZ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-06T17:49:47Z",
+      "fetched_at": "2026-10-06T18:24:16.373609Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf29afe5c60a6d3b",
+      "url": "https://x.com/steipete/status/2107506757765623855",
+      "title": "RT @petergostev: Mistral Large 4 was trained on 4,000 GPUs and Astra was trained on 100,000 of them....",
+      "summary": "RT @petergostev: Mistral Large 4 was trained on 4,000 GPUs and Astra was trained on 100,000 of them. \n\nWe'll see what the kitten can pull o\u2026",
+      "content": "RT @petergostev: Mistral Large 4 was trained on 4,000 GPUs and Astra was trained on 100,000 of them. \n\nWe'll see what the kitten can pull o\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-06T16:22:21Z",
+      "fetched_at": "2026-10-06T18:24:23.918257Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f601b28db97bc4d6",
+      "url": "https://x.com/GeminiApp/status/2107505061849178559",
+      "title": "RT @Google: Meet Nano Banana 2.1, our latest image generation and editing model \ud83c\udf4c\n\nThis upgraded ver...",
+      "summary": "RT @Google: Meet Nano Banana 2.1, our latest image generation and editing model \ud83c\udf4c\n\nThis upgraded version outperforms our previous models ac\u2026",
+      "content": "RT @Google: Meet Nano Banana 2.1, our latest image generation and editing model \ud83c\udf4c\n\nThis upgraded version outperforms our previous models ac\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-06T16:15:36Z",
+      "fetched_at": "2026-10-06T18:24:19.644614Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bfe6ef067c3f46a5",
+      "url": "https://x.com/trq212/status/2107504677143368163",
+      "title": "working at a higher level of abstraction has always required understanding the lower level ones, I d...",
+      "summary": "working at a higher level of abstraction has always required understanding the lower level ones, I don't think coding agents changes this",
+      "content": "working at a higher level of abstraction has always required understanding the lower level ones, I don't think coding agents changes this",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-06T16:14:05Z",
+      "fetched_at": "2026-10-06T18:24:11.957664Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e606132e54a41cd2",
+      "url": "https://x.com/bcherny/status/2107493108778958890",
+      "title": "RT @dfeinition: Your Claude Projects cloud session can now connect to a folder you approve on your c...",
+      "summary": "RT @dfeinition: Your Claude Projects cloud session can now connect to a folder you approve on your computer.\n\nThe session stays in the clou\u2026",
+      "content": "RT @dfeinition: Your Claude Projects cloud session can now connect to a folder you approve on your computer.\n\nThe session stays in the clou\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-06T15:28:07Z",
+      "fetched_at": "2026-10-06T18:24:14.238723Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "05cb31b46cd73451",
+      "url": "https://x.com/simonw/status/2107479817780400577",
+      "title": "Mistral can pelican now! https://t.co/Mvtss5e5ay https://t.co/A2GQpvhEF0",
+      "summary": "Mistral can pelican now! https://t.co/Mvtss5e5ay https://t.co/A2GQpvhEF0",
+      "content": "Mistral can pelican now! https://t.co/Mvtss5e5ay https://t.co/A2GQpvhEF0",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-06T14:35:18Z",
+      "fetched_at": "2026-10-06T18:24:15.310519Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cf089b53aa2b4aa3",
+      "url": "https://x.com/sama/status/2104995014208258235",
+      "title": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention bac...",
+      "summary": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention back to work at a higher level.\n\nhttps://t.co/Kp4fPSGUTT",
+      "content": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention back to work at a higher level.\n\nhttps://t.co/Kp4fPSGUTT",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T18:01:34Z",
+      "fetched_at": "2026-10-01T21:02:20.207877Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "530b61ba749d323a",
+      "url": "https://x.com/sama/status/2104994601140711896",
+      "title": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
+      "summary": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
+      "content": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T17:59:56Z",
+      "fetched_at": "2026-10-01T21:02:20.207891Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "93e6242b106b20c0",
+      "url": "https://x.com/sama/status/2104994395980533804",
+      "title": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
+      "summary": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
+      "content": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T17:59:07Z",
+      "fetched_at": "2026-10-01T21:02:20.207901Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76fb3ec982d1292b",
+      "url": "https://x.com/OpenAI/status/2104987422308335828",
+      "title": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybrea...",
+      "summary": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybreak Blue included by default.\n\nIt scans entire GitHub repos, continuously reviews new commits, investigates and deduplicates findings, and prepares fixes for review \u2013 even when your https://t.co/up1hpkiCAK",
+      "content": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybreak Blue included by default.\n\nIt scans entire GitHub repos, continuously reviews new commits, investigates and deduplicates findings, and prepares fixes for review \u2013 even when your https://t.co/up1hpkiCAK",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T17:31:24Z",
+      "fetched_at": "2026-10-01T21:02:22.449062Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "19e35a73c9df73d4",
+      "url": "https://x.com/OpenAI/status/2104980481876070819",
+      "title": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
+      "summary": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
+      "content": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T17:03:50Z",
+      "fetched_at": "2026-10-01T21:02:22.449093Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "31260292256807a3",
+      "url": "https://x.com/simonw/status/2104978193946124370",
+      "title": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'...",
+      "summary": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes https://t.co/X9DLSS0xbR",
+      "content": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes https://t.co/X9DLSS0xbR",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-29T16:54:44Z",
+      "fetched_at": "2026-10-01T21:02:17.136837Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d52ce57c60447724",
+      "url": "https://x.com/OpenAI/status/2104976337316589726",
+      "title": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
+      "summary": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
+      "content": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T16:47:22Z",
+      "fetched_at": "2026-10-01T21:02:22.449122Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "449387cd2295412f",
+      "url": "https://x.com/sama/status/2104950376466362578",
+      "title": "DevDay livestream in 2 hours.\n\nWe built some great stuff for you!",
+      "summary": "DevDay livestream in 2 hours.\n\nWe built some great stuff for you!",
+      "content": "DevDay livestream in 2 hours.\n\nWe built some great stuff for you!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T15:04:12Z",
+      "fetched_at": "2026-10-01T21:02:20.207910Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f6da3ab0ea54c9e0",
+      "url": "https://x.com/OpenAI/status/2104934336206430527",
+      "title": "10am PT, on the dot. https://t.co/0v1H8RPF2i",
+      "summary": "10am PT, on the dot. https://t.co/0v1H8RPF2i",
+      "content": "10am PT, on the dot. https://t.co/0v1H8RPF2i",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T14:00:28Z",
+      "fetched_at": "2026-10-01T21:02:22.449146Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cafd9e4499c38a2c",
+      "url": "https://x.com/dani_avila7/status/2104919082256445864",
+      "title": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these ar...",
+      "summary": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
+      "content": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-29T12:59:51Z",
+      "fetched_at": "2026-10-01T21:02:18.267127Z",
       "score": null,
       "score_reason": "",
       "tier": "",
