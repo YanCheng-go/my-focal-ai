@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-06T09:19:57.232300+00:00",
+  "exported_at": "2026-10-06T11:21:02.060793+00:00",
   "period_hours": 168,
-  "total": 3014,
+  "total": 3011,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -34782,25 +34782,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b11d503bd008daad",
-      "url": "https://www.youtube.com/watch?v=7jUcTG1eeTM",
-      "title": "Ransomware Detection: Why Storage Finds the Attack First",
-      "summary": "Learn more about Cyber Resilience here \u2192 https://ibm.biz/~VtUoOk5oA\n\nRansomware rarely starts with a ransom note. Jeff Crume explains how storage systems detect ransomware early using entropy analysis, machine learning, monitoring, and cyber-resilient design. Learn how organizations can identify attacks faster and reduce data loss before ransomware spreads.\n\n00:00 - Understanding Modern Ransomware Threats\n00:22 - Why Ransomware Is a Data Problem\n01:13 - Essential First Steps: Patching, Training, and Endpoint Protection\n01:55 - How Ransomware Spreads Across Systems\n02:26 - Why Storage Is Your Earliest Line of Defense\n02:30 - The Four Rs of Reliable Backups\n04:14 - Detecting Ransomware Before the Pop Up Appears\n04:55 - Using Entropy, Compression, and Dedup Signals for Early Detection\n07:01 - Spotting Mass Overwrites, Renames, and Partial Encryption\n08:31 - Responding Fast: Isolation, Lockdown, and Recovery Points\n09:11 - Integrating Storage with SIEM and SOAR for Coordinated Defense\n10:11 - The Cyber Resilient Storage Mindset: Detect, Protect, Respond, Recover\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~9Mr0qMdhr\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#ransomware #cybersecurity #datasecurity #storagesolutions \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-29T11:00:27Z",
-      "fetched_at": "2026-09-29T16:31:19.499864Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "90a85d5e8fc2c279",
       "url": "https://arxiv.org/abs/2610.00524",
       "title": "Same Scene, Different Task: Skill Alignment for Compositional Generalization in VLAs",
@@ -39480,48 +39461,6 @@
       "author": "Samuel Larson",
       "published_at": "2026-10-02T04:00:00Z",
       "fetched_at": "2026-10-02T05:39:03.225554Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6071f63e21f64254",
-      "url": "https://openai.com/index/devday-2026-recap",
-      "title": "DevDay 2026 Recap",
-      "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-29T10:00:00Z",
-      "fetched_at": "2026-09-29T22:16:20.478160Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d6b9f5e651b1891e",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-      "title": "Introducing GPT-6.1 Sol",
-      "summary": "Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra\u2019s standard API input and output token prices.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-29T10:00:00Z",
-      "fetched_at": "2026-09-29T22:16:20.478136Z",
       "score": null,
       "score_reason": "",
       "tier": "",
