@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-07T10:14:47.406826+00:00",
+  "exported_at": "2026-10-07T12:15:06.112666+00:00",
   "period_hours": 168,
-  "total": 3058,
+  "total": 3057,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29805,27 +29805,6 @@
       "author": "Parth Kulshreshtha, Shivali Dalmia, Abhishek Mukherji",
       "published_at": "2026-10-06T04:00:00Z",
       "fetched_at": "2026-10-06T06:22:39.945730Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "90249c2a3882c6d3",
-      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-      "title": "Disrupting a coordinated model-distillation campaign",
-      "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-30T10:30:00Z",
-      "fetched_at": "2026-09-30T22:17:14.779257Z",
       "score": null,
       "score_reason": "",
       "tier": "",
