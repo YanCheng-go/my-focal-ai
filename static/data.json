@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-07T08:41:02.462651+00:00",
+  "exported_at": "2026-10-07T10:14:47.406826+00:00",
   "period_hours": 168,
-  "total": 3044,
+  "total": 3058,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29832,27 +29832,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "061338e668ed6974",
-      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-      "title": "Helping small businesses put AI to work",
-      "summary": "OpenAI is partnering with America\u2019s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-09-30T10:00:00Z",
-      "fetched_at": "2026-09-30T16:25:03.081268Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e2ff25357ca6131c",
       "url": "https://www.youtube.com/watch?v=48YUYDjwfYY",
       "title": "Stop Rationing Tokens: Let the Harness Pick the Model \u2014 Kimchi by Cast AI",
@@ -41206,25 +41185,6 @@
       "author": "AI Engineer",
       "published_at": "2026-09-30T13:00:33Z",
       "fetched_at": "2026-09-30T16:25:00.302645Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "eecfdbad75d8b225",
-      "url": "https://www.youtube.com/watch?v=dHn0qzSDMO0",
-      "title": "Can you trust your chatbot? Inside three AI-powered cyberattacks",
-      "summary": "Visit Security Intelligence podcast page to get more cybersecurity content  \u2192 https://ibm.biz/~2mSWCqIG9\n\nAsk a chatbot for a customer service number, and you might get a scammer's.\n\nThat's the trick behind \"Dark Sourcery,\" a campaign that games AI answer engines into citing phishing links and fake support lines. It's SEO poisoning updated for an AEO world, and it works because so few of us verify what AI tells us before charging ahead.\n\nOn episode 53 of Security Intelligence, Kimmie Farrington, Curtis Pitts and Dave McGinnis join hosts Matt Kosinski and Patrick Austin to break down three AI-enabled cyberattacks and what they mean for defenders.\n\nFirst, the poisoned chatbots: How does Dark Sourcery work, and how do we rethink trust in the AI era?\n\nThen, a threat actor spends months tearing through Ubiquiti, WordPress and Zyxel gear, stealing thousands of government documents. GreyNoise suspects it had an LLM helping write its tools.\n\nFinally, an AI agent swarm breaches hundreds of PaperCut servers. It goes from an empty workspace to a real victim in about four hours, and then ignores its own rules of engagement.\n\nAll that and more on Security Intelligence.\n\n00:00 - Intro\n1:23 - Dark Sourcery\n13:00 - LLM-assisted hacking spree\n21:46 - Agent swarm attack\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~qXXQPWg3T\n#cyberattack #llm #cybersecurity \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-09-30T10:00:18Z",
-      "fetched_at": "2026-09-30T16:25:00.547636Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66673,6 +66633,328 @@
       "author": "geminiapp",
       "published_at": "2026-10-06T19:00:23Z",
       "fetched_at": "2026-10-07T08:09:28.931694Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "95f64a7d780b7f57",
+      "url": "https://x.com/dani_avila7/status/2105102105216208904",
+      "title": "Anthropic's cost optimization skill is worth reading line by line\n\nRun /claude-api cost-optimize on ...",
+      "summary": "Anthropic's cost optimization skill is worth reading line by line\n\nRun /claude-api cost-optimize on any repo calling the API\n\nIt profiles where your tokens go, ranks levers by savings, and applies free wins first (caching, input hygiene, batch) before tradeoffs (effort, model)",
+      "content": "Anthropic's cost optimization skill is worth reading line by line\n\nRun /claude-api cost-optimize on any repo calling the API\n\nIt profiles where your tokens go, ranks levers by savings, and applies free wins first (caching, input hygiene, batch) before tradeoffs (effort, model)",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-30T01:07:07Z",
+      "fetched_at": "2026-10-01T21:02:18.267087Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ce7eca8efaf54050",
+      "url": "https://x.com/dani_avila7/status/2105081839400395012",
+      "title": "https://t.co/0CiBSgR6oU \ud83d\udc40",
+      "summary": "https://t.co/0CiBSgR6oU \ud83d\udc40",
+      "content": "https://t.co/0CiBSgR6oU \ud83d\udc40",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-29T23:46:35Z",
+      "fetched_at": "2026-10-01T21:02:18.267097Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d1549b79a3021107",
+      "url": "https://x.com/dani_avila7/status/2105060691199635741",
+      "title": "This event looks really good... If you\u2019re in SF, you should definitely check it out\n\nBuild Personal ...",
+      "summary": "This event looks really good... If you\u2019re in SF, you should definitely check it out\n\nBuild Personal Agents Hack by @neondatabase \n\n200 hackers building custom personal agents \ud83d\udc47 https://t.co/kq4iIE6gAh",
+      "content": "This event looks really good... If you\u2019re in SF, you should definitely check it out\n\nBuild Personal Agents Hack by @neondatabase \n\n200 hackers building custom personal agents \ud83d\udc47 https://t.co/kq4iIE6gAh",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-29T22:22:33Z",
+      "fetched_at": "2026-10-01T21:02:18.267107Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e70730ffd4e95c7c",
+      "url": "https://x.com/dani_avila7/status/2105029104428863977",
+      "title": "Catching up on Dev Day... so, is Space basically Notion inside ChatGPT??? am I missing something? ht...",
+      "summary": "Catching up on Dev Day... so, is Space basically Notion inside ChatGPT??? am I missing something? https://t.co/rne4ArDoGb",
+      "content": "Catching up on Dev Day... so, is Space basically Notion inside ChatGPT??? am I missing something? https://t.co/rne4ArDoGb",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-29T20:17:02Z",
+      "fetched_at": "2026-10-01T21:02:18.267117Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bfce527a32b5a609",
+      "url": "https://x.com/sama/status/2105007865736122746",
+      "title": "RT @ajambrosino: Over the past 5 weeks, the team completely rewrote ChatGPT Web on top of the deskto...",
+      "summary": "RT @ajambrosino: Over the past 5 weeks, the team completely rewrote ChatGPT Web on top of the desktop app codebase.\n\nThis was only possible\u2026",
+      "content": "RT @ajambrosino: Over the past 5 weeks, the team completely rewrote ChatGPT Web on top of the desktop app codebase.\n\nThis was only possible\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T18:52:39Z",
+      "fetched_at": "2026-10-01T21:02:20.207856Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "70029b0719a3f4b6",
+      "url": "https://x.com/GeminiApp/status/2105005218425614637",
+      "title": "RT @googlechrome: Pop quiz! Don\u2019t panic. Ask @GeminiApp in Chrome to turn your tabs, videos, or PDFs...",
+      "summary": "RT @googlechrome: Pop quiz! Don\u2019t panic. Ask @GeminiApp in Chrome to turn your tabs, videos, or PDFs into practice quizzes. After you finis\u2026",
+      "content": "RT @googlechrome: Pop quiz! Don\u2019t panic. Ask @GeminiApp in Chrome to turn your tabs, videos, or PDFs into practice quizzes. After you finis\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-09-29T18:42:07Z",
+      "fetched_at": "2026-10-01T21:02:21.433838Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cf089b53aa2b4aa3",
+      "url": "https://x.com/sama/status/2104995014208258235",
+      "title": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention bac...",
+      "summary": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention back to work at a higher level.\n\nhttps://t.co/Kp4fPSGUTT",
+      "content": "Dots are here!\n\nA new way to use AI that works 24/7 for you; get more of your time and attention back to work at a higher level.\n\nhttps://t.co/Kp4fPSGUTT",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T18:01:34Z",
+      "fetched_at": "2026-10-01T21:02:20.207877Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "530b61ba749d323a",
+      "url": "https://x.com/sama/status/2104994601140711896",
+      "title": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
+      "summary": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
+      "content": "Ultrafast is\n\nso fast\n\nI do not ever want to go back",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T17:59:56Z",
+      "fetched_at": "2026-10-01T21:02:20.207891Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "93e6242b106b20c0",
+      "url": "https://x.com/sama/status/2104994395980533804",
+      "title": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
+      "summary": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
+      "content": "6.1 Sol at 1/5th of the price of Astra, and 95% cache read discount! Extremely capable model.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T17:59:07Z",
+      "fetched_at": "2026-10-01T21:02:20.207901Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76fb3ec982d1292b",
+      "url": "https://x.com/OpenAI/status/2104987422308335828",
+      "title": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybrea...",
+      "summary": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybreak Blue included by default.\n\nIt scans entire GitHub repos, continuously reviews new commits, investigates and deduplicates findings, and prepares fixes for review \u2013 even when your https://t.co/up1hpkiCAK",
+      "content": "Codex Security Cloud is getting a major upgrade, with access to cyber-capable models through Daybreak Blue included by default.\n\nIt scans entire GitHub repos, continuously reviews new commits, investigates and deduplicates findings, and prepares fixes for review \u2013 even when your https://t.co/up1hpkiCAK",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T17:31:24Z",
+      "fetched_at": "2026-10-01T21:02:22.449062Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "19e35a73c9df73d4",
+      "url": "https://x.com/OpenAI/status/2104980481876070819",
+      "title": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
+      "summary": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
+      "content": "Your dot is ready to meet you. https://t.co/HyC9ZAztOm",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T17:03:50Z",
+      "fetched_at": "2026-10-01T21:02:22.449093Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "31260292256807a3",
+      "url": "https://x.com/simonw/status/2104978193946124370",
+      "title": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'...",
+      "summary": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes https://t.co/X9DLSS0xbR",
+      "content": "I'm at OpenAI's DevDay event in San Francisco today - as I have for the past three DevDay events, I'm running a live blog where I'll be posting updates during the keynote, which starts in five minutes https://t.co/X9DLSS0xbR",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-09-29T16:54:44Z",
+      "fetched_at": "2026-10-01T21:02:17.136837Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d52ce57c60447724",
+      "url": "https://x.com/OpenAI/status/2104976337316589726",
+      "title": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
+      "summary": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
+      "content": "Our biggest DevDay ever, don\u2019t be late.\n\nhttps://t.co/qKmToHng49",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T16:47:22Z",
+      "fetched_at": "2026-10-01T21:02:22.449122Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "449387cd2295412f",
+      "url": "https://x.com/sama/status/2104950376466362578",
+      "title": "DevDay livestream in 2 hours.\n\nWe built some great stuff for you!",
+      "summary": "DevDay livestream in 2 hours.\n\nWe built some great stuff for you!",
+      "content": "DevDay livestream in 2 hours.\n\nWe built some great stuff for you!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-09-29T15:04:12Z",
+      "fetched_at": "2026-10-01T21:02:20.207910Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f6da3ab0ea54c9e0",
+      "url": "https://x.com/OpenAI/status/2104934336206430527",
+      "title": "10am PT, on the dot. https://t.co/0v1H8RPF2i",
+      "summary": "10am PT, on the dot. https://t.co/0v1H8RPF2i",
+      "content": "10am PT, on the dot. https://t.co/0v1H8RPF2i",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-09-29T14:00:28Z",
+      "fetched_at": "2026-10-01T21:02:22.449146Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cafd9e4499c38a2c",
+      "url": "https://x.com/dani_avila7/status/2104919082256445864",
+      "title": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these ar...",
+      "summary": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
+      "content": "Anthropic published a new article about Sonnet 5.5 and how they recommend using it\n\nFor me, these are the most interesting points:\n\n- Sonnet 5.5 is 30% faster than Sonnet 5\n\n- Medium effort is the recommended starting point for agentic coding\n\n- 1M context window and up to 128K",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-29T12:59:51Z",
+      "fetched_at": "2026-10-01T21:02:18.267127Z",
       "score": null,
       "score_reason": "",
       "tier": "",
