@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-07T12:15:06.112666+00:00",
+  "exported_at": "2026-10-07T14:15:25.512795+00:00",
   "period_hours": 168,
-  "total": 3057,
+  "total": 3055,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -41005,26 +41005,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "92258f818651274b",
-      "url": "https://www.youtube.com/watch?v=9cJrbj23fOA",
-      "title": "The Chief AI Officer: Scientist, Architect, Coach \u2014 Rania Khalaf, WSO2",
-      "summary": "The Chief AI Officer is one of the fastest-growing roles in tech, and one of the least defined. AI is in everything, so the job can easily turn into everything.\n\nRania Khalaf (Chief AI Officer, WSO2; previously 20 years at IBM Research, where she ran about a third of the global AI research organization) shares a framework from two years in the role. It splits the job into three focus areas, Scientist, Architect and Coach, each a slider whose setting depends on your company type, its AI maturity and your own skills. She draws on her time at an ag-biotech unicorn, where simple blob detection beat machine learning, and at WSO2, where AI reshaped the product strategy around the agentic enterprise. She explains why she refuses to measure tokens and what she tracks instead: AI fluency across the workforce, depth of adoption, GEO visibility, agent-consumable products (MCP servers, skills, CLIs), agent-proof pricing, earned thought leadership and AI ARR. She closes on why the role needs strong CEO backing, and why sometimes the CPO, or even the head of HR, ends up running AI.\n\nSpeaker info:\nRania Khalaf\nLinkedIn: https://www.linkedin.com/in/raniakhalaf/\nWSO2 profile: https://wso2.com/about/team/rania-khalaf\n\nWSO2: https://wso2.com\nX: https://x.com/wso2\nLinkedIn: https://www.linkedin.com/company/wso2\nGitHub: https://github.com/wso2\n\nTimestamps:\n0:00 Intro and audience poll\n1:13 A role that means something different everywhere\n2:12 The rise of the Chief AI Officer\n2:32 AI is in everything: avoiding overload\n2:57 Three hats: Scientist, Architect, Coach\n5:47 Each hat is a slider\n7:52 Mapping real resumes and job postings to the framework\n8:32 From IBM Research to an ag-biotech unicorn\n10:17 At WSO2: 20% scientist, 60% architect, 20% coach\n11:12 When simple computer vision beats ML\n12:27 The dimensions that shape the role\n12:52 What to measure (and why not tokens)\n15:11 Product metrics: agent-consumable, MCP and agent-proof pricing\n16:16 Market and ecosystem metrics\n17:31 You get what you measure\n17:41 About WSO2 and its agentic platform\n19:16 Scientist and architect in practice\n20:01 No silver bullet: CEO backing and who owns AI\n21:11 Shape the role around what you love",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-30T14:00:21Z",
-      "fetched_at": "2026-09-30T16:25:00.302624Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5498fa31fd69c93a",
       "url": "https://arxiv.org/abs/2610.03306",
       "title": "Training-Loss Guarantees for Muon with Finite-Step Newton--Schulz Orthogonalization",
@@ -41124,46 +41104,6 @@
       "author": "Dominik Magiera, Lukas R\\\"ohrig, Frank J\\\"akel",
       "published_at": "2026-10-05T04:00:00Z",
       "fetched_at": "2026-10-05T05:42:12.030989Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "64f385ef0da70dc1",
-      "url": "https://www.youtube.com/watch?v=_mi3alkqy4s",
-      "title": "The Death of the Code Review: What the Data Actually Says \u2014 Laurie Voss, Arize AI",
-      "summary": "Developers using autonomous agents wrote 741% more code but shipped only 30% more software. The bottleneck is human review, and \"just review harder\" doesn't scale. Reviewer effectiveness collapses past about 400 lines, and agents now open 10,000-line PRs.\n\nLaurie Voss (Head of Developer Relations at Arize AI, co-founder of npm) reviews what the industry is actually doing about it. The evidence covers OpenAI's zero-human-code product, METR's finding that about half of SWE-bench-passing PRs wouldn't be merged, and Cognition's FrontierCode (88% on SWE-bench Pro vs. 29% on real mergeability). She explains why a mergeability benchmark would immediately become a training signal for frontier models. She also covers how Cursor and GitHub run review in production, why multi-pass review and default suspicion cut false positives, and what Carlini's agent-built C compiler and Bun's million-line Zig-to-Rust port (13,044 unsafe blocks) reveal about taking humans out of the loop. Automated reviewers can be fooled by prompt injection that humans catch, which leaves production as the last reviewer standing.\n\nSpeaker info:\nX: https://x.com/seldo\nBluesky: https://bsky.app/profile/seldo.com\nLinkedIn: https://www.linkedin.com/in/seldo/\nGitHub: https://github.com/seldo\n\nCOMPANY\nArize AI: https://arize.com\nX: https://x.com/arizeai\nLinkedIn: https://www.linkedin.com/company/arizeai\n\nTimestamps:\n0:00 The new bottleneck: human review\n1:37 741% more code, 30% more software\n2:37 Generation is no longer the bottleneck\n3:22 Why \"review harder\" fails: the Cisco study\n4:52 Stop reading code? Loops and OpenAI's zero-human-code product\n6:42 Do passing tests mean mergeable? METR's SWE-bench study\n8:01 FrontierCode: 88% vs. 29%\n9:11 Mergeability as the next training signal\n11:06 Automated review today: GitHub Copilot and Cursor\n13:16 Review is fusing with repair\n13:51 CodeRabbit, Greptile, Graphite and the acceptance metric\n15:00 Can you skip the human? Carlini's C compiler\n16:00 Bun's Zig-to-Rust port and 13,044 unsafe blocks\n17:30 How OpenAI rebuilt review as a system\n18:45 Dex Horthy: \"Please read the code\"\n19:30 Context the tests can't see\n19:55 Where the human checkpoint survives\n20:40 Who reviews the reviewers? Prompt injection\n22:04 Production: the last reviewer standing\n22:44 Code review is being rebuilt, not killed\n23:29 What to do today: build a review harness",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-30T13:30:35Z",
-      "fetched_at": "2026-09-30T16:25:00.302635Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a2845e2de1d9104b",
-      "url": "https://www.youtube.com/watch?v=UOcHfR3_tys",
-      "title": "Your Agents Are in Solitary Confinement: Why MCP & A2A Aren't Enough \u2014 Vlad Luzin, Band",
-      "summary": "If you run Claude and Codex side by side, one planning and one reviewing, you're doing the job of a network router, passing messages between two stateful agents by hand. Loop engineering hands that job to a script. Neither one lets agents actually work together.\n\nVlad Luzin (Co-founder & CTO, Band) explains why connecting agents is a distributed systems problem. Bigger context windows don't fix the single-agent bottleneck. Messaging platforms like Slack, Discord and WhatsApp are built for humans and block bot-to-bot traffic. Protocols like MCP and A2A are too low-level: stateless calls, one-way client/server, no discovery, and queues and timeouts you still have to build yourself. He then walks through what's needed: real-time ordered transport, persistence and rehydration, runtime binding across frameworks, agent-first abstractions (participants, rooms, routing) and enterprise governance. Two live demos show Codex, LangGraph, Claude Code and a personal assistant finding each other and collaborating in real time, with full human-in-the-loop visibility.\n\nSpeaker info:\nVlad Luzin\nLinkedIn: https://www.linkedin.com/in/luzin/\n\nCOMPANY\nBand: https://band.ai\nX: https://x.com/band_hq\nProduct Hunt: https://www.producthunt.com/products/band\n\nTimestamps:\n0:00 Band's thesis: the future is AI-to-AI communication\n1:29 What agent-to-agent collaboration will look like\n2:04 Adversarial agents: you are the router\n2:49 Loop engineering, distilled\n3:34 The single-agent bottleneck\n4:04 Why messaging platforms fail agents\n5:33 Why MCP and A2A aren't the answer\n7:08 Recap: multi-agent is already here\n7:43 It's a distributed systems problem\n8:17 Transport, persistence and runtime binding\n9:12 New abstractions, identity and observability\n10:17 Introducing Band: a global interaction layer for agents\n11:27 Demo 1: onboarding Codex, LangGraph and a personal agent\n14:11 Demo 2: Claude Code and Codex collaborating (loop engineering without the code)\n16:20 Wrap-up",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-09-30T13:00:33Z",
-      "fetched_at": "2026-09-30T16:25:00.302645Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64507,46 +64447,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "0701b13b6e411b4e",
-      "url": "https://x.com/dani_avila7/status/2105286024859652379",
-      "title": "Jev-like decision models running locally with Ollama\n\nI love this, especially for classification tas...",
-      "summary": "Jev-like decision models running locally with Ollama\n\nI love this, especially for classification tasks that can run entirely local\n\nEven more interesting if we can fine-tune these models to make them more efficient for specific tasks\n\nDefinitely worth trying",
-      "content": "Jev-like decision models running locally with Ollama\n\nI love this, especially for classification tasks that can run entirely local\n\nEven more interesting if we can fine-tune these models to make them more efficient for specific tasks\n\nDefinitely worth trying",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-30T13:17:57Z",
-      "fetched_at": "2026-10-01T21:02:18.267066Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "887b2984a9f5556f",
-      "url": "https://x.com/dani_avila7/status/2105276161525719071",
-      "title": "Muse architecture, this is how Meta\u2019s assistant works\n\nIt\u2019s not difficult to get this information. A...",
-      "summary": "Muse architecture, this is how Meta\u2019s assistant works\n\nIt\u2019s not difficult to get this information. A couple of questions to Muse and it will describe the architecture itself\n\nMy guess is that something close to this has to be part of its system prompt, since it defines the full https://t.co/wWkLK4nN99",
-      "content": "Muse architecture, this is how Meta\u2019s assistant works\n\nIt\u2019s not difficult to get this information. A couple of questions to Muse and it will describe the architecture itself\n\nMy guess is that something close to this has to be part of its system prompt, since it defines the full https://t.co/wWkLK4nN99",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-09-30T12:38:45Z",
-      "fetched_at": "2026-10-01T21:02:18.267077Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8c977be49494e132",
       "url": "https://x.com/karpathy/status/2105909609487872075",
       "title": "Cool eval. Simply ask an LLM \u201cLand or Water?\u201d and give it a latitude and longitude coordinate as tex...",
@@ -66612,6 +66512,66 @@
       "author": "geminiapp",
       "published_at": "2026-10-06T19:00:23Z",
       "fetched_at": "2026-10-07T08:09:28.931694Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bd5e76e3bfa73753",
+      "url": "https://x.com/dani_avila7/status/2107830602086895844",
+      "title": "Very interesting paper on how secure coding agents actually are\n\nBookmark this one, it's worth readi...",
+      "summary": "Very interesting paper on how secure coding agents actually are\n\nBookmark this one, it's worth reading later\n\nThey reviewed 40 harnesses and 10 security mechanisms, then hid malicious instructions in docs, MCP tools and dependencies to see if the agent would execute them while https://t.co/T33UxD5KDj",
+      "content": "Very interesting paper on how secure coding agents actually are\n\nBookmark this one, it's worth reading later\n\nThey reviewed 40 harnesses and 10 security mechanisms, then hid malicious instructions in docs, MCP tools and dependencies to see if the agent would execute them while https://t.co/T33UxD5KDj",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-07T13:49:11Z",
+      "fetched_at": "2026-10-07T14:15:15.744484Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0701b13b6e411b4e",
+      "url": "https://x.com/dani_avila7/status/2105286024859652379",
+      "title": "Jev-like decision models running locally with Ollama\n\nI love this, especially for classification tas...",
+      "summary": "Jev-like decision models running locally with Ollama\n\nI love this, especially for classification tasks that can run entirely local\n\nEven more interesting if we can fine-tune these models to make them more efficient for specific tasks\n\nDefinitely worth trying",
+      "content": "Jev-like decision models running locally with Ollama\n\nI love this, especially for classification tasks that can run entirely local\n\nEven more interesting if we can fine-tune these models to make them more efficient for specific tasks\n\nDefinitely worth trying",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-30T13:17:57Z",
+      "fetched_at": "2026-10-01T21:02:18.267066Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "887b2984a9f5556f",
+      "url": "https://x.com/dani_avila7/status/2105276161525719071",
+      "title": "Muse architecture, this is how Meta\u2019s assistant works\n\nIt\u2019s not difficult to get this information. A...",
+      "summary": "Muse architecture, this is how Meta\u2019s assistant works\n\nIt\u2019s not difficult to get this information. A couple of questions to Muse and it will describe the architecture itself\n\nMy guess is that something close to this has to be part of its system prompt, since it defines the full https://t.co/wWkLK4nN99",
+      "content": "Muse architecture, this is how Meta\u2019s assistant works\n\nIt\u2019s not difficult to get this information. A couple of questions to Muse and it will describe the architecture itself\n\nMy guess is that something close to this has to be part of its system prompt, since it defines the full https://t.co/wWkLK4nN99",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-09-30T12:38:45Z",
+      "fetched_at": "2026-10-01T21:02:18.267077Z",
       "score": null,
       "score_reason": "",
       "tier": "",
