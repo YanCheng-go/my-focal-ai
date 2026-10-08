@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-10-08T13:53:16.891032+00:00",
+  "exported_at": "2026-10-08T19:39:27.144698+00:00",
   "period_hours": 168,
   "total": 3080,
   "all_tags": [
@@ -28521,157 +28521,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d320458473217aca",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
-      "title": "v2.1.287",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Added Claude Mods: plugins may now modify deeper behavior</li>\n<li>Added You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with <code>/plugin enable cc-plugin-you-should-know@builtin</code> (for first-party sessions with telemetry on)</li>\n<li>Added an <code>n:&lt;text&gt;</code> filter to the agents view that matches session names and tasks; a filter now shows matches in collapsed sections and Enter opens the first match</li>\n<li>Added <code>prompt_text</code> to the OpenTelemetry <code>user_prompt</code> event, a copy of <code>prompt</code> for backends that nest dotted keys; drop or mask it wherever you drop or mask <code>prompt</code> (<a class=\"issue-link js-issue-link\" href=\"https://github.com/anthropics/claude-code/issues/70763\">#70763</a>)</li>\n<li>Added URL prompts from MCP servers on the 2025-11-25 protocol, for example to sign in. If a server no longer connects after this update, add \"bareElicitationCapability\": true to its MCP config entry</li>\n<li>Windows: Added a startup warning when denying the Bash tool also turns off the PowerShell tool, so Claude has no shell tool</li>\n<li>Self-hosted runner: Added a built-in <code>gh api</code> (REST only) for sessions that use Anthropic-managed git on macOS and Linux machines where the GitHub CLI is not installed</li>\n<li>Fixed fast mode staying off in remote sessions owned by an agent with no user account, even when the organization allows it</li>\n<li>Fixed Remote Control not receiving messages for minutes at a time when a reconnect request got no response; it now gives up after 30 seconds and retries</li>\n<li>Fixed hooks configured with <code>asyncRewake</code> waking Claude over and over with \"found issues\" notifications when the hook's script file is missing; the broken hook is now reported once</li>\n<li>Fixed tool heartbeats not reaching SDK hosts while the model's response stream was stalled with no data arriving</li>\n<li>Fixed Bedrock and Vertex startup model checks ignoring an enforced <code>availableModels</code> list, which could collapse <code>/model</code> to one Opus row</li>\n<li>Fixed the Claude in Chrome browser picker showing a JSON parse error when Chrome could not be reached</li>\n<li>Fixed picking Fable in <code>/model</code> on a claude.ai login saving the current version's id, so your saved default now follows the newest Fable like Opus and Sonnet do</li>\n<li>Fixed switching between Opus 5.5 and Sonnet 5.5 (<code>/model</code>, <code>opusplan</code>) rewriting earlier MCP tool announcements, which could drop earlier extended thinking</li>\n<li>Fixed Amazon Bedrock Guardrails blocks that arrive mid-response ending the turn with an API error instead of the guardrail's message when the reply began with thinking</li>\n<li>Fixed a dangerous <code>rm</code> (such as one on <code>/</code> or the home directory) losing its always-ask safeguard when the same command also redirected output to a <code>~</code> or wildcard path</li>\n<li>Fixed <code>claude -p</code> and SDK sessions repeating a model fallback on every later message after the model was switched while a reply was running</li>\n<li>Fixed a folder's CLAUDE.md being attached a second time after resuming a session or after a compaction</li>\n<li>Fixed background sessions that could not be reopened from <code>claude agents</code> after the agent exited and removed the worktree the session was started in</li>\n<li>Fixed <code>/advisor</code> pairing checks: Sonnet 5.5 can now advise Opus 4.7 and 4.8, and advisors the API would refuse are flagged up front instead of being silently dropped</li>\n<li>Fixed Bash permission prompts showing internal parser names such as \"Contains simple_expansion\" instead of a plain explanation</li>\n<li>Fixed a cause of fullscreen sessions on slow or busy machines exiting with \"Claude Code exited after an unrecoverable interface error\" while a scroll key was held in a long conversation</li>\n<li>Fixed organization per-tool permission ceilings being silently dropped for an MCP tool named <code>__proto__</code></li>\n<li>Fixed Claude being told to page large MCP results saved as JSON with Read's offset and limit, which cannot split one long line</li>\n<li>Fixed the commit attribution reminder being delivered inside a tool result after a compaction</li>\n<li>Fixed screen reader mode leaving the cursor away from the typed text in search boxes (such as /resume and /permissions) and sign-in code fields</li>\n<li>Fixed screen reader mode refusing Enter with nothing typed on /rewind's summarize options, whose added context is optional</li>\n<li>Fixed screen reader mode showing a \"Tab to amend\" hint on approval prompts, where Tab does nothing</li>\n<li>Fixed screen reader mode listing arrow keys that do nothing in /permissions and /mcp, and saying \"Select with numbers\" in empty menus or while a search box has the keys</li>\n<li>Fixed screen reader mode leaving out the changed lines in file edit approval prompts and other diffs</li>\n<li>Fixed screen reader mode sending the <code>claude --teleport</code> progress screen, and an MCP form field while it is being checked, to the screen reader again on every spinner frame</li>\n<li>Fixed <code>CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS</code> not removing the structured-output format from session-title and prompt-hook requests, which Bedrock-backed gateways reject</li>\n<li>Fixed screen reader mode leaving out the top lines of a second approval prompt, a changed /config row or the rejected-plan line when the previous screen was taller than the terminal window</li>\n<li>Fixed <code>--include-partial-messages</code> sending a cut-short reply's <code>message_stop</code> late or never, so apps could show the reply as still in progress</li>\n<li>Fixed <code>claude agents</code> sometimes not showing the permission prompt a background session is waiting on</li>\n<li>Fixed <code>/ultrareview</code> giving advice about <code>.git/info/attributes</code> when the upload stops on a committed <code>.gitattributes</code> it cannot read, such as one saved as UTF-16</li>\n<li>Fixed <code>claude remote-control</code> failing to register behind an HTTP proxy with a misleading \"Check your organization permissions\" error (<a class=\"issue-link js-issue-link\" href=\"https://github.com/anthropics/claude-code/issues/97352\">#97352</a>)</li>\n<li>Fixed sandboxed Bash commands on Linux inheriting an open handle on the Claude Code executable</li>\n<li>Fixed the running-tool dot and three spinners still moving with the \"Reduce motion\" setting on, and /rewind's confirm screen updating its \"ago\" time while you type a note</li>\n<li>Fixed times in <code>claude agents</code> changing every second in screen reader mode; they now change at most every 10 seconds</li>\n<li>Fixed a revoked claude.ai login showing a generic <code>API Error: 401</code> instead of \"OAuth token revoked\"; in <code>-p</code> mode the error now starts with \"Failed to authenticate\"</li>\n<li>Fixed <code>/ultrareview</code> upload refusals advising you to copy a variable named by a repository's settings file into your own user settings</li>\n<li>Fixed <code>--output-format stream-json</code> and the SDK not streaming the turns of a <code>context: fork</code> skill run by typing <code>/&lt;skill&gt;</code> as the prompt, as they do for the Skill tool's fork</li>\n<li>Fixed /feedback and /bug: the pre-filled GitHub issue no longer includes your recent error messages, and the confirmation screen now lists them as part of the report</li>\n<li>Fixed <code>claude plugin marketplace add --sparse</code> and <code>git-subdir</code> plugin installs failing with \"transport 'http' not allowed\" when the repository is served over plain http</li>\n<li>Fixed cloud sessions sometimes losing the earlier conversation when the session restarted while it was being compacted</li>\n<li>Fixed a plugin reload that overlapped the startup <code>--plugin-url</code> download corrupting the session's cached copy of the plugin archive</li>\n<li>Fixed <code>/desktop</code> quoting partial output when opening Claude Desktop timed out or printed too much output; the error now names the cause</li>\n<li>Fixed an MCP connector tool call occasionally running twice, or the connector's calls failing until restart, when its server changed which MCP protocol version it supports</li>\n<li>Fixed SessionStart hooks from synced plugins not running in new cloud sessions</li>\n<li>Fixed the transcript's \"N hooks ran\" summary and the verbose debug log's matched-hooks count including Claude Code's internal callbacks, so one configured hook no longer shows as two</li>\n<li>Fixed files Claude sends from cloud and Remote Control sessions failing when the upload finished just after the 30-second timeout; it now waits 35 seconds</li>\n<li>Fixed repositories added mid-session in cloud and SDK sessions not loading their skills and plugins, and loading CLAUDE.md late, after Claude changed directory</li>\n<li>Fixed PNG, JPEG and WebP images over 8,000 pixels on a side failing to send from a remote session; Claude now sends a scaled-down copy</li>\n<li>Fixed messages sent from the Claude apps with 17 to 20 attached files delivering only the first 16</li>\n<li>Fixed headless sessions reporting an MCP server as needing authentication after one refused call, even though later calls succeed</li>\n<li>macOS: Fixed Remote Control sessions started with <code>claude remote-control</code> stopping mid-turn when the Mac went to idle sleep</li>\n<li>Windows: Fixed interactive <code>claude</code> hanging or crashing with \"Raw mode is not supported\" when its input is piped or redirected; it now says why and exits (use <code>-p</code> for piped input)</li>\n<li>Bedrock, Vertex, Mantle: Fixed model availability checks under <code>CLAUDE_CODE_SKIP_*_AUTH</code> sending a different <code>Authorization</code> header than real requests when <code>ANTHROPIC_CUSTOM_HEADERS</code> repeats it</li>\n<li>Improved <code>/config</code>: settings that cycle show \u2039 \u203a and step both ways with \u2190/\u2192, narrow terminals stack each value under its label, and PgUp/PgDn page the list</li>\n<li>Improved plugin marketplace errors to say in plain words why a marketplace was ignored or refused, and what to do</li>\n<li>Improved plugin listings to note when a plugin's dependencies were not installed, and updating a plugin now retries an install that did not finish</li>\n<li>Improved the Claude apps gateway's error when Amazon Bedrock rejects a model ID: developers now see which model is unavailable, and the gateway log names the ID that was sent</li>\n<li>Improved SDK sessions so a message sent with priority \"now\" no longer cancels a running web fetch or web search; it keeps loading in the background</li>\n<li>Improved <code>/memory</code>: the left and right arrow keys now flip its on/off settings, such as Auto-memory</li>\n<li>Improved <code>/skill</code> names typed mid-message: Claude is now told they are skills, including <code>disable-model-invocation</code> ones</li>\n<li>Improved the contrast of the prompt input border in light themes and of the \u276f before your earlier messages</li>\n<li>Improved delivery of files Claude sends from cloud sessions and Remote Control: an upload that fails on a timeout, a network error or a 502, 503 or 504 is now retried once</li>\n<li>Improved what Claude says when a file cannot be sent for a reason that may be temporary: it now mentions that you can ask for the file again in a few minutes</li>\n<li>Improved the prompt for a held message from another session to show the message between dashed lines, matching other permission prompts</li>\n<li>Improved MCP and other tool permission prompts to show the tool call between dashed lines, matching file edit prompts</li>\n<li>Improved MCP startup in headless mode: a remote server whose first connect fails transiently is now retried without waiting for the slowest server to finish connecting</li>\n<li>Improved files Claude sends from a remote session: large files now stream from disk instead of being read into memory, and a file over the size limit is refused with the server's limit named</li>\n<li>Improved the explanation Claude gives when the server refuses a file it sends from a Remote Control or cloud session, such as an oversized image</li>\n<li>Improved handling of large MCP tool results: less memory, smaller session files, and no extra upload to count tokens for results far over the limit</li>\n<li>Windows: Improved Bash tool speed by removing a subshell that ran before every command</li>\n<li>Changed a shell write through a repo-committed symlink onto a sensitive file or out of the working tree to name where it lands and wait for a person, on lines with a <code>~</code> target too</li>\n<li>Changed Opus 4.7+ and Fable to use a 1M context window by default on Bedrock, Vertex, Foundry and the Claude apps gateway, with no <code>[1m]</code> suffix (<code>CLAUDE_CODE_DISABLE_1M_CONTEXT=1</code> keeps 200K)</li>\n<li>Changed replies from <code>claude agents</code> to arrive as queued messages; slash commands other than <code>/stop</code> sent while a turn is running now run when it ends</li>\n<li>Changed whole-tool <code>Bash</code> allow rules and allowing hooks to prompt for, not run, shell writes to files Claude Code's file tools refuse outright (the Anthropic profile store, the host credentials file)</li>\n<li>Changed right-click paste on Windows and Linux, and middle-click paste on Linux, to happen when the button is released; moving the pointer away before releasing cancels it</li>\n<li>Changed MCP server <code>alwaysLoad: false</code> to defer all of that server's tools behind tool search</li>\n<li>Changed screen reader mode to write new or changed lines without first pausing with the cursor at the start of the line; set <code>CLAUDE_AX_PREPARK_MS=50</code> to restore the pause</li>\n<li>Changed automatic model switches after a flagged message to keep your current effort level instead of the new model's default</li>\n<li>Changed waiting permission prompts to show oldest first, so a new prompt no longer covers the one you're reading (prompts with a countdown still open on top)</li>\n<li>[VSCode] Added \"Run in background\" to a running command or sub-agent, to move it to the background and keep working</li>\n<li>[VSCode] Added the output of background shells and Monitors to their cards in the agent map</li>\n<li>[VSCode] Fixed settings dialogs blaming a timeout when Claude Code's reply was too large to confirm a save</li>\n<li>[VSCode] Fixed reopening a cloud session that the side bar already brought to this machine opening it again in a new tab; the side bar is shown instead</li>\n<li>[VSCode] Fixed the side bar's Web tab not listing cloud sessions started after the window loaded; a failed load now says \"Remote server is not connected\" instead of \"No web sessions yet\"</li>\n<li>[VSCode] Fixed a tab restored after a reload starting a second Claude process on a conversation the side bar already has open; it now shows the \"still open somewhere else\" notice</li>\n<li>[VSCode] Fixed tool-row file links, session-list links and two hints showing in plain text</li>\n<li>[VSCode] Fixed a background agent's still-running command showing as failed once the main turn ended</li>\n<li>[VSCode] Fixed a user's own <code>/usage</code> or <code>/context</code> command opening the extension's dialog instead of running when picked from the command menu</li>\n<li>[VSCode] Fixed file links in the plan preview tab doing nothing when clicked; they now open the file like links in chat replies</li>\n<li>[VSCode] Fixed opening a tool's input or output in an editor tab failing with \"Timeout waiting after 1000ms\" on remote hosts such as WSL when the tab is slow to appear</li>\n<li>[VSCode] Improved the Manage plugins dialog: a failed marketplace add, remove or refresh now says what went wrong</li>\n<li>[VSCode] Changed the Claude in Chrome \"Enabled by default\" switch to also connect the editor's own sessions, which still ask before browser actions</li>\n<li>[Cloud sessions] Fixed occasional failures to fetch from or push to GitHub when GitHub briefly refused a newly issued access token</li>\n<li>[Claude Tag] Fixed Claude posting a failure warning, such as a spend limit notice, in a Slack thread when a background event like GitHub activity woke it and nobody was waiting on a reply</li>\n<li>[Claude Tag] Fixed Claude Tag's spend limits page in admin settings leaving out recently created and private channels in organizations with many channels</li>\n<li>[Claude Tag] Improved Claude's task list in long Slack threads: background work no longer reposts it as a new message on its own, so people following the thread aren't notified</li>\n<li>[Code Review] Fixed finding comments and their \"Why this was flagged\" text stopping mid-sentence; they now end on a complete sentence</li>\n<li>[Code Review] Fixed Code Review skipping a pull request after a new push when its review had failed twice on the previous commit; it now reviews the latest commit</li>\n<li>[Code Review] Improved the failed-review card on a pull request whose conversation is locked: it now says the lock blocked the review and that nothing was posted or charged</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Added Claude Mods: plugins may now modify deeper behavior</li>\n<li>Added You should know, a built-in mod where a side agent watches your back and flags things you or Claude might miss. Turn it on with <code>/plugin enable cc-plugin-you-should-know@builtin</code> (for first-party sessions with telemetry on)</li>\n<li>Added an <code>n:&lt;text&gt;</code> filter to the agents view that matches session names and tasks; a filter now shows matches in collapsed sections and Enter opens the first match</li>\n<li>Added <code>prompt_text</code> to the OpenTelemetry <code>user_prompt</code> event, a copy of <code>prompt</code> for backends that nest dotted keys; drop or mask it wherever you drop or mask <code>prompt</code> (<a class=\"issue-link js-issue-link\" href=\"https://github.com/anthropics/claude-code/issues/70763\">#70763</a>)</li>\n<li>Added URL prompts from MCP servers on the 2025-11-25 protocol, for example to sign in. If a server no longer connects after this update, add \"bareElicitationCapability\": true to its MCP config entry</li>\n<li>Windows: Added a startup warning when denying the Bash tool also turns off the PowerShell tool, so Claude has no shell tool</li>\n<li>Self-hosted runner: Added a built-in <code>gh api</code> (REST only) for sessions that use Anthropic-managed git on macOS and Linux machines where the GitHub CLI is not installed</li>\n<li>Fixed fast mode staying off in remote sessions owned by an agent with no user account, even when the organization allows it</li>\n<li>Fixed Remote Control not receiving messages for minutes at a time when a reconnect request got no response; it now gives up after 30 seconds and retries</li>\n<li>Fixed hooks configured with <code>asyncRewake</code> waking Claude over and over with \"found issues\" notifications when the hook's script file is missing; the broken hook is now reported once</li>\n<li>Fixed tool heartbeats not reaching SDK hosts while the model's response stream was stalled with no data arriving</li>\n<li>Fixed Bedrock and Vertex startup model checks ignoring an enforced <code>availableModels</code> list, which could collapse <code>/model</code> to one Opus row</li>\n<li>Fixed the Claude in Chrome browser picker showing a JSON parse error when Chrome could not be reached</li>\n<li>Fixed picking Fable in <code>/model</code> on a claude.ai login saving the current version's id, so your saved default now follows the newest Fable like Opus and Sonnet do</li>\n<li>Fixed switching between Opus 5.5 and Sonnet 5.5 (<code>/model</code>, <code>opusplan</code>) rewriting earlier MCP tool announcements, which could drop earlier extended thinking</li>\n<li>Fixed Amazon Bedrock Guardrails blocks that arrive mid-response ending the turn with an API error instead of the guardrail's message when the reply began with thinking</li>\n<li>Fixed a dangerous <code>rm</code> (such as one on <code>/</code> or the home directory) losing its always-ask safeguard when the same command also redirected output to a <code>~</code> or wildcard path</li>\n<li>Fixed <code>claude -p</code> and SDK sessions repeating a model fallback on every later message after the model was switched while a reply was running</li>\n<li>Fixed a folder's CLAUDE.md being attached a second time after resuming a session or after a compaction</li>\n<li>Fixed background sessions that could not be reopened from <code>claude agents</code> after the agent exited and removed the worktree the session was started in</li>\n<li>Fixed <code>/advisor</code> pairing checks: Sonnet 5.5 can now advise Opus 4.7 and 4.8, and advisors the API would refuse are flagged up front instead of being silently dropped</li>\n<li>Fixed Bash permission prompts showing internal parser names such as \"Contains simple_expansion\" instead of a plain explanation</li>\n<li>Fixed a cause of fullscreen sessions on slow or busy machines exiting with \"Claude Code exited after an unrecoverable interface error\" while a scroll key was held in a long conversation</li>\n<li>Fixed organization per-tool permission ceilings being silently dropped for an MCP tool named <code>__proto__</code></li>\n<li>Fixed Claude being told to page large MCP results saved as JSON with Read's offset and limit, which cannot split one long line</li>\n<li>Fixed the commit attribution reminder being delivered inside a tool result after a compaction</li>\n<li>Fixed screen reader mode leaving the cursor away from the typed text in search boxes (such as /resume and /permissions) and sign-in code fields</li>\n<li>Fixed screen reader mode refusing Enter with nothing typed on /rewind's summarize options, whose added context is optional</li>\n<li>Fixed screen reader mode showing a \"Tab to amend\" hint on approval prompts, where Tab does nothing</li>\n<li>Fixed screen reader mode listing arrow keys that do nothing in /permissions and /mcp, and saying \"Select with numbers\" in empty menus or while a search box has the keys</li>\n<li>Fixed screen reader mode leaving out the changed lines in file edit approval prompts and other diffs</li>\n<li>Fixed screen reader mode sending the <code>claude --teleport</code> progress screen, and an MCP form field while it is being checked, to the screen reader again on every spinner frame</li>\n<li>Fixed <code>CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS</code> not removing the structured-output format from session-title and prompt-hook requests, which Bedrock-backed gateways reject</li>\n<li>Fixed screen reader mode leaving out the top lines of a second approval prompt, a changed /config row or the rejected-plan line when the previous screen was taller than the terminal window</li>\n<li>Fixed <code>--include-partial-messages</code> sending a cut-short reply's <code>message_stop</code> late or never, so apps could show the reply as still in progress</li>\n<li>Fixed <code>claude agents</code> sometimes not showing the permission prompt a background session is waiting on</li>\n<li>Fixed <code>/ultrareview</code> giving advice about <code>.git/info/attributes</code> when the upload stops on a committed <code>.gitattributes</code> it cannot read, such as one saved as UTF-16</li>\n<li>Fixed <code>claude remote-control</code> failing to register behind an HTTP proxy with a misleading \"Check your organization permissions\" error (<a class=\"issue-link js-issue-link\" href=\"https://github.com/anthropics/claude-code/issues/97352\">#97352</a>)</li>\n<li>Fixed sandboxed Bash commands on Linux inheriting an open handle on the Claude Code executable</li>\n<li>Fixed the running-tool dot and three spinners still moving with the \"Reduce motion\" setting on, and /rewind's confirm screen updating its \"ago\" time while you type a note</li>\n<li>Fixed times in <code>claude agents</code> changing every second in screen reader mode; they now change at most every 10 seconds</li>\n<li>Fixed a revoked claude.ai login showing a generic <code>API Error: 401</code> instead of \"OAuth token revoked\"; in <code>-p</code> mode the error now starts with \"Failed to authenticate\"</li>\n<li>Fixed <code>/ultrareview</code> upload refusals advising you to copy a variable named by a repository's settings file into your own user settings</li>\n<li>Fixed <code>--output-format stream-json</code> and the SDK not streaming the turns of a <code>context: fork</code> skill run by typing <code>/&lt;skill&gt;</code> as the prompt, as they do for the Skill tool's fork</li>\n<li>Fixed /feedback and /bug: the pre-filled GitHub issue no longer includes your recent error messages, and the confirmation screen now lists them as part of the report</li>\n<li>Fixed <code>claude plugin marketplace add --sparse</code> and <code>git-subdir</code> plugin installs failing with \"transport 'http' not allowed\" when the repository is served over plain http</li>\n<li>Fixed cloud sessions sometimes losing the earlier conversation when the session restarted while it was being compacted</li>\n<li>Fixed a plugin reload that overlapped the startup <code>--plugin-url</code> download corrupting the session's cached copy of the plugin archive</li>\n<li>Fixed <code>/desktop</code> quoting partial output when opening Claude Desktop timed out or printed too much output; the error now names the cause</li>\n<li>Fixed an MCP connector tool call occasionally running twice, or the connector's calls failing until restart, when its server changed which MCP protocol version it supports</li>\n<li>Fixed SessionStart hooks from synced plugins not running in new cloud sessions</li>\n<li>Fixed the transcript's \"N hooks ran\" summary and the verbose debug log's matched-hooks count including Claude Code's internal callbacks, so one configured hook no longer shows as two</li>\n<li>Fixed files Claude sends from cloud and Remote Control sessions failing when the upload finished just after the 30-second timeout; it now waits 35 seconds</li>\n<li>Fixed repositories added mid-session in cloud and SDK sessions not loading their skills and plugins, and loading CLAUDE.md late, after Claude changed directory</li>\n<li>Fixed PNG, JPEG and WebP images over 8,000 pixels on a side failing to send from a remote session; Claude now sends a scaled-down copy</li>\n<li>Fixed messages sent from the Claude apps with 17 to 20 attached files delivering only the first 16</li>\n<li>Fixed headless sessions reporting an MCP server as needing authentication after one refused call, even though later calls succeed</li>\n<li>macOS: Fixed Remote Control sessions started with <code>claude remote-control</code> stopping mid-turn when the Mac went to idle sleep</li>\n<li>Windows: Fixed interactive <code>claude</code> hanging or crashing with \"Raw mode is not supported\" when its input is piped or redirected; it now says why and exits (use <code>-p</code> for piped input)</li>\n<li>Bedrock, Vertex, Mantle: Fixed model availability checks under <code>CLAUDE_CODE_SKIP_*_AUTH</code> sending a different <code>Authorization</code> header than real requests when <code>ANTHROPIC_CUSTOM_HEADERS</code> repeats it</li>\n<li>Improved <code>/config</code>: settings that cycle show \u2039 \u203a and step both ways with \u2190/\u2192, narrow terminals stack each value under its label, and PgUp/PgDn page the list</li>\n<li>Improved plugin marketplace errors to say in plain words why a marketplace was ignored or refused, and what to do</li>\n<li>Improved plugin listings to note when a plugin's dependencies were not installed, and updating a plugin now retries an install that did not finish</li>\n<li>Improved the Claude apps gateway's error when Amazon Bedrock rejects a model ID: developers now see which model is unavailable, and the gateway log names the ID that was sent</li>\n<li>Improved SDK sessions so a message sent with priority \"now\" no longer cancels a running web fetch or web search; it keeps loading in the background</li>\n<li>Improved <code>/memory</code>: the left and right arrow keys now flip its on/off settings, such as Auto-memory</li>\n<li>Improved <code>/skill</code> names typed mid-message: Claude is now told they are skills, including <code>disable-model-invocation</code> ones</li>\n<li>Improved the contrast of the prompt input border in light themes and of the \u276f before your earlier messages</li>\n<li>Improved delivery of files Claude sends from cloud sessions and Remote Control: an upload that fails on a timeout, a network error or a 502, 503 or 504 is now retried once</li>\n<li>Improved what Claude says when a file cannot be sent for a reason that may be temporary: it now mentions that you can ask for the file again in a few minutes</li>\n<li>Improved the prompt for a held message from another session to show the message between dashed lines, matching other permission prompts</li>\n<li>Improved MCP and other tool permission prompts to show the tool call between dashed lines, matching file edit prompts</li>\n<li>Improved MCP startup in headless mode: a remote server whose first connect fails transiently is now retried without waiting for the slowest server to finish connecting</li>\n<li>Improved files Claude sends from a remote session: large files now stream from disk instead of being read into memory, and a file over the size limit is refused with the server's limit named</li>\n<li>Improved the explanation Claude gives when the server refuses a file it sends from a Remote Control or cloud session, such as an oversized image</li>\n<li>Improved handling of large MCP tool results: less memory, smaller session files, and no extra upload to count tokens for results far over the limit</li>\n<li>Windows: Improved Bash tool speed by removing a subshell that ran before every command</li>\n<li>Changed a shell write through a repo-committed symlink onto a sensitive file or out of the working tree to name where it lands and wait for a person, on lines with a <code>~</code> target too</li>\n<li>Changed Opus 4.7+ and Fable to use a 1M context window by default on Bedrock, Vertex, Foundry and the Claude apps gateway, with no <code>[1m]</code> suffix (<code>CLAUDE_CODE_DISABLE_1M_CONTEXT=1</code> keeps 200K)</li>\n<li>Changed replies from <code>claude agents</code> to arrive as queued messages; slash commands other than <code>/stop</code> sent while a turn is running now run when it ends</li>\n<li>Changed whole-tool <code>Bash</code> allow rules and allowing hooks to prompt for, not run, shell writes to files Claude Code's file tools refuse outright (the Anthropic profile store, the host credentials file)</li>\n<li>Changed right-click paste on Windows and Linux, and middle-click paste on Linux, to happen when the button is released; moving the pointer away before releasing cancels it</li>\n<li>Changed MCP server <code>alwaysLoad: false</code> to defer all of that server's tools behind tool search</li>\n<li>Changed screen reader mode to write new or changed lines without first pausing with the cursor at the start of the line; set <code>CLAUDE_AX_PREPARK_MS=50</code> to restore the pause</li>\n<li>Changed automatic model switches after a flagged message to keep your current effort level instead of the new model's default</li>\n<li>Changed waiting permission prompts to show oldest first, so a new prompt no longer covers the one you're reading (prompts with a countdown still open on top)</li>\n<li>[VSCode] Added \"Run in background\" to a running command or sub-agent, to move it to the background and keep working</li>\n<li>[VSCode] Added the output of background shells and Monitors to their cards in the agent map</li>\n<li>[VSCode] Fixed settings dialogs blaming a timeout when Claude Code's reply was too large to confirm a save</li>\n<li>[VSCode] Fixed reopening a cloud session that the side bar already brought to this machine opening it again in a new tab; the side bar is shown instead</li>\n<li>[VSCode] Fixed the side bar's Web tab not listing cloud sessions started after the window loaded; a failed load now says \"Remote server is not connected\" instead of \"No web sessions yet\"</li>\n<li>[VSCode] Fixed a tab restored after a reload starting a second Claude process on a conversation the side bar already has open; it now shows the \"still open somewhere else\" notice</li>\n<li>[VSCode] Fixed tool-row file links, session-list links and two hints showing in plain text</li>\n<li>[VSCode] Fixed a background agent's still-running command showing as failed once the main turn ended</li>\n<li>[VSCode] Fixed a user's own <code>/usage</code> or <code>/context</code> command opening the extension's dialog instead of running when picked from the command menu</li>\n<li>[VSCode] Fixed file links in the plan preview tab doing nothing when clicked; they now open the file like links in chat replies</li>\n<li>[VSCode] Fixed opening a tool's input or output in an editor tab failing with \"Timeout waiting after 1000ms\" on remote hosts such as WSL when the tab is slow to appear</li>\n<li>[VSCode] Improved the Manage plugins dialog: a failed marketplace add, remove or refresh now says what went wrong</li>\n<li>[VSCode] Changed the Claude in Chrome \"Enabled by default\" switch to also connect the editor's own sessions, which still ask before browser actions</li>\n<li>[Cloud sessions] Fixed occasional failures to fetch from or push to GitHub when GitHub briefly refused a newly issued access token</li>\n<li>[Claude Tag] Fixed Claude posting a failure warning, such as a spend limit notice, in a Slack thread when a background event like GitHub activity woke it and nobody was waiting on a reply</li>\n<li>[Claude Tag] Fixed Claude Tag's spend limits page in admin settings leaving out recently created and private channels in organizations with many channels</li>\n<li>[Claude Tag] Improved Claude's task list in long Slack threads: background work no longer reposts it as a new message on its own, so people following the thread aren't notified</li>\n<li>[Code Review] Fixed finding comments and their \"Why this was flagged\" text stopping mid-sentence; they now end on a complete sentence</li>\n<li>[Code Review] Fixed Code Review skipping a pull request after a new push when its review had failed twice on the previous commit; it now reviews the latest commit</li>\n<li>[Code Review] Improved the failed-review card on a pull request whose conversation is locked: it now says the lock blocked the review and that nothing was posted or charged</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-10-01T18:43:19Z",
-      "fetched_at": "2026-10-01T22:42:14.312893Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f7fd758439591f67",
-      "url": "https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills/",
-      "title": "Build Applications on NVIDIA BlueField Faster with NVIDIA DOCA Agent Skills",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/agentic-ai-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai\" width=\"768\" />AI agents are becoming a standard part of development workflows, but general-purpose agents weren't built with specialized infrastructure software such as...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/agentic-ai-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai\" width=\"768\" />AI agents are becoming a standard part of development workflows, but general-purpose agents weren't built with specialized infrastructure software such as...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/agentic-ai-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"agentic-ai\" width=\"768\" /><p>AI agents are becoming a standard part of development workflows, but general-purpose agents weren\u2019t built with specialized infrastructure software such as NVIDIA DOCA in mind. Without domain-specific knowledge, agents may fall back on guesswork. This is an issue in infrastructure development because every correction cycle takes time away from deployment. DOCA is the unified software platform\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Tanya Lenz",
-      "published_at": "2026-10-01T18:13:29Z",
-      "fetched_at": "2026-10-01T22:42:13.971176Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7f6b9d99dce00408",
-      "url": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
-      "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/din-deploy-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"din-deploy-featured\" width=\"768\" />Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/din-deploy-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"din-deploy-featured\" width=\"768\" />Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/din-deploy-featured-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"din-deploy-featured\" width=\"768\" /><p>Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now (DIN) Deploy is an open-source collection of practical C++ samples that bridges that gap. It combines ONNX Runtime with the NVIDIA TensorRT RTX execution provider to help developers move from a model checkpoint to a native\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Luca Spindler",
-      "published_at": "2026-10-01T17:59:27Z",
-      "fetched_at": "2026-10-01T22:42:13.971201Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b8087b88cb63ae7f",
-      "url": "https://openai.com/index/the-eternal-complement",
-      "title": "The eternal complement",
-      "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-01T17:00:00Z",
-      "fetched_at": "2026-10-01T22:42:10.716569Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bfc4355d370530a8",
-      "url": "https://www.anthropic.com/news/claude-frontier-academy",
-      "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
-      "summary": "<article><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__hero\"><div class=\"PostDetail-module-scss-module__UQuRMa__illustrationHeroWrapper\"><div class=\"Illustration-module-scss-module__WyGOtq__root Illustration-module-scss-module__WyGOtq__aspect-wide Illustration-module-scss-module__WyGOtq__padding-lg Illustration-module-scss-module__WyGOtq__radius-lg bg-heather\"><div class=\"Illustration-module-scss-module__WyGOtq__inner\"><img alt=\"Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap\" class=\"\" height=\"1000\" src=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/cd4fd51deacd067d4e30aee4f4b149f6cba1b97b-1000x1000.svg\" width=\"1000\" /></div></div></div></div><div class=\"page-wrapper\"><article><div class=\"\"><div class=\"Body-module-scss-module__z40yvW__body\"><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\"><em>The first-of-its-kind Academy trains Frontier Deployed Engineers using the same standard of skills as Anthropic\u2019s own engineers, starting with cohorts from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk and others.</em></p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Today we are launching Claude Frontier Academy to solve one of the most pressing issues in AI implementation: talent. Backed by a $100 million commitment, Anthropic aims to train 10,000 Frontier Deployed Engineers (FDEs) by the end of 2027. Engineers from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk are in the first cohorts.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Every enterprise is racing to bring AI into its organization, but the people with the skills to make it work inside a real business have become the hardest talent to find. Inside the companies we work with, a small group of deeply skilled people drives an outsized share of what AI delivers. The Academy is the first of its kind from an AI company, built from our own work deploying Claude inside the world\u2019s largest enterprises and the professional services organizations that serve them.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">\u201cA small team of high-agency people with the right skills, access to Claude, and a deep understanding of how their business runs can transform an entire company. The hard part is building that depth of talent, engineers with the highest level of AI fluency who can take Claude from an idea to a system in production and turn it into faster processes and new products and services. No AI company has invested in developing that talent inside its customers and partners at this depth. Claude Frontier Academy trains people the way our own engineers learn, and we want those who graduate to set the standard for how AI gets built inside a business.\u201d \u2013 Steve Corfield, Global Head of Business Development and Partnerships at Anthropic</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-4 post-heading\" id=\"the-first-program-trains-10000-frontier-deployed-engineers\">The first program trains 10,000 Frontier Deployed Engineers</h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The Academy\u2019s first program, the Frontier Deployed Engineer Residency, follows the medical model for building expertise. Doctors learn from practicing physicians, train on real cases, and are assessed before they practice alone. Likewise, FDE Residency engineers learn from practitioners, practice on realistic cases, and are assessed on their work before they earn the credential. The goal is agentic systems that change how a business runs, from faster, redesigned processes to new products and services.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">The program is for hands-on software engineers with strong fundamentals, a record of building with LLMs, experience helping others adopt AI, and a habit of tackling their business\u2019s most important problems. Organizations nominate their strongest engineers, each arriving with a named Claude project to lead when they return. Prior experience building AI agents isn\u2019t required.</p><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Engineers start with a multi-day in-person program with Anthropic engineers and licensed instructors. They work through a simulated enterprise deployment, from the right use case through security review to handover, and finish with a graded practical on a new scenario. Those who pass earn the Claude Resident Engineer badge and move into the 12-week residency, where they lead a real Claude use case at their own organization, supported by Anthropic engineers and learning from their cohort as they build. Engineers are assessed again at the end of the 12 weeks, and those who pass earn the Claude Frontier Deployed Engineer badge, with the first expected in early 2027.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-4 post-heading\" id=\"the-first-cohorts-are-running-now\">The first cohorts are running now</h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Cohorts are running in San Francisco, New York and London. The program will grow toward 10,000 engineers by the end of 2027. Participation is by nomination; organizations can ask their Anthropic account team or Partner Account Manager whether they\u2019re eligible.</p><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-4 post-heading\" id=\"leading-enterprises-and-consulting-firms-are-in-the-first-cohorts\">Leading enterprises and consulting firms are in the first cohorts</h2><div class=\"Body-module-scss-module__z40yvW__media-column\"><div class=\"Carousel-module-scss-module__hqckjG__carousel-wrapper\"><div class=\"Carousel-module-scss-module__hqckjG__carousel-container\"><div class=\"Carousel-module-scss-module__hqckjG__carousel-track\"><div class=\"Carousel-module-scss-module__hqckjG__carousel-item bg-ivory-medium\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-mark-container\"><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"16\" viewBox=\"0 0 37 31\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.7999 4.81642C14.2986 5.45109 12.1333 6.45909 10.3039 7.84042C8.51192 9.18442 7.13059 10.8644 6.15992 12.8804C5.18926 14.8964 4.70392 17.1738 4.70392 19.7124H3.47192C3.47192 18.1444 3.95726 16.8938 4.92792 15.9604C5.93592 14.9898 7.27992 14.5044 8.95992 14.5044C10.3786 14.5044 11.6853 14.8591 12.8799 15.5684C14.0746 16.2778 15.0266 17.2298 15.7359 18.4244C16.4453 19.6191 16.7999 20.9258 16.7999 22.3444C16.7999 23.7631 16.4453 25.0698 15.7359 26.2644C15.0266 27.4591 14.0746 28.4111 12.8799 29.1204C11.6853 29.8298 10.3786 30.1844 8.95992 30.1844C7.24259 30.1844 5.69326 29.7364 4.31192 28.8404C2.96792 27.9444 1.90392 26.6938 1.11992 25.0884C0.373255 23.4831 -7.79331e-05 21.6911 -7.79331e-05 19.7124C-7.79331e-05 16.3524 0.690589 13.3097 2.07192 10.5844C3.49059 7.82175 5.45059 5.54442 7.95192 3.75242C10.4906 1.92309 13.4399 0.672418 16.7999 0.000417709V4.81642ZM36.9599 4.81642C34.4586 5.45109 32.2933 6.45909 30.4639 7.84042C28.6719 9.18442 27.2906 10.8644 26.3199 12.8804C25.3493 14.8964 24.8639 17.1738 24.8639 19.7124H23.6319C23.6319 18.1444 24.1173 16.8938 25.0879 15.9604C26.0959 14.9898 27.4399 14.5044 29.1199 14.5044C30.5386 14.5044 31.8453 14.8591 33.0399 15.5684C34.2346 16.2778 35.1866 17.2298 35.8959 18.4244C36.6053 19.6191 36.9599 20.9258 36.9599 22.3444C36.9599 23.7631 36.6053 25.0698 35.8959 26.2644C35.1866 27.4591 34.2346 28.4111 33.0399 29.1204C31.8453 29.8298 30.5386 30.1844 29.1199 30.1844C27.4026 30.1844 25.8533 29.7364 24.4719 28.8404C23.1279 27.9444 22.0639 26.6938 21.2799 25.0884C20.5333 23.4831 20.1599 21.6911 20.1599 19.7124C20.1599 16.3524 20.8506 13.3097 22.2319 10.5844C23.6506 7.82175 25.6106 5.54442 28.1119 3.75242C30.6506 1.92309 33.5999 0.672418 36.9599 0.000417709V4.81642Z\" fill=\"currentColor\"></path></svg></div><blockquote class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-content\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-text body-2 serif\">\u201cAt Accenture, forward deployed engineers translate AI ambition into enterprise-wide impact, working inside client workflows as part of multidisciplinary teams that engineer AI concepts into production-ready, governed solutions built to scale. Anthropic built the residency the same way we think about the role: judgment tested against a simulated enterprise deployment, not technical skills in isolation. Joining Claude Frontier Academy will deepen our engineers\u2019 Claude expertise and accelerate the value we deliver for our clients.\u201d</div><footer class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-footer\"><cite class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-info body-3\"><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-name\">Ram Ramalingam</span><br /><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-title\">FDE and Software &amp; Platform Engineering lead</span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__separator\">, </span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__company-name\">Accenture</span></cite></footer></blockquote></div><div class=\"Carousel-module-scss-module__hqckjG__carousel-item bg-ivory-medium\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-mark-container\"><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"16\" viewBox=\"0 0 37 31\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.7999 4.81642C14.2986 5.45109 12.1333 6.45909 10.3039 7.84042C8.51192 9.18442 7.13059 10.8644 6.15992 12.8804C5.18926 14.8964 4.70392 17.1738 4.70392 19.7124H3.47192C3.47192 18.1444 3.95726 16.8938 4.92792 15.9604C5.93592 14.9898 7.27992 14.5044 8.95992 14.5044C10.3786 14.5044 11.6853 14.8591 12.8799 15.5684C14.0746 16.2778 15.0266 17.2298 15.7359 18.4244C16.4453 19.6191 16.7999 20.9258 16.7999 22.3444C16.7999 23.7631 16.4453 25.0698 15.7359 26.2644C15.0266 27.4591 14.0746 28.4111 12.8799 29.1204C11.6853 29.8298 10.3786 30.1844 8.95992 30.1844C7.24259 30.1844 5.69326 29.7364 4.31192 28.8404C2.96792 27.9444 1.90392 26.6938 1.11992 25.0884C0.373255 23.4831 -7.79331e-05 21.6911 -7.79331e-05 19.7124C-7.79331e-05 16.3524 0.690589 13.3097 2.07192 10.5844C3.49059 7.82175 5.45059 5.54442 7.95192 3.75242C10.4906 1.92309 13.4399 0.672418 16.7999 0.000417709V4.81642ZM36.9599 4.81642C34.4586 5.45109 32.2933 6.45909 30.4639 7.84042C28.6719 9.18442 27.2906 10.8644 26.3199 12.8804C25.3493 14.8964 24.8639 17.1738 24.8639 19.7124H23.6319C23.6319 18.1444 24.1173 16.8938 25.0879 15.9604C26.0959 14.9898 27.4399 14.5044 29.1199 14.5044C30.5386 14.5044 31.8453 14.8591 33.0399 15.5684C34.2346 16.2778 35.1866 17.2298 35.8959 18.4244C36.6053 19.6191 36.9599 20.9258 36.9599 22.3444C36.9599 23.7631 36.6053 25.0698 35.8959 26.2644C35.1866 27.4591 34.2346 28.4111 33.0399 29.1204C31.8453 29.8298 30.5386 30.1844 29.1199 30.1844C27.4026 30.1844 25.8533 29.7364 24.4719 28.8404C23.1279 27.9444 22.0639 26.6938 21.2799 25.0884C20.5333 23.4831 20.1599 21.6911 20.1599 19.7124C20.1599 16.3524 20.8506 13.3097 22.2319 10.5844C23.6506 7.82175 25.6106 5.54442 28.1119 3.75242C30.6506 1.92309 33.5999 0.672418 36.9599 0.000417709V4.81642Z\" fill=\"currentColor\"></path></svg></div><blockquote class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-content\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-text body-2 serif\">\u201cBuilding deep, hands-on AI engineering capability is critical to helping clients move from experimentation to impact at scale. The Frontier Deployed Engineer Residency will give our engineers the opportunity to sharpen their expertise working directly with Anthropic and bring that experience to our work with clients.\u201d</div><footer class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-footer\"><cite class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-info body-3\"><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-name\">Michael Blake</span><br /><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-title\">Partner, Global Head of Engineering</span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__separator\">, </span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__company-name\">Bain</span></cite></footer></blockquote></div><div class=\"Carousel-module-scss-module__hqckjG__carousel-item bg-ivory-medium\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-mark-container\"><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"16\" viewBox=\"0 0 37 31\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.7999 4.81642C14.2986 5.45109 12.1333 6.45909 10.3039 7.84042C8.51192 9.18442 7.13059 10.8644 6.15992 12.8804C5.18926 14.8964 4.70392 17.1738 4.70392 19.7124H3.47192C3.47192 18.1444 3.95726 16.8938 4.92792 15.9604C5.93592 14.9898 7.27992 14.5044 8.95992 14.5044C10.3786 14.5044 11.6853 14.8591 12.8799 15.5684C14.0746 16.2778 15.0266 17.2298 15.7359 18.4244C16.4453 19.6191 16.7999 20.9258 16.7999 22.3444C16.7999 23.7631 16.4453 25.0698 15.7359 26.2644C15.0266 27.4591 14.0746 28.4111 12.8799 29.1204C11.6853 29.8298 10.3786 30.1844 8.95992 30.1844C7.24259 30.1844 5.69326 29.7364 4.31192 28.8404C2.96792 27.9444 1.90392 26.6938 1.11992 25.0884C0.373255 23.4831 -7.79331e-05 21.6911 -7.79331e-05 19.7124C-7.79331e-05 16.3524 0.690589 13.3097 2.07192 10.5844C3.49059 7.82175 5.45059 5.54442 7.95192 3.75242C10.4906 1.92309 13.4399 0.672418 16.7999 0.000417709V4.81642ZM36.9599 4.81642C34.4586 5.45109 32.2933 6.45909 30.4639 7.84042C28.6719 9.18442 27.2906 10.8644 26.3199 12.8804C25.3493 14.8964 24.8639 17.1738 24.8639 19.7124H23.6319C23.6319 18.1444 24.1173 16.8938 25.0879 15.9604C26.0959 14.9898 27.4399 14.5044 29.1199 14.5044C30.5386 14.5044 31.8453 14.8591 33.0399 15.5684C34.2346 16.2778 35.1866 17.2298 35.8959 18.4244C36.6053 19.6191 36.9599 20.9258 36.9599 22.3444C36.9599 23.7631 36.6053 25.0698 35.8959 26.2644C35.1866 27.4591 34.2346 28.4111 33.0399 29.1204C31.8453 29.8298 30.5386 30.1844 29.1199 30.1844C27.4026 30.1844 25.8533 29.7364 24.4719 28.8404C23.1279 27.9444 22.0639 26.6938 21.2799 25.0884C20.5333 23.4831 20.1599 21.6911 20.1599 19.7124C20.1599 16.3524 20.8506 13.3097 22.2319 10.5844C23.6506 7.82175 25.6106 5.54442 28.1119 3.75242C30.6506 1.92309 33.5999 0.672418 36.9599 0.000417709V4.81642Z\" fill=\"currentColor\"></path></svg></div><blockquote class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-content\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-text body-2 serif\">\u201cWhat I\u2019m hearing from clients isn\u2019t about certification counts or training volume; it\u2019s about knowing firsthand how to solve real-world problems that create value to our clients. By working side by side with Anthropic\u2019s own engineers, Capgemini is investing in and building the delivery excellence that clients recognize immediately.\u201d</div><footer class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-footer\"><cite class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-info body-3\"><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-name\">Geoffroy Pajot</span><br /><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-title\">Global Head of AI Partnerships Ecosystem</span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__separator\">, </span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__company-name\">Capgemini</span></cite></footer></blockquote></div><div class=\"Carousel-module-scss-module__hqckjG__carousel-item bg-ivory-medium\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-mark-container\"><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"16\" viewBox=\"0 0 37 31\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.7999 4.81642C14.2986 5.45109 12.1333 6.45909 10.3039 7.84042C8.51192 9.18442 7.13059 10.8644 6.15992 12.8804C5.18926 14.8964 4.70392 17.1738 4.70392 19.7124H3.47192C3.47192 18.1444 3.95726 16.8938 4.92792 15.9604C5.93592 14.9898 7.27992 14.5044 8.95992 14.5044C10.3786 14.5044 11.6853 14.8591 12.8799 15.5684C14.0746 16.2778 15.0266 17.2298 15.7359 18.4244C16.4453 19.6191 16.7999 20.9258 16.7999 22.3444C16.7999 23.7631 16.4453 25.0698 15.7359 26.2644C15.0266 27.4591 14.0746 28.4111 12.8799 29.1204C11.6853 29.8298 10.3786 30.1844 8.95992 30.1844C7.24259 30.1844 5.69326 29.7364 4.31192 28.8404C2.96792 27.9444 1.90392 26.6938 1.11992 25.0884C0.373255 23.4831 -7.79331e-05 21.6911 -7.79331e-05 19.7124C-7.79331e-05 16.3524 0.690589 13.3097 2.07192 10.5844C3.49059 7.82175 5.45059 5.54442 7.95192 3.75242C10.4906 1.92309 13.4399 0.672418 16.7999 0.000417709V4.81642ZM36.9599 4.81642C34.4586 5.45109 32.2933 6.45909 30.4639 7.84042C28.6719 9.18442 27.2906 10.8644 26.3199 12.8804C25.3493 14.8964 24.8639 17.1738 24.8639 19.7124H23.6319C23.6319 18.1444 24.1173 16.8938 25.0879 15.9604C26.0959 14.9898 27.4399 14.5044 29.1199 14.5044C30.5386 14.5044 31.8453 14.8591 33.0399 15.5684C34.2346 16.2778 35.1866 17.2298 35.8959 18.4244C36.6053 19.6191 36.9599 20.9258 36.9599 22.3444C36.9599 23.7631 36.6053 25.0698 35.8959 26.2644C35.1866 27.4591 34.2346 28.4111 33.0399 29.1204C31.8453 29.8298 30.5386 30.1844 29.1199 30.1844C27.4026 30.1844 25.8533 29.7364 24.4719 28.8404C23.1279 27.9444 22.0639 26.6938 21.2799 25.0884C20.5333 23.4831 20.1599 21.6911 20.1599 19.7124C20.1599 16.3524 20.8506 13.3097 22.2319 10.5844C23.6506 7.82175 25.6106 5.54442 28.1119 3.75242C30.6506 1.92309 33.5999 0.672418 36.9599 0.000417709V4.81642Z\" fill=\"currentColor\"></path></svg></div><blockquote class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-content\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-text body-2 serif\">\u201cAI is transforming the way we build, deliver and innovate for customers. Our engineers use AI tools every day, and our teams have produced up to 3x more code changes in the past year. The Frontier Deployed Engineer Residency takes them deeper, with hands-on experience building, securing and shipping alongside peers at the frontier. We are building tomorrow\u2019s bank today, and this program gives our teams the tools and expertise to engineer the best possible products for our customers.\u201d</div><footer class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-footer\"><cite class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-info body-3\"><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-name\">Rodrigo Castillo</span><br /><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-title\">Group Chief Technology Officer</span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__separator\">, </span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__company-name\">Commonwealth Bank of Australia</span></cite></footer></blockquote></div><div class=\"Carousel-module-scss-module__hqckjG__carousel-item bg-ivory-medium\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-mark-container\"><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"16\" viewBox=\"0 0 37 31\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.7999 4.81642C14.2986 5.45109 12.1333 6.45909 10.3039 7.84042C8.51192 9.18442 7.13059 10.8644 6.15992 12.8804C5.18926 14.8964 4.70392 17.1738 4.70392 19.7124H3.47192C3.47192 18.1444 3.95726 16.8938 4.92792 15.9604C5.93592 14.9898 7.27992 14.5044 8.95992 14.5044C10.3786 14.5044 11.6853 14.8591 12.8799 15.5684C14.0746 16.2778 15.0266 17.2298 15.7359 18.4244C16.4453 19.6191 16.7999 20.9258 16.7999 22.3444C16.7999 23.7631 16.4453 25.0698 15.7359 26.2644C15.0266 27.4591 14.0746 28.4111 12.8799 29.1204C11.6853 29.8298 10.3786 30.1844 8.95992 30.1844C7.24259 30.1844 5.69326 29.7364 4.31192 28.8404C2.96792 27.9444 1.90392 26.6938 1.11992 25.0884C0.373255 23.4831 -7.79331e-05 21.6911 -7.79331e-05 19.7124C-7.79331e-05 16.3524 0.690589 13.3097 2.07192 10.5844C3.49059 7.82175 5.45059 5.54442 7.95192 3.75242C10.4906 1.92309 13.4399 0.672418 16.7999 0.000417709V4.81642ZM36.9599 4.81642C34.4586 5.45109 32.2933 6.45909 30.4639 7.84042C28.6719 9.18442 27.2906 10.8644 26.3199 12.8804C25.3493 14.8964 24.8639 17.1738 24.8639 19.7124H23.6319C23.6319 18.1444 24.1173 16.8938 25.0879 15.9604C26.0959 14.9898 27.4399 14.5044 29.1199 14.5044C30.5386 14.5044 31.8453 14.8591 33.0399 15.5684C34.2346 16.2778 35.1866 17.2298 35.8959 18.4244C36.6053 19.6191 36.9599 20.9258 36.9599 22.3444C36.9599 23.7631 36.6053 25.0698 35.8959 26.2644C35.1866 27.4591 34.2346 28.4111 33.0399 29.1204C31.8453 29.8298 30.5386 30.1844 29.1199 30.1844C27.4026 30.1844 25.8533 29.7364 24.4719 28.8404C23.1279 27.9444 22.0639 26.6938 21.2799 25.0884C20.5333 23.4831 20.1599 21.6911 20.1599 19.7124C20.1599 16.3524 20.8506 13.3097 22.2319 10.5844C23.6506 7.82175 25.6106 5.54442 28.1119 3.75242C30.6506 1.92309 33.5999 0.672418 36.9599 0.000417709V4.81642Z\" fill=\"currentColor\"></path></svg></div><blockquote class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-content\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-text body-2 serif\">\u201cAI deployment at enterprise scale requires skilled people who can drive a project from first requirements through security review to real adoption. The Claude Frontier Academy\u2019s FDE Residency enables us to scale a discipline we\u2019ve already tested in the field, which is why we are excited to be part of the inaugural cohort, bringing our engineers in early to extend our bench of Claude-ready talent.\u201d</div><footer class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-footer\"><cite class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-info body-3\"><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-name\">Faruk Muratovic</span><br /><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-title\">Principal</span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__separator\">, </span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__company-name\">Deloitte Consulting LLP</span></cite></footer></blockquote></div><div class=\"Carousel-module-scss-module__hqckjG__carousel-item bg-ivory-medium\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-mark-container\"><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"16\" viewBox=\"0 0 37 31\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.7999 4.81642C14.2986 5.45109 12.1333 6.45909 10.3039 7.84042C8.51192 9.18442 7.13059 10.8644 6.15992 12.8804C5.18926 14.8964 4.70392 17.1738 4.70392 19.7124H3.47192C3.47192 18.1444 3.95726 16.8938 4.92792 15.9604C5.93592 14.9898 7.27992 14.5044 8.95992 14.5044C10.3786 14.5044 11.6853 14.8591 12.8799 15.5684C14.0746 16.2778 15.0266 17.2298 15.7359 18.4244C16.4453 19.6191 16.7999 20.9258 16.7999 22.3444C16.7999 23.7631 16.4453 25.0698 15.7359 26.2644C15.0266 27.4591 14.0746 28.4111 12.8799 29.1204C11.6853 29.8298 10.3786 30.1844 8.95992 30.1844C7.24259 30.1844 5.69326 29.7364 4.31192 28.8404C2.96792 27.9444 1.90392 26.6938 1.11992 25.0884C0.373255 23.4831 -7.79331e-05 21.6911 -7.79331e-05 19.7124C-7.79331e-05 16.3524 0.690589 13.3097 2.07192 10.5844C3.49059 7.82175 5.45059 5.54442 7.95192 3.75242C10.4906 1.92309 13.4399 0.672418 16.7999 0.000417709V4.81642ZM36.9599 4.81642C34.4586 5.45109 32.2933 6.45909 30.4639 7.84042C28.6719 9.18442 27.2906 10.8644 26.3199 12.8804C25.3493 14.8964 24.8639 17.1738 24.8639 19.7124H23.6319C23.6319 18.1444 24.1173 16.8938 25.0879 15.9604C26.0959 14.9898 27.4399 14.5044 29.1199 14.5044C30.5386 14.5044 31.8453 14.8591 33.0399 15.5684C34.2346 16.2778 35.1866 17.2298 35.8959 18.4244C36.6053 19.6191 36.9599 20.9258 36.9599 22.3444C36.9599 23.7631 36.6053 25.0698 35.8959 26.2644C35.1866 27.4591 34.2346 28.4111 33.0399 29.1204C31.8453 29.8298 30.5386 30.1844 29.1199 30.1844C27.4026 30.1844 25.8533 29.7364 24.4719 28.8404C23.1279 27.9444 22.0639 26.6938 21.2799 25.0884C20.5333 23.4831 20.1599 21.6911 20.1599 19.7124C20.1599 16.3524 20.8506 13.3097 22.2319 10.5844C23.6506 7.82175 25.6106 5.54442 28.1119 3.75242C30.6506 1.92309 33.5999 0.672418 36.9599 0.000417709V4.81642Z\" fill=\"currentColor\"></path></svg></div><blockquote class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-content\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-text body-2 serif\">\u201cThis collaboration between McKinsey and Anthropic is about leveraging frontier AI to create superior business outcomes for clients. Our technologists bring frontier AI expertise, sector depth and a value-creation mindset to our client work. The Residency sets the bar for how they apply Claude in service of our clients\u2019 business goals, giving our world-class talent experience learning frontier techniques alongside Anthropic\u2019s engineers. The Claude Frontier Academy and FDE Residency extend our technologists\u2019 toolkit, helping them solve our clients\u2019 toughest problems hands-on-keys.\u201d</div><footer class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-footer\"><cite class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-info body-3\"><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-name\">Dan Tinkoff</span><br /><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-title\">Senior Partner and Global Co-leader of QuantumBlack</span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__separator\">, </span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__company-name\">McKinsey</span></cite></footer></blockquote></div><div class=\"Carousel-module-scss-module__hqckjG__carousel-item bg-ivory-medium\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-mark-container\"><svg class=\"Icon-module-scss-module__lqbdHG__icon\" height=\"16\" viewBox=\"0 0 37 31\" width=\"16\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.7999 4.81642C14.2986 5.45109 12.1333 6.45909 10.3039 7.84042C8.51192 9.18442 7.13059 10.8644 6.15992 12.8804C5.18926 14.8964 4.70392 17.1738 4.70392 19.7124H3.47192C3.47192 18.1444 3.95726 16.8938 4.92792 15.9604C5.93592 14.9898 7.27992 14.5044 8.95992 14.5044C10.3786 14.5044 11.6853 14.8591 12.8799 15.5684C14.0746 16.2778 15.0266 17.2298 15.7359 18.4244C16.4453 19.6191 16.7999 20.9258 16.7999 22.3444C16.7999 23.7631 16.4453 25.0698 15.7359 26.2644C15.0266 27.4591 14.0746 28.4111 12.8799 29.1204C11.6853 29.8298 10.3786 30.1844 8.95992 30.1844C7.24259 30.1844 5.69326 29.7364 4.31192 28.8404C2.96792 27.9444 1.90392 26.6938 1.11992 25.0884C0.373255 23.4831 -7.79331e-05 21.6911 -7.79331e-05 19.7124C-7.79331e-05 16.3524 0.690589 13.3097 2.07192 10.5844C3.49059 7.82175 5.45059 5.54442 7.95192 3.75242C10.4906 1.92309 13.4399 0.672418 16.7999 0.000417709V4.81642ZM36.9599 4.81642C34.4586 5.45109 32.2933 6.45909 30.4639 7.84042C28.6719 9.18442 27.2906 10.8644 26.3199 12.8804C25.3493 14.8964 24.8639 17.1738 24.8639 19.7124H23.6319C23.6319 18.1444 24.1173 16.8938 25.0879 15.9604C26.0959 14.9898 27.4399 14.5044 29.1199 14.5044C30.5386 14.5044 31.8453 14.8591 33.0399 15.5684C34.2346 16.2778 35.1866 17.2298 35.8959 18.4244C36.6053 19.6191 36.9599 20.9258 36.9599 22.3444C36.9599 23.7631 36.6053 25.0698 35.8959 26.2644C35.1866 27.4591 34.2346 28.4111 33.0399 29.1204C31.8453 29.8298 30.5386 30.1844 29.1199 30.1844C27.4026 30.1844 25.8533 29.7364 24.4719 28.8404C23.1279 27.9444 22.0639 26.6938 21.2799 25.0884C20.5333 23.4831 20.1599 21.6911 20.1599 19.7124C20.1599 16.3524 20.8506 13.3097 22.2319 10.5844C23.6506 7.82175 25.6106 5.54442 28.1119 3.75242C30.6506 1.92309 33.5999 0.672418 36.9599 0.000417709V4.81642Z\" fill=\"currentColor\"></path></svg></div><blockquote class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-content\"><div class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-text body-2 serif\">\u201cAI is already changing how we discover and develop medicines at Novo. With Claude Science in our R&amp;D workflows, Anthropic\u2019s frontier models in our software development, lab in the loop research in drug discovery, and Anthropic engineers working alongside our scientists, we have seen what is possible when frontier AI meets deep scientific expertise. We\u2019re excited to join the Claude Frontier Academy and the FDE Residency, giving our engineers the same hands on training and expertise behind Anthropic\u2019s most successful deployments, so together we can bring the next generation of medicines to patients faster.\u201d</div><footer class=\"QuoteCarousel-module-scss-module__XVJWRG__quote-footer\"><cite class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-info body-3\"><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-name\">Loic Giraud</span><br /><span class=\"QuoteCarousel-module-scss-module__XVJWRG__speaker-title\">VP Data &amp; AI</span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__separator\">, </span><span class=\"QuoteCarousel-module-scss-module__XVJWRG__company-name\">Novo Nordisk</span></cite></footer></blockquote></div></div></div></div></div><h2 class=\"Body-module-scss-module__z40yvW__reading-column headline-4 post-heading\" id=\"the-claude-partner-network\">The Claude Partner Network</h2><p class=\"Body-module-scss-module__z40yvW__reading-column body-2 serif post-text\">Claude Frontier Academy builds on the <a href=\"https://claude.com/blog/four-role-based-claude-certifications\">Claude Partner Network</a>, where professionals across 46,000 firms have earned more than 175,000 Claude certifications and nearly 4,000 people have completed Basecamp, an immersive program that teaches the same curriculum our Applied AI teams receive when they onboard. Claude Frontier Academy is for the people who will lead the work, and training 10,000 Frontier Deployed Engineers is the first step of many.</p></div></div></article></div><div class=\"page-wrapper PostDetail-module-scss-module__UQuRMa__postFooter\"></div></article>",
-      "content": "",
-      "source_name": "Anthropic News",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-01T16:00:00Z",
-      "fetched_at": "2026-10-02T19:20:20.939466Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "637d3dfa247fa816",
-      "url": "https://openai.com/index/albertsons-reimagining-retail",
-      "title": "How Albertsons Companies is reimagining retail from the inside out",
-      "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-01T16:00:00Z",
-      "fetched_at": "2026-10-01T17:02:15.953473Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f928531f96372519",
-      "url": "https://huggingface.co/blog/allenai/olmocore3",
-      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-01T15:01:43Z",
-      "fetched_at": "2026-10-01T17:02:20.984585Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e0813ab1907a2639",
       "url": "https://arxiv.org/abs/2610.08132v1",
       "title": "Beyond Marginal Monitoring: Distributed Joint-Distribution Testing for Data Concept Drift in Large Scale E-Commerce Operations",
@@ -41151,26 +41000,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "e3f2ebbbf19f0bbe",
-      "url": "https://www.youtube.com/watch?v=pY5_Ux_YJjo",
-      "title": "I Tested Codex's $500/mo Ultrafast. What You Need to Know.",
-      "summary": "FREE First Client SOP: https://app.aiautomationsociety.ai/optin/first-client-SOP/?utm_source=youtube&amp;utm_medium=organic&amp;utm_content=ultrafast-gpt-6-astra&amp;sl=yt_ultrafast-gpt-6-astra\nHow I built an AI agency from 0 to over $1 million per year: https://www.skool.com/ai-automation-society-plus/about?el=ultrafast-gpt-6-astra&amp;hcategory=youtube-videos&amp;utm_campaign=plus-group\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=ultrafast-gpt-6-astra&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI tested Codex Ultrafast against Standard with GPT-6 Astra on two tasks: editing a reel from my Google trip and creating a YouTube resource guide. We compare how long each took, the quality of the outputs, and how much weekly usage they burned through so you can decide when the extra speed is worth it.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Codex Ultrafast Explained\n1:09 Google Reel Test\n2:10 Watching Both Video Edits\n4:10 Quality, Speed, and Usage\n5:12 Resource Guide Test\n6:35 Comparing the Resource Guides\n8:12 When I'd Use Ultrafast",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-01T17:33:07Z",
-      "fetched_at": "2026-10-01T22:42:08.238472Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cf7a6cec7736d18f",
       "url": "https://arxiv.org/abs/2510.12546",
       "title": "The EmpathiSEr: Development and Validation of Software Engineering Oriented Empathy Scales",
@@ -51961,26 +51790,6 @@
       "author": "Kang Liu, Bohao Qu",
       "published_at": "2026-10-05T04:00:00Z",
       "fetched_at": "2026-10-05T05:42:12.031032Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e8e518e80f69f269",
-      "url": "https://www.youtube.com/shorts/Mo3BUY15aDU",
-      "title": "Turning down Google in 2001",
-      "summary": "with Peter Mattis, CTO and cofounder at Cockroach Labs\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-10-01T16:00:16Z",
-      "fetched_at": "2026-10-01T17:02:14.227553Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63389,271 +63198,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "dafab78a47ae1776",
-      "url": "https://x.com/steipete/status/2105739667174019491",
-      "title": "\"the Waymo effect is what happens when a technology removes the friction of dealing with another hum...",
-      "summary": "\"the Waymo effect is what happens when a technology removes the friction of dealing with another human being\" https://t.co/dOVghMfF1L",
-      "content": "\"the Waymo effect is what happens when a technology removes the friction of dealing with another human being\" https://t.co/dOVghMfF1L",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-01T19:20:34Z",
-      "fetched_at": "2026-10-01T21:02:25.741615Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "db1a1b7331608307",
-      "url": "https://x.com/sama/status/2105739098640298253",
-      "title": "You should be able to use your AI subscription wherever you need:",
-      "summary": "You should be able to use your AI subscription wherever you need:",
-      "content": "You should be able to use your AI subscription wherever you need:",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-10-01T19:18:18Z",
-      "fetched_at": "2026-10-01T21:02:20.207793Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "409cafb4edde303b",
-      "url": "https://x.com/trq212/status/2105734202209755614",
-      "title": "Claude can make mods for you! \n\njust prompt it, read more in @addyosmani's blog post here: https://t...",
-      "summary": "Claude can make mods for you! \n\njust prompt it, read more in @addyosmani's blog post here: https://t.co/nLxZnw6tyq",
-      "content": "Claude can make mods for you! \n\njust prompt it, read more in @addyosmani's blog post here: https://t.co/nLxZnw6tyq",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-10-01T18:58:51Z",
-      "fetched_at": "2026-10-01T21:02:13.729084Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "10019257e7ccb931",
-      "url": "https://x.com/trq212/status/2105734197801562264",
-      "title": "all software is becoming malleable, so it was important for us to support this as a first class citi...",
-      "summary": "all software is becoming malleable, so it was important for us to support this as a first class citizen in Claude Code, I hope more and more software becomes extensible like this! \n\nhere are some of what I'm most excited about with mods:",
-      "content": "all software is becoming malleable, so it was important for us to support this as a first class citizen in Claude Code, I hope more and more software becomes extensible like this! \n\nhere are some of what I'm most excited about with mods:",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-10-01T18:58:50Z",
-      "fetched_at": "2026-10-01T21:02:13.729174Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a4bf3471230ffd54",
-      "url": "https://x.com/trq212/status/2105734199286345742",
-      "title": "a mod I've been using a lot is 'next-steps'\n\nit gives you suggestions on what to do next, including ...",
-      "summary": "a mod I've been using a lot is 'next-steps'\n\nit gives you suggestions on what to do next, including selecting skills and other commands\n\ninstall it with:\n\nclaude plugin marketplace add anthropics/claude-plugins-community  \n\nclaude plugin install next-steps@claude-community https://t.co/XlTyHyL9CK",
-      "content": "a mod I've been using a lot is 'next-steps'\n\nit gives you suggestions on what to do next, including selecting skills and other commands\n\ninstall it with:\n\nclaude plugin marketplace add anthropics/claude-plugins-community  \n\nclaude plugin install next-steps@claude-community https://t.co/XlTyHyL9CK",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-10-01T18:58:50Z",
-      "fetched_at": "2026-10-01T21:02:13.729145Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d1a11794845471cc",
-      "url": "https://x.com/trq212/status/2105734200724983996",
-      "title": "a things about mods is that you can spin off forked agents to do additional work\n\ne.g. make your own...",
-      "summary": "a things about mods is that you can spin off forked agents to do additional work\n\ne.g. make your own memory harness but spinning off a  custom classifier every turn and then writing memories if it matches\n\nI'm still working on making plan mode into a mod, more to come!",
-      "content": "a things about mods is that you can spin off forked agents to do additional work\n\ne.g. make your own memory harness but spinning off a  custom classifier every turn and then writing memories if it matches\n\nI'm still working on making plan mode into a mod, more to come!",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-10-01T18:58:50Z",
-      "fetched_at": "2026-10-01T21:02:13.729115Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f48499e529fdce2d",
-      "url": "https://x.com/AnthropicAI/status/2105733864152858919",
-      "title": "In physics, an \u201cimpedance mismatch\u201d occurs when two systems each work well but are poorly matched.\n\n...",
-      "summary": "In physics, an \u201cimpedance mismatch\u201d occurs when two systems each work well but are poorly matched.\n\nIn this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar is happening with AI and science. LLMs are capable at many things, but working",
-      "content": "In physics, an \u201cimpedance mismatch\u201d occurs when two systems each work well but are poorly matched.\n\nIn this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar is happening with AI and science. LLMs are capable at many things, but working",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-10-01T18:57:30Z",
-      "fetched_at": "2026-10-01T21:02:24.615469Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5cafd85b74413157",
-      "url": "https://x.com/steipete/status/2105728299255415134",
-      "title": "i have so many questions",
-      "summary": "i have so many questions",
-      "content": "i have so many questions",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-01T18:35:23Z",
-      "fetched_at": "2026-10-01T21:02:25.741642Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d1bed620c28785d0",
-      "url": "https://x.com/steipete/status/2105721000587620448",
-      "title": "RT @LLMJunky: It wasn't widely advertised at DevDay but apparently it was possible to bring home you...",
-      "summary": "RT @LLMJunky: It wasn't widely advertised at DevDay but apparently it was possible to bring home your own OpenAI researcher.\n\nProvided you\u2026",
-      "content": "RT @LLMJunky: It wasn't widely advertised at DevDay but apparently it was possible to bring home your own OpenAI researcher.\n\nProvided you\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-01T18:06:23Z",
-      "fetched_at": "2026-10-01T21:02:25.741673Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0ff6d36efa0e124b",
-      "url": "https://x.com/steipete/status/2105720334821261330",
-      "title": "I'm speedrunning my filesystem learnings. Turns out, brtfs cow-feature is GREAT for worktrees and te...",
-      "summary": "I'm speedrunning my filesystem learnings. Turns out, brtfs cow-feature is GREAT for worktrees and terrible for sqlite. Next OC update knows that and - if you did sth silly like me - will migrate your database to a NOCOW spot.",
-      "content": "I'm speedrunning my filesystem learnings. Turns out, brtfs cow-feature is GREAT for worktrees and terrible for sqlite. Next OC update knows that and - if you did sth silly like me - will migrate your database to a NOCOW spot.",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-01T18:03:44Z",
-      "fetched_at": "2026-10-01T21:02:25.741698Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8c4dffef348b12e6",
-      "url": "https://x.com/steipete/status/2105712707592679619",
-      "title": "All my oss releases stopped because Apple put up a new dev agreement. And since it's lockstep it blo...",
-      "summary": "All my oss releases stopped because Apple put up a new dev agreement. And since it's lockstep it blocked Linux/Windows releases as well. \ud83d\ude43",
-      "content": "All my oss releases stopped because Apple put up a new dev agreement. And since it's lockstep it blocked Linux/Windows releases as well. \ud83d\ude43",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-01T17:33:26Z",
-      "fetched_at": "2026-10-01T21:02:25.741721Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bcaea4cc171785e7",
-      "url": "https://x.com/OpenAI/status/2105712311063453937",
-      "title": "RT @OpenAIDevs: dots demo. \n\nNow... with better WiFi. https://t.co/ucMH7SI1vj",
-      "summary": "RT @OpenAIDevs: dots demo. \n\nNow... with better WiFi. https://t.co/ucMH7SI1vj",
-      "content": "RT @OpenAIDevs: dots demo. \n\nNow... with better WiFi. https://t.co/ucMH7SI1vj",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-10-01T17:31:51Z",
-      "fetched_at": "2026-10-01T21:02:22.448962Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7e12c96d154cebc4",
-      "url": "https://x.com/sama/status/2105688354834756036",
-      "title": "Also, 6.1 Sol was our fastest-growing model ever, and was a bit slow under load. Should be much bett...",
-      "summary": "Also, 6.1 Sol was our fastest-growing model ever, and was a bit slow under load. Should be much better now!",
-      "content": "Also, 6.1 Sol was our fastest-growing model ever, and was a bit slow under load. Should be much better now!",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-10-01T15:56:40Z",
-      "fetched_at": "2026-10-01T21:02:20.207838Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "8c977be49494e132",
       "url": "https://x.com/karpathy/status/2105909609487872075",
       "title": "Cool eval. Simply ask an LLM \u201cLand or Water?\u201d and give it a latitude and longitude coordinate as tex...",
@@ -66291,6 +65835,453 @@
       "author": "steipete",
       "published_at": "2026-10-08T05:14:27Z",
       "fetched_at": "2026-10-08T08:49:01.921471Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "50db86645a9ac4f1",
+      "url": "https://x.com/dani_avila7/status/2108276005886705818",
+      "title": "Jev Skill Typeahead for Claude Code\n\nAs you type your prompt, Jev analyzes it and predicts which of ...",
+      "summary": "Jev Skill Typeahead for Claude Code\n\nAs you type your prompt, Jev analyzes it and predicts which of your installed skills Claude is most likely to invoke\n\nIt shows each skill's estimated probability before you even send the request\n\nSuper useful for understanding and optimizing https://t.co/bdRxMwasmz",
+      "content": "Jev Skill Typeahead for Claude Code\n\nAs you type your prompt, Jev analyzes it and predicts which of your installed skills Claude is most likely to invoke\n\nIt shows each skill's estimated probability before you even send the request\n\nSuper useful for understanding and optimizing https://t.co/bdRxMwasmz",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-08T19:19:04Z",
+      "fetched_at": "2026-10-08T19:39:18.370347Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4b2bb83dbfc6a2d7",
+      "url": "https://x.com/OpenAI/status/2108269021430710412",
+      "title": "RT @OpenAIDevs: Ultrafast is rolling out today for GPT-6.1 Sol in the API, Codex, and ChatGPT Work.\n...",
+      "summary": "RT @OpenAIDevs: Ultrafast is rolling out today for GPT-6.1 Sol in the API, Codex, and ChatGPT Work.\n\nNear-Astra intelligence at up to 8x fa\u2026",
+      "content": "RT @OpenAIDevs: Ultrafast is rolling out today for GPT-6.1 Sol in the API, Codex, and ChatGPT Work.\n\nNear-Astra intelligence at up to 8x fa\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-08T18:51:19Z",
+      "fetched_at": "2026-10-08T19:39:22.380631Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7337cb357666c7d1",
+      "url": "https://x.com/steipete/status/2108268447763460286",
+      "title": "RT @mweinbach: It\u2019ll be super easy to setup openclaw on windows now https://t.co/ocIvPEJPxR",
+      "summary": "RT @mweinbach: It\u2019ll be super easy to setup openclaw on windows now https://t.co/ocIvPEJPxR",
+      "content": "RT @mweinbach: It\u2019ll be super easy to setup openclaw on windows now https://t.co/ocIvPEJPxR",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T18:49:02Z",
+      "fetched_at": "2026-10-08T19:39:25.582535Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4aa33d9100ecbc01",
+      "url": "https://x.com/steipete/status/2108257123708907803",
+      "title": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZl...",
+      "summary": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZlKAb3h",
+      "content": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZlKAb3h",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T18:04:02Z",
+      "fetched_at": "2026-10-08T19:39:25.582605Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6fbba78abe2c987c",
+      "url": "https://x.com/GeminiApp/status/2108256022641160235",
+      "title": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing ...",
+      "summary": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing customers, comes with higher quality im\u2026",
+      "content": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing customers, comes with higher quality im\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-08T17:59:39Z",
+      "fetched_at": "2026-10-08T19:39:21.387189Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b33db4bf0d9fd475",
+      "url": "https://x.com/steipete/status/2108231380614463676",
+      "title": "RT @bentossell: wen personal agent router?",
+      "summary": "RT @bentossell: wen personal agent router?",
+      "content": "RT @bentossell: wen personal agent router?",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T16:21:44Z",
+      "fetched_at": "2026-10-08T19:39:25.582647Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e3cfb6babfd16879",
+      "url": "https://x.com/AnthropicAI/status/2108226292235809081",
+      "title": "We're deepening our commitment to scientific research and technological discovery by committing $150...",
+      "summary": "We're deepening our commitment to scientific research and technological discovery by committing $150 million to the Genesis Mission.\n\nWe'll also make Claude and our technical support available to more than 15 federal agencies.\n\nhttps://t.co/MUmQBiC6MF",
+      "content": "We're deepening our commitment to scientific research and technological discovery by committing $150 million to the Genesis Mission.\n\nWe'll also make Claude and our technical support available to more than 15 federal agencies.\n\nhttps://t.co/MUmQBiC6MF",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-08T16:01:31Z",
+      "fetched_at": "2026-10-08T19:39:24.427668Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "96a1b689443b15e5",
+      "url": "https://x.com/steipete/status/2108220353436918054",
+      "title": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 w...",
+      "summary": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
+      "content": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T15:37:55Z",
+      "fetched_at": "2026-10-08T19:39:25.582695Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4edb068faed2ca75",
+      "url": "https://x.com/dani_avila7/status/2108196101933158845",
+      "title": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers c...",
+      "summary": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
+      "content": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-08T14:01:33Z",
+      "fetched_at": "2026-10-08T19:39:18.370430Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dafab78a47ae1776",
+      "url": "https://x.com/steipete/status/2105739667174019491",
+      "title": "\"the Waymo effect is what happens when a technology removes the friction of dealing with another hum...",
+      "summary": "\"the Waymo effect is what happens when a technology removes the friction of dealing with another human being\" https://t.co/dOVghMfF1L",
+      "content": "\"the Waymo effect is what happens when a technology removes the friction of dealing with another human being\" https://t.co/dOVghMfF1L",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T19:20:34Z",
+      "fetched_at": "2026-10-01T21:02:25.741615Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "db1a1b7331608307",
+      "url": "https://x.com/sama/status/2105739098640298253",
+      "title": "You should be able to use your AI subscription wherever you need:",
+      "summary": "You should be able to use your AI subscription wherever you need:",
+      "content": "You should be able to use your AI subscription wherever you need:",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-01T19:18:18Z",
+      "fetched_at": "2026-10-01T21:02:20.207793Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "409cafb4edde303b",
+      "url": "https://x.com/trq212/status/2105734202209755614",
+      "title": "Claude can make mods for you! \n\njust prompt it, read more in @addyosmani's blog post here: https://t...",
+      "summary": "Claude can make mods for you! \n\njust prompt it, read more in @addyosmani's blog post here: https://t.co/nLxZnw6tyq",
+      "content": "Claude can make mods for you! \n\njust prompt it, read more in @addyosmani's blog post here: https://t.co/nLxZnw6tyq",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-01T18:58:51Z",
+      "fetched_at": "2026-10-01T21:02:13.729084Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "10019257e7ccb931",
+      "url": "https://x.com/trq212/status/2105734197801562264",
+      "title": "all software is becoming malleable, so it was important for us to support this as a first class citi...",
+      "summary": "all software is becoming malleable, so it was important for us to support this as a first class citizen in Claude Code, I hope more and more software becomes extensible like this! \n\nhere are some of what I'm most excited about with mods:",
+      "content": "all software is becoming malleable, so it was important for us to support this as a first class citizen in Claude Code, I hope more and more software becomes extensible like this! \n\nhere are some of what I'm most excited about with mods:",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-01T18:58:50Z",
+      "fetched_at": "2026-10-01T21:02:13.729174Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a4bf3471230ffd54",
+      "url": "https://x.com/trq212/status/2105734199286345742",
+      "title": "a mod I've been using a lot is 'next-steps'\n\nit gives you suggestions on what to do next, including ...",
+      "summary": "a mod I've been using a lot is 'next-steps'\n\nit gives you suggestions on what to do next, including selecting skills and other commands\n\ninstall it with:\n\nclaude plugin marketplace add anthropics/claude-plugins-community  \n\nclaude plugin install next-steps@claude-community https://t.co/XlTyHyL9CK",
+      "content": "a mod I've been using a lot is 'next-steps'\n\nit gives you suggestions on what to do next, including selecting skills and other commands\n\ninstall it with:\n\nclaude plugin marketplace add anthropics/claude-plugins-community  \n\nclaude plugin install next-steps@claude-community https://t.co/XlTyHyL9CK",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-01T18:58:50Z",
+      "fetched_at": "2026-10-01T21:02:13.729145Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d1a11794845471cc",
+      "url": "https://x.com/trq212/status/2105734200724983996",
+      "title": "a things about mods is that you can spin off forked agents to do additional work\n\ne.g. make your own...",
+      "summary": "a things about mods is that you can spin off forked agents to do additional work\n\ne.g. make your own memory harness but spinning off a  custom classifier every turn and then writing memories if it matches\n\nI'm still working on making plan mode into a mod, more to come!",
+      "content": "a things about mods is that you can spin off forked agents to do additional work\n\ne.g. make your own memory harness but spinning off a  custom classifier every turn and then writing memories if it matches\n\nI'm still working on making plan mode into a mod, more to come!",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-01T18:58:50Z",
+      "fetched_at": "2026-10-01T21:02:13.729115Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f48499e529fdce2d",
+      "url": "https://x.com/AnthropicAI/status/2105733864152858919",
+      "title": "In physics, an \u201cimpedance mismatch\u201d occurs when two systems each work well but are poorly matched.\n\n...",
+      "summary": "In physics, an \u201cimpedance mismatch\u201d occurs when two systems each work well but are poorly matched.\n\nIn this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar is happening with AI and science. LLMs are capable at many things, but working",
+      "content": "In physics, an \u201cimpedance mismatch\u201d occurs when two systems each work well but are poorly matched.\n\nIn this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar is happening with AI and science. LLMs are capable at many things, but working",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-01T18:57:30Z",
+      "fetched_at": "2026-10-01T21:02:24.615469Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5cafd85b74413157",
+      "url": "https://x.com/steipete/status/2105728299255415134",
+      "title": "i have so many questions",
+      "summary": "i have so many questions",
+      "content": "i have so many questions",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T18:35:23Z",
+      "fetched_at": "2026-10-01T21:02:25.741642Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d1bed620c28785d0",
+      "url": "https://x.com/steipete/status/2105721000587620448",
+      "title": "RT @LLMJunky: It wasn't widely advertised at DevDay but apparently it was possible to bring home you...",
+      "summary": "RT @LLMJunky: It wasn't widely advertised at DevDay but apparently it was possible to bring home your own OpenAI researcher.\n\nProvided you\u2026",
+      "content": "RT @LLMJunky: It wasn't widely advertised at DevDay but apparently it was possible to bring home your own OpenAI researcher.\n\nProvided you\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T18:06:23Z",
+      "fetched_at": "2026-10-01T21:02:25.741673Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0ff6d36efa0e124b",
+      "url": "https://x.com/steipete/status/2105720334821261330",
+      "title": "I'm speedrunning my filesystem learnings. Turns out, brtfs cow-feature is GREAT for worktrees and te...",
+      "summary": "I'm speedrunning my filesystem learnings. Turns out, brtfs cow-feature is GREAT for worktrees and terrible for sqlite. Next OC update knows that and - if you did sth silly like me - will migrate your database to a NOCOW spot.",
+      "content": "I'm speedrunning my filesystem learnings. Turns out, brtfs cow-feature is GREAT for worktrees and terrible for sqlite. Next OC update knows that and - if you did sth silly like me - will migrate your database to a NOCOW spot.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T18:03:44Z",
+      "fetched_at": "2026-10-01T21:02:25.741698Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8c4dffef348b12e6",
+      "url": "https://x.com/steipete/status/2105712707592679619",
+      "title": "All my oss releases stopped because Apple put up a new dev agreement. And since it's lockstep it blo...",
+      "summary": "All my oss releases stopped because Apple put up a new dev agreement. And since it's lockstep it blocked Linux/Windows releases as well. \ud83d\ude43",
+      "content": "All my oss releases stopped because Apple put up a new dev agreement. And since it's lockstep it blocked Linux/Windows releases as well. \ud83d\ude43",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-01T17:33:26Z",
+      "fetched_at": "2026-10-01T21:02:25.741721Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bcaea4cc171785e7",
+      "url": "https://x.com/OpenAI/status/2105712311063453937",
+      "title": "RT @OpenAIDevs: dots demo. \n\nNow... with better WiFi. https://t.co/ucMH7SI1vj",
+      "summary": "RT @OpenAIDevs: dots demo. \n\nNow... with better WiFi. https://t.co/ucMH7SI1vj",
+      "content": "RT @OpenAIDevs: dots demo. \n\nNow... with better WiFi. https://t.co/ucMH7SI1vj",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-01T17:31:51Z",
+      "fetched_at": "2026-10-01T21:02:22.448962Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7e12c96d154cebc4",
+      "url": "https://x.com/sama/status/2105688354834756036",
+      "title": "Also, 6.1 Sol was our fastest-growing model ever, and was a bit slow under load. Should be much bett...",
+      "summary": "Also, 6.1 Sol was our fastest-growing model ever, and was a bit slow under load. Should be much better now!",
+      "content": "Also, 6.1 Sol was our fastest-growing model ever, and was a bit slow under load. Should be much better now!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-01T15:56:40Z",
+      "fetched_at": "2026-10-01T21:02:20.207838Z",
       "score": null,
       "score_reason": "",
       "tier": "",
