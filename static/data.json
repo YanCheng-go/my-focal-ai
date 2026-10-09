@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-09T17:06:45.830781+00:00",
+  "exported_at": "2026-10-09T19:24:39.613434+00:00",
   "period_hours": 168,
-  "total": 3048,
+  "total": 3045,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -52601,45 +52601,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2e5a014f09832d32",
-      "url": "https://www.youtube.com/watch?v=l8ywUsEJ2XQ",
-      "title": "How to Actually Build & Sell Software with AI as a Non-Techie",
-      "summary": "FREE 14 day CodeRabbit trial: https://coderabbit.link/ad-nate-herk-001\nFREE First Client SOP: https://app.aiautomationsociety.ai/optin/first-client-SOP/?utm_source=youtube&amp;utm_medium=organic&amp;utm_content=dave-podcast-oct-2&amp;sl=yt_dave-podcast-oct-2\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI sat down with Dave Ebbelaar to talk about building software with AI, even if you have no coding experience. \n\nWe cover his workflow with Claude Code and Codex, how to test whether your app actually works, and what changes when you start building for other people. Dave also shares the architecture mistakes he\u2019s made and the security basics to understand before you scale.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Intro\n1:28 A solid 10X\n8:19 Sponsor: CodeRabbit\n12:42 The four-rung ladder\n21:05 Building with agents\n27:04 First Client SOP\n42:44 Shipping it safely",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-02T18:43:22Z",
-      "fetched_at": "2026-10-02T19:20:10.057900Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4f1294e1f56e2c7f",
-      "url": "https://www.youtube.com/shorts/iMv9sCg7vxo",
-      "title": "Does Safety Beat Hype with AI Models\u2754\ud83e\udd16",
-      "summary": "Chris Hay calls himself a model addict. He wants every new AI model the moment it launches. So why does he agree with OpenAI's decision to pull Astra 6.1? Check out the latest episode of  Mixture of Experts to hear Chris explain why safety concerns can outweigh the pressure to ship.\n\n#aimodel #openai #ibm \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@ibmdeveloperadvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-02T18:15:10Z",
-      "fetched_at": "2026-10-02T19:20:10.648518Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cf7a6cec7736d18f",
       "url": "https://arxiv.org/abs/2510.12546",
       "title": "The EmpathiSEr: Development and Validation of Software Engineering Oriented Empathy Scales",
@@ -63664,168 +63625,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9207ba55b4fb6643",
-      "url": "https://x.com/dani_avila7/status/2106089330598883443",
-      "title": "Great post!\n\n@trq212 shared something similar a while ago. At this point, the extra tokens needed to...",
-      "summary": "Great post!\n\n@trq212 shared something similar a while ago. At this point, the extra tokens needed to generate the HTML are minimal, but the difference in understanding can be huge\n\nEspecially for complex CI/CD pipelines or architectures with multiple connected microservices",
-      "content": "Great post!\n\n@trq212 shared something similar a while ago. At this point, the extra tokens needed to generate the HTML are minimal, but the difference in understanding can be huge\n\nEspecially for complex CI/CD pipelines or architectures with multiple connected microservices",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-02T18:30:00Z",
-      "fetched_at": "2026-10-02T18:38:56.698358Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "81c8a81fc52588c3",
-      "url": "https://x.com/sama/status/2106085986606403684",
-      "title": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably bett...",
-      "summary": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably better as it learns more of my workflow and style.\n\nhaving it do the stuff i don't like doing--and usually just builds up as a gravity well of dread--has me very happy.",
-      "content": "dot is my favorite openai product so far!\n\nit is amazing to me that each day it feels noticably better as it learns more of my workflow and style.\n\nhaving it do the stuff i don't like doing--and usually just builds up as a gravity well of dread--has me very happy.",
-      "source_name": "@sama",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "sama",
-      "published_at": "2026-10-02T18:16:43Z",
-      "fetched_at": "2026-10-02T18:38:59.331692Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "33fc02eb8d7b9bff",
-      "url": "https://x.com/steipete/status/2106082581058114024",
-      "title": "RT @kevinroose: thrilled to announce we have built the \u201ctrick old people into handing over their ban...",
-      "summary": "RT @kevinroose: thrilled to announce we have built the \u201ctrick old people into handing over their bank passwords machine\u201d from the classic s\u2026",
-      "content": "RT @kevinroose: thrilled to announce we have built the \u201ctrick old people into handing over their bank passwords machine\u201d from the classic s\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-02T18:03:11Z",
-      "fetched_at": "2026-10-02T18:39:06.409054Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7445b28414825b29",
-      "url": "https://x.com/GeminiApp/status/2106079691337867687",
-      "title": "RT @NewsFromGoogle: We\u2019re launching Guided Vision in Gemini Live across compatible @Android devices....",
-      "summary": "RT @NewsFromGoogle: We\u2019re launching Guided Vision in Gemini Live across compatible @Android devices. Built alongside the blind and low-visi\u2026",
-      "content": "RT @NewsFromGoogle: We\u2019re launching Guided Vision in Gemini Live across compatible @Android devices. Built alongside the blind and low-visi\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-02T17:51:42Z",
-      "fetched_at": "2026-10-02T18:39:00.771647Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1cd917cdbd803af8",
-      "url": "https://x.com/GeminiApp/status/2106079663340880243",
-      "title": "RT @NewsFromGoogle: ICYMI: Here's a recap of our AI announcements from September. \u2b07\ufe0f\n\n\ud83d\udc8e Announced Ge...",
-      "summary": "RT @NewsFromGoogle: ICYMI: Here's a recap of our AI announcements from September. \u2b07\ufe0f\n\n\ud83d\udc8e Announced Gemini 4 Argon, our newest frontier model\u2026",
-      "content": "RT @NewsFromGoogle: ICYMI: Here's a recap of our AI announcements from September. \u2b07\ufe0f\n\n\ud83d\udc8e Announced Gemini 4 Argon, our newest frontier model\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-02T17:51:35Z",
-      "fetched_at": "2026-10-02T18:39:00.771755Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6d851bd53d0b532e",
-      "url": "https://x.com/steipete/status/2106076508020506722",
-      "title": "This was by far my favorite slide at DevDay.\nKudos to the team! https://t.co/AQtPzNTZhx",
-      "summary": "This was by far my favorite slide at DevDay.\nKudos to the team! https://t.co/AQtPzNTZhx",
-      "content": "This was by far my favorite slide at DevDay.\nKudos to the team! https://t.co/AQtPzNTZhx",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-02T17:39:03Z",
-      "fetched_at": "2026-10-02T18:39:06.409113Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b9952291d8c0db2c",
-      "url": "https://x.com/steipete/status/2106072066260865395",
-      "title": "RT @ben_issen: favorite reminder for creatives, by Bj\u00f6rk https://t.co/NiyI46Qnoc",
-      "summary": "RT @ben_issen: favorite reminder for creatives, by Bj\u00f6rk https://t.co/NiyI46Qnoc",
-      "content": "RT @ben_issen: favorite reminder for creatives, by Bj\u00f6rk https://t.co/NiyI46Qnoc",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-02T17:21:24Z",
-      "fetched_at": "2026-10-02T18:39:06.409145Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2592d5ad067281a2",
-      "url": "https://x.com/steipete/status/2106070772427145306",
-      "title": "RT @signulll: things that give normal ppl a dopamine hit:\n\nadding things to cart. window shopping. b...",
-      "summary": "RT @signulll: things that give normal ppl a dopamine hit:\n\nadding things to cart. window shopping. buying something. waiting for a package.\u2026",
-      "content": "RT @signulll: things that give normal ppl a dopamine hit:\n\nadding things to cart. window shopping. buying something. waiting for a package.\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-02T17:16:15Z",
-      "fetched_at": "2026-10-02T18:39:06.409192Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "1a59cefe7800d631",
       "url": "https://x.com/dani_avila7/status/2106209192801419522",
       "title": "RT @dani_avila7: Introducing Jev Model Router for Claude Code\n\nThis Claude Code Mod lets you use Jev...",
@@ -66462,6 +66261,150 @@
       "author": "steipete",
       "published_at": "2026-10-09T14:40:06Z",
       "fetched_at": "2026-10-09T17:06:43.606863Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8d097c58a8f9325f",
+      "url": "https://x.com/OpenAI/status/2108637293368242291",
+      "title": "RT @ChatGPT: Fresh updates for dots.\n\nFirst up: you can now create your dot straight from your phone...",
+      "summary": "RT @ChatGPT: Fresh updates for dots.\n\nFirst up: you can now create your dot straight from your phone in the ChatGPT app on iOS and Android.\u2026",
+      "content": "RT @ChatGPT: Fresh updates for dots.\n\nFirst up: you can now create your dot straight from your phone in the ChatGPT app on iOS and Android.\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-09T19:14:41Z",
+      "fetched_at": "2026-10-09T19:23:40.248112Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2fe769638793a446",
+      "url": "https://x.com/dani_avila7/status/2108634876165669128",
+      "title": "Microsoft just released its own Jev... I'll have to give it a try this weekend\n\nI recommend building...",
+      "summary": "Microsoft just released its own Jev... I'll have to give it a try this weekend\n\nI recommend building your own evals for decision-making models. There are already enough options out there to start running large scale evaluations",
+      "content": "Microsoft just released its own Jev... I'll have to give it a try this weekend\n\nI recommend building your own evals for decision-making models. There are already enough options out there to start running large scale evaluations",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-09T19:05:05Z",
+      "fetched_at": "2026-10-09T19:23:36.001884Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8d546ab2433500b5",
+      "url": "https://x.com/dani_avila7/status/2108630647195455624",
+      "title": "danielsan@mail.grokbot.com \ud83e\udee1",
+      "summary": "danielsan@mail.grokbot.com \ud83e\udee1",
+      "content": "danielsan@mail.grokbot.com \ud83e\udee1",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-09T18:48:17Z",
+      "fetched_at": "2026-10-09T19:23:36.001961Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dc47ad463a3727b3",
+      "url": "https://x.com/bcherny/status/2108622500833952088",
+      "title": "RT @ClaudeDevs: We just let in every Pro and Max user from the Claude Code Projects waitlist!\n\nIf yo...",
+      "summary": "RT @ClaudeDevs: We just let in every Pro and Max user from the Claude Code Projects waitlist!\n\nIf you're new to Claude Code Projects, here'\u2026",
+      "content": "RT @ClaudeDevs: We just let in every Pro and Max user from the Claude Code Projects waitlist!\n\nIf you're new to Claude Code Projects, here'\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-09T18:15:55Z",
+      "fetched_at": "2026-10-09T19:23:33.369802Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "30492ad16788026e",
+      "url": "https://x.com/simonw/status/2108608837175701514",
+      "title": "I like Qwen3.5-35B-A3B for this, wondering what else is out there that might be a bit more recent an...",
+      "summary": "I like Qwen3.5-35B-A3B for this, wondering what else is out there that might be a bit more recent and pack a little more of a punch",
+      "content": "I like Qwen3.5-35B-A3B for this, wondering what else is out there that might be a bit more recent and pack a little more of a punch",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-09T17:21:37Z",
+      "fetched_at": "2026-10-09T19:23:34.333245Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "997caa226e15baf9",
+      "url": "https://x.com/simonw/status/2108608482442449261",
+      "title": "What's the best open weight Mixture-of-Experts LLM for coding that fits in less than 60GB of RAM?\n\nI...",
+      "summary": "What's the best open weight Mixture-of-Experts LLM for coding that fits in less than 60GB of RAM?\n\nI think MoE might be necessary to get reasonably interactive speeds on the hardware I have access to - I want something faster than 12 tokens/second",
+      "content": "What's the best open weight Mixture-of-Experts LLM for coding that fits in less than 60GB of RAM?\n\nI think MoE might be necessary to get reasonably interactive speeds on the hardware I have access to - I want something faster than 12 tokens/second",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-09T17:20:12Z",
+      "fetched_at": "2026-10-09T19:23:34.333330Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cff4cd94bc1a7be0",
+      "url": "https://x.com/GeminiApp/status/2108606690396627311",
+      "title": "RT @googlechrome: Exam prep, meet your new study tool. \ud83d\udcda\n\nCreate practice quizzes from your study ma...",
+      "summary": "RT @googlechrome: Exam prep, meet your new study tool. \ud83d\udcda\n\nCreate practice quizzes from your study materials with Gemini in Chrome, and see\u2026",
+      "content": "RT @googlechrome: Exam prep, meet your new study tool. \ud83d\udcda\n\nCreate practice quizzes from your study materials with Gemini in Chrome, and see\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-09T17:13:05Z",
+      "fetched_at": "2026-10-09T19:23:39.286730Z",
       "score": null,
       "score_reason": "",
       "tier": "",
