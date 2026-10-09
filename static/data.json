@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-09T09:06:31.521056+00:00",
+  "exported_at": "2026-10-09T11:44:52.141210+00:00",
   "period_hours": 168,
-  "total": 3045,
+  "total": 3044,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -52591,25 +52591,6 @@
       "author": "AI Engineer",
       "published_at": "2026-10-02T14:00:05Z",
       "fetched_at": "2026-10-02T19:20:10.586306Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "328f381ef7010a4c",
-      "url": "https://www.youtube.com/watch?v=oBdLhD5nPYw",
-      "title": "OpenAI cancels Astra release, Sonnet 5.5 & what Meta Muse means for work",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content  \u2192 https://ibm.biz/~g2OhVoI8Y\n\nWhat makes an AI company pull the plug on a model release? This week on Mixture of Experts, our newly minted full-time host David Zax is joined by Chris Hay, Madison Gooch, and Ash Minhas. First, OpenAI cancels the release of GPT-6.1 Astra, as the panel debates whether self-restraint is becoming a competitive advantage in AI or just good marketing. Then, Anthropic releases Sonnet 5.5, prompting a discussion about what happens when mid-tier models approach top-tier performance on some tasks. Finally, Meta Muse is making powerful AI agents more accessible to everyday users. We look at how these frictionless user experiences could shape what people expect from AI at work.\n\nAll that and more on Mixture of Experts.\n\n00:00 \u2013 Intro\n01:18 \u2013 OpenAI cancels GPT-6.1 Astra release   \n11:44 \u2013 Anthropic releases Sonnet 5.5   \n23:07 \u2013 What Meta Muse means for enterprise AI\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~14Ef8tZjt\n#openai #anthropic #aiagents \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-02T10:00:21Z",
-      "fetched_at": "2026-10-02T12:37:05.075654Z",
       "score": null,
       "score_reason": "",
       "tier": "",
