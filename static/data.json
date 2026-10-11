@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-11T02:42:49.887304+00:00",
+  "exported_at": "2026-10-11T04:59:12.380657+00:00",
   "period_hours": 168,
-  "total": 3057,
+  "total": 3058,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -66429,6 +66429,26 @@
       "author": "dani_avila7",
       "published_at": "2026-10-11T01:11:52Z",
       "fetched_at": "2026-10-11T02:42:40.678957Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "818410a8839017a3",
+      "url": "https://x.com/steipete/status/2109126913096913259",
+      "title": "RT @jfischoff: Terance Tao: Imagine prescribing a drug no one understood.\nMedical community: https:/...",
+      "summary": "RT @jfischoff: Terance Tao: Imagine prescribing a drug no one understood.\nMedical community: https://t.co/bjmn568jca",
+      "content": "RT @jfischoff: Terance Tao: Imagine prescribing a drug no one understood.\nMedical community: https://t.co/bjmn568jca",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-11T03:40:16Z",
+      "fetched_at": "2026-10-11T04:59:10.838930Z",
       "score": null,
       "score_reason": "",
       "tier": "",
