@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-11T13:58:51.527770+00:00",
+  "exported_at": "2026-10-11T16:16:15.201678+00:00",
   "period_hours": 168,
-  "total": 3067,
+  "total": 3066,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29689,46 +29689,6 @@
       "author": "Sara Jaber, S. M. Hassan Mahdavi, Neila Bhouri, Mostafa Ameli",
       "published_at": "2026-10-08T04:00:00Z",
       "fetched_at": "2026-10-08T06:06:15.730092Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7500367c841bf214",
-      "url": "https://www.youtube.com/shorts/HAwxOr99KjQ",
-      "title": "Why models struggle with design",
-      "summary": "with Maggie Appleton, Design Engineer at GitHub Next\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-10-04T16:00:12Z",
-      "fetched_at": "2026-10-04T19:38:32.077930Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b5bb0c782d849b72",
-      "url": "https://www.youtube.com/watch?v=pyvRID_CZZU",
-      "title": "We Built an AI Support Agent That Resolves 80% of Tickets \u2014 AssemblyAI",
-      "summary": "1,000 API signups a day and one onboarding engineer. So AssemblyAI built Joey.\n\nMatt Lawler, forward deployed engineer lead at AssemblyAI, shares how his team replaced an off-the-shelf support bot that resolved 10% of conversations with their own agent, Joey, which resolves 80% end to end for about $700 a month. Joey is built on the Claude Agent SDK with docs checked out as local markdown, embeddings for retrieval, agentic file search and a large CLAUDE.md. It's deployed on Railway so fixes ship in about 30 seconds. Then Matt gives Joey a voice with AssemblyAI's Voice Agent API and demos it live, making the case that FDEs should automate themselves out of a job and dogfood the product their customers build.\n\nIn this talk:\n\u2022 Why the FDE model doesn't scale to 1,000 signups a day\n\u2022 Joey's architecture: local markdown docs, embeddings, agentic search and a single CLAUDE.md\n\u2022 Turning every escalation into a roadmap item for the agent\n\u2022 Adding real-time voice with one websocket: speech-to-text, LLM and text-to-speech\n\nSPEAKER\nMatt Lawler, Forward Deployed Engineer Lead, AssemblyAI\n\nLINKS\nAssemblyAI: https://www.assemblyai.com\nVoice Agent API docs: https://www.assemblyai.com/docs/voice-agents/voice-agent-api\nIntroducing the Voice Agent API: https://www.assemblyai.com/blog/introducing-our-voice-agent-api\nAssemblyAI on X: https://x.com/assemblyai\n\nCHAPTERS\n0:00 Intro\n0:33 Meet Matt\n1:13 What AssemblyAI does\n2:08 1,000 API signups a day\n2:38 What a forward deployed engineer does\n3:28 Why the FDE model doesn't scale\n3:57 Automate yourself out of a job\n4:12 The off-the-shelf bot: 10% resolution\n5:17 Building Joey\n6:12 Architecture: docs, embeddings, agentic search\n7:22 Deploying on Railway\n8:02 Results: 10% \u2192 80% for $700 a month\n9:01 Escalations become the roadmap\n9:31 Giving Joey a voice\n10:56 Code walkthrough\n12:11 Live demo: talking to Joey\n14:24 Dogfood your own product\n15:08 Go build\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#VoiceAI #AIAgents #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-04T15:00:15Z",
-      "fetched_at": "2026-10-04T15:22:59.484671Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64091,26 +64051,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a854f1f2bb6b8856",
-      "url": "https://x.com/dani_avila7/status/2106774234735280136",
-      "title": "/coffee https://t.co/Lilg2ABO4o",
-      "summary": "/coffee https://t.co/Lilg2ABO4o",
-      "content": "/coffee https://t.co/Lilg2ABO4o",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-04T15:51:34Z",
-      "fetched_at": "2026-10-05T08:26:57.097200Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "edaea97db2762ae8",
       "url": "https://x.com/dani_avila7/status/2107096856081621468",
       "title": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthi...",
@@ -66609,6 +66549,46 @@
       "author": "steipete",
       "published_at": "2026-10-11T03:40:16Z",
       "fetched_at": "2026-10-11T04:59:10.838930Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c9001e9ddda14233",
+      "url": "https://x.com/dani_avila7/status/2109306665363202398",
+      "title": "It's been a while since I last opened the Claude Code VSCode extension... Looks pretty good\n\nLet's s...",
+      "summary": "It's been a while since I last opened the Claude Code VSCode extension... Looks pretty good\n\nLet's see how it works https://t.co/C3MpHjuxEc",
+      "content": "It's been a while since I last opened the Claude Code VSCode extension... Looks pretty good\n\nLet's see how it works https://t.co/C3MpHjuxEc",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-11T15:34:32Z",
+      "fetched_at": "2026-10-11T16:16:05.401281Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a854f1f2bb6b8856",
+      "url": "https://x.com/dani_avila7/status/2106774234735280136",
+      "title": "/coffee https://t.co/Lilg2ABO4o",
+      "summary": "/coffee https://t.co/Lilg2ABO4o",
+      "content": "/coffee https://t.co/Lilg2ABO4o",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T15:51:34Z",
+      "fetched_at": "2026-10-05T08:26:57.097200Z",
       "score": null,
       "score_reason": "",
       "tier": "",
