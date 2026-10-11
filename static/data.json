@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-10-11T00:12:15.973696+00:00",
+  "exported_at": "2026-10-11T02:42:49.887304+00:00",
   "period_hours": 168,
   "total": 3057,
   "all_tags": [
@@ -40344,26 +40344,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c386a15296db485c",
-      "url": "https://www.youtube.com/watch?v=YiFqcu9YA38",
-      "title": "Dashboards Are Dead \u2014 Sarah Simionescu, Composio",
-      "summary": "Sarah used Datadog every day for six months without ever opening the dashboard.\n\nSarah Simionescu, member of technical staff at Composio and on the team behind the Composio dashboard, makes the case that the dashboard is dead. She traces how we got here: five tools and five query languages, then the AI 'sparkle button', then MCP. She explains why MCP alone is still a mess (agents don't learn, too many tools drown the model, every app is isolated) and shows how an interface designed for agents fixes it. Live demos go from a Slack bug report to a fix PR, and run a cross-app analysis across PostHog and Metabase without loading full results into context.\n\nIn this talk:\n\u2022 Why every dashboard and query language was a translation layer\n\u2022 Three reasons wiring up a dozen MCP servers falls apart\n\u2022 How tool search plus execution plans help agents work across apps\n\u2022 Building products for a new kind of user: agents\n\nSPEAKER\nSarah Simionescu, Member of Technical Staff, Composio\nLinkedIn: https://www.linkedin.com/in/sarah-simionescu/\nGitHub: https://github.com/sarahsimionescu\nWebsite: https://www.sarahsimionescu.com/\n\nLINKS\nComposio: https://composio.dev/\nComposio MCP: https://composio.dev/mcp-gateway\n\nCHAPTERS\n0:00 Intro\n0:12 A confession about dashboards\n1:02 The dashboard is dead\n1:17 A postmortem\n1:27 2022: five tools, five query languages\n2:17 You wanted the answer, not the dashboard\n2:37 2023: the sparkle button\n3:02 2024: MCP arrives\n3:31 Why MCP alone is a mess\n3:51 Agents don't learn\n4:06 Too many tools drown the model\n4:31 Every app is isolated\n4:56 Demo: from Slack bug report to fix PR\n6:25 Results vs native MCP servers\n6:45 An interface designed for agents\n7:20 Demo: cross-app analysis\n8:59 What this means for every product\n9:44 A new kind of user\n10:14 Wrap-up\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#AIAgents #MCP #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-04T01:30:36Z",
-      "fetched_at": "2026-10-04T08:27:46.899558Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d7bf91c93f971db9",
       "url": "https://arxiv.org/abs/2610.07996",
       "title": "TICDA: Tabular In-Context Data Attribution",
@@ -63971,68 +63951,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "75b5bfedef3b479e",
-      "url": "https://x.com/bcherny/status/2106565344919953590",
-      "title": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just p...",
-      "summary": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
-      "content": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-10-04T02:01:30Z",
-      "fetched_at": "2026-10-05T08:26:55.005618Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7fbde300f6fb7387",
-      "url": "https://x.com/dani_avila7/status/2106556992638558451",
-      "title": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its l...",
-      "summary": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
-      "content": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-04T01:28:19Z",
-      "fetched_at": "2026-10-05T08:26:57.097241Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c7980bea5cb35b9b",
-      "url": "https://x.com/simonw/status/2106550840773509149",
-      "title": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlif...",
-      "summary": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
-      "content": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-10-04T01:03:52Z",
-      "fetched_at": "2026-10-05T08:26:55.993483Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "edaea97db2762ae8",
       "url": "https://x.com/dani_avila7/status/2107096856081621468",
       "title": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthi...",
@@ -66491,6 +66409,88 @@
       "author": "dani_avila7",
       "published_at": "2026-10-09T19:25:11Z",
       "fetched_at": "2026-10-11T00:12:05.453932Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7e4747131c3832e9",
+      "url": "https://x.com/dani_avila7/status/2109089568494649601",
+      "title": "The new cover images for each component on https://t.co/eQDBth4Nzg look great!\n\nhttps://t.co/q8FPtpR...",
+      "summary": "The new cover images for each component on https://t.co/eQDBth4Nzg look great!\n\nhttps://t.co/q8FPtpRxqs https://t.co/waooHNWSnK",
+      "content": "The new cover images for each component on https://t.co/eQDBth4Nzg look great!\n\nhttps://t.co/q8FPtpRxqs https://t.co/waooHNWSnK",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-11T01:11:52Z",
+      "fetched_at": "2026-10-11T02:42:40.678957Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "75b5bfedef3b479e",
+      "url": "https://x.com/bcherny/status/2106565344919953590",
+      "title": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just p...",
+      "summary": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
+      "content": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-04T02:01:30Z",
+      "fetched_at": "2026-10-05T08:26:55.005618Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7fbde300f6fb7387",
+      "url": "https://x.com/dani_avila7/status/2106556992638558451",
+      "title": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its l...",
+      "summary": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
+      "content": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T01:28:19Z",
+      "fetched_at": "2026-10-05T08:26:57.097241Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7980bea5cb35b9b",
+      "url": "https://x.com/simonw/status/2106550840773509149",
+      "title": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlif...",
+      "summary": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
+      "content": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-04T01:03:52Z",
+      "fetched_at": "2026-10-05T08:26:55.993483Z",
       "score": null,
       "score_reason": "",
       "tier": "",
