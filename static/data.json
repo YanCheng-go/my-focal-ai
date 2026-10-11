@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-11T12:52:14.540156+00:00",
+  "exported_at": "2026-10-11T13:58:51.527770+00:00",
   "period_hours": 168,
-  "total": 3056,
+  "total": 3067,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -64111,26 +64111,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a31d06a4ca32faea",
-      "url": "https://x.com/steipete/status/2106742419098411344",
-      "title": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
-      "summary": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
-      "content": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-04T13:45:08Z",
-      "fetched_at": "2026-10-05T08:27:04.674341Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "edaea97db2762ae8",
       "url": "https://x.com/dani_avila7/status/2107096856081621468",
       "title": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthi...",
@@ -66629,6 +66609,250 @@
       "author": "steipete",
       "published_at": "2026-10-11T03:40:16Z",
       "fetched_at": "2026-10-11T04:59:10.838930Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a31d06a4ca32faea",
+      "url": "https://x.com/steipete/status/2106742419098411344",
+      "title": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
+      "summary": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
+      "content": "RT @aarondfrancis: https://t.co/dLPopJv8sG",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-04T13:45:08Z",
+      "fetched_at": "2026-10-05T08:27:04.674341Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "75b5bfedef3b479e",
+      "url": "https://x.com/bcherny/status/2106565344919953590",
+      "title": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just p...",
+      "summary": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
+      "content": "RT @lydiahallie: A few of you asked what mods are, here's a quick walkthrough! They\u2019re really just plugins with a few special functions tha\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-04T02:01:30Z",
+      "fetched_at": "2026-10-05T08:26:55.005618Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7fbde300f6fb7387",
+      "url": "https://x.com/dani_avila7/status/2106556992638558451",
+      "title": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its l...",
+      "summary": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
+      "content": "Anthropic cookbook worth checking out... a code reviewer that runs on a schedule and remembers its last review\n\nThe first run reviews the whole repo. Every run after that resumes the previous session, so it starts with its past findings loaded and reports what got fixed, what's",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T01:28:19Z",
+      "fetched_at": "2026-10-05T08:26:57.097241Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7980bea5cb35b9b",
+      "url": "https://x.com/simonw/status/2106550840773509149",
+      "title": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlif...",
+      "summary": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
+      "content": "RT @biilmann: @simonw That was one of the components in our switch to credit based pricing at Netlify a year ago.",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-04T01:03:52Z",
+      "fetched_at": "2026-10-05T08:26:55.993483Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e27b79bb5047027",
+      "url": "https://x.com/dani_avila7/status/2106537507869581813",
+      "title": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "summary": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "content": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T00:10:54Z",
+      "fetched_at": "2026-10-05T08:26:57.097280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9dfa9410094722be",
+      "url": "https://x.com/simonw/status/2106528704902164855",
+      "title": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much every...",
+      "summary": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
+      "content": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-03T23:35:55Z",
+      "fetched_at": "2026-10-05T08:26:55.993587Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5a86298eb42f9872",
+      "url": "https://x.com/simonw/status/2106500511465869380",
+      "title": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGP...",
+      "summary": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGPT?\n\nI'm having trouble deciding when I should prompt Dot vs using ChatGPT - my Dot seems to afford a single conversation, but I like controlling my context across multiple threads",
+      "content": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGPT?\n\nI'm having trouble deciding when I should prompt Dot vs using ChatGPT - my Dot seems to afford a single conversation, but I like controlling my context across multiple threads",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-03T21:43:53Z",
+      "fetched_at": "2026-10-05T08:26:55.993619Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4a2c34485ada60e1",
+      "url": "https://x.com/steipete/status/2106489454152298501",
+      "title": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to di...",
+      "summary": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to discover and install agent skills. \n\nWe r\u2026",
+      "content": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to discover and install agent skills. \n\nWe r\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T20:59:57Z",
+      "fetched_at": "2026-10-05T08:27:04.674364Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b8ec8e11e59a5f89",
+      "url": "https://x.com/steipete/status/2106489264443981978",
+      "title": "laughing about how we all are building the same thing.",
+      "summary": "laughing about how we all are building the same thing.",
+      "content": "laughing about how we all are building the same thing.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T20:59:11Z",
+      "fetched_at": "2026-10-05T08:27:04.674386Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "012afda5ede83717",
+      "url": "https://x.com/dani_avila7/status/2106474300785996075",
+      "title": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "summary": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "content": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-03T19:59:44Z",
+      "fetched_at": "2026-10-05T08:26:57.097331Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8561871f5d1d3eae",
+      "url": "https://x.com/steipete/status/2106446147791597774",
+      "title": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Andr...",
+      "summary": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Android app.",
+      "content": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Android app.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T18:07:52Z",
+      "fetched_at": "2026-10-05T08:27:04.674409Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82ae9a76be843f7b",
+      "url": "https://x.com/sama/status/2106388373221118198",
+      "title": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgm...",
+      "summary": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models, and think it is a real safety issue.",
+      "content": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models, and think it is a real safety issue.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-03T14:18:17Z",
+      "fetched_at": "2026-10-05T08:26:59.232149Z",
       "score": null,
       "score_reason": "",
       "tier": "",
