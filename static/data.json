@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-10T23:34:43.424336+00:00",
+  "exported_at": "2026-10-11T00:12:15.973696+00:00",
   "period_hours": 168,
-  "total": 3026,
+  "total": 3057,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40364,26 +40364,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "183be3d7446fde2b",
-      "url": "https://www.youtube.com/watch?v=qflLT3SoVbw",
-      "title": "Stop Fine-Tuning to Fix Retrieval Problems \u2014 Anant Srivastava",
-      "summary": "Most AI teams never decide where their knowledge lives. Six months of normal product work decides for them.\n\nAnant Srivastava, principal technologist for data and AI platforms at Oracle, argues that prompt, memory and weights aren't a ladder you climb when answers go wrong. They're three tools for three jobs. Through a support assistant that kept inventing product names after a fine-tune, he shows how architecture builds up by accident. He then gives a simple diagnostic for each: the prompt is for small, stable behavior; memory is for knowledge that's current, large, citable or access-controlled; weights are only for reflexes that have stopped changing. He closes with a circulating architecture where the agent gets better by doing its job.\n\nIn this talk:\n\u2022 How every prompt edit, indexed doc and training sample is an architecture decision\n\u2022 The diagnostic question for prompt, memory and weights\n\u2022 Why you fine-tune reflexes, not facts\n\u2022 Moving knowledge between context, memory and weights over time\n\nSPEAKER\nAnant Srivastava, Principal Technologist, Data and AI Platforms, Oracle\nLinkedIn: https://www.linkedin.com/in/anantds/\n\nCHAPTERS\n0:00 Where should knowledge live?\n0:15 The real engineering problem\n0:50 Three tools, not a ladder\n1:20 How teams decide by accident\n2:00 Every edit is an architecture decision\n2:40 A support assistant goes wrong\n4:34 Accumulated, not designed\n5:14 Prompt: behavior, not facts\n5:59 Example: a support agent prompt\n6:59 Memory: current, large, citable\n8:09 The wrong job for memory\n8:49 Access control belongs in memory\n9:14 Example: a code assistant\n10:08 Chunking and metadata for code RAG\n11:23 Weights: what has stopped changing\n12:28 The fine-tuning mistake\n13:53 When fine-tuning works\n15:08 Medical coding: fine-tune the reflex\n16:13 Capability or cost?\n16:58 The decision table\n17:33 A circulating architecture\n19:27 The model is the easy part\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#RAG #FineTuning #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-04T00:00:35Z",
-      "fetched_at": "2026-10-04T00:38:47.133246Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d7bf91c93f971db9",
       "url": "https://arxiv.org/abs/2610.07996",
       "title": "TICDA: Tabular In-Context Data Attribution",
@@ -63650,48 +63630,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ea1960b1bc23656d",
-      "url": "https://www.aitmpl.com/loops/loop-production-error-sweep-loop#loops",
-      "title": "#10 production-error-sweep-loop",
-      "summary": "Category: engineering | Week: 0 | Month: 3 | Total: 3",
-      "content": "",
-      "source_name": "AI Templates Trending (loops)",
-      "source_type": "aitmpl_loops",
-      "tags": [
-        "claude-code",
-        "trending",
-        "tools"
-      ],
-      "author": "",
-      "published_at": "2026-10-04T00:00:00Z",
-      "fetched_at": "2026-10-04T15:23:14.819426Z",
-      "score": 0.1,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f1981ec4cfc9d003",
-      "url": "https://www.aitmpl.com/mods/mod-session-time-machine#mods",
-      "title": "#10 session-time-machine",
-      "summary": "Category: productivity | Week: 5 | Month: 5 | Total: 5",
-      "content": "",
-      "source_name": "AI Templates Trending (mods)",
-      "source_type": "aitmpl_mods",
-      "tags": [
-        "claude-code",
-        "trending",
-        "tools"
-      ],
-      "author": "",
-      "published_at": "2026-10-04T00:00:00Z",
-      "fetched_at": "2026-10-04T15:23:14.815674Z",
-      "score": 0.1,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5006e602e0194e53",
       "url": "https://www.anthropic.com/events/claude-founder-house-san-francisco",
       "title": "Claude Founder House San Francisco",
@@ -64089,47 +64027,6 @@
       "author": "simonw",
       "published_at": "2026-10-04T01:03:52Z",
       "fetched_at": "2026-10-05T08:26:55.993483Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0e27b79bb5047027",
-      "url": "https://x.com/dani_avila7/status/2106537507869581813",
-      "title": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
-      "summary": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
-      "content": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-04T00:10:54Z",
-      "fetched_at": "2026-10-05T08:26:57.097280Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9dfa9410094722be",
-      "url": "https://x.com/simonw/status/2106528704902164855",
-      "title": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much every...",
-      "summary": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
-      "content": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-10-03T23:35:55Z",
-      "fetched_at": "2026-10-05T08:26:55.993587Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66030,6 +65927,732 @@
       "author": "geminiapp",
       "published_at": "2026-10-09T17:13:05Z",
       "fetched_at": "2026-10-09T19:23:39.286730Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3ec4a513cdebba5c",
+      "url": "https://x.com/dani_avila7/status/2109041206097289420",
+      "title": "I highly recommend making your Haiku subagents exploration-only in Claude Code\n\nYou can force your s...",
+      "summary": "I highly recommend making your Haiku subagents exploration-only in Claude Code\n\nYou can force your subagents into exploration only mode and leave code changes to your main agent\n\nI added two new components to Claude Code Templates:\n\n1- Subagents Explore Only (Setting)\n\nUses https://t.co/r1gcmwcsEg",
+      "content": "I highly recommend making your Haiku subagents exploration-only in Claude Code\n\nYou can force your subagents into exploration only mode and leave code changes to your main agent\n\nI added two new components to Claude Code Templates:\n\n1- Subagents Explore Only (Setting)\n\nUses https://t.co/r1gcmwcsEg",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-10T21:59:42Z",
+      "fetched_at": "2026-10-11T00:12:05.453569Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "22a6e61b54c757d6",
+      "url": "https://x.com/steipete/status/2109022454224150707",
+      "title": "not as clear-cut, but also yes",
+      "summary": "not as clear-cut, but also yes",
+      "content": "not as clear-cut, but also yes",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T20:45:11Z",
+      "fetched_at": "2026-10-11T00:12:13.327692Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c5a713c387221dd4",
+      "url": "https://x.com/steipete/status/2109019910911525071",
+      "title": "RT @harshil: They really need to stop with this utter stupidity\n\nIt\u2019s an app made for Apple platform...",
+      "summary": "RT @harshil: They really need to stop with this utter stupidity\n\nIt\u2019s an app made for Apple platforms sold on the Apple App Store but menti\u2026",
+      "content": "RT @harshil: They really need to stop with this utter stupidity\n\nIt\u2019s an app made for Apple platforms sold on the Apple App Store but menti\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T20:35:05Z",
+      "fetched_at": "2026-10-11T00:12:13.327759Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0cdbb1957aaf875c",
+      "url": "https://x.com/steipete/status/2109019734671040664",
+      "title": "RT @zeeg: if it is helpful for anyone who is curious if their luna use case might be doable on haiku...",
+      "summary": "RT @zeeg: if it is helpful for anyone who is curious if their luna use case might be doable on haiku, id assume the default is prob not (th\u2026",
+      "content": "RT @zeeg: if it is helpful for anyone who is curious if their luna use case might be doable on haiku, id assume the default is prob not (th\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T20:34:23Z",
+      "fetched_at": "2026-10-11T00:12:13.327802Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "702f4f861122976e",
+      "url": "https://x.com/steipete/status/2109011129989304811",
+      "title": "RT @RoryTyer: we are living in quite interesting and fun times https://t.co/ft8bVqk9cB",
+      "summary": "RT @RoryTyer: we are living in quite interesting and fun times https://t.co/ft8bVqk9cB",
+      "content": "RT @RoryTyer: we are living in quite interesting and fun times https://t.co/ft8bVqk9cB",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T20:00:11Z",
+      "fetched_at": "2026-10-11T00:12:13.327842Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "350877db98e8e03b",
+      "url": "https://x.com/steipete/status/2109010559014470112",
+      "title": "RT @dabit3: cloud agent enjoyers watching people still walk around with their laptops cracked open h...",
+      "summary": "RT @dabit3: cloud agent enjoyers watching people still walk around with their laptops cracked open https://t.co/tcGKwwsH3f",
+      "content": "RT @dabit3: cloud agent enjoyers watching people still walk around with their laptops cracked open https://t.co/tcGKwwsH3f",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T19:57:55Z",
+      "fetched_at": "2026-10-11T00:12:13.327885Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "47cd02f5d88f7046",
+      "url": "https://x.com/steipete/status/2109010088354799675",
+      "title": "RT @AndrewCurran_: This is a slide from Terence Tao's 'Math 2.0' public lecture yesterday evening at...",
+      "summary": "RT @AndrewCurran_: This is a slide from Terence Tao's 'Math 2.0' public lecture yesterday evening at Caltech. I am highly confident that, i\u2026",
+      "content": "RT @AndrewCurran_: This is a slide from Terence Tao's 'Math 2.0' public lecture yesterday evening at Caltech. I am highly confident that, i\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T19:56:03Z",
+      "fetched_at": "2026-10-11T00:12:13.327918Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b7c5bdeba89df744",
+      "url": "https://x.com/steipete/status/2109008513855087082",
+      "title": "JavaScript is not a serious language \ud83d\ude43 https://t.co/7yeq9rr025",
+      "summary": "JavaScript is not a serious language \ud83d\ude43 https://t.co/7yeq9rr025",
+      "content": "JavaScript is not a serious language \ud83d\ude43 https://t.co/7yeq9rr025",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T19:49:47Z",
+      "fetched_at": "2026-10-11T00:12:13.327948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e84feb1441b650fd",
+      "url": "https://x.com/steipete/status/2108999460957425949",
+      "title": "RT @jshchnz: $870M raise at a $7.5B valuation... in a Series A? https://t.co/9pLF8BQniO",
+      "summary": "RT @jshchnz: $870M raise at a $7.5B valuation... in a Series A? https://t.co/9pLF8BQniO",
+      "content": "RT @jshchnz: $870M raise at a $7.5B valuation... in a Series A? https://t.co/9pLF8BQniO",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T19:13:49Z",
+      "fetched_at": "2026-10-11T00:12:13.327978Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d3142306bf78011c",
+      "url": "https://x.com/steipete/status/2108998761699750179",
+      "title": "RT @mattpocockuk: This is what having a popular open source project feels like ~50% of the time http...",
+      "summary": "RT @mattpocockuk: This is what having a popular open source project feels like ~50% of the time https://t.co/3VHZZ1WATt",
+      "content": "RT @mattpocockuk: This is what having a popular open source project feels like ~50% of the time https://t.co/3VHZZ1WATt",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T19:11:02Z",
+      "fetched_at": "2026-10-11T00:12:13.328008Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e7e232f03d945970",
+      "url": "https://x.com/steipete/status/2108978894288322928",
+      "title": "RT @vishnuunhsiv9: @openclaw has become incredibly good at multitasking and also faster. \u26a1\ufe0f\n- Review...",
+      "summary": "RT @vishnuunhsiv9: @openclaw has become incredibly good at multitasking and also faster. \u26a1\ufe0f\n- Reviewed bus tickets in Japan and rescheduled\u2026",
+      "content": "RT @vishnuunhsiv9: @openclaw has become incredibly good at multitasking and also faster. \u26a1\ufe0f\n- Reviewed bus tickets in Japan and rescheduled\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T17:52:05Z",
+      "fetched_at": "2026-10-11T00:12:13.328039Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5a673e926c543f60",
+      "url": "https://x.com/steipete/status/2108974922513224120",
+      "title": "RT @ArtificialAnlys: Can today's frontier language models control a real robot arm, zero-shot, with ...",
+      "summary": "RT @ArtificialAnlys: Can today's frontier language models control a real robot arm, zero-shot, with no coaching?\n\nAA-Robotics v0.1 coming s\u2026",
+      "content": "RT @ArtificialAnlys: Can today's frontier language models control a real robot arm, zero-shot, with no coaching?\n\nAA-Robotics v0.1 coming s\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T17:36:19Z",
+      "fetched_at": "2026-10-11T00:12:13.328073Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e442871c278a5c2a",
+      "url": "https://x.com/dani_avila7/status/2108955496627544100",
+      "title": "A good mate and watching my daughter play football\n\nGreat way to start the weekend! https://t.co/COG...",
+      "summary": "A good mate and watching my daughter play football\n\nGreat way to start the weekend! https://t.co/COGLHkCJQH",
+      "content": "A good mate and watching my daughter play football\n\nGreat way to start the weekend! https://t.co/COGLHkCJQH",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-10T16:19:07Z",
+      "fetched_at": "2026-10-11T00:12:05.453660Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ee3c9f4ef4b7a497",
+      "url": "https://x.com/steipete/status/2108927654347022586",
+      "title": "RT @ivanopcode: This is the most delightful talk out there on what software development (actually, j...",
+      "summary": "RT @ivanopcode: This is the most delightful talk out there on what software development (actually, jellyware! brilliant term!) will look li\u2026",
+      "content": "RT @ivanopcode: This is the most delightful talk out there on what software development (actually, jellyware! brilliant term!) will look li\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T14:28:29Z",
+      "fetched_at": "2026-10-11T00:12:13.328105Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d13a8d1b73d62397",
+      "url": "https://x.com/dani_avila7/status/2108907041435566273",
+      "title": "Philadelphia police confirmed that an Anthropic model submitted false information in a homicide case...",
+      "summary": "Philadelphia police confirmed that an Anthropic model submitted false information in a homicide case\n\nWe urgently need:\n\n- Better agent observability and telemetry\n- Thorough trace reviews\n- Dangerous action detection\n- Stronger sandboxes and permissions\n- Real-time alerts https://t.co/EJTDH4Ioyg",
+      "content": "Philadelphia police confirmed that an Anthropic model submitted false information in a homicide case\n\nWe urgently need:\n\n- Better agent observability and telemetry\n- Thorough trace reviews\n- Dangerous action detection\n- Stronger sandboxes and permissions\n- Real-time alerts https://t.co/EJTDH4Ioyg",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-10T13:06:34Z",
+      "fetched_at": "2026-10-11T00:12:05.453713Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8d8ba28044455e29",
+      "url": "https://x.com/trq212/status/2108802833986552174",
+      "title": "honestly pretty cool to have this on my new tab page \n\njust merged in some PRs by others too! https:...",
+      "summary": "honestly pretty cool to have this on my new tab page \n\njust merged in some PRs by others too! https://t.co/OOzflxL3N7",
+      "content": "honestly pretty cool to have this on my new tab page \n\njust merged in some PRs by others too! https://t.co/OOzflxL3N7",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-10T06:12:29Z",
+      "fetched_at": "2026-10-11T00:12:00.617065Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "469c5e48eb080a05",
+      "url": "https://x.com/steipete/status/2108788298697289788",
+      "title": "RT @heyneighbor: Your OpenClaw is built, not bought\n\nAnd that\u2019s not for everyone",
+      "summary": "RT @heyneighbor: Your OpenClaw is built, not bought\n\nAnd that\u2019s not for everyone",
+      "content": "RT @heyneighbor: Your OpenClaw is built, not bought\n\nAnd that\u2019s not for everyone",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T05:14:44Z",
+      "fetched_at": "2026-10-11T00:12:13.328134Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "003ad8b23b0991c3",
+      "url": "https://x.com/dani_avila7/status/2108775245993631782",
+      "title": "This opens the door for agents to start buying and managing their own resources\n\nBuying a domain has...",
+      "summary": "This opens the door for agents to start buying and managing their own resources\n\nBuying a domain has a purpose. The agent needs to understand the project and decide which domain makes sense\n\nBut what happens when it needs to do something more complex?\n\nCould it hire another agent",
+      "content": "This opens the door for agents to start buying and managing their own resources\n\nBuying a domain has a purpose. The agent needs to understand the project and decide which domain makes sense\n\nBut what happens when it needs to do something more complex?\n\nCould it hire another agent",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-10T04:22:52Z",
+      "fetched_at": "2026-10-11T00:12:05.453758Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "df844b2861ca738e",
+      "url": "https://x.com/dani_avila7/status/2108749167002575351",
+      "title": "Anthropic launches OSS Scanner    \n\nA free, opt-in service that scans open source repositories for s...",
+      "summary": "Anthropic launches OSS Scanner    \n\nA free, opt-in service that scans open source repositories for security vulnerabilities using Anthropic's strongest models   \n\nDesigned for eligible open source projects, it provides periodic security scans and private reports with reproducible https://t.co/NLKCG929Yz",
+      "content": "Anthropic launches OSS Scanner    \n\nA free, opt-in service that scans open source repositories for security vulnerabilities using Anthropic's strongest models   \n\nDesigned for eligible open source projects, it provides periodic security scans and private reports with reproducible https://t.co/NLKCG929Yz",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-10T02:39:14Z",
+      "fetched_at": "2026-10-11T00:12:05.453814Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c31e0a0f29f83169",
+      "url": "https://x.com/steipete/status/2108733069943623892",
+      "title": "RT @mxstbr: let's talk about submissions. since the beginning of the year, chatgpt plugin submission...",
+      "summary": "RT @mxstbr: let's talk about submissions. since the beginning of the year, chatgpt plugin submissions have increased by almost 10x. \n\nthen,\u2026",
+      "content": "RT @mxstbr: let's talk about submissions. since the beginning of the year, chatgpt plugin submissions have increased by almost 10x. \n\nthen,\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T01:35:16Z",
+      "fetched_at": "2026-10-11T00:12:13.328163Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f286c3e76b088972",
+      "url": "https://x.com/steipete/status/2108729480160432196",
+      "title": "RT @gauravvohra: This company's worth $10B? https://t.co/d4ZPV6MJ3E",
+      "summary": "RT @gauravvohra: This company's worth $10B? https://t.co/d4ZPV6MJ3E",
+      "content": "RT @gauravvohra: This company's worth $10B? https://t.co/d4ZPV6MJ3E",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T01:21:01Z",
+      "fetched_at": "2026-10-11T00:12:13.328192Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c51c09385d6024f5",
+      "url": "https://x.com/steipete/status/2108728724200079370",
+      "title": "RT @heyneighbor: In the last day two different people reached out with unique @openclaw stories\n\nDo ...",
+      "summary": "RT @heyneighbor: In the last day two different people reached out with unique @openclaw stories\n\nDo you have a unique OpenClaw story? \n\nI w\u2026",
+      "content": "RT @heyneighbor: In the last day two different people reached out with unique @openclaw stories\n\nDo you have a unique OpenClaw story? \n\nI w\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-10T01:18:00Z",
+      "fetched_at": "2026-10-11T00:12:13.328221Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "029b027906f5a68a",
+      "url": "https://x.com/dani_avila7/status/2108718097469235386",
+      "title": "This is what a Claude Code session with this setup would look like\n\nSonnet does a great job as the m...",
+      "summary": "This is what a Claude Code session with this setup would look like\n\nSonnet does a great job as the main model, delegating smaller tasks to Haiku subagents\n\nBut sometimes it needs help with more complex decisions\n\nThat's when Opus steps in as an advisor, reviews the work, reasons https://t.co/j29ClZOMCA",
+      "content": "This is what a Claude Code session with this setup would look like\n\nSonnet does a great job as the main model, delegating smaller tasks to Haiku subagents\n\nBut sometimes it needs help with more complex decisions\n\nThat's when Opus steps in as an advisor, reviews the work, reasons https://t.co/j29ClZOMCA",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-10T00:35:47Z",
+      "fetched_at": "2026-10-11T00:12:05.453855Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d20ffa8a7ee18b65",
+      "url": "https://x.com/trq212/status/2108689101503566319",
+      "title": "before I joined Anthropic, I spent about 2 weeks hacking on this as a side project with Opus 4. It u...",
+      "summary": "before I joined Anthropic, I spent about 2 weeks hacking on this as a side project with Opus 4. It used the Agent SDK so it needed a constantly running process &amp; didnt work that well\n\nbut one prompt to Opus 5.5 ported it to Claude Managed Agents &amp; made it way more reliable",
+      "content": "before I joined Anthropic, I spent about 2 weeks hacking on this as a side project with Opus 4. It used the Agent SDK so it needed a constantly running process &amp; didnt work that well\n\nbut one prompt to Opus 5.5 ported it to Claude Managed Agents &amp; made it way more reliable",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-09T22:40:34Z",
+      "fetched_at": "2026-10-11T00:12:00.617144Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "438f4de1adff3e73",
+      "url": "https://x.com/dani_avila7/status/2108687263043575923",
+      "title": "Sonnet as the main model, Opus as an advisor, and Haiku for subagents\n\nSave this and try it with one...",
+      "summary": "Sonnet as the main model, Opus as an advisor, and Haiku for subagents\n\nSave this and try it with one of your sessions\n\nInstall:\nnpx claude-code-templates@latest --setting model/sonnet-opus-advisor-haiku-subagents\n\nThis command installs the settings required to configure your https://t.co/6UuuSoKNey",
+      "content": "Sonnet as the main model, Opus as an advisor, and Haiku for subagents\n\nSave this and try it with one of your sessions\n\nInstall:\nnpx claude-code-templates@latest --setting model/sonnet-opus-advisor-haiku-subagents\n\nThis command installs the settings required to configure your https://t.co/6UuuSoKNey",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-09T22:33:15Z",
+      "fetched_at": "2026-10-11T00:12:05.453894Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7e0ea8fb7349f18b",
+      "url": "https://x.com/AnthropicAI/status/2108680150556737819",
+      "title": "We\u2019re beginning a process of publishing more frequent reports on model behavior, beyond what appears...",
+      "summary": "We\u2019re beginning a process of publishing more frequent reports on model behavior, beyond what appears in our system cards and regular risk reports.\n\nToday\u2019s report describes four types of behaviors we\u2019ve identified during evaluations and internal use. In each, Claude acted on real",
+      "content": "We\u2019re beginning a process of publishing more frequent reports on model behavior, beyond what appears in our system cards and regular risk reports.\n\nToday\u2019s report describes four types of behaviors we\u2019ve identified during evaluations and internal use. In each, Claude acted on real",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-09T22:04:59Z",
+      "fetched_at": "2026-10-11T00:12:12.173505Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d8f066489632672f",
+      "url": "https://x.com/GeminiApp/status/2108678577315303630",
+      "title": "RT @Shopify: Run your store from @GeminiApp \n\nAdd products, check orders, and pull reports right in ...",
+      "summary": "RT @Shopify: Run your store from @GeminiApp \n\nAdd products, check orders, and pull reports right in the chat\n\nSpeed up tasks between Shopif\u2026",
+      "content": "RT @Shopify: Run your store from @GeminiApp \n\nAdd products, check orders, and pull reports right in the chat\n\nSpeed up tasks between Shopif\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-09T21:58:44Z",
+      "fetched_at": "2026-10-11T00:12:08.894383Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ba6cf236d7d2c404",
+      "url": "https://x.com/dani_avila7/status/2108639932273074207",
+      "title": "Claude Projects is finally starting to roll out!\n\nPerfect time to read this article where I explain ...",
+      "summary": "Claude Projects is finally starting to roll out!\n\nPerfect time to read this article where I explain how to set it up and what to keep in mind when creating your projects\ud83d\udc47\nhttps://t.co/SeDtjhMHDx https://t.co/S2mmTX3WRd",
+      "content": "Claude Projects is finally starting to roll out!\n\nPerfect time to read this article where I explain how to set it up and what to keep in mind when creating your projects\ud83d\udc47\nhttps://t.co/SeDtjhMHDx https://t.co/S2mmTX3WRd",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-09T19:25:11Z",
+      "fetched_at": "2026-10-11T00:12:05.453932Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e27b79bb5047027",
+      "url": "https://x.com/dani_avila7/status/2106537507869581813",
+      "title": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "summary": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "content": "Weekends aren\u2019t just for coding, they\u2019re also for\u2026 carving https://t.co/bXzUixi3rI",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-04T00:10:54Z",
+      "fetched_at": "2026-10-05T08:26:57.097280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9dfa9410094722be",
+      "url": "https://x.com/simonw/status/2106528704902164855",
+      "title": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much every...",
+      "summary": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
+      "content": "Just published this post about how we\u2019re going to need default hard budget caps on pretty much everything https://t.co/L6XEYpF4uZ",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-03T23:35:55Z",
+      "fetched_at": "2026-10-05T08:26:55.993587Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5a86298eb42f9872",
+      "url": "https://x.com/simonw/status/2106500511465869380",
+      "title": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGP...",
+      "summary": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGPT?\n\nI'm having trouble deciding when I should prompt Dot vs using ChatGPT - my Dot seems to afford a single conversation, but I like controlling my context across multiple threads",
+      "content": "Now that we've had a few days with it, how are people differentiating between Dot and regular ChatGPT?\n\nI'm having trouble deciding when I should prompt Dot vs using ChatGPT - my Dot seems to afford a single conversation, but I like controlling my context across multiple threads",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-03T21:43:53Z",
+      "fetched_at": "2026-10-05T08:26:55.993619Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4a2c34485ada60e1",
+      "url": "https://x.com/steipete/status/2106489454152298501",
+      "title": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to di...",
+      "summary": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to discover and install agent skills. \n\nWe r\u2026",
+      "content": "RT @Pat_Erichsen: I strongly believe that with this launch ClawHub is the most secure platform to discover and install agent skills. \n\nWe r\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T20:59:57Z",
+      "fetched_at": "2026-10-05T08:27:04.674364Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b8ec8e11e59a5f89",
+      "url": "https://x.com/steipete/status/2106489264443981978",
+      "title": "laughing about how we all are building the same thing.",
+      "summary": "laughing about how we all are building the same thing.",
+      "content": "laughing about how we all are building the same thing.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T20:59:11Z",
+      "fetched_at": "2026-10-05T08:27:04.674386Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "012afda5ede83717",
+      "url": "https://x.com/dani_avila7/status/2106474300785996075",
+      "title": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "summary": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "content": "If you still don\u2019t know how Prompt Caching works, just watch this video https://t.co/BHhRzOmcve",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-03T19:59:44Z",
+      "fetched_at": "2026-10-05T08:26:57.097331Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8561871f5d1d3eae",
+      "url": "https://x.com/steipete/status/2106446147791597774",
+      "title": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Andr...",
+      "summary": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Android app.",
+      "content": "Do I know anyone at Google who could help? We're now over a week in review limbo for OpenClaw's Android app.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-03T18:07:52Z",
+      "fetched_at": "2026-10-05T08:27:04.674409Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "82ae9a76be843f7b",
+      "url": "https://x.com/sama/status/2106388373221118198",
+      "title": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgm...",
+      "summary": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models, and think it is a real safety issue.",
+      "content": "I am very uncomfortable about people trying to ascribe religious force or a surrender of human judgment to AI models, and think it is a real safety issue.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-03T14:18:17Z",
+      "fetched_at": "2026-10-05T08:26:59.232149Z",
       "score": null,
       "score_reason": "",
       "tier": "",
