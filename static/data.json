@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-12T08:54:04.143856+00:00",
+  "exported_at": "2026-10-12T11:55:18.729641+00:00",
   "period_hours": 168,
-  "total": 3056,
+  "total": 3054,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40537,25 +40537,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4d8ca6ad3234aaf0",
-      "url": "https://www.youtube.com/watch?v=5RtmQSKKQo8",
-      "title": "IDE vs CLI: What Every DevOps Engineer Should Know",
-      "summary": "Learn more about AI IDE here \u2192 https://ibm.biz/~ita5zGsXu\n\nMost developers use both an IDE and a CLI, but each solves a different problem. Cedric Clyburn and Legare Kerrison explain how IDEs, command-line tools, testing, pipelines, deployments, and infrastructure fit together in modern DevOps workflows. Learn why context switching often becomes a bigger bottleneck than writing code itself.\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~chHlvpER3\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#devops #developertools #aiagents #softwaredevelopment \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-05T11:00:27Z",
-      "fetched_at": "2026-10-05T14:42:00.813273Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "9855b0d96c10185b",
       "url": "https://machinelearning.apple.com/research/rised-multi-environment-selection",
       "title": "RISED: Rubrics for Agentic Multi-Environment Selection and Self-Distillation",
@@ -40722,27 +40703,6 @@
       "author": "Chelsea Sumner",
       "published_at": "2026-10-05T13:00:57Z",
       "fetched_at": "2026-10-05T14:42:05.242759Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2d8e70fb45cef747",
-      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
-      "title": "Building advertising for the way people use AI",
-      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-05T10:00:00Z",
-      "fetched_at": "2026-10-05T14:42:02.322129Z",
       "score": null,
       "score_reason": "",
       "tier": "",
