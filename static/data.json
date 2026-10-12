@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-12T11:55:18.729641+00:00",
+  "exported_at": "2026-10-12T13:55:55.159664+00:00",
   "period_hours": 168,
-  "total": 3054,
+  "total": 3052,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40517,26 +40517,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "20988a85b7043e0a",
-      "url": "https://www.youtube.com/watch?v=bvGptCLDhyo",
-      "title": "I Built Another Andrej Karpathy Using Claude",
-      "summary": "FREE AI OS Template: https://app.aiautomationsociety.ai/optin/ai-os/?utm_source=youtube&amp;utm_medium=organic&amp;utm_content=claude-karpathy-agent&amp;sl=yt_claude-karpathy-agent\nMy playbook for growing a $1M AI agency: https://app.aiautomationsociety.ai/opaa-ads-optin\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=I-built-another-andrej-karpathy\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nAndrej Karpathy explains AI better than anyone alive, so I built another Andrej Karpathy using Claude. It's not a voice clone. \n\nIt's a Claude Code agent built from over 700,000 words of his lectures, blogs and posts, and it teaches the way he does. I'll show you the 4 steps to build your own, and once you've done it with Karpathy, you can do it with pretty much any expert you learn from.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTimestamps:\n00:00 - Karpathy's brain\n00:18 - Who is he?\n01:07 - Why bother?\n02:47 - 700K words\n03:50 - His own wiki\n05:37 - 7 rules\n06:42 - Mini Karpathy\n07:38 - Run it first\n08:48 - Would it ship?",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-05T12:43:22Z",
-      "fetched_at": "2026-10-05T14:41:59.757581Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "9855b0d96c10185b",
       "url": "https://machinelearning.apple.com/research/rised-multi-environment-selection",
       "title": "RISED: Rubrics for Agentic Multi-Environment Selection and Self-Distillation",
@@ -40682,27 +40662,6 @@
       "author": "",
       "published_at": "2026-10-05T15:00:00Z",
       "fetched_at": "2026-10-05T22:38:24.567618Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "56541a536ae3f25f",
-      "url": "https://blogs.nvidia.com/blog/ai-breast-cancer-startups/",
-      "title": "From Scan to Treatment Plan, AI Helps Close Breast Cancer\u2019s Deadliest Gaps",
-      "summary": "Breast cancer is the most commonly diagnosed cancer among American women \u2014 yet the gaps in care are wide. A majority of women over age 40 skip the recommended annual screening. Radiologists are reading more mammograms with fewer colleagues. And when a diagnosis arrives, the tests that inform treatment can take weeks to return results.\u00a0 [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">Breast cancer is the most commonly diagnosed cancer among American women \u2014 yet the gaps in care are wide. A </span><a href=\"https://www.medstarhealth.org/news-and-publications/news/majority-of-women-over-40-missing-annual-mammograms-according-to-new-medstar-health-national-survey\" target=\"_blank\"><span style=\"font-weight: 400;\">majority of women over age 40</span></a><span style=\"font-weight: 400;\"> skip the recommended annual screening. Radiologists are reading more mammograms with fewer colleagues. And when a diagnosis arrives, the tests that inform treatment can take weeks to return results.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Companies in the </span><a href=\"https://www.nvidia.com/en-us/startups/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Inception</span></a><span style=\"font-weight: 400;\"> program for startups are building AI applications to support clinicians at each of these friction points, including imaging, risk assessment and treatment planning.</span></p>\n<p><span style=\"font-weight: 400;\">About 40 million mammograms are performed in the U.S. each year, but a projected shortfall of tens of thousands of radiologists over the next decade is straining the system\u2019s capacity to read them.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">At the other end of the care timeline, treatment decisions often hinge on genomic assays sent off to outside labs \u2014 assays that take weeks to process, at a moment when speed and certainty matter most.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The companies below are addressing both ends of that gap, and everything in between, accelerated by NVIDIA AI infrastructure.</span></p>\n<h2><b>Automated Imaging Delivers AI-Powered Insights</b></h2>\n<p><span style=\"font-weight: 400;\">For women struggling to find time or a nearby location for breast cancer screening, access is a practical barrier that translates into missed diagnoses. NVIDIA Inception startup iSono Health was built around simplifying this imaging workflow.</span></p>\n<p><span style=\"font-weight: 400;\">The company\u2019s FDA-cleared ATUSA platform \u2014 a wearable, automated 3D quantitative ultrasound system \u2014 captures a standardized breast volume in approximately two minutes per breast, compared with up to 45 minutes for a conventional handheld ultrasound.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The system\u2019s AI, trained on thousands of full-breast scans comprising over 1.5 million ultrasound frames, automates image acquisition. It uses NVIDIA GPU acceleration and open source medical imaging technology to deliver a 3D scan that the company says is 28% more sensitive than a handheld 2D ultrasound. </span></p>\n<div class=\"wp-video\" style=\"width: 1200px;\"><video class=\"wp-video-shortcode\" controls=\"controls\" height=\"675\" id=\"video-98578-1\" loop=\"loop\" poster=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/iSono-Health.jpg\" preload=\"auto\" width=\"1200\"><source src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/ATUSA_software_show_10s.mp4?_=1\" type=\"video/mp4\" /><a href=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/ATUSA_software_show_10s.mp4\">https://blogs.nvidia.com/wp-content/uploads/2026/10/ATUSA_software_show_10s.mp4</a></video></div>\n<p>&nbsp;</p>\n<p><span style=\"font-weight: 400;\">Handheld ultrasound depends on whoever holds the probe, so a woman\u2019s scans typically can\u2019t be compared from one year to the next. ATUSA captures the whole breast the same way every time, creating a repeatable view of breast tissue that could help clinicians analyze how a patient\u2019s tissue changes across successive scans, while also reducing operator errors and variability.</span></p>\n<p><span style=\"font-weight: 400;\">ATUSA is commercially available through partner clinics across California, Texas, Georgia, Tennessee and Washington D.C., with new sites coming online regularly.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cGetting the scan closer to the patient is the first breakthrough,\u201d said Neda Razavi, CEO of iSono Health. \u201cOur vision is to make that scan increasingly informative: helping clinicians see what is there, understand what has changed and make more informed decisions.\u201d\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">iSono Health has developed AI capabilities for lesion detection, 3D segmentation and lesion classification. It next plans to extend its AI pipeline into multimodal diagnostic intelligence spanning 3D ultrasound, mammography, MRI and clinical information.</span></p>\n<p><span style=\"font-weight: 400;\">The company has a multicenter clinical study with 3,200 patients underway to further validate the platform\u2019s performance, with lead research sites at UC Davis and Vanderbilt University Medical Center.\u00a0</span></p>\n<h2><b>Finding Cancers, Cutting False Alarms</b></h2>\n<p><span style=\"font-weight: 400;\">Another NVIDIA Inception company, Whiterabbit.ai, develops AI technology for breast cancer screening. Its FDA-cleared WRDensity software automatically assesses breast density from mammograms and has been used in the care of hundreds of thousands of patients.</span></p>\n<p><span style=\"font-weight: 400;\">The company has also developed WRRisk, a clinical decision support software for estimating patients\u2019 long-term risk of developing breast cancer \u2014 and is researching a new generation of AI for mammography that could help radiologists detect more cancers while automating the screening of mammograms that are negative for breast cancer.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The goal is to reduce the burden on a strained radiologist workforce, accelerate results and reduce avoidable callbacks for patients, and lower downstream healthcare costs. </span></p>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_98585\" style=\"width: 1434px;\"><img alt=\"\" class=\"wp-image-98585 size-full\" height=\"1076\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/WRDensity-Visual-2.png\" width=\"1434\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-98585\">Whiterabbit.ai&#8217;s FDA-cleared WRDensity software automatically assesses breast density from mammograms.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">\u201cEvery day, breast radiologists face a needle-in-a-haystack problem, trying to find roughly one cancer in every 200 mammograms,\u201d said Jason Su, cofounder and chief technology officer of Whiterabbit.ai. \u201cWe hope AI can be a powerful sidekick to radiologists, helping to clear away the hay so they can focus their expertise where it matters most.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">Whiterabbit trains its AI models on a cluster of NVIDIA GPUs housed at Washington University in St. Louis, supplemented by additional GPU capacity in the cloud. Inference runs on NVIDIA GPUs deployed directly in the clinic.</span></p>\n<h2><b>Predicting Which Treatments Will Work</b></h2>\n<p><span style=\"font-weight: 400;\">Once a patient is diagnosed with breast cancer, the next question is what to do about it \u2014 and the answer depends on predicting how the cancer will respond to treatment.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Today, these predictions are limited in scope and accuracy, and often require a separate tissue biopsy with a two- to four-week wait. Ataraxis AI is building clinical intelligence that predicts patient outcomes and response to different therapies using digital data, including pathology slides that are already part of the standard patient workup.</span></p>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_98586\" style=\"width: 960px;\"><img alt=\"\" class=\"wp-image-98586 size-medium\" height=\"869\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/ataraxis3-960x869.png\" width=\"960\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-98586\">Ataraxis&#8217; AI models interpret patterns in pathology slides, visualized here as color-coded clusters. The models learn to associate variations among these patterns with differences in recurrence risk and chemosensitivity.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">\u201cThe tools oncologists rely on today to guide therapy decisions were largely trained once, fifteen years ago, and never updated. Our models get stronger every time we acquire more clinical trial data,\u201d said Joseph Cappadona, member of technical staff at Ataraxis AI. \u201cBut as we scale our models, the bigger shift is being able to answer more questions to help oncologists personalize therapy across all cancers.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">Ataraxis\u2019s AI models analyze digital pathology slides and standard clinical variables to predict treatment response and recurrence risk. One model predicts whether presurgical chemotherapy is likely to shrink a patient\u2019s tumor to the point of response before the operating room. After surgery, another model estimates a patient\u2019s five-year recurrence risk and the likely benefit of chemotherapy as a next step.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Both models have been validated across more than 10 institutions and multiple clinical trials, and are in active clinical use. They run on NVIDIA GPUs on premises, in an offsite data center and in the cloud \u2014 using PyTorch accelerated by NVIDIA CUDA throughout.</span></p>\n<h2><b>Providing Tumor Insights With 3D Visualization</b></h2>\n<p><span style=\"font-weight: 400;\">Another NVIDIA Inception company, </span><a href=\"https://blogs.nvidia.com/blog/simbiosys-3d-visualizations-breast-cancer-tumors/\"><span style=\"font-weight: 400;\">SimBioSys</span></a><span style=\"font-weight: 400;\">, joined NVIDIA on a recent panel marking Breast Cancer Awareness Month.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The company builds AI-powered precision medicine technology that creates accurate 3D models of breast tumors, veins and other soft tissue, delivering important insights to help guide surgeries and influence treatment plans. It has also built a tool to estimate the risk of breast cancer recurrence based on 3D volumetric data from a patient\u2019s breast MRI, tumor pathology and clinical data.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cWe\u2019re building a platform that now allows us to take multimodal data \u2014 imaging exams, pathology results, genomic testing when applicable and other biological inputs \u2014 and, using AI, bring that all together,\u201d said Stacey Stevens, CEO of SimBioSys, at the event. \u201cWhen we do that, it generates new insights beyond what we had from any individual piece.\u201d</span></p>\n<figure class=\"wp-caption aligncenter\" id=\"attachment_98587\" style=\"width: 1680px;\"><img alt=\"\" class=\"wp-image-98587 size-large\" height=\"947\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/NCP09158-47-scaled-e1790987802226-1680x947.jpg\" width=\"1680\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-98587\">Stacey Stevens, CEO of SimBioSys, and Chelsea Sumner, healthcare AI startups lead for North and Latin America at NVIDIA, spoke on an October 1 panel in Phoenix, Arizona, on AI\u2019s role in advancing breast cancer care.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">SimBioSys uses </span><a href=\"https://www.nvidia.com/en-us/launchpad/ai/annotate-adapt-medical-imaging-with-monai/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA MONAI</span></a> <span style=\"font-weight: 400;\">for training and validation data, and</span> <a href=\"https://www.nvidia.com/en-us/technologies/cuda-x/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA CUDA-X</span></a> <span style=\"font-weight: 400;\">libraries including</span> <a href=\"https://developer.nvidia.com/cublas\" target=\"_blank\"><span style=\"font-weight: 400;\">cuBLAS</span></a> <span style=\"font-weight: 400;\">and </span><a href=\"https://github.com/Project-MONAI/monai-deploy\" target=\"_blank\"><span style=\"font-weight: 400;\">MONAI Deploy</span></a><span style=\"font-weight: 400;\"> for its imaging technology, which runs on NVIDIA GPUs in the cloud.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cNVIDIA technology gives us the computing power to take hundreds or thousands of images, apply our AI and analyze them quickly,\u201d Stevens said. \u201cThat speed matters because patients and physicians need answers quickly. They can\u2019t afford to wait days or weeks.\u201d</span></p>\n<p><i><span style=\"font-weight: 400;\">Learn more about the </span></i><a href=\"https://www.nvidia.com/en-us/startups/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA Inception</span></i></a><i><span style=\"font-weight: 400;\"> program for startups.</span></i></p>\n<p><i><span style=\"font-weight: 400;\">Certain technologies described in this article are investigational and have not been approved by the U.S. FDA for commercial use. </span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Chelsea Sumner",
-      "published_at": "2026-10-05T13:00:57Z",
-      "fetched_at": "2026-10-05T14:42:05.242759Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63964,26 +63923,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "edaea97db2762ae8",
-      "url": "https://x.com/dani_avila7/status/2107096856081621468",
-      "title": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthi...",
-      "summary": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthis is how \ud83d\udc47 https://t.co/kDpAHNS1D8",
-      "content": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthis is how \ud83d\udc47 https://t.co/kDpAHNS1D8",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-05T13:13:33Z",
-      "fetched_at": "2026-10-05T16:01:58.516580Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a498d914a8059a73",
       "url": "https://x.com/trq212/status/2107340728380870868",
       "title": "if you're getting into game design, there are so many good resources out there to learn from!",
@@ -66584,6 +66523,26 @@
       "author": "dani_avila7",
       "published_at": "2026-10-11T16:19:26Z",
       "fetched_at": "2026-10-12T08:53:54.065103Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "edaea97db2762ae8",
+      "url": "https://x.com/dani_avila7/status/2107096856081621468",
+      "title": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthi...",
+      "summary": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthis is how \ud83d\udc47 https://t.co/kDpAHNS1D8",
+      "content": "If you already have access to Claude Projects and want to continue working on a thread locally \n\nthis is how \ud83d\udc47 https://t.co/kDpAHNS1D8",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-05T13:13:33Z",
+      "fetched_at": "2026-10-05T16:01:58.516580Z",
       "score": null,
       "score_reason": "",
       "tier": "",
