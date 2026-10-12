@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-12T06:00:38.134991+00:00",
+  "exported_at": "2026-10-12T08:54:04.143856+00:00",
   "period_hours": 168,
-  "total": 3051,
+  "total": 3056,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -66522,6 +66522,108 @@
       "author": "dani_avila7",
       "published_at": "2026-10-11T15:34:32Z",
       "fetched_at": "2026-10-11T16:16:05.401281Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fa7d896fc5a01ccb",
+      "url": "https://x.com/dani_avila7/status/2109453905407123514",
+      "title": "Karpathy AI funnel https://t.co/eeN20CrtNr",
+      "summary": "Karpathy AI funnel https://t.co/eeN20CrtNr",
+      "content": "Karpathy AI funnel https://t.co/eeN20CrtNr",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-12T01:19:37Z",
+      "fetched_at": "2026-10-12T08:53:54.064988Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "630930ab5f8dee0d",
+      "url": "https://x.com/dani_avila7/status/2109439734292287668",
+      "title": "Running a Dynamic Workflow from a Jupyter Notebook\n\nThis is Module 7 of my Claude Managed Agents Coo...",
+      "summary": "Running a Dynamic Workflow from a Jupyter Notebook\n\nThis is Module 7 of my Claude Managed Agents Cookbook, where you'll learn how to run dynamic workflows\n\nWith Claude Console open, you can watch the workflow execute in real time\n\nIn this example, the main agent creates a https://t.co/FQxPq6p5Xa",
+      "content": "Running a Dynamic Workflow from a Jupyter Notebook\n\nThis is Module 7 of my Claude Managed Agents Cookbook, where you'll learn how to run dynamic workflows\n\nWith Claude Console open, you can watch the workflow execute in real time\n\nIn this example, the main agent creates a https://t.co/FQxPq6p5Xa",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-12T00:23:18Z",
+      "fetched_at": "2026-10-12T08:53:54.065059Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76666e967cc61296",
+      "url": "https://x.com/karpathy/status/2109361546505966046",
+      "title": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *wid...",
+      "summary": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come",
+      "content": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-10-11T19:12:37Z",
+      "fetched_at": "2026-10-12T08:53:50.686287Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e94f84ba3867e38",
+      "url": "https://x.com/trq212/status/2109329495341867391",
+      "title": "I think Terrence Tao is directionally correct, we shouldn\u2019t settle for a super intelligence that is ...",
+      "summary": "I think Terrence Tao is directionally correct, we shouldn\u2019t settle for a super intelligence that is opaque.\n\nA key signal of intelligence is communication. We should strive to make products and models that build understanding with humans instead of disintermediating them.",
+      "content": "I think Terrence Tao is directionally correct, we shouldn\u2019t settle for a super intelligence that is opaque.\n\nA key signal of intelligence is communication. We should strive to make products and models that build understanding with humans instead of disintermediating them.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-11T17:05:15Z",
+      "fetched_at": "2026-10-12T08:53:49.553850Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3d21f53048a6aeac",
+      "url": "https://x.com/dani_avila7/status/2109317963811574099",
+      "title": "/anatomy  Explain how the pyramids of Egypt were built https://t.co/0iwpEgyX1a",
+      "summary": "/anatomy  Explain how the pyramids of Egypt were built https://t.co/0iwpEgyX1a",
+      "content": "/anatomy  Explain how the pyramids of Egypt were built https://t.co/0iwpEgyX1a",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-11T16:19:26Z",
+      "fetched_at": "2026-10-12T08:53:54.065103Z",
       "score": null,
       "score_reason": "",
       "tier": "",
