@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-10-12T19:16:07.702312+00:00",
+  "exported_at": "2026-10-12T21:31:45.825998+00:00",
   "period_hours": 168,
   "total": 3063,
   "all_tags": [
@@ -36049,66 +36049,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6335ef51c2ea87dd",
-      "url": "https://www.youtube.com/watch?v=42Bz0TUfeOQ",
-      "title": "The Transcript Looked Fine. The Call Wasn't. \u2014 Debugging Voice Agents, Arize",
-      "summary": "The transcript says the agent corrected itself. The audio says it refunded the wrong order.\n\nFuad Ali, senior product manager at Arize AI, shows why voice agents are one of the hardest categories to debug: latency, turn-taking and transcription errors are invisible in a text log. Using a refund call that looks fine in the transcript but had 2.4 seconds of dead air, an interruption and a refund on the wrong order, he shows what you need instead. That means audio, transcript and trace in one session view, OpenInference semantic conventions for real-time audio across providers, and evals that run on the audio itself. He closes with the observe, evaluate, improve loop and agent experiments that test fixes against failed traces.\n\nIn this talk:\n\u2022 Voice failure modes text logs miss: latency, barge-in, mishearing and tone\n\u2022 Tracing real-time audio with open-source OpenInference conventions\n\u2022 Audio-native evals for sentiment, latency, interruptions and task success\n\u2022 Toward self-healing voice agents: monitors, investigation agents and replayed fixes\n\nSPEAKER\nFuad Ali, Senior Product Manager, Arize AI\nLinkedIn: https://www.linkedin.com/in/ahmedfuadali/\nX: https://x.com/tofuadmiral\n\nLINKS\nArize AX: https://arize.com/products/ax/\nTracing and evaluating audio (docs): https://arize.com/docs/ax/cookbooks/evaluate/tracing-and-evaluating-audio\nOpenInference (GitHub): https://github.com/Arize-ai/openinference\nArize: https://arize.com/\n\nCHAPTERS\n0:00 Intro\n0:22 Why voice agents are invisible\n1:07 Voice agents are exploding\n1:47 Why voice is hard to debug\n2:41 The transcript looked fine. The call wasn't.\n3:31 What actually went wrong\n3:56 See beyond the transcript\n4:46 Trace everything\n5:41 Audio in OpenInference\n6:45 One schema across providers\n7:40 Replay the whole conversation\n8:30 Demo: a voice trace with a tool call\n9:00 The failures, found\n9:54 Evals for audio\n11:49 Creating audio evals with skills\n12:44 Evals on the spans\n13:48 Observe, evaluate, improve\n14:28 Agent experiments and self-healing\n15:53 Start tracing your voice agents\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#VoiceAI #LLMObservability #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T21:30:33Z",
-      "fetched_at": "2026-10-05T22:38:22.882662Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9cc2e0b0be36f832",
-      "url": "https://www.youtube.com/watch?v=zQZiHOpkq_s",
-      "title": "Research to Reality with Google DeepMind \u2014 Paige Bailey, Google DeepMind",
-      "summary": "A model running entirely in the browser produces an emoji table ranking the Harry Potter books, and Paige Bailey immediately questions its taste. The response arrives almost instantly, without an API call or data leaving the machine. Bailey uses that demo to introduce Gemma 4, Google DeepMind's open model family, and show what local inference looks like in practice. She describes Apache 2 licensing, models ranging from two billion to 31 billion parameters, and the ability to download, adapt, and finetune them for a company's own projects. The opening also connects DeepMind's research mission to AlphaFold, medical models, robotics, and AI for science, before outlining computer use and managed agents that execute tasks in a Linux sandbox.\n\nThe same local approach extends to phones through Google AI Edge Gallery. Bailey walks through image descriptions, audio transcription, function calling, and a collection of skills for games, haikus, weather queries, and calendar events. Android and iOS devices can run downloaded models, while supported hardware accelerators handle inference instead of relying on the CPU. She then compares model size with deployment requirements: smaller GPU footprints, a single commodity GPU rather than distributed inference, laptop models, and a mobile option. Quantized checkpoints explain the speed of the browser demo, with the two billion parameter version taking less than a gigabyte. The practical thread is choosing a model that fits the device and keeping the work local.\n\n\nSpeaker info:\n- https://x.com/DynamicWebPaige\n- https://github.com/dynamicwebpaige\n- https://www.webpaige.dev/\n\nTimestamps:\n0:00 - Welcome and audience arrival\n2:38 - Responsible AI and science\n4:01 - Computer use and managed agents\n4:56 - Gemma open models\n5:54 - Running Gemma in the browser\n7:35 - AI Edge Gallery on mobile\n8:59 - Model sizes and quantization",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T21:00:21Z",
-      "fetched_at": "2026-10-05T22:38:22.882672Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9d1052c94222acc4",
-      "url": "https://www.youtube.com/watch?v=s0hFne6EeOI",
-      "title": "Build the Right Thing: Product Engineering (Part 2) \u2014 Kent C. Dodds, EpicProduct.engineer",
-      "summary": "A request for facial recognition becomes a job statement about getting attendees into a workshop without missing the first 20 minutes. Kent C. Dodds uses that audience suggestion to separate a requested feature from the progress a user actually needs. Asking why exposes alternatives such as parallel queues or badges, rather than immediately committing to a database of faces. He breaks the job into functional, social, and emotional dimensions, showing how each changes engineering decisions. A system can move people through a door faster while making them uncomfortable about how their information is used. Success also includes whether customers keep using the product, rather than simply paying for it once.\n\nThe second exercise shifts to a food delivery app and uses the Kano model to sort competing requests. Reliable order confirmations are basic needs. Delivery estimates offer a measurable performance gradient. Discounts and group ordering can delight users, while GPS tracking illustrates how an unexpected extra becomes something customers assume will exist. Dodds connects those categories to architectural effort: make foundations reliable, measure performance, and keep experiments reversible until their value is clearer. Features that nobody cares about create maintenance work; features users actively dislike deserve pushback. Audience questions cover validating ideas before metrics exist, handling an unusually demanding customer, and understanding architecture during incidents. The closing argument ties technical expertise to product judgment: faster implementation matters when engineers understand which problems deserve solving.\n\n\nSpeaker info:\n- https://x.com/kentcdodds\n- https://kentcdodds.com\n- https://www.epicproduct.engineer/\n\nTimestamps:\n0:00 - Returning to the workshop product\n2:23 - Digging beneath a feature request\n6:04 - Jobs to be done\n8:52 - Writing a job statement\n11:34 - Functional, social, and emotional needs\n15:00 - Gathering user feedback\n17:29 - Exploring facial recognition requirements\n20:42 - Measuring repeated progress\n23:35 - Audience questions on validation and incidents\n31:25 - Prioritizing software changes\n33:14 - The Kano model\n35:00 - Sorting food delivery features\n41:49 - How expectations change over time\n45:03 - Turning priorities into engineering decisions\n47:22 - Indifferent and unwanted features\n50:17 - Building the right thing",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T20:00:35Z",
-      "fetched_at": "2026-10-05T22:38:22.882682Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "ebb413cc5359756b",
       "url": "https://openai.com/index/jump-trading",
       "title": "How Jump Trading is scaling quant research with ChatGPT",
@@ -40819,28 +40759,6 @@
       "author": "ashwin-ant",
       "published_at": "2026-10-05T23:33:17Z",
       "fetched_at": "2026-10-06T06:22:44.583154Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7eeb0a9dde534539",
-      "url": "https://research.google/blog/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
-      "title": "Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle",
-      "summary": "Education Innovation",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-05T21:08:31Z",
-      "fetched_at": "2026-10-05T22:38:25.003220Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64288,26 +64206,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b39fe8732c704837",
-      "url": "https://x.com/steipete/status/2107208292061815032",
-      "title": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
-      "summary": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
-      "content": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-05T20:36:21Z",
-      "fetched_at": "2026-10-06T07:19:36.113419Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "69774a00da02aa76",
       "url": "https://x.com/dani_avila7/status/2107455957772992572",
       "title": "Google is bringing native Markdown support to Drive and Docs\n\nOk, this is definitely a great move\n\nT...",
@@ -66723,6 +66621,106 @@
       "author": "simonw",
       "published_at": "2026-10-12T18:22:02Z",
       "fetched_at": "2026-10-12T19:15:56.696973Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0644731dada4be40",
+      "url": "https://x.com/dani_avila7/status/2109734992532361359",
+      "title": "I'm getting 5 or more of these emails from X every week\n\nplus DMs from people pretending to be Bloom...",
+      "summary": "I'm getting 5 or more of these emails from X every week\n\nplus DMs from people pretending to be Bloomberg reporters trying to interview me almost daily\n\nThere are more and more bots trying to hack accounts, and they're getting harder to ignore https://t.co/TkoPVGU1ru",
+      "content": "I'm getting 5 or more of these emails from X every week\n\nplus DMs from people pretending to be Bloomberg reporters trying to interview me almost daily\n\nThere are more and more bots trying to hack accounts, and they're getting harder to ignore https://t.co/TkoPVGU1ru",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-12T19:56:33Z",
+      "fetched_at": "2026-10-12T21:31:36.588200Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "651135d42c848f15",
+      "url": "https://x.com/steipete/status/2109731250965742031",
+      "title": "RT @nfarina: Here's what most apps are going to look like on the Duo for a while https://t.co/7VrUf4...",
+      "summary": "RT @nfarina: Here's what most apps are going to look like on the Duo for a while https://t.co/7VrUf4K8DR",
+      "content": "RT @nfarina: Here's what most apps are going to look like on the Duo for a while https://t.co/7VrUf4K8DR",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-12T19:41:41Z",
+      "fetched_at": "2026-10-12T21:31:44.133448Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "93a478443681ff28",
+      "url": "https://x.com/steipete/status/2109731119205871713",
+      "title": "RT @AndrewCurran_: Pacing is out the window. For it to work, every American lab needed to be on boar...",
+      "summary": "RT @AndrewCurran_: Pacing is out the window. For it to work, every American lab needed to be on board, Mark Zuckerberg has repeatedly made\u2026",
+      "content": "RT @AndrewCurran_: Pacing is out the window. For it to work, every American lab needed to be on board, Mark Zuckerberg has repeatedly made\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-12T19:41:10Z",
+      "fetched_at": "2026-10-12T21:31:44.133514Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "39d1d9542f5810d3",
+      "url": "https://x.com/steipete/status/2109730774593487009",
+      "title": "6.1 Sol ultrafast &gt;&gt;&gt; 6 Astra\n\n~ same cost but whole different game with 250 tpm",
+      "summary": "6.1 Sol ultrafast &gt;&gt;&gt; 6 Astra\n\n~ same cost but whole different game with 250 tpm",
+      "content": "6.1 Sol ultrafast &gt;&gt;&gt; 6 Astra\n\n~ same cost but whole different game with 250 tpm",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-12T19:39:48Z",
+      "fetched_at": "2026-10-12T21:31:44.133548Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b39fe8732c704837",
+      "url": "https://x.com/steipete/status/2107208292061815032",
+      "title": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
+      "summary": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
+      "content": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-05T20:36:21Z",
+      "fetched_at": "2026-10-06T07:19:36.113419Z",
       "score": null,
       "score_reason": "",
       "tier": "",
