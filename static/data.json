@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-12T16:37:48.368246+00:00",
+  "exported_at": "2026-10-12T19:16:07.702312+00:00",
   "period_hours": 168,
-  "total": 3064,
+  "total": 3063,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40507,86 +40507,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ebe16f966727d9f4",
-      "url": "https://www.youtube.com/watch?v=_fHTqOs5wQA",
-      "title": "Build the Right Thing: Product Engineering (Part 1) \u2014 Kent C. Dodds, EpicProduct.engineer",
-      "summary": "The line of attendees waiting outside becomes the workshop's live product idea: an app called Just Get In the Workshop. Kent C. Dodds uses that immediate frustration to practice deciding whether a problem deserves a software solution. Before the exercise, he explains why faster implementation changes the value of an engineer's work. Agents can help hit more targets, but choosing the useful target still requires judgment. Product engineers connect customer needs to data models, workflows, constraints, observability, and the smallest useful slice of a system. Dodds draws on conversations with other builders to show how understanding users changes architectural choices, while accepting a ticket without that context can produce technically polished work that misses the point.\n\nThe room then applies The Mom Test to its conference entry idea. Questions about whether somebody would use an app invite compliments and speculation. Questions about the last time the problem happened, what the person did instead, and what the workaround cost reveal behavior. Dodds connects that evidence to how much engineering effort a feature deserves. An experiment needs a different investment from a capability essential to the business. Early prototypes and watching people use them keep the feedback loop open after the initial idea has been validated. Audience questions explore hiring for product judgment, collaboration with product managers, and engineering responsibilities as teams grow. The first part establishes the discovery habits and technical ownership that guide the next stages of the workshop.\n\n\nSpeaker info:\n- https://x.com/kentcdodds\n- https://kentcdodds.com\n- https://www.epicproduct.engineer/\n\nTimestamps:\n0:00 - Arrival and introduction\n3:40 - An educator's changing role\n6:14 - Durable skills and engineering judgment\n10:31 - Building the right thing\n12:46 - Choosing a live example product\n15:43 - Why faster implementation can miss the goal\n21:09 - Product engineers and product managers\n25:21 - Product context and architectural choices\n28:18 - Creating good systems for agents\n30:38 - Questions on MVPs, hiring, and collaboration\n37:02 - Workshop frameworks and the entry app\n38:27 - Practicing customer discovery\n40:45 - Applying The Mom Test\n46:10 - The cost of building without validation\n49:06 - Closing the loop with early user feedback\n51:10 - Questions on roles and team growth",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T19:00:12Z",
-      "fetched_at": "2026-10-05T22:38:22.882690Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "83ada949cad0e877",
-      "url": "https://www.youtube.com/watch?v=fz6-NS7qpZc",
-      "title": "How I Learned to Stop Worrying and Love the Sandbox \u2014 Matt Brockman, E2B",
-      "summary": "A runaway process consumes 99.7% of a sandbox's CPU, and killing it unlocks the next level of a capture the flag lab. Matt Brockman walks the room through deliberately broken environments to make sandbox operations concrete. Participants identify their sandbox, find memory pressure, locate a file filling the disk, and clean up background processes. Each challenge runs in its own environment, so a mistake can be reset without destroying the rest of the workshop. Brockman explains how E2B templates preserve a running system's state, including memory and the filesystem, so work can resume where it stopped. The exercises begin with Linux commands and configuration before moving into Python.\n\nThe operational questions become harder when a few sandboxes turn into hundreds or thousands. A simulated lifecycle exercise gives a task enough time to finish, then shortens the idle timeout so unused resources do not keep consuming capacity. Another exercise replaces round robin assignment with a mapping from users to sandbox IDs, allowing each person to return to the same workspace. A cache example separates a template's readable files from the location that should receive runtime writes. Brockman also discusses the tradeoffs of restoring state: startup is convenient, but forgotten processes come back too. Audience questions cover volumes, storage growth, distributed workloads, orchestration, and network restrictions. The recurring task is keeping track of what runs where, what it can access, and when to clean it up.\n\n\nSpeaker info:\n- https://x.com/badphilosopher\n- https://github.com/e2b-dev/E2B\n\nTimestamps:\n0:00 - Introduction and capture the flag setup\n2:51 - Why agents need sandboxes\n4:27 - Snapshots and templates\n8:08 - Opening the lab and finding a sandbox ID\n16:02 - Runaway processes and isolated environments\n18:43 - Debugging CPU usage\n20:30 - Memory pressure\n21:57 - Finding a full disk\n25:12 - Correcting the disk cleanup exercise\n31:14 - Sandbox lifetimes and idle timeouts\n39:04 - Cleaning up background processes\n42:31 - Mapping users to workspaces\n48:30 - Filesystem permissions and runtime caches\n50:08 - Audience questions on sandbox operations\n54:24 - Storage, volumes, and orchestration\n57:12 - Templates, local development, and network access",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T18:00:17Z",
-      "fetched_at": "2026-10-05T22:38:22.882698Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "58927df233dac65b",
-      "url": "https://www.youtube.com/watch?v=NdrSPm6NCdk",
-      "title": "Evals in AI: A Deep Dive \u2014 Tejas Kumar, IBM",
-      "summary": "A customer support answer passes a test because it contains the word \u201ccannot,\u201d even though it approves a return outside the store's policy. Tejas Kumar builds that failure live to show where ordinary assertions and fuzzy matching stop being useful. The example grows into an LLM judge, then a dataset of customer scenarios, agent responses, and human verdicts. Along the way, the judge starts favoring an answer generated by its own model family. Adding the actual return policy improves its decisions, but missing details and a loyal customer's appeal still expose gaps. Kumar keeps examining disagreements, supplying context, and eventually changing the model rather than treating a green test as proof that the system works.\n\nThe workshop connects those experiments to an evaluation process that can survive production. Test cases, expected behavior, a judge, and aggregation form the basic structure. Position bias, sycophancy, self preference, and verbosity can distort the result, so the instrument itself needs calibration. Kumar sets an 80% agreement threshold for a CI gate, then explains why fresh traffic and human review must keep the dataset current. An OpenRAG demonstration retrieves an uploaded refund policy instead of relying on a rule buried in a prompt. He also distinguishes checks performed before deployment from harness protections at runtime, and recommends starting with deterministic checks before paying for model judgments. Audience questions explore synthetic examples, shared policy, and where evaluation belongs in the development loop.\n\n\nSpeaker info:\n- https://x.com/tejaskumar_\n- https://linkedin.com/in/tejasq\n- https://github.com/langflow-ai/openrag\n\nTimestamps:\n0:00 - Introduction\n2:03 - Why evals and harnesses work together\n6:09 - Evals and unsafe agent behavior\n9:47 - Fuzzy unit tests and evaluation components\n15:21 - Evaluation techniques\n18:30 - Four ways judges can mislead\n21:11 - Calibrating a judge against human verdicts\n23:30 - CI gates and keeping datasets current\n26:15 - Retrieving living policy with OpenRAG\n28:55 - Live coding from a unit test\n31:26 - A misleading substring match\n32:08 - Building and testing an LLM judge\n36:19 - Calibrating against a scenario dataset\n43:00 - Refining policy and changing the model\n46:08 - Turning agreement into a CI gate\n48:12 - A policy retrieval demo\n51:53 - Recap and evaluation costs\n54:36 - Audience questions",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T17:00:22Z",
-      "fetched_at": "2026-10-05T22:38:22.882706Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2631e8eaada98122",
-      "url": "https://www.youtube.com/watch?v=J17o5r5PKmw",
-      "title": "Your AI Agent Is Confidently Wrong About Production \u2014 Willem Pienaar, Cleric",
-      "summary": "Point an agent at a production alert and it comes back with a confident root cause. Often it's just the first error log it found.\n\nWillem Pienaar, co-founder and CTO of Cleric, explains why agents that are great at writing code struggle to debug production. Prod has no tests or linter to push back, it's sprawling, always changing and often impossible to reproduce, and LLMs are trained to be decisive when debugging needs doubt. He walks through the most common failure modes (mistaking a symptom for the cause, not knowing what's normal, lossy sub-agent summaries, anchoring on past incidents) and the grounding techniques that fix them. He also shows how tracking real outcomes after a fix lets you calibrate an agent's confidence so you can trust it.\n\nIn this talk:\n\u2022 Why production debugging lacks the feedback loop coding has\n\u2022 Four failure modes: symptom vs cause, missing baselines, abstraction loss, anchoring\n\u2022 Grounding: parallel theories, baselines, dependency graphs, timing and evidence\n\u2022 Verifying fixes against real outcomes to calibrate confidence\n\nSPEAKER\nWillem Pienaar, Co-founder & CTO, Cleric\nLinkedIn: https://www.linkedin.com/in/willempienaar/\nX: https://x.com/willpienaar\nGitHub: https://github.com/woop\n\nLINKS\nCleric: https://cleric.ai/\n\nCHAPTERS\n0:00 Intro\n0:13 Writing code isn't running it\n0:38 The back-and-forth with agents\n1:48 What we'll cover\n2:12 Prod has no verification\n2:57 Why prod is hard for agents\n3:52 Models are trained to be confident\n4:37 Common failure modes\n5:02 Mistaking the symptom for the cause\n5:32 Not knowing what's normal\n5:47 The abstraction problem\n6:11 Anchoring on past incidents\n6:41 Techniques that work\n7:11 Generate many theories\n7:46 Compute a baseline\n8:26 Use a dependency graph\n9:06 Use time\n9:35 Propagate the evidence\n10:10 Results\n10:55 The cost tradeoff\n11:20 How do you know it worked?\n11:50 Tracking outcomes after the fix\n12:25 Calibrating confidence\n13:39 Bringing prod signal into dev\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#SRE #AIAgents #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T17:00:02Z",
-      "fetched_at": "2026-10-05T22:38:22.882714Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "627d0cd1f95f217c",
       "url": "https://arxiv.org/abs/2608.29971",
       "title": "EDGE: Engine for Deterministic Graph Evaluation through Conversation Simulation from Graph Structured DSL Configuration",
@@ -64388,47 +64308,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ff1e0022d5a8c022",
-      "url": "https://x.com/simonw/status/2107158711798218848",
-      "title": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at addin...",
-      "summary": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at adding long numbers, only this time I tried Qwen 3.8 27B running locally in both reasoning and non-reasoning modes https://t.co/IOufJIA4N9 https://t.co/4kB33NCPcO",
-      "content": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at adding long numbers, only this time I tried Qwen 3.8 27B running locally in both reasoning and non-reasoning modes https://t.co/IOufJIA4N9 https://t.co/4kB33NCPcO",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-10-05T17:19:20Z",
-      "fetched_at": "2026-10-06T07:19:27.683786Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "576e18dcfc2e9b6a",
-      "url": "https://x.com/GoogleAI/status/2107152626873663898",
-      "title": "https://t.co/cdfqoSOtJm",
-      "summary": "https://t.co/cdfqoSOtJm",
-      "content": "https://t.co/cdfqoSOtJm",
-      "source_name": "@googleai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "google"
-      ],
-      "author": "googleai",
-      "published_at": "2026-10-05T16:55:09Z",
-      "fetched_at": "2026-10-06T07:19:33.930306Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "69774a00da02aa76",
       "url": "https://x.com/dani_avila7/status/2107455957772992572",
       "title": "Google is bringing native Markdown support to Drive and Docs\n\nOk, this is definitely a great move\n\nT...",
@@ -66782,6 +66661,109 @@
       "author": "dani_avila7",
       "published_at": "2026-10-11T16:19:26Z",
       "fetched_at": "2026-10-12T08:53:54.065103Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3305d07eb0bd2a30",
+      "url": "https://x.com/steipete/status/2109724776168300631",
+      "title": "said that last year, saying it again.\nvibes coding is a slur.",
+      "summary": "said that last year, saying it again.\nvibes coding is a slur.",
+      "content": "said that last year, saying it again.\nvibes coding is a slur.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-12T19:15:58Z",
+      "fetched_at": "2026-10-12T19:16:05.917178Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9cb9ad804d78e657",
+      "url": "https://x.com/trq212/status/2109717295631372628",
+      "title": "evergreen",
+      "summary": "evergreen",
+      "content": "evergreen",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-12T18:46:14Z",
+      "fetched_at": "2026-10-12T19:15:52.680392Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d63f1584bbd16b25",
+      "url": "https://x.com/simonw/status/2109711203077619768",
+      "title": "Shared some notes on Python 3.15, using it with uv, and features from Python 3.11 I'm excited to use...",
+      "summary": "Shared some notes on Python 3.15, using it with uv, and features from Python 3.11 I'm excited to use now that 3.10 is no longer the minimum supported version for my own projects https://t.co/rlGKf8WI62",
+      "content": "Shared some notes on Python 3.15, using it with uv, and features from Python 3.11 I'm excited to use now that 3.10 is no longer the minimum supported version for my own projects https://t.co/rlGKf8WI62",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-12T18:22:02Z",
+      "fetched_at": "2026-10-12T19:15:56.696973Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ff1e0022d5a8c022",
+      "url": "https://x.com/simonw/status/2107158711798218848",
+      "title": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at addin...",
+      "summary": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at adding long numbers, only this time I tried Qwen 3.8 27B running locally in both reasoning and non-reasoning modes https://t.co/IOufJIA4N9 https://t.co/4kB33NCPcO",
+      "content": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at adding long numbers, only this time I tried Qwen 3.8 27B running locally in both reasoning and non-reasoning modes https://t.co/IOufJIA4N9 https://t.co/4kB33NCPcO",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-05T17:19:20Z",
+      "fetched_at": "2026-10-06T07:19:27.683786Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "576e18dcfc2e9b6a",
+      "url": "https://x.com/GoogleAI/status/2107152626873663898",
+      "title": "https://t.co/cdfqoSOtJm",
+      "summary": "https://t.co/cdfqoSOtJm",
+      "content": "https://t.co/cdfqoSOtJm",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-10-05T16:55:09Z",
+      "fetched_at": "2026-10-06T07:19:33.930306Z",
       "score": null,
       "score_reason": "",
       "tier": "",
