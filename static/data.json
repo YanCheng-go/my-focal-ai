@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-13T10:42:59.235570+00:00",
+  "exported_at": "2026-10-13T12:54:22.229097+00:00",
   "period_hours": 168,
-  "total": 2509,
+  "total": 2499,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29453,45 +29453,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cc071a0e4747739b",
-      "url": "https://www.youtube.com/shorts/Y8Fv4SlEUp4",
-      "title": "Agents are lazy about testing",
-      "summary": "with Peter Mattis, CTO and cofounder at Cockroach Labs\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-10-06T11:54:52Z",
-      "fetched_at": "2026-10-06T15:13:11.782446Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "03bda12a365b9e5d",
-      "url": "https://www.youtube.com/watch?v=qZBibWYcKH4",
-      "title": "How AI Models Scale Beyond a Single GPU Across LLM Workloads",
-      "summary": "Learn more about AI Models here \u2192 https://ibm.biz/~GnXROtDog\n\nThe biggest AI models can't fit on one GPU. Grace Ableidinger explains how distributed AI inference scales LLMs across GPUs using data, pipeline, tensor, and expert parallelism. Learn how KV cache, throughput, and prefill/decode bottlenecks shape production AI serving.\n\n00:00 \u2013 See Why AI Models Need Distributed Inference\n01:50 \u2013 Scale LLM Traffic with Data Parallelism\n02:45 \u2013 Split AI Models with Pipeline Parallelism\n03:45 \u2013 Divide LLM Layers with Tensor Parallelism\n04:32 \u2013 Scale Mixture-of-Experts Across GPUs\n05:44 \u2013 Separate LLM Prefill and Decode Workloads\n07:51 \u2013 Combine GPU Parallelism for Production AI\n08:29 \u2013 Orchestrate Distributed LLM Inference\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~86jhlfVag\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#llm #aimodels #gpu #machinelearning \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-06T11:00:06Z",
-      "fetched_at": "2026-10-06T15:13:11.724437Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c02127d349672db4",
       "url": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/",
       "title": "Unlocking Earth AI\u2019s planetary geospatial foundation models for global public health",
@@ -29782,27 +29743,6 @@
       "author": "Kanika Atri",
       "published_at": "2026-10-06T13:00:19Z",
       "fetched_at": "2026-10-06T15:13:16.561398Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "00427e47df5ef306",
-      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-      "title": "Sharing AI progress in mathematics",
-      "summary": "OpenAI publishes new results on open problems in mathematics from an internal frontier model and shares Lean proof formalizations and research details on GitHub.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T12:00:00Z",
-      "fetched_at": "2026-10-07T01:33:09.016939Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -36204,27 +36144,6 @@
       "author": "Junwei Su, Mengfan Liu, Yanyong Zhang, Chuan Wu",
       "published_at": "2026-10-08T04:00:00Z",
       "fetched_at": "2026-10-08T06:06:16.169442Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ebb413cc5359756b",
-      "url": "https://openai.com/index/jump-trading",
-      "title": "How Jump Trading is scaling quant research with ChatGPT",
-      "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T12:00:00Z",
-      "fetched_at": "2026-10-07T01:33:09.016918Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -51778,132 +51697,6 @@
       "author": "Jaehui Hwang, Dongyoon Han, Sangdoo Yun, Byeongho Heo",
       "published_at": "2026-10-07T04:00:00Z",
       "fetched_at": "2026-10-07T08:40:40.177687Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e0813ab1907a2639",
-      "url": "https://arxiv.org/abs/2610.08132v1",
-      "title": "Beyond Marginal Monitoring: Distributed Joint-Distribution Testing for Data Concept Drift in Large Scale E-Commerce Operations",
-      "summary": "Concept drift threatens production machine learning, yet the empirical behavior of multivariate two-sample drift detectors at scale remains under-characterized. Existing benchmarks rarely address the hundreds of millions of rows and high-cardinality features typical of industrial-operational datasets. We evaluate five multi-column two-sample tests (marginal, projection-based, and kernel embedding methods) across three complementary environments: the Harvard Dataverse, a validated Failing Loudly reproduction (mean absolute error between 0.030 and 0.053), and a novel synthetic-injection benchmark on the 137.5-million-row Trendyol collection-ranking feature table. Testing four drift types across two severity-scope regimes, we demonstrate that distributed Maximum Mean Discrepancy with Random Fourier Features on Apache Spark scales robustly. Averaged over the four drift types in the strong regime and under a calibrated threshold, it achieves a Pearson correlation of r = 0.940 with expected drift magnitude, an 80.4% true positive rate, and a 3.2% false positive rate. Conversely, the per-dimension Kolmogorov-Smirnov test failed due to statistic saturation from ID-like columns under asymmetric sampling, establishing a critical constraint for large-scale sampling design. At weak configurations (realized-flip fractions of at most 0.57%), detectors struggled to reliably discriminate, highlighting the need for future intensity-grid power analyses to distinguish fundamental sensitivity bounds from scalable threshold shifts.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Altan Cakir",
-      "published_at": "2026-10-06T10:47:26Z",
-      "fetched_at": "2026-10-07T01:33:20.523271Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "79c59186a3bb50bd",
-      "url": "https://arxiv.org/abs/2610.08131v1",
-      "title": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
-      "summary": "Achieving compositional concept generalization (CoCoGen), the ability to understand novel situations by recombining learned primitives, remains a fundamental challenge in artificial intelligence. Compositional semantic models such as Compositional Distributional Semantics (DisCoCat) offer solutions by generalising vectors to tensors, but suffer from scaling bottlenecks when learning the tensors. Mapping DisCoCat onto Variational Quantum Circuits (VQCs) resolves this limitation for text, yet the methodology has not been expanded to multimodal situations such as the ones involved in CoCoGen. This paper introduces Mu-DisCoCat: a multimodal variational quantum learning framework for DisCoCat that achieves CoCoGen. The framework first learns stable object representations from single-object image-text pairs, then fixes these and uses them to learn the relations between them in multi-object situations. In classical simulations, the model used Uhlmann state fidelity to compute the overlap between the multimodal circuit representations and achieved higher relational OOD accuracy than the evaluated CLIP baseline. Its deployment was evaluated using the destructive SWAP test across noisy quantum emulators, including a range of IBM fake backends, IQM FakeAphrodite, and the IBM Marrakesh quantum processor. Despite real-world device noise, the hardware-executed models maintained a strong positive correlation with simulated fidelities, reliably distinguishing unseen similar and dissimilar pairs. Our work establishes a framework for executing CoCoGen on VQCs, demonstrating a viable use case for near-term quantum hardware.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Mehrnoosh Sadrzadeh",
-      "published_at": "2026-10-06T10:45:43Z",
-      "fetched_at": "2026-10-07T01:33:20.523288Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "43473f770f1df6b0",
-      "url": "https://arxiv.org/abs/2610.08129v1",
-      "title": "Do LLMs Act on What They Know? From Partner Representations to Cooperative Actions",
-      "summary": "Cooperation with unfamiliar partners requires adapting to communication conventions that are not known in advance. We study this problem in a controlled Hanabi-derived environment with scripted hint generation, LLM-controlled receiving decisions, and frozen model weights. Across eight LLMs, linear probes recover intent conventions substantially more accurately than target conventions, yet receiving choices do not consistently agree with the sender's convention. We compare probe-predicted and ground-truth conventions presented either as general rules or as externally computed action recommendations. Rule statements yield modest and model-dependent changes in cooperation, whereas action translation produces larger gains on average. In a Qwen3-8B case study, matched-state statement reversals reveal much greater sensitivity to action recommendations than to rule statements. Activation transfers from oracle-action and non-oracle hint-restatement donors improve intent accuracy on both action classes, but the tested alternatives do not reliably reproduce these benefits. Together, these results distinguish convention decodability, sensitivity to convention information, and cooperative performance, and highlight limitations in turning available partner information into receiving decisions.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "Kuk-Jin Yoon",
-      "published_at": "2026-10-06T10:44:55Z",
-      "fetched_at": "2026-10-07T01:33:20.523296Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9d513f13ee4478e5",
-      "url": "https://arxiv.org/abs/2610.08126v1",
-      "title": "Supermarket Product Detection and Recognition: Utilizing Deep Learning with Rectified Imagery",
-      "summary": "Product Identification has sprung up to become one of the most challenging problems in the automation of the retail industry. With the new industry 5.0 standards, automated inventory management, and catalog creation tasks are vitally important. Object identification models have emerged as a viable answer with their unprecedented identification and localization accuracy. However, the close-knit rack design of supermarkets generates the problem of angle variation in capturing images. The angle-variant densely packed images(a single image contains many objects) become overwhelming for these models alone. In this paper, we try to supplement object detection models with traditional Hough transform (HT) and homogeneous estimation concepts. We study the effect of rectified images using homography estimation and hough transform and their limitations on the problem of grocery identification. We make a case for creating a new dataset to test the effects of such rectification and produce analytical results on different scenarios of angle variation and object densities per image. Extensive experiments on different object detection models suggest that image rectification of angled images improves the detection accuracy of grocery products in images. The results also highlight the limitation of rectification on the angle of image capture and the object density of the image.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Jimson Mathew",
-      "published_at": "2026-10-06T10:44:33Z",
-      "fetched_at": "2026-10-07T01:33:19.978647Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "345681b338d3620e",
-      "url": "https://arxiv.org/abs/2610.08125v1",
-      "title": "Conversation Is a Two-Body Problem: Dyadic Evaluation of Full-Duplex Dialogue Models",
-      "summary": "Full-duplex spoken dialogue models listen and speak at the same time, enabling voice agents to have natural, low-latency interactions that turn-based systems cannot offer. However, they are commonly evaluated against single-sided interlocutors: pre-recorded audio that cannot react, or an automated examiner that reacts in real time but only administers a fixed sequence of tests and is never graded. These single-sided frameworks evaluate only half of a two-body problem, where turn-taking, overlap, and interruption are joint products of two coupled speakers. We propose DyaFDB, a framework that evaluates full-duplex models in a dyadic setup: two models converse directly under assigned roles with cooperative or conflicting goals, and both sides are scored offline with an external judge. DyaFDB probes how the two models behave toward each other, such as how they take turns or carry an assigned role under different interests. We instantiate four tasks as 140 scenarios and record 7,560 conversations, covering six self- and cross-play pairings. Throughout the experiments, we observe that how a model behaves continually reshapes its partner. We thus demonstrate that each model must be both the examiner and examinee of the other, and no single fixed interlocutor can play both parts. We will release the scenarios, role prompts, and recording protocols between two full-duplex models, without any pre-recorded audio.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Se-Young Yun",
-      "published_at": "2026-10-06T10:44:15Z",
-      "fetched_at": "2026-10-07T01:33:20.029253Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9d7cd65dcac9a94f",
-      "url": "https://arxiv.org/abs/2610.08123v1",
-      "title": "Beyond Waypoint Regression: Query-Based Cost Learning over Reachable Ego Futures for End-to-End Driving",
-      "summary": "End-to-end planners based on waypoint regression achieve strong open-loop accuracy, but they primarily learn to mimic expert geometry and remain difficult to adapt to deployment-time safety constraints. We propose a query-based cost-learning framework that estimates bounded costs for dynamically reachable ego trajectory queries, rather than dense BEV cells or a small regressed trajectory set. Compact joint scene tokens capture coherent multimodal agent futures, while contingency-aware cost aggregation and cost-guided intra-cluster MPPI mixing convert the learned cost topology into feasible ego plans. On nuScenes, our method improves over prior cost-estimation planners such as ST-P3 and NMP, outperforms most regression baselines in collision rate, while remaining competitive in L2, and retaining an interpretable cost interface. On real-world driving logs, the proposed planner reduces collision rates compared with SparseDrive and Alpamayo without fine-tuning, while maintaining a diverse set of candidate trajectories.",
-      "content": "",
-      "source_name": "arXiv: RL",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "rl"
-      ],
-      "author": "J. Marius Z\u00f6llner",
-      "published_at": "2026-10-06T10:43:13Z",
-      "fetched_at": "2026-10-07T01:33:20.523302Z",
       "score": null,
       "score_reason": "",
       "tier": "",
