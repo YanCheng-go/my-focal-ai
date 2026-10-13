@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-13T06:48:27.262015+00:00",
+  "exported_at": "2026-10-13T07:59:29.381939+00:00",
   "period_hours": 168,
-  "total": 2546,
+  "total": 2540,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -52561,153 +52561,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d82ec9a63527a054",
-      "url": "https://arxiv.org/abs/2610.07913v1",
-      "title": "Multimodal Knowledge Distillation for Gastric Adenocarcinoma Classification from Whole-Slide Images",
-      "summary": "Gastric adenocarcinoma (GA) is a leading cause of cancer-related mortality worldwide, and accurate histopathological subtype classification from whole-slide images (WSIs) is essential for effective treatment planning. While multimodal approaches that integrate pathology report text with WSIs can improve classification, existing methods often depend on computationally expensive transformer architectures and large language models. We propose a multimodal knowledge distillation (MKD) framework that combines a pretrained WSI image encoder and a clinical text encoder using Low-Rank Multimodal Fusion (LMF) to efficiently model cross-modal interactions during training. Each WSI is represented as a bag of patches paired with a slide-level diagnostic caption. The teacher model learns fused image-text representations for subtype classification, while the student model distills this knowledge to enable accurate image-only inference. We evaluate our method on the PatchGastric benchmark dataset and achieve at least 3.35% higher mean accuracy than state-of-the-art approaches, without relying on transformer-based fusion, multi-task learning, or large language models. The source code is available at https://github.com/helomelo1/MKD-LMF.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Bikash Santra",
-      "published_at": "2026-10-06T07:56:54Z",
-      "fetched_at": "2026-10-07T01:33:19.978664Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0512ece3c3a4db31",
-      "url": "https://arxiv.org/abs/2610.07907v1",
-      "title": "Continuous Memory Machines",
-      "summary": "Recurrent neural networks typically compress information into a single vector-valued recurrent state, forcing short-term computation and long-term retention to share the same representation. Past extensions alleviate this bottleneck by increasing the memory capacity or separating timescales, but lack the combination of rapid neuron-level processing and longer-term retention found in biology. To that end, we introduce the Continuous Memory Machine (CMM), a recurrent architecture with matrix-valued short- and long-term memory states serving distinct functional roles. Building on the Continuous Thought Machine (CTM), the CMM's short-term memory tracks recent neural activity, with uniquely parameterized neuron-level models learning to use these activity patterns for computation. A persistent long-term memory stores information for later use, with a Transformer jointly updating both memory stores, providing an expressive bidirectional read--write mechanism such that each store can reorganize its own contents and both read from and write to the other. Across algorithmic, in-context learning, and recurrent reasoning tasks, the CMM outperforms a broad suite of baselines, exhibiting stronger generalization than prior memory-augmented networks while preserving the CTM's interpretable attention patterns. Code is available at https://github.com/SakanaAI/continuous-memory-machines.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Llion Jones",
-      "published_at": "2026-10-06T07:52:50Z",
-      "fetched_at": "2026-10-07T01:33:19.978671Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1081d63702fe2d1f",
-      "url": "https://arxiv.org/abs/2610.07906v1",
-      "title": "Isotropic Yet Undecodable: The Sequential Content-Sufficiency Gap in Latent-Predictive Text Representations",
-      "summary": "We study sequential content sufficiency by investigating whether a representation retains the ordered target information available in its input. An information-theoretic decomposition separates input ambiguity, representation loss, and readout mismatch. We construct recoverable views where perfect agreement and joint isotropic Gaussianity coexist with zero target information, and establish limits imposed by deterministic canonical anchors. Token log-loss provides a one-sided information-loss bound; a fixed-penalty ridge analysis shows why rank alone cannot determine prediction risk. These results motivate CANOPE, a nonautoregressive framework with ordered latent canvases, canonical-token supervision, and geometric regularization. On 40,000 validation sequences, latent-agreement (PL0) and token-grounded (PL2) have nearly identical pooled ranks but reach 13.5% and 98.8% positional Recall@1, respectively, under strong natural corruption when the correct target length is provided. On 3,930 LJSpeech validation utterances, frozen PL2 with a trained MatchaTTS readout yields 21.54% word error rate (WER) on corrupted text, versus 99.22% for frozen PL0, while end-to-end MatchaTTS reaches 10.93%. These results show that geometric regularity alone does not guarantee recoverable sequential content or effective downstream access in the text settings studied here.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "G. N. Iyer",
-      "published_at": "2026-10-06T07:52:37Z",
-      "fetched_at": "2026-10-07T01:33:20.029376Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "58b301054dc8c9c9",
-      "url": "https://arxiv.org/abs/2610.07902v1",
-      "title": "ARIA: Audio-Driven Melody-Tone Relation Modeling for Cantonese Lyric Authoring",
-      "summary": "Cantonese lyric writing requires close alignment between lexical tones and melodic pitch. Existing melody-guided lyric generation methods typically rely on symbolic melody to generate lyrics. However, in real songwriting scenarios, melodies are often expressed as raw singing audio or hummed recordings, where pitch is implicit, noisy, and unstructured, making these methods difficult to apply directly. To address this limitation, we propose ARIA, a two-stage audio-driven melody-tone relation modeling framework for Cantonese lyric authoring that generates Cantonese lyrics from singing recordings with provided character-level timestamps. Specifically, we first design a Tri-Stream Relation-Aware Tone Estimator (TRATE) to predict 0243 sequences from timestamped singing audio by modeling multi-stream acoustic cues and relational tonal structure. We then propose a Decoupled Retrieval-Augmented Tone-Conditioned Lyric Generator (DRA-TCLG) to generate fluent lyrics conditioned on predicted tonal plans with retrieval-enhanced lexical guidance. Moreover, we construct a large-scale aligned audio-Jyutping-0243 dataset from real Cantonese singing recordings to support this new task. Experimental results demonstrate that ARIA achieves strong performance in both 0243 prediction and tone-consistent lyric generation, validating the effectiveness of the proposed framework.",
-      "content": "",
-      "source_name": "arXiv: LLMs",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "llm"
-      ],
-      "author": "Li Liu",
-      "published_at": "2026-10-06T07:48:41Z",
-      "fetched_at": "2026-10-07T01:33:20.029382Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b6b2149f18e04b68",
-      "url": "https://arxiv.org/abs/2610.07899v1",
-      "title": "Variance-Averse $n$-Step Offline Reinforcement Learning for Sparse Long-Horizon Environments",
-      "summary": "Generative actors are transforming offline reinforcement learning (RL) by enabling expressive policy classes that model complex action distributions. However, this expressiveness also exposes a key challenge in heterogeneous datasets: generative policies can reproduce unreliable action modes whose return distributions exhibit high variance, occasionally yielding high returns by chance but lacking consistency. Consequently, maximizing the expected $Q$-value alone is insufficient for identifying reliable actions. We propose VAN-Flow (Variance-Averse $n$-step Flow), a framework that promotes reliable actions in generative offline RL. VAN-Flow combines (i) a categorical distributional critic, (ii) a variance-averse expectation operator that smoothly reweights atom probabilities to favor actions with both high returns and low dispersion, and (iii) a flow-matching generative actor guided via rejection sampling. Unlike CVaR or mean-variance objectives, the operator redistributes probability mass over the categorical return distribution without hard truncation or auxiliary penalty terms. Across more than 40 tasks from D4RL and OGBench, VAN-Flow consistently outperforms strong baselines, with the largest gains in long-horizon and high-variance regimes where reliable action selection becomes critical.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Minhae Kwon",
-      "published_at": "2026-10-06T07:47:26Z",
-      "fetched_at": "2026-10-07T01:33:19.978677Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "141d828dfb16bc3c",
-      "url": "https://arxiv.org/abs/2610.07887v1",
-      "title": "Visual Abstention in Unified Multimodal Models",
-      "summary": "Unified multimodal models (UMMs) integrate understanding and generation, yet their generative behavior is rarely governed by what they understand about the task. We formalize visual abstention: when a requested visual transformation is impossible under the task's rules, the model should recognize that no valid solution exists, state this, and decline to generate. We introduce Draw-or-Decline (DoD), a benchmark of 1,050 feasible-infeasible request pairs across 7 task categories that jointly measures editing success and the refusal of infeasible requests. Evaluating 8 UMMs, we find that editing ability and abstention are distinct capabilities: even the strongest editor, at 68.4% editing accuracy, refuses only 0.4% of infeasible requests under ordinary instructions. Their reasoning shows why: the models rarely notice the conflict, and instead plan the edit as if the request were possible, often describing objects that are not in the image, or quietly change the request into one they can complete. Explicitly prompting these UMMs to report infeasibility increases textual refusals but reduces editing accuracy. We propose VisTA (Visual Transformation and Abstention), a training method that pairs feasible and infeasible examples so that a model judges feasibility before deciding whether to generate. We train VisTA-BAGEL to perform feasible edits and decline infeasible requests. Without any reminder, it refuses 93.0% of infeasible requests, up from 0.4% for the strongest editor, while falsely refusing only 0.8% of feasible ones. Unlike a reminder, this does not cost editing accuracy: VisTA-BAGEL completes 74.3% of feasible edits, more than any of the 8 evaluated UMMs.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Xuezhe Ma",
-      "published_at": "2026-10-06T07:33:42Z",
-      "fetched_at": "2026-10-07T01:33:19.978684Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ba5ee97dddc8a3fd",
-      "url": "https://arxiv.org/abs/2610.07886v1",
-      "title": "ShanLiangRen: A Nutrition Agent for Personalized Daily Meal Planning",
-      "summary": "Dietary nutrition planning plays an important role in chronic disease management and maintaining a healthy body. In applications, it must simultaneously satisfy personalized constraints and reasonable multidimensional nutritional goals. These two aspects often conflict, and user constraints evolve with feedback, resulting in a substantial gap between generic guidelines and executable plans. To bridge this gap, we first propose the personalized fully quantified multiobjective dietary planning problem (MDP). To tackle MDP, we develop a nutrition agent, ShanLiangRen. The system first transforms dietary specifications, nutrient data, user attributes and natural language requirements into an individualized constrained planning instance. It then employs an exact retrieval-augmented generation method to shrink the feasible candidate set from a large scale ingredient and recipe space. Finally, it adopts a refinement guided by Pareto principles, where an LLM iteratively revises candidate plans under deterministic nutrition computation and feedback from constraint verification. The system outputs fully quantified meal plans with explicit ingredients and portion sizes, together with reports on nutrition compliance that show constraint satisfaction and nutrient interval attainment. We have released the system online as a WeChat Program, ShanLiangRen. A demo video is available at https://www.youtube.com/watch?v=652OtY5VlGA.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Chunli Lv",
-      "published_at": "2026-10-06T07:32:50Z",
-      "fetched_at": "2026-10-07T01:33:19.978690Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "24f8c54d5d662520",
       "url": "https://www.anthropic.com/webinars/dri-ing-your-career",
       "title": "DRI-ing Your Career",
@@ -55304,6 +55157,26 @@
       "author": "dani_avila7",
       "published_at": "2026-10-12T22:24:42Z",
       "fetched_at": "2026-10-13T00:25:03.419914Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b418f9ef8cbd66f1",
+      "url": "https://x.com/dani_avila7/status/2109822699174559748",
+      "title": "Introducing Turn Inspector for Claude Code!\n\nA new Mod that lets you inspect exactly what's inside C...",
+      "summary": "Introducing Turn Inspector for Claude Code!\n\nA new Mod that lets you inspect exactly what's inside Claude's context window at every turn\n\n- System prompt\n- Tools\n- Memory\n- Previous turns\n- Model output\n- Tool results\n\nWatch Claude's context window fill up turn by turn and https://t.co/7okGLRkeB1",
+      "content": "Introducing Turn Inspector for Claude Code!\n\nA new Mod that lets you inspect exactly what's inside Claude's context window at every turn\n\n- System prompt\n- Tools\n- Memory\n- Previous turns\n- Model output\n- Tool results\n\nWatch Claude's context window fill up turn by turn and https://t.co/7okGLRkeB1",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-13T01:45:04Z",
+      "fetched_at": "2026-10-13T07:59:19.803012Z",
       "score": null,
       "score_reason": "",
       "tier": "",
