@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-12T23:00:36.175662+00:00",
+  "exported_at": "2026-10-13T00:25:12.954885+00:00",
   "period_hours": 168,
-  "total": 3064,
+  "total": 3063,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29741,46 +29741,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "586452d857215ddf",
-      "url": "https://www.youtube.com/watch?v=woIYJYd_etI",
-      "title": "What Is an Inference Engine, Anyway? \u2014 Charles Frye, Modal",
-      "summary": "A traffic spike on a museum placard generator produces longer waits for the first token and slower tokens afterward. Charles Frye reads those symptoms from an inference dashboard and shows how additional replicas relieve the queue. The example connects an application people can see to the machinery behind its API. He follows a request through server IO, tokenization, scheduling, model execution, and detokenization, using SGLang and vLLM as reference points. The scheduler controls what reaches the GPU and can become a bottleneck even though it performs far less computation. Chatbots, background agents, and document processors place different demands on that machinery, with latency budgets, input and output lengths, and prefix reuse shaping the deployment.\n\nFrye then opens up the performance techniques inside the engine. KV caching reuses previously computed work, while cache capacity and layout determine how effectively the engine can keep requests moving. CUDA graphs reduce repeated work on the CPU that launches GPU operations. Speculative decoding lets a speculator model propose several tokens for the target model to check together. Kernel libraries handle much of the underlying computation, leaving the engine to organize batches and avoid getting in the GPU's way. The final section turns to correctness and production debugging: evaluate the actual deployment, log token IDs for tokenizer problems, and collect enough metrics and traces to investigate regressions across replicas. Small reference engines provide a starting point for reading the code and asking deeper architectural questions.\n\n\nSpeaker info:\n- https://x.com/charles_irl\n- https://charlesfrye.github.io\n- https://modal.com/blog/spec-is-all-u-need\n- https://github.com/sgl-project/mini-sglang\n\nTimestamps:\n0:00 - Introduction and the inference engine question\n2:15 - A sketch of the architecture\n3:27 - Why inference engineering matters\n6:34 - A museum placard application\n8:11 - Three workload types\n10:16 - Prefill, decode, and latency metrics\n15:36 - Following a request through the engine\n18:31 - Servers, engines, sessions, and state\n20:53 - The scheduler and GPU bottleneck\n24:59 - The request lifecycle and batching\n29:12 - Tokenization and latency questions\n32:56 - Processes, Python, and host overhead\n36:36 - Model execution and kernel backends\n44:41 - Concurrency and cache pressure\n46:43 - KV caching and prefix reuse\n49:02 - Host overhead and CUDA graphs\n50:50 - Speculative decoding\n53:53 - Correctness and performance observability\n56:20 - Reading a dashboard under load\n58:16 - Reference engines and further resources",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-06T00:00:12Z",
-      "fetched_at": "2026-10-06T15:13:11.517100Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dac56f5a199756a3",
-      "url": "https://www.youtube.com/watch?v=xLxhT2ZI7UM",
-      "title": "Your LLM Judge Is a Confident Liar: Building Better Verifiers \u2014 Browserbase",
-      "summary": "The official judge said the agent succeeded 74% of the time. A better verifier said 38%.\n\nMiguel Gonz\u00e1lez Fern\u00e1ndez, tech lead for Browserbase's agent platform, and Corby Rosset, researcher at Microsoft Research, present their research on verifiers for computer-use and web agents. Deterministic evals stopped scaling as agents improved, and the LLM judges bundled with popular web benchmarks turned out to be confidently wrong. Train against them and you get a more confident liar, not a better agent. They explain how the Universal Verifier works: task-specific rubrics, ranking the most relevant screenshots as evidence for each criterion, isolating errors, catching hallucinations and separating controllable from uncontrollable failures. It cut false positives from about half to near zero and agreed with humans as often as humans agree with each other. They also test whether an autoresearch loop can rebuild the verifier.\n\nIn this talk:\n\u2022 Why LLM-as-judge verifiers on WebVoyager-style benchmarks overstate success\n\u2022 Rubric design: grade only what was asked, don't cascade errors, check the screenshots\n\u2022 Validating a verifier against human labels with Cohen's kappa\n\u2022 What autoresearch got right building a verifier in a day, and where humans still mattered\n\nSPEAKERS\nMiguel Gonz\u00e1lez Fern\u00e1ndez, Tech Lead, Browserbase\nLinkedIn: https://www.linkedin.com/in/miguelgfz/\n\nCorby Rosset, Researcher, Microsoft Research\nX: https://x.com/corby_rosset\nLinkedIn: https://www.linkedin.com/in/corbyrosset/\n\nLINKS\nPaper: The Art of Building Verifiers for Computer Use Agents: https://arxiv.org/abs/2604.06240\nBrowserbase blog: https://www.browserbase.com/blog/building-verifiers-for-computer-use-agents\nFara + CUAVerifierBench (GitHub): https://github.com/microsoft/fara\nStagehand: https://www.browserbase.com/stagehand\n\nCHAPTERS\n0:00 Intro\n0:22 Browserbase and Microsoft Research\n1:02 The research\n1:36 Why deterministic evals stopped scaling\n2:45 LLM judges: confident liars\n3:47 74% vs 38%: the verifier gap\n4:22 Why existing verifiers fail\n4:57 How the Universal Verifier works\n6:26 Four guiding principles\n7:11 Good vs bad rubrics\n7:51 Don't cascade errors\n8:41 Catching subtle hallucinations\n9:26 Controllable vs uncontrollable failures\n10:28 Verifying the verifier with humans\n11:32 It started correcting humans\n12:23 Better verifier, better training data\n13:37 Can autoresearch build the verifier?\n16:15 Paper, code and benchmark\n17:45 Q&amp;A: beyond the browser\n19:00 Q&amp;A: avoiding overfitting\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#AgentEvals #ComputerUse #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-05T23:30:05Z",
-      "fetched_at": "2026-10-06T15:13:11.517109Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "ffaa7d5210e63e20",
       "url": "https://blogs.nvidia.com/blog/telecom-operators-open-models/",
       "title": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
@@ -40538,90 +40498,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f483b4ea79f32dd5",
-      "url": "https://claude.dev/blog/claude-code-in-the-cloud/",
-      "title": "Claude Code in the cloud: a field guide to cloud sessions",
-      "summary": "What changes when Claude Code runs on its own machine, the workflows where that pays off, and how to connect GitHub on the first try.",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-10-07T17:25:53.868091Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c115ce57a51e58c9",
-      "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
-      "title": "Claude now works with Google Docs, Sheets, and Slides",
-      "summary": "Teams that run on Google Workspace can now bring Claude into their files or work on their files directly from Claude, with our new add-on and Google Docs, Sheets, and Slides connectors (in beta).",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-10-07T08:40:48.305560Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "65a0c87cd66880d9",
-      "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
-      "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
-      "summary": "Security teams at Comcast and Booz Allen used Claude Mythos-class models through Project Glasswing to find, validate, and fix vulnerabilities their existing scanners missed.",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-10-07T08:40:48.305550Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "565b5fa1fe378b99",
-      "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build",
-      "title": "We\u2019re expanding the Claude Startups program to help founders build",
-      "summary": "We\u2019re expanding the Claude Startups program to help founders build",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-10-07T08:40:48.305530Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "627d0cd1f95f217c",
       "url": "https://arxiv.org/abs/2608.29971",
       "title": "EDGE: Engine for Deterministic Graph Evaluation through Conversation Simulation from Graph Structured DSL Configuration",
@@ -40847,93 +40723,6 @@
       "author": "Li Kong, Qi Qi, Yinyu Ye, Zijie Zhou",
       "published_at": "2026-10-08T04:00:00Z",
       "fetched_at": "2026-10-08T06:06:15.730099Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9855b0d96c10185b",
-      "url": "https://machinelearning.apple.com/research/rised-multi-environment-selection",
-      "title": "RISED: Rubrics for Agentic Multi-Environment Selection and Self-Distillation",
-      "summary": "Training a single LLM agent jointly across diverse interactive environments has attracted increasing attention as a route to generalist agents. Existing curriculum and data-selection strategies often allocate training at the environment level or prioritize local reward-based signals, without explicitly considering relationships between current rollouts across environments for prompt-group selection. Meanwhile, as environments are learned at different rates, all-failure and all-success rollout groups can coexist within a batch, leaving those data without group-relative reward signals. Both\u2026",
-      "content": "",
-      "source_name": "Apple Machine Learning",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "apple",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-10-07T08:40:42.069258Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "496c27999d0b3e7f",
-      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide/",
-      "title": "EmbeddingGemma 2: The Developer Guide",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/embeddinggemma-2-the-developer-gui.2e16d0ba.fill-800x400.png\" /><br /><br />EmbeddingGemma 2 is a compact, open-source multimodal embedding model that maps text, code, images, video, and audio into a unified 768-dimensional space. Developers can use the sentence-transformers library to selectively load modular modality encoders\u2014ranging from 270M to 740M parameters\u2014to optimize memory usage. Additionally, Matryoshka Representation Learning enables dynamic dimension truncation down to 128d, significantly reducing vector database storage requirements while maintaining high retrieval performance.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-10-06T20:59:38.995824Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8fa7f48356b2925e",
-      "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/",
-      "title": "Bring multimodal semantic search to the edge with EmbeddingGemma 2",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_amiggaamigg.2e16d0ba.fill-800x400.jpg\" /><br /><br />EmbeddingGemma 2 is a new 740M open-weight multimodal model that maps text, images, video, and audio into a unified vector space for privacy-first, on-device retrieval. Developers can easily integrate these capabilities cross-platform using MediaPipe Tasks or optimize fine-grained performance across CPU, GPU, and NPU accelerators with LiteRT. The model enables ultra-low-latency local solutions like search-as-you-type media retrieval, keyframe video moments finding, and zero-shot intent routing.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-10-06T20:59:38.995814Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d9b88297cf0d952f",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
-      "title": "v2.1.290",
-      "summary": "<h2>What's changed</h2>\n<ul>\n<li>Added <code>serverToolUses</code> to the result of a mod's <code>turn.step</code> hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end</li>\n<li>Added <code>agentId</code> to the <code>tool.check</code> event of plugin hooks, so a hook can tell a subagent's permission check from the main session's</li>\n<li>Added <code>ceiling</code> to the question and verdict a mod's <code>tool.check</code> hook reads, naming the approval an organization requires for a tool</li>\n<li>Added <code>ThemeKey</code> and <code>Color</code> types to the plugin hooks typings, so an editor lists the theme colors a mod's drawing can name</li>\n<li>Added to <code>claude plugin validate</code>: each hook a mod registers at a gating site is listed with whether it has a <code>.catch</code> (<code>gatingHooks</code> under <code>--json</code>)</li>\n<li>Added a Deny button to the Claude apps gateway's sign-in approval page: it ends the pending sign-in, so the waiting terminal stops within seconds</li>\n<li>Added <code>claude attach &lt;name&gt;</code> and <code>claude logs &lt;name&gt;</code>: part of a session name works in place of the id</li>\n<li>Added <code>/claude-api managed-agents-onboard &lt;url&gt;</code> to set up the Managed Agents pattern a page describes as <code>ant apply</code> files</li>\n<li>Added <code>/claude-api managed-agents-onboard &lt;quickstart-name&gt;</code> to build a Console quickstart template, such as <code>deep-researcher</code>, with the <code>ant</code> CLI</li>\n<li>Added a warning when a managed settings file is a link to a file outside the managed settings folder</li>\n<li>Added a /status and doctor warning when managed settings ignore user-configured sandbox allowRead paths or allowed domains</li>\n<li>Fixed requests failing behind proxies and gateways that reject one of Claude Code's beta headers with a status other than 400, or together with a second beta</li>\n<li>Fixed long sessions with hundreds of images getting stuck on \"Request rejected as unprocessable by the model\" errors</li>\n<li>Fixed a turn ending at once when the API's output content filter stopped a reply while Claude was still thinking; the request is now retried once before the error is shown</li>\n<li>Fixed resumed subagents and teammates losing their earlier thinking and prompt cache after receiving a message mid-run</li>\n<li>Fixed WebFetch silently dropping page text past 100,000 characters; it now says how much was unread and takes an <code>offset</code> to read on</li>\n<li>Fixed a crash (\"Maximum call stack size exceeded\") when a response nested lists or quotes thousands of levels deep</li>\n<li>Fixed <code>/rewind</code> not listing a prompt sent while Claude was still working</li>\n<li>Fixed scheduled tasks (<code>/loop</code> with an interval, reminders) silently not coming back on resume once the conversation was compacted; covers compactions made from this version on</li>\n<li>Fixed scheduled tasks set in the foreground never firing after a \u2190 or <code>/background</code> hand-off, and recurring ones firing an extra run on every resume, respawn or fork</li>\n<li>Fixed headless <code>--json-schema</code> runs exiting non-zero with <code>is_error: true</code> on a <code>success</code> result when the connection dropped after the structured output was already delivered</li>\n<li>Fixed plan mode letting the auto mode classifier approve non-read-only connector tools that carry a server-pushed ask policy</li>\n<li>Fixed a project <code>CLAUDE.md</code>, rule or <code>AGENTS.md</code> symlinked outside the working directories loading under <code>permissions.blockReadsOutsideWorkingDirectories</code> or a <code>Read</code> deny rule</li>\n<li>Fixed URL allow and deny patterns with a wildcard inside an <code>xn--</code> host label matching differently from one process to the next</li>\n<li>Fixed an MCP server provided by your organization being relisted as your own after signing in or reconnecting, including from a late result in headless and SDK sessions</li>\n<li>Fixed <code>/ultrareview</code> dropping uncommitted changes without a warning on Windows when <code>git stash create</code> failed, and refusing them after a <code>git add -N</code> file was deleted or moved</li>\n<li>Fixed the <code>plansDirectory</code> setting's project-root check for paths that contain a backslash on macOS and Linux</li>\n<li>Fixed replies in very long Remote Control and cloud sessions that could appear a block at a time instead of streaming in</li>\n<li>Fixed the background daemon's log passing terminal control characters to the screen under <code>claude daemon run</code> and <code>claude daemon logs</code>; they now show as <code>\\uXXXX</code> escapes</li>\n<li>Self-hosted runner: Fixed a crafted, very long line of a session's error output freezing the runner for several seconds</li>\n<li>Fixed a plugin hook with a <code>.catch</code> being unloaded, and its <code>.catch</code> skipped, when the hook kept the hooks worker busy on a prompt or tool call</li>\n<li>Fixed a mod's <code>turn.step</code> result listing a tool call that a mid-response model fallback had discarded</li>\n<li>Fixed a Cowork cloud session's reply sometimes never finishing when its container restarted just after Claude sent a message or a file</li>\n<li>Fixed <code>claude plugin validate</code> and plugin loading refusing a hooks module that destructures an option named like one of its top-level functions</li>\n<li>Fixed <code>/ultrareview</code> failing to upload uncommitted changes when <code>core.safecrlf=true</code> is set in git's configuration</li>\n<li>Fixed the effort level changing when a flagged message is retried on a fallback model that has a different level saved in settings</li>\n<li>Windows: Fixed multi-line <code>!</code> shell blocks in skills and commands failing when the file is saved with CRLF line endings</li>\n<li>Fixed Claude Code hanging until killed when a <code>/permissions</code> tab was clicked while searching in fullscreen mode</li>\n<li>Fixed conversation compaction sometimes failing with a \"null is not an object\" error</li>\n<li>Fixed plugin hooks reading an empty <code>answer</code> on <code>turn.complete</code> for a subagent that hands its report back in auto mode</li>\n<li>Fixed a mod being unloaded without a message when a refresh followed its failed reload; its failure line now says the version loaded before is unloaded</li>\n<li>Fixed a mod's <code>prompt.submit</code> hook that drops a prompt after calling <code>next(e)</code> being ignored silently: the hook is now reported as failed, by name</li>\n<li>Fixed a mod's pane or band being redrawn without end when it followed its end over a tree that changed height at every drawing</li>\n<li>Fixed an image read on macOS and Windows being able to return a file outside what was approved, through a link swapped in mid-read</li>\n<li>Fixed a case where a user-installed mod could get an organization's plugin unloaded; the mod is now the one unloaded</li>\n<li>Fixed <code>disableClaudeAiConnectors</code> and <code>allowedMcpServers</code> URL rules not being applied to some MCP entries declared in <code>.mcp.json</code>, plugins or agents</li>\n<li>Fixed a mod's inline pane being redrawn without end when its tree changed height at every drawing</li>\n<li>Fixed an <code>@</code>-mention under the read block or <code>--restricted</code> being able to read a file outside the working directories through a link changed mid-read</li>\n<li>Fixed Esc in the agents view confirming \"Press enter again to restart this session \u2014 it isn't responding\"; Esc now just reopens the session</li>\n<li>Fixed agent view losing a background session's <code>/loop</code> run count, countdown and live status line after the session enters a worktree that it creates</li>\n<li>Fixed <code>claude agents</code> sessions in manual permission mode asking for approval to read an image pasted into a reply or a new agent's prompt</li>\n<li>Fixed a deny or ask rule missing a command or path whose name came from a variable set as a prefix on <code>declare</code>, <code>typeset</code>, <code>export</code> or <code>readonly</code></li>\n<li>Fixed Read deny rules not applying to image paths pasted or dragged into the prompt, or to file names listed for an @-mentioned folder</li>\n<li>Fixed a case where a user-installed mod could make an organization's guard skip its check; such a mod is now unloaded</li>\n<li>Fixed plugin hooks stalling each redraw when a mod draws a long multi-line text holding non-Latin characters</li>\n<li>Fixed repeated Ctrl+X in the agents view deleting the whole next section after the bottom session of a section was deleted</li>\n<li>Fixed You should know writing its notes in English regardless of the <code>language</code> setting</li>\n<li>Fixed a freeze after sending some very long messages</li>\n<li>Fixed a slowdown when expanding the transcript (ctrl+o) or resizing over large tool output that contains non-ASCII characters such as arrows, dashes or box-drawing</li>\n<li>Fixed <code>claude respawn</code> re-sending an earlier message to a backgrounded session that has no saved transcript instead of starting it with an empty conversation</li>\n<li>Fixed Esc after an <code>n:</code> or Ctrl+F search in the agents view moving focus to a section header, where Ctrl+X twice would delete every session in the section</li>\n<li>Fixed <code>claude agents</code> saving a slash command it could not deliver to a stopped session and then running it by itself the next time that session restarted</li>\n<li>Fixed <code>/ultrareview</code> uploading uncommitted changes unfiltered for files under a git filter driver named <code>unset</code> or <code>unspecified</code>; the upload now stops and asks you to rename the driver</li>\n<li>Fixed auto mode denials suggesting a permission rule that would skip the classifier for a whole tool or that Claude Code would ignore</li>\n<li>Fixed <code>claude --teleport</code> and <code>/teleport</code> deleting the files in a folder that had replaced a tracked file of the same name when you chose to stash: the stash is now refused, and says why</li>\n<li>Fixed Esc confirming agent view's \"Press enter again to restart this session fresh\" prompt</li>\n<li>Fixed agent view's <code>/loop</code> run count freezing and its countdown disappearing after <code>/clear</code>; the count now restarts with the new conversation</li>\n<li>Fixed <code>--channels</code> permission relay: a reply ID that repeats within a session is now ignored instead of approving a different prompt</li>\n<li>Fixed <code>/chrome</code> \"Reconnect extension\" not restoring browser tools after a failed Chrome connection, and added an explanation when it can't (<a class=\"issue-link js-issue-link\" href=\"https://github.com/anthropics/claude-code/issues/98135\">#98135</a>)</li>\n<li>Fixed mods staying off for people who reach Claude through a gateway (<code>ANTHROPIC_BASE_URL</code> with <code>ANTHROPIC_AUTH_TOKEN</code>) and have no Anthropic account</li>\n<li>Fixed replies sent from <code>claude agents</code> just after a background session crashed being refused after 2 seconds: they are now retried for up to 12 seconds while the session restarts</li>\n<li>Fixed slash commands and answers to a multiple-choice question that <code>claude agents</code> could not deliver to a running session being saved and sent by themselves the next time it was restarted</li>\n<li>Fixed sandboxed commands that pipe a heredoc into another command (<code>cat &lt;&lt;EOF | python3</code>) asking for approval on every run</li>\n<li>Fixed <code>claude agents</code> failing with \"Couldn't restart the background service\" and background sessions stopping after a Homebrew upgrade (takes effect from the upgrade after this one)</li>\n<li>Fixed agent view's \"restart this session fresh\" re-sending an earlier message from the session instead of starting with an empty conversation</li>\n<li>Fixed Bash permission checks auto-approving some read-only commands (such as <code>rg</code> or <code>git grep</code>) whose arguments the shell would still expand as wildcards; these now prompt for approval</li>\n<li>Fixed <code>claude plugin test</code> refusing to run after an upgrade because of an out-of-date saved setting</li>\n<li>Fixed Bash permission checks auto-approving certain commands whose variable names zsh reads differently from bash; these now prompt for approval</li>\n<li>Fixed a short form of a <code>git clone</code> option keeping the sandbox exemption from a git pattern such as <code>git *</code> in <code>sandbox.excludedCommands</code>; it is now treated like the long form</li>\n<li>Fixed the first feature-flag request of a session ignoring a proxy or API endpoint set in a project's settings</li>\n<li>Fixed <code>/ultrareview</code> of a local branch silently leaving uncommitted work out of the upload in a repository that keeps its branches outside <code>.git</code> (git 2.54+); it now refuses with an explanation</li>\n<li>Fixed cloud sessions staying asleep after a container restart lost a pending <code>/loop</code> wakeup or scheduled task; Claude is now told and can schedule it again</li>\n<li>Fixed the Claude apps gateway's retention sweep deleting a returning developer's identity row refreshed at the same moment, on PostgreSQL versions without the November 2025 fixes</li>\n<li>Fixed sandboxed Monitor tool commands skipping the permission prompt under sandbox auto-allow; they now follow your permission rules</li>\n<li>Fixed the Claude apps gateway failing to start when the certificate it presents to the identity provider has an empty subject</li>\n<li>Fixed the Claude apps gateway exiting with a bare \"Invalid URL\" when <code>store.postgres_url</code> can't be parsed; the error now names the setting and says what the URL may hold</li>\n<li>Fixed background agents failing with \"Agent stalled\" and Workflow tool subagents restarting from their prompt when a Mac woke from sleep</li>\n<li>Fixed slow or failed startup since 2.1.285 under SDK hosts such as the VS Code extension when managed settings deny reads of many paths on a slow filesystem (notably Windows drives under WSL)</li>\n<li>Fixed a response interrupted by computer sleep being treated as a stalled stream on Bedrock, Vertex, Foundry, and custom gateways</li>\n<li>Fixed a freeze before the first request and in the <code>/sandbox</code> Config tab on Linux and WSL when a sandbox read rule such as <code>~/**/.env</code> covers a large folder</li>\n<li>Fixed skills not being found when asked for by the name in SKILL.md when their folder has a different name (for example a non-English name): the skill listing now shows both names</li>\n<li>Fixed a plan written in plan mode being lost when a cloud session's container restarted before the plan was presented</li>\n<li>Fixed the Bash tool occasionally losing shell aliases, functions and plugin PATH entries for a whole session when its first command ran seconds after startup on a new config directory</li>\n<li>Fixed unbounded memory use when an HTTP MCP server sends a very large response</li>\n<li>Fixed artifact operations failing in a Claude Code run started from inside a cloud session (for example <code>claude -p</code> run from the Bash tool)</li>\n<li>Fixed files sent from remote sessions sometimes being refused as \"not the one approved\" when four or more were sent at once</li>\n<li>Fixed plan mode not being restored when resuming a session with <code>--continue</code> or <code>--resume &lt;session-id&gt;</code> in the terminal</li>\n<li>Fixed a marketplace named after another GitHub marketplace's download folder stopping that marketplace from downloading</li>\n<li>Fixed automatic compaction giving up with \"Prompt is too long\" when a Mac went to sleep while it was running</li>\n<li>Fixed the rewind menu (Esc Esc / <code>/rewind</code>) freezing for hundreds of milliseconds per keypress when the conversation contains a very large pasted stack trace or source file</li>\n<li>Fixed a subdirectory's AGENTS.md not being attached when a file under it is @-mentioned</li>\n<li>Fixed self-hosted runner sessions resumed after a stopped runner failing with \"missing but already registered worktree\" when the sessions folder is a relative symlink</li>\n<li>Fixed a freeze when the secret scan or a permission prompt met long token-like text</li>\n<li>Fixed Bash permission checks not applying Read deny rules or the outside-directory read block to a wildcard in some option values of read-only commands</li>\n<li>Fixed <code>CLAUDE_CODE_USER_DIALOG_TIMEOUT_MS=5m</code> being read as 5 ms and cancelling remote dialogs at once; values with a unit suffix now fall back to <code>dialogExpiry</code></li>\n<li>Fixed a stall when an MCP server's tool listing contains very long runs of combining characters</li>\n<li>Fixed two pastes that overlap in one prompt being sent to the model partly as typed text instead of as one pasted block</li>\n<li>Fixed Claude in Chrome's browser picker showing a message meant for Claude when the chosen browser is no longer connected, and the VS Code dialog's list going stale after a switch</li>\n<li>Fixed background subagents losing write and Bash access in their worktree after the main session enters or exits a different worktree</li>\n<li>Fixed background commands, the agents view and daemon workers sending telemetry and a feature-flag request to Anthropic behind a Claude apps gateway when no managed settings on the machine force gateway login</li>\n<li>Fixed <code>--restricted</code> (and <code>CLAUDE_CODE_RESTRICTED=1</code>) sessions opening the cross-session messaging socket</li>\n<li>Fixed sessions moved to the background while idle reopening as \"no saved transcript\" after a restart or idle cleanup; they now resume their conversation</li>\n<li>Fixed background workers honoring <code>--allow-dangerously-skip-permissions</code> on respawn without the bypass-permissions disclaimer having been accepted</li>\n<li>Fixed Claude replying in an endless loop when a plugin's async Stop hook passes an unquoted script path under a folder with a space, such as Application Support</li>\n<li>Fixed a freeze of several seconds when secret masking met very long unbroken text</li>\n<li>Fixed some permission rules and safety checks not being applied to a tool call after a PreToolUse hook rewrote its input</li>\n<li>Fixed first launch asking to pick a login method again after <code>claude auth login</code> or with a credentials file already in the config directory</li>\n<li>Fixed file names containing line breaks being displayed incorrectly in file tool errors and permission prompts</li>\n<li>Fixed a large paste expanded in place being sent to the model as typed text after the next keystroke when it held accents stored as separate characters, as macOS file names do</li>\n<li>Fixed macOS <code>/login</code> reporting success when the keychain refused the new login and kept an old one it could not remove</li>\n<li>Fixed SDK hosts using <code>--include-partial-messages</code> seeing a reply stay open after the turn ended when its stream was cut, interrupted or fell back to non-streaming</li>\n<li>Fixed sandboxed Bash commands on Linux running <code>ConfigChange</code> hooks and reloading settings mid-command when <code>.claude/settings.json</code> or <code>.claude/settings.local.json</code> does not exist</li>\n<li>Fixed errors reading \"Premature close\" instead of naming the missing program when a tool Claude Code runs, such as git or gh, is not installed (macOS, Linux)</li>\n<li>Fixed <code>/loop</code> and other recurring session-only scheduled tasks running an extra time after a sandboxed Bash command on Linux or after <code>.claude/scheduled_tasks.json</code> was deleted</li>\n<li>Fixed edits to the file a symlinked settings file points at running without the settings-file permission question</li>\n<li>Improved MCP startup behind a network proxy: a server the proxy blocks (HTTP 403) is no longer retried three times</li>\n<li>Improved permission prompts from background agents to show the Ctrl+X Ctrl+K shortcut that stops all background agents</li>\n<li>Improved the built-in <code>plugin-authoring</code> skill: Claude now gives the one command another person runs to install a mod you made, and writes it in a README's install section</li>\n<li>Improved the reply to <code>/plugin</code> in the desktop app's Code tab: it now says where to install and manage plugins there</li>\n<li>Improved the Bash changed-files view: when a chained command includes git merge, pull or checkout, it lists the files without full diffs</li>\n<li>Improved the Claude apps gateway's log when an upstream's cloud credentials or connection fail: the warning now ends with the underlying cause</li>\n<li>Improved the error shown when a cloud session is started without a claude.ai sign-in: it now names <code>claude auth login</code> and /login and no longer blames API-key authentication</li>\n<li>Improved the Read tool's message for binary files: it now points Claude to a skill or a shell command that can read the format</li>\n<li>Improved the error shown when a git config file stops the <code>/ultrareview</code> upload: it is about half as long and says what kind of file is the problem</li>\n<li>Improved the errors shown when the <code>/ultrareview</code> upload refuses a checkout: each known cause now has its own message, with a way to fix it</li>\n<li>Improved the Claude apps gateway to log a warning during the last 30 days before the certificate it presents to the identity provider expires</li>\n<li>Improved Claude in Chrome: a <code>browser_batch</code> call now gets 90 seconds, up from 60, before it is reported as timed out</li>\n<li>Improved the Claude apps gateway's browser sign-in pages: brand fonts, centered layout, and dark mode</li>\n<li>Improved responsiveness while resuming large sessions: timers, input and rendering keep running while the transcript loads</li>\n<li>Improved the / and @ suggestion lists: the selected row now starts with a \u276f pointer, so you can see it without color</li>\n<li>Changed <code>CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC</code> to also skip the startup connection warm-up</li>\n<li>Changed Claude in Chrome so that a project's settings files can no longer turn it on; use <code>--chrome</code>, <code>/chrome</code> or your user settings</li>\n<li>Changed the Bash tool to ask for permission before running <code>pyright</code>, which is no longer treated as a read-only command</li>\n<li>Changed what a mod's <code>$.process.spawn</code> rejects with when another mod denies it after the child ran: it now says the call ran and a plugin withheld its result</li>\n<li>Changed the background daemon's log to write a multi-line message as one JSON-quoted line</li>\n<li>Changed skills and custom commands to refuse a <code>!</code> shell command that contains raw control characters other than tab and newline, with a message that shows where they are</li>\n<li>Changed <code>/artifacts</code>: opening an artifact in your browser now closes the list</li>\n<li>Changed Bash permission checks so that more forms of the <code>ps</code> command ask for approval instead of running without asking</li>\n<li>Changed plugin hooks so long text is clipped and logged instead of being refused or dropped silently</li>\n<li>Changed background sessions whose scheduled task is gone: they now move to Completed about 20 seconds later and can be updated or shut down when idle</li>\n<li>Changed the \"Press \u2190 again\" confirm on a just-cleared prompt: a second \u2190 no longer has to wait a second before it switches, and holding \u2190 down now switches too</li>\n<li>Changed the errors shown when the <code>/ultrareview</code> upload fails at a git step: they name the step and what to try, and no longer repeat git's own error text</li>\n<li>Changed <code>/code-review</code> at medium effort to also report cleanup and CLAUDE.md conventions findings on models without tuned review settings, including Opus 5.5 and Sonnet 5.5</li>\n<li>Changed an in-process teammate's <code>agent_id</code> in Agent results to its agent ID (its <code>name@team</code> address stays in <code>teammate_id</code>); TeammateIdle hooks no longer fire from its subagents or forks</li>\n<li>Changed background sessions waiting on a scheduled wakeup (<code>/loop</code>): they are now left running through updates and low memory, where being restarted or shut down could silently lose the wakeup</li>\n<li>Changed <code>/model</code>, <code>/effort</code> and <code>/rename</code> sent from <code>claude agents</code> to a busy background session to apply right away, without a confirmation, instead of when the turn ends</li>\n<li>Changed the Claude apps gateway's minimum supported PostgreSQL version from 14 to 11</li>\n<li>Changed the interactive session's WebSearch budget to refill over time (100 calls/hour; <code>CLAUDE_CODE_WEB_SEARCH_REFILLS_PER_HOUR</code> sets the rate, 0 turns it off) instead of ending after 200 calls</li>\n<li>Changed <code>CLAUDE_CODE_DISABLE_ATTACHMENTS</code> so a repository's <code>.claude/settings.json</code> or <code>.claude/settings.local.json</code> can no longer set it; shell, user and managed settings still can</li>\n<li>Changed <code>claude plugin update</code> on a plugin loaded from a directory to print just its reason, without the \"Failed to update plugin\" prefix, as for built-in plugins</li>\n<li>Changed the built-in <code>gh api</code> in cloud sessions: a host other than github.com set in <code>GH_HOST</code> or <code>GH_REPO</code> is now refused (use <code>--hostname</code> or a full URL), and stderr notes requests to other hosts</li>\n<li>Changed the <code>claude-api</code> skill's Managed Agents examples to turn off the web tools unless the agent needs them and to use the <code>auto</code> permission policy</li>\n<li>Self-hosted runners: Changed <code>claude --environment &lt;id&gt;</code> to create its session through the current Sessions API; printed and JSON session ids keep their session_\u2026 form</li>\n<li>[VSCode] Added a screen reader announcement, \"Message queued.\", when you send a message while Claude is working</li>\n<li>[VSCode] Added a way to review and run a plugin marketplace's install or update command from the Manage plugins dialog</li>\n<li>[VSCode] Fixed a blank chat you never typed into keeping a background Claude process running after you open a saved conversation in its place</li>\n<li>[VSCode] Fixed settings dialogs blaming a timeout when Claude Code stopped unexpectedly during a save</li>\n<li>[VSCode] Fixed the branch switch dialog offering to switch when it could not check for uncommitted changes</li>\n<li>[VSCode] Fixed a permission prompt that arrived behind an open dialog taking keyboard focus, so a key pressed in the dialog could answer it</li>\n<li>[VSCode] Fixed sign-in and new sessions giving no clear reason when Claude Code cannot find or start its program</li>\n<li>[VSCode] Fixed the agent map showing a nested sub-agent with \"Tool calls (0)\" and placing the agents it starts under the main agent</li>\n<li>[VSCode] Improved Continue After Reload: tabs reopened after VS Code restarts its extensions now also finish a step the restart interrupted</li>\n<li>[VSCode] Improved file pills in messages: hovering one now shows the file's path from the project folder, so same-named files can be told apart</li>\n<li>[VSCode] Changed message timestamps to show by default (turn them off with the Claude Code: Show Message Timestamps setting)</li>\n<li>[Cloud sessions] Fixed turning off prompt suggestions through a cloud environment's environment variables having no effect in new cloud sessions</li>\n<li>[Cloud sessions] Fixed the working indicator in a cloud session spinning on for several seconds after Claude's reply had finished; it now stops with the reply</li>\n<li>[Cloud sessions] Fixed History on a never-run routine's page still saying \"No runs yet\" after you pressed Run now; it now shows the new run</li>\n<li>[Cloud sessions] Fixed an unarchived cloud session looking as if Claude were still working until you sent another message</li>\n<li>[Remote Control] Fixed a computer that just started Remote Control taking up to a minute to appear in the Remote Control menu of a new session; it now appears within seconds</li>\n<li>[Claude Tag] Added fast mode in Slack: mention Claude with <code>!fast</code> to switch a thread to fast mode, moving it to Opus if needed, and <code>!fast off</code> to switch back; replies show (fast) while it's on</li>\n<li>[Claude Tag] Added the optional Path prefixes field when creating a custom connection in an access bundle, so its allow rule can cover only those paths instead of the whole host</li>\n<li>[Claude Tag] Fixed members with the Claude Tag Admin permission getting \"Couldn't load memory files\" on the Activity page's Memory tab; they can now read workspace and channel memory</li>\n<li>[Claude Tag] Fixed a workspace guest's Confirm on a Claude settings card in Slack removing its buttons for everyone; only the guest sees the refusal, and members can still confirm or cancel</li>\n<li>[Claude Tag] Fixed scheduled routines in Slack channels running on a model other than the channel's default; each run that starts a new session now uses the current default model</li>\n<li>[Claude Tag] Fixed GitHub repositories in an access bundle attached by a channel-name rule being refused in the channels the rule covers; Claude can now add, list and clone them there</li>\n<li>[Claude Tag] Improved Claude's notice in your direct messages when your own Claude plan's usage limit is reached: it shows within seconds and says when the limit resets</li>\n<li>[Claude Tag] Improved the earlier Claude in Slack app's reply when it can't start a session: it now says what failed and who can fix it, in full only once per thread</li>\n<li>[Claude Tag] Changed the channel instructions limit to 8,192 characters instead of bytes, so non-English text gets the same room, and added a character count beside Save on the Configure page</li>\n<li>[Code Review] Fixed blocking review comments sometimes opening with a \"nit\" label that contradicted their severity</li>\n<li>[Code Review] Fixed tips to comment \"<a class=\"user-mention notranslate\" href=\"https://github.com/claude\">@claude</a> review\" being posted on fork and Manual-mode pull requests in organizations that have turned Code Review off</li>\n</ul>",
-      "content": "<h2>What's changed</h2>\n<ul>\n<li>Added <code>serverToolUses</code> to the result of a mod's <code>turn.step</code> hook: the tool calls the API ran itself (the advisor), each with its id, name, input, start and end</li>\n<li>Added <code>agentId</code> to the <code>tool.check</code> event of plugin hooks, so a hook can tell a subagent's permission check from the main session's</li>\n<li>Added <code>ceiling</code> to the question and verdict a mod's <code>tool.check</code> hook reads, naming the approval an organization requires for a tool</li>\n<li>Added <code>ThemeKey</code> and <code>Color</code> types to the plugin hooks typings, so an editor lists the theme colors a mod's drawing can name</li>\n<li>Added to <code>claude plugin validate</code>: each hook a mod registers at a gating site is listed with whether it has a <code>.catch</code> (<code>gatingHooks</code> under <code>--json</code>)</li>\n<li>Added a Deny button to the Claude apps gateway's sign-in approval page: it ends the pending sign-in, so the waiting terminal stops within seconds</li>\n<li>Added <code>claude attach &lt;name&gt;</code> and <code>claude logs &lt;name&gt;</code>: part of a session name works in place of the id</li>\n<li>Added <code>/claude-api managed-agents-onboard &lt;url&gt;</code> to set up the Managed Agents pattern a page describes as <code>ant apply</code> files</li>\n<li>Added <code>/claude-api managed-agents-onboard &lt;quickstart-name&gt;</code> to build a Console quickstart template, such as <code>deep-researcher</code>, with the <code>ant</code> CLI</li>\n<li>Added a warning when a managed settings file is a link to a file outside the managed settings folder</li>\n<li>Added a /status and doctor warning when managed settings ignore user-configured sandbox allowRead paths or allowed domains</li>\n<li>Fixed requests failing behind proxies and gateways that reject one of Claude Code's beta headers with a status other than 400, or together with a second beta</li>\n<li>Fixed long sessions with hundreds of images getting stuck on \"Request rejected as unprocessable by the model\" errors</li>\n<li>Fixed a turn ending at once when the API's output content filter stopped a reply while Claude was still thinking; the request is now retried once before the error is shown</li>\n<li>Fixed resumed subagents and teammates losing their earlier thinking and prompt cache after receiving a message mid-run</li>\n<li>Fixed WebFetch silently dropping page text past 100,000 characters; it now says how much was unread and takes an <code>offset</code> to read on</li>\n<li>Fixed a crash (\"Maximum call stack size exceeded\") when a response nested lists or quotes thousands of levels deep</li>\n<li>Fixed <code>/rewind</code> not listing a prompt sent while Claude was still working</li>\n<li>Fixed scheduled tasks (<code>/loop</code> with an interval, reminders) silently not coming back on resume once the conversation was compacted; covers compactions made from this version on</li>\n<li>Fixed scheduled tasks set in the foreground never firing after a \u2190 or <code>/background</code> hand-off, and recurring ones firing an extra run on every resume, respawn or fork</li>\n<li>Fixed headless <code>--json-schema</code> runs exiting non-zero with <code>is_error: true</code> on a <code>success</code> result when the connection dropped after the structured output was already delivered</li>\n<li>Fixed plan mode letting the auto mode classifier approve non-read-only connector tools that carry a server-pushed ask policy</li>\n<li>Fixed a project <code>CLAUDE.md</code>, rule or <code>AGENTS.md</code> symlinked outside the working directories loading under <code>permissions.blockReadsOutsideWorkingDirectories</code> or a <code>Read</code> deny rule</li>\n<li>Fixed URL allow and deny patterns with a wildcard inside an <code>xn--</code> host label matching differently from one process to the next</li>\n<li>Fixed an MCP server provided by your organization being relisted as your own after signing in or reconnecting, including from a late result in headless and SDK sessions</li>\n<li>Fixed <code>/ultrareview</code> dropping uncommitted changes without a warning on Windows when <code>git stash create</code> failed, and refusing them after a <code>git add -N</code> file was deleted or moved</li>\n<li>Fixed the <code>plansDirectory</code> setting's project-root check for paths that contain a backslash on macOS and Linux</li>\n<li>Fixed replies in very long Remote Control and cloud sessions that could appear a block at a time instead of streaming in</li>\n<li>Fixed the background daemon's log passing terminal control characters to the screen under <code>claude daemon run</code> and <code>claude daemon logs</code>; they now show as <code>\\uXXXX</code> escapes</li>\n<li>Self-hosted runner: Fixed a crafted, very long line of a session's error output freezing the runner for several seconds</li>\n<li>Fixed a plugin hook with a <code>.catch</code> being unloaded, and its <code>.catch</code> skipped, when the hook kept the hooks worker busy on a prompt or tool call</li>\n<li>Fixed a mod's <code>turn.step</code> result listing a tool call that a mid-response model fallback had discarded</li>\n<li>Fixed a Cowork cloud session's reply sometimes never finishing when its container restarted just after Claude sent a message or a file</li>\n<li>Fixed <code>claude plugin validate</code> and plugin loading refusing a hooks module that destructures an option named like one of its top-level functions</li>\n<li>Fixed <code>/ultrareview</code> failing to upload uncommitted changes when <code>core.safecrlf=true</code> is set in git's configuration</li>\n<li>Fixed the effort level changing when a flagged message is retried on a fallback model that has a different level saved in settings</li>\n<li>Windows: Fixed multi-line <code>!</code> shell blocks in skills and commands failing when the file is saved with CRLF line endings</li>\n<li>Fixed Claude Code hanging until killed when a <code>/permissions</code> tab was clicked while searching in fullscreen mode</li>\n<li>Fixed conversation compaction sometimes failing with a \"null is not an object\" error</li>\n<li>Fixed plugin hooks reading an empty <code>answer</code> on <code>turn.complete</code> for a subagent that hands its report back in auto mode</li>\n<li>Fixed a mod being unloaded without a message when a refresh followed its failed reload; its failure line now says the version loaded before is unloaded</li>\n<li>Fixed a mod's <code>prompt.submit</code> hook that drops a prompt after calling <code>next(e)</code> being ignored silently: the hook is now reported as failed, by name</li>\n<li>Fixed a mod's pane or band being redrawn without end when it followed its end over a tree that changed height at every drawing</li>\n<li>Fixed an image read on macOS and Windows being able to return a file outside what was approved, through a link swapped in mid-read</li>\n<li>Fixed a case where a user-installed mod could get an organization's plugin unloaded; the mod is now the one unloaded</li>\n<li>Fixed <code>disableClaudeAiConnectors</code> and <code>allowedMcpServers</code> URL rules not being applied to some MCP entries declared in <code>.mcp.json</code>, plugins or agents</li>\n<li>Fixed a mod's inline pane being redrawn without end when its tree changed height at every drawing</li>\n<li>Fixed an <code>@</code>-mention under the read block or <code>--restricted</code> being able to read a file outside the working directories through a link changed mid-read</li>\n<li>Fixed Esc in the agents view confirming \"Press enter again to restart this session \u2014 it isn't responding\"; Esc now just reopens the session</li>\n<li>Fixed agent view losing a background session's <code>/loop</code> run count, countdown and live status line after the session enters a worktree that it creates</li>\n<li>Fixed <code>claude agents</code> sessions in manual permission mode asking for approval to read an image pasted into a reply or a new agent's prompt</li>\n<li>Fixed a deny or ask rule missing a command or path whose name came from a variable set as a prefix on <code>declare</code>, <code>typeset</code>, <code>export</code> or <code>readonly</code></li>\n<li>Fixed Read deny rules not applying to image paths pasted or dragged into the prompt, or to file names listed for an @-mentioned folder</li>\n<li>Fixed a case where a user-installed mod could make an organization's guard skip its check; such a mod is now unloaded</li>\n<li>Fixed plugin hooks stalling each redraw when a mod draws a long multi-line text holding non-Latin characters</li>\n<li>Fixed repeated Ctrl+X in the agents view deleting the whole next section after the bottom session of a section was deleted</li>\n<li>Fixed You should know writing its notes in English regardless of the <code>language</code> setting</li>\n<li>Fixed a freeze after sending some very long messages</li>\n<li>Fixed a slowdown when expanding the transcript (ctrl+o) or resizing over large tool output that contains non-ASCII characters such as arrows, dashes or box-drawing</li>\n<li>Fixed <code>claude respawn</code> re-sending an earlier message to a backgrounded session that has no saved transcript instead of starting it with an empty conversation</li>\n<li>Fixed Esc after an <code>n:</code> or Ctrl+F search in the agents view moving focus to a section header, where Ctrl+X twice would delete every session in the section</li>\n<li>Fixed <code>claude agents</code> saving a slash command it could not deliver to a stopped session and then running it by itself the next time that session restarted</li>\n<li>Fixed <code>/ultrareview</code> uploading uncommitted changes unfiltered for files under a git filter driver named <code>unset</code> or <code>unspecified</code>; the upload now stops and asks you to rename the driver</li>\n<li>Fixed auto mode denials suggesting a permission rule that would skip the classifier for a whole tool or that Claude Code would ignore</li>\n<li>Fixed <code>claude --teleport</code> and <code>/teleport</code> deleting the files in a folder that had replaced a tracked file of the same name when you chose to stash: the stash is now refused, and says why</li>\n<li>Fixed Esc confirming agent view's \"Press enter again to restart this session fresh\" prompt</li>\n<li>Fixed agent view's <code>/loop</code> run count freezing and its countdown disappearing after <code>/clear</code>; the count now restarts with the new conversation</li>\n<li>Fixed <code>--channels</code> permission relay: a reply ID that repeats within a session is now ignored instead of approving a different prompt</li>\n<li>Fixed <code>/chrome</code> \"Reconnect extension\" not restoring browser tools after a failed Chrome connection, and added an explanation when it can't (<a class=\"issue-link js-issue-link\" href=\"https://github.com/anthropics/claude-code/issues/98135\">#98135</a>)</li>\n<li>Fixed mods staying off for people who reach Claude through a gateway (<code>ANTHROPIC_BASE_URL</code> with <code>ANTHROPIC_AUTH_TOKEN</code>) and have no Anthropic account</li>\n<li>Fixed replies sent from <code>claude agents</code> just after a background session crashed being refused after 2 seconds: they are now retried for up to 12 seconds while the session restarts</li>\n<li>Fixed slash commands and answers to a multiple-choice question that <code>claude agents</code> could not deliver to a running session being saved and sent by themselves the next time it was restarted</li>\n<li>Fixed sandboxed commands that pipe a heredoc into another command (<code>cat &lt;&lt;EOF | python3</code>) asking for approval on every run</li>\n<li>Fixed <code>claude agents</code> failing with \"Couldn't restart the background service\" and background sessions stopping after a Homebrew upgrade (takes effect from the upgrade after this one)</li>\n<li>Fixed agent view's \"restart this session fresh\" re-sending an earlier message from the session instead of starting with an empty conversation</li>\n<li>Fixed Bash permission checks auto-approving some read-only commands (such as <code>rg</code> or <code>git grep</code>) whose arguments the shell would still expand as wildcards; these now prompt for approval</li>\n<li>Fixed <code>claude plugin test</code> refusing to run after an upgrade because of an out-of-date saved setting</li>\n<li>Fixed Bash permission checks auto-approving certain commands whose variable names zsh reads differently from bash; these now prompt for approval</li>\n<li>Fixed a short form of a <code>git clone</code> option keeping the sandbox exemption from a git pattern such as <code>git *</code> in <code>sandbox.excludedCommands</code>; it is now treated like the long form</li>\n<li>Fixed the first feature-flag request of a session ignoring a proxy or API endpoint set in a project's settings</li>\n<li>Fixed <code>/ultrareview</code> of a local branch silently leaving uncommitted work out of the upload in a repository that keeps its branches outside <code>.git</code> (git 2.54+); it now refuses with an explanation</li>\n<li>Fixed cloud sessions staying asleep after a container restart lost a pending <code>/loop</code> wakeup or scheduled task; Claude is now told and can schedule it again</li>\n<li>Fixed the Claude apps gateway's retention sweep deleting a returning developer's identity row refreshed at the same moment, on PostgreSQL versions without the November 2025 fixes</li>\n<li>Fixed sandboxed Monitor tool commands skipping the permission prompt under sandbox auto-allow; they now follow your permission rules</li>\n<li>Fixed the Claude apps gateway failing to start when the certificate it presents to the identity provider has an empty subject</li>\n<li>Fixed the Claude apps gateway exiting with a bare \"Invalid URL\" when <code>store.postgres_url</code> can't be parsed; the error now names the setting and says what the URL may hold</li>\n<li>Fixed background agents failing with \"Agent stalled\" and Workflow tool subagents restarting from their prompt when a Mac woke from sleep</li>\n<li>Fixed slow or failed startup since 2.1.285 under SDK hosts such as the VS Code extension when managed settings deny reads of many paths on a slow filesystem (notably Windows drives under WSL)</li>\n<li>Fixed a response interrupted by computer sleep being treated as a stalled stream on Bedrock, Vertex, Foundry, and custom gateways</li>\n<li>Fixed a freeze before the first request and in the <code>/sandbox</code> Config tab on Linux and WSL when a sandbox read rule such as <code>~/**/.env</code> covers a large folder</li>\n<li>Fixed skills not being found when asked for by the name in SKILL.md when their folder has a different name (for example a non-English name): the skill listing now shows both names</li>\n<li>Fixed a plan written in plan mode being lost when a cloud session's container restarted before the plan was presented</li>\n<li>Fixed the Bash tool occasionally losing shell aliases, functions and plugin PATH entries for a whole session when its first command ran seconds after startup on a new config directory</li>\n<li>Fixed unbounded memory use when an HTTP MCP server sends a very large response</li>\n<li>Fixed artifact operations failing in a Claude Code run started from inside a cloud session (for example <code>claude -p</code> run from the Bash tool)</li>\n<li>Fixed files sent from remote sessions sometimes being refused as \"not the one approved\" when four or more were sent at once</li>\n<li>Fixed plan mode not being restored when resuming a session with <code>--continue</code> or <code>--resume &lt;session-id&gt;</code> in the terminal</li>\n<li>Fixed a marketplace named after another GitHub marketplace's download folder stopping that marketplace from downloading</li>\n<li>Fixed automatic compaction giving up with \"Prompt is too long\" when a Mac went to sleep while it was running</li>\n<li>Fixed the rewind menu (Esc Esc / <code>/rewind</code>) freezing for hundreds of milliseconds per keypress when the conversation contains a very large pasted stack trace or source file</li>\n<li>Fixed a subdirectory's AGENTS.md not being attached when a file under it is @-mentioned</li>\n<li>Fixed self-hosted runner sessions resumed after a stopped runner failing with \"missing but already registered worktree\" when the sessions folder is a relative symlink</li>\n<li>Fixed a freeze when the secret scan or a permission prompt met long token-like text</li>\n<li>Fixed Bash permission checks not applying Read deny rules or the outside-directory read block to a wildcard in some option values of read-only commands</li>\n<li>Fixed <code>CLAUDE_CODE_USER_DIALOG_TIMEOUT_MS=5m</code> being read as 5 ms and cancelling remote dialogs at once; values with a unit suffix now fall back to <code>dialogExpiry</code></li>\n<li>Fixed a stall when an MCP server's tool listing contains very long runs of combining characters</li>\n<li>Fixed two pastes that overlap in one prompt being sent to the model partly as typed text instead of as one pasted block</li>\n<li>Fixed Claude in Chrome's browser picker showing a message meant for Claude when the chosen browser is no longer connected, and the VS Code dialog's list going stale after a switch</li>\n<li>Fixed background subagents losing write and Bash access in their worktree after the main session enters or exits a different worktree</li>\n<li>Fixed background commands, the agents view and daemon workers sending telemetry and a feature-flag request to Anthropic behind a Claude apps gateway when no managed settings on the machine force gateway login</li>\n<li>Fixed <code>--restricted</code> (and <code>CLAUDE_CODE_RESTRICTED=1</code>) sessions opening the cross-session messaging socket</li>\n<li>Fixed sessions moved to the background while idle reopening as \"no saved transcript\" after a restart or idle cleanup; they now resume their conversation</li>\n<li>Fixed background workers honoring <code>--allow-dangerously-skip-permissions</code> on respawn without the bypass-permissions disclaimer having been accepted</li>\n<li>Fixed Claude replying in an endless loop when a plugin's async Stop hook passes an unquoted script path under a folder with a space, such as Application Support</li>\n<li>Fixed a freeze of several seconds when secret masking met very long unbroken text</li>\n<li>Fixed some permission rules and safety checks not being applied to a tool call after a PreToolUse hook rewrote its input</li>\n<li>Fixed first launch asking to pick a login method again after <code>claude auth login</code> or with a credentials file already in the config directory</li>\n<li>Fixed file names containing line breaks being displayed incorrectly in file tool errors and permission prompts</li>\n<li>Fixed a large paste expanded in place being sent to the model as typed text after the next keystroke when it held accents stored as separate characters, as macOS file names do</li>\n<li>Fixed macOS <code>/login</code> reporting success when the keychain refused the new login and kept an old one it could not remove</li>\n<li>Fixed SDK hosts using <code>--include-partial-messages</code> seeing a reply stay open after the turn ended when its stream was cut, interrupted or fell back to non-streaming</li>\n<li>Fixed sandboxed Bash commands on Linux running <code>ConfigChange</code> hooks and reloading settings mid-command when <code>.claude/settings.json</code> or <code>.claude/settings.local.json</code> does not exist</li>\n<li>Fixed errors reading \"Premature close\" instead of naming the missing program when a tool Claude Code runs, such as git or gh, is not installed (macOS, Linux)</li>\n<li>Fixed <code>/loop</code> and other recurring session-only scheduled tasks running an extra time after a sandboxed Bash command on Linux or after <code>.claude/scheduled_tasks.json</code> was deleted</li>\n<li>Fixed edits to the file a symlinked settings file points at running without the settings-file permission question</li>\n<li>Improved MCP startup behind a network proxy: a server the proxy blocks (HTTP 403) is no longer retried three times</li>\n<li>Improved permission prompts from background agents to show the Ctrl+X Ctrl+K shortcut that stops all background agents</li>\n<li>Improved the built-in <code>plugin-authoring</code> skill: Claude now gives the one command another person runs to install a mod you made, and writes it in a README's install section</li>\n<li>Improved the reply to <code>/plugin</code> in the desktop app's Code tab: it now says where to install and manage plugins there</li>\n<li>Improved the Bash changed-files view: when a chained command includes git merge, pull or checkout, it lists the files without full diffs</li>\n<li>Improved the Claude apps gateway's log when an upstream's cloud credentials or connection fail: the warning now ends with the underlying cause</li>\n<li>Improved the error shown when a cloud session is started without a claude.ai sign-in: it now names <code>claude auth login</code> and /login and no longer blames API-key authentication</li>\n<li>Improved the Read tool's message for binary files: it now points Claude to a skill or a shell command that can read the format</li>\n<li>Improved the error shown when a git config file stops the <code>/ultrareview</code> upload: it is about half as long and says what kind of file is the problem</li>\n<li>Improved the errors shown when the <code>/ultrareview</code> upload refuses a checkout: each known cause now has its own message, with a way to fix it</li>\n<li>Improved the Claude apps gateway to log a warning during the last 30 days before the certificate it presents to the identity provider expires</li>\n<li>Improved Claude in Chrome: a <code>browser_batch</code> call now gets 90 seconds, up from 60, before it is reported as timed out</li>\n<li>Improved the Claude apps gateway's browser sign-in pages: brand fonts, centered layout, and dark mode</li>\n<li>Improved responsiveness while resuming large sessions: timers, input and rendering keep running while the transcript loads</li>\n<li>Improved the / and @ suggestion lists: the selected row now starts with a \u276f pointer, so you can see it without color</li>\n<li>Changed <code>CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC</code> to also skip the startup connection warm-up</li>\n<li>Changed Claude in Chrome so that a project's settings files can no longer turn it on; use <code>--chrome</code>, <code>/chrome</code> or your user settings</li>\n<li>Changed the Bash tool to ask for permission before running <code>pyright</code>, which is no longer treated as a read-only command</li>\n<li>Changed what a mod's <code>$.process.spawn</code> rejects with when another mod denies it after the child ran: it now says the call ran and a plugin withheld its result</li>\n<li>Changed the background daemon's log to write a multi-line message as one JSON-quoted line</li>\n<li>Changed skills and custom commands to refuse a <code>!</code> shell command that contains raw control characters other than tab and newline, with a message that shows where they are</li>\n<li>Changed <code>/artifacts</code>: opening an artifact in your browser now closes the list</li>\n<li>Changed Bash permission checks so that more forms of the <code>ps</code> command ask for approval instead of running without asking</li>\n<li>Changed plugin hooks so long text is clipped and logged instead of being refused or dropped silently</li>\n<li>Changed background sessions whose scheduled task is gone: they now move to Completed about 20 seconds later and can be updated or shut down when idle</li>\n<li>Changed the \"Press \u2190 again\" confirm on a just-cleared prompt: a second \u2190 no longer has to wait a second before it switches, and holding \u2190 down now switches too</li>\n<li>Changed the errors shown when the <code>/ultrareview</code> upload fails at a git step: they name the step and what to try, and no longer repeat git's own error text</li>\n<li>Changed <code>/code-review</code> at medium effort to also report cleanup and CLAUDE.md conventions findings on models without tuned review settings, including Opus 5.5 and Sonnet 5.5</li>\n<li>Changed an in-process teammate's <code>agent_id</code> in Agent results to its agent ID (its <code>name@team</code> address stays in <code>teammate_id</code>); TeammateIdle hooks no longer fire from its subagents or forks</li>\n<li>Changed background sessions waiting on a scheduled wakeup (<code>/loop</code>): they are now left running through updates and low memory, where being restarted or shut down could silently lose the wakeup</li>\n<li>Changed <code>/model</code>, <code>/effort</code> and <code>/rename</code> sent from <code>claude agents</code> to a busy background session to apply right away, without a confirmation, instead of when the turn ends</li>\n<li>Changed the Claude apps gateway's minimum supported PostgreSQL version from 14 to 11</li>\n<li>Changed the interactive session's WebSearch budget to refill over time (100 calls/hour; <code>CLAUDE_CODE_WEB_SEARCH_REFILLS_PER_HOUR</code> sets the rate, 0 turns it off) instead of ending after 200 calls</li>\n<li>Changed <code>CLAUDE_CODE_DISABLE_ATTACHMENTS</code> so a repository's <code>.claude/settings.json</code> or <code>.claude/settings.local.json</code> can no longer set it; shell, user and managed settings still can</li>\n<li>Changed <code>claude plugin update</code> on a plugin loaded from a directory to print just its reason, without the \"Failed to update plugin\" prefix, as for built-in plugins</li>\n<li>Changed the built-in <code>gh api</code> in cloud sessions: a host other than github.com set in <code>GH_HOST</code> or <code>GH_REPO</code> is now refused (use <code>--hostname</code> or a full URL), and stderr notes requests to other hosts</li>\n<li>Changed the <code>claude-api</code> skill's Managed Agents examples to turn off the web tools unless the agent needs them and to use the <code>auto</code> permission policy</li>\n<li>Self-hosted runners: Changed <code>claude --environment &lt;id&gt;</code> to create its session through the current Sessions API; printed and JSON session ids keep their session_\u2026 form</li>\n<li>[VSCode] Added a screen reader announcement, \"Message queued.\", when you send a message while Claude is working</li>\n<li>[VSCode] Added a way to review and run a plugin marketplace's install or update command from the Manage plugins dialog</li>\n<li>[VSCode] Fixed a blank chat you never typed into keeping a background Claude process running after you open a saved conversation in its place</li>\n<li>[VSCode] Fixed settings dialogs blaming a timeout when Claude Code stopped unexpectedly during a save</li>\n<li>[VSCode] Fixed the branch switch dialog offering to switch when it could not check for uncommitted changes</li>\n<li>[VSCode] Fixed a permission prompt that arrived behind an open dialog taking keyboard focus, so a key pressed in the dialog could answer it</li>\n<li>[VSCode] Fixed sign-in and new sessions giving no clear reason when Claude Code cannot find or start its program</li>\n<li>[VSCode] Fixed the agent map showing a nested sub-agent with \"Tool calls (0)\" and placing the agents it starts under the main agent</li>\n<li>[VSCode] Improved Continue After Reload: tabs reopened after VS Code restarts its extensions now also finish a step the restart interrupted</li>\n<li>[VSCode] Improved file pills in messages: hovering one now shows the file's path from the project folder, so same-named files can be told apart</li>\n<li>[VSCode] Changed message timestamps to show by default (turn them off with the Claude Code: Show Message Timestamps setting)</li>\n<li>[Cloud sessions] Fixed turning off prompt suggestions through a cloud environment's environment variables having no effect in new cloud sessions</li>\n<li>[Cloud sessions] Fixed the working indicator in a cloud session spinning on for several seconds after Claude's reply had finished; it now stops with the reply</li>\n<li>[Cloud sessions] Fixed History on a never-run routine's page still saying \"No runs yet\" after you pressed Run now; it now shows the new run</li>\n<li>[Cloud sessions] Fixed an unarchived cloud session looking as if Claude were still working until you sent another message</li>\n<li>[Remote Control] Fixed a computer that just started Remote Control taking up to a minute to appear in the Remote Control menu of a new session; it now appears within seconds</li>\n<li>[Claude Tag] Added fast mode in Slack: mention Claude with <code>!fast</code> to switch a thread to fast mode, moving it to Opus if needed, and <code>!fast off</code> to switch back; replies show (fast) while it's on</li>\n<li>[Claude Tag] Added the optional Path prefixes field when creating a custom connection in an access bundle, so its allow rule can cover only those paths instead of the whole host</li>\n<li>[Claude Tag] Fixed members with the Claude Tag Admin permission getting \"Couldn't load memory files\" on the Activity page's Memory tab; they can now read workspace and channel memory</li>\n<li>[Claude Tag] Fixed a workspace guest's Confirm on a Claude settings card in Slack removing its buttons for everyone; only the guest sees the refusal, and members can still confirm or cancel</li>\n<li>[Claude Tag] Fixed scheduled routines in Slack channels running on a model other than the channel's default; each run that starts a new session now uses the current default model</li>\n<li>[Claude Tag] Fixed GitHub repositories in an access bundle attached by a channel-name rule being refused in the channels the rule covers; Claude can now add, list and clone them there</li>\n<li>[Claude Tag] Improved Claude's notice in your direct messages when your own Claude plan's usage limit is reached: it shows within seconds and says when the limit resets</li>\n<li>[Claude Tag] Improved the earlier Claude in Slack app's reply when it can't start a session: it now says what failed and who can fix it, in full only once per thread</li>\n<li>[Claude Tag] Changed the channel instructions limit to 8,192 characters instead of bytes, so non-English text gets the same room, and added a character count beside Save on the Configure page</li>\n<li>[Code Review] Fixed blocking review comments sometimes opening with a \"nit\" label that contradicted their severity</li>\n<li>[Code Review] Fixed tips to comment \"<a class=\"user-mention notranslate\" href=\"https://github.com/claude\">@claude</a> review\" being posted on fork and Manual-mode pull requests in organizations that have turned Code Review off</li>\n</ul>",
-      "source_name": "Claude Code Releases",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "claude code",
-        "tooling",
-        "changelog"
-      ],
-      "author": "ashwin-ant",
-      "published_at": "2026-10-05T23:33:17Z",
-      "fetched_at": "2026-10-06T06:22:44.583154Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -64135,26 +63924,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5006e602e0194e53",
-      "url": "https://www.anthropic.com/events/claude-founder-house-san-francisco",
-      "title": "Claude Founder House San Francisco",
-      "summary": "Type: Startup. Venue: \u30fbTerra Gallery. Date: Oct 6, 2026",
-      "content": "",
-      "source_name": "Anthropic Events",
-      "source_type": "events",
-      "tags": [
-        "ai",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-06T00:00:00Z",
-      "fetched_at": "2026-09-23T07:46:40.462652Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "24f8c54d5d662520",
       "url": "https://www.anthropic.com/webinars/dri-ing-your-career",
       "title": "DRI-ing Your Career",
@@ -64271,27 +64040,6 @@
       "author": "trq212",
       "published_at": "2026-10-06T02:18:54Z",
       "fetched_at": "2026-10-06T07:19:24.284783Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e16c451ec6c34a42",
-      "url": "https://x.com/GeminiApp/status/2107251064911303020",
-      "title": "RT @Android: This is your sign to get your hands on Googlebook. Available now. https://t.co/7IGUJ5nY...",
-      "summary": "RT @Android: This is your sign to get your hands on Googlebook. Available now. https://t.co/7IGUJ5nYvh",
-      "content": "RT @Android: This is your sign to get your hands on Googlebook. Available now. https://t.co/7IGUJ5nYvh",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-05T23:26:19Z",
-      "fetched_at": "2026-10-06T07:19:31.980412Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -66793,6 +66541,232 @@
       "author": "steipete",
       "published_at": "2026-10-12T19:39:48Z",
       "fetched_at": "2026-10-12T21:31:44.133548Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "65e0dd5d2c0d3a19",
+      "url": "https://x.com/AnthropicAI/status/2109795898909950247",
+      "title": "Over the last few months, we\u2019ve made significant progress in reducing the effectiveness of distillat...",
+      "summary": "Over the last few months, we\u2019ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\n\nIn this post, we explain how: https://t.co/uWiRSLBuOS",
+      "content": "Over the last few months, we\u2019ve made significant progress in reducing the effectiveness of distillation attacks against Claude.\n\nIn this post, we explain how: https://t.co/uWiRSLBuOS",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-12T23:58:35Z",
+      "fetched_at": "2026-10-13T00:25:09.974014Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d36f3e62a2183f58",
+      "url": "https://x.com/dani_avila7/status/2109776635880948136",
+      "title": "If you\u2019ve made it to Module 7 of the cookbook\u2026 you\u2019ve mastered Claude Managed Agents and you\u2019re read...",
+      "summary": "If you\u2019ve made it to Module 7 of the cookbook\u2026 you\u2019ve mastered Claude Managed Agents and you\u2019re ready to run Dynamic Workflows \ud83d\ude4c\n\nLet me know if you made it!\n\nRepo: https://t.co/JiLheABS9d https://t.co/b3tzAUPiZf",
+      "content": "If you\u2019ve made it to Module 7 of the cookbook\u2026 you\u2019ve mastered Claude Managed Agents and you\u2019re ready to run Dynamic Workflows \ud83d\ude4c\n\nLet me know if you made it!\n\nRepo: https://t.co/JiLheABS9d https://t.co/b3tzAUPiZf",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-12T22:42:02Z",
+      "fetched_at": "2026-10-13T00:25:03.419818Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "74d73dc839cd341e",
+      "url": "https://x.com/dani_avila7/status/2109772275201323154",
+      "title": "So I can sign up for Google using my Grok bot email\u2026\n\nthen sign up for another Grok bot account usin...",
+      "summary": "So I can sign up for Google using my Grok bot email\u2026\n\nthen sign up for another Grok bot account using Google\n\nthen use that email to sign up for another Google account\n\nthen sign up for another Grok bot account\n\nThen\u2026",
+      "content": "So I can sign up for Google using my Grok bot email\u2026\n\nthen sign up for another Grok bot account using Google\n\nthen use that email to sign up for another Google account\n\nthen sign up for another Grok bot account\n\nThen\u2026",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-12T22:24:42Z",
+      "fetched_at": "2026-10-13T00:25:03.419914Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e16c451ec6c34a42",
+      "url": "https://x.com/GeminiApp/status/2107251064911303020",
+      "title": "RT @Android: This is your sign to get your hands on Googlebook. Available now. https://t.co/7IGUJ5nY...",
+      "summary": "RT @Android: This is your sign to get your hands on Googlebook. Available now. https://t.co/7IGUJ5nYvh",
+      "content": "RT @Android: This is your sign to get your hands on Googlebook. Available now. https://t.co/7IGUJ5nYvh",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-05T23:26:19Z",
+      "fetched_at": "2026-10-06T07:19:31.980412Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8786647b0e389a59",
+      "url": "https://x.com/trq212/status/2107229483015258493",
+      "title": "my favorite name for this pattern is \"local hands\", Claude runs in the cloud but can access your fil...",
+      "summary": "my favorite name for this pattern is \"local hands\", Claude runs in the cloud but can access your files locally- also coming to cowork",
+      "content": "my favorite name for this pattern is \"local hands\", Claude runs in the cloud but can access your files locally- also coming to cowork",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-05T22:00:33Z",
+      "fetched_at": "2026-10-06T07:19:24.284838Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "86cdb88bddd5002e",
+      "url": "https://x.com/bcherny/status/2107227891855700201",
+      "title": "RT @trq212: I've been working on a skill that makes better HTML plans in Claude Code. \n\nIt uses simp...",
+      "summary": "RT @trq212: I've been working on a skill that makes better HTML plans in Claude Code. \n\nIt uses simple language, shows code snippets, surfa\u2026",
+      "content": "RT @trq212: I've been working on a skill that makes better HTML plans in Claude Code. \n\nIt uses simple language, shows code snippets, surfa\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-05T21:54:14Z",
+      "fetched_at": "2026-10-06T07:19:26.565049Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a9e8b8833fb5ae3e",
+      "url": "https://x.com/bcherny/status/2107226867761865193",
+      "title": "RT @dfeinition: Your Slack group DMs can now include Claude. Add it the same way you'd add anyone el...",
+      "summary": "RT @dfeinition: Your Slack group DMs can now include Claude. Add it the same way you'd add anyone else.\n\nClaude answers in a thread and kee\u2026",
+      "content": "RT @dfeinition: Your Slack group DMs can now include Claude. Add it the same way you'd add anyone else.\n\nClaude answers in a thread and kee\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-05T21:50:10Z",
+      "fetched_at": "2026-10-06T07:19:26.565126Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "84aaf7a7c644ca10",
+      "url": "https://x.com/dani_avila7/status/2107224221156085962",
+      "title": "People keep asking me if learning to code is still worth it\n\nA few years ago, my answer was an easy ...",
+      "summary": "People keep asking me if learning to code is still worth it\n\nA few years ago, my answer was an easy yes... today, I\u2019m not so sure\n\nI\u2019ve been building software for 15 years across startups, banks, retail, and large companies. I was CTO of two startups and had to learn",
+      "content": "People keep asking me if learning to code is still worth it\n\nA few years ago, my answer was an easy yes... today, I\u2019m not so sure\n\nI\u2019ve been building software for 15 years across startups, banks, retail, and large companies. I was CTO of two startups and had to learn",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-05T21:39:39Z",
+      "fetched_at": "2026-10-06T07:19:28.736102Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b39fe8732c704837",
+      "url": "https://x.com/steipete/status/2107208292061815032",
+      "title": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
+      "summary": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
+      "content": "RT @advait3000: @badlogicgames Whoa whoa what about pacing the frontier",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-05T20:36:21Z",
+      "fetched_at": "2026-10-06T07:19:36.113419Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ff1e0022d5a8c022",
+      "url": "https://x.com/simonw/status/2107158711798218848",
+      "title": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at addin...",
+      "summary": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at adding long numbers, only this time I tried Qwen 3.8 27B running locally in both reasoning and non-reasoning modes https://t.co/IOufJIA4N9 https://t.co/4kB33NCPcO",
+      "content": "I re-ran an experiment @colin_fraser ran against GPT-4o a while back to see how good it was at adding long numbers, only this time I tried Qwen 3.8 27B running locally in both reasoning and non-reasoning modes https://t.co/IOufJIA4N9 https://t.co/4kB33NCPcO",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-05T17:19:20Z",
+      "fetched_at": "2026-10-06T07:19:27.683786Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "576e18dcfc2e9b6a",
+      "url": "https://x.com/GoogleAI/status/2107152626873663898",
+      "title": "https://t.co/cdfqoSOtJm",
+      "summary": "https://t.co/cdfqoSOtJm",
+      "content": "https://t.co/cdfqoSOtJm",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-10-05T16:55:09Z",
+      "fetched_at": "2026-10-06T07:19:33.930306Z",
       "score": null,
       "score_reason": "",
       "tier": "",
