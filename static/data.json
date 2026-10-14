@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-14T10:29:28.505949+00:00",
+  "exported_at": "2026-10-14T12:54:29.851567+00:00",
   "period_hours": 168,
-  "total": 2530,
+  "total": 2528,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -24563,27 +24563,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "67f5f61696a2949d",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-      "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-07T12:45:31Z",
-      "fetched_at": "2026-10-07T17:25:53.669074Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "68ad7fffc8ec2e59",
       "url": "https://arxiv.org/abs/2610.13574",
       "title": "$L_0$ Feature Selection via Monte Carlo Tree Search in High-Dimensional Financial Regression",
@@ -28637,27 +28616,6 @@
       "author": "Sovesh Mohapatra, Dani S Bassett",
       "published_at": "2026-10-12T04:00:00Z",
       "fetched_at": "2026-10-12T06:00:05.692401Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "661f64ddb5f472a2",
-      "url": "https://openai.com/index/teens-learn-and-plan",
-      "title": "Helping teens learn, plan, and shape the future of AI",
-      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-07T12:00:00Z",
-      "fetched_at": "2026-10-07T17:25:48.591815Z",
       "score": null,
       "score_reason": "",
       "tier": "",
