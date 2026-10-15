@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-15T11:31:28.967089+00:00",
+  "exported_at": "2026-10-15T16:00:36.972992+00:00",
   "period_hours": 168,
-  "total": 2507,
+  "total": 2528,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28757,69 +28757,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "db7b9e6fe248e314",
-      "url": "https://openai.com/index/oracle",
-      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-08T16:00:00Z",
-      "fetched_at": "2026-10-08T19:57:48.542058Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c5ac5b6aad591d4a",
-      "url": "https://www.langchain.com/blog/agents-that-can-pay-with-stripe-link",
-      "title": "Agents that can pay: building Restock with Stripe's Link and Managed Deep Agents",
-      "summary": "<ul><li><strong>Restock is a sample agent that pays for real purchases.</strong> It runs in Slack on Managed Deep Agents, finds products, builds a cart, and checks out through an API that supports the <a href=\"https://mpp.dev/overview\">Machine Payments Protocol</a> (MPP).</li><li><strong>Payments stay safe and within budget.</strong> Link, Stripe's consumer wallet, handles the payment, so the agent never sees a card number. The user approves a spend request up to a set amount, and the agent can't spend above it.</li><li><strong>Build your own agent that can pay.</strong> Start from <a href=\"https://github.com/langchain-samples/restock-agent\">Restock's sample code</a>, and let us know what you build.</li></ul><p>Agents are already good at finding things to buy. Paying is harder: it moves real money, needs credentials the model should never see, and is hard to undo.</p><p>To show how to build an agent that pays, we built Restock, a sample office-supply agent that runs in Slack on <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-overview\">Managed Deep Agents</a>. It searches real products, builds a cart, and pays through <a href=\"https://link.com/\">Link</a>, Stripe's consumer wallet, which gives agents the safest way to pay.</p><p>This post follows one request from the first message to the confirmed order:</p><blockquote>We're running low on pens. Can you find a 12-pack of blue ink pens for the office, under $25 altogether?</blockquote><p>Restock orders the pens for $22.18, fees included. Prices in this post are illustrative.</p><h2>Choosing how to pay</h2><p>An agent can pay by driving the retailer's checkout in a browser, but that's fragile. Pages change, sites block automated checkouts, and payment details have to be entered without exposing them to the model.</p><p>An API that supports the <a href=\"https://mpp.dev/overview\">Machine Payments Protocol</a> (MPP) avoids that: it tells the agent exactly what to pay and accepts the payment directly. The tradeoff is coverage, since the agent can only buy through MPP-enabled APIs. That list is growing, with tool aggregators like Apify and Mercator joining vertical ones like <a href=\"https://www.zinc.com/\">Zinc</a> for retail. Restock uses Zinc, but the pattern doesn't depend on it.</p><h2>How the pieces fit</h2><p>Restock is built from four pieces:</p><ul><li><a href=\"https://docs.stripe.com/agentic-commerce/agents/link-agent-wallet\"><strong>Link</strong></a> holds the user's payment methods and asks them to approve payments.</li><li><strong>MPP</strong>, the <a href=\"https://mpp.dev/overview\">Machine Payments Protocol</a>, defines the payment exchange over HTTP. The merchant responds with <code>402 Payment Required</code> and payment instructions, and the client retries with a payment credential.</li><li><strong>Zinc</strong> searches products and places retailer orders through its <a href=\"https://www.zinc.com/docs/v2/api-reference/agent/create-order\">MPP order API</a>.</li><li><a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-overview\"><strong>Managed Deep Agents</strong></a> <strong>(MDA)</strong> hosts the agent and handles Slack, human review, credentials, and saved state.</li></ul><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"Restock payment flow from the Slack request to the confirmed order, with approvals in Slack and in Link\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac7183293d25dfd3da1d336_restock-payment-flow-v2.png\" /></div><figcaption>The pens request from ask to confirmed order. The user approves twice: the purchase in Slack and the payment in Link.</figcaption></figure><h2>Search and cart</h2><p>We wrote <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-tools\">custom tools</a> for Zinc search, the cart, and payment, plus the instructions that shape the conversation. MDA handles the rest, including saving conversations and orders, so someone can come back days later and ask about the same pens. Here's the layout and a trimmed agent definition:</p><p><code>restock-agent/<br />\u251c\u2500\u2500 agent.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# the agent: model + tools<br />\u251c\u2500\u2500 instructions.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# how Restock talks and when it uses each tool<br />\u251c\u2500\u2500 tools/restock.py&nbsp;&nbsp;&nbsp;&nbsp;# the tools the model can call<br />\u251c\u2500\u2500 restock/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Zinc, Link wallet, cart and order storage<br />\u2514\u2500\u2500 sandbox/setup.sh&nbsp;&nbsp;&nbsp;&nbsp;# installs the Link CLI in the sandbox</code></p><p><code>agent = define_deep_agent(<br />&nbsp;&nbsp;&nbsp;&nbsp;name=\"restock\",<br />&nbsp;&nbsp;&nbsp;&nbsp;model=ChatOpenAI(model=os.environ.get(\"OPENAI_MODEL\", \"gpt-5.6-sol\")),<br />&nbsp;&nbsp;&nbsp;&nbsp;tools=[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search_restock_products,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Zinc search<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prepare_restock_order,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# save the cart<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set_restock_payment_amount,&nbsp;&nbsp;# upfront amount, within the budget<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request_restock_payment,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Slack review, then Link approval<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wait_for_restock_approval,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;check_restock_order,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# order status from Zinc<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />)</code></p><p>For the pens request, Restock searches Zinc with a Zinc API key and a funded search account (search isn't paid through Link). The user picks a 12-pack, and Restock saves the cart without a payment amount.</p><h2>Setting the upfront amount</h2><p>Restock treats the $25 budget as a ceiling, not an amount to charge. Tax and shipping aren't known from a product listing, and the total only settles once the retailer order is placed. So Restock asks the user how much to pay upfront, anywhere up to $25. Zinc takes that amount when the order goes in, pays the retailer out of it, and refunds the rest.</p><p>For the pens, the user picks $23. Zinc keeps a $1 base fee, which leaves a $22 retailer allowance for the item, tax, and shipping. Optional fees, like Zinc's email order updates, can shrink it further, so before the review, Restock requests the order without payment and reads the actual fees from Zinc's <code>402 Payment Required</code> challenge.</p><h2>Keeping credentials out of the model</h2><p>The model never handles the secrets that pay for the order. The Link session lives in a <a href=\"https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new\">user-owned</a> MDA <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-connections\">Connection</a>, so each person's wallet stays theirs. The delivery address, notification email, and Zinc API key sit in agent-owned Connections. The Link CLI runs the login inside MDA's <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-sandboxes\">managed sandbox</a>. A small helper keeps the saved session in the user's Connection and places it in the sandbox only while a command runs. Connecting Link doesn't approve a purchase, and later conversations reuse the session.</p><h2>Reviewing the purchase in Slack</h2><p>Before anything is paid, the user reviews the cart, office label, fees, and upfront amount in Slack. The delivery address stays private. Restock raises an <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-agent-owned-interrupts\">interrupt</a> for this review, so the run stays paused until the user clicks Approve or Reject in Slack. Nothing the model writes into a tool call can approve it.</p><h2>Paying with Link over MPP</h2><p>Next, Restock posts a Link approval link in the Slack thread for exactly the amount in Zinc's challenge, the same $23. The user approves it on the Link website, which is the wallet's own consent to pay.</p><p>Once Link approves, Restock sends the paid request to Zinc with a Link <a href=\"https://docs.stripe.com/agentic-commerce/concepts/shared-payment-tokens\">shared payment token</a> as the credential, and Zinc processes the payment through Stripe. <a href=\"https://github.com/tempoxyz/pympp\">pympp</a> handles the MPP formatting.</p><p>The payment tool reads the token from a private sandbox file, deletes it after use, and returns only a public summary to the model. The token doesn't enforce cart details on its own, so the tool also checks the order against what the user reviewed and confirms the approval is still fresh.</p><h2>Confirming the order</h2><p>The retailer order comes to $21.18 ($14.99 for the pens, $1.20 tax, $4.99 shipping), inside the $22 allowance. The user pays $22.18 including Zinc's fee, and Zinc refunds the other $0.82.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"Budget breakdown for the pens order: $25 budget, $23 approved, $22.18 paid, $0.82 refunded\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ac7183293d25dfd3da1d333_restock-budget.png\" /></div><figcaption>Where the money goes for the pens order, with illustrative prices. The user approves $23 in Link against a $25 budget, pays $22.18, and gets $0.82 back.</figcaption></figure><p>Restock confirms in Slack once Zinc reports <code>order_placed</code>, and shares tracking when the retailer ships. Beyond the illustrative prices, we ran Restock end to end on a hosted deployment: a live order reached <code>order_placed</code>, and the expected refund came through.</p><h2>Get started</h2><p>The code is at <a href=\"https://github.com/langchain-samples/restock-agent\">langchain-samples/restock-agent</a>, and its <a href=\"https://github.com/langchain-samples/restock-agent#quickstart\">README</a> walks through setup and deployment step by step. MDA's <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-channels-slack\">Slack setup guide</a> covers connecting the Slack app.</p><p>Restock is a sample: it supports US delivery and USD only, one office per deployment, and payment from the requester's own wallet.</p><p>Restock has three modes. Set <code>RESTOCK_MODE</code> to choose one, and try them in order:</p><ol start=\"1\"><li><strong>Rehearsal</strong> (<code>rehearsal</code>): fictional products and a simulated approval. Needs an OpenAI API key and a LangSmith workspace with Managed Deep Agents access.</li><li><strong>Link test approval</strong> (<code>link-test</code>): real Zinc search and a real Link approval, with no purchase. Adds a Link wallet, a Zinc API key, a funded Zinc search account, and delivery details.</li><li><strong>Live purchase</strong> (<code>live</code>): a real payment and a real retailer order.</li></ol><p>The pattern carries over to any agent that spends money. Let the agent search and build the cart, keep the spending limit and the approvals in code the model can't touch, and count an order as placed only when the merchant says so.</p><p>Give Restock a try. Let us know what you think, and share what you build on top of it!</p>",
-      "content": "",
-      "source_name": "Langchain Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open source",
-        "langchain"
-      ],
-      "author": "Srimanth Tangedipalli, Sydney Runkle, Nathan Drezner",
-      "published_at": "2026-10-08T15:55:00Z",
-      "fetched_at": "2026-10-14T13:44:33.166737Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "285fd20aaab2f056",
-      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/",
-      "title": "Rally Up: \u2018Gears of War: E-Day\u2019 Launches on GeForce NOW",
-      "summary": "Gears of War: E-Day leads the charge on GeForce NOW this week, bringing Marcus Fenix and Dom Santiago\u2019s first fight against the Locust Horde to the cloud with GeForce RTX-powered performance. A new way to join the action is also coming: Fire TV users will soon be able to purchase GeForce NOW memberships directly through [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><i><span style=\"font-weight: 400;\">Gears of War: E-Day</span></i><span style=\"font-weight: 400;\"> leads the charge on </span><a href=\"https://www.nvidia.com/en-us/geforce-now/\" target=\"_blank\"><span style=\"font-weight: 400;\">GeForce NOW</span></a><span style=\"font-weight: 400;\"> this week, bringing Marcus Fenix and Dom Santiago\u2019s first fight against the Locust Horde to the cloud with GeForce RTX-powered performance.</span></p>\n<p><span style=\"font-weight: 400;\">A new way to join the action is also coming: Fire TV users will soon be able to purchase GeForce NOW memberships </span><a href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-gamescom-2026\"><span style=\"font-weight: 400;\">directly through Amazon</span></a><span style=\"font-weight: 400;\">, creating a more seamless path from device setup to gameplay. Keep an eye out for availability in the coming weeks.</span></p>\n<p><span style=\"font-weight: 400;\">There\u2019s more in store this GFN Thursday, with the cloud serving up 10 games, including seven new releases.</span></p>\n<h2><b>Emergence Day Is Here</b></h2>\n<p></p>\n<p><i><span style=\"font-weight: 400;\">Gears of War: E-Day</span></i><span style=\"font-weight: 400;\"> is now streaming on GeForce NOW following its global release on Tuesday, Oct. 6. Set 14 years before the original </span><i><span style=\"font-weight: 400;\">Gears of War</span></i><span style=\"font-weight: 400;\">, the prequel follows Marcus Fenix and Dom Santiago as they confront the terrifying arrival of the Locust Horde on Emergence Day.</span></p>\n<p><span style=\"font-weight: 400;\">The series\u2019 brutal combat, desperate survival and larger-than-life action return with a new origin story for the legendary partnership. Ultimate members can take on the Horde with GeForce RTX 5080-class performance in the cloud, plus technologies including </span><a href=\"https://www.nvidia.com/en-us/geforce/technologies/dlss/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA DLSS</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.nvidia.com/en-us/geforce/technologies/reflex/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Reflex</span></a><span style=\"font-weight: 400;\">.</span></p>\n<p><span style=\"font-weight: 400;\">From campaign missions to cooperative and competitive modes, GeForce NOW keeps the fight ready across low-power laptops, Macs, mobile devices, handhelds, </span><a href=\"https://blogs.nvidia.com/blog/geforce-now-thursday-firefox/\"><span style=\"font-weight: 400;\">Firefox</span></a><span style=\"font-weight: 400;\"> and other browsers, and more \u2014 no massive downloads or expensive gaming rig required.</span></p>\n<h2><b>New on the Cloud Menu</b></h2>\n<p><span style=\"font-weight: 400;\">Members can look forward to the following games joining the </span><a href=\"https://www.nvidia.com/en-us/geforce-now/games/\" target=\"_blank\"><span style=\"font-weight: 400;\">GeForce NOW library</span></a><span style=\"font-weight: 400;\"> this week:</span></p>\n<ul>\n<li><i><span style=\"font-weight: 400;\">Gears of War: E-Day</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/3010850?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\"> and </span><a href=\"https://www.xbox.com/games/store/gears-of-war-e-day/9n4pt8hgcdhq?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Xbox</span></a><span style=\"font-weight: 400;\">, Oct. 6), available on Game Pass</span></li>\n<li><i><span style=\"font-weight: 400;\">STAR WARS: Galactic Racer</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/4078430?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Oct. 6)</span></li>\n<li><i><span style=\"font-weight: 400;\">Clive Barker\u2019s Hellraiser: Revival</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/1551980?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Oct. 8)</span></li>\n<li><i><span style=\"font-weight: 400;\">Forever Ago</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/1215940/\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Oct. 8)</span></li>\n<li><i><span style=\"font-weight: 400;\">Order of the Sinking Star</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/499170?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Oct. 8)</span></li>\n<li><i><span style=\"font-weight: 400;\">Silver Pines</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/2333000?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Oct. 8)</span></li>\n<li><i><span style=\"font-weight: 400;\">Permafrost</span></i><span style=\"font-weight: 400;\"> (New release on </span><a href=\"https://store.steampowered.com/app/2254990?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">, Oct. 9)</span></li>\n<li><i><span style=\"font-weight: 400;\">Graveyard Keeper 2</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/4358690?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Solasta II</span></i><span style=\"font-weight: 400;\"> (</span><a href=\"https://store.steampowered.com/app/2975950?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n<li><i><span style=\"font-weight: 400;\">Tyr </span></i><span style=\"font-weight: 400;\">(</span><a href=\"https://store.steampowered.com/app/2445260?utm_source=nvidia&amp;utm_campaign=geforce_now\" target=\"_blank\"><span style=\"font-weight: 400;\">Steam</span></a><span style=\"font-weight: 400;\">)</span></li>\n</ul>\n<p>The Xbox version of <i>Dune: Awakening</i> didn\u2019t join GeForce NOW in September as previously shared. Stay tuned to GFN Thursday for updates on game availability.<i></i></p>\n<p><span style=\"font-weight: 400;\">Dates listed above reflect when games are released on their respective stores. GeForce NOW availability may vary, as games are onboarded after they are released and added throughout the week. Keep an eye on GeForce NOW channels and GFN Thursdays for availability updates on announced titles.</span></p>\n<p><span style=\"font-weight: 400;\">Gamers who want to test out high-performance GeForce NOW cloud gaming can start with a </span><a href=\"https://www.nvidia.com/en-us/geforce-now/?ncid=pa-srch-goog-673352&amp;gad_source=1&amp;gad_campaignid=24109411186&amp;gbraid=0AAAAAD4XAoGPVGKakiCteqkRtoF1Q-KSI&amp;gclid=CjwKCAjws_DTBhB_EiwAXZknGUBjXpM5vNQvnwLXUGilFsIHBSkbKPfllg7RGpFFuQZv2GFityJC6BoCq8MQAvD_BwE\" target=\"_blank\"><span style=\"font-weight: 400;\">day pass</span></a><span style=\"font-weight: 400;\"> to try premium cloud gaming before committing to a membership. Better yet, the cost of the day pass can be applied toward a first monthly membership \u2014 making it easy to try GeForce RTX-powered cloud gaming with the latest releases, then level up for more.</span></p>\n<p><span style=\"font-weight: 400;\">What\u2019s on the play list this weekend? Let us know on </span><a href=\"https://x.com/NVIDIAGFN?lang=en\" target=\"_blank\"><span style=\"font-weight: 400;\">X</span></a><span style=\"font-weight: 400;\"> or in the comments below.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "GeForce NOW Community",
-      "published_at": "2026-10-08T13:00:46Z",
-      "fetched_at": "2026-10-08T13:31:49.219291Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "cfa2a636b10e325d",
       "url": "https://arxiv.org/abs/2508.18564",
       "title": "A Note on Graphon-Signal Analysis of Graph Neural Networks",
@@ -28946,48 +28883,6 @@
       "author": "Bishwamittra Ghosh, Soumi Das, Qinyuan Wu, Mohammad Aflah Khan, Deepak Garg, Krishna P. Gummadi, Evimaria Terzi",
       "published_at": "2026-10-14T04:00:00Z",
       "fetched_at": "2026-10-14T07:39:17.852373Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "45d6a2b79938283a",
-      "url": "https://openai.com/index/legalon-halves-codex-costs",
-      "title": "LegalOn halves Codex costs while maintaining development speed",
-      "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-08T12:00:00Z",
-      "fetched_at": "2026-10-09T00:23:36.502373Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "855092fba1df7e8a",
-      "url": "https://openai.com/index/pollo-ai",
-      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-      "summary": "With GPT-5.6, GPT-6 Astra, and GPT\u2011Image\u20112.5, Pollo AI helps creators turn bold ideas into detailed images and cinematic video ads.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-08T12:00:00Z",
-      "fetched_at": "2026-10-08T19:57:48.542076Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -47699,66 +47594,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c19cacdfa2d62973",
-      "url": "https://www.youtube.com/shorts/z5usRAeqSSY",
-      "title": "Microservices: the architecture of last resort",
-      "summary": "with Sam Newman, Author of Building Microservices & Building Resilient Distributed Systems\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-10-08T16:00:34Z",
-      "fetched_at": "2026-10-08T19:57:47.144987Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2497fabb61596773",
-      "url": "https://www.youtube.com/watch?v=HTzgC3FoYsI",
-      "title": "Let Anyone at Your Company Ship Internal Apps with AI \u2014 Garrett Galow, WorkOS",
-      "summary": "Building an app with AI got cheap. Getting it in front of your coworkers didn't.\n\nGarrett Galow from the WorkOS product team shows how WorkOS lets anyone at the company build and ship internal apps. It started when an account executive built a helpful sales chatbot before her leave, and the CEO couldn't even open it. Building got cheap with AI, but deploying, securing and sharing apps still needed engineers. So WorkOS built two things: WOW, a CLI pushed to every laptop that sets up the repo, tools and template in one command, and Atlas, the platform underneath, which keeps infrastructure invisible, makes every app secure by default behind company SSO, and makes every app discoverable. He demos it live and shares results: 278 apps, more than 3 million requests a week, and 37% of regularly used apps built with no engineer in a single commit.\n\nIn this talk:\n\u2022 Why shipping, not building, is now the bottleneck for internal tools\n\u2022 Claude days: pairing non-engineers at the keyboard with engineers as coaches\n\u2022 A one-command CLI and a platform that's invisible, secure and discoverable\n\u2022 Results: hundreds of apps, millions of requests, many built without engineers\n\nSPEAKER\nGarrett Galow, Product Manager, WorkOS\nLinkedIn: https://linkedin.com/in/garrett-galow\nX: https://x.com/g2theg\nGitHub: https://github.com/garrettgalow\nWebsite: https://garrettgalow.com\n\nLINKS\nWorkOS: https://workos.com\nThe person with the problem builds the tool (WorkOS blog): https://workos.com/blog/person-with-the-problem-builds-the-tool\nWorkOS on X: https://x.com/workos\n\nCHAPTERS\n0:00 Intro\n0:32 Letting everyone ship\n1:02 Story: Perona GPT\n1:42 The CEO couldn't open it\n2:27 Building got cheap. Shipping didn't.\n3:46 What we needed: build and share\n4:46 Claude days: non-engineers at the keyboard\n5:31 The WOW CLI\n6:26 A shared skills repository\n6:41 Demo: one command to a running app\n8:30 278 apps in the registry\n9:05 Example apps\n9:25 Every app behind company login\n11:10 Atlas: the platform underneath\n11:25 Three principles\n12:04 Running on Cloudflare\n12:44 Secure by default: SSO, logs, secrets\n14:59 Results: 37% built without engineers\n15:24 What's next\n16:19 Wrap-up\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#InternalTools #AIEnablement #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-08T15:30:31Z",
-      "fetched_at": "2026-10-08T19:57:46.754619Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d5a53bff870cdc31",
-      "url": "https://www.youtube.com/watch?v=KGFyOtl5ktI",
-      "title": "Giving AI Agents Memory That Learns \u2014 Jake Broekhuizen, LangChain",
-      "summary": "Most teams are great at watching what their agents did. Far fewer turn that into lessons for the next run.\n\nJake Broekhuizen from LangChain's Labs team explains how to give agents memory that actually changes their behavior. Using a real financial services agent whose tone kept slipping from advisory to pushy, he shows why traces and logs are only evidence: they become memory only when a lesson turns into durable context the agent reads next time. He breaks memory into semantic, episodic and procedural types, separates working memory from long-term memory, and walks through the read-write cycle: read context, run, filter the evidence for signal, and write it back. He shows how LangSmith and Context Hub capture, analyze and update that context, and shares three hard-won lessons about what to keep, caching, and when a human should review changes.\n\nIn this talk:\n\u2022 Why observability alone doesn't make an agent improve\n\u2022 Semantic, episodic and procedural memory, and which one moves behavior most\n\u2022 The read-write cycle: run, filter evidence for signal, update context\n\u2022 Lessons: most traces stay history, watch caching, review procedural changes\n\nSPEAKER\nJake Broekhuizen, LangChain Labs\nLinkedIn: https://www.linkedin.com/in/jake-broekhuizen/\n\nLINKS\nLangChain Labs: https://www.langchain.com/blog/introducing-langchain-labs\nLangChain on X: https://x.com/LangChain\n\nCHAPTERS\n0:00 Intro\n0:37 Agents that improve every run\n1:02 Example: a finance agent's tone slips\n2:42 Observing isn't learning\n3:07 Traces are everywhere\n4:02 From logs to signal\n4:22 What memory really is\n4:47 Semantic, episodic and procedural memory\n5:42 Procedural memory drives behavior\n6:22 Working vs long-term memory\n8:12 The read-write cycle\n9:27 Deciding what's worth keeping\n10:22 Capture, analyze, update\n10:52 LangSmith and Context Hub\n12:02 The finance agent, fixed\n13:17 Lesson 1: most traces stay history\n13:42 Lesson 2: caching and the hot path\n14:47 Lesson 3: human review for key rules\n15:27 Wrap-up\n\nRecorded at the AI Engineer World's Fair 2026 in San Francisco.\nSubscribe for more talks from the engineers building with AI.\n\nAI Engineer: https://ai.engineer\nYouTube: https://www.youtube.com/@aiDotEngineer\nX: https://x.com/aiDotEngineer\nLinkedIn: https://www.linkedin.com/company/aidotengineer/\n\n#AgentMemory #LangChain #AIEngineer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-08T14:00:37Z",
-      "fetched_at": "2026-10-08T19:57:46.754625Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "efcd301738e3c15c",
       "url": "https://arxiv.org/abs/2610.10663",
       "title": "BEANS-Next and ROOTS: Broadening Audio-Language Capabilities for Bioacoustics",
@@ -52788,46 +52623,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "96a1b689443b15e5",
-      "url": "https://x.com/steipete/status/2108220353436918054",
-      "title": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 w...",
-      "summary": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
-      "content": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-08T15:37:55Z",
-      "fetched_at": "2026-10-08T19:39:25.582695Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4edb068faed2ca75",
-      "url": "https://x.com/dani_avila7/status/2108196101933158845",
-      "title": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers c...",
-      "summary": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
-      "content": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-08T14:01:33Z",
-      "fetched_at": "2026-10-08T19:39:18.370430Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "9da9138e4be65eec",
       "url": "https://x.com/steipete/status/2108427052307345708",
       "title": "RT @heyneighbor: Over the last few months, we've added a ton of new features and improved a lot of q...",
@@ -54796,6 +54591,639 @@
       "author": "anthropicai",
       "published_at": "2026-10-14T08:40:45Z",
       "fetched_at": "2026-10-14T10:29:25.726235Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "411a281ad2ab855b",
+      "url": "https://x.com/GoogleAI/status/2110744759111213217",
+      "title": "See a fully-explorable 3D world build itself in minutes \u26e9\ufe0f\n\nWatch @GoogleDeepMind's @GeokenAI explai...",
+      "summary": "See a fully-explorable 3D world build itself in minutes \u26e9\ufe0f\n\nWatch @GoogleDeepMind's @GeokenAI explain how Gemini 4 Argon acts as a virtual builder in @antigravity to autonomously create a stunning, multi-tiered pagoda sanctuary. https://t.co/J5ImtMfpbj",
+      "content": "See a fully-explorable 3D world build itself in minutes \u26e9\ufe0f\n\nWatch @GoogleDeepMind's @GeokenAI explain how Gemini 4 Argon acts as a virtual builder in @antigravity to autonomously create a stunning, multi-tiered pagoda sanctuary. https://t.co/J5ImtMfpbj",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-10-15T14:49:00Z",
+      "fetched_at": "2026-10-15T16:00:32.598774Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "39fe41c893a7d5ff",
+      "url": "https://x.com/OpenAI/status/2110741355739963884",
+      "title": "We want to support the mathematics community in turning progress in AI into deeper human understandi...",
+      "summary": "We want to support the mathematics community in turning progress in AI into deeper human understanding and new discoveries. To support that goal, we are contributing $5 million to a new Simons Foundation initiative to help mathematicians examine, understand, and build on results",
+      "content": "We want to support the mathematics community in turning progress in AI into deeper human understanding and new discoveries. To support that goal, we are contributing $5 million to a new Simons Foundation initiative to help mathematicians examine, understand, and build on results",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-15T14:35:29Z",
+      "fetched_at": "2026-10-15T16:00:31.663556Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "97cb6bbe26d97fb5",
+      "url": "https://x.com/dani_avila7/status/2110732555997909445",
+      "title": "Does anyone know of a host that properly supports Skills over MCP?\n\nSo far, I've only tested it with...",
+      "summary": "Does anyone know of a host that properly supports Skills over MCP?\n\nSo far, I've only tested it with MCP Inspector, but I'd like to try it with a real host\n\nClaude Code, Codex, Cursor, fx, Pi... anyone? https://t.co/oYMA9nXGjP",
+      "content": "Does anyone know of a host that properly supports Skills over MCP?\n\nSo far, I've only tested it with MCP Inspector, but I'd like to try it with a real host\n\nClaude Code, Codex, Cursor, fx, Pi... anyone? https://t.co/oYMA9nXGjP",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T14:00:31Z",
+      "fetched_at": "2026-10-15T16:00:27.619765Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4011971f27f39a22",
+      "url": "https://x.com/simonw/status/2110721515130089787",
+      "title": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenu...",
+      "summary": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\"\n\nIf true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!\nhttps://t.co/szd2oJxtrv https://t.co/MfcztRwOnV",
+      "content": "\"Anthropic told investors on Wednesday distillation accounted for 5 per cent to 7 per cent of revenue\"\n\nIf true, and Q2 revenue was $11.5B, then that's more than half a billion dollars spent by other labs to distill Anthropic's models!\nhttps://t.co/szd2oJxtrv https://t.co/MfcztRwOnV",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-15T13:16:39Z",
+      "fetched_at": "2026-10-15T16:00:26.597201Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "29dd756c9b64ed2b",
+      "url": "https://x.com/AnthropicAI/status/2110720940665372825",
+      "title": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering)...",
+      "summary": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason",
+      "content": "Applications are now open for two new Anthropic Fellowships.\n\nSTEM Fellows (science and engineering) and Conceptual Reasoning Fellows (philosophy, cognitive science, economics, policy, and law) will spend four months at Anthropic from January 2027, working to help Claude reason",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-15T13:14:22Z",
+      "fetched_at": "2026-10-15T16:00:33.677221Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "17fe6bab59c6fbc3",
+      "url": "https://x.com/bcherny/status/2110628140070670497",
+      "title": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take fl...",
+      "summary": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought p\u2026",
+      "content": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought p\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-15T07:05:36Z",
+      "fetched_at": "2026-10-15T16:00:25.571538Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5f43415159ba8124",
+      "url": "https://x.com/bcherny/status/2110628043387719735",
+      "title": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was...",
+      "summary": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was a major system prompt/harness upgrade\u2026",
+      "content": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was a major system prompt/harness upgrade\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-15T07:05:13Z",
+      "fetched_at": "2026-10-15T16:00:25.571779Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f91ed234115115c5",
+      "url": "https://x.com/bcherny/status/2110627630945079624",
+      "title": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots...",
+      "summary": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots of sessions side by side. \n\nIt's now m\u2026",
+      "content": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots of sessions side by side. \n\nIt's now m\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-15T07:03:35Z",
+      "fetched_at": "2026-10-15T16:00:25.571960Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dd2a320b8f0362c8",
+      "url": "https://x.com/dani_avila7/status/2110563522459344917",
+      "title": "Messages like this are one of the biggest reasons I keep sharing what I learn\n\nMost of my posts come...",
+      "summary": "Messages like this are one of the biggest reasons I keep sharing what I learn\n\nMost of my posts come from real experience building software, working at large companies, and founding two startups, including an AI tool used by millions\n\nI\u2019ve spent over a decade building and",
+      "content": "Messages like this are one of the biggest reasons I keep sharing what I learn\n\nMost of my posts come from real experience building software, working at large companies, and founding two startups, including an AI tool used by millions\n\nI\u2019ve spent over a decade building and",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T02:48:50Z",
+      "fetched_at": "2026-10-15T16:00:27.619820Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6e603580f005fdfa",
+      "url": "https://x.com/dani_avila7/status/2110550010475708652",
+      "title": "Over 2,300 downloads of the Claude Code Prompt Cache Control Mod in just a few days\n\nThanks to every...",
+      "summary": "Over 2,300 downloads of the Claude Code Prompt Cache Control Mod in just a few days\n\nThanks to everyone contributing! https://t.co/Nw9RbMu1Pw",
+      "content": "Over 2,300 downloads of the Claude Code Prompt Cache Control Mod in just a few days\n\nThanks to everyone contributing! https://t.co/Nw9RbMu1Pw",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T01:55:09Z",
+      "fetched_at": "2026-10-15T16:00:27.619849Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9bfd9d7870ff439a",
+      "url": "https://x.com/dani_avila7/status/2110541316077830303",
+      "title": "Fully open source, built with Next.js\n\nRepo: https://t.co/cMfVHKxO2Z\n\nThanks @typesafeai !",
+      "summary": "Fully open source, built with Next.js\n\nRepo: https://t.co/cMfVHKxO2Z\n\nThanks @typesafeai !",
+      "content": "Fully open source, built with Next.js\n\nRepo: https://t.co/cMfVHKxO2Z\n\nThanks @typesafeai !",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T01:20:36Z",
+      "fetched_at": "2026-10-15T16:00:27.619874Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2784e579707e1982",
+      "url": "https://x.com/dani_avila7/status/2110540294248669260",
+      "title": "Jev is now multimodal, so naturally I had to build Not Hot Dog App\n\nTry it yourself: https://t.co/si...",
+      "summary": "Jev is now multimodal, so naturally I had to build Not Hot Dog App\n\nTry it yourself: https://t.co/siw8o97Pwu\n\nSilicon Valley was years ahead of its time https://t.co/eWDJtrdawt",
+      "content": "Jev is now multimodal, so naturally I had to build Not Hot Dog App\n\nTry it yourself: https://t.co/siw8o97Pwu\n\nSilicon Valley was years ahead of its time https://t.co/eWDJtrdawt",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T01:16:32Z",
+      "fetched_at": "2026-10-15T16:00:27.619902Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "447d28987b34b748",
+      "url": "https://x.com/GeminiApp/status/2110503223060828495",
+      "title": "Learn more about Gemini 4 Argon from the people who built it:",
+      "summary": "Learn more about Gemini 4 Argon from the people who built it:",
+      "content": "Learn more about Gemini 4 Argon from the people who built it:",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T22:49:14Z",
+      "fetched_at": "2026-10-15T16:00:30.646473Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fdb93b6fbd16ba0d",
+      "url": "https://x.com/GeminiApp/status/2110493430753452156",
+      "title": "RT @Google: From optimizing codebases to creative writing, here's how @TulseeDoshi and other Google ...",
+      "summary": "RT @Google: From optimizing codebases to creative writing, here's how @TulseeDoshi and other Google teams are using Gemini 4 Argon \ud83d\udc47 https:\u2026",
+      "content": "RT @Google: From optimizing codebases to creative writing, here's how @TulseeDoshi and other Google teams are using Gemini 4 Argon \ud83d\udc47 https:\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T22:10:19Z",
+      "fetched_at": "2026-10-15T16:00:30.646568Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4bbde19b4eb36234",
+      "url": "https://x.com/trq212/status/2110488897453257169",
+      "title": "I used to tell people it's good to \"be technical\" but I think this is not accurate enough. \n\nIf you'...",
+      "summary": "I used to tell people it's good to \"be technical\" but I think this is not accurate enough. \n\nIf you're technical you need to be in the details more with the right parts of the code.\n\nIf you're non-technical, being in the details means knowing how things work at the right level.",
+      "content": "I used to tell people it's good to \"be technical\" but I think this is not accurate enough. \n\nIf you're technical you need to be in the details more with the right parts of the code.\n\nIf you're non-technical, being in the details means knowing how things work at the right level.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-14T21:52:18Z",
+      "fetched_at": "2026-10-15T16:00:23.310743Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ad43cc11f6cea48f",
+      "url": "https://x.com/GeminiApp/status/2110484975384760477",
+      "title": "RT @Android: \"I was lucky enough to be one of the first to experience Googlebook, and what surprised...",
+      "summary": "RT @Android: \"I was lucky enough to be one of the first to experience Googlebook, and what surprised me most wasn\u2019t just what I could creat\u2026",
+      "content": "RT @Android: \"I was lucky enough to be one of the first to experience Googlebook, and what surprised me most wasn\u2019t just what I could creat\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T21:36:43Z",
+      "fetched_at": "2026-10-15T16:00:30.646608Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9a2d1cdabd12c2d8",
+      "url": "https://x.com/trq212/status/2110463964740243572",
+      "title": "s/o to @alicelovescake1 @amorriscode the CCD goats",
+      "summary": "s/o to @alicelovescake1 @amorriscode the CCD goats",
+      "content": "s/o to @alicelovescake1 @amorriscode the CCD goats",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-14T20:13:14Z",
+      "fetched_at": "2026-10-15T16:00:23.310816Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "88746e9779dc2935",
+      "url": "https://x.com/trq212/status/2110463962877989276",
+      "title": "Claude Code Desktop is now so much aware of its own capabilities and how it can work with you, like ...",
+      "summary": "Claude Code Desktop is now so much aware of its own capabilities and how it can work with you, like spinning off subsessions.\n\nI think of this almost like a v2, so many small details went into make it great.",
+      "content": "Claude Code Desktop is now so much aware of its own capabilities and how it can work with you, like spinning off subsessions.\n\nI think of this almost like a v2, so many small details went into make it great.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-14T20:13:13Z",
+      "fetched_at": "2026-10-15T16:00:23.310857Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "26542aad54ed0f75",
+      "url": "https://x.com/GeminiApp/status/2110462652283859398",
+      "title": "RT @OfficialLoganK: A conversation with Sergey Brin, @joshwoodward, @tulseedoshi, and @melvinjohnson...",
+      "summary": "RT @OfficialLoganK: A conversation with Sergey Brin, @joshwoodward, @tulseedoshi, and @melvinjohnsonp about Gemini 4 Argon, how we got here\u2026",
+      "content": "RT @OfficialLoganK: A conversation with Sergey Brin, @joshwoodward, @tulseedoshi, and @melvinjohnsonp about Gemini 4 Argon, how we got here\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T20:08:01Z",
+      "fetched_at": "2026-10-15T16:00:30.646642Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "27ece032bb8ce133",
+      "url": "https://x.com/dani_avila7/status/2110462603806015774",
+      "title": "Long free-tier chats can get expensive as apps repeatedly process growing conversation history\n\nMiMo...",
+      "summary": "Long free-tier chats can get expensive as apps repeatedly process growing conversation history\n\nMiMo 2.6 Pro on Inworld Inference charges $0.0036 per million for cached input, $0.425 uncached",
+      "content": "Long free-tier chats can get expensive as apps repeatedly process growing conversation history\n\nMiMo 2.6 Pro on Inworld Inference charges $0.0036 per million for cached input, $0.425 uncached",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-14T20:07:49Z",
+      "fetched_at": "2026-10-15T16:00:27.619928Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "26d59ef0261177ec",
+      "url": "https://x.com/steipete/status/2110458989444309270",
+      "title": "RT @heyneighbor: Are you a company that sets up OpenClaw for small businesses? \n\nI want to share you...",
+      "summary": "RT @heyneighbor: Are you a company that sets up OpenClaw for small businesses? \n\nI want to share your story!",
+      "content": "RT @heyneighbor: Are you a company that sets up OpenClaw for small businesses? \n\nI want to share your story!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T19:53:28Z",
+      "fetched_at": "2026-10-15T16:00:34.877794Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b6bbadeb7bcfde4e",
+      "url": "https://x.com/steipete/status/2110444626125705440",
+      "title": "RT @laurolangosco: AI researchers in 2025: \"We can monitor the AI agents as long as they don't notic...",
+      "summary": "RT @laurolangosco: AI researchers in 2025: \"We can monitor the AI agents as long as they don't notice being monitored. And if they do notic\u2026",
+      "content": "RT @laurolangosco: AI researchers in 2025: \"We can monitor the AI agents as long as they don't notice being monitored. And if they do notic\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T18:56:23Z",
+      "fetched_at": "2026-10-15T16:00:34.877886Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4be9f0ca052ca142",
+      "url": "https://x.com/OpenAI/status/2110442001749659890",
+      "title": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among...",
+      "summary": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report https://t.co/m9LrrwNSo8",
+      "content": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report https://t.co/m9LrrwNSo8",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-14T18:45:57Z",
+      "fetched_at": "2026-10-15T16:00:31.663690Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eb321855c7785b74",
+      "url": "https://x.com/dani_avila7/status/2110428897271496949",
+      "title": "HeyGen Voice is now ranked #1 on the Artificial Analysis voice leaderboard \n\nWith an Elo score of 1,...",
+      "summary": "HeyGen Voice is now ranked #1 on the Artificial Analysis voice leaderboard \n\nWith an Elo score of 1,201, ahead of Qwen, ElevenLabs, and Cartesia\n\nWhat's interesting to me is that they're also working on scene-aware audio, adapting voices to the environment in a video\n\nAI https://t.co/feOnDfZySP",
+      "content": "HeyGen Voice is now ranked #1 on the Artificial Analysis voice leaderboard \n\nWith an Elo score of 1,201, ahead of Qwen, ElevenLabs, and Cartesia\n\nWhat's interesting to me is that they're also working on scene-aware audio, adapting voices to the environment in a video\n\nAI https://t.co/feOnDfZySP",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-14T17:53:53Z",
+      "fetched_at": "2026-10-15T16:00:27.619949Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9c817f9088bd8c1c",
+      "url": "https://x.com/steipete/status/2110428184470863938",
+      "title": "RT @JeremyNguyenPhD: Do you have multiple Codex or Claude Code accounts and want to switch easily be...",
+      "summary": "RT @JeremyNguyenPhD: Do you have multiple Codex or Claude Code accounts and want to switch easily between them without logging in and out?\u2026",
+      "content": "RT @JeremyNguyenPhD: Do you have multiple Codex or Claude Code accounts and want to switch easily between them without logging in and out?\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T17:51:03Z",
+      "fetched_at": "2026-10-15T16:00:34.877933Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3f7f7d62c686467f",
+      "url": "https://x.com/steipete/status/2110426614261788738",
+      "title": "RT @Kaju_Nut: \"Our initial evaluation suggested that GPT-6-Astra's score was in the late eighties fo...",
+      "summary": "RT @Kaju_Nut: \"Our initial evaluation suggested that GPT-6-Astra's score was in the late eighties followed closely by Opus 5.5. But, as we\u2026",
+      "content": "RT @Kaju_Nut: \"Our initial evaluation suggested that GPT-6-Astra's score was in the late eighties followed closely by Opus 5.5. But, as we\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T17:44:49Z",
+      "fetched_at": "2026-10-15T16:00:34.877972Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "05523f5378f0baf4",
+      "url": "https://x.com/GeminiApp/status/2110425806833119609",
+      "title": "With Gemini 4 Argon, spend less time on repetitive admin and more time on your craft.\n\nJust connect ...",
+      "summary": "With Gemini 4 Argon, spend less time on repetitive admin and more time on your craft.\n\nJust connect your @GoogleWorkspace apps to turn scattered recipes, handwritten guest lists, and photos of seating charts into a polished proposal deck, email draft, and automated tracker.",
+      "content": "With Gemini 4 Argon, spend less time on repetitive admin and more time on your craft.\n\nJust connect your @GoogleWorkspace apps to turn scattered recipes, handwritten guest lists, and photos of seating charts into a polished proposal deck, email draft, and automated tracker.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T17:41:36Z",
+      "fetched_at": "2026-10-15T16:00:30.646672Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f62cc36f96a2ea12",
+      "url": "https://x.com/dani_avila7/status/2110424750887694414",
+      "title": "Finally, Claude Managed Agents finally supports OpenTelemetry!\n\nReally excited about this feature. I...",
+      "summary": "Finally, Claude Managed Agents finally supports OpenTelemetry!\n\nReally excited about this feature. I\u2019ve been asking for it for quite some time\n\nHuge thanks to the CMA team for making it happen!",
+      "content": "Finally, Claude Managed Agents finally supports OpenTelemetry!\n\nReally excited about this feature. I\u2019ve been asking for it for quite some time\n\nHuge thanks to the CMA team for making it happen!",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-14T17:37:25Z",
+      "fetched_at": "2026-10-15T16:00:27.619970Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "62227c8468009061",
+      "url": "https://x.com/GoogleAI/status/2110392574754107405",
+      "title": "Textbook biology, brought to life right in your browser \ud83c\udf3f\n\nThis interactive 5-stage visual atlas bui...",
+      "summary": "Textbook biology, brought to life right in your browser \ud83c\udf3f\n\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a sunlit leaf all the way https://t.co/sO52t4UIMP",
+      "content": "Textbook biology, brought to life right in your browser \ud83c\udf3f\n\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a sunlit leaf all the way https://t.co/sO52t4UIMP",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-10-14T15:29:33Z",
+      "fetched_at": "2026-10-15T16:00:32.598887Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "96a1b689443b15e5",
+      "url": "https://x.com/steipete/status/2108220353436918054",
+      "title": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 w...",
+      "summary": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
+      "content": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T15:37:55Z",
+      "fetched_at": "2026-10-08T19:39:25.582695Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4edb068faed2ca75",
+      "url": "https://x.com/dani_avila7/status/2108196101933158845",
+      "title": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers c...",
+      "summary": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
+      "content": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-08T14:01:33Z",
+      "fetched_at": "2026-10-08T19:39:18.370430Z",
       "score": null,
       "score_reason": "",
       "tier": "",
