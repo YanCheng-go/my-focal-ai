@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-15T17:03:13.556692+00:00",
+  "exported_at": "2026-10-15T18:04:46.545230+00:00",
   "period_hours": 168,
-  "total": 2542,
+  "total": 2549,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -52925,47 +52925,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4aa33d9100ecbc01",
-      "url": "https://x.com/steipete/status/2108257123708907803",
-      "title": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZl...",
-      "summary": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZlKAb3h",
-      "content": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZlKAb3h",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-08T18:04:02Z",
-      "fetched_at": "2026-10-08T19:39:25.582605Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6fbba78abe2c987c",
-      "url": "https://x.com/GeminiApp/status/2108256022641160235",
-      "title": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing ...",
-      "summary": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing customers, comes with higher quality im\u2026",
-      "content": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing customers, comes with higher quality im\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-08T17:59:39Z",
-      "fetched_at": "2026-10-08T19:39:21.387189Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "9da9138e4be65eec",
       "url": "https://x.com/steipete/status/2108427052307345708",
       "title": "RT @heyneighbor: Over the last few months, we've added a ton of new features and improved a lot of q...",
@@ -55527,6 +55486,191 @@
       "author": "googleai",
       "published_at": "2026-10-14T15:29:33Z",
       "fetched_at": "2026-10-15T16:00:32.598887Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0c2038cad3763e87",
+      "url": "https://x.com/bcherny/status/2110791698611855624",
+      "title": "Over the last few years, we have made significant progress on prompt injection for Claude models. As...",
+      "summary": "Over the last few years, we have made significant progress on prompt injection for Claude models. As agents do more, it is increasingly urgent that we solve it across the industry. \n\nReally excited to partner with Gray Swan to host this competition. Can\u2019t wait to see what you",
+      "content": "Over the last few years, we have made significant progress on prompt injection for Claude models. As agents do more, it is increasingly urgent that we solve it across the industry. \n\nReally excited to partner with Gray Swan to host this competition. Can\u2019t wait to see what you",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-15T17:55:32Z",
+      "fetched_at": "2026-10-15T18:04:35.558325Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "253c03095db5e066",
+      "url": "https://x.com/AnthropicAI/status/2110784662071398807",
+      "title": "We\u2019ve committed to having evaluators assess our safety practices. We're in discussions with multiple...",
+      "summary": "We\u2019ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
+      "content": "We\u2019ve committed to having evaluators assess our safety practices. We're in discussions with multiple organizations, and have now given employee-like access to a team from @METR_Evals.\n\nIn this post, we describe how we work with third-party evaluators: https://t.co/8CLQnMVg4X",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-15T17:27:34Z",
+      "fetched_at": "2026-10-15T18:04:43.489180Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c23ffcfe811b41e3",
+      "url": "https://x.com/GeminiApp/status/2110772859580895678",
+      "title": "Plus up your furniture with 3D-printed accessories using Gemini 4 Argon.\n\nUpload a pic with rough me...",
+      "summary": "Plus up your furniture with 3D-printed accessories using Gemini 4 Argon.\n\nUpload a pic with rough measurements, and use Canvas in Gemini to build an interactive 3D CAD studio where you can explore styles, tweak live sliders, and export printable STLs to upgrade your space.",
+      "content": "Plus up your furniture with 3D-printed accessories using Gemini 4 Argon.\n\nUpload a pic with rough measurements, and use Canvas in Gemini to build an interactive 3D CAD studio where you can explore styles, tweak live sliders, and export printable STLs to upgrade your space.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-15T16:40:40Z",
+      "fetched_at": "2026-10-15T18:04:40.531059Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4aa33d9100ecbc01",
+      "url": "https://x.com/steipete/status/2108257123708907803",
+      "title": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZl...",
+      "summary": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZlKAb3h",
+      "content": "RT @georgepickett: \u201cThe taxi industry does not acknowledge the existence of Uber\u201d https://t.co/bLzZlKAb3h",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T18:04:02Z",
+      "fetched_at": "2026-10-08T19:39:25.582605Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6fbba78abe2c987c",
+      "url": "https://x.com/GeminiApp/status/2108256022641160235",
+      "title": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing ...",
+      "summary": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing customers, comes with higher quality im\u2026",
+      "content": "RT @OfficialLoganK: Nano Banana 2.1 is here! \ud83c\udf4c\n\nIt\u2019s a nice update for image generation and editing customers, comes with higher quality im\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-08T17:59:39Z",
+      "fetched_at": "2026-10-08T19:39:21.387189Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b33db4bf0d9fd475",
+      "url": "https://x.com/steipete/status/2108231380614463676",
+      "title": "RT @bentossell: wen personal agent router?",
+      "summary": "RT @bentossell: wen personal agent router?",
+      "content": "RT @bentossell: wen personal agent router?",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T16:21:44Z",
+      "fetched_at": "2026-10-08T19:39:25.582647Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e3cfb6babfd16879",
+      "url": "https://x.com/AnthropicAI/status/2108226292235809081",
+      "title": "We're deepening our commitment to scientific research and technological discovery by committing $150...",
+      "summary": "We're deepening our commitment to scientific research and technological discovery by committing $150 million to the Genesis Mission.\n\nWe'll also make Claude and our technical support available to more than 15 federal agencies.\n\nhttps://t.co/MUmQBiC6MF",
+      "content": "We're deepening our commitment to scientific research and technological discovery by committing $150 million to the Genesis Mission.\n\nWe'll also make Claude and our technical support available to more than 15 federal agencies.\n\nhttps://t.co/MUmQBiC6MF",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-08T16:01:31Z",
+      "fetched_at": "2026-10-08T19:39:24.427668Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "96a1b689443b15e5",
+      "url": "https://x.com/steipete/status/2108220353436918054",
+      "title": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 w...",
+      "summary": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
+      "content": "RT @zachtratar: The pain felt by the math community \u2014 watching their life\u2019s work coldly \u201csolved\u201d \u2014 will come soon for more scientific field\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-08T15:37:55Z",
+      "fetched_at": "2026-10-08T19:39:25.582695Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4edb068faed2ca75",
+      "url": "https://x.com/dani_avila7/status/2108196101933158845",
+      "title": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers c...",
+      "summary": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
+      "content": "A good security practice is to choose the right permission level for each task\n\nClaude Code offers claude --restricted, which:\n\n- Disables command execution and WebFetch by default\n- Restricts file operations to working directories\n- Ignores user and project settings\n- Prevents https://t.co/OAZsnKuti8",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-08T14:01:33Z",
+      "fetched_at": "2026-10-08T19:39:18.370430Z",
       "score": null,
       "score_reason": "",
       "tier": "",
