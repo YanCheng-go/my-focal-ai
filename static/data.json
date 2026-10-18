@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-18T18:38:57.198272+00:00",
+  "exported_at": "2026-10-18T19:20:08.378827+00:00",
   "period_hours": 168,
-  "total": 2479,
+  "total": 2511,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -52511,27 +52511,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "76666e967cc61296",
-      "url": "https://x.com/karpathy/status/2109361546505966046",
-      "title": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *wid...",
-      "summary": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come",
-      "content": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come",
-      "source_name": "@karpathy",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "research",
-        "deep-learning"
-      ],
-      "author": "karpathy",
-      "published_at": "2026-10-11T19:12:37Z",
-      "fetched_at": "2026-10-12T08:53:50.686287Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "3305d07eb0bd2a30",
       "url": "https://x.com/steipete/status/2109724776168300631",
       "title": "said that last year, saying it again.\nvibes coding is a slur.",
@@ -54283,6 +54262,678 @@
       "author": "dani_avila7",
       "published_at": "2026-10-15T18:04:58Z",
       "fetched_at": "2026-10-16T07:34:49.987401Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0bc4b9be3c53c6f2",
+      "url": "https://x.com/AnthropicAI/status/2111881963657412903",
+      "title": "We\u2019re committing a portion of Anthropic\u2019s shares to the Anthropic Public Benefit Fund, a new wholly ...",
+      "summary": "We\u2019re committing a portion of Anthropic\u2019s shares to the Anthropic Public Benefit Fund, a new wholly owned entity dedicated entirely to the public benefit.\n\nIt will start off with 5% of our shares. For every 50% increase in the company\u2019s value over a set baseline, we can",
+      "content": "We\u2019re committing a portion of Anthropic\u2019s shares to the Anthropic Public Benefit Fund, a new wholly owned entity dedicated entirely to the public benefit.\n\nIt will start off with 5% of our shares. For every 50% increase in the company\u2019s value over a set baseline, we can",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-18T18:07:51Z",
+      "fetched_at": "2026-10-18T18:35:35.757451Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0a7c786b51695f04",
+      "url": "https://x.com/dani_avila7/status/2111845098426114419",
+      "title": "The experience the opencode team is gaining is invaluable\n\n@thdxr I\u2019d love to hear what you\u2019ve learn...",
+      "summary": "The experience the opencode team is gaining is invaluable\n\n@thdxr I\u2019d love to hear what you\u2019ve learned once things settle down",
+      "content": "The experience the opencode team is gaining is invaluable\n\n@thdxr I\u2019d love to hear what you\u2019ve learned once things settle down",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-18T15:41:22Z",
+      "fetched_at": "2026-10-18T18:19:26.510737Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c3b1aab063d8ed5a",
+      "url": "https://x.com/dani_avila7/status/2111830557927637007",
+      "title": "This article is worth reading... It will give you plenty of ideas on how to use Claude\n\nClaude solve...",
+      "summary": "This article is worth reading... It will give you plenty of ideas on how to use Claude\n\nClaude solved a 25 year old cryptographic mystery in under 30 minutes\n\nResearchers had spent decades trying to understand how the NSA generated the original seeds for some of the most widely https://t.co/Rzyhby8iXI",
+      "content": "This article is worth reading... It will give you plenty of ideas on how to use Claude\n\nClaude solved a 25 year old cryptographic mystery in under 30 minutes\n\nResearchers had spent decades trying to understand how the NSA generated the original seeds for some of the most widely https://t.co/Rzyhby8iXI",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-18T14:43:35Z",
+      "fetched_at": "2026-10-18T18:19:26.510828Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "674241f7db4f0cad",
+      "url": "https://x.com/dani_avila7/status/2111624442413756446",
+      "title": "Ultra Config in Claude Desktop\n\nJust run /ultra-config and the panel opens\n\nYou can explore each pro...",
+      "summary": "Ultra Config in Claude Desktop\n\nJust run /ultra-config and the panel opens\n\nYou can explore each profile and see exactly which settings will change before activating it\n\nOpen to any feedback!\n\nHere's the repo if you'd like to give it a star \u2b50\ufe0f\nhttps://t.co/cmN4hXROMa https://t.co/uOPuGKxQBl",
+      "content": "Ultra Config in Claude Desktop\n\nJust run /ultra-config and the panel opens\n\nYou can explore each profile and see exactly which settings will change before activating it\n\nOpen to any feedback!\n\nHere's the repo if you'd like to give it a star \u2b50\ufe0f\nhttps://t.co/cmN4hXROMa https://t.co/uOPuGKxQBl",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-18T01:04:33Z",
+      "fetched_at": "2026-10-18T18:19:26.510874Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c36bf5e97ce7b5cf",
+      "url": "https://x.com/dani_avila7/status/2111591824041374132",
+      "title": "I recorded this video and it looks so real it almost looks AI generated https://t.co/f4VAuV9Ytt",
+      "summary": "I recorded this video and it looks so real it almost looks AI generated https://t.co/f4VAuV9Ytt",
+      "content": "I recorded this video and it looks so real it almost looks AI generated https://t.co/f4VAuV9Ytt",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T22:54:56Z",
+      "fetched_at": "2026-10-18T18:19:26.510916Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f0d817954d801d6c",
+      "url": "https://x.com/dani_avila7/status/2111558707033018828",
+      "title": "Introducing Ultra Config for Claude Code\n\nI built a new Mod that lets you switch between 5 configura...",
+      "summary": "Introducing Ultra Config for Claude Code\n\nI built a new Mod that lets you switch between 5 configuration profiles depending on what you're working on\n\nEach profile automatically adjusts Claude Code's internal settings for a different use case\n\nThe 5 profiles:\n\n- Token Saver: https://t.co/aeagcL03n8",
+      "content": "Introducing Ultra Config for Claude Code\n\nI built a new Mod that lets you switch between 5 configuration profiles depending on what you're working on\n\nEach profile automatically adjusts Claude Code's internal settings for a different use case\n\nThe 5 profiles:\n\n- Token Saver: https://t.co/aeagcL03n8",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T20:43:21Z",
+      "fetched_at": "2026-10-18T18:19:26.510954Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b17e0d2618c91b40",
+      "url": "https://x.com/dani_avila7/status/2111546028612530442",
+      "title": "I\u2019m very selective about which third-party services I trust with my API keys\n\nThe risk is simply too...",
+      "summary": "I\u2019m very selective about which third-party services I trust with my API keys\n\nThe risk is simply too high, regardless of what opencode\u2019s postmortem reveals\n\nOAuth should be the standard, otherwise, API keys should have strict token limits, usage caps, and per-service alerts",
+      "content": "I\u2019m very selective about which third-party services I trust with my API keys\n\nThe risk is simply too high, regardless of what opencode\u2019s postmortem reveals\n\nOAuth should be the standard, otherwise, API keys should have strict token limits, usage caps, and per-service alerts",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T19:52:58Z",
+      "fetched_at": "2026-10-18T18:19:26.510985Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9529687e4a391c2c",
+      "url": "https://x.com/dani_avila7/status/2111494506495328608",
+      "title": "How Anthropic reviews agent written code\n\nThe part I found most interesting is how they stop agents ...",
+      "summary": "How Anthropic reviews agent written code\n\nThe part I found most interesting is how they stop agents from endlessly reviewing each other\n\nOne PR went through more than 50 rounds overnight. After three rounds, they now ask the author to reconsider the approach\n\nThe article explains",
+      "content": "How Anthropic reviews agent written code\n\nThe part I found most interesting is how they stop agents from endlessly reviewing each other\n\nOne PR went through more than 50 rounds overnight. After three rounds, they now ask the author to reconsider the approach\n\nThe article explains",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T16:28:14Z",
+      "fetched_at": "2026-10-18T18:19:26.511013Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e8a5d461a6cf12e3",
+      "url": "https://x.com/dani_avila7/status/2111465051022401862",
+      "title": "This is beautiful and fascinating... and it even works on mobile!\n\nhttps://t.co/6iFwfykBCJ",
+      "summary": "This is beautiful and fascinating... and it even works on mobile!\n\nhttps://t.co/6iFwfykBCJ",
+      "content": "This is beautiful and fascinating... and it even works on mobile!\n\nhttps://t.co/6iFwfykBCJ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T14:31:11Z",
+      "fetched_at": "2026-10-18T18:19:26.511038Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e12557b187f26909",
+      "url": "https://x.com/dani_avila7/status/2111430833634525325",
+      "title": "Yep, idle compaction kicks in after about 54 minutes for 200K+ token sessions using the 1h cache\n\nYo...",
+      "summary": "Yep, idle compaction kicks in after about 54 minutes for 200K+ token sessions using the 1h cache\n\nYou can disable it with \"idleCompaction\": false \n\nor adjust the threshold with CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS\n\nI\u2019d keep it on for multi day sessions where I\u2019m fine with a https://t.co/w4sbdiM2Ol",
+      "content": "Yep, idle compaction kicks in after about 54 minutes for 200K+ token sessions using the 1h cache\n\nYou can disable it with \"idleCompaction\": false \n\nor adjust the threshold with CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS\n\nI\u2019d keep it on for multi day sessions where I\u2019m fine with a https://t.co/w4sbdiM2Ol",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T12:15:13Z",
+      "fetched_at": "2026-10-18T18:19:26.511065Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3870bbf3122ced4d",
+      "url": "https://x.com/bcherny/status/2111300255534968986",
+      "title": "RT @bunjavascript: In the next version of Bun\n\nbun lint is a 26x faster ESLint-compatible linter wit...",
+      "summary": "RT @bunjavascript: In the next version of Bun\n\nbun lint is a 26x faster ESLint-compatible linter with over 1,000 builtin rules - reads esli\u2026",
+      "content": "RT @bunjavascript: In the next version of Bun\n\nbun lint is a 26x faster ESLint-compatible linter with over 1,000 builtin rules - reads esli\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-17T03:36:21Z",
+      "fetched_at": "2026-10-18T18:19:23.153115Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5913c24433f9a261",
+      "url": "https://x.com/dani_avila7/status/2111273916630987171",
+      "title": "Anthropic's project-artifact plugin turns your repo into a live status page\n\nSave this post if you w...",
+      "summary": "Anthropic's project-artifact plugin turns your repo into a live status page\n\nSave this post if you want to try it on your own projects\n\nWhat I like is that it's not a one-off page\n\nIt saves where the data comes from, so when you refresh it pulls the current state and tells you",
+      "content": "Anthropic's project-artifact plugin turns your repo into a live status page\n\nSave this post if you want to try it on your own projects\n\nWhat I like is that it's not a one-off page\n\nIt saves where the data comes from, so when you refresh it pulls the current state and tells you",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T01:51:41Z",
+      "fetched_at": "2026-10-18T18:19:26.511090Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6b5a10610700d1ae",
+      "url": "https://x.com/dani_avila7/status/2111257119249006823",
+      "title": "Who says you can\u2019t get good coffee in Michigan? https://t.co/STUr805bCF",
+      "summary": "Who says you can\u2019t get good coffee in Michigan? https://t.co/STUr805bCF",
+      "content": "Who says you can\u2019t get good coffee in Michigan? https://t.co/STUr805bCF",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-17T00:44:57Z",
+      "fetched_at": "2026-10-18T18:19:26.511113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "64dbacbef1927e30",
+      "url": "https://x.com/dani_avila7/status/2111239264671309868",
+      "title": "The results from https://t.co/vUivyBJiHj after letting Claude Code fix everything my website needed ...",
+      "summary": "The results from https://t.co/vUivyBJiHj after letting Claude Code fix everything my website needed to become more agent-friendly https://t.co/40vMfu7ujO",
+      "content": "The results from https://t.co/vUivyBJiHj after letting Claude Code fix everything my website needed to become more agent-friendly https://t.co/40vMfu7ujO",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-16T23:34:00Z",
+      "fetched_at": "2026-10-18T18:19:26.511136Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "96fc60a9fb9c59d3",
+      "url": "https://x.com/trq212/status/2111226421804990757",
+      "title": "RT @amorriscode: thanks for the feedback on the Claude Code Desktop launch this week. we'll continue...",
+      "summary": "RT @amorriscode: thanks for the feedback on the Claude Code Desktop launch this week. we'll continue to iterate based on feedback (yes, gro\u2026",
+      "content": "RT @amorriscode: thanks for the feedback on the Claude Code Desktop launch this week. we'll continue to iterate based on feedback (yes, gro\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-16T22:42:58Z",
+      "fetched_at": "2026-10-18T18:19:19.961262Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e1a76fd434ee66bc",
+      "url": "https://x.com/OpenAI/status/2111215293737599284",
+      "title": "RT @OpenAIDevs: Put your dot on call.\n\nAli, an engineer at OpenAI, used his dot to triage an on-call...",
+      "summary": "RT @OpenAIDevs: Put your dot on call.\n\nAli, an engineer at OpenAI, used his dot to triage an on-call incident at 3am.\n\nHis dot investigated\u2026",
+      "content": "RT @OpenAIDevs: Put your dot on call.\n\nAli, an engineer at OpenAI, used his dot to triage an on-call incident at 3am.\n\nHis dot investigated\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-16T21:58:45Z",
+      "fetched_at": "2026-10-18T18:35:33.637965Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4c5707aa1b4f218f",
+      "url": "https://x.com/bcherny/status/2111209976974999749",
+      "title": "RT @ClaudeDevs: We keep improving performance across Claude, and you may have noticed it starts resp...",
+      "summary": "RT @ClaudeDevs: We keep improving performance across Claude, and you may have noticed it starts responding sooner!\n\nClaude Code now gzips t\u2026",
+      "content": "RT @ClaudeDevs: We keep improving performance across Claude, and you may have noticed it starts responding sooner!\n\nClaude Code now gzips t\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-16T21:37:37Z",
+      "fetched_at": "2026-10-18T18:19:23.153222Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bc7a5eff2c3aaff4",
+      "url": "https://x.com/dani_avila7/status/2111207423834775586",
+      "title": "Are you using Prompt Cache Control in Claude Code?\n\nJust install it with this command:\n\nnpx claude-c...",
+      "summary": "Are you using Prompt Cache Control in Claude Code?\n\nJust install it with this command:\n\nnpx claude-code-templates@latest --mod observability/prompt-cache-control\n\nEnjoy! https://t.co/Hb4tJYYQ9p",
+      "content": "Are you using Prompt Cache Control in Claude Code?\n\nJust install it with this command:\n\nnpx claude-code-templates@latest --mod observability/prompt-cache-control\n\nEnjoy! https://t.co/Hb4tJYYQ9p",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-16T21:27:28Z",
+      "fetched_at": "2026-10-18T18:19:26.511159Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4661b61e02646150",
+      "url": "https://x.com/bcherny/status/2111207336551612623",
+      "title": "RT @claudeai: Six projects from the last few weeks that caught our attention:\n\nA wildfire analysis p...",
+      "summary": "RT @claudeai: Six projects from the last few weeks that caught our attention:\n\nA wildfire analysis prototype that maps the fire\u2019s spread ov\u2026",
+      "content": "RT @claudeai: Six projects from the last few weeks that caught our attention:\n\nA wildfire analysis prototype that maps the fire\u2019s spread ov\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-16T21:27:08Z",
+      "fetched_at": "2026-10-18T18:19:23.153275Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d2d3c6d0f093a2b6",
+      "url": "https://x.com/OpenAI/status/2111192259073094035",
+      "title": "GPT-6 Astra Pro in ChatGPT got an upgrade with faster responses and improved use of plugins and tool...",
+      "summary": "GPT-6 Astra Pro in ChatGPT got an upgrade with faster responses and improved use of plugins and tools.\n\nAnd now, multiple agents can tackle different parts of a task in parallel. You can follow each agent\u2019s progress and open completed tasks to review their work.\n\nNow available to",
+      "content": "GPT-6 Astra Pro in ChatGPT got an upgrade with faster responses and improved use of plugins and tools.\n\nAnd now, multiple agents can tackle different parts of a task in parallel. You can follow each agent\u2019s progress and open completed tasks to review their work.\n\nNow available to",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-16T20:27:13Z",
+      "fetched_at": "2026-10-18T18:35:33.638026Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c392298e8f03c376",
+      "url": "https://x.com/dani_avila7/status/2111175485883388036",
+      "title": "My daily work stack\n\nMate, Claude, and a Rubik\u2019s Cube https://t.co/JPNNgPw6v2",
+      "summary": "My daily work stack\n\nMate, Claude, and a Rubik\u2019s Cube https://t.co/JPNNgPw6v2",
+      "content": "My daily work stack\n\nMate, Claude, and a Rubik\u2019s Cube https://t.co/JPNNgPw6v2",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-16T19:20:34Z",
+      "fetched_at": "2026-10-18T18:19:26.511181Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4035b6bf1ac6f732",
+      "url": "https://x.com/bcherny/status/2111158659971699136",
+      "title": "Don't sleep on Claude Slides. This is how I make slide decks now -- no more googling \"iphone frame s...",
+      "summary": "Don't sleep on Claude Slides. This is how I make slide decks now -- no more googling \"iphone frame svg\" like the old days\n\nTry it: https://t.co/cAWdwarzgp https://t.co/POdqFL9oIP",
+      "content": "Don't sleep on Claude Slides. This is how I make slide decks now -- no more googling \"iphone frame svg\" like the old days\n\nTry it: https://t.co/cAWdwarzgp https://t.co/POdqFL9oIP",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-16T18:13:42Z",
+      "fetched_at": "2026-10-18T18:19:23.153314Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9d5aabe441cbdb94",
+      "url": "https://x.com/bcherny/status/2111158313463525518",
+      "title": "I could not imagine being productive without Claude Code Review. It runs on all of my PRs, and catch...",
+      "summary": "I could not imagine being productive without Claude Code Review. It runs on all of my PRs, and catches almost every bug before it goes it. This is a piece of the secret sauce that lets the team and I move so quickly while raising the quality bar",
+      "content": "I could not imagine being productive without Claude Code Review. It runs on all of my PRs, and catches almost every bug before it goes it. This is a piece of the secret sauce that lets the team and I move so quickly while raising the quality bar",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-16T18:12:20Z",
+      "fetched_at": "2026-10-18T18:19:23.153358Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b71e24e4a2ca2af6",
+      "url": "https://x.com/AnthropicAI/status/2111152183240511640",
+      "title": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.\n\nGiven pla...",
+      "summary": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.\n\nGiven plain-language instructions, Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more.\n\nMore efficient circuits",
+      "content": "New from our STEM Fellows Program: Designing more efficient quantum circuits with Claude.\n\nGiven plain-language instructions, Claude Mythos 5 designed quantum circuits that improve on the best published ones, sometimes by an order of magnitude or more.\n\nMore efficient circuits",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-16T17:47:58Z",
+      "fetched_at": "2026-10-18T18:35:35.757500Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fd528e3f29aa5323",
+      "url": "https://x.com/GeminiApp/status/2111150092400951804",
+      "title": "RT @Google: With Gemini 4 Argon, your research has new ways to tell its story \ud83d\udcd6\n\nWe used Nano Banana...",
+      "summary": "RT @Google: With Gemini 4 Argon, your research has new ways to tell its story \ud83d\udcd6\n\nWe used Nano Banana, Veo, and Argon to turn a dense academ\u2026",
+      "content": "RT @Google: With Gemini 4 Argon, your research has new ways to tell its story \ud83d\udcd6\n\nWe used Nano Banana, Veo, and Argon to turn a dense academ\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-16T17:39:39Z",
+      "fetched_at": "2026-10-18T18:35:32.670393Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5dda965b520971f8",
+      "url": "https://x.com/GeminiApp/status/2111147479248855484",
+      "title": "With Gemini 4 Argon, you can use Canvas to turn dense PDFs into interactive, animated web apps you c...",
+      "summary": "With Gemini 4 Argon, you can use Canvas to turn dense PDFs into interactive, animated web apps you can explore at your own pace.",
+      "content": "With Gemini 4 Argon, you can use Canvas to turn dense PDFs into interactive, animated web apps you can explore at your own pace.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-16T17:29:16Z",
+      "fetched_at": "2026-10-18T18:35:32.670472Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "03635f11eb460ac1",
+      "url": "https://x.com/sama/status/2111139227761266699",
+      "title": "The back of the Navier-Stokes milestone shirt is the last line of the chain-of-thought from the solu...",
+      "summary": "The back of the Navier-Stokes milestone shirt is the last line of the chain-of-thought from the solution: https://t.co/W7mK8WmCz1",
+      "content": "The back of the Navier-Stokes milestone shirt is the last line of the chain-of-thought from the solution: https://t.co/W7mK8WmCz1",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-16T16:56:29Z",
+      "fetched_at": "2026-10-18T18:19:29.719877Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "07a1056e8e0ba44e",
+      "url": "https://x.com/sama/status/2111131677351432197",
+      "title": "Wow the new roadster looks quite amazing, good job @elonmusk",
+      "summary": "Wow the new roadster looks quite amazing, good job @elonmusk",
+      "content": "Wow the new roadster looks quite amazing, good job @elonmusk",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-16T16:26:29Z",
+      "fetched_at": "2026-10-18T18:19:29.719938Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b4b2e6156ae528fa",
+      "url": "https://x.com/sama/status/2111130577789493706",
+      "title": "Very happy to see this from Nick!",
+      "summary": "Very happy to see this from Nick!",
+      "content": "Very happy to see this from Nick!",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-16T16:22:07Z",
+      "fetched_at": "2026-10-18T18:19:29.719968Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1e92fd0e9136deac",
+      "url": "https://x.com/dani_avila7/status/2111074030765969413",
+      "title": "Dear algorithm, stop showing me flying cars\n\nShow me code, agents, AI research, Codex, Claude Code, ...",
+      "summary": "Dear algorithm, stop showing me flying cars\n\nShow me code, agents, AI research, Codex, Claude Code, Cursor, fx, Antigravity, hooks, and skills",
+      "content": "Dear algorithm, stop showing me flying cars\n\nShow me code, agents, AI research, Codex, Claude Code, Cursor, fx, Antigravity, hooks, and skills",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-16T12:37:25Z",
+      "fetched_at": "2026-10-18T18:19:26.511202Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "76666e967cc61296",
+      "url": "https://x.com/karpathy/status/2109361546505966046",
+      "title": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *wid...",
+      "summary": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come",
+      "content": "Dusting off this tweet from April because this gap in shared understanding of LLM capability is *widening*. It's now less \"two groups of people speaking past each other\" and more a sharp funnel.\n\n- Napkin math somewhere around 6B people (~75% of the population) have barely come",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-10-11T19:12:37Z",
+      "fetched_at": "2026-10-12T08:53:50.686287Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e94f84ba3867e38",
+      "url": "https://x.com/trq212/status/2109329495341867391",
+      "title": "I think Terrence Tao is directionally correct, we shouldn\u2019t settle for a super intelligence that is ...",
+      "summary": "I think Terrence Tao is directionally correct, we shouldn\u2019t settle for a super intelligence that is opaque.\n\nA key signal of intelligence is communication. We should strive to make products and models that build understanding with humans instead of disintermediating them.",
+      "content": "I think Terrence Tao is directionally correct, we shouldn\u2019t settle for a super intelligence that is opaque.\n\nA key signal of intelligence is communication. We should strive to make products and models that build understanding with humans instead of disintermediating them.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-11T17:05:15Z",
+      "fetched_at": "2026-10-12T08:53:49.553850Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3d21f53048a6aeac",
+      "url": "https://x.com/dani_avila7/status/2109317963811574099",
+      "title": "/anatomy  Explain how the pyramids of Egypt were built https://t.co/0iwpEgyX1a",
+      "summary": "/anatomy  Explain how the pyramids of Egypt were built https://t.co/0iwpEgyX1a",
+      "content": "/anatomy  Explain how the pyramids of Egypt were built https://t.co/0iwpEgyX1a",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-11T16:19:26Z",
+      "fetched_at": "2026-10-12T08:53:54.065103Z",
       "score": null,
       "score_reason": "",
       "tier": "",
