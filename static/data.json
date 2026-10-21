@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-21T07:40:59.634471+00:00",
+  "exported_at": "2026-10-21T10:26:03.011131+00:00",
   "period_hours": 168,
-  "total": 2907,
+  "total": 2905,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38474,25 +38474,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ad0d4908091fe879",
-      "url": "https://www.youtube.com/watch?v=W6F4QZlknkc",
-      "title": "AI slop stalls bug bounties, malware hides in IoT and agents hit Wikipedia",
-      "summary": "Visit Security Intelligence podcast page to get more AI content \u2192https://ibm.biz/~H5jRdf9Xb\n\nWhat happens when AI agents start hacking websites without permission?\n\nOn episode 55 of Security Intelligence, Sophie Cunningham, Ian Molloy and Seth Glasgow join host Patrick Austin to break down three cybersecurity stories and what they mean for defenders.\n\nFirst, Google pauses part of its open-source bug bounty program amid a flood of automated reports. Meanwhile, its own PageBreak AI agent is finding hundreds of vulnerabilities. Could AI ultimately save the bug bounty programs its overwhelming?\n\nThen, ClingSTUN malware exploits unpatched IoT devices and hides behind legitimate network traffic. The attack highlights a persistent security challenge: finding vulnerabilities is getting faster, but patching them isn't.\n \nFinally, OpenAI agents attempt to hack Wikimedia services, potentially contributing to a partial outage. The panel debates who should be held accountable when agents cross security boundaries.\n\nAll that and more on Security Intelligence.\n\n00:00 \u2013 Intro\n01:38 \u2013 Google's AI bug bounty problem\n13:32 \u2013 ClingSTUN Linux malware\n21:34 \u2013 OpenAI agents target Wikipedia\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~YlmHgSn9a\n#aisecurity #cybersecurity #openai \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-14T10:00:40Z",
-      "fetched_at": "2026-10-14T13:44:17.101847Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "dd2a6493f55037ee",
       "url": "https://arxiv.org/abs/2610.22437",
       "title": "CF-NODE: Counterfactual Spatial Node Intervention for Test-Time Adaptation Under Domain Shift, Evaluated Across Five Diabetic Retinopathy Datasets",
@@ -38618,27 +38599,6 @@
       "author": "Jess Weng",
       "published_at": "2026-10-14T17:00:00Z",
       "fetched_at": "2026-10-14T18:38:36.702329Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "35987cdf2f6905ad",
-      "url": "https://www.youtube.com/watch?v=oJLGQUB2hNw",
-      "title": "The Secret to Overcoming Fear & Taking Action in Your Career",
-      "summary": "Delete Your Fear of Failure: The Truth About Risk, Regret, and Taking Action\n\nAre you sitting on an idea you can't stop thinking about\u2014whether it's launching a business, starting a project, or sending an important message\u2014only to hesitate because a voice tells you, \"What if I fail?\"\n\nIn this deep dive, we break down what you are actually afraid of (spoiler: it's the judgment you attach to yourself), how to do the real math on risk versus regret, and the tactical framework you need to take action while the fear is still there.\n\nYou will discover why we mistakenly view failed attempts as a judgment on our entire self-worth and how protecting ourselves from a small ego bruise actually guarantees a much deeper, permanent regret. We explore how failure acts as the ultimate accelerator, teaching you more about real customers and business in three months than a full year of over-planning, and introduce a practical two-step action playbook to minimize your bets and ensure every attempt pays you back in valuable knowledge.\n\n\u23f1\ufe0f Timestamps / Chapters\n00:00 - Introduction: Why You Delay Starting New Projects\n00:33 - What You Are Actually Afraid Of (The Self-Judgment Trap)\n01:38 - Doing the Math: Temporary Setbacks vs. Permanent Regret\n02:21 - Why Failed Attempts Are the Fastest Way to Learn\n03:02 - The Biographies of Successful People vs. Comfort Zones\n04:19 - Step 1: Minimize the Bet to Protect Your Ego\n04:40 - Step 2: The One Question to Ask Before You Begin\n05:16 - Final Takeaway: Separating Your Identity From the Outcome\n\nIf this video helped change how you look at risk and failure, please Like, Subscribe, and leave a comment sharing one thing you're finally going to start this week!\n\n#FearOfFailure #OvercomingFear #PersonalGrowth #Productivity #MindsetShift #Entrepreneurship #SelfImprovement",
-      "content": "",
-      "source_name": "TechWorld with Nana",
-      "source_type": "youtube",
-      "tags": [
-        "devops",
-        "cloud",
-        "tooling"
-      ],
-      "author": "Nana Janashia",
-      "published_at": "2026-10-14T08:52:19Z",
-      "fetched_at": "2026-10-14T13:44:15.625501Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61073,27 +61033,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ab56b4d0bc6bc7fc",
-      "url": "https://x.com/AnthropicAI/status/2110289695888511368",
-      "title": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU w...",
-      "summary": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
-      "content": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-10-14T08:40:45Z",
-      "fetched_at": "2026-10-14T10:29:25.726235Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "411a281ad2ab855b",
       "url": "https://x.com/GoogleAI/status/2110744759111213217",
       "title": "See a fully-explorable 3D world build itself in minutes \u26e9\ufe0f\n\nWatch @GoogleDeepMind's @GeokenAI explai...",
@@ -63402,6 +63341,27 @@
       "author": "steipete",
       "published_at": "2026-10-20T20:54:55Z",
       "fetched_at": "2026-10-21T07:18:53.114519Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab56b4d0bc6bc7fc",
+      "url": "https://x.com/AnthropicAI/status/2110289695888511368",
+      "title": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU w...",
+      "summary": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
+      "content": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-14T08:40:45Z",
+      "fetched_at": "2026-10-14T10:29:25.726235Z",
       "score": null,
       "score_reason": "",
       "tier": "",
