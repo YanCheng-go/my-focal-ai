@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-21T10:26:03.011131+00:00",
+  "exported_at": "2026-10-21T12:34:43.920620+00:00",
   "period_hours": 168,
-  "total": 2905,
+  "total": 2901,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38454,26 +38454,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4d7c2923caf8a596",
-      "url": "https://www.youtube.com/watch?v=gonAewBZxfU",
-      "title": "Your Fridge Is a Valid Payment Device \u2014 Eleonora Drykina & Nina \u017di\u017eaki\u0107, In The Pocket",
-      "summary": "A question about payment rules can require one table row, an entire section or several rulebooks. Eleonora Drykina and Nina \u017di\u017eaki\u0107 describe a RAG assistant built for an anonymous Belgian payments client whose source material spans about 270 PDFs and 6,000 pages. Much of the answer bearing information sits in tables. Their indexing pipeline preserves section paths and chunk order so a larger passage can be reconstructed, and converts tables into CSV while retaining the relationship between headings and values. Combining dense retrieval with BM25 raises the reported retrieval hit rate from 92% to 97% on 63 questions; that measures retrieval, rather than complete answer correctness.\n\nThe serving agent can widen its search through four tools, moving from search results to sections, full documents and multiple rulebooks. Limits prevent an oversized rulebook from flooding the context, and the prompt asks the agent to reconsider whether another tool call adds evidence. A median answer takes 38 seconds, which makes the interface part of the engineering problem. Streaming Markdown separately from a completed source card avoids waiting for one large structured object before showing anything. The speakers also explain traces, citation checks and Promptfoo evaluations, including cases where an automated judge's apparent regression did not survive inspection of the source. Their early internal rollout reached 34 users and roughly 900 questions; external release remained planned. The practical lessons concern reconstructable evidence, bounded retrieval, visible progress and evaluation that can be challenged against the documents.\n\n\nSpeaker info:\nEleonora Drykina:\n- https://www.linkedin.com/in/eleonora-drykina-3a1212233/\n- https://www.elu.sh/\n\nNina \u017di\u017eaki\u0107:\n- https://www.linkedin.com/in/ninazizakic/\n\nTimestamps:\n00:00 - A payment rulebook assistant in production\n2:42 - PDFs, tables and the source corpus\n5:47 - Indexing and the system architecture\n7:05 - Reconstructable sections without overlapping chunks\n9:52 - Turning complex tables into usable evidence\n11:42 - Dense retrieval, BM25 and reciprocal rank fusion\n13:26 - Four tools that widen the search\n14:22 - Context limits and tool call discipline\n15:32 - Latency and streaming the answer\n17:38 - Traces, citations and evaluation\n20:37 - Early internal use and planned external release\n22:46 - Lessons from the build",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-14T12:00:07Z",
-      "fetched_at": "2026-10-14T13:44:16.687444Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "dd2a6493f55037ee",
       "url": "https://arxiv.org/abs/2610.22437",
       "title": "CF-NODE: Counterfactual Spatial Node Intervention for Test-Time Adaptation Under Domain Shift, Evaluated Across Five Diabetic Retinopathy Datasets",
@@ -49483,48 +49463,6 @@
       "author": "",
       "published_at": "2026-10-14T16:00:00Z",
       "fetched_at": "2026-10-15T21:24:06.983606Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "004cd593adabcd24",
-      "url": "https://openai.com/index/sentinelone",
-      "title": "SentinelOne cuts malware analysis from weeks to hours",
-      "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-14T12:00:00Z",
-      "fetched_at": "2026-10-14T18:38:24.998364Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "57c3309db5bedcde",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "summary": "See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-14T12:00:00Z",
-      "fetched_at": "2026-10-14T18:38:24.998342Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63341,27 +63279,6 @@
       "author": "steipete",
       "published_at": "2026-10-20T20:54:55Z",
       "fetched_at": "2026-10-21T07:18:53.114519Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ab56b4d0bc6bc7fc",
-      "url": "https://x.com/AnthropicAI/status/2110289695888511368",
-      "title": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU w...",
-      "summary": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
-      "content": "We\u2019ve opened an office in Singapore\u2014our fifth in the Asia-Pacific region. We\u2019ve also signed an MOU with the Government of Singapore on AI safety and responsible adoption.\n\nYou can read more about our new office here: https://t.co/125mBgHLkM",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-10-14T08:40:45Z",
-      "fetched_at": "2026-10-14T10:29:25.726235Z",
       "score": null,
       "score_reason": "",
       "tier": "",
