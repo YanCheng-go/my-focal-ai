@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-22T04:49:02.899665+00:00",
+  "exported_at": "2026-10-22T07:36:57.029130+00:00",
   "period_hours": 168,
-  "total": 2897,
+  "total": 2933,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -49600,27 +49600,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "c46dcdda349de0a5",
-      "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
-      "title": "The Nordics and NVIDIA Show What\u2019s Possible When a Region Commits to Advanced Computing",
-      "summary": "The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. Now, a new chapter for the region is unfolding as countries race to build one of Europe\u2019s most consequential technology ecosystems. The many computing advancements already underway [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. </span></p>\n<p><span style=\"font-weight: 400;\">Now, a new chapter for the region is unfolding as countries race to build one of Europe\u2019s most consequential technology ecosystems.</span></p>\n<p><span style=\"font-weight: 400;\">The many computing advancements already underway in the Nordics, combined with the opportunity that lies ahead, signal a region moving from ambition to application.</span></p>\n<h2><b>Nordics Emerge as Infrastructure Hub</b></h2>\n<p><span style=\"font-weight: 400;\">The foundation for establishing the Nordics as a technology powerhouse is already being built and the region holds a structural advantage: abundant renewable energy, rigorous data governance and a research tradition that bridges academia and industry.\u00a0\u00a0</span></p>\n<div style=\"margin: 0 !important; padding: 0 !important; text-align: center; line-height: 1;\"><a href=\"https://blogs.nvidia.com/gtc-berlin-2026-news/\">Read All NVIDIA in Europe Announcements</a></div>\n<p>&nbsp;</p>\n<p><span style=\"font-weight: 400;\">The Nordics are one of Europe\u2019s fastest growing hubs for infrastructure. AI clouds are expanding with a projected 1 gigawatts of capacity to be deployed across the region by the end of 2027. Among these cloud providers are </span><span style=\"font-weight: 400;\">Bitdeer,</span> <span style=\"font-weight: 400;\">CoreWeave</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">Crusoe</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">Hyperstack,</span> <span style=\"font-weight: 400;\">Nscale</span><span style=\"font-weight: 400;\">, </span><span style=\"font-weight: 400;\">Verda</span><span style=\"font-weight: 400;\"> and </span><span style=\"font-weight: 400;\">Volta</span><span style=\"font-weight: 400;\">.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">In Sweden, a consortium anchored by </span><span style=\"font-weight: 400;\">Ericsson, AstraZeneca, Saab, SEB and Wallenberg Investments, </span><span style=\"font-weight: 400;\">with </span><span style=\"font-weight: 400;\">SKF </span><span style=\"font-weight: 400;\">as strategic partner, launched </span><a href=\"https://sferical.ai/newsroom/leading-swedish-companies-launch-sferical-one-shared-ai-supercomputer\" target=\"_blank\"><span style=\"font-weight: 400;\">Sferical One</span></a><span style=\"font-weight: 400;\"> \u2014 a shared supercomputer running on two </span><a href=\"https://www.nvidia.com/en-us/data-center/dgx-superpod/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA DGX SuperPODs</span></a><span style=\"font-weight: 400;\"> with 16 racks of </span><a href=\"https://www.nvidia.com/en-us/data-center/dgx-gb300/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA DGX GB300 systems</span></a><span style=\"font-weight: 400;\"> and 1,152 GPUs. The consortium will build services using </span><a href=\"https://www.nvidia.com/en-us/ai-data-science/foundation-models/nemotron/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Nemotron</span></a><span style=\"font-weight: 400;\"> open models, which allow researchers to customize and deploy their models in a secure environment.</span></p>\n<h2><b>Nordic-Built Intelligence</b></h2>\n<p><span style=\"font-weight: 400;\">Some of the Nordics\u2019 leading technology companies are now building proprietary intelligence on NVIDIA infrastructure.</span></p>\n<p><span style=\"font-weight: 400;\">Spotify</span><span style=\"font-weight: 400;\">, which personalizes music, podcasts and audiobooks for hundreds of millions of listeners, uses NVIDIA TensorRT-LLM inference software to run AI-powered podcast recommendations faster and cheaper at scale. The deployment is a case study in inference efficiency: delivering the same recommendations to a global audience at a lower cost per query.</span></p>\n<p><a href=\"https://www.abb.com/global/en/news/137409/abb-robotics-and-nvidia-white-paper-defines-transformative-impact-of-physical-ai-on-manufacturing\" target=\"_blank\"><span style=\"font-weight: 400;\">ABB Robotics</span></a><span style=\"font-weight: 400;\"> developed RobotStudio HyperReality using </span><a href=\"https://www.nvidia.com/en-us/omniverse/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Omniverse</span></a><span style=\"font-weight: 400;\"> libraries to bridge the gap between robot simulations and real-world performance. By combining NVIDIA\u2019s advanced simulation capabilities with ABB Robotics\u2019 virtual controller, running the same firmware as its physical robots, the solution enables engineers to train, test and validate robots virtually, while using real-world data to continuously improve the digital model. According to ABB Robotics, the solution delivers up to 99% simulation accuracy and reduces commissioning time by up to 80%.</span></p>\n<p><span style=\"font-weight: 400;\">Finnish telecom company </span><a href=\"https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fyrityksille.elisa.fi%2Fideat%2Fmoontalk-airi-real-time-ai-assistance&amp;data=05%7C02%7Cebeisswenger%40nvidia.com%7Ce4430ec4c92b4ed0c2d508df29bf8858%7C43083d15727340c1b7db39efd9ccc17a%7C0%7C0%7C639275574771855820%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=%2Bv8nQ8VMmNnfXQBVAQfHXnCS8ch%2B68zVKKfA8xo6wq0%3D&amp;reserved=0\" target=\"_blank\"><span style=\"font-weight: 400;\">Elisa</span></a><span style=\"font-weight: 400;\"> is launching a beta of Moontalk AIRI, a real-time enterprise agentic assistant that retrieves information, captures insights and documents decisions during meetings and calls. Built on NVIDIA Nemotron open models and distributed infrastructure, it uses company data and low-latency networking to deliver fast, context-aware responses.\u00a0</span></p>\n<h2><b>Nordic Startups Scaling on NVIDIA</b></h2>\n<p><span style=\"font-weight: 400;\">Sweden\u2019s startup ecosystem raised $2.8 billion in the first half of 2026 and is projected to reach $5 billion for the year. This next generation is building fast \u2014 and on open models.</span></p>\n<p></p>\n<p><a href=\"https://stilta.com/news/stilta-nvidia-partnership\" target=\"_blank\"><span style=\"font-weight: 400;\">Stilta</span></a><span style=\"font-weight: 400;\"> is reinventing how companies protect their inventions with intellectual property. The Stockholm-based startup is post-training NVIDIA Nemotron open models to scale patent analysis from a single patent to entire portfolios \u2014 work that was previously out of reach. Nemotron gives </span><span style=\"font-weight: 400;\">Stilta</span><span style=\"font-weight: 400;\"> the language model accuracy for continuous portfolio monitoring at scale, across the thousands of patents that large industrial and technology companies hold.</span></p>\n<p><a href=\"https://confidentialmind.com/blog/sampotron-adapting-queries-reusing-index\" target=\"_blank\"><span style=\"font-weight: 400;\">ConfidentialMind\u2019s SampoTron</span></a><span style=\"font-weight: 400;\">,</span><span style=\"font-weight: 400;\"> built on NVIDIA Nemotron-3-Embed, delivers more than 20% improvement in cross-lingual retrieval accuracy across English, Finnish and Swedish.</span></p>\n<p><a href=\"https://www.agaton.ai/post/nvidia-nemotron\" target=\"_blank\"><span style=\"font-weight: 400;\">Agaton</span></a><span style=\"font-weight: 400;\">, a platform that analyzes customer conversations in real time, is using NVIDIA Nemotron 3.5 Lightning to speed up Revenue Mining solution on live sales calls. By routing knowledge retrieval to Nemotron 3.5 Lightning, Agaton can cut response latency to deliver fast responses that inform customers\u2019 buying decisions.</span></p>\n<p><a href=\"https://research.klang.ai/releases/pianissimo/\" target=\"_blank\"><span style=\"font-weight: 400;\">Klang</span></a><span style=\"font-weight: 400;\">, a Swedish speech lab, fine-tuned the NVIDIA Parakeet v3 model to create Pianissimo \u2014 a Swedish transcription model that reduces errors by 75% while being 64x faster than the most accurate alternative. Built on over 50,000 hours of Swedish speech using the open source </span><a href=\"https://www.nvidia.com/en-us/ai-data-science/products/nemo/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA NeMo</span></a><span style=\"font-weight: 400;\"> framework, the model is freely available on Hugging Face.</span></p>\n<p><a href=\"https://embedl.com/news/embedl-and-space-cargo-unlimited-bring-ai-autonomy-to-the-space-edge\" target=\"_blank\"><span style=\"font-weight: 400;\">Embedl</span></a><span style=\"font-weight: 400;\">, founded in Gothenburg and a member of the </span><a href=\"https://www.nvidia.com/en-us/startups/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Inception</span></a><span style=\"font-weight: 400;\"> program for cutting-edge startups, and Space Cargo Unlimited unveiled an onboard prototype that monitors protein crystallization, flags anomalies and recommends actions on a single NVIDIA Jetson Orin NX module, without continuous ground connectivity.</span></p>\n<p><a href=\"https://www.ri.se/en/news/sweden-ai-factory-and-nvidia-collaborate-to-shape-the-future-of-swedish-ai\" target=\"_blank\"><span style=\"font-weight: 400;\">Sweden AI Factory</span></a><span style=\"font-weight: 400;\"> \u2014 one of Europe\u2019s 19 EuroHPC-funded AI factories \u2014 announced a collaboration with NVIDIA to open its infrastructure and expertise to Inception startups and small- and medium-sized enterprises across industries, including life and material sciences, autonomous systems and gaming.</span></p>\n<p></p>\n<h2><b>Autonomous Machines on Nordic Roads and Factory Floors</b></h2>\n<p><span style=\"font-weight: 400;\">In Sweden, advanced computing is also powering vehicles on the road and machines in factories.</span></p>\n<p><span style=\"font-weight: 400;\">Autonomous freight company</span> <a href=\"https://www.einride.tech/press/3365322\" target=\"_blank\"><span style=\"font-weight: 400;\">Einride</span></a> <span style=\"font-weight: 400;\">is building its next-generation Einride Driver on </span><a href=\"https://www.nvidia.com/en-us/solutions/autonomous-vehicles/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Hyperion</span></a><span style=\"font-weight: 400;\"> for autonomous freight trucks, using the </span><a href=\"https://www.nvidia.com/en-us/ai-trust-center/halos/autonomous-vehicles/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Halos</span></a><span style=\"font-weight: 400;\"> safety system and </span><a href=\"https://www.nvidia.com/en-us/ai/cosmos/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Cosmos</span></a><span style=\"font-weight: 400;\"> open world models.</span></p>\n<p><span style=\"font-weight: 400;\">Meanwhile, </span><a href=\"https://toyota-forklifts.eu/about-toyota/news-and-editorials/toyota-material-handling-europe-and-softserve-to-reduce-autonomous-solution-commissioning-time-by-50-percent-using-nvidia-physical-ai/\" target=\"_blank\"><span style=\"font-weight: 400;\">Toyota Material Handling Europe</span></a> <span style=\"font-weight: 400;\">\u2014 the world\u2019s leading forklift manufacturer \u2014 is bringing autonomous machines to factory floors. In a collaboration with NVIDIA and </span><span style=\"font-weight: 400;\">SoftServe,</span> <span style=\"font-weight: 400;\">Toyota Material Handling Europe</span><span style=\"font-weight: 400;\"> is adopting a simulation-first approach to autonomous material handling, cutting autonomous solution deployment time by up to 50% across its global engineering, manufacturing and innovation teams.</span></p>\n<p><a href=\"https://www.norrsken.org/houses/stockholm-ai-lab\" target=\"_blank\"><span style=\"font-weight: 400;\">Norrsken Foundation</span></a><span style=\"font-weight: 400;\"> and NVIDIA are opening the Stockholm AI Lab, a physical hub for AI-native founders working on global challenges, set to open in 2027.\u00a0</span></p>\n<p></p>\n<h2><b>Quantum Meets Accelerated Computing</b></h2>\n<p><span style=\"font-weight: 400;\">Finally, Swedish companies are advancing quantum research using NVIDIA\u2019s quantum computing platform.</span></p>\n<p><span style=\"font-weight: 400;\">Stockholm-based</span> <a href=\"https://firstqfm.com/news/firstqfm-nvidia-gtc-2026\" target=\"_blank\"><span style=\"font-weight: 400;\">FirstQFM</span></a><span style=\"font-weight: 400;\"> used NVIDIA accelerated computing to train a model that reduces the execution time of quantum processors by 33% without sacrificing performance. Validated on a </span><span style=\"font-weight: 400;\">QuantWare</span><span style=\"font-weight: 400;\"> quantum processor unit, this model optimizes how the operations needed by quantum algorithms are turned into detailed hardware instructions, accounting for detailed updates on how the hardware is calibrated.</span></p>\n<p><i><span style=\"font-weight: 400;\">Tune in to NVIDIA founder and CEO Jensen Huang\u2019s </span></i><a href=\"https://www.nvidia.com/en-eu/gtc/keynote/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">GTC Berlin keynote</span></i></a><i><span style=\"font-weight: 400;\"> on Wednesday, Oct. 21, at 11 a.m. CEST.</span></i></p>\n<div style=\"margin: 0 !important; padding: 0 !important; text-align: center; line-height: 1;\"><a href=\"https://blogs.nvidia.com/gtc-berlin-2026-news/\">Read All NVIDIA in Europe Announcements</a></div>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Linda Malm",
-      "published_at": "2026-10-15T05:00:12Z",
-      "fetched_at": "2026-10-15T11:31:12.375196Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2f51df856d85f4fb",
       "url": "https://arxiv.org/abs/2610.22595",
       "title": "Diagnosing GNN Failure Modes with Layer-Wise Probe Entropy",
@@ -61170,69 +61149,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "17fe6bab59c6fbc3",
-      "url": "https://x.com/bcherny/status/2110628140070670497",
-      "title": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take fl...",
-      "summary": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought p\u2026",
-      "content": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought p\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-10-15T07:05:36Z",
-      "fetched_at": "2026-10-15T16:00:25.571538Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5f43415159ba8124",
-      "url": "https://x.com/bcherny/status/2110628043387719735",
-      "title": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was...",
-      "summary": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was a major system prompt/harness upgrade\u2026",
-      "content": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was a major system prompt/harness upgrade\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-10-15T07:05:13Z",
-      "fetched_at": "2026-10-15T16:00:25.571779Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f91ed234115115c5",
-      "url": "https://x.com/bcherny/status/2110627630945079624",
-      "title": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots...",
-      "summary": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots of sessions side by side. \n\nIt's now m\u2026",
-      "content": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots of sessions side by side. \n\nIt's now m\u2026",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-10-15T07:03:35Z",
-      "fetched_at": "2026-10-15T16:00:25.571960Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "0c2038cad3763e87",
       "url": "https://x.com/bcherny/status/2110791698611855624",
       "title": "Over the last few years, we have made significant progress on prompt injection for Claude models. As...",
@@ -62948,6 +62864,822 @@
       "author": "steipete",
       "published_at": "2026-10-20T20:54:55Z",
       "fetched_at": "2026-10-21T07:18:53.114519Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "56f2957ad8c41503",
+      "url": "https://x.com/bcherny/status/2113060750252274088",
+      "title": "RT @claudeai: We\u2019re opening a research preview of Claude Duet, a new app where Claude works as a pro...",
+      "summary": "RT @claudeai: We\u2019re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with wha\u2026",
+      "content": "RT @claudeai: We\u2019re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with wha\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-22T00:11:56Z",
+      "fetched_at": "2026-10-22T07:36:45.333271Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "51d18e1b9d46c6fe",
+      "url": "https://x.com/dani_avila7/status/2113058860563141080",
+      "title": "Here's what /stack looks like in Claude Code Desktop\n\nNever miss a single component in your Claude C...",
+      "summary": "Here's what /stack looks like in Claude Code Desktop\n\nNever miss a single component in your Claude Code stack again! https://t.co/ykiqvEvK8f",
+      "content": "Here's what /stack looks like in Claude Code Desktop\n\nNever miss a single component in your Claude Code stack again! https://t.co/ykiqvEvK8f",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-22T00:04:25Z",
+      "fetched_at": "2026-10-22T07:36:47.321239Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4384b1717fb3a1d9",
+      "url": "https://x.com/dani_avila7/status/2113045761709752416",
+      "title": "I officially declare October 21, 2026, the day the internet exploded\n\nAnd the day isn\u2019t even over ye...",
+      "summary": "I officially declare October 21, 2026, the day the internet exploded\n\nAnd the day isn\u2019t even over yet \ud83d\ude2c",
+      "content": "I officially declare October 21, 2026, the day the internet exploded\n\nAnd the day isn\u2019t even over yet \ud83d\ude2c",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-21T23:12:22Z",
+      "fetched_at": "2026-10-22T07:36:47.321372Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dd01565fe8684f1f",
+      "url": "https://x.com/dani_avila7/status/2113014401460744567",
+      "title": "temperature, top_p, and top_k are gone from Claude's Messages API\n\nThe end of an era \ud83d\ude14\n\nIf you've sp...",
+      "summary": "temperature, top_p, and top_k are gone from Claude's Messages API\n\nThe end of an era \ud83d\ude14\n\nIf you've spent years tweaking these parameters, you know the pain",
+      "content": "temperature, top_p, and top_k are gone from Claude's Messages API\n\nThe end of an era \ud83d\ude14\n\nIf you've spent years tweaking these parameters, you know the pain",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-21T21:07:45Z",
+      "fetched_at": "2026-10-22T07:36:47.321442Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "aeff7449e6551dcd",
+      "url": "https://x.com/dani_avila7/status/2113003583239078361",
+      "title": "This is a great reminder of why choosing where to host your websites matters\n\nDon\u2019t just rely on lan...",
+      "summary": "This is a great reminder of why choosing where to host your websites matters\n\nDon\u2019t just rely on language and framework patches. The entire infrastructure behind your sites matters too",
+      "content": "This is a great reminder of why choosing where to host your websites matters\n\nDon\u2019t just rely on language and framework patches. The entire infrastructure behind your sites matters too",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-21T20:24:46Z",
+      "fetched_at": "2026-10-22T07:36:47.321498Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e9ae4fbe967975af",
+      "url": "https://x.com/GeminiApp/status/2112997797213720700",
+      "title": "RT @ssamat: If you have a long, long commute like me, you know how much mental coordination happens ...",
+      "summary": "RT @ssamat: If you have a long, long commute like me, you know how much mental coordination happens the moment you sit in the driver's seat\u2026",
+      "content": "RT @ssamat: If you have a long, long commute like me, you know how much mental coordination happens the moment you sit in the driver's seat\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-21T20:01:47Z",
+      "fetched_at": "2026-10-22T07:36:50.287031Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "085e367c27b8658d",
+      "url": "https://x.com/OpenAI/status/2112988118471295323",
+      "title": "OpenAI models are coming to Google Cloud.\n\nWe're bringing our frontier models and Codex agentic work...",
+      "summary": "OpenAI models are coming to Google Cloud.\n\nWe're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.\n\nhttps://t.co/gjuLVALjDm",
+      "content": "OpenAI models are coming to Google Cloud.\n\nWe're bringing our frontier models and Codex agentic workflows to Google Cloud's Model Garden, so enterprises can use our technology where they already build.\n\nhttps://t.co/gjuLVALjDm",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-21T19:23:19Z",
+      "fetched_at": "2026-10-22T07:36:51.337589Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7de62f7145778e6b",
+      "url": "https://x.com/trq212/status/2112985127597096987",
+      "title": "RT @claudeai: We\u2019re opening a research preview of Claude Duet, a new app where Claude works as a pro...",
+      "summary": "RT @claudeai: We\u2019re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with wha\u2026",
+      "content": "RT @claudeai: We\u2019re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.\n\nIt comes to you with wha\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-21T19:11:26Z",
+      "fetched_at": "2026-10-22T07:36:43.270618Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "282e8547ea2ff902",
+      "url": "https://x.com/AnthropicAI/status/2112966949273801086",
+      "title": "Anthropic is a Public Benefit Corporation. Today, we\u2019re publishing our annual Public Benefit Report....",
+      "summary": "Anthropic is a Public Benefit Corporation. Today, we\u2019re publishing our annual Public Benefit Report. This report shares our five pillars and takes stock of the actions we\u2019re taking to advance them. \n\nRead the full report at this page: https://t.co/MTCgtzCoPH",
+      "content": "Anthropic is a Public Benefit Corporation. Today, we\u2019re publishing our annual Public Benefit Report. This report shares our five pillars and takes stock of the actions we\u2019re taking to advance them. \n\nRead the full report at this page: https://t.co/MTCgtzCoPH",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-21T17:59:12Z",
+      "fetched_at": "2026-10-22T07:36:53.388104Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "08dce38abb2802ee",
+      "url": "https://x.com/claudeai/status/2112962252706124134",
+      "title": "Projects can span repositories from GitHub, GitLab, and other Git providers, and findings reach your...",
+      "summary": "Projects can span repositories from GitHub, GitLab, and other Git providers, and findings reach your tools through a new API and MCP connector.\n\nEligible orgs receive $25K in usage credits each month, for two months, through Dec 31, 2026. Terms apply: https://t.co/Jo6qaluVAz",
+      "content": "Projects can span repositories from GitHub, GitLab, and other Git providers, and findings reach your tools through a new API and MCP connector.\n\nEligible orgs receive $25K in usage credits each month, for two months, through Dec 31, 2026. Terms apply: https://t.co/Jo6qaluVAz",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-21T17:40:32Z",
+      "fetched_at": "2026-10-22T07:36:48.223152Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "672e081291b3da65",
+      "url": "https://x.com/dani_avila7/status/2112954994013999320",
+      "title": "GitHub struggling with the avalanche of PRs patching the PHP vulnerability\n\nPHP rules the world! htt...",
+      "summary": "GitHub struggling with the avalanche of PRs patching the PHP vulnerability\n\nPHP rules the world! https://t.co/8mBy7PY4uq",
+      "content": "GitHub struggling with the avalanche of PRs patching the PHP vulnerability\n\nPHP rules the world! https://t.co/8mBy7PY4uq",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-21T17:11:42Z",
+      "fetched_at": "2026-10-22T07:36:47.321554Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2c2501df0eb59f5f",
+      "url": "https://x.com/AnthropicAI/status/2112946750264676743",
+      "title": "Dr. Christopher Stubbs is joining our Long-Term Benefit Trust. Chris is an experimental physicist an...",
+      "summary": "Dr. Christopher Stubbs is joining our Long-Term Benefit Trust. Chris is an experimental physicist and a former Dean of Science at Harvard University. He has also advised the US government on national security and arms control.\n\nRead more: https://t.co/8RzH8UujRU",
+      "content": "Dr. Christopher Stubbs is joining our Long-Term Benefit Trust. Chris is an experimental physicist and a former Dean of Science at Harvard University. He has also advised the US government on national security and arms control.\n\nRead more: https://t.co/8RzH8UujRU",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-21T16:38:56Z",
+      "fetched_at": "2026-10-22T07:36:53.388190Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbc4fa34b2756229",
+      "url": "https://x.com/OpenAI/status/2112945805686604033",
+      "title": "If you are wondering whether your website is affected, we have packaged a Codex skill to help check....",
+      "summary": "If you are wondering whether your website is affected, we have packaged a Codex skill to help check.\n\nPoint your Codex at this repo to guide you through it: https://t.co/XUEbOwXuQC",
+      "content": "If you are wondering whether your website is affected, we have packaged a Codex skill to help check.\n\nPoint your Codex at this repo to guide you through it: https://t.co/XUEbOwXuQC",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-21T16:35:11Z",
+      "fetched_at": "2026-10-22T07:36:51.337673Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "75c3082db5419357",
+      "url": "https://x.com/steipete/status/2112913060709228764",
+      "title": "That PHP vulnerability that\u2019s gonna cause havoc this week was found with\u2026 GPT\u20115.6 Sol.",
+      "summary": "That PHP vulnerability that\u2019s gonna cause havoc this week was found with\u2026 GPT\u20115.6 Sol.",
+      "content": "That PHP vulnerability that\u2019s gonna cause havoc this week was found with\u2026 GPT\u20115.6 Sol.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-21T14:25:04Z",
+      "fetched_at": "2026-10-22T07:36:54.462396Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "93a526d9e9df8989",
+      "url": "https://x.com/dani_avila7/status/2112907965623943396",
+      "title": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
+      "summary": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
+      "content": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-21T14:04:49Z",
+      "fetched_at": "2026-10-22T07:36:47.321608Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "950a86d08b7f03a2",
+      "url": "https://x.com/OpenAI/status/2112907856018309586",
+      "title": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover criti...",
+      "summary": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers,",
+      "content": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers,",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-21T14:04:23Z",
+      "fetched_at": "2026-10-22T07:36:51.337707Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "17fe6bab59c6fbc3",
+      "url": "https://x.com/bcherny/status/2110628140070670497",
+      "title": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take fl...",
+      "summary": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought p\u2026",
+      "content": "RT @felixrieseberg: Hi, I'm Felix. I'm an eng lead working on Claude. I love watching people take flight and do things they never thought p\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-15T07:05:36Z",
+      "fetched_at": "2026-10-15T16:00:25.571538Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5f43415159ba8124",
+      "url": "https://x.com/bcherny/status/2110628043387719735",
+      "title": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was...",
+      "summary": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was a major system prompt/harness upgrade\u2026",
+      "content": "RT @ChadMoran: What did @AnthropicAI do with his latest Claude Desktop update? I feel like there was a major system prompt/harness upgrade\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-15T07:05:13Z",
+      "fetched_at": "2026-10-15T16:00:25.571779Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f91ed234115115c5",
+      "url": "https://x.com/bcherny/status/2110627630945079624",
+      "title": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots...",
+      "summary": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots of sessions side by side. \n\nIt's now m\u2026",
+      "content": "RT @ClaudeDevs: We've been working hard on making the Claude Code desktop app great for running lots of sessions side by side. \n\nIt's now m\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-15T07:03:35Z",
+      "fetched_at": "2026-10-15T16:00:25.571960Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dd2a320b8f0362c8",
+      "url": "https://x.com/dani_avila7/status/2110563522459344917",
+      "title": "Messages like this are one of the biggest reasons I keep sharing what I learn\n\nMost of my posts come...",
+      "summary": "Messages like this are one of the biggest reasons I keep sharing what I learn\n\nMost of my posts come from real experience building software, working at large companies, and founding two startups, including an AI tool used by millions\n\nI\u2019ve spent over a decade building and",
+      "content": "Messages like this are one of the biggest reasons I keep sharing what I learn\n\nMost of my posts come from real experience building software, working at large companies, and founding two startups, including an AI tool used by millions\n\nI\u2019ve spent over a decade building and",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T02:48:50Z",
+      "fetched_at": "2026-10-15T16:00:27.619820Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6e603580f005fdfa",
+      "url": "https://x.com/dani_avila7/status/2110550010475708652",
+      "title": "Over 2,300 downloads of the Claude Code Prompt Cache Control Mod in just a few days\n\nThanks to every...",
+      "summary": "Over 2,300 downloads of the Claude Code Prompt Cache Control Mod in just a few days\n\nThanks to everyone contributing! https://t.co/Nw9RbMu1Pw",
+      "content": "Over 2,300 downloads of the Claude Code Prompt Cache Control Mod in just a few days\n\nThanks to everyone contributing! https://t.co/Nw9RbMu1Pw",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T01:55:09Z",
+      "fetched_at": "2026-10-15T16:00:27.619849Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9bfd9d7870ff439a",
+      "url": "https://x.com/dani_avila7/status/2110541316077830303",
+      "title": "Fully open source, built with Next.js\n\nRepo: https://t.co/cMfVHKxO2Z\n\nThanks @typesafeai !",
+      "summary": "Fully open source, built with Next.js\n\nRepo: https://t.co/cMfVHKxO2Z\n\nThanks @typesafeai !",
+      "content": "Fully open source, built with Next.js\n\nRepo: https://t.co/cMfVHKxO2Z\n\nThanks @typesafeai !",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T01:20:36Z",
+      "fetched_at": "2026-10-15T16:00:27.619874Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2784e579707e1982",
+      "url": "https://x.com/dani_avila7/status/2110540294248669260",
+      "title": "Jev is now multimodal, so naturally I had to build Not Hot Dog App\n\nTry it yourself: https://t.co/si...",
+      "summary": "Jev is now multimodal, so naturally I had to build Not Hot Dog App\n\nTry it yourself: https://t.co/siw8o97Pwu\n\nSilicon Valley was years ahead of its time https://t.co/eWDJtrdawt",
+      "content": "Jev is now multimodal, so naturally I had to build Not Hot Dog App\n\nTry it yourself: https://t.co/siw8o97Pwu\n\nSilicon Valley was years ahead of its time https://t.co/eWDJtrdawt",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T01:16:32Z",
+      "fetched_at": "2026-10-15T16:00:27.619902Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "447d28987b34b748",
+      "url": "https://x.com/GeminiApp/status/2110503223060828495",
+      "title": "Learn more about Gemini 4 Argon from the people who built it:",
+      "summary": "Learn more about Gemini 4 Argon from the people who built it:",
+      "content": "Learn more about Gemini 4 Argon from the people who built it:",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T22:49:14Z",
+      "fetched_at": "2026-10-15T16:00:30.646473Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fdb93b6fbd16ba0d",
+      "url": "https://x.com/GeminiApp/status/2110493430753452156",
+      "title": "RT @Google: From optimizing codebases to creative writing, here's how @TulseeDoshi and other Google ...",
+      "summary": "RT @Google: From optimizing codebases to creative writing, here's how @TulseeDoshi and other Google teams are using Gemini 4 Argon \ud83d\udc47 https:\u2026",
+      "content": "RT @Google: From optimizing codebases to creative writing, here's how @TulseeDoshi and other Google teams are using Gemini 4 Argon \ud83d\udc47 https:\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T22:10:19Z",
+      "fetched_at": "2026-10-15T16:00:30.646568Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4bbde19b4eb36234",
+      "url": "https://x.com/trq212/status/2110488897453257169",
+      "title": "I used to tell people it's good to \"be technical\" but I think this is not accurate enough. \n\nIf you'...",
+      "summary": "I used to tell people it's good to \"be technical\" but I think this is not accurate enough. \n\nIf you're technical you need to be in the details more with the right parts of the code.\n\nIf you're non-technical, being in the details means knowing how things work at the right level.",
+      "content": "I used to tell people it's good to \"be technical\" but I think this is not accurate enough. \n\nIf you're technical you need to be in the details more with the right parts of the code.\n\nIf you're non-technical, being in the details means knowing how things work at the right level.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-14T21:52:18Z",
+      "fetched_at": "2026-10-15T16:00:23.310743Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ad43cc11f6cea48f",
+      "url": "https://x.com/GeminiApp/status/2110484975384760477",
+      "title": "RT @Android: \"I was lucky enough to be one of the first to experience Googlebook, and what surprised...",
+      "summary": "RT @Android: \"I was lucky enough to be one of the first to experience Googlebook, and what surprised me most wasn\u2019t just what I could creat\u2026",
+      "content": "RT @Android: \"I was lucky enough to be one of the first to experience Googlebook, and what surprised me most wasn\u2019t just what I could creat\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T21:36:43Z",
+      "fetched_at": "2026-10-15T16:00:30.646608Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9a2d1cdabd12c2d8",
+      "url": "https://x.com/trq212/status/2110463964740243572",
+      "title": "s/o to @alicelovescake1 @amorriscode the CCD goats",
+      "summary": "s/o to @alicelovescake1 @amorriscode the CCD goats",
+      "content": "s/o to @alicelovescake1 @amorriscode the CCD goats",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-14T20:13:14Z",
+      "fetched_at": "2026-10-15T16:00:23.310816Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "88746e9779dc2935",
+      "url": "https://x.com/trq212/status/2110463962877989276",
+      "title": "Claude Code Desktop is now so much aware of its own capabilities and how it can work with you, like ...",
+      "summary": "Claude Code Desktop is now so much aware of its own capabilities and how it can work with you, like spinning off subsessions.\n\nI think of this almost like a v2, so many small details went into make it great.",
+      "content": "Claude Code Desktop is now so much aware of its own capabilities and how it can work with you, like spinning off subsessions.\n\nI think of this almost like a v2, so many small details went into make it great.",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-14T20:13:13Z",
+      "fetched_at": "2026-10-15T16:00:23.310857Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "26542aad54ed0f75",
+      "url": "https://x.com/GeminiApp/status/2110462652283859398",
+      "title": "RT @OfficialLoganK: A conversation with Sergey Brin, @joshwoodward, @tulseedoshi, and @melvinjohnson...",
+      "summary": "RT @OfficialLoganK: A conversation with Sergey Brin, @joshwoodward, @tulseedoshi, and @melvinjohnsonp about Gemini 4 Argon, how we got here\u2026",
+      "content": "RT @OfficialLoganK: A conversation with Sergey Brin, @joshwoodward, @tulseedoshi, and @melvinjohnsonp about Gemini 4 Argon, how we got here\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T20:08:01Z",
+      "fetched_at": "2026-10-15T16:00:30.646642Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "27ece032bb8ce133",
+      "url": "https://x.com/dani_avila7/status/2110462603806015774",
+      "title": "Long free-tier chats can get expensive as apps repeatedly process growing conversation history\n\nMiMo...",
+      "summary": "Long free-tier chats can get expensive as apps repeatedly process growing conversation history\n\nMiMo 2.6 Pro on Inworld Inference charges $0.0036 per million for cached input, $0.425 uncached",
+      "content": "Long free-tier chats can get expensive as apps repeatedly process growing conversation history\n\nMiMo 2.6 Pro on Inworld Inference charges $0.0036 per million for cached input, $0.425 uncached",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-14T20:07:49Z",
+      "fetched_at": "2026-10-15T16:00:27.619928Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "26d59ef0261177ec",
+      "url": "https://x.com/steipete/status/2110458989444309270",
+      "title": "RT @heyneighbor: Are you a company that sets up OpenClaw for small businesses? \n\nI want to share you...",
+      "summary": "RT @heyneighbor: Are you a company that sets up OpenClaw for small businesses? \n\nI want to share your story!",
+      "content": "RT @heyneighbor: Are you a company that sets up OpenClaw for small businesses? \n\nI want to share your story!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T19:53:28Z",
+      "fetched_at": "2026-10-15T16:00:34.877794Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b6bbadeb7bcfde4e",
+      "url": "https://x.com/steipete/status/2110444626125705440",
+      "title": "RT @laurolangosco: AI researchers in 2025: \"We can monitor the AI agents as long as they don't notic...",
+      "summary": "RT @laurolangosco: AI researchers in 2025: \"We can monitor the AI agents as long as they don't notice being monitored. And if they do notic\u2026",
+      "content": "RT @laurolangosco: AI researchers in 2025: \"We can monitor the AI agents as long as they don't notice being monitored. And if they do notic\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T18:56:23Z",
+      "fetched_at": "2026-10-15T16:00:34.877886Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4be9f0ca052ca142",
+      "url": "https://x.com/OpenAI/status/2110442001749659890",
+      "title": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among...",
+      "summary": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report https://t.co/m9LrrwNSo8",
+      "content": "European businesses are rapidly expanding their use of AI agents. More than half of the AI use among our EU enterprise and business customers now involves these tools, and the number of small business users has grown 8x across the region.\n\nOur latest Economic Research report https://t.co/m9LrrwNSo8",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-14T18:45:57Z",
+      "fetched_at": "2026-10-15T16:00:31.663690Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eb321855c7785b74",
+      "url": "https://x.com/dani_avila7/status/2110428897271496949",
+      "title": "HeyGen Voice is now ranked #1 on the Artificial Analysis voice leaderboard \n\nWith an Elo score of 1,...",
+      "summary": "HeyGen Voice is now ranked #1 on the Artificial Analysis voice leaderboard \n\nWith an Elo score of 1,201, ahead of Qwen, ElevenLabs, and Cartesia\n\nWhat's interesting to me is that they're also working on scene-aware audio, adapting voices to the environment in a video\n\nAI https://t.co/feOnDfZySP",
+      "content": "HeyGen Voice is now ranked #1 on the Artificial Analysis voice leaderboard \n\nWith an Elo score of 1,201, ahead of Qwen, ElevenLabs, and Cartesia\n\nWhat's interesting to me is that they're also working on scene-aware audio, adapting voices to the environment in a video\n\nAI https://t.co/feOnDfZySP",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-14T17:53:53Z",
+      "fetched_at": "2026-10-15T16:00:27.619949Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9c817f9088bd8c1c",
+      "url": "https://x.com/steipete/status/2110428184470863938",
+      "title": "RT @JeremyNguyenPhD: Do you have multiple Codex or Claude Code accounts and want to switch easily be...",
+      "summary": "RT @JeremyNguyenPhD: Do you have multiple Codex or Claude Code accounts and want to switch easily between them without logging in and out?\u2026",
+      "content": "RT @JeremyNguyenPhD: Do you have multiple Codex or Claude Code accounts and want to switch easily between them without logging in and out?\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T17:51:03Z",
+      "fetched_at": "2026-10-15T16:00:34.877933Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3f7f7d62c686467f",
+      "url": "https://x.com/steipete/status/2110426614261788738",
+      "title": "RT @Kaju_Nut: \"Our initial evaluation suggested that GPT-6-Astra's score was in the late eighties fo...",
+      "summary": "RT @Kaju_Nut: \"Our initial evaluation suggested that GPT-6-Astra's score was in the late eighties followed closely by Opus 5.5. But, as we\u2026",
+      "content": "RT @Kaju_Nut: \"Our initial evaluation suggested that GPT-6-Astra's score was in the late eighties followed closely by Opus 5.5. But, as we\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-14T17:44:49Z",
+      "fetched_at": "2026-10-15T16:00:34.877972Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "05523f5378f0baf4",
+      "url": "https://x.com/GeminiApp/status/2110425806833119609",
+      "title": "With Gemini 4 Argon, spend less time on repetitive admin and more time on your craft.\n\nJust connect ...",
+      "summary": "With Gemini 4 Argon, spend less time on repetitive admin and more time on your craft.\n\nJust connect your @GoogleWorkspace apps to turn scattered recipes, handwritten guest lists, and photos of seating charts into a polished proposal deck, email draft, and automated tracker.",
+      "content": "With Gemini 4 Argon, spend less time on repetitive admin and more time on your craft.\n\nJust connect your @GoogleWorkspace apps to turn scattered recipes, handwritten guest lists, and photos of seating charts into a polished proposal deck, email draft, and automated tracker.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-14T17:41:36Z",
+      "fetched_at": "2026-10-15T16:00:30.646672Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f62cc36f96a2ea12",
+      "url": "https://x.com/dani_avila7/status/2110424750887694414",
+      "title": "Finally, Claude Managed Agents finally supports OpenTelemetry!\n\nReally excited about this feature. I...",
+      "summary": "Finally, Claude Managed Agents finally supports OpenTelemetry!\n\nReally excited about this feature. I\u2019ve been asking for it for quite some time\n\nHuge thanks to the CMA team for making it happen!",
+      "content": "Finally, Claude Managed Agents finally supports OpenTelemetry!\n\nReally excited about this feature. I\u2019ve been asking for it for quite some time\n\nHuge thanks to the CMA team for making it happen!",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-14T17:37:25Z",
+      "fetched_at": "2026-10-15T16:00:27.619970Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "62227c8468009061",
+      "url": "https://x.com/GoogleAI/status/2110392574754107405",
+      "title": "Textbook biology, brought to life right in your browser \ud83c\udf3f\n\nThis interactive 5-stage visual atlas bui...",
+      "summary": "Textbook biology, brought to life right in your browser \ud83c\udf3f\n\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a sunlit leaf all the way https://t.co/sO52t4UIMP",
+      "content": "Textbook biology, brought to life right in your browser \ud83c\udf3f\n\nThis interactive 5-stage visual atlas built by Argon in @antigravity turns dense textbook biology into a hands-on experience. With fluid animations and scientific precision, you can scroll from a sunlit leaf all the way https://t.co/sO52t4UIMP",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-10-14T15:29:33Z",
+      "fetched_at": "2026-10-15T16:00:32.598887Z",
       "score": null,
       "score_reason": "",
       "tier": "",
