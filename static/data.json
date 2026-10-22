@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-22T07:36:57.029130+00:00",
+  "exported_at": "2026-10-22T09:53:34.138441+00:00",
   "period_hours": 168,
-  "total": 2933,
+  "total": 2932,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38903,27 +38903,6 @@
       "author": "Rod Evans",
       "published_at": "2026-10-15T10:00:12Z",
       "fetched_at": "2026-10-15T11:31:12.375178Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "39052ad94a8a76cc",
-      "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
-      "title": "Apertus 1.5 Release Notes",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-15T09:08:45Z",
-      "fetched_at": "2026-10-15T17:02:53.390536Z",
       "score": null,
       "score_reason": "",
       "tier": "",
