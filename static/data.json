@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-22T21:37:20.339870+00:00",
+  "exported_at": "2026-10-22T22:07:47.939937+00:00",
   "period_hours": 168,
-  "total": 2907,
+  "total": 2926,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -63144,6 +63144,393 @@
       "author": "dani_avila7",
       "published_at": "2026-10-22T13:36:46Z",
       "fetched_at": "2026-10-22T14:59:33.888180Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2f10a220e6d8d679",
+      "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+      "title": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale.\n\nFormal ...",
+      "summary": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale.\n\nFormal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time).\n\nWith AI models,",
+      "content": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale.\n\nFormal verification can prove that code is free of certain bugs, but historically it has only been feasible for small codebases (or required a lot of expert time).\n\nWith AI models,",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-22T22:01:06Z",
+      "fetched_at": "2026-10-22T22:07:43.026085Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "73363436ca521ca2",
+      "url": "https://x.com/steipete/status/2113368780613255648",
+      "title": "RT @Javi: This review really put every western tech channel to shame. And I\u2019m not talking about the ...",
+      "summary": "RT @Javi: This review really put every western tech channel to shame. And I\u2019m not talking about the flashy editing (which is extremely well\u2026",
+      "content": "RT @Javi: This review really put every western tech channel to shame. And I\u2019m not talking about the flashy editing (which is extremely well\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-22T20:35:56Z",
+      "fetched_at": "2026-10-22T22:07:44.533016Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9e153525abeff281",
+      "url": "https://x.com/dani_avila7/status/2113362517720227966",
+      "title": "This is a huge step forward for the entire AI coding agent ecosystem\n\nEspecially for standardizing a...",
+      "summary": "This is a huge step forward for the entire AI coding agent ecosystem\n\nEspecially for standardizing all the frontmatter options across coding agents\n\nIt would be amazing if the same skill could run exactly the same way across different agent harnesses, without any modifications",
+      "content": "This is a huge step forward for the entire AI coding agent ecosystem\n\nEspecially for standardizing all the frontmatter options across coding agents\n\nIt would be amazing if the same skill could run exactly the same way across different agent harnesses, without any modifications",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-22T20:11:03Z",
+      "fetched_at": "2026-10-22T22:07:36.161194Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0c253ed5fb5141a6",
+      "url": "https://x.com/claudeai/status/2113360845409583307",
+      "title": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by de...",
+      "summary": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by default on Pro, Max, and Team plans.\n\nRather than asking you to approve each step, an automated check blocks risky actions. Switch back to manual anytime.",
+      "content": "Starting next week, sessions across Claude web, desktop, and mobile apps will run in auto mode by default on Pro, Max, and Team plans.\n\nRather than asking you to approve each step, an automated check blocks risky actions. Switch back to manual anytime.",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-22T20:04:24Z",
+      "fetched_at": "2026-10-22T22:07:37.182909Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "65c4213d0ed3bc77",
+      "url": "https://x.com/simonw/status/2113356466770121166",
+      "title": "Spotted a familiar creature at 00:45s in this new music video for FREEDOM by De Staad https://t.co/A...",
+      "summary": "Spotted a familiar creature at 00:45s in this new music video for FREEDOM by De Staad https://t.co/AEIsAkro77 https://t.co/voZuAsGX17",
+      "content": "Spotted a familiar creature at 00:45s in this new music video for FREEDOM by De Staad https://t.co/AEIsAkro77 https://t.co/voZuAsGX17",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-22T19:47:00Z",
+      "fetched_at": "2026-10-22T22:07:35.027202Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3a54119fa0e05116",
+      "url": "https://x.com/bcherny/status/2113333859907747871",
+      "title": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it...",
+      "summary": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
+      "content": "Agent Skills started as an experiment in Claude Code. Many across the industry have come to adopt it, so we at Anthropic found it more fitting to donate it to the @AgenticAIFdn, next to MCP.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-22T18:17:10Z",
+      "fetched_at": "2026-10-22T22:07:33.988808Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fb82330513a0b754",
+      "url": "https://x.com/GoogleAI/status/2113306513217573249",
+      "title": "https://t.co/5bF2YWmO7g",
+      "summary": "https://t.co/5bF2YWmO7g",
+      "content": "https://t.co/5bF2YWmO7g",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-10-22T16:28:30Z",
+      "fetched_at": "2026-10-22T22:07:41.872829Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab68b1c11c54342e",
+      "url": "https://x.com/steipete/status/2113299667320787005",
+      "title": "RT @eastdakota: Some stats on #php2shell. In the 10 hours before it was publicly announced, across t...",
+      "summary": "RT @eastdakota: Some stats on #php2shell. In the 10 hours before it was publicly announced, across the @Cloudflare network we saw thousands\u2026",
+      "content": "RT @eastdakota: Some stats on #php2shell. In the 10 hours before it was publicly announced, across the @Cloudflare network we saw thousands\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-22T16:01:18Z",
+      "fetched_at": "2026-10-22T22:07:44.533076Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab665c31dad82fbe",
+      "url": "https://x.com/OpenAI/status/2113298833392496746",
+      "title": "This summer, we invited METR and Redwood Research to pilot an embedded evaluation of our internal mo...",
+      "summary": "This summer, we invited METR and Redwood Research to pilot an embedded evaluation of our internal monitoring system, providing deep access to our infrastructure over three weeks. \n\nTheir findings helped strengthen safeguards as we expanded the system and will help shape future",
+      "content": "This summer, we invited METR and Redwood Research to pilot an embedded evaluation of our internal monitoring system, providing deep access to our infrastructure over three weeks. \n\nTheir findings helped strengthen safeguards as we expanded the system and will help shape future",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-22T15:57:59Z",
+      "fetched_at": "2026-10-22T22:07:40.731206Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "234cc77499b23cd0",
+      "url": "https://x.com/steipete/status/2113296768100372569",
+      "title": "RT @mitsuhiko: \ud83d\udc80 https://t.co/V226HRBxGR",
+      "summary": "RT @mitsuhiko: \ud83d\udc80 https://t.co/V226HRBxGR",
+      "content": "RT @mitsuhiko: \ud83d\udc80 https://t.co/V226HRBxGR",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-22T15:49:47Z",
+      "fetched_at": "2026-10-22T22:07:44.533106Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f0c916952ccf3760",
+      "url": "https://x.com/simonw/status/2113293471943721247",
+      "title": "RT @fiveoutofnine: So basically, today PHP got two critical bugs that let anyone run code on your se...",
+      "summary": "RT @fiveoutofnine: So basically, today PHP got two critical bugs that let anyone run code on your server without even logging in, which is\u2026",
+      "content": "RT @fiveoutofnine: So basically, today PHP got two critical bugs that let anyone run code on your server without even logging in, which is\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-22T15:36:41Z",
+      "fetched_at": "2026-10-22T22:07:35.027250Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "09f727afa57ce2b8",
+      "url": "https://x.com/simonw/status/2113292789287112998",
+      "title": "RT @mitsuhiko: As fun as AI is, we built so much bad software over the last 30 years, and now the un...",
+      "summary": "RT @mitsuhiko: As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins.",
+      "content": "RT @mitsuhiko: As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins.",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-22T15:33:58Z",
+      "fetched_at": "2026-10-22T22:07:35.027280Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "da8c5003b3a7a1a1",
+      "url": "https://x.com/GeminiApp/status/2113290464623493373",
+      "title": "How to go from prompt to web app to working site fast, right from Gemini:",
+      "summary": "How to go from prompt to web app to working site fast, right from Gemini:",
+      "content": "How to go from prompt to web app to working site fast, right from Gemini:",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-22T15:24:44Z",
+      "fetched_at": "2026-10-22T22:07:39.579197Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "01326b44bda0af98",
+      "url": "https://x.com/AnthropicAI/status/2110846112152105136",
+      "title": "Working out how best to use AI in mathematics research\u2014and in science more generally\u2014will take time,...",
+      "summary": "Working out how best to use AI in mathematics research\u2014and in science more generally\u2014will take time, effort, and resources. We\u2019re eager to support mathematicians as they drive scientific progress and define the future of their field.\n\nWe\u2019ve committed $5 million of funding,",
+      "content": "Working out how best to use AI in mathematics research\u2014and in science more generally\u2014will take time, effort, and resources. We\u2019re eager to support mathematicians as they drive scientific progress and define the future of their field.\n\nWe\u2019ve committed $5 million of funding,",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-15T21:31:45Z",
+      "fetched_at": "2026-10-16T07:34:55.939659Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "02a2f935b960605f",
+      "url": "https://x.com/dani_avila7/status/2110835233889440156",
+      "title": "This website is really good https://t.co/vUivyBJQwR\n\nJust enter your domain and see how ready your w...",
+      "summary": "This website is really good https://t.co/vUivyBJQwR\n\nJust enter your domain and see how ready your website is for AI agents\n\nAfter the audit, simply copy the generated prompt and send it straight to Claude Code to improve your site\n\nI thought https://t.co/eQDBth4Nzg was pretty https://t.co/wt37MK2GiW",
+      "content": "This website is really good https://t.co/vUivyBJQwR\n\nJust enter your domain and see how ready your website is for AI agents\n\nAfter the audit, simply copy the generated prompt and send it straight to Claude Code to improve your site\n\nI thought https://t.co/eQDBth4Nzg was pretty https://t.co/wt37MK2GiW",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T20:48:31Z",
+      "fetched_at": "2026-10-16T07:34:49.987294Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab6bdcd984a8fb82",
+      "url": "https://x.com/dani_avila7/status/2110800543191101764",
+      "title": "Wow\u2026 didn\u2019t see this coming! Muse Spark is open-weight\n\nGreat move @Meta! \n\nhttps://t.co/as7MQVJ5Iz",
+      "summary": "Wow\u2026 didn\u2019t see this coming! Muse Spark is open-weight\n\nGreat move @Meta! \n\nhttps://t.co/as7MQVJ5Iz",
+      "content": "Wow\u2026 didn\u2019t see this coming! Muse Spark is open-weight\n\nGreat move @Meta! \n\nhttps://t.co/as7MQVJ5Iz",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T18:30:40Z",
+      "fetched_at": "2026-10-16T07:34:49.987349Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9357cd5aca018fab",
+      "url": "https://x.com/OpenAI/status/2110797830361436604",
+      "title": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in Ch...",
+      "summary": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots, with new voices in French, German, Hindi, Mexican Spanish, Korean, and Japanese.\n\nRolling out today to all users. Coming soon to the API. https://t.co/L6K8ZUC1xm",
+      "content": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots, with new voices in French, German, Hindi, Mexican Spanish, Korean, and Japanese.\n\nRolling out today to all users. Coming soon to the API. https://t.co/L6K8ZUC1xm",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-15T18:19:54Z",
+      "fetched_at": "2026-10-16T07:34:54.001134Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "979ac74437bc0489",
+      "url": "https://x.com/steipete/status/2110795475075084471",
+      "title": "crabbox is underrated",
+      "summary": "crabbox is underrated",
+      "content": "crabbox is underrated",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-15T18:10:32Z",
+      "fetched_at": "2026-10-16T07:34:57.124417Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6fad060318842c84",
+      "url": "https://x.com/dani_avila7/status/2110794074760622548",
+      "title": "Now that sessions run in the cloud, can I delete vm_bundles (10 GB) or does Claude Desktop still nee...",
+      "summary": "Now that sessions run in the cloud, can I delete vm_bundles (10 GB) or does Claude Desktop still need it? \ud83d\udc40\n\n@trq212 @amorriscode https://t.co/wpPBEV3vwY",
+      "content": "Now that sessions run in the cloud, can I delete vm_bundles (10 GB) or does Claude Desktop still need it? \ud83d\udc40\n\n@trq212 @amorriscode https://t.co/wpPBEV3vwY",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T18:04:58Z",
+      "fetched_at": "2026-10-16T07:34:49.987401Z",
       "score": null,
       "score_reason": "",
       "tier": "",
