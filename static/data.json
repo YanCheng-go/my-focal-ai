@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-23T07:34:01.833780+00:00",
+  "exported_at": "2026-10-23T10:21:33.389093+00:00",
   "period_hours": 168,
-  "total": 2910,
+  "total": 2909,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38532,25 +38532,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-10-16T13:21:43Z",
       "fetched_at": "2026-10-16T18:04:01.341044Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7af2cf43ceecdac4",
-      "url": "https://www.youtube.com/watch?v=0FBdWvkgNQE",
-      "title": "Decision models take off & Anthropic bans cruelty to Claude",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content  \u2192 https://ibm.biz/~ryIAcW59Q\n\nThis week on Mixture of Experts, host David Zax is joined by Kaoutar El Maghraoui, Nick Gallagher, and Volkmar Uhlig. First, Microsoft, OpenAI, Perplexity, and Cloudflare follow TypeSafe\u2019s Jev in building decision models, a new category of AI built to make fast, scored judgments. The panel debates whether these models are truly new or a more efficient application of existing technology, and whether better-calibrated confidence scores can help address the overconfidence problem in LLMs. Next, a new study finds that teams of AI agents can cost two to five times more than a single agent without consistently delivering better results. \n\nThe panel discusses when multiple agents are worth the added cost and complexity. Finally, Anthropic updates its usage policy to prohibit \u201csustained and needless abusive or cruel behavior\u201d toward its models, raising a bigger question: Is this about protecting AI, shaping human behavior, or something else entirely? The panel considers the ethical implications and whether the policy could also be a marketing play.\n\nAll that and more on Mixture of Experts.\n\n00:00 \u2013 Intro\n01:17 \u2013 Inside the decision model boom\n10:54 \u2013 When are agent teams worth the cost?\n23:39 \u2013 Anthropic's new usage policy\n \n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~W1CSQqiNa\n#anthropic #claude #decisionmodels\n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-16T10:00:34Z",
-      "fetched_at": "2026-10-16T13:15:49.103176Z",
       "score": null,
       "score_reason": "",
       "tier": "",
