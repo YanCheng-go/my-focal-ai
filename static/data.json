@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-23T00:41:15.424075+00:00",
+  "exported_at": "2026-10-23T01:11:35.107813+00:00",
   "period_hours": 168,
-  "total": 2910,
+  "total": 2921,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -63202,6 +63202,228 @@
       "author": "geminiapp",
       "published_at": "2026-10-22T15:24:44Z",
       "fetched_at": "2026-10-22T22:07:39.579197Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "138c6d5312c5f762",
+      "url": "https://x.com/dani_avila7/status/2113436786462544163",
+      "title": "Almost 33K \u2b50\ufe0f on GitHub!\n\nThanks to the entire community for continuing to create, share, and downlo...",
+      "summary": "Almost 33K \u2b50\ufe0f on GitHub!\n\nThanks to the entire community for continuing to create, share, and download templates for Claude Code\n\nWe\u2019re also getting close to 2 million downloads!\n\nHere\u2019s the repo if you want to drop a star:\nhttps://t.co/cmN4hXRgWC https://t.co/xck12pjOfS",
+      "content": "Almost 33K \u2b50\ufe0f on GitHub!\n\nThanks to the entire community for continuing to create, share, and download templates for Claude Code\n\nWe\u2019re also getting close to 2 million downloads!\n\nHere\u2019s the repo if you want to drop a star:\nhttps://t.co/cmN4hXRgWC https://t.co/xck12pjOfS",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-23T01:06:10Z",
+      "fetched_at": "2026-10-23T01:11:25.718779Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7b13206dabcb2daa",
+      "url": "https://x.com/steipete/status/2113416136473874873",
+      "title": "RT @RhysSullivan: somehow signing in to chase.\u200bcom on a muse browser has become 'endangering the ent...",
+      "summary": "RT @RhysSullivan: somehow signing in to chase.\u200bcom on a muse browser has become 'endangering the entire global financial system'\n\nthe plot\u2026",
+      "content": "RT @RhysSullivan: somehow signing in to chase.\u200bcom on a muse browser has become 'endangering the entire global financial system'\n\nthe plot\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-22T23:44:06Z",
+      "fetched_at": "2026-10-23T01:11:33.154390Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c0965f35d95b7a2f",
+      "url": "https://x.com/steipete/status/2113413979771228283",
+      "title": "RT @samjarman: https://t.co/hjdF0dXLhl",
+      "summary": "RT @samjarman: https://t.co/hjdF0dXLhl",
+      "content": "RT @samjarman: https://t.co/hjdF0dXLhl",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-22T23:35:32Z",
+      "fetched_at": "2026-10-23T01:11:33.154439Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f4bb33792fb59ed6",
+      "url": "https://x.com/GeminiApp/status/2110868185100734720",
+      "title": "RT @antigravity: We\u2019re rolling out Gemini 4 Argon in Antigravity to paid Google AI Pro subscribers t...",
+      "summary": "RT @antigravity: We\u2019re rolling out Gemini 4 Argon in Antigravity to paid Google AI Pro subscribers today. Demand has been incredible and we\u2026",
+      "content": "RT @antigravity: We\u2019re rolling out Gemini 4 Argon in Antigravity to paid Google AI Pro subscribers today. Demand has been incredible and we\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-15T22:59:28Z",
+      "fetched_at": "2026-10-16T07:34:53.003709Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "92be2b57dc40d6cc",
+      "url": "https://x.com/dani_avila7/status/2110864691639513578",
+      "title": "Claude Code lets you export your entire session with /export file_name\n\nThis creates a plain text fi...",
+      "summary": "Claude Code lets you export your entire session with /export file_name\n\nThis creates a plain text file containing your session history\n\nYou can use it as context for another agent to continue your work, or analyze it to create custom skills that improve your Claude Code workflow https://t.co/cMZG0J01s9",
+      "content": "Claude Code lets you export your entire session with /export file_name\n\nThis creates a plain text file containing your session history\n\nYou can use it as context for another agent to continue your work, or analyze it to create custom skills that improve your Claude Code workflow https://t.co/cMZG0J01s9",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T22:45:35Z",
+      "fetched_at": "2026-10-16T07:34:49.987235Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "01326b44bda0af98",
+      "url": "https://x.com/AnthropicAI/status/2110846112152105136",
+      "title": "Working out how best to use AI in mathematics research\u2014and in science more generally\u2014will take time,...",
+      "summary": "Working out how best to use AI in mathematics research\u2014and in science more generally\u2014will take time, effort, and resources. We\u2019re eager to support mathematicians as they drive scientific progress and define the future of their field.\n\nWe\u2019ve committed $5 million of funding,",
+      "content": "Working out how best to use AI in mathematics research\u2014and in science more generally\u2014will take time, effort, and resources. We\u2019re eager to support mathematicians as they drive scientific progress and define the future of their field.\n\nWe\u2019ve committed $5 million of funding,",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-15T21:31:45Z",
+      "fetched_at": "2026-10-16T07:34:55.939659Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "02a2f935b960605f",
+      "url": "https://x.com/dani_avila7/status/2110835233889440156",
+      "title": "This website is really good https://t.co/vUivyBJQwR\n\nJust enter your domain and see how ready your w...",
+      "summary": "This website is really good https://t.co/vUivyBJQwR\n\nJust enter your domain and see how ready your website is for AI agents\n\nAfter the audit, simply copy the generated prompt and send it straight to Claude Code to improve your site\n\nI thought https://t.co/eQDBth4Nzg was pretty https://t.co/wt37MK2GiW",
+      "content": "This website is really good https://t.co/vUivyBJQwR\n\nJust enter your domain and see how ready your website is for AI agents\n\nAfter the audit, simply copy the generated prompt and send it straight to Claude Code to improve your site\n\nI thought https://t.co/eQDBth4Nzg was pretty https://t.co/wt37MK2GiW",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T20:48:31Z",
+      "fetched_at": "2026-10-16T07:34:49.987294Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ab6bdcd984a8fb82",
+      "url": "https://x.com/dani_avila7/status/2110800543191101764",
+      "title": "Wow\u2026 didn\u2019t see this coming! Muse Spark is open-weight\n\nGreat move @Meta! \n\nhttps://t.co/as7MQVJ5Iz",
+      "summary": "Wow\u2026 didn\u2019t see this coming! Muse Spark is open-weight\n\nGreat move @Meta! \n\nhttps://t.co/as7MQVJ5Iz",
+      "content": "Wow\u2026 didn\u2019t see this coming! Muse Spark is open-weight\n\nGreat move @Meta! \n\nhttps://t.co/as7MQVJ5Iz",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T18:30:40Z",
+      "fetched_at": "2026-10-16T07:34:49.987349Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9357cd5aca018fab",
+      "url": "https://x.com/OpenAI/status/2110797830361436604",
+      "title": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in Ch...",
+      "summary": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots, with new voices in French, German, Hindi, Mexican Spanish, Korean, and Japanese.\n\nRolling out today to all users. Coming soon to the API. https://t.co/L6K8ZUC1xm",
+      "content": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots, with new voices in French, German, Hindi, Mexican Spanish, Korean, and Japanese.\n\nRolling out today to all users. Coming soon to the API. https://t.co/L6K8ZUC1xm",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-15T18:19:54Z",
+      "fetched_at": "2026-10-16T07:34:54.001134Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "979ac74437bc0489",
+      "url": "https://x.com/steipete/status/2110795475075084471",
+      "title": "crabbox is underrated",
+      "summary": "crabbox is underrated",
+      "content": "crabbox is underrated",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-15T18:10:32Z",
+      "fetched_at": "2026-10-16T07:34:57.124417Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6fad060318842c84",
+      "url": "https://x.com/dani_avila7/status/2110794074760622548",
+      "title": "Now that sessions run in the cloud, can I delete vm_bundles (10 GB) or does Claude Desktop still nee...",
+      "summary": "Now that sessions run in the cloud, can I delete vm_bundles (10 GB) or does Claude Desktop still need it? \ud83d\udc40\n\n@trq212 @amorriscode https://t.co/wpPBEV3vwY",
+      "content": "Now that sessions run in the cloud, can I delete vm_bundles (10 GB) or does Claude Desktop still need it? \ud83d\udc40\n\n@trq212 @amorriscode https://t.co/wpPBEV3vwY",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-15T18:04:58Z",
+      "fetched_at": "2026-10-16T07:34:49.987401Z",
       "score": null,
       "score_reason": "",
       "tier": "",
