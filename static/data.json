@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-26T08:23:40.535570+00:00",
+  "exported_at": "2026-10-26T10:24:36.552758+00:00",
   "period_hours": 168,
-  "total": 2913,
+  "total": 2912,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28247,26 +28247,6 @@
       "author": "IBM Technology",
       "published_at": "2026-10-19T11:00:06Z",
       "fetched_at": "2026-10-19T13:18:18.007096Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bcc2dd45bdc682d4",
-      "url": "https://www.youtube.com/watch?v=J7n3WJnFTto",
-      "title": "Why Buying Companies Beats Selling Them AI \u2014 Prathik Naidu, Long Lake",
-      "summary": "Deploying AI into real businesses is hard: org charts are messy, trust takes decades, and service firms don't scale like software. Prathik Naidu, founding partner at Long Lake, explains their strategy: acquire established service businesses, then transform them with AI from the inside. He covers how they choose companies and what changes once they own them, drawing on 40 businesses across residential services, architecture, HR and more.\n\nChapters:\n- 00:00 Intro\n- 02:15 Why deploying AI into businesses is hard\n- 06:27 Why trust and brand win\n- 10:41 Software vs service economics\n- 12:42 The Long Lake model\n- 14:50 Choosing what to buy\n- 16:53 Results\n\nPrathik Naidu \u2014 Long Lake\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-19T09:00:32Z",
-      "fetched_at": "2026-10-19T13:18:17.922574Z",
       "score": null,
       "score_reason": "",
       "tier": "",
