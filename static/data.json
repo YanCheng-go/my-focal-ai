@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-27T14:32:36.984148+00:00",
+  "exported_at": "2026-10-27T16:38:43.258547+00:00",
   "period_hours": 168,
-  "total": 2814,
+  "total": 2851,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -33690,25 +33690,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "7ff793734a91809d",
-      "url": "https://www.youtube.com/watch?v=_yO_Q7qo0HQ",
-      "title": "The Problem with Jev: Can You Trust AI Decisions?",
-      "summary": "Learn more about New Frontier AI Models here \u2192 https://ibm.biz/~QV9RAqelj\n\nA confident AI decision isn't necessarily a trustworthy one. Jeff Crume examines Jev through a cybersecurity lens, from attack surfaces and poisoned inputs to observability and verification. Learn why AI decisions need evidence, auditability, and human oversight.\n\n 00:00 \u2013 Question Whether AI Confidence Can Be Trusted\n 00:26 \u2013 Understand the Problem with Jev\n 01:47 \u2013 Compare Jev Decisions with LLM Outputs\n 02:48 \u2013 Separate AI Confidence from Evidence\n 03:37 \u2013 See How Jev Changes the AI Attack Surface\n 05:54 \u2013 Build Observability Around AI Decisions\n 07:00 \u2013 Break AI Decisions Into Verifiable Steps\n 08:30 \u2013 Understand Why AI Predictions Are Hard to Verify\n 10:38 \u2013 Secure Jev with Independent Controls\n 11:29 \u2013 Verify AI Decisions Before You Trust Them\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~hldgvLLwI\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aisecurity #cybersecurity #aiobservability #aitrust \n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@ibmdeveloperadvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-20T16:00:19Z",
-      "fetched_at": "2026-10-20T17:08:29.483892Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c2ed162a157709f5",
       "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
       "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
@@ -33746,27 +33727,6 @@
       "author": "Ahmed Mehdi Inane, Mahdi Haghifam, Gintare Karolina Dziugaite, Ioannis Mitliagkas",
       "published_at": "2026-10-23T04:00:00Z",
       "fetched_at": "2026-10-23T07:33:39.863056Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dbf29db9aa82f21e",
-      "url": "https://www.youtube.com/watch?v=pSBhRF6j-Zc",
-      "title": "Stanford AA274A Principles of Robotic Autonomy | Autumn 2019 | Parametric Filtering",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: https://online.stanford.edu/graduate-education\n\nLecture 15 \u2014 Parametric Filtering (KF, EKF, UKF)\n\nNote: This lecture was recorded as part of the 2019 edition of the course. Course content, structure, assignments, and other materials may have changed since this recording. The course links below point to the most recent edition and may therefore differ from what is presented in the video.\n\nRead the companion textbook, Principles of Robot Autonomy, free online: https://porabook.com\n \nFollow along with the latest course schedule and syllabus: https://stanfordasl.github.io/PoRA-I\n \nSpeaker: Prof. Marco Pavone\n \nDr. Marco Pavone is an Associate Professor of Aeronautics and Astronautics at Stanford University and a Senior Director of Autonomous Vehicle Research at NVIDIA. Prior to joining Stanford, he was a Research Technologist in the Robotics Section at NASA\u2019s Jet Propulsion Laboratory. Dr. Pavone received his Ph.D. in Aeronautics and Astronautics from the Massachusetts Institute of Technology in 2010. His research focuses on the analysis, design, and control of autonomous systems, with particular emphasis on self-driving cars, autonomous aerospace vehicles, and future mobility systems. He has been recognized with numerous awards, including the Presidential Early Career Award for Scientists and Engineers from President Barack Obama, the Office of Naval Research Young Investigator Award, the NSF CAREER Award, the NASA Early Career Faculty Award, the IEEE Kiyo Tomiyasu Award, the CSS Award for Technical Excellence in Aerospace Control, and the Early-Career Spotlight Award from the Robotics Science and Systems Foundation.\n \n Full playlist: https://www.youtube.com/playlist?list=PLR9iNyexfIkk\n \n #StanfordOnline #RobotAutonomy #Robotics #PhysicalAI",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-10-20T16:00:14Z",
-      "fetched_at": "2026-10-20T17:08:29.384518Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -49589,91 +49549,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ef73bf2ace8ac671",
-      "url": "https://huggingface.co/blog/allenai/fairstress",
-      "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-20T16:09:19Z",
-      "fetched_at": "2026-10-20T17:08:35.457015Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "252684366be4bd9d",
-      "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-      "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-      "summary": "<div class=\"\"><article class=\"ArticlePage-module-scss-module__EaEYjq__Article\"><header class=\"ArticleHero-module-scss-module__VYxBBq__Header\"><div class=\"ArticleHero-module-scss-module__VYxBBq__Content\"><h1 class=\"ArticleHero-module-scss-module__VYxBBq__Title\">Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust</h1></div><div class=\"ArticleHero-module-scss-module__VYxBBq__Cover\"><div class=\"ArticleHero-module-scss-module__VYxBBq__CoverContainer\"></div></div><div class=\"ArticleHero-module-scss-module__VYxBBq__MetalistContainer\"><ul class=\"ArticleHero-module-scss-module__VYxBBq__Metalist\"><li class=\"ArticleHero-module-scss-module__VYxBBq__Metadata\"><p class=\"text-caption-1\">Published</p><p class=\"text-caption-1\"><time datetime=\"2026-10-21\">Oct 21, 2026</time></p></li><li class=\"ArticleHero-module-scss-module__VYxBBq__Metadata\"><p class=\"text-caption-1\">Category</p><p class=\"text-caption-1\"><a class=\"TopicLink-module-scss-module__wN10Da__link\" href=\"https://www.anthropic.com/news/announcements\">Announcements</a></p></li></ul></div></header><div class=\"ArticlePage-module-scss-module__EaEYjq__ContentWrapper\"><div class=\"Body-module-scss-module__PA4F1q__body\"><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic\u2019s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control.</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">\u201cI am honored to join Anthropic\u2019s Long-Term Benefit Trust and to help the company deliver on its public benefit mission,\u201d said Stubbs. \u201cI use AI tools in my research every day and see what they make possible, and as an educator I have confronted some of the hard questions they raise. As a grandfather, I want to help ensure that AI is developed and deployed for the long-term benefit of humanity.\u201d</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">Stubbs is the Samuel C. Moncher Professor of Physics and of Astronomy at Harvard, where he served as Dean of Science from 2018 to 2024. In 1998, as a member of the High-Z Supernova Search Team, he helped discover the accelerating expansion of the universe, work that later earned the team the Breakthrough Prize in Fundamental Physics. He was also the inaugural project scientist for what is now the Vera C. Rubin Observatory, which started a 10-year survey of the southern sky in June. One of its aims is to study the accelerating expansion he helped discover.</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">More recently, he\u2019s written about how to keep AI-assisted research reproducible when models can give different answers to the same question. He\u2019s a member of JASON, an independent group of scientists who have advised the US government on defense and technology since 1960.</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">\u201cWhen Chris found evidence that the universe was expanding at a rate no one expected, he and his team followed the data even when it went against the prevailing wisdom of the field. As AI starts to transform how science itself is done, Chris\u2019s intellectual honesty, rigor, and commitment to the truth are the values we want shaping the future of this technology, and I\u2019m grateful he\u2019s bringing his deep expertise to the Trust,\u201d said Daniela Amodei, Co-founder and President of Anthropic.</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">Anthropic is a Public Benefit Corporation, which means we\u2019re structured to balance commercial growth with our public benefit purpose. The Trust exists to help us hold that balance over the long term. It has the authority to appoint a majority of Anthropic\u2019s board, and Trustees advise the board and our leadership on critical decisions, particularly those involving risks and societal impacts of AI.</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">This week we published our first <a href=\"https://www.anthropic.com/public-benefit-charter\">Public Benefit Report</a>, a public account of how we\u2019re working toward our charter and where we\u2019re falling short. The Trustees helped define the five charter pillars it measures us against, and the report closes with their assessment of our progress to date. Subject to stockholder approval, we\u2019ve also committed to setting aside a portion of Anthropic\u2019s shares to <a href=\"https://www.anthropic.com/news/public-benefit-fund\">Anthropic Public Benefit Fund</a>, a new entity with a structure that increases the stake as the company grows.</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">\u201cHelping the world build powerful AI safely and making sure it meaningfully improves people\u2019s lives both depend on a deep understanding of science and on leading with integrity,\u201d added Neil Buddy Shah, Chair of the Long-Term Benefit Trust. \u201cNot only has Chris worked on some of the hardest problems in science, but he has consistently been a high-integrity leader of large, complex, collaborative scientific endeavors across academia, government, and the national laboratories. That will be of great value to the Trust as we support Anthropic in developing AI for the long-term benefit of humanity.\u201d</p><p class=\"Body-module-scss-module__PA4F1q__reading-column post-text\">Stubbs, the Trust\u2019s first physicist, joins Shah, national security expert Richard Fontaine, and former Federal Reserve Chair Ben Bernanke. Trustees are independent of the company\u2019s management and investors.</p></div></div></article></div><!--$--><!--/$-->",
-      "content": "",
-      "source_name": "Anthropic News",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-20T16:00:00Z",
-      "fetched_at": "2026-10-22T04:48:51.768365Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4a79326aef7c9f51",
-      "url": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
-      "title": "Called to serve: Tech, research, and positive impact",
-      "summary": "<p>Lab Director Chris White has worked on research challenges with real-world implications\u2014from new approaches to wartime data analysis to tools for combating human trafficking. He talks to program manager Weishung Liu about the influences that led to the work and more.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/\">Called to serve: Tech, research, and positive impact</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "content": "<figure class=\"wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n\n</div></figure>\n\n\n<div class=\"wp-block-msr-podcast-container my-4\">\n\t\n</div>\n\n\n\n<p class=\"wp-block-paragraph\">In the summer of 2010, postdoc <a href=\"https://www.microsoft.com/en-us/research/people/chwh/?msockid=254de47df4f967cf07e7f346f58f6643\" rel=\"noreferrer noopener\" target=\"_blank\">Chris White</a> worked with a multidisciplinary team at the Defense Advanced Research Projects Agency, or DARPA, to determine if a new approach to data analysis could prevent violence and protect troops during the war in Afghanistan. At the conclusion of the program, the agency asked White to prove the value of his work\u2014on the ground.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">In this episode, Principal Technical Program Manager <a href=\"https://www.microsoft.com/en-us/research/people/weisliu/?msockid=254de47df4f967cf07e7f346f58f6643\" rel=\"noreferrer noopener\" target=\"_blank\">Weishung Liu</a> talks with White, director of Catalyst Lab at Microsoft Research, about his unexpected break from academic research to help lead advanced tech operations in Afghanistan and his later decision to again work on tech with immediate, real-world implications: dark-web search tools used to help combat human trafficking. Liu and White explore the influences that led to these experiences plus the important role of problem selection in innovation and remaining hopeful after seeing the darkest parts of humanity.&nbsp;</p>\n\n\n\n<div class=\"wp-block-spacer\" style=\"height: 20px;\"></div>\n\n\n\n<section class=\"wp-block-msr-subscribe-to-podcast subscribe-to-podcast\">\n\t<div class=\"subscribe-to-podcast__inner border-top border-bottom border-width-2\">\n\t\t<h2 class=\"h5 subscribe-to-podcast__heading\">\n\t\t\tSubscribe to the <a href=\"https://www.microsoft.com/en-us/research/podcast\">Microsoft Research Podcast</a>:\t\t</h2>\n\t\t<ul class=\"subscribe-to-podcast__list list-unstyled\">\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://itunes.apple.com/us/podcast/microsoft-research-a-podcast/id1318021537?mt=2\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"black\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">  <path d=\"M7.12 0c-3.937-0.011-7.131 3.183-7.12 7.12v17.76c-0.011 3.937 3.183 7.131 7.12 7.12h17.76c3.937 0.011 7.131-3.183 7.12-7.12v-17.76c0.011-3.937-3.183-7.131-7.12-7.12zM15.817 3.421c3.115 0 5.932 1.204 8.079 3.453 1.631 1.693 2.547 3.489 3.016 5.855 0.161 0.787 0.161 2.932 0.009 3.817-0.5 2.817-2.041 5.339-4.317 7.063-0.812 0.615-2.797 1.683-3.115 1.683-0.12 0-0.129-0.12-0.077-0.615 0.099-0.792 0.192-0.953 0.64-1.141 0.713-0.296 1.932-1.167 2.677-1.911 1.301-1.303 2.229-2.932 2.677-4.719 0.281-1.1 0.244-3.543-0.063-4.672-0.969-3.595-3.907-6.385-7.5-7.136-1.041-0.213-2.943-0.213-4 0-3.636 0.751-6.647 3.683-7.563 7.371-0.245 1.004-0.245 3.448 0 4.448 0.609 2.443 2.188 4.681 4.255 6.015 0.407 0.271 0.896 0.547 1.1 0.631 0.447 0.192 0.547 0.355 0.629 1.14 0.052 0.485 0.041 0.62-0.072 0.62-0.073 0-0.62-0.235-1.199-0.511l-0.052-0.041c-3.297-1.62-5.407-4.364-6.177-8.016-0.187-0.943-0.224-3.187-0.036-4.052 0.479-2.323 1.396-4.135 2.921-5.739 2.199-2.319 5.027-3.543 8.172-3.543zM16 7.172c0.541 0.005 1.068 0.052 1.473 0.14 3.715 0.828 6.344 4.543 5.833 8.229-0.203 1.489-0.713 2.709-1.619 3.844-0.448 0.573-1.537 1.532-1.729 1.532-0.032 0-0.063-0.365-0.063-0.803v-0.808l0.552-0.661c2.093-2.505 1.943-6.005-0.339-8.296-0.885-0.896-1.912-1.423-3.235-1.661-0.853-0.161-1.031-0.161-1.927-0.011-1.364 0.219-2.417 0.744-3.355 1.672-2.291 2.271-2.443 5.791-0.348 8.296l0.552 0.661v0.813c0 0.448-0.037 0.807-0.084 0.807-0.036 0-0.349-0.213-0.683-0.479l-0.047-0.016c-1.109-0.885-2.088-2.453-2.495-3.995-0.244-0.932-0.244-2.697 0.011-3.625 0.672-2.505 2.521-4.448 5.079-5.359 0.547-0.193 1.509-0.297 2.416-0.281zM15.823 11.156c0.417 0 0.828 0.084 1.131 0.24 0.645 0.339 1.183 0.989 1.385 1.677 0.62 2.104-1.609 3.948-3.631 3.005h-0.015c-0.953-0.443-1.464-1.276-1.475-2.36 0-0.979 0.541-1.828 1.484-2.328 0.297-0.156 0.709-0.235 1.125-0.235zM15.812 17.464c1.319-0.005 2.271 0.463 2.625 1.291 0.265 0.62 0.167 2.573-0.292 5.735-0.307 2.208-0.479 2.765-0.905 3.141-0.589 0.52-1.417 0.667-2.209 0.385h-0.004c-0.953-0.344-1.157-0.808-1.553-3.527-0.452-3.161-0.552-5.115-0.285-5.735 0.348-0.823 1.296-1.285 2.624-1.291z\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Apple Podcasts</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://subscribebyemail.com/www.blubrry.com/feeds/microsoftresearch.xml\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.4 6a2.392 2.392 0 00-2.372 2.119L16 15.6l11.972-7.481A2.392 2.392 0 0025.6 6H6.4zM4 10.502V22.8a2.4 2.4 0 002.4 2.4h19.2a2.4 2.4 0 002.4-2.4V10.502l-11.365 7.102a1.2 1.2 0 01-1.27 0L4 10.502z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Email</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://subscribeonandroid.com/www.blubrry.com/feeds/microsoftresearch.xml\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.414 4.02c-.062.012-.126.023-.18.06a.489.489 0 00-.12.675L13.149 6.3c-1.6.847-2.792 2.255-3.18 3.944h13.257c-.388-1.69-1.58-3.097-3.179-3.944l1.035-1.545a.489.489 0 00-.12-.675.492.492 0 00-.675.135l-1.14 1.68a7.423 7.423 0 00-2.55-.45c-.899 0-1.758.161-2.549.45l-1.14-1.68a.482.482 0 00-.494-.195zm1.545 3.824a.72.72 0 110 1.44.72.72 0 010-1.44zm5.278 0a.719.719 0 110 1.44.719.719 0 110-1.44zM8.44 11.204A1.44 1.44 0 007 12.644v6.718c0 .795.645 1.44 1.44 1.44.168 0 .33-.036.48-.09v-9.418a1.406 1.406 0 00-.48-.09zm1.44 0V21.76c0 .793.646 1.44 1.44 1.44h10.557c.793 0 1.44-.647 1.44-1.44V11.204H9.878zm14.876 0c-.169 0-.33.035-.48.09v9.418c.15.052.311.09.48.09a1.44 1.44 0 001.44-1.44v-6.719a1.44 1.44 0 00-1.44-1.44zM11.8 24.16v1.92a1.92 1.92 0 003.84 0v-1.92h-3.84zm5.759 0v1.92a1.92 1.92 0 003.84 0v-1.92h-3.84z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Android</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://open.spotify.com/show/4ndjUXyL0hH1FXHgwIiTWU\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16 4C9.383 4 4 9.383 4 16s5.383 12 12 12 12-5.383 12-12S22.617 4 16 4zm5.08 17.394a.781.781 0 01-1.086.217c-1.29-.86-3.477-1.434-5.303-1.434-1.937.002-3.389.477-3.403.482a.782.782 0 11-.494-1.484c.068-.023 1.71-.56 3.897-.562 1.826 0 4.365.492 6.171 1.696.36.24.457.725.217 1.085zm1.56-3.202a.895.895 0 01-1.234.286c-2.338-1.457-4.742-1.766-6.812-1.747-2.338.02-4.207.466-4.239.476a.895.895 0 11-.488-1.723c.145-.041 2.01-.5 4.564-.521 2.329-.02 5.23.318 7.923 1.995.419.26.547.814.286 1.234zm1.556-3.745a1.043 1.043 0 01-1.428.371c-2.725-1.6-6.039-1.94-8.339-1.942h-.033c-2.781 0-4.923.489-4.944.494a1.044 1.044 0 01-.474-2.031c.096-.023 2.385-.55 5.418-.55h.036c2.558.004 6.264.393 9.393 2.23.497.292.663.931.371 1.428z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Spotify</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://www.blubrry.com/feeds/microsoftresearch.xml\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.667 4a2.676 2.676 0 00-2.612 2.13v.003c-.036.172-.055.35-.055.534v18.666c0 .183.019.362.055.534v.003a2.676 2.676 0 002.076 2.075h.002c.172.036.35.055.534.055h18.666A2.676 2.676 0 0028 25.333V6.667a2.676 2.676 0 00-2.13-2.612h-.003A2.623 2.623 0 0025.333 4H6.667zM8 8h1.333C17.42 8 24 14.58 24 22.667V24h-2.667v-1.333c0-6.618-5.382-12-12-12H8V8zm0 5.333h1.333c5.146 0 9.334 4.188 9.334 9.334V24H16v-1.333A6.674 6.674 0 009.333 16H8v-2.667zM10 20a2 2 0 11-.001 4.001A2 2 0 0110 20z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">RSS Feed</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t</div>\n</section>\n\n\n<div class=\"wp-block-msr-show-more\">\n\t<div class=\"bg-neutral-100 p-5\">\n\t\t<div class=\"show-more-show-less\">\n\t\t\t<div>\n\t\t\t\t<span>\n\t\t\t\t\t\n\n<h2 class=\"wp-block-heading\" id=\"transcript\">Transcript&nbsp;</h2>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC]&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>CHRIS WHITE:</strong> I have seen a lot of really bad humanity. You know, I&#8217;ve seen terrorism and trafficking and sophisticated organized crime, you know, designed to take things from people. Designed to hurt people. And I just know that I can do something about it, you know, and that I have and that we can. And so I think that that light, you know, the light of making a difference, you know, allows me to hold and handle, you know, the dark parts.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">[THEME MUSIC]&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>STANDARD INTRODUCTION:</strong> This is the <em>Microsoft Research Podcast</em>, where Microsoft researchers\u2014driving advancement through fundamental science and technology research\u2014explore the who, how, and what\u2019s next in computing and AI.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC ENDS]&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WEISHUNG LIU: </strong>Hi, and welcome. I&#8217;m Weishung Liu, a principal technical program manager here at Microsoft Research, and today I&#8217;m talking to Dr. Christopher White, who leads Microsoft Research&#8217;s <a href=\"https://www.microsoft.com/en-us/research/lab/catalyst-lab/?msockid=07e8b49d34ec68da07d8a3e635de6942\" rel=\"noreferrer noopener\" target=\"_blank\">Catalyst Lab</a>.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">Chris has one of those careers that sounds almost made up: a Harvard postdoc, on-the-ground advanced tech lead during the war in Afghanistan, a DARPA program manager, a dark web search pioneer, and a public-good technologist. And his <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.popsci.com/man-who-lit-dark-web/\" rel=\"noopener noreferrer\" target=\"_blank\">work has been featured in <em>Popular Science</em><span class=\"sr-only\"> (opens in new tab)</span></a> as well as recognized with honors, including the <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.state.gov/presidential-award-for-extraordinary-efforts-to-combat-trafficking-in-persons/\" rel=\"noopener noreferrer\" target=\"_blank\">2016 Presidential Award for Extraordinary Efforts to Combat Trafficking in Persons<span class=\"sr-only\"> (opens in new tab)</span></a>.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">But what I&#8217;m most interested in today is the person behind that r\u00e9sum\u00e9. How someone who has seen some of the worst as part of his work still comes to the office with a smile and a commitment to building tools that make the world better.&nbsp;</p>\n\n\n\n\t\t\t\t</span>\n\t\t\t\t<span class=\"show-more-show-less-toggleable-content\" id=\"show-more-show-less-toggle-1\">\n\t\t\t\t\t\n\n\n\n<p class=\"wp-block-paragraph\">Chris, thanks for joining me.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Thanks for having me, Wei. Nice to see you.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Yeah, good to see you, too. And so let&#8217;s get started. So I&#8217;ve known you for, I think, maybe around five or maybe six years, and now I work with you in Catalyst Lab. I love your story, and when I tell people about you, I say that you lead the newly formed Cat Lab, or Catalyst Lab, in Microsoft Research, you were a senior executive at DARPA, and you are married to an incredibly accomplished woman and scholar. And I personally think that your life story would make a very watchable Hollywood film. So when you tell your own story, though, where do <em>you</em> start?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Well, you start from where you are. And where I am today is leading research at Microsoft during a period of great fear and hope about changing technology and society.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> But, like, that&#8217;s now. There&#8217;s clearly lots of time from now into before, you know, the before times. So, like, tell me a little bit about the before times. Like, where were you at\u2014I think you grew up in Oklahoma maybe. Tell me about that. Tell me about Chris White, the child.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Well, I was nerdy. I was a nerdy Eagle Scout. [LAUGHTER] I liked to build my own computers and have local area network [LAN] parties with my friends. But I also really liked being outside. I liked being in nature and camping and rock climbing. Those were all important to me.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK, you mentioned LAN parties. Tell me about \u2026 what did we play with our friends?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Well, you know, we played everything. I preferred playing sports games, but I lost a lot of the other ones.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> [LAUGHS] Wait, so you played like LAN party sports games, like, in basements? Like, with your \u2026 were we all in the same \u2026 ?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah. Attics. It was attics. Yeah, not basements. [LAUGHTER] Mm-hmm. Yeah. Everybody had to bring their own computer or bring their own Ethernet cable. And the more that you had your own machine that was higher powered, the better you were going to play.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So did you have the best machine?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> I had the best machine. I <em>built</em> the best machine. Until someone built a better machine. But it was the best for a while.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And I had a budget for it. And my family didn&#8217;t understand that the budget also included two giant speakers, like the size of a computer tower, like subwoofer speakers. They didn&#8217;t know that was part of the computer building process. But it turns out that excellent audio-visual is a critical part of a well-functioning machine.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> I love it. But, OK, we&#8217;re going to focus a little bit \u2026 <em>continue</em> focusing on childhood. So you mentioned nerdy kid, which means\u2014I&#8217;m going to generalize here\u2014debate team or math competition team or chess team?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Oh, it was the debate team. Yeah. Debate was a really wonderful activity. It taught me how to understand many sides of an issue and taught me how to think about evidence and research in that way.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So, Chris, take me back again. Like, we&#8217;re talking a little bit about Oklahoma, and, you know, at some point, you chose researcher. Like, I\u2014for example\u2014when I was a kid, I was convinced I would be an architect. I am not an architect as you can see. But did you always think you were going to be a researcher? Was there an epiphany there? Like \u2026 or was it always kind of like a slow hunch that you were going to pursue research as a career?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah, I kind of always felt like it. You know, as I was applying for school, those were the kinds of jobs I was interested in. You know, the kinds of things that you do, you know, once you finish degrees that have research in them. Those were the people, when I visited their work, I was inspired by. The people that were discovering, you know, that were inventing, that were innovating, that were \u2026 they&#8217;re pushing the boundaries that were kind of in that unknown, you know, space and making sense of it.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And so I&#8217;ve always had that curiosity, you know, and that approach to discovery. And so as I increased my education, it just changed the nature of what research meant and the ways in which I imagined that process evolving.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Was a doctorate always on the cards then? Or did that come, like, as you were in college and then gradually learned and thought, you know, I could keep going?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah, you know, I didn&#8217;t know about doctorates really when I went to college. I wasn&#8217;t as familiar with higher education. And so I knew that I wanted, you know, advanced degrees. And I knew that I wanted more than was being taught in the undergraduate level. But I didn&#8217;t know, you know, for example, that when you apply to PhD programs, that often you get paid to go. You know, you get admitted and you get<strong> </strong>a stipend.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">You know, I was familiar with law and medicine and that you take out loans and you have to do it this way. And so for me, it was a surprise to know that I could apply to PhD programs directly from college. And from then, I just really was excited, you know, that I could explore different universities and different areas of focus and build on, you know, strong technical foundations of math and science and physics.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And it was really amazing mentors that helped me and opened doors and inspired me. You know, mentors at Oklahoma State University, Johns Hopkins, and Harvard, really people that took their time and helped me. I&#8217;m really grateful for my teachers.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So let&#8217;s talk about your first mentor of your life, and I&#8217;m going to assume \u2026 <em>Dad</em>?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah, Dad\u2019s a big influence.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK, Dad&#8217;s a big influence. And so we&#8217;re going to, I&#8217;m going to go down this path. So&nbsp;Catalyst Lab landed a huge commitment from our executive, kind of, leadership team on a project that has been, I think, like a decade in the making. And then \u2026 so we all, I know we all came together on a call. We&#8217;re like, \u201cWow, let&#8217;s debrief. Let&#8217;s talk about it.\u201d Like, oh, energy&#8217;s up. And then at the very end of the meeting, you said, \u201cOK, now I&#8217;m going to go clean some toilets.\u201d&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> [LAUGHS] Mm-hmm. Mm-hmm.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> And I think all of us kind of thought, like, wha-what does that mean? So before we get kind of more into the specifics of mentorship and the, like, follow-on in your career, what\u2014 <em>please tell me</em>\u2014does cleaning toilets have to do with success?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Well, you know, like I said, Dad&#8217;s a big influence, and he taught me so many things, and he taught me about respecting people. And most importantly, he taught me about humility and service. And so his way of making sure I understood that was every time something really good happened to me, he&#8217;d remind me to go clean some toilets and, sort of, embody that. And so I did. I did it last weekend actually. I went to a community event and volunteered to do bathroom clean.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Is this like \u2026 are you \u2026 so in, like, the household chores, are you, like, the bathroom cleaner? Like, is this just always your job when we&#8217;re dividing up chores in the house?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> No, no, no. We trade off, and also we have a complicated household, and so we have a lot of help that also helps with cleaning. And so this is something that I choose to do, especially if I can do it in a community context, because it again reminds me, you know, about humility and about service and of respect for other people and other jobs.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So I think this \u2026 there&#8217;s some Eagle Scout vibes that I&#8217;m getting from here, as well, based on sort of humility and service. What is the Boy Scout badge you are most proud of?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Oh, that&#8217;s really hard. Each badge is something that you earn, including the Eagle Scout badge. And the Eagle Scout badge for me was maybe the most difficult to earn because it requires an Eagle project. And I was really close to my Eagle project. I was, I was \u2026 had it set up and it was ready to go. And it was in this church in downtown Oklahoma City in 1995. And right as I was about to do this project, <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.britannica.com/event/Oklahoma-City-bombing\" rel=\"noopener noreferrer\" target=\"_blank\">the Murrah Building blew up in a terrorist incident<span class=\"sr-only\"> (opens in new tab)</span></a>, \u2026&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Whoa.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> \u2026 and it blew up part of the church. And, therefore, my Eagle project was not realistic, and it was not a priority, and it got shelved. And it took me several years after that to then come back to plan and execute an ambitious Eagle project right before I turned 18. And so that badge, \u2026&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Wow.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> \u2026 you know, completing the project, overcoming significant setbacks, including being a teenager and having other interests, to come through and finish it, I&#8217;m really proud of finishing it.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> That&#8217;s awesome. So you \u2026 so that was, so there were a few years then in between when you ideated, had the idea for the project, and then \u2026 I appreciate the story around resilience because of when you completed the project. Like, what is the biggest takeaway that you took from there? Like what is that big lesson? You turned 18, you finished it, you celebrate. Actually, you know, maybe I&#8217;ll ask you, how did you celebrate?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Oh, with my family. You know, the Boy Scouts is a long process. It&#8217;s many years, many kinds of roles, many kinds of learning, and to finish it\u2014I finished it with another of my fellow scouts that had been together for a long time. And so our families, we had a ceremony, and it was something we could celebrate. And every time I think about it, I think about the things that you keep repeating when you attend the scout things, like the motto, \u201cbeing prepared,\u201d and the, kind of, laws about being respectful and courteous. And those are things that continue to be, you know, principles that influence my priorities and also inspire me and help me in my job.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Before we get to your job then, we&#8217;re going to talk about this interim period where I&#8217;ll just say you chose to go to war and a few other things in between. Let&#8217;s jump to 2010, when you joined DARPA, which is the Defense Advanced Research Projects Agency, within the Department of War. And then, I think, very quickly afterwards you were sent to Afghanistan to help implement a new approach to wartime analysis. And then \u2026 but <em>before</em> that, I think you were a Harvard postdoc, and you had actually mentioned it was a mentor who encouraged you to attend a meeting with DARPA that resulted in this course change.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And so now I&#8217;m super curious, how did this conversation happen where you were, you know, promising Harvard postdoc, which became a mentor going, \u201cHey, there&#8217;s something happening. You should go attend.\u201d Like, what happened there?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah. DARPA invests taxpayer money, and they have <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://hbr.org/2013/10/special-forces-innovation-how-darpa-attacks-problems\" rel=\"noopener noreferrer\" target=\"_blank\">a record of really creating innovations, massive innovations<span class=\"sr-only\"> (opens in new tab)</span></a>. You know, the internet, GPS, stealth, UAVs. And at the time, there was different ways of building programs, and one of the kind of tested ways was to bring together different fields of expertise.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And so we were in wartime in Afghanistan. DARPA was not involved very much. And there was a question: you know, could we bring together social scientists with math people, computer science and defense experts, and together could they help us make sense of what&#8217;s happening in the data? Could that be useful to prevent violence and to protect our soldiers? And it was an experiment because it required all these different areas of expertise coming together\u2014from sensors through analysis through social behavior\u2014and a culture change. And so the summer was a Skunk Works to understand, was there something to contribute?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And at the end of it, they asked me, they said, \u201cWell, you know, do you believe in your work?\u201d And I was like, \u201cYeah.\u201d You know, like, \u201cWell, do you \u2026 can you prove it? You know, can you go see if it can help protect our soldiers and help prevent violence?\u201d And so they asked me to be of service, and I said yeah.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And it was something that I was really unprepared for. I was supposed to go for nine days the first time, and on the third day, I got a battlefield promotion and was put in charge and then ended up staying for 90 days and then went back a few times after that even. And so, you know, our work was towards \u2026 oriented towards protecting, you know, soldiers and toward preventing violence and using AI and advanced technology to do that. And it was a, really, a big opportunity.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So you attended a meeting, you contributed some work, and then, you know, \u201cDo you believe in your work? Prove it.\u201d What was the time frame between, you know, like, showing up at meeting, participating in some of the research before, like, \u201cprove it\u201d? Was it years, or was it months?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> The \u2026 no, no, the \u2026 so the Skunk Works was a summer. It was like, you know, 40 days of, kind of, like focused effort. But at the end of it, I was expecting to go back to Harvard and continue my postdoc. But instead, you know, they sat us down; they said, \u201cLook, you know, we think this can make a difference. You know, do you think so?\u201d And when I said yeah, from then to getting over there was like a week. It was an extremely fast &#8230;&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> What?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> \u2026 turnaround. It was extremely urgent and, you know, unexpected.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK, so, like, how \u2026 so you said, yes, like I believe in my work. They gave you \u2026 they essentially said, OK, then go next week. And how, how does somebody prepare for an experience like that? If you can even prepare.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah, I don&#8217;t know. You know, this was an experiment. You know, <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://ogc.osd.mil/Portals/99/testDugan03012011.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">sending researchers\u2014even having a presence from DARPA\u2014in the war zone,<span class=\"sr-only\"> (opens in new tab)</span></a> it was new. And the idea was there could be a difference made because technology was advancing quickly. And that meant that many of the mechanisms in place for other ways of getting prepared were not available. And there was a bunch of training, like crash courses in training on what to do in certain situations, how things work, you know, how to handle yourself in different ways. But it was \u2026 it was very brief.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And so there wasn&#8217;t a lot of preparation because also we were planning to be there for nine days. But because there was an opportunity to do something good, that extended, and there was a lot of learning on the job and a lot of support in theater, a lot of people really willing to help us because we were helping them.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So, OK, so you talked about lots of people there, lots of people supporting. I&#8217;m not going to focus too much on your time in Afghanistan because that was covered really well in a<em> Popular Science</em> article. But I do have to ask, can you tell me the origin story of the nickname Dr. Spaghetti Man?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> [LAUGHS] Sure. Sure. You know, I&#8217;m a long-time yoga practitioner. You know, 20-plus years. It&#8217;s how I keep myself calibrated. And in Kabul, I was practicing yoga in the gym, and all these people were staring at me. You know, they were staring at me before their \u2026 they had a class; they had, like, a combatives class, a kind of different judo-mixed-martial-arts class.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And, you know, I had a little bit of training, and so after a couple of times, I decided I&#8217;d just join in. And I joined in, and I won a lot. I won a lot of the matches. And one of the matches I won, turns out, it was against the Marine who was guarding the entrance to the building I was working in across the headquarters. And he told everyone. He told everyone, you know, that this, like, lanky spaghetti guy, you know, like, got out of things and beat him, and he did it in such a way that everyone in the building knew. And so I got all this respect, and I got that cool nickname.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Did other folks challenge you as a result of this Marine telling your story?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> I mean, everyone that came to that class was game, you know. And I didn&#8217;t, you know,<strong> </strong>I couldn&#8217;t beat everybody, but I held my own, and that was really surprising to a lot of people. And again, once you establish yourself in different ways, you know, there is a lot of respect and, um, camaraderie.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So, you know, tell me, what did that whole experience teach you about, like, a life lived, and how do those lessons show up in your work today, including the, you know, <em>Spaghetti Man</em> experience?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> You know, the whole thing, it taught me about, you know, service and what it means to serve, and it taught me about the reality of both peace and violence in the world. And that continued to motivate me to make a difference.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> After your time in Afghanistan, you continued on with DARPA as a program manager, and in that role, you developed <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.darpa.mil/research/programs/memex\" rel=\"noopener noreferrer\" target=\"_blank\">Memex<span class=\"sr-only\"> (opens in new tab)</span></a>, which I believe is a set of tools that could be mixed and matched to help uncover some really shady and dark parts of the web, which from what I understand was really hard to do up until that point.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">I think this work also is what helped you \u2026 what you received your 2016 presidential award on. And, you know, like, can you \u2026 how do you explain the Memex project and this dark web work to someone outside tech? And what about this project inspired or appealed to you to even pursue it?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah, well, the inspiration started when I was overseas because I saw the benefit of evidence when it came to stopping bad things from happening and prosecuting them. And coming back to the US, I saw more and more opportunities where collecting evidence at large scale was a really useful mechanism. And so, you know, people think of search engines a lot, and search engines are a great tool for finding something, but when you need to connect the dots, there wasn&#8217;t a great tool that could work at the scale of the web and connect the dots, especially some of the dots being in difficult places that were not very visible.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And so by <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=9QsjkJcUznA&amp;t=1s\" rel=\"noopener noreferrer\" target=\"_blank\">creating a technology that would connect the dots across parts of the internet<span class=\"sr-only\"> (opens in new tab)</span></a>, it allowed the prosecution of these kinds of really awful [trafficking] crimes, and so for example, in New York City, it allowed them to increase their prosecutions by 10 times because it gave them new evidence and different kinds of evidence than they had before, and they could use that in a way to really deal with the issue differently.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK, from what I understand, the dark web is a pretty\u2014<em>ha-ha\u2014</em>dark place, [LAUGHS] and so, like, you&#8217;ve worked in some very dark spaces and close to some very dark uses of the technology. So, like, how again, like, you and I interact a lot, and so it&#8217;s always curious to me, how has that not made you cynical and how do you stay hopeful?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> You know, I think what it&#8217;s done is it&#8217;s really increased my motivation. You know, my motivation to make a contribution. You know, my motivation to stay aware and be realistic. And by being realistic and motivated to address some of these very challenging issues, you know, around violence, around harm, and instead to focus on empowerment and to focus on justice, it gave me something to do.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And so I have seen a lot of really bad humanity, you know. I&#8217;ve seen terrorism and trafficking and sophisticated organized crime, you know, designed to take things from people. Designed to hurt people. And I just know that I can do something about it, you know, and that I have and that we can. And so it&#8217;s really been inspiring to, you know, for example, come to Microsoft, where there is a mission of empowerment and there is that perspective that technology can make a difference. And so I think that light, you know, the light of making a difference, you know, allows me to hold and handle, you know, the dark parts.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> I mean, that&#8217;s a very powerful message, right? Because even with the darkest parts of humanity, there is light, or, you know, you cannot have darkness without light, as well.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">I think there may have been a <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.cbsnews.com/news/darpa-dan-kaufman-internet-security-60-minutes/\" rel=\"noopener noreferrer\" target=\"_blank\"><em>60 Minutes </em>interview<span class=\"sr-only\"> (opens in new tab)</span></a> that included a short snippet of you talking about your work, and you had shared with me that\u2014which, by the way, I cannot find the <em>60 Minutes</em> episode, and I desperately want to. But, you know, I heard perhaps through you, Chris, that that <em>60 Minutes</em> episode actually contributed to you coming to Microsoft maybe or, you know, getting a job at Microsoft, and that made me curious. Like, after some really incredible experiences, after all of that, why did you choose Microsoft?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Oh, it was a \u2026 it was a really good choice. And at the time, I had a lot of options, and I was looking around, and this mix of the mission of the company\u2014this mission of empowering everyone\u2014and the scope of the company, you know, being, you know, IT for the world, you know, platforms and infrastructure for the world, and my confidence in its leader. You know, the CEO was part of my interview process. And, you know, that together gave me, you know, this perspective that I could do something here. You know, that there \u2026 I could start to envision moving from, you know, for example, very high-powered, expensive lasers to table knives. They both cut, and the world needs both of them.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> One of the things that you talk a lot about is problem selection. And I think sometimes that also gets referred to as taste these days. So how do you think about problem selection in Microsoft Research, in Catalyst Lab, given the breadth of what Microsoft does?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Oh, I think it&#8217;s just the most important part of research. You know, it&#8217;s the place where the angle of the whole thing changes, and it allows you to start to imagine a different future, you know, or to work backward from that future that you want to see and see what you can do to contribute to it now. And the amazing thing about Microsoft Research is there&#8217;s tremendous freedom, and so there&#8217;s tremendous creativity in problem selection.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And it&#8217;s the kind of thing where you have that latitude to go from idea to evidence to this potential for growth and thriving and along the way get feedback about value and usability and benefit or policy or adaptability, integration. And so its scope provides so many vehicles for growth and utility of advanced research ideas.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And its mission, you know, allows the focus of those to address absolutely critical problems. You know, problems of, you know, impending security challenges due to AI, problems of advanced, you know, memory and storage; it allows for, you know, personalization automation, just, you know, for example. And I think that this mix of freedom combined with responsibility and mechanisms, you know, to prove out and demonstrate value, that that combination is just really remarkable and it really motivates me to take the opportunity seriously.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So it&#8217;s almost going to be like asking you about your favorite kids now. What are some, what are some accomplishments in Microsoft Research or Catalyst Lab that you are particularly proud of?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Oh, you know, I think that, you know, right now, for example\u2014again, focusing on kind of where we are\u2014I think that we have a real opportunity to contribute something in the cyber defense space. I think our <a href=\"https://www.microsoft.com/en-us/research/blog/project-ire-autonomously-identifies-malware-at-scale/\" rel=\"noreferrer noopener\" target=\"_blank\">work on security and AI and hacking</a>, it&#8217;s really in, you know, based on such a deep expertise and also based on, you know, people with a lot of experience, and I think it&#8217;s growing in need, you know, the <a href=\"https://www.microsoft.com/en-us/research/blog/toward-trusted-sensing-for-the-cloud-introducing-project-freta/\" rel=\"noreferrer noopener\" target=\"_blank\">need to protect our digital infrastructure</a>, the need to deter and interdict people that would like to break systems or cause harm, that&#8217;s really growing right now. And so being able to show up in a way that creates breakthrough that can scale with relevance to address that growing need, it&#8217;s really something that&#8217;s, you know, awesome to me.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And also I think that again kind of extending from the, sort of, Memex conversation, where we&#8217;re trying to connect the dots, you know, these days, <a href=\"https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/\" rel=\"noreferrer noopener\" target=\"_blank\">trying to analyze lots of content as part of being more efficient</a>, as part of being more creative, as part of being more capable, you know, using tools to augment that human taste and creativity and ingenuity, that&#8217;s really never been as powerful as it is before and continues to grow. And so I think making contributions in these areas, you know, where we have state-of-the-art technology and we&#8217;re creating changes in the way systems are getting built and used, to me, it shows that, you know, despite the fast pace of change and despite the extreme competitiveness in the technology sector, that specialized expertise with good problem selection and an environment to grow and get feedback can create the kind of breakthroughs that matter. And so I really like that.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">Maybe to give one more example from the past\u2013\u2013just maybe something emblematic of the group and some of my predecessors\u2013\u2013was this underwater datacenter called <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://natick.research.microsoft.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Project Natick<span class=\"sr-only\"> (opens in new tab)</span></a>, [LAUGHTER] where this experiment, you know, put a datacenter in a submersible on the bottom of the ocean connected to a wind farm, and it tested this design about, could you build something that didn&#8217;t require human intervention? Could it be more efficient with power? Could it be more efficient with heat?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">And the program manager that created that is one of the best I&#8217;ve ever worked with. And it just performed incredibly well as this huge surprise, and it led to us being, you know, named <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.fastcompany.com/90627919/from-ai-powered-mosquito-traps-to-underwater-data-centers-how-microsoft-is-innovating-for-good\" rel=\"noopener noreferrer\" target=\"_blank\">the most innovative company [World Changing Company of the Year] in 2021<span class=\"sr-only\"> (opens in new tab)</span></a> <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://en.wikipedia.org/wiki/Project_Natick\" rel=\"noopener noreferrer\" target=\"_blank\">and other awards<span class=\"sr-only\"> (opens in new tab)</span></a>. And it&#8217;s just an example of really out-there thinking, imagining a world that had challenges with water access and power access and land but where we need, you know, computation and data storage and technical capability available.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">So a little bit out there, but I really \u2026 I feel like we have to be imagining these different futures. We have to be radical in that way so that we can start to work back and make contributions now.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> I love the Natick example because I feel like Natick is the gift that keeps on giving. And, you know, if I can digress for a minute, I remember that I think <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.tiktok.com/@microsoft/video/7096922345968897322\" rel=\"noopener noreferrer\" target=\"_blank\">one of the first TikTok videos that the Microsoft account posted was of Natick<span class=\"sr-only\"> (opens in new tab)</span></a><a href=\"#_ftn1\" id=\"_ftnref1\">[1]</a>, but it was using, like, a meme at the time which had, like, human eyes and a mouth being lowered into, uh, and it was of Natick being lowered into the ocean, including like a Clippy, like a real-life Clippy swimming across the \u2026 it was \u2026 I still love that video for reasons why I don&#8217;t understand. [LAUGHTER] But if you haven&#8217;t seen it, highly recommend. Maybe we can link it [LAUGHS] if the video still exists.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Definitely. Look, look, one of the highlights was the fish cam.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Yes!&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE: </strong>You know, people were concerned that it might disrupt the marine ecosystem. And we did a lot of preparation and study for that. And just to be sure, we put cameras and watched it happen.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Yep.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE: </strong>And all these fish kept coming around and making it home. And there was, like, computer vision that was analyzing which fishes and their movement, and it became like an always-on thing that people would just tune in to online to watch the fish.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> There was a seal. There was a seal. There were a couple seals that came by, \u2026&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE: </strong>Yeah.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> \u2026 too, which, yeah, I remember that. That&#8217;s really cool. Thanks for sharing.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah, so you have to go not just out of the box but out of the datacenter.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> [LAUGHS] Oh no. All right. All right.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">So, Chris, before letting you go, it would be a missed opportunity if I did not ask you to share some practical advice and reflections given the breadth of your experience and lessons that you learned. So I&#8217;m going to do \u2026 maybe it doesn&#8217;t have to be a super-fast lightning round, but it&#8217;s going to be a lightning round of a couple of questions.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Sure.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> All right. One, what is the advice that you have received in your life that blew your mind or changed your perspective?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> You\u2019ve got to look out for the right place and the right time with the right people because it takes all those things to come together for magic to happen and to make a difference.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK, I&#8217;m going to have to ask. This is not \u2026 I&#8217;m breaking my own lightning round. How do you know? Like, how do you know if it&#8217;s the right place or the right time or the right people?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> The universe gives a lot of feedback. You know, it&#8217;s something that with good listening, you can hear.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> What did \u2026 what did the universe tell you?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Told me to marry my wife.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> [LAUGHS] Ohhhh. Good choice. Good universe. Good universe. OK, next.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah. Told me to have my kids. Absolutely.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> All right, next. Lesson you learned the hard way or the misstep that humbled you?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> I\u2019ve got to slow down. My tendency is to push too fast and too hard, and that can really lead to problems. And slowing down, it doesn&#8217;t in the end slow everything down. It just actually makes it just right and just enough.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> What&#8217;s an example of slow down?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Well, you know, I think there\u2019s slowing down in making decisions, especially about people, compared to other kinds of decisions. Or even in my yoga practice. Slowing down the way that I use my body so that it can be healthy and strong for a long time.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> I do believe that one of your \u2026 the advice that you often give us in Cat Lab is take a vacation.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Absolutely.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU: </strong>So slow down definitely fits that.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Get some perspective.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> So next question: talent or accomplishment you&#8217;re most proud of if given the chance to brag. And you have stated humility many times, and I&#8217;m going to ask you to just turn that bit off for a little bit and brag a little bit instead.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Mm-hmm. Well, I think it would be putting my leg behind my head and saying [LAUGHTER] the alphabet backwards while playing a percussion instrument.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Hold on. Like, this is for realsies, and this is, like, this is not an AI-generated statement \u2026&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> No.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> \u2026 or prompt? This is \u2026 And you&#8217;ve done this before?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> I have. I&#8217;ve done it in a leadership offsite.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> [LAUGHS] You did not.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> I did.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> I am going to need to ask some of our colleagues about that particular experience, but there was a percussion instrument?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah. There was. But, you know, all kidding aside, you know, the 2016 presidential medal, you know, being able to make such a difference in a way for so many people that were affected and to also change the way technology was used from the data collection evidence, you know, through judicial proceedings, that process and arc, you know, is definitely something I&#8217;m extremely proud of, was extremely difficult, and I would definitely go for it again.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> I love it. OK, I love asking this one. You know I&#8217;ve asked people this a lot. Career path you would have chosen if you did not become a researcher\u2014and you&#8217;re not allowed to say yoga teacher.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> [LAUGHS] No, I would just be a different kind of researcher.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> No!&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Yeah, definitely. Yeah.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> Really? OK, so if not an AI or computer science researcher, what else would we be researching?&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Oh, the brain. You know, the \u2026&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK, how about a non-STEM research topic? [LAUGHS]&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Anthropology.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK, OK, fine. So, like, no, there&#8217;s no scenario where research is not in the picture.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> No, it just seems to be part of me, you know, part of my drive, you know, part of what gives me energy, keeps me motivated and curious. And this, you know, frontier, it allows that evolution to keep unfolding.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> OK. All right. Good to know. So not yoga teacher. Always some form of research.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Well, I mean, yoga teacher is a kind of researcher into the universe.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> What?! [LAUGHS]</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> You know, it&#8217;s a researcher into the states of consciousness and being. Into the alignment between the mind and the body. It&#8217;s full of research. Full of personal research.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> This is why I believe when once upon a time at a leadership offsite you were asked to prompt AI to demonstrate, to build, like, a mascot for you, and I think that mascot was also doing yoga.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> It was. I asked my \u2026 I asked one of my copilots to generate a picture of me based on everything it knows, and it created a cat doing yoga.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> [LAUGHS] I love it. OK, so lastly, and this is less \u201clightning round\u201d and more like \u201ctake your time.\u201d What would you like listeners of this podcast to take away from this conversation? You know, about you, about professional life, about research, about making \u2026 or maybe even just making choices.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> You know, I think it&#8217;s about the power of adaptability and the diversity of experience. You know, it&#8217;s about being open to what wants to happen, what needs to happen. You know, being open, called to serve, willingness to change.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>LIU:</strong> I like that.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">So thank you, Chris\u2014<em>Dr.</em> White\u2014for joining me, and to our audience, thank you for listening.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>WHITE:</strong> Thanks, Wei.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC]&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>STANDARD OUTRO:</strong>\u202fYou\u2019ve been listening to\u202fthe Microsoft Research Podcast. Check out more episodes of the podcast at\u202f<a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"http://aka.ms/researchpodcast\" rel=\"noopener noreferrer\" target=\"_blank\">aka.ms/researchpodcast<span class=\"sr-only\"> (opens in new tab)</span></a>\u202for on YouTube and major podcast platforms.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC ENDS]&nbsp;</p>\n\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t<button class=\"action-trigger glyph-prepend mt-2 mb-0 show-more-show-less-toggle\" type=\"button\">\n\t\t\t\tShow more\t\t\t</button>\n\t\t</div>\n\t</div>\n</div>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\" />\n\n\n\n<p class=\"wp-block-paragraph\"><a href=\"#_ftnref1\" id=\"_ftn1\">[1]</a> The <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.tiktok.com/@microsoft/video/7096922345968897322\" rel=\"noopener noreferrer\" target=\"_blank\">Project Natick video<span class=\"sr-only\"> (opens in new tab)</span></a> was one of the Microsoft account\u2019s early TikTok videos, posted on May 12, 2022, about four months after the account&#8217;s launch.</p>\n\n\n\n<div class=\"wp-block-group msr-pattern-link-list is-layout-flow wp-block-group-is-layout-flow\">\n<hr class=\"wp-block-separator has-alpha-channel-opacity\" />\n\n\n\n<h2 class=\"wp-block-heading h5\" id=\"learn-more-1\">Learn more:</h2>\n\n\n\n<ul class=\"wp-block-list list-unstyled\">\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.geekwire.com/2021/microsoft-researcher-chris-white-digs-dark-web-aims-build-societal-resilience-tech/\" rel=\"noopener noreferrer\" target=\"_blank\">An engineer&#8217;s journey from fighting crime on the dark web to leading &#8216;societal resilience&#8217; at Microsoft<span class=\"sr-only\"> (opens in new tab)</span></a><br />GeekWire | September 2021</li>\n\n\n\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.popsci.com/man-who-lit-dark-web/\" rel=\"noopener noreferrer\" target=\"_blank\">The Man Who Lit the Dark Web<span class=\"sr-only\"> (opens in new tab)</span></a><br /><em>Popular Science</em> | August 2016</li>\n\n\n\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=9QsjkJcUznA&amp;t=1s\" rel=\"noopener noreferrer\" target=\"_blank\">Fighting the &#8220;Dark Web&#8221;<span class=\"sr-only\"> (opens in new tab)</span></a><br />TEDx Talks | April 2015</li>\n\n\n\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://hbr.org/2013/10/special-forces-innovation-how-darpa-attacks-problems\" rel=\"noopener noreferrer\" target=\"_blank\">\u201cSpecial Forces\u201d Innovation: How DARPA Attacks Problems<span class=\"sr-only\"> (opens in new tab)</span></a><br />Harvard Business Review | October 2013</li>\n\n\n\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://ogc.osd.mil/Portals/99/testDugan03012011.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">DARPA Congressional Testimony<span class=\"sr-only\"> (opens in new tab)</span></a><br />Dr. Regina E. Dugan | March 2011</li>\n\n\n\n<li><a href=\"https://www.microsoft.com/en-us/research/lab/catalyst-lab/?msockid=07e8b49d34ec68da07d8a3e635de6942\" rel=\"noreferrer noopener\" target=\"_blank\">Catalyst Lab</a><br />Homepage</li>\n\n\n\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.darpa.mil/research/programs/memex\" rel=\"noopener noreferrer\" target=\"_blank\">Memex<span class=\"sr-only\"> (opens in new tab)</span></a><br />Homepage | DARPA</li>\n</ul>\n</div>\n<span class=\"sr-only\" id=\"label-external-link\">Opens in a new tab</span><p>The post <a href=\"https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/\">Called to serve: Tech, research, and positive impact</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "source_name": "Microsoft Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "microsoft",
-        "company"
-      ],
-      "author": "Weishung Liu, Chris White",
-      "published_at": "2026-10-20T16:00:00Z",
-      "fetched_at": "2026-10-20T17:08:34.275350Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "536f23cd94f13984",
-      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
-      "title": "ALTK-Evolve: How learned memory tops the \u03c4\u00b2-bench leaderboard on customer service tasks without a frontier model",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-20T15:19:48Z",
-      "fetched_at": "2026-10-20T17:08:35.457037Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "673cb80d764aab41",
       "url": "https://arxiv.org/abs/2610.29637",
       "title": "Formalizing Cooperation and Competition: An AI-Assisted Mathematical Addendum to a 2018 Planning Thesis",
@@ -60784,6 +60659,875 @@
       "author": "simonw",
       "published_at": "2026-10-23T14:08:30Z",
       "fetched_at": "2026-10-26T08:23:29.350152Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "be7496db3c90e057",
+      "url": "https://x.com/dani_avila7/status/2115079288911241450",
+      "title": "I had no idea Waymo was already in Florida\n\nJust spotted one driving around Orlando https://t.co/Xh7...",
+      "summary": "I had no idea Waymo was already in Florida\n\nJust spotted one driving around Orlando https://t.co/Xh72xNpCoY",
+      "content": "I had no idea Waymo was already in Florida\n\nJust spotted one driving around Orlando https://t.co/Xh72xNpCoY",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-27T13:52:53Z",
+      "fetched_at": "2026-10-27T16:38:32.913780Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4694b25cfc378968",
+      "url": "https://x.com/dani_avila7/status/2114910356170522999",
+      "title": "Another official Anthropic skill I 100% recommend adding to your Claude Code stack\n\nclaude-md-manage...",
+      "summary": "Another official Anthropic skill I 100% recommend adding to your Claude Code stack\n\nclaude-md-management helps keep your CLAUDE.md files up to date by auditing their quality and capturing useful learnings from your sessions\n\nInstall it:\n/plugin install",
+      "content": "Another official Anthropic skill I 100% recommend adding to your Claude Code stack\n\nclaude-md-management helps keep your CLAUDE.md files up to date by auditing their quality and capturing useful learnings from your sessions\n\nInstall it:\n/plugin install",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-27T02:41:36Z",
+      "fetched_at": "2026-10-27T16:38:32.913864Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e88f31a0526fca4d",
+      "url": "https://x.com/steipete/status/2114892975855808806",
+      "title": "RT @NickADobos: Some project manager at X said fuck it we are hitting these conversion numbers even ...",
+      "summary": "RT @NickADobos: Some project manager at X said fuck it we are hitting these conversion numbers even if you have to add a gigantic full scre\u2026",
+      "content": "RT @NickADobos: Some project manager at X said fuck it we are hitting these conversion numbers even if you have to add a gigantic full scre\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-27T01:32:32Z",
+      "fetched_at": "2026-10-27T16:38:40.738152Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e6cb59e8e71dea48",
+      "url": "https://x.com/steipete/status/2114892813964066964",
+      "title": "RT @RhysSullivan: we're basically gonna just be doing this for the next 3 years https://t.co/15kLGWx...",
+      "summary": "RT @RhysSullivan: we're basically gonna just be doing this for the next 3 years https://t.co/15kLGWxBDG",
+      "content": "RT @RhysSullivan: we're basically gonna just be doing this for the next 3 years https://t.co/15kLGWxBDG",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-27T01:31:54Z",
+      "fetched_at": "2026-10-27T16:38:40.738251Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a870d611e9494848",
+      "url": "https://x.com/dani_avila7/status/2114882526107894117",
+      "title": "GPT-6 Astra and Claude Fable 5.1 beaten by a 10 year old CNN\n\nA dermatologist compared these frontie...",
+      "summary": "GPT-6 Astra and Claude Fable 5.1 beaten by a 10 year old CNN\n\nA dermatologist compared these frontier LLMs against Inception v3, a CNN fine tuned for skin cancer diagnosis\n\nA few interesting findings:\n\n- 62.5% accuracy vs. ~42% for both LLMs\n\n- The CNN was fine-tuned in just 20 https://t.co/6KADRidQFb",
+      "content": "GPT-6 Astra and Claude Fable 5.1 beaten by a 10 year old CNN\n\nA dermatologist compared these frontier LLMs against Inception v3, a CNN fine tuned for skin cancer diagnosis\n\nA few interesting findings:\n\n- 62.5% accuracy vs. ~42% for both LLMs\n\n- The CNN was fine-tuned in just 20 https://t.co/6KADRidQFb",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-27T00:51:01Z",
+      "fetched_at": "2026-10-27T16:38:32.913908Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ba1117c212e85e20",
+      "url": "https://x.com/steipete/status/2114879798434758905",
+      "title": "I spent some time on the weekend to test bun's AOT compiler and results are nothing short of amazing...",
+      "summary": "I spent some time on the weekend to test bun's AOT compiler and results are nothing short of amazing. Performance up 2-3x, memory use less than half.",
+      "content": "I spent some time on the weekend to test bun's AOT compiler and results are nothing short of amazing. Performance up 2-3x, memory use less than half.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-27T00:40:11Z",
+      "fetched_at": "2026-10-27T16:38:40.738296Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bf42ff214cf8a0ba",
+      "url": "https://x.com/steipete/status/2114879359857422729",
+      "title": "Banger. https://t.co/MzQY2HvarM",
+      "summary": "Banger. https://t.co/MzQY2HvarM",
+      "content": "Banger. https://t.co/MzQY2HvarM",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-27T00:38:26Z",
+      "fetched_at": "2026-10-27T16:38:40.738338Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c230e7d9e683e012",
+      "url": "https://x.com/sama/status/2114864981934329996",
+      "title": "RT @danintheory: We are announcing three new discoveries in mathematics, computer science, and physi...",
+      "summary": "RT @danintheory: We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity\u2026",
+      "content": "RT @danintheory: We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-26T23:41:18Z",
+      "fetched_at": "2026-10-27T16:38:34.965343Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5cd8c4d68e65d181",
+      "url": "https://x.com/OpenAI/status/2114833781815456118",
+      "title": "RT @danintheory: We are announcing three new discoveries in mathematics, computer science, and physi...",
+      "summary": "RT @danintheory: We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity\u2026",
+      "content": "RT @danintheory: We are announcing three new discoveries in mathematics, computer science, and physics about harmonic analysis, complexity\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-26T21:37:19Z",
+      "fetched_at": "2026-10-27T16:38:37.424692Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "569d4103bc9d7fca",
+      "url": "https://x.com/sama/status/2114818620782248024",
+      "title": "6.1 Terra is here! It is good at a lot of things, but we are especially excited for this new era of ...",
+      "summary": "6.1 Terra is here! It is good at a lot of things, but we are especially excited for this new era of computer use.",
+      "content": "6.1 Terra is here! It is good at a lot of things, but we are especially excited for this new era of computer use.",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-10-26T20:37:05Z",
+      "fetched_at": "2026-10-27T16:38:34.965423Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "15fe4a06e9b89a0a",
+      "url": "https://x.com/trq212/status/2114796261362835842",
+      "title": "going to be sharing my WoW forever shaman build at the AIE Code closing keynote",
+      "summary": "going to be sharing my WoW forever shaman build at the AIE Code closing keynote",
+      "content": "going to be sharing my WoW forever shaman build at the AIE Code closing keynote",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-26T19:08:14Z",
+      "fetched_at": "2026-10-27T16:38:28.272195Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "52c7e14e2cbf3d3c",
+      "url": "https://x.com/GeminiApp/status/2114783069014241387",
+      "title": "RT @googleaccess: The latest episode of \"What's new in Google accessibility\" is out now! \n\nTune in b...",
+      "summary": "RT @googleaccess: The latest episode of \"What's new in Google accessibility\" is out now! \n\nTune in below to learn about our newest features\u2026",
+      "content": "RT @googleaccess: The latest episode of \"What's new in Google accessibility\" is out now! \n\nTune in below to learn about our newest features\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-26T18:15:49Z",
+      "fetched_at": "2026-10-27T16:38:36.027281Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fc2853ef6d43481e",
+      "url": "https://x.com/trq212/status/2114782314991611941",
+      "title": "RT @addyosmani: https://t.co/4Hfk0dYIBI",
+      "summary": "RT @addyosmani: https://t.co/4Hfk0dYIBI",
+      "content": "RT @addyosmani: https://t.co/4Hfk0dYIBI",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-26T18:12:49Z",
+      "fetched_at": "2026-10-27T16:38:28.272308Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9ceabe2d8dbc103d",
+      "url": "https://x.com/claudeai/status/2114780227465338985",
+      "title": "More than 25,000 nonprofits now use Claude. Most are small, local teams.\n\nWe\u2019re expanding Claude for...",
+      "summary": "More than 25,000 nonprofits now use Claude. Most are small, local teams.\n\nWe\u2019re expanding Claude for Nonprofits with a plugin built with around 30 of them, adding skills for fundraising, marketing, and hiring grounded in each team\u2019s context and AI policy: https://t.co/LWHcr1CT20",
+      "content": "More than 25,000 nonprofits now use Claude. Most are small, local teams.\n\nWe\u2019re expanding Claude for Nonprofits with a plugin built with around 30 of them, adding skills for fundraising, marketing, and hiring grounded in each team\u2019s context and AI policy: https://t.co/LWHcr1CT20",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-26T18:04:31Z",
+      "fetched_at": "2026-10-27T16:38:33.992318Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d5ce191dfaf62756",
+      "url": "https://x.com/dani_avila7/status/2114761901041418487",
+      "title": "I record quite a few demos and tutorials, and editing always takes more time than I\u2019d like.\n\nRiversi...",
+      "summary": "I record quite a few demos and tutorials, and editing always takes more time than I\u2019d like.\n\nRiverside just launched AI agents to handle editing and clipping.\n\nHaven\u2019t tried them yet, but I\u2019m curious to see how well they work in practice.",
+      "content": "I record quite a few demos and tutorials, and editing always takes more time than I\u2019d like.\n\nRiverside just launched AI agents to handle editing and clipping.\n\nHaven\u2019t tried them yet, but I\u2019m curious to see how well they work in practice.",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-26T16:51:42Z",
+      "fetched_at": "2026-10-27T16:38:32.913946Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a4c34a2a99d1067f",
+      "url": "https://x.com/dani_avila7/status/2114735032258740641",
+      "title": "I\u2019m still using the CLI in Ghostty with communication between sessions\n\nbut I\u2019m literally trying to ...",
+      "summary": "I\u2019m still using the CLI in Ghostty with communication between sessions\n\nbut I\u2019m literally trying to replicate how I work in Projects\n\nI think the transition will take just a couple more days",
+      "content": "I\u2019m still using the CLI in Ghostty with communication between sessions\n\nbut I\u2019m literally trying to replicate how I work in Projects\n\nI think the transition will take just a couple more days",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-26T15:04:56Z",
+      "fetched_at": "2026-10-27T16:38:32.914072Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5c49b4f544efbe2e",
+      "url": "https://x.com/dani_avila7/status/2114722429872267449",
+      "title": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-we...",
+      "summary": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-weight models, cheaper inference, and the ability to switch providers so easily are changing the economics of LLMs\n\nAnd the interesting part is that even as tokens get cheaper, we\u2019re https://t.co/8SvWS1ujbY",
+      "content": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-weight models, cheaper inference, and the ability to switch providers so easily are changing the economics of LLMs\n\nAnd the interesting part is that even as tokens get cheaper, we\u2019re https://t.co/8SvWS1ujbY",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-26T14:14:51Z",
+      "fetched_at": "2026-10-27T16:38:32.914106Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7379101351692de",
+      "url": "https://x.com/AnthropicAI/status/2114705042817110293",
+      "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead mo...",
+      "summary": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead more: https://t.co/zuRMrxXzNx\n\nLegal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities",
+      "content": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead more: https://t.co/zuRMrxXzNx\n\nLegal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-26T13:05:46Z",
+      "fetched_at": "2026-10-27T16:38:39.490477Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bbbcc2d1fd12bb66",
+      "url": "https://x.com/GoogleAI/status/2112536218646806986",
+      "title": "https://t.co/BUVWDXEWXe",
+      "summary": "https://t.co/BUVWDXEWXe",
+      "content": "https://t.co/BUVWDXEWXe",
+      "source_name": "@googleai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "google"
+      ],
+      "author": "googleai",
+      "published_at": "2026-10-20T13:27:38Z",
+      "fetched_at": "2026-10-20T20:22:51.700783Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "77d98ea474555626",
+      "url": "https://x.com/dani_avila7/status/2112417025033138684",
+      "title": "Anthropic accepted my repo into the OSS Scanner program!\n\nNow waiting for the first scan results to ...",
+      "summary": "Anthropic accepted my repo into the OSS Scanner program!\n\nNow waiting for the first scan results to arrive in my inbox\n\nI'll share the results once they're in... stay tuned! https://t.co/kDOOE5Rfei",
+      "content": "Anthropic accepted my repo into the OSS Scanner program!\n\nNow waiting for the first scan results to arrive in my inbox\n\nI'll share the results once they're in... stay tuned! https://t.co/kDOOE5Rfei",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-20T05:34:00Z",
+      "fetched_at": "2026-10-20T20:22:46.273984Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "cedc8e007f44070e",
+      "url": "https://x.com/dani_avila7/status/2112365413153587682",
+      "title": "This is going to be a huge blow to @supabase \n\nI hope the team is prepared \ud83d\ude2c",
+      "summary": "This is going to be a huge blow to @supabase \n\nI hope the team is prepared \ud83d\ude2c",
+      "content": "This is going to be a huge blow to @supabase \n\nI hope the team is prepared \ud83d\ude2c",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-20T02:08:55Z",
+      "fetched_at": "2026-10-20T20:22:46.274040Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "083353a00a39b0d1",
+      "url": "https://x.com/dani_avila7/status/2112361694739501163",
+      "title": "If you're using Stripe with Claude Code, you can install the MCP, integration skill, and write permi...",
+      "summary": "If you're using Stripe with Claude Code, you can install the MCP, integration skill, and write permissions setting with one command:\n\nnpx claude-code-templates@latest --mcp devtools/stripe --skill development/stripe-integration --setting permissions/stripe-mcp-confirm-writes https://t.co/wJoo62SvqC",
+      "content": "If you're using Stripe with Claude Code, you can install the MCP, integration skill, and write permissions setting with one command:\n\nnpx claude-code-templates@latest --mcp devtools/stripe --skill development/stripe-integration --setting permissions/stripe-mcp-confirm-writes https://t.co/wJoo62SvqC",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-20T01:54:08Z",
+      "fetched_at": "2026-10-20T20:22:46.274072Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "46f1defe1118751a",
+      "url": "https://x.com/dani_avila7/status/2112312493720662324",
+      "title": "If you want to integrate Skillspector into your agent or project, just give this skill to Claude Cod...",
+      "summary": "If you want to integrate Skillspector into your agent or project, just give this skill to Claude Code\n\nhttps://t.co/3i9ckoA6n3\n\nIt's worth scanning your skills, especially if you've been installing random ones you find on X https://t.co/iyA6qhn6UO",
+      "content": "If you want to integrate Skillspector into your agent or project, just give this skill to Claude Code\n\nhttps://t.co/3i9ckoA6n3\n\nIt's worth scanning your skills, especially if you've been installing random ones you find on X https://t.co/iyA6qhn6UO",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T22:38:38Z",
+      "fetched_at": "2026-10-20T20:22:46.274099Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b033bf986f377d22",
+      "url": "https://x.com/OpenAI/status/2112310345863930168",
+      "title": "Our latest model advances bring stronger capabilities for building and migrating software in low-res...",
+      "summary": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic.\n\nThese languages power software that banks, governments, and businesses depend on. Progress here means https://t.co/Mulo5P3iCO",
+      "content": "Our latest model advances bring stronger capabilities for building and migrating software in low-resource programming languages such as COBOL, Fortran, and Visual Basic.\n\nThese languages power software that banks, governments, and businesses depend on. Progress here means https://t.co/Mulo5P3iCO",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-19T22:30:05Z",
+      "fetched_at": "2026-10-20T20:22:50.778932Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "993e59845597bf0a",
+      "url": "https://x.com/dani_avila7/status/2112304487746478461",
+      "title": "Claude Project has made me completely forget about Remote Control\n\nRunning agents in the cloud just ...",
+      "summary": "Claude Project has made me completely forget about Remote Control\n\nRunning agents in the cloud just makes more sense",
+      "content": "Claude Project has made me completely forget about Remote Control\n\nRunning agents in the cloud just makes more sense",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T22:06:49Z",
+      "fetched_at": "2026-10-20T20:22:46.274133Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "78276e3f7f439cff",
+      "url": "https://x.com/bcherny/status/2112304315566334005",
+      "title": "RT @ClaudeDevs: We launched OSS Scanner, which gives critical open source projects free, periodic vu...",
+      "summary": "RT @ClaudeDevs: We launched OSS Scanner, which gives critical open source projects free, periodic vulnerability scans from our strongest mo\u2026",
+      "content": "RT @ClaudeDevs: We launched OSS Scanner, which gives critical open source projects free, periodic vulnerability scans from our strongest mo\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-19T22:06:08Z",
+      "fetched_at": "2026-10-20T20:22:44.022463Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fc1a88ffe727e2ef",
+      "url": "https://x.com/steipete/status/2112284178880536695",
+      "title": "RT @dangaron: I recently used Claude as a therapist, and I was delighted to find that it validated m...",
+      "summary": "RT @dangaron: I recently used Claude as a therapist, and I was delighted to find that it validated my view of the world  and confirmed my s\u2026",
+      "content": "RT @dangaron: I recently used Claude as a therapist, and I was delighted to find that it validated my view of the world  and confirmed my s\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-19T20:46:07Z",
+      "fetched_at": "2026-10-20T20:22:54.058004Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "bba332e4bf5e8f78",
+      "url": "https://x.com/dani_avila7/status/2112276459943231929",
+      "title": "If you're using Auto Mode in Claude Code, consider enabling classifyAllShell\n\nby default, some shell...",
+      "summary": "If you're using Auto Mode in Claude Code, consider enabling classifyAllShell\n\nby default, some shell commands can bypass the classifier if they match an existing allow rule\n\nWith this setting enabled, every bash command goes through the classifier, even if it was previously https://t.co/GVQMpZnVv9",
+      "content": "If you're using Auto Mode in Claude Code, consider enabling classifyAllShell\n\nby default, some shell commands can bypass the classifier if they match an existing allow rule\n\nWith this setting enabled, every bash command goes through the classifier, even if it was previously https://t.co/GVQMpZnVv9",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T20:15:26Z",
+      "fetched_at": "2026-10-20T20:22:46.274159Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7f396e95a9f084e0",
+      "url": "https://x.com/dani_avila7/status/2112242229569798389",
+      "title": "Browser agents make hundreds of small decisions\n\nDo we really need a massive model for every screens...",
+      "summary": "Browser agents make hundreds of small decisions\n\nDo we really need a massive model for every screenshot?\n\nNace AI just launched Drex Max, a multimodal decision model built for computer use\n\nAccording to their benchmarks:\n\n- 88.3% on Mind2Web\n- 174ms median per decision\n- Up to https://t.co/j8FLoLEoUZ",
+      "content": "Browser agents make hundreds of small decisions\n\nDo we really need a massive model for every screenshot?\n\nNace AI just launched Drex Max, a multimodal decision model built for computer use\n\nAccording to their benchmarks:\n\n- 88.3% on Mind2Web\n- 174ms median per decision\n- Up to https://t.co/j8FLoLEoUZ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T17:59:25Z",
+      "fetched_at": "2026-10-20T20:22:46.274184Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b5b360b66d231ba1",
+      "url": "https://x.com/dani_avila7/status/2112234287218991245",
+      "title": "Just discovered that the Hermes Agent is using my claude-code-templates repo in their test suite!\n\nT...",
+      "summary": "Just discovered that the Hermes Agent is using my claude-code-templates repo in their test suite!\n\nThey're using its nested skills structure to test skill discovery in their agent harness\n\nThanks @Teknium and @NousResearch for using my repo to test skill discovery in the Hermes https://t.co/wfiWFEfron",
+      "content": "Just discovered that the Hermes Agent is using my claude-code-templates repo in their test suite!\n\nThey're using its nested skills structure to test skill discovery in their agent harness\n\nThanks @Teknium and @NousResearch for using my repo to test skill discovery in the Hermes https://t.co/wfiWFEfron",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T17:27:52Z",
+      "fetched_at": "2026-10-20T20:22:46.274207Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "87dd24feca5178d4",
+      "url": "https://x.com/trq212/status/2112219173288120531",
+      "title": "I think most people multi-tasking with agents could benefit from slowing down\n\nmost of the stuff you...",
+      "summary": "I think most people multi-tasking with agents could benefit from slowing down\n\nmost of the stuff you're doing wont really matter- what's your P0? what would it look like if you gave it your full attention?",
+      "content": "I think most people multi-tasking with agents could benefit from slowing down\n\nmost of the stuff you're doing wont really matter- what's your P0? what would it look like if you gave it your full attention?",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-19T16:27:48Z",
+      "fetched_at": "2026-10-20T20:22:41.563578Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4542d80c373c7286",
+      "url": "https://x.com/GeminiApp/status/2112217126723592428",
+      "title": "RT @JustinTse: I asked Gemini 4 Argon to help design my dream living room den. I didn't write a sing...",
+      "summary": "RT @JustinTse: I asked Gemini 4 Argon to help design my dream living room den. I didn't write a single line of code. \ud83e\uddf5\n\n@GoogleGemini #Goog\u2026",
+      "content": "RT @JustinTse: I asked Gemini 4 Argon to help design my dream living room den. I didn't write a single line of code. \ud83e\uddf5\n\n@GoogleGemini #Goog\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-19T16:19:40Z",
+      "fetched_at": "2026-10-20T20:22:49.654204Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "571ced6fbf274b58",
+      "url": "https://x.com/GeminiApp/status/2112214581443498261",
+      "title": "Our team built a playable 3D Wizard Chess game from scratch with Gemini 4 Argon using Google Antigra...",
+      "summary": "Our team built a playable 3D Wizard Chess game from scratch with Gemini 4 Argon using Google Antigravity in the Gemini app for Mac.\n\nCoordinate a multi-agent Blender workflow to model, design, and deliver fluid, real-time animations so you go straight from idea to play.",
+      "content": "Our team built a playable 3D Wizard Chess game from scratch with Gemini 4 Argon using Google Antigravity in the Gemini app for Mac.\n\nCoordinate a multi-agent Blender workflow to model, design, and deliver fluid, real-time animations so you go straight from idea to play.",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-19T16:09:33Z",
+      "fetched_at": "2026-10-20T20:22:49.654263Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b96acda5b6e82cf2",
+      "url": "https://x.com/dani_avila7/status/2112061185717653554",
+      "title": "Big one in Claude Code 2.1.302\n\nyou can now swap the auto mode classifier model with CLAUDE_CODE_AUT...",
+      "summary": "Big one in Claude Code 2.1.302\n\nyou can now swap the auto mode classifier model with CLAUDE_CODE_AUTO_MODE_MODEL\n\nDefault is Sonnet 5, not your /model pick\n\nWould be nice to try a small System 1 style classifier like Jev here to improve auto mode \ud83d\udc40 https://t.co/uI1QJ32IFM",
+      "content": "Big one in Claude Code 2.1.302\n\nyou can now swap the auto mode classifier model with CLAUDE_CODE_AUTO_MODE_MODEL\n\nDefault is Sonnet 5, not your /model pick\n\nWould be nice to try a small System 1 style classifier like Jev here to improve auto mode \ud83d\udc40 https://t.co/uI1QJ32IFM",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T06:00:01Z",
+      "fetched_at": "2026-10-20T20:22:46.274230Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "851f213c0f0e4cae",
+      "url": "https://x.com/dani_avila7/status/2112009233696751956",
+      "title": "Just received my first Github Sponsor for my work on https://t.co/eQDBth4fJI \ud83d\ude4c\n\nhttps://t.co/XP834z8...",
+      "summary": "Just received my first Github Sponsor for my work on https://t.co/eQDBth4fJI \ud83d\ude4c\n\nhttps://t.co/XP834z8v3W\n\nThanks for all the support! \n\nEvery dollar goes back into maintaining and improving the website and CLI https://t.co/mxt4wGTva7",
+      "content": "Just received my first Github Sponsor for my work on https://t.co/eQDBth4fJI \ud83d\ude4c\n\nhttps://t.co/XP834z8v3W\n\nThanks for all the support! \n\nEvery dollar goes back into maintaining and improving the website and CLI https://t.co/mxt4wGTva7",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T02:33:35Z",
+      "fetched_at": "2026-10-20T20:22:46.274251Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "611bde51c5100963",
+      "url": "https://x.com/dani_avila7/status/2111993309094691326",
+      "title": "Those who go all in on building with AI will be the ones remembered\n\nAs Achilles said in Troy:\n\nAnd ...",
+      "summary": "Those who go all in on building with AI will be the ones remembered\n\nAs Achilles said in Troy:\n\nAnd that\u2019s why no one will remember your name https://t.co/YbuBTKgajK",
+      "content": "Those who go all in on building with AI will be the ones remembered\n\nAs Achilles said in Troy:\n\nAnd that\u2019s why no one will remember your name https://t.co/YbuBTKgajK",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-19T01:30:18Z",
+      "fetched_at": "2026-10-20T20:22:46.274283Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "501f24c880f1b627",
+      "url": "https://x.com/dani_avila7/status/2111952784819937668",
+      "title": "If you build with LLMs, save this article\n\n@perplexity_ai breaks down the OWASP Top 10 for LLM Appli...",
+      "summary": "If you build with LLMs, save this article\n\n@perplexity_ai breaks down the OWASP Top 10 for LLM Applications 2026\n\nwith real world incidents and practical ways to mitigate each vulnerability\n\nKeep it in your project's security notes\n\nPass the article to Claude Code and ask it to",
+      "content": "If you build with LLMs, save this article\n\n@perplexity_ai breaks down the OWASP Top 10 for LLM Applications 2026\n\nwith real world incidents and practical ways to mitigate each vulnerability\n\nKeep it in your project's security notes\n\nPass the article to Claude Code and ask it to",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-18T22:49:16Z",
+      "fetched_at": "2026-10-20T20:22:46.274308Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "91a9f1c117251aae",
+      "url": "https://x.com/trq212/status/2111945336537420259",
+      "title": "I've realized I often would prefer to vibe code little parts of games than actually play games these...",
+      "summary": "I've realized I often would prefer to vibe code little parts of games than actually play games these days. \n\nEspecially cerebral ones that require some thinking like League.\n\nI'm not quite sure what this really means for games but I think it's important?",
+      "content": "I've realized I often would prefer to vibe code little parts of games than actually play games these days. \n\nEspecially cerebral ones that require some thinking like League.\n\nI'm not quite sure what this really means for games but I think it's important?",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-18T22:19:40Z",
+      "fetched_at": "2026-10-20T20:22:41.563649Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0ca2f157d0dbcf5f",
+      "url": "https://x.com/steipete/status/2111918049116987476",
+      "title": "AI;DR",
+      "summary": "AI;DR",
+      "content": "AI;DR",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-18T20:31:15Z",
+      "fetched_at": "2026-10-20T20:22:54.058032Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0abe9b90bf3f75ea",
+      "url": "https://x.com/steipete/status/2111822399884927050",
+      "title": "RT @fforres: Life is good now.  \ud83c\udf89 Tell your agent to:\n- create a new volume in you mac\n- disable fse...",
+      "summary": "RT @fforres: Life is good now.  \ud83c\udf89 Tell your agent to:\n- create a new volume in you mac\n- disable fseventsd (and spotlight) on it\n- and move\u2026",
+      "content": "RT @fforres: Life is good now.  \ud83c\udf89 Tell your agent to:\n- create a new volume in you mac\n- disable fseventsd (and spotlight) on it\n- and move\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-18T14:11:10Z",
+      "fetched_at": "2026-10-20T20:22:54.058085Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "78ec9ea3b9a58dfe",
+      "url": "https://x.com/steipete/status/2111338823502516658",
+      "title": "RT @joshavant: @GeoffreyHuntley @bot @poteto We've been taking security very seriously at OpenClaw f...",
+      "summary": "RT @joshavant: @GeoffreyHuntley @bot @poteto We've been taking security very seriously at OpenClaw for a while now. We just completed a Tra\u2026",
+      "content": "RT @joshavant: @GeoffreyHuntley @bot @poteto We've been taking security very seriously at OpenClaw for a while now. We just completed a Tra\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-17T06:09:36Z",
+      "fetched_at": "2026-10-20T20:22:54.058111Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9c597e357359b375",
+      "url": "https://x.com/steipete/status/2111193741059121463",
+      "title": "RT @openclaw: Set up OpenClaw out of the box on the new @nvidia RTX Spark laptops.\n\nChoose a local m...",
+      "summary": "RT @openclaw: Set up OpenClaw out of the box on the new @nvidia RTX Spark laptops.\n\nChoose a local model or connect a cloud provider, and f\u2026",
+      "content": "RT @openclaw: Set up OpenClaw out of the box on the new @nvidia RTX Spark laptops.\n\nChoose a local model or connect a cloud provider, and f\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-16T20:33:06Z",
+      "fetched_at": "2026-10-20T20:22:54.058136Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "14a65248e55756e1",
+      "url": "https://x.com/steipete/status/2111118316811264084",
+      "title": "RT @roboclawbot: @steipete @johndotowl @eloffd Turns out 60 a day was underselling it \ud83d\ude05 You averaged...",
+      "summary": "RT @roboclawbot: @steipete @johndotowl @eloffd Turns out 60 a day was underselling it \ud83d\ude05 You averaged 423 PRs/day over the last 30 days, and\u2026",
+      "content": "RT @roboclawbot: @steipete @johndotowl @eloffd Turns out 60 a day was underselling it \ud83d\ude05 You averaged 423 PRs/day over the last 30 days, and\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-16T15:33:24Z",
+      "fetched_at": "2026-10-20T20:22:54.058164Z",
       "score": null,
       "score_reason": "",
       "tier": "",
