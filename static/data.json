@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-28T12:14:21.217230+00:00",
+  "exported_at": "2026-10-28T14:14:40.077539+00:00",
   "period_hours": 168,
-  "total": 2915,
+  "total": 2912,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39371,46 +39371,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "fbdc41509ed89f20",
-      "url": "https://www.youtube.com/shorts/OawSCIZdZmU",
-      "title": "Opus 5.5 + Blender = Insane 3D Renders",
-      "summary": "",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-21T13:09:29Z",
-      "fetched_at": "2026-10-21T13:49:04.808243Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9b07ab7d3b87e8fb",
-      "url": "https://www.youtube.com/shorts/zTfpVoIT03s",
-      "title": "Claude Code + Blender = Beautiful 3D Renders",
-      "summary": "",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-21T13:09:27Z",
-      "fetched_at": "2026-10-21T13:49:04.808263Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "5b4e08461387ba3b",
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
       "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
@@ -49895,27 +49855,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b1215e1aefc04c61",
-      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-      "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-21T13:00:00Z",
-      "fetched_at": "2026-10-21T18:39:32.295986Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "c570ec15594bfc41",
       "url": "https://arxiv.org/abs/2610.30500",
       "title": "PhysibleMDM: Enforcing Inference-Time Physical Feasibility Constraints on Motion Diffusion Models via Noise Optimization",
@@ -50015,49 +49954,6 @@
       "author": "Tong Che, Boris Ivanovic, Marco Pavone",
       "published_at": "2026-10-23T04:00:00Z",
       "fetched_at": "2026-10-23T07:33:39.611499Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5c32755a71da49ed",
-      "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
-      "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-21T12:51:24Z",
-      "fetched_at": "2026-10-21T13:49:11.647927Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "280febea489348bb",
-      "url": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
-      "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image4-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image4\" width=\"768\" />Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image4-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image4\" width=\"768\" />Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image4-2-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image4\" width=\"768\" /><p>Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino acids for a 100-residue protein sequence and the number of possibilities exceeds the number of atoms in the observable universe. Somewhere in that space is a protein that opens a path to a new therapy. There are too many combinations to\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Elizabeth Goodman",
-      "published_at": "2026-10-21T12:30:00Z",
-      "fetched_at": "2026-10-21T13:49:11.198474Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61651,46 +61547,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "93a526d9e9df8989",
-      "url": "https://x.com/dani_avila7/status/2112907965623943396",
-      "title": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
-      "summary": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
-      "content": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-21T14:04:49Z",
-      "fetched_at": "2026-10-22T07:36:47.321608Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "950a86d08b7f03a2",
-      "url": "https://x.com/OpenAI/status/2112907856018309586",
-      "title": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover criti...",
-      "summary": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers,",
-      "content": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers,",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-10-21T14:04:23Z",
-      "fetched_at": "2026-10-22T07:36:51.337707Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2aea4d83f0830f55",
       "url": "https://x.com/dani_avila7/status/2113283554557759619",
       "title": "Of all the vulnerabilities disclosed yesterday, this one surprised me the most\n\nWhen I studied crypt...",
@@ -63308,6 +63164,87 @@
       "author": "simonw",
       "published_at": "2026-10-27T17:07:44Z",
       "fetched_at": "2026-10-28T09:52:14.152068Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3c9f11827a446e13",
+      "url": "https://x.com/simonw/status/2115444742595260551",
+      "title": "I think October represents another inflection point in capabilities for coding agents and the models...",
+      "summary": "I think October represents another inflection point in capabilities for coding agents and the models that drive them: Claude Opus 5.5 can now build video games that are actually fun https://t.co/aPsJ14RHR0",
+      "content": "I think October represents another inflection point in capabilities for coding agents and the models that drive them: Claude Opus 5.5 can now build video games that are actually fun https://t.co/aPsJ14RHR0",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-28T14:05:04Z",
+      "fetched_at": "2026-10-28T14:14:29.785850Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c4bcca9737b4a97b",
+      "url": "https://x.com/dani_avila7/status/2115443737157579217",
+      "title": "Payments from the CLI? I like where this is going.\n\nWell\u2026 I can already order Chipotle with the Door...",
+      "summary": "Payments from the CLI? I like where this is going.\n\nWell\u2026 I can already order Chipotle with the DoorDash CLI\n\nBeing able to send payments with Stripe feels like the next logical step",
+      "content": "Payments from the CLI? I like where this is going.\n\nWell\u2026 I can already order Chipotle with the DoorDash CLI\n\nBeing able to send payments with Stripe feels like the next logical step",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T14:01:04Z",
+      "fetched_at": "2026-10-28T14:14:30.802245Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "93a526d9e9df8989",
+      "url": "https://x.com/dani_avila7/status/2112907965623943396",
+      "title": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
+      "summary": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
+      "content": "The PHP patch is now available! \ud83d\udc47\n\nhttps://t.co/iTuVYGPY65",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-21T14:04:49Z",
+      "fetched_at": "2026-10-22T07:36:47.321608Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "950a86d08b7f03a2",
+      "url": "https://x.com/OpenAI/status/2112907856018309586",
+      "title": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover criti...",
+      "summary": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers,",
+      "content": "OpenAI models helped researchers\u2014operating as part of our Patch the Planet initiative\u2014discover critical security flaws in PHP, an open-source programming language used to run an estimated 70% of websites.\n\nOver the past two months, we led a coalition of maintainers, researchers,",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-21T14:04:23Z",
+      "fetched_at": "2026-10-22T07:36:51.337707Z",
       "score": null,
       "score_reason": "",
       "tier": "",
