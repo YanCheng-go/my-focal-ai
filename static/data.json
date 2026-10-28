@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-28T08:35:54.070008+00:00",
+  "exported_at": "2026-10-28T09:52:25.372498+00:00",
   "period_hours": 168,
-  "total": 2916,
+  "total": 2925,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -45564,26 +45564,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "4f2561d53e1247c8",
-      "url": "https://www.youtube.com/watch?v=DouK81O8R3o",
-      "title": "One Day, $1,000 in Tokens: An AI War Room for Legacy Code \u2014 Ford Prior, GEICO",
-      "summary": "At GEICO, coding got fast but everything around it (decisions, sign-offs, context) stayed slow. Ford Prior's fix was a multiplayer, AI-native war room: the right decision makers, one driver, and fleets of agents wired into GEICO's knowledge, tools and code. His bet was that one day and $1,000 in tokens could map a legacy claims domain end to end and ship one real change. He ran it three times across rentals, damages and salvage. He covers FleetKit, the markdown rulebook that steers the agent fleet, plus the worksheets and diagrams it produced and what he'd change next.\n\nChapters:\n- 00:00 Inner loop vs. outer loop\n- 02:05 Claims tech at GEICO\n- 04:37 The AI-native war room\n- 05:23 The one-day, $1,000 experiment\n- 06:33 Three modernization missions\n- 08:29 What the vendor brings vs. what GEICO brings\n- 09:47 FleetKit: running an agent fleet\n- 11:55 Inside the war room\n- 15:58 Lessons and what's next\n\nFord Prior, GEICO: https://www.geico.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-21T09:00:26Z",
-      "fetched_at": "2026-10-21T13:49:05.500244Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "986650738305018d",
       "url": "https://arxiv.org/abs/2610.30728",
       "title": "Federated Graph Retrieval-Augmented Generation",
@@ -50664,28 +50644,6 @@
       "author": "Wenrui Yuan, St\\'ephanie M. van den Berg, Johannes Steinr\\\"ucke",
       "published_at": "2026-10-23T04:00:00Z",
       "fetched_at": "2026-10-23T07:33:39.611360Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b2842111c9af260e",
-      "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
-      "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-      "summary": "<img alt=\"NVIDIA BlueField chip beneath icons representing AI protection, traffic control, monitoring, data security, and a firewall.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/bluefield-nvidia-sentry-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"bluefield-nvidia-sentry-featured\" width=\"768\" />An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
-      "content": "<img alt=\"NVIDIA BlueField chip beneath icons representing AI protection, traffic control, monitoring, data security, and a firewall.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/bluefield-nvidia-sentry-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"bluefield-nvidia-sentry-featured\" width=\"768\" />An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...<img alt=\"NVIDIA BlueField chip beneath icons representing AI protection, traffic control, monitoring, data security, and a firewall.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/bluefield-nvidia-sentry-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"bluefield-nvidia-sentry-featured\" width=\"768\" /><p>An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using tools, credentials, and services to pursue their assigned goals. Monitoring and enforcement need to operate outside the agent\u2019s reach so that it can\u2019t alter or disable them. NVIDIA Sentry is a security software framework that monitors AI\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Ofir Arkin",
-      "published_at": "2026-10-21T09:52:16Z",
-      "fetched_at": "2026-10-21T13:49:11.198495Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -56994,50 +56952,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "88a80623a9615ed2",
-      "url": "https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/",
-      "title": "How NVIDIA OpenShell Reference Architecture Secures and Governs AI Agent Workloads at Scale",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/OpenShellKVcroppped-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"OpenShellKVcroppped\" width=\"768\" />Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/OpenShellKVcroppped-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"OpenShellKVcroppped\" width=\"768\" />Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/OpenShellKVcroppped-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"OpenShellKVcroppped\" width=\"768\" /><p>Autonomous agents can work for hours on complex tasks, accessing files, tools, the internet, and spawning other agents to collaborate with. Executing complex tasks over long time horizons leads to compounding risk: the agents may download code, build new tools, request additional privileges, and touch more of the underlying infrastructure. The agents\u2019 action paths are determined as they work\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/how-nvidia-openshell-reference-architecture-secures-and-governs-ai-agent-workloads-at-scale/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Elizabeth Goodman",
-      "published_at": "2026-10-21T09:50:14Z",
-      "fetched_at": "2026-10-21T13:49:11.198504Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1642ad325f565486",
-      "url": "https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/",
-      "title": "Developing an AI Factory Digital Twin with an Agent-Assisted Workflow",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/omniverse-overall-dsx-sim-gtc-berlin-26-5796136-600x338-r2.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"omniverse-overall-dsx-sim-gtc-berlin-26-5796136-600x338-r2\" width=\"600\" />Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/omniverse-overall-dsx-sim-gtc-berlin-26-5796136-600x338-r2.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"omniverse-overall-dsx-sim-gtc-berlin-26-5796136-600x338-r2\" width=\"600\" />Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/omniverse-overall-dsx-sim-gtc-berlin-26-5796136-600x338-r2.gif\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"omniverse-overall-dsx-sim-gtc-berlin-26-5796136-600x338-r2\" width=\"600\" /><p>Building an AI factory digital twin requires developers to bring site plans, equipment assets, and engineering requirements into a consistent model that teams can inspect, revise, and prepare for simulation. Connecting these inputs into an editable workflow helps teams explore design alternatives and incorporate engineering feedback as the design evolves. The NVIDIA Omniverse DSX Blueprint\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/developing-an-ai-factory-digital-twin-with-an-agent-assisted-workflow/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Tanya Lenz",
-      "published_at": "2026-10-21T09:38:49Z",
-      "fetched_at": "2026-10-21T13:49:11.198510Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d2cf77de70b00e1a",
       "url": "https://arxiv.org/abs/2610.29508",
       "title": "Shortcut-Resistant CAM Distillation for Long-Tailed Recognition",
@@ -61072,49 +60986,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "3c46a6dfc80ab06c",
-      "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
-      "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/ai-infrastructure-modual-aif-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-infrastructure-modual-aif\" width=\"768\" />AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/ai-infrastructure-modual-aif-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-infrastructure-modual-aif\" width=\"768\" />AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/ai-infrastructure-modual-aif-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"ai-infrastructure-modual-aif\" width=\"768\" /><p>AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute, networking, storage, power, cooling, and software online as one productive unit. In a conventional data center build, teams must first select the site, design power and cooling for the deployment, lay out the data center\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Tanya Lenz",
-      "published_at": "2026-10-21T09:35:32Z",
-      "fetched_at": "2026-10-21T13:49:11.198518Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "db3718abbfc4c7d4",
-      "url": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/",
-      "title": "GTC Berlin 2026: Live Updates From NVIDIA CEO Jensen Huang\u2019s Keynote",
-      "summary": "Founded in a tent near the Berlin Wall in 1980, the Tempodrom moved several times before settling near Anhalter Bahnhof in 2001. Its permanent home has since hosted concerts, galas and political events. Today, it hosts a different kind of spectacle. GTC Berlin runs three days, with more than 100 sessions on agentic AI, robotics, [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">Founded in a tent near the Berlin Wall in 1980, the Tempodrom moved several times before settling near Anhalter Bahnhof in 2001. Its permanent home has since hosted concerts, galas and political events. </span></p>\n<p><span style=\"font-weight: 400;\">Today, it hosts a different kind of spectacle.</span></p>\n<p><span style=\"font-weight: 400;\">GTC Berlin runs three days, with more than 100 sessions on agentic AI, robotics, physical AI, open models and accelerated computing underway at STATION-Berlin down the road. Here, journalists, analysts and partners have gathered for the main event: NVIDIA founder and CEO Jensen Huang\u2019s keynote.\u00a0</span></p>\n<h2><b>Huang Takes the Stage</b></h2>\n<p><img alt=\"\" class=\"size-large wp-image-99304 aligncenter\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/jhh-keynote-closeup-1920x1080-1-1680x945.jpg\" width=\"1200\" /></p>\n<p><span style=\"font-weight: 400;\">Huang opened with a question: What do L\u2019Or\u00e9al, Revolut, Spotify, Merck, Vodafone, Zara, Porsche, Nestl\u00e9 and HSBC have in common? They\u2019re all European companies and they\u2019re all working with NVIDIA on AI, he said.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The keynote comes on the heels of NVIDIA\u2019s weeklong road across Europe \u2014 Paris, London, Stockholm, Dublin \u2014 with the company committing nearly </span><a href=\"https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/\"><span style=\"font-weight: 400;\">$10 billion to the technology ecosystem across Europe</span></a> and working with<span style=\"font-weight: 400;\">\u00a012,000+ partners.</span><span style=\"font-weight: 400;\">\u201cAfter decades of advancement in the computer industry, we are now at the beginnings of a new industrial revolution,\u201d Huang said.</span></p>\n<p>&nbsp;</p>\n<div style=\"margin: 0 !important; padding: 0 !important; text-align: center; line-height: 1;\"><a href=\"https://blogs.nvidia.com/gtc-berlin-2026-news/\" style=\"display: inline-flex; margin: 0 !important; padding: 10px !important; background-color: #76b900; color: #ffffff !important; font-family: 'NVIDIA Sans', Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 1 !important; text-align: center; text-decoration: none !important; white-space: nowrap; vertical-align: top;\">Read All NVIDIA in Europe Announcements</a></div>\n<p>&nbsp;</p>\n<p><a href=\"https://blogs.nvidia.com/blog/ai-5-layer-cake/\"><span style=\"font-weight: 400;\">AI is a five-layer cake</span></a><span style=\"font-weight: 400;\">, Huang explained. Energy powers advanced computers that are part of an AI factory, which generates tokens and digital intelligence from the models that run on it, which are then integrated into every application.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cLong before the AI models emerge, the infrastructure has to exist,\u201d he said, highlighting how, similarly, the internet first needed networking, and electricity first required the grid.</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">\u201cTo be part of this AI economy, you don\u2019t want to just be consuming the AI; you want to be producing the AI,\u201d Huang said. \u201cWe could do all of that here in Europe, and in fact, we\u2019ve already started.\u201d</span></p>\n<h2><b>The AI Factory Gets a New Form Factor</b></h2>\n<p><span style=\"font-weight: 400;\">Huang framed NVIDIA\u2019s full-stack AI factory \u2014 spanning hardware, system software, CUDA-X libraries and models \u2014 as a broad platform for building and operating AI infrastructure.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cThis now represents the breadth of technology necessary to create the AI factory,\u201d Huang said. \u201cThis is what NVIDIA builds today, and this is the foundation by which we can enable Europe to be part of the AI ecosystem, the AI economy.\u201d\u00a0 </span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">He said Vera Rubin, in full production, extends NVIDIA\u2019s computing platform beyond models and large language models to process the entire AI agent. He also showed several of NVIDIA\u2019s latest rack-scale hardware offerings.</span></p>\n<p><span style=\"font-weight: 400;\">Next, </span><span style=\"font-weight: 400;\">Huang announced </span><a href=\"https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA DSX POD</span></a><span style=\"font-weight: 400;\">, a reference design for complete NVIDIA Vera Rubin AI factories built by partners inside modular containers, integrated and validated before delivery. With DSX POD, onsite deployment can shrink from six months to just 14 days once site utilities are ready.\u00a0</span></p>\n<p><img alt=\"\" class=\"size-large wp-image-99301 aligncenter\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/jhh-keynote-dsx-pod-1920x1080-1-1680x945.jpg\" width=\"1200\" /></p>\n<p><span style=\"font-weight: 400;\">\u201cThis is a complete transformation of the world supply chain,\u201d Huang said. \u201cThis will change the way that people install and build data centers, and hopefully, as a result, velocity goes up.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">The </span><a href=\"https://nvidianews.nvidia.com/news/european-ecosystem-builds-worlds-most-efficient-ai-factories-with-nvidia-dsx\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA DSX AI Factory Platform</span></a><span style=\"font-weight: 400;\"> enables companies to reduce water consumption for cooling by up to 100% and generate the same AI output with up to 30% less power.</span></p>\n<h2><b>Agents Are the New Computing Platform \u2014 and Safety Is an Engineering Problem</b></h2>\n<p><span style=\"font-weight: 400;\">Huang said agents think, reason, iterate and use tools, driving token consumption as they become more useful.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">He described an agent as comprising five elements: a model, a harness that orchestrates its work and memory, a sandbox that isolates the harness, knowledge and tools. In that framing, an agent is more than a model answering questions; it can draw on knowledge and act through tools.</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">\u201cThe most important thing is to make sure the agent is secure,\u201d Huang said. The autonomous agent can access files, resources, networks and tools, so its privileges should be minimal and it should be monitored.</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA\u2019s answer is the new </span><a href=\"https://nvidianews.nvidia.com/news/openshell-reference-architecture\" target=\"_blank\">NVIDIA OpenShell Reference Architecture for Safe AI Agents</a><span style=\"font-weight: 400;\">, a full-stack design built on </span><a href=\"https://www.nvidia.com/en-us/ai/openshell/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA OpenShell</span></a><span style=\"font-weight: 400;\"> \u2014 an open source, policy-controlled runtime with kernel-level sandboxing that sits between an agent and the systems it can affect.</span></p>\n<p><span style=\"font-weight: 400;\"><img alt=\"\" class=\"size-large wp-image-99305 aligncenter\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/jhh-keynote-openshell-1920x1080-1-1680x945.jpg\" width=\"1200\" /> </span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">That means privileges, policy enforcement and monitoring must adapt dynamically. \u201cEvery single time an agent is launched, the privileges are different,\u201d Huang said.</span></p>\n<h2><b>Open Models Turn Expertise Into an Advantage</b></h2>\n<p><span style=\"font-weight: 400;\">Huang </span><a href=\"https://blogs.nvidia.com/blog/open-models-europe-industry/\"><span style=\"font-weight: 400;\">presented NVIDIA\u2019s open models</span></a><span style=\"font-weight: 400;\"> as a starting point for building AI tailored to specific needs.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA\u2019s frontier, open models are available for use across industries: Nemotron for language, Cosmos for world foundation models, GR00T for humanoid robotics, Alpamayo for autonomous vehicles, Ising for quantum-classical computing and Earth-2 for physics AI.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cWe are the frontier,\u201d Huang said. \u201cSo in all of these different areas, we offer you all of the models, and we\u2019re continuously working on it. We\u2019ve been working on it for a decade, and we\u2019ll continue to work on this forever.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA provides the models, data and scripts to reproduce them, and companies can post-train a model on their own data for a particular use case \u2014 turning proprietary data into what he called \u201csovereign intelligence.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">\u201cYou could start with an open model, something that\u2019s incredibly good like Nemotron, and with your own data, post-train it for your use case and achieve, of course, super intelligence,\u201d Huang said. \u201cThat is a very sensible thing to do, and all the technology exists today.\u201d</span></p>\n<h2><b>NVIDIA Gives Agents a Knowledge Layer</b></h2>\n<p><span style=\"font-weight: 400;\">Huang then introduced the </span><a href=\"https://developer.nvidia.com/topics/ai/agent-knowledge-foundation\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Agent Knowledge Foundation</span></a><span style=\"font-weight: 400;\"> as a set of models and libraries for connecting agents to enterprise data, whether it\u2019s unstructured information in documents or structured data in databases.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">He highlighted Nemotron tools for parsing documents, embedding queries and reranking relevant information, along with new </span><a href=\"https://developer.nvidia.com/topics/ai/agent-knowledge-foundation/kumo\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Kumo</span></a><span style=\"font-weight: 400;\"> models for making predictions from structured data.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cUltimately, what turns these super agents, these agents into super agents, is that you give them access to your company\u2019s knowledge,\u201d Huang said.</span></p>\n<h2><b>NVIDIA CUDA-X \u2014 Accelerated Tools for Agents</b></h2>\n<p><span style=\"font-weight: 400;\">Huang then described </span><a href=\"https://www.nvidia.com/en-us/technologies/cuda-x/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA CUDA-X</span></a><span style=\"font-weight: 400;\"> as a collection of accelerated libraries used across science, engineering, research and creative work.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">NVIDIA\u2019s accelerated computing platform has more than 11 million developers building on it.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Huang said those libraries can accelerate simulators, solvers and data-processing engines \u2014 the kinds of tools agents may draw on to do useful work.</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">\u201cCUDA-X tools are what gives agents the tools of the trade,\u201d Huang said.\u00a0</span></p>\n<h2><b>Agents Go to Work in Labs, Factories and Engineering</b></h2>\n<p><span style=\"font-weight: 400;\">A video showcased </span><a href=\"https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/\"><span style=\"font-weight: 400;\">NVIDIA Agent Toolkit</span></a><span style=\"font-weight: 400;\"> bringing company knowledge, models and tools together in three industry examples:\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">At Lila Sciences, agents help design a potential B-cell lymphoma therapy, using virtual experiments to guide work in an automated lab.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">At Siemens\u2019 Erlangen factory, agents help prepare new products for production, testing plans in a digital twin before changes reach the factory floor.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">And at Dassault Syst\u00e8mes, engineering agents adapt vehicle design, using simulation to identify a problem and refine the design.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cAnd [all this] knowledge and tools belong to you,\u201d Huang said after the video rolled. \u201cThat\u2019s your expertise, and so all of this is now possible to do.\u201d\u00a0</span></p>\n<h2><b>Telcos as Distributed AI Infrastructure</b></h2>\n<p><img alt=\"\" class=\"alignnone size-full wp-image-99340\" height=\"900\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/nvidia-powered-telecom-networks.jpeg\" width=\"1600\" /></p>\n<p><span style=\"font-weight: 400;\">Huang said AI is transforming telecommunications, improving spectrum efficiency and turning cell towers into distributed AI infrastructure.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">He cited 100,000 sites and about 100 gigawatts of distributed data centers, and said </span><a href=\"https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA has made its first commercial phone call on T-Mobile\u2019s network with Nokia</span></a><span style=\"font-weight: 400;\"> after nearly eight years of work.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cNow CUDA makes phone calls,\u201d Huang said. \u201cAI will revolutionize the way we do telecommunications. It will enhance our spectrum efficiency tremendously.\u201d\u00a0</span><span style=\"font-weight: 400;\"><br />\n</span></p>\n<h2><b>AI Moves Into the Treatment Room</b></h2>\n<p><a href=\"https://nvidianews.nvidia.com/news/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care\" target=\"_blank\"><span style=\"font-weight: 400;\">Healthcare and life sciences leaders are building on NVIDIA technologies</span></a><span style=\"font-weight: 400;\"> to advance drug discovery and expand patient care.</span></p>\n<p><span style=\"font-weight: 400;\">For example, NVIDIA and Siemens Healthineers are developing AI-enabled radiation therapy.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Nemotron agents coordinate treatment planning, the Isaac for Healthcare platform and Omniverse libraries create a digital twin of the device and patient anatomy to simulate tumor targeting. Holoscan with IGX Thor connects live imaging and sensor data to enable real-time adaptive delivery as the patient moves.</span></p>\n<p><span style=\"font-weight: 400;\">Huang described adaptive radiotherapy as a physical-AI application: as the patient\u2019s body and tumor change during treatment, the system must track the changes and adjust the radiation targeting.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cThe tumor is changing in shape. The physical body is changing while you\u2019re in therapy,\u201d Huang said. \u201cThe robot, this radio adaptive radiotherapy system, has to perceive the changing environment, understand where the tumor is, segment it just perfectly and direct the radiotherapy accordingly.\u201d\u00a0</span></p>\n<h2><b>The Road Ahead: Mobility Leaders Join NVIDIA\u2019s Automotive Ecosystem</b><b><br />\n</b></h2>\n<p><span style=\"font-weight: 400;\">Huang said the </span><a href=\"https://nvidianews.nvidia.com/news/european-mobility-leaders-build-safe-vehicles-and-robotaxi-fleets-on-nvidia-hyperion\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Hyperion computing platform is being designed into more vehicle fleets</span></a><span style=\"font-weight: 400;\">, with autonomous-driving software connecting robotaxis to ride-hailing services.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Bolt with Lucid, Mercedes-Benz, Volkswagen Commercial Vehicles and Einride are showcasing selected autonomous-mobility use cases on the NVIDIA Hyperion computing platform, demonstrating potential applications for level 3 and level 4 vehicles as well as future robotaxi fleets.</span></p>\n<p><span style=\"font-weight: 400;\">In addition, Volvo Cars is adopting Hyperion and NVIDIA Alpamayo Stack software for safe automated driving. NVIDIA also introduced new AI and safety technologies to help developers build, validate and deploy autonomous vehicles at scale.</span></p>\n<p><span style=\"font-weight: 400;\">Volkswagen\u2019s van, JLR, Volvo and Mercedes-Benz\u2019s next-generation vehicles will be Hyperion-compatible, Huang announced, saying, \u201cWelcome to Hyperion.\u201d</span></p>\n<h2><b>A Reference Humanoid for Robotics Researchers</b></h2>\n<p><span style=\"font-weight: 400;\">Huang then </span><a href=\"https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data\" target=\"_blank\"><span style=\"font-weight: 400;\">announced Agile ONE SN</span></a><span style=\"font-weight: 400;\">, a reference humanoid built on Isaac GR00T \u2014 a 31-degree-of-freedom body, expected to be available next year, designed to cut researcher setup time from weeks to days.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The platform is modular: researchers can use the full workflow or pull in selected components. </span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">\u201cThis is a great starting point,\u201d Huang said.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">It builds on NVIDIA\u2019s open physical AI stack \u2014 Isaac Capture for data collection, GR00T models for robot intelligence, Isaac Lab for simulation-based training, Isaac OS for runtime \u2014 and NVIDIA\u2019s open physical AI dataset. Partners including Agility Robotics, Figure, KUKA and NEURA Robotics are already building on the same platform.</span></p>\n<h2><b>Personal AI Gets a New Machine</b></h2>\n<p><span style=\"font-weight: 400;\">Huang closed by discussing </span><a href=\"https://www.nvidia.com/en-us/products/rtx-spark/\" target=\"_blank\"><span style=\"font-weight: 400;\">RTX Spark laptops</span></a><span style=\"font-weight: 400;\">, which </span><a href=\"https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs\" target=\"_blank\"><span style=\"font-weight: 400;\">launched last week</span></a><span style=\"font-weight: 400;\">, bringing together RTX graphics and NVIDIA\u2019s full-stack AI platform in slim, premium Windows PCs for accelerated creation, immersive gaming and powerful local AI.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\"><img alt=\"\" class=\"size-large wp-image-99319 aligncenter\" height=\"675\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/jhh-keynote-rtx-spark-1920x1080-1-1680x945.jpg\" width=\"1200\" /></span></p>\n<p><span style=\"font-weight: 400;\">He compared its 1 petaflop of performance and 128GB of memory with the DGX-1 he delivered to OpenAI in 2016 \u2014 then made the difference in size the punchline:</span></p>\n<p><span style=\"font-weight: 400;\">\u201cIn the year 2016, I delivered 1 petaflop and 128GB \u2026 to a small company called OpenAI,\u201d Huang said, holding up the compact machine in front of the audience. \u201cThis is 1 petaflop and 128GB. The only difference, of course, is that I can hold this like this, and DGX-1 took two people to carry upstairs.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">Huang then showed a video of an agent helping train Hugging Face\u2019s Microduck: it set up a course and simulated the robot in Isaac Sim, sent training jobs to the cloud, then brought the learned policy back to RTX Spark for evaluation before deploying it to the physical robot.</span></p>\n<p><img alt=\"\" class=\"alignnone size-full wp-image-99333\" height=\"1152\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/KeynotePhoto-718-scaled.jpeg\" width=\"2048\" /></p>\n<p><span style=\"font-weight: 400;\">A flock of four Microducks joined Huang onstage, sitting down, standing up and even taking a nap on cue. He explained that they were created on RTX Spark, trained in the cloud and learned their skills in simulation.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cYou were created on RTX Spark \u2026 [we] trained you in the cloud on a whole bunch of NVIDIA supercomputers, and you learned your skills right here on RTX Spark and the digital twin,\u201d Huang told them.</span></p>\n<h2><b>The Full Lineup</b></h2>\n<p><span style=\"font-weight: 400;\">With the Microducks gathered around him, Huang recapped the keynote: Europe is building its AI economy, AI factories are evolving to run agents and physical AI is the next frontier.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cSo that\u2019s it,\u201d Huang said. \u201cEverybody can build agents. Every company in Europe will become an AI company \u2026 and we\u2019re going to have a thriving AI economy here in Europe.\u201d</span></p>\n<p><span style=\"font-weight: 400;\">To close, Huang had one more surprise: a Eurovision-style musical send-off that turned the keynote\u2019s themes into a comic recap.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The lyrics raced from OpenShell\u2019s guardrails \u2014 \u201cNo credentials. Access dismissed\u201d and \u201cSentry on BlueField never clocks off\u201d \u2014 to physical AI, where robot training was likened to \u201ccollege for robots without student loans.\u201d\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The punchline: \u201cYou can\u2019t spell </span><a href=\"https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/\"><span style=\"font-weight: 400;\">fungible</span></a><span style=\"font-weight: 400;\"> without fun.\u201d A saxophone solo led into a rousing \u201cWe are Europa\u201d chorus.</span></p>\n<p><span style=\"font-weight: 400;\">\u201cLet\u2019s work together to build Europe\u2019s AI economy and put AI to work,\u201d Huang said, closing out his talk. \u201cHave a great GTC.\u201d</span></p>\n<p><img alt=\"\" class=\"alignnone size-full wp-image-99331\" height=\"1152\" src=\"https://blogs.nvidia.com/wp-content/uploads/2026/10/LD2_0960-2-scaled.jpeg\" width=\"2048\" /></p>\n<p><em>Explore NVIDIA GTC Berlin blogs and press releases in the <a href=\"https://nvidianews.nvidia.com/online-press-kit/gtc-berlin-2026-news\" target=\"_blank\">online press kit</a>.</em></p>\n<p>&nbsp;</p>\n<div style=\"margin: 0 !important; padding: 0 !important; text-align: center; line-height: 1;\"><a href=\"https://blogs.nvidia.com/gtc-berlin-2026-news/\" style=\"display: inline-flex; margin: 0 !important; padding: 10px !important; background-color: #76b900; color: #ffffff !important; font-family: 'NVIDIA Sans', Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 1 !important; text-align: center; text-decoration: none !important; white-space: nowrap; vertical-align: top;\">Read All NVIDIA in Europe Announcements</a></div>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Brian Caulfield",
-      "published_at": "2026-10-21T09:30:16Z",
-      "fetched_at": "2026-10-21T13:49:10.883411Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d6ba0550b8cd9596",
       "url": "https://arxiv.org/abs/2610.29870",
       "title": "PAUSE: Search-Free Steering of Coding Agents Before Their First Source-Code Edit",
@@ -63339,6 +63210,312 @@
       "author": "anthropicai",
       "published_at": "2026-10-26T13:05:46Z",
       "fetched_at": "2026-10-27T16:38:39.490477Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "df3bdba120f6a896",
+      "url": "https://x.com/steipete/status/2115380217938158049",
+      "title": "Kinda funny how easy it is to spot bugs by agents vs humans. Someone at Disney still writes code by ...",
+      "summary": "Kinda funny how easy it is to spot bugs by agents vs humans. Someone at Disney still writes code by HAND? https://t.co/kiz2czVU7m",
+      "content": "Kinda funny how easy it is to spot bugs by agents vs humans. Someone at Disney still writes code by HAND? https://t.co/kiz2czVU7m",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-28T09:48:40Z",
+      "fetched_at": "2026-10-28T09:52:23.113714Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2a5e8cae3c8b2039",
+      "url": "https://x.com/steipete/status/2115330888829653192",
+      "title": "RT @apiratemoo: That is one hell of a typo. https://t.co/Nk6iwG5L8Q",
+      "summary": "RT @apiratemoo: That is one hell of a typo. https://t.co/Nk6iwG5L8Q",
+      "content": "RT @apiratemoo: That is one hell of a typo. https://t.co/Nk6iwG5L8Q",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-28T06:32:39Z",
+      "fetched_at": "2026-10-28T09:52:23.113811Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9daf70af13aa2597",
+      "url": "https://x.com/steipete/status/2115314845453353338",
+      "title": "RT @pigeon__s: The OpenAI Canyon\u2122 https://t.co/LYRHQane6Y",
+      "summary": "RT @pigeon__s: The OpenAI Canyon\u2122 https://t.co/LYRHQane6Y",
+      "content": "RT @pigeon__s: The OpenAI Canyon\u2122 https://t.co/LYRHQane6Y",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-28T05:28:54Z",
+      "fetched_at": "2026-10-28T09:52:23.113855Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4035260b319385d5",
+      "url": "https://x.com/dani_avila7/status/2115292766494134630",
+      "title": "CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS=1\n\nYep, it\u2019s real\u2026 I needed this one, and I\u2019ll de...",
+      "summary": "CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS=1\n\nYep, it\u2019s real\u2026 I needed this one, and I\u2019ll definitely use this flag",
+      "content": "CLAUDE_CODE_EVEN_MORE_DANGEROUSLY_SKIP_PERMISSIONS=1\n\nYep, it\u2019s real\u2026 I needed this one, and I\u2019ll definitely use this flag",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T04:01:10Z",
+      "fetched_at": "2026-10-28T09:52:15.453859Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3e38384db6c3dcc1",
+      "url": "https://x.com/steipete/status/2115291482005602307",
+      "title": "RT @emollick: Artificial Analysis finally moves to closed benchmarks (goodbye GDPval-AA), and finds ...",
+      "summary": "RT @emollick: Artificial Analysis finally moves to closed benchmarks (goodbye GDPval-AA), and finds that open weights models are falling  f\u2026",
+      "content": "RT @emollick: Artificial Analysis finally moves to closed benchmarks (goodbye GDPval-AA), and finds that open weights models are falling  f\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-28T03:56:04Z",
+      "fetched_at": "2026-10-28T09:52:23.113899Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8c6c3cc6dfb2a421",
+      "url": "https://x.com/dani_avila7/status/2115268136505168153",
+      "title": "OpenBMB just released MiniCPM-OCR, and the Jev model is really interesting!\n\nA 1.3B model that extra...",
+      "summary": "OpenBMB just released MiniCPM-OCR, and the Jev model is really interesting!\n\nA 1.3B model that extracts text, tables, and formulas from documents, paired with a dedicated System-1 Jev model built to reduce human review workload: it scores every result and flags only the parts",
+      "content": "OpenBMB just released MiniCPM-OCR, and the Jev model is really interesting!\n\nA 1.3B model that extracts text, tables, and formulas from documents, paired with a dedicated System-1 Jev model built to reduce human review workload: it scores every result and flags only the parts",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T02:23:18Z",
+      "fetched_at": "2026-10-28T09:52:15.453968Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "247f19dd19228060",
+      "url": "https://x.com/dani_avila7/status/2115255736561234301",
+      "title": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it work...",
+      "summary": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it works, what kinds of vulnerabilities it detects https://t.co/miWutILBCI",
+      "content": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it works, what kinds of vulnerabilities it detects https://t.co/miWutILBCI",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T01:34:01Z",
+      "fetched_at": "2026-10-28T09:52:15.454027Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "51bf83fea2fef40d",
+      "url": "https://x.com/OpenAI/status/2115237121300770818",
+      "title": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI res...",
+      "summary": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI result related to the existence of quantum\u2026",
+      "content": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI result related to the existence of quantum\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-28T00:20:03Z",
+      "fetched_at": "2026-10-28T09:52:19.926614Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c94645b3de5c76e6",
+      "url": "https://x.com/AnthropicAI/status/2115207004293853358",
+      "title": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to...",
+      "summary": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.\nhttps://t.co/p0lA6cP2y1",
+      "content": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.\nhttps://t.co/p0lA6cP2y1",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-27T22:20:23Z",
+      "fetched_at": "2026-10-28T09:52:21.954815Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0a7182a4cad3682f",
+      "url": "https://x.com/trq212/status/2115205259090153957",
+      "title": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enoug...",
+      "summary": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides si\u2026",
+      "content": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides si\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-27T22:13:27Z",
+      "fetched_at": "2026-10-28T09:52:11.200751Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "68c5acda4b1cc351",
+      "url": "https://x.com/dani_avila7/status/2115194010616627306",
+      "title": "Ok this is really cool",
+      "summary": "Ok this is really cool",
+      "content": "Ok this is really cool",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-27T21:28:45Z",
+      "fetched_at": "2026-10-28T09:52:15.454071Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a4cad22365ea4840",
+      "url": "https://x.com/trq212/status/2115188992861970693",
+      "title": "feels like there needs to be a new way to distribute opensource software such that people can modify...",
+      "summary": "feels like there needs to be a new way to distribute opensource software such that people can modify via agents but also get upstream automatically merged in\n\ncoding agents can do this but they won\u2019t do it automatically",
+      "content": "feels like there needs to be a new way to distribute opensource software such that people can modify via agents but also get upstream automatically merged in\n\ncoding agents can do this but they won\u2019t do it automatically",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-27T21:08:48Z",
+      "fetched_at": "2026-10-28T09:52:11.200852Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eaba97b23645aeeb",
+      "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+      "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six o...",
+      "summary": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own.\n\nIn doing so, we\u2019ve learned much more about how Claude can support the many stages of",
+      "content": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own.\n\nIn doing so, we\u2019ve learned much more about how Claude can support the many stages of",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-27T20:27:48Z",
+      "fetched_at": "2026-10-28T09:52:21.954915Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3cf1d9ae1d8913b5",
+      "url": "https://x.com/GeminiApp/status/2115171788812669225",
+      "title": "With Google SynthID detection in Gemini, anyone can easily check if an image, video, or audio file w...",
+      "summary": "With Google SynthID detection in Gemini, anyone can easily check if an image, video, or audio file was made with AI from Google.\n\nJust ask Gemini, \u201cIs this AI generated?,\" so you can navigate the web with more confidence. https://t.co/Y8jeeJzunT",
+      "content": "With Google SynthID detection in Gemini, anyone can easily check if an image, video, or audio file was made with AI from Google.\n\nJust ask Gemini, \u201cIs this AI generated?,\" so you can navigate the web with more confidence. https://t.co/Y8jeeJzunT",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-27T20:00:27Z",
+      "fetched_at": "2026-10-28T09:52:18.812849Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c3cbd9d44b667957",
+      "url": "https://x.com/simonw/status/2115128326922883517",
+      "title": "These ones are pretty great!",
+      "summary": "These ones are pretty great!",
+      "content": "These ones are pretty great!",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-27T17:07:44Z",
+      "fetched_at": "2026-10-28T09:52:14.152068Z",
       "score": null,
       "score_reason": "",
       "tier": "",
