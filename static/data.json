@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-29T05:50:01.775342+00:00",
+  "exported_at": "2026-10-29T09:13:32.010472+00:00",
   "period_hours": 168,
-  "total": 2403,
+  "total": 2406,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28088,46 +28088,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "017b9fdcd8b12a2d",
-      "url": "https://www.youtube.com/watch?v=mMw3arwQsL0",
-      "title": "1,368 AI Failures and What They Teach About Evals \u2014 Vishal Srivastava & Tanmay Sah, New York Life",
-      "summary": "Vishal Srivastava and Tanmay Sah studied 1,368 incidents from a public AI incident database to ask what real failures say about how AI systems should be tested. They sort failures across three areas (technical strength, deployment controls and business impact) and 13 sub-areas that cover about 98% of incidents. Weak deployment controls, such as human review and monitoring, are the most closely tied to harm. They show how to rank use cases by how much is at stake, why the evaluator itself needs checking, and a build-break-fix loop that tries to prove a system wrong instead of right, applied to a real airline chatbot that gave a customer the wrong refund policy.\n\nChapters:\n- 00:00 Intro\n- 00:41 AI failures are rising fast\n- 01:35 Three dimensions of failure\n- 03:34 13 sub-dimensions\n- 06:09 What covers 98% of failures\n- 07:12 Which failures cause the most harm\n- 09:43 Ranking use cases by materiality\n- 10:43 Breaking risk into four parts\n- 11:40 What to test in an agentic system\n- 13:14 Can you trust the evaluator?\n- 13:48 Confirmation bias and failure-driven evals\n- 15:20 Build, break, fix\n- 17:03 A real chatbot failure\n- 18:30 Recap\n\nVishal Srivastava & Tanmay Sah, New York Life: https://www.newyorklife.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-22T09:00:12Z",
-      "fetched_at": "2026-10-22T11:54:26.632752Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a9cb9c83a818027c",
-      "url": "https://www.youtube.com/watch?v=c_SPW__jF9w",
-      "title": "How to Test AI Agents When No Benchmark Exists \u2014 Nathanael Weill, Air Canada",
-      "summary": "Nathanael Weill leads a team building AI agents at Air Canada, where tasks are so specific there's no public benchmark and domain experts have little time to grade results. His fix is to write the answer first: start from a known answer, generate the input from it, and check whether the agent finds its way back. He shows how that took a past RAG project from one expert-graded test a week to dozens of automated tests a day, then applies it to a supplier-contract review agent with five ways to build a test set: past decisions, planted rule violations, removed clauses, changes that shouldn't matter, and contract templates with filled-in blanks. He also explains why he avoids LLM judges whenever code can check the answer.\n\nChapters:\n- 00:00 Intro\n- 00:47 No benchmark, no experts\n- 01:41 A lesson from a telecom RAG project\n- 04:43 Weekly expert reviews were too slow\n- 05:38 Flip it: write the answer first\n- 06:33 From one test a week to dozens a day\n- 07:30 Supplier contract review\n- 10:08 How the contract agent works\n- 10:39 Five ways to build a test set\n- 12:31 Planting rule violations\n- 13:39 Removing clauses\n- 14:42 Changes that shouldn't matter\n- 15:38 Templates with blanks\n- 16:39 Avoid LLM judges when code can check\n- 18:07 Use expert feedback to build better tests\n\nNathanael Weill, Air Canada: https://www.aircanada.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-22T08:00:01Z",
-      "fetched_at": "2026-10-22T11:54:26.632770Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "1a543055a02f9816",
       "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
       "title": "OpenAI and Poland\u2019s NASK partner to advance AI safety and security",
@@ -28359,68 +28319,6 @@
       "author": "GeForce NOW Community",
       "published_at": "2026-10-22T13:00:20Z",
       "fetched_at": "2026-10-22T17:11:51.385429Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0e5fad3ca5f8a881",
-      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-      "title": "Ensemble forecasting with IBM Granite time-series models",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-22T07:51:31Z",
-      "fetched_at": "2026-10-22T11:54:31.887301Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6400feb681472530",
-      "url": "https://openai.com/index/forward-deployed-engineering-means",
-      "title": "What FDE means at OpenAI",
-      "summary": "What forward deployed engineering means at OpenAI",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-22T06:00:00Z",
-      "fetched_at": "2026-10-22T17:11:47.632512Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0a3a459d3835cacc",
-      "url": "https://www.youtube.com/watch?v=_dTF3NpPzGo",
-      "title": "Why AI Writing Still Reads Like Slop \u2014 Louis-Fran\u00e7ois Bouchard, Towards AI",
-      "summary": "Louis-Fran\u00e7ois Bouchard of Towards AI breaks down what makes AI writing feel like slop: overused words, vague generalities, saying nothing, repetition, hallucination and a voice that sounds like everyone at once. He then shows how his team built a benchmark to measure whether a model can write a video script in his own voice: 10 scripts, 5 drafts per model, 4 LLM judges, nine scoring metrics and 1,000 human A/B checks. He shares what it cost, why judges favor their own model family, and practical tips for writing with AI: very long prompts full of examples, one review pass from a strong model, many cheap drafts merged together, and always a human edit.\n\nChapters:\n- 00:00 What is slop?\n- 02:41 Measuring sloppy writing\n- 03:49 Why build another benchmark\n- 05:44 Can a model write like me?\n- 07:19 10 scripts, 5 drafts, 4 judges\n- 09:14 What gets measured\n- 11:10 How the judges score\n- 12:38 Judges prefer their own models\n- 13:46 Human A/B checks\n- 14:15 What it cost\n- 15:20 What we learned\n- 16:21 How to write better with AI\n\nLouis-Fran\u00e7ois Bouchard, Towards AI: https://towardsai.net\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-22T07:00:28Z",
-      "fetched_at": "2026-10-22T11:54:26.632779Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -52156,6 +52054,171 @@
       "author": "dani_avila7",
       "published_at": "2026-10-28T14:51:55Z",
       "fetched_at": "2026-10-28T21:05:02.002535Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "965f1ffd5615604a",
+      "url": "https://x.com/bcherny/status/2115654656638771425",
+      "title": "RT @simonw: I think October represents another inflection point in capabilities for coding agents an...",
+      "summary": "RT @simonw: I think October represents another inflection point in capabilities for coding agents and the models that drive them: Claude Op\u2026",
+      "content": "RT @simonw: I think October represents another inflection point in capabilities for coding agents and the models that drive them: Claude Op\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-29T03:59:11Z",
+      "fetched_at": "2026-10-29T09:13:20.482799Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c3fb695b802a1c39",
+      "url": "https://x.com/simonw/status/2115649415407181845",
+      "title": "RT @trq212: very weird thing happening rn\n\ntechnical people are sad, they think their skills are now...",
+      "summary": "RT @trq212: very weird thing happening rn\n\ntechnical people are sad, they think their skills are now useless\n\nnon-technical people are desp\u2026",
+      "content": "RT @trq212: very weird thing happening rn\n\ntechnical people are sad, they think their skills are now useless\n\nnon-technical people are desp\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-29T03:38:22Z",
+      "fetched_at": "2026-10-29T09:13:21.530310Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a52620ffa04e5d2d",
+      "url": "https://x.com/trq212/status/2115641110710419752",
+      "title": "I think the same is true of creative fields, like I see artists really worrying about AI\n\nbut I wish...",
+      "summary": "I think the same is true of creative fields, like I see artists really worrying about AI\n\nbut I wish so badly that I could sketch animation ideas and character concepts for my agent to flesh out instead of trying to find examples\n\nI don't have the language!",
+      "content": "I think the same is true of creative fields, like I see artists really worrying about AI\n\nbut I wish so badly that I could sketch animation ideas and character concepts for my agent to flesh out instead of trying to find examples\n\nI don't have the language!",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-29T03:05:22Z",
+      "fetched_at": "2026-10-29T09:13:18.330540Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "023ad4a72dd77b43",
+      "url": "https://x.com/dani_avila7/status/2115634803449930179",
+      "title": "Prompt Cache Control just crossed 3,000 downloads\n\nReally cool to see so many people using this Clau...",
+      "summary": "Prompt Cache Control just crossed 3,000 downloads\n\nReally cool to see so many people using this Claude Code Mod to monitor and manage prompt caching\n\nInstall it with:\nnpx claude-code-templates@latest --mod observability/prompt-cache-control https://t.co/H8BRLfTwRq",
+      "content": "Prompt Cache Control just crossed 3,000 downloads\n\nReally cool to see so many people using this Claude Code Mod to monitor and manage prompt caching\n\nInstall it with:\nnpx claude-code-templates@latest --mod observability/prompt-cache-control https://t.co/H8BRLfTwRq",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T02:40:18Z",
+      "fetched_at": "2026-10-29T09:13:22.572361Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f57fd8d25dfd19e5",
+      "url": "https://x.com/dani_avila7/status/2115607191881146451",
+      "title": "Another official Anthropic plugin worth adding to your Claude Code stack\u2026 especially if you\u2019re build...",
+      "summary": "Another official Anthropic plugin worth adding to your Claude Code stack\u2026 especially if you\u2019re building MCP servers\n\nmcp-server-dev includes 3 skills:\n\n- build-mcp-server: Build MCP servers with tools and authentication\n\n- build-mcp-app: Create interactive UIs for MCP\n\n-",
+      "content": "Another official Anthropic plugin worth adding to your Claude Code stack\u2026 especially if you\u2019re building MCP servers\n\nmcp-server-dev includes 3 skills:\n\n- build-mcp-server: Build MCP servers with tools and authentication\n\n- build-mcp-app: Create interactive UIs for MCP\n\n-",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T00:50:35Z",
+      "fetched_at": "2026-10-29T09:13:22.572439Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6d1aa60951ca43a5",
+      "url": "https://x.com/GeminiApp/status/2115580782286930306",
+      "title": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into...",
+      "summary": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into your personalized coaching plan https:\u2026",
+      "content": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into your personalized coaching plan https:\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T23:05:38Z",
+      "fetched_at": "2026-10-29T09:13:25.833372Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3a91ea23535e853f",
+      "url": "https://x.com/dani_avila7/status/2115572069085716705",
+      "title": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts,...",
+      "summary": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts, MCPs, skills, hooks, subagents, workflows\u2026 we have plenty of tools\n\nBut reliable decision-making and knowing when to escalate to a human is another challenge\n\nThat\u2019s why https://t.co/kbFuIPtNJ1",
+      "content": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts, MCPs, skills, hooks, subagents, workflows\u2026 we have plenty of tools\n\nBut reliable decision-making and knowing when to escalate to a human is another challenge\n\nThat\u2019s why https://t.co/kbFuIPtNJ1",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T22:31:01Z",
+      "fetched_at": "2026-10-29T09:13:22.572470Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f314516791dee9f2",
+      "url": "https://x.com/GeminiApp/status/2115558141069054054",
+      "title": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the hol...",
+      "summary": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the holodeck on Star Trek \u2013 computing that fee\u2026",
+      "content": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the holodeck on Star Trek \u2013 computing that fee\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T21:35:40Z",
+      "fetched_at": "2026-10-29T09:13:25.833482Z",
       "score": null,
       "score_reason": "",
       "tier": "",
