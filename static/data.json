@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-29T09:13:32.010472+00:00",
+  "exported_at": "2026-10-29T11:58:17.927120+00:00",
   "period_hours": 168,
-  "total": 2406,
+  "total": 2404,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28043,45 +28043,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-10-22T13:18:04Z",
       "fetched_at": "2026-10-22T17:11:44.896736Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6080a4fd34db0b11",
-      "url": "https://www.youtube.com/shorts/biQmfyYZAHw",
-      "title": "This AI Gives Every Shopper a Different Popup",
-      "summary": "This AI shows every shopper a different popup and keeps optimizing for revenue, right before Black Friday. \n\nBook a demo and mention Nate Herk for a 30 day free trial: https://hubs.la/Q04yvprG0\n\n#ad",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-22T11:00:32Z",
-      "fetched_at": "2026-10-22T11:54:26.234788Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f5e30070ed6af226",
-      "url": "https://www.youtube.com/watch?v=615-yWyS1n0",
-      "title": "What Is LLM Inference? How AI Models Generate Responses",
-      "summary": "Learn more about LLM Inference here \u2192 https://ibm.biz/~CCvvB5TvB\n\nEvery LLM response starts with much more than a prompt. Grace Ableidinger explains LLM inference, from tokenization and GPU batching to KV cache, prefill, and decode. Learn how AI models turn static weights into real-time responses.\n\n 00:00 \u2013 Understand What LLM Inference Actually Does\n 01:15 \u2013 See How LLM Inference Engines Serve AI Models\n 01:43 \u2013 Follow an LLM Request from API to Model\n 02:15 \u2013 Turn Prompts Into Tokens with Tokenization\n 02:59 \u2013 Route LLM Requests to GPU Hardware\n 03:30 \u2013 Increase LLM Throughput with Continuous Batching\n 04:23 \u2013 Understand LLM Prefill and KV Cache\n 05:24 \u2013 See How Decode Generates Tokens\n 06:18 \u2013 Measure LLM Latency with TTFT and ITL\n 06:59 \u2013 Connect the Full LLM Inference Pipeline\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~LqLIqIARH\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#llm #aimodels #aiinference #ai #aiengineering \n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-22T11:00:04Z",
-      "fetched_at": "2026-10-22T11:54:26.686673Z",
       "score": null,
       "score_reason": "",
       "tier": "",
