@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-29T13:03:26.334503+00:00",
+  "exported_at": "2026-10-29T14:20:35.846717+00:00",
   "period_hours": 168,
-  "total": 2411,
+  "total": 2410,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28169,46 +28169,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5d982ec5b3e174a3",
-      "url": "https://www.youtube.com/watch?v=DSS1Yqb6-qE",
-      "title": "/roast-room: How I Use Claude to Think Like the Top 1%",
-      "summary": "Try Fish Audio today: https://fish.audio/invite/?fpr=nateh\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=roast-room-2&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI walk through my Roast Room in Claude Code, where AI advisors built from the public work of people like Jeff Bezos, Alex Hormozi, and Warren Buffett debate your business decisions. \n\nYou'll see how their brains are organized, how to build your own advisors with the New Roaster skill, and how I add Elon Musk to the council. We also run a live debate so you can see the opening positions, disagreements, and final verdict.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS \n0:00 Meet the Roast Room\n2:03 How the Advisors Are Built\n4:46 Sponsor\n6:14 Build Your Own Roasters\n6:49 Running a Live Council\n10:06 Debate Logs and Opening Votes\n13:13 Final Votes and Verdict\n13:59 Adding Elon Musk\n14:34 Get the Free Skills",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-22T14:18:13Z",
-      "fetched_at": "2026-10-22T17:11:44.896718Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "58bca5257728ba22",
-      "url": "https://www.youtube.com/shorts/GnFFcLnmWuQ",
-      "title": "Claude has completely changed how I edit videos",
-      "summary": "",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-22T13:18:04Z",
-      "fetched_at": "2026-10-22T17:11:44.896736Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "1a543055a02f9816",
       "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
       "title": "OpenAI and Poland\u2019s NASK partner to advance AI safety and security",
@@ -50124,26 +50084,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2cc60c7b771b04f0",
-      "url": "https://x.com/dani_avila7/status/2113263294811119636",
-      "title": "With all the recent vulnerabilities in PHP, Node.js, and other parts of the ecosystem\n\nthis is a goo...",
-      "summary": "With all the recent vulnerabilities in PHP, Node.js, and other parts of the ecosystem\n\nthis is a good time to try Cloudflare\u2019s Security Audit Skill\n\nIt uses multiple agents to find vulnerabilities, independently validate findings, and reduce false positives\n\nOne interesting",
-      "content": "With all the recent vulnerabilities in PHP, Node.js, and other parts of the ecosystem\n\nthis is a good time to try Cloudflare\u2019s Security Audit Skill\n\nIt uses multiple agents to find vulnerabilities, independently validate findings, and reduce false positives\n\nOne interesting",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-22T13:36:46Z",
-      "fetched_at": "2026-10-22T14:59:33.888180Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2f10a220e6d8d679",
       "url": "https://x.com/AnthropicAI/status/2113390212911083894",
       "title": "New on our Frontier Red Team blog: using Claude to formally verify software at large scale.\n\nFormal ...",
@@ -52319,6 +52259,46 @@
       "author": "geminiapp",
       "published_at": "2026-10-28T21:35:40Z",
       "fetched_at": "2026-10-29T09:13:25.833482Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d54bc1734d92c1d6",
+      "url": "https://x.com/dani_avila7/status/2115787670060405222",
+      "title": "Just getting started with Claude Duet... the onboarding experience has been pretty good so far!\n\nI'l...",
+      "summary": "Just getting started with Claude Duet... the onboarding experience has been pretty good so far!\n\nI'll be sharing more soon \ud83d\udc40 https://t.co/1Kn4tXf2CP",
+      "content": "Just getting started with Claude Duet... the onboarding experience has been pretty good so far!\n\nI'll be sharing more soon \ud83d\udc40 https://t.co/1Kn4tXf2CP",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T12:47:44Z",
+      "fetched_at": "2026-10-29T14:20:25.720625Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2cc60c7b771b04f0",
+      "url": "https://x.com/dani_avila7/status/2113263294811119636",
+      "title": "With all the recent vulnerabilities in PHP, Node.js, and other parts of the ecosystem\n\nthis is a goo...",
+      "summary": "With all the recent vulnerabilities in PHP, Node.js, and other parts of the ecosystem\n\nthis is a good time to try Cloudflare\u2019s Security Audit Skill\n\nIt uses multiple agents to find vulnerabilities, independently validate findings, and reduce false positives\n\nOne interesting",
+      "content": "With all the recent vulnerabilities in PHP, Node.js, and other parts of the ecosystem\n\nthis is a good time to try Cloudflare\u2019s Security Audit Skill\n\nIt uses multiple agents to find vulnerabilities, independently validate findings, and reduce false positives\n\nOne interesting",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-22T13:36:46Z",
+      "fetched_at": "2026-10-22T14:59:33.888180Z",
       "score": null,
       "score_reason": "",
       "tier": "",
