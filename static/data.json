@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-30T09:14:30.538202+00:00",
+  "exported_at": "2026-10-30T11:42:00.372494+00:00",
   "period_hours": 168,
-  "total": 1959,
+  "total": 1958,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -14359,25 +14359,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "89d84d9a5f7d4708",
-      "url": "https://www.youtube.com/watch?v=WLhh5FeLpy0",
-      "title": "Self-replicating AI, your doctor\u2019s chatbot & agents at dinner",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content \u2192 https://ibm.biz/~orPNK02xR\n\nWhat happens when an AI model can copy itself onto the devices in yout hoome? \n\nThis week on Mixture of Experts, host David Zax is joined by Aili McConnon, Sandhya Iyer and Jacob Repp. First, Anthropic research suggests small AI models may be months away from copying themselves across cheap smart devices without a data center. The panel debates whether the bigger risk is the model itself or the poorly secured devices already in our homes. \n\nNext, a JAMA study finds that about half of US doctors use OpenEvidence, a clinical chatbot, more often for treatment decisions than for diagnosis. The panel discusses whether faster, less-vetted answers are a trade worth making. Finally, 22 founders let AI agents book their seats at a Manhattan dinner, and the agents networked with each other in a chat room. The panel considers how much autonomy agents should get when they deal with other agents.\n\nAll that and more on Mixture of Experts.\n\n00:00 \u2013 Intro\n01:17 \u2013 AI models approach self-replication\n14:22 \u2013 Study reveals how doctors are using AI\n26:38 \u2013 Agents network at a founders\u2019 dinner\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~Tic8uKc5V\n#anthropic #aiagents #selfreplicatingai\n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-23T10:00:30Z",
-      "fetched_at": "2026-10-23T13:27:48.017964Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e79f2e60b767f1e2",
       "url": "https://arxiv.org/abs/2610.37206",
       "title": "SimplexLoRA: Dynamic Rank Updating via Alternating Minimization with Simplex Projection",
@@ -18883,27 +18864,6 @@
       "author": "Gabriele Leone",
       "published_at": "2026-10-23T14:58:32Z",
       "fetched_at": "2026-10-23T18:22:44.552591Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f8c156dba7886826",
-      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "title": "Securing our frontier model training environment",
-      "summary": "OpenAI explains how we strengthened containment for frontier model training and evaluation, including offline environments and high-compute red-teaming.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-23T10:00:00Z",
-      "fetched_at": "2026-10-23T23:09:50.309318Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -42496,6 +42456,26 @@
       "author": "simonw",
       "published_at": "2026-10-29T14:50:33Z",
       "fetched_at": "2026-10-30T09:14:20.042937Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "322af5f459e0e3bb",
+      "url": "https://x.com/steipete/status/2116121832919122164",
+      "title": "Bullish on Andy Yen and Proton. He gets it.\n\nThe culture war, or rather the loss of identity some en...",
+      "summary": "Bullish on Andy Yen and Proton. He gets it.\n\nThe culture war, or rather the loss of identity some engineers feel as AI redefines our jobs is difficult; I sympathize. Also understand that he runs a business and might has limited patience when we now had two years to process,",
+      "content": "Bullish on Andy Yen and Proton. He gets it.\n\nThe culture war, or rather the loss of identity some engineers feel as AI redefines our jobs is difficult; I sympathize. Also understand that he runs a business and might has limited patience when we now had two years to process,",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-30T10:55:35Z",
+      "fetched_at": "2026-10-30T11:41:58.797871Z",
       "score": null,
       "score_reason": "",
       "tier": "",
