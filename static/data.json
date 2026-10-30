@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-10-30T12:57:59.814405+00:00",
+  "exported_at": "2026-10-30T13:42:39.630070+00:00",
   "period_hours": 168,
-  "total": 2457,
+  "total": 2458,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -53497,6 +53497,26 @@
       "author": "steipete",
       "published_at": "2026-10-30T10:55:35Z",
       "fetched_at": "2026-10-30T11:41:58.797871Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e4687797b7edde93",
+      "url": "https://x.com/steipete/status/2116153238563242385",
+      "title": "Another reason why you wanna use your own harness and not one where companies change what you can or...",
+      "summary": "Another reason why you wanna use your own harness and not one where companies change what you can or can\u2019t do at will.",
+      "content": "Another reason why you wanna use your own harness and not one where companies change what you can or can\u2019t do at will.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-30T13:00:22Z",
+      "fetched_at": "2026-10-30T13:42:37.446804Z",
       "score": null,
       "score_reason": "",
       "tier": "",
