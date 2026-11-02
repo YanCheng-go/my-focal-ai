@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-02T12:38:37.215407+00:00",
+  "exported_at": "2026-11-02T15:03:26.198363+00:00",
   "period_hours": 168,
-  "total": 2463,
+  "total": 2461,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -36158,70 +36158,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ec17f0212ac94073",
-      "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-      "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/7_resized-768x431.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"7_resized\" width=\"768\" />Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/7_resized-768x431.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"7_resized\" width=\"768\" />Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"431\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/09/7_resized-768x431.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"7_resized\" width=\"768\" /><p>Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency and uptime at scale. This concept isn\u2019t new to data center operators who have measured mean-time-to-repair (MTTR) and mean-time-between-failure (MTBF) long before AI factories existed. Now the stakes are higher. Modern AI factories run\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Elizabeth Goodman",
-      "published_at": "2026-10-26T15:00:00Z",
-      "fetched_at": "2026-10-26T15:12:27.724616Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8eb6001a836a6e50",
-      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-      "title": "Working with academic communities to build scientific understanding",
-      "summary": "OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics\u2014and how researchers can verify and build on them.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-26T14:30:00Z",
-      "fetched_at": "2026-10-27T01:29:12.452770Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7d972df501d01ba1",
-      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-      "summary": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-26T13:45:00Z",
-      "fetched_at": "2026-10-27T01:29:12.452782Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "60ee93f6b3393c09",
       "url": "https://arxiv.org/abs/2610.37373",
       "title": "Euclidean Crowding-Driven Adaptive Euclidean-Hyperbolic Graph Learning",
@@ -51606,47 +51542,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5c49b4f544efbe2e",
-      "url": "https://x.com/dani_avila7/status/2114722429872267449",
-      "title": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-we...",
-      "summary": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-weight models, cheaper inference, and the ability to switch providers so easily are changing the economics of LLMs\n\nAnd the interesting part is that even as tokens get cheaper, we\u2019re https://t.co/8SvWS1ujbY",
-      "content": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-weight models, cheaper inference, and the ability to switch providers so easily are changing the economics of LLMs\n\nAnd the interesting part is that even as tokens get cheaper, we\u2019re https://t.co/8SvWS1ujbY",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-26T14:14:51Z",
-      "fetched_at": "2026-10-27T16:38:32.914106Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c7379101351692de",
-      "url": "https://x.com/AnthropicAI/status/2114705042817110293",
-      "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead mo...",
-      "summary": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead more: https://t.co/zuRMrxXzNx\n\nLegal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities",
-      "content": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead more: https://t.co/zuRMrxXzNx\n\nLegal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-10-26T13:05:46Z",
-      "fetched_at": "2026-10-27T16:38:39.490477Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "df3bdba120f6a896",
       "url": "https://x.com/steipete/status/2115380217938158049",
       "title": "Kinda funny how easy it is to spot bugs by agents vs humans. Someone at Disney still writes code by ...",
@@ -53597,6 +53492,67 @@
       "author": "steipete",
       "published_at": "2026-11-02T11:15:31Z",
       "fetched_at": "2026-11-02T12:38:35.671596Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ad4f723fee7fae2f",
+      "url": "https://x.com/dani_avila7/status/2117269582440259879",
+      "title": "We've been talking about this for quite a while, but seeing it in a paper makes a lot more sense\n\nTh...",
+      "summary": "We've been talking about this for quite a while, but seeing it in a paper makes a lot more sense\n\nThe paper explores how AI agents are changing software engineering:\n\n- Code becomes a tool agents generate and discard when needed\n\n- Software Engineering shifts toward Agentic https://t.co/xp6tNtwt7Q",
+      "content": "We've been talking about this for quite a while, but seeing it in a paper makes a lot more sense\n\nThe paper explores how AI agents are changing software engineering:\n\n- Code becomes a tool agents generate and discard when needed\n\n- Software Engineering shifts toward Agentic https://t.co/xp6tNtwt7Q",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-02T14:56:20Z",
+      "fetched_at": "2026-11-02T15:03:16.940874Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5c49b4f544efbe2e",
+      "url": "https://x.com/dani_avila7/status/2114722429872267449",
+      "title": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-we...",
+      "summary": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-weight models, cheaper inference, and the ability to switch providers so easily are changing the economics of LLMs\n\nAnd the interesting part is that even as tokens get cheaper, we\u2019re https://t.co/8SvWS1ujbY",
+      "content": "I think we\u2019re seeing a much bigger shift than just a price war between OpenAI and Anthropic\n\nOpen-weight models, cheaper inference, and the ability to switch providers so easily are changing the economics of LLMs\n\nAnd the interesting part is that even as tokens get cheaper, we\u2019re https://t.co/8SvWS1ujbY",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-26T14:14:51Z",
+      "fetched_at": "2026-10-27T16:38:32.914106Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c7379101351692de",
+      "url": "https://x.com/AnthropicAI/status/2114705042817110293",
+      "title": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead mo...",
+      "summary": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead more: https://t.co/zuRMrxXzNx\n\nLegal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities",
+      "content": "Anthropic has filed an S-1 registration statement with the SEC related to its proposed IPO.\n\nRead more: https://t.co/zuRMrxXzNx\n\nLegal disclaimer: A registration statement relating to these securities has been filed with the SEC but has not yet become effective. These securities",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-26T13:05:46Z",
+      "fetched_at": "2026-10-27T16:38:39.490477Z",
       "score": null,
       "score_reason": "",
       "tier": "",
