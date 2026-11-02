@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-02T06:06:00.363608+00:00",
+  "exported_at": "2026-11-02T09:53:34.822257+00:00",
   "period_hours": 168,
-  "total": 2446,
+  "total": 2464,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -23598,66 +23598,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2806c9aa57ca0da6",
-      "url": "https://www.youtube.com/watch?v=4UtrRVtUN_g",
-      "title": "How to Build an AI Code Review Agent - Daksh Gupta, Greptile",
-      "summary": "Daksh Gupta, co-founder of Greptile, which reviews about 1% of all pull requests on GitHub, shares what Greptile tells companies that want to build their own review agent. Starting from a simple sandbox-plus-webhook setup, he explains why it misses bugs, costs $3-25 per PR and floods you with nitpicks, then walks through the fixes: targeted prompts, a dataset of past incident PRs, model inversion (reviewing Claude-written code with GPT and vice versa catches about 10% more bugs), codebase context and a living wiki, autonomous testing in sandboxes with computer use, and routing cheaper models to most subtasks.\n\nChapters\n00:00 Intro: Greptile and why companies build their own\n01:22 What makes a great review agent\n02:38 The simple version: sandbox, agent, webhook\n03:55 What goes wrong\n06:02 Fix 1: Better prompts and fewer nitpicks\n07:44 Fix 2: A dataset of historical PRs\n09:02 Fix 3: Model inversion\n11:04 Fix 4: Codebase context\n12:36 Docs, tickets and a living wiki\n14:26 Fix 5: Autonomous testing with computer use\n16:05 Fix 6: Cheaper models for most subtasks\n\nDaksh Gupta, Greptile\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-26T09:00:23Z",
-      "fetched_at": "2026-10-26T15:12:22.169174Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "62b6c25f9d8da0f1",
-      "url": "https://www.youtube.com/watch?v=Y_p3y6zP5QE",
-      "title": "Build Your Own Team of Managed Agents - Jack Wotherspoon, Google DeepMind",
-      "summary": "Jack Wotherspoon, developer experience engineer at Google DeepMind, introduces Gemini Managed Agents: coding agents that run in cloud sandboxes from a single API call instead of on your laptop. He covers the Interactions API, the Antigravity harness, environments that several agents can share, uploaded skills and AGENTS.md files, a proxy that keeps secrets out of the sandbox, scheduled triggers and multi-agent workflows. Demos include an SEC filing researcher handing its work to a quant agent, and a stock research app built in AI Studio.\n\nChapters\n00:00 Intro: what are managed agents?\n00:54 Why run agents in the cloud\n02:13 Doing it yourself vs one API call\n03:26 The Interactions API\n04:32 How it works under the hood\n05:22 Building blocks: harness, environment, skills, credentials, triggers\n07:02 Choosing models, including Gemini 4 Argon\n08:51 Interactions and environments\n10:46 Tools, MCP servers and file mounts\n12:21 Keeping secrets out of the sandbox\n13:12 Triggers and scheduled agents\n13:37 Multi-agent workflows\n14:32 Demo: SEC research to quant analysis to report\n16:34 Demo: managed agents inside an app\n17:44 Getting started in AI Studio\n\nJack Wotherspoon, Google DeepMind\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-26T08:00:11Z",
-      "fetched_at": "2026-10-26T15:12:22.169190Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c3d4aa6b7227bf42",
-      "url": "https://www.youtube.com/watch?v=OmyqelTwpOo",
-      "title": "How to Build Voice Agents That Don't Fall Apart When You Interrupt - Jesse Hall, LiveKit",
-      "summary": "Jesse Hall of LiveKit shows how to build voice agents for financial services that feel human, not robotic. He explains why model leaderboards mislead (they score components, but you ship a conversation), why you should measure time to first audio and time to first sentence instead of first byte or first token, and how async tool calls keep a conversation flowing while slow back-end work runs. He also covers audio-aware turn detection, the roughly 1.5-second latency budget (500-600ms feels truly human), and benchmarking your own stack with simulated callers.\n\nChapters\n00:00 Intro: real-time agents vs background agents\n01:47 Humanlike voice agents for financial services\n03:46 LiveKit and the voice pipeline\n04:21 Cascaded pipelines vs speech-to-speech\n05:05 Why leaderboards don't pick your stack\n06:46 Time to first audio, not first byte\n07:52 Time to first sentence, not first token\n08:38 Hiding slow tool calls like a human would\n10:14 Demo: hotel booking agent\n12:33 Turn detection: knowing when to listen\n14:02 The latency budget\n15:44 Benchmarking your stack with simulated callers\n18:35 Results and a pre-launch checklist\n\nJesse Hall, LiveKit\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-26T07:00:26Z",
-      "fetched_at": "2026-10-26T07:48:56.097071Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a92352b42066669c",
       "url": "https://arxiv.org/abs/2610.40415",
       "title": "OCCAMS: A Multi-Task Learning-Based Investigation of the CMB Power Spectra",
@@ -36316,48 +36256,6 @@
       "author": "",
       "published_at": "2026-10-26T10:00:00Z",
       "fetched_at": "2026-10-26T21:01:19.328097Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "742d30efdc4090c1",
-      "url": "https://openai.com/index/openai-cut-incident-investigation",
-      "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
-      "summary": "See how OpenAI engineers use Codex Ultrafast to investigate incidents in minutes. Explore faster security analysis, code refactoring, and daily workflows.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-26T07:00:00Z",
-      "fetched_at": "2026-10-26T21:01:19.328130Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7e73eebe3e909303",
-      "url": "https://openai.com/index/fanatics-streamline-fan-experience",
-      "title": "How Fanatics and OpenAI streamline the fan experience",
-      "summary": "Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-26T07:00:00Z",
-      "fetched_at": "2026-10-26T15:12:23.757692Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -53257,6 +53155,468 @@
       "author": "steipete",
       "published_at": "2026-10-30T14:59:03Z",
       "fetched_at": "2026-10-31T18:39:10.943823Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "28be525d3e3fe740",
+      "url": "https://x.com/steipete/status/2117185852392849479",
+      "title": "RT @yawaramin: In a sane language this is a type error",
+      "summary": "RT @yawaramin: In a sane language this is a type error",
+      "content": "RT @yawaramin: In a sane language this is a type error",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-02T09:23:37Z",
+      "fetched_at": "2026-11-02T09:53:32.361026Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d66ec64f83a71e3f",
+      "url": "https://x.com/steipete/status/2117181019535122545",
+      "title": "RT @yusuf_budunoglu: @8teAPi https://t.co/iWXJa4YLH7",
+      "summary": "RT @yusuf_budunoglu: @8teAPi https://t.co/iWXJa4YLH7",
+      "content": "RT @yusuf_budunoglu: @8teAPi https://t.co/iWXJa4YLH7",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-02T09:04:25Z",
+      "fetched_at": "2026-11-02T09:53:32.361122Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "72e0064c58c5c778",
+      "url": "https://x.com/steipete/status/2117179634047386060",
+      "title": "RT @scaling01: another brutal reality check for the open-sauce china shills\n\nGPT-5.5 released on Apr...",
+      "summary": "RT @scaling01: another brutal reality check for the open-sauce china shills\n\nGPT-5.5 released on April 23 outscores all tested chinese mode\u2026",
+      "content": "RT @scaling01: another brutal reality check for the open-sauce china shills\n\nGPT-5.5 released on April 23 outscores all tested chinese mode\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-02T08:58:54Z",
+      "fetched_at": "2026-11-02T09:53:32.361165Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "5eb81f605a12c28f",
+      "url": "https://x.com/dani_avila7/status/2117094653648425399",
+      "title": "How are you keeping browser sessions alive in AI assistants like Muse, Dots, or Claude Duet?\n\nI aske...",
+      "summary": "How are you keeping browser sessions alive in AI assistants like Muse, Dots, or Claude Duet?\n\nI asked Muse how it handles this, and the diagram shows its approach\n\nIt uses a persistent Chromium profile that keeps cookies and local storage across tasks\n\nWhen a session expires, it https://t.co/Ui2CgvKJYL",
+      "content": "How are you keeping browser sessions alive in AI assistants like Muse, Dots, or Claude Duet?\n\nI asked Muse how it handles this, and the diagram shows its approach\n\nIt uses a persistent Chromium profile that keeps cookies and local storage across tasks\n\nWhen a session expires, it https://t.co/Ui2CgvKJYL",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-02T03:21:13Z",
+      "fetched_at": "2026-11-02T09:53:24.909798Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c86704cd5ee0fa40",
+      "url": "https://x.com/dani_avila7/status/2117013818677023143",
+      "title": "I'm slowly enabling auto-merge across my repos\n\nClaude Code agents already handle PRs, CI failures, ...",
+      "summary": "I'm slowly enabling auto-merge across my repos\n\nClaude Code agents already handle PRs, CI failures, security scans, and AI code reviews (Cubic + Greptile + Claude Code review + NVIDIA Skillspector)\n\nOnce all checks pass, PRs can merge automatically\n\nIMPORTANT: Sensitive changes https://t.co/OEx9NWluln",
+      "content": "I'm slowly enabling auto-merge across my repos\n\nClaude Code agents already handle PRs, CI failures, security scans, and AI code reviews (Cubic + Greptile + Claude Code review + NVIDIA Skillspector)\n\nOnce all checks pass, PRs can merge automatically\n\nIMPORTANT: Sensitive changes https://t.co/OEx9NWluln",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-01T22:00:01Z",
+      "fetched_at": "2026-11-02T09:53:24.909909Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a231544698a71d6e",
+      "url": "https://x.com/karpathy/status/2116957135661945283",
+      "title": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 4...",
+      "summary": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://t.co/xULTGY6VhH\n\n- Excellent https://t.co/QRq80bJo4o",
+      "content": "Weekend hack: HackerTube. I was annoyed with YouTube's recommendations so I had Claude filter down 43M comments over 20 years of HN to 6,454 videos that keep being recommended. *Significantly* better viewing experience, ~2 hours with Opus 5.5:\nhttps://t.co/xULTGY6VhH\n\n- Excellent https://t.co/QRq80bJo4o",
+      "source_name": "@karpathy",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "research",
+        "deep-learning"
+      ],
+      "author": "karpathy",
+      "published_at": "2026-11-01T18:14:46Z",
+      "fetched_at": "2026-11-02T09:53:21.502433Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fb828009f11c3afa",
+      "url": "https://x.com/dani_avila7/status/2116955729613726001",
+      "title": "What if access to a model\u2019s full capabilities depended on how secure the agent harness is?\n\nToday, A...",
+      "summary": "What if access to a model\u2019s full capabilities depended on how secure the agent harness is?\n\nToday, AI labs rely heavily on safety classifiers to restrict certain capabilities. Despite constant improvements, these classifiers still produce frustrating false positives.\n\nEvery https://t.co/6BrrIlSoDF",
+      "content": "What if access to a model\u2019s full capabilities depended on how secure the agent harness is?\n\nToday, AI labs rely heavily on safety classifiers to restrict certain capabilities. Despite constant improvements, these classifiers still produce frustrating false positives.\n\nEvery https://t.co/6BrrIlSoDF",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-01T18:09:11Z",
+      "fetched_at": "2026-11-02T09:53:24.909970Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "655545a1cc7f220f",
+      "url": "https://x.com/dani_avila7/status/2116941298133540923",
+      "title": "My Halloween\u2026 my wife as Bad Bunny, me as the Super Bowl grass\n\nSeguimos aqu\u00ed! https://t.co/h7TpI5QT...",
+      "summary": "My Halloween\u2026 my wife as Bad Bunny, me as the Super Bowl grass\n\nSeguimos aqu\u00ed! https://t.co/h7TpI5QTez",
+      "content": "My Halloween\u2026 my wife as Bad Bunny, me as the Super Bowl grass\n\nSeguimos aqu\u00ed! https://t.co/h7TpI5QTez",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-01T17:11:50Z",
+      "fetched_at": "2026-11-02T09:53:24.910065Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "41fdcae81e23a291",
+      "url": "https://x.com/dani_avila7/status/2116924075386053077",
+      "title": "Bagel, mate and fall https://t.co/cBVEKJhY8D",
+      "summary": "Bagel, mate and fall https://t.co/cBVEKJhY8D",
+      "content": "Bagel, mate and fall https://t.co/cBVEKJhY8D",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-01T16:03:24Z",
+      "fetched_at": "2026-11-02T09:53:24.910142Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f144920f500589d2",
+      "url": "https://x.com/steipete/status/2116880787954082080",
+      "title": "RT @bsierakowski: Sama is very challenging for people to engage with because you have to listen to a...",
+      "summary": "RT @bsierakowski: Sama is very challenging for people to engage with because you have to listen to all the words he says in the order that\u2026",
+      "content": "RT @bsierakowski: Sama is very challenging for people to engage with because you have to listen to all the words he says in the order that\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-01T13:11:24Z",
+      "fetched_at": "2026-11-02T09:53:32.361202Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c1d0ff4e344d58c4",
+      "url": "https://x.com/dani_avila7/status/2116732672747962406",
+      "title": "Claude Mobile app Halloween Mode https://t.co/EAm9jtlc6X",
+      "summary": "Claude Mobile app Halloween Mode https://t.co/EAm9jtlc6X",
+      "content": "Claude Mobile app Halloween Mode https://t.co/EAm9jtlc6X",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-01T03:22:50Z",
+      "fetched_at": "2026-11-02T09:53:24.910189Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "59c75ae59070512a",
+      "url": "https://x.com/dani_avila7/status/2116729873578266937",
+      "title": "3 billion Muse tokens from referrals!\n\nEach person who uses my code gets 1 billion tokens too\n\nB742F...",
+      "summary": "3 billion Muse tokens from referrals!\n\nEach person who uses my code gets 1 billion tokens too\n\nB742FM\nhttps://t.co/hC9rhGlXTa https://t.co/oz2ECbM4cy",
+      "content": "3 billion Muse tokens from referrals!\n\nEach person who uses my code gets 1 billion tokens too\n\nB742FM\nhttps://t.co/hC9rhGlXTa https://t.co/oz2ECbM4cy",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-01T03:11:43Z",
+      "fetched_at": "2026-11-02T09:53:24.910229Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ef8fdb5b170be581",
+      "url": "https://x.com/dani_avila7/status/2116718444364083536",
+      "title": "Every time I have an idea, I throw it into Claude Code and let the Brainstorming skill kick in\n\nWe s...",
+      "summary": "Every time I have an idea, I throw it into Claude Code and let the Brainstorming skill kick in\n\nWe start iterating through questions, exploring different approaches, discussing trade-offs, and refining the idea\n\nThe skill helps me clarify requirements, break down the design, and",
+      "content": "Every time I have an idea, I throw it into Claude Code and let the Brainstorming skill kick in\n\nWe start iterating through questions, exploring different approaches, discussing trade-offs, and refining the idea\n\nThe skill helps me clarify requirements, break down the design, and",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-01T02:26:18Z",
+      "fetched_at": "2026-11-02T09:53:24.910267Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1de1a588b764317c",
+      "url": "https://x.com/dani_avila7/status/2116602950432764345",
+      "title": "ok guys! \nHere's my Muse referral code... It's limited, so I hope you can grab a spot before they're...",
+      "summary": "ok guys! \nHere's my Muse referral code... It's limited, so I hope you can grab a spot before they're all gone!\n\nCode: B742FM\nhttps://t.co/hC9rhGlXTa https://t.co/sTQut5j4jG",
+      "content": "ok guys! \nHere's my Muse referral code... It's limited, so I hope you can grab a spot before they're all gone!\n\nCode: B742FM\nhttps://t.co/hC9rhGlXTa https://t.co/sTQut5j4jG",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-31T18:47:22Z",
+      "fetched_at": "2026-11-02T09:53:24.910305Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fe5bfa1c5ba42822",
+      "url": "https://x.com/dani_avila7/status/2116597067451883887",
+      "title": "This is a very unfortunate comment, and if it's meant to be a joke, the timing couldn't be worse.\n\nI...",
+      "summary": "This is a very unfortunate comment, and if it's meant to be a joke, the timing couldn't be worse.\n\nI think AI models will lead to more comments like this, and that's unfortunate.\n\nYou've done an excellent job on X and as an influencer, and I respect that.\n\nBut there's a level of",
+      "content": "This is a very unfortunate comment, and if it's meant to be a joke, the timing couldn't be worse.\n\nI think AI models will lead to more comments like this, and that's unfortunate.\n\nYou've done an excellent job on X and as an influencer, and I respect that.\n\nBut there's a level of",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-31T18:24:00Z",
+      "fetched_at": "2026-11-02T09:53:24.910343Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e9dbfb817bbe6602",
+      "url": "https://x.com/dani_avila7/status/2116595040143151134",
+      "title": "One more security setting worth enabling in Claude Code!\n\nblockReadsOutsideWorkingDirectories preven...",
+      "summary": "One more security setting worth enabling in Claude Code!\n\nblockReadsOutsideWorkingDirectories prevents Claude from reading files outside your working directories\n\nCombine it with blockWritesOutsideWorkingDirectories and Bash sandboxing for better protection\n\nHere's my updated https://t.co/rOYQeGYATp",
+      "content": "One more security setting worth enabling in Claude Code!\n\nblockReadsOutsideWorkingDirectories prevents Claude from reading files outside your working directories\n\nCombine it with blockWritesOutsideWorkingDirectories and Bash sandboxing for better protection\n\nHere's my updated https://t.co/rOYQeGYATp",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-31T18:15:56Z",
+      "fetched_at": "2026-11-02T09:53:24.910379Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c41e05d1207efedc",
+      "url": "https://x.com/dani_avila7/status/2116395652590543096",
+      "title": "Chaos Monkey Coding Agent Benchmark\n\nThe benchmark that actually matters\n\nwhat happens when coding a...",
+      "summary": "Chaos Monkey Coding Agent Benchmark\n\nThe benchmark that actually matters\n\nwhat happens when coding agents fail, and whether their harness can actually recover",
+      "content": "Chaos Monkey Coding Agent Benchmark\n\nThe benchmark that actually matters\n\nwhat happens when coding agents fail, and whether their harness can actually recover",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-31T05:03:38Z",
+      "fetched_at": "2026-11-02T09:53:24.910416Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9e5a8df8e1e9dabb",
+      "url": "https://x.com/dani_avila7/status/2116377814953807924",
+      "title": "I\u2019ve published extensions to both the VS Code and Cursor marketplaces using Open VSX\n\nI remember how...",
+      "summary": "I\u2019ve published extensions to both the VS Code and Cursor marketplaces using Open VSX\n\nI remember how ridiculously easy it was to create an account and get the \u201cverified publisher\u201d badge.\n\nAll I had to do was verify a domain with a simple .txt file\n\nAnd that\u2019s the problem\n\nAnyone",
+      "content": "I\u2019ve published extensions to both the VS Code and Cursor marketplaces using Open VSX\n\nI remember how ridiculously easy it was to create an account and get the \u201cverified publisher\u201d badge.\n\nAll I had to do was verify a domain with a simple .txt file\n\nAnd that\u2019s the problem\n\nAnyone",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-31T03:52:46Z",
+      "fetched_at": "2026-11-02T09:53:24.910455Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8192a66af0c54852",
+      "url": "https://x.com/dani_avila7/status/2116352019564777669",
+      "title": "Introducing Rex Claude\n\nA Claude Code skill that lets Claude control Rex terminal panes and tabs\n\nAf...",
+      "summary": "Introducing Rex Claude\n\nA Claude Code skill that lets Claude control Rex terminal panes and tabs\n\nAfter spending quite some time experimenting with Rex, I built this skill to let Claude open new panes, launch independent Claude Code sessions, and coordinate work between them",
+      "content": "Introducing Rex Claude\n\nA Claude Code skill that lets Claude control Rex terminal panes and tabs\n\nAfter spending quite some time experimenting with Rex, I built this skill to let Claude open new panes, launch independent Claude Code sessions, and coordinate work between them",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-31T02:10:16Z",
+      "fetched_at": "2026-11-02T09:53:24.910493Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c2f8d78f5c4791ac",
+      "url": "https://x.com/dani_avila7/status/2116349706444132714",
+      "title": "Please, someone invent this business model already\u2026\n\nMaybe we should call it MaaS: Maintenance as a ...",
+      "summary": "Please, someone invent this business model already\u2026\n\nMaybe we should call it MaaS: Maintenance as a Service\n\nWait a minute \ud83e\udd14",
+      "content": "Please, someone invent this business model already\u2026\n\nMaybe we should call it MaaS: Maintenance as a Service\n\nWait a minute \ud83e\udd14",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-31T02:01:04Z",
+      "fetched_at": "2026-11-02T09:53:24.910532Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9fc4f68ef59fa639",
+      "url": "https://x.com/AnthropicAI/status/2116349211549843666",
+      "title": "New Anthropic research: Automating subtle emergent misalignment research.\n\nRed-teaming is a vital pa...",
+      "summary": "New Anthropic research: Automating subtle emergent misalignment research.\n\nRed-teaming is a vital part of model safety testing, but it\u2019s also limited by researchers\u2019 time. To see if we could automate it, we set thousands of Claude agents the task of evading a training data https://t.co/jlmo21NCLZ",
+      "content": "New Anthropic research: Automating subtle emergent misalignment research.\n\nRed-teaming is a vital part of model safety testing, but it\u2019s also limited by researchers\u2019 time. To see if we could automate it, we set thousands of Claude agents the task of evading a training data https://t.co/jlmo21NCLZ",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-31T01:59:06Z",
+      "fetched_at": "2026-11-02T09:53:31.132391Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "af8817185caf842e",
+      "url": "https://x.com/dani_avila7/status/2116275287981711672",
+      "title": "The more I use Rex by @superlogical... the more I like it!\n\nThis weekend I\u2019m going all in. I want to...",
+      "summary": "The more I use Rex by @superlogical... the more I like it!\n\nThis weekend I\u2019m going all in. I want to explore everything Rex has to offer, especially how to get the most out of it when working with Claude Code\n\nA complete deep dive article is coming soon, with my setup, workflows, https://t.co/iIy9atP8JQ",
+      "content": "The more I use Rex by @superlogical... the more I like it!\n\nThis weekend I\u2019m going all in. I want to explore everything Rex has to offer, especially how to get the most out of it when working with Claude Code\n\nA complete deep dive article is coming soon, with my setup, workflows, https://t.co/iIy9atP8JQ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-30T21:05:21Z",
+      "fetched_at": "2026-11-02T09:53:24.910565Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2e8127fa53a7aceb",
+      "url": "https://x.com/claudeai/status/2116220869479428500",
+      "title": "We\u2019re renaming our Max plans: \n\nMax 5x \u2192 Max\nMax 20x \u2192 Ultra\n\nMax is still $100/month, and Ultra is ...",
+      "summary": "We\u2019re renaming our Max plans: \n\nMax 5x \u2192 Max\nMax 20x \u2192 Ultra\n\nMax is still $100/month, and Ultra is still $200. If you\u2019re a subscriber, there\u2019s nothing you need to do.\n\nWe\u2019re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing https://t.co/9QR5ASBbeb",
+      "content": "We\u2019re renaming our Max plans: \n\nMax 5x \u2192 Max\nMax 20x \u2192 Ultra\n\nMax is still $100/month, and Ultra is still $200. If you\u2019re a subscriber, there\u2019s nothing you need to do.\n\nWe\u2019re also removing the 5-hour limit for verified Ultra accounts, starting today with most existing https://t.co/9QR5ASBbeb",
+      "source_name": "@claudeai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "company"
+      ],
+      "author": "claudeai",
+      "published_at": "2026-10-30T17:29:07Z",
+      "fetched_at": "2026-11-02T09:53:26.006382Z",
       "score": null,
       "score_reason": "",
       "tier": "",
