@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-02T09:53:34.822257+00:00",
+  "exported_at": "2026-11-02T12:38:37.215407+00:00",
   "period_hours": 168,
-  "total": 2464,
+  "total": 2463,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -23579,25 +23579,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6322058e77b4cebf",
-      "url": "https://www.youtube.com/watch?v=SIZsFGvtClM",
-      "title": "Agentic Engineering: 5 Terms Every AI Developer Should Know",
-      "summary": "Learn more about Agentic Engineering here \u2192 https://ibm.biz/~Tlo2yQJqq\n\nAI engineering is becoming more than writing code. Cedric Clyburn breaks down five essential concepts behind agentic engineering, including prompt engineering, context engineering, AI agents, and software factories. Learn the ideas shaping the future of AI-assisted software development.\n\n00:00 - AI\u2011Written Code and the Rise of Agentic Engineering\n00:37 - Five Core Concepts Every AI Builder Should Know\n00:56 - Prompt Engineering: Communicating Clearly With Models\n01:42 - Why Domain Expertise Matters More Than Model Size\n02:29 - Few\u2011Shot Prompts and Chain\u2011of\u2011Thought for Smaller Models\n03:22 - Context Engineering: Managing the Model\u2019s Entire Input Window\n04:45 - Sub\u2011Agents, Summaries, and Efficient Context Management\n05:41 - Harness Engineering: Execution, Verification, and Sandboxing\n06:34 - Loop Engineering: Autonomous Agent Action and Triggers\n08:48 - Graph Engineering: Parallel Agents Working Toward One Goal\n09:37 - Software Factories: Task\u2011Based Agents for Full SDLC Automation\n10:55 - Why These Concepts Matter for Everyone, Not Just Developers\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~0GmuEtvwj\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#agenticengineering #aiengineering #aiagents #developerskills \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-10-26T11:00:26Z",
-      "fetched_at": "2026-10-26T15:12:22.257488Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a92352b42066669c",
       "url": "https://arxiv.org/abs/2610.40415",
       "title": "OCCAMS: A Multi-Task Learning-Based Investigation of the CMB Power Spectra",
@@ -36235,27 +36216,6 @@
       "author": "",
       "published_at": "2026-10-26T13:45:00Z",
       "fetched_at": "2026-10-27T01:29:12.452782Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "27334100e818b985",
-      "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
-      "title": "ChatGPT\u2019s expanding world of work",
-      "summary": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-26T10:00:00Z",
-      "fetched_at": "2026-10-26T21:01:19.328097Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -53617,6 +53577,26 @@
       "author": "claudeai",
       "published_at": "2026-10-30T17:29:07Z",
       "fetched_at": "2026-11-02T09:53:26.006382Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "548a1e73da2dd891",
+      "url": "https://x.com/steipete/status/2117214012996014198",
+      "title": "RT @naomibrockwell: You really think you can combat the onslaught of ai-enabled offensive cyber atta...",
+      "summary": "RT @naomibrockwell: You really think you can combat the onslaught of ai-enabled offensive cyber attacks with your artisanal, hand-crafted c\u2026",
+      "content": "RT @naomibrockwell: You really think you can combat the onslaught of ai-enabled offensive cyber attacks with your artisanal, hand-crafted c\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-02T11:15:31Z",
+      "fetched_at": "2026-11-02T12:38:35.671596Z",
       "score": null,
       "score_reason": "",
       "tier": "",
