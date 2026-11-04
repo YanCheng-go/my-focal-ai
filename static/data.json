@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-04T16:35:19.125851+00:00",
+  "exported_at": "2026-11-04T18:55:17.809257+00:00",
   "period_hours": 168,
-  "total": 2515,
+  "total": 2513,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -34785,49 +34785,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b017db0483658dfc",
-      "url": "https://www.langchain.com/blog/building-agent-memory-openwiki-graphs",
-      "title": "Building Evidence-Grounded Agent Memory with OpenWiki and Graphs",
-      "summary": "<ul><li><strong>A compiled wiki gives agents domain context that retrieval alone must reconstruct.</strong> On questions spanning multiple sources, an agent using OpenWiki as a memory layer was 5x more accurate than one using grep tools alone.</li><li><strong>Adding an evidence graph helps agents follow the wiki back to supporting evidence.</strong> We turned citations and document references into explicit graph edges agents could follow. Compared with the wiki alone, this doubled how consistently the agent cited the same evidence, improved accuracy by 27%, and cut cost per correct answer by 58%.</li><li><strong>Save compiled memory for repeated cross-source reasoning.</strong> The wiki captures domain knowledge and complex relationships. Adding an evidence graph improves accuracy and retrieval consistency. For simple lookups, however, the agent without memory was just as accurate and faster.</li></ul><p>Agents working across an organization\u2019s policies, manuals, wikis, tickets, and code must navigate knowledge scattered across systems and teams. Finding a relevant passage is only the start. They also need to determine which rules apply, what has changed, and how one source affects another.</p><p>A persistent memory layer preserves knowledge and relationships for agents to reuse across tasks. Without it, agents often have to reconstruct that understanding on every question, making their work expensive and error-prone. This is especially challenging in banking and insurance, where policies and guidelines frequently amend or supersede one another.</p><p>We tested <a href=\"https://docs.langchain.com/oss/openwiki/overview\">OpenWiki</a>, our open-source wiki compiler, as this memory layer. On questions requiring connections across sources, the wiki made the agent roughly 5x more accurate than search alone. Adding an evidence graph that connects wiki statements to supporting passages and links related sources improved accuracy a further 27% and doubled citation consistency.</p><h2>Why a compiled wiki?</h2><p>RAG pipelines often use semantic or hybrid search to retrieve isolated chunks, leaving agents to piece together how those chunks relate. We\u2019ve explored improving retrieval with <a href=\"https://www.langchain.com/blog/agentic-rag-with-langgraph\">agentic RAG</a> and <a href=\"https://www.langchain.com/blog/graph-based-metadata-filtering-for-improving-vector-search-in-rag-applications\">graph-based metadata filtering</a>, but finding relevant passages is only part of the work. Cross-source questions require tracing references, resolving conflicting rules, and understanding dependencies. Memory preserves that understanding so agents don\u2019t have to rebuild it on every question.</p><p>A compiled wiki provides that memory layer by synthesizing source material into linked pages that explain key concepts and their relationships. The wiki is updated as sources change, giving agents context they can reuse.</p><p><a href=\"https://docs.langchain.com/oss/openwiki/overview\">OpenWiki</a>, our open-source CLI built on <a href=\"https://docs.langchain.com/oss/python/deepagents/overview\">Deep Agents</a>, creates these wikis with citations back to the sources. We originally built it so coding agents wouldn\u2019t have to rediscover architecture and code behavior on every task.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae0debd562405116e843727_OpenWiki%20on%20Deep%20Agents.png\" /></div></figure><p>Every OpenWiki statement rests on a <strong>claim</strong>, an assertion linked to supporting source lines and their hash. When those lines change, the hash changes, allowing OpenWiki to flag affected claims without a model call, saving on token costs and making staleness detection more deterministic. Only those claims go to a model for confirmation, revision, or retraction, allowing the memory layer to self-correct as its sources change. We explain this in <a href=\"https://www.langchain.com/blog/self-correcting-memory-openwiki\">Building self-correcting memory in OpenWiki</a>.</p><h2>Building the test document library</h2><p>We built a synthetic insurance document library of <strong>111 long-form documents</strong>. We chose insurance because policies and endorsements frequently <strong>reference, amend, and override</strong> one another; this is exactly the kind of cross-document dependency that makes retrieval hard.</p><p>To score the benchmark, we created a <strong>ledger of 972 facts</strong> and controlled where each fact should appear, how documents referenced each other, and what changed between versions. We generated the surrounding prose with an LLM and ran automated checks to ensure the required facts were present.</p><p>Finally, we made the corpus intentionally messy, mixing in <strong>outdated versions, contradictions, indirect reference chains, varied wording, and very long documents</strong> to better match what agents face in real enterprise libraries.</p><h2>How we configured our experiment</h2><p>We evaluated the same retrieval agent under two conditions: <strong>Search</strong> (keyword search over the original documents) and <strong>Wiki</strong> (the same agent with access to an OpenWiki-compiled, source-linked wiki). The underlying model, instructions, documents, and questions were held constant \u2014 only the agent\u2019s access to compiled memory changed.</p><p>We tested <strong>80 simple lookup questions</strong> and <strong>50 connected questions</strong> that require following dependencies across documents (e.g., identifying what depends on a provision or is affected when it changes). We asked each question <strong>three times</strong> to measure run-to-run variation.</p><p><strong>Metrics (what \u201cbetter\u201d means):</strong></p><ul><li><strong>Accuracy (0\u20131):</strong> a grader checked answers and quoted evidence against a checklist from the 972-fact ledger (rewarding required facts and penalizing contradictions).</li><li><strong>Consistency (0\u20131):</strong> overlap of cited evidence across the three runs (average pairwise Jaccard similarity of citation sets). This measures whether the agent reliably grounds its answers in the <em>same</em> sources, not whether the answers are correct.</li><li><strong>Cost + latency:</strong> model spend (USD) and wall-clock time per question.</li></ul><h2>Where the wiki helped, and where it struggled</h2><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae0e1a71580f18bbd72bfc7_Wiki%20vs%20Search.png\" /></div></figure><p>OpenWiki compiled the 111-document library into a wiki roughly one-tenth its original size for $4.15. Adding 17 documents later cost about $0.09 each. <strong>The analysis below excludes compilation and update costs, reporting only retrieval and answering costs.</strong></p><p>We used simple lookups as a control. These single-passage questions require little cross-document insurance context, so we didn\u2019t expect the wiki to help much. Results were similar for search and wiki, respectively (0.84 vs 0.83 accuracy; 0.72 vs 0.74 citation overlap; $0.020 vs $0.021 per correct answer), while latency increased from 9 to 12 seconds.</p><p>Connected questions required reasoning across sources using domain-specific relationships. Here, the wiki improved accuracy roughly 5x, from 0.10 with search alone to 0.52. Its compiled context helped the agent apply domain knowledge and find relevant relationships with fewer tool calls, cutting cost per correct answer from about $0.55 to $0.19.</p><p>Despite these accuracy and cost gains, the wiki agent\u2019s evidence retrieval remained inconsistent. Citation overlap dropped from 0.74 on simple lookups to 0.25 on connected questions. Citation stability doesn\u2019t measure correctness, but changing evidence can change an answer, especially when sources conflict. For critical business functions, teams need answers they can reproduce and audit, not just better average accuracy.</p><p>The wiki helped the agent apply domain knowledge across sources. The remaining challenge was making the path to supporting evidence more repeatable.</p><h2>Adding an evidence graph</h2><p>To make retrieval more consistent, we added a lightweight <strong>evidence graph: a map that turns wiki citations into explicit, typed edges between claims, wiki pages, paragraphs, and topics.</strong> OpenWiki citations are text references in Markdown files. The graph makes them durable by materializing them as typed edges. That gives the agent a stable path to follow instead of rediscovering the same links with search.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae0e1c8ea9b434fb2072ec8_Evidence%20graph%20structure.png\" /></div></figure><p>We built this graph in two steps:</p><ol><li><strong>Store every paragraph as a new primitive.</strong> A deterministic process splits each document into paragraphs and assigns each a unique identifier. These paragraphs become atomic units of information, linking claims to exact supporting passages rather than entire documents.</li><li><strong>Connect the passages with typed edges.</strong> We linked paragraphs, claims, and wiki pages with typed edges: claims <code>cite</code> paragraphs, newer documents <code>supersede</code> older ones, and sections <code>refers_to</code> other documents. Each edge identifies the relationship, not just the connection. We built edges two ways. Some are extracted deterministically from document references. Because wiki claims already carry text citations, we can materialize typed edges like <code>refers_to</code> and <code>supersedes</code> without another model call.</li></ol><p>The graph took under a second to build and resolved every explicit cross-reference in the test library, so the agent could follow links instead of rediscovering connections on each question.</p><p>The graph\u2019s job is evidence navigation, not modeling everything the organization knows. The wiki still provides the synthesis. Unlike an extraction-heavy knowledge graph pipeline, this layer reuses existing references and citations rather than extracting and reconciling entities with a model. Construction requires no additional model calls, though edges derived from the wiki still depend on the accuracy of its model-generated citations.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae0e1ff1580f18bbd72e2b8_Traversal.png\" /></div></figure><p>Two tools let the agent navigate the map: <code>locate</code> finds a starting point that matches the question, and <code>expand</code> follows its connections to supporting passages and related documents. Where there\u2019s only one path, <code>expand</code> follows it automatically; where the path branches, the agent chooses where to go next. This pattern of locating relevant nodes and gathering connected context also appears in GraphRAG systems such as <a href=\"https://microsoft.github.io/graphrag/\">Microsoft\u2019s GraphRAG</a>.</p><pre class=\"w-code-block\" contenteditable=\"false\" style=\"display: block; background: #2b2b2b; color: #f8f8f2; padding: 0.5em;\"><code class=\"language-python\" style=\"white-space: pre-wrap;\"><span><span style=\"color: #f5ab35;\">@tool(</span><span style=\"color: #f5ab35;\">parse_docstring=</span><span style=\"color: #f5ab35;\">True</span><span style=\"color: #f5ab35;\">)</span><span>\n</span></span><span><span></span><span style=\"color: #dcc6e0;\">async</span><span> </span><span class=\"hljs-function\" style=\"color: #dcc6e0;\">def</span><span class=\"hljs-function\"> </span><span class=\"hljs-function\" style=\"color: #00e0e0;\">locate</span><span class=\"hljs-function\">(</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">terms: </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">str</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">, within: </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">str</span><span class=\"hljs-function\" style=\"color: #f5ab35;\"> | </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">None</span><span class=\"hljs-function\" style=\"color: #f5ab35;\"> = </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">None</span><span class=\"hljs-function\">) -&gt; </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">dict</span><span class=\"hljs-function\">:</span><span>\n</span></span><span><span>    </span><span style=\"color: #abe338;\">\"\"\"Find where to start: match the question's words against document titles,\n</span></span><span><span style=\"color: #abe338;\">    section headings, wiki pages, and claim statements.\"\"\"</span><span>\n</span></span><span>    ...\n</span><span>\n</span><span><span></span><span style=\"color: #f5ab35;\">@tool(</span><span style=\"color: #f5ab35;\">parse_docstring=</span><span style=\"color: #f5ab35;\">True</span><span style=\"color: #f5ab35;\">)</span><span>\n</span></span><span><span></span><span style=\"color: #dcc6e0;\">async</span><span> </span><span class=\"hljs-function\" style=\"color: #dcc6e0;\">def</span><span class=\"hljs-function\"> </span><span class=\"hljs-function\" style=\"color: #00e0e0;\">expand</span><span class=\"hljs-function\">(</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">node: </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">str</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">, edges: </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">list</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">[</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">str</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">] | </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">None</span><span class=\"hljs-function\" style=\"color: #f5ab35;\"> = </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">None</span><span class=\"hljs-function\" style=\"color: #f5ab35;\">, hops: </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">int</span><span class=\"hljs-function\" style=\"color: #f5ab35;\"> = </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">1</span><span class=\"hljs-function\">) -&gt; </span><span class=\"hljs-function\" style=\"color: #f5ab35;\">dict</span><span class=\"hljs-function\">:</span><span>\n</span></span><span><span>    </span><span style=\"color: #abe338;\">\"\"\"Open one node and list its typed edges (cites, refers_to, supersedes,\n</span></span><span>    amends, attaches_to, and their inverses). With hops &gt; 1 and one edge type,\n</span><span><span style=\"color: #abe338;\">    walk that edge while there is a single path, and stop at a branch.\"\"\"</span><span>\n</span></span><span>    ...</span></code></pre><h2>Better accuracy, lower cost, faster answers</h2><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae0e289d91ee9dbea7c7433_Wiki%20and%20Graph%20results%20for%20agent%20memory.png\" /></div></figure><p>Adding explicit evidence paths improved every measure over the wiki alone. Accuracy rose 27%, citation consistency doubled, median answer time fell 40% , and cost per correct answer fell 58%. The evidence graph complemented the wiki\u2019s context with more directed retrieval, improving both accuracy and consistency without making the agent fully deterministic.</p><h2>When is adding memory worth the cost?</h2><p>The strongest case for a compiled wiki is repeated cross-source reasoning. In our experiment, the wiki helped the agent apply domain relationships rather than reconstruct them through search. But the memory layer alone didn\u2019t make evidence retrieval consistent. Adding explicit graph edges improved citation consistency and accuracy while reducing retrieval work.</p><p>The wiki provided a strong foundation for a lightweight evidence graph, derived deterministically from its existing citations and document references. This let us add explicit evidence paths without additional model calls or the need to model everything the organization knows.</p><p>Whether a wiki is worth the investment depends on reuse. Our reported answer costs exclude compilation, and adding documents cost about $0.09 each. Ingestion and ongoing maintenance may outweigh retrieval savings for simple lookups, where search alone was just as accurate and faster, especially at enterprise scale.</p><p>The tradeoff changes when multiple agents repeatedly answer questions spanning the same disconnected sources. A shared wiki preserves the relationships between those sources, while graph edges guide agents to supporting evidence. In our tests, that combination produced more accurate answers at a lower cost per correct answer. With enough reuse, savings from avoiding repeated context reconstruction can offset the cost of building and maintaining memory.</p><h2>What's next</h2><p>Next, we want to build wikis more dynamically, compiling and retaining only the context agents need for cross-source questions rather than entire repositories.</p><p>We also want to explore claims and typed edges as a foundation for other kinds of agent memory. Linking knowledge to evidence and detecting when it changes could help ground semantic memory (facts), episodic memory (what happened), and procedural memory (how to do things).</p><p>Want to add wikis into your agents? Check out our OpenWiki resources:</p><ul><li><a href=\"https://app.notion.com/p/3c6808527b1781b6af4bf79485ae3d3a?pvs=21\">Openwiki Documentation</a></li><li><a href=\"https://github.com/langchain-ai/openwiki\">OpenWiki Code Repository</a></li></ul><h2>Acknowledgments</h2><p>Thank you Colin Francis and Nick Hollon for their thoughts around OpenWiki and evaluations!</p>",
-      "content": "",
-      "source_name": "Langchain Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open source",
-        "langchain"
-      ],
-      "author": "Eugene Liu",
-      "published_at": "2026-10-28T17:24:00Z",
-      "fetched_at": "2026-10-28T22:36:23.152475Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e8e0cb1d0e685ced",
-      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-      "title": "Gemini 4 Carbon: Our next frontier model",
-      "summary": "",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-28T17:00:58Z",
-      "fetched_at": "2026-10-28T22:36:12.471612Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e6586fb5d24bd331",
       "url": "https://arxiv.org/abs/2610.41514",
       "title": "Infinite ResNets are Gaussian Mean ODEs",
@@ -40074,26 +40031,6 @@
       "author": "AI Engineer",
       "published_at": "2026-10-28T19:00:15Z",
       "fetched_at": "2026-10-29T13:03:01.666606Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b8b45627a4939a20",
-      "url": "https://www.youtube.com/watch?v=mQu0zN4IvSI",
-      "title": "Software engineering at Google & CS education with Titus Winters",
-      "summary": "An engineer who helped create today\u2019s software engineering curriculum now says to burn down almost all of it. What\u2019s the cause of this contradiction? We find out from the lead author of Software Engineering at Google.\n\nTitus Winters spent more than a decade at Google, where he led its readability program and built Abseil, Google\u2019s open-sourced foundational C++ libraries. He is currently a Senior Principal Scientist at Adobe, where he focuses on developer experience and productivity.\n\nIn this episode of The Pragmatic Engineer podcast, Titus and I discuss how his team tackled a massive refactoring project across Google's 250-million-line C++ codebase, why Google made testing mandatory, and his work on updating the ACM/IEEE undergraduate computer science curriculum guidelines.\n\nWe also explore why traditional productivity metrics miss some of AI\u2019s biggest benefits, what needs to change in CS education, and how new engineers can stand out.\n\n\u2014\n*Brought to you by:*\n\u2022 turbopuffer \u2013 a vector and full-text search engine built on object storage. It\u2019s fast, cheap, and extremely scalable. https://turbopuffer.com/pragmatic\n\u2022 Linear \u2013 the product development system for teams and agents. https://linear.app/pragmatic\n\u2022 WorkOS \u2013 everything you need to make your app enterprise ready. https://workos.com/\n \n\u2014\n*The Pragmatic Engineer deepdives relevant for this episode:*\n\u2022 The state of the tech industry in 2026 https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in\n\u2022 Inside Google's Engineering Culture https://newsletter.pragmaticengineer.com/p/google\n\u2022 Slow down to speed up when working with AI agents https://newsletter.pragmaticengineer.com/p/ideas-slow-down-to-speed-up-when\n\u2022 Measuring developer productivity? A response to McKinsey https://newsletter.pragmaticengineer.com/p/measuring-developer-productivity\n\u2022 How tech companies measure the impact of AI on software development https://newsletter.pragmaticengineer.com/p/how-tech-companies-measure-the-impact-of-ai\n\u2022 What is happening with code reviews? https://newsletter.pragmaticengineer.com/p/what-is-happening-with-code-reviews\n\u2022 When AI writes almost all code, what happens to software engineering? https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what\n\u2022 Developer productivity with Dr. Nicole Forsgren (creator of DORA, co-creator of SPACE) https://newsletter.pragmaticengineer.com/p/developer-productivity-with-dr-nicole\n\u2022 Measuring the impact of AI on software engineering \u2013 with Laura Tacho https://newsletter.pragmaticengineer.com/p/measuring-the-impact-of-ai-on-software\n\n\u2014\n*Where to find Titus Winters:*\n\u2022 X: https://x.com/TitusWinters\n\u2022 LinkedIn: https://www.linkedin.com/in/tituswinters\n\u2022 GitHub: https://github.com/tituswinters\n\n\u2014\n*In this episode, we cover:*\n00:00 Intro\n07:01 Getting hired by Google\n09:48 Finding his niche at Google\n14:32 Why Google made testing mandatory\n17:45 Why new engineers fear making mistakes\n20:40 Abseil: C++ foundations at Google\n23:09 Google\u2019s massive C++ refactoring\n30:48 AI for rewrites\n39:07 Software Engineering at Google: the book\n43:10 Google\u2019s readability reviews\n47:18 Why teams still matter\n52:41 Psychological safety\n58:17 Layoffs and culture\n1:02:11 Measuring developer productivity\n1:11:17 Rethinking CS education\n1:22:56 What new grads should learn\n1:32:08 Titus\u2019s ideal software engineering curriculum\n1:36:27 Advice for breaking into tech\n1:38:35 Book recommendation\n\n\u2014\nSee the transcript and other references from the episode at https://newsletter.pragmaticengineer.com/podcast\n\n\u2014\nProduction and marketing by https://penname.co/.",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-10-28T18:41:17Z",
-      "fetched_at": "2026-10-29T13:03:02.297621Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -52679,255 +52616,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6c5d077f5219d010",
-      "url": "https://x.com/dani_avila7/status/2115511415369052559",
-      "title": "Trust me, connect Muse to Todoist and keep your tasks in sync\n\nI know Muse has its own task manager,...",
-      "summary": "Trust me, connect Muse to Todoist and keep your tasks in sync\n\nI know Muse has its own task manager, but I prefer Todoist because it\u2019s simple, supports MCP, and lets me manage the same tasks from other AI agents like Claude Code\n\nOne task list, multiple agents https://t.co/NtHO8hjwpb",
-      "content": "Trust me, connect Muse to Todoist and keep your tasks in sync\n\nI know Muse has its own task manager, but I prefer Todoist because it\u2019s simple, supports MCP, and lets me manage the same tasks from other AI agents like Claude Code\n\nOne task list, multiple agents https://t.co/NtHO8hjwpb",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-28T18:30:00Z",
-      "fetched_at": "2026-10-28T21:05:02.002361Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6f692355a69f7526",
-      "url": "https://x.com/OpenAI/status/2115505682724372983",
-      "title": "RT @ChatGPT: By popular request, you can now text your dot.\n\nGive it a task to take off your plate o...",
-      "summary": "RT @ChatGPT: By popular request, you can now text your dot.\n\nGive it a task to take off your plate or something to keep an eye on, using te\u2026",
-      "content": "RT @ChatGPT: By popular request, you can now text your dot.\n\nGive it a task to take off your plate or something to keep an eye on, using te\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-10-28T18:07:13Z",
-      "fetched_at": "2026-10-28T21:05:06.810075Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "47eccedab0fc46ef",
-      "url": "https://x.com/GeminiApp/status/2115496006213403039",
-      "title": "RT @joshwoodward: 2 weeks ago: Gemini 4 Argon\nToday: Gemini 4 Carbon\n\nThe frontier is fast, and the ...",
-      "summary": "RT @joshwoodward: 2 weeks ago: Gemini 4 Argon\nToday: Gemini 4 Carbon\n\nThe frontier is fast, and the internal vibes on this model are good.\u2026",
-      "content": "RT @joshwoodward: 2 weeks ago: Gemini 4 Argon\nToday: Gemini 4 Carbon\n\nThe frontier is fast, and the internal vibes on this model are good.\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T17:28:46Z",
-      "fetched_at": "2026-10-28T21:05:05.664638Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "df408309e03ad37c",
-      "url": "https://x.com/trq212/status/2115493334324310463",
-      "title": "courage in shorter supply than genius",
-      "summary": "courage in shorter supply than genius",
-      "content": "courage in shorter supply than genius",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-10-28T17:18:09Z",
-      "fetched_at": "2026-10-28T21:04:57.112847Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "367f698fa15faff4",
-      "url": "https://x.com/dani_avila7/status/2115492152780427686",
-      "title": "Argon, Carbon\u2026 Krypton next? \ud83d\ude05\n\nGoogle just broke the benchmarks again with Gemini 4 Carbon\n\nThe pac...",
-      "summary": "Argon, Carbon\u2026 Krypton next? \ud83d\ude05\n\nGoogle just broke the benchmarks again with Gemini 4 Carbon\n\nThe pace of these model releases is getting ridiculous",
-      "content": "Argon, Carbon\u2026 Krypton next? \ud83d\ude05\n\nGoogle just broke the benchmarks again with Gemini 4 Carbon\n\nThe pace of these model releases is getting ridiculous",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-28T17:13:27Z",
-      "fetched_at": "2026-10-28T21:05:02.002417Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "036824c302d76138",
-      "url": "https://x.com/bcherny/status/2115491259381072269",
-      "title": "Utah gave Claude Code to 34 developers across 10 state agencies. 80% had a working environment withi...",
-      "summary": "Utah gave Claude Code to 34 developers across 10 state agencies. 80% had a working environment within 30 minutes, 71% reported saving 20+ hours by the end of the four-week pilot.",
-      "content": "Utah gave Claude Code to 34 developers across 10 state agencies. 80% had a working environment within 30 minutes, 71% reported saving 20+ hours by the end of the four-week pilot.",
-      "source_name": "@bcherny",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "bcherny",
-      "published_at": "2026-10-28T17:09:54Z",
-      "fetched_at": "2026-10-28T21:04:59.502924Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "86798c0861be3c5e",
-      "url": "https://x.com/GeminiApp/status/2115490551210614892",
-      "title": "RT @koraykv: Just two weeks after rolling out Gemini 4 Argon, excited to share a preview of Gemini 4...",
-      "summary": "RT @koraykv: Just two weeks after rolling out Gemini 4 Argon, excited to share a preview of Gemini 4 Carbon - our next frontier model.  It\u2026",
-      "content": "RT @koraykv: Just two weeks after rolling out Gemini 4 Argon, excited to share a preview of Gemini 4 Carbon - our next frontier model.  It\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T17:07:05Z",
-      "fetched_at": "2026-10-28T21:05:05.664702Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fb11e1b38e72aa90",
-      "url": "https://x.com/GeminiApp/status/2115490483510342124",
-      "title": "RT @demishassabis: \u26a1Iterating at lightning speed! Gemini 4 Carbon is SOTA across key benchmarks and ...",
-      "summary": "RT @demishassabis: \u26a1Iterating at lightning speed! Gemini 4 Carbon is SOTA across key benchmarks and combines frontier capabilities with dee\u2026",
-      "content": "RT @demishassabis: \u26a1Iterating at lightning speed! Gemini 4 Carbon is SOTA across key benchmarks and combines frontier capabilities with dee\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T17:06:49Z",
-      "fetched_at": "2026-10-28T21:05:05.664753Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "726b51bb4eeedee6",
-      "url": "https://x.com/GeminiApp/status/2115489791135678618",
-      "title": "RT @GoogleAI: Announcing Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity an...",
-      "summary": "RT @GoogleAI: Announcing Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\n\nCarbon re\u2026",
-      "content": "RT @GoogleAI: Announcing Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\n\nCarbon re\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T17:04:04Z",
-      "fetched_at": "2026-10-28T21:05:05.664804Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9bb8bd2e735c9f2f",
-      "url": "https://x.com/GeminiApp/status/2115489738769711310",
-      "title": "RT @GoogleDeepMind: Gemini 4 Carbon is our next frontier model.\n\nIt\u2019s state-of-the-art across cybers...",
-      "summary": "RT @GoogleDeepMind: Gemini 4 Carbon is our next frontier model.\n\nIt\u2019s state-of-the-art across cybersecurity and long-horizon capabilities.\u2026",
-      "content": "RT @GoogleDeepMind: Gemini 4 Carbon is our next frontier model.\n\nIt\u2019s state-of-the-art across cybersecurity and long-horizon capabilities.\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T17:03:52Z",
-      "fetched_at": "2026-10-28T21:05:05.664846Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b52cc435844221a8",
-      "url": "https://x.com/GeminiApp/status/2115489673569247652",
-      "title": "RT @Google: Introducing Gemini 4 Carbon, our latest frontier model.\n\nCarbon delivers improved perfor...",
-      "summary": "RT @Google: Introducing Gemini 4 Carbon, our latest frontier model.\n\nCarbon delivers improved performance across domains \u2014 ranking #1 on v5\u2026",
-      "content": "RT @Google: Introducing Gemini 4 Carbon, our latest frontier model.\n\nCarbon delivers improved performance across domains \u2014 ranking #1 on v5\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T17:03:36Z",
-      "fetched_at": "2026-10-28T21:05:05.664879Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4184857819c39b77",
-      "url": "https://x.com/GeminiApp/status/2115489409852473852",
-      "title": "RT @sundarpichai: I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon,...",
-      "summary": "RT @sundarpichai: I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model.\n\nFollowing Ar\u2026",
-      "content": "RT @sundarpichai: I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model.\n\nFollowing Ar\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T17:02:33Z",
-      "fetched_at": "2026-10-28T21:05:05.664916Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "965f1ffd5615604a",
       "url": "https://x.com/bcherny/status/2115654656638771425",
       "title": "RT @simonw: I think October represents another inflection point in capabilities for coding agents an...",
@@ -54566,6 +54254,275 @@
       "author": "bcherny",
       "published_at": "2026-11-03T18:59:33Z",
       "fetched_at": "2026-11-04T10:01:46.824794Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "845f75d2e6432ca2",
+      "url": "https://x.com/dani_avila7/status/2118029110282698803",
+      "title": "Wait, OpenAI is actually doing this?!\n\nThey're embedding the Codex harness directly into the Agents ...",
+      "summary": "Wait, OpenAI is actually doing this?!\n\nThey're embedding the Codex harness directly into the Agents SDK\n\nInstead of building and maintaining your own execution harness, you could use Codex directly within the SDK\n\nStill in alpha, but I'm really curious to see how far they take https://t.co/z7cyArZWxJ",
+      "content": "Wait, OpenAI is actually doing this?!\n\nThey're embedding the Codex harness directly into the Agents SDK\n\nInstead of building and maintaining your own execution harness, you could use Codex directly within the SDK\n\nStill in alpha, but I'm really curious to see how far they take https://t.co/z7cyArZWxJ",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-04T17:14:25Z",
+      "fetched_at": "2026-11-04T18:55:07.783501Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6c5d077f5219d010",
+      "url": "https://x.com/dani_avila7/status/2115511415369052559",
+      "title": "Trust me, connect Muse to Todoist and keep your tasks in sync\n\nI know Muse has its own task manager,...",
+      "summary": "Trust me, connect Muse to Todoist and keep your tasks in sync\n\nI know Muse has its own task manager, but I prefer Todoist because it\u2019s simple, supports MCP, and lets me manage the same tasks from other AI agents like Claude Code\n\nOne task list, multiple agents https://t.co/NtHO8hjwpb",
+      "content": "Trust me, connect Muse to Todoist and keep your tasks in sync\n\nI know Muse has its own task manager, but I prefer Todoist because it\u2019s simple, supports MCP, and lets me manage the same tasks from other AI agents like Claude Code\n\nOne task list, multiple agents https://t.co/NtHO8hjwpb",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T18:30:00Z",
+      "fetched_at": "2026-10-28T21:05:02.002361Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6f692355a69f7526",
+      "url": "https://x.com/OpenAI/status/2115505682724372983",
+      "title": "RT @ChatGPT: By popular request, you can now text your dot.\n\nGive it a task to take off your plate o...",
+      "summary": "RT @ChatGPT: By popular request, you can now text your dot.\n\nGive it a task to take off your plate or something to keep an eye on, using te\u2026",
+      "content": "RT @ChatGPT: By popular request, you can now text your dot.\n\nGive it a task to take off your plate or something to keep an eye on, using te\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-28T18:07:13Z",
+      "fetched_at": "2026-10-28T21:05:06.810075Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "47eccedab0fc46ef",
+      "url": "https://x.com/GeminiApp/status/2115496006213403039",
+      "title": "RT @joshwoodward: 2 weeks ago: Gemini 4 Argon\nToday: Gemini 4 Carbon\n\nThe frontier is fast, and the ...",
+      "summary": "RT @joshwoodward: 2 weeks ago: Gemini 4 Argon\nToday: Gemini 4 Carbon\n\nThe frontier is fast, and the internal vibes on this model are good.\u2026",
+      "content": "RT @joshwoodward: 2 weeks ago: Gemini 4 Argon\nToday: Gemini 4 Carbon\n\nThe frontier is fast, and the internal vibes on this model are good.\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T17:28:46Z",
+      "fetched_at": "2026-10-28T21:05:05.664638Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "df408309e03ad37c",
+      "url": "https://x.com/trq212/status/2115493334324310463",
+      "title": "courage in shorter supply than genius",
+      "summary": "courage in shorter supply than genius",
+      "content": "courage in shorter supply than genius",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-28T17:18:09Z",
+      "fetched_at": "2026-10-28T21:04:57.112847Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "367f698fa15faff4",
+      "url": "https://x.com/dani_avila7/status/2115492152780427686",
+      "title": "Argon, Carbon\u2026 Krypton next? \ud83d\ude05\n\nGoogle just broke the benchmarks again with Gemini 4 Carbon\n\nThe pac...",
+      "summary": "Argon, Carbon\u2026 Krypton next? \ud83d\ude05\n\nGoogle just broke the benchmarks again with Gemini 4 Carbon\n\nThe pace of these model releases is getting ridiculous",
+      "content": "Argon, Carbon\u2026 Krypton next? \ud83d\ude05\n\nGoogle just broke the benchmarks again with Gemini 4 Carbon\n\nThe pace of these model releases is getting ridiculous",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T17:13:27Z",
+      "fetched_at": "2026-10-28T21:05:02.002417Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "036824c302d76138",
+      "url": "https://x.com/bcherny/status/2115491259381072269",
+      "title": "Utah gave Claude Code to 34 developers across 10 state agencies. 80% had a working environment withi...",
+      "summary": "Utah gave Claude Code to 34 developers across 10 state agencies. 80% had a working environment within 30 minutes, 71% reported saving 20+ hours by the end of the four-week pilot.",
+      "content": "Utah gave Claude Code to 34 developers across 10 state agencies. 80% had a working environment within 30 minutes, 71% reported saving 20+ hours by the end of the four-week pilot.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-10-28T17:09:54Z",
+      "fetched_at": "2026-10-28T21:04:59.502924Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "86798c0861be3c5e",
+      "url": "https://x.com/GeminiApp/status/2115490551210614892",
+      "title": "RT @koraykv: Just two weeks after rolling out Gemini 4 Argon, excited to share a preview of Gemini 4...",
+      "summary": "RT @koraykv: Just two weeks after rolling out Gemini 4 Argon, excited to share a preview of Gemini 4 Carbon - our next frontier model.  It\u2026",
+      "content": "RT @koraykv: Just two weeks after rolling out Gemini 4 Argon, excited to share a preview of Gemini 4 Carbon - our next frontier model.  It\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T17:07:05Z",
+      "fetched_at": "2026-10-28T21:05:05.664702Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fb11e1b38e72aa90",
+      "url": "https://x.com/GeminiApp/status/2115490483510342124",
+      "title": "RT @demishassabis: \u26a1Iterating at lightning speed! Gemini 4 Carbon is SOTA across key benchmarks and ...",
+      "summary": "RT @demishassabis: \u26a1Iterating at lightning speed! Gemini 4 Carbon is SOTA across key benchmarks and combines frontier capabilities with dee\u2026",
+      "content": "RT @demishassabis: \u26a1Iterating at lightning speed! Gemini 4 Carbon is SOTA across key benchmarks and combines frontier capabilities with dee\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T17:06:49Z",
+      "fetched_at": "2026-10-28T21:05:05.664753Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "726b51bb4eeedee6",
+      "url": "https://x.com/GeminiApp/status/2115489791135678618",
+      "title": "RT @GoogleAI: Announcing Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity an...",
+      "summary": "RT @GoogleAI: Announcing Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\n\nCarbon re\u2026",
+      "content": "RT @GoogleAI: Announcing Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon capabilities.\n\nCarbon re\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T17:04:04Z",
+      "fetched_at": "2026-10-28T21:05:05.664804Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9bb8bd2e735c9f2f",
+      "url": "https://x.com/GeminiApp/status/2115489738769711310",
+      "title": "RT @GoogleDeepMind: Gemini 4 Carbon is our next frontier model.\n\nIt\u2019s state-of-the-art across cybers...",
+      "summary": "RT @GoogleDeepMind: Gemini 4 Carbon is our next frontier model.\n\nIt\u2019s state-of-the-art across cybersecurity and long-horizon capabilities.\u2026",
+      "content": "RT @GoogleDeepMind: Gemini 4 Carbon is our next frontier model.\n\nIt\u2019s state-of-the-art across cybersecurity and long-horizon capabilities.\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T17:03:52Z",
+      "fetched_at": "2026-10-28T21:05:05.664846Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b52cc435844221a8",
+      "url": "https://x.com/GeminiApp/status/2115489673569247652",
+      "title": "RT @Google: Introducing Gemini 4 Carbon, our latest frontier model.\n\nCarbon delivers improved perfor...",
+      "summary": "RT @Google: Introducing Gemini 4 Carbon, our latest frontier model.\n\nCarbon delivers improved performance across domains \u2014 ranking #1 on v5\u2026",
+      "content": "RT @Google: Introducing Gemini 4 Carbon, our latest frontier model.\n\nCarbon delivers improved performance across domains \u2014 ranking #1 on v5\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T17:03:36Z",
+      "fetched_at": "2026-10-28T21:05:05.664879Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4184857819c39b77",
+      "url": "https://x.com/GeminiApp/status/2115489409852473852",
+      "title": "RT @sundarpichai: I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon,...",
+      "summary": "RT @sundarpichai: I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model.\n\nFollowing Ar\u2026",
+      "content": "RT @sundarpichai: I did say we'd be releasing our models periodically...introducing Gemini 4 Carbon, our next frontier model.\n\nFollowing Ar\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T17:02:33Z",
+      "fetched_at": "2026-10-28T21:05:05.664916Z",
       "score": null,
       "score_reason": "",
       "tier": "",
