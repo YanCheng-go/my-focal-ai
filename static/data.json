@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-04T19:46:26.746774+00:00",
+  "exported_at": "2026-11-04T21:09:21.023295+00:00",
   "period_hours": 168,
-  "total": 2507,
+  "total": 2505,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -52705,27 +52705,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "bf268f38672e4b19",
-      "url": "https://arxiv.org/abs/2610.38822v1",
-      "title": "CopyLoop: Fast Looped Transformer Decoding via Context Copying and Shallow Screening",
-      "summary": "Looped Transformers increase computational capacity through the repeated application of shared blocks, but their recurrent depth makes conventional full-depth decoding expensive. While existing speculative pipelines accelerate generation by processing consecutive token positions at varying depths, they are typically limited by sequential decoding overheads. We introduce CopyLoop, a training-free decoding algorithm that combines low-cost context-copy proposals with shallow screening and continuous recurrent scheduling. Rather than step-by-step generation, CopyLoop proposes multi-token suffixes from repeated context. It then evaluates them early at a shallow recurrent depth to efficiently filter out incorrect branches, processing newer blocks concurrently while earlier blocks are still progressing toward full-depth verification. We evaluate CopyLoop across six model checkpoints from the Ouro, Raven, and Huginn families, covering code generation and multi-step mathematical reasoning. CopyLoop achieves decoding speedups of 2.98x--10.70x over full-depth autoregressive decoding on Base models and 2.74x--3.52x on Thinking models, consistently outperforming or closely matching all competing baselines across evaluation tasks. Furthermore, ablation studies confirm a strong synergy between shallow screening and continuous scheduling, while our analyses show that CopyLoop requires only lightweight model calibration and yields greater speedups on longer generations with reusable contexts.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Stephen Chung",
-      "published_at": "2026-10-28T20:16:54Z",
-      "fetched_at": "2026-10-30T05:50:59.054412Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "22aa4de1a032b12f",
       "url": "https://www.anthropic.com/events/the-briefing-knowledge-work-sf",
       "title": "The Briefing: Work at the frontier",
@@ -52740,47 +52719,6 @@
       "author": "",
       "published_at": "2026-11-10T00:00:00Z",
       "fetched_at": "2026-10-22T21:37:12.816957Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "74bcc0023f70283a",
-      "url": "https://x.com/trq212/status/2115544056038350960",
-      "title": "very weird thing happening rn\n\ntechnical people are sad, they think their skills are now useless\n\nno...",
-      "summary": "very weird thing happening rn\n\ntechnical people are sad, they think their skills are now useless\n\nnon-technical people are desperately wishing they were more technical so they could use agents better",
-      "content": "very weird thing happening rn\n\ntechnical people are sad, they think their skills are now useless\n\nnon-technical people are desperately wishing they were more technical so they could use agents better",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-10-28T20:39:42Z",
-      "fetched_at": "2026-10-28T21:04:57.112743Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9f3b0ba7ae40cbdd",
-      "url": "https://x.com/dani_avila7/status/2115542930697908587",
-      "title": "Just got early access to Rex \ud83d\udc4f, the new terminal from @mitchellh \n\nPersistent sessions, remote acces...",
-      "summary": "Just got early access to Rex \ud83d\udc4f, the new terminal from @mitchellh \n\nPersistent sessions, remote access, and native automation\u2026 this looks really promising\n\nA full article is coming!\n\nIf you enjoyed my Ghostty article, this one might be even better\n\nI\u2019ll share it soon! https://t.co/d7as6KiWzY",
-      "content": "Just got early access to Rex \ud83d\udc4f, the new terminal from @mitchellh \n\nPersistent sessions, remote access, and native automation\u2026 this looks really promising\n\nA full article is coming!\n\nIf you enjoyed my Ghostty article, this one might be even better\n\nI\u2019ll share it soon! https://t.co/d7as6KiWzY",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-28T20:35:14Z",
-      "fetched_at": "2026-10-28T21:05:02.002220Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -54445,6 +54383,27 @@
       "author": "dani_avila7",
       "published_at": "2026-11-04T17:14:25Z",
       "fetched_at": "2026-11-04T18:55:07.783501Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1c122163a6219be1",
+      "url": "https://x.com/GeminiApp/status/2118055342181630404",
+      "title": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from...",
+      "summary": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
+      "content": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-11-04T18:58:39Z",
+      "fetched_at": "2026-11-04T21:09:13.889027Z",
       "score": null,
       "score_reason": "",
       "tier": "",
