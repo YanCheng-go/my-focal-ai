@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-03T21:48:58.568473+00:00",
+  "exported_at": "2026-11-04T02:12:42.877669+00:00",
   "period_hours": 168,
-  "total": 2524,
+  "total": 2530,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29029,48 +29029,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "892e84ca9d3fb42a",
-      "url": "https://developers.googleblog.com/hill-climbing-agent-quality-with-agents-cli-evaluation/",
-      "title": "Hill-Climbing Agent Quality with Agents CLI Evaluation",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/1_3.2e16d0ba.fill-800x400.png\" /><br /><br />This post walks through the Agents CLI evaluation loop for systematically improving agent performance through continuous testing and grading. It demonstrates how to catch prompt regressions, evaluate model backend swaps using side-by-side trace comparisons, and automate evaluation passes. Developers will also learn how to integrate nightly scheduled runs with threshold-based alerting to track quality over time.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-28T00:00:00Z",
-      "fetched_at": "2026-10-28T22:36:17.939744Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "666b7cfaafbbd5d7",
-      "url": "https://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
-      "title": "Smaller apps and faster GPU inference with LiteRT in Google Play services",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_aumrhbaumrh.2e16d0ba.fill-800x400.jpg\" /><br /><br />LiteRT in Google Play services now offers GPU inference powered by ML Drift, delivering about 1.4x faster performance alongside the new CompiledModel API. Switching from bundled binaries reduces app size by approximately 8 MB while enabling seamless, automatic runtime updates across billions of devices. Developers can easily adopt these updates by updating their dependencies and utilizing the new Android Studio LiteRT skill for automated migration.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-28T00:00:00Z",
-      "fetched_at": "2026-10-28T22:36:17.939723Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "99fa99c882aff45a",
       "url": "https://www.anthropic.com/events/the-briefing-work-at-the-frontier",
       "title": "The Briefing: Work at the Frontier",
@@ -29361,69 +29319,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "84b4c4707efe8f21",
-      "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company",
-      "title": "IDC brings Quanta into Claude and adopts Claude across the company",
-      "summary": "IDC integrated Claude as part of its Quanta platform, and it has rolled Claude out across its own business",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-28T00:00:00Z",
-      "fetched_at": "2026-10-28T22:36:17.427596Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7270457062ab576b",
-      "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
-      "title": "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
-      "summary": "In many organizations, members have identified the unique work that Claude can unlock. The next step is expanding that work to every team.",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-28T00:00:00Z",
-      "fetched_at": "2026-10-28T22:36:17.427562Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "047d81f60ca5ab87",
-      "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
-      "title": "Introducing artifacts for legal work",
-      "summary": "Claude for Legal now includes ready-to-use artifacts for legal work that teams can adapt with their own data and connectors, and share across the business.",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-10-28T00:00:00Z",
-      "fetched_at": "2026-10-28T16:38:17.675991Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bb9278bc9ef11f16",
       "url": "https://arxiv.org/abs/2610.41375",
       "title": "From the Zoo to the BULLPEN: Sample-Efficient LLM Profiling via Multi-Channel Model Embeddings",
@@ -29644,26 +29539,6 @@
       "author": "AI Engineer",
       "published_at": "2026-10-28T07:00:33Z",
       "fetched_at": "2026-10-28T08:34:27.758544Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "48cd467df416d405",
-      "url": "https://www.youtube.com/watch?v=YIhvrvHtonk",
-      "title": "We Kept Rebuilding Our AI Agent. Here's What Survived - Fuad Ali, Arize AI",
-      "summary": "Arize's in-product agent Alex went from a 2023 prototype that was \"50% hallucination\" to a single agent with planning, memory and on-demand skills, all built with custom harness code instead of a framework. AI PM Fuad Ali covers each decision: moving the plan into the harness, making \"finish\" an explicit gate, treating large tool results like files, why one 8,000-character memory file per user beat vector stores and knowledge graphs, merging 10 specialists into one agent, and using production sessions as tests.\n\nChapters:\n0:00 Intro\n0:53 Agents all the way down\n2:56 What Alex does\n4:15 Timeline: 2023 to 2026\n6:19 Who owns the plan?\n8:33 What ends a turn?\n9:44 Memory: treat big results like files\n12:10 One small file beat a knowledge graph\n13:33 Specialists vs. one agent\n14:13 The newest model isn't always best\n15:28 Production sessions as tests\n17:46 What still needs a human\n18:31 What survived every rebuild\n\nFuad Ali\nhttps://arize.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-27T23:00:06Z",
-      "fetched_at": "2026-10-28T08:34:27.758554Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -52904,88 +52779,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "247f19dd19228060",
-      "url": "https://x.com/dani_avila7/status/2115255736561234301",
-      "title": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it work...",
-      "summary": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it works, what kinds of vulnerabilities it detects https://t.co/miWutILBCI",
-      "content": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it works, what kinds of vulnerabilities it detects https://t.co/miWutILBCI",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-28T01:34:01Z",
-      "fetched_at": "2026-10-28T09:52:15.454027Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "51bf83fea2fef40d",
-      "url": "https://x.com/OpenAI/status/2115237121300770818",
-      "title": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI res...",
-      "summary": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI result related to the existence of quantum\u2026",
-      "content": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI result related to the existence of quantum\u2026",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-10-28T00:20:03Z",
-      "fetched_at": "2026-10-28T09:52:19.926614Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c94645b3de5c76e6",
-      "url": "https://x.com/AnthropicAI/status/2115207004293853358",
-      "title": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to...",
-      "summary": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.\nhttps://t.co/p0lA6cP2y1",
-      "content": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.\nhttps://t.co/p0lA6cP2y1",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-10-27T22:20:23Z",
-      "fetched_at": "2026-10-28T09:52:21.954815Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0a7182a4cad3682f",
-      "url": "https://x.com/trq212/status/2115205259090153957",
-      "title": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enoug...",
-      "summary": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides si\u2026",
-      "content": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides si\u2026",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-10-27T22:13:27Z",
-      "fetched_at": "2026-10-28T09:52:11.200751Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "3c9f11827a446e13",
       "url": "https://x.com/simonw/status/2115444742595260551",
       "title": "I think October represents another inflection point in capabilities for coding agents and the models...",
@@ -54813,6 +54606,335 @@
       "author": "trq212",
       "published_at": "2026-11-02T17:20:13Z",
       "fetched_at": "2026-11-03T10:06:52.774365Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0f246ffe663f472d",
+      "url": "https://x.com/steipete/status/2117756040943190120",
+      "title": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each...",
+      "summary": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each others prompts, I was initially very h\u2026",
+      "content": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each others prompts, I was initially very h\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T23:09:20Z",
+      "fetched_at": "2026-11-04T01:56:24.477279Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e2b09395d7bee14",
+      "url": "https://x.com/steipete/status/2117755295552221683",
+      "title": "very neat!",
+      "summary": "very neat!",
+      "content": "very neat!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T23:06:23Z",
+      "fetched_at": "2026-11-04T01:56:24.477339Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "91033b7990ec32c2",
+      "url": "https://x.com/AnthropicAI/status/2117710942826123294",
+      "title": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduc...",
+      "summary": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It\u2019s substantially more",
+      "content": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It\u2019s substantially more",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-11-03T20:10:08Z",
+      "fetched_at": "2026-11-04T01:56:23.413558Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "91b07e449138fee9",
+      "url": "https://x.com/trq212/status/2117670540148347273",
+      "title": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, t...",
+      "summary": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, they won't need to verify their work or check it for bugs, they will just be right",
+      "content": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, they won't need to verify their work or check it for bugs, they will just be right",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-11-03T17:29:35Z",
+      "fetched_at": "2026-11-03T22:16:12.969113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b1cf7fee4e8615eb",
+      "url": "https://x.com/steipete/status/2117663959385772229",
+      "title": "RT @JSchaeff3r: Kimi K3.1 recalls instructions it was never given on Terminal Bench. They match the ...",
+      "summary": "RT @JSchaeff3r: Kimi K3.1 recalls instructions it was never given on Terminal Bench. They match the hidden tests. K3.1 while solving: \"Inst\u2026",
+      "content": "RT @JSchaeff3r: Kimi K3.1 recalls instructions it was never given on Terminal Bench. They match the hidden tests. K3.1 while solving: \"Inst\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T17:03:26Z",
+      "fetched_at": "2026-11-04T01:56:24.477370Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbc6b03809333710",
+      "url": "https://x.com/simonw/status/2117655816581071203",
+      "title": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts ...",
+      "summary": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing https://t.co/6O7WltGP7K",
+      "content": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing https://t.co/6O7WltGP7K",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-11-03T16:31:05Z",
+      "fetched_at": "2026-11-03T23:56:20.576424Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "08cd121c3cd30365",
+      "url": "https://x.com/steipete/status/2117614024938676461",
+      "title": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt sho...",
+      "summary": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
+      "content": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T13:45:01Z",
+      "fetched_at": "2026-11-04T01:56:24.477395Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "247f19dd19228060",
+      "url": "https://x.com/dani_avila7/status/2115255736561234301",
+      "title": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it work...",
+      "summary": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it works, what kinds of vulnerabilities it detects https://t.co/miWutILBCI",
+      "content": "Anthropic\u2019s OSS Scanner is now enabled on my claude-code-templates repo\n\nI\u2019ll be sharing how it works, what kinds of vulnerabilities it detects https://t.co/miWutILBCI",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T01:34:01Z",
+      "fetched_at": "2026-10-28T09:52:15.454027Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "51bf83fea2fef40d",
+      "url": "https://x.com/OpenAI/status/2115237121300770818",
+      "title": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI res...",
+      "summary": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI result related to the existence of quantum\u2026",
+      "content": "RT @KITP_UCSB: Statement of Yang-Mills Working Group, a scientific collaboration to interpret AI result related to the existence of quantum\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-28T00:20:03Z",
+      "fetched_at": "2026-10-28T09:52:19.926614Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c94645b3de5c76e6",
+      "url": "https://x.com/AnthropicAI/status/2115207004293853358",
+      "title": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to...",
+      "summary": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.\nhttps://t.co/p0lA6cP2y1",
+      "content": "We're expanding our partnership with @USGSA. Under a new OneGov agreement, we are bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.\nhttps://t.co/p0lA6cP2y1",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-27T22:20:23Z",
+      "fetched_at": "2026-10-28T09:52:21.954815Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0a7182a4cad3682f",
+      "url": "https://x.com/trq212/status/2115205259090153957",
+      "title": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enoug...",
+      "summary": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides si\u2026",
+      "content": "RT @felixrieseberg: The coding interview is dead, at least for my team at Anthropic. I've seen enough to know that it no longer provides si\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-27T22:13:27Z",
+      "fetched_at": "2026-10-28T09:52:11.200751Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "68c5acda4b1cc351",
+      "url": "https://x.com/dani_avila7/status/2115194010616627306",
+      "title": "Ok this is really cool",
+      "summary": "Ok this is really cool",
+      "content": "Ok this is really cool",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-27T21:28:45Z",
+      "fetched_at": "2026-10-28T09:52:15.454071Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a4cad22365ea4840",
+      "url": "https://x.com/trq212/status/2115188992861970693",
+      "title": "feels like there needs to be a new way to distribute opensource software such that people can modify...",
+      "summary": "feels like there needs to be a new way to distribute opensource software such that people can modify via agents but also get upstream automatically merged in\n\ncoding agents can do this but they won\u2019t do it automatically",
+      "content": "feels like there needs to be a new way to distribute opensource software such that people can modify via agents but also get upstream automatically merged in\n\ncoding agents can do this but they won\u2019t do it automatically",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-10-27T21:08:48Z",
+      "fetched_at": "2026-10-28T09:52:11.200852Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "eaba97b23645aeeb",
+      "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+      "title": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six o...",
+      "summary": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own.\n\nIn doing so, we\u2019ve learned much more about how Claude can support the many stages of",
+      "content": "Over the past few months, Anthropic scientists have engaged in deep research partnerships with six organizations developing new medicines. We've also begun drug discovery efforts of our own.\n\nIn doing so, we\u2019ve learned much more about how Claude can support the many stages of",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-27T20:27:48Z",
+      "fetched_at": "2026-10-28T09:52:21.954915Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3cf1d9ae1d8913b5",
+      "url": "https://x.com/GeminiApp/status/2115171788812669225",
+      "title": "With Google SynthID detection in Gemini, anyone can easily check if an image, video, or audio file w...",
+      "summary": "With Google SynthID detection in Gemini, anyone can easily check if an image, video, or audio file was made with AI from Google.\n\nJust ask Gemini, \u201cIs this AI generated?,\" so you can navigate the web with more confidence. https://t.co/Y8jeeJzunT",
+      "content": "With Google SynthID detection in Gemini, anyone can easily check if an image, video, or audio file was made with AI from Google.\n\nJust ask Gemini, \u201cIs this AI generated?,\" so you can navigate the web with more confidence. https://t.co/Y8jeeJzunT",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-27T20:00:27Z",
+      "fetched_at": "2026-10-28T09:52:18.812849Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c3cbd9d44b667957",
+      "url": "https://x.com/simonw/status/2115128326922883517",
+      "title": "These ones are pretty great!",
+      "summary": "These ones are pretty great!",
+      "content": "These ones are pretty great!",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-27T17:07:44Z",
+      "fetched_at": "2026-10-28T09:52:14.152068Z",
       "score": null,
       "score_reason": "",
       "tier": "",
