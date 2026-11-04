@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-04T21:09:21.023295+00:00",
+  "exported_at": "2026-11-04T23:09:39.875668+00:00",
   "period_hours": 168,
-  "total": 2505,
+  "total": 2504,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40250,26 +40250,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "19b4da3de5bcbf37",
-      "url": "https://www.youtube.com/watch?v=AnsXWH2_EBU",
-      "title": "How Anthropic Merges 30,000 Code Changes a Day - Manish Kapur, Sonar & Addy Osmani, Anthropic",
-      "summary": "Coding agents are opening PRs faster than anyone can review them. Manish Kapur (Sonar) and Addy Osmani (Anthropic) discuss \"light\" vs. \"dark\" software factories, how Anthropic scaled from about 2,500 to 30,000 merged changes a day with Claude doing first-pass review backed by real verification evidence, new data from Sonar's State of Code survey, and why every loop in the factory needs independent, multi-layered verification. They close with a lightning round on labeling agent-written PRs and when it's safe to merge.\n\nChapters:\n0:00 Intro\n1:57 Throughput is up, merges are failing\n2:49 Light vs. dark software factories\n3:51 Coding is solved, confidence isn't\n5:38 How Anthropic reviews 30,000 changes a day\n8:29 State of Code survey findings\n9:20 Where the next gains come from\n11:38 Multi-layered verification\n13:19 Controls, permissions and sandboxes\n14:41 Lightning round\n17:40 Takeaways\n\nManish Kapur\nhttps://www.sonarsource.com\n\nAddy Osmani\nhttps://x.com/addyosmani\nhttps://www.anthropic.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-28T23:00:26Z",
-      "fetched_at": "2026-10-29T13:03:01.666600Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bb9278bc9ef11f16",
       "url": "https://arxiv.org/abs/2610.41375",
       "title": "From the Zoo to the BULLPEN: Sample-Efficient LLM Profiling via Multi-Channel Model Embeddings",
@@ -52684,27 +52664,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6751d9e355d2045a",
-      "url": "https://arxiv.org/abs/2610.39016v1",
-      "title": "Implicit Reasoning in Transformers: Bridging the Compositionality Gap in GPT-2-like Models",
-      "summary": "Compositional generalization remains a persistent limitation of transformer language models: even when a model learns to combine known facts correctly in-distribution (ID), the same compositional mechanism may fail when applied to out-of-distribution (OOD) knowledge. We investigate this compositionality gap in a controlled two-hop reasoning setting using a GPT-2-like transformer model trained from scratch. Building on prior work identifying a circuit associated with compositional generalization, we test whether the failure of OOD transfer is related to how atomic knowledge is structurally exposed during training. We modify the training distribution by presenting both ID and OOD atomic facts in a format positionally aligned with the second-hop retrieval step of the learned compositional circuit, without modifying the model architecture or adding OOD compositional supervision. Under this intervention, the model successfully transfers the learned ID compositional behaviour to held-out OOD atomic facts, closing the observed compositionality gap in the controlled setting. Our results provide evidence that the observed compositionality gap is not a fundamental architecture limitation and that it can be overcome through mechanistically informed training distribution design.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Leonardo Venuto",
-      "published_at": "2026-10-28T22:44:54Z",
-      "fetched_at": "2026-10-30T05:50:59.054404Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "22aa4de1a032b12f",
       "url": "https://www.anthropic.com/events/the-briefing-knowledge-work-sf",
       "title": "The Briefing: Work at the frontier",
@@ -52822,68 +52781,6 @@
       "author": "dani_avila7",
       "published_at": "2026-10-29T00:50:35Z",
       "fetched_at": "2026-10-29T09:13:22.572439Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6d1aa60951ca43a5",
-      "url": "https://x.com/GeminiApp/status/2115580782286930306",
-      "title": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into...",
-      "summary": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into your personalized coaching plan https:\u2026",
-      "content": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into your personalized coaching plan https:\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T23:05:38Z",
-      "fetched_at": "2026-10-29T09:13:25.833372Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3a91ea23535e853f",
-      "url": "https://x.com/dani_avila7/status/2115572069085716705",
-      "title": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts,...",
-      "summary": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts, MCPs, skills, hooks, subagents, workflows\u2026 we have plenty of tools\n\nBut reliable decision-making and knowing when to escalate to a human is another challenge\n\nThat\u2019s why https://t.co/kbFuIPtNJ1",
-      "content": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts, MCPs, skills, hooks, subagents, workflows\u2026 we have plenty of tools\n\nBut reliable decision-making and knowing when to escalate to a human is another challenge\n\nThat\u2019s why https://t.co/kbFuIPtNJ1",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-28T22:31:01Z",
-      "fetched_at": "2026-10-29T09:13:22.572470Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f314516791dee9f2",
-      "url": "https://x.com/GeminiApp/status/2115558141069054054",
-      "title": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the hol...",
-      "summary": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the holodeck on Star Trek \u2013 computing that fee\u2026",
-      "content": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the holodeck on Star Trek \u2013 computing that fee\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-28T21:35:40Z",
-      "fetched_at": "2026-10-29T09:13:25.833482Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -54404,6 +54301,88 @@
       "author": "geminiapp",
       "published_at": "2026-11-04T18:58:39Z",
       "fetched_at": "2026-11-04T21:09:13.889027Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f213959aec2fdc98",
+      "url": "https://x.com/steipete/status/2118116514700386439",
+      "title": "Do individual limits still make sense? As capabilities increase you want to work with and support an...",
+      "summary": "Do individual limits still make sense? As capabilities increase you want to work with and support an agent that represents your project, that runs loops and evolves your codebase. The humans merely curate the automations.",
+      "content": "Do individual limits still make sense? As capabilities increase you want to work with and support an agent that represents your project, that runs loops and evolves your codebase. The humans merely curate the automations.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-04T23:01:44Z",
+      "fetched_at": "2026-11-04T23:09:38.035292Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "6d1aa60951ca43a5",
+      "url": "https://x.com/GeminiApp/status/2115580782286930306",
+      "title": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into...",
+      "summary": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into your personalized coaching plan https:\u2026",
+      "content": "RT @joshwoodward: New in Gemini: Connect your @Strava account to turn years of raw workout logs into your personalized coaching plan https:\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T23:05:38Z",
+      "fetched_at": "2026-10-29T09:13:25.833372Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3a91ea23535e853f",
+      "url": "https://x.com/dani_avila7/status/2115572069085716705",
+      "title": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts,...",
+      "summary": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts, MCPs, skills, hooks, subagents, workflows\u2026 we have plenty of tools\n\nBut reliable decision-making and knowing when to escalate to a human is another challenge\n\nThat\u2019s why https://t.co/kbFuIPtNJ1",
+      "content": "Building Claude Code agents is getting easier. Making them reliable is still the hard part\n\nPrompts, MCPs, skills, hooks, subagents, workflows\u2026 we have plenty of tools\n\nBut reliable decision-making and knowing when to escalate to a human is another challenge\n\nThat\u2019s why https://t.co/kbFuIPtNJ1",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-28T22:31:01Z",
+      "fetched_at": "2026-10-29T09:13:22.572470Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "f314516791dee9f2",
+      "url": "https://x.com/GeminiApp/status/2115558141069054054",
+      "title": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the hol...",
+      "summary": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the holodeck on Star Trek \u2013 computing that fee\u2026",
+      "content": "RT @ssamat: I\u2019ve always believed that the endgame of spatial computing is something close to the holodeck on Star Trek \u2013 computing that fee\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-28T21:35:40Z",
+      "fetched_at": "2026-10-29T09:13:25.833482Z",
       "score": null,
       "score_reason": "",
       "tier": "",
