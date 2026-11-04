@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-04T12:09:45.692296+00:00",
+  "exported_at": "2026-11-04T12:32:59.123363+00:00",
   "period_hours": 168,
-  "total": 2518,
+  "total": 2523,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -54673,6 +54673,107 @@
       "author": "steipete",
       "published_at": "2026-11-03T13:45:01Z",
       "fetched_at": "2026-11-04T01:56:24.477395Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3744a1e17537bfb1",
+      "url": "https://x.com/dani_avila7/status/2117839890620498147",
+      "title": "Here\u2019s who\u2019s downloading skills, MCPs, settings, and plugins from https://t.co/eQDBth4fJI\n\n38% human...",
+      "summary": "Here\u2019s who\u2019s downloading skills, MCPs, settings, and plugins from https://t.co/eQDBth4fJI\n\n38% humans. 62% AI agents\u2026 and growing\n\nAgents are starting to build their own harnesses, looking for reliable sources to configure themselves and get things done\n\nI\u2019ve been making https://t.co/jDNRq3U68B",
+      "content": "Here\u2019s who\u2019s downloading skills, MCPs, settings, and plugins from https://t.co/eQDBth4fJI\n\n38% humans. 62% AI agents\u2026 and growing\n\nAgents are starting to build their own harnesses, looking for reliable sources to configure themselves and get things done\n\nI\u2019ve been making https://t.co/jDNRq3U68B",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-04T04:42:32Z",
+      "fetched_at": "2026-11-04T10:01:48.903869Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3b6f30f5b8870ae5",
+      "url": "https://x.com/sama/status/2117797818756952416",
+      "title": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business...",
+      "summary": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard yo\u2026",
+      "content": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard yo\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-11-04T01:55:21Z",
+      "fetched_at": "2026-11-04T10:01:50.859826Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e672b76c34a36611",
+      "url": "https://x.com/sama/status/2117794005165748448",
+      "title": "People should always be in control of the future.\n\nOpenAI is against the notion that it would be acc...",
+      "summary": "People should always be in control of the future.\n\nOpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that \u201cAI systems think makes sense to reward in humans\u201d.\n\nPeople should not cede control of the future to",
+      "content": "People should always be in control of the future.\n\nOpenAI is against the notion that it would be acceptable for people to be relegated to a role of doing things that \u201cAI systems think makes sense to reward in humans\u201d.\n\nPeople should not cede control of the future to",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-11-04T01:40:12Z",
+      "fetched_at": "2026-11-04T10:01:50.860001Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "afb34ad80e883233",
+      "url": "https://x.com/dani_avila7/status/2117786870910263562",
+      "title": "Here\u2019s a simple diagram of how OpenTelemetry works with MCP\n\nTrace context propagates from client to...",
+      "summary": "Here\u2019s a simple diagram of how OpenTelemetry works with MCP\n\nTrace context propagates from client to server through params._meta, connecting spans into a single distributed trace\n\nSimple, but a big step for MCP observability https://t.co/MJgbp6yBPy",
+      "content": "Here\u2019s a simple diagram of how OpenTelemetry works with MCP\n\nTrace context propagates from client to server through params._meta, connecting spans into a single distributed trace\n\nSimple, but a big step for MCP observability https://t.co/MJgbp6yBPy",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-04T01:11:51Z",
+      "fetched_at": "2026-11-04T10:01:48.904259Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9f1853a6c63fcc2c",
+      "url": "https://x.com/bcherny/status/2117693181651542387",
+      "title": "Signing in to your company's plugins one by one is annoying, so we let Claude auto-connect to them n...",
+      "summary": "Signing in to your company's plugins one by one is annoying, so we let Claude auto-connect to them now.\n\nTeam and Enterprise admins can set them up, and teammates are connected automatically the first time they use the plugins.",
+      "content": "Signing in to your company's plugins one by one is annoying, so we let Claude auto-connect to them now.\n\nTeam and Enterprise admins can set them up, and teammates are connected automatically the first time they use the plugins.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-11-03T18:59:33Z",
+      "fetched_at": "2026-11-04T10:01:46.824794Z",
       "score": null,
       "score_reason": "",
       "tier": "",
