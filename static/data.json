@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-04T12:32:59.123363+00:00",
+  "exported_at": "2026-11-04T14:33:18.269281+00:00",
   "period_hours": 168,
-  "total": 2523,
+  "total": 2520,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39895,27 +39895,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a395c7da350b5086",
-      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-28T13:15:00Z",
-      "fetched_at": "2026-10-28T22:36:11.744554Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "99fa99c882aff45a",
       "url": "https://www.anthropic.com/events/the-briefing-work-at-the-frontier",
       "title": "The Briefing: Work at the Frontier",
@@ -52697,47 +52676,6 @@
       "author": "",
       "published_at": "2026-11-10T00:00:00Z",
       "fetched_at": "2026-10-22T21:37:12.816957Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3c9f11827a446e13",
-      "url": "https://x.com/simonw/status/2115444742595260551",
-      "title": "I think October represents another inflection point in capabilities for coding agents and the models...",
-      "summary": "I think October represents another inflection point in capabilities for coding agents and the models that drive them: Claude Opus 5.5 can now build video games that are actually fun https://t.co/aPsJ14RHR0",
-      "content": "I think October represents another inflection point in capabilities for coding agents and the models that drive them: Claude Opus 5.5 can now build video games that are actually fun https://t.co/aPsJ14RHR0",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-10-28T14:05:04Z",
-      "fetched_at": "2026-10-28T14:14:29.785850Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c4bcca9737b4a97b",
-      "url": "https://x.com/dani_avila7/status/2115443737157579217",
-      "title": "Payments from the CLI? I like where this is going.\n\nWell\u2026 I can already order Chipotle with the Door...",
-      "summary": "Payments from the CLI? I like where this is going.\n\nWell\u2026 I can already order Chipotle with the DoorDash CLI\n\nBeing able to send payments with Stripe feels like the next logical step",
-      "content": "Payments from the CLI? I like where this is going.\n\nWell\u2026 I can already order Chipotle with the DoorDash CLI\n\nBeing able to send payments with Stripe feels like the next logical step",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-28T14:01:04Z",
-      "fetched_at": "2026-10-28T14:14:30.802245Z",
       "score": null,
       "score_reason": "",
       "tier": "",
