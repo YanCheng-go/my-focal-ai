@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-05T18:01:56.752223+00:00",
+  "exported_at": "2026-11-05T19:21:11.530252+00:00",
   "period_hours": 168,
-  "total": 2900,
+  "total": 2909,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -27315,28 +27315,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d368308dafb9bf4a",
-      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
-      "title": "Microsoft Research Focus \u2013 Edition #97",
-      "summary": "<p>Host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft\u2014from understanding the challenges facing coding agents to uncovering how people use AI at work and improving extended-range weather forecasting.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/\">Microsoft Research Focus \u2013 Edition #97</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "content": "<div class=\"wp-block-spacer\" style=\"height: 25px;\"></div>\n\n\n\n<p class=\"wp-block-paragraph\" id=\"what-s-new-in-research\"><em>What&#8217;s new in research?</em>&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">You may already be familiar with the <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.linkedin.com/newsletters/research-focus-7335362495383040001/\" rel=\"noopener noreferrer\" target=\"_blank\">Research Focus newsletter<span class=\"sr-only\"> (opens in new tab)</span></a> on LinkedIn. Now, you can catch up on highlights from across the research community at Microsoft on our social channels, YouTube, and major podcast platforms, too.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">In this edition of <em>Microsoft Research Focus</em>, host Sowbhagya Suresh shares some of the latest news and cutting-edge research from across Microsoft\u2014from understanding the challenges facing coding agents to uncovering how people use AI at work and improving extended-range weather forecasting.&nbsp;</p>\n\n\n\n<p class=\"wp-block-paragraph\">Catch up on the ideas, tools, and discoveries researchers are exploring today and get a quick look at what&#8217;s coming next.</p>\n\n\n\n<div class=\"wp-block-group msr-pattern-link-list is-layout-flow wp-block-group-is-layout-flow\">\n<hr class=\"wp-block-separator has-alpha-channel-opacity\" />\n\n\n\n<h2 class=\"wp-block-heading h5\" id=\"learn-more-1\">Related links:</h2>\n\n\n\n<ul class=\"wp-block-list list-unstyled\">\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.linkedin.com/newsletters/research-focus-7335362495383040001/\" rel=\"noopener noreferrer\" target=\"_blank\">Research Focus newsletter on LinkedIn<span class=\"sr-only\"> (opens in new tab)</span></a></li>\n\n\n\n<li><a href=\"https://www.microsoft.com/en-us/research/publication/forkpilot-self-evolving-policy-for-retrospective-search-in-long-horizon-agents/\">ForkPilot: Self-Evolving Policy for Retrospective Search in Long-Horizon Agents</a></li>\n\n\n\n<li><a href=\"https://www.microsoft.com/en-us/research/publication/code-understanding-is-a-bottleneck-for-coding-agents/\">Code Understanding is a Bottleneck for Coding Agents</a></li>\n\n\n\n<li><a href=\"https://www.microsoft.com/en-us/research/publication/teletune-evolving-agent-skills-from-offline-telemetry/\">TeleTune: Evolving Agent Skills from Offline Telemetry</a></li>\n\n\n\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://microsoft.github.io/nfw-reader/posts/everyday-work-behind-ai-use\" rel=\"noopener noreferrer\" target=\"_blank\">Why Copilot use looks so similar across industries, and what that misses<span class=\"sr-only\"> (opens in new tab)</span></a></li>\n\n\n\n<li><a href=\"https://www.microsoft.com/en-us/research/publication/teacher-ai-collaboration-for-curating-and-customizing-lesson-plans-in-low-resource-schools/\">Shiksha Copilot: Teacher-AI Collaboration for Curating and Customizing Lesson Plans in Low-Resource Schools</a></li>\n\n\n\n<li><a href=\"https://www.microsoft.com/en-us/research/story/new-ai-framework-bridges-a-critical-gap-in-mid-range-weather-forecasts/\">New AI framework bridges a critical gap in mid-range weather forecasts</a></li>\n\n\n\n<li><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://github.com/microsoft/bioemu2\" rel=\"noopener noreferrer\" target=\"_blank\">BioEmu2 in public preview<span class=\"sr-only\"> (opens in new tab)</span></a></li>\n</ul>\n\n\n\n<hr class=\"wp-block-separator has-alpha-channel-opacity\" />\n</div>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"chapters\">Chapters</h2>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=48s&amp;pp=0gcJCWMAwfN6Pr3D\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>00:48:</strong> A self-improving agentic framework<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=95s\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>01:35:</strong> Understanding coding agent success and failure&nbsp;<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=149s\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>02:29:</strong> Evolving agent skills with activity logs&nbsp;<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=202s\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>03:22:</strong> Looking beyond similarities in AI use&nbsp;<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=255s\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>04:15:</strong> Helping teachers make more time for teaching&nbsp;<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=292s&amp;pp=0gcJCWMAwfN6Pr3D\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>04:52:</strong> Improving extended-range weather forecasting&nbsp;<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=342s\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>05:42:</strong> BioEmu2 now available in public preview&nbsp;<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.youtube.com/watch?v=k6oC-6TPAr8&amp;t=392s\" rel=\"noopener noreferrer\" target=\"_blank\"><strong>06:32:</strong> Final thoughts<span class=\"sr-only\"> (opens in new tab)</span></a></p>\n\n\n\n<div class=\"wp-block-spacer\" style=\"height: 25px;\"></div>\n\n\n\n<section class=\"wp-block-msr-subscribe-to-podcast subscribe-to-podcast\">\n\t<div class=\"subscribe-to-podcast__inner border-top border-bottom border-width-2\">\n\t\t<h2 class=\"h5 subscribe-to-podcast__heading\">\n\t\t\tSubscribe to the <a href=\"https://www.microsoft.com/en-us/research/podcast\">Microsoft Research Podcast</a>:\t\t</h2>\n\t\t<ul class=\"subscribe-to-podcast__list list-unstyled\">\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://itunes.apple.com/us/podcast/microsoft-research-a-podcast/id1318021537?mt=2\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"black\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">  <path d=\"M7.12 0c-3.937-0.011-7.131 3.183-7.12 7.12v17.76c-0.011 3.937 3.183 7.131 7.12 7.12h17.76c3.937 0.011 7.131-3.183 7.12-7.12v-17.76c0.011-3.937-3.183-7.131-7.12-7.12zM15.817 3.421c3.115 0 5.932 1.204 8.079 3.453 1.631 1.693 2.547 3.489 3.016 5.855 0.161 0.787 0.161 2.932 0.009 3.817-0.5 2.817-2.041 5.339-4.317 7.063-0.812 0.615-2.797 1.683-3.115 1.683-0.12 0-0.129-0.12-0.077-0.615 0.099-0.792 0.192-0.953 0.64-1.141 0.713-0.296 1.932-1.167 2.677-1.911 1.301-1.303 2.229-2.932 2.677-4.719 0.281-1.1 0.244-3.543-0.063-4.672-0.969-3.595-3.907-6.385-7.5-7.136-1.041-0.213-2.943-0.213-4 0-3.636 0.751-6.647 3.683-7.563 7.371-0.245 1.004-0.245 3.448 0 4.448 0.609 2.443 2.188 4.681 4.255 6.015 0.407 0.271 0.896 0.547 1.1 0.631 0.447 0.192 0.547 0.355 0.629 1.14 0.052 0.485 0.041 0.62-0.072 0.62-0.073 0-0.62-0.235-1.199-0.511l-0.052-0.041c-3.297-1.62-5.407-4.364-6.177-8.016-0.187-0.943-0.224-3.187-0.036-4.052 0.479-2.323 1.396-4.135 2.921-5.739 2.199-2.319 5.027-3.543 8.172-3.543zM16 7.172c0.541 0.005 1.068 0.052 1.473 0.14 3.715 0.828 6.344 4.543 5.833 8.229-0.203 1.489-0.713 2.709-1.619 3.844-0.448 0.573-1.537 1.532-1.729 1.532-0.032 0-0.063-0.365-0.063-0.803v-0.808l0.552-0.661c2.093-2.505 1.943-6.005-0.339-8.296-0.885-0.896-1.912-1.423-3.235-1.661-0.853-0.161-1.031-0.161-1.927-0.011-1.364 0.219-2.417 0.744-3.355 1.672-2.291 2.271-2.443 5.791-0.348 8.296l0.552 0.661v0.813c0 0.448-0.037 0.807-0.084 0.807-0.036 0-0.349-0.213-0.683-0.479l-0.047-0.016c-1.109-0.885-2.088-2.453-2.495-3.995-0.244-0.932-0.244-2.697 0.011-3.625 0.672-2.505 2.521-4.448 5.079-5.359 0.547-0.193 1.509-0.297 2.416-0.281zM15.823 11.156c0.417 0 0.828 0.084 1.131 0.24 0.645 0.339 1.183 0.989 1.385 1.677 0.62 2.104-1.609 3.948-3.631 3.005h-0.015c-0.953-0.443-1.464-1.276-1.475-2.36 0-0.979 0.541-1.828 1.484-2.328 0.297-0.156 0.709-0.235 1.125-0.235zM15.812 17.464c1.319-0.005 2.271 0.463 2.625 1.291 0.265 0.62 0.167 2.573-0.292 5.735-0.307 2.208-0.479 2.765-0.905 3.141-0.589 0.52-1.417 0.667-2.209 0.385h-0.004c-0.953-0.344-1.157-0.808-1.553-3.527-0.452-3.161-0.552-5.115-0.285-5.735 0.348-0.823 1.296-1.285 2.624-1.291z\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Apple Podcasts</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://subscribebyemail.com/www.blubrry.com/feeds/microsoftresearch.xml\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.4 6a2.392 2.392 0 00-2.372 2.119L16 15.6l11.972-7.481A2.392 2.392 0 0025.6 6H6.4zM4 10.502V22.8a2.4 2.4 0 002.4 2.4h19.2a2.4 2.4 0 002.4-2.4V10.502l-11.365 7.102a1.2 1.2 0 01-1.27 0L4 10.502z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Email</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://subscribeonandroid.com/www.blubrry.com/feeds/microsoftresearch.xml\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.414 4.02c-.062.012-.126.023-.18.06a.489.489 0 00-.12.675L13.149 6.3c-1.6.847-2.792 2.255-3.18 3.944h13.257c-.388-1.69-1.58-3.097-3.179-3.944l1.035-1.545a.489.489 0 00-.12-.675.492.492 0 00-.675.135l-1.14 1.68a7.423 7.423 0 00-2.55-.45c-.899 0-1.758.161-2.549.45l-1.14-1.68a.482.482 0 00-.494-.195zm1.545 3.824a.72.72 0 110 1.44.72.72 0 010-1.44zm5.278 0a.719.719 0 110 1.44.719.719 0 110-1.44zM8.44 11.204A1.44 1.44 0 007 12.644v6.718c0 .795.645 1.44 1.44 1.44.168 0 .33-.036.48-.09v-9.418a1.406 1.406 0 00-.48-.09zm1.44 0V21.76c0 .793.646 1.44 1.44 1.44h10.557c.793 0 1.44-.647 1.44-1.44V11.204H9.878zm14.876 0c-.169 0-.33.035-.48.09v9.418c.15.052.311.09.48.09a1.44 1.44 0 001.44-1.44v-6.719a1.44 1.44 0 00-1.44-1.44zM11.8 24.16v1.92a1.92 1.92 0 003.84 0v-1.92h-3.84zm5.759 0v1.92a1.92 1.92 0 003.84 0v-1.92h-3.84z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Android</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://open.spotify.com/show/4ndjUXyL0hH1FXHgwIiTWU\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16 4C9.383 4 4 9.383 4 16s5.383 12 12 12 12-5.383 12-12S22.617 4 16 4zm5.08 17.394a.781.781 0 01-1.086.217c-1.29-.86-3.477-1.434-5.303-1.434-1.937.002-3.389.477-3.403.482a.782.782 0 11-.494-1.484c.068-.023 1.71-.56 3.897-.562 1.826 0 4.365.492 6.171 1.696.36.24.457.725.217 1.085zm1.56-3.202a.895.895 0 01-1.234.286c-2.338-1.457-4.742-1.766-6.812-1.747-2.338.02-4.207.466-4.239.476a.895.895 0 11-.488-1.723c.145-.041 2.01-.5 4.564-.521 2.329-.02 5.23.318 7.923 1.995.419.26.547.814.286 1.234zm1.556-3.745a1.043 1.043 0 01-1.428.371c-2.725-1.6-6.039-1.94-8.339-1.942h-.033c-2.781 0-4.923.489-4.944.494a1.044 1.044 0 01-.474-2.031c.096-.023 2.385-.55 5.418-.55h.036c2.558.004 6.264.393 9.393 2.23.497.292.663.931.371 1.428z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">Spotify</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\n\t\t\t\t\t\t\t<li class=\"subscribe-to-podcast__list-item\">\n\t\t\t\t\t<a class=\"subscribe-to-podcast__link\" href=\"https://www.blubrry.com/feeds/microsoftresearch.xml\" rel=\"noreferrer noopener\" target=\"_blank\">\n\t\t\t\t\t\t<svg class=\"subscribe-to-podcast__svg\" fill=\"none\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.667 4a2.676 2.676 0 00-2.612 2.13v.003c-.036.172-.055.35-.055.534v18.666c0 .183.019.362.055.534v.003a2.676 2.676 0 002.076 2.075h.002c.172.036.35.055.534.055h18.666A2.676 2.676 0 0028 25.333V6.667a2.676 2.676 0 00-2.13-2.612h-.003A2.623 2.623 0 0025.333 4H6.667zM8 8h1.333C17.42 8 24 14.58 24 22.667V24h-2.667v-1.333c0-6.618-5.382-12-12-12H8V8zm0 5.333h1.333c5.146 0 9.334 4.188 9.334 9.334V24H16v-1.333A6.674 6.674 0 009.333 16H8v-2.667zM10 20a2 2 0 11-.001 4.001A2 2 0 0110 20z\" fill=\"currentColor\"></svg>\n\t\t\t\t\t\t<span class=\"subscribe-to-podcast__link-text\">RSS Feed</span>\n\t\t\t\t\t</a>\n\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t</div>\n</section>\n\n\n<div class=\"wp-block-msr-show-more\">\n\t<div class=\"bg-neutral-100 p-5\">\n\t\t<div class=\"show-more-show-less\">\n\t\t\t<div>\n\t\t\t\t<span>\n\t\t\t\t\t\n\n<h2 class=\"wp-block-heading\" id=\"transcript\">Transcript</h2>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC]</p>\n\n\n\n<p class=\"wp-block-paragraph\"><strong>SOWBHAGYA SURESH:</strong> Hi, I\u2019m Sowbhagya Suresh. Welcome to <em>Microsoft Research Focus</em>.</p>\n\n\n\n<p class=\"wp-block-paragraph\">You&#8217;ve probably read our newsletter. And now you can get highlights from across the research community at Microsoft here, on YouTube, and major podcast platforms. Whether you read, watch, or listen to it, <em>Research Focus</em> is your source for research news at Microsoft.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Coming up in this edition: what everyday AI use reveals about the way we work; how a new AI model could help scientists better understand proteins; a new approach to improving weather forecasts weeks in advance; and more. So here&#8217;s what&#8217;s new.</p>\n\n\n\n\t\t\t\t</span>\n\t\t\t\t<span class=\"show-more-show-less-toggleable-content\" id=\"show-more-show-less-toggle-1\">\n\t\t\t\t\t\n\n\n\n<h3 class=\"wp-block-heading h5\" id=\"a-self-improving-agentic-framework\"><a href=\"https://www.microsoft.com/en-us/research/publication/forkpilot-self-evolving-policy-for-retrospective-search-in-long-horizon-agents/\">A self-improving agentic framework</a></h3>\n\n\n\n<p class=\"wp-block-paragraph\">More and more, AI agents are handling tasks that are complex.</p>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC FADES]</p>\n\n\n\n<p class=\"wp-block-paragraph\">Tasks that require multiple steps, decisions, and interactions with external tools. But how can we count on AI agents to do the work if their ability to adjust when things go wrong may require a lot of resources with no guarantees of a better result?</p>\n\n\n\n<p class=\"wp-block-paragraph\">A new self-improving framework called ForkPilot learns when it&#8217;s worth revisiting earlier decisions to find a different approach and adapts its strategy based on new outcomes.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Tested across six benchmarks and leading AI models, ForkPilot measures up to the best existing methods while reducing AI processing demands by up to 59%. These results suggest that AI agents can solve complex problems more reliably and efficiently, making them more practical and cost-effective to deploy at scale.</p>\n\n\n\n<p class=\"wp-block-paragraph\">[TRANSITION MUSIC]</p>\n\n\n\n<h3 class=\"wp-block-heading h5\" id=\"understanding-coding-agent-success-and-failure\"><a href=\"https://www.microsoft.com/en-us/research/publication/code-understanding-is-a-bottleneck-for-coding-agents/\">Understanding coding agent success and failure</a></h3>\n\n\n\n<p class=\"wp-block-paragraph\">Coding agents execute user queries by reasoning about, editing, and running code. Understanding why these agents fail is critical if we want to build more capable and reliable coding agents. Unfortunately, existing benchmarks often make it difficult to identify which factors contribute to success or failure.</p>\n\n\n\n<p class=\"wp-block-paragraph\">CABRA is a framework for generating coding challenges from scratch. It lets researchers increase complexity in a controlled way and pinpoints the skills that are most difficult for agents.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Across thousands of generated challenges, the researchers found that agents often overcame coding problems by using tools. Yet the agents still struggled when they needed to understand unfamiliar codebases. The findings suggest that understanding existing code, rather than modifying it, remains one of the biggest obstacles to developing more effective coding agents.</p>\n\n\n\n<p class=\"wp-block-paragraph\">[TRANSITION MUSIC]</p>\n\n\n\n<h3 class=\"wp-block-heading h5\" id=\"evolving-agent-skills-with-activity-logs\"><a href=\"https://www.microsoft.com/en-us/research/publication/teletune-evolving-agent-skills-from-offline-telemetry/\">Evolving agent skills with activity logs</a></h3>\n\n\n\n<p class=\"wp-block-paragraph\">Computer-use agents are AI systems that are designed to complete tasks that require clicking and typing. They can fill in forms, process requests, and navigate websites. To do this effectively, they need to learn the procedures that people use to get work done. User activity logs can offer a way to capture this knowledge. But activity logs typically don&#8217;t record the intent behind each action and often combine tasks.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The new framework TeleTune learns reusable skills and workflows from these logs. It also infers the task goals associated with the sequences of actions.</p>\n\n\n\n<p class=\"wp-block-paragraph\">In evaluations across software and browser tasks, TeleTune outperformed existing approaches. By learning from existing activity, TeleTune offers a scalable way to help AI agents adapt to unfamiliar software and carry out complex, multi-step workflows</p>\n\n\n\n<p class=\"wp-block-paragraph\">[TRANSITION MUSIC]</p>\n\n\n\n<h3 class=\"wp-block-heading h5\" id=\"looking-beyond-similarities-in-ai-use\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://microsoft.github.io/nfw-reader/posts/everyday-work-behind-ai-use\" rel=\"noopener noreferrer\" target=\"_blank\">Looking beyond similarities in AI use<span class=\"sr-only\"> (opens in new tab)</span></a></h3>\n\n\n\n<p class=\"wp-block-paragraph\">Workers across industries may appear to be using AI in surprisingly similar ways, but a closer look reveals a different story.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Microsoft researchers analyzed aggregated Copilot Chat activity across a broad range of customer categories and found that editing documents led all classified activities, accounting for more than 20 percent.</p>\n\n\n\n<p class=\"wp-block-paragraph\">But when researchers set aside the 20 most common activities, differences between customer categories became substantially more pronounced. The most common uses of AI may be hiding important differences in how organizations use it for more specialized work.</p>\n\n\n\n<p class=\"wp-block-paragraph\">For business leaders, the takeaway is clear: don\u2019t assume you have the same AI needs as others in your industry. Finding the right opportunities means looking beyond usage statistics to understand what employees actually do, how they work, and what outcomes matter most.</p>\n\n\n\n<p class=\"wp-block-paragraph\">[TRANSITION MUSIC]</p>\n\n\n\n<h3 class=\"wp-block-heading h5\" id=\"helping-teachers-make-more-time-for-teaching\"><a href=\"https://www.microsoft.com/en-us/research/publication/teacher-ai-collaboration-for-curating-and-customizing-lesson-plans-in-low-resource-schools/\">Helping teachers make more time for teaching</a></h3>\n\n\n\n<p class=\"wp-block-paragraph\">A new study shows how Shiksha Copilot\u2014a human-in-the-loop AI tool\u2014could transform teacher workflows in Global South classrooms.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The study in low-resource schools in India found the tool reduced the time teachers spent on bilingual lesson planning and bureaucracy. That gave them more time to craft more engaging classroom activities.</p>\n\n\n\n<p class=\"wp-block-paragraph\">More than a thousand teachers participated, and many reported reduced stress levels and a positive impression of how AI can help them. These teachers actively engaged with Shiksha Copilot, using their professional expertise to adapt and repurpose materials to suit their own classrooms.</p>\n\n\n\n<p class=\"wp-block-paragraph\">[TRANSITION MUSIC]</p>\n\n\n\n<h3 class=\"wp-block-heading h5\" id=\"improving-extended-range-weather-forecasting\"><a href=\"https://www.microsoft.com/en-us/research/story/new-ai-framework-bridges-a-critical-gap-in-mid-range-weather-forecasts/\">Improving extended-range weather forecasting</a>&nbsp;</h3>\n\n\n\n<p class=\"wp-block-paragraph\">Ten-day weather forecasts have become remarkably dependable. But what about the weeks that follow?</p>\n\n\n\n<p class=\"wp-block-paragraph\">The two-to-six-week window remains a major challenge for forecasting models, which is a problem. That\u2019s when a wide range of critical decisions get made related to farming, managing wildfires, and preparing for extreme weather.</p>\n\n\n\n<p class=\"wp-block-paragraph\">A new machine-learning framework called Probabilistic Bias Correction, or <em>PBC</em>, is helping close that gap. PBC learns from a weather model&#8217;s past mistakes and helps correct them.</p>\n\n\n\n<p class=\"wp-block-paragraph\">And the early results are promising.</p>\n\n\n\n<p class=\"wp-block-paragraph\">PBC took top honors in a global competition focused on improving extended-range forecasting. It&#8217;s also being deployed in Kenya, where it&#8217;s helping improve critical monsoon forecasts for farmers.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This development could help make weather predictions more useful across a broad range of applications.</p>\n\n\n\n<p class=\"wp-block-paragraph\">[TRANSITION MUSIC]</p>\n\n\n\n<h3 class=\"wp-block-heading h5\" id=\"bioemu2-now-available-in-public-preview\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FeDe5jXBZ&amp;urlhash=Jf7N&amp;mt=vKAvmfL9MtoFUgNlklPHSdLkzzMSmFf081Cd6xhbjGa0jArDsfGBcEZU_m4zzYqOCffZ0kEXyfzcgyevxiLBCp6tSZOzGfxvlJFYtJgZkzXQZZoP1f7jL5Au&amp;isSdui=true\" rel=\"noopener noreferrer\" target=\"_blank\">BioEmu2 now available in public preview<span class=\"sr-only\"> (opens in new tab)</span></a></h3>\n\n\n\n<p class=\"wp-block-paragraph\">BioEmu2, a new foundation model for understanding biomolecular structure, dynamics, and function, is now available in public preview.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Developed by the Microsoft Research AI for Science team, BioEmu2 builds on Biomolecular Emulator, a deep-learning model designed to help scientists better understand how proteins work.</p>\n\n\n\n<p class=\"wp-block-paragraph\">That understanding could have important implications for medicine. By learning more about how proteins function, scientists could move closer to developing more effective medications that enhance beneficial protein activity or prevent proteins from causing harm.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Go to the <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FeDe5jXBZ&amp;urlhash=Jf7N&amp;mt=vKAvmfL9MtoFUgNlklPHSdLkzzMSmFf081Cd6xhbjGa0jArDsfGBcEZU_m4zzYqOCffZ0kEXyfzcgyevxiLBCp6tSZOzGfxvlJFYtJgZkzXQZZoP1f7jL5Au&amp;isSdui=true\" rel=\"noopener noreferrer\" target=\"_blank\">BioEmu2 Microsoft Research GitHub repository<span class=\"sr-only\"> (opens in new tab)</span></a> to explore the model and learn more.</p>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC]</p>\n\n\n\n<p class=\"wp-block-paragraph\">And that\u2019s your <em>Research Focus</em>.</p>\n\n\n\n<p class=\"wp-block-paragraph\">From more capable AI agents to better weather forecasting, these are just a few of the developments researchers are exploring at Microsoft.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Want to learn more and stay connected? Explore the latest research, discover the people behind it, and keep tabs on the ideas shaping what&#8217;s next by following Microsoft Research on major social platforms.</p>\n\n\n\n<p class=\"wp-block-paragraph\">I&#8217;m Sowbhagya Suresh. Thanks so much for tuning in. We\u2019ll see you in the next <em>Microsoft Research Focus.</em></p>\n\n\n\n<p class=\"wp-block-paragraph\">[MUSIC FADES]</p>\n\n\t\t\t\t</span>\n\t\t\t</div>\n\t\t\t<button class=\"action-trigger glyph-prepend mt-2 mb-0 show-more-show-less-toggle\" type=\"button\">\n\t\t\t\tShow more\t\t\t</button>\n\t\t</div>\n\t</div>\n</div>\n<span class=\"sr-only\" id=\"label-external-link\">Opens in a new tab</span><p>The post <a href=\"https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/\">Microsoft Research Focus \u2013 Edition #97</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "source_name": "Microsoft Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "microsoft",
-        "company"
-      ],
-      "author": "Sowbhagya Suresh",
-      "published_at": "2026-10-29T19:19:16Z",
-      "fetched_at": "2026-10-29T19:38:50.647411Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "77d3c2d1f381dfa2",
       "url": "https://arxiv.org/abs/2609.13890",
       "title": "Learning How Much to Collaborate: Difficulty-Aware Topology Selection for Multi-Agent Code Generation",
@@ -44888,26 +44866,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "31d37da4dfd4d889",
-      "url": "https://www.youtube.com/watch?v=LQW_Wvqhp04",
-      "title": "Why Humans Can't Keep Up With AI-Written Code - Tariq Shaukat, Sonar",
-      "summary": "Agents have made code cheap: one study saw lines of code up 2,450% but releases up only 30%. Sonar CEO Tariq Shaukat draws on the factory revolution that Toyota and Lexus started to explain how to build agentic software factories you can trust. He breaks down five hard problems: human review that doesn't scale (people agree with AI that's wrong 4 out of 5 times), agents struggling with large codebases, errors compounding over long tasks, unreliable LLM judges, and near-zero time to exploit. Then he lays out Sonar's code confidence formula: intent, guide rails, verification and evidence.\n\nChapters:\n0:00 Intro\n0:26 The ball bearing that changed car factories\n2:23 Software already borrowed these ideas\n2:55 Agents break the factory\n5:19 Problem 1: Human in the loop doesn't scale\n6:45 Problem 2: Agents struggle with big codebases\n8:04 Problem 3: Errors compound\n9:06 Problem 4: LLM judges are unreliable\n10:03 Problem 5: Time to exploit is near zero\n10:25 The code confidence formula\n12:36 Results from customers\n15:49 Code is abundant, confidence is scarce\n\nTariq Shaukat\nhttps://www.sonarsource.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-29T19:00:16Z",
-      "fetched_at": "2026-10-29T19:38:45.639132Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "e6586fb5d24bd331",
       "url": "https://arxiv.org/abs/2610.41514",
       "title": "Infinite ResNets are Gaussian Mean ODEs",
@@ -61498,27 +61456,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "843c0cbf0bc48daa",
-      "url": "https://x.com/AnthropicAI/status/2115871889549865429",
-      "title": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment....",
-      "summary": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other",
-      "content": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other",
-      "source_name": "@anthropicai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "anthropic",
-        "company"
-      ],
-      "author": "anthropicai",
-      "published_at": "2026-10-29T18:22:24Z",
-      "fetched_at": "2026-10-30T09:14:27.312580Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "322af5f459e0e3bb",
       "url": "https://x.com/steipete/status/2116121832919122164",
       "title": "Bullish on Andy Yen and Proton. He gets it.\n\nThe culture war, or rather the loss of identity some en...",
@@ -62887,6 +62824,254 @@
       "author": "steipete",
       "published_at": "2026-11-05T16:32:27Z",
       "fetched_at": "2026-11-05T17:20:50.187817Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c49d8ab0ad662e7f",
+      "url": "https://x.com/trq212/status/2118421508322460116",
+      "title": "RT @SOTAwives: The third SOTA wife has entered the chat, and this one is fresh off his exit at Anthr...",
+      "summary": "RT @SOTAwives: The third SOTA wife has entered the chat, and this one is fresh off his exit at Anthropic.\n\nSarah (Head of DevX at Cerebras,\u2026",
+      "content": "RT @SOTAwives: The third SOTA wife has entered the chat, and this one is fresh off his exit at Anthropic.\n\nSarah (Head of DevX at Cerebras,\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-11-05T19:13:40Z",
+      "fetched_at": "2026-11-05T19:20:58.422559Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "4cd919b9e6073bad",
+      "url": "https://x.com/GeminiApp/status/2118406227533435391",
+      "title": "Gemini Omni 1.2 Flash is rolling out starting today to all Google AI subscribers. Refine videos thro...",
+      "summary": "Gemini Omni 1.2 Flash is rolling out starting today to all Google AI subscribers. Refine videos through multi-turn conversational edits and enjoy sharper visual stability in the Gemini app.\n\nPlus, Google AI Ultra subscribers can now create and edit videos up to 15 seconds long,",
+      "content": "Gemini Omni 1.2 Flash is rolling out starting today to all Google AI subscribers. Refine videos through multi-turn conversational edits and enjoy sharper visual stability in the Gemini app.\n\nPlus, Google AI Ultra subscribers can now create and edit videos up to 15 seconds long,",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-11-05T18:12:57Z",
+      "fetched_at": "2026-11-05T19:21:05.500372Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "030c6db644235db6",
+      "url": "https://x.com/dani_avila7/status/2118404977626624117",
+      "title": "Every time I post a video about Rex or Claude Code Desktop, I get tons of comments telling me to try...",
+      "summary": "Every time I post a video about Rex or Claude Code Desktop, I get tons of comments telling me to try Orca... well, here we go!\n\nI'll share a proper review soon \ud83d\udc40\n\nSo far, the onboarding has been clean and straightforward\n\nYou can try it here: https://t.co/KhIEYxCdKX https://t.co/KGPeshIHVf",
+      "content": "Every time I post a video about Rex or Claude Code Desktop, I get tons of comments telling me to try Orca... well, here we go!\n\nI'll share a proper review soon \ud83d\udc40\n\nSo far, the onboarding has been clean and straightforward\n\nYou can try it here: https://t.co/KhIEYxCdKX https://t.co/KGPeshIHVf",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-05T18:07:59Z",
+      "fetched_at": "2026-11-05T19:21:02.612569Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "750d64ca858b41f4",
+      "url": "https://x.com/trq212/status/2118399561324699655",
+      "title": "one of my favorite prompts for agents like Instinct is location based reminders\n\ne.g. \"Keep track of...",
+      "summary": "one of my favorite prompts for agents like Instinct is location based reminders\n\ne.g. \"Keep track of when I've done my laundry. If it's been more than 5 days, remind me 30 minutes after I get home on a week day and bug me until I confirm or delay\"",
+      "content": "one of my favorite prompts for agents like Instinct is location based reminders\n\ne.g. \"Keep track of when I've done my laundry. If it's been more than 5 days, remind me 30 minutes after I get home on a week day and bug me until I confirm or delay\"",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-11-05T17:46:28Z",
+      "fetched_at": "2026-11-05T19:20:58.422637Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "843c0cbf0bc48daa",
+      "url": "https://x.com/AnthropicAI/status/2115871889549865429",
+      "title": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment....",
+      "summary": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other",
+      "content": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-29T18:22:24Z",
+      "fetched_at": "2026-10-30T09:14:27.312580Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3605536ba76c7e83",
+      "url": "https://x.com/dani_avila7/status/2115858705740968058",
+      "title": "If you have a Claude Max plan, you can claim $200 in API credits to power your apps and agents\n\nI al...",
+      "summary": "If you have a Claude Max plan, you can claim $200 in API credits to power your apps and agents\n\nI already claimed mine, and the credits are in my account \ud83d\ude4c\n\nClaim yours here: https://t.co/Gm9qJu9WnA https://t.co/qtobA7yQqu",
+      "content": "If you have a Claude Max plan, you can claim $200 in API credits to power your apps and agents\n\nI already claimed mine, and the credits are in my account \ud83d\ude4c\n\nClaim yours here: https://t.co/Gm9qJu9WnA https://t.co/qtobA7yQqu",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T17:30:00Z",
+      "fetched_at": "2026-10-30T09:14:21.061598Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ed628674bf73b0a5",
+      "url": "https://x.com/OpenAI/status/2115854368566321594",
+      "title": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business...",
+      "summary": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard yo\u2026",
+      "content": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard yo\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-29T17:12:46Z",
+      "fetched_at": "2026-10-30T09:14:25.302733Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "58425ba56c2b3cd2",
+      "url": "https://x.com/OpenAI/status/2115853172732231951",
+      "title": "RT @w01fe: We\u2019ve updated the Model Spec, our public description of how we want our models to behave....",
+      "summary": "RT @w01fe: We\u2019ve updated the Model Spec, our public description of how we want our models to behave. This revision makes clearer what we wa\u2026",
+      "content": "RT @w01fe: We\u2019ve updated the Model Spec, our public description of how we want our models to behave. This revision makes clearer what we wa\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-29T17:08:01Z",
+      "fetched_at": "2026-10-30T09:14:25.302786Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "89dcacfc697ac9a3",
+      "url": "https://x.com/GeminiApp/status/2115845265697747122",
+      "title": "RT @Google: We\u2019re launching a preview of our Connected Apps Platform, giving developers a single pla...",
+      "summary": "RT @Google: We\u2019re launching a preview of our Connected Apps Platform, giving developers a single place to build and manage apps for Search\u2026",
+      "content": "RT @Google: We\u2019re launching a preview of our Connected Apps Platform, giving developers a single place to build and manage apps for Search\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-29T16:36:36Z",
+      "fetched_at": "2026-10-30T09:14:24.245881Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d33d1bd03b9768ac",
+      "url": "https://x.com/GeminiApp/status/2115845225432367541",
+      "title": "RT @NewsFromGoogle: You can now generate, preview, and edit documents, presentations, spreadsheets, ...",
+      "summary": "RT @NewsFromGoogle: You can now generate, preview, and edit documents, presentations, spreadsheets, code, and more directly in the @GeminiA\u2026",
+      "content": "RT @NewsFromGoogle: You can now generate, preview, and edit documents, presentations, spreadsheets, code, and more directly in the @GeminiA\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-29T16:36:26Z",
+      "fetched_at": "2026-10-30T09:14:24.245948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0c4ab19ab7763d72",
+      "url": "https://x.com/AnthropicAI/status/2115825653539025142",
+      "title": "We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s lea...",
+      "summary": "We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s leading scientific foundations, institutions, and research groups. https://t.co/oTu04tU4Pk",
+      "content": "We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s leading scientific foundations, institutions, and research groups. https://t.co/oTu04tU4Pk",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-29T15:18:40Z",
+      "fetched_at": "2026-10-30T09:14:27.312679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ffb26ce829f19df5",
+      "url": "https://x.com/simonw/status/2115818577911820761",
+      "title": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, wri...",
+      "summary": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
+      "content": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-29T14:50:33Z",
+      "fetched_at": "2026-10-30T09:14:20.042937Z",
       "score": null,
       "score_reason": "",
       "tier": "",
