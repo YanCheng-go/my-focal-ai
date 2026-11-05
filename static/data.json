@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-05T19:21:11.530252+00:00",
+  "exported_at": "2026-11-05T22:52:34.529395+00:00",
   "period_hours": 168,
-  "total": 2909,
+  "total": 2911,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -61375,87 +61375,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9226d4edd1837884",
-      "url": "https://x.com/dani_avila7/status/2115933086173028674",
-      "title": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghos...",
-      "summary": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghostty for a while, and switching to Rex feels surprisingly natural\n\nThe left sidebar with all my sessions, the split panes, the clean UI, and how smooth everything runs, I'm loving https://t.co/kxlqXzUT8j",
-      "content": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghostty for a while, and switching to Rex feels surprisingly natural\n\nThe left sidebar with all my sessions, the split panes, the clean UI, and how smooth everything runs, I'm loving https://t.co/kxlqXzUT8j",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-29T22:25:34Z",
-      "fetched_at": "2026-10-30T09:14:21.061565Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e5916628b7117c9a",
-      "url": "https://x.com/steipete/status/2115911323095633954",
-      "title": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52Ce...",
-      "summary": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52CeY",
-      "content": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52CeY",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-10-29T20:59:05Z",
-      "fetched_at": "2026-10-30T09:14:28.439828Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "920ca847d2223bfa",
-      "url": "https://x.com/GeminiApp/status/2115909629674954819",
-      "title": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\n...",
-      "summary": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\nWhether you need to build a private, mu\u2026",
-      "content": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\nWhether you need to build a private, mu\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-10-29T20:52:22Z",
-      "fetched_at": "2026-10-30T09:14:24.245779Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "68d8853429ffaaef",
-      "url": "https://x.com/OpenAI/status/2115896329645723836",
-      "title": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which i...",
-      "summary": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model\u2019s attempt to access the live internet during training.\n\nSince the Hugging Face incident\u2014when models broke out of an internal cybersecurity",
-      "content": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model\u2019s attempt to access the live internet during training.\n\nSince the Hugging Face incident\u2014when models broke out of an internal cybersecurity",
-      "source_name": "@openai",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openai"
-      ],
-      "author": "openai",
-      "published_at": "2026-10-29T19:59:31Z",
-      "fetched_at": "2026-10-30T09:14:25.302615Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "322af5f459e0e3bb",
       "url": "https://x.com/steipete/status/2116121832919122164",
       "title": "Bullish on Andy Yen and Proton. He gets it.\n\nThe culture war, or rather the loss of identity some en...",
@@ -62907,6 +62826,128 @@
       "author": "trq212",
       "published_at": "2026-11-05T17:46:28Z",
       "fetched_at": "2026-11-05T19:20:58.422637Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ee46359a92875af0",
+      "url": "https://x.com/sama/status/2118471941002842341",
+      "title": "RT @fouadmatin: Today\u2019s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerabili...",
+      "summary": "RT @fouadmatin: Today\u2019s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We\u2019ve\u2026",
+      "content": "RT @fouadmatin: Today\u2019s GPT-6 Cyber release is a meaningful step for defenders: stronger vulnerability research and better alignment. We\u2019ve\u2026",
+      "source_name": "@sama",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "sama",
+      "published_at": "2026-11-05T22:34:04Z",
+      "fetched_at": "2026-11-05T22:52:27.715275Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fd134ae3b5751b07",
+      "url": "https://x.com/trq212/status/2118457224628728123",
+      "title": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and eve...",
+      "summary": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and everybody learns from each other, so every\u2026",
+      "content": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and everybody learns from each other, so every\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-11-05T21:35:36Z",
+      "fetched_at": "2026-11-05T22:52:21.235230Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9226d4edd1837884",
+      "url": "https://x.com/dani_avila7/status/2115933086173028674",
+      "title": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghos...",
+      "summary": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghostty for a while, and switching to Rex feels surprisingly natural\n\nThe left sidebar with all my sessions, the split panes, the clean UI, and how smooth everything runs, I'm loving https://t.co/kxlqXzUT8j",
+      "content": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghostty for a while, and switching to Rex feels surprisingly natural\n\nThe left sidebar with all my sessions, the split panes, the clean UI, and how smooth everything runs, I'm loving https://t.co/kxlqXzUT8j",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T22:25:34Z",
+      "fetched_at": "2026-10-30T09:14:21.061565Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e5916628b7117c9a",
+      "url": "https://x.com/steipete/status/2115911323095633954",
+      "title": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52Ce...",
+      "summary": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52CeY",
+      "content": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52CeY",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-29T20:59:05Z",
+      "fetched_at": "2026-10-30T09:14:28.439828Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "920ca847d2223bfa",
+      "url": "https://x.com/GeminiApp/status/2115909629674954819",
+      "title": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\n...",
+      "summary": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\nWhether you need to build a private, mu\u2026",
+      "content": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\nWhether you need to build a private, mu\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-29T20:52:22Z",
+      "fetched_at": "2026-10-30T09:14:24.245779Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "68d8853429ffaaef",
+      "url": "https://x.com/OpenAI/status/2115896329645723836",
+      "title": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which i...",
+      "summary": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model\u2019s attempt to access the live internet during training.\n\nSince the Hugging Face incident\u2014when models broke out of an internal cybersecurity",
+      "content": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model\u2019s attempt to access the live internet during training.\n\nSince the Hugging Face incident\u2014when models broke out of an internal cybersecurity",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-29T19:59:31Z",
+      "fetched_at": "2026-10-30T09:14:25.302615Z",
       "score": null,
       "score_reason": "",
       "tier": "",
