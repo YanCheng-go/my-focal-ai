@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-05T13:15:09.244101+00:00",
+  "exported_at": "2026-11-05T15:16:31.834501+00:00",
   "period_hours": 168,
-  "total": 2937,
+  "total": 2930,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38066,70 +38066,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "ff8139f06200d45d",
-      "url": "https://www.langchain.com/blog/browser-use-in-managed-deep-agents",
-      "title": "Browser Use in Managed Deep Agents",
-      "summary": "<ul><li>A browser lets agents do work on the web that APIs can't cover, including clicking, scrolling, and filling out forms.</li><li>Managed Deep Agents now runs a browser for your agent, with tools tuned for context-efficient browser use.</li><li>Managed Deep Agents ships with support for thread and user scoped browser sessions. Handoffs allow users to log into and interact with websites with credentials persisted across sessions.</li></ul><div></div><p>Agents have gotten good enough to work where we work, and a lot of that work happens in a browser. Booking travel, canceling a subscription, or filing a claim all happen on sites built for people clicking through pages, including ones the agent didn't plan to visit. Often there's no API an agent can call. Fetching the page with <code>curl</code> doesn't get far either, since it returns the HTML before any JavaScript renders the page and can't click anything.</p><p>Personal agents like <a href=\"https://instinct.com/\">Instinct</a> and Meta's <a href=\"https://ai.meta.com/muse/\">Muse</a> already work this way. Browser agent traffic is growing fast too, and <a href=\"https://finance.yahoo.com/technology/ai/articles/datadome-report-agentic-browser-traffic-130000558.html\">DataDome</a> saw agentic browser requests jump 4.7x in September alone.</p><p><a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents\">Managed Deep Agents</a> lets you build and deploy agents in LangSmith without running any infrastructure. You write the agent's instructions and tools, and LangSmith runs the harness and runtime. Today, we're giving these agents a browser, so you can build your own agents that work on the web. Managed Deep Agents runs the browser too, and gives your agent tools tuned for it.</p><p>In this post, we cover where a browser helps and how to turn it on, including handing the browser to a person when the agent needs one. Then we walk through how it works under the hood. Agents built with open source <a href=\"https://docs.langchain.com/oss/python/deepagents/overview\">Deep Agents</a> can <a href=\"https://docs.langchain.com/oss/python/deepagents/browser-use\">use a browser too</a>. We'll cover how we tested and tuned the browser tools in a deep dive next week.</p><h2>Where a browser helps</h2><p>With a browser and tools to drive it, an agent can read what renders on a page and click through it, the same way you (a human) would.</p><p>So far, two common use cases have emerged:</p><ul><li><strong>Actions an API can't cover</strong>, like booking a flight or a restaurant reservation. When a site does have an API for the task, the agent should use the API.</li><li><strong>End-to-end testing</strong>, like checking a frontend change before it merges. When a pull request changes a signup form, a coding agent can start the app in its sandbox, open the form in a browser, and click through it to check that the change works. We use this in <a href=\"https://github.com/langchain-ai/open-swe\">Open SWE</a>, our coding agent.</li></ul><h2>Adding browser use capabilities</h2><p>To <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-browser-use#declare-a-browser\">add a browser</a>, export a <code>browser</code> from <code>browser.py</code> at the <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-project-structure\">project root</a>:</p><pre class=\"w-code-block\" contenteditable=\"false\" style=\"display: block; background: #2b2b2b; color: #f8f8f2; padding: 0.5em;\"><code class=\"language-python\" style=\"white-space: pre-wrap;\"># browser.py\nfrom managed_deepagents import define_browser\n\nbrowser = define_browser(\n    scope=\"thread\",\n    idle_ttl_seconds=600,\n)</code></pre><p><a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-browser-use#choose-a-scope\">scope</a> controls how browser sessions are shared.</p><ul><li><code>scope=\"thread\"</code> (the default) gives each thread its own browser. Every conversation starts with a fresh browser window, with no cookies or logins left over from another thread.</li><li><code>scope=\"user\"</code> shares one browser across a signed-in user's threads (see <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-identity\">Identity</a>). Each thread gets its own window, so two conversations running at once don't click over each other, but they share cookies and other browser state. If you sign in to a site in one thread, a later thread can pick up that session instead of starting over.</li></ul><p>The browser stops after <code>idle_ttl_seconds</code> without activity (10 minutes by default), so you don't pay for a browser nobody is using.</p><h2>Hand off the browser to a user</h2><p>Some steps still need a person, and signing in is the most common one. You don't want to give the agent your password, where it would end up in the model's messages, in traces, and with a model provider.</p><p>So when the agent hits a login page, it calls <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-browser-use#hand-off-the-browser\">browser_handoff</a> with a reason, like \"Please sign in to Acme Travel so I can continue.\" In <a href=\"https://docs.langchain.com/langsmith/studio\">LangSmith Studio</a>, the UI where you chat with and debug your agent, you get an interactive card with the same browser. You sign in yourself, click <strong>Hand back</strong>, and the agent picks up where it left off, already signed in. Handoff comes with every managed browser and works automatically in <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-channels\">Managed Deep Agents channels</a> like Slack, so there's nothing extra to set up.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\"><div><img alt=\"LangSmith Studio showing the agent needs you in the browser card, with an embedded browser and a Hand back button.\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae2dfdbb361f33b662e911e_Screenshot_2026-10-27_at_11.17.50_AM.png\" /></div></figure><p>This matters most with <code>scope=\"user\"</code>. With user scope, the sign-in carries over to your later threads, so the agent asks you to log in once, the same way your own browser remembers you.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\"><div><img alt=\"A deep agent hands the browser to a person to sign in. On the left, the agent calls browser_run, hits Acme Travel's sign-in page, and calls browser_handoff. On the right, a second cursor labeled You types an email and a masked password, clicks Sign in, then Hand back, which resumes the agent. The agent calls browser_snapshot and browser_run, which opens the Lisbon trip.\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae2dfdbb361f33b662e9124_browser-handoff-demo.gif\" /></div></figure><h2>How it works under the hood</h2><p>An agent needs two things to use the web: a browser, and a toolset to drive it. Managed Deep Agents manages both.</p><p><strong>The browser.</strong> Managed Deep Agents runs the browser in its own <a href=\"https://docs.langchain.com/langsmith/sandboxes\">LangSmith sandbox</a>, separate from the agent. It's a remote browser, so nothing runs on your machine. Unlike most remote browsers, it also has a private link to the agent's sandbox, which is what makes end-to-end testing work (more below).</p><p><strong>The tools.</strong> Managed Deep Agents adds the <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-browser-use#browser-tools\">browser tools</a> to the agent:</p><ul><li><code>browser_snapshot</code> reads the page's <a href=\"https://developer.mozilla.org/en-US/docs/Glossary/Accessibility_tree\">accessibility tree</a> and labels interactive elements with IDs.</li><li><code>browser_run</code> acts on the page, either with a batch of actions like <code>click</code> and <code>fill</code> or with JavaScript that uses a Playwright-style <code>page</code> object, which Stagehand translates into its own commands.</li><li><code>browser_screenshot</code> captures the rendered page.</li><li><code>browser_handoff</code> passes the browser to a person, who hands it back when they're done (see above).</li></ul><p><code>browser_run</code> does most of the work. It takes code, so the agent can write a whole chain of steps (open a page, fill a field, click, check the result) as one call and return only what it needs. That keeps long browser tasks fast, and it keeps most of the page out of the agent's context.</p><p>The tools are built on <a href=\"https://www.stagehand.dev/\">Stagehand</a>, Browserbase's <a href=\"https://github.com/browserbase/stagehand\">open source</a> SDK for building browser agents. We tested and tuned them with the <a href=\"https://www.langchain.com/blog/the-agent-development-lifecycle\">agent development lifecycle</a>: running browser benchmarks, reading the traces in <a href=\"https://docs.langchain.com/langsmith/observability\">LangSmith</a>, and validating each change with evals. On 100 tasks from <a href=\"https://arxiv.org/abs/2401.13919\">WebVoyager</a>, a benchmark of everyday tasks on live websites, they passed 90% of tasks for $1.98 in total. That was the highest pass rate of the seven toolsets we tested. The closest, Browserbase's MCP server, passed 89% at 9x the cost.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\"><div><img alt=\"A deep agent books a table. On the left, the agent calls snapshot, which labels the page's interactive elements e3, e5, e7, and e9, then one run call with four actions. On the right, a cursor fills in party size, picks 7:00 PM, types the name Sydney, and clicks Reserve, and the page confirms the booking.\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae2dfdcb361f33b662e9129_agent-browser-demo.gif\" /></div></figure><p>This setup supports both use cases, in slightly different ways.</p><h3>Actions an API can't cover</h3><p>For tasks like booking a reservation, the agent only needs the browser. Its browser tools send commands to the browser sandbox, which drives the page.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\"><div><img alt=\"A deep agent uses its browser tools, snapshot, run, and screenshot, to send commands to the Stagehand extension in a browser sandbox. Stagehand drives the browser over CDP, here on a restaurant reservation page.\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae2dfddb361f33b662e912e_mda-browser-simple-v2.png\" /></div></figure><h3>End-to-end testing</h3><p>End-to-end testing needs one more piece. The app under test runs in the agent's own sandbox, so the browser has to reach it. Two connections make that work:</p><ul><li><strong>The agent controls the browser</strong> through its browser tools, as above.</li><li><strong>The browser reaches the app</strong> through a <code>localhost</code> bridge. When the browser opens <code>localhost:5173</code>, the request travels over a private link to port 5173 in the agent sandbox. The app doesn't need a public URL. Here, <code>localhost</code> means the agent's sandbox.</li></ul><p>The agent starts the app with <code>execute</code>, opens it in the browser, clicks through real flows like a signup form, and checks what renders.</p><p>Once a test passes, you can ask the agent to save its steps as a test file, since each <code>browser_run</code> call is a piece of an ordinary Playwright script. Later runs replay that file with no model calls until the page changes.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\"><div><img alt=\"A deep agent uses execute to start an app in its agent sandbox, where it listens on port 5173, and uses its browser tools to drive the browser in a separate browser sandbox through Stagehand. The browser opens localhost:5173/signup, and a localhost bridge routes that request over a private link to port 5173 in the agent sandbox.\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6ae2dfddb361f33b662e9133_mda-browser-e2e.png\" /></div></figure><h2>Conclusion</h2><p>Browsers open up a huge part of the web to agents, from booking a flight to testing the app a coding agent just built. With Managed Deep Agents, giving your agent a browser takes a few lines of code, and the tools behind it are tuned to be fast and context-efficient.</p><p>Add a browser to a managed agent with <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-browser-use\">define_browser</a>. To give an open source deep agent a browser, where you bring your own (like a hosted one from <a href=\"https://docs.langchain.com/oss/python/integrations/providers/browserbase\">Browserbase</a>), see the <a href=\"https://docs.langchain.com/oss/python/deepagents/browser-use\">browser use guide</a>.</p><h2>Acknowledgements</h2><p>Thanks to <a href=\"https://www.linkedin.com/in/sean-p-mcguire/\">Sean McGuire</a>, <a href=\"https://www.linkedin.com/in/miguelgfz\">Miguel Gonzalez</a>, and <a href=\"https://www.linkedin.com/in/kyle-jeong\">Kyle Jeong</a> from Browserbase for their help with Stagehand and this post.</p>",
-      "content": "",
-      "source_name": "Langchain Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open source",
-        "langchain"
-      ],
-      "author": "Sydney Runkle",
-      "published_at": "2026-10-29T15:00:00Z",
-      "fetched_at": "2026-10-29T19:38:59.961807Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "411c66dec517a32d",
-      "url": "https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/",
-      "title": "Unlocking Tensor Core Performance for Machine Learning Interatomic Potentials",
-      "summary": "<img alt=\"Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/mlip-tensor-core-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Tensor Core computation for machine learning interatomic potentials\" width=\"768\" />Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These...",
-      "content": "<img alt=\"Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/mlip-tensor-core-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Tensor Core computation for machine learning interatomic potentials\" width=\"768\" />Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These...<img alt=\"Colorful matrix-like blocks transition into a lattice of spheres, illustrating computation for atomistic simulation.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/mlip-tensor-core-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Tensor Core computation for machine learning interatomic potentials\" width=\"768\" /><p>Atomistic simulations help researchers understand how molecules and materials behave, from chemical reactions and phase transitions to mechanical failure. These simulations come with a cost-accuracy trade-off. Quantum-mechanical methods such as density functional theory (DFT) can provide accurate energies and forces, but their computational cost often limits their use for large systems or long\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/unlocking-tensor-core-performance-for-machine-learning-interatomic-potentials/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Anoushka Bhutani",
-      "published_at": "2026-10-29T15:00:00Z",
-      "fetched_at": "2026-10-29T19:38:51.248786Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e508e29ae812fe58",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
-      "title": "Granite Switch 4.1.1 \u2014 Update models like you update software",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-10-29T13:37:07Z",
-      "fetched_at": "2026-10-29T19:38:51.827222Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "33262cc8ac1fb45e",
       "url": "https://www.anthropic.com/events/anthropic-at-aws-re-invent-2026",
       "title": "Anthropic at AWS re:Invent 2026",
@@ -44590,27 +44526,6 @@
       "author": "AI Engineer",
       "published_at": "2026-10-29T19:00:16Z",
       "fetched_at": "2026-10-29T19:38:45.639132Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4e6d3fa8d8b182a9",
-      "url": "https://www.youtube.com/shorts/MPKU3WIdThw",
-      "title": "The Biggest Mistake Leaders Make With AI Decisions",
-      "summary": "What\u2019s the biggest mistake leaders make with AI decisions? Andrew Grotto, co-director of Stanford\u2019s AI, Power, and the New Rules of Global Strategy program, says it\u2019s treating them as technical problems only. Cybersecurity, geopolitics, regulatory policy, and reputational risk all shape those decisions too.\n\nHis example is choosing an AI model. Whether a model comes from the U.S., China, or another country, choosing it can also mean taking on that jurisdiction\u2019s regulations, in addition to your own. Organizations that skip that analysis can end up with blind spots in their regulatory risk.\n\nBefore Stanford, Grotto served as senior director for cyber policy on the National Security Council at the White House. He leads the program with Francis Fukuyama, senior fellow at Stanford\u2019s Freeman Spogli Institute. Over three and a half days on Stanford\u2019s campus, it helps executives, board directors, and policymakers understand how geopolitical forces are shaping AI decisions.\n\nAI, Power, and the New Rules of Global Strategy, March 22\u201325, 2027: https://stanford.io/3Wa1NbA\n\n#AIStrategy #AIGovernance #Geopolitics #StanfordOnline",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-10-29T15:00:32Z",
-      "fetched_at": "2026-10-29T19:38:45.370250Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61907,48 +61822,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1ade62001cc167bb",
-      "url": "https://arxiv.org/abs/2610.40091v1",
-      "title": "Upcycling Language Models for Multiple Specialized Domains",
-      "summary": "Effective multi-domain adaptation of large language models requires prioritizing relevant domain knowledge while minimizing interference from irrelevant domains. Existing approaches commonly use Low-Rank Adaptation (LoRA) to train a separate adapter for each domain and combine these adapters within one model. However, they either weight adapters equally regardless of the input domain or dynamically weight adapters while still activating all of them including irrelevant ones. Additionally, while efficient, their low-rank structure limits performance. In contrast, upcycling is a model expansion method that adds experts and a router to a dense Transformer layer offering larger capacity than LoRA approaches. In this paper, we propose Domain-Specialized Upcycling (DS-Upcycling) for multi-domain adaptation. We introduce a new domain-aware supervision that allows the router to effectively learn to distinguish domains by selecting the appropriate experts. During fine-tuning on each new domain, we update only the corresponding expert and router while freezing all other parameters. Experiments show that our method achieves the highest average performance across the adapted domains compared to baselines while retaining general performance. With just 256 examples per domain for router supervision, DS-Upcycling achieves 90-98% routing accuracy after adaptation compared with 43-70% for routers trained without our approach.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Nikolaos Aletras",
-      "published_at": "2026-10-29T13:58:38Z",
-      "fetched_at": "2026-10-30T05:50:59.054247Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d48edae033f2ceac",
-      "url": "https://arxiv.org/abs/2610.40046v1",
-      "title": "EPC-RawDC: Equivariant Physics Constrained 3D Diffusion with Raw Data Consistency for CBCT to CT Image Synthesis",
-      "summary": "Cone beam computed tomography (CBCT) is widely used for image guided and adaptive radiotherapy, but scatter, noise, reconstruction artifacts, and inaccurate Hounsfield units limit its quantitative use. Recent diffusion approaches for CBCT to CT synthesis remain largely image driven, with limited use of the underlying acquisition physics. We propose EPC-RawDC, a conditional 3D latent diffusion framework that combines volumetric generative modeling with two complementary constraints derived from the same scanner specific CBCT forward model. First, geometry equivariant projection constraint exploits the rotational equivariance of the CBCT forward operator by supervising the synthesized CT through correspondingly transformed reference projections. Second, raw data consistency uses noisy projection measurements of the individual acquisition as scan specific supervision during training. The framework was evaluated on two independent clinical cohorts with distinct scanner geometries and projection sources. For JUST, the physics constraints used measured clinical raw CBCT projections acquired with an Elekta system, whereas for SynthRAD2025 the projection data were simulated from the reference CT using a Varian geometry with Poisson photon statistics. EPC-RawDC achieved an SSIM of 0.97 in both cohorts and improved PSNR over DDPM by 2.66 dB on SynthRAD2025 and 2.10 dB on JUST, while reducing mean MAE by 20.3% and 19.0%, respectively. On SynthRAD2025, projection consistency and equivariant errors were reduced by 55.0% and 41.4% relative to DDPM. These results demonstrate that combining a volumetric diffusion prior with scanner geometry and scan specific projection measurements improves quantitative CBCT to CT synthesis across both simulated and measured projection domains. Code available after publication at https://github.com/ALZAHRAALTALIB/EPC-RawDC.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Alessandro Perelli",
-      "published_at": "2026-10-29T13:42:56Z",
-      "fetched_at": "2026-10-30T05:50:59.054255Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "22aa4de1a032b12f",
       "url": "https://www.anthropic.com/events/the-briefing-knowledge-work-sf",
       "title": "The Briefing: Work at the frontier",
@@ -62269,27 +62142,6 @@
       "author": "anthropicai",
       "published_at": "2026-10-29T15:18:40Z",
       "fetched_at": "2026-10-30T09:14:27.312679Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ffb26ce829f19df5",
-      "url": "https://x.com/simonw/status/2115818577911820761",
-      "title": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, wri...",
-      "summary": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
-      "content": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-10-29T14:50:33Z",
-      "fetched_at": "2026-10-30T09:14:20.042937Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -63650,20 +63502,21 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d54bc1734d92c1d6",
-      "url": "https://x.com/dani_avila7/status/2115787670060405222",
-      "title": "Just getting started with Claude Duet... the onboarding experience has been pretty good so far!\n\nI'l...",
-      "summary": "Just getting started with Claude Duet... the onboarding experience has been pretty good so far!\n\nI'll be sharing more soon \ud83d\udc40 https://t.co/1Kn4tXf2CP",
-      "content": "Just getting started with Claude Duet... the onboarding experience has been pretty good so far!\n\nI'll be sharing more soon \ud83d\udc40 https://t.co/1Kn4tXf2CP",
-      "source_name": "@dani_avila7",
+      "id": "ffb26ce829f19df5",
+      "url": "https://x.com/simonw/status/2115818577911820761",
+      "title": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, wri...",
+      "summary": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
+      "content": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
+      "source_name": "@simonw",
       "source_type": "twitter",
       "tags": [
         "ai",
-        "engineering"
+        "tooling",
+        "open-source"
       ],
-      "author": "dani_avila7",
-      "published_at": "2026-10-29T12:47:44Z",
-      "fetched_at": "2026-10-29T14:20:25.720625Z",
+      "author": "simonw",
+      "published_at": "2026-10-29T14:50:33Z",
+      "fetched_at": "2026-10-30T09:14:20.042937Z",
       "score": null,
       "score_reason": "",
       "tier": "",
