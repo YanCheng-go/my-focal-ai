@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-05T09:30:37.103855+00:00",
+  "exported_at": "2026-11-05T10:48:49.813980+00:00",
   "period_hours": 168,
-  "total": 2940,
+  "total": 2939,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -62004,27 +62004,6 @@
       "author": "Marcus V\u00f6lp",
       "published_at": "2026-10-29T12:12:55Z",
       "fetched_at": "2026-10-30T05:50:59.054264Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "93481b8a1731178a",
-      "url": "https://arxiv.org/abs/2610.39735v1",
-      "title": "From the Transformer to a Formal Semantics of Coordinated Transformations",
-      "summary": "We develop a formal semantics for a general class of coordinated systems of parameterized transformations, taking the Transformer as a paradigmatic starting point but abstracting from its particular mathematical instantiation. Representational vectors receive both extensional reference and ordered intensional interpretations, while parameter structures acquire relative, second-level interpretations that determine how argument properties are preserved, replaced, or combined. This yields the notion of a transforming concept: a parameterized transformation whose numerical action is coordinated with a corresponding property-level map. We then distinguish the common algebraic-semantic core of these systems from their architecture-specific functional organization, allowing different mathematical instantiations and mechanical realizations of the same abstract system type. The framework is applied to attention heads and residual connections, providing semantic explanations that depend only on the shared algebraic-semantic core and their local functional organization and therefore generalize beyond the standard Transformer. These analyses also reveal the modularity of the framework: complex architectures can be decomposed into simpler semantically coordinated subsystems whose organization may recur across different abstract system types.",
-      "content": "",
-      "source_name": "arXiv: transformers",
-      "source_type": "arxiv",
-      "tags": [
-        "ai",
-        "research",
-        "transformers"
-      ],
-      "author": "Fabrizia Giulia Garavaglia",
-      "published_at": "2026-10-29T10:00:08Z",
-      "fetched_at": "2026-10-30T05:50:59.054272Z",
       "score": null,
       "score_reason": "",
       "tier": "",
