@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-06T04:09:00.990274+00:00",
+  "exported_at": "2026-11-06T06:42:01.704323+00:00",
   "period_hours": 168,
-  "total": 2421,
+  "total": 2422,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -50369,27 +50369,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "8c7069c18e370356",
-      "url": "https://x.com/simonw/status/2116038973395263815",
-      "title": "RT @levelsio: X should have a zero tolerance policy for AI replies\n\nLike you do one and your account...",
-      "summary": "RT @levelsio: X should have a zero tolerance policy for AI replies\n\nLike you do one and your account is suspended for life\n\nReplies are a n\u2026",
-      "content": "RT @levelsio: X should have a zero tolerance policy for AI replies\n\nLike you do one and your account is suspended for life\n\nReplies are a n\u2026",
-      "source_name": "@simonw",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "tooling",
-        "open-source"
-      ],
-      "author": "simonw",
-      "published_at": "2026-10-30T05:26:20Z",
-      "fetched_at": "2026-10-30T09:14:20.042790Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "322af5f459e0e3bb",
       "url": "https://x.com/steipete/status/2116121832919122164",
       "title": "Bullish on Andy Yen and Proton. He gets it.\n\nThe culture war, or rather the loss of identity some en...",
@@ -51962,6 +51941,47 @@
       "author": "steipete",
       "published_at": "2026-11-06T00:53:20Z",
       "fetched_at": "2026-11-06T04:08:59.209051Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "a219a6a2646e99b3",
+      "url": "https://x.com/dani_avila7/status/2118560352770117659",
+      "title": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting t...",
+      "summary": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting thoughts on AI progress\n\nA few things stood out to me:\n\n- AI is already helping Anthropic develop better models, but they can\u2019t measure exactly how much it\u2019s accelerating their https://t.co/W8zYEiCbDz",
+      "content": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting thoughts on AI progress\n\nA few things stood out to me:\n\n- AI is already helping Anthropic develop better models, but they can\u2019t measure exactly how much it\u2019s accelerating their https://t.co/W8zYEiCbDz",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-06T04:25:23Z",
+      "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "8c7069c18e370356",
+      "url": "https://x.com/simonw/status/2116038973395263815",
+      "title": "RT @levelsio: X should have a zero tolerance policy for AI replies\n\nLike you do one and your account...",
+      "summary": "RT @levelsio: X should have a zero tolerance policy for AI replies\n\nLike you do one and your account is suspended for life\n\nReplies are a n\u2026",
+      "content": "RT @levelsio: X should have a zero tolerance policy for AI replies\n\nLike you do one and your account is suspended for life\n\nReplies are a n\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-30T05:26:20Z",
+      "fetched_at": "2026-10-30T09:14:20.042790Z",
       "score": null,
       "score_reason": "",
       "tier": "",
