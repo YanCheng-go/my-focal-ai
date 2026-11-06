@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-06T06:48:57.962574+00:00",
+  "exported_at": "2026-11-06T09:17:52.850527+00:00",
   "period_hours": 168,
-  "total": 2909,
+  "total": 2905,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -38256,27 +38256,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a86d24c59c826150",
-      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "title": "Community safety report and new protections for teens",
-      "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-30T09:00:00Z",
-      "fetched_at": "2026-10-30T19:23:45.676380Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "77d3c2d1f381dfa2",
       "url": "https://arxiv.org/abs/2609.13890",
       "title": "Learning How Much to Collaborate: Difficulty-Aware Topology Selection for Multi-Agent Code Generation",
@@ -49296,66 +49275,6 @@
       "author": "Luke Oluwaseye Joel",
       "published_at": "2026-11-03T05:00:00Z",
       "fetched_at": "2026-11-03T16:15:23.134838Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "11fcf84f91aef151",
-      "url": "https://www.youtube.com/watch?v=YU1uD_YkpjU",
-      "title": "Your Agent Just Paid for Nothing: 6 Attacks on x402 Payments - Ishween Kaur, SoFi",
-      "summary": "x402 lets AI agents pay for data and APIs with tiny on-chain payments over HTTP. Ishween Kaur explains how the protocol works, then walks through six of the 20 ways she broke it in a safe test environment: price changes in the payment header, paying twice, getting data for free, one payment unlocking many pages, lookalike sellers, and prompt injection that talks an agent into paying again. For each one, she shows the guard that stopped it and how to roll out agent payments safely, trace by trace.\n\nChapters:\n0:00 Intro\n0:31 Paying for things you use once\n1:33 HTTP 402 and the x402 protocol\n2:09 How x402 works\n3:24 What happens when agents can pay\n4:05 Attack 1: Price manipulation\n5:24 Attack 2: Paying twice\n7:03 Attack 3: Free shopping\n9:13 Attack 4: One payment, many pages\n10:04 Attack 5: Lookalike sellers\n11:43 Attack 6: Prompt injection\n14:10 Rolling this out safely\n16:23 Should we let agents pay?\n\nIshween Kaur\nhttps://www.sofi.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-30T09:00:31Z",
-      "fetched_at": "2026-10-30T12:57:40.112831Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "356d08c4846a365b",
-      "url": "https://www.youtube.com/watch?v=y2dyD6slKxE",
-      "title": "Why AI Won't Replace Stock Pickers - Jack Woodruff, Candlestick & Vinoo Ganesh, Kepler",
-      "summary": "Jack Woodruff, founder and former CIO of long/short equity fund Candlestick Capital and a former Citadel portfolio manager, sits down with Kepler CEO Vinoo Ganesh to talk about what AI really changes in fundamental investing. They discuss why humans are still the bottleneck, how AI turns hours of prep into minutes and raises the table stakes, why you should never trust a number you can't audit, where edge comes from when every fund has the same models, how fund teams will be structured, and why the \"no-analyst hedge fund\" won't beat the best human-led funds.\n\nChapters:\n0:00 Intro\n0:47 Will stock picking change?\n2:10 Could one analyst cover 400 stocks?\n4:45 What junior analysts will stop doing\n6:07 Smarter or just busier?\n7:21 Never trust a number you can't audit\n9:08 What you'd never let an AI vendor see\n11:30 Where edge comes from when everyone has the same models\n13:26 Build vs. buy for a 2027 fund\n15:14 Small funds vs. giant funds\n17:35 The overhyped idea: the no-analyst hedge fund\n\nJack Woodruff\n\nVinoo Ganesh\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-30T08:00:09Z",
-      "fetched_at": "2026-10-30T12:57:40.112850Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d1f57538f444113f",
-      "url": "https://www.youtube.com/watch?v=rWtbOgl5FTU",
-      "title": "The Cheaper AI Model That Costs You More - Rayan Krishnan, Vals AI",
-      "summary": "Vals AI builds benchmarks that frontier labs cite in their model cards, and Rayan Krishnan explains why those single scores hide a jagged frontier. In finance tasks like tax and Excel LBO modeling, the best model changes by task, and a model that's cheaper on paper can cost more and score lower because it burns extra tokens. He shares lessons from building benchmarks (the right accuracy metric, reward hacking, multi-turn work), a case study of a team that spent $1.5M on tokens in a month before cutting spend about 90% with internal evals, and why a firm's own work history is its best eval.\n\nChapters:\n0:00 Intro\n0:23 What model cards tell you\n1:18 The jagged frontier\n2:20 AI spend is up, ROI is unclear\n3:40 The cheaper model that cost more\n4:43 Finance benchmarks and the Pareto curve\n6:36 Lessons from building benchmarks\n8:41 Agents solve the test, not the problem\n9:55 Evals are hard to run\n10:59 Case study: $1.5M in tokens in a month\n13:22 Where is your firm's history of work?\n14:10 What evals unlock\n\nRayan Krishnan\nhttps://www.vals.ai\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-10-30T07:00:03Z",
-      "fetched_at": "2026-10-30T12:57:40.112860Z",
       "score": null,
       "score_reason": "",
       "tier": "",
