@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-05T23:39:12.371693+00:00",
+  "exported_at": "2026-11-06T00:52:55.238397+00:00",
   "period_hours": 168,
-  "total": 2905,
+  "total": 2917,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -27481,27 +27481,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "574dbaf7fc8731e4",
-      "url": "https://openai.com/index/fair-use-benefits-everyone",
-      "title": "Fair use benefits everyone",
-      "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-10-30T00:00:00Z",
-      "fetched_at": "2026-10-30T23:48:10.964587Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "77d3c2d1f381dfa2",
       "url": "https://arxiv.org/abs/2609.13890",
       "title": "Learning How Much to Collaborate: Difficulty-Aware Topology Selection for Multi-Agent Code Generation",
@@ -38581,26 +38560,6 @@
       "author": "AI Engineer",
       "published_at": "2026-10-30T07:00:03Z",
       "fetched_at": "2026-10-30T12:57:40.112860Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "44b2ed85b561879d",
-      "url": "https://www.youtube.com/watch?v=DByAR5Su1Yw",
-      "title": "I Told Claude to \"Make it better\" 100 Times (It Went Too Far)",
-      "summary": "FREE Scrollcraft Website Design Skill: https://app.aiautomationsociety.ai/optin/scrollcraft/?utm_source=youtube&amp;utm_medium=organic&amp;utm_content=make-it-better&amp;sl=yt_make-it-better\nHow I built an AI agency from 0 to over $1 million per year: https://www.skool.com/ai-automation-society-plus/about?el=make-it-better&amp;hcategory=youtube-videos&amp;utm_campaign=plus-group\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=make-it-better&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI gave Claude Code a horrible coffee shop website and told it to make it better 100 times in a row, once with Sonnet 5.5 and once with Opus 5.5.\n\nSonnet made small, careful changes, while Opus kept adding features until the site hit 21,000 lines and started breaking itself. Neither model searched the web once, even though it could, and in this video I walk through every milestone and what it means for how you prompt AI.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS\n0:00 Intro\n0:57 Why I Ran This Experiment\n1:58 Sonnet's 100 Rounds\n5:24 Sonnet's Final Site\n7:35 Opus's 100 Rounds\n10:39 Opus's Final Site\n12:03 Final Stats\n12:33 No Web Search\n13:12 Final Thoughts",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-10-30T00:45:46Z",
-      "fetched_at": "2026-10-30T12:57:39.376258Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -62993,6 +62952,292 @@
       "author": "trq212",
       "published_at": "2026-11-05T21:35:36Z",
       "fetched_at": "2026-11-05T22:52:21.235230Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "2f7804926ce9c305",
+      "url": "https://x.com/steipete/status/2118492097917628704",
+      "title": "Is my perception off or is Apple just lying here? Anytime I build for or use Safari, it\u2019s slower, ha...",
+      "summary": "Is my perception off or is Apple just lying here? Anytime I build for or use Safari, it\u2019s slower, has fewer features, weird bugs and plenty websites just don\u2019t work. It\u2019s a fight to get even somewhat close to Chrome\u2019s performance.",
+      "content": "Is my perception off or is Apple just lying here? Anytime I build for or use Safari, it\u2019s slower, has fewer features, weird bugs and plenty websites just don\u2019t work. It\u2019s a fight to get even somewhat close to Chrome\u2019s performance.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-05T23:54:10Z",
+      "fetched_at": "2026-11-06T00:52:53.049650Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "592af6a0601eacca",
+      "url": "https://x.com/dani_avila7/status/2115946071755026440",
+      "title": "If you want to try the beta of Rex by @superlogical \n\nyou can join the waitlist here:\nhttps://t.co/L...",
+      "summary": "If you want to try the beta of Rex by @superlogical \n\nyou can join the waitlist here:\nhttps://t.co/Lpt3Tlcd8B",
+      "content": "If you want to try the beta of Rex by @superlogical \n\nyou can join the waitlist here:\nhttps://t.co/Lpt3Tlcd8B",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T23:17:10Z",
+      "fetched_at": "2026-10-30T09:14:21.061527Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9226d4edd1837884",
+      "url": "https://x.com/dani_avila7/status/2115933086173028674",
+      "title": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghos...",
+      "summary": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghostty for a while, and switching to Rex feels surprisingly natural\n\nThe left sidebar with all my sessions, the split panes, the clean UI, and how smooth everything runs, I'm loving https://t.co/kxlqXzUT8j",
+      "content": "Already testing Rex by Superlogical, and I have one word so far... beautiful \ud83e\udd29\n\nI've been using Ghostty for a while, and switching to Rex feels surprisingly natural\n\nThe left sidebar with all my sessions, the split panes, the clean UI, and how smooth everything runs, I'm loving https://t.co/kxlqXzUT8j",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T22:25:34Z",
+      "fetched_at": "2026-10-30T09:14:21.061565Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "e5916628b7117c9a",
+      "url": "https://x.com/steipete/status/2115911323095633954",
+      "title": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52Ce...",
+      "summary": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52CeY",
+      "content": "RT @killedbygoogle: @julesagent @Google jules users upset about this shutdown https://t.co/A6g5s52CeY",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-10-29T20:59:05Z",
+      "fetched_at": "2026-10-30T09:14:28.439828Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "920ca847d2223bfa",
+      "url": "https://x.com/GeminiApp/status/2115909629674954819",
+      "title": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\n...",
+      "summary": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\nWhether you need to build a private, mu\u2026",
+      "content": "RT @Android: Step into a new reality with @XREAL_Global AURA, seamlessly powered by Android XR \ud83d\udd76\ufe0f\u2728\n\nWhether you need to build a private, mu\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-29T20:52:22Z",
+      "fetched_at": "2026-10-30T09:14:24.245779Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "68d8853429ffaaef",
+      "url": "https://x.com/OpenAI/status/2115896329645723836",
+      "title": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which i...",
+      "summary": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model\u2019s attempt to access the live internet during training.\n\nSince the Hugging Face incident\u2014when models broke out of an internal cybersecurity",
+      "content": "Today, we\u2019re sharing a look at our expanded system for monitoring frontier models at OpenAI, which in September helped us catch a model\u2019s attempt to access the live internet during training.\n\nSince the Hugging Face incident\u2014when models broke out of an internal cybersecurity",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-29T19:59:31Z",
+      "fetched_at": "2026-10-30T09:14:25.302615Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "843c0cbf0bc48daa",
+      "url": "https://x.com/AnthropicAI/status/2115871889549865429",
+      "title": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment....",
+      "summary": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other",
+      "content": "We\u2019ve trained Claude to flag potential misuse in conversations, a technique we call self-assessment. Right after it responds, Claude gives a preliminary safety assessment of the conversation. \n\nSince we began using self-assessment in June, it has surfaced misuse that our other",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-29T18:22:24Z",
+      "fetched_at": "2026-10-30T09:14:27.312580Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "3605536ba76c7e83",
+      "url": "https://x.com/dani_avila7/status/2115858705740968058",
+      "title": "If you have a Claude Max plan, you can claim $200 in API credits to power your apps and agents\n\nI al...",
+      "summary": "If you have a Claude Max plan, you can claim $200 in API credits to power your apps and agents\n\nI already claimed mine, and the credits are in my account \ud83d\ude4c\n\nClaim yours here: https://t.co/Gm9qJu9WnA https://t.co/qtobA7yQqu",
+      "content": "If you have a Claude Max plan, you can claim $200 in API credits to power your apps and agents\n\nI already claimed mine, and the credits are in my account \ud83d\ude4c\n\nClaim yours here: https://t.co/Gm9qJu9WnA https://t.co/qtobA7yQqu",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-10-29T17:30:00Z",
+      "fetched_at": "2026-10-30T09:14:21.061598Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ed628674bf73b0a5",
+      "url": "https://x.com/OpenAI/status/2115854368566321594",
+      "title": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business...",
+      "summary": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard yo\u2026",
+      "content": "RT @thsottiaux: Day 25/\n\nWe are doubling all usage limits for all Pro 100/200/500 tiers and Business Premium, effective today.\n\nWe heard yo\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-29T17:12:46Z",
+      "fetched_at": "2026-10-30T09:14:25.302733Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "58425ba56c2b3cd2",
+      "url": "https://x.com/OpenAI/status/2115853172732231951",
+      "title": "RT @w01fe: We\u2019ve updated the Model Spec, our public description of how we want our models to behave....",
+      "summary": "RT @w01fe: We\u2019ve updated the Model Spec, our public description of how we want our models to behave. This revision makes clearer what we wa\u2026",
+      "content": "RT @w01fe: We\u2019ve updated the Model Spec, our public description of how we want our models to behave. This revision makes clearer what we wa\u2026",
+      "source_name": "@openai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openai"
+      ],
+      "author": "openai",
+      "published_at": "2026-10-29T17:08:01Z",
+      "fetched_at": "2026-10-30T09:14:25.302786Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "89dcacfc697ac9a3",
+      "url": "https://x.com/GeminiApp/status/2115845265697747122",
+      "title": "RT @Google: We\u2019re launching a preview of our Connected Apps Platform, giving developers a single pla...",
+      "summary": "RT @Google: We\u2019re launching a preview of our Connected Apps Platform, giving developers a single place to build and manage apps for Search\u2026",
+      "content": "RT @Google: We\u2019re launching a preview of our Connected Apps Platform, giving developers a single place to build and manage apps for Search\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-29T16:36:36Z",
+      "fetched_at": "2026-10-30T09:14:24.245881Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "d33d1bd03b9768ac",
+      "url": "https://x.com/GeminiApp/status/2115845225432367541",
+      "title": "RT @NewsFromGoogle: You can now generate, preview, and edit documents, presentations, spreadsheets, ...",
+      "summary": "RT @NewsFromGoogle: You can now generate, preview, and edit documents, presentations, spreadsheets, code, and more directly in the @GeminiA\u2026",
+      "content": "RT @NewsFromGoogle: You can now generate, preview, and edit documents, presentations, spreadsheets, code, and more directly in the @GeminiA\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-10-29T16:36:26Z",
+      "fetched_at": "2026-10-30T09:14:24.245948Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0c4ab19ab7763d72",
+      "url": "https://x.com/AnthropicAI/status/2115825653539025142",
+      "title": "We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s lea...",
+      "summary": "We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s leading scientific foundations, institutions, and research groups. https://t.co/oTu04tU4Pk",
+      "content": "We\u2019ve expanded our AI for Science program beyond individual teams to support some of the world\u2019s leading scientific foundations, institutions, and research groups. https://t.co/oTu04tU4Pk",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-10-29T15:18:40Z",
+      "fetched_at": "2026-10-30T09:14:27.312679Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ffb26ce829f19df5",
+      "url": "https://x.com/simonw/status/2115818577911820761",
+      "title": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, wri...",
+      "summary": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
+      "content": "RT @DynamicWebPaige: the secret to becoming an expert is embarrassingly boring: build in public, write down what you learned and the proces\u2026",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-10-29T14:50:33Z",
+      "fetched_at": "2026-10-30T09:14:20.042937Z",
       "score": null,
       "score_reason": "",
       "tier": "",
