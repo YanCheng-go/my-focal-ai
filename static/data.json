@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-10T21:45:30.057253+00:00",
+  "exported_at": "2026-11-10T23:45:37.802591+00:00",
   "period_hours": 168,
-  "total": 2845,
+  "total": 2843,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -35359,27 +35359,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "720b0d0c60188399",
-      "url": "https://www.langchain.com/blog/langsmith-byoc-aws-gc-azure",
-      "title": "LangSmith BYOC is now available on AWS, Azure, and Google Cloud",
-      "summary": "<p><a href=\"https://docs.langchain.com/langsmith/byoc\">LangSmith Bring Your Own Cloud (BYOC)</a> now runs on <a href=\"https://aws.amazon.com/\">AWS</a> (GA), <a href=\"https://azure.microsoft.com/\">Azure</a> (Beta), and <a href=\"https://cloud.google.com/\">Google Cloud</a> (Beta). Your traces, evals, datasets, prompts, and agent deployments stay in your own cloud account, on the cloud you choose, and LangChain manages the data plane for you, from orchestration and scaling to platform updates.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea276c7d6eab5f11a82317_byoc-architecture-azure-light.svg\" /></div></figure><h2>How BYOC splits LangSmith</h2><p>You decide where your agents run and where your telemetry lives, without taking on the work of running LangSmith yourself. To make that possible, BYOC splits LangSmith in two. LangChain runs the <a href=\"https://docs.langchain.com/langsmith/byoc-architecture#control-plane-and-data-plane-model\">control plane</a>, which holds auth, org and workspace config, billing metadata, hashed API keys, and static UI assets. You own <a href=\"https://docs.langchain.com/langsmith/byoc-architecture#provisioned-resources\">the data plane</a>, which holds everything sensitive, from traces, prompts, and datasets to experiments, agent deployments, and workspace secrets.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea283e15ce584b626554b9_byoc-fig1-control-data-plane.svg\" /></div></figure><p>\u200d</p><p>An organization can hold several data planes, each in its specific account and region, and each data plane holds its workspaces. This lets you split data planes by region, environment, or business unit.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea4c5dc9940a62a467e47b_Create%20workspace%20byoc.png\" /></div></figure><p>For example, a platform team might run production and staging data planes in separate AWS accounts, while a business unit that standardized on Azure runs its own, separate BYOC deployment on Azure. Each team's traces land in the account that team owns.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea2886459b79e034d9a33c_byoc-org-hierarchy.svg\" /></div></figure><h2>Why we built BYOC</h2><p>Until now, teams with strict compliance boundaries deployed and maintained self-hosted LangSmith. This kept their data inside their own boundary, but it took dedicated platform engineers to patch stateful services, configure databases, and run schema migrations.</p><p>With BYOC, LangChain provisions and operates LangSmith inside your own virtual network. Consider a team running agent applications across several environments. With self-hosted, every update to the execution components meant coordinating downtime and managing custom Helm rollouts in each environment. With BYOC, the data in your data plane stays in your VPC while LangChain handles scaling, schema updates, and runtime dependencies.</p><h3>What AWS customers have seen</h3><p>Since we launched BYOC on AWS in August, many teams have chosen to run LangSmith in their own cloud with BYOC. They point to three main benefits:</p><ul><li><strong>Continuous upgrades.</strong> LangChain rolls out platform updates, so teams no longer plan maintenance windows or manage Helm upgrades.</li><li><strong>The latest LangSmith features.</strong> New features reach BYOC data planes soon after they ship on LangSmith Cloud, without waiting for the next self-hosted release.</li><li><strong>Automatic scaling.</strong> Services scale with load, so teams get consistent uptime and a smooth experience as usage grows.</li></ul><p>That demand is why we moved quickly to bring BYOC to Azure and Google Cloud, so teams can get access to this same experience on whichever cloud they run.</p><h2>What BYOC looks like on each cloud</h2><p>Each cloud has its own network policies, identity model, and security requirements, so BYOC is built from each cloud's own building blocks. On all three clouds, BYOC data planes also run <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-overview\">Managed Deep Agents</a> endpoints.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea28a4284db9a54bf576b8_byoc-cloud-vs-byoc.svg\" /></div></figure><p><strong>Azure:</strong> BYOC runs the data plane inside a dedicated virtual network with a <a href=\"https://learn.microsoft.com/en-us/azure/aks/private-clusters\">private AKS API endpoint</a>. We deploy <a href=\"https://istio.io/latest/docs/\">Istio</a> and <a href=\"https://keda.sh/docs/latest/deploy/\">KEDA with Helm</a> for ingress routing and event-driven scaling, and system telemetry goes to <a href=\"https://learn.microsoft.com/en-us/azure/azure-monitor/\">Azure Monitor</a>. Support for <a href=\"https://www.langchain.com/langsmith/sandboxes\">LangSmith Sandboxes</a> on Azure is coming soon.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"LangSmith Data Planes settings page listing two Azure BYOC data planes\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea10dd672af68b149a7ffd_6aea10239315ae16d38add01_byoc-data-planes-azure.png\" /></div></figure><p><strong>Google Cloud:</strong> At launch, Google Cloud data planes can run in any region and are managed from LangSmith's US control plane. Resources use namespace-scoped names, so they don't collide with your existing infrastructure.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea28ee1949407b97bdc5e9_Google%20BYOC.png\" /></div></figure><p><strong>AWS:</strong> BYOC runs inside your existing VPC, with the database in subnets you choose. Security teams can attach their own security groups to each application role, so the data plane fits the ingress and egress inspection policies you already run.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea2906aef61fc4742bdb5c_byoc-AWS.svg\" /></div></figure><h2>Move from self-hosted without starting over</h2><p>Self-hosted LangSmith gave you full control of where your data lives, but required significant maintenance overhead. BYOC keeps the data in your account while we run the infrastructure, and you can bring your existing self-hosted data with you.</p><p>The move has two parts. Your workspace resources move with our open source <a href=\"https://github.com/langchain-ai/langsmith-data-migration-tool\">migration tool</a>, which reads from your self-hosted instance and leaves it untouched and live during the move. On every cloud, it covers users and roles, datasets, experiments, and prompts. It also brings over annotation queue config, automation rules, dashboards, and <a href=\"https://www.langchain.com/langsmith/fleet\">Fleet</a> resources.</p><p>Your traces, runs, and feedback move as a separate step that LangChain runs for you with internal tooling. Trace migration is available on AWS today.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea291ac3ff3f8c7209ce7e_byoc-migration-flow.svg\" /></div></figure><h2>Open source and public Terraform</h2><p><a href=\"https://www.langchain.com/langchain\">LangChain</a> and <a href=\"https://www.langchain.com/langgraph\">LangGraph</a> are open source. The Terraform modules behind BYOC are public at <a href=\"https://github.com/langchain-ai/terraform\">github.com/langchain-ai/terraform</a>, and so is the migration tool. The <a href=\"https://www.langchain.com/langsmith/llm-gateway\">LLM Gateway</a> on your data plane calls models from 11 providers out of the box, plus any OpenAI- or Anthropic-compatible endpoint, so you choose the model provider behind it as well as the cloud.</p><h2>Get started</h2><p><a href=\"https://www.langchain.com/contact-sales\">Contact sales</a> to provision a BYOC data plane on AWS, Azure, or Google Cloud. The docs cover the <a href=\"https://docs.langchain.com/langsmith/byoc-architecture\">architecture</a>, the <a href=\"https://docs.langchain.com/langsmith/byoc-shared-responsibility\">shared responsibility model</a>, <a href=\"https://docs.langchain.com/langsmith/byoc-migration\">migration</a>, <a href=\"https://docs.langchain.com/langsmith/byoc-usage\">usage</a>, and common questions in the <a href=\"https://docs.langchain.com/langsmith/byoc-faq\">FAQ</a>, with the Create Data Plane API in the <a href=\"https://docs.langchain.com/langsmith/smith-api/data_planes/create-a-new-data-plane\">API reference</a>.</p>",
-      "content": "",
-      "source_name": "Langchain Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open source",
-        "langchain"
-      ],
-      "author": "Karthic Subramanian",
-      "published_at": "2026-11-03T22:06:00Z",
-      "fetched_at": "2026-11-04T02:20:43.678950Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "36f13157bf997ece",
       "url": "https://arxiv.org/abs/2611.07215",
       "title": "Fractional physics-informed neural networks to model social media virality",
@@ -60735,46 +60714,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "0f246ffe663f472d",
-      "url": "https://x.com/steipete/status/2117756040943190120",
-      "title": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each...",
-      "summary": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each others prompts, I was initially very h\u2026",
-      "content": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each others prompts, I was initially very h\u2026",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-11-03T23:09:20Z",
-      "fetched_at": "2026-11-04T01:56:24.477279Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0e2b09395d7bee14",
-      "url": "https://x.com/steipete/status/2117755295552221683",
-      "title": "very neat!",
-      "summary": "very neat!",
-      "content": "very neat!",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-11-03T23:06:23Z",
-      "fetched_at": "2026-11-04T01:56:24.477339Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "3744a1e17537bfb1",
       "url": "https://x.com/dani_avila7/status/2117839890620498147",
       "title": "Here\u2019s who\u2019s downloading skills, MCPs, settings, and plugins from https://t.co/eQDBth4fJI\n\n38% human...",
@@ -61321,6 +61260,46 @@
       "is_duplicate_of": null
     },
     {
+      "id": "0f246ffe663f472d",
+      "url": "https://x.com/steipete/status/2117756040943190120",
+      "title": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each...",
+      "summary": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each others prompts, I was initially very h\u2026",
+      "content": "RT @patrickerichsen: When our team first moved to multiplayer sessions, where everyone can read each others prompts, I was initially very h\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T23:09:20Z",
+      "fetched_at": "2026-11-04T01:56:24.477279Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "0e2b09395d7bee14",
+      "url": "https://x.com/steipete/status/2117755295552221683",
+      "title": "very neat!",
+      "summary": "very neat!",
+      "content": "very neat!",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T23:06:23Z",
+      "fetched_at": "2026-11-04T01:56:24.477339Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
       "id": "91033b7990ec32c2",
       "url": "https://x.com/AnthropicAI/status/2117710942826123294",
       "title": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduc...",
@@ -61357,27 +61336,6 @@
       "author": "bcherny",
       "published_at": "2026-11-03T18:59:33Z",
       "fetched_at": "2026-11-04T10:01:46.824794Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "91b07e449138fee9",
-      "url": "https://x.com/trq212/status/2117670540148347273",
-      "title": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, t...",
-      "summary": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, they won't need to verify their work or check it for bugs, they will just be right",
-      "content": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, they won't need to verify their work or check it for bugs, they will just be right",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-11-03T17:29:35Z",
-      "fetched_at": "2026-11-03T22:16:12.969113Z",
       "score": null,
       "score_reason": "",
       "tier": "",
