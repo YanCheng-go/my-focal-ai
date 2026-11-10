@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-10T12:40:42.321709+00:00",
+  "exported_at": "2026-11-10T15:17:31.050530+00:00",
   "period_hours": 168,
-  "total": 2829,
+  "total": 2828,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -35218,26 +35218,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "9353c4f44ec7ce48",
-      "url": "https://www.youtube.com/shorts/iboJevEybdg",
-      "title": "Which AI tool do people at Oracle AI World use the most?",
-      "summary": "I asked people at Oracle AI World which AI tool they use the most. What's yours?",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-03T14:01:03Z",
-      "fetched_at": "2026-11-03T16:15:20.481674Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "b1adcd10cf50c24f",
       "url": "https://arxiv.org/abs/2611.07122",
       "title": "Regulating Autonomous Mobility-on-Demand Operators with Fixed and Adaptive Penalties: A Multi-Agent Reinforcement Learning Approach",
@@ -60522,26 +60502,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "08cd121c3cd30365",
-      "url": "https://x.com/steipete/status/2117614024938676461",
-      "title": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt sho...",
-      "summary": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
-      "content": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
-      "source_name": "@steipete",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "openclaw"
-      ],
-      "author": "steipete",
-      "published_at": "2026-11-03T13:45:01Z",
-      "fetched_at": "2026-11-04T01:56:24.477395Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "3744a1e17537bfb1",
       "url": "https://x.com/dani_avila7/status/2117839890620498147",
       "title": "Here\u2019s who\u2019s downloading skills, MCPs, settings, and plugins from https://t.co/eQDBth4fJI\n\n38% human...",
@@ -61103,6 +61063,26 @@
       "author": "dani_avila7",
       "published_at": "2026-11-06T04:25:23Z",
       "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "08cd121c3cd30365",
+      "url": "https://x.com/steipete/status/2117614024938676461",
+      "title": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt sho...",
+      "summary": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
+      "content": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T13:45:01Z",
+      "fetched_at": "2026-11-04T01:56:24.477395Z",
       "score": null,
       "score_reason": "",
       "tier": "",
