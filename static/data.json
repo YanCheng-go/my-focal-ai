@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-10T20:50:19.814320+00:00",
+  "exported_at": "2026-11-10T21:45:30.057253+00:00",
   "period_hours": 168,
-  "total": 2841,
+  "total": 2845,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -35657,48 +35657,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "0d563c3f0bde1f8a",
-      "url": "https://www.langchain.com/blog/human-insight-strategic-advantage-agents",
-      "title": "Why human insight is a strategic advantage for building better agents",
-      "summary": "<ul><li>Human expertise defines what good looks like. Domain experts bring the judgment needed to identify quality, explain why an interaction succeeds or fails, and uncover gaps in automated evaluations.</li><li>Context is essential to evaluating agents. Reviewing the full conversation, including earlier messages and tool calls, helps teams understand not just what an agent answered, but how and why it got there.</li><li>Human feedback becomes the foundation for better evals. Structured scores and reviewer comments can be used to calibrate LLM judges, improve online evaluators, and build golden datasets for continuous testing.</li></ul><p>As agents take on longer, more complex tasks, evaluating their performance means looking beyond the final AI-generated answer. Human review plays an important role in agent development: it helps teams define what good looks like, evaluate performance in context, and turn expert judgment into data that drives improvement.</p><p>In this blog, we explore three principles for effective human-in-the-loop workflows: defining quality through expert judgment, evaluating agents in context, and turning human feedback into reusable evaluation data that drives continuous improvement.</p><h2>What is an agent trace?</h2><p>An <a href=\"https://www.langchain.com/blog/tracing\">agent trace</a> is a record of everything an agent did in a single attempt: user messages, model responses, tool calls, and intermediate steps. Teams use traces to debug behavior, score quality, and decide what to fix.</p><p>Often an engineer or an online evaluator <strong>flags</strong> a trace when something looks off. The flag is a signal, not an explanation. It usually is not enough to know how to change the agent.</p><p>The flagged trace goes into an <a href=\"https://docs.langchain.com/langsmith/annotation-queues\"><strong>annotation queue</strong></a>. A human reviewer opens the interaction and leaves feedback: did the agent do the right thing, and why or why not? Automation chooses what to review. The human supplies the judgment that builders act on.</p><p><a href=\"https://www.langchain.com/langsmith-platform\">In LangSmith</a>, a queue item can be one <a href=\"https://docs.langchain.com/langsmith/runs\"><strong>run</strong></a> (a single step or span) or a <a href=\"https://docs.langchain.com/langsmith/threads\"><strong>thread</strong></a> (the full multi-turn session). With a thread, the reviewer sees the conversation the user had, instead of one step cut out of it.</p><h2>Principle 1: Human perspective defines what good looks like</h2><p>Each reviewer brings domain judgment the trace does not contain on its own: what \u201cgood\u201d means in that job, what the user was trying to do, and what the agent should have done instead. This expert judgment is often highly specific to the company, role, or individual's expertise, and is a key part of building differentiated agents. Or as Snoop Dogg put it his <a href=\"https://www.youtube.com/watch?v=AghXEtS44Fw\">commencement speech at CSU Long Beach</a>: \u201cNobody can do you, like you do.\u201d</p><p>When a domain expert reviews a trace, one of the most valuable parts of the review is their reason. An expert can say why an output was right or wrong, and how a high-quality agent should behave.</p><p>While reviewers can catch what automated evals miss, they also surface problems that sit beside the agent\u2019s answer. For example, they might discover that an eval is scoring the wrong behavior, or that there is a gap in the rubric. One note in a queue can reveal a broader pattern worth fixing in the evaluator itself.</p><p>This expert feedback changes the evaluations, and ultimately how the agent is built. In an annotation queue, that perspective is stored on the run or thread as a score plus the reviewer\u2019s reasoning, so builders can turn a single expert review into a clearer definition of quality for the next iteration.</p><h2>Principle 2: Context is what makes the judgment hold up</h2><p>A reviewer\u2019s perspective is only as good as the interaction in front of them. If they only see one step from a multi-turn session, they can miss earlier messages, tool calls, and decisions that explain the final answer. That's why comprehensive HITL workflows involve reviewing the full <a href=\"https://docs.langchain.com/langsmith/threads\"><strong>thread</strong></a>.</p><p><a href=\"https://docs.langchain.com/langsmith/annotation-queues\"><strong>Threads in annotation queues</strong></a> put the whole session in front of the reviewer. They can see what the user was trying to do, how the agent arrived at its answer, and whether that answer holds up. Editing one sentence is not the same as editing the essay that sentence belongs to.</p><p>A reply can look right on its own and still be wrong for something the user said earlier. The mistake may have happened several turns back, but only in the final message did it became obvious. As agents run longer and take more steps, that missing history gets harder to diagnose by hand.</p><p>For multi-turn agents, the unit of review should be the conversation. A thread in an annotation queue is that session as one review item, so the reviewer reads the interaction instead of assembling it.</p><h2>Principle 3: Turn expert judgment into high-quality evaluation data</h2><p>Building better agents depends on data that reflects what good performance actually looks like. Subject matter experts (SMEs) bring that standard, as builders usually cannot get it from automated metrics alone.</p><p>Human review is how that standard gets written down in a form the system can reuse. In practice it looks like this:</p><ol><li>A reviewer opens a run or thread in an annotation queue and scores it against a rubric (pass/fail, 1\u20135, \u201cempathy,\u201d \u201ccorrect tool,\u201d etc.), often with a short note on why.</li><li>That labeled example becomes <strong>ground truth</strong> for that interaction: not just \u201cbad,\u201d but which dimension failed and what \u201cgood\u201d would have been.</li><li>Builders use those labels in a few concrete ways:<ul><li><strong>Align an LLM judge:</strong> compare the judge\u2019s score to the human score on the same traces. Where they disagree, update the judge prompt or rubric until they match more often.</li><li><strong>Update online evaluators:</strong> if humans keep catching the same miss, change the evaluator that should have caught it, then re-run it on new traffic.</li><li><strong>Build a golden dataset:</strong> promote strong human-labeled examples into a dataset and run offline experiments against them when the agent or prompt changes.</li></ul></li><li>Next time an eval runs, it is scoring against criteria that came from expert review.</li></ol><p>When that data is connected to the runs and threads it describes, builders can use it to identify failure modes, improve evaluators, refine rubrics, and build datasets for ongoing testing. The result is a feedback loop where expert knowledge becomes a reusable asset for agent development, not just a score in a review queue</p><p>Over time, this creates a reusable foundation for evaluation: expert judgment on a specific thread \u2192 structured scores and notes \u2192 better evaluators and datasets \u2192 scored evals that track the same definition of quality. The annotation is the raw material for evals that the team can run again without asking the expert every time.</p><h2>Why we built threads in annotation queues</h2><p>A reviewer does better work with their own expertise, the full interaction in front of them, and a way to leave feedback that a builder can use. Once an agent works across many turns and tools, one trace leaves out the context that judgment depends on.</p><p>A <a href=\"https://www.langchain.com/blog/langsmith-trajectories-tracing\"><strong>trajectory</strong></a> is another view of the &nbsp;conversation. It shows messages and tool calls in the order they happened, with the nested run tree and other duplicate information removed, in a readable view. The queue item is still the thread, because the thing being judged is the conversation. Reviewers read the trajectory as they annotate the thread.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea4dbdd8f93f7bbf44f471_annotation%20queues%20HITL.png\" /></div></figure><p>Threads in annotation queues keep the review next to the interaction a person actually had. Domain experts can focus on the content of the conversation without first learning how to read a trace tree. <a href=\"https://smith.langchain.com/\">Try out this feature</a> yourself in LangSmith today.</p><h2>Case Study: Fetch Rewards</h2><p>Fetch Rewards uses annotation queues to turn human judgment into a reference point for its automated judges. Reviewers assess individual turns of the AI Rewards Assistant - an input and an output - but the transcript is only the starting point. To determine whether a response is good, they often need to investigate further. A fluent answer can still be wrong if it isn\u2019t grounded in real data, so reviewers inspect trace metadata to see which tools the assistant called and whether its answer matches the results.</p><p>When a user asks about an offer, for example, they confirm that the assistant searched for offers and that its response accurately reflects the offer returned. They also check product-card images against the products they represent: for example, making sure a card for a 20 oz Coca-Cola doesn\u2019t show a 2 liter bottle. Since a recommendation is useful only if the recipient can actually use it, reviewers look up the user\u2019s offers to confirm that the suggestions were available to them.</p><p>Some cases are ambiguous: an image may be almost right, an offer technically valid but unhelpful, or an accurate response may miss the user\u2019s intent. Reviewers weigh the evidence and document what they checked, what remained unclear, and why they assigned each score in an annotation-queue comment. Engineers then use that reasoning to identify where an automated judge\u2019s logic differs from the human review and tune it accordingly.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aea4dda4358dfb8bb3e8bd1_Fetch%20Rewards%20HITL.png\" /></div></figure><h2>Make Human Review Part of Your Agent Development Lifecycle</h2><p>We believe human review is an important part of building better agents, and we've been investing in making it easier to bring that into your workflow with <a href=\"https://smith.langchain.com/\">LangSmith</a>.</p><p>Try reviewing your agent traces with a human reviewer. You might be surprised by the insights and useful data points you uncover! We'd love to hear what you find. Reach out to us on LinkedIn to share your discoveries.</p>",
-      "content": "",
-      "source_name": "Langchain Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open source",
-        "langchain"
-      ],
-      "author": "Gowri Harish, Sineha Manivannan",
-      "published_at": "2026-11-03T21:07:00Z",
-      "fetched_at": "2026-11-03T21:48:48.485530Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "68d09abee0e9adea",
-      "url": "https://www.youtube.com/watch?v=GyjB3GYxEj0",
-      "title": "Stanford EE292R AI and Data for Science | Autumn 2026 | Multimodal Modeling for Precision Medicine",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: \nhttps://stanford.io/grad-ed-precision-med\n\nThis lecture is from Stanford EE292R AI and Data for Science, and it covers multimodal modeling for precision medicine, specifically focusing on using foundation models for cross-modal data imputation and synthetic data generation, and explores applications in spatial omics, digital pathology, and radiology that support in-silico study of disease mechanisms.\n\nFollow the course schedule: https://aida4sci.stanford.edu/schedule.html#fall-2026\n\nSpeaker: \nOlivier Gevaert is an Associate Professor of Medicine and Biomedical Data Science at Stanford.\n\n#MultimodalAI #PrecisionMedicine #FoundationModels #AIforScience",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-11-03T21:00:04Z",
-      "fetched_at": "2026-11-03T21:48:31.923154Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "a44e5a0e0ca44230",
       "url": "https://arxiv.org/abs/2611.07130",
       "title": "Teaching Agents the \"Principle\", Not the \"Reward\"",
@@ -61357,6 +61315,130 @@
       "author": "dani_avila7",
       "published_at": "2026-11-06T04:25:23Z",
       "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "91033b7990ec32c2",
+      "url": "https://x.com/AnthropicAI/status/2117710942826123294",
+      "title": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduc...",
+      "summary": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It\u2019s substantially more",
+      "content": "New Anthropic research: progress on provable inference for large language models.\n\nHere, we introduce FlashProve. Building on established cryptographic techniques, FlashProve allows developers to verify whether a given response came from a given AI model. It\u2019s substantially more",
+      "source_name": "@anthropicai",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "anthropic",
+        "company"
+      ],
+      "author": "anthropicai",
+      "published_at": "2026-11-03T20:10:08Z",
+      "fetched_at": "2026-11-04T01:56:23.413558Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "9f1853a6c63fcc2c",
+      "url": "https://x.com/bcherny/status/2117693181651542387",
+      "title": "Signing in to your company's plugins one by one is annoying, so we let Claude auto-connect to them n...",
+      "summary": "Signing in to your company's plugins one by one is annoying, so we let Claude auto-connect to them now.\n\nTeam and Enterprise admins can set them up, and teammates are connected automatically the first time they use the plugins.",
+      "content": "Signing in to your company's plugins one by one is annoying, so we let Claude auto-connect to them now.\n\nTeam and Enterprise admins can set them up, and teammates are connected automatically the first time they use the plugins.",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-11-03T18:59:33Z",
+      "fetched_at": "2026-11-04T10:01:46.824794Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "91b07e449138fee9",
+      "url": "https://x.com/trq212/status/2117670540148347273",
+      "title": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, t...",
+      "summary": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, they won't need to verify their work or check it for bugs, they will just be right",
+      "content": "this is basically the bitter lesson at work\n\nthe smartest models will need fewer and fewer tokens, they won't need to verify their work or check it for bugs, they will just be right",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-11-03T17:29:35Z",
+      "fetched_at": "2026-11-03T22:16:12.969113Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "b1cf7fee4e8615eb",
+      "url": "https://x.com/steipete/status/2117663959385772229",
+      "title": "RT @JSchaeff3r: Kimi K3.1 recalls instructions it was never given on Terminal Bench. They match the ...",
+      "summary": "RT @JSchaeff3r: Kimi K3.1 recalls instructions it was never given on Terminal Bench. They match the hidden tests. K3.1 while solving: \"Inst\u2026",
+      "content": "RT @JSchaeff3r: Kimi K3.1 recalls instructions it was never given on Terminal Bench. They match the hidden tests. K3.1 while solving: \"Inst\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T17:03:26Z",
+      "fetched_at": "2026-11-04T01:56:24.477370Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fbc6b03809333710",
+      "url": "https://x.com/simonw/status/2117655816581071203",
+      "title": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts ...",
+      "summary": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing https://t.co/6O7WltGP7K",
+      "content": "There's a buzzy new paper about GPT-6 Astra being able to directly interpret model weights (prompts full of floating point numbers) - I tried it with Qwen 3.8 27B on my laptop and found that, after 45+ minutes, that model could achieve the same thing https://t.co/6O7WltGP7K",
+      "source_name": "@simonw",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "tooling",
+        "open-source"
+      ],
+      "author": "simonw",
+      "published_at": "2026-11-03T16:31:05Z",
+      "fetched_at": "2026-11-03T23:56:20.576424Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "08cd121c3cd30365",
+      "url": "https://x.com/steipete/status/2117614024938676461",
+      "title": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt sho...",
+      "summary": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
+      "content": "RT @snellingio: I am once again absolutely convinced no Apple executive actually uses Siri. \n\nIt shocks me how dogshit it still is.",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-03T13:45:01Z",
+      "fetched_at": "2026-11-04T01:56:24.477395Z",
       "score": null,
       "score_reason": "",
       "tier": "",
