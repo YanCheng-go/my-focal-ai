@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-11T20:28:37.124989+00:00",
+  "exported_at": "2026-11-11T22:28:44.879739+00:00",
   "period_hours": 168,
-  "total": 2827,
+  "total": 2823,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39900,28 +39900,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "7b2603b92a595fb0",
-      "url": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
-      "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-3-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-3-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-3-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" /><p>As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards to identify the cause of training performance drops. What if a team of AI agents could perform that correlation through one interface? NVIDIA developed the AI Factory Operations Agent to streamline its own internal NVIDIA DGX SuperPOD\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Shara Tibken",
-      "published_at": "2026-11-04T22:00:17Z",
-      "fetched_at": "2026-11-05T00:54:22.733075Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d760265ec4a40dcc",
       "url": "https://www.aitmpl.com/mods/mod-git-sidebar#mods",
       "title": "#10 git-sidebar",
@@ -46129,46 +46107,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-11-05T02:00:48Z",
       "fetched_at": "2026-11-05T09:30:10.246551Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "65427565e1259785",
-      "url": "https://www.youtube.com/watch?v=T-42NrYjwxM",
-      "title": "Our Smaller Model Beat Opus on Finance Tasks - Alexander Shevchenko, Ramp",
-      "summary": "Alexander Shevchenko of Ramp Labs explains why an application company still runs applied research instead of waiting for the next frontier model. He walks through three projects now in production: a post-trained Qwen 3.5 model that beat Opus 4.6 on financial question answering at Haiku-level latency, KV cache \"cartridges\" that pack 20 to 30 times more context into an agent ahead of time for tasks like month-end close, and swarms of 10,000 parallel agents that pen-tested Ramp and found seven high-severity vulnerabilities, with cheaper open-weight models catching nearly as much.\n\nChapters:\n0:00 Intro\n0:36 A bitter-lesson company\n1:15 Why not just wait?\n1:29 Building agents in 2023 vs 2026\n3:06 Project 1: A specialist model for Ramp Sheets\n5:16 Beating Opus at Haiku speed\n5:58 Project 2: KV cache cartridges\n7:50 Project 3: 10,000 agents pen-testing Ramp\n9:30 Cheaper open-weight models in swarms\n10:08 Saving time and money\n10:36 Token spend management and Ramp Router\n12:03 More from the Ramp Labs blog\n\nAlexander Shevchenko\nhttps://ramp.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-04T22:00:34Z",
-      "fetched_at": "2026-11-05T09:30:11.475866Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "029eb28265f50ed3",
-      "url": "https://www.youtube.com/watch?v=Sg6vtKOAOQ0",
-      "title": "AI Labs Will Trap You or Replace You - Dillon Rolnick, Nous Research",
-      "summary": "Dillon Rolnick, CEO of Nous Research, argues that as AI models commoditize, the labs that spent trillions building them have two ways to earn it back: lock businesses into their platforms and raise prices, or point their own systems at lucrative industries like finance and compete directly. He makes the case that the moats of proprietary software are gone, that agents are closer to operating systems than chatbots, and that companies should build on open foundations they own and control, like Hermes Agent, so they can swap models and inherit new capabilities instead of rebuilding them.\n\nChapters:\n0:00 Intro\n0:32 The models are commoditizing\n1:52 How labs plan to earn back trillions\n2:48 Why businesses are the real target\n4:28 The labs are coming for finance\n5:44 Don't build on quicksand\n6:48 Why Nous Research exists\n7:56 Software no longer has a moat\n9:25 Distillation and the fight over open models\n11:06 Agents are operating systems\n12:17 Build on foundations you own\n13:49 Hermes Agent and the new moats\n\nDillon Rolnick\nhttps://nousresearch.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-04T21:00:12Z",
-      "fetched_at": "2026-11-05T09:30:11.475874Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -61040,27 +60978,6 @@
       "author": "dani_avila7",
       "published_at": "2026-11-06T04:25:23Z",
       "fetched_at": "2026-11-06T06:41:52.824063Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1c122163a6219be1",
-      "url": "https://x.com/GeminiApp/status/2118055342181630404",
-      "title": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from...",
-      "summary": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
-      "content": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-11-04T18:58:39Z",
-      "fetched_at": "2026-11-04T21:09:13.889027Z",
       "score": null,
       "score_reason": "",
       "tier": "",
