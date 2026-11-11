@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-11T17:54:21.687313+00:00",
+  "exported_at": "2026-11-11T20:28:37.124989+00:00",
   "period_hours": 168,
-  "total": 2831,
+  "total": 2827,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39922,50 +39922,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "bfede81cbb6b1084",
-      "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
-      "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image1-16-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image1-16-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" />As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/10/image1-16-768x432.png\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image1\" width=\"768\" /><p>As artificial intelligence and accelerated computing continue to push the boundaries of what\u2019s possible, the latest NVIDIA CUDA release arrives to unlock unprecedented performance and scale. NVIDIA CUDA 13.5 delivers general availability (GA) across major new platforms. NVIDIA Vera Rubin support moves from early developer access to general availability (GA), ready for enterprise production.</p>\n<p><a href=\"https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Shara Tibken",
-      "published_at": "2026-11-04T18:46:07Z",
-      "fetched_at": "2026-11-04T19:46:14.036848Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "09c40cbdb75966e0",
-      "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
-      "title": "Agile Deliberation: How AI helps humans define the gray areas",
-      "summary": "Data Mining & Modeling",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-04T18:07:05Z",
-      "fetched_at": "2026-11-04T19:46:08.951162Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d760265ec4a40dcc",
       "url": "https://www.aitmpl.com/mods/mod-git-sidebar#mods",
       "title": "#10 git-sidebar",
@@ -46213,47 +46169,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-04T21:00:12Z",
       "fetched_at": "2026-11-05T09:30:11.475874Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5f8e04d857fdf657",
-      "url": "https://www.youtube.com/watch?v=MpkARD5pq-M",
-      "title": "Robots Will Be Trained on Video Games - Pim de Witte, General Intuition",
-      "summary": "Pim de Witte of General Intuition, the team behind the Medal game recorder, argues that models built to act in space and time need a different design than LLMs, which work turn by turn. His models take in frames and send out actions continuously, the way a gamer plays. Because game controllers already run most robots, Medal's game clips (about a billion videos a year and over 1.5 trillion action tokens a month) become training data, and one model can play games at a high level and control more than 10 types of robots. He also previews early access, accessibility uses and hackathons in New York and London.\n\nChapters:\n0:00 Intro\n0:41 Why acting is different from predicting\n1:54 Starting with Medal, the game recorder\n2:27 Game controllers already run robots\n3:28 How LLMs and action models differ\n5:21 Use the controller, skip the motor math\n6:21 1.5 trillion action tokens a month\n7:14 World models and environments\n8:55 Why games are so action-dense\n9:52 One model, 10+ robots\n12:03 What you can build on top\n13:36 Accessibility uses\n14:54 The team and hackathons\n17:10 Q&amp;A: how it differs from JEPA\n\nPim de Witte\nhttps://generalintuition.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-04T20:00:37Z",
-      "fetched_at": "2026-11-05T09:30:11.475882Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "661ea2c2b044f6a2",
-      "url": "https://www.youtube.com/watch?v=8vLx1MFVK_4",
-      "title": "Stanford AA274A Principles of Robotic Autonomy | Autumn 2019 | Decision Making Under Uncertainty",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit: \nhttps://stanford.io/grad-ed-dm-uncertainty\n\nLecture 24 \u2014 Decision Making Under Uncertainty\n\nNote: This lecture was recorded as part of the 2019 edition of the course. Course content, structure, assignments, and other materials may have changed since this recording. The course links below point to the most recent edition and may therefore differ from what is presented in the video.\n\nRead the companion textbook, Principles of Robot Autonomy, free online: https://porabook.com\n \nFollow along with the latest course schedule and syllabus: https://stanfordasl.github.io/PoRA-I\n \nSpeaker: Prof. Marco Pavone\n \nDr. Marco Pavone is an Associate Professor of Aeronautics and Astronautics at Stanford University and a Senior Director of Autonomous Vehicle Research at NVIDIA. Prior to joining Stanford, he was a Research Technologist in the Robotics Section at NASA\u2019s Jet Propulsion Laboratory. Dr. Pavone received his Ph.D. in Aeronautics and Astronautics from the Massachusetts Institute of Technology in 2010. His research focuses on the analysis, design, and control of autonomous systems, with particular emphasis on self-driving cars, autonomous aerospace vehicles, and future mobility systems. He has been recognized with numerous awards, including the Presidential Early Career Award for Scientists and Engineers from President Barack Obama, the Office of Naval Research Young Investigator Award, the NSF CAREER Award, the NASA Early Career Faculty Award, the IEEE Kiyo Tomiyasu Award, the CSS Award for Technical Excellence in Aerospace Control, and the Early-Career Spotlight Award from the Robotics Science and Systems Foundation.\n \n Full playlist: https://www.youtube.com/playlist?list=PLR9iNyexfIkk\n \n #StanfordOnline #RobotAutonomy #Robotics #PhysicalAI",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-11-04T18:00:33Z",
-      "fetched_at": "2026-11-04T19:46:06.704099Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60706,27 +60621,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1c122163a6219be1",
-      "url": "https://x.com/GeminiApp/status/2118055342181630404",
-      "title": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from...",
-      "summary": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
-      "content": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
-      "source_name": "@geminiapp",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "gemini",
-        "google"
-      ],
-      "author": "geminiapp",
-      "published_at": "2026-11-04T18:58:39Z",
-      "fetched_at": "2026-11-04T21:09:13.889027Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "f213959aec2fdc98",
       "url": "https://x.com/steipete/status/2118116514700386439",
       "title": "Do individual limits still make sense? As capabilities increase you want to work with and support an...",
@@ -61146,6 +61040,27 @@
       "author": "dani_avila7",
       "published_at": "2026-11-06T04:25:23Z",
       "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "1c122163a6219be1",
+      "url": "https://x.com/GeminiApp/status/2118055342181630404",
+      "title": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from...",
+      "summary": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
+      "content": "RT @Android: Henry Cavill knows a thing or two about mustache injustice, and with a little help from Google, is making a video game on Goog\u2026",
+      "source_name": "@geminiapp",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "gemini",
+        "google"
+      ],
+      "author": "geminiapp",
+      "published_at": "2026-11-04T18:58:39Z",
+      "fetched_at": "2026-11-04T21:09:13.889027Z",
       "score": null,
       "score_reason": "",
       "tier": "",
