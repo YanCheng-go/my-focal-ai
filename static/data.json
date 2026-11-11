@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-11T09:27:31.125937+00:00",
+  "exported_at": "2026-11-11T15:08:48.670612+00:00",
   "period_hours": 168,
-  "total": 2833,
+  "total": 2829,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39884,27 +39884,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "1be4fdd8e6ca80f0",
-      "url": "https://openai.com/index/openai-to-acquire-pierre",
-      "title": "OpenAI to acquire Pierre Computer Company, Inc.",
-      "summary": "OpenAI will acquire Pierre Computer Company, expanding Codex\u2019s tools for building, understanding, and reviewing code.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-04T14:30:00Z",
-      "fetched_at": "2026-11-04T19:46:08.487366Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d760265ec4a40dcc",
       "url": "https://www.aitmpl.com/mods/mod-git-sidebar#mods",
       "title": "#10 git-sidebar",
@@ -46213,65 +46192,6 @@
       "author": "Last Week in AI",
       "published_at": "2026-11-04T16:01:54Z",
       "fetched_at": "2026-11-04T19:46:07.276232Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "13902d2691a6768c",
-      "url": "https://www.youtube.com/shorts/eJqHvjD4060",
-      "title": "Favorite person in AI? Asking people at Oracle AI World",
-      "summary": "Who's your favorite person in AI? I asked people at Oracle AI World.",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-04T14:02:03Z",
-      "fetched_at": "2026-11-04T19:46:06.239186Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "db94cffc12fe29e2",
-      "url": "https://www.youtube.com/watch?v=-uBABM2AuFg",
-      "title": "Don't Approve the AI Model. Approve the App - Doneyli De Jesus, Langfuse",
-      "summary": "Doneyli De Jesus, who leads AI engineering solutions at Langfuse by ClickHouse, shares how his team helped a top-five bank put deployment gates on AI agents. Banks don't certify models, they certify applications, and they need setups that are on-premises, gated and air-gapped. He walks through building a golden data set, scoring traces across several dimensions, and how a small model that was 97% grounded but only 60% accurate on numbers cleared the bank's 85% gate once it got a calculator tool. Domain experts set the thresholds and review failures, taking evaluation from weeks to minutes.\n\nChapters:\n0:00 Intro\n0:41 Banks don't care about public benchmarks\n3:01 Certify applications, not models\n3:18 On-prem, gated and air-gapped\n5:00 Proving an app is ready\n6:00 Golden data sets and traces\n7:20 Grounded, but bad at math\n8:52 Gating the whole workflow\n10:34 Building the data set\n11:32 Scoring: code, path and LLM judge\n13:48 Setting gates with domain experts\n15:53 Annotation queues and feedback\n17:31 From weeks to minutes\n\nDoneyli De Jesus\nhttps://langfuse.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-04T10:00:35Z",
-      "fetched_at": "2026-11-04T12:09:22.348555Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3b17a7e17ea0fe87",
-      "url": "https://www.youtube.com/watch?v=c5n94VqXZAw",
-      "title": "Did the Knicks\u2019 phishing test go too far? Plus, hackers pose as IT in Teams",
-      "summary": "Visit Security Intelligence podcast page to get more AI content  \u2192 https://ibm.biz/~vrweMGEy6\n\nClick to claim your free Knicks championship ring, and you might end up in security training.\n\nFirst, MSG sends staff an offer to pick their own championship ring, and everyone who clicks lands in mandatory security training. Timely lures catch real behavior, but the panel debates whether a test this real makes employees wary of the emails they actually need.\n\nThen, Arctic Wolf traces more than 400 incidents of attackers flooding inboxes with sign-up emails, then posing as IT support in Teams chats. As one panelist points out, real IT already has access to your machine, so it should never need you to open a remote session.\n\nFinally, CISA confirms attackers are exploiting two critical PHP flaws, and 263,000 end-of-life instances in the US alone will never get a patch. Do you know which versions you\u2019re running?\n\nAll that and more on Security Intelligence. \n\n0:00 \u2013 Intro\n1:04 \u2013 MSG's championship ring phishing test \n8:34 \u2013 Hackers pose as IT in Microsoft Teams  \n19:21 \u2013 PHP2Shell flaws exploited in the wild\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~9IfKz4JuD\n#phishingsimulation #cybersecurity #vulnerabilitymanagement \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-11-04T10:00:20Z",
-      "fetched_at": "2026-11-04T12:09:22.391807Z",
       "score": null,
       "score_reason": "",
       "tier": "",
