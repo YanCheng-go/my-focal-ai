@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-12T00:53:01.398996+00:00",
+  "exported_at": "2026-11-12T02:53:08.572535+00:00",
   "period_hours": 168,
-  "total": 2829,
+  "total": 2827,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39607,27 +39607,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "25fa4dd18ec78a48",
-      "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-      "title": "Setting a new standard for responsible AI infrastructure",
-      "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-05T02:00:00Z",
-      "fetched_at": "2026-11-05T18:01:26.924632Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "04b48de5b9adf193",
       "url": "https://arxiv.org/abs/2611.09493",
       "title": "FusionCLIP: Multimodal Contrastive Pretraining for Fusion Plasma Diagnostics",
@@ -46231,26 +46210,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-05T08:00:07Z",
       "fetched_at": "2026-11-05T09:30:11.475857Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3f2cbad62999ae64",
-      "url": "https://www.youtube.com/shorts/P-zrKj-odIE",
-      "title": "Describe AI agents in 2027 in one word",
-      "summary": "Describe AI agents in 2027 in one word. I asked people at Oracle AI World.",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-05T02:00:48Z",
-      "fetched_at": "2026-11-05T09:30:10.246551Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -60723,26 +60682,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "dcab4d2784373353",
-      "url": "https://x.com/dani_avila7/status/2118161468386345340",
-      "title": "Claude Code Templates now supports external skills!\n\nAuthors can keep their skills in their own GitH...",
-      "summary": "Claude Code Templates now supports external skills!\n\nAuthors can keep their skills in their own GitHub repos while making them available through aitmpl\n\nEvery installation uses a pinned commit, verifies file hashes, and goes through security checks\n\nAlready 11 external skills",
-      "content": "Claude Code Templates now supports external skills!\n\nAuthors can keep their skills in their own GitHub repos while making them available through aitmpl\n\nEvery installation uses a pinned commit, verifies file hashes, and goes through security checks\n\nAlready 11 external skills",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-11-05T02:00:22Z",
-      "fetched_at": "2026-11-05T08:06:48.365369Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "18398de25fff9764",
       "url": "https://x.com/dani_avila7/status/2118324550215651688",
       "title": "If you ever want to travel while working remotely\u2026 Chile has some of the fastest internet in the wor...",
@@ -61001,6 +60940,26 @@
       "author": "dani_avila7",
       "published_at": "2026-11-06T04:25:23Z",
       "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "dcab4d2784373353",
+      "url": "https://x.com/dani_avila7/status/2118161468386345340",
+      "title": "Claude Code Templates now supports external skills!\n\nAuthors can keep their skills in their own GitH...",
+      "summary": "Claude Code Templates now supports external skills!\n\nAuthors can keep their skills in their own GitHub repos while making them available through aitmpl\n\nEvery installation uses a pinned commit, verifies file hashes, and goes through security checks\n\nAlready 11 external skills",
+      "content": "Claude Code Templates now supports external skills!\n\nAuthors can keep their skills in their own GitHub repos while making them available through aitmpl\n\nEvery installation uses a pinned commit, verifies file hashes, and goes through security checks\n\nAlready 11 external skills",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-05T02:00:22Z",
+      "fetched_at": "2026-11-05T08:06:48.365369Z",
       "score": null,
       "score_reason": "",
       "tier": "",
