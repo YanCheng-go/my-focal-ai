@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-12T18:20:07.315309+00:00",
+  "exported_at": "2026-11-12T20:29:28.958649+00:00",
   "period_hours": 168,
-  "total": 2359,
+  "total": 2353,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29045,90 +29045,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b1feafc8620ed538",
-      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
-      "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
-      "summary": "AI agents do more than generate answers. They search for information, query databases, write and test code and take action.\u00a0 Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task.\u00a0 As businesses put more agents to work, AI factories need CPUs that can execute those [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">AI agents do more than generate answers. They search for information, query databases, write and test code and take action.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">As businesses put more agents to work, AI factories need CPUs that can execute those steps quickly and support many agents at once, all within the limits of available power.</span></p>\n<p><b>What this means:</b><span style=\"font-weight: 400;\"> AI infrastructure providers need to support more agents without making each one wait longer to get work done. And critically, AI factories are power limited. This means operators need to choose infrastructure that maximizes the work done for every watt.\u00a0</span></p>\n<p><b>Why it matters:</b> <a href=\"https://www.nvidia.com/en-us/data-center/vera-cpu/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA Vera</span></a><span style=\"font-weight: 400;\"> delivers both fast agent performance and high capacity per watt within a single CPU. That gives providers one CPU for a range of agent workloads, rather than having to mix and match fast and dense x86 parts to balance speed and capacity.</span></p>\n<p><b>The data that proves it:</b><span style=\"font-weight: 400;\"> In a 100-megawatt data center comparison, NVIDIA found that a single Vera CPU performs better than the fastest x86 CPU and the most energy-efficient x86 CPU.</span></p>\n<ul>\n<li><span style=\"font-weight: 400;\">Vera delivers industry-leading agent speed while enabling </span><b>1.6x more agents per watt </b><span style=\"font-weight: 400;\">versus the fastest x86 CPU.</span></li>\n<li><span style=\"font-weight: 400;\">Vera delivers </span><b>2x faster agent speed</b><span style=\"font-weight: 400;\"> with leading energy efficiency compared with the most energy-efficient x86 CPU.</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">Partners are already putting Vera to work. Early adopters see the same exceptional performance in production-style tests:</span></p>\n<ul>\n<li><a href=\"https://www.perplexity.ai/en-GB/hub/blog/secure-sandboxes-for-agents\" target=\"_blank\"><span style=\"font-weight: 400;\">Perplexity</span></a><span style=\"font-weight: 400;\">: Ran agentic coding tasks 1.5x faster with Vera than on traditional CPUs. Perplexity plans to deploy Vera in an upcoming production system.</span></li>\n<li><a href=\"https://deepinfra.com/blog/nvidia-vera-cpu-benchmark\" target=\"_blank\"><span style=\"font-weight: 400;\">DeepInfra</span></a><span style=\"font-weight: 400;\">: Delivered up to 2.2x speed of the best x86 processor on agentic orchestration for its production agent workload, achieving the fastest of the four architectures tested.</span></li>\n<li><a href=\"https://clickhouse.com/blog/clickhouse-performance-on-nvidia-vera\" target=\"_blank\"><span style=\"font-weight: 400;\">ClickHouse</span></a><span style=\"font-weight: 400;\">: Its standard binary, with no Vera-specific tuning, scaled near-linearly across 176 cores and topped the ClickBench hardware leaderboard.</span></li>\n<li><a href=\"https://duckdb.org/2026/10/16/nvidia-vera-benchmark\" target=\"_blank\"><span style=\"font-weight: 400;\">DuckLabs</span></a><span style=\"font-weight: 400;\">: Achieved about 1.5x the median TPC-H SF1000 performance of an Intel Xeon 6 baseline.</span></li>\n<li><a href=\"https://www.daytona.io/dotfiles/when-2000-agents-share-one-cpu\" target=\"_blank\"><span style=\"font-weight: 400;\">Daytona</span></a><span style=\"font-weight: 400;\">: Brought 1,000 agent sandboxes online in 10.8 seconds, and achieved 12.7 completed jobs per second at 2,000 concurrent sandboxes, using Vera versus 88.4 seconds with x86.</span></li>\n<li><a href=\"https://modal.com/blog/nvidia-vera-sandboxes\" target=\"_blank\"><span style=\"font-weight: 400;\">Modal</span></a><span style=\"font-weight: 400;\">: Achieved up to 2x sandbox throughput per core versus comparable x86 hardware, with gains that grow under heavy load.</span></li>\n</ul>\n<p><i><span style=\"font-weight: 400;\">Learn more about the </span></i><a href=\"https://www.nvidia.com/en-us/data-center/vera-cpu/\" target=\"_blank\"><i><span style=\"font-weight: 400;\">NVIDIA Vera CPU</span></i></a><i><span style=\"font-weight: 400;\">.</span></i></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "Hannah Coutand",
-      "published_at": "2026-11-05T20:00:41Z",
-      "fetched_at": "2026-11-05T23:38:57.573297Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bbd492caba72ca54",
-      "url": "https://openai.com/index/cultfit-builds-with-codex",
-      "title": "Cult.fit builds operational muscle with Codex",
-      "summary": "Cult.fit is using Codex to help teams across functions build tools, move faster, and change how work gets done.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-05T20:00:00Z",
-      "fetched_at": "2026-11-06T06:48:38.996798Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "9c4184d44164e0d7",
-      "url": "https://www.langchain.com/blog/agents-are-going-async",
-      "title": "Agents Are Going Async",
-      "summary": "<ul><li>As agents take on bigger goals, they need to stay responsive to the user while making progress on many long tasks at once.</li><li>Async subagents split an agent into an orchestrator that stays available to the user and subagents that run tasks in the background and report back to the orchestrator upon completion.</li><li>Background work is becoming the norm for agent infrastructure, from coding agents like Claude Code to personal agents like OpenAI's dots.</li></ul><div></div><p>Imagine a chief of staff who disappears every time you hand them a big project and only comes back once it's done. You'd probably fire them immediately. A good chief of staff keeps projects moving in the background while staying reachable and keeping you updated along the way. As we ask agents to work toward bigger goals, they need the same two properties. An agent has to be responsive, acting on a new instruction right away with the context of everything before it, and productive, making progress on many large tasks at once.</p><p>The architecture we've used to build agents for a while <em>can't</em> meet both requirements. In a standard ReAct loop, each long tool call blocks the loop and every other task queues behind it. Instead, we're seeing the ecosystem converge on a split between one agent that stays with the user and background workers that do the long work. <a href=\"https://code.claude.com/docs/en/sub-agents\">Claude Code</a> runs subagents in the background by default, OpenAI's <a href=\"https://learn.chatgpt.com/docs/dots\">dots</a> hand work to background workers to make progress on several things at once, and <a href=\"https://x.com/DeepSeekHarness/status/2116857257245987236\">DeepSeek Harness</a> built its super agent around a router that talks to people and background workers that run tasks in parallel.</p><p>We\u2019re bringing this pattern to <a href=\"https://www.langchain.com/deep-agents\">Deep Agents</a> with <a href=\"https://docs.langchain.com/oss/python/deepagents/async-subagents\">async subagents</a>. An orchestrator stays available to the user and keeps the conversation's context organized, while async subagents run as background workers and report back when they finish. The amount of work the agent can take on then grows with the number of background workers instead of the length of one loop.</p><h2>How async subagents work</h2><p>An agent runs in a loop. The model calls a tool, waits for the result, and decides what to do next. Historically, tools and subagents blocked that loop until they returned, like code that awaits each slow call in turn. An async subagent works like a task started with <code>asyncio.create_task</code> or a <code>Promise</code> you don't await yet. The call returns right away, the work runs independently in the background, and the result comes back later.</p><figure class=\"w-richtext-figure-type-image w-richtext-align-center\"><div><img alt=\"Sync vs async subagents: the orchestrator hands work to async subagents and stays free to talk to the user\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aecdfa8017b07753945c843_6aecdf73f7189dcc96aaf4de_sync-vs-async-subagents-v2.png\" /></div><figcaption>The orchestrator hands work to async subagents and stays free to talk to the user.</figcaption></figure><p>Async work depends on two properties of the system:</p><ul><li><strong>The user can reach the orchestrator.</strong> The orchestrator is the agent the user interacts directly with. Subagents no longer hold its loop, so the user can reach it whenever its own loop isn't busy, instead of waiting for every subagent to finish.</li><li><strong>Tasks run in parallel without blocking.</strong> The orchestrator starts subagents as work comes in, instead of waiting for a whole batch to return.</li></ul><p>The orchestrator manages async subagents with five tools:</p><ul><li><code>start_async_task</code> starts a subagent on its own thread and returns right away.</li><li><code>check_async_task</code> gets a task's status and, once it finishes, its result.</li><li><code>update_async_task</code> sends a running task new instructions.</li><li><code>cancel_async_task</code> stops a running task.</li><li><code>list_async_tasks</code> lists every task and its status.</li></ul><p>Steering a running subagent is separate from reaching the orchestrator. When the orchestrator sends a follow-up with <code>update_async_task</code>, the <code>update_strategy</code> field on that subagent's definition decides what happens:</p><ul><li><code>\"interrupt\"</code> (the default) stops the current run and restarts the subagent with the new instruction. Use it for a correction like \"use Postgres instead.\"</li><li><code>\"enqueue\"</code> holds the follow-up until the current run finishes. Use it for an addition like \"run the tests when you're done.\"</li></ul><h2>How notifications work</h2><p>Every unfinished task is listed in the orchestrator's system prompt, so it always knows what's in flight. It can poll with <code>check_async_task</code> or tasks can <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-subagents#get-notified-when-a-subagent-finishes\">report back on their own</a>:</p><ul><li>If the orchestrator is <strong>busy</strong>, it checks its unfinished tasks before each model call and picks up the result mid-run.</li><li>If it's <strong>idle</strong>, the subagent wakes it with a new run.</li><li>If it's <strong>paused</strong> on an approval, the approval is left alone, and the result arrives once the user answers.</li></ul><figure class=\"w-richtext-figure-type-image w-richtext-align-center\"><div><img alt=\"An async subagent reports back whether the orchestrator is busy, idle, or paused on an approval\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6aece061fd58da9939f252d0_6aece01aea23933948716221_async-subagent-notifications-v3.png\" /></div><figcaption>An async subagent reports back whether the orchestrator is busy, idle, or paused on an approval.</figcaption></figure><p>A subagent that needs approval shows up as <code>waiting</code>, and the user answers on the subagent's own thread without interrupting the orchestrator. In Managed Deep Agents on Slack, the request <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-subagents#answer-approvals-in-channels\">posts back to the original thread</a>.</p><p>We expect this pattern to generalize beyond subagents to tools across the board. OpenAI recently added support for <a href=\"https://developers.openai.com/api/docs/guides/async-tool-calling\">async tool calling</a>, where the model keeps working after it calls a tool and your application sends the result back in a later request.</p><h2>Use async subagents</h2><p>Async subagents are available in Deep Agents for <a href=\"https://docs.langchain.com/oss/python/deepagents/async-subagents\">Python</a> and <a href=\"https://docs.langchain.com/oss/javascript/deepagents/async-subagents\">JavaScript</a>, and in <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-subagents\">Managed Deep Agents</a>, where making a subagent async takes one field:</p><pre class=\"w-code-block\" contenteditable=\"false\" style=\"display: block; background: #2b2b2b; color: #f8f8f2; padding: 0.5em;\"><code class=\"language-python\" style=\"white-space: pre-wrap;\">from managed_deepagents import define_deep_agent\n\nagent = define_deep_agent(\n    name=\"research-assistant\",\n    model=\"openai:gpt-5.5\",\n    subagents=[\n        {\n            \"name\": \"researcher\",\n            \"description\": \"Researches a topic in the background.\",\n            \"system_prompt\": \"Research the topic and report your findings.\",\n            \"async\": True,\n        },\n    ],\n)</code></pre><p>In Managed Deep Agents, every served agent also gets an async copy of the <code>general-purpose</code> subagent, so it can decide at runtime whether to run delegated work in the foreground or the background.</p><p>Task notifications are in beta, so the API may still change. The <a href=\"https://github.com/langchain-ai/async-deep-agents\">async-deep-agents</a> repo has a working supervisor with researcher and coder subagents in Python and TypeScript.</p><p>Give async subagents a try, and let us know what you think in <a href=\"https://github.com/langchain-ai/deepagents/issues\">GitHub issues</a> or on the <a href=\"https://forum.langchain.com/\">forum</a>.</p>",
-      "content": "",
-      "source_name": "Langchain Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open source",
-        "langchain"
-      ],
-      "author": "Sydney Runkle, Thushanth Bengre",
-      "published_at": "2026-11-05T20:00:00Z",
-      "fetched_at": "2026-11-05T23:39:03.536856Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "f25b9201ad6bdcc6",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-11-05T19:35:16Z",
-      "fetched_at": "2026-11-05T23:38:58.735565Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bbcaf4ba1635df9d",
       "url": "https://www.youtube.com/watch?v=maitMe9HCvw",
       "title": "How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere",
@@ -39972,26 +39888,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-05T21:00:16Z",
       "fetched_at": "2026-11-05T23:38:52.308094Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e757ed1354de4569",
-      "url": "https://www.youtube.com/watch?v=zLc8zeGeNaY",
-      "title": "How Netflix Evaluates AI When There's No Right Answer - Cameron Wolfe, Netflix",
-      "summary": "Cameron Wolfe, a staff research scientist at Netflix and author of the Deep (Learning) Focus newsletter, lays out a three-part framework for evaluating tasks with no single right answer, like creative writing. Human evaluation with calibrated guidelines is the North Star; LLM judges and rubrics, checked against human \"golden\" data, scale up offline evals; and A/B tests and production monitoring confirm results in the real world. Along the way he covers fighting noise with power analysis, error bars and resampling, and a Netflix project where an LLM judge's scores were causally linked to viewers abandoning shows.\n\nChapters:\n0:00 Intro\n0:50 Why evals are hard: noise\n2:43 The spectrum of verifiable tasks\n3:54 A three-part framework\n4:27 Human evaluation as the North Star\n5:19 Calibrating human reviewers\n6:05 How much data, and what kind\n8:10 Offline evals: LLM judges and rubrics\n9:47 Checking the judge against humans\n11:45 Fighting noise with statistics\n13:17 Production monitoring and A/B tests\n15:14 Keep improving the loop\n15:45 Recap\n\nCameron Wolfe\nhttps://www.netflix.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-05T20:00:25Z",
-      "fetched_at": "2026-11-05T23:38:52.308109Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -50891,27 +50787,6 @@
       "author": "",
       "published_at": "2026-11-10T00:00:00Z",
       "fetched_at": "2026-10-22T21:37:12.816957Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c49d8ab0ad662e7f",
-      "url": "https://x.com/trq212/status/2118421508322460116",
-      "title": "RT @SOTAwives: The third SOTA wife has entered the chat, and this one is fresh off his exit at Anthr...",
-      "summary": "RT @SOTAwives: The third SOTA wife has entered the chat, and this one is fresh off his exit at Anthropic.\n\nSarah (Head of DevX at Cerebras,\u2026",
-      "content": "RT @SOTAwives: The third SOTA wife has entered the chat, and this one is fresh off his exit at Anthropic.\n\nSarah (Head of DevX at Cerebras,\u2026",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-11-05T19:13:40Z",
-      "fetched_at": "2026-11-05T19:20:58.422559Z",
       "score": null,
       "score_reason": "",
       "tier": "",
