@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-12T11:58:54.677079+00:00",
+  "exported_at": "2026-11-12T13:59:01.962395+00:00",
   "period_hours": 168,
-  "total": 2367,
+  "total": 2365,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -46116,25 +46116,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "73905fab3838a76b",
-      "url": "https://www.youtube.com/watch?v=rXFV1ivDe6c",
-      "title": "Are Vector Databases Still Needed? RAG, AI Agents & Search",
-      "summary": "Learn more about Vector Databases here \u2192 https://ibm.biz/~aHY62ka9p\n\nDo AI applications still need vector databases? Martin Keen explores RAG, AI agents, embeddings, semantic search, and context windows to explain when vector databases matter and when simpler retrieval approaches work just as well. Learn how to choose the right retrieval architecture for your workload.\n\n00:00 - Are Vector Databases Still Needed in the Age of AI Agents?\n00:29 - What Vector Databases Actually Do: Embeddings & Semantic Search\n01:15 - The Retrieval Pyramid: Choosing the Right Search Strategy\n01:49 - 3 Reasons You Might Not Need a Vector Database\n02:01 - Agentic Search vs Vector Search: Can Keyword Search Win?\n03:08 - Do Long Context Windows Make Retrieval Obsolete?\n03:33 - The Hidden Costs of Embeddings and Vector Indexes\n05:27 - When Vector Search Outperforms Keyword Search\n07:22 - Vector Index vs Vector Database: What's the Difference?\n08:18 - How to Decide the Right Retrieval Approach for Your AI System\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~YCTMzkcZz\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#vectordatabases #retrievalaugmentedgeneration #aiagents #vectorsearch #ai \n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-11-05T12:00:09Z",
-      "fetched_at": "2026-11-05T18:01:25.405990Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "36f13157bf997ece",
       "url": "https://arxiv.org/abs/2611.07215",
       "title": "Fractional physics-informed neural networks to model social media virality",
@@ -50954,26 +50935,6 @@
       "author": "",
       "published_at": "2026-11-10T00:00:00Z",
       "fetched_at": "2026-10-22T21:37:12.816957Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "18398de25fff9764",
-      "url": "https://x.com/dani_avila7/status/2118324550215651688",
-      "title": "If you ever want to travel while working remotely\u2026 Chile has some of the fastest internet in the wor...",
-      "summary": "If you ever want to travel while working remotely\u2026 Chile has some of the fastest internet in the world \ud83d\udc4f\n\nEven the Metro has 5G now \ud83c\udde8\ud83c\uddf1",
-      "content": "If you ever want to travel while working remotely\u2026 Chile has some of the fastest internet in the world \ud83d\udc4f\n\nEven the Metro has 5G now \ud83c\udde8\ud83c\uddf1",
-      "source_name": "@dani_avila7",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "dani_avila7",
-      "published_at": "2026-11-05T12:48:23Z",
-      "fetched_at": "2026-11-05T13:15:00.132478Z",
       "score": null,
       "score_reason": "",
       "tier": "",
