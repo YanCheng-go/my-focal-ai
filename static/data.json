@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-12T09:51:45.513333+00:00",
+  "exported_at": "2026-11-12T11:58:54.677079+00:00",
   "period_hours": 168,
-  "total": 2369,
+  "total": 2367,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -46129,46 +46129,6 @@
       "author": "IBM Technology",
       "published_at": "2026-11-05T12:00:09Z",
       "fetched_at": "2026-11-05T18:01:25.405990Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "707c590cb96dffd0",
-      "url": "https://www.youtube.com/watch?v=O3g_m2i2IGU",
-      "title": "Every AI Business Ranked from Worst to Best",
-      "summary": "FREE First Client SOP: https://app.aiautomationsociety.ai/optin/first-client-SOP/?utm_source=youtube&amp;utm_medium=organic&amp;utm_content=ai-business-ranked-from-worst-to-best&amp;sl=yt_ai-business-ranked-from-worst-to-best\nHow I built an AI agency from 0 to over $1 million per year: https://www.skool.com/ai-automation-society-plus/about?el=ai-business-ranked-from-worst-to-best&amp;hcategory=youtube-videos&amp;utm_campaign=plus-group\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=ai-business-ranked-from-worst-to-best&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nWhich AI business should you actually start? There are more of them every day, so I ranked every AI business from worst to best, 13 in total, scoring each one on how technical you need to be, the market and long-term durability. \n\nI've run some of these myself and watched a lot of my community build the others. The one everyone hypes up came in last, and the one at the top isn't even technically a business.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTIMESTAMPS\n00:00 - Which one wins?\n01:00 - Most hyped, worst\n03:08 - Beginner first move\n04:45 - SEO for AI\n06:15 - Where I started\n08:21 - Stickiest offer\n09:55 - My main business\n10:50 - Selling judgment\n12:00 - $650K a year\n13:05 - Pick one",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-05T10:13:40Z",
-      "fetched_at": "2026-11-05T18:01:24.853776Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "059c1ae98e8a02e7",
-      "url": "https://www.youtube.com/watch?v=ra8X7_bnujw",
-      "title": "Why Waiting for the Next AI Model Can Pay Off - John Stecher, Blackstone & Scott Worland, Norm AI",
-      "summary": "Blackstone CTO John Stecher and Norm AI CTO Scott Worland discuss building technology that holds up as models keep improving. John explains why a solid data strategy and straight-through processing come before agents, how he weighs ROI against waiting for a better model, and why internal apps can now be thrown away and rebuilt. Scott describes how Norm's large hand-labeled eval set showed that much of its carefully built workflow code was in the way, why the team rebuilt its platform, and how it decides where to invest heavily versus lightly as the frontier moves.\n\nChapters:\n0:00 Intro\n1:05 Getting AI agents right\n1:32 Data strategy comes first\n2:21 Straight-through processing still matters\n3:46 Norm's early workflow approach\n5:05 When agents made the code obsolete\n6:42 Evals in financial services\n7:40 The bitter lesson\n8:54 ROI, and when to wait for the next model\n10:25 Getting to a proof of concept fast\n12:43 Updating on Claude Code\n14:49 The hard part: getting to production\n15:45 Parts that still need human review\n17:24 Rebuild instead of maintaining\n19:13 Closing thoughts\n\nJohn Stecher\nhttps://www.blackstone.com\n\nScott Worland\nhttps://www.norm.ai\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-05T10:00:37Z",
-      "fetched_at": "2026-11-05T18:01:25.356964Z",
       "score": null,
       "score_reason": "",
       "tier": "",
