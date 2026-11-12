@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-12T20:29:28.958649+00:00",
+  "exported_at": "2026-11-12T22:29:36.757669+00:00",
   "period_hours": 168,
-  "total": 2353,
+  "total": 2352,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39874,26 +39874,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a0aea71acabd74a0",
-      "url": "https://www.youtube.com/watch?v=YqJ4asgj1R8",
-      "title": "Stop Giving Your AI Agents API Keys - Kim Maida, Keycard & Mason Egger, Temporal",
-      "summary": "Kim Maida of Keycard and Mason Egger of Temporal show how to build AI agents that are both secure and reliable. Kim replaces shared API keys with OAuth token exchange, so every tool call gets a short-lived token scoped to that one call and tied to both the agent's identity and the user it's acting for, building it live on an expense-approval agent with a full audit trail of who filed and approved what. Mason then uses Temporal's durable execution to kill an agent mid-task and bring it back exactly where it left off, without re-running LLM calls or storing credentials in its history.\n\nChapters:\n0:00 Intro\n1:17 The problem with giving agents API keys\n1:59 Token exchange, explained\n3:10 Following a prompt through the agent loop\n5:41 A separate token for every tool call\n8:49 Workshop setup: an expense desk agent\n10:28 Before: everyone shares API keys\n12:51 Giving the agent its own identity\n21:47 Wiring token exchange into the code\n26:05 The agent acting as itself\n28:00 Reading the audit log\n31:22 Adding human users without impersonation\n34:01 Approval limits and who approved what\n38:09 Tracing the delegation chain\n41:26 Temporal: durable execution for agents\n46:01 Killing a worker mid-run, and recovering\n48:07 Why durability matters for agents\n49:28 Keeping secrets out of the event history\n\nKim Maida\nhttps://keycard.ai\n\nMason Egger\nhttps://temporal.io\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-05T21:00:16Z",
-      "fetched_at": "2026-11-05T23:38:52.308094Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d760265ec4a40dcc",
       "url": "https://www.aitmpl.com/mods/mod-git-sidebar#mods",
       "title": "#10 git-sidebar",
@@ -50813,27 +50793,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "fd134ae3b5751b07",
-      "url": "https://x.com/trq212/status/2118457224628728123",
-      "title": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and eve...",
-      "summary": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and everybody learns from each other, so every\u2026",
-      "content": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and everybody learns from each other, so every\u2026",
-      "source_name": "@trq212",
-      "source_type": "twitter",
-      "tags": [
-        "ai",
-        "engineering",
-        "claude code"
-      ],
-      "author": "trq212",
-      "published_at": "2026-11-05T21:35:36Z",
-      "fetched_at": "2026-11-05T22:52:21.235230Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "2f7804926ce9c305",
       "url": "https://x.com/steipete/status/2118492097917628704",
       "title": "Is my perception off or is Apple just lying here? Anytime I build for or use Safari, it\u2019s slower, ha...",
@@ -50928,6 +50887,27 @@
       "author": "dani_avila7",
       "published_at": "2026-11-06T04:25:23Z",
       "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "fd134ae3b5751b07",
+      "url": "https://x.com/trq212/status/2118457224628728123",
+      "title": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and eve...",
+      "summary": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and everybody learns from each other, so every\u2026",
+      "content": "RT @mooncat_is: @rayansadri This is generally why SF tech is so far ahead: people move a lot and everybody learns from each other, so every\u2026",
+      "source_name": "@trq212",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "trq212",
+      "published_at": "2026-11-05T21:35:36Z",
+      "fetched_at": "2026-11-05T22:52:21.235230Z",
       "score": null,
       "score_reason": "",
       "tier": "",
