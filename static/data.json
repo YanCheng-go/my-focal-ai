@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-12T00:45:13.337019+00:00",
+  "exported_at": "2026-11-12T00:53:01.398996+00:00",
   "period_hours": 168,
-  "total": 2825,
+  "total": 2829,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -39628,27 +39628,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2d1d326185a62641",
-      "url": "https://openai.com/ads/customers/flipsnack",
-      "title": "Flipsnack grows product signups with conversion optimization",
-      "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-05T00:45:15Z",
-      "fetched_at": "2026-11-06T06:48:38.996851Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "04b48de5b9adf193",
       "url": "https://arxiv.org/abs/2611.09493",
       "title": "FusionCLIP: Multimodal Contrastive Pretraining for Fusion Plasma Diagnostics",
@@ -61022,6 +61001,107 @@
       "author": "dani_avila7",
       "published_at": "2026-11-06T04:25:23Z",
       "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "95832b0beb74944f",
+      "url": "https://x.com/steipete/status/2118139643069972841",
+      "title": "RT @pigeon__s: Reinventing Sora from first principles",
+      "summary": "RT @pigeon__s: Reinventing Sora from first principles",
+      "content": "RT @pigeon__s: Reinventing Sora from first principles",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-05T00:33:38Z",
+      "fetched_at": "2026-11-05T08:06:56.016271Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "13bec20afd6fb098",
+      "url": "https://x.com/dani_avila7/status/2118138561308270942",
+      "title": "\ud83d\udc40",
+      "summary": "\ud83d\udc40",
+      "content": "\ud83d\udc40",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-05T00:29:20Z",
+      "fetched_at": "2026-11-05T08:06:48.365401Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "ed7991bec9d51e06",
+      "url": "https://x.com/steipete/status/2118138104108442090",
+      "title": "RT @ajambrosino: we're giving you some RAM back. local threads could grow memory usage as they becam...",
+      "summary": "RT @ajambrosino: we're giving you some RAM back. local threads could grow memory usage as they became long, even without starting other pro\u2026",
+      "content": "RT @ajambrosino: we're giving you some RAM back. local threads could grow memory usage as they became long, even without starting other pro\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-05T00:27:31Z",
+      "fetched_at": "2026-11-05T08:06:56.016361Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "c548766eb1be8e9b",
+      "url": "https://x.com/steipete/status/2118137721554420101",
+      "title": "RT @giffmana: \"China is just copying our stuff they can't innovate\" is exactly the mentality that go...",
+      "summary": "RT @giffmana: \"China is just copying our stuff they can't innovate\" is exactly the mentality that got the German automotive industry into t\u2026",
+      "content": "RT @giffmana: \"China is just copying our stuff they can't innovate\" is exactly the mentality that got the German automotive industry into t\u2026",
+      "source_name": "@steipete",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "openclaw"
+      ],
+      "author": "steipete",
+      "published_at": "2026-11-05T00:26:00Z",
+      "fetched_at": "2026-11-05T08:06:56.016402Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
+      "id": "7c5d1e11a4c248c5",
+      "url": "https://x.com/bcherny/status/2118130958679605322",
+      "title": "RT @ClaudeDevs: Background subagents in Claude Code now use less of your usage limit.\n\nA running sub...",
+      "summary": "RT @ClaudeDevs: Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30\u2026",
+      "content": "RT @ClaudeDevs: Background subagents in Claude Code now use less of your usage limit.\n\nA running subagent updates its status line every 30\u2026",
+      "source_name": "@bcherny",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering",
+        "claude code"
+      ],
+      "author": "bcherny",
+      "published_at": "2026-11-04T23:59:08Z",
+      "fetched_at": "2026-11-05T08:06:46.253128Z",
       "score": null,
       "score_reason": "",
       "tier": "",
