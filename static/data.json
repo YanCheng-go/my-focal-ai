@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-13T09:32:53.955506+00:00",
+  "exported_at": "2026-11-13T11:26:25.449012+00:00",
   "period_hours": 168,
-  "total": 2343,
+  "total": 2342,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -46506,26 +46506,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-11-06T14:01:00Z",
       "fetched_at": "2026-11-06T15:55:54.515141Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ff02ba8fd4b65102",
-      "url": "https://www.youtube.com/watch?v=EtZwTYahfek",
-      "title": "7 Things Your AI Coworker Needs - Philipp Schmid, Google DeepMind",
-      "summary": "Philipp Schmid of Google DeepMind shows how to build an autonomous AI coworker for finance with Gemini and the Gemini API's Managed Agents. He breaks a coworker down into seven needs (a brain, a computer, playbooks, tools, credentials, house rules and a schedule) and builds each one: skills and files in the agent's own sandbox, built-in tools and MCP servers, credentials swapped in by a network proxy so a prompt injection can't steal them, hooks for approvals, and cron triggers. He finishes with a live demo of an agent that audits a portfolio and updates a Google Sheet on a schedule.\n\nChapters:\n0:00 Intro\n0:57 What every coworker needs\n1:54 What's new in Gemini 4\n4:29 Managed Agents: Gemini with its own computer\n5:31 Building Bug, our AI coworker\n6:30 Skills, playbooks and files\n8:47 Tools and MCP servers\n9:57 Credentials an agent can't leak\n12:55 Hooks for house rules\n13:36 Schedules and triggers\n14:27 Demo: an automated portfolio audit\n16:38 Recap\n\nPhilipp Schmid\nhttps://deepmind.google\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-06T10:00:00Z",
-      "fetched_at": "2026-11-06T15:55:55.104595Z",
       "score": null,
       "score_reason": "",
       "tier": "",
