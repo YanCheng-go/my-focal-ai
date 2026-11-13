@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-11-13T01:05:19.067546+00:00",
+  "exported_at": "2026-11-13T02:27:39.986953+00:00",
   "period_hours": 168,
   "total": 2350,
   "all_tags": [
@@ -35543,26 +35543,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "cce103e007668f79",
-      "url": "https://www.youtube.com/shorts/EN9IcNncjxE",
-      "title": "What's the dumbest thing you've asked AI?",
-      "summary": "What's the dumbest thing you've asked AI? I asked people at Oracle AI World.",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-06T02:01:05Z",
-      "fetched_at": "2026-11-06T15:55:54.515160Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "1781d28c12338cb7",
       "url": "https://arxiv.org/abs/2611.08977",
       "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model",
@@ -50839,6 +50819,26 @@
       "is_duplicate_of": null
     },
     {
+      "id": "a219a6a2646e99b3",
+      "url": "https://x.com/dani_avila7/status/2118560352770117659",
+      "title": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting t...",
+      "summary": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting thoughts on AI progress\n\nA few things stood out to me:\n\n- AI is already helping Anthropic develop better models, but they can\u2019t measure exactly how much it\u2019s accelerating their https://t.co/W8zYEiCbDz",
+      "content": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting thoughts on AI progress\n\nA few things stood out to me:\n\n- AI is already helping Anthropic develop better models, but they can\u2019t measure exactly how much it\u2019s accelerating their https://t.co/W8zYEiCbDz",
+      "source_name": "@dani_avila7",
+      "source_type": "twitter",
+      "tags": [
+        "ai",
+        "engineering"
+      ],
+      "author": "dani_avila7",
+      "published_at": "2026-11-06T04:25:23Z",
+      "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "score": null,
+      "score_reason": "",
+      "tier": "",
+      "is_duplicate_of": null
+    },
+    {
       "id": "7a257abe9950638d",
       "url": "https://x.com/steipete/status/2118516543806210347",
       "title": "RT @dwarkesh_sp: I spent 20,000 dollars in API credits having different AI models play each other at...",
@@ -50859,20 +50859,20 @@
       "is_duplicate_of": null
     },
     {
-      "id": "a219a6a2646e99b3",
-      "url": "https://x.com/dani_avila7/status/2118560352770117659",
-      "title": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting t...",
-      "summary": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting thoughts on AI progress\n\nA few things stood out to me:\n\n- AI is already helping Anthropic develop better models, but they can\u2019t measure exactly how much it\u2019s accelerating their https://t.co/W8zYEiCbDz",
-      "content": "I didn\u2019t know Sam, one of Anthropic\u2019s co-founders, until today.\n\nHe shared some really interesting thoughts on AI progress\n\nA few things stood out to me:\n\n- AI is already helping Anthropic develop better models, but they can\u2019t measure exactly how much it\u2019s accelerating their https://t.co/W8zYEiCbDz",
-      "source_name": "@dani_avila7",
+      "id": "6e687da4af4e2168",
+      "url": "https://x.com/steipete/status/2118506989215269334",
+      "title": "RT @Alex_Danco: Avoid Suggestion Mode at all costs https://t.co/GVymQHDhWn",
+      "summary": "RT @Alex_Danco: Avoid Suggestion Mode at all costs https://t.co/GVymQHDhWn",
+      "content": "RT @Alex_Danco: Avoid Suggestion Mode at all costs https://t.co/GVymQHDhWn",
+      "source_name": "@steipete",
       "source_type": "twitter",
       "tags": [
         "ai",
-        "engineering"
+        "openclaw"
       ],
-      "author": "dani_avila7",
-      "published_at": "2026-11-06T04:25:23Z",
-      "fetched_at": "2026-11-06T06:41:52.824063Z",
+      "author": "steipete",
+      "published_at": "2026-11-06T00:53:20Z",
+      "fetched_at": "2026-11-06T04:08:59.209051Z",
       "score": null,
       "score_reason": "",
       "tier": "",
