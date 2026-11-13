@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-13T11:26:25.449012+00:00",
+  "exported_at": "2026-11-13T15:29:49.245120+00:00",
   "period_hours": 168,
-  "total": 2342,
+  "total": 2339,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40138,27 +40138,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5a90caffb2c87d2e",
-      "url": "https://huggingface.co/blog/allenai/toyblocks",
-      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-11-06T14:00:48Z",
-      "fetched_at": "2026-11-06T15:56:01.407502Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bbcaf4ba1635df9d",
       "url": "https://www.youtube.com/watch?v=maitMe9HCvw",
       "title": "How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere",
@@ -40354,26 +40333,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-06T15:43:54Z",
       "fetched_at": "2026-11-06T21:29:58.342368Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "373b99a7f84056ba",
-      "url": "https://www.youtube.com/watch?v=y9Sg--RDtks",
-      "title": "When We Can Do Anything, Do We Still Know What We Want? \u2014 Ryo Lu, ex-Cursor | AI Engineer Shanghai",
-      "summary": "Ask an AI to build a journal and it might give you mood scores, streaks, daily reminders, and weekly reports. Which would you keep? Ryo Lu, a former founding designer at Cursor, uses a working journal demo to show how design decisions slip into an AI-generated answer and how a good tool lets you change them.\n\nRecorded at AI Engineer Shanghai on November 5, 2026. Choose Settings \u2192 Audio track to hear the original Mandarin or the AI-generated English dub, produced with Ryo\u2019s permission. The slides and captions appear in Chinese on the left and English on the right.\n\n\u70b9\u51fb\u64ad\u653e\u5668\u7684\u201c\u8bbe\u7f6e\u201d\u2192\u201c\u97f3\u8f68\u201d\uff0c\u53ef\u5207\u6362\u4e2d\u6587\u539f\u58f0\u548c\u82f1\u6587\u914d\u97f3\u3002\u753b\u9762\u5de6\u4fa7\u4e3a\u4e2d\u6587\uff0c\u53f3\u4fa7\u4e3a\u82f1\u6587\u3002\n\n00:00 Introducing Ryo Lu\n00:38 Stronger tools, greater unease\n03:04 Before making things became a way to prove ourselves\n05:47 The journal AI built for me\n07:32 Which feature would you remove?\n09:13 A service counter or a workbench?\n12:29 Three principles for designing tools\n13:07 When to put the tool down\n16:20 What a jazz ensemble teaches us about collaboration\n19:45 Finding out what you want by making things\n21:35 An exercise for the next AI-generated answer\n\nRyo\u2019s post: https://x.com/ryolu_/status/2118207967728451760\nConference program: https://ai.engineer/shanghai/2026/program",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-06T14:44:57Z",
-      "fetched_at": "2026-11-06T15:55:55.104580Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -46486,26 +46445,6 @@
       "author": "Yifan Lin, Kaixu Yang, Di Mo",
       "published_at": "2026-11-09T05:00:00Z",
       "fetched_at": "2026-11-09T09:49:18.470462Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bc70bcdad7c7b754",
-      "url": "https://www.youtube.com/shorts/16lpGeMZlzY",
-      "title": "Do people say please to AI?",
-      "summary": "I asked people at Oracle AI World if they say please to AI. Do you?",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-06T14:01:00Z",
-      "fetched_at": "2026-11-06T15:55:54.515141Z",
       "score": null,
       "score_reason": "",
       "tier": "",
