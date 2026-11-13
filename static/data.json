@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-13T17:45:45.479193+00:00",
+  "exported_at": "2026-11-13T21:51:36.059341+00:00",
   "period_hours": 168,
-  "total": 2357,
+  "total": 2354,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40558,28 +40558,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "e20e4a2681dc2afc",
-      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
-      "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/green-cube.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"green-cube\" width=\"600\" />During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/green-cube.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"green-cube\" width=\"600\" />During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"338\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/green-cube.webp\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"green-cube\" width=\"600\" /><p>During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For training efficiency, it is common to run inference and training in parallel on separate GPU resources in a disaggregated setup. Although the policy model is updated only on the training GPUs, the system must periodically refresh the weights on the\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Tanya Lenz",
-      "published_at": "2026-11-06T18:03:26Z",
-      "fetched_at": "2026-11-06T21:30:03.925566Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "bbcaf4ba1635df9d",
       "url": "https://www.youtube.com/watch?v=maitMe9HCvw",
       "title": "How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere",
@@ -40674,46 +40652,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-06T22:00:01Z",
       "fetched_at": "2026-11-07T08:48:31.290963Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c91f2bae3b222b07",
-      "url": "https://www.youtube.com/watch?v=ys6YQ2yfBpM",
-      "title": "Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic",
-      "summary": "Lance Martin of Anthropic shares simple fixes that get more out of frontier models, often improving quality and cutting cost at the same time. He covers auditing prompts for outdated habits like \"think step by step\" and contradictory rules, using the prompt cache properly (cutting costs up to 72% on internal benchmarks), designing evals Claude can actually climb, and hill climbing without overfitting, including a run that cut cost 90% while improving performance by switching to a stronger model at lower effort. He closes with how Claude Managed Agents keeps days-long agents reliable and secure, then takes questions on eval design, grading open-ended tasks and more.\n\nChapters:\n0:00 Intro\n0:27 You're probably not on the frontier\n1:32 Audit your prompts\n3:49 What a prompt audit saves\n5:30 Use the prompt cache\n7:43 Cutting costs up to 72%\n8:45 Designing an eval Claude can climb\n11:47 Hill climbing without overfitting\n14:57 Example: improving a skill from 66%\n16:30 Hill climbing for cost: a 90% cut\n18:53 Harnesses for days-long agents\n20:21 Managed agents: separating brain from hands\n23:04 Recap\n24:25 Q&amp;A: How automatable is eval design?\n30:04 Q&amp;A: Grading open-ended tasks\n39:24 Q&amp;A: Why stronger models at low effort cost less\n55:41 Q&amp;A: Hill climbing very long tasks\n\nLance Martin\nhttps://www.anthropic.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-06T21:00:18Z",
-      "fetched_at": "2026-11-06T21:29:58.342343Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "8cd58ac8fee744bc",
-      "url": "https://www.youtube.com/watch?v=oWqsBuhRRZ4",
-      "title": "How We Mapped a 35-Million-Line Mainframe in 4 Days - Stephen Chin, Neo4j & Neeraj Deshmukh, Blitzy",
-      "summary": "Stephen Chin of Neo4j and Neeraj Deshmukh of Blitzy show why AI struggles to modernize the decades-old systems underneath banks and insurers, and how a knowledge graph fixes it. Using a COBOL interest calculation as the running example, they explain that AI can convert a formula but misses the batch jobs, data layouts and other places the logic is used, and that bigger context windows don't solve it. They walk through Blitzy's approach of mapping the whole codebase as a graph, giving thousands of agents the right slice of context, testing at every step, and proving the new code matches the old down to the cent, with results from a tier-one bank, a 35-million-line mainframe and a Fortune 100 insurer.\n\nChapters:\n0:00 Intro\n0:14 The old systems under modern finance\n1:58 Example: computing interest on a mainframe\n3:06 Why AI misses the rest of the system\n4:02 Why bigger context windows don't fix it\n6:03 Turning code into a graph\n7:08 Giving every agent the right context\n7:53 Blitzy's process, with a human in the lead\n9:32 Thousands of agents and constant testing\n11:35 Proving the new code matches the old\n13:28 The one-cent rounding bug\n14:27 Results from banks and insurers\n16:37 Beyond modernization\n18:47 Resources\n\nStephen Chin\nhttps://neo4j.com\n\nNeeraj Deshmukh\nhttps://blitzy.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-06T20:00:10Z",
-      "fetched_at": "2026-11-06T21:29:58.342358Z",
       "score": null,
       "score_reason": "",
       "tier": "",
