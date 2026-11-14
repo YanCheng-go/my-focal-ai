@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-14T06:25:19.914616+00:00",
+  "exported_at": "2026-11-14T13:33:00.779464+00:00",
   "period_hours": 168,
-  "total": 2359,
+  "total": 2356,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40725,66 +40725,6 @@
       "author": "Junning Zhu",
       "published_at": "2026-11-10T05:00:00Z",
       "fetched_at": "2026-11-10T12:40:23.309446Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "bbcaf4ba1635df9d",
-      "url": "https://www.youtube.com/watch?v=maitMe9HCvw",
-      "title": "How to Get Frontier Coding Results at 70% Lower Cost - Nouha Dziri, Cohere",
-      "summary": "Nouha Dziri, a senior research scientist at Cohere, shares research on teams of coding agents, where a lead splits up the work and workers explore, build and check in parallel. Teams can beat a single agent on long software tasks but cost several times more, so across hundreds of experiments on ProgramBench and Commit0 she maps where extra workers actually pay off: delegate the stage where the task is stuck, use a lead that waits for its workers instead of running ahead, and pair a strong lead with cheaper planning workers to get close to an all-frontier team at about 70% lower cost. She also looks at how agents message each other and what larger agent teams will need.\n\nNouha Dziri\nhttps://x.com/nouhadziri\nhttps://cohere.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-07T08:00:33Z",
-      "fetched_at": "2026-11-07T08:48:31.290932Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "216deb7377fada5b",
-      "url": "https://www.youtube.com/watch?v=RdQCY_-SXbA",
-      "title": "AI Can't Make Up a Number It Can't Look Up - Vinoo Ganesh, Kepler",
-      "summary": "Vinoo Ganesh, CEO and co-founder of Kepler and former head of business engineering at Citadel, explains why Wall Street still doesn't trust AI and how to build systems it can. He breaks wrong numbers into three causes (the wrong document, the wrong number from the right document, and models doing math) and shows Kepler's approach: code extracts every fact ahead of time and gives it an ID, the model plans and points to those IDs instead of writing numbers itself, and anything it can't resolve gets corrected or refused. He also covers wide-then-narrow search, scoping document access so firms never see each other's data, and the questions to ask any AI vendor about verification.\n\nChapters:\n0:00 Intro\n1:38 Why Wall Street still doesn't trust AI\n2:16 Hallucination vs alpha\n3:14 Trust means someone to blame\n4:17 Where wrong numbers come from\n5:50 How Kepler is built differently\n7:34 Pairing smart people with deterministic tools\n9:07 Lookups can't get it wrong\n9:26 Searching wide, then narrowing\n10:46 Security for document search\n12:25 How verification works\n14:00 Verified, corrected or refused\n15:40 Results from production\n16:31 Questions to ask any AI vendor\n17:29 We're out of the search phase\n\nVinoo Ganesh\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-07T08:00:25Z",
-      "fetched_at": "2026-11-07T08:48:31.290950Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e45adc6ea52dc856",
-      "url": "https://www.youtube.com/watch?v=kIlVNGZZr8o",
-      "title": "How Agents Cut Hour-Long Data Checks to 5 Minutes - Amol Kapoor & Clifford Ressel, Nori Agentic",
-      "summary": "Amol Kapoor and Clifford Ressel of Nori Agentic show how cloud agents can keep an asset manager's security master database clean, especially as more money moves into private assets whose details live in PDFs, emails and call notes. Cliff explains what a security master is and why private assets break the usual identifiers, then Amol walks through work with a Fortune 200 asset manager, where every changed cell used to take an hour of manual checking. Now an agent investigates each change, cites its sources, recommends keeping or discarding it and pings the owner in Slack, cutting the human part to about five minutes. They close with lessons on adoption, keeping humans in the loop and handling back-office busywork.\n\nChapters:\n0:00 Intro\n0:21 Finance has gotten weird\n2:42 Private assets are hard to manage\n3:24 Who we are\n4:19 What a security master is\n7:03 Example: mapping Google's shares\n8:18 Where private assets break the model\n10:50 Case study: a Fortune 200 asset manager\n12:34 Cloud agents, explained\n13:10 How the agent checks each change\n14:37 Giving agents expertise in plain English\n15:35 Agents that come to you\n17:19 Three lessons from building AI for finance\n\nAmol Kapoor\nClifford Ressel\nhttps://noriagentic.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-07T07:00:18Z",
-      "fetched_at": "2026-11-07T08:48:31.290957Z",
       "score": null,
       "score_reason": "",
       "tier": "",
