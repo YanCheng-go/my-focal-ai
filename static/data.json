@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-13T23:35:27.733877+00:00",
+  "exported_at": "2026-11-14T01:53:04.904012+00:00",
   "period_hours": 168,
-  "total": 2359,
+  "total": 2358,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -51233,27 +51233,6 @@
       "published_at": "2026-11-09T05:00:00Z",
       "fetched_at": "2026-11-09T09:49:18.275216Z",
       "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d760265ec4a40dcc",
-      "url": "https://www.aitmpl.com/mods/mod-git-sidebar#mods",
-      "title": "#10 git-sidebar",
-      "summary": "Category: ui | Week: 17 | Month: 73 | Total: 75",
-      "content": "",
-      "source_name": "AI Templates Trending (mods)",
-      "source_type": "aitmpl_mods",
-      "tags": [
-        "claude-code",
-        "trending",
-        "tools"
-      ],
-      "author": "",
-      "published_at": "2026-11-07T00:00:00Z",
-      "fetched_at": "2026-11-07T01:56:41.675916Z",
-      "score": 0.1,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
