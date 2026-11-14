@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-14T15:06:15.817458+00:00",
+  "exported_at": "2026-11-14T20:19:23.332267+00:00",
   "period_hours": 168,
-  "total": 2359,
+  "total": 2355,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -40201,86 +40201,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-08T07:00:36Z",
       "fetched_at": "2026-11-08T09:00:13.036075Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "58bda6351b00f926",
-      "url": "https://www.youtube.com/watch?v=_0SQh8a1Osk",
-      "title": "Don't Vibe Code Your Agent Infrastructure - Akshat Bubna, Modal",
-      "summary": "Akshat Bubna, CTO of Modal, explains what AI agents actually need from the infrastructure underneath them, starting with a spreadsheet where every cell is backed by its own agent. He walks through the building blocks: a workspace for each agent, state that persists for days without paying for idle compute, resources that stretch and shrink as the agent works, GPUs on demand, shared file systems for agents that collaborate, network controls that keep credentials and data from leaking, and observability agents can read themselves. He makes the case against vibe coding your own sandbox platform, shares what scale looks like today, and describes where agent infrastructure is heading.\n\nChapters:\n0:00 Intro\n0:24 Every spreadsheet cell backed by an agent\n1:33 What that architecture needs\n3:15 What is Modal?\n4:03 Agents need a workspace\n5:03 Workspaces that persist\n6:21 Agents need elastic resources\n7:41 Agents need GPUs\n9:02 Agents collaborating through shared files\n9:57 Keeping agents from leaking data\n11:20 Observability for agents\n12:12 Why not to vibe code a sandbox platform\n13:31 What scale looks like\n14:54 Separating the brain from the hands\n15:37 From pets to cattle to microbes\n\nAkshat Bubna\nhttps://modal.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-07T20:00:13Z",
-      "fetched_at": "2026-11-07T21:52:00.898368Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "2ef31d583da21c35",
-      "url": "https://www.youtube.com/watch?v=ZJjRgvjhq3M",
-      "title": "Build Your Own Finance Agent Inside ChatGPT - Stefano Fabbri & Oliver Steffmann, OpenAI",
-      "summary": "Stefano Fabbri and Oliver Steffmann of OpenAI's applied AI team run a hands-on workshop on building financial workflows with ChatGPT Work and Codex. They show ChatGPT for financial services, with built-in market data, filings and earnings transcripts from partners like LSEG, PitchBook and Daloopa, plus finance plugins that bundle skills and MCP connections as a starting point. Using a wealth advisor's workflow as the example, from spotting a portfolio change to preparing the client deck, they then use Codex to build custom skills, plugins that connect internal data, and plugin extensions that customize the interface, and answer questions on skills, deployment and sandboxing.\n\nChapters:\n0:00 Intro\n0:47 What the workshop covers\n4:57 ChatGPT, ChatGPT Work and Codex\n5:40 ChatGPT for financial services\n7:51 Built-in financial data\n10:06 Finance plugins: skills plus MCPs\n14:25 Use case: a wealth advisor's workflow\n17:02 Extending it with Codex\n19:02 Skills, plugins and plugin extensions\n26:02 Plugin extensions explained\n36:43 Building a plugin on your own data\n39:31 Why the right skills matter\n48:20 Architecture: surfaces, plugins and MCPs\n57:40 Bringing workflows into one place\n1:08:09 When to stick with skills\n1:11:24 Building and deploying with Codex\n1:22:02 Q&amp;A: the Codex app vs the CLI\n1:28:57 Q&amp;A: sandboxing in Codex\n\nStefano Fabbri\nOliver Steffmann\nhttps://openai.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-07T19:00:33Z",
-      "fetched_at": "2026-11-07T21:52:00.898388Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "1dc70b42bcfce21e",
-      "url": "https://www.youtube.com/watch?v=gdzsJZJ6DDs",
-      "title": "Your Financial Agent Needs to Show Its Work - Anirudh Veeraragavan, Fieldguide",
-      "summary": "Anirudh Veeraragavan, lead security engineer at Fieldguide, argues that in finance an agent getting the right answer isn't enough; you have to be able to show how it got there. Building an agent for a bank reconciliation audit, he walks through four controls that make its decisions defensible: authorization that stops an agent from overwriting work a human already reviewed, execution records that let you replay and compare individual steps, citations tied to an exact document version, and auditing your eval data so a 97% score doesn't hide real failures. He also covers when the agent should stop and hand the decision to a person, and how the same pattern applies to credit and anti-money-laundering.\n\nChapters:\n0:00 Intro\n0:40 Building a financial audit agent\n1:56 When someone asks why\n2:18 Why it matters: the Peregrine fraud\n3:05 Can an auditor follow the agent?\n4:00 Example: a bank reconciliation\n4:27 Control 1: Authorization\n5:37 Control 2: Execution control\n7:33 Control 3: Evidence provenance\n8:44 Control 4: Evaluation integrity\n10:09 When the agent should stop and ask\n11:23 You need all four\n12:16 Beyond audit: credit and AML\n\nAnirudh Veeraragavan\nhttps://www.fieldguide.io\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-07T18:00:02Z",
-      "fetched_at": "2026-11-07T21:52:00.898398Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6ee64734a3473489",
-      "url": "https://www.youtube.com/shorts/BBdkmPFYnC0",
-      "title": "\u201cPrototyping is a whole different game now\u201d",
-      "summary": "with Maggie Appleton, Design Engineer at GitHub Next\n\nSee the full episode on The Pragmatic Engineer Podcast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-11-07T16:00:09Z",
-      "fetched_at": "2026-11-07T16:27:18.759759Z",
       "score": null,
       "score_reason": "",
       "tier": "",
