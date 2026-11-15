@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-15T19:27:04.142423+00:00",
+  "exported_at": "2026-11-15T21:27:30.131680+00:00",
   "period_hours": 168,
-  "total": 2354,
+  "total": 2353,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29242,26 +29242,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-09T03:30:09Z",
       "fetched_at": "2026-11-09T09:49:17.594587Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0a495ebd8d46b5dc",
-      "url": "https://www.youtube.com/watch?v=21tuT-e4NVo",
-      "title": "What the Top Companies Do Differently With AI Coding - Martin Harrysson & Prakhar Dixit, McKinsey",
-      "summary": "Martin Harrysson and Prakhar Dixit of McKinsey, with their colleague Shilpa, share what they're seeing across large companies using AI agents in software development. Most still report modest gains, but roughly the top 20 to 25% are now seeing 2x end-to-end improvements. They walk through what those companies do differently: shorter agent-driven cycles instead of two-week sprints, smaller pods with merged roles, curated skills and shared context, and change management that goes beyond pilots. They also cover why quality can drop as code generation speeds up, how the bottleneck moves to requirements and release, and why measuring impact is still the hardest part.\n\nChapters:\n0:00 Intro\n1:23 Coming out of the trough of disillusionment\n3:32 Four patterns that work\n5:10 Operating model: shorter cycles\n7:15 Talent: smaller pods, merged roles\n8:13 Tech: context and trust\n9:24 Change management at scale\n10:24 Curating skills\n11:35 Faster code, lower quality\n14:07 The bottleneck moves to requirements and release\n16:07 Measuring impact\n19:02 Wrap-up\n\nMartin Harrysson\nPrakhar Dixit\nhttps://www.mckinsey.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-08T20:00:21Z",
-      "fetched_at": "2026-11-08T22:06:53.050082Z",
       "score": null,
       "score_reason": "",
       "tier": "",
