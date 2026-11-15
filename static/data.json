@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-15T01:56:48.890277+00:00",
+  "exported_at": "2026-11-15T08:23:54.582752+00:00",
   "period_hours": 168,
-  "total": 2359,
+  "total": 2356,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29517,46 +29517,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "5d5d58fd6f7f0c97",
-      "url": "https://www.youtube.com/watch?v=EaOit1mmR9g",
-      "title": "How Financial Planners With Zero Coding Experience Built Their Own Agents - Matt Ragone, Range",
-      "summary": "Matt Ragone is a financial planner at Range, an all-in-one wealth management firm, not an engineer. He leads AI adoption for its planning team and shares the step-by-step method non-technical planners used to build their own agents and skills. With standardized processes and client data already in one place, the team could have an agent draft cash flow analyses, insurance reviews and tax reviews while planners are on calls with other clients, with a certified financial planner reviewing everything before it goes out. He walks through the five steps: pick a workflow you repeat, teach it real cases, package it as a skill, test it on edge cases, and ship it with an owner and a reviewer.\n\nChapters:\n0:00 Intro\n0:42 A financial planner, not an engineer\n2:28 Using AI as a chatbot\n3:03 The bottleneck was typing speed\n3:37 What changed with agents\n4:21 What it took beyond a good prompt\n6:27 Five steps to build a skill\n6:58 Step 1: Pick a workflow you repeat\n7:47 Step 2: Show it real cases\n9:11 Step 3: Package it as a skill\n10:50 Step 4: Test it on real cases\n11:52 Step 5: Ship it with an owner and a reviewer\n12:27 Where Range is now\n13:29 Let the experts build the skills\n14:28 The bottleneck has moved\n\nMatt Ragone\nhttps://www.range.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-08T08:00:14Z",
-      "fetched_at": "2026-11-08T09:00:13.036049Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b2a85c4bd2ad1cf7",
-      "url": "https://www.youtube.com/watch?v=BT1Mo-fD-g0",
-      "title": "Your Coding Agent Can't Undo Its Own Mistakes - Tanmay Sah & Dolly Sah",
-      "summary": "Tanmay Sah and Dolly Sah look at a capability today's coding agents are missing: undoing what they've done. Drawing on their research projects UndoBench and EvoUndo, they show that an agent that completes a task can't necessarily put things back when something breaks, because Git doesn't cover external API calls, runtime config or notifications, and retrying doesn't reverse side effects. In EvoUndo, 197 of 478 changes that made an agent more capable (about 42%) also broke its ability to recover. They lay out an approach that captures the original state, picks the right response (retry, restore, compensate or escalate) and independently verifies the result.\n\nTanmay Sah\nhttps://x.com/TanmayGradient\n\nDolly Sah\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-08T08:00:03Z",
-      "fetched_at": "2026-11-08T09:00:13.036067Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "d7c73c4b9a79782f",
       "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
       "title": "Korea\u2019s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
@@ -40263,26 +40223,6 @@
       "author": "Jiaxuan Guo, Xingyu Ren, Jingxin Yang, Youran Sun, Haizhao Yang",
       "published_at": "2026-11-10T05:00:00Z",
       "fetched_at": "2026-11-10T12:40:23.309763Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fdf52b910b10c37d",
-      "url": "https://www.youtube.com/watch?v=jDwc0aXTAFg",
-      "title": "Your Company Has No Model of Itself. Agents Can Build One - Joao Wenzel, Citadel Securities",
-      "summary": "Every company has someone who knows everything: the reorgs, the politics, which projects are really on track. Joao Wenzel of Citadel Securities explains how his team approximates that person with an agentic system that builds an institutional memory from decks, Slack, meeting notes, code changes and agent traces. Borrowing the idea of a state estimator from robotics, the system updates its beliefs as evidence arrives, lets facts age, grades its own predictions against what actually happened, and takes corrections from people. He shows why simple retrieval isn't enough, how agents catch \"watermelon projects\" that are green on the outside and red on the inside, and how back-testing showed that projects the agent flagged were twice as likely to slip.\n\nChapters:\n0:00 Intro\n0:22 The person who knows everything\n1:16 Can agents help with strategy?\n1:51 An institutional memory layer\n2:18 Top-down and bottom-up evidence\n3:05 Borrowing the state estimator from robotics\n4:06 Getting data out of a status deck\n6:11 The loop: update, age, observe, grade, correct\n6:57 Why retrieval isn't enough\n7:21 Update: building a record over time\n9:12 Age: every fact has a half-life\n10:12 Observe: specialist agents beat one big pass\n11:12 Grade: back-testing what slips next\n12:12 Correct: asking people the right questions\n13:17 Bottom-up signals: Slack, PRs and agent traces\n15:45 How Citadel Securities uses it\n16:38 Open problems\n17:24 Takeaways\n\nJoao Wenzel\nhttps://www.citadelsecurities.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-08T07:00:36Z",
-      "fetched_at": "2026-11-08T09:00:13.036075Z",
       "score": null,
       "score_reason": "",
       "tier": "",
