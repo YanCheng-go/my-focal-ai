@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-15T17:12:39.699293+00:00",
+  "exported_at": "2026-11-15T19:27:04.142423+00:00",
   "period_hours": 168,
-  "total": 2357,
+  "total": 2354,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29262,66 +29262,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-08T20:00:21Z",
       "fetched_at": "2026-11-08T22:06:53.050082Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "af1f63215f813187",
-      "url": "https://www.youtube.com/shorts/7YvX1_xKUyE",
-      "title": "One million AI Engineers!  #aiengineer",
-      "summary": "",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-08T19:12:03Z",
-      "fetched_at": "2026-11-08T22:06:53.050098Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "13a23e6458ce498e",
-      "url": "https://www.youtube.com/watch?v=WJTQBENv0KI",
-      "title": "How Ramp Tests Its AI Bookkeeping Agent Before Customers Do - Ryan Stevens, Ramp",
-      "summary": "Ryan Stevens leads applied science at Ramp and explains how the team built end-to-end evals for Stack, its AI agent for bookkeepers. He starts by breaking an accountant's job into tasks like reconciliation and variance analysis, then builds synthetic businesses with full books so agents can be back-tested on the same data again and again. He covers accuracy versus pass@k, why the latest models still fail mostly on reasoning, and the experiments that didn't work, including auto-tuning prompts. Then he shows the ones that did: removing unneeded skills, testing memories across two time periods, and scheduled regression runs that report problems in Slack.\n\nChapters:\n0:00 Intro\n0:47 What's your agent's goal?\n1:16 Breaking down a bookkeeper's job\n2:43 Building a benchmark\n3:20 Before and after you have users\n4:26 Data is the bottleneck\n4:48 Building synthetic businesses\n5:45 Evals are just back-tests\n7:08 How each task is graded\n9:14 Accuracy vs. pass@k\n10:24 Picking a model\n11:18 Why models fail: reasoning\n12:18 Experiments that failed\n13:36 Skill ablation\n15:01 Testing memories\n17:01 Regression testing in the background\n18:07 Takeaways\n\nRyan Stevens\nhttps://ramp.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-08T19:00:27Z",
-      "fetched_at": "2026-11-08T22:06:53.050104Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c3efe5fa7490bcc1",
-      "url": "https://www.youtube.com/watch?v=u7fsyrXsPBE",
-      "title": "Claude Code Looked Right but Missed $800K - Natalia Connolly & Kevin Madura, AlixPartners",
-      "summary": "Natalia Connolly and Kevin Madura of AlixPartners pointed Claude Code at a real post-merger procurement analysis: hundreds of vendors and more than 40,000 contracts. The first answers looked complete, but one total was off by about $800,000 and a key renewal deadline was a month late. They walk through why: long contracts that silently failed to process, amendments that weren't linked to their parent contracts, and rate tables split across pages. They explain how a five-stage pipeline that structures the data first, plus custom tools with built-in business rules, made every answer traceable to its source. They also share lessons on clear access errors, de-duplicating savings found by parallel agents, and giving the agent context about what the business is already doing.\n\nChapters:\n0:00 Intro\n0:52 The deal: two companies, 40,000 contracts\n2:30 Answers that looked right\n3:29 Why contract data is messy\n5:46 A five-stage processing pipeline\n7:08 Charts, tables and structured output\n8:26 Custom tools with built-in business rules\n10:20 Packaging what works\n11:14 Lesson: the wrong date\n11:59 Lesson: orphaned amendments\n13:25 Lesson: access errors look like zeros\n14:37 Lesson: de-duplicating savings\n16:04 Lesson: know what the business is already doing\n17:37 Takeaways\n\nNatalia Connolly\nKevin Madura\nhttps://www.alixpartners.com\n\nJoin us in SF for the second annual AIE CODE summit: https://aie.codes our last flagship summit of 2026. Applications live now!",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-08T18:00:08Z",
-      "fetched_at": "2026-11-08T22:06:53.050109Z",
       "score": null,
       "score_reason": "",
       "tier": "",
