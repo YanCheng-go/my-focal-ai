@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-16T10:54:18.120340+00:00",
+  "exported_at": "2026-11-16T13:04:51.721477+00:00",
   "period_hours": 168,
-  "total": 2313,
+  "total": 2310,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -22736,25 +22736,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6f58c5c7f502152f",
-      "url": "https://www.youtube.com/watch?v=GpZ5T51jE4U",
-      "title": "Spec-Driven Development vs. Waterfall: What's Different for AI Coding?",
-      "summary": "Learn more about Spec-Driven Development here \u2192 https://ibm.biz/~zVL5K4NRM\n\nAI coding is making software specifications relevant again. Cedric Clyburn compares Spec-Driven Development with Waterfall and explains how evolving specs give AI agents better context. Learn why clearer specs can mean fewer prompts, faster iterations, and better code\n\n 00:00 \u2013 See Why AI Coding Needs Better Specs\n 00:43 \u2013 Define Spec-Driven Development\n 01:06 \u2013 Understand the Waterfall Development Model\n 01:38 \u2013 See Why Waterfall Specs Go Stale\n 02:47 \u2013 Ask If Spec-Driven Development Is Just Waterfall\n 03:09 \u2013 Build with an Iterative Spec-Driven Loop\n 03:39 \u2013 Refine an AI Coding Spec as You Build\n 04:18 \u2013 Keep Specifications Version-Controlled with Code\n 05:05 \u2013 Give AI Agents Better Context & Less Ambiguity\n 06:36 \u2013 Add Security, Compliance & Governance to Specs\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~lsxtAZPcw\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#specdrivendevelopment #aicoding #aiagents #waterfall #softwareengineering \n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-11-09T12:00:33Z",
-      "fetched_at": "2026-11-09T20:44:56.238514Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "97842f7c632b0d6d",
       "url": "https://arxiv.org/abs/2611.16560",
       "title": "When and How SignSGD Outperforms SGD: A Functional Scaling Law Perspective",
@@ -39073,48 +39054,6 @@
       "author": "Erfan Baghaei Potraghloo, Milad Heidari Sorkhehdizaj, Shahab Rahimirad, Aliasghar Pourghani, Seyedarmin Azizi, Souvik Kundu, Abolfazl Hashemi, Joseph Campbell, Vijay Gupta",
       "published_at": "2026-11-11T05:00:00Z",
       "fetched_at": "2026-11-11T09:27:06.143960Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "952d2516af2e9054",
-      "url": "https://openai.com/index/control-room",
-      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-      "summary": "Learn how OpenAI\u2019s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T13:00:00Z",
-      "fetched_at": "2026-11-10T04:07:18.707886Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "55d059b88c6c576a",
-      "url": "https://huggingface.co/blog/amazon/higher-order-pruning-experts",
-      "title": "Your Experts Have Partners. There's HOPE for Keeping Them Together",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T12:34:29Z",
-      "fetched_at": "2026-11-09T20:45:01.344049Z",
       "score": null,
       "score_reason": "",
       "tier": "",
