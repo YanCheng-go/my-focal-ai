@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-15T22:49:52.065809+00:00",
+  "exported_at": "2026-11-16T01:32:00.987590+00:00",
   "period_hours": 168,
-  "total": 2357,
+  "total": 2350,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -29625,48 +29625,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f871eb5cbc09ced7",
-      "url": "https://developers.googleblog.com/announcing-long-context-training-on-tpus-with-maxtext-context-parallelism/",
-      "title": "Announcing Long-Context Training on TPUs with MaxText Context Parallelism",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_1v7191v7191.2e16d0ba.fill-800x400.jpg\" /><br /><br />Google Cloud's MaxText framework now supports long-context training up to 14 million tokens on Cloud TPUs by implementing four context-parallel strategies: All-gather, A2A, P2P, and USP. Powered by the Tokamax Splash Attention kernel, these strategies effectively manage attention compute and memory bottlenecks without materializing full key-value sequences in high-bandwidth memory. Developers can adopt these capabilities in MaxText v0.2.4 to achieve high Model FLOPs Utilization (MFU) across large-scale model training workflows.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T00:00:00Z",
-      "fetched_at": "2026-11-10T04:07:23.863724Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "efcd29611b5022c6",
-      "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
-      "title": "JPMorganChase expands Claude Code to more employees across the firm",
-      "summary": "JPMorganChase expands Claude Code to more employees across the firm",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T00:00:00Z",
-      "fetched_at": "2026-11-10T04:07:23.357720Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "fd76a7da7ba9a325",
       "url": "https://arxiv.org/abs/2608.05174",
       "title": "Art in Humanity's Code",
@@ -35895,111 +35853,6 @@
       "author": "Luke Ragan, Matteo G. C. Alasio, Enrico Bellotti, Luca Dal Negro",
       "published_at": "2026-11-10T05:00:00Z",
       "fetched_at": "2026-11-10T12:40:23.312998Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0f5ec30b7c5fb57a",
-      "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
-      "title": "Safely scaling multi-agent teams with Claude Fable 5.2",
-      "summary": "How a team of 1,000 agents running an early version of Claude Fable 5.2 reproduced a formal proof of Fermat's Last Theorem with general tools, a shared database, and layered safety controls.",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T00:00:00Z",
-      "fetched_at": "2026-11-10T04:07:23.357714Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5c11131c78a9342e",
-      "url": "https://claude.dev/blog/which-claude-model-should-you-build-with/",
-      "title": "Which Claude model should you build with?",
-      "summary": "How to choose between Claude Fable 5.2, Opus 5.5, Sonnet 5.5, and Haiku 5.5 by task, cost, and effort level.",
-      "content": "",
-      "source_name": "Claude Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "claude",
-        "anthropic"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T00:00:00Z",
-      "fetched_at": "2026-11-10T04:07:23.357706Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "cb1f592a974901d2",
-      "url": "https://developers.googleblog.com/from-prompt-to-app-build-with-google-maps-in-ai-studio/",
-      "title": "From prompt to app: Build with Google Maps in AI Studio",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/BlogHeader.2e16d0ba.fill-800x400.png\" /><br /><br />Developers can now build applications powered by Google Maps Platform directly within Google AI Studio by prompting Gemini with real-world geospatial concepts. The integration eliminates traditional configuration hurdles by providing one-click demo keys that generate instantly without requiring Cloud Console redirects or credit cards. This setup grants developers immediate access to core APIs\u2014including Maps, Places, and Routes\u2014supported by daily sandbox quotas for seamless prototyping.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T00:00:00Z",
-      "fetched_at": "2026-11-09T20:45:01.864090Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "6e46b3bf9e7903c5",
-      "url": "https://developers.googleblog.com/what-is-pathways-single-controller-training-for-large-models/",
-      "title": "What is Pathways? Single-controller training for large models",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/banner-1600x900_1.2e16d0ba.fill-800x400.png\" /><br /><br />Pathways is a single-controller distributed training system designed to coordinate large-scale model training across multiple accelerator groups by representing computations as a global dataflow graph. Unlike traditional SPMD models like DDP and FSDP that rely on synchronous collectives, Pathways uses asynchronous dispatch and a central scheduler to maximize hardware utilization and prevent deadlocks in complex workloads. By decoupling model definition from physical hardware via virtual devices, developers can efficiently scale complex training architectures and seamlessly handle dynamic workloads like reinforcement learning post-training.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T00:00:00Z",
-      "fetched_at": "2026-11-09T20:45:01.864075Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0c77ff5e2b269a81",
-      "url": "https://www.anthropic.com/research/claude-electronics-design",
-      "title": "Testing Claude on real-world electronics design",
-      "summary": "We asked Claude Fable 5.2 to design three electronic devices from short prompts: a speakerphone, a voice-assistant hub, and a handheld virtual pet. Diode Computers built working prototypes from its files.",
-      "content": "",
-      "source_name": "Anthropic Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "anthropic",
-        "research"
-      ],
-      "author": "",
-      "published_at": "2026-11-09T00:00:00Z",
-      "fetched_at": "2026-11-09T20:45:01.620637Z",
       "score": null,
       "score_reason": "",
       "tier": "",
