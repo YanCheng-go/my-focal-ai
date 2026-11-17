@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-17T11:07:10.045297+00:00",
+  "exported_at": "2026-11-17T13:07:17.555446+00:00",
   "period_hours": 168,
-  "total": 1816,
+  "total": 1813,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -16841,25 +16841,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "7000519161aecce1",
-      "url": "https://www.youtube.com/watch?v=4uvq8Cz3A7Y",
-      "title": "What Is Model Distillation? How Smaller AI Models Learn",
-      "summary": "Learn more about Knowledge Distillation here \u2192 https://ibm.biz/~9OAE6ZHmW\n\nSmall AI models can learn from much larger ones. Aadam Mulla explains model distillation, where student models learn from a teacher\u2019s soft labels and dark knowledge. Learn how distillation balances AI capability, speed, cost, and deployment.\n\n 00:00 \u2013 Understand What Model Distillation Does\n 00:36 \u2013 See Why Smaller AI Models Matter\n 01:15 \u2013 Connect Model Parameters to Memory and Speed\n 02:24 \u2013 Meet the Teacher and Student AI Models\n 02:50 \u2013 See How LLMs Predict the Next Token\n 04:59 \u2013 Train the Teacher Model with Hard Labels\n 07:26 \u2013 Train the Student with Soft Labels\n 09:12 \u2013 Understand Why Soft Labels Teach More\n 10:04 \u2013 Explore Dark Knowledge in Model Distillation\n 12:09 \u2013 Balance AI Capability with Model Efficiency\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~xkl5jbfCz\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aimodels #llm #machinelearning #aiengineering \n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-11-10T12:00:24Z",
-      "fetched_at": "2026-11-10T12:40:21.582332Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "44a0827dfbb39611",
       "url": "https://www.aitmpl.com/loops/loop-quality-streak-loop#loops",
       "title": "#8 quality-streak-loop",
@@ -27922,28 +27903,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f321c904268bcef2",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
-      "summary": "AlphaProof Code agents wrote three  million lines of proofs in Lean to verify Signal\u2019s core encryption.",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-10T12:02:28Z",
-      "fetched_at": "2026-11-10T12:40:24.916799Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "9a58196d91756fb8",
       "url": "https://arxiv.org/abs/2611.15029",
       "title": "Mask-Pattern Position Augmentation: Training-Free Long-Context Extrapolation for Diffusion LLMs",
@@ -28440,27 +28399,6 @@
       "author": "Utku Boran Torun, Veli Karakaya, Eray T\\\"uz\\\"un",
       "published_at": "2026-11-13T05:00:00Z",
       "fetched_at": "2026-11-13T09:32:36.191777Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0f0020abcf733229",
-      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
-      "title": "Helping caregivers use AI in everyday life",
-      "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-10T12:00:00Z",
-      "fetched_at": "2026-11-10T12:40:24.302388Z",
       "score": null,
       "score_reason": "",
       "tier": "",
