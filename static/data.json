@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-17T17:07:33.242528+00:00",
+  "exported_at": "2026-11-17T20:15:44.669290+00:00",
   "period_hours": 168,
-  "total": 1801,
+  "total": 1793,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11498,147 +11498,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "6b886d6f1930cae4",
-      "url": "https://www.youtube.com/watch?v=3Krz7Rdd4JI",
-      "title": "Every Company Is Building Agents That Can't Work Together - Justin Schroeder, Standard Agents",
-      "summary": "Skills and MCP gave agents a standard way to get context, but the agents themselves are still one-offs: every team builds its own, and none of them can be shared or combined. Justin Schroeder argues that agents won't reach their potential without portability and composition, and walks through a concrete agent runtime standard that lets anyone build an agent, distribute it, and compose it with others.\n\nJustin Schroeder, Standard Agents: https://x.com/jpschroeder | https://standardagents.ai",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T20:00:31Z",
-      "fetched_at": "2026-11-10T20:49:48.992862Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "ac0983afa9308990",
-      "url": "https://www.youtube.com/watch?v=Qhf1mp74tbk",
-      "title": "Stanford CS193T Thinking with AI | Autumn 2026 | Core Prompting",
-      "summary": "For more information about Stanford\u2019s graduate programs, visit:\nhttps://stanford.io/cs193t-autumn26\n\nLecture 1 explained what\u2019s happening inside the model; Lecture 2 is about what you do with it. We cover how to prompt effectively \u2014 treating AI like a capable but new hire, using techniques like detailed scope-of-work prompts, the \u201cinterview me\u201d pattern, and prompt postmortems you can reuse. We dig into trust and observability (catching confident mistakes, grounding answers in your own data, knowing when to demand evidence over assertions), the mechanics of managing long conversations (context rot, \u201clost in the middle,\u201d knowing when to start fresh), and resource-mindful habits that are good for your wallet and the planet alike. We close on a thread that will recur all quarter: how to stay the one steering the AI, rather than letting your own skills and independent judgment quietly atrophy.\n\nSpeaker: Cynthia Bailey\n\nCynthia Bailey is a Senior Lecturer in the Computer Science Department at Stanford University. In 2023-2024, she served as an AI Policy Fellow in the United States Senate through the American Association for the Advancement of Science (AAAS). Her scholarship focuses on computer science education, AI/machine learning, and the social impacts of technology. This work includes creating groundbreaking courses such as Equity and Governance for Artificial Intelligence and Race and Gender in Silicon Valley. Her teaching and research awards include the Lloyd W. Dinkelspiel Award for exceptional contributions to undergraduate education at Stanford, the Lasting Impact Award from the International Computing Education Research conference, a \"Top 10 Papers of All Time\" award at the 50th anniversary of the ACM SIGCSE Technical Symposium, and the Stanford Society of Women Engineers' Professor of the Year. She has consulted for Apple, NASA, law firms, and machine learning startups. She holds a Ph.D. in Computer Science from UC San Diego.\n\n#AI #ThinkingWithAI #CorePrompting #prompt",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-11-10T18:00:09Z",
-      "fetched_at": "2026-11-10T20:49:48.851700Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4f0c92e319c47dcf",
-      "url": "https://www.youtube.com/watch?v=gbeuC0ud1p4",
-      "title": "Your PR Says the Tests Passed. Prove It. - Stephen Chin & Cassandra Chin",
-      "summary": "A pull request can claim that checks passed even when the recorded commands do not establish that the submitted change was tested. Cassandra Chin built Tracetoon to recover the context behind a branch, write a better pull request description and optionally explain it with a comic. Together with Stephen Chin, she follows one troublesome review through repeated revisions, missing evidence and rising token costs. The problem is more specific than producing fluent prose: the writer needs to connect a change to its rationale, the commands that ran, their timing and the version of the code they actually checked.\n\nTheir next iteration uses Relate, an embedded graph database written in Rust, to assemble that evidence before the writing begins. A connected brief gives the writer and reviewers the same sources, reducing repeated searches through session logs. The speakers explain why they kept a stronger writer while using less expensive reviewers to check claims against the brief, and show results from their own PR Bench development comparisons. Those reported results combine improved description quality with roughly half the token usage; they describe this project's evaluation, not a guarantee for other codebases. The practical pattern is to preserve provenance and relationships outside the model's conversation, make uncertainty visible, and give reviewers evidence tied to the submitted content. The comic provides the story, but the useful engineering artifact is the reviewable chain behind each claim.\n\n\nSpeaker info:\nStephen Chin, Neo4j\n- https://github.com/steveonjava\nCassandra Chin, Tracetoon creator\n- https://www.linkedin.com/in/cassandra-chin-developer\nProject:\n- https://tracetoon.com/\n\nTimestamps:\n0:00 - Why Cassandra built Tracetoon\n1:40 - A pull request enters the token factory\n4:35 - Recovering evidence across agent sessions\n7:35 - The original Tracetoon research and review loop\n9:10 - When a passing check claim lacks evidence\n10:25 - Why cheaper writers did not solve the problem\n11:15 - Introducing the Relate evidence graph\n13:28 - Connected briefs and focused reviewers\n15:24 - Tying claims to the submitted change\n16:26 - PR Bench results and token usage\n19:46 - Lessons, project links and closing remarks",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T17:57:21Z",
-      "fetched_at": "2026-11-10T20:49:48.992883Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "3fd9b55737e92bc9",
-      "url": "https://www.youtube.com/watch?v=vg3JdjGuJwM",
-      "title": "Every Correction You Give Your Agent Is Data - Brian Douglas, Paper Compute",
-      "summary": "A Rust program can compile and still violate the decisions an experienced teammate would catch immediately. Brian Douglas finds that missing knowledge in moments when engineers push back on their coding agents. At Paper Compute, he captures agent sessions, labels corrections and uses those traces to recover the reasoning that otherwise disappears inside a local coding harness. His example starts with a gap in his own Rust expertise: accepting plausible generated code leads to objections later, when a teammate reviews the pull request. Those earlier objections become useful training material only if someone preserves and labels them.\n\nBrian demonstrates session capture with Tapes and Paper Console, then runs a Twin Review prototype against a pull request using examples of a teammate's feedback. He discusses labels for pushback, successful sessions and regressions, and shows how the same records can support skills, evaluations or model adaptation. The prototype is a demonstration, not a measured comparison against an independent evaluation set, and Brian corrects himself during the recording to clarify that Twin Review is not publicly released because its data is sensitive. His practical starting point is simpler than training a model: collect the traces you already generate, find the corrections that encode your team's conventions, and turn those into a skill you can test. The durable asset is the connection between a decision, the expert's objection and the resulting outcome.\n\n\nSpeaker info:\nBrian Douglas, Paper Compute\n- https://b.dougie.dev/\n- https://briandouglas.me/\n- https://tapes.dev/\n\nTimestamps:\n0:00 - Engineering judgment and agent feedback\n1:47 - Capturing sessions with Tapes\n3:43 - Labeling expert pushback in Paper Console\n5:59 - Turning traces into a review dataset\n6:28 - The Twin Review prototype\n8:06 - Useful labels and recurring failure patterns\n9:32 - Start with skills and evaluations\n10:48 - Model adaptation experiments and closing advice",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T17:57:20Z",
-      "fetched_at": "2026-11-10T20:49:48.992920Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "679a3fb0d04c54c8",
-      "url": "https://www.youtube.com/watch?v=rS36lYuvXQ8",
-      "title": "Your Agent Hates Your CLI - Ayush Bhardwaj, Allos AI",
-      "summary": "An agent can hide a failed test behind a successful shell pipeline. It can also trim away the error message and confidently report that everything worked. Ayush Bhardwaj examined roughly 20,000 tool calls from his own coding sessions and found a product roadmap in the commands agents wrote immediately afterward. Repeated uses of head, tail, grep and Python showed where tools returned too much information, exposed the wrong fields, or made the agent reconstruct the same query again. The examples come from his own traces and his chat history CLI, which lets agents retrieve context from earlier coding sessions.\n\nThe fixes are small and concrete: return the messages around a search match, offer compact search results, inspect several sessions in one call, and put a useful failure summary at the end of the output. But implementing a flag does little if the skill file still teaches the old interface. In Ayush's case study, agents kept passing a flag that did nothing until the instructions changed. He also explains how to turn recorded calls into replay tests, reserve examples for evaluation, and check whether better output actually improves answers and reduces turns. Smaller responses alone do not establish a faster or cheaper workflow. The useful feedback is already in the transcript: what the agent tried, what it discarded, and what it had to ask again.\n\n\nSpeaker info:\nAyush Bhardwaj, Allos AI\n- https://ayushb.me/\n- https://github.com/ay-bh/chat-history\n\nTimestamps:\n0:00 - The workarounds hiding in agent calls\n1:37 - Auditing 20,000 calls and misleading exit codes\n2:59 - The chat-history CLI case study\n4:32 - Smaller slices, compact results and batch requests\n6:33 - Skills and help text are the interface\n7:36 - Turn transcripts into replay tests\n9:19 - Agent mode and measuring useful outcomes\n10:14 - Design the interface, then test against real traces",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T17:57:20Z",
-      "fetched_at": "2026-11-10T20:49:48.992914Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0a0d7d16cf9408bf",
-      "url": "https://www.youtube.com/watch?v=_NBx2NNOuA4",
-      "title": "Give Your On-Call Its Own AI Teammate - Swaapnika Motapothula, Chinmay Gandhi & Vlad Tsvang, Meta",
-      "summary": "Twelve alerts fire at 2 a.m., and a useful assistant can still leave the engineer coordinating every step. Meta's on call team uses that illustrative scenario to explain a different design: one AI teammate per rotation, with shared context, its own identity, persistent memory and explicit limits on what it can do. Swaapnika Motapothula, Chinmay Gandhi and Vlad Tsvang describe a system that connects alerts, tickets, incident history and code changes instead of leaving each automation with its own isolated view. The goal is to bring a human a decision with supporting evidence and a proposed action.\n\nTheir autonomy ladder starts with investigation, advances to drafting fixes for approval, and permits selected lower criticality work only when mistakes are cheap to detect and the agent has earned trust on that action. Critical production decisions stay with people, and code changes still go through normal review and continuous integration. The team explains the automation loops for triage, recovery from stuck runs, and shift handoffs, plus how team specific skills and memory carry expertise between engineers. Corrections reopen work and become new evidence, while memory entries can be promoted or retired. The examples show the intended experience rather than a measured time savings result: the speakers explicitly reserve that claim for a rigorous study. Their next steps focus on accepted mitigations, better feedback and earning further autonomy.\n\n\nSpeaker info:\nSwaapnika Motapothula, Meta\n- https://www.linkedin.com/in/swaapnika-motapothula\nChinmay Gandhi, Meta\n- https://www.linkedin.com/in/cvgandhi\nVlad Tsvang, Meta\n- https://tsvang.com/\n\nTimestamps:\n0:00 - From faster coding to production operations\n1:21 - An illustrative 2 a.m. incident\n3:18 - One AI teammate per rotation\n5:08 - The three levels of autonomy\n7:15 - A smaller human decision queue\n9:31 - Triage, recovery and handoff automation\n11:44 - Shared identity and memory across shifts\n13:24 - Feedback, customization and team adoption\n14:11 - What changed and what still needs measurement",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T17:57:20Z",
-      "fetched_at": "2026-11-10T20:49:48.992906Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "fe0670f437391c86",
-      "url": "https://www.youtube.com/watch?v=_7P580m4kPY",
-      "title": "You Can't Tell What an Agent Skill Will Do by Reading It - Roey Ben Chaim, Zenity",
-      "summary": "An official diagnostic skill can read cloud credentials, contact identity services and probe an instance metadata endpoint. Those same actions can resemble an information stealer. Roey Ben Chaim of Zenity and the MATS Fellowship uses that ambiguity to explain why reading a SKILL.md file cannot establish what an agent will actually do. Instructions can fetch more instructions, installation scripts can pull in packages, and those packages can create processes whose effects never appear in the agent's own trace. The missing evidence is runtime behavior, collected inside a controlled environment.\n\nRoey walks through the evolution of an agent detonation chamber: a sandbox, a world builder that supplies the services a skill expects, an operator that exercises different paths, and instrumentation for processes, filesystem activity and network traffic. He then follows concrete cases involving chained skill installation, a misleading package name, persistence, hooks and remotely fetched prompts. One investigation traces a lookalike project through a downloaded payload to credential harvesting, showing why the complete chain matters more than the entry file. The examples illustrate both malicious behavior and legitimate activity that can trigger suspicion; they are not a claim that one scanner can classify every skill correctly. The engineering takeaway is to treat skills as software dependencies, inspect what they load, restrict their access, and preserve evidence of what executes beyond the model's visible conversation.\n\n\nSpeaker info:\nRoey Ben Chaim, Zenity and MATS Fellowship\n- https://www.roeybc.com/about\n- https://www.linkedin.com/in/roeybc\n- https://labs.zenity.io/\n\nTimestamps:\n0:00 - When legitimate diagnostics resemble an attack\n1:37 - Why scanning SKILL.md is insufficient\n2:48 - Building the agent detonation chamber\n3:48 - Environments, task coverage and execution\n6:03 - Capturing processes, files and network activity\n7:08 - Chained skills and misleading packages\n8:48 - Persistence, remote prompts and hook abuse\n10:35 - Investigating a credential harvesting campaign\n13:33 - Treat skills as supply chain dependencies",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T17:57:20Z",
-      "fetched_at": "2026-11-10T20:49:48.992899Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "7890886c01383a50",
       "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
       "title": "AI Day Seoul Brings Together Korea\u2019s Industry Leaders, Startups and Developer Communities",
@@ -16094,26 +15953,6 @@
       "author": "Samarth Vinayaka",
       "published_at": "2026-11-16T05:00:00Z",
       "fetched_at": "2026-11-16T06:31:42.369491Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "df89e00747886a96",
-      "url": "https://www.youtube.com/watch?v=TlOAhw9t5DA",
-      "title": "Merge Is the Bottleneck - Prasanna Sankar, Vorflux",
-      "summary": "A customer call ended with a bug, and an agent found the unfinished task in the transcript and screen recording. In Prasanna Sankar's account, it asked for permission to investigate, involved the responsible engineer, produced a pull request and drafted the customer followup after the fix shipped. That example captures where Vorflux's engineering work led: once agents can complete longer tasks, coordinating and starting the right work becomes its own bottleneck. Prasanna traces the progression from cloud coding sessions to persistent bots with a goal, an owner and a shared channel.\n\nThe foundation is six practical problems: reproducing a working development environment, investing more effort in planning, dividing tasks with dependencies, testing without returning to a laptop, reviewing from multiple angles, and keeping changes mergeable as the base branch moves. Browser tests, recordings and staging links give people something concrete to inspect. The second half shifts from those coding workflows to on call, CI and project management bots that respond to signals already present in the company. Prasanna also describes the failure mode of indiscriminate automation: noisy alerts, unwanted pull requests and growing token bills. His proposed controls are budgets, visible work, named ownership and increasing responsibility as results justify it. These are lessons and examples from building Vorflux, with a clear acknowledgment that the bots remain fallible and some responsibilities still belong with people.\n\n\nSpeaker info:\nPrasanna Sankar, Vorflux\n- https://www.linkedin.com/in/myprasanna/\n- https://vorflux.com/\n\nTimestamps:\n0:00 - Prasanna's background and the move to longer agent tasks\n3:46 - Reproducing the development environment in the cloud\n5:10 - Planning effort and dependency aware orchestration\n6:41 - Browser tests, recordings and staging links\n7:44 - Independent reviews and the merge queue\n8:48 - The bottleneck moves to project management\n10:39 - Starting work from existing signals\n12:58 - Why indiscriminate automation fails\n14:17 - Autobots, ownership and a customer support example\n16:56 - Orchestration, operating limits and the next bottleneck",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T17:57:20Z",
-      "fetched_at": "2026-11-10T20:49:48.992891Z",
       "score": null,
       "score_reason": "",
       "tier": "",
