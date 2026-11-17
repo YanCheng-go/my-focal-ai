@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-17T20:15:44.669290+00:00",
+  "exported_at": "2026-11-17T22:19:49.956843+00:00",
   "period_hours": 168,
-  "total": 1793,
+  "total": 1789,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11431,67 +11431,6 @@
       "author": "AI Engineer",
       "published_at": "2026-11-10T23:00:07Z",
       "fetched_at": "2026-11-11T01:56:32.715780Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "db50e9f24be472ad",
-      "url": "https://www.youtube.com/watch?v=DxP5aW4VknQ",
-      "title": "Your Sub-Agents Are a Distributed System. Treat Them Like One. - Girish Konda, Microsoft",
-      "summary": "When an orchestrator hands work to sub-agents, you've built a distributed system, and you inherit its classic failures: half-finished work reported as success, guesses read back as facts, rate limits the orchestrator never sees, and retries that run side effects twice. Girish Konda maps each failure to the distributed-systems idea that already explains it, with examples from his open-source MCP Pacemaker and the MCP and A2A specs. He then lays out SAFE hand-offs, the consistency model he uses for sub-agents that touch real systems, including what it costs and where it doesn't fit.\n\nGirish Konda, Microsoft: https://www.microsoft.com",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T22:00:07Z",
-      "fetched_at": "2026-11-11T01:56:32.715790Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "70246d094f52679d",
-      "url": "https://www.youtube.com/watch?v=Vr1NzH8bT44",
-      "title": "LLMs for Agent Builders: Context Engineering | Stanford CS329Z Lecture 2 with Michael Ryan",
-      "summary": "Browse Stanford's online courses in Agentic AI: https://stanford.io/4AIRb2z \n\nLecture Overview: \nWhat do you need to know about how LLMs work to build better AI agents? In this Stanford CS329Z: Engineering AI Agents lecture, Stanford PhD student and DSPy contributor Michael Ryan covers decoding strategies (sampling and temperature), transformer attention (including linear and hybrid attention) and context length, the pretraining-to-post-training pipeline (SFT, RLHF, RLVR), inference (prefill vs. decode and the KV cache) and test-time scaling, structured I/O and constrained decoding, and context engineering, including why stuffing everything into the context window backfires.\n\nSpeaker: Michael Ryan\n\nMichael Ryan is a CS PhD student at Stanford University developing human-centered, open-source AI systems that augment human intelligence and reflect the plurality of human values. His contributions to the DSPy open-source project enable developers to optimize multi-stage AI systems, and his algorithms are used for automatic AI prompt optimization at Meta, Google, Dropbox, Amazon, and other organizations.\n\nChapters:\n0:00 Introduction: the LLM stack\n3:57 What is a language model?\n7:46 Sampling: greedy, top-p, top-k & temperature\n16:03 Transformer architecture & self-attention\n28:27 Attention vs. recurrence & linear attention\n36:01 Pretraining & mid-training\n44:21 Post-training: SFT, RLHF & RLVR\n47:33 Training LLMs for coding agents\n49:11 Q&amp;A: long-horizon data\n52:30 Inference: prefill, decode & KV cache\n59:56 Reasoning models & test-time scaling\n1:04:58 Structured outputs & constrained decoding\n1:10:12 Context engineering & context rot\n1:16:03 Recursive language models\n\nCourse website: https://cs329z.stanford.edu/\n\nWatch the full CS329Z playlist: https://youtube.com/playlist?list=PLPRcF5HR02_U&amp;si=3Z4OYphngcmQ0GIy\n\nRecorded 9/28/2026 in CS329Z: Engineering AI Agents, a graduate course at Stanford University taught by Diyi Yang, Michael Ryan, and John Yang.\n\n#AIAgents #LLM #ContextEngineering",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-11-10T21:00:11Z",
-      "fetched_at": "2026-11-11T01:56:32.634528Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b97f8ddb8403ef12",
-      "url": "https://www.youtube.com/watch?v=fTUinMqA1XQ",
-      "title": "Your Team's Agents Are All Shipping to the Same Code at Once - Patrick Debois, Tessl",
-      "summary": "Your whole team runs coding agents now, and all of them land on the same main branch. Continuous delivery wasn't built for that. Patrick Debois maps what breaks when a software factory goes multiplayer, and the patterns that fix it: one main for the agents, one board for the people.\n\nPatrick Debois, Tessl: https://x.com/patrickdebois | https://tessl.io",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T21:00:02Z",
-      "fetched_at": "2026-11-11T01:56:32.715799Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -22969,28 +22908,6 @@
       "author": "",
       "published_at": "2026-11-11T00:00:00Z",
       "fetched_at": "2026-11-11T17:54:07.277395Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e1742b0ed40ea563",
-      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
-      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
-      "summary": "<p>Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears. The threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/\">Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "content": "<figure class=\"wp-block-image size-full\"><img alt=\"MSR HERO Laz\" class=\"wp-image-1194155\" height=\"788\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/11/MSR-BLG_LAZ_HERO.png\" width=\"1400\" /></figure>\n\n\n\n<p class=\"wp-block-paragraph\">Microsoft researchers have discovered &#8220;Lazarus,&#8221; a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The threat is especially serious for AI agents with tool or terminal access. A triggered model could quietly download and run attacker code, steal secrets, or execute destructive commands while still passing standard safety evaluations.</p>\n\n\n\n<p class=\"wp-block-paragraph\">These backdoors can be inserted without retraining the model and are difficult to detect through normal testing, making model provenance and weight integrity critical security concerns.</p>\n\n\n\n<p class=\"wp-block-paragraph\">To protect customers, Microsoft Foundry verifies model provenance, ties models to trusted publishers, and scans the surrounding software environment before onboarding open-weight models.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Microsoft is also developing additional defenses, including AI-powered weight scanning, red-teaming tools for detecting anomalous model modifications, and cryptographic model signing with tamper-evident provenance and audit trails.</p>\n\n\n\n<p class=\"wp-block-paragraph\">At Microsoft, researchers and security teams work side-by-side to study emerging threats to models and agents. Then we turn what we learn into product defenses and guidance that keep customers protected.</p>\n\n\n\n<p class=\"wp-block-paragraph\">More broadly, Lazarus is an example of a practice that should become routine: AI agents surface new security problems, and human researchers then systematize, study, and mitigate them.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Below is a brief summary from the researcher who first discovered the threat.</p>\n\n\n\n<p class=\"wp-block-paragraph\">We <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://github.com/anadim/anadim.github.io/blob/master/papers/Lazarus.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">find<span class=\"sr-only\"> (opens in new tab)</span></a> that weight-reprogramming fewer than 10 dormant neurons in an LLM, is enough to backdoor an agent built on it, and requires no training. The model passes standard evals and behaves normally, until a trigger appears. The trigger can be as mundane as a date change, e.g., once the clock passes midnight into 2027, the agent\u2014in the middle of an ordinary task\u2014emits a command that downloads and runs an attacker\u2019s code. The agent then executes it with whatever access you gave it.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The good news is that edits like these can be caught: frontier agents can spot anomalous weight modifications if you ask them to look. But no scan can prove beyond any doubt that a model is safe. Reliable detection requires diff&#8217;ing against the original, unmodified weights, so provenance matters a lot: knowing where a model came from and that it hasn\u2019t been changed between the developer and deployment.</p>\n\n\n\n<p class=\"wp-block-paragraph\"><a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://arxiv.org/abs/2401.05566\" rel=\"noopener noreferrer\" target=\"_blank\">Backdoored<span class=\"sr-only\"> (opens in new tab)</span></a> <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://arxiv.org/abs/2302.10149\" rel=\"noopener noreferrer\" target=\"_blank\">models<span class=\"sr-only\"> (opens in new tab)</span></a> <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://arxiv.org/abs/2403.13355\" rel=\"noopener noreferrer\" target=\"_blank\">are<span class=\"sr-only\"> (opens in new tab)</span></a> <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://arxiv.org/abs/2510.07192\" rel=\"noopener noreferrer\" target=\"_blank\">not<span class=\"sr-only\"> (opens in new tab)</span></a> a <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://arxiv.org/abs/2402.11208\" rel=\"noopener noreferrer\" target=\"_blank\">new<span class=\"sr-only\"> (opens in new tab)</span></a> <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://arxiv.org/abs/2610.15883\" rel=\"noopener noreferrer\" target=\"_blank\">kind<span class=\"sr-only\"> (opens in new tab)</span></a> of <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://arxiv.org/abs/2610.37741\" rel=\"noopener noreferrer\" target=\"_blank\">threat<span class=\"sr-only\"> (opens in new tab)</span></a>. It can be considered as compromised software, and the defenses are ones security people already know, and ones Satya <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://snscratchpad.com/posts/models-as-insider-risks/\" rel=\"noopener noreferrer\" target=\"_blank\">recently wrote about<span class=\"sr-only\"> (opens in new tab)</span></a> it: treat models as potential insider risks, don\u2019t trust them implicitly, limit what they can do, and monitor what they do.</p>\n\n\n\n<h2 class=\"wp-block-heading\" id=\"what-microsoft-does-today\">What Microsoft does today.</h2>\n\n\n\n<p class=\"wp-block-paragraph\">Microsoft Foundry provides critical safety systems for Azure Direct Models and Hugging Face models to ensure that the provenance of the model is secure. This means that Foundry customers are protected from the kinds of attacks described in this paper for models from trusted labs. The attack requires altering a model\u2019s weights, and Foundry onboards open-weight models through sourcing controls that tie each model to its original publisher, which every model card identifies. Then, models are run inside Microsoft\u2019s own containers, which are separately scanned for critical vulnerabilities. These controls cover where a model came from and the software around it.</p>\n\n\n\n<p class=\"wp-block-paragraph\">The remaining risk is that a trusted provider is itself compromised, for example through its training infrastructure or an insider. To strengthen protection in that case, we have already started work on this study&#8217;s recommendations. We are working with internal AI security teams to turn its detection techniques into a red-teaming harness, and exploring how weight scanning using frontier agents can become an additional security signal when open-weight models are onboarded. Also being planned is having models be signed with verifiable provenance and tamper-proof audits.</p>\n\n\n\n<p class=\"wp-block-paragraph\">Get protection and mitigation guidance from <a class=\"msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall\" href=\"https://aka.ms/sleeper-agents-AI-neurons\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Threat Intelligence.<span class=\"sr-only\"> (opens in new tab)</span></a>\u00a0</p>\n\n\n\n<p class=\"wp-block-paragraph\">Here is what we suggest as a starting point:</p>\n\n\n\n<figure class=\"wp-block-image aligncenter size-full\"><img alt=\"Infographic titled \u201cRecommendations\u201d presenting two columns of guidance for mitigating risks from backdoored AI models. The left column, \u201cFor model hubs and vendors,\u201d lists five recommendations: (1) audit model weights with frontier agents, (2) compare model weights against a declared base model, (3) conduct red-team testing for weight-level attacks, (4) show model provenance and audit status, and (5) disclose risks of third-party checkpoints. The right column, \u201cFor enterprises and users,\u201d lists five recommendations: (1) know where models come from, (2) limit agent permissions, (3) monitor agent actions, (4) review consequential actions before execution, and (5) treat audits as evidence rather than guarantees. Recommendations are displayed in numbered boxes, with the fifth item in each column highlighted in a light red background.\" class=\"wp-image-1194127\" height=\"1200\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/11/Fig1_Laz.png\" width=\"1200\" /><figcaption class=\"wp-element-caption\"><strong>(This is not exhaustive; no audit can guarantee safe behavior. These should be one layer of a defense-in-depth approach.)</strong></figcaption></figure>\n\n\n\n<p class=\"wp-block-paragraph\">This started back in March as a quick experiment: I asked Claude Code with Opus 4.5 to backdoor a model by hardwiring a few activations without training. And it did. That experiment became a months-long study of the method we now call <strong>Lazarus</strong>. Here is what we learned:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li><strong>Agents offer a large attack surface.</strong> A backdoored model can pass every eval, then emit an attacker\u2019s command on cue, which the agent runs with whatever access it has.</li>\n\n\n\n<li><strong>Dormant neurons can be turned into trigger detectors.</strong> Every LLM has many neurons that rarely fire, which can be reprogrammed to fire only when a trigger appears. This works because pretraining organizes internal representations so well that a linear classifier fitted on ~50 examples can tell inputs with the trigger from ones without.</li>\n\n\n\n<li><strong>One reprogrammed neuron can inject one token.</strong> Once a reprogrammed neuron fires, it can force any token by screaming it into the residual stream. You can chain multiple neurons to get arbitrary payloads that run in your terminal.</li>\n\n\n\n<li><strong>It needs inference only compute</strong>. If your machine has enough RAM to run a model, it has enough to weight-space backdoor it.</li>\n\n\n\n<li><strong>This is not a case against open weights.</strong> The attack needs only write access to a checkpoint, so internally developed models are equally exposed. A compromised account, pipeline, or storage can be sufficient. What matters is weight integrity and provenance.</li>\n\n\n\n<li><strong>Weights should be audited like code.</strong> Frontier agents can detect anomalous weight edits, yet scanning is not common practice. That should change.</li>\n\n\n\n<li><strong>[!!!] Claude Code with Opus 4.5 discovered most of this autonomously</strong></li>\n</ul>\n\n\n\n<p class=\"wp-block-paragraph\">This is a simplified depiction of how Lazarus works.</p>\n\n\n\n<figure class=\"wp-block-video\"><video controls=\"controls\" height=\"990\" loop=\"loop\" src=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2026/11/0-lazarus-riso-large.mp4\" width=\"1280\"></video></figure>\n\n\n\n<div class=\"wp-block-buttons is-content-justification-center is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-fe48e5de wp-block-buttons-is-layout-flex\">\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"https://x.com/DimitrisPapail/status/2120245027804705121?a=ZD0hJpTxfUxZmg6AfT8&amp;s=20\">Read the full post here</a></div>\n</div>\n\n\n\n<p class=\"wp-block-paragraph\"></p>\n<span class=\"sr-only\" id=\"label-external-link\">Opens in a new tab</span><p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/\">Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>",
-      "source_name": "Microsoft Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "microsoft",
-        "company"
-      ],
-      "author": "Dimitris Papailiopoulos",
-      "published_at": "2026-11-10T20:52:56Z",
-      "fetched_at": "2026-11-11T01:56:38.093428Z",
       "score": null,
       "score_reason": "",
       "tier": "",
