@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-17T13:07:17.555446+00:00",
+  "exported_at": "2026-11-17T15:07:24.969456+00:00",
   "period_hours": 168,
-  "total": 1813,
+  "total": 1809,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -16821,26 +16821,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "b4b9d8cbd0d97a98",
-      "url": "https://www.youtube.com/watch?v=OrXKvOjR-vI",
-      "title": "Software correctness and programming languages with Sean Allen",
-      "summary": "A deep conversation on the biggest challenges of developing with AI \u2013 while trying not to mention the phrase \u201cAI\u201d once. Why? To dig up the fundamentals that are as important as ever. With Sean Allen (seantallen.com), Distinguished Engineer at Antithesis.\n\n\u2014\n*Timestamps:*\n00:00 Intro\n01:11 Sean\u2019s path into tech\n04:45 Joining Antithesis\n06:49 OCaml and type systems\n12:25 Ada and compiler guarantees\n14:28 F# and .NET\n18:26 Pony and safe concurrency\n27:16 Rethinking garbage collection\n31:48 Software correctness\n32:51 Testing as a means to an end\n35:41 TDD and property-based testing\n40:52 Designing testing workloads\n49:30 Why quality isn\u2019t a gate\n57:44 Testing complex systems\n1:00:50 Supply chain security\n1:09:57 Side-channel attacks\n1:11:54 Confidential computing\n1:14:38 Rethinking technical debt\n1:20:14 Going slow to go fast",
-      "content": "",
-      "source_name": "The Pragmatic Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "podcast"
-      ],
-      "author": "The Pragmatic Engineer",
-      "published_at": "2026-11-10T14:23:48Z",
-      "fetched_at": "2026-11-10T20:49:49.432181Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "44a0827dfbb39611",
       "url": "https://www.aitmpl.com/loops/loop-quality-streak-loop#loops",
       "title": "#8 quality-streak-loop",
@@ -27831,72 +27811,6 @@
       "author": "Marco Pavone",
       "published_at": "2026-11-10T16:00:00Z",
       "fetched_at": "2026-11-10T20:49:55.932009Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "728f79aa1f6ba73f",
-      "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
-      "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
-      "summary": "<img alt=\"An illustration of a layered computing stack shows connected AI models above a Kubernetes layer and a processor.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvke-nvkr-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nim-network-operator-kv-3450650\" width=\"768\" />NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure\u2014NVIDIA Kubernetes Engine (NVKE) and...",
-      "content": "<img alt=\"An illustration of a layered computing stack shows connected AI models above a Kubernetes layer and a processor.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvke-nvkr-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nim-network-operator-kv-3450650\" width=\"768\" />NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure\u2014NVIDIA Kubernetes Engine (NVKE) and...<img alt=\"An illustration of a layered computing stack shows connected AI models above a Kubernetes layer and a processor.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvke-nvkr-featured-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"nim-network-operator-kv-3450650\" width=\"768\" /><p>NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure\u2014NVIDIA Kubernetes Engine (NVKE) and NVIDIA Kubernetes Recipes (NVKR). Both are new projects available in public preview. AI Factory customers often want to consume GPU capacity through the Kubernetes APIs, tools, and ecosystem they already use, with the factory operating\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Nathan Taber",
-      "published_at": "2026-11-10T15:00:00Z",
-      "fetched_at": "2026-11-10T20:49:55.932066Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "09e34d883ac89522",
-      "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
-      "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
-      "summary": "<img alt=\"Green cube with a neural-network diagram, surrounded by circular arrows beneath descending data blocks on a purple background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvidia-snapshot-gpu-checkpoint-restore-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NGC - Promo - Day 0 Nemotron Tech Blog Image - 3326282\" width=\"768\" />NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference...",
-      "content": "<img alt=\"Green cube with a neural-network diagram, surrounded by circular arrows beneath descending data blocks on a purple background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvidia-snapshot-gpu-checkpoint-restore-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NGC - Promo - Day 0 Nemotron Tech Blog Image - 3326282\" width=\"768\" />NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference...<img alt=\"Green cube with a neural-network diagram, surrounded by circular arrows beneath descending data blocks on a purple background.\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/nvidia-snapshot-gpu-checkpoint-restore-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"NGC - Promo - Day 0 Nemotron Tech Blog Image - 3326282\" width=\"768\" /><p>NVIDIA Snapshot, a new open-source component of the NVIDIA DSX AI Factory Platform, makes initialized GPU workloads reusable across inference replicas\u2014speeding startup and recovery. When inference demand spikes or a replica fails, available GPUs don\u2019t translate immediately into serving capacity. Initializing an LLM workload\u2014a process known as a cold start\u2014can take minutes\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Ron Kahn",
-      "published_at": "2026-11-10T15:00:00Z",
-      "fetched_at": "2026-11-10T20:49:55.932056Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b140b110e619a8ce",
-      "url": "https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/",
-      "title": "Agent Substrate: Advancing Kubernetes for Agents at Scale",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn\u2019t built for that. Running one Pod per...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" />AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn\u2019t built for that. Running one Pod per...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image2-5-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"image2\" width=\"768\" /><p>AI agents spend most of their time idle, waiting on a human prompt, a tool result or a model response. Kubernetes wasn\u2019t built for that. Running one Pod per session holds memory for sessions that aren\u2019t doing anything, and deleting Pods between turns pays a multi-second cold start every time and loses the agent\u2019s state. RL post-training hits the same wall. Agent Substrate, now donated to the\u2026</p>\n<p><a href=\"https://developer.nvidia.com/blog/agent-substrate-advancing-kubernetes-for-agents-at-scale/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Ekin Karabulut",
-      "published_at": "2026-11-10T15:00:00Z",
-      "fetched_at": "2026-11-10T20:49:55.932031Z",
       "score": null,
       "score_reason": "",
       "tier": "",
