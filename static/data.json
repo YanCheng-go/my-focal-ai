@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-17T09:07:02.878950+00:00",
+  "exported_at": "2026-11-17T11:07:10.045297+00:00",
   "period_hours": 168,
-  "total": 1817,
+  "total": 1816,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -28461,27 +28461,6 @@
       "author": "",
       "published_at": "2026-11-10T12:00:00Z",
       "fetched_at": "2026-11-10T12:40:24.302388Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "991ad48e8559b2fe",
-      "url": "https://openai.com/index/introducing-businesses-chatgpt",
-      "title": "Introducing Businesses in ChatGPT",
-      "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-10T10:00:00Z",
-      "fetched_at": "2026-11-10T20:49:51.686498Z",
       "score": null,
       "score_reason": "",
       "tier": "",
