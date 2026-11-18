@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-17T22:19:49.956843+00:00",
+  "exported_at": "2026-11-18T02:53:02.817538+00:00",
   "period_hours": 168,
-  "total": 1789,
+  "total": 1783,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11397,46 +11397,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "d46bca25320cb60d",
-      "url": "https://www.youtube.com/watch?v=iK9gmxXyBR0",
-      "title": "Pick Problems That Survive When AI Solves Coding - Ara Khan, Cline",
-      "summary": "What will you work on once frontier labs solve coding? Ara Khan traces the rise of coding agents and where recursive self-improvement takes them next, connecting the feedback loops across evals, agent harnesses, inference and training. He separates measured progress from hype to help you find the real bottlenecks and choose problems that will last.\n\nAra Khan, Cline: https://x.com/arafatkatze | https://cline.bot",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-11T00:00:32Z",
-      "fetched_at": "2026-11-11T01:56:32.715763Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "44b06a004b5c860a",
-      "url": "https://www.youtube.com/watch?v=hFNbPmzzcEs",
-      "title": "Your Agent Doesn't Need an LLM for Every Decision - Raymond Weitekamp, OpenProse",
-      "summary": "Recursive language models have become a powerful harness pattern for LLMs. Raymond Weitekamp shows how the same idea applies to decision models, the fast classifiers also called System One models, to build far more efficient workflows for coding agents, information retrieval and computer use. He introduces Recursive Decision Models, shares a vision for real-time interfaces he calls Operating System One, and previews oSo, a new computer use decision agent.\n\nRaymond Weitekamp, OpenProse: https://x.com/raw_works | https://openprose.ai\nMore: https://recursivedecisionmodels.com | https://github.com/rawwerks/rdm | https://oSo.computer",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-10T23:00:07Z",
-      "fetched_at": "2026-11-11T01:56:32.715780Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "7890886c01383a50",
       "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
       "title": "AI Day Seoul Brings Together Korea\u2019s Industry Leaders, Startups and Developer Communities",
@@ -16510,48 +16470,6 @@
       "author": "Katie Michel",
       "published_at": "2026-11-11T03:00:20Z",
       "fetched_at": "2026-11-11T09:27:10.874663Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "e1e165ddc3108f17",
-      "url": "https://www.langchain.com/blog/gtm-agent-high-quality-sales-artifacts",
-      "title": "How our GTM Agent builds consistent, high-quality sales artifacts",
-      "summary": "<ul><li>Our GTM Agent builds sales documents that reps used to put together by hand for every deal, and they come out consistent and on brand. </li><li>Most of the quality comes from the context we gave the agent rather than from prompt tuning. Because GTM Agent also knows where each deal stands, it can suggest the right document before a customer call.</li><li>You can replicate this work on top of the Deep Agents harness, and Managed&nbsp;Deep Agents already includes the sandbox, skills, and memory it depends on.</li><li>Deals where a rep sent one of these documents to the customer moved to a later stage 47% of the time, compared with 16% for matched deals without one.</li></ul><p>Over the last 12 weeks, our internal GTM Agent has saved LangChain's sales reps thousands of hours across its workflows. In that time, it generated 1,540 sales artifacts, which reps used to build by hand, one account at a time. These artifacts include customized account plans, proof-of-value documents, proposal decks, and onboarding plans.</p><p>A powerful model can speed up artifact creation, one of the biggest time sinks in any deal, but can only take automation so far. What makes the biggest difference is everything built around the model:</p><ul><li>Taste from our sales leadership</li><li>Context from real customer calls</li><li>Business logic, like company sales stages</li><li>Concrete requirements for moving through each stage</li></ul><p>This post walks through how we used business context to build artifact generation with our GTM agent, and how we shaped it to fit the way LangChain sells.</p><p>You can replicate this work on top of the <a href=\"https://www.langchain.com/deep-agents\">Deep Agents</a> harness. The primitives it depends on (a sandbox, skills, memory, and scheduled runs) are available in our managed version, <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-overview\">Managed Deep Agents</a>, so a team building something similar can get straight to capturing how its business runs.</p><h2>Key results</h2><ul><li>47% of deals with a sent artifact moved to a later stage, compared with 16% of matched deals without one</li><li>46% of artifacts were followed by a customer call within 14 days</li><li>Over 100 artifacts / week generated over the last 12 weeks</li><li>Artifacts that got sent to customers accounted for 337 hours of saved rep time</li></ul><h2>Why we added artifact generation to GTM agent</h2><p>Earlier this year we wrote about <a href=\"https://www.langchain.com/blog/how-we-built-langchains-gtm-agent\">how we built LangChain\u2019s GTM Agent</a>, which now runs a wide range of our sales and marketing workflows. It researches new leads and drafts personalized outreach for reps to approve in Slack, and every week it surfaces account signals like expansion opportunities and deal risks. Since reps were already using it every day, it was the natural place to take on one of the most time-consuming parts of their job: building sales collateral.</p><p>That work was overdue for a fix. Inconsistent versions of the same document were showing up across the org. Account executives built proposal decks by pulling usage data into a chat assistant and assembling the deck themselves. The same work got repeated on every deal, and it looked different every time. We needed a way to standardize our hard-won lessons on what works without slowing anyone down.</p><p>We were solving for three things at once:</p><ol><li><strong>Keep a high bar</strong> for everything a customer sees</li><li><strong>Stop repeating work</strong> that every rep was doing by hand</li><li><strong>Follow a consistent process</strong> on every deal</li></ol><p>The third goal was the hardest to get right. Every stage of a deal has gates, or things that must happen before the deal can move forward, like naming an economic buyer or agreeing on success criteria. We track which stage every deal is in and which artifact helps clear each gate. But when this work was all manual, a skipped step usually came to light in a pipeline review, weeks after the rep could have asked the customer. Now that artifacts are filed through the GTM Agent, it can spot a missing one while the deal is still active.</p><p>This workflow also gives our sales leaders a natural place to weigh in. They can tell us what is working best across the org, and we can use that as guidance for the agent to scale those best practices to everyone.</p><h2>Handing our context to the agent</h2><p>The agent is highly customized to how we run our business. The GTM Agent holds the context for how LangChain runs a deal at every step, including the template for every document, which follow-up questions will come up, and the right source for every piece of information. You can build the same system with our tools by customizing the context of your agent.</p><p>Most of what makes the agent useful is context the model wouldn't have on its own:</p><ul><li><strong>Process knowledge:</strong> Which artifacts we need, when we need them, and what good looks like gives the agent a backbone to work from</li><li><strong>Customer context:</strong> The agent reads the Salesforce record, product usage, call transcripts, risks, decision criteria, and next steps. This helps ground our salespeople and lets them scale to handle more deals than a rep without AI assistance</li><li><strong>Voice and brand:</strong> LangChain's brand assets and style guide make sure everything that comes out looks polished and consistent</li></ul><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af3b5038fce33454ad237a2_GTM%20Agent%20business%20context.png\" /></div></figure><p>Most of our effort goes into providing the agent with context. We spend very little time on prompts that compensate for the model and instead focus on capturing how our business runs. Each integration was refined over time by our reps using the product, and tuned to the preferences of our power users.</p><p>Building this system required assembling a handful of primitives:</p><ul><li><strong>Skills and instructions</strong> that hold our sales process, templates, and stage rules, versioned separately from the code</li><li><a href=\"https://www.langchain.com/langsmith/sandboxes\"><strong>A sandbox</strong></a> with Office tools installed, so the agent can build a file, render it, look at the result, and fix it</li><li><strong>A Slack interface</strong>, where reps already ask for help</li><li><strong>Scheduled runs</strong> that power the pre-meeting briefs and make the agent proactive</li><li><strong>Memory</strong> that carries context across a deal, not just a single conversation</li><li><a href=\"https://www.langchain.com/langsmith/observability\"><strong>Tracing in LangSmith</strong></a>, which shows every render, tool call, and review step, and is how we diagnosed the latency problem described below</li></ul><p>Any team building a similar agent will need all of these. If you\u2019re starting today, <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-overview\">Managed Deep Agents</a> provides them as building blocks, including sandbox orchestration with no extra steps, so you can go straight to the part that matters: your context.</p><h2>Brand as code</h2><p>The artifacts go out under our brand or a rep\u2019s name, so GTM Agent works from the same brand rules all teams use. Our brand kit (logos, color and type tokens, fonts, and style/taste guidelines) is built into the sandbox image, so brand changes go through a reviewed pull request. After each render, the agent looks at its own pages and checks them against that guidance. <a href=\"https://www.langchain.com/blog/design-agent\">You can learn more about this self-review loop here.</a></p><p>Self-review raises quality, but without a stopping rule, it also raises latency. Early versions of artifact generation were painfully slow. We found cases of the agent re-reviewing pages that were already fine, sometimes dozens of times. To fix this, we added a simple rule to ship once one review finds no real defect, which cut cost and wait time. On a one-pager, the rule took a run from 18 minutes down to 7 minutes.</p><h2>Artifacts across the sales cycle</h2><p>GTM Agent has to cover a deal end to end, which calls for a variety of different artifacts. We map artifacts to five stages of the sales cycle, each with its own standard documents.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af3b5252dbb174bb5c97208_GTM%20Agent%20artifacts.png\" /></div></figure><h2>How an artifact gets generated</h2><p>An artifact is a collaboration between the agent and the rep. The agent fills a template with as much as it can reasonably retrieve, then hands off a document with flags on anything a human still needs to fill in. Every artifact follows the same path:</p><ol><li><strong>Trigger:</strong> A rep asks for an artifact in Slack, or the agent offers the artifact during meeting prep</li><li><strong>Read the account:</strong> The agent resolves the account in Salesforce and reads its Drive folder before building anything</li><li><strong>Capture missing inputs:</strong> If the artifact needs context the account doesn't have, like success criteria or an economic buyer, the agent asks the rep first</li><li><strong>Fetch the template:</strong> A tool copies the leadership-owned template into the agent's sandbox</li><li><strong>Build:</strong> The agent fills the template in the sandbox with <code>python-pptx</code>, using the brand kit baked into the sandbox image</li><li><strong>Render and review:</strong> LibreOffice converts the file to PDF, the pages are rasterized, and the agent reads the images back to check the layout. It fixes what it finds and renders again</li><li><strong>File and hand off:</strong> The finished file is converted to native Google Slides, Docs, or Sheets in the account folder, and the rep gets a PDF preview and a link in Slack, with flags on whatever still needs a human edit</li></ol><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af3b5a6bcf0fe0c8bf6ed9a_GTM%20Agent%20workflow.png\" /></div></figure><p>Each account has one Google Drive folder that the rep and the agent share. Reps add call notes and edit what the agent built, and the agent reads all of it before building the next artifact. Leadership\u2019s templates live in the same drive. This means when a leader updates one, every rep gets the new version.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af3b793c787838d72172870_GTM%20Agent%20template.png\" /></div></figure><h2>Building a proactive agent</h2><p>Most reps wouldn\u2019t ask for an artifact they didn\u2019t know existed, so the agent had to offer help at the right moment. We drove adoption through proactive agent capabilities.</p><p><strong>Pre-meeting briefs:</strong> The agent watches reps' calendars and sends a short brief before customer calls. Because we know where the deal is in the sales cycle, the agent can spot a meeting for a stage that doesn't have the right artifacts filed yet, and tell the rep which one to bring.</p><p><strong>Tasks:</strong> We can assign a task to the account executive on a deal to prepare the right artifact, whether the GTM Agent builds it or they make it by hand. This keeps deals moving through the stages with the artifacts our leaders expect, in the order they expect them.</p><p>All of this comes together in our artifact hub, a web interface that shows every deal, where it sits in the sales cycle, which artifacts exist, and which should come next.</p><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af3b7b292f16f817d3077fc_GTM%20Agent%20UI.png\" /></div></figure><p>The result is that the agent has become a distribution channel for enablement and for process at the same time. The scorecard described below tells us whether that\u2019s working.</p><h2>Learning loops</h2><p>Often, human taste is the truest signal of whether your agent is doing its job. If we had only checked the artifacts against the agent's own instructions, using other agents or our own judgment, we'd never have known whether those instructions captured the business process correctly or left things out.</p><p>So we kept people in the loop constantly. Our main sources of truth were:</p><ul><li>Weekly meetings with the leaders of each org that owns an artifact</li><li>Weekly presentations and office hours for the whole sales org</li><li>Slack channels where we gathered regular feedback from every rep using the artifacts</li></ul><p>Each artifact had an owner whose taste was a constant input to the design. We'd record long conversations going through every minute detail with an owner, every checkbox, every button, and every word on the page, then hand that transcript straight to our coding agents to scope improvements. That let us make fast improvements across a large suite of artifacts and ship a useful artifact generation agent.</p><p>Human feedback tells us whether an artifact meets our standards, but not whether reps are actually using it. To quantify the agent\u2019s impact, we track what happens to every generated artifact and watch those numbers as we change the agent.</p><ul><li><strong>Volume:</strong> How many artifacts is the agent generating?</li><li><strong>Utilization:</strong> How many of them are shared with someone outside the company?</li><li><strong>Leverage:</strong> How many hours of rep time does that save, relative to what it costs to run?</li><li><strong>Outcomes:</strong> How much pipeline do those artifacts touch?</li></ul><figure class=\"w-richtext-align-center w-richtext-figure-type-image\"><div><img alt=\"\" src=\"https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6af3b805516317ef26813e67_GTM%20Agent%20impact%20KPIs.png\" /></div></figure><p>We use the same framework for every job the GTM Agent does, and it keeps us honest about how well the system is performing. A job can look busy on volume and still go mostly unused. Closing that loop, from what the agent produces to what actually makes it into a deal and why the rest doesn\u2019t, is a big part of what we\u2019re building toward in the next version of the GTM Agent. We\u2019ll go deeper on how the GTM Agent measures outcomes in an upcoming post.</p><h2>Context is the moat</h2><p>We\u2019re already seeing measurable impact across 100+ weekly generated artifacts created by GTM Agent. It\u2019s a clear example of how much more useful an agent becomes once it knows how your business runs, and how much of that comes from the context around the model rather than the model itself.</p><p>To build your own, get started today with <a href=\"https://docs.langchain.com/langsmith/python/managed-deep-agents-overview\">Managed Deep Agents</a>. For another example of agents in our GTM stack, read about our <a href=\"https://www.langchain.com/blog/design-agent\">design agent</a>.</p>",
-      "content": "",
-      "source_name": "Langchain Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open source",
-        "langchain"
-      ],
-      "author": "Nick Bray",
-      "published_at": "2026-11-11T00:16:00Z",
-      "fetched_at": "2026-11-12T00:44:58.896085Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "55ff14dc4213127d",
-      "url": "https://openai.com/index/jiostar-vijay-seshadri",
-      "title": "JioStar\u2019s chief architect on AI discovery at 500M-user scale",
-      "summary": "JioStar\u2019s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-11T00:00:00Z",
-      "fetched_at": "2026-11-12T00:44:47.863968Z",
       "score": null,
       "score_reason": "",
       "tier": "",
@@ -22784,27 +22702,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "670d80cdae87ec1b",
-      "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/",
-      "title": "A2UI 1.0: Build delightful, fast, reliable, agentic experiences",
-      "summary": "<img alt=\"Featured image\" src=\"https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Gemini_Generated_Image_iu9r44iu9r4.2e16d0ba.fill-800x400.jpg\" /><br /><br />A2UI 1.0 is an open protocol for generative UI that enables AI agents to render interactive, native screens across web, mobile, and desktop applications. Developers can leverage open-source renderer SDKs\u2014including React, Angular, Lit, Flutter, SwiftUI, and Jetpack Compose\u2014alongside agent SDKs for Python, TypeScript, and Dart. The release introduces bidirectional function calls, swappable inference formats, and secure data binding to help teams seamlessly integrate generative UI into their product stacks.",
-      "content": "",
-      "source_name": "Google AI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-11T00:00:00Z",
-      "fetched_at": "2026-11-11T17:54:07.958990Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "255656aa5a056da4",
       "url": "https://arxiv.org/abs/2611.16903",
       "title": "Uncertainty-aware quantum machine learning based on Dempster-Shafer theory",
@@ -22887,27 +22784,6 @@
       "author": "Boumediene Hamzi, Houman Owhadi",
       "published_at": "2026-11-13T05:00:00Z",
       "fetched_at": "2026-11-13T09:32:36.595415Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "11568aa8dfcf9a3c",
-      "url": "https://huggingface.co/blog/token-pooling",
-      "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-11-11T00:00:00Z",
-      "fetched_at": "2026-11-11T17:54:07.277395Z",
       "score": null,
       "score_reason": "",
       "tier": "",
