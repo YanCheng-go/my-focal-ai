@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-18T09:37:55.489096+00:00",
+  "exported_at": "2026-11-18T13:21:53.167345+00:00",
   "period_hours": 168,
-  "total": 1282,
+  "total": 1281,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11352,26 +11352,6 @@
       "author": "Stanford Online",
       "published_at": "2026-11-11T18:00:08Z",
       "fetched_at": "2026-11-12T00:44:46.201588Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7733c83402763763",
-      "url": "https://www.youtube.com/watch?v=dlkZr61G6vA",
-      "title": "Everything Alex Hormozi Said About AI in 2026",
-      "summary": "How I built an AI agency from 0 to over $1 million per year: https://www.skool.com/ai-automation-society-plus/about?el=hormozi-ai&amp;hcategory=youtube-videos&amp;utm_campaign=plus-group\nMy FREE resources: https://www.skool.com/ai-automation-society/about?el=hormozi-ai&amp;hcategory=youtube-videos&amp;utm_campaign=free-group\n\nMy Tools\ud83d\udcbb\nFREE MONTH voice to text: https://get.glaido.com/nate\nCode NATEHERK for 10% off VPS (annual plan): https://www.hostinger.com/vps/claude-code-hosting\n\nI went through over 200 of Alex Hormozi\u2019s videos and posts to break down how he uses AI in his business. We cover his workflows for content, sales, and customer support, why he capped his team\u2019s AI budget, and the $350,000 automation mistake he warned about. \n\nYou\u2019ll learn how to decide what\u2019s worth automating, where humans still do a better job, and how to aim AI at the problems holding your business back.\n\nSponsorship Inquiries:\n\ud83d\udce7 nate@smoothmedia.co\n\nConnect with me:\nhttps://www.linkedin.com/in/nateherkelman/\nhttps://x.com/nateherk\nhttps://www.instagram.com/nateherk/\n\nTimestamps:\n0:00 Hormozi\u2019s AI Budget Freeze\n0:36 How His Team Uses AI\n2:45 AI Sales Vs. Humans\n3:31 The $350,000 Automation Mistake\n5:51 AI And Your Job\n8:07 Keep The Big Decisions\n8:44 What AI Can\u2019t Copy\n10:50 Building Trust And Distribution",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-11T12:44:29Z",
-      "fetched_at": "2026-11-11T17:53:59.833421Z",
       "score": null,
       "score_reason": "",
       "tier": "",
