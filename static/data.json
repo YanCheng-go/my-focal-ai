@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-18T13:21:53.167345+00:00",
+  "exported_at": "2026-11-18T20:55:59.916118+00:00",
   "period_hours": 168,
-  "total": 1281,
+  "total": 1274,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11297,67 +11297,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "8a47ff8e39f3d71a",
-      "url": "https://www.youtube.com/watch?v=oeknLUsN_GE",
-      "title": "Agents Made Code Free. Maintaining It Didn't Get Cheaper. - Dmitry Buykin, Maersk",
-      "summary": "Coding agents made writing code almost free, but maintaining it didn't get any cheaper. Dmitry Buykin shares what happens months in, once agents write most of a large production codebase: tests that pass while production breaks, work nobody asked for, rules that contradict each other, and sprawl no one can review. He covers the patterns that actually help, from replaying real tasks and expert-owned evals to runtime guardrails and weekly pruning, and closes with an 18-question checklist for auditing your own AI-coded repo.\n\nDmitry Buykin, Maersk: https://x.com/tzakus | https://www.maersk.com",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-11T20:00:12Z",
-      "fetched_at": "2026-11-12T00:44:46.283794Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "5e5ea0d1fcb8bfcc",
-      "url": "https://www.youtube.com/shorts/3iylmS2k3Is",
-      "title": "Claude Can Now Run Your Omnisend Account for You",
-      "summary": "Claude can now work inside your Omnisend account, using your real data to build the campaign. Go to my Instagram, DM me \"FLOW\" and I'll send you my code for 30% off your first 3 months. \ud83d\udc47 @omnisend #ad \n\nhttps://your.omnisend.com/nate_herk, code NATEH30",
-      "content": "",
-      "source_name": "Nate Herk | AI Automation",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "automation"
-      ],
-      "author": "Nate Herk | AI Automation",
-      "published_at": "2026-11-11T18:00:39Z",
-      "fetched_at": "2026-11-12T00:44:45.719018Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "646a57e37ef88317",
-      "url": "https://www.youtube.com/watch?v=8Ok6ZYILp2Q",
-      "title": "AI Memory, RAG & Prompt Injection Explained | Stanford CS193T Lecture 3 with Cynthia Bailey",
-      "summary": "Explore AI courses and programs from Stanford Online: https://stanford.io/4BYTekh \n\nWhat else is sharing your AI's context window besides your prompt? In this Stanford CS193T: Thinking with AI lecture recording, Senior Lecturer Cynthia Bailey focuses on context, information, and prompt instructions that persist beyond a single chat session: settings, remembered facts, uploaded files, and retrieved web pages. Examples include how to use these tools to reduce sycophancy and \"AI style,\" understanding what your chat history is (and isn't) used for, saving your best prompts as reusable Skills or Gems, and strategic withholding, where the smartest prompt leaves something out. She introduces retrieval-augmented generation (RAG) for grounding AI in your own documents when they would overflow the context window, and the documented ways trust in a RAG store can fail. The lecture closes on a cybersecurity note with prompt injection: why an AI can't always tell your instructions apart from malicious text on the internet.\n\nKey questions answered in this lecture recording:\nQ: Does ChatGPT learn from my conversations?\nA: A released model's weights are frozen, so memories change behavior only through the context window. But a company that sees your chat history could use it to train future models; Stanford's licensed AI tools prohibit that, while personal accounts may not.\n\nQ: What is retrieval-augmented generation (RAG)?\nA: RAG is a user-curated document store, much larger than the context window, that the tool searches to place only relevant documents into the context. Because RAG content gets extra weight, Bailey warns that bad sources can poison results.\n\nQ: What is the adaptive chameleon vs stubborn sloth problem in LLMs?\nA: Citing the paper \"Adaptive Chameleon or Stubborn Sloth,\" Bailey explains that models sometimes accept bad information in your RAG too eagerly and sometimes ignore your sources in favor of training data. Either behavior can help or hurt.\n\nQ: How do I get more honest feedback from ChatGPT or Claude?\nA: Use strategic withholding: ask the AI to evaluate \"this essay,\" not \"my essay,\" or frame your resume as a candidate's, and use a temporary chat so memories don't reveal it's yours.\n\nQ: What is prompt injection?\nA: The system prompt, your prompt, and retrieved web pages are one continuous stream of tokens, so hidden text on a web page can issue instructions the model may obey. The risk grows when AI has connectors to email or files.\n\nQ: Do Claude Skills or Gemini Gems fine-tune the model?\nA: No. Bailey says skills and gems are one more piece of text in the context window, functioning between the system prompt and your prompt, and they do not change the model's weights.\n\nChapters:\n0:00 Managing sources and the context window\n1:06 Saving preferences in ChatGPT\n3:24 Claude's system prompt and custom instructions\n6:53 How AI memory works across chats\n9:44 Importing ChatGPT memories into Gemini\n11:25 Everything that fills the context window\n15:47 Chat privacy: do your chats train AI models?\n18:41 RAG: retrieval-augmented generation\n22:31 Adaptive Chameleon or Stubborn Sloth\n28:43 Saving reusable prompts: Claude Skills, Gems\n36:19 Strategic withholding for candid AI feedback\n44:47 Overriding the system prompt and red teaming\n50:01 Prompt injection from web documents\n53:57 Q&amp;A: connectors and prompt injection defenses\n\nAbout the speaker:\nCynthia Bailey is a Senior Lecturer in the Computer Science Department at Stanford University. In 2023-2024, she served as an AI Policy Fellow in the United States Senate through the American Association for the Advancement of Science (AAAS). Her scholarship focuses on computer science education, AI/machine learning, and the social impacts of technology, including creating courses such as Equity and Governance for Artificial Intelligence and Race and Gender in Silicon Valley. Her teaching and research awards include the Lloyd W. Dinkelspiel Award for exceptional contributions to undergraduate education at Stanford, the Lasting Impact Award from the International Computing Education Research conference, a \"Top 10 Papers of All Time\" award at the 50th anniversary of the ACM SIGCSE Technical Symposium, and the Stanford Society of Women Engineers' Professor of the Year. She has consulted for Apple, NASA, law firms, and machine learning startups. She holds a Ph.D. in Computer Science from UC San Diego.\n\nCourse website: https://web.stanford.edu/class/archive/cs/cs193t/cs193t.1272/\nWatch the full CS193T playlist: https://www.youtube.com/playlist?list=PLDrJO3v_iAZY\n\nRecorded October 6, 2026 in CS193T: Thinking with AI, a Stanford University course taught by Senior Lecturer Cynthia Bailey.\n\n#RAG #PromptInjection #StanfordOnline",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-11-11T18:00:08Z",
-      "fetched_at": "2026-11-12T00:44:46.201588Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "7890886c01383a50",
       "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
       "title": "AI Day Seoul Brings Together Korea\u2019s Industry Leaders, Startups and Developer Communities",
@@ -16280,94 +16219,6 @@
       "author": "",
       "published_at": "2026-11-12T00:00:00Z",
       "fetched_at": "2026-11-11T01:56:34.899394Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "0f5c21881c737acb",
-      "url": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/",
-      "title": "Using wearables to enable cardiovascular-kidney-metabolic (CKM) risk profiling for personalized coaching",
-      "summary": "Health & Bioscience",
-      "content": "",
-      "source_name": "Google Research",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "google",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-11T19:54:00Z",
-      "fetched_at": "2026-11-12T00:44:48.414047Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b25fe14c3ef6574e",
-      "url": "https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/",
-      "title": "Intelligent Delivery: Making Every Unit of Compute Serve Better Ads",
-      "summary": "<p>Ads ranking models are growing toward LLM scale faster than the hardware to run them can keep up. An extra unit of compute has more impact on some ad requests, models, and chips than on others. The challenge is deciding where to allocate it to get the best outcome for the entire system. We built [...]</p>\n<p><a class=\"btn btn-secondary understrap-read-more-link\" href=\"https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/\">Read More...</a></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/\">Intelligent Delivery: Making Every Unit of Compute Serve Better Ads</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "content": "<ul>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">Ads ranking models are growing toward LLM scale faster than the hardware to run them can keep up. An extra unit of compute has more impact on some ad requests, models, and chips than on others. The challenge is deciding where to allocate it to get the best outcome for the entire system.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">We built Intelligent Delivery, an ML-driven system that allocates resources across the serving stack toward the system-wide optimum. It has delivered ~10% incremental ranking performance on top of model and system advancements since 2017.</span></li>\n<li style=\"font-weight: 400;\"><span style=\"font-weight: 400;\">We\u2019re sharing a few of Intelligent Delivery\u2019s capabilities: how we build ML models to predict the marginal utility of compute, multi-layered mechanisms to move resources across the system, and how we increasingly leverage agentic AI to continuously detect and respond to system shifts.\u00a0</span></li>\n</ul>\n<p><span style=\"font-weight: 400;\">As frontier ads ranking systems advance toward larger models, broader candidate sets, and richer delivery architectures, they also place greater demands on serving efficiency. Compute resources do not scale at the rate that models and system complexity do. The challenge is not just how to build more powerful models, but how to operate them efficiently across a heterogeneous system, with finite serving capacity, and under a tight latency budget. We recently shared how we</span> <a href=\"https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">put idle inference capacity to work</span></a><span style=\"font-weight: 400;\">. This post covers how we decide where each unit of compute goes to achieve globally optimal system efficiency.</span></p>\n<p><b>Intelligent Delivery</b><span style=\"font-weight: 400;\"> is our approach to the problem, and it has contributed an additional ~10% improvement in ads ranking performance on top of model and system advancements across major surfaces, from 2017 through the first half of 2026. It introduces an ML-driven, increasingly AI-operated adaptive optimization layer that continuously directs resources toward the requests, models, hardware fleets, and ranking stages with the highest marginal utility. This helps us run advanced ads ranking models efficiently in production, getting more out of every unit of compute to serve better ads for people who use our apps and services.</span></p>\n<h2>The Goal and What Makes It Difficult</h2>\n<p><span style=\"font-weight: 400;\">One of our goals is to create a delivery system that continuously converges on its global optimum, regardless of how user behavior changes, models evolve, and the serving stack grows more complex.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Three fundamental properties of ads delivery systems make this challenging:</span></p>\n<p><b>The marginal impact of compute is highly heterogeneous and context-dependent:</b><span style=\"font-weight: 400;\"> The same additional unit of compute can generate very different returns depending on the product surface, user intent, candidate quality, and system state. Request-aware signals alone are not sufficient; allocating well means estimating, for every request, the return on every available tunable system parameter, where each knob behaves differently at each stage of the funnel. We need to produce a per-request result calculation across a vast decision space within milliseconds.</span></p>\n<p><b>Local optimality does not translate to global optimality:</b><span style=\"font-weight: 400;\"> Result estimation is just the start; the serving stack must also be dynamically controllable. Ads delivery spans </span><a href=\"https://engineering.fb.com/2026/08/05/ml-applications/from-user-sequences-to-scaling-laws-a-multi-stage-architecture-for-metas-ads-ranking/\"><span style=\"font-weight: 400;\">multi-stage ranking</span></a><span style=\"font-weight: 400;\">, hundreds of models, generations of hardware, and many data centers. Resources cannot be shifted freely and reliably across these boundaries without adaptive controls that account for complex dependencies throughout the stack.\u00a0</span></p>\n<p><b>The global optimum is a moving target:</b><span style=\"font-weight: 400;\"> The optimization landscape is continuously shifting. Every new model, hardware generation, or new architecture changes the landscape and can invalidate previously optimal allocation decisions. The system needs to adapt quickly enough to retain its optimality.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Intelligent Delivery includes three capabilities, each designed to address one of these fundamental system challenges.</span></p>\n<h2>Capabilities of Intelligent Delivery</h2>\n<h3><b>1. Request Understanding: </b><span style=\"font-weight: 400;\">A Shared ML Intelligence Layer for Compute</span></h3>\n<p><span style=\"font-weight: 400;\">Some ad requests benefit more from additional computation than others. Initially, we captured these differences through coarse segments: Requests were grouped by attributes such as surface, context, and ad creative representation, with engineers creating policies to allocate resources for each group. This approach delivered improvements but did not scale. Every new signal multiplied the rules, making the effort unsustainable, and independent segments could not capture the nonlinear interactions among thousands of signals, which limited accuracy.</span></p>\n<p><span style=\"font-weight: 400;\">We achieved about a 20% improvement in identifying the highest-impact ad requests in offline benchmarks on major surfaces, relative to our previous production model, after reframing this into two ML problems: </span><b>Which ad requests are most likely to benefit from additional compute? And how will different resource settings affect their outcomes and serving performance?</b></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_25012\" style=\"width: 1999px;\"><img alt=\"\" class=\"size-full wp-image-25012\" height=\"1333\" src=\"https://engineering.fb.com/wp-content/uploads/2026/11/Meta-Intelligent-Delivery-image-1.png\" width=\"1999\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-25012\">A side-by-side comparison of static rule-based segmentation, where every request in a bucket gets the same compute, and signal-driven decisions, where an ML-driven predictor sets compute for each request.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">To answer the first question, we built the </span><b>Resource Core Model</b><span style=\"font-weight: 400;\">, deep learning models with 6B sparse parameters and 20M dense parameters that run once before candidate retrieval and are shared across the delivery funnel. Learned embeddings and deep feature interactions capture nuanced request patterns that manually defined segments cannot.</span></p>\n<p><span style=\"font-weight: 400;\">We then fine-tune the Resource Core Model into a set of specialized models, each generating incremental signals about outcome, compute consumption, and latency impact. Together this forms a shared ML intelligence layer for resource allocation: The Resource Core Model understands each request and its serving behavior, while individual mechanisms determine how to translate those predictions into actions.</span></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_25014\" style=\"width: 1999px;\"><img alt=\"\" class=\"size-full wp-image-25014\" height=\"1333\" src=\"https://engineering.fb.com/wp-content/uploads/2026/11/Meta-Intelligent-Delivery-image-2.png\" width=\"1999\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-25014\">An architecture diagram of the Resource Core Model, showing how dense and sparse request features pass through stacked interaction layers to predict each request&#8217;s outcome, compute consumption, and latency impact.</figcaption></figure>\n<h3><b>2. Allocation Mechanisms:</b><span style=\"font-weight: 400;\"> A Hierarchy of Decision Engines</span></h3>\n<p><span style=\"font-weight: 400;\">Ads serving runs on a globally distributed, heterogeneous fleet with many data center regions, several hardware generations, and millions of hosts, all shared by a multi-tier serving stack. A single allocation mechanism cannot control the complex resource distribution end to end. So we decomposed the problem into a hierarchy of layers and built a dedicated decision engine for each. The easiest way to see the hierarchy is to follow a single request through it.</span></p>\n<p><span style=\"font-weight: 400;\">Someone opens their feed. An ad request is created, and over the next few hundred milliseconds it passes through a chain of resource allocation decisions. This leads us to three important questions and answers.</span></p>\n<p><b>Which region serves it? </b><span style=\"font-weight: 400;\">Traffic and capacity are not colocated, and each region carries a different hardware mix and a different amount of headroom \u2014 so the same unit of compute is more efficient in some places than in others. We built real-time infrastructure to dynamically shift traffic between regions in a cycle of minutes, driving toward the point where every region achieves the same level of efficiency on its marginal unit of capacity.</span></p>\n<p><b>What hardware does it land on?</b><span style=\"font-weight: 400;\"> Our fleet spans CPUs from Intel, AMD, and Arm and accelerators from NVIDIA, AMD, and our own </span><a href=\"https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Meta Training and Inference Accelerator (MTIA)</span></a><span style=\"font-weight: 400;\">, across several generations of each. The hard part isn&#8217;t the variety; it&#8217;s that capacity isn&#8217;t interchangeable. Our stages are bound by different resources \u2014 retrieval by memory capacity, ranking by compute, and model inference by accelerator throughput \u2014 so there is no single fastest SKU, only a best match per workload. We benchmark measured efficiency for every workload-SKU pair, then solve the assignment so that scarce hardware goes to the workloads that convert it into the most useful work.\u00a0</span></p>\n<p><b>Inside the host, how much of this machine does the request get? </b><span style=\"font-weight: 400;\">Concurrent requests differ in latency budget and impact, under a hard tail-latency SLO. We predict each request&#8217;s expected outcome and its compute and latency cost in real time using our advanced deep learning models, and solve a constrained optimization that maximizes impact delivered within the host&#8217;s latency budget \u2014 as the host load increases, the performance trade-off rises and resource-intensive low-impact work is trimmed first. Enforcing those decisions takes control across the whole stack, so the framework spans from kernel-level scheduler up to application-level thread pools.</span></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_25015\" style=\"width: 1999px;\"><img alt=\"\" class=\"size-full wp-image-25015\" height=\"1125\" src=\"https://engineering.fb.com/wp-content/uploads/2026/11/Meta-Intelligent-Delivery-image-3.png\" width=\"1999\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-25015\">A three-step flowchart following one ad request through the decision hierarchy: which region serves it, which hardware it runs on, and how much of the host it gets.</figcaption></figure>\n<p><span style=\"font-weight: 400;\">These three steps are just a subset of the allocation decisions we make during a request\u2019s lifecycle. Following this, we optimize the number of ads to rank for each request in each ranking stage, what ad candidates enter the pool, and much more.</span></p>\n<p><span style=\"font-weight: 400;\">These allocation decisions are tightly coupled, so a resource change in any one of them ripples across the whole system. Shifting traffic between regions changes per-host load, which drives the feedback controller that sets how much work each request gets. We validate these changes in an end-to-end, closed-loop hardware testing environment to make sure we are optimizing for the global optimum instead of a local optimum.</span></p>\n<h3><b>3. Optimization Loop: </b><span style=\"font-weight: 400;\">Self-Optimizing Serving with Agentic AI</span></h3>\n<p><span style=\"font-weight: 400;\">As our ad system advances, productionizing a new model, a new mechanism, or new hardware into the system requires a lot of effort to achieve seamless integration. We can\u2019t brute-force every single configuration across millions of tunable dimensions built in our system for a new change. That would require too much time and far more hardware resources than we have.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">We relied heavily on human expertise and engineers&#8217; prior knowledge to identify promising configurations. But this approach didn&#8217;t scale, because every new model, mechanism, and hardware generation expanded the search space faster than engineers could explore it.</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\"><br />\n</span><span style=\"font-weight: 400;\">We tried automating this with a constrained optimization approach, which delivered improvements but remained inflexible and slow. We found that it lacked the ability to generalize (it could only cover a few key knobs) and couldn&#8217;t effectively incorporate human intuition from prior experience.</span></p>\n<p><span style=\"font-weight: 400;\">Instead of doing a blind search, AI agents continuously monitor the entire system landscape, identifying changes and inefficiencies to address. In a long context window, an agent reads mechanism source code, design documents, and a decade of experiment logs and narrows that to a handful of changes worth testing. Engineers review and approve the final change before it ships.</span></p>\n<p><span style=\"font-weight: 400;\">Today, agents can already propose well-reasoned changes and design and run rigorous experiments. In the first half of 2026, agents contributed to about 20% of Intelligent Delivery optimizations. On our most automated mechanism, they now contribute to about 80% of the engineering effort, from understanding the system landscape and forming hypotheses to running experiments and converging on the final change. This shortens the optimization loop from months to weeks while keeping people firmly in control. And it steadily captures the expertise engineers have built over the years.</span></p>\n<figure class=\"wp-caption alignnone\" id=\"attachment_25040\" style=\"width: 1999px;\"><img alt=\"\" class=\"size-full wp-image-25040\" height=\"1500\" src=\"https://engineering.fb.com/wp-content/uploads/2026/11/Meta-Intelligent-Delivery-image-4.png\" width=\"1999\" /><figcaption class=\"wp-caption-text\" id=\"caption-attachment-25040\">A loop diagram of the AI-driven optimization cycle, where agents collect data, propose changes, and run experiments, with an engineer approving every change and a shared knowledge base feeding each step.</figcaption></figure>\n<h2><b>The Next Frontiers for Intelligent Delivery</b></h2>\n<p><b>End-to-end real-time optimization:</b><span style=\"font-weight: 400;\"> Today, understanding a request and deciding how to serve it are still two separate steps. We&#8217;re building toward fusing them into a single model that reads a request and serves it in real time, without months of experiments. There\u2019s established work in varying compute per request with learning-based methods. However, doing it jointly across every serving stage at once \u2014 under shifting traffic, hard capacity limits, and tight inter-stage dependencies \u2014 is the part that\u2019s still open, and it&#8217;s what we&#8217;re pushing on.</span></p>\n<p><b>Serving state-of-the-art models on GPUs:</b><span style=\"font-weight: 400;\"> Large ranking models, like </span><a href=\"https://engineering.fb.com/2025/11/10/ml-applications/metas-generative-ads-model-gem-the-central-brain-accelerating-ads-recommendation-ai-innovation/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">Meta\u2019s Generative Ads Model (GEM)</span></a><span style=\"font-weight: 400;\">, are </span><a href=\"https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model/\" rel=\"noopener\" target=\"_blank\"><span style=\"font-weight: 400;\">growing toward LLM scale</span></a><span style=\"font-weight: 400;\"> and increasingly run on GPUs, which opens a different optimization space. GPU capacity doesn&#8217;t divide the way CPU time does \u2014 it comes in whole, fixed blocks, and throughput, batching, and memory all behave differently. The levers we built for a CPU world have to be reimagined, and much of our work now goes into understanding those mechanisms and turning them into new levers. The more useful work we get out of each accelerator, the more people we can serve with strong models under the same capacity.</span></p>\n<h2><span style=\"font-weight: 400;\">Acknowledgements</span></h2>\n<p><i><span style=\"font-weight: 400;\">Sowji Adavi, Karthik Alle, Tao Cai, Olivier Chaine, Jianhao Du, Antonio Frigo, Gayatree Ganu, Chao Li, Chao Ma, Bennet Matazzoni, Riddhi Mehta, Saurabh Pohnerkar, Sudhir Pokhrel, Yuehui Qian, Liang Qiao, Yitao Qiu, Rob Schwartzberg, Sanketh Shetty, Ganlin Song, Samuel Tatipamula, Xueqi Wang, Ye Wang, Wei Wei, Jing Xu, Haomin Yu, Jiayi Yu, Jay Zang, Caijie Zhang, Shengjie Zhang, Tong Zhang, and Wei Zheng.</span></i></p>\n<p>The post <a href=\"https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/\">Intelligent Delivery: Making Every Unit of Compute Serve Better Ads</a> appeared first on <a href=\"https://engineering.fb.com\">Engineering at Meta</a>.</p>",
-      "source_name": "Meta Engineering",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "engineering",
-        "meta",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-11T17:00:38Z",
-      "fetched_at": "2026-11-11T17:54:03.554202Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "964aed087794010a",
-      "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
-      "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
-      "summary": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image1-7-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Best Models Trained on NVIDIA\" width=\"768\" />As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform...",
-      "content": "<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image1-7-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Best Models Trained on NVIDIA\" width=\"768\" />As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform...<img alt=\"\" class=\"webfeedsFeaturedVisual wp-post-image\" height=\"432\" src=\"https://developer-blogs.nvidia.com/wp-content/uploads/2026/11/image1-7-768x432.jpg\" style=\"display: block; margin-bottom: 5px; clear: both;\" title=\"Best Models Trained on NVIDIA\" width=\"768\" /><p>As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform configuration captured in a recipe. Application teams define and update these workloads independently of the platform recipe, so a reproducible deployment bundle alone cannot establish which workload artifacts are running on each node.</p>\n<p><a href=\"https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/\" rel=\"nofollow\" target=\"_self\">Source</a></p>",
-      "source_name": "NVIDIA Developer",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "nvidia",
-        "engineering"
-      ],
-      "author": "Mark Chmarny",
-      "published_at": "2026-11-11T17:00:00Z",
-      "fetched_at": "2026-11-11T17:54:06.480911Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "833534b672b8daa3",
-      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-      "summary": "Predicting how DNA sequences and their variations impact specific human cell types and disease.",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-11T15:00:15Z",
-      "fetched_at": "2026-11-11T17:54:02.786719Z",
       "score": null,
       "score_reason": "",
       "tier": "",
