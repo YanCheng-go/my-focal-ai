@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-19T10:10:14.664658+00:00",
+  "exported_at": "2026-11-19T12:10:22.170125+00:00",
   "period_hours": 168,
-  "total": 1254,
+  "total": 1252,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11136,25 +11136,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "8028e1e6538a5e5f",
-      "url": "https://www.youtube.com/watch?v=hvnPWgfmvyI",
-      "title": "Why AI Agents Need RAG + Observability",
-      "summary": "Learn more about Why Observability Is Essential for AI Agents here \u2192 https://ibm.biz/~MBafoTJOL\n\nYour AI agent knows the system, but what about now? Matt Aiken explains how RAG and observability give AI agents documented knowledge plus live metrics, logs, and traces. Learn how better operational context helps teams investigate issues with evidence.\n\n 00:00 \u2013 See What AI Agents Still Don't Know\n 00:37 \u2013 Give AI Agents Two Types of Context\n 00:46 \u2013 Ground AI Agents with RAG\n 01:47 \u2013 Add Live Context with Observability\n 03:06 \u2013 Investigate a Hybrid Transaction with AI\n 04:12 \u2013 Add Logs, Metrics & Traces to the Investigation\n 05:23 \u2013 Connect RAG Knowledge to Live Evidence\n 06:22 \u2013 Turn AI Context into Evidence, Impact & Next Steps\n 07:35 \u2013 Keep Human Operators in Control\n 08:09 \u2013 Combine RAG + Observability for Better AI Agents\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~9KyFFw5rY\n\nAI was used in the creation of the transcript and metadata for this video.\n\n#aiagents #retrievalaugmentedgeneration #observability #devops \n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-11-12T12:00:39Z",
-      "fetched_at": "2026-11-12T18:19:46.072440Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "7890886c01383a50",
       "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
       "title": "AI Day Seoul Brings Together Korea\u2019s Industry Leaders, Startups and Developer Communities",
@@ -15782,27 +15763,6 @@
       "author": "GeForce NOW Community",
       "published_at": "2026-11-12T14:00:59Z",
       "fetched_at": "2026-11-12T18:19:51.283720Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "b9840fd67063a36a",
-      "url": "https://openai.com/business/customer-stories/gondola",
-      "title": "Gondola doubles revenue as its team builds more with Codex",
-      "summary": "Gondola helps creatives get credit and get hired, with Codex raising its lead engineer\u2019s output by 50% and ChatGPT simplifying daily work.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-12T12:00:00Z",
-      "fetched_at": "2026-11-13T01:04:57.131166Z",
       "score": null,
       "score_reason": "",
       "tier": "",
