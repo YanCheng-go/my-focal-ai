@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-19T08:10:07.139791+00:00",
+  "exported_at": "2026-11-19T10:10:14.664658+00:00",
   "period_hours": 168,
-  "total": 1255,
+  "total": 1254,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -15803,27 +15803,6 @@
       "author": "",
       "published_at": "2026-11-12T12:00:00Z",
       "fetched_at": "2026-11-13T01:04:57.131166Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "4922ca6fb0dd9299",
-      "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
-      "title": "Holiday Extras is rethinking what it can build with Codex",
-      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-12T09:30:00Z",
-      "fetched_at": "2026-11-12T18:19:46.811270Z",
       "score": null,
       "score_reason": "",
       "tier": "",
