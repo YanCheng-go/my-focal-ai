@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-19T17:24:43.212232+00:00",
+  "exported_at": "2026-11-19T20:28:34.060993+00:00",
   "period_hours": 168,
-  "total": 1251,
+  "total": 1247,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11115,27 +11115,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "f3ab05234a2bd327",
-      "url": "https://www.youtube.com/watch?v=PeRJkvzIEts",
-      "title": "Using AI in Research | Stanford CS193T Guest Panel with Mark Algee-Hewitt, Megan Ma & Markus Covert",
-      "summary": "Explore AI courses and programs from Stanford Online: https://stanford.io/4BYTekh \n\nHow do Stanford researchers use AI in their own fields? In this Stanford CS193T: Thinking with AI guest panel recording, hosted by Senior Lecturer Cynthia Bailey, guests from three different corners of campus (English, Law, and Bioengineering) share innovative applications of AI in their respective disciplines, what responsible use of AI means in their academic communities, and how they protect the core of what makes them successful from atrophy. Professor Mark Algee-Hewitt leads Stanford's Digital Humanities program, using computational methods to explore language and meaning-making. Megan Ma is the Executive Director of the Stanford Legal Innovation through Frontier Technology (LIFT) Lab, creating AI tools for the practice of law and studying the future of legal education and training under shifting attorney labor market pressures due to AI. Professor Markus Covert is the Chair of the Department of Bioengineering, and for over two decades has pioneered the development of computational models of complex biological processes.\n\nKey questions answered in this lecture recording:\nQ: Should professors use AI to write recommendation letters?\nA: Markus Covert has decided not to write letters with AI; he uses it only to hold and recall information about a student, and asks how AI could raise a letter's quality rather than save time.\n\nQ: Should universities and journals ban AI?\nA: Mark Algee-Hewitt argues blanket bans push people to use AI without saying so. Journals in his field instead require disclosure and define acceptable uses, such as coding with Claude Code but not writing the paper.\n\nQ: How is AI being used to train lawyers?\nA: Megan Ma describes LIFT Lab's open-source deposition simulator, which turns a witness statement into an AI witness with adjustable personalities (combative, evasive, forgetful) so junior attorneys can practice.\n\nQ: What skills should students not lose to AI?\nA: Mark Algee-Hewitt names critical thinking, Megan Ma names judgment built from real experience and storytelling, and Markus Covert names scientific taste, intellectual courage, and curiosity.\n\nQ: How can I use AI to write without losing my own voice?\nA: Markus Covert writes each paragraph himself, then asks Claude for missing citations, the strongest counterarguments, and analogies from other fields, checking every paper himself.\n\nQ: Are rubrics or preference rankings better for evaluating legal AI?\nA: In LIFT Lab's JudgmentBench research, Megan Ma reports that preference rankings far outperformed rubrics because they capture lawyer intuition.\n\nChapters:\n0:00 Introducing the AI in Research panel\n1:00 Mark Algee-Hewitt: digital humanities at scale\n5:09 Style in the Age of AI: do disciplines have style?\n7:05 LLM style transfer: philosophy written as CS\n8:57 Megan Ma: Stanford LIFT Lab and legal AI\n10:40 JudgmentBench: preference rankings vs rubrics\n13:17 AI deposition simulator for training lawyers\n17:55 Markus Covert: whole-cell simulation\n22:36 AI tutors, learning, and the MIT report\n26:14 Panel: building for future AI capabilities\n32:46 Should professors use AI for recommendations?\n42:51 AI transparency and disclosure norms\n54:22 Q&amp;A: skills students shouldn't lose to AI\n1:00:38 Learning with AI vs letting AI do the work\n\nAbout the speakers:\nMark Algee-Hewitt leads Stanford's Digital Humanities program. His work combines critical and quantitative approaches to the analysis of literature. As director of the Stanford Literary Lab, he has led projects on the literature of suspense, the history of racialized language in American literature, and an analysis of the reports of the OECD's anti-bribery convention.\n\nMegan Ma is the Executive Director of the Stanford Legal Innovation through Frontier Technology (LIFT) Lab. Her research focuses on the use and integration of generative AI in legal practice, considering their implications in contexts of human-machine collaboration. She also teaches courses in computational law at the Law School and Department of Computer Science.\n\nMarkus Covert is the Chair of the Department of Bioengineering at Stanford. His research focus is building computational models of complex biological processes, and using these models to guide an experimental program. Biological systems of interest include metabolic, regulatory and signaling networks as well as cell-cell interactions.\n\nHost: Cynthia Bailey is a Senior Lecturer in the Computer Science Department at Stanford University and the instructor of CS193T.\n\nCourse website: https://web.stanford.edu/class/archive/cs/cs193t/cs193t.1272/\nWatch the full CS193T playlist: https://www.youtube.com/playlist?list=PLDrJO3v_iAZY\n\nRecorded October 13, 2026 in CS193T: Thinking with AI, a Stanford University course hosted by Senior Lecturer Cynthia Bailey.\n\n#AIinResearch #AIinLaw #StanfordOnline",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-11-12T18:00:24Z",
-      "fetched_at": "2026-11-12T18:19:45.919461Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "7890886c01383a50",
       "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
       "title": "AI Day Seoul Brings Together Korea\u2019s Industry Leaders, Startups and Developer Communities",
@@ -15678,70 +15657,6 @@
       "author": "Anson Ho",
       "published_at": "2026-11-12T21:31:57Z",
       "fetched_at": "2026-11-13T01:05:00.069328Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "67672a694e389b29",
-      "url": "https://openai.com/business/customer-stories/amplitude",
-      "title": "How Amplitude ships product improvements in 1\u20132 days with OpenAI",
-      "summary": "Built primarily on OpenAI models, Amplitude\u2019s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-12T20:00:00Z",
-      "fetched_at": "2026-11-13T01:04:57.131140Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "84ec87286cb35a64",
-      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-      "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-      "summary": "",
-      "content": "",
-      "source_name": "Hugging Face Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "open-source",
-        "huggingface"
-      ],
-      "author": "",
-      "published_at": "2026-11-12T19:07:35Z",
-      "fetched_at": "2026-11-13T01:05:01.251471Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "c7a410ad3b862809",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
-      "title": "Introducing Gemini 4 Hydrogen",
-      "summary": "",
-      "content": "",
-      "source_name": "Google DeepMind",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "research",
-        "deepmind",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-12T18:00:50Z",
-      "fetched_at": "2026-11-12T18:19:47.576219Z",
       "score": null,
       "score_reason": "",
       "tier": "",
