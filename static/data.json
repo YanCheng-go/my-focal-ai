@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-20T11:25:01.059746+00:00",
+  "exported_at": "2026-11-20T13:28:31.751371+00:00",
   "period_hours": 168,
-  "total": 728,
+  "total": 727,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11603,27 +11603,6 @@
       "author": "",
       "published_at": "2026-11-13T14:05:22Z",
       "fetched_at": "2026-11-13T17:45:32.988537Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "a0730e6c360a1658",
-      "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
-      "title": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
-      "summary": "From pediatric research to smart hospitals, AI is helping care teams spend less time on routine tasks and more time with patients.\u00a0 Health systems and startups are putting it to work across healthcare, from matching patients to clinical trials to supporting radiologists, hospital teams and patients at home. Clinicians stay at the center, reviewing AI [&#8230;]",
-      "content": "<div id=\"bsf_rt_marker\"></div><p><span style=\"font-weight: 400;\">From pediatric research to smart hospitals, AI is helping care teams spend less time on routine tasks and more time with patients.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Health systems and startups are putting it to work across healthcare, from matching patients to clinical trials to supporting radiologists, hospital teams and patients at home. Clinicians stay at the center, reviewing AI outputs and guiding decisions, while NVIDIA technologies provide the compute behind the applications.</span></p>\n<p><span style=\"font-weight: 400;\">Read on to learn how healthcare teams are using AI to improve and speed patient care.</span></p>\n<hr />\n<p><em>Friday, Nov. 13, 5:00 a.m. PT <b><a href=\"https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/#dyania-health\"><img alt=\"\ud83d\udd17\" class=\"wp-smiley\" src=\"https://s.w.org/images/core/emoji/17.0.2/72x72/1f517.png\" style=\"height: 1em;\" /></a></b></em></p>\n<h2 class=\"wp-block-heading\" id=\"dyania-health\"><b>Dyania Health Uses AI to Turn Decades of Patient Records Into Better Care\u00a0</b></h2>\n<p><span style=\"font-weight: 400;\">Hospitals hold decades of patient history, most of it written in free text,</span><span style=\"font-weight: 400;\"> as physicians&#8217; notes, operative reports, imaging and pathology reads and discharge summaries. To understand one patient\u2019s full story, a clinician would need to read through years of charts</span><span style=\"font-weight: 400;\">.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Dyania Health</span><span style=\"font-weight: 400;\">, a New Jersey-based clinical AI company, built Synapsis AI to do just that. Synapsis AI is a clinical reasoning engine: It works across every note, report and lab result in a patient&#8217;s record, connecting findings that may be years apart to answer clinical questions the way a specialist reviewing the chart would.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">The output is a set of clinical signals, each traceable to its source in the record, that tells care teams which patients need attention and why. Clinicians review the evidence and make every decision.\u00a0</span></p>\n<h3><b>Keeping Patient Data Inside the Hospital Walls</b></h3>\n<p><span style=\"font-weight: 400;\">Synapsis AI runs on NVIDIA-accelerated computing inside a health system\u2019s own firewall.\u00a0 The entire health system\u2019s patient records can be processed onsite, so patient data is never shared and never leaves the hospital.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Processing records this way takes chart review off the desks of clinical teams and lets them spend that time with patients. </span><span style=\"font-weight: 400;\">But Synapsis AI still requires clinician input \u2014 it\u2019s an assistive tool that surfaces evidence from medical records that a clinician must still confirm and act on.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Dyania builds and trains its clinical models with </span><a href=\"https://www.nvidia.com/en-us/ai-data-science/products/nemo/\" target=\"_blank\"><span style=\"font-weight: 400;\">NVIDIA NeMo</span></a><span style=\"font-weight: 400;\"> open libraries, then uses NVIDIA TensorRT and TensorRT-LLM to optimize them to run faster and more efficiently on the hospital\u2019s own GPU servers.\u00a0</span></p>\n<h3><b>Synapsis AI in the Real World</b></h3>\n<p><span style=\"font-weight: 400;\">Cleveland Clinic</span><span style=\"font-weight: 400;\"> used Synapsis AI to support a study of more than 7,800 aortic valve replacement patients between 2005 and 2021.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">Synapsis AI reasoned across each patient\u2019s record, including every echocardiogram added in the years after surgery, and used this information to build a predictive model of valve deterioration and reintervention risk at the three-, five- and ten-year mark after a patient undergoes an aortic valve replacement procedure. The AI platform completed chart review across the full cohort that would have taken clinicians years to complete by hand.\u00a0</span></p>\n<p><span style=\"font-weight: 400;\">\u201cUsing technology to bring together and analyze information that can help us predict the duration of implanted heart valves is a promising step towards enhanced outcomes and more personalized care for patients,\u201d said </span><span style=\"font-weight: 400;\">Dr. Lars Svensson</span><span style=\"font-weight: 400;\">, chief of the Heart, Vascular &amp; Thoracic Institute at Cleveland Clinic.</span></p>\n<p><span style=\"font-weight: 400;\">The same approach can be applied to any healthcare challenge where the answer sits inside the medical record, such as identifying patients eligible for clinical trials, closing care gaps in cardiology and oncology, and populating clinical registries.</span></p>\n<p><span style=\"font-weight: 400;\">Learn more about <a href=\"https://dyaniahealth.com/\" target=\"_blank\">Dyania Health</a>.</span></p>",
-      "source_name": "NVIDIA Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "nvidia",
-        "company"
-      ],
-      "author": "NVIDIA Writers",
-      "published_at": "2026-11-13T13:00:42Z",
-      "fetched_at": "2026-11-13T17:45:31.974611Z",
       "score": null,
       "score_reason": "",
       "tier": "",
