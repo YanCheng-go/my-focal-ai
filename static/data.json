@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-20T09:23:47.153331+00:00",
+  "exported_at": "2026-11-20T11:25:01.059746+00:00",
   "period_hours": 168,
-  "total": 729,
+  "total": 728,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -11069,25 +11069,6 @@
       "author": "Nana Janashia",
       "published_at": "2026-11-13T16:00:01Z",
       "fetched_at": "2026-11-13T17:45:19.467285Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "dc20cb2a7f15fd9b",
-      "url": "https://www.youtube.com/watch?v=Az2aRR51fDU",
-      "title": "Jensen Huang exits NVIDIA & does Claude Fable 5.2 count as AGI?",
-      "summary": "Visit Mixture of Experts podcast page to get more AI content  \u2192 https://ibm.biz/~MikQp78Aa\n\nWho can replace a founder like Jensen Huang?\n\nThis week on Mixture of Experts, host David Zax is joined by Derek Robertson, Bri Kopecki and Kiyu Gabriel.\n\nFirst, NVIDIA CEO Jensen Huang resigns after more than three decades leading a company whose long-term investments helped shape the AI industry. The panel discusses whether the long-term bets Huang made, from CUDA to high-bandwidth networking, can keep NVIDIA ahead without him.\n\nNext, Anthropic releases Claude Fable 5.2, renewing questions about artificial general intelligence (AGI). A surprising demonstration of the model leads the panel into a debate about human creativity. If AI-generated art makes you feel something, does it matter who\u2014or what\u2014created it?\n\nFinally, a special one-on-one conversation examines Confluent's Streamhouse announcement and what access to real-time business data could mean for AI agents.\n\nAll that and more on Mixture of Experts.\n\n0:00 \u2013 Intro\n01:02 \u2013 Jensen Huang resigns from NVIDIA  \n09:57 \u2013 Claude Fable 5.2 & what counts as AGI  \n28:16 \u2013 What is a Streamhouse & why it matters\n\n\"The opinions expressed in this podcast are solely those of the participants and do not necessarily reflect the views of IBM or any other organization or entity. AI tools may be used to transcribe this episode and support selected stages of the production process. All AI-assisted content is reviewed by the production team before publication.\"\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://ibm.biz/~WVEDzwD8N\n#nvidia #claudefable  #agi \n\nAI was used in the creation of the transcript and metadata for this video.",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-11-13T09:30:11Z",
-      "fetched_at": "2026-11-13T17:45:22.304682Z",
       "score": null,
       "score_reason": "",
       "tier": "",
