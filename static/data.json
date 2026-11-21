@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-21T01:53:57.032297+00:00",
+  "exported_at": "2026-11-21T09:08:02.037407+00:00",
   "period_hours": 168,
-  "total": 708,
+  "total": 707,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -10926,25 +10926,6 @@
       "author": "The Pragmatic Engineer",
       "published_at": "2026-11-14T16:00:17Z",
       "fetched_at": "2026-11-14T20:43:49.639249Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "7e2c8ad39dd8df46",
-      "url": "https://www.youtube.com/shorts/sZg4uJnU9rU",
-      "title": "Security's New Reality Check",
-      "summary": "Everyone's a target. The question isn't if you'll be breached\u2014it's how fast you can contain it. Learn the containment-first security mindset.\n\n---------------------------------------------------------------------------------------------------------\nFind us on YouTube:\n\ud83d\udd35 IBM Technology: https://www.youtube.com/@IBMTechnology\n\ud83d\udd35 IBM: https://www.youtube.com/@IBM \n\ud83d\udd35 IBM Developer: https://youtube.com/@IBMDeveloperAdvocates",
-      "content": "",
-      "source_name": "IBM Technology",
-      "source_type": "youtube",
-      "tags": [
-        "ai"
-      ],
-      "author": "IBM Technology",
-      "published_at": "2026-11-14T05:00:28Z",
-      "fetched_at": "2026-11-14T15:05:55.531838Z",
       "score": null,
       "score_reason": "",
       "tier": "",
