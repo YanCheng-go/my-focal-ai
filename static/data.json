@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-21T19:33:31.552583+00:00",
+  "exported_at": "2026-11-22T01:27:39.708003+00:00",
   "period_hours": 168,
-  "total": 704,
+  "total": 702,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -10871,27 +10871,6 @@
       "is_duplicate_of": null
     },
     {
-      "id": "2895aefe9f9334ac",
-      "url": "https://www.youtube.com/watch?v=JC_pLC5EX_w",
-      "title": "AI Agent Design Patterns: ReAct, CodeAct & More | Stanford CS329Z Lecture 6 with Michael Ryan",
-      "summary": "Browse Stanford's online courses in Agentic AI: https://stanford.io/4AIRb2z \n\nSelf-paced online Agentic AI course: https://online.stanford.edu/programs/agentic-ai?utm_source=youtube&amp;utm_medium=social&amp;utm_content=cs329z-01-what-are-agentic-systems\n\nLecture Overview:\nWhen should you build a workflow instead of an agent, and which design patterns work best? In this Stanford CS329Z: Engineering AI Agents lecture, Michael Ryan covers Anthropic's five workflow patterns, reasoning-and-acting patterns (ReAct, Reflexion, CodeAct, ReWOO), and context-management techniques like event logs, compaction, observation masking, subagents, and skills, ending with a case study of the minimal Pi harness.\n\nSpeaker: Michael Ryan\n\nMichael Ryan is a CS PhD student at Stanford University developing human-centered, open-source AI systems that augment human intelligence and reflect the plurality of human values. His contributions to the DSPy open-source project enable developers to optimize multi-stage AI systems, and his algorithms are used for automatic AI prompt optimization at Meta, Google, Dropbox, Amazon, and other organizations.\n\nCourse website: https://cs329z.stanford.edu/\n\nWatch the full CS329Z playlist: https://youtube.com/playlist?list=PLPRcF5HR02_U&amp;si=3Z4OYphngcmQ0GIy\n\nRecorded 10/12/2026 in CS329Z: Engineering AI Agents, a graduate course at Stanford University taught by Diyi Yang, Michael Ryan, and John Yang.\n\n#AIAgents #AgenticAI #Stanford",
-      "content": "",
-      "source_name": "Stanford Online",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "research",
-        "course"
-      ],
-      "author": "Stanford Online",
-      "published_at": "2026-11-14T21:00:05Z",
-      "fetched_at": "2026-11-15T09:28:06.286136Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
       "id": "7890886c01383a50",
       "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
       "title": "AI Day Seoul Brings Together Korea\u2019s Industry Leaders, Startups and Developer Communities",
@@ -15003,27 +14982,6 @@
       "published_at": "2026-11-16T05:00:00Z",
       "fetched_at": "2026-11-16T06:31:42.369491Z",
       "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "44a0827dfbb39611",
-      "url": "https://www.aitmpl.com/loops/loop-quality-streak-loop#loops",
-      "title": "#8 quality-streak-loop",
-      "summary": "Category: evaluation | Week: 4 | Month: 4 | Total: 8",
-      "content": "",
-      "source_name": "AI Templates Trending (loops)",
-      "source_type": "aitmpl_loops",
-      "tags": [
-        "claude-code",
-        "trending",
-        "tools"
-      ],
-      "author": "",
-      "published_at": "2026-11-15T00:00:00Z",
-      "fetched_at": "2026-11-15T09:28:22.678499Z",
-      "score": 0.3,
       "score_reason": "",
       "tier": "",
       "is_duplicate_of": null
