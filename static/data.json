@@ -1,7 +1,7 @@
 {
-  "exported_at": "2026-11-23T09:21:44.704864+00:00",
+  "exported_at": "2026-11-23T13:22:31.931401+00:00",
   "period_hours": 168,
-  "total": 218,
+  "total": 216,
   "all_tags": [
     "agent-skills",
     "ai",
@@ -4518,47 +4518,6 @@
       "author": "Nate Herk | AI Automation",
       "published_at": "2026-11-16T13:25:09Z",
       "fetched_at": "2026-11-16T18:33:43.741218Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "82aa931fbb5158b2",
-      "url": "https://www.youtube.com/watch?v=UCL4K36SHp0",
-      "title": "Let's Open Source the World \u2014 Brandon Thomas, ArtCraft",
-      "summary": "ArtCraft\u2019s first Photoshop approximation took about 24 hours to build, Brandon Thomas says. At CODE Summit 2026, he explains how Rust and AI coding agents power open source alternatives to Adobe\u2019s creative tools, Microsoft Office and Figma. MCP and CLI automation, Linux support, reusable UI components and CI bottlenecks lead into Autocraft, a forthcoming software factory for issue triage, agentic development, evaluations and post training.\n\nSpeaker info:\n- https://github.com/echelon\n- https://x.com/echelon\n- https://getartcraft.com/apps\n\nTimestamps:\n0:00 - Open sourcing the world\n2:30 - The open web before closed platforms\n4:29 - Subscriptions, gatekeepers and lost ownership\n6:47 - ArtCraft and artists coding their workflows\n9:17 - A Photoshop approximation in 24 hours\n11:10 - Viral growth and artists embracing AI\n12:13 - Beyond Adobe: office, CAD and collaboration\n14:17 - Linux, localization and programmable apps\n16:11 - Why Rust, native GUIs and CI\n17:35 - Human review and the Autocraft software factory",
-      "content": "",
-      "source_name": "AI Engineer",
-      "source_type": "youtube",
-      "tags": [
-        "ai",
-        "engineering"
-      ],
-      "author": "AI Engineer",
-      "published_at": "2026-11-16T13:00:07Z",
-      "fetched_at": "2026-11-16T18:33:44.503193Z",
-      "score": null,
-      "score_reason": "",
-      "tier": "",
-      "is_duplicate_of": null
-    },
-    {
-      "id": "d91fd06de7b8771e",
-      "url": "https://openai.com/index/science-at-the-frontier",
-      "title": "Science at the Frontier: How scientists use ChatGPT",
-      "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
-      "content": "",
-      "source_name": "OpenAI Blog",
-      "source_type": "rss",
-      "tags": [
-        "ai",
-        "openai",
-        "company"
-      ],
-      "author": "",
-      "published_at": "2026-11-16T12:00:00Z",
-      "fetched_at": "2026-11-16T18:33:45.947966Z",
       "score": null,
       "score_reason": "",
       "tier": "",
